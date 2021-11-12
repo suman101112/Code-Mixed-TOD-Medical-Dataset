@@ -1,0 +1,198 @@
+{\intent	d: right అమ్మా చెప్పండి.	CONV_OPEN}
+{\slot
+right	O
+అమ్మా	O
+చెప్పండి.	O
+}
+
+{\intent	p: 7 years అయితుంది sir psoriasis నాకు వచ్చి.	STATEMENT}
+{\slot
+7	B-time_period
+years	I-time_period
+అయితుంది	I-time_period
+sir	O
+నాకు	O
+psoriasis	B-medical_condition
+వచ్చి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మందులు వాడుతున్నాము కానీ, ayurvedam అయిపోయింది, మములు medicine, english medicine వాడుతున్నాము sir	STATEMENT}
+{\slot
+మందులు	B-medicine
+వాడుతున్నాము	O
+కానీ,	O
+ayurvedam	B-medicine
+అయిపోయింది,	O
+మములు	B-medicine
+medicine,	I-medicine
+english	B-medicine
+medicine	I-medicine
+వాడుతున్నాము	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మీరు చెప్పారు కదా sir psoriatic arthritis అని చెప్పేసి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మీరు	O
+చెప్పారు	O
+కదా	O
+sir	O
+psoriatic	B-medical_condition
+arthritis	I-medical_condition
+అని	O
+చెప్పేసి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది కూడా కొంచం starting stageలో ఉందేమో అనిపిస్తుంది sir	STATEMENT}
+{\slot
+అది	O
+కూడా	O
+కొంచం	O
+starting	B-medical_condition
+stageలో	I-medical_condition
+ఉందేమో	O
+అనిపిస్తుంది	O
+sir	O
+}
+
+{\intent	d: వయస్సు ఎంతమ్మా నీది?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంతమ్మా	O
+నీది?	O
+}
+
+{\intent	p: నాకు 27 sir	ANSWER}
+{\slot
+నాకు	O
+27	B-age
+sir	O
+}
+
+{\intent	d: right ఇంకేమన్నా అడగదలచుకున్నావా?	INFO_REQUEST}
+{\slot
+right	O
+ఇంకేమన్నా	O
+అడగదలచుకున్నావా?	O
+}
+
+{\intent	p: ఇంకేం లేదు sir.	ANSWER}
+{\slot
+ఇంకేం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	p: ఇక్కడ shoulders దెగ్గర, మోకాళ్ళు కొంచం అప్పుడప్పుడు నొప్పొస్తుంది sir బాగా	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+shoulders	B-body_part
+దెగ్గర,	B-location
+మోకాళ్ళు	B-body_part
+కొంచం	B-intensity
+అప్పుడప్పుడు	B-time_period
+నొప్పొస్తుంది	B-symptom
+sir	O
+బాగా	B-intensity
+}
+
+{\intent	d: బరువు ఎంత ఉంటావ్ అమ్మా?	INFO_REQUEST}
+{\slot
+బరువు	O
+ఎంత	O
+ఉంటావ్	O
+అమ్మా?	O
+}
+
+{\intent	p: బరువు 38 అనుకుంట sir.	ANSWER}
+{\slot
+బరువు	B-bm
+38	B-bm
+అనుకుంట	O
+sir.	O
+}
+
+{\intent	d: right అంతేనా ఇంకేమన్నా అడగదలచుకున్నావా?	INFO_REQUEST}
+{\slot
+right	O
+అంతేనా	O
+ఇంకేమన్నా	O
+అడగదలచుకున్నావా?	O
+}
+
+{\intent	p: ఆ ఇంకేం లేదు sir, అసలు తగ్గుతదో లేదో కొంచం భయమైతుంది sir, medicine అయితే వేసుకుంటూనే ఉన్నాను.	ANSWER}
+{\slot
+ఆ	O
+ఇంకేం	O
+లేదు	B-negative
+sir,	O
+అసలు	O
+తగ్గుతదో	B-normal
+లేదో	B-negative
+కొంచం	B-intensity
+భయమైతుంది	B-symptom
+sir,	O
+medicine	B-medicine
+అయితే	O
+వేసుకుంటూనే	O
+ఉన్నాను.	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: అది sir problem	STATEMENT}
+{\slot
+అది	O
+sir	O
+problem	O
+}
+
+{\intent	d: తప్పకుండా అమ్మా, చెప్తాను దానిగురించి	COMMIT}
+{\slot
+తప్పకుండా	O
+అమ్మా,	O
+చెప్తాను	O
+దానిగురించి	O
+}
+
+{\intent	d: ఇప్పుడు Anitaగారి విషయంలో మీరు చూసినట్లు అయితే 7 సంవత్సరాల నుంచి psoriasis ఉండి, skin doctorల మందు వాడుతున్నారు, ayurvedic మందులు వాడున్నారు	ACK}
+{\slot
+ఇప్పుడు	O
+Anitaగారి	B-name
+విషయంలో	O
+మీరు	O
+చూసినట్లు	O
+అయితే	O
+7	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	I-time_period
+psoriasis	B-medical_condition
+ఉండి,	O
+skin	B-medical_professional
+doctorల	I-health_professional
+మందు	B-medicine
+వాడుతున్నారు,	O
+ayurvedic	B-medicine
+మందులు	I-medicine
+వాడున్నారు	O
+}
+

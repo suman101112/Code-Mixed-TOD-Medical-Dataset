@@ -1,0 +1,223 @@
+{\intent	p: sir అది నాకు already ఒక 1 year నుంచి head మీద dandruff లాగా వచ్చింది sir	STATEMENT}
+{\slot
+sir	O
+అది	O
+నాకు	O
+already	O
+ఒక	O
+1	B-time_period
+year	I-time_period
+నుంచి	I-time_period
+head	B-body_part
+మీద	B-body_part
+dandruff	B-symptom
+లాగా	I-symptom
+వచ్చింది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే నేను అది dandruff ఎమో అనేసి light తీసుకున్నాను	STATEMENT}
+{\slot
+అయితే	O
+నేను	O
+అది	O
+dandruff	B-symptom
+ఎమో	O
+అనేసి	O
+light	O
+తీసుకున్నాను	O
+}
+
+{\intent	p: తరువాత ఈ మధ్య recently నేను normal clinicకి వెళ్ళి చూపిస్తే medicine ఇచ్చారు, ఆ medicine ని వాడటం జరిగింది	STATEMENT}
+{\slot
+తరువాత	B-time_period
+ఈ	I-time_period
+మధ్య	I-time_period
+recently	I-time_period
+నేను	O
+normal	B-consult
+clinicకి	I-consult
+వెళ్ళి	I-consult
+చూపిస్తే	I-consult
+medicine	B-treatment
+ఇచ్చారు,	I-treatment
+ఆ	O
+medicine	B-treatment
+ని	I-treatment
+వాడటం	I-treatment
+జరిగింది	I-treatment
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది medicine వాడినన్నీ రోజులే clear అయితుంది	STATEMENT}
+{\slot
+అది	O
+medicine	B-treatment
+వాడినన్నీ	I-treatment
+రోజులే	B-time_period
+clear	B-normal
+అయితుంది	I-normal
+}
+
+{\intent	p: తరువాత నేను Kukatpally ayurvedic centerకి వెళ్ళాను	STATEMENT}
+{\slot
+తరువాత	B-time_period
+నేను	O
+Kukatpally	B-hospital_name
+ayurvedic	I-hospital_name
+centerకి	I-hospital_name
+వెళ్ళాను	O
+}
+
+{\intent	d: అలాగే నండీ	STATEMENT}
+{\slot
+అలాగే	O
+నండీ	O
+}
+
+{\intent	p: present వాడుతున్నాను కానీ వాళ్ళు 6 months, 7 months వాడండి అని చెప్తున్నారు	STATEMENT}
+{\slot
+present	B-time_period
+వాడుతున్నాను	B-treatment
+కానీ	O
+వాళ్ళు	O
+6	B-time_period
+months,	I-time_period
+7	B-time_period
+months	I-time_period
+వాడండి	B-treatment
+అని	O
+చెప్తున్నారు	O
+}
+
+{\intent	d: ఒక ప్రశ్న అండి, doctorగారు examine చేసి dandruff అన్నారా? ఇతర సమస్య ఏమైనా అన్నారా?	INFO_REQUEST}
+{\slot
+ఒక	O
+ప్రశ్న	O
+అండి,	O
+doctorగారు	B-medical_professional
+examine	B-mtest
+చేసి	I-mtest
+dandruff	B-symptom
+అన్నారా?	O
+ఇతర	O
+సమస్య	O
+ఏమైనా	O
+అన్నారా?	O
+}
+
+{\intent	p: scalp psoriasis sir	ANSWER}
+{\slot
+scalp	B-symptom
+psoriasis	I-symptom
+sir	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: scalp psoriasis	ACK}
+{\slot
+scalp	B-symptom
+psoriasis	I-symptom
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: sir నాకు head మీద, పెచ్చులు పెచ్చులుగా రావడం	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+head	B-symptom
+మీద,	I-symptom
+పెచ్చులు	I-symptom
+పెచ్చులుగా	I-symptom
+రావడం	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: face మీద రావడం	STATEMENT}
+{\slot
+face	B-symptom
+మీద	I-symptom
+రావడం	I-symptom
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	p: అంటే బయటికి వెళ్ళలేకపోతున్నాను.	STATEMENT}
+{\slot
+అంటే	O
+బయటికి	B-symptom
+వెళ్ళలేకపోతున్నాను.	I-symptom
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: మా doctor ఏమన్నారంటే 1 year medicines వాడాలి sir అన్నారు	STATEMENT}
+{\slot
+మా	O
+doctor	B-medical_professional
+ఏమన్నారంటే	O
+1	B-time_period
+year	I-time_period
+medicines	B-treatment
+వాడాలి	I-treatment
+sir	O
+అన్నారు	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	p: కొన్ని youtube videos చూస్తే అది life long ఉంటది scalp psoriasis అని	STATEMENT}
+{\slot
+కొన్ని	O
+youtube	O
+videos	O
+చూస్తే	O
+అది	O
+life	B-time_period
+long	I-time_period
+ఉంటది	I-time_period
+scalp	B-symptom
+psoriasis	I-symptom
+అని	O
+}
+

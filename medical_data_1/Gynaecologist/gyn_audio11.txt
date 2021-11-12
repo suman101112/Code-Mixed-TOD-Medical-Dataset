@@ -1,0 +1,425 @@
+{\intent	d: आ बोलिए आप का नाम क्या है ?	INFO_REQUEST}
+{\slot
+आ	O
+बोलिए	O
+आप	O
+का	O
+नाम	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p: Chanchal Sood	ANSWER}
+{\slot
+Chanchal	B-name
+Sood	I-name
+}
+
+{\intent	d: Chancal Sood	ACK}
+{\slot
+Chancal	B-name
+Sood	I-name
+}
+
+{\intent	d: उम्र क्या है आप के?	INFO_REQUEST}
+{\slot
+उम्र	O
+क्या	O
+है	O
+आप	O
+के?	O
+}
+
+{\intent	p: उम्र march में 47 हो जाते	ANSWER}
+{\slot
+उम्र	B-time_period
+march	I-time_period
+में	O
+47	B-time_period
+हो	O
+जाते	O
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: irregular periods?	INFO_REQUEST}
+{\slot
+irregular	B-symptom
+periods?	B-bodily_process
+}
+
+{\intent	p: periods अभी एक 6 महीने 8 महीने से बराबर नहीं आ रहे.	ANSWER}
+{\slot
+periods	B-bodily_process
+अभी	B-time_period
+एक	O
+6	B-time_period
+महीने	I-time_period
+8	B-time_period
+महीने	I-time_period
+से	O
+बराबर	B-normal
+नहीं	B-negative
+आ	O
+रहे.	O
+}
+
+{\intent	d: कितने late आ रहा?	INFO_REQUEST}
+{\slot
+कितने	O
+late	B-symptom
+आ	O
+रहा	O
+}
+
+{\intent	p: कभी 17, 18 days कभी 20 days ऐसा आ रहे, कभी एक महीने से आ रहे	ANSWER}
+{\slot
+कभी	O
+17,	B-time_period
+18	B-time_period
+days	I-time_period
+कभी	O
+20	B-time_period
+days	I-time_period
+ऐसा	O
+आ	O
+रहे,	O
+कभी	O
+एक	B-time_period
+महीने	I-time_period
+से	O
+आ	O
+रहे	O
+}
+
+{\intent	d: जल्दी आ जा रहे?	INFO_REQUEST}
+{\slot
+जल्दी	B-symptom
+आ	O
+जा	O
+रहे?	O
+}
+
+{\intent	p: नहीं. वो अभी 6 months से मेरेको 20 20 दिन के लिए ही आ रहे.	ANSWER}
+{\slot
+नहीं.	B-negative
+वो	O
+अभी	O
+6	B-time_period
+months	I-time_period
+से	O
+मेरेको	O
+20	B-time_period
+20	B-time_period
+दिन	I-time_period
+के	O
+लिए	O
+ही	O
+आ	O
+रहे.	O
+}
+
+{\intent	d: एक तारीख को हुए तो 20 तारीख को होते ?	INFO_REQUEST}
+{\slot
+एक	B-time_period
+तारीख	I-time_period
+को	O
+हुए	O
+तो	O
+20	B-time_period
+तारीख	I-time_period
+को	O
+होते	O
+?	O
+}
+
+{\intent	d: 20 तारीख को होते ?	REPEAT_REPHRASE}
+{\slot
+20	B-time_period
+तारीख	I-time_period
+को	O
+होते	O
+?	O
+}
+
+{\intent	p: आ	STATEMENT}
+{\slot
+आ	B-positive
+}
+
+{\intent	d: 10 दिन पहले आ रहे?	INFO_REQUEST}
+{\slot
+10	B-time_period
+दिन	I-time_period
+पहले	I-time_period
+आ	O
+रहे?	O
+}
+
+{\intent	p: हां. कभी 20 दिन अभी 1 month से हो रही, अभी 1.15 महीने से days हो रहीं मेरेको.	ANSWER}
+{\slot
+हां.	B-positive
+कभी	O
+20	B-time_period
+दिन	I-time_period
+अभी	O
+1	B-time_period
+month	I-time_period
+से	O
+हो	O
+रही,	O
+अभी	O
+1.15	B-time_period
+महीने	I-time_period
+से	O
+days	B-time_period
+हो	O
+रहीं	O
+मेरेको.	O
+}
+
+{\intent	d: अभी period आ के कितने दिन आज को?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+period	B-bodily_process
+आ	O
+के	O
+कितने	O
+दिन	B-time_period
+आज	B-time_period
+को?	O
+}
+
+{\intent	p: 3 तारीख को हुई. आज 25 है .	ANSWER}
+{\slot
+3	B-time_period
+तारीख	I-time_period
+को	O
+हुई.	O
+आज	B-time_period
+25	I-time_period
+है	O
+.	O
+}
+
+{\intent	d: ok 22 days हुआ	ACK}
+{\slot
+ok	O
+22	B-time_period
+days	I-time_period
+हुआ	O
+}
+
+{\intent	p: हां	ACK}
+{\slot
+हां	O
+}
+
+{\intent	d: इससे पहले January में कभ थे?	INFO_REQUEST}
+{\slot
+इससे	O
+पहले	O
+January	B-time_period
+में	O
+कभ	O
+थे?	O
+}
+
+{\intent	p: december 20 को हुए से में	ANSWER}
+{\slot
+december	B-time_period
+20	B-time_period
+को	O
+हुए	O
+से	O
+में	O
+}
+
+{\intent	d: 22 को हुए	ACK}
+{\slot
+22	B-time_period
+को	O
+हुए	O
+}
+
+{\intent	d: कितने बच्चे आपको?	INFO_REQUEST}
+{\slot
+कितने	O
+बच्चे	B-familal
+आपको?	O
+}
+
+{\intent	p: मेरे को 3 है.	ANSWER}
+{\slot
+मेरे	O
+को	O
+3	B-frequency
+है.	O
+}
+
+{\intent	p: मेरे वो नहीं किये बच्चे	STATEMENT}
+{\slot
+मेरे	O
+वो	O
+नहीं	B-negative
+किये	B-treatment
+बच्चे	I-treatment
+}
+
+{\intent	d: बच्चे होने जैसे नहीं हुआ?	INFO_REQUEST}
+{\slot
+बच्चे	B-bodily_process
+होने	I-bodily_process
+जैसे	I-bodily_process
+नहीं	B-negative
+हुआ?	O
+}
+
+{\intent	p: हो गया	ANSWER}
+{\slot
+हो	B-positive
+गया	I-positive
+}
+
+{\intent	d: हो गया	ACK}
+{\slot
+हो	B-positive
+गया	I-positive
+}
+
+{\intent	d: कौन कराये? आप ही कराये tubectomy?	INFO_REQUEST}
+{\slot
+कौन	O
+कराये?	O
+आप	O
+ही	O
+कराये	O
+tubectomy?	B-treatment
+}
+
+{\intent	p: हां. मैं करवाया.	ANSWER}
+{\slot
+हां.	B-positive
+मैं	B-person
+करवाया.	O
+}
+
+{\intent	d: thyroid है आप को?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+है	O
+आप	O
+को?	O
+}
+
+{\intent	p: कुछ भी नहीं है	ANSWER}
+{\slot
+कुछ	O
+भी	O
+नहीं	B-negative
+है	O
+}
+
+{\intent	d: just irregular cycles है और थोड़ा breast pain हो रहा है अभी?	INFO_REQUEST}
+{\slot
+just	O
+irregular	B-symptom
+cycles	B-bodily_process
+है	O
+और	O
+थोड़ा	B-intensity
+breast	B-body_part
+pain	B-symptom
+हो	O
+रहा	O
+है	O
+अभी	B-time_period
+}
+
+{\intent	p: बहुत pain है , ऐसे	ANSWER}
+{\slot
+बहुत	B-intensity
+pain	B-symptom
+है	O
+,	O
+ऐसे	O
+}
+
+{\intent	d: दोनों तरफ?	INFO_REQUEST}
+{\slot
+दोनों	B-frequency
+तरफ?	B-location
+}
+
+{\intent	p: दोनों तरफ होता	ANSWER}
+{\slot
+दोनों	B-frequency
+तरफ	B-location
+होता	B-positive
+}
+
+{\intent	p: एक तरफ ज़्यादा होता	STATEMENT}
+{\slot
+एक	B-frequency
+तरफ	B-location
+ज़्यादा	B-intensity
+होता	B-positive
+}
+
+{\intent	d: continuous pain?	INFO_REQUEST}
+{\slot
+continuous	B-time_period
+pain?	B-symptom
+}
+
+{\intent	d: इससे पहले periods से पहले होता था आपको?	INFO_REQUEST}
+{\slot
+इससे	O
+पहले	B-time_period
+periods	B-bodily_process
+से	O
+पहले	B-time_period
+होता	O
+था	O
+आपको?	O
+}
+
+{\intent	p: वो 7 years से ऐसे ही हो रहा मेरेको	ANSWER}
+{\slot
+वो	O
+7	B-time_period
+years	I-time_period
+से	O
+ऐसे	O
+ही	O
+हो	O
+रहा	O
+मेरेको	O
+}
+
+{\intent	p: अभी तो 15 दिन से ऐसे ही है .	STATEMENT}
+{\slot
+अभी	B-time_period
+तो	O
+15	B-time_period
+दिन	I-time_period
+से	O
+ऐसे	O
+ही	O
+है	O
+.	O
+}
+
+{\intent	d: अभी लेट जाईये देखेंगे अभी.	ACTION_DIR}
+{\slot
+अभी	O
+लेट	O
+जाईये	O
+देखेंगे	O
+अभी.	O
+}
+

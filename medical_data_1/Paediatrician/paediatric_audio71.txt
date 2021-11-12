@@ -1,0 +1,298 @@
+{\intent	p: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పమ్మా	ACTION_DIR}
+{\slot
+చెప్పమ్మా	O
+}
+
+{\intent	p: doctorగారు, నమస్తే అండి.	GREETING}
+{\slot
+doctorగారు,	B-medical_professional
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి, చెప్పండమ్మా	ACTION_DIR}
+{\slot
+చెప్పండి,	O
+చెప్పండమ్మా	O
+}
+
+{\intent	p: పాప 11 years వరకు బాగానే ఉందండి.	STATEMENT}
+{\slot
+పాప	B-person
+11	B-time_period
+years	I-time_period
+వరకు	O
+బాగానే	B-normal
+ఉందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ మధ్య బాగా మొండి చేసేస్తుందండీ.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+బాగా	O
+మొండి	B-symptom
+చేసేస్తుందండీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే తిరగబడిపోయి answers ఇచ్చేస్తుందండి.	STATEMENT}
+{\slot
+అంటే	O
+తిరగబడిపోయి	B-symptom
+answers	O
+ఇచ్చేస్తుందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఏమైనా చెప్తే తన మంచికి చెప్తున్నా కూడా తిరగబడిపోయి answers ఇచ్చేస్తుంది	STATEMENT}
+{\slot
+ఏమైనా	O
+చెప్తే	O
+తన	O
+మంచికి	O
+చెప్తున్నా	O
+కూడా	O
+తిరగబడిపోయి	B-symptom
+answers	O
+ఇచ్చేస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కోపం ఎక్కువ ప్రదర్శిస్తుంది.	STATEMENT}
+{\slot
+కోపం	B-symptom
+ఎక్కువ	B-intensity
+ప్రదర్శిస్తుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎమన్నా అంటే, అందరూ నన్నే తిడతారు అంటది.	STATEMENT}
+{\slot
+ఎమన్నా	O
+అంటే,	O
+అందరూ	O
+నన్నే	O
+తిడతారు	O
+అంటది.	O
+}
+
+{\intent	p: ప్రతీ పిల్లల్ని కదిలించి గొడవ పెట్టుకునే mentalityలోకి వచ్చేస్తుందండి.	STATEMENT}
+{\slot
+ప్రతీ	O
+పిల్లల్ని	O
+కదిలించి	O
+గొడవ	B-symptom
+పెట్టుకునే	O
+mentalityలోకి	O
+వచ్చేస్తుందండి.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: irritable behaviour	DIAGNOSIS}
+{\slot
+irritable	B-medical_condition
+behaviour	I-medical_condition
+}
+
+{\intent	p: ఎందుకు ఇలా చేస్తుందో తెలియట్లేదు	STATEMENT}
+{\slot
+ఎందుకు	O
+ఇలా	O
+చేస్తుందో	O
+తెలియట్లేదు	O
+}
+
+{\intent	d: ఏమైనా health problems వచ్చాయా పాపకి, చిన్నప్పుడు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+health	B-medical_condition
+problems	I-medical_condition
+వచ్చాయా	O
+పాపకి,	B-person
+చిన్నప్పుడు	B-time_period
+అమ్మా?	O
+}
+
+{\intent	p: వొళ్ళొచ్చేస్తుందండీ, కొట్టుకుంటే కొట్టుకోండి అన్నట్లు అయిపోతుంది తప్పితే ఆ పాపలో change రావట్లేదు	STATEMENT}
+{\slot
+వొళ్ళొచ్చేస్తుందండీ,	O
+కొట్టుకుంటే	O
+కొట్టుకోండి	O
+అన్నట్లు	O
+అయిపోతుంది	O
+తప్పితే	O
+ఆ	O
+పాపలో	B-person
+change	O
+రావట్లేదు	O
+}
+
+{\intent	d: అదే Maheshwariగారూ, చిన్నపిల్లప్పుడు ఏమైనా problems పాపకు medicines వాడడం ఎక్కువ ఏమైనా health problems వచ్చాయా?	INFO_REQUEST}
+{\slot
+అదే	O
+Maheshwariగారూ,	B-name
+చిన్నపిల్లప్పుడు	B-time_period
+ఏమైనా	O
+problems	O
+పాపకు	B-person
+medicines	B-medicine
+వాడడం	O
+ఎక్కువ	B-intensity
+ఏమైనా	O
+health	B-medical_condition
+problems	I-medical_condition
+వచ్చాయా?	O
+}
+
+{\intent	p: అలాంటిది ఎమి లేదండీ , ఈ మధ్య కాలంలో ఒక 2 years back మంచం మీద నుంచి పడింది	STATEMENT}
+{\slot
+అలాంటిది	O
+ఎమి	O
+లేదండీ	O
+,	O
+ఈ	B-time_period
+మధ్య	I-time_period
+కాలంలో	I-time_period
+ఒక	O
+2	B-time_period
+years	I-time_period
+back	O
+మంచం	O
+మీద	B-location
+నుంచి	O
+పడింది	B-trauma
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే కొంచం hospital కి తీసుకువెళ్ళి scan అవి చేయిస్తే ఎమి లేదు problem బానే ఉంది అన్నారు	STATEMENT}
+{\slot
+అయితే	O
+కొంచం	O
+hospital	B-place
+కి	O
+తీసుకువెళ్ళి	O
+scan	B-mtest
+అవి	O
+చేయిస్తే	O
+ఎమి	O
+లేదు	O
+problem	O
+బానే	B-normal
+ఉంది	O
+అన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం headacheగా ఉంటుంది అంటుందని spects రాసారు	STATEMENT}
+{\slot
+కొంచం	O
+headacheగా	B-symptom
+ఉంటుంది	O
+అంటుందని	O
+spects	O
+రాసారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం schoolలో lines miss చేస్తుందంట	STATEMENT}
+{\slot
+కొంచం	O
+schoolలో	B-place
+lines	B-symptom
+miss	I-symptom
+చేస్తుందంట	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలానే చూపిస్తే spects రాసిచ్చారు sight ఉందని	STATEMENT}
+{\slot
+అలానే	O
+చూపిస్తే	O
+spects	O
+రాసిచ్చారు	O
+sight	B-symptom
+ఉందని	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: కానీ మాట మాటుకూ అసలు వినడం లేదు, ఎందుకు ఇలా చేస్తుందో ఎమో అని దాని చూస్తుంటే మాకే బాధ అనిపిస్తుందండీ.	STATEMENT}
+{\slot
+కానీ	O
+మాట	O
+మాటుకూ	O
+అసలు	O
+వినడం	O
+లేదు,	O
+ఎందుకు	O
+ఇలా	O
+చేస్తుందో	O
+ఎమో	O
+అని	O
+దాని	O
+చూస్తుంటే	O
+మాకే	O
+బాధ	B-symptom
+అనిపిస్తుందండీ.	O
+}
+
+{\intent	d: ఏదైనా problem ఉంటదమ్మా కచ్చితంగా	STATEMENT}
+{\slot
+ఏదైనా	O
+problem	O
+ఉంటదమ్మా	O
+కచ్చితంగా	O
+}
+

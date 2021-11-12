@@ -1,0 +1,418 @@
+{\intent	p1: good evening sir	GREETING}
+{\slot
+good	O
+evening	O
+sir	O
+}
+
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p1: Madeeha	ANSWER}
+{\slot
+Madeeha	B-name
+}
+
+{\intent	d: आ?	SNU}
+{\slot
+आ?	O
+}
+
+{\intent	p1: Madeeha Falaq	ANSWER}
+{\slot
+Madeeha	B-name
+Falaq	I-name
+}
+
+{\intent	d: Madeeha Falaq	ACK}
+{\slot
+Madeeha	B-name
+Falaq	I-name
+}
+
+{\intent	p2: आप के student है sir इन्हो	STATEMENT}
+{\slot
+आप	O
+के	O
+student	O
+है	O
+sir	O
+इन्हो	O
+}
+
+{\intent	p2: आप के student	ACK}
+{\slot
+आप	O
+के	O
+student	O
+}
+
+{\intent	p2: operation करे नहीं	STATEMENT}
+{\slot
+operation	B-treatment
+करे	O
+नहीं	O
+}
+
+{\intent	d: age	INFO_REQUEST}
+{\slot
+age	O
+}
+
+{\intent	d: age बोलो ना	REPEAT_REPHRASE}
+{\slot
+age	O
+बोलो	O
+ना	O
+}
+
+{\intent	p1: 6.5	ANSWER}
+{\slot
+6.5	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p1: रात में बुखार थी. वो side में ऐसा दर्द दे रहा बोले तो	STATEMENT}
+{\slot
+रात	B-time_period
+में	O
+बुखार	B-symptom
+थी.	O
+वो	O
+side	B-location
+में	O
+ऐसा	O
+दर्द	B-symptom
+दे	O
+रहा	O
+बोले	O
+तो	O
+}
+
+{\intent	p2: वो परसो को लड़के को लेके आई थी ना sir में mumpsके	STATEMENT}
+{\slot
+वो	O
+परसो	B-time_period
+को	O
+लड़के	B-person
+को	O
+लेके	O
+आई	O
+थी	O
+ना	O
+sir	O
+में	O
+mumpsके	B-medical_condition
+}
+
+{\intent	d: आ	ACTION_DIR}
+{\slot
+आ	O
+}
+
+{\intent	d: आ बोलो	ACTION_DIR}
+{\slot
+आ	O
+बोलो	O
+}
+
+{\intent	d: नहीं रोना में कुछ भी नहीं बोल्तुन	STATEMENT}
+{\slot
+नहीं	O
+रोना	O
+में	O
+कुछ	O
+भी	O
+नहीं	O
+बोल्तुन	O
+}
+
+{\intent	d: आ	ACTION_DIR}
+{\slot
+आ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: बुखार कब से	INFO_REQUEST}
+{\slot
+बुखार	B-symptom
+कब	O
+से	O
+}
+
+{\intent	p1: सुबह से	ANSWER}
+{\slot
+सुबह	B-time_period
+से	O
+}
+
+{\intent	p2: मतलब रात मैं थोड़ा था. यह सूजन आ रही थी.	STATEMENT}
+{\slot
+मतलब	O
+रात	B-time_period
+मैं	O
+थोड़ा	B-intensity
+था.	O
+यह	O
+सूजन	B-symptom
+आ	O
+रही	O
+थी.	O
+}
+
+{\intent	p2: आप कानों एक बार check करो sir.	ACTION_DIR}
+{\slot
+आप	O
+कानों	B-body_part
+एक	O
+बार	O
+check	O
+करो	O
+sir.	O
+}
+
+{\intent	p1: जी सर दर्द दे रहा	STATEMENT}
+{\slot
+जी	O
+सर	B-body_part
+दर्द	B-symptom
+दे	O
+रहा	O
+}
+
+{\intent	p2: मतलब थोड़ा मैल जैसे दिख रहा	STATEMENT}
+{\slot
+मतलब	O
+थोड़ा	O
+मैल	B-symptom
+जैसे	O
+दिख	O
+रहा	O
+}
+
+{\intent	p2: में तो हाथ नहीं लगा रही	STATEMENT}
+{\slot
+में	O
+तो	O
+हाथ	B-body_part
+नहीं	O
+लगा	O
+रही	O
+}
+
+{\intent	d: नक्को अभी नक्को एक 5 दिन के बाद लेके आ वो कान साफ़ करेंगे	STATEMENT}
+{\slot
+नक्को	O
+अभी	B-time_period
+नक्को	O
+एक	O
+5	B-time_period
+दिन	I-time_period
+के	O
+बाद	B-time_period
+लेके	O
+आ	O
+वो	O
+कान	B-body_part
+साफ़	B-treatment
+करेंगे	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p2: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p2: operation हो के है ना कुछ नहीं होता कान साफ़ करे तो?	INFO_REQUEST}
+{\slot
+operation	B-treatment
+हो	O
+के	O
+है	O
+ना	O
+कुछ	O
+नहीं	O
+होता	O
+कान	B-body_part
+साफ़	B-treatment
+करे	O
+तो?	O
+}
+
+{\intent	d: आ कुछ नहीं होता ,	STATEMENT}
+{\slot
+आ	O
+कुछ	O
+नहीं	O
+होता	O
+,	O
+}
+
+{\intent	p2: एक ball डाले तो और एक ball वैसे ही है	STATEMENT}
+{\slot
+एक	O
+ball	O
+डाले	O
+तो	O
+और	O
+एक	O
+ball	O
+वैसे	O
+ही	O
+है	O
+}
+
+{\intent	d: रहने दो मैं साफ़ करतू	STATEMENT}
+{\slot
+रहने	O
+दो	O
+मैं	O
+साफ़	B-treatment
+करतू	O
+}
+
+{\intent	d: अभी नक्को दर्द कम होने के बाद करतू	STATEMENT}
+{\slot
+अभी	B-time_period
+नक्को	B-negative
+दर्द	B-symptom
+कम	B-normal
+होने	O
+के	O
+बाद	B-time_period
+करतू	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: नाक की दवा	STATEMENT}
+{\slot
+नाक	B-body_part
+की	O
+दवा	B-medicine
+}
+
+{\intent	d: उम्र बोलो इनका 6.5 नहीं	ANSWER}
+{\slot
+उम्र	B-time_period
+बोलो	O
+इनका	O
+6.5	B-age
+नहीं	O
+}
+
+{\intent	p2: वो pediatrics, बच्चोंके doctor रहते नहीं sir	STATEMENT}
+{\slot
+वो	O
+pediatrics,	O
+बच्चोंके	O
+doctor	B-medical_professional
+रहते	O
+नहीं	O
+sir	O
+}
+
+{\intent	d: um	ACK}
+{\slot
+um	O
+}
+
+{\intent	p2: उनके पास लेके गई थी में सुबह में fever ज़्यादा है बोल के	STATEMENT}
+{\slot
+उनके	O
+पास	O
+लेके	O
+गई	O
+थी	O
+में	O
+सुबह	B-time_period
+में	O
+fever	B-symptom
+ज़्यादा	B-intensity
+है	O
+बोल	O
+के	O
+}
+
+{\intent	p2: उन्हों medicines लिखे	STATEMENT}
+{\slot
+उन्हों	O
+medicines	B-medicine
+लिखे	O
+}
+
+{\intent	p2: फिर से मेरेको doubt आया, operation करे ना फिर उन्हों कोई दवा देंगे	STATEMENT}
+{\slot
+फिर	O
+से	O
+मेरेको	O
+doubt	O
+आया,	O
+operation	B-treatment
+करे	O
+ना	O
+फिर	O
+उन्हों	O
+कोई	O
+दवा	B-medicine
+देंगे	O
+}
+
+{\intent	d: अभी दवा लिए वो	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+दवा	B-medicine
+लिए	O
+वो	O
+}
+
+{\intent	p1: नहीं नहीं	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं	B-negative
+}
+
+{\intent	p2: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: इन्हो syrup पीते tablets लेते?	INFO_REQUEST}
+{\slot
+इन्हो	O
+syrup	B-medicine
+पीते	O
+tablets	B-medicine
+लेते?	O
+}
+
+{\intent	p1: syrup	ANSWER}
+{\slot
+syrup	B-medicine
+}
+

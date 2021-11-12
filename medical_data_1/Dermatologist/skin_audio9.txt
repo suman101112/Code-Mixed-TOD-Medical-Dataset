@@ -1,0 +1,176 @@
+{\intent	p: pigmentation problem అండి, pregnancyలో వచ్చింది , ఇంకా పోవట్లేదు 1 year అవుతుంది	STATEMENT}
+{\slot
+pigmentation	B-symptom
+problem	I-symptom
+అండి,	O
+pregnancyలో	B-time_period
+వచ్చింది	O
+,	O
+ఇంకా	B-symptom
+పోవట్లేదు	I-symptom
+1	B-time_period
+year	I-time_period
+అవుతుంది	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీరు ఏం వాడుతున్నారు?	INFO_REQUEST}
+{\slot
+మీరు	O
+ఏం	O
+వాడుతున్నారు?	O
+}
+
+{\intent	p: ఏ doctorని consult అయినా కూడా వేరే ointment రాస్తున్నారు, వెళ్ళినప్పుడల్లా ఒక్కొక్క ointment మారుస్తున్నారు గానీ, ఒక soap ఇస్తున్నారు, pills ఇస్తున్నారు గానీ తగ్గట్లేదు,	STATEMENT}
+{\slot
+ఏ	O
+doctorని	B-medical_professional
+consult	O
+అయినా	O
+కూడా	O
+వేరే	O
+ointment	B-treatment
+రాస్తున్నారు,	I-treatment
+వెళ్ళినప్పుడల్లా	B-time_period
+ఒక్కొక్క	B-treatment
+ointment	I-treatment
+మారుస్తున్నారు	I-treatment
+గానీ,	O
+ఒక	O
+soap	B-treatment
+ఇస్తున్నారు,	I-treatment
+pills	B-treatment
+ఇస్తున్నారు	I-treatment
+గానీ	O
+తగ్గట్లేదు,	B-symptom
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అంటే రావడానికి pregnancyలో pills తీసుకోవడం వల్లే నా?	INFO_REQUEST}
+{\slot
+అంటే	O
+రావడానికి	O
+pregnancyలో	B-time_period
+pills	B-treatment
+తీసుకోవడం	I-treatment
+వల్లే	O
+నా?	O
+}
+
+{\intent	p: మళ్ళి ఏమైనా age problem ఆ? లేకపోతే hormones deficiency ఆ? లేకపోతే ఇంకేదైనా problem ఆ అని?	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+ఏమైనా	O
+age	B-symptom
+problem	I-symptom
+ఆ?	O
+లేకపోతే	O
+hormones	B-medical_condition
+deficiency	I-medical_condition
+ఆ?	O
+లేకపోతే	O
+ఇంకేదైనా	O
+problem	O
+ఆ	O
+అని?	O
+}
+
+{\intent	d: umm hmm	ACK}
+{\slot
+umm	O
+hmm	O
+}
+
+{\intent	d: good question	APPRECIATE}
+{\slot
+good	O
+question	O
+}
+
+{\intent	d: చాలా మందికి pigmentation అంటారు	MEDICAL_EXPLANATION}
+{\slot
+చాలా	O
+మందికి	O
+pigmentation	B-symptom
+అంటారు	O
+}
+
+{\intent	d: pregnancyలో రావడాని melasma అంటారు, అది ముక్కు భాగంలో, high cheekbones లోని, ఈ కింది గడ్డం దెగ్గర, నుదుటి భాగంలోని ఈ మచ్చలు ఏర్పడుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+pregnancyలో	B-time_period
+రావడాని	O
+melasma	B-symptom
+అంటారు,	O
+అది	O
+ముక్కు	B-body_part
+భాగంలో,	I-body_part
+high	B-body_part
+cheekbones	I-body_part
+లోని,	I-body_part
+ఈ	B-body_part
+కింది	I-body_part
+గడ్డం	I-body_part
+దెగ్గర,	I-body_part
+నుదుటి	B-body_part
+భాగంలోని	I-body_part
+ఈ	B-symptom
+మచ్చలు	I-symptom
+ఏర్పడుతాయి.	I-symptom
+}
+
+{\intent	d: దానికి as madam చెప్పినట్లు hormonal imbalance.	STATEMENT}
+{\slot
+దానికి	O
+as	O
+madam	O
+చెప్పినట్లు	O
+hormonal	B-symptom
+imbalance.	I-symptom
+}
+
+{\intent	d: pregnancyలో hormones అనేవి అత్యధికమైన variations కనపడుతా ఉంటాయి. so దానికి ageతో నిమిత్తం లేదు.	MEDICAL_EXPLANATION}
+{\slot
+pregnancyలో	B-time_period
+hormones	B-liquid_body_substance
+అనేవి	O
+అత్యధికమైన	B-symptom
+variations	I-symptom
+కనపడుతా	I-symptom
+ఉంటాయి.	I-symptom
+so	O
+దానికి	O
+ageతో	O
+నిమిత్తం	O
+లేదు.	O
+}
+
+{\intent	d: 2, ఎండ, UV radiation వల్ల కూడా ఈ pigmentation melasma కావొచ్చు, ఈ pigmentation ఏదైతే చెప్తున్నారో అవి కనపడే అవకాశాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+2,	O
+ఎండ,	O
+UV	O
+radiation	O
+వల్ల	O
+కూడా	O
+ఈ	O
+pigmentation	B-symptom
+melasma	I-symptom
+కావొచ్చు,	O
+ఈ	O
+pigmentation	B-symptom
+ఏదైతే	O
+చెప్తున్నారో	O
+అవి	O
+కనపడే	O
+అవకాశాలు	O
+ఉంటాయి.	O
+}
+

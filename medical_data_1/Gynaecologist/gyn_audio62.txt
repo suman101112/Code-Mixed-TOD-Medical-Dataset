@@ -1,0 +1,368 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: ya నమస్తే అండి.	GREETING}
+{\slot
+ya	O
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: madam నాకు పెళ్ళై 2nd year madam 1.5 year అయిపోయింది	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+పెళ్ళై	B-marital_status
+2nd	B-frequency
+year	B-time_period
+madam	O
+1.5	B-time_period
+year	I-time_period
+అయిపోయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 1st yearలో 2 times abortion అయింది madam	STATEMENT}
+{\slot
+1st	B-frequency
+yearలో	B-time_period
+2	B-frequency
+times	I-frequency
+abortion	B-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ నాకు first నుంచే irregular periods, PCOD అని చెప్పేసి చెప్పారు	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+first	O
+నుంచే	O
+irregular	B-symptom
+periods,	B-bodily_process
+PCOD	B-medical_condition
+అని	O
+చెప్పేసి	O
+చెప్పారు	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: 1st time abortion అయినప్పుడు normalగానే pregnancy వచ్చింది madam	STATEMENT}
+{\slot
+1st	B-frequency
+time	I-frequency
+abortion	B-symptom
+అయినప్పుడు	O
+normalగానే	B-normal
+pregnancy	B-bodily_process
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: marriage అయినా 2nd monthకే pregnancy అందింది అది 3rd month వచ్చేసేసరికి pregnancy పోయింది madam	STATEMENT}
+{\slot
+marriage	B-marital_status
+అయినా	O
+2nd	B-frequency
+monthకే	B-time_period
+pregnancy	B-bodily_process
+అందింది	O
+అది	O
+3rd	B-frequency
+month	B-time_period
+వచ్చేసేసరికి	O
+pregnancy	B-bodily_process
+పోయింది	B-negative
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: 2nd time కూడా మళ్ళి lotrisol tablets అనేవి use చేస్తే pregnancy వచ్చింది కానీ అది కూడా పోయింది	STATEMENT}
+{\slot
+2nd	B-frequency
+time	B-time_period
+కూడా	O
+మళ్ళి	O
+lotrisol	B-medicine
+tablets	I-medicine
+అనేవి	O
+use	O
+చేస్తే	O
+pregnancy	B-bodily_process
+వచ్చింది	B-positive
+కానీ	O
+అది	O
+కూడా	O
+పోయింది	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి doctorగారు ఏంటో testలు చేస్తే దాంట్లో APTT level 41 అని ఉంది madam	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+doctorగారు	B-medical_professional
+ఏంటో	O
+testలు	B-mtest
+చేస్తే	O
+దాంట్లో	O
+APTT	B-mtest
+level	I-mtest
+41	B-mtest_value
+అని	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దేనివల్ల మీకు ఏమో pregnancies, miscarriages అయిపోతున్నాయి అని చెప్పేసి మళ్ళి pregnancy plan కోసం medicines ఇచ్చారు	STATEMENT}
+{\slot
+దేనివల్ల	O
+మీకు	O
+ఏమో	O
+pregnancies,	B-bodily_process
+miscarriages	B-symptom
+అయిపోతున్నాయి	O
+అని	O
+చెప్పేసి	O
+మళ్ళి	O
+pregnancy	B-bodily_process
+plan	O
+కోసం	O
+medicines	B-medicine
+ఇచ్చారు	O
+}
+
+{\intent	p: Fertyl, Digestron medicines	STATEMENT}
+{\slot
+Fertyl,	B-medicine
+Digestron	B-medicine
+medicines	I-medicine
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదే ఇప్పుడు ఏదన్నా	STATEMENT}
+{\slot
+అదే	O
+ఇప్పుడు	O
+ఏదన్నా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: problem ఏంటి madam అసల్ ?	INFO_REQUEST}
+{\slot
+problem	O
+ఏంటి	O
+madam	O
+అసల్	O
+?	O
+}
+
+{\intent	d: ya మీరు ఏమన్నా మేనరికం పెళ్ళా అండి?	INFO_REQUEST}
+{\slot
+ya	O
+మీరు	O
+ఏమన్నా	O
+మేనరికం	B-familal
+పెళ్ళా	O
+అండి?	O
+}
+
+{\intent	p: ఆ లేదండీ ఏం లేదు	ANSWER}
+{\slot
+ఆ	O
+లేదండీ	B-negative
+ఏం	O
+లేదు	O
+}
+
+{\intent	d: దూరమేనా?	INFO_REQUEST}
+{\slot
+దూరమేనా?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఇట్ల first abortions అయ్యాయి అంటున్నారు కదా అప్పుడు అయినప్పుడు ఆ productను ఏమైనా examinationకి ఏమైనా పంపించారా అండి?	INFO_REQUEST}
+{\slot
+ఇట్ల	O
+first	O
+abortions	B-symptom
+అయ్యాయి	O
+అంటున్నారు	O
+కదా	O
+అప్పుడు	B-time_period
+అయినప్పుడు	O
+ఆ	O
+productను	O
+ఏమైనా	O
+examinationకి	B-mtest
+ఏమైనా	O
+పంపించారా	O
+అండి?	O
+}
+
+{\intent	d: test కి ఏమైనా పంపించారా?	REPEAT_REPHRASE}
+{\slot
+test	B-mtest
+కి	O
+ఏమైనా	O
+పంపించారా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: లేదు, ok	ACK}
+{\slot
+లేదు,	B-negative
+ok	O
+}
+
+{\intent	d: and దీని తర్వాత మళ్ళి tube test లాంటిది ఏమైనా అయ్యిందా అండి మీకు	INFO_REQUEST}
+{\slot
+and	O
+దీని	O
+తర్వాత	B-time_period
+మళ్ళి	O
+tube	B-body_part
+test	B-mtest
+లాంటిది	O
+ఏమైనా	O
+అయ్యిందా	O
+అండి	O
+మీకు	O
+}
+
+{\intent	p: ఆ ఏం చేయలేదు, 2 సార్లు normalగానే నీకు pregnancies వచ్చాయి కదా ని గర్భసంచి మొత్తం బాగానే ఉంది అని చెప్పేసి	ANSWER}
+{\slot
+ఆ	O
+ఏం	O
+చేయలేదు,	B-negative
+2	B-frequency
+సార్లు	I-frequency
+normalగానే	B-normal
+నీకు	O
+pregnancies	B-bodily_process
+వచ్చాయి	O
+కదా	O
+ని	O
+గర్భసంచి	B-body_part
+మొత్తం	O
+బాగానే	B-normal
+ఉంది	O
+అని	O
+చెప్పేసి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చాలా రకాల testలు చేసారు దాంట్లో APTT 41 ఉంది అని చెప్పారు madam	STATEMENT}
+{\slot
+చాలా	O
+రకాల	O
+testలు	B-mtest
+చేసారు	O
+దాంట్లో	O
+APTT	B-mtest
+41	B-mtest_value
+ఉంది	O
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	d: ఇదేంటంటే అండి ఇప్పుడు 2 times abortions అయింది అని అంటున్నారు కదా	STATEMENT}
+{\slot
+ఇదేంటంటే	O
+అండి	O
+ఇప్పుడు	O
+2	B-frequency
+times	I-frequency
+abortions	B-symptom
+అయింది	O
+అని	O
+అంటున్నారు	O
+కదా	O
+}
+
+{\intent	d: so మీరు మీ husband ఒకసారి Karyotyping test	STATEMENT}
+{\slot
+so	O
+మీరు	O
+మీ	O
+husband	B-familal
+ఒకసారి	O
+Karyotyping	B-mtest
+test	I-mtest
+}
+

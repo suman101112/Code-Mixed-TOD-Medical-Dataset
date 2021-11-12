@@ -1,0 +1,377 @@
+{\intent	p: నేను ఒక 1 year, దెగ్గర దెగ్గర ఒక 1 year madam	STATEMENT}
+{\slot
+నేను	O
+ఒక	O
+1	B-time_period
+year,	I-time_period
+దెగ్గర	O
+దెగ్గర	O
+ఒక	O
+1	B-time_period
+year	I-time_period
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 1 year నుంచి నేను బరువు తగ్గట్లేదు, కానీ నాకు శరిరం మీద కండ అనేది లేదు madam బక్కగా ముఖం మీద ఏదో అన్నం తినకపోతే face ఎలా ఉంటుంది అలా ఉండడం	STATEMENT}
+{\slot
+1	B-time_period
+year	I-time_period
+నుంచి	O
+నేను	O
+బరువు	B-symptom
+తగ్గట్లేదు,	I-symptom
+కానీ	O
+నాకు	O
+శరిరం	B-body_part
+మీద	B-location
+కండ	B-body_part
+అనేది	O
+లేదు	B-negative
+madam	O
+బక్కగా	B-symptom
+ముఖం	B-body_part
+మీద	B-location
+ఏదో	O
+అన్నం	B-food_substance
+తినకపోతే	B-symptom
+face	B-body_part
+ఎలా	O
+ఉంటుంది	B-time_period
+అలా	O
+ఉండడం	O
+}
+
+{\intent	p: బాగానే తింటున్నా కూడా బరువు అంతే ఉంటుంది కానీ	STATEMENT}
+{\slot
+బాగానే	B-normal
+తింటున్నా	B-bodily_process
+కూడా	O
+బరువు	B-bm
+అంతే	O
+ఉంటుంది	O
+కానీ	O
+}
+
+{\intent	p: ఏం problems లేవు కానీ madam మామూలుగా సన్నగా అవుతున్నా madam మామూలుగా నేనే	STATEMENT}
+{\slot
+ఏం	O
+problems	O
+లేవు	O
+కానీ	O
+madam	O
+మామూలుగా	O
+సన్నగా	B-symptom
+అవుతున్నా	I-symptom
+madam	O
+మామూలుగా	O
+నేనే	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: పరిక్షలు ఏమైనా చేయించారా అండి?	INFO_REQUEST}
+{\slot
+పరిక్షలు	O
+ఏమైనా	O
+చేయించారా	O
+అండి?	O
+}
+
+{\intent	p: సన్నగా అవుతున్నా madam. అంటే face లో సన్నగా అన్నమాట. బరువులో మళ్ళి same ఉన్నాను.	STATEMENT}
+{\slot
+సన్నగా	B-symptom
+అవుతున్నా	I-symptom
+madam.	O
+అంటే	O
+face	B-body_part
+లో	O
+సన్నగా	B-symptom
+అన్నమాట.	O
+బరువులో	B-bm
+మళ్ళి	O
+same	B-normal
+ఉన్నాను.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sugar test చేసారు నాకు ఎన్నో testలు చేసారు అన్నీ testలు చేసారు కానీ నాకు ఏం కాలేదు.	ANSWER}
+{\slot
+sugar	B-medical_condition
+test	B-mtest
+చేసారు	O
+నాకు	O
+ఎన్నో	O
+testలు	O
+చేసారు	O
+అన్నీ	O
+testలు	O
+చేసారు	O
+కానీ	O
+నాకు	O
+ఏం	O
+కాలేదు.	O
+}
+
+{\intent	d: thyroid కూడా చేయించారా అండి?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+కూడా	O
+చేయించారా	O
+అండి?	O
+}
+
+{\intent	p: madam?	SNU}
+{\slot
+madam?	O
+}
+
+{\intent	d: thyroid పరిక్ష కూడా చేయించారా ?	REPEAT_REPHRASE}
+{\slot
+thyroid	B-medical_condition
+పరిక్ష	B-mtest
+కూడా	O
+చేయించారా	O
+?	O
+}
+
+{\intent	p: ఆ thyroid చేయించినారు madam . అంటే అంత సన్నగా ఏం కాలేదు కాకపోతే lightగా	ANSWER}
+{\slot
+ఆ	O
+thyroid	B-medical_condition
+చేయించినారు	O
+madam	O
+.	O
+అంటే	O
+అంత	O
+సన్నగా	B-symptom
+ఏం	O
+కాలేదు	B-negative
+కాకపోతే	O
+lightగా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: face మీద,	ABANDONED}
+{\slot
+face	B-body_part
+మీద,	B-location
+}
+
+{\intent	p: బాగానే తింట madam. బాగానే తింట కానీ అట్ల ఉన్న madam.	STATEMENT}
+{\slot
+బాగానే	B-normal
+తింట	B-bodily_process
+madam.	O
+బాగానే	B-normal
+తింట	B-bodily_process
+కానీ	O
+అట్ల	O
+ఉన్న	O
+madam.	O
+}
+
+{\intent	d: loose motions ఏమన్నా అవుతున్నాయా అండి. loose motions అవ్వడం కానీ? కాలేయ సంబంధిత వ్యాధులు ఏమైనా ఉన్నాయా అండి?	INFO_REQUEST}
+{\slot
+loose	B-symptom
+motions	I-symptom
+ఏమన్నా	O
+అవుతున్నాయా	O
+అండి.	O
+loose	B-symptom
+motions	I-symptom
+అవ్వడం	O
+కానీ?	O
+కాలేయ	B-body_part
+సంబంధిత	O
+వ్యాధులు	B-medical_condition
+ఏమైనా	O
+ఉన్నాయా	O
+అండి?	O
+}
+
+{\intent	p: madam?	SNU}
+{\slot
+madam?	O
+}
+
+{\intent	d: motions ఎక్కువ అవ్వడం గానీ? తినగానే motion కి వెళ్ళడం అట్ల ఏమైనా అవుతుందా?	REPEAT_REPHRASE}
+{\slot
+motions	B-symptom
+ఎక్కువ	B-intensity
+అవ్వడం	O
+గానీ?	O
+తినగానే	O
+motion	B-symptom
+కి	O
+వెళ్ళడం	O
+అట్ల	O
+ఏమైనా	O
+అవుతుందా?	O
+}
+
+{\intent	p: ఆహా. motions కి వెళ్ళే ఇబ్బంది ఏం లేదు. అంతా బానే ఉంది. అంతా clearగానే ఉన్న.	ANSWER}
+{\slot
+ఆహా.	O
+motions	B-symptom
+కి	O
+వెళ్ళే	O
+ఇబ్బంది	B-symptom
+ఏం	O
+లేదు.	B-negative
+అంతా	O
+బానే	B-normal
+ఉంది.	O
+అంతా	O
+clearగానే	B-normal
+ఉన్న.	O
+}
+
+{\intent	p: కాకపోతే right leg లో తుంటి భాగంలో ఉంది కొంచం నొప్పి వస్తుంది సన్నగా.	STATEMENT}
+{\slot
+కాకపోతే	O
+right	B-location
+leg	B-body_part
+లో	O
+తుంటి	B-body_part
+భాగంలో	B-location
+ఉంది	O
+కొంచం	B-intensity
+నొప్పి	B-symptom
+వస్తుంది	O
+సన్నగా.	O
+}
+
+{\intent	d: ok. actualగా మనకు weight put on కాకపోవడానికి reasons ఏంటంటే liver కాలేయ సంబంధిత వ్యాధులు ఉన్న. లేకపోతే వంశపరంగా pentalist ఉన్న. hyperthyroidism ఉన్న గానీ లేకపోతే diabetes ఉన్న కూడా వచ్చే అవకాశాలు ఉంటాయి అండి.	STATEMENT}
+{\slot
+ok.	O
+actualగా	O
+మనకు	O
+weight	O
+put	O
+on	O
+కాకపోవడానికి	O
+reasons	O
+ఏంటంటే	O
+liver	B-body_part
+కాలేయ	B-body_part
+సంబంధిత	O
+వ్యాధులు	B-medical_condition
+ఉన్న.	O
+లేకపోతే	O
+వంశపరంగా	O
+pentalist	B-medical_condition
+ఉన్న.	O
+hyperthyroidism	B-medical_condition
+ఉన్న	O
+గానీ	O
+లేకపోతే	O
+diabetes	B-medical_condition
+ఉన్న	O
+కూడా	O
+వచ్చే	O
+అవకాశాలు	O
+ఉంటాయి	O
+అండి.	O
+}
+
+{\intent	d: irritable bowel syndromes లాంటి disorders ఏమన్నా ఉన్న కూడా. అంటే digestion problem అప్పుడు absorption ఏమైనా defect ఉన్న కూడా ఇలాంటి problem వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+irritable	B-medical_condition
+bowel	I-medical_condition
+syndromes	I-medical_condition
+లాంటి	O
+disorders	O
+ఏమన్నా	O
+ఉన్న	O
+కూడా.	O
+అంటే	O
+digestion	B-symptom
+problem	I-symptom
+అప్పుడు	B-time_period
+absorption	B-bodily_process
+ఏమైనా	O
+defect	B-symptom
+ఉన్న	O
+కూడా	O
+ఇలాంటి	O
+problem	O
+వస్తుంది.	O
+}
+
+{\intent	d: చాలా మంది తినగానే motion కి వెళ్ళే అవకాశాలు ఎక్కువ ఉంటాయి. దానివల్ల ఏంటంటే 4 steps of digestion అయ్యేది absorption level వెళ్ళకుండా, complete digestion అవ్వకుండా improper digestion along with motion వెళ్ళే chances ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+చాలా	O
+మంది	O
+తినగానే	B-bodily_process
+motion	B-symptom
+కి	O
+వెళ్ళే	O
+అవకాశాలు	O
+ఎక్కువ	B-intensity
+ఉంటాయి.	O
+దానివల్ల	O
+ఏంటంటే	O
+4	O
+steps	O
+of	O
+digestion	B-bodily_process
+అయ్యేది	O
+absorption	B-bodily_process
+level	O
+వెళ్ళకుండా,	O
+complete	B-bodily_process
+digestion	I-bodily_process
+అవ్వకుండా	O
+improper	B-symptom
+digestion	I-symptom
+along	O
+with	O
+motion	B-symptom
+వెళ్ళే	O
+chances	O
+ఉంటాయి.	O
+}
+
+{\intent	d: they won't put on weight. మీరు endoscopy తీయించిన, colonoscopy తీయించించిన, ఎలాంటి పరిక్షలు చేయించిన ఏం problem ఉండదు అండి. maximum ఈ problem అలానే ఉంటుంది అనుకుంటాను.	STATEMENT}
+{\slot
+they	O
+won't	O
+put	O
+on	O
+weight.	B-bm
+మీరు	O
+endoscopy	B-mtest
+తీయించిన,	O
+colonoscopy	B-mtest
+తీయించించిన,	O
+ఎలాంటి	O
+పరిక్షలు	O
+చేయించిన	O
+ఏం	O
+problem	O
+ఉండదు	O
+అండి.	O
+maximum	O
+ఈ	O
+problem	O
+అలానే	O
+ఉంటుంది	O
+అనుకుంటాను.	O
+}
+

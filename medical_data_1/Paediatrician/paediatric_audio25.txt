@@ -1,0 +1,196 @@
+{\intent	p1: నిన్న మొన్న fever వచ్చింది.	STATEMENT}
+{\slot
+నిన్న	B-time_period
+మొన్న	B-time_period
+fever	B-symptom
+వచ్చింది.	O
+}
+
+{\intent	p1: morning మంచిగానే ఉంది sir	STATEMENT}
+{\slot
+morning	B-time_period
+మంచిగానే	B-normal
+ఉంది	O
+sir	O
+}
+
+{\intent	p1: అయితే fever వచ్చి మొస తీసుకోవడం రాకుండా ఏడుస్తున్నాడు	STATEMENT}
+{\slot
+అయితే	O
+fever	B-symptom
+వచ్చి	O
+మొస	B-medical_condition
+తీసుకోవడం	O
+రాకుండా	B-negative
+ఏడుస్తున్నాడు	B-symptom
+}
+
+{\intent	d: మొన్న ఏదో గడ్డ కట్టింది అని వచ్చారు కదా	INFO_REQUEST}
+{\slot
+మొన్న	B-time_period
+ఏదో	O
+గడ్డ	B-symptom
+కట్టింది	O
+అని	O
+వచ్చారు	O
+కదా	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: జ్వరము	STATEMENT}
+{\slot
+జ్వరము	B-symptom
+}
+
+{\intent	d: జ్వరం ఇప్పుడు తగ్గిందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఇప్పుడు	B-time_period
+తగ్గిందా?	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	d: ఇప్పుడు DPT తో వచ్చే జ్వరం 3 రోజుల కంటే ఎక్కువ రాదు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+DPT	B-medicine
+తో	O
+వచ్చే	O
+జ్వరం	B-symptom
+3	B-time_period
+రోజుల	I-time_period
+కంటే	O
+ఎక్కువ	B-intensity
+రాదు	O
+}
+
+{\intent	d: ఇవాళ ఎన్నో రోజు DPT injection ఇప్పించి	STATEMENT}
+{\slot
+ఇవాళ	O
+ఎన్నో	O
+రోజు	B-time_period
+DPT	B-medicine
+injection	I-medicine
+ఇప్పించి	O
+}
+
+{\intent	p: 12th కి ఇప్పించాం sir.	ANSWER}
+{\slot
+12th	B-time_period
+కి	O
+ఇప్పించాం	O
+sir.	O
+}
+
+{\intent	d: 24th అంటే 12 రోజులు ఇవాళ	STATEMENT}
+{\slot
+24th	B-time_period
+అంటే	O
+12	B-time_period
+రోజులు	I-time_period
+ఇవాళ	O
+}
+
+{\intent	d: జ్వరం ఒకటేనా ఇంకా ఏమైనా problem ఉందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఒకటేనా	O
+ఇంకా	O
+ఏమైనా	O
+problem	O
+ఉందా?	O
+}
+
+{\intent	p1: గురకగా ఉంది. దగ్గు వస్తుంది. మొస తీసుకోవడం ఇబ్బంది అవుతుంది బాగా జ్వరం వచ్చి temperature ఇట్ల ఎక్కువైపోతుంది	ANSWER}
+{\slot
+గురకగా	B-bodily_process
+ఉంది.	O
+దగ్గు	B-symptom
+వస్తుంది.	O
+మొస	B-medical_condition
+తీసుకోవడం	B-bodily_process
+ఇబ్బంది	B-symptom
+అవుతుంది	O
+బాగా	B-intensity
+జ్వరం	B-symptom
+వచ్చి	O
+temperature	B-symptom
+ఇట్ల	O
+ఎక్కువైపోతుంది	B-intensity
+}
+
+{\intent	d: ఇప్పుడు అయితే 99 ఉంది కదా	STATEMENT}
+{\slot
+ఇప్పుడు	O
+అయితే	O
+99	B-mtest_value
+ఉంది	O
+కదా	O
+}
+
+{\intent	p1: అయితే కొద్దిసేపు తగ్గుతుంది sir	STATEMENT}
+{\slot
+అయితే	O
+కొద్దిసేపు	O
+తగ్గుతుంది	B-normal
+sir	O
+}
+
+{\intent	d: ఎన్నో రోజూ జ్వరం రాబట్టి?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+రోజూ	B-time_period
+జ్వరం	B-symptom
+రాబట్టి?	O
+}
+
+{\intent	p1: 3, Saturday	ANSWER}
+{\slot
+3,	B-quantity
+Saturday	B-time_period
+}
+
+{\intent	p1: ఇంకెవరిని ఎత్తుకోనివ్వడం లేదు	STATEMENT}
+{\slot
+ఇంకెవరిని	O
+ఎత్తుకోనివ్వడం	O
+లేదు	O
+}
+
+{\intent	d: first nebulizer పెట్టించుకోండి	ACTION_DIR}
+{\slot
+first	B-quantity
+nebulizer	B-medical_therapy
+పెట్టించుకోండి	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: తర్వాత ఈ test చేయించి నాకు చూపించండి.	ACTION_DIR}
+{\slot
+తర్వాత	B-time_period
+ఈ	O
+test	B-mtest
+చేయించి	O
+నాకు	O
+చూపించండి.	O
+}
+
+{\intent	p: thank you sir.	APPRECIATE}
+{\slot
+thank	O
+you	O
+sir.	O
+}
+

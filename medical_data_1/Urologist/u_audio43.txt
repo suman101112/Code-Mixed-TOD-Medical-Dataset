@@ -1,0 +1,221 @@
+{\intent	d: చెప్పండి పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Harshad	ANSWER}
+{\slot
+Harshad	B-name
+}
+
+{\intent	d: చెప్పండి ఇబ్బంది ఏం ఏం ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఇబ్బంది	O
+ఏం	O
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: మూత్రం ఆగి పోతుంది sir.	ANSWER}
+{\slot
+మూత్రం	B-body_substance
+ఆగి	B-symptom
+పోతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: pipe ఉంది pipe పెట్టిండ్రు	STATEMENT}
+{\slot
+pipe	B-medical_apparatus
+ఉంది	B-time_period
+pipe	B-medical_apparatus
+పెట్టిండ్రు	O
+}
+
+{\intent	d: pipe ఉన్నదా ఇప్పుడు	INFO_REQUEST}
+{\slot
+pipe	B-medical_apparatus
+ఉన్నదా	O
+ఇప్పుడు	O
+}
+
+{\intent	p: ఉన్నది sir ఇగొ	STATEMENT}
+{\slot
+ఉన్నది	O
+sir	O
+ఇగొ	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయింది pipe ఏసీ	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది	O
+pipe	B-medical_apparatus
+ఏసీ	O
+}
+
+{\intent	p: 15 రోజులు అవుతుంది.	ANSWER}
+{\slot
+15	B-time_period
+రోజులు	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	p: మొన్న గుండె operation చేసిండు, అక్కడికి పోయిన, అయితే ఇక్కడ రాసి ఇచ్చినారు, sir మీ దయ, ఇది తీసేసేయండి	STATEMENT}
+{\slot
+మొన్న	B-time_period
+గుండె	B-body_part
+operation	B-treatment
+చేసిండు,	O
+అక్కడికి	O
+పోయిన,	O
+అయితే	O
+ఇక్కడ	O
+రాసి	O
+ఇచ్చినారు,	O
+sir	O
+మీ	O
+దయ,	O
+ఇది	O
+తీసేసేయండి	O
+}
+
+{\intent	d: చేస్తున్నాం బాబు నువ్వు ఆగు	STATEMENT}
+{\slot
+చేస్తున్నాం	O
+బాబు	B-person
+నువ్వు	O
+ఆగు	O
+}
+
+{\intent	p: ఇది operation లాగా లేదు, torture అయితాంది, నీకు దండం పెడతా	STATEMENT}
+{\slot
+ఇది	O
+operation	B-treatment
+లాగా	O
+లేదు,	O
+torture	B-symptom
+అయితాంది,	O
+నీకు	O
+దండం	O
+పెడతా	O
+}
+
+{\intent	d: pipe వేసి 3 వారాలు అవుతుందా?	INFO_REQUEST}
+{\slot
+pipe	O
+వేసి	O
+3	B-time_period
+వారాలు	I-time_period
+అవుతుందా?	O
+}
+
+{\intent	p: ఆ 2 వారాలు అవుతుంది	ANSWER}
+{\slot
+ఆ	O
+2	B-time_period
+వారాలు	I-time_period
+అవుతుంది	O
+}
+
+{\intent	p: operation ఆ అది.	STATEMENT}
+{\slot
+operation	B-treatment
+ఆ	O
+అది.	O
+}
+
+{\intent	p: ఈ pipe తీసేయలేకుండ్రు sir	STATEMENT}
+{\slot
+ఈ	O
+pipe	B-medical_apparatus
+తీసేయలేకుండ్రు	O
+sir	O
+}
+
+{\intent	p: ఏమైనా ఉంటే మందు పోసుకొని చావాలనిపిస్తాంది.	STATEMENT}
+{\slot
+ఏమైనా	O
+ఉంటే	O
+మందు	B-medicine
+పోసుకొని	O
+చావాలనిపిస్తాంది.	O
+}
+
+{\intent	d: చూద్దాం, scanలో అయితే చూద్దాం	STATEMENT}
+{\slot
+చూద్దాం,	O
+scanలో	B-mtest
+అయితే	O
+చూద్దాం	O
+}
+
+{\intent	d: ఆ తరువాత తెలుస్తది	STATEMENT}
+{\slot
+ఆ	O
+తరువాత	O
+తెలుస్తది	O
+}
+
+{\intent	p: అయ్యా	ACK}
+{\slot
+అయ్యా	O
+}
+
+{\intent	p: scanning, geening అన్నీ చేయించి వచ్చినాం, చుడండ్రి sir	STATEMENT}
+{\slot
+scanning,	B-mtest
+geening	B-mtest
+అన్నీ	O
+చేయించి	O
+వచ్చినాం,	O
+చుడండ్రి	O
+sir	O
+}
+
+{\intent	p: ఏం problem ఉన్నదో.	STATEMENT}
+{\slot
+ఏం	O
+problem	O
+ఉన్నదో.	O
+}
+
+{\intent	p: ఆ scanలో ఏమైనా problem ఉంటే చెప్పండి sir.	ACTION_DIR}
+{\slot
+ఆ	O
+scanలో	B-mtest
+ఏమైనా	O
+problem	O
+ఉంటే	O
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	d: చూద్దాం, last time ఆ scanning సరిగ్గా అవ్వలేదు, మూత్రంతో ఒకసారి తీయించుకరండి, దాని బట్టి తెలుస్తది.	ACTION_DIR}
+{\slot
+చూద్దాం,	O
+last	O
+time	B-time_period
+ఆ	O
+scanning	B-mtest
+సరిగ్గా	O
+అవ్వలేదు,	O
+మూత్రంతో	B-body_substance
+ఒకసారి	O
+తీయించుకరండి,	O
+దాని	O
+బట్టి	O
+తెలుస్తది.	O
+}
+

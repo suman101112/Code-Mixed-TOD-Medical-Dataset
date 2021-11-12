@@ -1,0 +1,304 @@
+{\intent	p: madam అది ఒక 4 5 days నుంచి Dengue effect ఉన్నట్లుంది. మేము నిన్న test చేయించాము.	STATEMENT}
+{\slot
+madam	O
+అది	O
+ఒక	O
+4	B-time_period
+5	B-time_period
+days	I-time_period
+నుంచి	O
+Dengue	B-medical_condition
+effect	B-symptom
+ఉన్నట్లుంది.	I-symptom
+మేము	O
+నిన్న	O
+test	B-mtest
+చేయించాము.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: platelet count పడిపోయినప్పుడు first time CBP test చేయించినప్పుడు platelet count పడిపోయింది.	STATEMENT}
+{\slot
+platelet	B-body_substance
+count	B-mtest_value
+పడిపోయినప్పుడు	B-symptom
+first	O
+time	O
+CBP	B-mtest
+test	I-mtest
+చేయించినప్పుడు	O
+platelet	B-body_substance
+count	B-mtest_value
+పడిపోయింది.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తర్వాత మళ్ళి నిన్న మేము Dengue test చేయించాము అది positive result వచ్చింది.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+మళ్ళి	O
+నిన్న	B-time_period
+మేము	O
+Dengue	B-medical_condition
+test	B-mtest
+చేయించాము	O
+అది	O
+positive	B-mtest_value
+result	B-mtest_value
+వచ్చింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కాకపోతే ఏం తినట్లేదు. మా fatherకి వచ్చింది అన్నట్లు	STATEMENT}
+{\slot
+కాకపోతే	O
+ఏం	O
+తినట్లేదు.	B-symptom
+మా	O
+fatherకి	B-familal
+వచ్చింది	O
+అన్నట్లు	O
+}
+
+{\intent	d: so జ్వరము వచ్చి ఎన్ని రోజులు అయింది అండి?	INFO_REQUEST}
+{\slot
+so	O
+జ్వరము	B-symptom
+వచ్చి	O
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది	O
+అండి?	O
+}
+
+{\intent	p: జ్వరం వచ్చేసి 12 days అయితుంది.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+వచ్చేసి	O
+12	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: ఇప్పుడు జ్వరం తగ్గిందా అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+జ్వరం	B-symptom
+తగ్గిందా	O
+అండి?	O
+}
+
+{\intent	p: జ్వరం మధ్యలో తగ్గిపోయింది	ANSWER}
+{\slot
+జ్వరం	B-symptom
+మధ్యలో	O
+తగ్గిపోయింది	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక 5 days తరువాత. మళ్ళి start అయింది.	STATEMENT}
+{\slot
+ఒక	O
+5	B-time_period
+days	I-time_period
+తరువాత.	I-time_period
+మళ్ళి	O
+start	O
+అయింది.	O
+}
+
+{\intent	d: ఆయన వయస్సు తెలుసుకోవచ్చా అండి, మీ నాన్న గారి వయస్సు?	INFO_REQUEST}
+{\slot
+ఆయన	O
+వయస్సు	O
+తెలుసుకోవచ్చా	O
+అండి,	O
+మీ	O
+నాన్న	B-familal
+గారి	O
+వయస్సు?	O
+}
+
+{\intent	p: 65 years.	ANSWER}
+{\slot
+65	B-age
+years.	I-age
+}
+
+{\intent	d: so ఇప్పుడు current మీకు మీ అనుమానాలు ఏంటి అండి మీ doubts ఏంటి ఇప్పుడు?	INFO_REQUEST}
+{\slot
+so	O
+ఇప్పుడు	O
+current	O
+మీకు	O
+మీ	O
+అనుమానాలు	O
+ఏంటి	O
+అండి	O
+మీ	O
+doubts	O
+ఏంటి	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: అసలు water తాగట్లేదు. food తినట్లేదు. ఏం తింటలేదు.	ANSWER}
+{\slot
+అసలు	O
+water	B-food_substance
+తాగట్లేదు.	B-symptom
+food	B-food_substance
+తినట్లేదు.	B-symptom
+ఏం	O
+తింటలేదు.	B-symptom
+}
+
+{\intent	d: ఈ CBP Dengue తో పాటు వేరే liver function test అలాంటివి చేయించారా అండి testలు మీరు?	INFO_REQUEST}
+{\slot
+ఈ	O
+CBP	B-mtest
+Dengue	B-medical_condition
+తో	O
+పాటు	O
+వేరే	O
+liver	B-body_part
+function	B-mtest
+test	I-mtest
+అలాంటివి	O
+చేయించారా	O
+అండి	O
+testలు	B-mtest
+మీరు?	O
+}
+
+{\intent	p: ఆ. liver function test చేయించాము.	ANSWER}
+{\slot
+ఆ.	O
+liver	B-body_part
+function	B-mtest
+test	I-mtest
+చేయించాము.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: SGPT వచ్చేసి 143 ఉందండి.	STATEMENT}
+{\slot
+SGPT	B-mtest
+వచ్చేసి	O
+143	B-mtest_value
+ఉందండి.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: SGOT వచ్చేసి 156.	STATEMENT}
+{\slot
+SGOT	B-mtest
+వచ్చేసి	O
+156.	B-mtest_value
+}
+
+{\intent	d: so మామూలుగా అయితే మీరు చెప్పిన దాని బట్టి నాకు అర్ధమైనది ఎమిటంటే ఈ Dengue జ్వరంలో ఈ కొంచం elderly age group కొంచం వ్రుద్ధులకు effect అనేది కొంచం ఎక్కువ రోజులు ఉండే అవకాశం ఉంటుందండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మామూలుగా	O
+అయితే	O
+మీరు	O
+చెప్పిన	O
+దాని	O
+బట్టి	O
+నాకు	O
+అర్ధమైనది	O
+ఎమిటంటే	O
+ఈ	O
+Dengue	B-medical_condition
+జ్వరంలో	B-symptom
+ఈ	O
+కొంచం	O
+elderly	B-age
+age	I-age
+group	I-age
+కొంచం	O
+వ్రుద్ధులకు	O
+effect	O
+అనేది	O
+కొంచం	O
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+ఉండే	O
+అవకాశం	O
+ఉంటుందండి.	O
+}
+
+{\intent	d: so ఈ ఆకలి, నీరసం, వొళ్ళ నొప్పులు తగ్గడానికి ఆ age లో minimum 3 వారాలు అయినా పడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+ఆకలి,	B-symptom
+నీరసం,	B-symptom
+వొళ్ళ	B-body_part
+నొప్పులు	B-symptom
+తగ్గడానికి	O
+ఆ	O
+age	O
+లో	O
+minimum	O
+3	B-time_period
+వారాలు	I-time_period
+అయినా	O
+పడుతుంది.	O
+}
+
+{\intent	d: అట్ల అని చెప్పి completeగా ఏం తినట్లేదు అని neglect చేయకూడదండి. fluids అంటే juiceలు రకాలు అయినా కానియ్యండి, కొబ్బరి నీళ్లు నీళ్లు అయినా కానివ్వండి, water, మజ్జిగ, ORS ఇవి బాగా తగ్గిపీయండి.	ACTION_DIR}
+{\slot
+అట్ల	O
+అని	O
+చెప్పి	O
+completeగా	O
+ఏం	O
+తినట్లేదు	O
+అని	O
+neglect	O
+చేయకూడదండి.	O
+fluids	B-food_substance
+అంటే	O
+juiceలు	B-food_substance
+రకాలు	O
+అయినా	O
+కానియ్యండి,	O
+కొబ్బరి	B-food_substance
+నీళ్లు	I-food_substance
+నీళ్లు	B-food_substance
+అయినా	O
+కానివ్వండి,	O
+water,	B-food_substance
+మజ్జిగ,	B-food_substance
+ORS	B-medicine
+ఇవి	O
+బాగా	B-intensity
+తగ్గిపీయండి.	B-bodily_process
+}
+

@@ -1,0 +1,331 @@
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Venkatamma	ANSWER}
+{\slot
+Venkatamma	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p1: ఆగు ఆగు ఒక్క నిమిషం ఆగు	ACTION_DIR}
+{\slot
+ఆగు	O
+ఆగు	O
+ఒక్క	O
+నిమిషం	B-time_period
+ఆగు	O
+}
+
+{\intent	p1: కుర్చో ఇగ	ACTION_DIR}
+{\slot
+కుర్చో	O
+ఇగ	O
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p1: 82 ఉంటది sir	ANSWER}
+{\slot
+82	B-age
+ఉంటది	O
+sir	O
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: కుర్చో నువ్వు	ACTION_DIR}
+{\slot
+కుర్చో	O
+నువ్వు	O
+}
+
+{\intent	p: కుర్చోనా?	INFO_REQUEST}
+{\slot
+కుర్చోనా?	O
+}
+
+{\intent	p1: కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+}
+
+{\intent	d: కుర్చో, కుర్చో కుర్చో నువ్వు.	ACTION_DIR}
+{\slot
+కుర్చో,	O
+కుర్చో	O
+కుర్చో	O
+నువ్వు.	O
+}
+
+{\intent	p1: నువ్వు కుర్చుంటే sir చూస్తాడు.	STATEMENT}
+{\slot
+నువ్వు	O
+కుర్చుంటే	O
+sir	O
+చూస్తాడు.	O
+}
+
+{\intent	d: కుర్చునేసి నాకు ఏం అయిందని చెప్పు	STATEMENT}
+{\slot
+కుర్చునేసి	O
+నాకు	O
+ఏం	O
+అయిందని	O
+చెప్పు	O
+}
+
+{\intent	p1: ఇది చెవులో sir చీము చీము కారుతుందంట	STATEMENT}
+{\slot
+ఇది	O
+చెవులో	B-body_part
+sir	O
+చీము	B-symptom
+చీము	B-symptom
+కారుతుందంట	I-symptom
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: చెవుల	HOLD}
+{\slot
+చెవుల	B-body_part
+}
+
+{\intent	d: ఆ, చెప్పు	ACTION_DIR}
+{\slot
+ఆ,	O
+చెప్పు	O
+}
+
+{\intent	p: గడ్డ పుట్టింది.	STATEMENT}
+{\slot
+గడ్డ	B-medical_condition
+పుట్టింది.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: చాన రోజులయ్యే	STATEMENT}
+{\slot
+చాన	B-intensity
+రోజులయ్యే	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది తక్వ అయింది, చీము కారుతాంది	STATEMENT}
+{\slot
+అది	O
+తక్వ	B-normal
+అయింది,	O
+చీము	B-symptom
+కారుతాంది	I-symptom
+}
+
+{\intent	p1: local doctor	HOLD}
+{\slot
+local	B-medical_professional
+doctor	I-health_professional
+}
+
+{\intent	p: సుకుర్కు సురుకున పొడుస్తాంది	STATEMENT}
+{\slot
+సుకుర్కు	B-symptom
+సురుకున	I-symptom
+పొడుస్తాంది	I-symptom
+}
+
+{\intent	p1: ఇక్కడ కాదు sir మాది	STATEMENT}
+{\slot
+ఇక్కడ	O
+కాదు	O
+sir	O
+మాది	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: ఇక్కడ local doctorతోని వాడితే తగ్గింది	STATEMENT}
+{\slot
+ఇక్కడ	O
+local	B-medical_professional
+doctorతోని	I-health_professional
+వాడితే	O
+తగ్గింది	B-normal
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: మందులు बंद చేసినంక మళ్ళి నొస్తుంది sir.	STATEMENT}
+{\slot
+మందులు	B-medicine
+बंद	B-symptom
+చేసినంక	O
+మళ్ళి	O
+నొస్తుంది	B-symptom
+sir.	O
+}
+
+{\intent	p1: sugar ఉంది bp ఉంది అమ్మకు	STATEMENT}
+{\slot
+sugar	B-medical_condition
+ఉంది	B-positive
+bp	B-medical_condition
+ఉంది	B-positive
+అమ్మకు	O
+}
+
+{\intent	p1: ఆ అయ్యే	STATEMENT}
+{\slot
+ఆ	O
+అయ్యే	O
+}
+
+{\intent	d: మంసం పెరుగొచ్చింది	DIAGNOSIS}
+{\slot
+మంసం	B-symptom
+పెరుగొచ్చింది	I-symptom
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: మందులు వాడి చూద్దాం	STATEMENT}
+{\slot
+మందులు	B-medicine
+వాడి	O
+చూద్దాం	O
+}
+
+{\intent	d: తగ్గకుంటే చిన్న ముక్క తీసి పరిక్ష చేయాల్సొస్తది	STATEMENT}
+{\slot
+తగ్గకుంటే	O
+చిన్న	B-intensity
+ముక్క	B-body_part
+తీసి	B-treatment
+పరిక్ష	B-mtest
+చేయాల్సొస్తది	O
+}
+
+{\intent	p1: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: కొన్ని రోజుల దాకా తగ్గింది sir మళ్ళ ఈ మధ్యనే	STATEMENT}
+{\slot
+కొన్ని	B-time_period
+రోజుల	I-time_period
+దాకా	O
+తగ్గింది	B-normal
+sir	O
+మళ్ళ	O
+ఈ	O
+మధ్యనే	B-time_period
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: ఈమె ఏం చేసిందంటే sir ఆ వెల్లిపాయల నూనె ఆ మరగబెట్టి పోసుకుంది sir	STATEMENT}
+{\slot
+ఈమె	O
+ఏం	O
+చేసిందంటే	O
+sir	O
+ఆ	O
+వెల్లిపాయల	B-food_substance
+నూనె	I-food_substance
+ఆ	O
+మరగబెట్టి	O
+పోసుకుంది	O
+sir	O
+}
+
+{\intent	d: మందులు రాసి ఇస్తా నేను	COMMIT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా	O
+నేను	O
+}
+
+{\intent	p: ఆ సరే sir	ACK}
+{\slot
+ఆ	O
+సరే	O
+sir	O
+}
+
+{\intent	d: నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ సురుకు సురుకున పొడుస్తాంది. ఇగో ఇదంతా నొస్తాంది.	ANSWER}
+{\slot
+ఆ	O
+సురుకు	B-symptom
+సురుకున	I-symptom
+పొడుస్తాంది.	I-symptom
+ఇగో	O
+ఇదంతా	B-location
+నొస్తాంది.	B-symptom
+}
+
+{\intent	p: ఇదిగో ఈ తలకాయ ఇక్కడ నుంచి నొస్తాంది.	STATEMENT}
+{\slot
+ఇదిగో	O
+ఈ	O
+తలకాయ	B-body_part
+ఇక్కడ	B-location
+నుంచి	O
+నొస్తాంది.	B-symptom
+}
+
