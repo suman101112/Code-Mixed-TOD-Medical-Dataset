@@ -1,6 +1,7 @@
 # Code-Mixed-TOD-Medical-Dataset
 
-The dataset available here is a sample dataset that is made available during submission. The original dataset containing all the conversations will be released during the time of publication.
+The paper is accepted in computer speech and language journal. https://doi.org/10.1016/j.csl.2022.101449
+I am in the process of updating the github with all the data available. 
 
 licensed as: 
 
