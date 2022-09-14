@@ -1,7 +1,8 @@
 # Code-Mixed-TOD-Medical-Dataset
 
 The paper is accepted in computer speech and language journal. https://doi.org/10.1016/j.csl.2022.101449
-I am in the process of updating the github with all the data available. 
+
+I am in the process of updating the github with complete data. 
 
 licensed as: 
 
