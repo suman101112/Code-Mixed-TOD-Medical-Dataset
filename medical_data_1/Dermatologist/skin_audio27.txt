@@ -1,0 +1,181 @@
+{\intent	p: sir ఇంతకు మీరు అన్నారు కదా scab type పులుసు వస్తుంది అని	STATEMENT}
+{\slot
+sir	O
+ఇంతకు	O
+మీరు	O
+అన్నారు	O
+కదా	O
+scab	B-symptom
+type	I-symptom
+పులుసు	I-symptom
+వస్తుంది	I-symptom
+అని	O
+}
+
+{\intent	d: ya	STATEMENT}
+{\slot
+ya	O
+}
+
+{\intent	p: అది ఆ type వస్తుంది sir, వొళ్ళంతా వస్తుంది sir.	STATEMENT}
+{\slot
+అది	O
+ఆ	B-symptom
+type	I-symptom
+వస్తుంది	I-symptom
+sir,	O
+వొళ్ళంతా	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: अच्छा	STATEMENT}
+{\slot
+अच्छा	O
+}
+
+{\intent	p: అది సీతాకాలం 2 3 months నుంచి బాగా బీభత్సంగా వస్తుంది అండి body మీద.	STATEMENT}
+{\slot
+అది	O
+సీతాకాలం	B-time_period
+2	I-time_period
+3	I-time_period
+months	I-time_period
+నుంచి	I-time_period
+బాగా	B-symptom
+బీభత్సంగా	I-symptom
+వస్తుంది	I-symptom
+అండి	O
+body	B-body_part
+మీద.	I-body_part
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: start ఎప్పుడు అయింది అండి?	INFO_REQUEST}
+{\slot
+start	B-time_period
+ఎప్పుడు	I-time_period
+అయింది	I-time_period
+అండి?	O
+}
+
+{\intent	p: ఆయె	ACK}
+{\slot
+ఆయె	O
+}
+
+{\intent	d: ఇది start ఎప్పుడు అయింది అండి? ఎప్పుడు మొదలైంది?	REPEAT_REPHRASE}
+{\slot
+ఇది	O
+start	B-time_period
+ఎప్పుడు	I-time_period
+అయింది	I-time_period
+అండి?	O
+ఎప్పుడు	O
+మొదలైంది?	B-time_period
+}
+
+{\intent	p: ఇది start అయి ఒక 1 year అవుతుంది అండి.	ANSWER}
+{\slot
+ఇది	O
+start	B-time_period
+అయి	I-time_period
+ఒక	B-time_period
+1	I-time_period
+year	I-time_period
+అవుతుంది	I-time_period
+అండి.	O
+}
+
+{\intent	p: అది medicine వాడుతున్నాను అండి, ఎమి change ఎమి కనబడడంలేదు	STATEMENT}
+{\slot
+అది	O
+medicine	B-medicine
+వాడుతున్నాను	I-medicine
+అండి,	O
+ఎమి	O
+change	B-symptom
+ఎమి	I-symptom
+కనబడడంలేదు	I-symptom
+}
+
+{\intent	d: ok ok చెప్తానండీ	ACK}
+{\slot
+ok	O
+ok	O
+చెప్తానండీ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇది నేను చెప్పింది, scalpలో start అవుతుందండి, తల నుంచి start అవ్వడం జరుగుతది అని చెప్పాను కదా	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+నేను	O
+చెప్పింది,	O
+scalpలో	B-body_part
+start	B-symptom
+అవుతుందండి,	I-symptom
+తల	B-body_part
+నుంచి	B-body_part
+start	B-symptom
+అవ్వడం	I-symptom
+జరుగుతది	I-symptom
+అని	O
+చెప్పాను	O
+కదా	O
+}
+
+{\intent	d: అలాగే మీకు start అయింది	STATEMENT}
+{\slot
+అలాగే	O
+మీకు	O
+start	B-symptom
+అయింది	I-symptom
+}
+
+{\intent	d: and ఇది వచ్చేసిన తరువాత body మీద కూడా develop అవ్వడం జరుగుతది specially in the winter seasons అన్నమాట	MEDICAL_EXPLANATION}
+{\slot
+and	O
+ఇది	O
+వచ్చేసిన	O
+తరువాత	B-time_period
+body	B-body_part
+మీద	I-body_part
+కూడా	O
+develop	B-symptom
+అవ్వడం	I-symptom
+జరుగుతది	I-symptom
+specially	B-time_period
+in	I-time_period
+the	I-time_period
+winter	I-time_period
+seasons	I-time_period
+అన్నమాట	O
+}
+
+{\intent	d: winter అంటే చలి ఉన్నప్పుడు మనకు dryness అనేది ఎక్కువ ఉండడం జరుగుతది అన్నమాట. skin కూడా పగులుతది	MEDICAL_EXPLANATION}
+{\slot
+winter	B-time_period
+అంటే	I-time_period
+చలి	I-time_period
+ఉన్నప్పుడు	I-time_period
+మనకు	O
+dryness	B-symptom
+అనేది	I-symptom
+ఎక్కువ	I-symptom
+ఉండడం	I-symptom
+జరుగుతది	I-symptom
+అన్నమాట.	O
+skin	B-symptom
+కూడా	I-symptom
+పగులుతది	I-symptom
+}
+

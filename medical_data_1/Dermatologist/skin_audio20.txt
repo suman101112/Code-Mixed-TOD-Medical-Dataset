@@ -139,7 +139,7 @@ days	I-time_period
 ఇచ్చారు	B-treatment
 }
 
-{\intent	p: మందు మాత్రం వొంటికి రాసేది ఇచ్చారండి.	STATEMENT}
+{\intent	p: ee మందు మాత్రం వొంటికి రాసేది ఇచ్చారండి.	STATEMENT}
 {\slot
 మందు	B-medicine
 మాత్రం	O
@@ -156,7 +156,7 @@ dermatologistనే	B-medical_professional
 కలిసారా?	O
 }
 
-{\intent	p: ఆ కలిసాము, ఆయన కూడా ఇదే అన్నారు, మందు continueగా వాడితేనే పోతుంది అండి అని.	ANSWER}
+{\intent	p: ఆ కలిసాము, ఆయన కూడా ఇదే అన్నారు, aayana emannarante మందు continueగా వాడితేనే పోతుంది అండి అని.	ANSWER}
 {\slot
 ఆ	O
 కలిసాము,	O
@@ -177,7 +177,7 @@ continueగా	I-treatment
 hmm	O
 }
 
-{\intent	p: నాకు వొంటి మీద తగ్గిపోయినాక మందు రాయొద్దు అన్నారు అండి.	STATEMENT}
+{\intent	p: plus నాకు వొంటి మీద తగ్గిపోయినాక మందు రాయొద్దు అన్నారు అండి.	STATEMENT}
 {\slot
 నాకు	O
 వొంటి	B-normal
@@ -189,7 +189,7 @@ hmm	O
 అండి.	O
 }
 
-{\intent	d: లేదు, లేదమ్మా తప్పనిసరిగా minimum 2 నుంచి 4 వారలు tabletsలతో సహా creams వాడుకుంటేనే తగ్గుతుంది.	ACTION_DIR}
+{\intent	d: లేదు, లేదమ్మా తప్పనిసరిగా minimum 2 నుంచి 4 వారలు tabletsలతో సహా creams వాడు వాడుకుంటేనే తగ్గుతుంది.	ACTION_DIR}
 {\slot
 లేదు,	B-negative
 లేదమ్మా	B-negative
@@ -216,7 +216,7 @@ creams	I-treatment
 ఆ	O
 }
 
-{\intent	d: బాబు soap towel separateగా ఉంచుకోండి,	ACTION_DIR}
+{\intent	d: బాబు soap towel anni separateగా ఉంచుకోండి,	ACTION_DIR}
 {\slot
 బాబు	B-person
 soap	O

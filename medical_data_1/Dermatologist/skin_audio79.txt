@@ -1,0 +1,59 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైందమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైందమ్మా?	O
+}
+
+{\intent	p: ఒళ్ళంతా దురద పెడుతుంది sir. దురద పెట్టి గోకుతుంటే నల్లగా అయితుంది.	ANSWER}
+{\slot
+ఒళ్ళంతా	B-body_part
+దురద	B-symptom
+పెడుతుంది	I-symptom
+sir.	O
+దురద	B-symptom
+పెట్టి	I-symptom
+గోకుతుంటే	I-symptom
+నల్లగా	I-symptom
+అయితుంది.	I-symptom
+}
+
+{\intent	d: ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి?	B-time_period
+}
+
+{\intent	p: నెల నుంచి.	ANSWER}
+{\slot
+నెల	B-time_period
+నుంచి.	I-time_period
+}
+
+{\intent	d: గోకుతుంటే పుండ్లు గడ్డలు అయినయా.	INFO_REQUEST}
+{\slot
+గోకుతుంటే	B-symptom
+పుండ్లు	B-symptom
+గడ్డలు	I-symptom
+అయినయా.	I-symptom
+}
+
+{\intent	p: అయినయి sir. గోకుతుంటే కంతులయితున్నాయి మంట మండుతుంది.	ANSWER}
+{\slot
+అయినయి	O
+sir.	O
+గోకుతుంటే	B-symptom
+కంతులయితున్నాయి	I-symptom
+మంట	B-symptom
+మండుతుంది.	I-symptom
+}
+

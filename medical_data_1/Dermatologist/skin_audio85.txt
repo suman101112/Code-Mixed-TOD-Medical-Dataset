@@ -1,0 +1,52 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 61, female	ANSWER}
+{\slot
+61,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చెవి వెనకాల గొకుడు బాగా వస్తుంది.	ANSWER}
+{\slot
+చెవి	B-body_part
+వెనకాల	I-body_part
+గొకుడు	B-symptom
+బాగా	I-symptom
+వస్తుంది.	I-symptom
+}
+
+{\intent	d: ఒకటే చెవుకా? రెండు చెవులకా?	INFO_REQUEST}
+{\slot
+ఒకటే	B-body_part
+చెవుకా?	I-body_part
+రెండు	B-body_part
+చెవులకా?	I-body_part
+}
+
+{\intent	p: 2 చెవులకు, కళ్ళకు, అంతా గొకుడు ఉంది. కళ్ళు అంతా దురదగా వస్తుంది. తల దగ్గర గోకుడు పెడుతుంది.	ANSWER}
+{\slot
+2	B-body_part
+చెవులకు,	I-body_part
+కళ్ళకు,	B-body_part
+అంతా	I-body_part
+గొకుడు	B-symptom
+ఉంది.	I-symptom
+కళ్ళు	B-body_part
+అంతా	I-body_part
+దురదగా	B-symptom
+వస్తుంది.	I-symptom
+తల	B-body_part
+దగ్గర	I-body_part
+గోకుడు	B-symptom
+పెడుతుంది.	I-symptom
+}
+

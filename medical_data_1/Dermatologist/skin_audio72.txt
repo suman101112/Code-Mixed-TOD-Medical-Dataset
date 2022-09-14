@@ -1,0 +1,64 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 31, female	ANSWER}
+{\slot
+31,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చర్మం మీద దద్దుర్లు అవుతున్నాయి. మొఖం మీద దద్దుర్లు ఉన్నాయి. నల్లగా ఉన్నాయి.	ANSWER}
+{\slot
+చర్మం	B-body_part
+మీద	I-body_part
+దద్దుర్లు	B-symptom
+అవుతున్నాయి.	I-symptom
+మొఖం	B-body_part
+మీద	I-body_part
+దద్దుర్లు	B-symptom
+ఉన్నాయి.	I-symptom
+నల్లగా	B-symptom
+ఉన్నాయి.	I-symptom
+}
+
+{\intent	p: వీపు మీద ముఖం మీద ఉంది.	STATEMENT}
+{\slot
+వీపు	B-body_part
+మీద	I-body_part
+ముఖం	B-body_part
+మీద	I-body_part
+ఉంది.	B-symptom
+}
+
+{\intent	d: చంకలో ఉన్నాయా?	INFO_REQUEST}
+{\slot
+చంకలో	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: చంకలో లేవు.	ANSWER}
+{\slot
+చంకలో	B-body_part
+లేవు.	B-negative
+}
+
+{\intent	d: నోట్లో ఉన్నాయా?	INFO_REQUEST}
+{\slot
+నోట్లో	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: నోట్లో లేవు.	ANSWER}
+{\slot
+నోట్లో	B-body_part
+లేవు.	B-negative
+}
+

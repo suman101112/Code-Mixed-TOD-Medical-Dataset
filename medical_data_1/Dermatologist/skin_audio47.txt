@@ -1,0 +1,75 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 23, m	ANSWER}
+{\slot
+23,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చేతుల మీద కాళ్ల మీద black dots మచ్చలాగా వస్తున్నాయి sir.	ANSWER}
+{\slot
+చేతుల	B-body_part
+మీద	I-body_part
+కాళ్ల	B-body_part
+మీద	I-body_part
+black	B-symptom
+dots	I-symptom
+మచ్చలాగా	B-symptom
+వస్తున్నాయి	I-symptom
+sir.	O
+}
+
+{\intent	d: దురద ఉందా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	d: చంకల్లోనా లేదా?	INFO_REQUEST}
+{\slot
+చంకల్లోనా	B-symptom
+లేదా?	B-negative
+}
+
+{\intent	p: లేదు sir.	ACK}
+{\slot
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: పెదాల మీద నల్లగా వస్తుంది sir. medicines వాడాక తగ్గిపోతుంది. తర్వాత మళ్లీ వస్తుంది sir.	ANSWER}
+{\slot
+పెదాల	B-body_part
+మీద	I-body_part
+నల్లగా	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+medicines	B-treatment
+వాడాక	I-treatment
+తగ్గిపోతుంది.	B-normal
+తర్వాత	B-time_period
+మళ్లీ	I-time_period
+వస్తుంది	B-symptom
+sir.	O
+}
+

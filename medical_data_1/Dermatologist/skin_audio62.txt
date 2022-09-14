@@ -1,0 +1,69 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 40, m	ANSWER}
+{\slot
+40,	B-age
+m	B-gender
+}
+
+{\intent	p: పడుకున్నప్పుడు దురద వస్తుంది sir.	STATEMENT}
+{\slot
+పడుకున్నప్పుడు	B-bodily_process
+దురద	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+}
+
+{\intent	p: రాత్రి 2 3 మధ్యలో దురద పెడుతుంది sir.	STATEMENT}
+{\slot
+రాత్రి	B-time_period
+2	I-time_period
+3	I-time_period
+మధ్యలో	I-time_period
+దురద	B-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: రాత్రి వస్తుందా? పొద్దున వస్తుందా?	INFO_REQUEST}
+{\slot
+రాత్రి	B-time_period
+వస్తుందా?	B-symptom
+పొద్దున	B-time_period
+వస్తుందా?	B-symptom
+}
+
+{\intent	p: రాత్రే వస్తుంది.	ANSWER}
+{\slot
+రాత్రే	B-time_period
+వస్తుంది.	B-positive
+}
+
+{\intent	d: గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: వేళ్ళ మధ్య గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+వేళ్ళ	B-body_part
+మధ్య	I-body_part
+గోకుడు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+

@@ -1,0 +1,32 @@
+{\intent	d: उम्र कितना?	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना?	O
+}
+
+{\intent	p: 30, m	ANSWER}
+{\slot
+30,	B-age
+m	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: ऐसा गड्ढा जैसा लग रहा दाढ़ पर थोड़ा दुःख रहा.	ANSWER}
+{\slot
+ऐसा	O
+गड्ढा	B-symptom
+जैसा	I-symptom
+लग	I-symptom
+रहा	I-symptom
+दाढ़	B-body_part
+पर	I-body_part
+थोड़ा	B-symptom
+दुःख	I-symptom
+रहा.	I-symptom
+}
+

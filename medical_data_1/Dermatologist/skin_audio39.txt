@@ -1,0 +1,87 @@
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 46, female	ANSWER}
+{\slot
+46,	B-age
+female	O
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చేతులు కాళ్ల దగ్గర కాయలు మచ్చలు అవుతున్నాయి. కాళ్ల దగ్గర బాగా ఉన్నాయి. బొచ్చెడు మందులు వాడుతుంటే తగ్గుతున్నాయి.	ANSWER}
+{\slot
+చేతులు	B-body_part
+కాళ్ల	I-body_part
+దగ్గర	I-body_part
+కాయలు	B-symptom
+మచ్చలు	B-symptom
+అవుతున్నాయి.	I-symptom
+కాళ్ల	B-body_part
+దగ్గర	I-body_part
+బాగా	B-symptom
+ఉన్నాయి.	I-symptom
+బొచ్చెడు	B-treatment
+మందులు	I-treatment
+వాడుతుంటే	I-treatment
+తగ్గుతున్నాయి.	B-normal
+}
+
+{\intent	d: అ	ACK}
+{\slot
+అ	O
+}
+
+{\intent	p: night నిద్ర ఉంటలేదు.	STATEMENT}
+{\slot
+night	B-time_period
+నిద్ర	B-bodily_process
+ఉంటలేదు.	B-negative
+}
+
+{\intent	d: అంత గొకుతున్నావు.	STATEMENT}
+{\slot
+అంత	B-symptom
+గొకుతున్నావు.	I-symptom
+}
+
+{\intent	p: मस्त అవస్థ అయితాందయ్యా.	STATEMENT}
+{\slot
+मस्त	B-symptom
+అవస్థ	I-symptom
+అయితాందయ్యా.	I-symptom
+}
+
+{\intent	d: అ	ACK}
+{\slot
+అ	O
+}
+
+{\intent	p: సూది వేసుకున్న. గోళీలు వాడినప్పుడు తక్కువ అవుతుంది.	STATEMENT}
+{\slot
+సూది	B-treatment
+వేసుకున్న.	I-treatment
+గోళీలు	B-treatment
+వాడినప్పుడు	I-treatment
+తక్కువ	B-normal
+అవుతుంది.	I-normal
+}
+
+{\intent	d: ఎంతకాలం నుంచి ఉంది?	INFO_REQUEST}
+{\slot
+ఎంతకాలం	B-time_period
+నుంచి	I-time_period
+ఉంది?	O
+}
+
+{\intent	p: సంవత్సరం అవుతుంది	ANSWER}
+{\slot
+సంవత్సరం	B-time_period
+అవుతుంది	I-time_period
+}
+

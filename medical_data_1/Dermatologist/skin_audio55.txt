@@ -1,0 +1,48 @@
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 39, m	ANSWER}
+{\slot
+39,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పు?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పు?	O
+}
+
+{\intent	p: తెల్ల మచలు వస్తున్నయి sir.	ANSWER}
+{\slot
+తెల్ల	B-symptom
+మచలు	I-symptom
+వస్తున్నయి	I-symptom
+sir.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తెల్ల మచ్చలు ఉన్నాయి sir. water వస్తుంది sir దాంట్లో.	STATEMENT}
+{\slot
+తెల్ల	B-symptom
+మచ్చలు	I-symptom
+ఉన్నాయి	I-symptom
+sir.	O
+water	B-symptom
+వస్తుంది	I-symptom
+sir	O
+దాంట్లో.	B-location
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

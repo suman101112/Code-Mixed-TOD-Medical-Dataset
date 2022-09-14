@@ -1,0 +1,65 @@
+{\intent	p: 48, female	STATEMENT}
+{\slot
+48,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: సిర్ ఒళ్ళంతా దురద వస్తుంది, నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+సిర్	O
+ఒళ్ళంతా	B-body_part
+దురద	B-symptom
+వస్తుంది,	I-symptom
+నొప్పి	B-symptom
+లేస్తుంది.	I-symptom
+}
+
+{\intent	d: ఏమైతుంది ఇంకా?	INFO_REQUEST}
+{\slot
+ఏమైతుంది	O
+ఇంకా?	O
+}
+
+{\intent	p: దురద వచ్చి గోకుతుంటే రక్తం వస్తుంది sir.	ANSWER}
+{\slot
+దురద	B-symptom
+వచ్చి	I-symptom
+గోకుతుంటే	B-symptom
+రక్తం	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	p: మెల్లగా మచ్చలు వస్తున్నాయి sir ఇలా. ఒళ్ళంతా నల్ల మచ్చలు sir. చర్మం మొత్తం నల్లగాయిపోతుంది.	STATEMENT}
+{\slot
+మెల్లగా	B-time_period
+మచ్చలు	B-symptom
+వస్తున్నాయి	I-symptom
+sir	O
+ఇలా.	O
+ఒళ్ళంతా	B-body_part
+నల్ల	B-symptom
+మచ్చలు	I-symptom
+sir.	O
+చర్మం	B-body_part
+మొత్తం	I-body_part
+నల్లగాయిపోతుంది.	B-symptom
+}
+

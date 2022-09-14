@@ -1,0 +1,151 @@
+{\intent	p: sir నమస్కారం అండి.	GREETING}
+{\slot
+sir	O
+నమస్కారం	O
+అండి.	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: అది ఇప్పుడు విపరీతంగా fungals ఉన్నాయండి, వీపుపై, కడుపుపైన	STATEMENT}
+{\slot
+అది	O
+ఇప్పుడు	B-time_period
+విపరీతంగా	B-symptom
+fungals	I-symptom
+ఉన్నాయండి,	I-symptom
+వీపుపై,	B-body_part
+కడుపుపైన	B-body_part
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: నడుము పైన	STATEMENT}
+{\slot
+నడుము	B-body_part
+పైన	I-body_part
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: 2 times skin specialist దెగ్గరికి వెళ్ళాము	STATEMENT}
+{\slot
+2	O
+times	O
+skin	B-medical_professional
+specialist	I-medical_professional
+దెగ్గరికి	O
+వెళ్ళాము	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ మందులు వాడినంత సేపే కొంత reliefగా ఉంటుంది తర్వాత ఎక్కువ దురదగా	STATEMENT}
+{\slot
+ఆ	O
+మందులు	B-treatment
+వాడినంత	I-treatment
+సేపే	B-time_period
+కొంత	B-normal
+reliefగా	I-normal
+ఉంటుంది	I-normal
+తర్వాత	B-time_period
+ఎక్కువ	B-symptom
+దురదగా	I-symptom
+}
+
+{\intent	d: yaya	ACK}
+{\slot
+yaya	O
+}
+
+{\intent	p: చాలా heavyగా దురద వచ్చేసి ఎర్రగా కురుపులెక్క వస్తున్నాయి.	STATEMENT}
+{\slot
+చాలా	B-symptom
+heavyగా	I-symptom
+దురద	I-symptom
+వచ్చేసి	I-symptom
+ఎర్రగా	B-symptom
+కురుపులెక్క	I-symptom
+వస్తున్నాయి.	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ దురద, అక్కడ గోక్కున్న దెగ్గర ఎర్రగా పొక్కులొచ్చేసి మరీ విపరీతంగా దురద వచ్చేస్తుంది.	STATEMENT}
+{\slot
+ఆ	O
+దురద,	B-symptom
+అక్కడ	B-symptom
+గోక్కున్న	I-symptom
+దెగ్గర	I-symptom
+ఎర్రగా	I-symptom
+పొక్కులొచ్చేసి	I-symptom
+మరీ	B-symptom
+విపరీతంగా	I-symptom
+దురద	I-symptom
+వచ్చేస్తుంది.	I-symptom
+}
+
+{\intent	d: generalగా ఇప్పుడు ointments creams వీళ్ళు ఇచ్చేవి ఏంటి అంటే temporaryగా ఆ పైన ఏదైతే fungal ఉంటుందో అది చనిపోతుంది, అప్పటికీ cover అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+generalగా	O
+ఇప్పుడు	B-time_period
+ointments	B-medicine
+creams	B-medicine
+వీళ్ళు	O
+ఇచ్చేవి	O
+ఏంటి	O
+అంటే	O
+temporaryగా	B-time_period
+ఆ	B-normal
+పైన	I-normal
+ఏదైతే	I-normal
+fungal	I-normal
+ఉంటుందో	I-normal
+అది	I-normal
+చనిపోతుంది,	I-normal
+అప్పటికీ	B-normal
+cover	I-normal
+అవుతుంది.	I-normal
+}
+
+{\intent	d: but ఈ fungus ఏంటిది అంటే internalగా ఉంటుంది, దానికి surroundings ఏదైనా, so అది permanentగా తగ్గాలి అంటే మాత్రం compulsory internalగా treatment తీసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+but	O
+ఈ	O
+fungus	B-organism
+ఏంటిది	O
+అంటే	O
+internalగా	O
+ఉంటుంది,	O
+దానికి	O
+surroundings	O
+ఏదైనా,	O
+so	O
+అది	O
+permanentగా	B-time_period
+తగ్గాలి	B-normal
+అంటే	O
+మాత్రం	O
+compulsory	O
+internalగా	B-treatment
+treatment	I-treatment
+తీసుకోవాలి.	I-treatment
+}
+

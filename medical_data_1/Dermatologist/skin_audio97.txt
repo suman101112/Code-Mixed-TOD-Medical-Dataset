@@ -1,0 +1,104 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 67, female	ANSWER}
+{\slot
+67,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: sir, దురద లేస్తోంది. దద్దుర్లు వస్తున్నాయి.	ANSWER}
+{\slot
+sir,	O
+దురద	B-symptom
+లేస్తోంది.	I-symptom
+దద్దుర్లు	B-symptom
+వస్తున్నాయి.	I-symptom
+}
+
+{\intent	d: దద్దుర్లా? కురుపులా?	INFO_REQUEST}
+{\slot
+దద్దుర్లా?	B-symptom
+కురుపులా?	B-symptom
+}
+
+{\intent	p: కురుపులు sir. దురదలెస్తుంది	ANSWER}
+{\slot
+కురుపులు	B-symptom
+sir.	O
+దురదలెస్తుంది	B-symptom
+}
+
+{\intent	d: గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	d: పొద్దున ఎక్కువ ఉందా? రాత్రి ఎక్కువ ఉందా?	INFO_REQUEST}
+{\slot
+పొద్దున	B-time_period
+ఎక్కువ	B-symptom
+ఉందా?	I-symptom
+రాత్రి	B-time_period
+ఎక్కువ	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: రాత్రి ఎక్కువగా ఉంటుంది sir.	ANSWER}
+{\slot
+రాత్రి	B-time_period
+ఎక్కువగా	B-symptom
+ఉంటుంది	B-positive
+sir.	O
+}
+
+{\intent	d: ఇంట్లో ఎవరికైనా ఉందా?	INFO_REQUEST}
+{\slot
+ఇంట్లో	B-place
+ఎవరికైనా	I-familial
+ఉందా?	O
+}
+
+{\intent	p: ఎవరికీ లేదు sir.	ANSWER}
+{\slot
+ఎవరికీ	B-familial
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	p: గోకుడు వల్ల మచ్చలు వచ్చినాయి sir.	STATEMENT}
+{\slot
+గోకుడు	B-symptom
+వల్ల	I-symptom
+మచ్చలు	I-symptom
+వచ్చినాయి	I-symptom
+sir.	O
+}
+
+{\intent	d: పుండైతుందా గోకుతుంటే?	INFO_REQUEST}
+{\slot
+పుండైతుందా	B-symptom
+గోకుతుంటే?	I-symptom
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+

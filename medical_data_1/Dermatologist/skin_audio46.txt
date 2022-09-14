@@ -1,0 +1,76 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 67, m	STATEMENT}
+{\slot
+67,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి?	CONV_OPEN}
+{\slot
+చెప్పండి?	O
+}
+
+{\intent	p: పాదాల దగ్గర black marks వచ్చినయి sir.	STATEMENT}
+{\slot
+పాదాల	B-location
+దగ్గర	I-location
+black	B-symptom
+marks	I-symptom
+వచ్చినయి	I-symptom
+sir.	O
+}
+
+{\intent	d: దురద ఉందా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: 6 months నుంచి suffer అయితున్నాం sir.	STATEMENT}
+{\slot
+6	B-time_period
+months	I-time_period
+నుంచి	I-time_period
+suffer	B-symptom
+అయితున్నాం	I-symptom
+sir.	O
+}
+
+{\intent	p: మందులు వేసుకున్నప్పుడు తగ్గుతుంది. మళ్ళా వస్తుంది sir.	STATEMENT}
+{\slot
+మందులు	B-treatment
+వేసుకున్నప్పుడు	I-treatment
+తగ్గుతుంది.	B-normal
+మళ్ళా	B-time_period
+వస్తుంది	B-symptom
+sir.	O
+}
+
+{\intent	d: దురద ఉందా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: అప్పుడప్పుడూ దురద వస్తుంది sir. almost body మొత్తం spread అయింది sir. నల్ల నల్లగా మచ్చలు.	ANSWER}
+{\slot
+అప్పుడప్పుడూ	B-time_period
+దురద	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+almost	B-body_part
+body	I-body_part
+మొత్తం	I-body_part
+spread	B-symptom
+అయింది	I-symptom
+sir.	O
+నల్ల	B-symptom
+నల్లగా	I-symptom
+మచ్చలు.	I-symptom
+}
+

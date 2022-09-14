@@ -1,0 +1,90 @@
+{\intent	p: fever వల్ల 1 week నుండెల్లి స్నానం చేయించలేదు	STATEMENT}
+{\slot
+fever	B-symptom
+వల్ల	O
+1	B-time_period
+week	I-time_period
+నుండెల్లి	I-time_period
+స్నానం	O
+చేయించలేదు	O
+}
+
+{\intent	d: ummhmm	ACK}
+{\slot
+ummhmm	O
+}
+
+{\intent	p: తర్వాత head పైన, hairs పైన మొత్తం పొట్టులాగా లేస్తుంటే, ఆ పొట్టుతో పాటు hairs ఊడిపోతున్నాయండీ.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+head	B-body_part
+పైన,	I-body_part
+hairs	B-body_part
+పైన	I-body_part
+మొత్తం	I-symptom
+పొట్టులాగా	I-symptom
+లేస్తుంటే,	I-symptom
+ఆ	B-symptom
+పొట్టుతో	I-symptom
+పాటు	I-symptom
+hairs	I-symptom
+ఊడిపోతున్నాయండీ.	I-symptom
+}
+
+{\intent	p: problem ఏంటి అయి ఉండొచ్చు.?	INFO_REQUEST}
+{\slot
+problem	O
+ఏంటి	O
+అయి	O
+ఉండొచ్చు.?	O
+}
+
+{\intent	d: sir చిన్న పాప కదా, తనకి birth defect అయినా ఉండొచ్చు.	DIAGNOSIS}
+{\slot
+sir	O
+చిన్న	B-person
+పాప	I-person
+కదా,	O
+తనకి	O
+birth	B-symptom
+defect	I-symptom
+అయినా	I-symptom
+ఉండొచ్చు.	I-symptom
+}
+
+{\intent	d: ఒకసారి pediatrician ని చూపించండి మీరు.	ACTION_DIR}
+{\slot
+ఒకసారి	O
+pediatrician	B-medical_professional
+ని	O
+చూపించండి	O
+మీరు.	O
+}
+
+{\intent	d: ఎందుకంటే 50 days పాప only నెలన్నర కదా	STATEMENT}
+{\slot
+ఎందుకంటే	O
+50	B-age
+days	I-age
+పాప	B-person
+only	B-age
+నెలన్నర	I-age
+కదా	O
+}
+
+{\intent	d: ఒక్కోసారి జుట్టు పోతది పుట్టిన పిల్లలకి మళ్ళి వచ్చేస్తాది అది పెద్ద abnormality ఏం కాదు	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కోసారి	O
+జుట్టు	B-symptom
+పోతది	I-symptom
+పుట్టిన	B-age
+పిల్లలకి	I-age
+మళ్ళి	B-normal
+వచ్చేస్తాది	I-normal
+అది	O
+పెద్ద	O
+abnormality	B-symptom
+ఏం	B-negative
+కాదు	I-negative
+}
+

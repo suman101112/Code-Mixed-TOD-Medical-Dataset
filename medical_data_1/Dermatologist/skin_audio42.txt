@@ -1,0 +1,117 @@
+{\intent	d: వయస్సు?	INFO_REQUEST}
+{\slot
+వయస్సు?	O
+}
+
+{\intent	p: 27, m	ANSWER}
+{\slot
+27,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: skin బాగా black అయితుంది. allergy ఉంది.	ANSWER}
+{\slot
+skin	B-body_part
+బాగా	B-symptom
+black	I-symptom
+అయితుంది.	I-symptom
+allergy	B-symptom
+ఉంది.	B-positive
+}
+
+{\intent	d: పుండ్లు లాగా అవుతున్నాయా?	INFO_REQUEST}
+{\slot
+పుండ్లు	B-symptom
+లాగా	I-symptom
+అవుతున్నాయా?	I-symptom
+}
+
+{\intent	p: hmm. పుండ్లు లాగా అవుతున్నాయి.	ANSWER}
+{\slot
+hmm.	B-positive
+పుండ్లు	B-symptom
+లాగా	I-symptom
+అవుతున్నాయి.	B-positive
+}
+
+{\intent	d: గోకుతుంటే రక్తం వస్తదా?	INFO_REQUEST}
+{\slot
+గోకుతుంటే	B-symptom
+రక్తం	I-symptom
+వస్తదా?	I-symptom
+}
+
+{\intent	p: అవును sir గోకితే రక్తమొస్తుంది.	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+గోకితే	B-symptom
+రక్తమొస్తుంది.	I-symptom
+}
+
+{\intent	d: కురుపులవుతున్నాయి.	STATEMENT}
+{\slot
+కురుపులవుతున్నాయి.	B-symptom
+}
+
+{\intent	p: mm	ACK}
+{\slot
+mm	O
+}
+
+{\intent	d: గోకుడు చేతులకు కాళ్ళకు ఏ నా? వాళ్ళంతా గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+చేతులకు	B-body_part
+కాళ్ళకు	B-body_part
+ఏ	O
+నా?	O
+వాళ్ళంతా	B-body_part
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఒళ్ళంతా లేదు.	ANSWER}
+{\slot
+ఒళ్ళంతా	B-body_part
+లేదు.	B-negative
+}
+
+{\intent	p: చేతులకు కాళ్లకు మాత్రమే.	STATEMENT}
+{\slot
+చేతులకు	B-body_part
+కాళ్లకు	B-body_part
+మాత్రమే.	O
+}
+
+{\intent	d: ఇంట్లో ఎవరికైనా ఉందా?	INFO_REQUEST}
+{\slot
+ఇంట్లో	B-place
+ఎవరికైనా	B-familial
+ఉందా?	B-symptom
+}
+
+{\intent	p: లేదు అందరికీ బానే ఉంది.	ANSWER}
+{\slot
+లేదు	B-negative
+అందరికీ	B-familial
+బానే	B-normal
+ఉంది.	I-normal
+}
+
+{\intent	p: మందులు వాడినా కూడా. skin ఇంకా black అయితుంది.	STATEMENT}
+{\slot
+మందులు	B-treatment
+వాడినా	I-treatment
+కూడా.	O
+skin	B-body_part
+ఇంకా	B-symptom
+black	I-symptom
+అయితుంది.	I-symptom
+}
+

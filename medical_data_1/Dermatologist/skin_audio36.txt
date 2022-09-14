@@ -204,7 +204,7 @@ settings	I-treatment
 తీసుకోని	I-treatment
 చూడండి,	O
 generally	O
-laser	B-medical_therapy
+laser	B-treatment
 ద్వారా	O
 కూడా	O
 lips	B-body_part

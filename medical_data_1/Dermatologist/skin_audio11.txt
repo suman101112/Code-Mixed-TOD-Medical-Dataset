@@ -1,0 +1,128 @@
+{\intent	d: చెప్పండి sir, చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir,	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir నాకు hair problem ఉంది sir, dandruff అధికంగా ఉంది	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+hair	B-symptom
+problem	I-symptom
+ఉంది	I-symptom
+sir,	O
+dandruff	B-symptom
+అధికంగా	I-symptom
+ఉంది	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ sir, nearest salonలో చూపిస్తే doctorగారు ఏం చెప్పారంటే తగ్గిపోతుంది అని చెప్పేసి KZ lotion ఇచ్చారు sir.	STATEMENT}
+{\slot
+ఆ	O
+sir,	O
+nearest	O
+salonలో	O
+చూపిస్తే	O
+doctorగారు	B-medical_professional
+ఏం	O
+చెప్పారంటే	O
+తగ్గిపోతుంది	O
+అని	O
+చెప్పేసి	O
+KZ	B-medicine
+lotion	I-medicine
+ఇచ్చారు	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది use చేసిన ఒక 3 days బాగుంటుంది, 4th day నుంచి మళ్ళి start అవుతుంది sir.	STATEMENT}
+{\slot
+అది	O
+use	O
+చేసిన	O
+ఒక	O
+3	B-time_period
+days	I-time_period
+బాగుంటుంది,	B-normal
+4th	B-time_period
+day	I-time_period
+నుంచి	I-time_period
+మళ్ళి	B-symptom
+start	I-symptom
+అవుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దాని ఏం solution ఉంటుంది?	INFO_REQUEST}
+{\slot
+దాని	O
+ఏం	O
+solution	B-treatment
+ఉంటుంది?	O
+}
+
+{\intent	d: ఏం పని చేస్తా ఉంటారు sir మీరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పని	O
+చేస్తా	O
+ఉంటారు	O
+sir	O
+మీరు?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: ఏం పని చేస్తా ఉంటారు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పని	O
+చేస్తా	O
+ఉంటారు?	O
+}
+
+{\intent	p: sir sir నేను employee sir.	ANSWER}
+{\slot
+sir	O
+sir	O
+నేను	O
+employee	B-profession
+sir.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: dandruff అనేది చాలా కారణాలుగా వస్తాది అండి.	MEDICAL_EXPLANATION}
+{\slot
+dandruff	B-symptom
+అనేది	O
+చాలా	O
+కారణాలుగా	O
+వస్తాది	O
+అండి.	O
+}
+

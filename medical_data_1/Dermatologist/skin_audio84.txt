@@ -1,0 +1,76 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 17, m	ANSWER}
+{\slot
+17,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: దురద పెడుతుంది	ANSWER}
+{\slot
+దురద	B-symptom
+పెడుతుంది	I-symptom
+}
+
+{\intent	p: రాత్రి అంతా గోకుడే.	STATEMENT}
+{\slot
+రాత్రి	B-time_period
+అంతా	I-time_period
+గోకుడే.	B-symptom
+}
+
+{\intent	d: గడ్డలు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+గడ్డలు	B-symptom
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఏం లేదు	ANSWER}
+{\slot
+ఏం	B-negative
+లేదు	I-negative
+}
+
+{\intent	d: joints మధ్యలో గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+joints	B-body_part
+మధ్యలో	I-body_part
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: చంకలో ఉంది?	INFO_REQUEST}
+{\slot
+చంకలో	B-body_part
+ఉంది?	B-symptom
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	p1: 3 years నుంచి ఉంది sir.	STATEMENT}
+{\slot
+3	B-time_period
+years	I-time_period
+నుంచి	I-time_period
+ఉంది	B-symptom
+sir.	O
+}
+

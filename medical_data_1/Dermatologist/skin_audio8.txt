@@ -24,14 +24,14 @@ madam	O
 అది	O
 RMP	B-medical_professional
 doctor	I-medical_professional
-గారు	I-medical_professional
+గారు	O
 దెగ్గర	O
-steroid	B-symptom
-bodyకి	I-symptom
-అది	I-symptom
-ఎక్కువగా	I-symptom
-ఇచ్చేసారు	I-symptom
-అండి.	I-symptom
+steroid	B-medicine
+bodyకి	B-body_part
+అది	O
+ఎక్కువగా	B-intensity
+ఇచ్చేసారు	B-treatment
+అండి.	O
 }
 
 {\intent	d: ఏం చేసారు అండి?	INFO_REQUEST}
@@ -60,18 +60,18 @@ steroids	B-medicine
 {\intent	p: ఇస్తే శరిరం అంతా అదోరకమైన మార్పు వచ్చేసింది madam	STATEMENT}
 {\slot
 ఇస్తే	O
-శరిరం	B-symptom
-అంతా	I-symptom
-అదోరకమైన	I-symptom
+శరిరం	B-body_part
+అంతా	B-location
+అదోరకమైన	B-symptom
 మార్పు	I-symptom
-వచ్చేసింది	I-symptom
+వచ్చేసింది	B-positive
 madam	O
 }
 
 {\intent	p: మచ వచ్చేస్తుంది అండి.	STATEMENT}
 {\slot
 మచ	B-symptom
-వచ్చేస్తుంది	I-symptom
+వచ్చేస్తుంది	O
 అండి.	O
 }
 
@@ -86,11 +86,11 @@ steroids	B-medicine
 {\intent	p: అది problem ఏంటో తెలియక doctor గారు ఇచ్చేసారండి.	ANSWER}
 {\slot
 అది	O
-problem	O
+problem	B-symptom
 ఏంటో	O
 తెలియక	O
 doctor	B-medical_professional
-గారు	I-medical_professional
+గారు	O
 ఇచ్చేసారండి.	O
 }
 

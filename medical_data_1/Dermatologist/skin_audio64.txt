@@ -1,0 +1,63 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 24, m	ANSWER}
+{\slot
+24,	B-age
+m	I-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: నాలుక మీద చిన్న చిన్న పొక్కులు వస్తున్నాయి	ANSWER}
+{\slot
+నాలుక	B-body_part
+మీద	I-body_part
+చిన్న	B-symptom
+చిన్న	I-symptom
+పొక్కులు	I-symptom
+వస్తున్నాయి	I-symptom
+}
+
+{\intent	p1: చిన్న చిన్న పొక్కులు వస్తున్నాయి sir	ACK}
+{\slot
+చిన్న	B-symptom
+చిన్న	I-symptom
+పొక్కులు	I-symptom
+వస్తున్నాయి	I-symptom
+sir	O
+}
+
+{\intent	p: దురద పెడుతుంది.	STATEMENT}
+{\slot
+దురద	B-symptom
+పెడుతుంది.	I-symptom
+}
+
+{\intent	d: కాళ్లకు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+కాళ్లకు	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: కాళ్లకు ఏం లేదు sir.	ANSWER}
+{\slot
+కాళ్లకు	B-body_part
+ఏం	B-negative
+లేదు	I-negative
+sir.	O
+}
+
+{\intent	p: మాట్లాడడానికి వస్తలేదు sir.	STATEMENT}
+{\slot
+మాట్లాడడానికి	B-bodily_process
+వస్తలేదు	B-negative
+sir.	O
+}
+

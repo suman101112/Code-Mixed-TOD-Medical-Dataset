@@ -1,0 +1,124 @@
+{\intent	p: hair fall ఉంది madam	STATEMENT}
+{\slot
+hair	B-body_part
+fall	B-symptom
+ఉంది	B-positive
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఒక 2 years నుండి ఏమైతుంది అంటే hair అంతా తగ్గడం మొదలవుతుంది frontలో	STATEMENT}
+{\slot
+అయితే	O
+ఒక	O
+2	B-time_period
+years	I-time_period
+నుండి	I-time_period
+ఏమైతుంది	O
+అంటే	O
+hair	B-body_part
+అంతా	B-location
+తగ్గడం	B-symptom
+మొదలవుతుంది	I-symptom
+frontలో	B-location
+}
+
+{\intent	p: అదే back side అయితే మంచిగానే ఉంటుంది, కాకపోతే frontలో కొంచం వెళ్ళిపోతుంది madam	STATEMENT}
+{\slot
+అదే	O
+back	B-location
+side	I-location
+అయితే	O
+మంచిగానే	B-normal
+ఉంటుంది,	I-normal
+కాకపోతే	O
+frontలో	B-location
+కొంచం	B-intensity
+వెళ్ళిపోతుంది	B-symptom
+madam	O
+}
+
+{\intent	d: ramu గారు మీ age ఎంత అండి?	INFO_REQUEST}
+{\slot
+ramu	B-name
+గారు	I-name
+మీ	O
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: మా age 25 madam	ANSWER}
+{\slot
+మా	O
+age	O
+25	B-age
+madam	O
+}
+
+{\intent	d: నాన్నగారికి అయినా తాతగారికి అయినా ఏమైనా bald head ఉందా అండి?	INFO_REQUEST}
+{\slot
+నాన్నగారికి	B-familal
+అయినా	O
+తాతగారికి	I-familal
+అయినా	O
+ఏమైనా	O
+bald	B-symptom
+head	I-symptom
+ఉందా	I-symptom
+అండి?	O
+}
+
+{\intent	p: అట్ల ఏం లేదు madam	ANSWER}
+{\slot
+అట్ల	O
+ఏం	B-negative
+లేదు	I-negative
+madam	O
+}
+
+{\intent	d: sir మీకు normalగా food అవన్నీ correctగా తీసుకుంటారా timeకి?	INFO_REQUEST}
+{\slot
+sir	O
+మీకు	O
+normalగా	O
+food	B-food_substance
+అవన్నీ	O
+correctగా	B-normal
+తీసుకుంటారా	B-bodily_process
+timeకి?	B-time_period
+}
+
+{\intent	p: time అంటే officeలో ఉంట madam actualగా నేను, accountantగా work చేస్తాను	ANSWER}
+{\slot
+time	B-time_period
+అంటే	O
+officeలో	B-place
+ఉంట	O
+madam	O
+actualగా	O
+నేను,	O
+accountantగా	B-profession
+work	I-profession
+చేస్తాను	O
+}
+
+{\intent	d: recentగా fever ఏమైనా వచ్చాయా అండి?	INFO_REQUEST}
+{\slot
+recentగా	B-time_period
+fever	B-symptom
+ఏమైనా	O
+వచ్చాయా	O
+అండి?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+

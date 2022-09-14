@@ -1,0 +1,72 @@
+{\intent	d: उम्र बताओ?	INFO_REQUEST}
+{\slot
+उम्र	O
+बताओ?	O
+}
+
+{\intent	p: 37, female	ANSWER}
+{\slot
+37,	B-age
+female	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: पैर में मस्सा हुआ.	ANSWER}
+{\slot
+पैर	B-body_part
+में	I-body_part
+मस्सा	B-symptom
+हुआ.	I-symptom
+}
+
+{\intent	d: अभी दर्द है क्या?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+दर्द	B-symptom
+है	I-symptom
+क्या?	O
+}
+
+{\intent	p: पानी में पैर रखने से दर्द हो रहा	ANSWER}
+{\slot
+पानी	B-food_substance
+में	B-location
+पैर	B-bodily_process
+रखने	I-bodily_process
+से	I-bodily_process
+दर्द	B-symptom
+हो	I-symptom
+रहा	I-symptom
+}
+
+{\intent	d: पानी में मत पाव रखो ज्यादा.	STATEMENT}
+{\slot
+पानी	B-food_substance
+में	B-location
+मत	B-negative
+पाव	B-bodily_process
+रखो	I-bodily_process
+ज्यादा.	I-bodily_process
+}
+
+{\intent	p: दर्द हो रहा पैर में 3 से 4 महीनों से सता रहा.	STATEMENT}
+{\slot
+दर्द	B-symptom
+हो	I-symptom
+रहा	I-symptom
+पैर	B-body_part
+में	I-body_part
+3	B-time_period
+से	I-time_period
+4	I-time_period
+महीनों	I-time_period
+से	I-time_period
+सता	B-symptom
+रहा.	I-symptom
+}
+

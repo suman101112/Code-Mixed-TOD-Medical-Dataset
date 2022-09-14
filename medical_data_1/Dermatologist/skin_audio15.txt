@@ -1,0 +1,176 @@
+{\intent	p: good afternoon madam	GREETING}
+{\slot
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: good afternoon	GREETING}
+{\slot
+good	O
+afternoon	O
+}
+
+{\intent	p: madam hair fall ఉంది madam ఎక్కువగా	STATEMENT}
+{\slot
+madam	O
+hair	B-symptom
+fall	I-symptom
+ఉంది	B-positive
+madam	O
+ఎక్కువగా	O
+}
+
+{\intent	d: ఎక్కువ hair fall ఉంది.	ACK}
+{\slot
+ఎక్కువ	B-symptom
+hair	I-symptom
+fall	I-symptom
+ఉంది.	B-positive
+}
+
+{\intent	d: మీకు ఎన్ని సంవత్సరాల నుంచి hair fall ఉంది sir మీకు?	INFO_REQUEST}
+{\slot
+మీకు	O
+ఎన్ని	O
+సంవత్సరాల	B-time_period
+నుంచి	I-time_period
+hair	B-symptom
+fall	I-symptom
+ఉంది	I-symptom
+sir	O
+మీకు?	O
+}
+
+{\intent	p: 3 4 years madam	ANSWER}
+{\slot
+3	B-time_period
+4	I-time_period
+years	I-time_period
+madam	O
+}
+
+{\intent	d: see 3 4 years నుంచి ఉంది.	ACK}
+{\slot
+see	O
+3	B-time_period
+4	I-time_period
+years	I-time_period
+నుంచి	I-time_period
+ఉంది.	I-time_period
+}
+
+{\intent	d: 3 4 years నుంచి hair fall అవుతుంటే ఎప్పుడైనా doctorని కలవాలి	ACTION_DIR}
+{\slot
+3	B-time_period
+4	I-time_period
+years	I-time_period
+నుంచి	I-time_period
+hair	B-symptom
+fall	I-symptom
+అవుతుంటే	I-symptom
+ఎప్పుడైనా	O
+doctorని	B-medical_professional
+కలవాలి	O
+}
+
+{\intent	p: లేదు madam కలిసాను madam,	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+కలిసాను	O
+madam,	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కలిస్తే tablets అవన్నీ ఇచ్చారు.	STATEMENT}
+{\slot
+కలిస్తే	O
+tablets	B-medicine
+అవన్నీ	I-medicine
+ఇచ్చారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: and తగ్గలేదు మీకు.	INFO_REQUEST}
+{\slot
+and	O
+తగ్గలేదు	B-symptom
+మీకు.	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: so tablet ఇచ్చి supplements ఇచ్చినా కూడా మీకు hair fall, జుట్టు రాలిపొవడం అనేది తగ్గడం లేదు అంటే జుట్టులోని ఏదో లోపం ఉంది అని అర్ధం.	DIAGNOSIS}
+{\slot
+so	O
+tablet	B-medicine
+ఇచ్చి	O
+supplements	B-medicine
+ఇచ్చినా	O
+కూడా	O
+మీకు	O
+hair	B-symptom
+fall,	I-symptom
+జుట్టు	B-symptom
+రాలిపొవడం	I-symptom
+అనేది	I-symptom
+తగ్గడం	I-symptom
+లేదు	I-symptom
+అంటే	O
+జుట్టులోని	B-symptom
+ఏదో	I-symptom
+లోపం	I-symptom
+ఉంది	I-symptom
+అని	O
+అర్ధం.	O
+}
+
+{\intent	d: అంటే growth factors అనేవి లోపించాయి అని అర్ధం.	STATEMENT}
+{\slot
+అంటే	O
+growth	B-symptom
+factors	I-symptom
+అనేవి	I-symptom
+లోపించాయి	I-symptom
+అని	O
+అర్ధం.	O
+}
+
+{\intent	d: దాని prp treatment అని చేస్తారు	MEDICAL_EXPLANATION}
+{\slot
+దాని	O
+prp	B-treatment
+treatment	I-treatment
+అని	O
+చేస్తారు	O
+}
+
+{\intent	d: so మన సొంత రక్తంలో నుంచి plasma తీసి అక్కడ growth factorని లోపల induce చేస్తారు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మన	O
+సొంత	O
+రక్తంలో	B-treatment
+నుంచి	B-treatment
+plasma	B-treatment
+తీసి	B-treatment
+అక్కడ	B-treatment
+growth	B-treatment
+factorని	I-treatment
+లోపల	I-treatment
+induce	I-treatment
+చేస్తారు.	I-treatment
+}
+

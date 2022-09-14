@@ -1,0 +1,204 @@
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: sir నా age 69 years sir నాది	STATEMENT}
+{\slot
+sir	O
+నా	O
+age	O
+69	B-age
+years	I-age
+sir	O
+నాది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది regularగా నాకు ఒక బొటన వేలు 3 4 years నుంచి	HOLD}
+{\slot
+ఇది	O
+regularగా	B-frequency
+నాకు	O
+ఒక	B-body_part
+బొటన	I-body_part
+వేలు	I-body_part
+3	B-time_period
+4	I-time_period
+years	I-time_period
+నుంచి	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మన గోరంతా damage అయిపోతుంది sir నాది.	STATEMENT}
+{\slot
+మన	O
+గోరంతా	B-symptom
+damage	I-symptom
+అయిపోతుంది	I-symptom
+sir	O
+నాది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒకటేంటి అంటే బాగా రాత్రి నొప్పిగా ఉంటుంది అది	STATEMENT}
+{\slot
+ఒకటేంటి	O
+అంటే	O
+బాగా	B-time_period
+రాత్రి	I-time_period
+నొప్పిగా	B-symptom
+ఉంటుంది	I-symptom
+అది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: దానికి ఏం చేసానంటే ఒక్కసారి నిమ్మకాయ ముక్కను బాగా రుద్దేసరికి temporaryగా నొప్పి తగ్గిపోతుంది అది	STATEMENT}
+{\slot
+దానికి	O
+ఏం	O
+చేసానంటే	O
+ఒక్కసారి	O
+నిమ్మకాయ	B-treatment
+ముక్కను	I-treatment
+బాగా	I-treatment
+రుద్దేసరికి	I-treatment
+temporaryగా	B-time_period
+నొప్పి	B-normal
+తగ్గిపోతుంది	I-normal
+అది	O
+}
+
+{\intent	d: yayaya	STATEMENT}
+{\slot
+yayaya	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇది regularగా నాకు 2 3 years నుంచి ఉంది అండి ఇది	STATEMENT}
+{\slot
+ఇది	O
+regularగా	O
+నాకు	O
+2	B-time_period
+3	I-time_period
+years	I-time_period
+నుంచి	I-time_period
+ఉంది	B-positive
+అండి	O
+ఇది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎన్ని చేసిన కూడా ఎన్ని antibiotic వాడినా తగ్గడం లేదు.	STATEMENT}
+{\slot
+ఎన్ని	O
+చేసిన	O
+కూడా	O
+ఎన్ని	O
+antibiotic	B-treatment
+వాడినా	I-treatment
+తగ్గడం	B-symptom
+లేదు.	I-symptom
+}
+
+{\intent	d: antibioticsకి దీనికి relation లేదు.	STATEMENT}
+{\slot
+antibioticsకి	B-medicine
+దీనికి	O
+relation	O
+లేదు.	O
+}
+
+{\intent	d: ఎందుకంటే ఇది bacterial infections కావు	STATEMENT}
+{\slot
+ఎందుకంటే	O
+ఇది	O
+bacterial	B-symptom
+infections	I-symptom
+కావు	B-negative
+}
+
+{\intent	d: antibiotics వాడితే ఇంకా అవి పెరుగుతాయి మీకు	STATEMENT}
+{\slot
+antibiotics	B-treatment
+వాడితే	I-treatment
+ఇంకా	O
+అవి	B-symptom
+పెరుగుతాయి	I-symptom
+మీకు	O
+}
+
+{\intent	d: ఈ fungal అనేది antibiotics వల్లనే వస్తుంది కొంత మందిలో and దానివల్ల పెరుగుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+fungal	B-organism
+అనేది	O
+antibiotics	B-medicine
+వల్లనే	O
+వస్తుంది	O
+కొంత	O
+మందిలో	O
+and	O
+దానివల్ల	O
+పెరుగుతుంది.	B-symptom
+}
+
+{\intent	d: నిమ్మకాయ ఎందుకు అంటే దానిలో acid ఏదైతే ఉంటుంది అది yeastని వాటిని కొంత temporaryగా relief ఇస్తుంది మీకు.	MEDICAL_EXPLANATION}
+{\slot
+నిమ్మకాయ	B-food_substance
+ఎందుకు	O
+అంటే	O
+దానిలో	O
+acid	B-food_substance
+ఏదైతే	O
+ఉంటుంది	O
+అది	O
+yeastని	B-organism
+వాటిని	O
+కొంత	O
+temporaryగా	B-normal
+relief	B-normal
+ఇస్తుంది	O
+మీకు.	O
+}
+
+{\intent	d: but ఈ virus అనేది, ఈ fungus అనేది, తొందరగా చావదు అది.	MEDICAL_EXPLANATION}
+{\slot
+but	O
+ఈ	O
+virus	B-organism
+అనేది,	O
+ఈ	O
+fungus	B-organism
+అనేది,	I-organism
+తొందరగా	B-normal
+చావదు	B-negative
+అది.	O
+}
+

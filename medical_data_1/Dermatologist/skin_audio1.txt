@@ -1,0 +1,137 @@
+{\intent	p: నా పేరు Kathyayini అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Kathyayini	B-name
+అండి.	O
+}
+
+{\intent	d: Kathyayiniగారు చెప్పండి	ACTION_DIR}
+{\slot
+Kathyayiniగారు	B-name
+చెప్పండి	O
+}
+
+{\intent	p: ఏమండి మా అమ్మాయి 24 years అండి.	STATEMENT}
+{\slot
+ఏమండి	O
+మా	B-familial
+అమ్మాయి	I-familial
+24	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	p: తను ముందర hair అంతా loss అయిపోయింది.	STATEMENT}
+{\slot
+తను	O
+ముందర	B-location
+hair	B-body_part
+అంతా	B-location
+loss	B-symptom
+అయిపోయింది.	I-symptom
+}
+
+{\intent	p: దాని solution చెప్తారా కొంచం	ACTION_DIR}
+{\slot
+దాని	O
+solution	I-treatment
+చెప్తారా	O
+కొంచం	O
+}
+
+{\intent	d: hair fall ఉందా? అండి, లేదా hair loss అయిపోయిందా?	INFO_REQUEST}
+{\slot
+hair	B-body_part
+fall	B-symptom
+ఉందా	I-symptom
+?	O
+అండి,	O
+లేదా	O
+hair	B-body_part
+loss	B-symptom
+అయిపోయిందా	I-symptom
+?	O
+}
+
+{\intent	p: hair fall ఉంది, hair loss అయిపోయింది అండి. కొంచం diet చేయడం వల్ల plus కొంచం చుండ్రు కూడా ఉంది అండి.	ANSWER}
+{\slot
+hair	B-body_part
+fall	B-symptom
+ఉంది,	B-positive
+hair	B-body_part
+loss	B-symptom
+అయిపోయింది	B-positive
+అండి.	O
+కొంచం	B-intensity
+diet	B-bodily_process
+చేయడం	I-bodily_process
+వల్ల	O
+plus	O
+కొంచం	B-intensity
+చుండ్రు	B-symptom
+కూడా	O
+ఉంది	B-positive
+అండి.	O
+}
+
+{\intent	p: ఇప్పుడు దాని solution ఏంటి అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+దాని	O
+solution	B-treatment
+ఏంటి	O
+అండి?	O
+}
+
+{\intent	d: blood test ఏమైనా చేయించారా అండి?	INFO_REQUEST}
+{\slot
+blood	B-m_test
+test	I-m_test
+ఏమైనా	O
+చేయించారా	O
+అండి?	O
+}
+
+{\intent	p: ఆ చేయించాను అండి ఒకసారి	ANSWER}
+{\slot
+ఆ	O
+చేయించాను	B-positive
+అండి	O
+ఒకసారి	O
+}
+
+{\intent	d: so first మనము తనకి serum Feritin levels ఎలా ఉన్నాయి, vitamin D ఎలా ఉంది, అలాగే thyroid problem ఏమైనా ఉందా? PCOD ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+so	O
+first	O
+మనము	O
+తనకి	O
+serum	B-m_test
+Feritin	I-m_test
+levels	I-m_test
+ఎలా	O
+ఉన్నాయి,	O
+vitamin	B-body_substance
+D	I-body_substance
+ఎలా	O
+ఉంది,	O
+అలాగే	O
+thyroid	B-symptom
+problem	I-symptom
+ఏమైనా	O
+ఉందా?	O
+PCOD	B-symptom
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	d: first అవి rule out చేసుకోవాలండి.	MEDICAL_EXPLANATION}
+{\slot
+first	O
+అవి	O
+rule	O
+out	O
+చేసుకోవాలండి.	O
+}
+

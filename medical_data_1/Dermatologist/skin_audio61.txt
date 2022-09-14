@@ -1,0 +1,30 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 56, female	ANSWER}
+{\slot
+56,	B-age
+female	B-gender
+}
+
+{\intent	p: అంతా నల్లటి మచ్చలు వస్తున్నాయి sir. బాగా గోకుడు ఉంది sir.	STATEMENT}
+{\slot
+అంతా	O
+నల్లటి	B-symptom
+మచ్చలు	I-symptom
+వస్తున్నాయి	I-symptom
+sir.	O
+బాగా	B-symptom
+గోకుడు	I-symptom
+ఉంది	I-symptom
+sir.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

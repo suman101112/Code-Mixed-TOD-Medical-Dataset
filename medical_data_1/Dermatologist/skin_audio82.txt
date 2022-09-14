@@ -1,0 +1,76 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 55, m	ANSWER}
+{\slot
+55,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: బాగా మంట పెడుతుంది sir.	ANSWER}
+{\slot
+బాగా	B-symptom
+మంట	I-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: ఏమైనా పుండ్లు  ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+పుండ్లు	B-symptom
+ఉన్నాయా?	I-symptom
+}
+
+{\intent	p: లేవు sir.	ANSWER}
+{\slot
+లేవు	B-negative
+sir.	O
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	d: controlలో ఉందా?	INFO_REQUEST}
+{\slot
+controlలో	B-normal
+ఉందా?	O
+}
+
+{\intent	p: లేదు sir.	ANSWER}
+{\slot
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: అవస్థ పెడుతుందా బాగా?	INFO_REQUEST}
+{\slot
+అవస్థ	B-symptom
+పెడుతుందా	I-symptom
+బాగా?	I-symptom
+}
+
+{\intent	p: అవస్థ పెడుతుంది sir.	ANSWER}
+{\slot
+అవస్థ	B-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+

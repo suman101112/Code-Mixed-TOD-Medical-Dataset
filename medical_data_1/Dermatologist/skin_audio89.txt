@@ -1,0 +1,55 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 37, female	ANSWER}
+{\slot
+37,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: మొత్తం గుండ్రంగా వచ్చి కురుపులు లాగా వస్తున్నాయి sir. చీము లాగా వస్తుంది sir,	ANSWER}
+{\slot
+మొత్తం	B-symptom
+గుండ్రంగా	I-symptom
+వచ్చి	I-symptom
+కురుపులు	B-symptom
+లాగా	I-symptom
+వస్తున్నాయి	I-symptom
+sir.	O
+చీము	B-symptom
+లాగా	I-symptom
+వస్తుంది	I-symptom
+sir,	O
+}
+
+{\intent	d: ఒళ్ళంతా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఒళ్ళంతా	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: jointలలో ఉన్నాయా?	INFO_REQUEST}
+{\slot
+jointలలో	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+

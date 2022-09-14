@@ -1,0 +1,25 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 46, m	ANSWER}
+{\slot
+46,	B-age
+m	B-symptom
+}
+
+{\intent	p: వెనకాల కురుపులు అవుతున్నాయి sir.	STATEMENT}
+{\slot
+వెనకాల	B-body_part
+కురుపులు	B-symptom
+అవుతున్నాయి	I-symptom
+sir.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

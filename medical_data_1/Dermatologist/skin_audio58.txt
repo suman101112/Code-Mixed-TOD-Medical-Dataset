@@ -1,0 +1,40 @@
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 54, female	ANSWER}
+{\slot
+54,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇలా face మీద నల్లటి మచ్చలు వస్తున్నాయి.	ANSWER}
+{\slot
+ఇలా	O
+face	B-body_part
+మీద	B-location
+నల్లటి	B-symptom
+మచ్చలు	I-symptom
+వస్తున్నాయి.	I-symptom
+}
+
+{\intent	p: normal moisturizer పెట్టినా పోతలేదు.	STATEMENT}
+{\slot
+normal	B-treatment
+moisturizer	I-treatment
+పెట్టినా	I-treatment
+పోతలేదు.	B-negative
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+

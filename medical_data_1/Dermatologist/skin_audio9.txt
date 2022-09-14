@@ -139,7 +139,7 @@ imbalance.	I-symptom
 {\intent	d: pregnancyలో hormones అనేవి అత్యధికమైన variations కనపడుతా ఉంటాయి. so దానికి ageతో నిమిత్తం లేదు.	MEDICAL_EXPLANATION}
 {\slot
 pregnancyలో	B-time_period
-hormones	B-liquid_body_substance
+hormones	B-body_substance
 అనేవి	O
 అత్యధికమైన	B-symptom
 variations	I-symptom
