@@ -1,0 +1,194 @@
+{\intent	p: నమస్కారమండీ	GREETING}
+{\slot
+నమస్కారమండీ	O
+}
+
+{\intent	d: నమస్కారమండీ	GREETING}
+{\slot
+నమస్కారమండీ	O
+}
+
+{\intent	p: ఏం లేదు madam ఒక 4 5 నెలలైతుంది, మూత్రంలో మంట వస్తుంది నాది	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+madam	O
+ఒక	O
+4	B-time_period
+5	B-time_period
+నెలలైతుంది,	I-time_period
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+వస్తుంది	O
+నాది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: Hello	SNU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఒక 4 5 నెలలైతుంది, మూత్రంలో మంట అంటే మామూలుగా రావట్లేదు బాగానే మంట మండుతుంది	REPEAT_REPHRASE}
+{\slot
+ఒక	O
+4	B-quantity
+5	B-time_period
+నెలలైతుంది,	I-time_period
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+అంటే	O
+మామూలుగా	O
+రావట్లేదు	O
+బాగానే	B-intensity
+మంట	B-symptom
+మండుతుంది	B-symptom
+}
+
+{\intent	p: అది మూత్రం yellow colorలో రావడం	STATEMENT}
+{\slot
+అది	O
+మూత్రం	B-body_substance
+yellow	B-color
+colorలో	I-color
+రావడం	B-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మళ్ళ అప్పుడప్పుడు మంట మండుతుంది లేకపోతే లేదండీ	STATEMENT}
+{\slot
+మళ్ళ	O
+అప్పుడప్పుడు	B-time_period
+మంట	B-symptom
+మండుతుంది	B-symptom
+లేకపోతే	O
+లేదండీ	O
+}
+
+{\intent	p: దీనికి problem ఏంటో అర్ధమవ్వడంలేదు	STATEMENT}
+{\slot
+దీనికి	O
+problem	O
+ఏంటో	O
+అర్ధమవ్వడంలేదు	O
+}
+
+{\intent	p: ఎడమ కాలు ఉంది కదా అండి	HOLD}
+{\slot
+ఎడమ	B-location
+కాలు	B-body_part
+ఉంది	O
+కదా	O
+అండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: doctorగారు, Hello	SNU}
+{\slot
+doctorగారు,	B-medical_professional
+Hello	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఎడమ కాలు	HOLD}
+{\slot
+ఎడమ	B-location
+కాలు	B-body_part
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మడమ పైన	HOLD}
+{\slot
+మడమ	B-body_part
+పైన	B-location
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఉబ్బుతూ, ఉందండి.	STATEMENT}
+{\slot
+ఉబ్బుతూ,	B-symptom
+ఉందండి.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: దీనికి పరిష్కారం ఏంటి? అసలు ఏంటి ఏ సమస్య కొంచం చెప్పగలుగుతారా?	INFO_REQUEST}
+{\slot
+దీనికి	O
+పరిష్కారం	B-treatment
+ఏంటి?	O
+అసలు	O
+ఏంటి	O
+ఏ	O
+సమస్య	O
+కొంచం	O
+చెప్పగలుగుతారా?	O
+}
+
+{\intent	d: ya, ఒకసారి వాపు గనక కనిపించింది అంటే and urineలో మంట గనక ఉంటే, usualగా అంటే uric acid levelsని మనం rectify చేసుకోవచ్చు	STATEMENT}
+{\slot
+ya,	O
+ఒకసారి	O
+వాపు	B-symptom
+గనక	O
+కనిపించింది	O
+అంటే	O
+and	O
+urineలో	B-body_substance
+మంట	B-symptom
+గనక	O
+ఉంటే,	O
+usualగా	O
+అంటే	O
+uric	B-body_substance
+acid	B-body_substance
+levelsని	O
+మనం	O
+rectify	O
+చేసుకోవచ్చు	O
+}
+
+{\intent	d: and మగవాళ్ళల్లో stones తొందరగా form అయ్యే chance ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+and	O
+మగవాళ్ళల్లో	B-gender
+stones	B-body_substance
+తొందరగా	O
+form	O
+అయ్యే	O
+chance	O
+ఉంటుంది	O
+}
+

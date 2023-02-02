@@ -1,0 +1,90 @@
+{\intent	p: నాకు kidneyలో రాయి 7mm ఉంది sir	STATEMENT}
+{\slot
+నాకు	O
+kidneyలో	B-body_part
+రాయి	B-body_substance
+7mm	B-mtest_value
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది ఒక రాయి 3.5mm పోయింది	STATEMENT}
+{\slot
+అది	O
+ఒక	O
+రాయి	B-body_substance
+3.5mm	B-mtest_value
+పోయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక్కటి 7mm ఉంది sir అది పోలేదు, ఎలా sir?	INFO_REQUEST}
+{\slot
+ఒక్కటి	O
+7mm	B-mtest_value
+ఉంది	O
+sir	O
+అది	O
+పోలేదు,	B-symptom
+ఎలా	O
+sir?	O
+}
+
+{\intent	d: ya, మీరు stone 10mm ఉంటుంది అన్నారు కబట్టి ఇది maximum మందుల ద్వారా కరిగి, ఈ stone పడిపోయే అవకాశం ఉంటుంది అండి.	STATEMENT}
+{\slot
+ya,	O
+మీరు	O
+stone	B-body_substance
+10mm	B-mtest_value
+ఉంటుంది	O
+అన్నారు	O
+కబట్టి	O
+ఇది	O
+maximum	B-mtest_value
+మందుల	B-medicine
+ద్వారా	O
+కరిగి,	O
+ఈ	O
+stone	B-body_substance
+పడిపోయే	B-normal
+అవకాశం	O
+ఉంటుంది	O
+అండి.	O
+}
+
+{\intent	d: అయితే ఈ stone ఉన్న site అనేది important.	MEDICAL_EXPLANATION}
+{\slot
+అయితే	O
+ఈ	O
+stone	B-body_substance
+ఉన్న	O
+site	O
+అనేది	O
+important.	O
+}
+
+{\intent	d: for example stone ureterలో ఉంటే గనక stone తక్కువ timeలో పడిపోయే అవకాశం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+for	O
+example	O
+stone	B-body_substance
+ureterలో	B-body_part
+ఉంటే	O
+గనక	O
+stone	B-body_substance
+తక్కువ	O
+timeలో	B-time_period
+పడిపోయే	B-normal
+అవకాశం	O
+ఉంటుంది.	O
+}
+

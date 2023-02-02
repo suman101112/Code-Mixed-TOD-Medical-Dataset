@@ -1,0 +1,210 @@
+{\intent	d: ఏం పేరు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా?	O
+}
+
+{\intent	p: Kavya	ANSWER}
+{\slot
+Kavya	B-name
+}
+
+{\intent	d: ఇది రెండో కాన్పు.	STATEMENT}
+{\slot
+ఇది	O
+రెండో	B-frequency
+కాన్పు.	O
+}
+
+{\intent	d: first పాప?	INFO_REQUEST}
+{\slot
+first	B-frequency
+పాప?	B-familal
+}
+
+{\intent	p1: ఇదిగో పాప	ANSWER}
+{\slot
+ఇదిగో	O
+పాప	B-familal
+}
+
+{\intent	d: ఎన్నేళ్ళు?	INFO_REQUEST}
+{\slot
+ఎన్నేళ్ళు?	O
+}
+
+{\intent	p: 2.5 years అయితాంది	ANSWER}
+{\slot
+2.5	B-age
+years	I-age
+అయితాంది	O
+}
+
+{\intent	d: first normal ఆ caesarean ఆ?	INFO_REQUEST}
+{\slot
+first	B-frequency
+normal	B-normal
+ఆ	O
+caesarean	B-treatment
+ఆ?	O
+}
+
+{\intent	p: caesarean ఏ.	ANSWER}
+{\slot
+caesarean	B-treatment
+ఏ.	O
+}
+
+{\intent	d: అప్పుడు ఏం problems లేకుండే.	INFO_REQUEST}
+{\slot
+అప్పుడు	O
+ఏం	O
+problems	O
+లేకుండే.	O
+}
+
+{\intent	p: uhum<neg>	ANSWER}
+{\slot
+uhum<neg>	B-negative
+}
+
+{\intent	d: last బయట ఉన్న తారీకు ఎప్పుడు?	INFO_REQUEST}
+{\slot
+last	O
+బయట	B-bodily_process
+ఉన్న	O
+తారీకు	B-time_period
+ఎప్పుడు?	O
+}
+
+{\intent	p: బయట ఉన్నదా? december 17	ANSWER}
+{\slot
+బయట	B-bodily_process
+ఉన్నదా?	O
+december	B-time_period
+17	I-time_period
+}
+
+{\intent	d: december 17	ACK}
+{\slot
+december	B-time_period
+17	I-time_period
+}
+
+{\intent	d: ఇప్పుడు పాపకు పాలు ఇస్తున్నావా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+పాపకు	B-person
+పాలు	B-food_substance
+ఇస్తున్నావా?	O
+}
+
+{\intent	p: pche, बंद చేసిన.	ANSWER}
+{\slot
+pche,	B-negative
+बंद	O
+చేసిన.	O
+}
+
+{\intent	d: first pregnancyలో పాపకి weight ఎంత వచ్చింది?	INFO_REQUEST}
+{\slot
+first	B-frequency
+pregnancyలో	B-bodily_process
+పాపకి	B-person
+weight	B-bm
+ఎంత	O
+వచ్చింది?	O
+}
+
+{\intent	p: 2 kgs. 600.	ANSWER}
+{\slot
+2	B-bm
+kgs.	I-bm
+600.	I-bm
+}
+
+{\intent	d: 2 kgs. 600.	ACK}
+{\slot
+2	B-age
+kgs.	I-bm
+600.	I-bm
+}
+
+{\intent	d: ఇప్పుడు దగ్గు, ఇదేమన్నా ఉందా? వాంతులు ఏమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+దగ్గు,	B-symptom
+ఇదేమన్నా	O
+ఉందా?	O
+వాంతులు	B-symptom
+ఏమన్నా	O
+ఉందా?	O
+}
+
+{\intent	p: vomitings బాగా అయితున్నాయి.	ANSWER}
+{\slot
+vomitings	B-symptom
+బాగా	B-intensity
+అయితున్నాయి.	O
+}
+
+{\intent	d: vomitings బాగా అయితున్నాయి.	ACK}
+{\slot
+vomitings	B-symptom
+బాగా	B-intensity
+అయితున్నాయి.	O
+}
+
+{\intent	p: um	STATEMENT}
+{\slot
+um	O
+}
+
+{\intent	d: ఇంతకుముందు దగ్గు, దమ్ము, Asthma, fits ఏమి లేవా?	INFO_REQUEST}
+{\slot
+ఇంతకుముందు	O
+దగ్గు,	B-symptom
+దమ్ము,	B-medical_condition
+Asthma,	B-medical_condition
+fits	B-medical_condition
+ఏమి	O
+లేవా?	O
+}
+
+{\intent	p: ఏమి లేవు.	ANSWER}
+{\slot
+ఏమి	O
+లేవు.	B-negative
+}
+
+{\intent	d: ఏం లేవు.	ACK}
+{\slot
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	d: last period date?	INFO_REQUEST}
+{\slot
+last	B-frequency
+period	B-bodily_process
+date?	B-time_period
+}
+
+{\intent	d: 12	ANSWER}
+{\slot
+12	B-time_period
+}
+
+{\intent	d: 17 12	CORRECT}
+{\slot
+17	B-time_period
+12	I-time_period
+}
+
+{\intent	d: సరే పడుకో.	ACTION_DIR}
+{\slot
+సరే	O
+పడుకో.	O
+}
+

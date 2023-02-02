@@ -1,0 +1,178 @@
+{\intent	p: నమస్తే doctor గారు	GREETING}
+{\slot
+నమస్తే	O
+doctor	B-medical_professional
+గారు	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: ఆ మేము 1.5 yearగా మా wife pregnancy కోసం మేము conceive అవ్వడానికి try చేస్తున్నారు	STATEMENT}
+{\slot
+ఆ	O
+మేము	O
+1.5	B-time_period
+yearగా	I-time_period
+మా	O
+wife	B-familal
+pregnancy	B-bodily_process
+కోసం	O
+మేము	O
+conceive	B-bodily_process
+అవ్వడానికి	O
+try	O
+చేస్తున్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so, కానీ కావడం లేదు	STATEMENT}
+{\slot
+so,	O
+కానీ	O
+కావడం	O
+లేదు	B-negative
+}
+
+{\intent	p: so అన్నీ hormones test అన్నీ చేసాం అన్నీ normalగా ఉన్నాయి	STATEMENT}
+{\slot
+so	O
+అన్నీ	O
+hormones	B-body_substance
+test	B-mtest
+అన్నీ	O
+చేసాం	O
+అన్నీ	O
+normalగా	B-normal
+ఉన్నాయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: thyroid normal, Fsh LH చేసారా? అది అంతా normal అని చెప్పారా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+normal,	B-normal
+Fsh	B-body_substance
+LH	B-body_substance
+చేసారా?	O
+అది	O
+అంతా	O
+normal	B-normal
+అని	O
+చెప్పారా?	O
+}
+
+{\intent	p: అన్నీ normal ఉన్నాయండి కానీ endometrium size ovulation timeలో 5.8 అలా ఉంటున్నది	ANSWER}
+{\slot
+అన్నీ	O
+normal	B-normal
+ఉన్నాయండి	O
+కానీ	O
+endometrium	B-body_part
+size	O
+ovulation	B-bodily_process
+timeలో	B-time_period
+5.8	B-mtest_value
+అలా	O
+ఉంటున్నది	O
+}
+
+{\intent	p: అది concern అన్నారు	STATEMENT}
+{\slot
+అది	O
+concern	O
+అన్నారు	O
+}
+
+{\intent	d: గర్భసంచి లోపల lining సన్నగా ఉంటుంది at the time of ovulation	STATEMENT}
+{\slot
+గర్భసంచి	B-body_part
+లోపల	B-location
+lining	B-body_part
+సన్నగా	B-symptom
+ఉంటుంది	O
+at	O
+the	O
+time	B-time_period
+of	O
+ovulation	B-bodily_process
+}
+
+{\intent	d: correct కదా?	INFO_REQUEST}
+{\slot
+correct	O
+కదా	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అది develop అవ్వాలంటే అసలు ఏం చేయాలి అని కొంచం చెప్పగలరా	ACTION_DIR}
+{\slot
+అది	O
+develop	B-normal
+అవ్వాలంటే	O
+అసలు	O
+ఏం	O
+చేయాలి	O
+అని	O
+కొంచం	O
+చెప్పగలరా	O
+}
+
+{\intent	d: right right	ACK}
+{\slot
+right	O
+right	O
+}
+
+{\intent	d: so ఇప్పుడు endometrium thickness అనేది this is very important.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇప్పుడు	O
+endometrium	B-body_part
+thickness	B-body_part
+అనేది	O
+this	O
+is	O
+very	O
+important.	O
+}
+
+{\intent	d: endometrium అనేది ఒక lining ఉంటది ఒక పొర ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+endometrium	B-body_part
+అనేది	O
+ఒక	O
+lining	B-body_part
+ఉంటది	O
+ఒక	O
+పొర	B-body_part
+ఉంటది.	O
+}
+
+{\intent	d: and ఈ layerది ఒక specialized function ఉంటది pregnancy successలో	MEDICAL_EXPLANATION}
+{\slot
+and	O
+ఈ	O
+layerది	O
+ఒక	O
+specialized	O
+function	O
+ఉంటది	O
+pregnancy	B-bodily_process
+successలో	O
+}
+

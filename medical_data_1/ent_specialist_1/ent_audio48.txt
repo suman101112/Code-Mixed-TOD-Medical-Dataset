@@ -1,0 +1,263 @@
+{\intent	d: దీని adenoids అంటారు.	DIAGNOSIS}
+{\slot
+దీని	O
+adenoids	B-body_part
+అంటారు.	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ whiteness ఆ sir?	INFO_REQUEST}
+{\slot
+ఆ	O
+whiteness	B-medical_condition
+ఆ	O
+sir?	O
+}
+
+{\intent	d: hmm	ANSWER}
+{\slot
+hmm	O
+}
+
+{\intent	p: ummhmm	ACK}
+{\slot
+ummhmm	O
+}
+
+{\intent	d: నంజు గుడ్డలతోని ఇవి తీసేస్తే బాగా ఉంటుంది.	STATEMENT}
+{\slot
+నంజు	B-body_part
+గుడ్డలతోని	I-body_part
+ఇవి	O
+తీసేస్తే	O
+బాగా	O
+ఉంటుంది.	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అంటే ఇది నంజు గుడ్డలను కూడా తీసేస్తారు కదా sir.	ACTION_DIR}
+{\slot
+అంటే	O
+ఇది	O
+నంజు	B-body_part
+గుడ్డలను	I-body_part
+కూడా	O
+తీసేస్తారు	O
+కదా	O
+sir.	O
+}
+
+{\intent	d: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అది రెండు కూడా తీసేస్తారు	ACTION_DIR}
+{\slot
+అది	O
+రెండు	O
+కూడా	O
+తీసేస్తారు	O
+}
+
+{\intent	d: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇవి కూడా నంజు గుడ్డలే	MEDICAL_EXPLANATION}
+{\slot
+ఇవి	O
+కూడా	O
+నంజు	B-body_part
+గుడ్డలే	I-body_part
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ముక్కు వెనక ఉంటే అది adenoids అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+ముక్కు	B-body_part
+వెనక	I-location
+ఉంటే	O
+అది	O
+adenoids	B-body_part
+అంటారు.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: నంజు గుడ్డలు లాంటిది.	MEDICAL_EXPLANATION}
+{\slot
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+లాంటిది.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: పిల్లలకు ఇది common.	MEDICAL_EXPLANATION}
+{\slot
+పిల్లలకు	B-person
+ఇది	O
+common.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఊరికే problem వస్తే చేయలే.	MEDICAL_EXPLANATION}
+{\slot
+ఊరికే	O
+problem	O
+వస్తే	O
+చేయలే.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఇప్పుడు regularగా వస్తుందా ఏ మీకు ?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+regularగా	O
+వస్తుందా	O
+ఏ	O
+మీకు	O
+?	O
+}
+
+{\intent	p: regularగా అంటే కాదుగాని 6 months నుంచి అయితే కొంచం నోటితోనే తీస్తుంది.	ANSWER}
+{\slot
+regularగా	O
+అంటే	O
+కాదుగాని	O
+6	B-time_period
+months	I-time_period
+నుంచి	O
+అయితే	O
+కొంచం	O
+నోటితోనే	B-body_part
+తీస్తుంది.	B-bodily_process
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇగ మొన్న మీరు వాడిచ్చారు కదా, వాడించినాక తగ్గింది.	STATEMENT}
+{\slot
+ఇగ	O
+మొన్న	B-time_period
+మీరు	O
+వాడిచ్చారు	O
+కదా,	O
+వాడించినాక	O
+తగ్గింది.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: completeగా నోరు ముడుచుకొనే శ్వాస తీస్తుంది.	STATEMENT}
+{\slot
+completeగా	O
+నోరు	B-body_part
+ముడుచుకొనే	B-symptom
+శ్వాస	B-bodily_process
+తీస్తుంది.	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: నాలుక బయటికి తీయి	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+బయటికి	B-location
+తీయి	O
+}
+
+{\intent	p: అయితే june నుంచి busలో పోతున్నారు school	STATEMENT}
+{\slot
+అయితే	O
+june	B-time_period
+నుంచి	O
+busలో	O
+పోతున్నారు	O
+school	B-place
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అంతకు ముందు ఇంటిపక్కనే వెళ్ళేది.	STATEMENT}
+{\slot
+అంతకు	O
+ముందు	O
+ఇంటిపక్కనే	O
+వెళ్ళేది.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: june నుంచి busలో వెళ్తున్నారు.	STATEMENT}
+{\slot
+june	B-time_period
+నుంచి	O
+busలో	O
+వెళ్తున్నారు.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: busలో వెళ్ళినా కాడనే కొంచం ఎక్కువ అయినది.	STATEMENT}
+{\slot
+busలో	O
+వెళ్ళినా	O
+కాడనే	O
+కొంచం	O
+ఎక్కువ	B-intensity
+అయినది.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

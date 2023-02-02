@@ -1,0 +1,164 @@
+{\intent	d: 26	ANSWER}
+{\slot
+26	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఎట్లుంది	STATEMENT}
+{\slot
+ఎట్లుంది	O
+}
+
+{\intent	d: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇది operation చేయాలి అమ్మ	STATEMENT}
+{\slot
+ఇది	O
+operation	B-treatment
+చేయాలి	O
+అమ్మ	O
+}
+
+{\intent	d: నంజు గుడ్డ చూడు ఎంత పెద్దగా ఉందో.	ACTION_DIR}
+{\slot
+నంజు	B-body_part
+గుడ్డ	I-body_part
+చూడు	O
+ఎంత	O
+పెద్దగా	B-symptom
+ఉందో.	I-symptom
+}
+
+{\intent	d: దెగ్గర రా.	ACTION_DIR}
+{\slot
+దెగ్గర	O
+రా.	O
+}
+
+{\intent	d: గొంతు నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: pche	STATEMENT}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: జ్వరం వస్తుందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: lightగా వొళ్ళు కాలుతుంది. దగ్గు ఉంది	STATEMENT}
+{\slot
+lightగా	B-intensity
+వొళ్ళు	B-body_part
+కాలుతుంది.	B-symptom
+దగ్గు	B-symptom
+ఉంది	B-positive
+}
+
+{\intent	d: सर्दी?	INFO_REQUEST}
+{\slot
+सर्दी?	B-medical_condition
+}
+
+{\intent	p: सर्दी ఏం లేదు	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+ఏం	B-negative
+లేదు	I-negative
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: అది చూడు నంజు గుడ్డలు ఎంత పెద్దగా ఉన్నాయో	ACTION_DIR}
+{\slot
+అది	O
+చూడు	O
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+ఎంత	O
+పెద్దగా	B-symptom
+ఉన్నాయో	O
+}
+
+{\intent	p: బాగా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+బాగా	B-intensity
+ఉన్నాయా?	O
+}
+
+{\intent	d: బాగా ఉన్నాయి	ANSWER}
+{\slot
+బాగా	B-intensity
+ఉన్నాయి	O
+}
+
+{\intent	d: ఇది పరీక్ష రాసి ఇస్తా. వస్తే operation చేస్తా.	STATEMENT}
+{\slot
+ఇది	O
+పరీక్ష	B-mtest
+రాసి	O
+ఇస్తా.	O
+వస్తే	O
+operation	B-treatment
+చేస్తా.	O
+}
+
+{\intent	d: పరీక్షలు చేయించుకొనిరా.	ACTION_DIR}
+{\slot
+పరీక్షలు	B-mtest
+చేయించుకొనిరా.	O
+}
+
+{\intent	d: దగ్గు వస్తుందా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+వస్తుందా	O
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: lightగా వస్తోంది.	ANSWER}
+{\slot
+lightగా	B-intensity
+వస్తోంది.	B-symptom
+}
+
+{\intent	p1: కొద్దిగా ఉంది అంతే	STATEMENT}
+{\slot
+కొద్దిగా	B-intensity
+ఉంది	B-positive
+అంతే	O
+}
+
+{\intent	p: తక్కువ లేదా sir పైసలు.	INFO_REQUEST}
+{\slot
+తక్కువ	B-intensity
+లేదా	B-negative
+sir	O
+పైసలు.	O
+}
+
+{\intent	d: అస్సలు కాదు అమ్మ.	ANSWER}
+{\slot
+అస్సలు	O
+కాదు	B-negative
+అమ్మ.	O
+}
+

@@ -1,0 +1,300 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: Naresh	ANSWER}
+{\slot
+Naresh	B-name
+}
+
+{\intent	p: L Naresh	ANSWER}
+{\slot
+L	B-name
+Naresh	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 25 ఉంటాయి sir.	ANSWER}
+{\slot
+25	B-age
+ఉంటాయి	O
+sir.	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: snore. అది గురక ఎక్కువవస్తుంది.	ANSWER}
+{\slot
+snore.	B-symptom
+అది	O
+గురక	B-symptom
+ఎక్కువవస్తుంది.	B-intensity
+}
+
+{\intent	d: గురక	ACK}
+{\slot
+గురక	B-symptom
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: తుమ్ములు గిట్ల ఇలా వస్తాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+గిట్ల	O
+ఇలా	O
+వస్తాయా?	O
+}
+
+{\intent	p: frequent normalగా అప్పుడప్పుడు వస్తాయి.	ANSWER}
+{\slot
+frequent	O
+normalగా	O
+అప్పుడప్పుడు	B-time_period
+వస్తాయి.	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	d: గొంతు నొప్పి గిట్ల వస్తాదా?	INFO_REQUEST}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+గిట్ల	O
+వస్తాదా?	O
+}
+
+{\intent	p: అట్ల ఏం లేదు	ANSWER}
+{\slot
+అట్ల	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: ఎట్లా ఎన్ని రోజుల నుంచి వస్తోంది గురక?	INFO_REQUEST}
+{\slot
+ఎట్లా	O
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+వస్తోంది	O
+గురక?	O
+}
+
+{\intent	p: అంటే 1 month 2 months	ANSWER}
+{\slot
+అంటే	O
+1	B-time_period
+month	I-time_period
+2	B-time_period
+months	I-time_period
+}
+
+{\intent	d: దానికన్నా మొదలు అలా ఏం లేదు.	INFO_REQUEST}
+{\slot
+దానికన్నా	O
+మొదలు	O
+అలా	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	p: ఆహ<neg> లేదు అంతా ముందు.	ANSWER}
+{\slot
+ఆహ<neg>	O
+లేదు	O
+అంతా	O
+ముందు.	O
+}
+
+{\intent	d: గొంతు నొప్పి అలా ఏం లేదు.	INFO_REQUEST}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+అలా	O
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: सर्दी అలా ఏం లేదు.	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+అలా	O
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	p: ఆహ<neg> ఏం, ఏం లేదు sir.	ANSWER}
+{\slot
+ఆహ<neg>	O
+ఏం,	O
+ఏం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: కొంచం నంజు గుడ్డలు గిట్ల ఉన్నాయి.	DIAGNOSIS}
+{\slot
+కొంచం	O
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+గిట్ల	O
+ఉన్నాయి.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ముక్కులో కూడా కొంచం మంసం అనేది వాపు వచ్చింది అంటే normalదే అది.	DIAGNOSIS}
+{\slot
+ముక్కులో	B-body_part
+కూడా	O
+కొంచం	O
+మంసం	B-symptom
+అనేది	O
+వాపు	B-symptom
+వచ్చింది	O
+అంటే	O
+normalదే	B-normal
+అది.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: మొదల్ల మందులు వాడి చూద్దాం తగ్గకుంటే tonsil గిట్ల operation చేస్తే మంచిగుంటది.	STATEMENT}
+{\slot
+మొదల్ల	O
+మందులు	B-medicine
+వాడి	O
+చూద్దాం	O
+తగ్గకుంటే	O
+tonsil	B-body_part
+గిట్ల	O
+operation	B-treatment
+చేస్తే	O
+మంచిగుంటది.	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	d: ఎందుకంటే ముక్కునుంచి ఇట్ల గొంతులో తట్టుకుంటేనే snoring.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+ముక్కునుంచి	B-body_part
+ఇట్ల	O
+గొంతులో	B-body_part
+తట్టుకుంటేనే	B-symptom
+snoring.	B-symptom
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	d: ok ఇదేంటంటే tonsil అన్నా ఉంటాయి ముక్కల అన్నా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ok	O
+ఇదేంటంటే	O
+tonsil	B-body_part
+అన్నా	O
+ఉంటాయి	O
+ముక్కల	O
+అన్నా	O
+ఉంటాయి.	O
+}
+
+{\intent	d: మొదలు నంజు గుడ్డలు తీయాలి చూడాలి.	STATEMENT}
+{\slot
+మొదలు	O
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+తీయాలి	O
+చూడాలి.	O
+}
+
+{\intent	d: దానితో తగ్గకపోతే ముక్కు operation చేయాలి	STATEMENT}
+{\slot
+దానితో	O
+తగ్గకపోతే	O
+ముక్కు	B-body_part
+operation	B-treatment
+చేయాలి	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	p: dust effect ఏమైనా ఉంటదా sir?	INFO_REQUEST}
+{\slot
+dust	B-symptom
+effect	I-symptom
+ఏమైనా	O
+ఉంటదా	O
+sir?	O
+}
+
+{\intent	d: ఉంటది.	ANSWER}
+{\slot
+ఉంటది.	O
+}
+
+{\intent	d: మొదల్ల అయితే మందులు వాడి చూద్దాం.	STATEMENT}
+{\slot
+మొదల్ల	O
+అయితే	O
+మందులు	B-medicine
+వాడి	O
+చూద్దాం.	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	p: dust కోసం mask కూడా వాడుతున్నా sir.	STATEMENT}
+{\slot
+dust	O
+కోసం	O
+mask	O
+కూడా	O
+వాడుతున్నా	O
+sir.	O
+}
+

@@ -1,0 +1,29 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 26, female	ANSWER}
+{\slot
+26,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: కళ్ళు గుంజుతున్నాయి ఇంకా బాగా తల నొప్పి ఉంది.	ANSWER}
+{\slot
+కళ్ళు	B-body_part
+గుంజుతున్నాయి	B-symptom
+ఇంకా	O
+బాగా	B-intensity
+తల	B-body_part
+నొప్పి	B-symptom
+ఉంది.	O
+}
+

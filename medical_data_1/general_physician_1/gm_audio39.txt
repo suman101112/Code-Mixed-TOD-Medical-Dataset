@@ -1,0 +1,212 @@
+{\intent	p: sir, నమస్తే sir	GREETING}
+{\slot
+sir,	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్కారమండీ, Rambaabu గారు	GREETING}
+{\slot
+నమస్కారమండీ,	O
+Rambaabu	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: మా అమ్మాయి వయస్సు 17 సంవత్సరాలండీ	STATEMENT}
+{\slot
+మా	O
+అమ్మాయి	B-familal
+వయస్సు	O
+17	B-age
+సంవత్సరాలండీ	I-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 3 years కింద migrane తలపోటు వచ్చిందండీ	STATEMENT}
+{\slot
+3	B-age
+years	I-age
+కింద	O
+migrane	B-symptom
+తలపోటు	B-symptom
+వచ్చిందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎంత ఎంత మంది doctors ను చూయించినా తగ్గలేదు, sir	STATEMENT}
+{\slot
+ఎంత	O
+ఎంత	O
+మంది	O
+doctors	B-medical_professional
+ను	O
+చూయించినా	O
+తగ్గలేదు,	B-symptom
+sir	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తరువాత, మళ్ళి ఈ months అంతా వచ్చింది sir	STATEMENT}
+{\slot
+తరువాత,	B-time_period
+మళ్ళి	O
+ఈ	O
+months	B-time_period
+అంతా	O
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: వాంతులు అయిపోతున్నాయి ఊరికే తలపోటు తట్టుకోలేకపోతుంది పాప	STATEMENT}
+{\slot
+వాంతులు	B-symptom
+అయిపోతున్నాయి	O
+ఊరికే	O
+తలపోటు	B-symptom
+తట్టుకోలేకపోతుంది	I-symptom
+పాప	B-person
+}
+
+{\intent	d: right అండి	ACK}
+{\slot
+right	O
+అండి	O
+}
+
+{\intent	d: ఏమన్నా జలుబు కానీ, ముక్కు కారడం ఇలాంటి లక్షణాలు ఏమైనా చెప్తుందా అమ్మాయి	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+జలుబు	B-symptom
+కానీ,	O
+ముక్కు	B-body_part
+కారడం	B-symptom
+ఇలాంటి	O
+లక్షణాలు	O
+ఏమైనా	O
+చెప్తుందా	O
+అమ్మాయి	O
+}
+
+{\intent	p: ఆ ఏం లేవు sir	ANSWER}
+{\slot
+ఆ	O
+ఏం	O
+లేవు	B-negative
+sir	O
+}
+
+{\intent	d: right, చెవికి సంబంధించి ఏమైనా సమస్యలు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+right,	O
+చెవికి	B-body_part
+సంబంధించి	O
+ఏమైనా	O
+సమస్యలు	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఎంటండి?	SNU}
+{\slot
+ఎంటండి?	O
+}
+
+{\intent	d: earకి సంబంధించి ఏమైనా లక్షణాలు ఉన్నాయా పాపకి?	REPEAT_REPHRASE}
+{\slot
+earకి	B-body_part
+సంబంధించి	O
+ఏమైనా	O
+లక్షణాలు	O
+ఉన్నాయా	O
+పాపకి?	B-person
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: right అండి, చెప్తాను.	COMMIT}
+{\slot
+right	O
+అండి,	O
+చెప్తాను.	O
+}
+
+{\intent	d: ఈ migrane లక్షణాలు చాలా తక్కువ వయస్సులో అంటే చిన్న పిల్లలో 15 లోపు చాలా తక్కువలో అంటే very rare సుమారుగా 100లో ఒకరికి ఇద్దరికీ మాత్రమే కనిపిస్తుంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+migrane	B-symptom
+లక్షణాలు	O
+చాలా	B-intensity
+తక్కువ	B-intensity
+వయస్సులో	O
+అంటే	O
+చిన్న	O
+పిల్లలో	B-person
+15	B-age
+లోపు	O
+చాలా	B-intensity
+తక్కువలో	B-intensity
+అంటే	O
+very	O
+rare	O
+సుమారుగా	O
+100లో	O
+ఒకరికి	O
+ఇద్దరికీ	O
+మాత్రమే	O
+కనిపిస్తుంటుంది.	O
+}
+
+{\intent	d: clear indication అండి, headacheతో పాటుగా vomiting వస్తుంది, vomiting చేసిన తరువాత తలనొప్పి అనేది control అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+clear	O
+indication	O
+అండి,	O
+headacheతో	B-symptom
+పాటుగా	O
+vomiting	B-symptom
+వస్తుంది,	O
+vomiting	B-symptom
+చేసిన	O
+తరువాత	B-time_period
+తలనొప్పి	B-symptom
+అనేది	O
+control	B-normal
+అవుతుంది.	O
+}
+
+{\intent	d: so ఇది ప్రధానంగా ఈ ageలో వస్తుందంటే sinusతో కూడి ఉంటుంది.	DIAGNOSIS}
+{\slot
+so	O
+ఇది	O
+ప్రధానంగా	O
+ఈ	O
+ageలో	O
+వస్తుందంటే	O
+sinusతో	B-medical_condition
+కూడి	O
+ఉంటుంది.	O
+}
+

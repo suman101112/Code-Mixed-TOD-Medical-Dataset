@@ -1,0 +1,146 @@
+{\intent	p: నాకు piles వచ్చినాయి sir.	STATEMENT}
+{\slot
+నాకు	O
+piles	B-symptom
+వచ్చినాయి	O
+sir.	O
+}
+
+{\intent	d: చెప్పండి మీ బాధ, piles అంటే ఏమైనా బాధలాగా ఉందా లేకపోతే మీరే ఆలోచన చేసి piles వచ్చినాయి అంటున్నారా?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+మీ	O
+బాధ,	O
+piles	B-symptom
+అంటే	O
+ఏమైనా	O
+బాధలాగా	B-symptom
+ఉందా	O
+లేకపోతే	O
+మీరే	O
+ఆలోచన	O
+చేసి	O
+piles	B-symptom
+వచ్చినాయి	O
+అంటున్నారా?	O
+}
+
+{\intent	p: బాగా వేడి వస్తూవులు తినడం వల్ల నాకు ఈ alcohol తీసుకోవడం వల్ల blood వస్తుంది, కింద పడుతుంటది sir.	ANSWER}
+{\slot
+బాగా	B-intensity
+వేడి	O
+వస్తూవులు	O
+తినడం	B-bodily_process
+వల్ల	O
+నాకు	O
+ఈ	O
+alcohol	B-habit
+తీసుకోవడం	B-bodily_process
+వల్ల	O
+blood	B-body_substance
+వస్తుంది,	O
+కింద	B-location
+పడుతుంటది	O
+sir.	O
+}
+
+{\intent	d: ok ఇంకా?	INFO_REQUEST}
+{\slot
+ok	O
+ఇంకా?	O
+}
+
+{\intent	d: మామూలు diet తీసుకుంటే blood ఏం రాదు కదా మీకు?	INFO_REQUEST}
+{\slot
+మామూలు	O
+diet	B-food_substance
+తీసుకుంటే	O
+blood	B-body_substance
+ఏం	O
+రాదు	O
+కదా	O
+మీకు?	O
+}
+
+{\intent	p: ఆ రావట్లేదు sir.	ANSWER}
+{\slot
+ఆ	O
+రావట్లేదు	O
+sir.	O
+}
+
+{\intent	d: నొప్పిగా ఉందా?	INFO_REQUEST}
+{\slot
+నొప్పిగా	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: నొప్పి అంటే back pain వస్తుంది sir.	ANSWER}
+{\slot
+నొప్పి	B-symptom
+అంటే	O
+back	B-body_part
+pain	B-symptom
+వస్తుంది	B-positive
+sir.	O
+}
+
+{\intent	d: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	p: back pain, back pain	ANSWER}
+{\slot
+back	B-body_part
+pain,	B-symptom
+back	B-body_part
+pain	B-symptom
+}
+
+{\intent	d1: back pain వస్తుంది.	ANSWER}
+{\slot
+back	B-body_part
+pain	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok back pain కూడా ఒక రకమైన సూచన	MEDICAL_EXPLANATION}
+{\slot
+ok	O
+back	B-body_part
+pain	B-symptom
+కూడా	O
+ఒక	O
+రకమైన	O
+సూచన	O
+}
+
+{\intent	d: మీకు నొప్పితో పాటు bleeding అవుతుంటే అది fissure కూడా కావొచ్చు.	STATEMENT}
+{\slot
+మీకు	O
+నొప్పితో	B-symptom
+పాటు	O
+bleeding	B-medical_condition
+అవుతుంటే	O
+అది	O
+fissure	B-symptom
+కూడా	O
+కావొచ్చు.	O
+}
+
+{\intent	d: మీ doctorగారిని కలిసి, మీ problem ఏంటో తెలుసుకొని, దాని ప్రకారం treatment తీసుకోండి.	ACTION_DIR}
+{\slot
+మీ	O
+doctorగారిని	B-medical_professional
+కలిసి,	O
+మీ	O
+problem	O
+ఏంటో	O
+తెలుసుకొని,	O
+దాని	O
+ప్రకారం	O
+treatment	B-treatment
+తీసుకోండి.	O
+}
+

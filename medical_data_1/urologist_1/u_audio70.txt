@@ -1,0 +1,202 @@
+{\intent	p: proteinకుడా మూత్రంలో పోతా ఉంది sir	STATEMENT}
+{\slot
+proteinకుడా	B-body_substance
+మూత్రంలో	B-body_substance
+పోతా	B-symptom
+ఉంది	I-symptom
+sir	O
+}
+
+{\intent	d: ఏంటిదమ్మా?	INFO_REQUEST}
+{\slot
+ఏంటిదమ్మా?	O
+}
+
+{\intent	p: 24 hours proteinల	HOLD}
+{\slot
+24	B-time_period
+hours	I-time_period
+proteinల	B-body_substance
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 10 వరకు పోతంది.	STATEMENT}
+{\slot
+10	B-mtest_value
+వరకు	O
+పోతంది.	B-symptom
+}
+
+{\intent	d: protein కూడా పోతుందా?	INFO_REQUEST}
+{\slot
+protein	B-body_substance
+కూడా	O
+పోతుందా?	B-symptom
+}
+
+{\intent	p: ఆ protein కూడా పోతంది.	ANSWER}
+{\slot
+ఆ	O
+protein	B-body_substance
+కూడా	O
+పోతంది.	B-symptom
+}
+
+{\intent	d: అది మీరు Nephrologist దెగ్గర చూయించాలా, దానిగురించి	ACTION_DIR}
+{\slot
+అది	O
+మీరు	O
+Nephrologist	B-medical_professional
+దెగ్గర	O
+చూయించాలా,	O
+దానిగురించి	O
+}
+
+{\intent	p: అది వాడుతున్నా sir	ANSWER}
+{\slot
+అది	O
+వాడుతున్నా	O
+sir	O
+}
+
+{\intent	d: so అవి వాడుతూ ఉండాలా	ACTION_DIR}
+{\slot
+so	O
+అవి	O
+వాడుతూ	O
+ఉండాలా	O
+}
+
+{\intent	d: అర్ధమైందా?	INFO_REQUEST}
+{\slot
+అర్ధమైందా?	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇవి ఒకసారి చేయించుకోని.	ACTION_DIR}
+{\slot
+ఇవి	O
+ఒకసారి	O
+చేయించుకోని.	O
+}
+
+{\intent	d: మరి అప్పుడు creatinine ఎంత ఉండే నీకు?	INFO_REQUEST}
+{\slot
+మరి	O
+అప్పుడు	B-time_period
+creatinine	B-body_substance
+ఎంత	O
+ఉండే	O
+నీకు?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: రక్త పరిక్ష, creatinine చేసారా ?	INFO_REQUEST}
+{\slot
+రక్త	B-body_substance
+పరిక్ష,	B-mtest
+creatinine	B-body_substance
+చేసారా	O
+?	O
+}
+
+{\intent	p: ఆ చేసారు, protein, creatinine	ANSWER}
+{\slot
+ఆ	O
+చేసారు,	B-positive
+protein,	B-body_substance
+creatinine	B-body_substance
+}
+
+{\intent	d: Aanand కదా?	INFO_REQUEST}
+{\slot
+Aanand	B-name
+కదా?	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: protein బాగా లేస్తాంది sir	STATEMENT}
+{\slot
+protein	B-body_substance
+బాగా	B-intensity
+లేస్తాంది	B-symptom
+sir	O
+}
+
+{\intent	p: అప్పుడు 11 ఉండే	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+11	B-mtest_value
+ఉండే	O
+}
+
+{\intent	d: ఈ రెండు పరిక్షలు చేసుకొని, ఇవాళ రక్తం ఇచ్చేసేయి 91కి వెళ్ళి	ACTION_DIR}
+{\slot
+ఈ	O
+రెండు	O
+పరిక్షలు	B-mtest
+చేసుకొని,	O
+ఇవాళ	O
+రక్తం	B-body_substance
+ఇచ్చేసేయి	O
+91కి	O
+వెళ్ళి	O
+}
+
+{\intent	p: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: ఈ పరిక్ష చేయించుకోని తర్వాత రా	ACTION_DIR}
+{\slot
+ఈ	O
+పరిక్ష	B-mtest
+చేయించుకోని	O
+తర్వాత	B-time_period
+రా	O
+}
+
+{\intent	d: సరే నా?	INFO_REQUEST}
+{\slot
+సరే	O
+నా?	O
+}
+
+{\intent	p: సరే sir.	ANSWER}
+{\slot
+సరే	O
+sir.	O
+}
+
+{\intent	d: ఈ లోపు ఈ గోళీలు వాడుకో.	ACTION_DIR}
+{\slot
+ఈ	O
+లోపు	O
+ఈ	O
+గోళీలు	B-medicine
+వాడుకో.	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+

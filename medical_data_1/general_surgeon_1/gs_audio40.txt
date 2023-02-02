@@ -1,0 +1,193 @@
+{\intent	p: ఆ నమస్తే madam గారు	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+madam	O
+గారు	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: నాకు stomach pain వస్తుంది madam	STATEMENT}
+{\slot
+నాకు	O
+stomach	B-body_part
+pain	B-symptom
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి ఉంది అవుతుంది	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఉంది	O
+అవుతుంది	O
+}
+
+{\intent	p: ఒక వారం రోజులు అవుతుంది madam	ANSWER}
+{\slot
+ఒక	O
+వారం	B-time_period
+రోజులు	B-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	p: అయితే దెగ్గరలో doctor దెగ్గరికి వెళితే abdomen scan చేయించుకోమన్నారు	STATEMENT}
+{\slot
+అయితే	O
+దెగ్గరలో	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+వెళితే	O
+abdomen	B-body_part
+scan	B-mtest
+చేయించుకోమన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: abdomen scan చేయించుకుంటే grade 2 ఉంది liver అని చెప్పారు madam	STATEMENT}
+{\slot
+abdomen	B-body_part
+scan	B-mtest
+చేయించుకుంటే	O
+grade	O
+2	O
+ఉంది	O
+liver	B-body_part
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: ఆ దానిగురించి మట్లాడదామని phone చేసాను	STATEMENT}
+{\slot
+ఆ	O
+దానిగురించి	O
+మట్లాడదామని	O
+phone	O
+చేసాను	O
+}
+
+{\intent	d: ok, medicines ఏమైనా వాడారా అండి?	INFO_REQUEST}
+{\slot
+ok,	O
+medicines	B-medicine
+ఏమైనా	O
+వాడారా	O
+అండి?	O
+}
+
+{\intent	p: doctor దెగ్గరకు పోతే only pantop అని రాసారు madam	ANSWER}
+{\slot
+doctor	B-medical_professional
+దెగ్గరకు	O
+పోతే	O
+only	O
+pantop	B-medicine
+అని	O
+రాసారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: citral tablets అని రాసారు madam	STATEMENT}
+{\slot
+citral	B-medicine
+tablets	I-medicine
+అని	O
+రాసారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాడుతున్న, వేసుకున్న సేపు తగ్గుతుంది	STATEMENT}
+{\slot
+వాడుతున్న,	O
+వేసుకున్న	O
+సేపు	O
+తగ్గుతుంది	B-normal
+}
+
+{\intent	d: మళ్ళి start	ACK}
+{\slot
+మళ్ళి	O
+start	O
+}
+
+{\intent	p: ఏదైనా పప్పుగానీ, ఏదైనా గోంగూర కానీ తిన్నప్పుడు మళ్ళి gas బాగా form అవుతుంది	STATEMENT}
+{\slot
+ఏదైనా	O
+పప్పుగానీ,	O
+ఏదైనా	O
+గోంగూర	B-food_substance
+కానీ	O
+తిన్నప్పుడు	B-bodily_process
+మళ్ళి	O
+gas	B-medical_condition
+బాగా	B-intensity
+form	B-symptom
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం ఇబ్బందిగా ఉంది madam	STATEMENT}
+{\slot
+కొంచం	O
+ఇబ్బందిగా	B-symptom
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	d: ok ఇప్పుడిప్పుడే problem start అవుతుంది that too grade 2 కి turn అయింది	DIAGNOSIS}
+{\slot
+ok	O
+ఇప్పుడిప్పుడే	O
+problem	O
+start	O
+అవుతుంది	O
+that	O
+too	O
+grade	O
+2	O
+కి	O
+turn	O
+అయింది	O
+}
+

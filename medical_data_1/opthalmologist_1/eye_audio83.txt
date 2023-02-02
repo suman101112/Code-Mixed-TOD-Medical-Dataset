@@ -1,0 +1,138 @@
+{\intent	p: doctor గారు నా పేరు Murthy.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Murthy.	B-name
+}
+
+{\intent	p: నా వయస్సు 56 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+56	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు eyesight సమస్య ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+eyesight	B-bodily_process
+సమస్య	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: doctor గారిని సంప్రదిస్తే left eye -1.25 right eye -2.25 ఉందన్నారు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారిని	O
+సంప్రదిస్తే	O
+left	B-location
+eye	B-body_part
+-1.25	B-mtest_value
+right	B-location
+eye	B-body_part
+-2.25	B-mtest_value
+ఉందన్నారు.	O
+}
+
+{\intent	p: శుక్లాలు వచ్చే అవకాశం ఉంది laser treatment ఇవ్వాలి అంటున్నారు.	STATEMENT}
+{\slot
+శుక్లాలు	B-medical_condition
+వచ్చే	O
+అవకాశం	O
+ఉంది	O
+laser	B-treatment
+treatment	I-treatment
+ఇవ్వాలి	O
+అంటున్నారు.	O
+}
+
+{\intent	p: నేను lecturerగా పని చేస్తున్నాను.	STATEMENT}
+{\slot
+నేను	O
+lecturerగా	B-profession
+పని	O
+చేస్తున్నాను.	O
+}
+
+{\intent	p: eye drops వాడుతూ ఉంటాను.	STATEMENT}
+{\slot
+eye	B-body_part
+drops	I-body_part
+వాడుతూ	O
+ఉంటాను.	O
+}
+
+{\intent	d: మీకు 56 అన్నారు.	ACK}
+{\slot
+మీకు	O
+56	B-age
+అన్నారు.	O
+}
+
+{\intent	d: sugar bp ఉందో లేదో ఏం mention చేయలేదండీ.	STATEMENT}
+{\slot
+sugar	B-medical_condition
+bp	B-medical_condition
+ఉందో	O
+లేదో	O
+ఏం	O
+mention	O
+చేయలేదండీ.	O
+}
+
+{\intent	d: మీ power -1.25 right eye plus left eye -2.25 పర్వాలేదు అండి ఆ power కి .	ACK}
+{\slot
+మీ	O
+power	O
+-1.25	B-mtest_value
+right	B-location
+eye	B-body_part
+plus	O
+left	B-location
+eye	B-body_part
+-2.25	B-mtest_value
+పర్వాలేదు	O
+అండి	O
+ఆ	O
+power	B-symptom
+కి	O
+.	O
+}
+
+{\intent	d: so ఇప్పుడు మీరు cateract surgery laser operation చేయించుకోవచ్చు.	STATEMENT}
+{\slot
+so	O
+ఇప్పుడు	O
+మీరు	O
+cateract	B-medical_condition
+surgery	B-treatment
+laser	B-treatment
+operation	I-treatment
+చేయించుకోవచ్చు.	O
+}
+
+{\intent	d: కానీ మామూలు lasik surgery అయితే చేయించుకునేందుకు వీలు ఉండదు. ఇప్పుడు power correct చేయించుకోవడానికి lasik surgery చేసే age కాదు మీది.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+మామూలు	O
+lasik	B-treatment
+surgery	I-treatment
+అయితే	O
+చేయించుకునేందుకు	O
+వీలు	O
+ఉండదు.	O
+ఇప్పుడు	O
+power	B-symptom
+correct	B-normal
+చేయించుకోవడానికి	O
+lasik	B-treatment
+surgery	I-treatment
+చేసే	O
+age	O
+కాదు	O
+మీది.	O
+}
+

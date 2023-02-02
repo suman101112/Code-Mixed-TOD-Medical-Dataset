@@ -1,0 +1,165 @@
+{\intent	p: gas బాగా ఎక్కువగా form అయితుందండి.	STATEMENT}
+{\slot
+gas	B-medical_condition
+బాగా	B-intensity
+ఎక్కువగా	B-intensity
+form	B-symptom
+అయితుందండి.	O
+}
+
+{\intent	d: ok. gas ఎక్కువ వస్తుంది.	ACK}
+{\slot
+ok.	O
+gas	B-medical_condition
+ఎక్కువ	B-intensity
+వస్తుంది.	B-symptom
+}
+
+{\intent	p: ఆ. gas ఎక్కువ అవుతుంది అండి. నోట ఏంబడ తాప తేమడ కూడా పడుతుంది అండి అప్పుడప్పుడు.	STATEMENT}
+{\slot
+ఆ.	O
+gas	B-medical_condition
+ఎక్కువ	B-intensity
+అవుతుంది	O
+అండి.	O
+నోట	B-body_part
+ఏంబడ	I-body_part
+తాప	B-symptom
+తేమడ	B-symptom
+కూడా	O
+పడుతుంది	O
+అండి	O
+అప్పుడప్పుడు.	B-time_period
+}
+
+{\intent	d: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	p: నోట ఏంబడ తాప కూడా పడుతుంది అండి అప్పుడప్పుడు	REPEAT_REPHRASE}
+{\slot
+నోట	B-body_part
+ఏంబడ	I-body_part
+తాప	B-symptom
+కూడా	O
+పడుతుంది	O
+అండి	O
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	p1: నోట్లో నుంచి కొంచం తాప వస్తుంది.	REPEAT_REPHRASE}
+{\slot
+నోట్లో	B-body_part
+నుంచి	O
+కొంచం	O
+తాప	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: తాప పెరిగినా తర్వాత. తాప కొంచం నోట్లో నుంచి పడుతుంది అండి.	STATEMENT}
+{\slot
+తాప	B-symptom
+పెరిగినా	O
+తర్వాత.	B-time_period
+తాప	B-symptom
+కొంచం	O
+నోట్లో	B-body_part
+నుంచి	O
+పడుతుంది	B-symptom
+అండి.	O
+}
+
+{\intent	d: పుల్లగా ఏమైనా వస్తుందా బయటికి?	INFO_REQUEST}
+{\slot
+పుల్లగా	B-symptom
+ఏమైనా	O
+వస్తుందా	O
+బయటికి?	B-location
+}
+
+{\intent	p: పుల్లగా అయితే రాదు.	ANSWER}
+{\slot
+పుల్లగా	B-symptom
+అయితే	O
+రాదు.	B-negative
+}
+
+{\intent	d: ok. ok.	ACK}
+{\slot
+ok.	O
+ok.	O
+}
+
+{\intent	d: మీరు అంటే చెప్తున్నా దాని ప్రకారం ఏంటంటే అది gastric అంటే bloating అవుతుంది.	STATEMENT}
+{\slot
+మీరు	O
+అంటే	O
+చెప్తున్నా	O
+దాని	O
+ప్రకారం	O
+ఏంటంటే	O
+అది	O
+gastric	B-medical_condition
+అంటే	O
+bloating	B-symptom
+అవుతుంది.	O
+}
+
+{\intent	d: కడుపు ఎప్పుడు bloating అయిపోయి దానిద్వారగా కొంతమందికి ఏందంటే పుల్లగా తేణుపు లాగా రావడం. normalగా ఎక్కొచ్చినట్లు అయిపోతూ ఉండడం. దాని వల్ల కొంతమందికి ఏందంటే జిగుడు జిగుడుగా బయటికి అంతా వచ్చేయడం. బాగా erectations ఎక్కువైతూ ఉండడం. కింది నుంచి flatulence అంటే gas అనేది వెళ్ళిపోతూ ఉంటుంది అని చెప్తున్నారు.	MEDICAL_EXPLANATION}
+{\slot
+కడుపు	B-body_part
+ఎప్పుడు	O
+bloating	B-symptom
+అయిపోయి	O
+దానిద్వారగా	O
+కొంతమందికి	O
+ఏందంటే	O
+పుల్లగా	O
+తేణుపు	B-symptom
+లాగా	O
+రావడం.	O
+normalగా	B-normal
+ఎక్కొచ్చినట్లు	B-symptom
+అయిపోతూ	O
+ఉండడం.	O
+దాని	O
+వల్ల	O
+కొంతమందికి	O
+ఏందంటే	O
+జిగుడు	B-symptom
+జిగుడుగా	I-symptom
+బయటికి	B-location
+అంతా	O
+వచ్చేయడం.	O
+బాగా	B-intensity
+erectations	B-symptom
+ఎక్కువైతూ	B-intensity
+ఉండడం.	O
+కింది	O
+నుంచి	O
+flatulence	B-medical_condition
+అంటే	O
+gas	B-medical_condition
+అనేది	O
+వెళ్ళిపోతూ	O
+ఉంటుంది	O
+అని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: mainగా దీని problem చూసుకున్నట్లయితే constipation అన్నట్టు	STATEMENT}
+{\slot
+mainగా	O
+దీని	O
+problem	O
+చూసుకున్నట్లయితే	O
+constipation	B-symptom
+అన్నట్టు	O
+}
+

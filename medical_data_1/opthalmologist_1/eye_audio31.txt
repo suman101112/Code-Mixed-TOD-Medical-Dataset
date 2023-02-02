@@ -1,0 +1,147 @@
+{\intent	p: doctor గారు నా పేరు Maadhavi.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Maadhavi.	B-name
+}
+
+{\intent	p: మా బాబు వయస్సు 8 సంవత్సరాలు.	STATEMENT}
+{\slot
+మా	O
+బాబు	B-familal
+వయస్సు	O
+8	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: మా బాబు అప్పుడప్పుడు కను మూలగా చూస్తూ ఉంటాడు.	STATEMENT}
+{\slot
+మా	O
+బాబు	B-familal
+అప్పుడప్పుడు	B-time_period
+కను	B-body_part
+మూలగా	B-symptom
+చూస్తూ	B-bodily_process
+ఉంటాడు.	O
+}
+
+{\intent	p: కళ్ళు పెద్దగా చేస్తూ ఉంటాడు.	STATEMENT}
+{\slot
+కళ్ళు	B-body_part
+పెద్దగా	B-symptom
+చేస్తూ	B-bodily_process
+ఉంటాడు.	O
+}
+
+{\intent	p: పక్క నుండి ఎందుకు చూస్తున్నాడు?	INFO_REQUEST}
+{\slot
+పక్క	B-location
+నుండి	I-location
+ఎందుకు	O
+చూస్తున్నాడు?	O
+}
+
+{\intent	p: ఏమైనా సమస్యనా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+సమస్యనా?	B-medical_condition
+}
+
+{\intent	p: పిల్లల్లో stress ఉంటే ఇలా చేస్తారని విన్నాను.	STATEMENT}
+{\slot
+పిల్లల్లో	B-person
+stress	B-symptom
+ఉంటే	O
+ఇలా	O
+చేస్తారని	O
+విన్నాను.	O
+}
+
+{\intent	p: ఇది నిజమేనా?	INFO_REQUEST}
+{\slot
+ఇది	O
+నిజమేనా?	O
+}
+
+{\intent	p: stress వలన లేక వేరే ఏదైనా సమస్యనా?	INFO_REQUEST}
+{\slot
+stress	B-symptom
+వలన	O
+లేక	O
+వేరే	O
+ఏదైనా	O
+సమస్యనా?	O
+}
+
+{\intent	d: పిల్లలు ఇలా side నుంచి చూసేది కానీ లేదా కళ్ళు పెద్దవిగా చూస్తున్నారు అంటే 2 సమస్యలు మనం దీనిలో ఉన్నాయా లేదా అని పరిక్ష చేయాలి.	STATEMENT}
+{\slot
+పిల్లలు	B-person
+ఇలా	O
+side	B-location
+నుంచి	O
+చూసేది	B-bodily_process
+కానీ	O
+లేదా	O
+కళ్ళు	B-body_part
+పెద్దవిగా	B-symptom
+చూస్తున్నారు	B-bodily_process
+అంటే	O
+2	B-frequency
+సమస్యలు	B-medical_condition
+మనం	O
+దీనిలో	O
+ఉన్నాయా	B-time_period
+లేదా	O
+అని	O
+పరిక్ష	B-mtest
+చేయాలి.	O
+}
+
+{\intent	d: ఒక్కటి sight	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటి	O
+sight	B-bodily_process
+}
+
+{\intent	d: sight లో కూడా Astigmatism అని అంటారు అంటే cylindrical power అంటే ఒక్క axisలో మాత్రమే power ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+sight	B-bodily_process
+లో	O
+కూడా	O
+Astigmatism	B-medical_condition
+అని	O
+అంటారు	O
+అంటే	O
+cylindrical	B-medical_condition
+power	I-medical_condition
+అంటే	O
+ఒక్క	O
+axisలో	O
+మాత్రమే	O
+power	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అంటే vertical axis ఆ? horizontal axis ఆ అనేది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+vertical	O
+axis	O
+ఆ?	O
+horizontal	O
+axis	O
+ఆ	O
+అనేది.	O
+}
+
+{\intent	d: రెండోది squint అంటే మెల్ల కన్ను.	MEDICAL_EXPLANATION}
+{\slot
+రెండోది	O
+squint	B-medical_condition
+అంటే	O
+మెల్ల	B-medical_condition
+కన్ను.	I-medical_condition
+}
+

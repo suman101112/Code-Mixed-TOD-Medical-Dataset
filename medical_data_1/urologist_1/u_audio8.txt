@@ -1,0 +1,205 @@
+{\intent	p: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: రెండువైపులా kidneyలో stones ఉన్నాయండి	STATEMENT}
+{\slot
+రెండువైపులా	B-location
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉన్నాయండి	O
+}
+
+{\intent	d: kidneyలో stones ఉన్నాయి	ACK}
+{\slot
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉన్నాయి	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి ఉంది అంటున్నారు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	O
+నుంచి	O
+ఉంది	O
+అంటున్నారు?	O
+}
+
+{\intent	p: 2 years నుంచి అండి	ANSWER}
+{\slot
+2	B-time_period
+years	I-time_period
+నుంచి	O
+అండి	O
+}
+
+{\intent	d: ok, size ఏమైనా తెలిసిందా అమ్మా	INFO_REQUEST}
+{\slot
+ok,	O
+size	O
+ఏమైనా	O
+తెలిసిందా	O
+అమ్మా	O
+}
+
+{\intent	p: ఆ size అండి, 6 అలా ఒకటండి.	ANSWER}
+{\slot
+ఆ	O
+size	O
+అండి,	O
+6	B-mtest_value
+అలా	O
+ఒకటండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 5.7 అలా ఉందండీ	STATEMENT}
+{\slot
+5.7	B-mtest_value
+అలా	O
+ఉందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మరి మీకు నొప్పిగాని లేకపోతే కడుపులో నొప్పిగాని లేకపోతే urine వెళ్ళినప్పుడు urineలో మంటగానీ ఏమైనా లక్షణాలు కనిపిస్తున్నాయా అమ్మా?	INFO_REQUEST}
+{\slot
+మరి	O
+మీకు	O
+నొప్పిగాని	B-symptom
+లేకపోతే	O
+కడుపులో	B-body_part
+నొప్పిగాని	B-symptom
+లేకపోతే	O
+urine	B-body_substance
+వెళ్ళినప్పుడు	O
+urineలో	B-body_substance
+మంటగానీ	B-symptom
+ఏమైనా	O
+లక్షణాలు	O
+కనిపిస్తున్నాయా	O
+అమ్మా?	O
+}
+
+{\intent	p: urineలో మంట అయితే లేదు madam	ANSWER}
+{\slot
+urineలో	B-body_substance
+మంట	B-symptom
+అయితే	O
+లేదు	O
+madam	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: కానీ ఒక మాదిరి నడుము నొప్పి వచ్చేది	STATEMENT}
+{\slot
+కానీ	O
+ఒక	O
+మాదిరి	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+వచ్చేది	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: మందులు ఎక్కువ వేసుకోలేక మానేసాను madam	STATEMENT}
+{\slot
+మందులు	B-medicine
+ఎక్కువ	B-intensity
+వేసుకోలేక	O
+మానేసాను	O
+madam	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అమ్మా ఒక విషయం చెప్తాను మీకు, kidney stone ఉంటే నొప్పి వస్తుంది, కానీ నొప్పి తగ్గడానికి వేసుకొనే మందు దానికి solution కాదు	MEDICAL_EXPLANATION}
+{\slot
+అమ్మా	O
+ఒక	O
+విషయం	O
+చెప్తాను	O
+మీకు,	O
+kidney	B-body_substance
+stone	I-body_substance
+ఉంటే	O
+నొప్పి	B-symptom
+వస్తుంది,	O
+కానీ	O
+నొప్పి	B-symptom
+తగ్గడానికి	O
+వేసుకొనే	O
+మందు	B-medicine
+దానికి	O
+solution	O
+కాదు	O
+}
+
+{\intent	d: ఈ kidney stones అనేది మళ్ళి మళ్ళి form అయితా ఉంటాయి అమ్మా.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+kidney	B-body_substance
+stones	I-body_substance
+అనేది	O
+మళ్ళి	O
+మళ్ళి	O
+form	B-symptom
+అయితా	I-symptom
+ఉంటాయి	O
+అమ్మా.	O
+}
+
+{\intent	d: ఆ stones బయటికి రావడానికి ఎన్నో రకాల treatment ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+stones	B-body_substance
+బయటికి	O
+రావడానికి	O
+ఎన్నో	O
+రకాల	O
+treatment	B-treatment
+ఉంటుంది.	O
+}
+

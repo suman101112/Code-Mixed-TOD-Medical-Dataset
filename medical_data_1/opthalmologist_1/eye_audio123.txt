@@ -1,0 +1,154 @@
+{\intent	p: నా వయస్సు 25 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+25	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత 4 5 రోజులుగా కంట్లో ఏదో గుచ్చుకున్నట్లు ఉంటుంది.	STATEMENT}
+{\slot
+గత	B-time_period
+4	I-time_period
+5	I-time_period
+రోజులుగా	I-time_period
+కంట్లో	B-body_part
+ఏదో	O
+గుచ్చుకున్నట్లు	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: అద్దంలో చూసుకుంటే ఎమి లేదు.	STATEMENT}
+{\slot
+అద్దంలో	O
+చూసుకుంటే	O
+ఎమి	O
+లేదు.	O
+}
+
+{\intent	p: కంటి నుంచి నీరు కూడా కారుతుంది.	STATEMENT}
+{\slot
+కంటి	B-body_part
+నుంచి	O
+నీరు	B-food_substance
+కూడా	O
+కారుతుంది.	B-symptom
+}
+
+{\intent	d: మొట్టమొదటిగా ఈ 4, 5 రోజులుగా గుచ్చుకున్నట్లు అయితుంది అంటే first ఏం చేయాలి అంటే కళ్ళు పరిక్ష కచ్చితంగా చేయించుకోవాలి.	STATEMENT}
+{\slot
+మొట్టమొదటిగా	O
+ఈ	O
+4,	B-time_period
+5	I-time_period
+రోజులుగా	I-time_period
+గుచ్చుకున్నట్లు	B-symptom
+అయితుంది	O
+అంటే	O
+first	O
+ఏం	O
+చేయాలి	O
+అంటే	O
+కళ్ళు	B-body_part
+పరిక్ష	B-mtest
+కచ్చితంగా	O
+చేయించుకోవాలి.	O
+}
+
+{\intent	d: ఎందుకంటే ఏదన్నా foreign body ఏదో కంట్లో నలుసు గానీ అట్లాంటిది ఏమైనా పడుంటే ఇటువంటి problem వస్తాది.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+ఏదన్నా	O
+foreign	B-symptom
+body	I-symptom
+ఏదో	O
+కంట్లో	B-body_part
+నలుసు	B-symptom
+గానీ	O
+అట్లాంటిది	O
+ఏమైనా	O
+పడుంటే	O
+ఇటువంటి	O
+problem	O
+వస్తాది.	O
+}
+
+{\intent	d: usualగా commonగా ఇట్లాటి వయస్సులో వచ్చే problem	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+commonగా	O
+ఇట్లాటి	O
+వయస్సులో	O
+వచ్చే	O
+problem	O
+}
+
+{\intent	d: ఎందుకంటే మీరు బయట driving చేస్తారు, బయట తిరుగుతూ ఉంటారు కబట్టి, మనకు తెలియకుండా చిన్న నలుసు ఏమైనా కంట్లో పడితే అట్ల వస్తాది కళ్ళ ఏంబడ నీళ్లు కారడం, కళ్ళు గర గరా గుచ్చుకోవడం.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+మీరు	O
+బయట	O
+driving	O
+చేస్తారు,	O
+బయట	O
+తిరుగుతూ	O
+ఉంటారు	O
+కబట్టి,	O
+మనకు	O
+తెలియకుండా	O
+చిన్న	O
+నలుసు	O
+ఏమైనా	O
+కంట్లో	B-body_part
+పడితే	O
+అట్ల	O
+వస్తాది	O
+కళ్ళ	B-body_part
+ఏంబడ	B-location
+నీళ్లు	B-food_substance
+కారడం,	B-symptom
+కళ్ళు	B-body_part
+గర	B-symptom
+గరా	I-symptom
+గుచ్చుకోవడం.	I-symptom
+}
+
+{\intent	d: అది ఏమైనా లేనట్లయితే, next common ఏంటి అంటే ఈ computer use చేసే youngsters, మీరు computer use చేస్తుంటారు కాబట్టి ఈ computers మీద ఒకే రకంగా 7 గంటలు , 8 గంటలు, 10 గంటలు పని చేస్తున్నప్పుడు dryness develop అయితుందన్నమాట కంట్లో	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+ఏమైనా	O
+లేనట్లయితే,	O
+next	O
+common	O
+ఏంటి	O
+అంటే	O
+ఈ	O
+computer	O
+use	O
+చేసే	O
+youngsters,	O
+మీరు	O
+computer	O
+use	O
+చేస్తుంటారు	O
+కాబట్టి	O
+ఈ	O
+computers	O
+మీద	O
+ఒకే	O
+రకంగా	O
+7	B-time_period
+గంటలు	I-time_period
+,	O
+8	B-time_period
+గంటలు,	I-time_period
+10	B-time_period
+గంటలు	I-time_period
+పని	O
+చేస్తున్నప్పుడు	O
+dryness	B-medical_condition
+develop	B-symptom
+అయితుందన్నమాట	I-symptom
+కంట్లో	B-body_part
+}
+

@@ -1,0 +1,125 @@
+{\intent	d: ఏం పేరు ఈన పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+ఈన	O
+పేరు?	O
+}
+
+{\intent	p: Rayanesh	ANSWER}
+{\slot
+Rayanesh	B-name
+}
+
+{\intent	d: Rayanesh ఆ	ACK}
+{\slot
+Rayanesh	B-name
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు 8వ నెల కదా అమ్మా	STATEMENT}
+{\slot
+ఇప్పుడు	O
+8వ	B-age
+నెల	I-age
+కదా	O
+అమ్మా	B-person
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు జలుబు దగ్గు ఎలా ఉంది అమ్మా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఎలా	O
+ఉంది	O
+అమ్మా?	O
+}
+
+{\intent	p: మొన్న night ఇట్లనే ఉంది	ANSWER}
+{\slot
+మొన్న	B-time_period
+night	B-time_period
+ఇట్లనే	O
+ఉంది	O
+}
+
+{\intent	d: ఇప్పుడు ఎలా ఉంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎలా	O
+ఉంది?	O
+}
+
+{\intent	p: చాలా ఇబ్బంది పెడుతున్నాడు, మొస బాగా ఉంది	ANSWER}
+{\slot
+చాలా	O
+ఇబ్బంది	B-symptom
+పెడుతున్నాడు,	O
+మొస	B-medical_condition
+బాగా	B-intensity
+ఉంది	O
+}
+
+{\intent	d: ఇప్పుడు ఆడుకుంటున్నాడా? మొస పోతున్నాడా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఆడుకుంటున్నాడా?	B-bodily_process
+మొస	B-medical_condition
+పోతున్నాడా?	O
+}
+
+{\intent	p: ఇప్పుడు బానే ఆడుకుంటున్నాడు, night మాత్రం ఇబ్బంది పెడుతున్నాడు.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+బానే	O
+ఆడుకుంటున్నాడు,	B-bodily_process
+night	B-time_period
+మాత్రం	O
+ఇబ్బంది	B-symptom
+పెడుతున్నాడు.	O
+}
+
+{\intent	d: అంటే బాగా దగ్గు ఆయాసం ఉన్నప్పుడు భుజాన వేసుకొని అటూ ఇటూ తిరగాలి	ACTION_DIR}
+{\slot
+అంటే	O
+బాగా	B-intensity
+దగ్గు	B-symptom
+ఆయాసం	B-medical_condition
+ఉన్నప్పుడు	B-time_period
+భుజాన	B-body_part
+వేసుకొని	O
+అటూ	O
+ఇటూ	O
+తిరగాలి	O
+}
+
+{\intent	d: ఇట్ల ఎత్తుకో	ACTION_DIR}
+{\slot
+ఇట్ల	O
+ఎత్తుకో	O
+}
+
+{\intent	d: తల్లిపాలే నా?	INFO_REQUEST}
+{\slot
+తల్లిపాలే	B-food_substance
+నా?	O
+}
+
+{\intent	p1: ఆ తల్లిపాలే sir.	ANSWER}
+{\slot
+ఆ	O
+తల్లిపాలే	B-food_substance
+sir.	O
+}
+

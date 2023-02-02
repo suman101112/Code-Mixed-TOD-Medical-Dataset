@@ -1,0 +1,182 @@
+{\intent	d: Nitya	HOLD}
+{\slot
+Nitya	B-name
+}
+
+{\intent	p: Smriti	STATEMENT}
+{\slot
+Smriti	B-name
+}
+
+{\intent	d: ఎంత వయస్సు	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు	O
+}
+
+{\intent	p: 6 ఏళ్ళు	ANSWER}
+{\slot
+6	B-age
+ఏళ్ళు	I-age
+}
+
+{\intent	d: 6 ఏళ్ళు	ACK}
+{\slot
+6	B-age
+ఏళ్ళు	I-age
+}
+
+{\intent	d: చెప్పమ్మా ఏంటి problem	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏంటి	O
+problem	O
+}
+
+{\intent	p1: నిన్న night నుంచి fever వచ్చింది sir.	STATEMENT}
+{\slot
+నిన్న	O
+night	B-time_period
+నుంచి	O
+fever	B-symptom
+వచ్చింది	O
+sir.	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	d: జ్వరం ఒక్కటేనా ఇంకేమన్నా problem, జలుబు ముక్కు కారడం అట్ల	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఒక్కటేనా	O
+ఇంకేమన్నా	O
+problem,	O
+జలుబు	B-medical_condition
+ముక్కు	B-body_part
+కారడం	B-symptom
+అట్ల	O
+}
+
+{\intent	d: జలుబు దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: దగ్గుతుంది sir	ANSWER}
+{\slot
+దగ్గుతుంది	B-symptom
+sir	O
+}
+
+{\intent	d: రాత్రి పూట నిద్ర పోవడానికి ఏమైనా ఇబ్బంది ఉందా?	INFO_REQUEST}
+{\slot
+రాత్రి	B-time_period
+పూట	B-time_period
+నిద్ర	B-bodily_process
+పోవడానికి	I-bodily_process
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: రాత్రి బాగా అవస్థ పెడుతోంది.	ANSWER}
+{\slot
+రాత్రి	B-time_period
+బాగా	B-intensity
+అవస్థ	B-symptom
+పెడుతోంది.	O
+}
+
+{\intent	d: ఇవి 2 3 రోజులో నువ్వు ఏం మందులు వేసావమ్మా?	INFO_REQUEST}
+{\slot
+ఇవి	O
+2	B-quantity
+3	B-quantity
+రోజులో	B-time_period
+నువ్వు	O
+ఏం	O
+మందులు	B-medicine
+వేసావమ్మా?	O
+}
+
+{\intent	p1: ఏం వేయలేదు sir	ANSWER}
+{\slot
+ఏం	O
+వేయలేదు	B-negative
+sir	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నిన్న బాగానే activeగా ఉన్నాడు, schoolకి వెళ్ళిండు, మళ్ళి మొన్న night వచ్చింది sir.	STATEMENT}
+{\slot
+నిన్న	B-time_period
+బాగానే	B-intensity
+activeగా	B-normal
+ఉన్నాడు,	O
+schoolకి	B-profession
+వెళ్ళిండు,	O
+మళ్ళి	O
+మొన్న	B-time_period
+night	B-time_period
+వచ్చింది	O
+sir.	O
+}
+
+{\intent	p: నిన్న night బాగా వచ్చింది sir	STATEMENT}
+{\slot
+నిన్న	B-time_period
+night	I-time_period
+బాగా	B-intensity
+వచ్చింది	O
+sir	O
+}
+
+{\intent	p: ఈ రోజూ start అయింది.	STATEMENT}
+{\slot
+ఈ	B-time_period
+రోజూ	I-time_period
+start	O
+అయింది.	O
+}
+
+{\intent	p: దగ్గు ఇట్ల వస్తాంది sir	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+ఇట్ల	O
+వస్తాంది	O
+sir	O
+}
+
+{\intent	d: తినే dietలో బయట cakes, biscuits అట్లాంటివి ఏమైనా పెట్టారా?	INFO_REQUEST}
+{\slot
+తినే	O
+dietలో	B-food_substance
+బయట	B-location
+cakes,	B-food_substance
+biscuits	B-food_substance
+అట్లాంటివి	O
+ఏమైనా	O
+పెట్టారా?	O
+}
+
+{\intent	p: ఏం లేదు sir మొన్న వాళ్ళ అక్క birthday వచ్చింది.	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+sir	O
+మొన్న	B-time_period
+వాళ్ళ	B-familal
+అక్క	I-familial
+birthday	B-time_period
+వచ్చింది.	O
+}
+

@@ -1,0 +1,132 @@
+{\intent	p: doctor గారు నా కంటి sight సరిగ్గా లేదు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+కంటి	B-body_part
+sight	B-bodily_process
+సరిగ్గా	B-symptom
+లేదు.	I-symptom
+}
+
+{\intent	p: కళ్ళజోడు వాడుతున్నాను.	STATEMENT}
+{\slot
+కళ్ళజోడు	O
+వాడుతున్నాను.	O
+}
+
+{\intent	p: కళ్ళజోడు వాడాలని లేదు.	STATEMENT}
+{\slot
+కళ్ళజోడు	O
+వాడాలని	O
+లేదు.	O
+}
+
+{\intent	p: చూపు సరి అయిన తరువాత spects తీసేయవచ్చా?	INFO_REQUEST}
+{\slot
+చూపు	B-bodily_process
+సరి	O
+అయిన	O
+తరువాత	O
+spects	O
+తీసేయవచ్చా?	O
+}
+
+{\intent	p: నేను ఎలాంటి food తీసుకోవాలి?	INFO_REQUEST}
+{\slot
+నేను	O
+ఎలాంటి	O
+food	B-food_substance
+తీసుకోవాలి?	O
+}
+
+{\intent	p: మంచి food habits తీసుకోవడంతో sight తగ్గుతూందా?	INFO_REQUEST}
+{\slot
+మంచి	O
+food	B-food_substance
+habits	B-habit
+తీసుకోవడంతో	O
+sight	B-bodily_process
+తగ్గుతూందా?	O
+}
+
+{\intent	d: మీరు ఎంత power ఉంది అని మీరు mention చేయలేదు.	STATEMENT}
+{\slot
+మీరు	O
+ఎంత	O
+power	B-symptom
+ఉంది	O
+అని	O
+మీరు	O
+mention	O
+చేయలేదు.	O
+}
+
+{\intent	d: అది చాలా important అండి.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+చాలా	O
+important	O
+అండి.	O
+}
+
+{\intent	d: ఎందుకంటే మీకు చాలా minimal power 0.5, -1, 0.75, ఇట్లాటి power అయితే మీరు spects వాడుకోవాలి	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+మీకు	O
+చాలా	O
+minimal	O
+power	B-symptom
+0.5,	B-mtest_value
+-1,	B-mtest_value
+0.75,	B-mtest_value
+ఇట్లాటి	O
+power	B-symptom
+అయితే	O
+మీరు	O
+spects	O
+వాడుకోవాలి	O
+}
+
+{\intent	d: అది sperical power ఆ? cylindrical power ఆ?	INFO_REQUEST}
+{\slot
+అది	O
+sperical	B-symptom
+power	I-symptom
+ఆ?	O
+cylindrical	B-symptom
+power	I-symptom
+ఆ?	O
+}
+
+{\intent	d: ఇవన్నీ కూడా matter అవుతాయి అండి.	MEDICAL_EXPLANATION}
+{\slot
+ఇవన్నీ	O
+కూడా	O
+matter	O
+అవుతాయి	O
+అండి.	O
+}
+
+{\intent	d: ఇవన్నీ mention చేయలేదు మీరు నాకు.	STATEMENT}
+{\slot
+ఇవన్నీ	O
+mention	O
+చేయలేదు	O
+మీరు	O
+నాకు.	O
+}
+
+{\intent	d: ఉత్త food తీసుకోవడంతో spectsకి permanent solutionఆ అంటే definiteగా కాదండి.	MEDICAL_EXPLANATION}
+{\slot
+ఉత్త	O
+food	B-food_substance
+తీసుకోవడంతో	O
+spectsకి	O
+permanent	O
+solutionఆ	O
+అంటే	O
+definiteగా	O
+కాదండి.	O
+}
+

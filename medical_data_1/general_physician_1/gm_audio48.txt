@@ -1,0 +1,152 @@
+{\intent	p: Hello నమస్తే madam	GREETING}
+{\slot
+Hello	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: ఆ నమస్తే	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+}
+
+{\intent	d: చెప్పండి bhavyasree గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+bhavyasree	B-name
+గారు	O
+}
+
+{\intent	p: ఆ madam నేను recentగా 2019 లో octoberలో check చేసుకున్నాప్పుడు, total thyroid hormone నాకు 1.06 ఉంది ma'am.	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+నేను	O
+recentగా	B-time_period
+2019	I-time_period
+లో	O
+octoberలో	B-time_period
+check	O
+చేసుకున్నాప్పుడు,	O
+total	B-mtest
+thyroid	I-mtest
+hormone	I-mtest
+నాకు	O
+1.06	B-mtest_value
+ఉంది	O
+ma'am.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: and thyroid simulating hormone వచ్చేసి 6.16 ఉంది	STATEMENT}
+{\slot
+and	O
+thyroid	B-mtest
+simulating	B-mtest
+hormone	B-mtest
+వచ్చేసి	O
+6.16	B-mtest_value
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so ఇప్పుడు నాకు thyroid ఉన్నట్టా ?	INFO_REQUEST}
+{\slot
+so	O
+ఇప్పుడు	O
+నాకు	O
+thyroid	B-medical_condition
+ఉన్నట్టా	O
+?	O
+}
+
+{\intent	p: నాకు swelling అలాంటిది ఏం లేదు. but	ANSWER}
+{\slot
+నాకు	O
+swelling	B-symptom
+అలాంటిది	O
+ఏం	O
+లేదు.	B-negative
+but	O
+}
+
+{\intent	p: నాకు ఎప్పుడు weakగా, fatigue ఎక్కువ, ఎప్పుడు పడుకోవాలి అన్నట్లుగా అనిపిస్తూ ఉంటుంది నాకు	STATEMENT}
+{\slot
+నాకు	O
+ఎప్పుడు	B-time_period
+weakగా,	B-symptom
+fatigue	B-symptom
+ఎక్కువ,	B-intensity
+ఎప్పుడు	B-time_period
+పడుకోవాలి	B-bodily_process
+అన్నట్లుగా	O
+అనిపిస్తూ	O
+ఉంటుంది	O
+నాకు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so ok bhavyasree గారు, ఇప్పుడు thyroid ఉన్నట్లా? లేనట్టా అనేది?	ACK}
+{\slot
+so	O
+ok	O
+bhavyasree	B-name
+గారు,	O
+ఇప్పుడు	O
+thyroid	B-medical_condition
+ఉన్నట్లా?	O
+లేనట్టా	O
+అనేది?	O
+}
+
+{\intent	d: so మీరు చెప్పిన దాని బట్టి TSH 6 ఉంది అంటున్నారు,	ACK}
+{\slot
+so	O
+మీరు	O
+చెప్పిన	O
+దాని	O
+బట్టి	O
+TSH	B-mtest
+6	B-mtest_value
+ఉంది	O
+అంటున్నారు,	O
+}
+
+{\intent	d: 0.5 to 5.5 is optimium range అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+0.5	B-mtest_value
+to	O
+5.5	B-mtest_value
+is	O
+optimium	O
+range	O
+అన్నమాట.	O
+}
+
+{\intent	d: so దీనికంటే తక్కువగా ఉన్న, దీనికంటే ఎక్కువగా ఉన్న thyroid abnormality ఉన్నట్టు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+దీనికంటే	O
+తక్కువగా	O
+ఉన్న,	O
+దీనికంటే	O
+ఎక్కువగా	O
+ఉన్న	O
+thyroid	B-body_part
+abnormality	B-medical_condition
+ఉన్నట్టు.	O
+}
+

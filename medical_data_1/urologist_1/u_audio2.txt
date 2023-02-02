@@ -1,0 +1,234 @@
+{\intent	p: madam నాకు ఇంత ముందు kidney stones వచ్చాయి	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+ఇంత	O
+ముందు	O
+kidney	B-body_substance
+stones	I-body_substance
+వచ్చాయి	O
+}
+
+{\intent	p: already నేను hospital లో చూయించాను	STATEMENT}
+{\slot
+already	O
+నేను	O
+hospital	B-place
+లో	O
+చూయించాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే small size ఉన్నాయి, అంటే అవి తగ్గిపోతాయి లే అన్నారు	STATEMENT}
+{\slot
+అంటే	O
+small	B-mtest_value
+size	I-mtest_value
+ఉన్నాయి,	O
+అంటే	O
+అవి	O
+తగ్గిపోతాయి	O
+లే	O
+అన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను కొన్ని రోజులు medicines వాడాను	STATEMENT}
+{\slot
+నేను	O
+కొన్ని	B-time_period
+రోజులు	I-time_period
+medicines	B-medicine
+వాడాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: medicine వాడినసేపు control అయిపోయింది	STATEMENT}
+{\slot
+medicine	B-medicine
+వాడినసేపు	O
+control	B-normal
+అయిపోయింది	O
+}
+
+{\intent	p: తరువాత 3 4 months తరువాత	HOLD}
+{\slot
+తరువాత	O
+3	B-time_period
+4	I-time_period
+months	I-time_period
+తరువాత	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి మూత్రం మంట, మళ్ళి వెంట వెంటనే రావడం జరుగుతుంది madam	STATEMENT}
+{\slot
+మళ్ళి	O
+మూత్రం	B-body_substance
+మంట,	B-symptom
+మళ్ళి	O
+వెంట	B-symptom
+వెంటనే	I-symptom
+రావడం	I-symptom
+జరుగుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది చాలా 3 4 days వస్తుంది	STATEMENT}
+{\slot
+అది	O
+చాలా	O
+3	B-time_period
+4	I-time_period
+days	I-time_period
+వస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి tablets medicines use చేసిన తరువాత తగ్గిపోతుంది	STATEMENT}
+{\slot
+మళ్ళి	O
+tablets	B-medicine
+medicines	B-medicine
+use	O
+చేసిన	O
+తరువాత	B-time_period
+తగ్గిపోతుంది	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి వస్తుంది ఈ problem	STATEMENT}
+{\slot
+మళ్ళి	O
+వస్తుంది	O
+ఈ	O
+problem	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: sir abdomen scan చేయించారా అండి ఈ మధ్య?	INFO_REQUEST}
+{\slot
+sir	O
+abdomen	B-body_part
+scan	B-mtest
+చేయించారా	O
+అండి	O
+ఈ	O
+మధ్య?	O
+}
+
+{\intent	p: ఆ ఈ మధ్య చెప్పిచలేదు sir	ANSWER}
+{\slot
+ఆ	O
+ఈ	O
+మధ్య	O
+చెప్పిచలేదు	B-negative
+sir	O
+}
+
+{\intent	d: right sir	ACK}
+{\slot
+right	O
+sir	O
+}
+
+{\intent	d: ఒక్కసారి మీరు abdomen scan దయచేసి చెప్పించుకుంటే బాగుంటుంది.	STATEMENT}
+{\slot
+ఒక్కసారి	O
+మీరు	O
+abdomen	B-body_part
+scan	B-mtest
+దయచేసి	O
+చెప్పించుకుంటే	O
+బాగుంటుంది.	O
+}
+
+{\intent	d: and CUE అని ఉంటుంది అంటే complete urine examination, దేనితో మనం exactly kidney stone easyగా scan 2mm, 3mm ఉన్న కూడా కనిపిచేస్తుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+and	O
+CUE	B-mtest
+అని	O
+ఉంటుంది	O
+అంటే	O
+complete	B-mtest
+urine	I-mtest
+examination,	I-mtest
+దేనితో	O
+మనం	O
+exactly	O
+kidney	B-body_substance
+stone	I-body_substance
+easyగా	O
+scan	B-mtest
+2mm	B-mtest_value
+3mm	B-mtest_value
+ఉన్న	O
+కూడా	O
+కనిపిచేస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: so మనం treatment ఇవ్వొచ్చు దీనికి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మనం	O
+treatment	B-treatment
+ఇవ్వొచ్చు	O
+దీనికి.	O
+}
+
+{\intent	d: ఇంతకు ముందు మీరు medicines వాడితే తగ్గింది మళ్ళి వచ్చింది కాబట్టి it could be ఆ simple urinary tract infection కావొచ్చు.	DIAGNOSIS}
+{\slot
+ఇంతకు	O
+ముందు	O
+మీరు	O
+medicines	B-medicine
+వాడితే	O
+తగ్గింది	O
+మళ్ళి	O
+వచ్చింది	O
+కాబట్టి	O
+it	O
+could	O
+be	O
+ఆ	O
+simple	O
+urinary	B-medical_condition
+tract	I-medical_condition
+infection	I-medical_condition
+కావొచ్చు.	O
+}
+

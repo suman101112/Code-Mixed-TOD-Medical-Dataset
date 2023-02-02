@@ -1,0 +1,148 @@
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p1: Fareeha	ANSWER}
+{\slot
+Fareeha	B-name
+}
+
+{\intent	p1: उल्टियां motions	ANSWER}
+{\slot
+उल्टियां	B-symptom
+motions	B-symptom
+}
+
+{\intent	d: आज सुबह से कितने बार हुआ	INFO_REQUEST}
+{\slot
+आज	B-time_period
+सुबह	B-time_period
+से	O
+कितने	O
+बार	O
+हुआ	O
+}
+
+{\intent	p1: कल से	ANSWER}
+{\slot
+कल	B-time_period
+से	O
+}
+
+{\intent	d: ऐसा लेटावो पहले	ACTION_DIR}
+{\slot
+ऐसा	O
+लेटावो	O
+पहले	O
+}
+
+{\intent	d: बुखार है ?	INFO_REQUEST}
+{\slot
+बुखार	B-symptom
+है	O
+?	O
+}
+
+{\intent	p1: हां बुखार है	ANSWER}
+{\slot
+हां	B-positive
+बुखार	B-symptom
+है	O
+}
+
+{\intent	d: उल्टी ज़्यादा है ? पाखाना ज़्यादा है ?	INFO_REQUEST}
+{\slot
+उल्टी	B-symptom
+ज़्यादा	O
+है	O
+?	O
+पाखाना	B-symptom
+ज़्यादा	O
+है	O
+?	O
+}
+
+{\intent	p1: दोनों बराबर ही चु है	ANSWER}
+{\slot
+दोनों	O
+बराबर	O
+ही	O
+चु	O
+है	O
+}
+
+{\intent	p1: बहुत पानी पानी जा रहा	STATEMENT}
+{\slot
+बहुत	B-intensity
+पानी	B-food_substance
+पानी	B-food_substance
+जा	O
+रहा	O
+}
+
+{\intent	p1: पानी बहुत पी रही बच्ची	STATEMENT}
+{\slot
+पानी	B-food_substance
+बहुत	B-intensity
+पी	B-bodily_process
+रही	O
+बच्ची	O
+}
+
+{\intent	d: कुछ दवा डाले आप ?	INFO_REQUEST}
+{\slot
+कुछ	O
+दवा	B-medicine
+डाले	O
+आप	O
+?	O
+}
+
+{\intent	p1: पेट में दर्द भी है	STATEMENT}
+{\slot
+पेट	B-body_part
+में	O
+दर्द	B-symptom
+भी	O
+है	O
+}
+
+{\intent	d: last motions कितने बजे हुआ?	INFO_REQUEST}
+{\slot
+last	O
+motions	B-symptom
+कितने	O
+बजे	O
+हुआ?	O
+}
+
+{\intent	p1: आज हुआ sir	STATEMENT}
+{\slot
+आज	B-time_period
+हुआ	O
+sir	O
+}
+
+{\intent	d: घट्ट हुआ पाखाना या पतला हुआ?	INFO_REQUEST}
+{\slot
+घट्ट	O
+हुआ	O
+पाखाना	B-symptom
+या	O
+पतला	B-symptom
+हुआ?	O
+}
+
+{\intent	p1: पतला ही चु हुआ sir	ANSWER}
+{\slot
+पतला	B-symptom
+ही	O
+चु	O
+हुआ	O
+sir	O
+}
+

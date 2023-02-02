@@ -1,0 +1,105 @@
+{\intent	p: sir	SU}
+{\slot
+sir	O
+}
+
+{\intent	d: Hello అండి	SU}
+{\slot
+Hello	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: అది కడుపులో మంట ఉంది, నడుము నొప్పి ఉంది.	STATEMENT}
+{\slot
+అది	O
+కడుపులో	B-body_part
+మంట	B-symptom
+ఉంది,	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కడుపులో నోప్పి ఉంది	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+నోప్పి	B-symptom
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది పొత్తికడుపులో వచ్చి వెనకాల వస్తుంది	STATEMENT}
+{\slot
+అది	O
+పొత్తికడుపులో	B-body_part
+వచ్చి	O
+వెనకాల	B-location
+వస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so ముఖ్యంగా అంటే నడుము నోప్పి ఉంది, అలాగే పొత్తికడుపులో నోప్పి, ఏదైనా urine పోసేటప్పుడు మంట కానివ్వండి, అలాగే urine pass చేసేటప్పుడు పొత్తికడుపులో నొప్పి కానివ్వండి on and off urineలో smell బాగా రావడం కానివ్వండి, అలాగే అప్పుడప్పుడు urineలో blood రావడం, ఇవన్నీ కూడా kidneyలో రాళ్ళు ఉండడం వల్ల వచ్చే లక్షణాలు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ముఖ్యంగా	O
+అంటే	O
+నడుము	B-body_part
+నోప్పి	B-symptom
+ఉంది,	O
+అలాగే	O
+పొత్తికడుపులో	B-body_part
+నోప్పి,	B-symptom
+ఏదైనా	O
+urine	B-body_substance
+పోసేటప్పుడు	O
+మంట	B-symptom
+కానివ్వండి,	O
+అలాగే	O
+urine	B-body_substance
+pass	B-bodily_process
+చేసేటప్పుడు	O
+పొత్తికడుపులో	B-body_part
+నొప్పి	B-symptom
+కానివ్వండి	O
+on	O
+and	O
+off	O
+urineలో	B-body_substance
+smell	B-symptom
+బాగా	B-intensity
+రావడం	O
+కానివ్వండి,	O
+అలాగే	O
+అప్పుడప్పుడు	B-time_period
+urineలో	B-body_substance
+blood	B-body_substance
+రావడం,	O
+ఇవన్నీ	O
+కూడా	O
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+ఉండడం	O
+వల్ల	O
+వచ్చే	O
+లక్షణాలు.	O
+}
+

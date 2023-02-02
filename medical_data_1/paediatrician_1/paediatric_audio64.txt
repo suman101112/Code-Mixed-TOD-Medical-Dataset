@@ -1,0 +1,167 @@
+{\intent	d: ఏం పేరు	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+}
+
+{\intent	d: Deekshit ఆ?	INFO_REQUEST}
+{\slot
+Deekshit	B-name
+ఆ?	O
+}
+
+{\intent	d: ఏమైనా complaints ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+complaints	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	O
+}
+
+{\intent	d: దగ్గు ఆయాసం	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+ఆయాసం	B-medical_condition
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	O
+}
+
+{\intent	d: నిద్రపోవడానికి ఇబ్బంది	INFO_REQUEST}
+{\slot
+నిద్రపోవడానికి	B-bodily_process
+ఇబ్బంది	B-symptom
+}
+
+{\intent	p: ఏం లేవు	ANSWER}
+{\slot
+ఏం	O
+లేవు	O
+}
+
+{\intent	d: మెట్లు ఎక్కుతుంటే ఆయాసము	INFO_REQUEST}
+{\slot
+మెట్లు	O
+ఎక్కుతుంటే	O
+ఆయాసము	B-symptom
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: ఊరుకుంటే ఆయాసం వస్తుందా?	INFO_REQUEST}
+{\slot
+ఊరుకుంటే	O
+ఆయాసం	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p1: వస్తుంది	ANSWER}
+{\slot
+వస్తుంది	B-positive
+}
+
+{\intent	d: అప్పటికంటే ఎట్లా ఉన్నదమ్మ మనం మొదలు పెట్టిన దాని కంటే?	INFO_REQUEST}
+{\slot
+అప్పటికంటే	O
+ఎట్లా	O
+ఉన్నదమ్మ	O
+మనం	O
+మొదలు	O
+పెట్టిన	O
+దాని	O
+కంటే?	O
+}
+
+{\intent	p1: सर्दी ఉన్నది	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+ఉన్నది	O
+}
+
+{\intent	d: కుయి కుయి అని శబ్దాలు వినపడుతున్నాయా?	INFO_REQUEST}
+{\slot
+కుయి	B-symptom
+కుయి	I-symptom
+అని	O
+శబ్దాలు	O
+వినపడుతున్నాయా?	O
+}
+
+{\intent	p1: ఏం లేవు sir	ANSWER}
+{\slot
+ఏం	O
+లేవు	B-negative
+sir	O
+}
+
+{\intent	d: ఏం లేవు కదా	INFO_REQUEST}
+{\slot
+ఏం	O
+లేవు	O
+కదా	O
+}
+
+{\intent	p1: దగ్గు అప్పుడప్పుడు వస్తాంది sir	ANSWER}
+{\slot
+దగ్గు	B-symptom
+అప్పుడప్పుడు	B-time_period
+వస్తాంది	O
+sir	O
+}
+
+{\intent	p1: ఇవేమో అయినాయి sir	STATEMENT}
+{\slot
+ఇవేమో	O
+అయినాయి	O
+sir	O
+}
+
+{\intent	d: అది scabies, ఒకరి నుంచి ఒకరికి వస్తాయి	STATEMENT}
+{\slot
+అది	O
+scabies,	B-medical_condition
+ఒకరి	O
+నుంచి	O
+ఒకరికి	O
+వస్తాయి	O
+}
+
+{\intent	p1: ఇవన్నీ అయినాయి, తల మీద అయినాయి	STATEMENT}
+{\slot
+ఇవన్నీ	O
+అయినాయి,	O
+తల	B-body_part
+మీద	I-location
+అయినాయి	O
+}
+
+{\intent	p1: ఆకలి బాగా అయితలేదు, అన్నం తింటలేదు అంటది	STATEMENT}
+{\slot
+ఆకలి	B-bodily_process
+బాగా	B-intensity
+అయితలేదు,	B-symptom
+అన్నం	O
+తింటలేదు	B-symptom
+అంటది	O
+}
+
+{\intent	p1: ఇది రాసినారా sir?	INFO_REQUEST}
+{\slot
+ఇది	O
+రాసినారా	O
+sir?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+

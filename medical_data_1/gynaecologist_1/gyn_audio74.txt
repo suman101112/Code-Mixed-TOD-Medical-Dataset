@@ -1,0 +1,210 @@
+{\intent	p: madam నమస్తే అండి.	GREETING}
+{\slot
+madam	O
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: నా mrs కి 2 delivery అయింది	STATEMENT}
+{\slot
+నా	O
+mrs	O
+కి	O
+2	B-frequency
+delivery	B-bodily_process
+అయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 6 months తగిలిన 2 రోజుకే delivery అయింది. reason అయితే తెలీదు	STATEMENT}
+{\slot
+6	B-time_period
+months	I-time_period
+తగిలిన	O
+2	B-time_period
+రోజుకే	I-time_period
+delivery	B-bodily_process
+అయింది.	O
+reason	O
+అయితే	O
+తెలీదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hospitalకి తీసుకువెళ్ళే లోపు 10 నిమిషాల్లో delivery అయిపోతుంది అన్నారు.	STATEMENT}
+{\slot
+hospitalకి	B-place
+తీసుకువెళ్ళే	O
+లోపు	O
+10	B-time_period
+నిమిషాల్లో	I-time_period
+delivery	B-bodily_process
+అయిపోతుంది	O
+అన్నారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: baby పుట్టి చనిపోయింది	STATEMENT}
+{\slot
+baby	B-person
+పుట్టి	B-bodily_process
+చనిపోయింది	B-bodily_process
+}
+
+{\intent	d: very sad అండి.	STATEMENT}
+{\slot
+very	O
+sad	O
+అండి.	O
+}
+
+{\intent	p: doctor అయితే reason ఏం చెప్పలేదు	STATEMENT}
+{\slot
+doctor	B-medical_professional
+అయితే	O
+reason	O
+ఏం	O
+చెప్పలేదు	O
+}
+
+{\intent	d: 1st ది live child 9 months మంచిగా 9 months అయింది ఆ తరువాత delivery అయిందా అండి?	INFO_REQUEST}
+{\slot
+1st	B-frequency
+ది	O
+live	B-bodily_process
+child	B-person
+9	B-time_period
+months	I-time_period
+మంచిగా	O
+9	B-time_period
+months	I-time_period
+అయింది	O
+ఆ	O
+తరువాత	B-time_period
+delivery	B-bodily_process
+అయిందా	O
+అండి?	O
+}
+
+{\intent	p: ఆ 9 months 10 daysకి అయిందండి.	STATEMENT}
+{\slot
+ఆ	O
+9	B-time_period
+months	I-time_period
+10	B-time_period
+daysకి	I-time_period
+అయిందండి.	O
+}
+
+{\intent	d: ok good.	APPRECIATE}
+{\slot
+ok	O
+good.	O
+}
+
+{\intent	d: so usually 2nd time ఇట్ల అవుతే అండి	HOLD}
+{\slot
+so	O
+usually	O
+2nd	B-frequency
+time	B-time_period
+ఇట్ల	O
+అవుతే	O
+అండి	O
+}
+
+{\intent	d: 1st time ఇట్లాటి situation అవుతే అండి గర్భాశయ ద్వారం కొంచం చిన్నగా ఉంది అని diagnose చేస్తారు.	STATEMENT}
+{\slot
+1st	B-frequency
+time	I-frequency
+ఇట్లాటి	O
+situation	O
+అవుతే	O
+అండి	O
+గర్భాశయ	B-body_part
+ద్వారం	I-body_part
+కొంచం	O
+చిన్నగా	B-symptom
+ఉంది	O
+అని	O
+diagnose	B-mtest
+చేస్తారు.	O
+}
+
+{\intent	d: but already మీకు 1st baby మీకు fruitfulగా 9th month వరకు వెళ్ళింది కాబట్టి 90 percent of problems avoid అయి ఉంటది అండి.	STATEMENT}
+{\slot
+but	O
+already	O
+మీకు	O
+1st	B-frequency
+baby	B-person
+మీకు	O
+fruitfulగా	B-normal
+9th	B-frequency
+month	B-time_period
+వరకు	I-time_period
+వెళ్ళింది	O
+కాబట్టి	O
+90	O
+percent	O
+of	O
+problems	O
+avoid	O
+అయి	O
+ఉంటది	O
+అండి.	O
+}
+
+{\intent	d: so ఈ conditionలో maybe ఆ pregnancyలో చిన్న infection వచ్చి, ఉమ్ము నీళ్లు ఏదన్నా open అయ్యి mostly delivery అయి ఉండొచ్చు infection వల్ల.	DIAGNOSIS}
+{\slot
+so	O
+ఈ	O
+conditionలో	O
+maybe	O
+ఆ	O
+pregnancyలో	B-bodily_process
+చిన్న	O
+infection	B-medical_condition
+వచ్చి,	O
+ఉమ్ము	B-body_substance
+నీళ్లు	I-body_substance
+ఏదన్నా	O
+open	O
+అయ్యి	O
+mostly	O
+delivery	B-bodily_process
+అయి	O
+ఉండొచ్చు	O
+infection	B-medical_condition
+వల్ల.	O
+}
+
+{\intent	d: so infection అయినా delivery మళ్ళ repeat కదండీ.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+infection	B-medical_condition
+అయినా	O
+delivery	B-bodily_process
+మళ్ళ	O
+repeat	O
+కదండీ.	B-negative
+}
+

@@ -1,0 +1,64 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: sir నాకు right kidneyలో చాలా రోజుల నుంచి రాళ్ళు ఉంటున్నాయి sir	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+right	B-location
+kidneyలో	B-body_part
+చాలా	O
+రోజుల	B-time_period
+నుంచి	O
+రాళ్ళు	B-body_substance
+ఉంటున్నాయి	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ రాళ్ళు అనేటివి పడిపోతున్నాయి, మళ్ళి తయారవుతున్నాయి sir	STATEMENT}
+{\slot
+ఆ	O
+రాళ్ళు	B-body_substance
+అనేటివి	O
+పడిపోతున్నాయి,	B-normal
+మళ్ళి	O
+తయారవుతున్నాయి	B-symptom
+sir	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: దానికి మళ్ళి రాకుండా ఏదైనా chance ఉంటదా sir?	INFO_REQUEST}
+{\slot
+దానికి	O
+మళ్ళి	O
+రాకుండా	O
+ఏదైనా	O
+chance	O
+ఉంటదా	O
+sir?	O
+}
+
+{\intent	d: yaya	ANSWER}
+{\slot
+yaya	O
+}
+

@@ -1,0 +1,125 @@
+{\intent	p: fever వచ్చింది	STATEMENT}
+{\slot
+fever	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయింది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది?	O
+}
+
+{\intent	p: 4 రోజులు	ANSWER}
+{\slot
+4	B-time_period
+రోజులు	I-time_period
+}
+
+{\intent	d: పేరు?	INFO_REQUEST}
+{\slot
+పేరు?	O
+}
+
+{\intent	p: Harshita	ANSWER}
+{\slot
+Harshita	B-name
+}
+
+{\intent	d: Harshita	ACK}
+{\slot
+Harshita	B-name
+}
+
+{\intent	d: 9 ఏళ్ళా?	INFO_REQUEST}
+{\slot
+9	B-age
+ఏళ్ళా?	I-age
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: schoolకి పోతున్నావా?	INFO_REQUEST}
+{\slot
+schoolకి	B-place
+పోతున్నావా?	O
+}
+
+{\intent	d: కాళ్ళు ముడుచుకో.	ACTION_DIR}
+{\slot
+కాళ్ళు	B-body_part
+ముడుచుకో.	O
+}
+
+{\intent	d: జ్వరం వచ్చి ఎన్నో రోజమ్మా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+వచ్చి	O
+ఎన్నో	O
+రోజమ్మా?	O
+}
+
+{\intent	p: 4వ రోజూ	ANSWER}
+{\slot
+4వ	B-quantity
+రోజూ	B-time_period
+}
+
+{\intent	p: దద్దుర్లు, అయితున్నాయి sir	STATEMENT}
+{\slot
+దద్దుర్లు,	B-symptom
+అయితున్నాయి	O
+sir	O
+}
+
+{\intent	d: పత్తి ఉందా అమ్మా మీ ఇంట్లో?	INFO_REQUEST}
+{\slot
+పత్తి	O
+ఉందా	O
+అమ్మా	O
+మీ	O
+ఇంట్లో?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: మరి పత్తి ఉన్న వాళ్ళ ఇంట్లో	HOLD}
+{\slot
+మరి	O
+పత్తి	O
+ఉన్న	O
+వాళ్ళ	O
+ఇంట్లో	O
+}
+
+{\intent	p: పత్తి దూరంగానే ఉంటున్నాం	STATEMENT}
+{\slot
+పత్తి	O
+దూరంగానే	O
+ఉంటున్నాం	O
+}
+
+{\intent	d: దూరంగా దెగ్గరగా కాదు	STATEMENT}
+{\slot
+దూరంగా	O
+దెగ్గరగా	O
+కాదు	O
+}
+
+{\intent	d: పత్తి ఉన్న వాళ్ళ ఇంట్లో ఇవన్నీ commonఏ	STATEMENT}
+{\slot
+పత్తి	O
+ఉన్న	O
+వాళ్ళ	O
+ఇంట్లో	O
+ఇవన్నీ	O
+commonఏ	O
+}
+

@@ -1,0 +1,129 @@
+{\intent	p: నా వయస్సు 28 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+28	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా కంటి sight +9.50 ఉంది.	STATEMENT}
+{\slot
+నా	O
+కంటి	B-body_part
+sight	B-bodily_process
++9.50	B-mtest_value
+ఉంది.	B-symptom
+}
+
+{\intent	p: lasik surgery చేయాలి అంటే కంటి nerve support చేయట్లేదు అని doctorగారు అంటున్నారు.	STATEMENT}
+{\slot
+lasik	B-treatment
+surgery	I-treatment
+చేయాలి	O
+అంటే	O
+కంటి	B-body_part
+nerve	I-body_part
+support	B-symptom
+చేయట్లేదు	I-symptom
+అని	O
+doctorగారు	B-medical_professional
+అంటున్నారు.	O
+}
+
+{\intent	p: దీనికి ప్రత్యామ్నాయం ఏమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+దీనికి	O
+ప్రత్యామ్నాయం	O
+ఏమన్నా	O
+ఉందా?	O
+}
+
+{\intent	d: మీరు +9.5 power నాకు ఉంది అని చెప్పి చెప్పారు.	ACK}
+{\slot
+మీరు	O
++9.5	B-mtest_value
+power	I-mtest_value
+నాకు	O
+ఉంది	O
+అని	O
+చెప్పి	O
+చెప్పారు.	O
+}
+
+{\intent	d: ఆ +9 or -9 ఈ powerలు రెండు usualగా lasik surgeryకి కొంత వరకు lasik చేయడనికి fit కాకపోవచ్చు	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
++9	B-mtest_value
+or	O
+-9	B-mtest_value
+ఈ	O
+powerలు	B-symptom
+రెండు	O
+usualగా	O
+lasik	B-treatment
+surgeryకి	I-treatment
+కొంత	O
+వరకు	O
+lasik	B-treatment
+చేయడనికి	O
+fit	O
+కాకపోవచ్చు	B-negative
+}
+
+{\intent	d: కారణం ఎమిటి అంటే -6 or +4 దాటిన తరువాత lasik surgery చేయడానికి మన cornea support చేయదు.	MEDICAL_EXPLANATION}
+{\slot
+కారణం	O
+ఎమిటి	O
+అంటే	O
+-6	B-mtest_value
+or	O
++4	B-mtest_value
+దాటిన	O
+తరువాత	O
+lasik	B-treatment
+surgery	I-treatment
+చేయడానికి	O
+మన	O
+cornea	B-body_part
+support	O
+చేయదు.	B-negative
+}
+
+{\intent	d: alternate fix అంటే there are some procedures.	MEDICAL_EXPLANATION}
+{\slot
+alternate	O
+fix	O
+అంటే	O
+there	O
+are	O
+some	O
+procedures.	B-treatment
+}
+
+{\intent	d: ICL మాత్రం మనకు ఇప్పుడు available procedure దానికి మీరు considerableగా ఉపయోగపడతారు అని అంటే detailedగా check చేసిన తరువాతే మీకు వీలు పడుతుంది అని చెప్పడానికి అవకాశం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ICL	B-treatment
+మాత్రం	O
+మనకు	O
+ఇప్పుడు	O
+available	O
+procedure	B-treatment
+దానికి	O
+మీరు	O
+considerableగా	O
+ఉపయోగపడతారు	O
+అని	O
+అంటే	O
+detailedగా	O
+check	O
+చేసిన	O
+తరువాతే	B-time_period
+మీకు	O
+వీలు	O
+పడుతుంది	O
+అని	O
+చెప్పడానికి	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+

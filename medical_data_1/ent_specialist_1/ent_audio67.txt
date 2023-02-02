@@ -1,0 +1,108 @@
+{\intent	d: Vishnupriya, 41	ANSWER}
+{\slot
+Vishnupriya,	B-name
+41	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: దగ్గు బాగా లేస్తుంది sir	ANSWER}
+{\slot
+దగ్గు	B-symptom
+బాగా	B-intensity
+లేస్తుంది	O
+sir	O
+}
+
+{\intent	p: పొడి దగ్గు	STATEMENT}
+{\slot
+పొడి	B-symptom
+దగ్గు	I-symptom
+}
+
+{\intent	p1: continuousగా బాగా లేస్తుంది sir.	STATEMENT}
+{\slot
+continuousగా	O
+బాగా	B-intensity
+లేస్తుంది	O
+sir.	O
+}
+
+{\intent	p: ఈ  చెవులు దిబ్బడం పట్టి ఇలా.	STATEMENT}
+{\slot
+ఈ	O
+చెవులు	B-body_part
+దిబ్బడం	B-symptom
+పట్టి	O
+ఇలా.	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: నాలుక లోపలికి పెట్టు	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+లోపలికి	B-location
+పెట్టు	O
+}
+
+{\intent	d: చెవులు చూపీ	ACTION_DIR}
+{\slot
+చెవులు	B-body_part
+చూపీ	O
+}
+
+{\intent	d: దమ్మొస్తుందా ఏమైనా?	INFO_REQUEST}
+{\slot
+దమ్మొస్తుందా	B-medical_condition
+ఏమైనా?	O
+}
+
+{\intent	p: ఆ దమ్ము లేదు కానీ చెవులు గుయ్యి గుయ్యి మని అంటున్నాయి, దగ్గు.	ANSWER}
+{\slot
+ఆ	O
+దమ్ము	B-medical_condition
+లేదు	B-negative
+కానీ	O
+చెవులు	B-body_part
+గుయ్యి	B-symptom
+గుయ్యి	I-symptom
+మని	O
+అంటున్నాయి,	O
+దగ్గు.	B-symptom
+}
+
+{\intent	d: వెనకకు తిరుగమ్మా	ACTION_DIR}
+{\slot
+వెనకకు	O
+తిరుగమ్మా	O
+}
+
+{\intent	d: శ్వాస తీసుకో	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+తీసుకో	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయితుంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయితుంది?	O
+}
+
+{\intent	p: 1 week అయితుంది sir.	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+అయితుంది	O
+sir.	O
+}
+

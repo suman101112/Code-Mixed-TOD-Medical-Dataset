@@ -1,0 +1,174 @@
+{\intent	d: ఏంటి Sammayya?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+Sammayya?	B-name
+}
+
+{\intent	p: umm	SU}
+{\slot
+umm	O
+}
+
+{\intent	d: ఏమైంది నాయనా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+నాయనా?	O
+}
+
+{\intent	p: మూత్రంలో మంట వస్తుంది sir.	ANSWER}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి?	O
+}
+
+{\intent	p: ఒక 2 నెలలు అయితాంది	ANSWER}
+{\slot
+ఒక	O
+2	B-time_period
+నెలలు	I-time_period
+అయితాంది	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: గోళీలు వేసుకున్న గానీ తక్కువ అయితలేదు.	STATEMENT}
+{\slot
+గోళీలు	B-medicine
+వేసుకున్న	O
+గానీ	O
+తక్కువ	B-symptom
+అయితలేదు.	I-symptom
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇక్కడ నడుము నొప్పి కానీ ముద్దలు గజ్జలలో నొప్పి కానీ ఏమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+ఇక్కడ	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+కానీ	O
+ముద్దలు	B-symptom
+గజ్జలలో	B-body_part
+నొప్పి	B-symptom
+కానీ	O
+ఏమన్నా	O
+ఉందా?	O
+}
+
+{\intent	p: గజ్జల్లో నొప్పి లేదు కానీ నడుము నొప్పి ఉంది	ANSWER}
+{\slot
+గజ్జల్లో	B-body_part
+నొప్పి	B-symptom
+లేదు	B-negative
+కానీ	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+ఉంది	B-positive
+}
+
+{\intent	d: ఎటు వైపు ఉంది, కుడివైపు ఆ ఎడమ వైపు ఆ?	INFO_REQUEST}
+{\slot
+ఎటు	O
+వైపు	B-location
+ఉంది,	O
+కుడివైపు	B-location
+ఆ	O
+ఎడమ	B-location
+వైపు	I-location
+ఆ?	O
+}
+
+{\intent	p: 2 దిక్కులా ఉంది.	ANSWER}
+{\slot
+2	B-location
+దిక్కులా	I-location
+ఉంది.	O
+}
+
+{\intent	d: 2 దిక్కులా ఉందా?	INFO_REQUEST}
+{\slot
+2	B-location
+దిక్కులా	I-location
+ఉందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: scan చేయించుకున్నాం sir	INFO_REQUEST}
+{\slot
+scan	B-mtest
+చేయించుకున్నాం	O
+sir	O
+}
+
+{\intent	d: ఈ మధ్య kidney లో రాళ్లు గిట్ల ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+kidney	B-body_part
+లో	O
+రాళ్లు	B-body_substance
+గిట్ల	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఏం లేవు sir.	ANSWER}
+{\slot
+ఏం	O
+లేవు	B-negative
+sir.	O
+}
+
+{\intent	d: సరే ఒకసారి scanning రాస్తాను చేయించుకోని రా. సరేనా?	INFO_REQUEST}
+{\slot
+సరే	O
+ఒకసారి	O
+scanning	B-mtest
+రాస్తాను	O
+చేయించుకోని	O
+రా.	O
+సరేనా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: వాంతులు ఏమైనా అవుతున్నాయా? ఏం లేదు కదా.	INFO_REQUEST}
+{\slot
+వాంతులు	B-symptom
+ఏమైనా	O
+అవుతున్నాయా?	O
+ఏం	O
+లేదు	B-negative
+కదా.	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

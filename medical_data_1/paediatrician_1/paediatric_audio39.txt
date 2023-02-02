@@ -1,0 +1,78 @@
+{\intent	d: 4వ రోజా బాబు?	INFO_REQUEST}
+{\slot
+4వ	B-time_period
+రోజా	I-time_period
+బాబు?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: first ఈ చూక్కల మందు 7వ రోజు నుంచి వాడుకోండి.	ACTION_DIR}
+{\slot
+first	B-quantity
+ఈ	O
+చూక్కల	B-medicine
+మందు	I-medicine
+7వ	B-time_period
+రోజు	I-time_period
+నుంచి	O
+వాడుకోండి.	O
+}
+
+{\intent	p: సరే	ANSWER}
+{\slot
+సరే	O
+}
+
+{\intent	p: తీసుకోవాలా మందు	INFO_REQUEST}
+{\slot
+తీసుకోవాలా	O
+మందు	B-medicine
+}
+
+{\intent	d: ఆ తీసుకోండి.	ANSWER}
+{\slot
+ఆ	O
+తీసుకోండి.	O
+}
+
+{\intent	d: 7th Day onwards	STATEMENT}
+{\slot
+7th	B-time_period
+Day	I-time_period
+onwards	O
+}
+
+{\intent	p: ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి?	O
+}
+
+{\intent	d: 7వ రోజు నుంచి పుట్టినప్పటినుంచి	REPEAT_REPHRASE}
+{\slot
+7వ	B-time_period
+రోజు	I-time_period
+నుంచి	O
+పుట్టినప్పటినుంచి	I-time_period
+}
+
+{\intent	d: ఇంటికి పోయిన 2 వారలకు ఒకసారి మళ్ళి ఇక్కడ చూపించాలి	ACTION_DIR}
+{\slot
+ఇంటికి	O
+పోయిన	O
+2	B-time_period
+వారలకు	I-time_period
+ఒకసారి	O
+మళ్ళి	O
+ఇక్కడ	O
+చూపించాలి	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+

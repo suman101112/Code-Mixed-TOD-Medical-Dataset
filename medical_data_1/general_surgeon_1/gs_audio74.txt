@@ -1,0 +1,229 @@
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam నాకు last 4 months back ఒకాసారి bleed అయింది madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+last	B-time_period
+4	I-time_period
+months	I-time_period
+back	I-time_period
+ఒకాసారి	O
+bleed	B-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: దేని గురించి అండి?	SNU}
+{\slot
+దేని	O
+గురించి	O
+అండి?	O
+}
+
+{\intent	p: motions గురించి అండి, మొలల గురించి madam	ANSWER}
+{\slot
+motions	B-bodily_process
+గురించి	O
+అండి,	O
+మొలల	B-symptom
+గురించి	O
+madam	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: అప్పుడు extra feast అనుకోని silentగా ఉన్నం. ఏం కాలేదు అప్పటి నుంచి	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+extra	O
+feast	B-food_substance
+అనుకోని	O
+silentగా	O
+ఉన్నం.	O
+ఏం	O
+కాలేదు	O
+అప్పటి	B-time_period
+నుంచి	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: last week మళ్ళి నాకెమైందంటే bleed, నాకు స్పర్శలేకుండానే bleed అయింది madam	STATEMENT}
+{\slot
+last	B-time_period
+week	I-time_period
+మళ్ళి	O
+నాకెమైందంటే	O
+bleed,	B-symptom
+నాకు	O
+స్పర్శలేకుండానే	B-symptom
+bleed	I-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: ఇలా ఒక్కసారి కాదు కానీ 2 times అయింది	STATEMENT}
+{\slot
+ఇలా	O
+ఒక్కసారి	B-frequency
+కాదు	O
+కానీ	O
+2	B-frequency
+times	I-frequency
+అయింది	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: afternoon ఒక్కసారి అయింది, night ఒకసారి అయింది	STATEMENT}
+{\slot
+afternoon	B-time_period
+ఒక్కసారి	B-frequency
+అయింది,	O
+night	B-time_period
+ఒకసారి	B-frequency
+అయింది	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: దానిగురించి నాకు కొంచం tension ఎక్కువ అయ్యేసి doctor దెగ్గరికి వెళ్ళి ఒక surgeonతో అడిగాను. MD గారితో	STATEMENT}
+{\slot
+దానిగురించి	O
+నాకు	O
+కొంచం	O
+tension	B-medical_condition
+ఎక్కువ	B-intensity
+అయ్యేసి	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+వెళ్ళి	O
+ఒక	O
+surgeonతో	B-medical_professional
+అడిగాను.	O
+MD	B-medical_professional
+గారితో	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే ఇది 2nd stageలో ఉంది బాబు, నీకు piles ఏ అని అన్నారు.	STATEMENT}
+{\slot
+అయితే	O
+ఇది	O
+2nd	B-mtest_value
+stageలో	I-mtest_value
+ఉంది	O
+బాబు,	O
+నీకు	O
+piles	B-symptom
+ఏ	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	d: ok sir ok.	ACK}
+{\slot
+ok	O
+sir	O
+ok.	O
+}
+
+{\intent	p: కానీ నాకు pain కానీ అలాంటి ఏం situation ఏం లేదు madam	STATEMENT}
+{\slot
+కానీ	O
+నాకు	O
+pain	B-symptom
+కానీ	O
+అలాంటి	O
+ఏం	O
+situation	O
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	p: కాకపోతే ఎమిటి అంటే నేను publicలో ఎక్కువగా తిరుగుతూ ఉంటాను	STATEMENT}
+{\slot
+కాకపోతే	O
+ఎమిటి	O
+అంటే	O
+నేను	O
+publicలో	O
+ఎక్కువగా	O
+తిరుగుతూ	O
+ఉంటాను	O
+}
+
+{\intent	d: ఇంకేమన్నా ఇబ్బందిగా ఉందా? ఇదేనా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+ఇబ్బందిగా	O
+ఉందా?	O
+ఇదేనా?	O
+}
+
+{\intent	p: mainగా ఇదే madam, gastric అనేది ఎక్కువగా ఉంది madam నాకైతే almost	STATEMENT}
+{\slot
+mainగా	O
+ఇదే	O
+madam,	O
+gastric	B-medical_condition
+అనేది	O
+ఎక్కువగా	B-intensity
+ఉంది	O
+madam	O
+నాకైతే	O
+almost	O
+}
+
+{\intent	d: ok sir ok	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+}
+
+{\intent	d: ఈ problem solve అయితుంది sir. permanentగా cure అవ్వడానికి treatment ఉంది.	STATEMENT}
+{\slot
+ఈ	O
+problem	O
+solve	O
+అయితుంది	O
+sir.	O
+permanentగా	O
+cure	O
+అవ్వడానికి	O
+treatment	B-treatment
+ఉంది.	O
+}
+

@@ -1,0 +1,215 @@
+{\intent	p: Hello మేము Chintapalli నుంచి మట్లాడుతాన్న madam	STATEMENT}
+{\slot
+Hello	O
+మేము	O
+Chintapalli	B-place
+నుంచి	O
+మట్లాడుతాన్న	O
+madam	O
+}
+
+{\intent	d: చెప్పండి అమ్మా	ACTION_DIR}
+{\slot
+చెప్పండి	O
+అమ్మా	O
+}
+
+{\intent	p: మాకు marriage అయి 3 years అవుతా ఉంది.	STATEMENT}
+{\slot
+మాకు	O
+marriage	B-marital_status
+అయి	O
+3	B-time_period
+years	I-time_period
+అవుతా	O
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: first thyroid problem ఉందని చెప్పారు	STATEMENT}
+{\slot
+first	O
+thyroid	B-medical_condition
+problem	O
+ఉందని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానికి treatment తీసుకుంటన్నము	STATEMENT}
+{\slot
+దానికి	O
+treatment	B-treatment
+తీసుకుంటన్నము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ దానికైతే ఏం problem లేదని చెప్పినారు	STATEMENT}
+{\slot
+ఆ	O
+దానికైతే	O
+ఏం	O
+problem	B-symptom
+లేదని	B-negative
+చెప్పినారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత PCOD ఉందని చెప్పారు	STATEMENT}
+{\slot
+తరువాత	B-time_period
+PCOD	B-medical_condition
+ఉందని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ cycle వచ్చేసి irregular అన్నమాట	STATEMENT}
+{\slot
+ఆ	O
+cycle	B-bodily_process
+వచ్చేసి	O
+irregular	B-symptom
+అన్నమాట	O
+}
+
+{\intent	p: 3 years, 3 months, 4 months అయినా తరువాత.	STATEMENT}
+{\slot
+3	B-time_period
+years,	I-time_period
+3	B-time_period
+months,	I-time_period
+4	B-time_period
+months	I-time_period
+అయినా	O
+తరువాత.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయినా ఇద్దరికీ wife, husbandకి ఇద్దరికీ treatment తీసుకున్నం	STATEMENT}
+{\slot
+అయినా	O
+ఇద్దరికీ	B-frequency
+wife,	B-familal
+husbandకి	B-familal
+ఇద్దరికీ	O
+treatment	B-treatment
+తీసుకున్నం	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఏం problem లేదని చెప్పారు	STATEMENT}
+{\slot
+ఏం	O
+problem	O
+లేదని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయినా treatment తీసుకున్న గానీ	STATEMENT}
+{\slot
+అయినా	O
+treatment	B-treatment
+తీసుకున్న	O
+గానీ	O
+}
+
+{\intent	d: pregnancy అందడం లేదా?	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+అందడం	O
+లేదా?	O
+}
+
+{\intent	p: ఆ అందడం లేదు madam	ANSWER}
+{\slot
+ఆ	O
+అందడం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: so మీరు treatment అంటే follicular study చేయించుకున్నారా egg releaseకి సంబంధించిన medicines use చేసారా అండి?	INFO_REQUEST}
+{\slot
+so	O
+మీరు	O
+treatment	B-treatment
+అంటే	O
+follicular	B-mtest
+study	I-mtest
+చేయించుకున్నారా	O
+egg	B-body_part
+releaseకి	B-bodily_process
+సంబంధించిన	O
+medicines	B-medicine
+use	O
+చేసారా	O
+అండి?	O
+}
+
+{\intent	p: ఆ use చేసినం ఆ	ANSWER}
+{\slot
+ఆ	O
+use	O
+చేసినం	B-positive
+ఆ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీరు మీరు చెప్పిన సమస్యలను ని బట్టి only problem కొద్దిగా PCOD ఉంది, thyroid treatment మీరు already తీసుకుంటున్నారు	STATEMENT}
+{\slot
+మీరు	O
+మీరు	O
+చెప్పిన	O
+సమస్యలను	O
+ని	O
+బట్టి	O
+only	O
+problem	O
+కొద్దిగా	B-intensity
+PCOD	B-medical_condition
+ఉంది,	O
+thyroid	B-medical_condition
+treatment	B-treatment
+మీరు	O
+already	O
+తీసుకుంటున్నారు	O
+}
+

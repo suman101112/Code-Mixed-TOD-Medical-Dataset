@@ -1,0 +1,59 @@
+{\intent	p: doctor గారు, నాకు కళ్ళ కింద మచ్చలు పోవాలంటే ఏం చేయాలి?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు,	O
+నాకు	O
+కళ్ళ	B-body_part
+కింద	B-location
+మచ్చలు	B-symptom
+పోవాలంటే	O
+ఏం	O
+చేయాలి?	O
+}
+
+{\intent	p: దీనికి శాశ్వత పరిష్కారం ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+దీనికి	O
+శాశ్వత	B-time_period
+పరిష్కారం	B-treatment
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: lasik treatment పని చేస్తుందా?	INFO_REQUEST}
+{\slot
+lasik	B-treatment
+treatment	I-treatment
+పని	O
+చేస్తుందా?	O
+}
+
+{\intent	d: కళ్ళ చుట్టూ ఉండేటటువంటి నలుపుని మనం periorbital pigmentation అని అంటూ ఉంటాం.	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళ	B-body_part
+చుట్టూ	B-location
+ఉండేటటువంటి	O
+నలుపుని	B-color
+మనం	O
+periorbital	B-medical_condition
+pigmentation	I-medical_condition
+అని	O
+అంటూ	O
+ఉంటాం.	O
+}
+
+{\intent	d: so ఇది pigmentation రావడానికి కారణాలు ఎమిటి అంటే మొట్ట మొదటిగా genetics అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇది	O
+pigmentation	B-medical_condition
+రావడానికి	O
+కారణాలు	O
+ఎమిటి	O
+అంటే	O
+మొట్ట	O
+మొదటిగా	O
+genetics	O
+అండి.	O
+}
+

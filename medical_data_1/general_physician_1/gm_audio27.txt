@@ -1,0 +1,259 @@
+{\intent	p: నా age 21,	STATEMENT}
+{\slot
+నా	O
+age	O
+21,	B-age
+}
+
+{\intent	p: నాకు pain వస్తుంది madam బాగా	STATEMENT}
+{\slot
+నాకు	O
+pain	B-symptom
+వస్తుంది	O
+madam	O
+బాగా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు బాగా pain వస్తుంది madam	STATEMENT}
+{\slot
+నాకు	O
+బాగా	B-intensity
+pain	B-symptom
+వస్తుంది	O
+madam	O
+}
+
+{\intent	p: అది అడిగాను నేను, RMP దెగ్గరికి వెళితే, migrane pain అమ్మా	STATEMENT}
+{\slot
+అది	O
+అడిగాను	O
+నేను,	O
+RMP	B-medical_professional
+దెగ్గరికి	O
+వెళితే,	O
+migrane	B-symptom
+pain	B-symptom
+అమ్మా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: migrane pain అని చెప్పారు	STATEMENT}
+{\slot
+migrane	B-symptom
+pain	B-symptom
+అని	O
+చెప్పారు	O
+}
+
+{\intent	p: అది stress వల్ల అని చెప్పారు	STATEMENT}
+{\slot
+అది	O
+stress	B-symptom
+వల్ల	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	p: అవును నాకు తిన్నది vomiting అవ్వటం,	STATEMENT}
+{\slot
+అవును	O
+నాకు	O
+తిన్నది	B-bodily_process
+vomiting	B-symptom
+అవ్వటం,	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: brain బాగా stressగా ఉండడం	STATEMENT}
+{\slot
+brain	B-body_part
+బాగా	B-intensity
+stressగా	B-symptom
+ఉండడం	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hair loss, hair fall కూడా ఉంది madam	STATEMENT}
+{\slot
+hair	B-body_part
+loss,	B-symptom
+hair	B-body_part
+fall	B-symptom
+కూడా	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అమ్మా?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అమ్మా?	O
+}
+
+{\intent	p: age 21 madam	ANSWER}
+{\slot
+age	O
+21	B-age
+madam	O
+}
+
+{\intent	d: 21	ACK}
+{\slot
+21	B-age
+}
+
+{\intent	d: ok, fine	ACK}
+{\slot
+ok,	O
+fine	O
+}
+
+{\intent	d: correct timeకి భోజనం చేయకపోవడం, లేకపోతే నిద్ర సరిగ్గా ఉండకపోవడం కూడా ఇలాంటి లక్షణాలకు దారి తీస్తుంది	MEDICAL_EXPLANATION}
+{\slot
+correct	O
+timeకి	B-time_period
+భోజనం	B-bodily_process
+చేయకపోవడం,	B-symptom
+లేకపోతే	O
+నిద్ర	B-bodily_process
+సరిగ్గా	O
+ఉండకపోవడం	B-symptom
+కూడా	O
+ఇలాంటి	O
+లక్షణాలకు	O
+దారి	O
+తీస్తుంది	O
+}
+
+{\intent	d: ఇంకేమైనా symptoms ఉన్నాయా? vomitings గానీ?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+symptoms	O
+ఉన్నాయా?	O
+vomitings	B-symptom
+గానీ?	O
+}
+
+{\intent	p: ఆహా, vomitings compulsory అవుతున్నది madam	ANSWER}
+{\slot
+ఆహా,	O
+vomitings	B-symptom
+compulsory	O
+అవుతున్నది	O
+madam	O
+}
+
+{\intent	p: తిన్నది కూడా నాకు digest అంటే ఇక్కడనే ఆగిపోతుంటది madam	STATEMENT}
+{\slot
+తిన్నది	B-bodily_process
+కూడా	O
+నాకు	O
+digest	B-bodily_process
+అంటే	O
+ఇక్కడనే	B-location
+ఆగిపోతుంటది	B-symptom
+madam	O
+}
+
+{\intent	d: ok fine	ACK}
+{\slot
+ok	O
+fine	O
+}
+
+{\intent	d: ప్రస్తుతానికి ఏమైనా medications వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+ప్రస్తుతానికి	O
+ఏమైనా	O
+medications	B-medicine
+వాడుతున్నారా?	O
+}
+
+{\intent	p: నేను ఎమి వాడలేదు madam	ANSWER}
+{\slot
+నేను	O
+ఎమి	O
+వాడలేదు	O
+madam	O
+}
+
+{\intent	p: ఆయన మాత్రం ఏదో tablets ఇచ్చారు	STATEMENT}
+{\slot
+ఆయన	O
+మాత్రం	O
+ఏదో	O
+tablets	B-medicine
+ఇచ్చారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: morning, నీకు ఎప్పుడు vomiting వచ్చినట్లు ఉంటే అప్పుడు వేసుకోమని ఇచ్చారు	STATEMENT}
+{\slot
+morning,	B-time_period
+నీకు	O
+ఎప్పుడు	O
+vomiting	B-symptom
+వచ్చినట్లు	O
+ఉంటే	O
+అప్పుడు	B-time_period
+వేసుకోమని	O
+ఇచ్చారు	O
+}
+
+{\intent	d: ok ok fine	ACK}
+{\slot
+ok	O
+ok	O
+fine	O
+}
+
+{\intent	p: అది వేసుకుంటే నాకు బాగా stomach pain వచ్చింది, use చేయట్లేదు madam	STATEMENT}
+{\slot
+అది	O
+వేసుకుంటే	O
+నాకు	O
+బాగా	B-intensity
+stomach	B-body_part
+pain	B-symptom
+వచ్చింది,	O
+use	O
+చేయట్లేదు	O
+madam	O
+}
+
+{\intent	d: ok ok fine అమ్మా.	CONV_CLOSE}
+{\slot
+ok	O
+ok	O
+fine	O
+అమ్మా.	O
+}
+

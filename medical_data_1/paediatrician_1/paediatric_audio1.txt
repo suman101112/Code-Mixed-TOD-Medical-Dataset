@@ -1,0 +1,101 @@
+{\intent	d: Manasvini ఆ?	INFO_REQUEST}
+{\slot
+Manasvini	B-name
+ఆ?	O
+}
+
+{\intent	p: ఆ Manasvini	ANSWER}
+{\slot
+ఆ	O
+Manasvini	B-name
+}
+
+{\intent	d: 1	ANSWER}
+{\slot
+1	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	p1: ఏడుస్తున్నది, motions పోతుంటే ఏడుస్తుంది.	STATEMENT}
+{\slot
+ఏడుస్తున్నది,	B-symptom
+motions	B-symptom
+పోతుంటే	I-symptom
+ఏడుస్తుంది.	I-symptom
+}
+
+{\intent	d: అంటే జలుబు, దగ్గు ఉన్నవాళ్లకు motion అయితుంది కాదా	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+జలుబు,	B-medical_condition
+దగ్గు	B-symptom
+ఉన్నవాళ్లకు	O
+motion	B-symptom
+అయితుంది	O
+కాదా	O
+}
+
+{\intent	d: motion పోయినప్పుడు బాగా strain చేస్తారు, ముక్కి నట్లు చేస్తారు	MEDICAL_EXPLANATION}
+{\slot
+motion	B-symptom
+పోయినప్పుడు	O
+బాగా	O
+strain	B-medical_condition
+చేస్తారు,	O
+ముక్కి	B-bodily_process
+నట్లు	O
+చేస్తారు	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అది normal	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+normal	O
+}
+
+{\intent	d: జలుబు , దగ్గు ఉన్నప్పుడు అట్ల పోవడం normal	MEDICAL_EXPLANATION}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు	B-symptom
+ఉన్నప్పుడు	O
+అట్ల	O
+పోవడం	O
+normal	O
+}
+
+{\intent	p1: ఆ normalగా కూడా అట్ల పోతుంది sir	STATEMENT}
+{\slot
+ఆ	O
+normalగా	O
+కూడా	O
+అట్ల	O
+పోతుంది	O
+sir	O
+}
+
+{\intent	d: ఉత్తప్పుడు కూడా అట్ల పోతుంది అంటే first మనం తినే dietలో మార్పు తీసుకోని రావాలి	MEDICAL_EXPLANATION}
+{\slot
+ఉత్తప్పుడు	O
+కూడా	O
+అట్ల	O
+పోతుంది	O
+అంటే	O
+first	O
+మనం	O
+తినే	O
+dietలో	B-food_substance
+మార్పు	O
+తీసుకోని	O
+రావాలి	O
+}
+

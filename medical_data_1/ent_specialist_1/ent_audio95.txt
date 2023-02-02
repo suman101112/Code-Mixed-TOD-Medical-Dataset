@@ -1,0 +1,97 @@
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: throatలో infection అయింది sir ఇక్కడ కొంచం	STATEMENT}
+{\slot
+throatలో	B-body_part
+infection	B-medical_condition
+అయింది	O
+sir	O
+ఇక్కడ	O
+కొంచం	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: freeగా ఉండండి.	ACTION_DIR}
+{\slot
+freeగా	O
+ఉండండి.	O
+}
+
+{\intent	d: सर्दी, దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी,	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: सर्दी lightగా మొన్న morning ఉన్నది కానీ ఇవాళ ఏం లేదు sir.	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+lightగా	B-intensity
+మొన్న	B-time_period
+morning	I-time_period
+ఉన్నది	B-positive
+కానీ	O
+ఇవాళ	B-time_period
+ఏం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: మాట మారిందా ఏమన్నా?	INFO_REQUEST}
+{\slot
+మాట	B-bodily_process
+మారిందా	B-symptom
+ఏమన్నా?	O
+}
+
+{\intent	p: మాట మారింది sir	ANSWER}
+{\slot
+మాట	B-bodily_process
+మారింది	B-symptom
+sir	O
+}
+
+{\intent	p: ఇక్కడ చిన్న ball లెక్క అయింది sir కురుపు,	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+చిన్న	O
+ball	O
+లెక్క	O
+అయింది	O
+sir	O
+కురుపు,	B-medical_condition
+}
+
+{\intent	p: ఇక్కడ ఇక్కడే	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+ఇక్కడే	B-location
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చిన్న ball, గులక అయింది sir.	STATEMENT}
+{\slot
+చిన్న	O
+ball,	O
+గులక	B-medical_condition
+అయింది	O
+sir.	O
+}
+

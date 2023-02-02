@@ -1,0 +1,135 @@
+{\intent	d: typhoid ఒక్కటి positive ఉంది	STATEMENT}
+{\slot
+typhoid	B-medical_condition
+ఒక్కటి	O
+positive	B-positive
+ఉంది	O
+}
+
+{\intent	d: దానితో పాటు ఏందంటే కొంచం urinary infection ఉంది	STATEMENT}
+{\slot
+దానితో	O
+పాటు	O
+ఏందంటే	O
+కొంచం	O
+urinary	B-body_substance
+infection	B-medical_condition
+ఉంది	O
+}
+
+{\intent	d: ఆడపిల్లలు ఏంటంటే schoolకి వెళ్ళి మళ్ళి అపుకోకుండా urine మధ్యలో పోసుకోవాలి compulsory పోసుకోవాలి toilet	MEDICAL_EXPLANATION}
+{\slot
+ఆడపిల్లలు	B-person
+ఏంటంటే	O
+schoolకి	B-place
+వెళ్ళి	O
+మళ్ళి	O
+అపుకోకుండా	O
+urine	B-body_substance
+మధ్యలో	O
+పోసుకోవాలి	B-bodily_process
+compulsory	O
+పోసుకోవాలి	B-bodily_process
+toilet	B-body_substance
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: school లో ఉందా toilet?	INFO_REQUEST}
+{\slot
+school	B-place
+లో	O
+ఉందా	O
+toilet?	B-body_substance
+}
+
+{\intent	p: ఆ ఉంది	ANSWER}
+{\slot
+ఆ	O
+ఉంది	O
+}
+
+{\intent	d: పోతారా?	INFO_REQUEST}
+{\slot
+పోతారా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	d: గోళీలు మింగుతావా?	INFO_REQUEST}
+{\slot
+గోళీలు	B-medicine
+మింగుతావా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	d: ఎంత మంది ఉంటారు మీ school లో?	INFO_REQUEST}
+{\slot
+ఎంత	O
+మంది	O
+ఉంటారు	O
+మీ	O
+school	B-place
+లో?	O
+}
+
+{\intent	p: బొచ్చెడు మంది ఉంటారు	ANSWER}
+{\slot
+బొచ్చెడు	O
+మంది	O
+ఉంటారు	O
+}
+
+{\intent	d: బొచ్చెడు మందా?	ACK}
+{\slot
+బొచ్చెడు	O
+మందా?	O
+}
+
+{\intent	p1: ఇంత ముందు కూడా ఇట్ల అయింది sir.	STATEMENT}
+{\slot
+ఇంత	O
+ముందు	O
+కూడా	O
+ఇట్ల	O
+అయింది	O
+sir.	O
+}
+
+{\intent	d: అదే నీళ్లు బాగా తాగాలి, తొందర తొందరగా urine పోయాలి, కొన్ని మంచి అలవాట్లు నెర్పాలి	MEDICAL_EXPLANATION}
+{\slot
+అదే	O
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగాలి,	B-bodily_process
+తొందర	O
+తొందరగా	O
+urine	B-body_substance
+పోయాలి,	O
+కొన్ని	O
+మంచి	O
+అలవాట్లు	O
+నెర్పాలి	O
+}
+
+{\intent	d: అది వాడి ఒక 1 week తర్వాత రండీ.	ACTION_DIR}
+{\slot
+అది	O
+వాడి	O
+ఒక	O
+1	B-time_period
+week	I-time_period
+తర్వాత	O
+రండీ.	O
+}
+

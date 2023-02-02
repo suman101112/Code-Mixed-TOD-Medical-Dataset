@@ -1,0 +1,231 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: mohmd Akhil	ANSWER}
+{\slot
+mohmd	B-name
+Akhil	I-name
+}
+
+{\intent	d: mohmd	HOLD}
+{\slot
+mohmd	B-name
+}
+
+{\intent	p: Akhil	STATEMENT}
+{\slot
+Akhil	B-name
+}
+
+{\intent	d: Akhil	ACK}
+{\slot
+Akhil	B-name
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: इधर नाक पर मार लगा	ANSWER}
+{\slot
+इधर	B-location
+नाक	B-body_part
+पर	B-location
+मार	B-trauma
+लगा	O
+}
+
+{\intent	d: ఆ, age बोलो	INFO_REQUEST}
+{\slot
+ఆ,	O
+age	O
+बोलो	O
+}
+
+{\intent	p: age 45 sir.	ANSWER}
+{\slot
+age	O
+45	B-age
+sir.	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: नाक में मार लगा?	INFO_REQUEST}
+{\slot
+नाक	B-body_part
+में	B-location
+मार	B-trauma
+लगा?	O
+}
+
+{\intent	p: ఆ इस पे लगा	ANSWER}
+{\slot
+ఆ	B-positive
+इस	O
+पे	O
+लगा	O
+}
+
+{\intent	d: कौन मारे ?	INFO_REQUEST}
+{\slot
+कौन	O
+मारे	O
+?	O
+}
+
+{\intent	p: जी ?	SNU}
+{\slot
+जी	O
+?	O
+}
+
+{\intent	d: कौन मारे ?	INFO_REQUEST}
+{\slot
+कौन	O
+मारे	O
+?	O
+}
+
+{\intent	p: ये गड़बड़ हो रही थी परसों 3 दिन हुए	STATEMENT}
+{\slot
+ये	O
+गड़बड़	O
+हो	O
+रही	O
+थी	O
+परसों	B-time_period
+3	I-time_period
+दिन	I-time_period
+हुए	O
+}
+
+{\intent	d: police case है ?	INFO_REQUEST}
+{\slot
+police	O
+case	O
+है	O
+?	O
+}
+
+{\intent	p: नहीं नहीं कुछ भी नहीं	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं	O
+कुछ	O
+भी	O
+नहीं	O
+}
+
+{\intent	p: already MGM गया था परसों	STATEMENT}
+{\slot
+already	O
+MGM	B-place
+गया	O
+था	O
+परसों	B-time_period
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: एक x-ray निकलना पड़ता	STATEMENT}
+{\slot
+एक	B-frequency
+x-ray	B-mtest
+निकलना	O
+पड़ता	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: fracture है की नहीं की देखना	ACTION_DIR}
+{\slot
+fracture	B-medical_condition
+है	O
+की	O
+नहीं	O
+की	O
+देखना	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: बहुत खून चले गया	STATEMENT}
+{\slot
+बहुत	B-intensity
+खून	B-body_substance
+चले	O
+गया	O
+}
+
+{\intent	p: x-ray निकाले वहाँ पे MGM में	STATEMENT}
+{\slot
+x-ray	B-mtest
+निकाले	O
+वहाँ	O
+पे	O
+MGM	B-hospital_name
+में	O
+}
+
+{\intent	p: बाहर बताएंगे बोल के	STATEMENT}
+{\slot
+बाहर	O
+बताएंगे	O
+बोल	O
+के	O
+}
+
+{\intent	p: हमारे बहन को इधर ही operation करे थे .	STATEMENT}
+{\slot
+हमारे	O
+बहन	O
+को	O
+इधर	O
+ही	O
+operation	B-treatment
+करे	O
+थे	O
+.	O
+}
+
+{\intent	p: जानते नहीं	STATEMENT}
+{\slot
+जानते	O
+नहीं	O
+}
+
+{\intent	p: Meharunissa वो .	STATEMENT}
+{\slot
+Meharunissa	B-name
+वो	O
+.	O
+}
+

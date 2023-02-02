@@ -1,0 +1,167 @@
+{\intent	p: madam hair, skin మీద hair రావట్లేదు, అంటే నాకు hair lightగా రాలిపోతా ఉంది.	STATEMENT}
+{\slot
+madam	O
+hair,	B-symptom
+skin	I-symptom
+మీద	I-symptom
+hair	I-symptom
+రావట్లేదు,	I-symptom
+అంటే	O
+నాకు	O
+hair	B-symptom
+lightగా	I-symptom
+రాలిపోతా	I-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hair damage ఉంది lightగా	STATEMENT}
+{\slot
+hair	B-symptom
+damage	I-symptom
+ఉంది	I-symptom
+lightగా	I-symptom
+}
+
+{\intent	d: ఎంత age sir మీది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age	O
+sir	O
+మీది?	O
+}
+
+{\intent	p: 23 అండి.	ANSWER}
+{\slot
+23	B-age
+అండి.	O
+}
+
+{\intent	d: hair అసలు మొలవట్లేదా? ఊడిపోతుందా ఉన్నది?	INFO_REQUEST}
+{\slot
+hair	B-symptom
+అసలు	I-symptom
+మొలవట్లేదా?	I-symptom
+ఊడిపోతుందా	B-symptom
+ఉన్నది?	I-symptom
+}
+
+{\intent	p: ఉన్నది ఊడిపోతుంది madam, hair damage ఉంది.	ANSWER}
+{\slot
+ఉన్నది	B-symptom
+ఊడిపోతుంది	I-symptom
+madam,	O
+hair	B-symptom
+damage	I-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: hair damage ఉంది.	ACK}
+{\slot
+hair	B-symptom
+damage	I-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: మీ parentsలో ఎవరికైనా తొందరగా జుట్టుపోయిన history ఉందా అండి?	INFO_REQUEST}
+{\slot
+మీ	B-familal
+parentsలో	I-familal
+ఎవరికైనా	I-familal
+తొందరగా	B-symptom
+జుట్టుపోయిన	I-symptom
+history	I-symptom
+ఉందా	I-symptom
+అండి?	O
+}
+
+{\intent	p: లేదు madam ఎవరికి లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+ఎవరికి	B-familial
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: ఎవరికి లేదు	ACK}
+{\slot
+ఎవరికి	B-familial
+లేదు	I-negative
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: see 23 yearsకి hair fall అయిపోతుంది అంటే	HOLD}
+{\slot
+see	O
+23	B-age
+yearsకి	I-age
+hair	B-symptom
+fall	I-symptom
+అయిపోతుంది	I-symptom
+అంటే	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: చాలా వరకు nutritional deficiency గానీ లేక hormonal imbalance గానీ, stress గానీ, లేక తలస్నానం సరిగ్గా maintenance problem గానీ, dandruff problem గానీ	STATEMENT}
+{\slot
+చాలా	O
+వరకు	O
+nutritional	B-symptom
+deficiency	I-symptom
+గానీ	O
+లేక	O
+hormonal	B-symptom
+imbalance	I-symptom
+గానీ,	O
+stress	B-symptom
+గానీ,	O
+లేక	O
+తలస్నానం	B-symptom
+సరిగ్గా	I-symptom
+maintenance	I-symptom
+problem	I-symptom
+గానీ,	O
+dandruff	B-symptom
+problem	I-symptom
+గానీ	O
+}
+
+{\intent	d: vitamin deficiency గానీ, రాక రకాల deficiency ఉంటది.	STATEMENT}
+{\slot
+vitamin	B-symptom
+deficiency	I-symptom
+గానీ,	O
+రాక	O
+రకాల	O
+deficiency	B-symptom
+ఉంటది.	O
+}
+
+{\intent	d: so దాన్ని identify చేసి ఆ చిన్న problemని మనం solve చేసుకుంటే మంచిది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+దాన్ని	O
+identify	B-mtest
+చేసి	I-mtest
+ఆ	O
+చిన్న	O
+problemని	O
+మనం	O
+solve	B-treatment
+చేసుకుంటే	I-treatment
+మంచిది.	B-normal
+}
+

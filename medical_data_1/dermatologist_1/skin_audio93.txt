@@ -1,0 +1,50 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 59, female	ANSWER}
+{\slot
+59,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: తల మీద దద్దుర్లు లాగా అయింది sir.	ANSWER}
+{\slot
+తల	B-body_part
+మీద	I-body_part
+దద్దుర్లు	B-symptom
+లాగా	I-symptom
+అయింది	I-symptom
+sir.	O
+}
+
+{\intent	d: తల మీద ఒకటేనా?	INFO_REQUEST}
+{\slot
+తల	B-body_part
+మీద	B-location
+ఒకటేనా?	O
+}
+
+{\intent	p: అవును sir	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+}
+
+{\intent	p: తల మీద బాగా గోకుడు పెడుతుంది sir.	STATEMENT}
+{\slot
+తల	B-body_part
+మీద	I-body_part
+బాగా	B-symptom
+గోకుడు	I-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+

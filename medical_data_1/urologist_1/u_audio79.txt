@@ -1,0 +1,96 @@
+{\intent	d: ఏమైంది Narsayya?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+Narsayya?	B-name
+}
+
+{\intent	p: kidney రాయి sir	ANSWER}
+{\slot
+kidney	B-body_part
+రాయి	B-body_substance
+sir	O
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: kidney నొప్పి sir	ANSWER}
+{\slot
+kidney	B-body_part
+నొప్పి	B-symptom
+sir	O
+}
+
+{\intent	d: ఏమైంది ఎక్కడ వస్తుంది నొప్పి?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+ఎక్కడ	O
+వస్తుంది	O
+నొప్పి?	B-symptom
+}
+
+{\intent	p: ఇక్కడ నుంచి	HOLD}
+{\slot
+ఇక్కడ	B-location
+నుంచి	O
+}
+
+{\intent	d: అక్కడ నుంచి	ACK}
+{\slot
+అక్కడ	B-location
+నుంచి	O
+}
+
+{\intent	p: ఇగ అంతా కడుపులో	STATEMENT}
+{\slot
+ఇగ	O
+అంతా	B-location
+కడుపులో	B-body_part
+}
+
+{\intent	d: మూత్రం మంట అయితుందా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+అయితుందా?	O
+}
+
+{\intent	p: మంట అయితాంది.	ANSWER}
+{\slot
+మంట	B-symptom
+అయితాంది.	B-positive
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: వాంతి వచ్చినట్లు ఏమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+వాంతి	B-symptom
+వచ్చినట్లు	O
+ఏమన్నా	O
+ఉందా?	O
+}
+
+{\intent	p: వాంతులు వస్తలేవు	ANSWER}
+{\slot
+వాంతులు	B-symptom
+వస్తలేవు	B-negative
+}
+
+{\intent	d: సరే ఒకసారి scanning రాస్తా, తీయించుకొని రా. సరేనా? .	INFO_REQUEST}
+{\slot
+సరే	O
+ఒకసారి	O
+scanning	B-mtest
+రాస్తా,	O
+తీయించుకొని	O
+రా.	O
+సరేనా?	O
+.	O
+}
+

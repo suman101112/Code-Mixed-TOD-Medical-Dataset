@@ -1,0 +1,157 @@
+{\intent	p: Hello, నమస్తే sir	GREETING}
+{\slot
+Hello,	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: sir ఇప్పుడు infection ఉంది , kidneyలో 2.7 stone అన్నారు sir doctorలు	STATEMENT}
+{\slot
+sir	O
+ఇప్పుడు	O
+infection	B-medical_condition
+ఉంది	O
+,	O
+kidneyలో	B-body_part
+2.7	B-mtest_value
+stone	B-body_substance
+అన్నారు	O
+sir	O
+doctorలు	O
+}
+
+{\intent	d: ఆ చిన్న stone అది	STATEMENT}
+{\slot
+ఆ	O
+చిన్న	O
+stone	B-body_substance
+అది	O
+}
+
+{\intent	p: ఆ infection free అవుతేగాని operation చేయమని చెప్పారు	STATEMENT}
+{\slot
+ఆ	O
+infection	B-medical_condition
+free	O
+అవుతేగాని	O
+operation	B-treatment
+చేయమని	O
+చెప్పారు	O
+}
+
+{\intent	d: అంటే pain ఏమైనా ఉంటుందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+pain	B-symptom
+ఏమైనా	O
+ఉంటుందా?	O
+}
+
+{\intent	p: ఆ pain ఉంది sir, urine కూడా pass కావడంలేదు మా motherకే	ANSWER}
+{\slot
+ఆ	O
+pain	B-symptom
+ఉంది	O
+sir,	O
+urine	B-body_substance
+కూడా	O
+pass	B-bodily_process
+కావడంలేదు	B-symptom
+మా	O
+motherకే	B-familal
+}
+
+{\intent	d: 2.7 mm అన్నారా? cm అన్నారా?	INFO_REQUEST}
+{\slot
+2.7	B-mtest_value
+mm	I-mtest_value
+అన్నారా?	O
+cm	B-mtest_value
+అన్నారా?	O
+}
+
+{\intent	p: అది ml అన్నారు sir	ANSWER}
+{\slot
+అది	O
+ml	B-mtest_value
+అన్నారు	O
+sir	O
+}
+
+{\intent	d: mm అంటే దానివల్ల పెద్దగా..	STATEMENT}
+{\slot
+mm	B-mtest_value
+అంటే	O
+దానివల్ల	O
+పెద్దగా..	O
+}
+
+{\intent	p: అది పొడుగు ఉంది అన్నారు sir	STATEMENT}
+{\slot
+అది	O
+పొడుగు	O
+ఉంది	O
+అన్నారు	O
+sir	O
+}
+
+{\intent	d: అది 2.7 అంటే చిన్న stone అది	STATEMENT}
+{\slot
+అది	O
+2.7	B-mtest_value
+అంటే	O
+చిన్న	O
+stone	B-body_substance
+అది	O
+}
+
+{\intent	d: actualగా మీరు water బాగా తాగుతూ, కొద్దిగా liquids అది తీసుకుంటే 1 2 daysలో అదే పడిపోతది.	STATEMENT}
+{\slot
+actualగా	O
+మీరు	O
+water	B-food_substance
+బాగా	O
+తాగుతూ,	O
+కొద్దిగా	O
+liquids	B-food_substance
+అది	O
+తీసుకుంటే	O
+1	B-quantity
+2	I-time_period
+daysలో	I-time_period
+అదే	O
+పడిపోతది.	O
+}
+
+{\intent	d: ఒకవేళ mm అయితే, 2.5 cm అయితే అయితే చాన పెద్ద stone అది	MEDICAL_EXPLANATION}
+{\slot
+ఒకవేళ	O
+mm	B-mtest_value
+అయితే,	O
+2.5	B-mtest_value
+cm	I-mtest_value
+అయితే	O
+అయితే	O
+చాన	O
+పెద్ద	O
+stone	B-body_substance
+అది	O
+}
+
+{\intent	d: అది generalగా దానివల్ల చాలా pain ఉంటది, compulsory	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+generalగా	O
+దానివల్ల	O
+చాలా	O
+pain	B-symptom
+ఉంటది,	O
+compulsory	O
+}
+

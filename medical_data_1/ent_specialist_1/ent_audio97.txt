@@ -1,0 +1,256 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Priyanka	ANSWER}
+{\slot
+Priyanka	B-name
+}
+
+{\intent	d: Priyanka	ACK}
+{\slot
+Priyanka	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: age 22	ANSWER}
+{\slot
+age	O
+22	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చెవిలో నొప్పి వస్తుంది	STATEMENT}
+{\slot
+చెవిలో	B-body_part
+నొప్పి	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: చెవిలో నొప్పి.	ACK}
+{\slot
+చెవిలో	B-body_part
+నొప్పి.	B-symptom
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: నా voice నాకే వినిపిస్తోంది.	STATEMENT}
+{\slot
+నా	O
+voice	B-bodily_process
+నాకే	O
+వినిపిస్తోంది.	B-bodily_process
+}
+
+{\intent	d: ఎన్ని రోజులు అయితుంది?	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయితుంది?	O
+}
+
+{\intent	p: అప్పుడప్పుడు వస్తుంది	ANSWER}
+{\slot
+అప్పుడప్పుడు	B-time_period
+వస్తుంది	O
+}
+
+{\intent	d: జలుబు, దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు,	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: umm దగ్గుతూ.	ANSWER}
+{\slot
+umm	O
+దగ్గుతూ.	B-symptom
+}
+
+{\intent	d: పేరమ్మా?	INFO_REQUEST}
+{\slot
+పేరమ్మా?	O
+}
+
+{\intent	p: Priyanka	ANSWER}
+{\slot
+Priyanka	B-name
+}
+
+{\intent	d: నోరు తెరువు	ACTION_DIR}
+{\slot
+నోరు	B-body_part
+తెరువు	O
+}
+
+{\intent	d: చెవు వినపడుతుందా మంచిగా?	INFO_REQUEST}
+{\slot
+చెవు	B-body_part
+వినపడుతుందా	B-bodily_process
+మంచిగా?	B-normal
+}
+
+{\intent	p: ఆ, బానే.	ANSWER}
+{\slot
+ఆ,	B-positive
+బానే.	B-intensity
+}
+
+{\intent	d: నీ శ్శబ్దం నీకే వినబడుతుంది?	INFO_REQUEST}
+{\slot
+నీ	O
+శ్శబ్దం	B-bodily_process
+నీకే	O
+వినబడుతుంది?	B-bodily_process
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: ఇది cold వల్ల,	DIAGNOSIS}
+{\slot
+ఇది	O
+cold	B-medical_condition
+వల్ల,	O
+}
+
+{\intent	d: చెవులో ఎమి వేయకూడదు	ACTION_DIR}
+{\slot
+చెవులో	B-body_part
+ఎమి	O
+వేయకూడదు	O
+}
+
+{\intent	p: ఏమన్నా జీబిడి ఉందా లోపల?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+జీబిడి	B-symptom
+ఉందా	O
+లోపల?	B-location
+}
+
+{\intent	d: cleanగా ఉంది	ANSWER}
+{\slot
+cleanగా	B-normal
+ఉంది	O
+}
+
+{\intent	p: ఎప్పుడు brown color వస్తుంది.	STATEMENT}
+{\slot
+ఎప్పుడు	O
+brown	B-color
+color	I-color
+వస్తుంది.	O
+}
+
+{\intent	d: cleanగా ఉంది	STATEMENT}
+{\slot
+cleanగా	B-normal
+ఉంది	O
+}
+
+{\intent	p: మరి ఎందుకు ఊరికే ఇలా దురద వస్తుంది.	INFO_REQUEST}
+{\slot
+మరి	O
+ఎందుకు	O
+ఊరికే	O
+ఇలా	O
+దురద	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ఆ అదే, దానికి మందు రాసి ఇస్తా	COMMIT}
+{\slot
+ఆ	O
+అదే,	O
+దానికి	O
+మందు	B-medicine
+రాసి	O
+ఇస్తా	O
+}
+
+{\intent	d: చెవు చాలా cleanగా ఉంది. లోపట పుల్లలు పెట్టకు, ఏం చేయకు	ACTION_DIR}
+{\slot
+చెవు	B-body_part
+చాలా	B-intensity
+cleanగా	B-normal
+ఉంది.	O
+లోపట	B-location
+పుల్లలు	O
+పెట్టకు,	O
+ఏం	O
+చేయకు	O
+}
+
+{\intent	p: గొంతు ఊరికే ఇట్ల <sound> అనాల్సి వస్తుంది.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+ఊరికే	O
+ఇట్ల	O
+<sound>	B-symptom
+అనాల్సి	O
+వస్తుంది.	O
+}
+
+{\intent	d: కొంచం గోరు వెచ్చని నీళ్ళల్లో ఉప్పేసుకొని పుక్కిలించి ఉమ్ము clear అయితది.	STATEMENT}
+{\slot
+కొంచం	O
+గోరు	O
+వెచ్చని	O
+నీళ్ళల్లో	B-food_substance
+ఉప్పేసుకొని	B-food_substance
+పుక్కిలించి	B-bodily_process
+ఉమ్ము	B-bodily_process
+clear	O
+అయితది.	O
+}
+
+{\intent	p: అంటే ప్రతీ సారి అయితుంది అట్ల, ప్రతీ సారి చేయాలనా?	INFO_REQUEST}
+{\slot
+అంటే	O
+ప్రతీ	O
+సారి	O
+అయితుంది	O
+అట్ల,	O
+ప్రతీ	O
+సారి	O
+చేయాలనా?	O
+}
+
+{\intent	d: కొంచం allergy ఉంది infection వల్ల అట్ల అయితూ ఉంటుంది .	MEDICAL_EXPLANATION}
+{\slot
+కొంచం	O
+allergy	B-medical_condition
+ఉంది	O
+infection	B-medical_condition
+వల్ల	O
+అట్ల	O
+అయితూ	O
+ఉంటుంది	O
+.	O
+}
+

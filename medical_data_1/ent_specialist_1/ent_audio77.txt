@@ -1,0 +1,455 @@
+{\intent	d: పేరు చెప్పండి?	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి?	O
+}
+
+{\intent	p: sir Satyamurty sir	ANSWER}
+{\slot
+sir	O
+Satyamurty	B-name
+sir	O
+}
+
+{\intent	d: Satya Murthy	ACK}
+{\slot
+Satya	B-name
+Murthy	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 34	STATEMENT}
+{\slot
+34	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇదివరకి వచ్చిన, అంటే breathing problem ఉంది sir.	ANSWER}
+{\slot
+ఇదివరకి	O
+వచ్చిన,	O
+అంటే	O
+breathing	B-bodily_process
+problem	B-symptom
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఒకసారి	HOLD}
+{\slot
+ఒకసారి	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అయితే Somasridhar sir కి వెళ్ళిన నేను, అప్పుడు మామూలుగా Montelukast ఉన్ను ఈ zylomist రాసాడు sir	STATEMENT}
+{\slot
+అయితే	O
+Somasridhar	B-medical_professional
+sir	O
+కి	O
+వెళ్ళిన	O
+నేను,	O
+అప్పుడు	B-time_period
+మామూలుగా	O
+Montelukast	B-medicine
+ఉన్ను	O
+ఈ	O
+zylomist	B-medicine
+రాసాడు	O
+sir	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: అప్పుడు కొద్దిగా అంటే lightగా మాంసం పెరుగుతుంది అన్నాడు	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+కొద్దిగా	O
+అంటే	O
+lightగా	B-intensity
+మాంసం	B-symptom
+పెరుగుతుంది	I-symptom
+అన్నాడు	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: ఇప్పుడు అయితే చిన్నగానే ఉంది	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+అయితే	O
+చిన్నగానే	B-intensity
+ఉంది	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: తర్వాత అయితే futureలో అయితే పెరుగొచ్చు అన్నారు sir	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+అయితే	O
+futureలో	B-time_period
+అయితే	O
+పెరుగొచ్చు	B-symptom
+అన్నారు	O
+sir	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: recentగా కూడా కొద్దిగా ఇబ్బంది start అయింది. మళ్ళి breathing	STATEMENT}
+{\slot
+recentగా	B-time_period
+కూడా	O
+కొద్దిగా	O
+ఇబ్బంది	B-symptom
+start	O
+అయింది.	O
+మళ్ళి	O
+breathing	B-bodily_process
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి recentగా 2 days నుంచి కూడా breathing problem start అయింది.	STATEMENT}
+{\slot
+మళ్ళి	O
+recentగా	B-time_period
+2	B-time_period
+days	I-time_period
+నుంచి	O
+కూడా	O
+breathing	B-bodily_process
+problem	B-symptom
+start	O
+అయింది.	O
+}
+
+{\intent	p: మొన్న sneezing తీసినా తరువాత చాలా thickగా వచ్చింది sir	STATEMENT}
+{\slot
+మొన్న	B-time_period
+sneezing	B-symptom
+తీసినా	O
+తరువాత	B-time_period
+చాలా	B-intensity
+thickగా	B-symptom
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: ఆ అంటే yellowగా వచ్చిందా?	INFO_REQUEST}
+{\slot
+ఆ	O
+అంటే	O
+yellowగా	B-color
+వచ్చిందా?	O
+}
+
+{\intent	p: yellowగా రాలేదు అంటే whiteగానే వచ్చింది కానీ అది చాలా thickగా వచ్చింది.	ANSWER}
+{\slot
+yellowగా	B-color
+రాలేదు	B-negative
+అంటే	O
+whiteగానే	B-color
+వచ్చింది	O
+కానీ	O
+అది	O
+చాలా	B-intensity
+thickగా	B-symptom
+వచ్చింది.	O
+}
+
+{\intent	d: ఇది allergyతోని ఇట్ల అయితది.	DIAGNOSIS}
+{\slot
+ఇది	O
+allergyతోని	B-medical_condition
+ఇట్ల	O
+అయితది.	O
+}
+
+{\intent	d: అదే కొంచం వాపు ఉంది పక్కలకు	STATEMENT}
+{\slot
+అదే	O
+కొంచం	O
+వాపు	B-symptom
+ఉంది	O
+పక్కలకు	B-location
+}
+
+{\intent	d: చూద్దాం మరి మొదలయితే మందులతో తగ్గకపోతే scanning తీసి అవసరమా అనుకుంటే operation	STATEMENT}
+{\slot
+చూద్దాం	O
+మరి	O
+మొదలయితే	O
+మందులతో	B-medicine
+తగ్గకపోతే	O
+scanning	B-mtest
+తీసి	O
+అవసరమా	O
+అనుకుంటే	O
+operation	B-treatment
+}
+
+{\intent	d: ఇప్పుడైతే అంత stageలో లేదు	ANSWER}
+{\slot
+ఇప్పుడైతే	O
+అంత	O
+stageలో	O
+లేదు	O
+}
+
+{\intent	p: అంటే మామూలుగా నా objection ఏంటి sir అంటే operation లేకుండా ఏమన్నా generalగా medicinesతో తగ్గిందా ఎమ్మన్నా?	INFO_REQUEST}
+{\slot
+అంటే	O
+మామూలుగా	O
+నా	O
+objection	O
+ఏంటి	O
+sir	O
+అంటే	O
+operation	B-treatment
+లేకుండా	O
+ఏమన్నా	O
+generalగా	O
+medicinesతో	B-medicine
+తగ్గిందా	B-normal
+ఎమ్మన్నా?	O
+}
+
+{\intent	d: చూద్దాం మరి, అంతా urgent ఏం కాదు మరి operation.	ANSWER}
+{\slot
+చూద్దాం	O
+మరి,	O
+అంతా	O
+urgent	O
+ఏం	O
+కాదు	O
+మరి	O
+operation.	B-treatment
+}
+
+{\intent	d: మొదలు మందులు వాడీ చూద్దాం.	ACK}
+{\slot
+మొదలు	O
+మందులు	B-medicine
+వాడీ	O
+చూద్దాం.	O
+}
+
+{\intent	d: ఇంకేంది?	INFO_REQUEST}
+{\slot
+ఇంకేంది?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	p: అంటే నాకు ఈ వస్తూవులు ఏమన్నా?	INFO_REQUEST}
+{\slot
+అంటే	O
+నాకు	O
+ఈ	O
+వస్తూవులు	O
+ఏమన్నా?	O
+}
+
+{\intent	d: ice creams cool drinks ఇలా ఏం తినొద్దు	ACTION_DIR}
+{\slot
+ice	B-food_substance
+creams	I-food_substance
+cool	B-food_substance
+drinks	I-food_substance
+ఇలా	O
+ఏం	O
+తినొద్దు	O
+}
+
+{\intent	p: మజ్జిగ తాగితే ఎక్కువైతుంది sir	STATEMENT}
+{\slot
+మజ్జిగ	B-food_substance
+తాగితే	B-bodily_process
+ఎక్కువైతుంది	B-intensity
+sir	O
+}
+
+{\intent	d: बंद చేయాలి	ACTION_DIR}
+{\slot
+बंद	O
+చేయాలి	O
+}
+
+{\intent	d: పడని వస్తూవులు తాగుతే	MEDICAL_EXPLANATION}
+{\slot
+పడని	O
+వస్తూవులు	O
+తాగుతే	B-bodily_process
+}
+
+{\intent	p: అంటే ఇది allergyతోనే అయ్యుంటదా sir?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఇది	O
+allergyతోనే	B-medical_condition
+అయ్యుంటదా	O
+sir?	O
+}
+
+{\intent	d: ఇది allergy	STATEMENT}
+{\slot
+ఇది	O
+allergy	B-medical_condition
+}
+
+{\intent	p: పసుపు నీళ్లు daily తాగుతున్నా sir	STATEMENT}
+{\slot
+పసుపు	B-food_substance
+నీళ్లు	I-food_substance
+daily	B-time_period
+తాగుతున్నా	B-bodily_process
+sir	O
+}
+
+{\intent	d: మంచిది	APPRECIATE}
+{\slot
+మంచిది	O
+}
+
+{\intent	p: anti inflamatory అని	STATEMENT}
+{\slot
+anti	O
+inflamatory	O
+అని	O
+}
+
+{\intent	d: మంచిదమ్మా	APPRECIATE}
+{\slot
+మంచిదమ్మా	O
+}
+
+{\intent	p: ఇంకేమన్నా వస్తూవులు avoid చేయమంటారా sir?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+వస్తూవులు	O
+avoid	O
+చేయమంటారా	O
+sir?	O
+}
+
+{\intent	d: ice creams, cooldrinks, పులుపు లాంటివి తీసుకోవద్దు.	ACTION_DIR}
+{\slot
+ice	B-food_substance
+creams,	I-food_substance
+cooldrinks,	B-food_substance
+పులుపు	B-food_substance
+లాంటివి	O
+తీసుకోవద్దు.	O
+}
+
+{\intent	p: నిమ్మకాయ ఏం అంటారు sir?	INFO_REQUEST}
+{\slot
+నిమ్మకాయ	B-food_substance
+ఏం	O
+అంటారు	O
+sir?	O
+}
+
+{\intent	d: మంచిది	APPRECIATE}
+{\slot
+మంచిది	O
+}
+
+{\intent	p: నిమ్మకాయ తీసుకోవచ్చా sir?	INFO_REQUEST}
+{\slot
+నిమ్మకాయ	B-food_substance
+తీసుకోవచ్చా	O
+sir?	O
+}
+
+{\intent	d: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	p: vitamin c కొద్దిగా ఎక్కువ తాగితే	STATEMENT}
+{\slot
+vitamin	B-body_substance
+c	I-body_substance
+కొద్దిగా	B-intensity
+ఎక్కువ	I-intensity
+తాగితే	B-bodily_process
+}
+
+{\intent	d: అని తీసుకో	ACTION_DIR}
+{\slot
+అని	O
+తీసుకో	O
+}
+
+{\intent	p: thank you sir.	APPRECIATE}
+{\slot
+thank	O
+you	O
+sir.	O
+}
+

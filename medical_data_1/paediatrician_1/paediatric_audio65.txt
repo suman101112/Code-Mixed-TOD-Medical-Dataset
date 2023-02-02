@@ -1,0 +1,173 @@
+{\intent	p: नमस्ते doctor	STATEMENT}
+{\slot
+नमस्ते	O
+doctor	B-medical_professional
+}
+
+{\intent	d: क्या problem क्या है ?	INFO_REQUEST}
+{\slot
+क्या	O
+problem	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p: खांसी है , कल रात में से बुखार चढ़ रही	STATEMENT}
+{\slot
+खांसी	B-symptom
+है	O
+,	O
+कल	B-time_period
+रात	B-time_period
+में	O
+से	O
+बुखार	B-symptom
+चढ़	O
+रही	O
+}
+
+{\intent	d: अभी खांसी है	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+खांसी	B-symptom
+है	O
+}
+
+{\intent	p: हां , खांसी ज़्यादा है	ANSWER}
+{\slot
+हां	O
+,	O
+खांसी	B-symptom
+ज़्यादा	B-intensity
+है	O
+}
+
+{\intent	d: बुखार भी है	INFO_REQUEST}
+{\slot
+बुखार	B-symptom
+भी	O
+है	O
+}
+
+{\intent	p: हां	ANSWER}
+{\slot
+हां	O
+}
+
+{\intent	d: ऐसा लेटावो	ACTION_DIR}
+{\slot
+ऐसा	O
+लेटावो	O
+}
+
+{\intent	p1: कल कम थी बुखार, आज सुबहसे ज़्यादा है	STATEMENT}
+{\slot
+कल	B-time_period
+कम	O
+थी	O
+बुखार,	B-symptom
+आज	B-time_period
+सुबहसे	B-time_period
+ज़्यादा	B-intensity
+है	O
+}
+
+{\intent	d: अभी 99 ही चु है	STATEMENT}
+{\slot
+अभी	B-time_period
+99	B-mtest_value
+ही	O
+चु	O
+है	O
+}
+
+{\intent	p1: खा रहा नहीं कुछ भी,	STATEMENT}
+{\slot
+खा	B-bodily_process
+रहा	O
+नहीं	B-negative
+कुछ	O
+भी,	O
+}
+
+{\intent	d: खाना बोलतो చపాతీ, పుల్కా, ఇడ్లి खिलावो	ACTION_DIR}
+{\slot
+खाना	B-food_substance
+बोलतो	O
+చపాతీ,	B-food_substance
+పుల్కా,	B-food_substance
+ఇడ్లి	B-food_substance
+खिलावो	B-bodily_process
+}
+
+{\intent	p1: एक ఇడ్లి खा रहे	STATEMENT}
+{\slot
+एक	B-quantity
+ఇడ్లి	B-food_substance
+खा	B-bodily_process
+रहे	O
+}
+
+{\intent	p1: खांसी कम रहते अच्छा रहते	STATEMENT}
+{\slot
+खांसी	B-symptom
+कम	O
+रहते	O
+अच्छा	O
+रहते	O
+}
+
+{\intent	p1: कहते जब खांसी आ के निकल रहा पूरा	STATEMENT}
+{\slot
+कहते	O
+जब	B-time_period
+खांसी	B-symptom
+आ	O
+के	O
+निकल	B-symptom
+रहा	O
+पूरा	O
+}
+
+{\intent	d: उल्टी आ रहा	INFO_REQUEST}
+{\slot
+उल्टी	B-symptom
+आ	O
+रहा	O
+}
+
+{\intent	p1: आ	ANSWER}
+{\slot
+आ	O
+}
+
+{\intent	p1: నంజు	STATEMENT}
+{\slot
+నంజు	B-body_substance
+}
+
+{\intent	p1: परसो nebulizer लगा के गई ना तब अच्छा था	STATEMENT}
+{\slot
+परसो	B-time_period
+nebulizer	B-treatment
+लगा	O
+के	O
+गई	O
+ना	O
+तब	O
+अच्छा	B-normal
+था	O
+}
+
+{\intent	p: अब लगाना?	INFO_REQUEST}
+{\slot
+अब	B-time_period
+लगाना?	O
+}
+
+{\intent	d: लगावो	ANSWER}
+{\slot
+लगावो	O
+}
+

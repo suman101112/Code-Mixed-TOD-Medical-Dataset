@@ -1,0 +1,252 @@
+{\intent	p: ఇంత ముందు వచ్చాం మేము	STATEMENT}
+{\slot
+ఇంత	O
+ముందు	O
+వచ్చాం	O
+మేము	O
+}
+
+{\intent	p: night timeలో బాగా వస్తుంది.	STATEMENT}
+{\slot
+night	B-time_period
+timeలో	I-time_period
+బాగా	O
+వస్తుంది.	O
+}
+
+{\intent	p: fever మళ్లీ evening అయితే మళ్ళ వస్తుంది.	STATEMENT}
+{\slot
+fever	B-symptom
+మళ్లీ	O
+evening	B-time_period
+అయితే	O
+మళ్ళ	O
+వస్తుంది.	O
+}
+
+{\intent	p1: tablet వేసుకున్నప్పుడే కొంచం 2, 3 hours కొంచం fever ఉంటుంది	STATEMENT}
+{\slot
+tablet	B-medicine
+వేసుకున్నప్పుడే	O
+కొంచం	O
+2,	B-time_period
+3	B-time_period
+hours	I-time_period
+కొంచం	O
+fever	B-symptom
+ఉంటుంది	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p1: fever	STATEMENT}
+{\slot
+fever	B-symptom
+}
+
+{\intent	d: వచ్చి ఎన్ని రోజులు అయితాంది ఇప్పుడు	INFO_REQUEST}
+{\slot
+వచ్చి	O
+ఎన్ని	O
+రోజులు	O
+అయితాంది	O
+ఇప్పుడు	O
+}
+
+{\intent	p: 3 days అయితుంది.	ANSWER}
+{\slot
+3	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	p1: 3 days అయితుంది.	ANSWER}
+{\slot
+3	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p1: fever ఆమెకు రాబట్టి 1 week అయితుంది, మీదెగ్గరికి వచ్చి 3 days అయితుంది.	ANSWER}
+{\slot
+fever	B-symptom
+ఆమెకు	O
+రాబట్టి	O
+1	B-time_period
+week	I-time_period
+అయితుంది,	O
+మీదెగ్గరికి	O
+వచ్చి	O
+3	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: శ్వాస	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+}
+
+{\intent	p: ఏది తిన్న అంతా vomitings అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఏది	O
+తిన్న	B-bodily_process
+అంతా	O
+vomitings	B-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అంతా vomiting వచ్చినట్లు అయితుంది.	STATEMENT}
+{\slot
+అంతా	O
+vomiting	B-symptom
+వచ్చినట్లు	O
+అయితుంది.	O
+}
+
+{\intent	p1: cough బాగా ఉంది sir.	STATEMENT}
+{\slot
+cough	B-symptom
+బాగా	B-intensity
+ఉంది	O
+sir.	O
+}
+
+{\intent	p: umm cough బాగా ఉంది.	STATEMENT}
+{\slot
+umm	O
+cough	B-symptom
+బాగా	B-intensity
+ఉంది.	O
+}
+
+{\intent	d: దగ్గు మందు కూడా రాస్తున్నా.	COMMIT}
+{\slot
+దగ్గు	B-symptom
+మందు	I-medicine
+కూడా	O
+రాస్తున్నా.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఇవన్నీ continue చేయి.	ACTION_DIR}
+{\slot
+ఇవన్నీ	O
+continue	O
+చేయి.	O
+}
+
+{\intent	p: umm	COMMIT}
+{\slot
+umm	O
+}
+
+{\intent	d: Monday నాకు వచ్చి చూపీయి.	ACTION_DIR}
+{\slot
+Monday	B-time_period
+నాకు	O
+వచ్చి	O
+చూపీయి.	O
+}
+
+{\intent	p: Monday.	ACK}
+{\slot
+Monday.	B-time_period
+}
+
+{\intent	d: తగ్గకుంటే పరిక్షలు చేయించుకుని రా.	ACTION_DIR}
+{\slot
+తగ్గకుంటే	O
+పరిక్షలు	B-mtest
+చేయించుకుని	O
+రా.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: x-ray chest	STATEMENT}
+{\slot
+x-ray	B-mtest
+chest	B-body_part
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: తగ్గకపోతే అది తీసుకోని రావాలా x-ray?	INFO_REQUEST}
+{\slot
+తగ్గకపోతే	O
+అది	O
+తీసుకోని	O
+రావాలా	O
+x-ray?	B-mtest
+}
+
+{\intent	d: x-ray తీసుకోని ఇవన్నీ Vijaya diagnosticsల చూయించుకొని రా	ACTION_DIR}
+{\slot
+x-ray	B-mtest
+తీసుకోని	O
+ఇవన్నీ	O
+Vijaya	B-place
+diagnosticsల	I-place
+చూయించుకొని	O
+రా	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

@@ -1,0 +1,176 @@
+{\intent	d: చెప్పండి Chandrashekar గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Chandrashekar	B-name
+గారు	O
+}
+
+{\intent	p: ఆ నమస్తే sir	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్కారమండీ	GREETING}
+{\slot
+నమస్కారమండీ	O
+}
+
+{\intent	d: చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: నాకు దాదాపుగా ఒక 6 నెలలనుంచి మలద్వారంగా బటాణీ గింజ లాగా బొడిపెలాగా ఉంది sir	STATEMENT}
+{\slot
+నాకు	O
+దాదాపుగా	O
+ఒక	O
+6	B-time_period
+నెలలనుంచి	I-time_period
+మలద్వారంగా	B-body_part
+బటాణీ	O
+గింజ	O
+లాగా	O
+బొడిపెలాగా	B-symptom
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: బొడిపెలాగా ఉంది, ok	ACK}
+{\slot
+బొడిపెలాగా	B-symptom
+ఉంది,	O
+ok	O
+}
+
+{\intent	p: బొడిపెలాగా ఉంది	ACK}
+{\slot
+బొడిపెలాగా	B-symptom
+ఉంది	O
+}
+
+{\intent	d: నొప్పి ఏమైనా ఉందా అండి?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఏమైనా	O
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: నొప్పి కూడా ఏం లేదు sir	ANSWER}
+{\slot
+నొప్పి	B-symptom
+కూడా	O
+ఏం	O
+లేదు	O
+sir	O
+}
+
+{\intent	d: నొప్పి ఏం లేదు	ACK}
+{\slot
+నొప్పి	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: ఏమైనా చీము గానీ blood కానీ రావడం?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+చీము	B-body_substance
+గానీ	O
+blood	B-body_substance
+కానీ	O
+రావడం?	O
+}
+
+{\intent	p: ఏం లేదు sir, ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+sir,	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: అలాగే right	ACK}
+{\slot
+అలాగే	O
+right	O
+}
+
+{\intent	p: పెరుగుతదేమో అని అనుమానంగా ఉంది	STATEMENT}
+{\slot
+పెరుగుతదేమో	O
+అని	O
+అనుమానంగా	O
+ఉంది	O
+}
+
+{\intent	d: పెరుగుతదేమో అని అనుమానంగా ఉంది అంతేనా?	INFO_REQUEST}
+{\slot
+పెరుగుతదేమో	O
+అని	O
+అనుమానంగా	O
+ఉంది	O
+అంతేనా?	O
+}
+
+{\intent	d: right అండి Chendrashekarగారు	ACTION_DIR}
+{\slot
+right	O
+అండి	O
+Chendrashekarగారు	B-name
+}
+
+{\intent	d: గత 6 నెలలుగా buttoks regionలో ఒక చిన్నపాటి కురుపు ఏర్పడి ఉంది	ACK}
+{\slot
+గత	O
+6	B-time_period
+నెలలుగా	I-time_period
+buttoks	B-body_part
+regionలో	I-body_part
+ఒక	O
+చిన్నపాటి	O
+కురుపు	B-symptom
+ఏర్పడి	O
+ఉంది	O
+}
+
+{\intent	d: అది నొప్పిగాని ఎటువంటి ఇబ్బంది లేదంటున్నారు.	ACK}
+{\slot
+అది	O
+నొప్పిగాని	B-symptom
+ఎటువంటి	O
+ఇబ్బంది	B-symptom
+లేదంటున్నారు.	B-negative
+}
+
+{\intent	d: ఎటువంటి ప్రమాదము లేదండీ	STATEMENT}
+{\slot
+ఎటువంటి	O
+ప్రమాదము	O
+లేదండీ	O
+}
+
+{\intent	d: సాధారనంగా boils ఏర్పడుతూ ఉంటాయి. boils అంటే ఒక చీము గడ్డ ఏర్పడుతూ ఉంటుంది.	STATEMENT}
+{\slot
+సాధారనంగా	O
+boils	B-medical_condition
+ఏర్పడుతూ	O
+ఉంటాయి.	O
+boils	B-medical_condition
+అంటే	O
+ఒక	O
+చీము	B-symptom
+గడ్డ	B-symptom
+ఏర్పడుతూ	O
+ఉంటుంది.	O
+}
+

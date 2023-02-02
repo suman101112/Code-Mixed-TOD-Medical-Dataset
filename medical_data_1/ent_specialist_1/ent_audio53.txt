@@ -1,0 +1,363 @@
+{\intent	d: अब कितना खा रहे thyroid का?	INFO_REQUEST}
+{\slot
+अब	B-time_period
+कितना	O
+खा	O
+रहे	O
+thyroid	O
+का?	O
+}
+
+{\intent	p: 25	ANSWER}
+{\slot
+25	B-medicine_dose
+}
+
+{\intent	d: same 25 continue करो	STATEMENT}
+{\slot
+same	O
+25	B-medicine_dose
+continue	O
+करो	O
+}
+
+{\intent	p: उसमे क्या तो avoid करना नहीं खाने की चीज ?	INFO_REQUEST}
+{\slot
+उसमे	O
+क्या	O
+तो	O
+avoid	O
+करना	O
+नहीं	O
+खाने	B-food_substance
+की	O
+चीज	O
+?	O
+}
+
+{\intent	d: कुछ नहीं	ANSWER}
+{\slot
+कुछ	O
+नहीं	B-negative
+}
+
+{\intent	d: जरा खून कम है	STATEMENT}
+{\slot
+जरा	O
+खून	B-body_substance
+कम	B-symptom
+है	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: कलेजी , cabbage, ऐसा खा सकते?	INFO_REQUEST}
+{\slot
+कलेजी	B-food_substance
+,	O
+cabbage,	B-food_substance
+ऐसा	O
+खा	B-bodily_process
+सकते?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: cabbage नहीं खाना बोल के बोलते	STATEMENT}
+{\slot
+cabbage	B-food_substance
+नहीं	B-negative
+खाना	B-bodily_process
+बोल	O
+के	O
+बोलते	O
+}
+
+{\intent	d: ये का रोज़ खा ते?	INFO_REQUEST}
+{\slot
+ये	O
+का	O
+रोज़	B-time_period
+खा	O
+ते?	O
+}
+
+{\intent	d: 15 दिन में एक	ANSWER}
+{\slot
+15	B-time_period
+दिन	I-time_period
+में	O
+एक	B-frequency
+}
+
+{\intent	p1: हफ्ते में एक बार 10 दिन में एक बार	ANSWER}
+{\slot
+हफ्ते	B-time_period
+में	O
+एक	B-frequency
+बार	O
+10	B-time_period
+दिन	I-time_period
+में	O
+एक	B-frequency
+बार	O
+}
+
+{\intent	d: छोटे छोटे कभी कभी खाये तो कुछ नहीं होता	MEDICAL_EXPLANATION}
+{\slot
+छोटे	O
+छोटे	O
+कभी	B-time_period
+कभी	B-time_period
+खाये	B-food_substance
+तो	O
+कुछ	O
+नहीं	O
+होता	O
+}
+
+{\intent	p: अच्छा	ACK}
+{\slot
+अच्छा	O
+}
+
+{\intent	d: खून का एक tonic भी	STATEMENT}
+{\slot
+खून	B-body_substance
+का	O
+एक	B-frequency
+tonic	B-medicine
+भी	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: वही इस्तेमाल करो	STATEMENT}
+{\slot
+वही	O
+इस्तेमाल	O
+करो	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	p1: tablets वहीच इस्तेमाल कर बोलते	INFO_REQUEST}
+{\slot
+tablets	B-medicine
+वहीच	O
+इस्तेमाल	O
+कर	O
+बोलते	O
+}
+
+{\intent	d: हाउ , thyronorm 25	STATEMENT}
+{\slot
+हाउ	O
+,	O
+thyronorm	B-medicine
+25	B-medicine_dose
+}
+
+{\intent	p: 25	STATEMENT}
+{\slot
+25	B-medicine_dose
+}
+
+{\intent	d: वो use करते ही normal है	MEDICAL_EXPLANATION}
+{\slot
+वो	O
+use	O
+करते	O
+ही	O
+normal	B-normal
+है	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 1 week नयीं tablets नहीं डाल दे रहीं	STATEMENT}
+{\slot
+1	B-time_period
+week	I-time_period
+नयीं	O
+tablets	B-medicine
+नहीं	O
+डाल	O
+दे	O
+रहीं	O
+}
+
+{\intent	d: फिर भी अब 25 ये कम dose है ये.	STATEMENT}
+{\slot
+फिर	O
+भी	O
+अब	B-time_period
+25	B-medicine_dose
+ये	O
+कम	B-intensity
+dose	O
+है	O
+ये.	O
+}
+
+{\intent	d: कुछ नहीं होता कितने ये एक साल डालो	STATEMENT}
+{\slot
+कुछ	O
+नहीं	O
+होता	O
+कितने	O
+ये	O
+एक	B-time_period
+साल	I-time_period
+डालो	O
+}
+
+{\intent	p: अब एक साल?	INFO_REQUEST}
+{\slot
+अब	B-time_period
+एक	I-time_period
+साल?	I-time_period
+}
+
+{\intent	d: हां .	ANSWER}
+{\slot
+हां	B-positive
+.	O
+}
+
+{\intent	d: एक साल डालने के बाद ये test करवाएंगे	ACTION_DIR}
+{\slot
+एक	B-time_period
+साल	I-time_period
+डालने	O
+के	O
+बाद	B-time_period
+ये	O
+test	B-mtest
+करवाएंगे	O
+}
+
+{\intent	p1: ठीक है	COMMIT}
+{\slot
+ठीक	O
+है	O
+}
+
+{\intent	d: एक tonic पीवो ये	ACTION_DIR}
+{\slot
+एक	O
+tonic	B-medicine
+पीवो	B-bodily_process
+ये	O
+}
+
+{\intent	p: ये गल्ला ज़रा खर खर बोल रहा, सूख जा रहा	STATEMENT}
+{\slot
+ये	O
+गल्ला	B-body_part
+ज़रा	B-intensity
+खर	B-symptom
+खर	I-symptom
+बोल	O
+रहा,	O
+सूख	B-symptom
+जा	O
+रहा	O
+}
+
+{\intent	d: ఆ बोलो	ACTION_DIR}
+{\slot
+ఆ	O
+बोलो	O
+}
+
+{\intent	d: थोड़ा गरम पानी में नमक डाल के गराला करके थूक डाल दो	STATEMENT}
+{\slot
+थोड़ा	B-intensity
+गरम	O
+पानी	B-food_substance
+में	O
+नमक	B-food_substance
+डाल	O
+के	O
+गराला	B-bodily_process
+करके	O
+थूक	O
+डाल	O
+दो	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: सब खा सकते	INFO_REQUEST}
+{\slot
+सब	O
+खा	O
+सकते	O
+}
+
+{\intent	d: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	p: खांसी भी है	STATEMENT}
+{\slot
+खांसी	B-symptom
+भी	O
+है	O
+}
+
+{\intent	p1: वो खांसी भी है .	STATEMENT}
+{\slot
+वो	O
+खांसी	B-symptom
+भी	O
+है	O
+.	O
+}
+

@@ -1,0 +1,335 @@
+{\intent	d: ఏం పేరు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా?	O
+}
+
+{\intent	p: sruthi	ANSWER}
+{\slot
+sruthi	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 27	ANSWER}
+{\slot
+27	B-age
+}
+
+{\intent	d: 27	ANSWER}
+{\slot
+27	B-age
+}
+
+{\intent	d: ఒక పాప	ACK}
+{\slot
+ఒక	B-frequency
+పాప	B-person
+}
+
+{\intent	d: పాప age?	INFO_REQUEST}
+{\slot
+పాప	B-person
+age?	O
+}
+
+{\intent	p: 3 years	ANSWER}
+{\slot
+3	B-age
+years	I-age
+}
+
+{\intent	d: ఇప్పుడు ఏంటి ని problem?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+ని	O
+problem?	O
+}
+
+{\intent	d: కడుపులో నొప్పి	ANSWER}
+{\slot
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+}
+
+{\intent	p: కడుపులో నొప్పిలేస్తుంది, ఇది వేయిపించినప్పటినుంచి backలో నుంచి ఇక్కడ నొప్పిలేస్తుంది.	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+నొప్పిలేస్తుంది,	B-symptom
+ఇది	O
+వేయిపించినప్పటినుంచి	O
+backలో	B-body_part
+నుంచి	O
+ఇక్కడ	B-location
+నొప్పిలేస్తుంది.	B-symptom
+}
+
+{\intent	d: కడుపులో నొప్పి ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+ఎప్పటినుంచి?	O
+}
+
+{\intent	d: 1 week నుంచి	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచి	O
+}
+
+{\intent	p: ఆ వేయిపించినప్పటినుంచి.	ANSWER}
+{\slot
+ఆ	O
+వేయిపించినప్పటినుంచి.	O
+}
+
+{\intent	d: copper T వేయించినప్పటినుంచి	STATEMENT}
+{\slot
+copper	B-medical_apparatus
+T	I-medical_apparatus
+వేయించినప్పటినుంచి	O
+}
+
+{\intent	d: copper T వేయించుకున్నప్పుడు ఏమైనా కష్టమైందని చెప్పారా?	INFO_REQUEST}
+{\slot
+copper	B-medical_apparatus
+T	I-medical_apparatus
+వేయించుకున్నప్పుడు	O
+ఏమైనా	O
+కష్టమైందని	O
+చెప్పారా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: copper T వేయించుకున్నప్పుడు ఏమైనా white discharge, itching, మంట?	INFO_REQUEST}
+{\slot
+copper	B-medical_apparatus
+T	I-medical_apparatus
+వేయించుకున్నప్పుడు	O
+ఏమైనా	O
+white	B-symptom
+discharge,	I-symptom
+itching,	B-symptom
+మంట?	B-symptom
+}
+
+{\intent	p: మంట ఏం లేదు కానీ discharge అయింది.	ANSWER}
+{\slot
+మంట	B-symptom
+ఏం	O
+లేదు	B-negative
+కానీ	O
+discharge	B-bodily_process
+అయింది.	B-positive
+}
+
+{\intent	d: ఏ colorలో అయితుంది?	INFO_REQUEST}
+{\slot
+ఏ	O
+colorలో	B-color
+అయితుంది?	O
+}
+
+{\intent	p: combination, white and red.	ANSWER}
+{\slot
+combination,	O
+white	B-color
+and	O
+red.	B-color
+}
+
+{\intent	d: దురద ఉంటుందా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉంటుందా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: కొంచం వాసన ఉందా?	INFO_REQUEST}
+{\slot
+కొంచం	O
+వాసన	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: fever వస్తుందా	INFO_REQUEST}
+{\slot
+fever	B-symptom
+వస్తుందా	O
+}
+
+{\intent	p: fever ఏం లేదు కానీ నొప్పి ఏ ఉంటుంది.	ANSWER}
+{\slot
+fever	B-symptom
+ఏం	O
+లేదు	B-negative
+కానీ	O
+నొప్పి	B-symptom
+ఏ	O
+ఉంటుంది.	B-positive
+}
+
+{\intent	d: మూత్రం మంట ఉందా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: motion freeగానే ఉందా?	INFO_REQUEST}
+{\slot
+motion	B-bodily_process
+freeగానే	B-normal
+ఉందా?	O
+}
+
+{\intent	p: motion freeగానే ఉంది.	ANSWER}
+{\slot
+motion	B-bodily_process
+freeగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	d: పాప వయసు ఎంత?	INFO_REQUEST}
+{\slot
+పాప	B-person
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 6 months.	ANSWER}
+{\slot
+6	B-age
+months.	I-age
+}
+
+{\intent	d: పాలిస్తున్నవా?	INFO_REQUEST}
+{\slot
+పాలిస్తున్నవా?	B-bodily_process
+}
+
+{\intent	p: ఇస్తున్నాను.	ANSWER}
+{\slot
+ఇస్తున్నాను.	B-positive
+}
+
+{\intent	d: copper T వేయించినప్పటినుంచి కొంచం కడుపులో నొప్పి, white discharge.	ACK}
+{\slot
+copper	B-medical_apparatus
+T	I-medical_apparatus
+వేయించినప్పటినుంచి	O
+కొంచం	O
+కడుపులో	B-body_part
+నొప్పి,	B-symptom
+white	B-symptom
+discharge.	I-symptom
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: bleeding heavyగా అయితే లేదు	INFO_REQUEST}
+{\slot
+bleeding	B-medical_condition
+heavyగా	B-intensity
+అయితే	O
+లేదు	B-negative
+}
+
+{\intent	p: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	d: అంటే ఇవాల్టికి period వచ్చి ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఇవాల్టికి	O
+period	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు?	B-time_period
+}
+
+{\intent	p: madam?	SNU}
+{\slot
+madam?	O
+}
+
+{\intent	d: period వచ్చి ఇవాల్టికి ఎన్ని రోజులు?	REPEAT_REPHRASE}
+{\slot
+period	B-bodily_process
+వచ్చి	O
+ఇవాల్టికి	B-time_period
+ఎన్ని	O
+రోజులు?	B-time_period
+}
+
+{\intent	p: అంటే 11th కి వచ్చింది ma'am, ఈ month 11th కి వచ్చింది.	ANSWER}
+{\slot
+అంటే	O
+11th	B-time_period
+కి	O
+వచ్చింది	O
+ma'am,	O
+ఈ	B-time_period
+month	I-time_period
+11th	I-time_period
+కి	O
+వచ్చింది.	O
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+
+{\intent	d: అంటే copper T వెయించుకొని 1 week.	INFO_REQUEST}
+{\slot
+అంటే	O
+copper	B-medical_apparatus
+T	I-medical_apparatus
+వెయించుకొని	O
+1	B-time_period
+week.	I-time_period
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+

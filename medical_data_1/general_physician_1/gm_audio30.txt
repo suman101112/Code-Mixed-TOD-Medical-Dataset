@@ -1,0 +1,97 @@
+{\intent	p: hyderabad నుంచి మట్లాడుతున్నా	STATEMENT}
+{\slot
+hyderabad	B-place
+నుంచి	O
+మట్లాడుతున్నా	O
+}
+
+{\intent	d: నమస్కారం అండి	GREETING}
+{\slot
+నమస్కారం	O
+అండి	O
+}
+
+{\intent	p: నమస్కారం అండి	GREETING}
+{\slot
+నమస్కారం	O
+అండి	O
+}
+
+{\intent	p: మీకు ముందుగా thank you చెప్పాలండీ నేను	APPRECIATE}
+{\slot
+మీకు	O
+ముందుగా	O
+thank	O
+you	O
+చెప్పాలండీ	O
+నేను	O
+}
+
+{\intent	d: ఏమైంది?	SNU}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: thank you చెప్పాలండీ, మీ treatment వల్ల చాలా	HOLD}
+{\slot
+thank	O
+you	O
+చెప్పాలండీ,	O
+మీ	O
+treatment	B-treatment
+వల్ల	O
+చాలా	O
+}
+
+{\intent	p: నాకు చాలా సంవత్సరాల నుంచి తలనొప్పి బాగా ఉండేది	STATEMENT}
+{\slot
+నాకు	O
+చాలా	B-intensity
+సంవత్సరాల	B-time_period
+నుంచి	O
+తలనొప్పి	B-symptom
+బాగా	B-intensity
+ఉండేది	O
+}
+
+{\intent	p: ఈ Abhinay doctorకి కలిసినప్పటి నుంచి నా headache అంతా తగ్గిపోయిందండి.	STATEMENT}
+{\slot
+ఈ	O
+Abhinay	B-medical_professional
+doctorకి	I-health_professional
+కలిసినప్పటి	O
+నుంచి	O
+నా	O
+headache	B-symptom
+అంతా	O
+తగ్గిపోయిందండి.	B-normal
+}
+
+{\intent	d: thank you thank you, that's nice to know, Swetha గారు.	APPRECIATE}
+{\slot
+thank	O
+you	O
+thank	O
+you,	O
+that's	O
+nice	O
+to	O
+know,	O
+Swetha	B-name
+గారు.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: that's very nice to know	APPRECIATE}
+{\slot
+that's	O
+very	O
+nice	O
+to	O
+know	O
+}
+

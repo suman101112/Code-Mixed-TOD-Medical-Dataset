@@ -1,0 +1,115 @@
+{\intent	p: doctor గారు నా పేరు Swarupa.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Swarupa.	B-name
+}
+
+{\intent	p: వయస్సు 24 సంవత్సరాలు.	STATEMENT}
+{\slot
+వయస్సు	O
+24	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నేను contact lens వాడుతున్నాను.	STATEMENT}
+{\slot
+నేను	O
+contact	O
+lens	O
+వాడుతున్నాను.	O
+}
+
+{\intent	p: ఇది వరకు కుడి కంటికి surgery అయింది. ఆ కన్ను నొప్పిగా ఉండేది, ఇప్పుడు తగ్గింది.	STATEMENT}
+{\slot
+ఇది	O
+వరకు	O
+కుడి	B-location
+కంటికి	B-body_part
+surgery	B-treatment
+అయింది.	O
+ఆ	O
+కన్ను	B-body_part
+నొప్పిగా	B-symptom
+ఉండేది,	O
+ఇప్పుడు	B-time_period
+తగ్గింది.	B-normal
+}
+
+{\intent	p: ఇప్పుడు నా ఎడమ కన్ను నొప్పిగా ఉంటుంది.	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+నా	O
+ఎడమ	B-location
+కన్ను	B-body_part
+నొప్పిగా	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: నా కుడి కంటికి వాడే drops నా ఎడమ కంటికి కూడా వాడోచ్చా?	INFO_REQUEST}
+{\slot
+నా	O
+కుడి	B-location
+కంటికి	B-body_part
+వాడే	O
+drops	B-medicine
+నా	O
+ఎడమ	B-location
+కంటికి	B-body_part
+కూడా	O
+వాడోచ్చా?	O
+}
+
+{\intent	d: అమ్మా, అలా చేయకూడదు.	ANSWER}
+{\slot
+అమ్మా,	O
+అలా	O
+చేయకూడదు.	O
+}
+
+{\intent	d: నీ కుడి కంటికి నొప్పి ఎర్రదనం రావడం అనేది కారణం ఏముందో అది ఇప్పుడు మనం చెప్పలేము.	STATEMENT}
+{\slot
+నీ	O
+కుడి	B-location
+కంటికి	B-body_part
+నొప్పి	B-symptom
+ఎర్రదనం	B-color
+రావడం	O
+అనేది	O
+కారణం	O
+ఏముందో	O
+అది	O
+ఇప్పుడు	B-time_period
+మనం	O
+చెప్పలేము.	B-negative
+}
+
+{\intent	d: దానికి doctorగారు eye drops రాసి ఉంటారు.	STATEMENT}
+{\slot
+దానికి	O
+doctorగారు	B-medical_professional
+eye	B-medicine
+drops	I-medicine
+రాసి	O
+ఉంటారు.	O
+}
+
+{\intent	d: కానీ అట్లాగే ఎడమ కన్నుకు infection వస్తుందంటే అదే infectionగానీ అదే condition ఉండాలని guarantee లేదు.	STATEMENT}
+{\slot
+కానీ	O
+అట్లాగే	O
+ఎడమ	B-location
+కన్నుకు	B-body_part
+infection	B-medical_condition
+వస్తుందంటే	O
+అదే	O
+infectionగానీ	B-medical_condition
+అదే	O
+condition	B-medical_condition
+ఉండాలని	O
+guarantee	O
+లేదు.	O
+}
+

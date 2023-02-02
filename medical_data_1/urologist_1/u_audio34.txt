@@ -1,0 +1,118 @@
+{\intent	p: sir నా పేరు Mallikarjuna	STATEMENT}
+{\slot
+sir	O
+నా	O
+పేరు	O
+Mallikarjuna	B-name
+}
+
+{\intent	d: ఆ చెప్పండి	ACTION_DIR}
+{\slot
+ఆ	O
+చెప్పండి	O
+}
+
+{\intent	p: sir నాకు ఒకసారి kidneyలో stones ఉన్నాయని, ఇంతకుముందు 3 years back నాకు operation అయిందండి	ANSWER}
+{\slot
+sir	O
+నాకు	O
+ఒకసారి	O
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉన్నాయని,	O
+ఇంతకుముందు	O
+3	B-time_period
+years	I-time_period
+back	I-time_period
+నాకు	O
+operation	B-treatment
+అయిందండి	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: మళ్ళ ఈ మధ్య మళ్ళ pain ఎక్కువ అయిపోయింది, మళ్ళ ఒకసారి CT scanning చెప్పించాము sir నేను	STATEMENT}
+{\slot
+మళ్ళ	O
+ఈ	B-time_period
+మధ్య	I-time_period
+మళ్ళ	O
+pain	B-symptom
+ఎక్కువ	B-intensity
+అయిపోయింది,	O
+మళ్ళ	O
+ఒకసారి	O
+CT	B-mtest
+scanning	B-mtest
+చెప్పించాము	O
+sir	O
+నేను	O
+}
+
+{\intent	d: కాదు ఎంత size ఉన్నది అని చెప్పారు stone ఇప్పుడు?	INFO_REQUEST}
+{\slot
+కాదు	O
+ఎంత	O
+size	O
+ఉన్నది	O
+అని	O
+చెప్పారు	O
+stone	B-body_substance
+ఇప్పుడు?	O
+}
+
+{\intent	p: 15mm ఉంది sir	ANSWER}
+{\slot
+15mm	B-mtest_value
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: 15 mm	ANSWER}
+{\slot
+15	B-mtest_value
+mm	I-mtest_value
+}
+
+{\intent	d: 15 mm ఉందా?	INFO_REQUEST}
+{\slot
+15	B-mtest_value
+mm	I-mtest_value
+ఉందా?	O
+}
+
+{\intent	p: అవును sir	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+}
+
+{\intent	d: so actually 15mm stoneకి అయితే గిన best surgery అంటే గిన Intrarenal retrograde surgery, laserలో చేస్తే గిన పోతది	STATEMENT}
+{\slot
+so	O
+actually	O
+15mm	B-mtest_value
+stoneకి	O
+అయితే	O
+గిన	O
+best	O
+surgery	B-treatment
+అంటే	O
+గిన	O
+Intrarenal	B-treatment
+retrograde	I-treatment
+surgery,	I-treatment
+laserలో	B-medical_apparatus
+చేస్తే	O
+గిన	O
+పోతది	O
+}
+

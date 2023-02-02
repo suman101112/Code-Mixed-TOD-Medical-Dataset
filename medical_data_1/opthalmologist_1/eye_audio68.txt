@@ -1,0 +1,105 @@
+{\intent	p: doctor గారు నేను site engineerని.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నేను	O
+site	B-profession
+engineerని.	I-profession
+}
+
+{\intent	p: ఎక్కువగా ఎండలో ఉండాల్సి వస్తుంది.	STATEMENT}
+{\slot
+ఎక్కువగా	O
+ఎండలో	O
+ఉండాల్సి	O
+వస్తుంది.	O
+}
+
+{\intent	p: ఈ ఎండలో కళ్ళను రక్షించుకోవడం ఎలా?	INFO_REQUEST}
+{\slot
+ఈ	O
+ఎండలో	O
+కళ్ళను	B-body_part
+రక్షించుకోవడం	O
+ఎలా?	O
+}
+
+{\intent	d: ఎండలో మనము బయటికెల్లినప్పుడు bright light చూడడానికి కష్టంగా ఉండడం, కళ్ళలో నీళ్లు కారడం, plus అదే timeలో dust కూడా ఎక్కువగా ఉండడం అంటే dry weather ఉంటుంది కబట్టి దుమ్ము ఎక్కువగా రేగడం, కళ్ళలో దుమ్ము పడడం ఇవన్నీ common అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+ఎండలో	O
+మనము	O
+బయటికెల్లినప్పుడు	O
+bright	O
+light	O
+చూడడానికి	O
+కష్టంగా	B-symptom
+ఉండడం,	O
+కళ్ళలో	B-body_part
+నీళ్లు	B-food_substance
+కారడం,	B-symptom
+plus	O
+అదే	O
+timeలో	B-time_period
+dust	O
+కూడా	O
+ఎక్కువగా	B-intensity
+ఉండడం	O
+అంటే	O
+dry	B-time_period
+weather	I-time_period
+ఉంటుంది	O
+కబట్టి	O
+దుమ్ము	O
+ఎక్కువగా	B-intensity
+రేగడం,	O
+కళ్ళలో	B-body_part
+దుమ్ము	B-symptom
+పడడం	I-symptom
+ఇవన్నీ	O
+common	O
+అన్నమాట.	O
+}
+
+{\intent	d: so bright light చూడడానికి ఇబ్బందిగా ఉండి, చాలా dry అయిపోతున్నాయి కళ్ళు అంటే simples things మనం cap పెట్టుకుంటే hat పెట్టుకుంటే ఆ frontలో shade లాగా ఉండడం plus eyeకి glasses googles పెట్టుకోవడం వీటివల్ల మనం direct sunlight నుంచి దాని వల్ల వచ్చే difficulties మనం తగ్గించుకోవచ్చు.	ANSWER}
+{\slot
+so	O
+bright	O
+light	O
+చూడడానికి	O
+ఇబ్బందిగా	B-symptom
+ఉండి,	O
+చాలా	B-intensity
+dry	B-symptom
+అయిపోతున్నాయి	O
+కళ్ళు	B-body_part
+అంటే	O
+simples	O
+things	O
+మనం	O
+cap	O
+పెట్టుకుంటే	O
+hat	O
+పెట్టుకుంటే	O
+ఆ	O
+frontలో	O
+shade	O
+లాగా	O
+ఉండడం	O
+plus	O
+eyeకి	B-body_part
+glasses	O
+googles	O
+పెట్టుకోవడం	O
+వీటివల్ల	O
+మనం	O
+direct	O
+sunlight	O
+నుంచి	O
+దాని	O
+వల్ల	O
+వచ్చే	O
+difficulties	O
+మనం	O
+తగ్గించుకోవచ్చు.	O
+}
+

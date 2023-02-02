@@ -1,0 +1,116 @@
+{\intent	p: doctor గారు మా అమ్మాయి ఎక్కువగా వెలుతురు తక్కువ ఉన్న ప్రదెశాలలో కుర్చోని చదువుతూ ఉంటుంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+అమ్మాయి	B-familal
+ఎక్కువగా	B-intensity
+వెలుతురు	O
+తక్కువ	O
+ఉన్న	O
+ప్రదెశాలలో	O
+కుర్చోని	O
+చదువుతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	p: దీనివల్ల ఏమైనా ఇబ్బంది ఉంటుందా?	INFO_REQUEST}
+{\slot
+దీనివల్ల	O
+ఏమైనా	O
+ఇబ్బంది	O
+ఉంటుందా?	O
+}
+
+{\intent	d: చాలా మందికి వస్తూ ఉంటుంది అండి eye strain అని computers వాడడం అని, లేదా parents పిల్లలను తీసుకోని వస్తారు చెప్పినట్లు వింటలేదు light కింద కుర్చోమంటే చీకట్లో చదువుతుంది అని.	MEDICAL_EXPLANATION}
+{\slot
+చాలా	O
+మందికి	O
+వస్తూ	O
+ఉంటుంది	O
+అండి	O
+eye	B-medical_condition
+strain	B-medical_condition
+అని	O
+computers	O
+వాడడం	O
+అని,	O
+లేదా	O
+parents	O
+పిల్లలను	O
+తీసుకోని	O
+వస్తారు	O
+చెప్పినట్లు	O
+వింటలేదు	O
+light	O
+కింద	O
+కుర్చోమంటే	O
+చీకట్లో	O
+చదువుతుంది	O
+అని.	O
+}
+
+{\intent	d: అయితే ఈ చీకట్లో చదవడం అనేది మంచిది కాదు అని కాదు. అసలు కనబడుతుండా లేదా?	INFO_REQUEST}
+{\slot
+అయితే	O
+ఈ	O
+చీకట్లో	O
+చదవడం	O
+అనేది	O
+మంచిది	O
+కాదు	O
+అని	O
+కాదు.	O
+అసలు	O
+కనబడుతుండా	B-bodily_process
+లేదా?	B-negative
+}
+
+{\intent	d: పిల్లల్లో minus power ఉన్న, పెద్దవాళ్ళకు కూడా minus power ఉన్నవాళ్లకు కొంచం దెగ్గరది బాగా చూడగలుగుతారు.	MEDICAL_EXPLANATION}
+{\slot
+పిల్లల్లో	O
+minus	B-symptom
+power	I-symptom
+ఉన్న,	O
+పెద్దవాళ్ళకు	O
+కూడా	O
+minus	B-symptom
+power	I-symptom
+ఉన్నవాళ్లకు	O
+కొంచం	O
+దెగ్గరది	B-location
+బాగా	B-intensity
+చూడగలుగుతారు.	B-bodily_process
+}
+
+{\intent	d: కళ్ళజోడు లేకుండా కూడా చూడాగలుగుతారు. వాళ్ళకి దూరందే ఎక్కువ problem problem ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళజోడు	O
+లేకుండా	O
+కూడా	O
+చూడాగలుగుతారు.	B-bodily_process
+వాళ్ళకి	O
+దూరందే	B-location
+ఎక్కువ	B-intensity
+problem	B-symptom
+problem	O
+ఉంటుంది.	O
+}
+
+{\intent	d: so చీకట్లో చదవడం వలన minus power వస్తుందా అన్నది ఇంకా studies అంతా దీనిమీద చేయలేదు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+చీకట్లో	O
+చదవడం	O
+వలన	O
+minus	B-symptom
+power	I-symptom
+వస్తుందా	O
+అన్నది	O
+ఇంకా	O
+studies	O
+అంతా	O
+దీనిమీద	O
+చేయలేదు.	O
+}
+

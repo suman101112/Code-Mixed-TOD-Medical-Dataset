@@ -1,0 +1,154 @@
+{\intent	p: sir, నమస్తే sir	GREETING}
+{\slot
+sir,	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: ఎట్లుంది?	INFO_REQUEST}
+{\slot
+ఎట్లుంది?	O
+}
+
+{\intent	p: కొంచెం గురక తగ్గింది.	STATEMENT}
+{\slot
+కొంచెం	B-intensity
+గురక	B-symptom
+తగ్గింది.	B-normal
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: చెవిలో ఏంటిది అంటే ముట్టుకుంటే నొస్తుంది అని చెప్తుంది.	STATEMENT}
+{\slot
+చెవిలో	B-body_part
+ఏంటిది	O
+అంటే	O
+ముట్టుకుంటే	B-bodily_process
+నొస్తుంది	B-symptom
+అని	O
+చెప్తుంది.	O
+}
+
+{\intent	d: ముక్కు	INFO_REQUEST}
+{\slot
+ముక్కు	B-body_part
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	d: నోరు తెరువమ్మా	ACTION_DIR}
+{\slot
+నోరు	B-body_part
+తెరువమ్మా	O
+}
+
+{\intent	d: ముక్కులో మందు అది వేస్కో	ACTION_DIR}
+{\slot
+ముక్కులో	B-body_part
+మందు	B-medicine
+అది	O
+వేస్కో	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: నేను వేరే ఒక tablet రాసి ఇస్తా.	COMMIT}
+{\slot
+నేను	O
+వేరే	O
+ఒక	O
+tablet	B-medicine
+రాసి	O
+ఇస్తా.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: నొప్పి ఉందా చెవి ఏమైనా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉందా	O
+చెవి	B-body_part
+ఏమైనా?	O
+}
+
+{\intent	p1: ఉందట నొప్పి	ANSWER}
+{\slot
+ఉందట	B-positive
+నొప్పి	B-symptom
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: ముట్టుకుంటే నొస్తుంది.	ANSWER}
+{\slot
+ముట్టుకుంటే	B-bodily_process
+నొస్తుంది.	B-symptom
+}
+
+{\intent	p1: ముట్టుకుంటే నొస్తుంది.	ANSWER}
+{\slot
+ముట్టుకుంటే	B-bodily_process
+నొస్తుంది.	B-symptom
+}
+
+{\intent	p: ఒకసారి చెవులో చూడండి sir.	OFFER}
+{\slot
+ఒకసారి	O
+చెవులో	B-body_part
+చూడండి	O
+sir.	O
+}
+
+{\intent	d: చూసినా కదా అమ్మ చెవులు	STATEMENT}
+{\slot
+చూసినా	O
+కదా	O
+అమ్మ	O
+చెవులు	B-body_part
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: చూసినా కదా చెవులు, మళ్ళి..	STATEMENT}
+{\slot
+చూసినా	O
+కదా	O
+చెవులు,	B-body_part
+మళ్ళి..	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

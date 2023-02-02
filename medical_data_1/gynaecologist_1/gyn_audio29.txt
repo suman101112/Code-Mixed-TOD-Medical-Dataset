@@ -1,0 +1,276 @@
+{\intent	d: ఏం పేరు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా?	O
+}
+
+{\intent	p: Laxmi Priya	ANSWER}
+{\slot
+Laxmi	B-name
+Priya	I-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: ఏం problem?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem?	O
+}
+
+{\intent	p1: month రాలేదు madam	ANSWER}
+{\slot
+month	B-bodily_process
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	p: actualగా ఈ month month రాలేదు. తర్వాత month 1 week తర్వాత pregnancy test చేయించుకున్నా.	STATEMENT}
+{\slot
+actualగా	O
+ఈ	O
+month	B-time_period
+month	B-bodily_process
+రాలేదు.	B-negative
+తర్వాత	B-time_period
+month	B-time_period
+1	I-time_period
+week	I-time_period
+తర్వాత	I-time_period
+pregnancy	B-bodily_process
+test	B-mtest
+చేయించుకున్నా.	O
+}
+
+{\intent	d: pregnancy test positive ఆ?	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+test	B-mtest
+positive	B-mtest_value
+ఆ?	O
+}
+
+{\intent	p: positive అని వచ్చింది.	ANSWER}
+{\slot
+positive	B-mtest_value
+అని	O
+వచ్చింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: last period date ఎప్పుడు అమ్మ?	INFO_REQUEST}
+{\slot
+last	O
+period	B-bodily_process
+date	B-time_period
+ఎప్పుడు	O
+అమ్మ?	O
+}
+
+{\intent	p: Jan 11th	ANSWER}
+{\slot
+Jan	B-time_period
+11th	I-time_period
+}
+
+{\intent	d: Jan 11th	ACK}
+{\slot
+Jan	B-time_period
+11th	I-time_period
+}
+
+{\intent	d: ఎప్పుడు regular cycles ఆ అప్పుడప్పుడూ late ఉంటావా?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+regular	B-normal
+cycles	B-bodily_process
+ఆ	O
+అప్పుడప్పుడూ	O
+late	B-symptom
+ఉంటావా?	O
+}
+
+{\intent	p: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	p: regular	STATEMENT}
+{\slot
+regular	B-normal
+}
+
+{\intent	d: regular cycles ఏ	ACK}
+{\slot
+regular	B-normal
+cycles	B-bodily_process
+ఏ	O
+}
+
+{\intent	d: ఏమన్నా మేనరిక మా బయట సంబంధమా?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+మేనరిక	B-familal
+మా	O
+బయట	O
+సంబంధమా?	O
+}
+
+{\intent	p: బయట	ANSWER}
+{\slot
+బయట	O
+}
+
+{\intent	d: ఏం చదువుకున్నవ్?	INFO_REQUEST}
+{\slot
+ఏం	O
+చదువుకున్నవ్?	O
+}
+
+{\intent	p: ఇప్పుడు నేను masters in architecture	ANSWER}
+{\slot
+ఇప్పుడు	O
+నేను	O
+masters	B-profession
+in	I-profession
+architecture	I-profession
+}
+
+{\intent	d: architecture	ACK}
+{\slot
+architecture	B-profession
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: ఎవరు?	INFO_REQUEST}
+{\slot
+ఎవరు?	O
+}
+
+{\intent	d: నీది	ANSWER}
+{\slot
+నీది	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: దగ్గు, దమ్ము, Asthma, fits?	INFO_REQUEST}
+{\slot
+దగ్గు,	B-symptom
+దమ్ము,	B-medical_condition
+Asthma,	B-medical_condition
+fits?	B-medical_condition
+}
+
+{\intent	p: ఏం లేవు.	ANSWER}
+{\slot
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	d: medical problems అన్ని?	INFO_REQUEST}
+{\slot
+medical	O
+problems	O
+అన్ని?	O
+}
+
+{\intent	p: ఏం లేవు.	ANSWER}
+{\slot
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	d: ఇంట్లో ఎవ్వరికీ, familyలో sugar bp ఏం లేదు	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+ఎవ్వరికీ,	O
+familyలో	B-familal
+sugar	B-medical_condition
+bp	B-medical_condition
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	p: father కి ఉంది	ANSWER}
+{\slot
+father	B-familal
+కి	O
+ఉంది	B-positive
+}
+
+{\intent	d: father కి diabetes ఆ?	INFO_REQUEST}
+{\slot
+father	B-familal
+కి	O
+diabetes	B-medical_condition
+ఆ?	O
+}
+
+{\intent	p: father కి diabetes ఉంది.	ANSWER}
+{\slot
+father	B-familal
+కి	O
+diabetes	B-medical_condition
+ఉంది.	B-positive
+}
+
+{\intent	d: ఇప్పుడు నీకు vomitings ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+నీకు	O
+vomitings	B-symptom
+ఉన్నాయా?	O
+}
+
+{\intent	p: లేదు. ఏం అవ్వట్లేదు కానీ morning లేవగానే ఆకలేసి	ANSWER}
+{\slot
+లేదు.	B-negative
+ఏం	O
+అవ్వట్లేదు	B-negative
+కానీ	O
+morning	B-time_period
+లేవగానే	B-bodily_process
+ఆకలేసి	I-bodily_process
+}
+
+{\intent	d: కొంచం uneasiness	STATEMENT}
+{\slot
+కొంచం	B-intensity
+uneasiness	B-symptom
+}
+
+{\intent	p: కొంచం vomiting వచ్చినట్లు	STATEMENT}
+{\slot
+కొంచం	B-intensity
+vomiting	B-symptom
+వచ్చినట్లు	O
+}
+
+{\intent	d: పడుకోమ్మా చూద్దాం	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+చూద్దాం	O
+}
+

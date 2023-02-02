@@ -1,0 +1,153 @@
+{\intent	d: ఎట్లుంది	INFO_REQUEST}
+{\slot
+ఎట్లుంది	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p: ఆ sir, తగ్గింది కానీ ఇవాళ schoolకి వెళ్ళిన దెగ్గర నుంచి ఇక్కడ కురుపులాగా అయింది చెవు ఉబ్బింది, sir,	STATEMENT}
+{\slot
+ఆ	O
+sir,	O
+తగ్గింది	B-normal
+కానీ	O
+ఇవాళ	O
+schoolకి	B-place
+వెళ్ళిన	O
+దెగ్గర	O
+నుంచి	O
+ఇక్కడ	O
+కురుపులాగా	B-symptom
+అయింది	O
+చెవు	B-body_part
+ఉబ్బింది,	B-symptom
+sir,	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: blood వచ్చింది.	STATEMENT}
+{\slot
+blood	B-body_substance
+వచ్చింది.	O
+}
+
+{\intent	d: ఏ చెవు?	INFO_REQUEST}
+{\slot
+ఏ	O
+చెవు?	B-body_part
+}
+
+{\intent	p: ఇదే left	ANSWER}
+{\slot
+ఇదే	O
+left	B-location
+}
+
+{\intent	d: దెగ్గర ఎత్తుకొని కుర్చో	ACTION_DIR}
+{\slot
+దెగ్గర	O
+ఎత్తుకొని	O
+కుర్చో	O
+}
+
+{\intent	p: cover అయింది మొన్న మీదెగ్గర వచ్చిన కాదా నుంచి చెవులో చేయి పెట్టడం, నలుపడం అంతా cover అయింది గానీ ఇవాళ schoolకి వెళ్ళి వచ్చినకాడ నుంచి mummy అని ఇట్ల చూపించినాడు.	STATEMENT}
+{\slot
+cover	O
+అయింది	O
+మొన్న	B-time_period
+మీదెగ్గర	O
+వచ్చిన	O
+కాదా	O
+నుంచి	O
+చెవులో	B-body_part
+చేయి	O
+పెట్టడం,	O
+నలుపడం	O
+అంతా	O
+cover	O
+అయింది	O
+గానీ	O
+ఇవాళ	O
+schoolకి	B-place
+వెళ్ళి	O
+వచ్చినకాడ	O
+నుంచి	O
+mummy	B-familal
+అని	O
+ఇట్ల	O
+చూపించినాడు.	O
+}
+
+{\intent	p: మరి schoolలో ఏం పెట్టిందో ఏం చేసిందో గానీ	STATEMENT}
+{\slot
+మరి	O
+schoolలో	B-place
+ఏం	O
+పెట్టిందో	O
+ఏం	O
+చేసిందో	O
+గానీ	O
+}
+
+{\intent	p: ఇక్కడ కొంచం सोना లెక్క ఇట్ల బయటనే ఇక్కడ	STATEMENT}
+{\slot
+ఇక్కడ	O
+కొంచం	O
+सोना	B-symptom
+లెక్క	O
+ఇట్ల	O
+బయటనే	B-location
+ఇక్కడ	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇక్కడ sir ఇక్కడ ఈడ sir.	REPEAT_REPHRASE}
+{\slot
+ఇక్కడ	B-location
+sir	O
+ఇక్కడ	B-location
+ఈడ	I-location
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అగో ఇట్ల వచ్చింది.	STATEMENT}
+{\slot
+అగో	O
+ఇట్ల	O
+వచ్చింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ముక్కులో మందు వాడుతున్నావ్ కదా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+మందు	B-medicine
+వాడుతున్నావ్	O
+కదా?	O
+}
+
+{\intent	p: ఆ.	ACK}
+{\slot
+ఆ.	O
+}
+

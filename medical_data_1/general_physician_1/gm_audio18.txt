@@ -1,0 +1,70 @@
+{\intent	d: చెప్పండమ్మా	CONV_OPEN}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: actually నా age వచ్చేసి 25	STATEMENT}
+{\slot
+actually	O
+నా	O
+age	O
+వచ్చేసి	O
+25	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు sugar లేదు కానీ, I was having like, ఒక 4 years కింద నాకు varicose veins problem ఉండే	STATEMENT}
+{\slot
+నాకు	O
+sugar	B-medical_condition
+లేదు	B-negative
+కానీ,	O
+I	O
+was	O
+having	O
+like,	O
+ఒక	O
+4	B-time_period
+years	I-time_period
+కింద	O
+నాకు	O
+varicose	B-medical_condition
+veins	I-medical_condition
+problem	I-medical_condition
+ఉండే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so దానివల్ల sugar వచ్చే chances ఉన్నాయంటారా?	INFO_REQUEST}
+{\slot
+so	O
+దానివల్ల	O
+sugar	B-medical_condition
+వచ్చే	O
+chances	O
+ఉన్నాయంటారా?	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఒక్కటండి, ఇది completeగా unrelated issues అండి.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటండి,	O
+ఇది	O
+completeగా	O
+unrelated	O
+issues	O
+అండి.	O
+}
+

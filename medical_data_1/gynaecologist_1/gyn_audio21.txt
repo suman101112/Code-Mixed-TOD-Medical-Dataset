@@ -1,0 +1,196 @@
+{\intent	d: చెప్పమ్మా ఏం పేరు?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p: Mamata madam	ANSWER}
+{\slot
+Mamata	B-name
+madam	O
+}
+
+{\intent	p: Mamata	REPEAT_REPHRASE}
+{\slot
+Mamata	B-name
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 22	ANSWER}
+{\slot
+22	B-age
+}
+
+{\intent	d: ఇప్పుడు ఏంటి period రాలేదా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+period	B-bodily_process
+రాలేదా?	B-negative
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ఎప్పుడు రావాల్సింది period?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+రావాల్సింది	O
+period?	B-bodily_process
+}
+
+{\intent	d: last period date?	REPEAT_REPHRASE}
+{\slot
+last	O
+period	B-bodily_process
+date?	B-time_period
+}
+
+{\intent	p: 3 months అయితుంది madam.	ANSWER}
+{\slot
+3	B-time_period
+months	I-time_period
+అయితుంది	O
+madam.	O
+}
+
+{\intent	d: 3 months నుంచి period రాలేదు.	INFO_REQUEST}
+{\slot
+3	B-time_period
+months	I-time_period
+నుంచి	O
+period	B-bodily_process
+రాలేదు.	B-time_period
+}
+
+{\intent	p: ఆ అవును madam.	ANSWER}
+{\slot
+ఆ	O
+అవును	B-positive
+madam.	O
+}
+
+{\intent	d: pregnancy.	INFO_REQUEST}
+{\slot
+pregnancy.	B-bodily_process
+}
+
+{\intent	d: test positive వచ్చింది.	INFO_REQUEST}
+{\slot
+test	B-mtest
+positive	B-mtest_value
+వచ్చింది.	O
+}
+
+{\intent	d: ఇప్పుడు last period date, 3 months, అంటే ఎప్పుడు ?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+last	O
+period	B-bodily_process
+date,	B-time_period
+3	B-time_period
+months,	I-time_period
+అంటే	O
+ఎప్పుడు	O
+?	O
+}
+
+{\intent	p: november	ANSWER}
+{\slot
+november	B-time_period
+}
+
+{\intent	d: november.	ACK}
+{\slot
+november.	B-time_period
+}
+
+{\intent	d: పాలు ఇస్తున్నావా baby కి first childకి?	INFO_REQUEST}
+{\slot
+పాలు	B-food_substance
+ఇస్తున్నావా	O
+baby	B-person
+కి	O
+first	B-frequency
+childకి?	B-familal
+}
+
+{\intent	p: ఇస్తున్న.	ANSWER}
+{\slot
+ఇస్తున్న.	B-positive
+}
+
+{\intent	d: ఎంత age first baby ది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age	O
+first	B-frequency
+baby	B-person
+ది?	O
+}
+
+{\intent	p: 1 year	ANSWER}
+{\slot
+1	B-time_period
+year	I-time_period
+}
+
+{\intent	d: normal అయిందా. caesarean అయిందా.?	INFO_REQUEST}
+{\slot
+normal	B-normal
+అయిందా.	O
+caesarean	B-treatment
+అయిందా.?	O
+}
+
+{\intent	p: normal అయింది.	ANSWER}
+{\slot
+normal	B-normal
+అయింది.	O
+}
+
+{\intent	d: వాంతులైతున్నాయా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+వాంతులైతున్నాయా	B-symptom
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	p: లేదు madam.	REPEAT_REPHRASE}
+{\slot
+లేదు	B-negative
+madam.	O
+}
+
+{\intent	d: pregnancy ఆ? కాదా? checkup చేయాలి ఇప్పుడు.	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+ఆ	O
+కాదా	O
+checkup	B-mtest
+చేయాలి	O
+ఇప్పుడు.	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+

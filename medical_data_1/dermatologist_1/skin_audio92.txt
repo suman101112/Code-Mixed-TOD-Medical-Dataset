@@ -1,0 +1,56 @@
+{\intent	d: ఎన్నో ఏళ్ళ పాప?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+ఏళ్ళ	O
+పాప?	B-person
+}
+
+{\intent	p: 1 month sir, female	ANSWER}
+{\slot
+1	B-age
+month	I-age
+sir,	O
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: నల్లటి కురుపులవుతున్నాయి. ఒళ్ళంతా ఉంది పాపకు	ANSWER}
+{\slot
+నల్లటి	B-symptom
+కురుపులవుతున్నాయి.	I-symptom
+ఒళ్ళంతా	B-body_part
+ఉంది	B-symptom
+పాపకు	B-person
+}
+
+{\intent	d: ఎక్కడ ముందు మొదలైంది?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+ముందు	B-symptom
+మొదలైంది?	I-symptom
+}
+
+{\intent	p: ఛాతి మీద	ANSWER}
+{\slot
+ఛాతి	B-body_part
+మీద	I-body_part
+}
+
+{\intent	d: పొక్కులు ఉన్నాయా అరిచేతుల్లో అరికాళ్ళలో?	INFO_REQUEST}
+{\slot
+పొక్కులు	B-symptom
+ఉన్నాయా	I-symptom
+అరిచేతుల్లో	B-body_part
+అరికాళ్ళలో?	B-body_part
+}
+
+{\intent	p: లేవు sir.	ANSWER}
+{\slot
+లేవు	B-negative
+sir.	O
+}
+

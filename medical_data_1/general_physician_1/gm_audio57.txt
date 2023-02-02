@@ -1,0 +1,119 @@
+{\intent	p: Hello madam నమస్తే	GREETING}
+{\slot
+Hello	O
+madam	O
+నమస్తే	O
+}
+
+{\intent	d: sir చెప్పండి sir	CONV_OPEN}
+{\slot
+sir	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఏం లేదు thyroidకి సంబంధించి, naturalగా homeopathy వాటితోనే english medicines ఏమైనా	INFO_REQUEST}
+{\slot
+ఏం	O
+లేదు	O
+thyroidకి	B-medical_condition
+సంబంధించి,	O
+naturalగా	O
+homeopathy	B-medicine
+వాటితోనే	O
+english	B-medicine
+medicines	B-medicine
+ఏమైనా	O
+}
+
+{\intent	d: homeo వాడుతున్నారా అయితే problem ఏమవుతుంది sir మీకు	INFO_REQUEST}
+{\slot
+homeo	B-medicine
+వాడుతున్నారా	O
+అయితే	O
+problem	O
+ఏమవుతుంది	O
+sir	O
+మీకు	O
+}
+
+{\intent	p: అంటే నేను futureలో problems ఏమైనా వస్తాయా అని అడుగుతున్నాను	INFO_REQUEST}
+{\slot
+అంటే	O
+నేను	O
+futureలో	B-time_period
+problems	O
+ఏమైనా	O
+వస్తాయా	O
+అని	O
+అడుగుతున్నాను	O
+}
+
+{\intent	d: అయితే నేను చెప్తాను sir	COMMIT}
+{\slot
+అయితే	O
+నేను	O
+చెప్తాను	O
+sir	O
+}
+
+{\intent	d: అయితే thyroid reportలో మీకు ఎంత వస్తుందండీ value?	INFO_REQUEST}
+{\slot
+అయితే	O
+thyroid	B-medical_condition
+reportలో	O
+మీకు	O
+ఎంత	O
+వస్తుందండీ	O
+value?	O
+}
+
+{\intent	d: 7.5 madam	ANSWER}
+{\slot
+7.5	B-mtest_value
+madam	O
+}
+
+{\intent	d: అయితే నేను చెప్తాను sir.	COMMIT}
+{\slot
+అయితే	O
+నేను	O
+చెప్తాను	O
+sir.	O
+}
+
+{\intent	d: thyroid problem ఉంది, medicines వాడుతున్నాను అని చెప్తున్నారు sir మీరు.	ACK}
+{\slot
+thyroid	B-body_part
+problem	O
+ఉంది,	O
+medicines	B-medicine
+వాడుతున్నాను	O
+అని	O
+చెప్తున్నారు	O
+sir	O
+మీరు.	O
+}
+
+{\intent	d: thyroid problem అనేది ఒక symptomతో ఉండదు sir, ఒక group of symptoms ఉండుంటుంది. అంటే body అంతా involve అయిపోయి ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+thyroid	B-body_part
+problem	O
+అనేది	O
+ఒక	O
+symptomతో	O
+ఉండదు	O
+sir,	O
+ఒక	O
+group	O
+of	O
+symptoms	O
+ఉండుంటుంది.	O
+అంటే	O
+body	B-body_part
+అంతా	O
+involve	O
+అయిపోయి	O
+ఉంటుంది.	O
+}
+

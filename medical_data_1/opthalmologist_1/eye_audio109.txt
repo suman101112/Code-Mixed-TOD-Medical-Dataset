@@ -1,0 +1,47 @@
+{\intent	p: నా వయస్సు 42 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+42	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: కంటి ముందు ఏదో తిరుగుతున్నట్లుగా చూక్కలుగా దారులు లాగా కనిపిస్తుంటుంది.	STATEMENT}
+{\slot
+కంటి	B-body_part
+ముందు	B-location
+ఏదో	O
+తిరుగుతున్నట్లుగా	B-symptom
+చూక్కలుగా	B-symptom
+దారులు	B-symptom
+లాగా	O
+కనిపిస్తుంటుంది.	B-bodily_process
+}
+
+{\intent	p: ఇది ఎమిటి?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎమిటి?	O
+}
+
+{\intent	p: దీని వల్ల ఏమైనా సమస్యలు వస్తాయా?	INFO_REQUEST}
+{\slot
+దీని	O
+వల్ల	O
+ఏమైనా	O
+సమస్యలు	O
+వస్తాయా?	O
+}
+
+{\intent	d: మీరు చెప్తున్నది మేము medicalగా దాని floaters అని అంటాము.	DIAGNOSIS}
+{\slot
+మీరు	O
+చెప్తున్నది	O
+మేము	O
+medicalగా	O
+దాని	O
+floaters	B-medical_condition
+అని	O
+అంటాము.	O
+}
+

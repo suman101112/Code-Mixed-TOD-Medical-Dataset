@@ -1,0 +1,197 @@
+{\intent	d: Vinod గారు చెప్పండి	CONV_OPEN}
+{\slot
+Vinod	B-name
+గారు	O
+చెప్పండి	O
+}
+
+{\intent	p: sir నా వయస్సు 22 sir	STATEMENT}
+{\slot
+sir	O
+నా	O
+వయస్సు	O
+22	B-age
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sir నాకు కడుపు పైభాగంలో విపరీతమైన మంట వస్తుంది sir	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+కడుపు	B-body_part
+పైభాగంలో	B-location
+విపరీతమైన	B-intensity
+మంట	B-symptom
+వస్తుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలంగా అమ్మ?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+అమ్మ?	O
+}
+
+{\intent	p: ఒక 1 year అయితుంది sir.	ANSWER}
+{\slot
+ఒక	O
+1	B-time_period
+year	B-time_period
+అయితుంది	O
+sir.	O
+}
+
+{\intent	p: కానీ ఏ tablet వాడినా కూడా తక్వ కావడం లేదు	STATEMENT}
+{\slot
+కానీ	O
+ఏ	O
+tablet	B-medicine
+వాడినా	O
+కూడా	O
+తక్వ	O
+కావడం	O
+లేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: అంటే present కూడా మందులు వాడుతూనే ఉన్నవా?	INFO_REQUEST}
+{\slot
+అంటే	O
+present	B-time_period
+కూడా	O
+మందులు	B-medicine
+వాడుతూనే	O
+ఉన్నవా?	O
+}
+
+{\intent	p: ఆ వాడుతూనే ఉన్నాను sir	ANSWER}
+{\slot
+ఆ	O
+వాడుతూనే	O
+ఉన్నాను	O
+sir	O
+}
+
+{\intent	d: ఒక మాత్ర పేరు ఏమైనా చెప్పగలవా నువ్వు వాడుతున్న tablet పేరు	INFO_REQUEST}
+{\slot
+ఒక	O
+మాత్ర	B-medicine
+పేరు	O
+ఏమైనా	O
+చెప్పగలవా	O
+నువ్వు	O
+వాడుతున్న	O
+tablet	B-medicine
+పేరు	O
+}
+
+{\intent	p: pantop and rantac	ANSWER}
+{\slot
+pantop	B-medicine
+and	O
+rantac	B-medicine
+}
+
+{\intent	d: ప్రతీ రోజూ వాడుతున్నావా	INFO_REQUEST}
+{\slot
+ప్రతీ	B-time_period
+రోజూ	I-time_period
+వాడుతున్నావా	O
+}
+
+{\intent	p: ఆ ప్రతీ రోజు వాడుతున్నాను sir	ANSWER}
+{\slot
+ఆ	O
+ప్రతీ	B-time_period
+రోజు	B-time_period
+వాడుతున్నాను	B-positive
+sir	O
+}
+
+{\intent	d: మరి ఏమైనా ఉపశమనం ఉందా? తగ్గుతుందా?	INFO_REQUEST}
+{\slot
+మరి	O
+ఏమైనా	O
+ఉపశమనం	B-normal
+ఉందా?	O
+తగ్గుతుందా?	B-normal
+}
+
+{\intent	p: అవి వేసుకున్నప్పుడు ఉంటుంది sir. మళ్ళ అవి off చేసినప్పుడు మళ్ళ వస్తుంది sir.	ANSWER}
+{\slot
+అవి	O
+వేసుకున్నప్పుడు	O
+ఉంటుంది	B-positive
+sir.	O
+మళ్ళ	O
+అవి	O
+off	O
+చేసినప్పుడు	O
+మళ్ళ	O
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: right అమ్మా ఏమైనా endoscopy పరిక్ష చేయించావా?	INFO_REQUEST}
+{\slot
+right	O
+అమ్మా	O
+ఏమైనా	O
+endoscopy	B-mtest
+పరిక్ష	B-mtest
+చేయించావా?	O
+}
+
+{\intent	p: ఏం లేదు sir. ఏం చేయించ లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+sir.	O
+ఏం	O
+చేయించ	O
+లేదు.	O
+}
+
+{\intent	d: gastric లక్షణాలు తలెత్తుతున్నాయి.	STATEMENT}
+{\slot
+gastric	B-medical_condition
+లక్షణాలు	O
+తలెత్తుతున్నాయి.	O
+}
+
+{\intent	d: తీసుకునే అలవాట్లు, చేసుకునే మార్పులు ఇవన్నీ కారణంగా ఉంటున్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+తీసుకునే	O
+అలవాట్లు,	O
+చేసుకునే	O
+మార్పులు	O
+ఇవన్నీ	O
+కారణంగా	O
+ఉంటున్నాయి.	O
+}
+

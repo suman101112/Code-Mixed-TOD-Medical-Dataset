@@ -1,0 +1,106 @@
+{\intent	p: doctor గారు నా వయస్సు 17 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+17	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత వారం రోజులుగా ఉదయం లేచినా వెంటనే కంటి నిండా పూసి కడుతుంది.	STATEMENT}
+{\slot
+గత	B-time_period
+వారం	I-time_period
+రోజులుగా	I-time_period
+ఉదయం	I-time_period
+లేచినా	O
+వెంటనే	O
+కంటి	B-body_part
+నిండా	B-location
+పూసి	B-symptom
+కడుతుంది.	I-symptom
+}
+
+{\intent	p: కళ్ళు తెరవడం కూడా కష్టంగా అనిపిస్తుంది.	STATEMENT}
+{\slot
+కళ్ళు	B-body_part
+తెరవడం	B-bodily_process
+కూడా	O
+కష్టంగా	B-symptom
+అనిపిస్తుంది.	I-symptom
+}
+
+{\intent	p: దీనికి కారణాలు ఏమై ఉంటాయో తెలియచేయండి.	STATEMENT}
+{\slot
+దీనికి	O
+కారణాలు	O
+ఏమై	O
+ఉంటాయో	O
+తెలియచేయండి.	O
+}
+
+{\intent	p: generalగా మీకు వారం రోజుల నుంచి కంట్లో పూసి పట్టేసి కన్ను ఎర్రగా అవుతుందంటే గనక కంట్లో నీరు కారుతుంటే, కన్ను మండుతున్నట్లు ఉంటే గనక immediateగా మీకు దెగ్గరలో ఉన్న కంటి doctor దెగ్గరకు వెళ్ళి చూపించుకోవడం చాలా అవసరం అండి.	STATEMENT}
+{\slot
+generalగా	O
+మీకు	O
+వారం	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+కంట్లో	B-body_part
+పూసి	B-symptom
+పట్టేసి	O
+కన్ను	B-body_part
+ఎర్రగా	B-color
+అవుతుందంటే	B-symptom
+గనక	O
+కంట్లో	B-body_part
+నీరు	B-food_substance
+కారుతుంటే,	B-symptom
+కన్ను	B-body_part
+మండుతున్నట్లు	B-symptom
+ఉంటే	O
+గనక	O
+immediateగా	O
+మీకు	O
+దెగ్గరలో	O
+ఉన్న	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరకు	B-location
+వెళ్ళి	O
+చూపించుకోవడం	O
+చాలా	B-intensity
+అవసరం	O
+అండి.	O
+}
+
+{\intent	p: ఎందుకంటే కంట్లో రాక రకాల infections వస్తూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+కంట్లో	B-body_part
+రాక	O
+రకాల	O
+infections	B-medical_condition
+వస్తూ	O
+ఉంటాయి.	O
+}
+
+{\intent	p: suppose మీకు పూసులు ఎర్రబడి కనులు నీరు కారుతున్నట్లు అయితే conjunctivitis అనేది ఒక్కటి మనం దృష్టిలో పెట్టుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+suppose	O
+మీకు	O
+పూసులు	O
+ఎర్రబడి	O
+కనులు	B-body_part
+నీరు	B-food_substance
+కారుతున్నట్లు	B-symptom
+అయితే	O
+conjunctivitis	B-symptom
+అనేది	O
+ఒక్కటి	O
+మనం	O
+దృష్టిలో	O
+పెట్టుకోవాలి.	O
+}
+

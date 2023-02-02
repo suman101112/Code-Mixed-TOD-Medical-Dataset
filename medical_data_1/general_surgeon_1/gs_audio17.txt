@@ -1,0 +1,224 @@
+{\intent	p: నమస్కారం అండి.	GREETING}
+{\slot
+నమస్కారం	O
+అండి.	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: కొంచం నాకు fistula problem ఉంది నాకు.	STATEMENT}
+{\slot
+కొంచం	O
+నాకు	O
+fistula	B-medical_condition
+problem	O
+ఉంది	O
+నాకు.	O
+}
+
+{\intent	d: fissure ఆ?	INFO_REQUEST}
+{\slot
+fissure	B-symptom
+ఆ?	O
+}
+
+{\intent	p: fistula అండి.	ANSWER}
+{\slot
+fistula	B-medical_condition
+అండి.	O
+}
+
+{\intent	d: fistula. ok.	ACK}
+{\slot
+fistula.	B-medical_condition
+ok.	O
+}
+
+{\intent	p: ఇప్పటికి 4 times surgery అయింది అండి నాకు.	STATEMENT}
+{\slot
+ఇప్పటికి	O
+4	B-frequency
+times	I-frequency
+surgery	B-treatment
+అయింది	O
+అండి	O
+నాకు.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: తగ్గుతలేదు అండి అది.	STATEMENT}
+{\slot
+తగ్గుతలేదు	B-symptom
+అండి	O
+అది.	O
+}
+
+{\intent	d: ok. ఎప్పుడైనా fistulagram అనేది చేయించుకున్నారా?	INFO_REQUEST}
+{\slot
+ok.	O
+ఎప్పుడైనా	B-time_period
+fistulagram	B-mtest
+అనేది	O
+చేయించుకున్నారా?	O
+}
+
+{\intent	p: చేయించా అండి.	ANSWER}
+{\slot
+చేయించా	O
+అండి.	O
+}
+
+{\intent	p: ఇప్పుడు మంచి మంచి hospitalలో surgery అయింది.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మంచి	O
+మంచి	O
+hospitalలో	O
+surgery	B-treatment
+అయింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: రండి.	ACTION_DIR}
+{\slot
+రండి.	O
+}
+
+{\intent	p: అది overallగా మూసుకుపోవట్లేదు. అది వెనకాల pus అనేది వస్తుంది అండి.	STATEMENT}
+{\slot
+అది	O
+overallగా	B-symptom
+మూసుకుపోవట్లేదు.	I-symptom
+అది	O
+వెనకాల	B-location
+pus	B-body_substance
+అనేది	O
+వస్తుంది	B-symptom
+అండి.	O
+}
+
+{\intent	d: ok. pus అనేది వస్తునే ఉందా? absess అనేది.	INFO_REQUEST}
+{\slot
+ok.	O
+pus	B-body_substance
+అనేది	O
+వస్తునే	O
+ఉందా?	O
+absess	B-symptom
+అనేది.	O
+}
+
+{\intent	p: pus అనేది వస్తునే ఉంది అండి.	ANSWER}
+{\slot
+pus	B-body_substance
+అనేది	O
+వస్తునే	O
+ఉంది	O
+అండి.	O
+}
+
+{\intent	d: ఒకసారి రండి. దెగ్గరలో ఉన్న homeopathic branch ని consult అవ్వండి.	ACTION_DIR}
+{\slot
+ఒకసారి	O
+రండి.	O
+దెగ్గరలో	O
+ఉన్న	O
+homeopathic	B-medicine
+branch	I-medicine
+ని	O
+consult	O
+అవ్వండి.	O
+}
+
+{\intent	d: 4 times surgery అయింది అంటున్నారు. fistulectomy అయిపోయింది. అయినా కూడా repeatency వస్తుంది ఇంకా absess form అయితుంది అని చెప్తున్నారు.	ACK}
+{\slot
+4	B-frequency
+times	I-frequency
+surgery	B-treatment
+అయింది	O
+అంటున్నారు.	O
+fistulectomy	B-treatment
+అయిపోయింది.	O
+అయినా	O
+కూడా	O
+repeatency	B-symptom
+వస్తుంది	O
+ఇంకా	O
+absess	B-symptom
+form	I-symptom
+అయితుంది	I-symptom
+అని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: అసల్ ఎందువల్ల వస్తుంది అని చూసి doctors medication ఇవ్వడం జరుగుతుంది.	STATEMENT}
+{\slot
+అసల్	O
+ఎందువల్ల	O
+వస్తుంది	O
+అని	O
+చూసి	O
+doctors	B-medical_professional
+medication	B-medicine
+ఇవ్వడం	O
+జరుగుతుంది.	O
+}
+
+{\intent	d: మీరు మళ్ళ surgeryకి వెళ్ళకండీ.	ACTION_DIR}
+{\slot
+మీరు	O
+మళ్ళ	O
+surgeryకి	B-treatment
+వెళ్ళకండీ.	O
+}
+
+{\intent	d: ఊరికే surgery చేయడం వల్ల కూడా ఆ track open అయిపోతుంది. ఆ epithelial tissue track ఏదైతే మనకు anus దెగ్గర నుంచి లోపల intestines వరకు వెళ్తుంది. అది severity తీవ్రత పెరిగే అవకాశాలు ఎక్కువగా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఊరికే	O
+surgery	B-treatment
+చేయడం	O
+వల్ల	O
+కూడా	O
+ఆ	O
+track	B-body_part
+open	B-symptom
+అయిపోతుంది.	I-symptom
+ఆ	O
+epithelial	B-body_part
+tissue	I-body_part
+track	I-body_part
+ఏదైతే	O
+మనకు	O
+anus	B-body_part
+దెగ్గర	B-location
+నుంచి	O
+లోపల	B-location
+intestines	B-body_part
+వరకు	B-location
+వెళ్తుంది.	O
+అది	O
+severity	B-symptom
+తీవ్రత	O
+పెరిగే	O
+అవకాశాలు	O
+ఎక్కువగా	O
+ఉంటాయి.	O
+}
+

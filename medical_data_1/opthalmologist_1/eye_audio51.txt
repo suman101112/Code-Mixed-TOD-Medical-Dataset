@@ -1,0 +1,109 @@
+{\intent	p: doctor గారు నా పేరు ramesh	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+ramesh	B-name
+}
+
+{\intent	p: మా నాన్నగారి వయస్సు 60 సంవత్సరాలు.	STATEMENT}
+{\slot
+మా	O
+నాన్నగారి	B-familal
+వయస్సు	O
+60	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: తను ఈ మధ్య చూపు సరిగ్గా కనిపించట్లేదు అని అంటున్నారు.	STATEMENT}
+{\slot
+తను	O
+ఈ	B-time_period
+మధ్య	I-time_period
+చూపు	B-bodily_process
+సరిగ్గా	O
+కనిపించట్లేదు	B-symptom
+అని	O
+అంటున్నారు.	O
+}
+
+{\intent	p: doctor ని సంప్రదిస్తే శుక్లాలు ఉన్నాయి అని అన్నారు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+ని	O
+సంప్రదిస్తే	O
+శుక్లాలు	B-medical_condition
+ఉన్నాయి	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	p: అద్దాలు వాడుతున్నారు	STATEMENT}
+{\slot
+అద్దాలు	O
+వాడుతున్నారు	O
+}
+
+{\intent	p: అద్దాలు వాడితే ఈ శుక్లాలు తగ్గుతాయా?	INFO_REQUEST}
+{\slot
+అద్దాలు	O
+వాడితే	O
+ఈ	O
+శుక్లాలు	B-medical_condition
+తగ్గుతాయా?	B-normal
+}
+
+{\intent	p: operation తప్పనిసరా?	INFO_REQUEST}
+{\slot
+operation	B-treatment
+తప్పనిసరా?	O
+}
+
+{\intent	d: కంటిలో శుక్లాలు లేదా పొరలు, मोती బిందువు, cateract ఏదైనా ఒక్కటే.	MEDICAL_EXPLANATION}
+{\slot
+కంటిలో	B-body_part
+శుక్లాలు	B-medical_condition
+లేదా	O
+పొరలు,	B-medical_condition
+मोती	B-medical_condition
+బిందువు,	I-medical_condition
+cateract	B-medical_condition
+ఏదైనా	O
+ఒక్కటే.	O
+}
+
+{\intent	d: ఇది వయస్సు రీత్యా మనకు అందరికీ వచ్చేదే.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+వయస్సు	O
+రీత్యా	O
+మనకు	O
+అందరికీ	O
+వచ్చేదే.	O
+}
+
+{\intent	d: అందరం ముందో వెనకో దీనికి గురి అవుతాము	MEDICAL_EXPLANATION}
+{\slot
+అందరం	O
+ముందో	O
+వెనకో	O
+దీనికి	O
+గురి	O
+అవుతాము	O
+}
+
+{\intent	d: ఇది age ప్రభావం అనేది లేదా ఒక్కొక్కసారి కొన్ని కారణాలు ఉంటాయి లెండి.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+age	O
+ప్రభావం	O
+అనేది	O
+లేదా	O
+ఒక్కొక్కసారి	O
+కొన్ని	O
+కారణాలు	O
+ఉంటాయి	O
+లెండి.	O
+}
+

@@ -1,0 +1,187 @@
+{\intent	d: పేరు ఎంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఎంటి?	O
+}
+
+{\intent	p: Yakub	ANSWER}
+{\slot
+Yakub	B-name
+}
+
+{\intent	d: చెప్పండి బాబు ఏమి ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+ఏమి	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: నాకు potassium శాతం తక్వ ఉంది	STATEMENT}
+{\slot
+నాకు	O
+potassium	B-body_substance
+శాతం	O
+తక్వ	B-symptom
+ఉంది	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 4, 10 రోజుల నుంచి	ANSWER}
+{\slot
+4,	B-mtest_value
+10	B-mtest_value
+రోజుల	B-time_period
+నుంచి	O
+}
+
+{\intent	p: చూడుండ్రి sir	ACTION_DIR}
+{\slot
+చూడుండ్రి	O
+sir	O
+}
+
+{\intent	d: చూపియండి పాత reports అన్నీ చూపియండి	ACTION_DIR}
+{\slot
+చూపియండి	O
+పాత	O
+reports	O
+అన్నీ	O
+చూపియండి	O
+}
+
+{\intent	p: last time ఏ చూసినారు	STATEMENT}
+{\slot
+last	B-time_period
+time	I-time_period
+ఏ	O
+చూసినారు	O
+}
+
+{\intent	d: ఇంతకుముందు operation అయ్యింది కదా	INFO_REQUEST}
+{\slot
+ఇంతకుముందు	O
+operation	B-treatment
+అయ్యింది	O
+కదా	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: మూత్రం మంచిగానే వస్తుందా	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంచిగానే	B-normal
+వస్తుందా	O
+}
+
+{\intent	p: తలకాయ మంట మండుతాంది, చర్మం మంట మండుతాంది.	ANSWER}
+{\slot
+తలకాయ	B-body_part
+మంట	B-symptom
+మండుతాంది,	I-symptom
+చర్మం	B-body_part
+మంట	B-symptom
+మండుతాంది.	I-symptom
+}
+
+{\intent	d: ఇప్పుడు మూత్రంకి operation అయింది కదా, మూత్రం దెగ్గర	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+మూత్రంకి	B-body_substance
+operation	B-treatment
+అయింది	O
+కదా,	O
+మూత్రం	B-body_substance
+దెగ్గర	B-location
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు మూత్రం మంచిగానే వస్తుందా	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+మూత్రం	B-body_substance
+మంచిగానే	B-normal
+వస్తుందా	O
+}
+
+{\intent	p: ఆ మంచిగా వస్తలేదు sir.	ANSWER}
+{\slot
+ఆ	O
+మంచిగా	O
+వస్తలేదు	B-negative
+sir.	O
+}
+
+{\intent	d: పాత scans ఏమైనా ఉన్నాయా, పోయిన నెల scans ఉన్నాయా	INFO_REQUEST}
+{\slot
+పాత	B-time_period
+scans	B-mtest
+ఏమైనా	O
+ఉన్నాయా,	O
+పోయిన	O
+నెల	B-time_period
+scans	B-mtest
+ఉన్నాయా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: scan ఏమైనా తీసుకున్నారా అట్ల	INFO_REQUEST}
+{\slot
+scan	B-mtest
+ఏమైనా	O
+తీసుకున్నారా	O
+అట్ల	O
+}
+
+{\intent	p: <inaudible>	UNINTERPRET}
+{\slot
+<inaudible>	O
+}
+
+{\intent	d: సరే ఇంకొకటి రాసి ఇస్తాను, చూద్దాం.	COMMIT}
+{\slot
+సరే	O
+ఇంకొకటి	O
+రాసి	O
+ఇస్తాను,	O
+చూద్దాం.	O
+}
+
+{\intent	p: మాడ భగ్గు భగ్గుమని మండుతోంది. మాడ కింద దానికి జర tonic మందు ఇవ్వండి. జర మూత్రం సాఫ్ అయితది.	STATEMENT}
+{\slot
+మాడ	O
+భగ్గు	B-symptom
+భగ్గుమని	I-symptom
+మండుతోంది.	I-symptom
+మాడ	B-body_part
+కింద	I-body_part
+దానికి	O
+జర	O
+tonic	B-medicine
+మందు	B-medicine
+ఇవ్వండి.	O
+జర	O
+మూత్రం	B-body_substance
+సాఫ్	O
+అయితది.	O
+}
+

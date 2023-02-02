@@ -1,0 +1,147 @@
+{\intent	d: ఇంకొకసారి పేరు చెప్పావా, పేరు?	INFO_REQUEST}
+{\slot
+ఇంకొకసారి	O
+పేరు	O
+చెప్పావా,	O
+పేరు?	O
+}
+
+{\intent	p: R Mikiran	ANSWER}
+{\slot
+R	B-name
+Mikiran	I-name
+}
+
+{\intent	d: age, 19.	ACK}
+{\slot
+age,	O
+19.	B-age
+}
+
+{\intent	p: 19	STATEMENT}
+{\slot
+19	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైందమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైందమ్మా?	O
+}
+
+{\intent	p: గొంతు నొస్తుంది బాగా, అసలు	STATEMENT}
+{\slot
+గొంతు	B-body_part
+నొస్తుంది	B-symptom
+బాగా,	B-intensity
+అసలు	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: सर्दी దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: దగ్గు కొంచం లేస్తుంది కానీ, కానీ ఇటు side ఎక్కువ pain వస్తుంది.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+కొంచం	B-intensity
+లేస్తుంది	O
+కానీ,	O
+కానీ	O
+ఇటు	O
+side	B-location
+ఎక్కువ	B-intensity
+pain	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఈ అను	ACTION_DIR}
+{\slot
+ఈ	O
+అను	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: thyroid tablets వేసుకున్న	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+tablets	B-medicine
+వేసుకున్న	O
+}
+
+{\intent	d: కొంచం గోరు వెచ్చని నీళ్ళల్లో ఉప్పేసుకొని పుక్కిలించి ఉమ్మండి.	ACTION_DIR}
+{\slot
+కొంచం	O
+గోరు	O
+వెచ్చని	O
+నీళ్ళల్లో	B-food_substance
+ఉప్పేసుకొని	B-food_substance
+పుక్కిలించి	B-bodily_process
+ఉమ్మండి.	B-bodily_process
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p1: ఏమైంది కొద్దిగా గొంతులో బాగా నొస్తుంది అంటుంది?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+కొద్దిగా	O
+గొంతులో	B-body_part
+బాగా	B-intensity
+నొస్తుంది	B-symptom
+అంటుంది?	O
+}
+
+{\intent	d: infection అయిందమ్మా	DIAGNOSIS}
+{\slot
+infection	B-medical_condition
+అయిందమ్మా	O
+}
+
+{\intent	d: सर्दी దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: దగ్గు లేస్తుంది.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	p1: జలుబు కూడా ఉండే మొన్న కొంచెం.	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+కూడా	O
+ఉండే	O
+మొన్న	B-time_period
+కొంచెం.	B-intensity
+}
+

@@ -1,0 +1,94 @@
+{\intent	p: నా వయస్సు 25 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+25	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: చిన్నప్పటి నుంచి నాకు మెల్ల ఉంది.	STATEMENT}
+{\slot
+చిన్నప్పటి	B-time_period
+నుంచి	O
+నాకు	O
+మెల్ల	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: మెల్ల ఉంటే అదృష్టం అని చెప్పేవారు కానీ నాకు మెల్ల వలన చాలా ఇబ్బందిగా ఉంది.	STATEMENT}
+{\slot
+మెల్ల	B-medical_condition
+ఉంటే	O
+అదృష్టం	O
+అని	O
+చెప్పేవారు	O
+కానీ	O
+నాకు	O
+మెల్ల	B-medical_condition
+వలన	O
+చాలా	B-intensity
+ఇబ్బందిగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: మెల్లను సరిచేసే పద్ధతులు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+మెల్లను	B-medical_condition
+సరిచేసే	B-treatment
+పద్ధతులు	I-treatment
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: squint వచ్చినప్పుడు ఏమైతుంది అంటే ఒక eyeలో image brain suppress చేస్తుంది so generalగా చూడడానికి ఏ కాకుండా వాళ్ళకు vision అనేది binocular vision ఉండదు అంటే వెళ్ళు 3 dimensional vision కూడా అనుభూతి అనేది ఉండదు. 3 dimensional అనుభూతి	MEDICAL_EXPLANATION}
+{\slot
+squint	B-medical_condition
+వచ్చినప్పుడు	O
+ఏమైతుంది	O
+అంటే	O
+ఒక	O
+eyeలో	B-body_part
+image	O
+brain	I-body_part
+suppress	B-symptom
+చేస్తుంది	O
+so	O
+generalగా	O
+చూడడానికి	B-bodily_process
+ఏ	O
+కాకుండా	O
+వాళ్ళకు	O
+vision	B-bodily_process
+అనేది	O
+binocular	B-bodily_process
+vision	I-bodily_process
+ఉండదు	B-negative
+అంటే	O
+వెళ్ళు	O
+3	B-bodily_process
+dimensional	I-bodily_process
+vision	I-bodily_process
+కూడా	O
+అనుభూతి	O
+అనేది	O
+ఉండదు.	B-negative
+3	B-bodily_process
+dimensional	I-bodily_process
+అనుభూతి	I-bodily_process
+}
+
+{\intent	d: so ఈ కారణానికి కూడా మీరు squint ఉన్నప్పుడు correct చేసుకోవడమే మంచి పద్ధతి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+కారణానికి	O
+కూడా	O
+మీరు	O
+squint	B-medical_condition
+ఉన్నప్పుడు	O
+correct	B-treatment
+చేసుకోవడమే	I-treatment
+మంచి	O
+పద్ధతి.	O
+}
+

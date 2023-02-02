@@ -1,0 +1,232 @@
+{\intent	d: అమ్మా Laxmi Prasanna ని age ఎంత?	INFO_REQUEST}
+{\slot
+అమ్మా	O
+Laxmi	B-name
+Prasanna	I-name
+ని	O
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: 20	INFO_REQUEST}
+{\slot
+20	B-age
+}
+
+{\intent	p: 4	ANSWER}
+{\slot
+4	B-age
+}
+
+{\intent	d: పెళ్ళయి ఎన్ని సంవత్సరాలు అవుతుంది?	INFO_REQUEST}
+{\slot
+పెళ్ళయి	O
+ఎన్ని	O
+సంవత్సరాలు	B-time_period
+అవుతుంది?	O
+}
+
+{\intent	p: 8 months అవుతుంది.	ANSWER}
+{\slot
+8	B-time_period
+months	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: 8 months	ACK}
+{\slot
+8	B-time_period
+months	I-time_period
+}
+
+{\intent	d: ఇప్పుడు నెల రాక ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+నెల	B-bodily_process
+రాక	O
+ఎన్ని	O
+రోజులు?	O
+}
+
+{\intent	p: 4	ANSWER}
+{\slot
+4	B-time_period
+}
+
+{\intent	d: 4 months period రాక.	ACK}
+{\slot
+4	B-time_period
+months	I-time_period
+period	B-bodily_process
+రాక.	B-negative
+}
+
+{\intent	d: ఈ 3 నెలల నుంచి ఏం problem లేదు.	INFO_REQUEST}
+{\slot
+ఈ	O
+3	B-time_period
+నెలల	I-time_period
+నుంచి	O
+ఏం	O
+problem	O
+లేదు.	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: వాంతులు ఏమన్నా?	INFO_REQUEST}
+{\slot
+వాంతులు	B-symptom
+ఏమన్నా?	O
+}
+
+{\intent	d: ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: last బయట ఉన్న తారీకు?	INFO_REQUEST}
+{\slot
+last	O
+బయట	B-bodily_process
+ఉన్న	O
+తారీకు?	O
+}
+
+{\intent	p: november 12	ANSWER}
+{\slot
+november	B-time_period
+12	I-time_period
+}
+
+{\intent	d: ఎప్పుడు timeకే ఉంటావా?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+timeకే	B-normal
+ఉంటావా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: lateగా ఉండవ్?	INFO_REQUEST}
+{\slot
+lateగా	B-symptom
+ఉండవ్?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: దగ్గు, దమ్ము, Asthma, fits?	INFO_REQUEST}
+{\slot
+దగ్గు,	B-symptom
+దమ్ము,	B-medical_condition
+Asthma,	B-medical_condition
+fits?	B-medical_condition
+}
+
+{\intent	p: ఏం లేవు.	ANSWER}
+{\slot
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	d: ఏమన్నా మేనరికమా బయట సంబంధమా?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+మేనరికమా	B-familal
+బయట	O
+సంబంధమా?	O
+}
+
+{\intent	p: బయట సంబంధం.	ANSWER}
+{\slot
+బయట	O
+సంబంధం.	O
+}
+
+{\intent	d: బయట సంబంధం ఏ.	ACK}
+{\slot
+బయట	O
+సంబంధం	O
+ఏ.	O
+}
+
+{\intent	d: ఇప్పుడు ఏం problem అయితే లేదు నీకు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+problem	O
+అయితే	O
+లేదు	B-negative
+నీకు	O
+}
+
+{\intent	d: 3 months periods రాలేదు. pregnancy confirmation కోసం వచ్చావు?	INFO_REQUEST}
+{\slot
+3	B-time_period
+months	I-time_period
+periods	B-bodily_process
+రాలేదు.	B-negative
+pregnancy	B-medical_condition
+confirmation	B-mtest
+కోసం	O
+వచ్చావు?	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: అంతేనండి.	ANSWER}
+{\slot
+అంతేనండి.	O
+}
+
+{\intent	d: ని blood group idea ఉందా?	INFO_REQUEST}
+{\slot
+ని	O
+blood	B-body_substance
+group	B-mtest
+idea	O
+ఉందా?	O
+}
+
+{\intent	p: 0 positive.	ANSWER}
+{\slot
+0	B-mtest_value
+positive.	I-mtest_value
+}
+
+{\intent	d: పడుకో అమ్మా చూద్దాం	ACTION_DIR}
+{\slot
+పడుకో	O
+అమ్మా	O
+చూద్దాం	O
+}
+

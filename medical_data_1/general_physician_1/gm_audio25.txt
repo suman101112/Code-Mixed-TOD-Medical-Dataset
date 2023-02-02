@@ -1,0 +1,162 @@
+{\intent	p: ఆ good afternoon అండి.	GREETING}
+{\slot
+ఆ	O
+good	O
+afternoon	O
+అండి.	O
+}
+
+{\intent	d: good afternoon అండి	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: ఆ మా husbandకి one week నుంచి side headache వస్తుందండీ	STATEMENT}
+{\slot
+ఆ	O
+మా	O
+husbandకి	B-familal
+one	B-time_period
+week	I-time_period
+నుంచి	O
+side	B-location
+headache	B-symptom
+వస్తుందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ అది migrane అంటారా? దేనిగురించి అని?	INFO_REQUEST}
+{\slot
+ఆ	O
+అది	O
+migrane	B-symptom
+అంటారా?	O
+దేనిగురించి	O
+అని?	O
+}
+
+{\intent	d: ఇంకేమన్నా లక్షణాలు ఉన్నాయా అమ్మా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+లక్షణాలు	O
+ఉన్నాయా	O
+అమ్మా?	O
+}
+
+{\intent	p: only headache అండి, side headache.	ANSWER}
+{\slot
+only	O
+headache	B-symptom
+అండి,	O
+side	B-location
+headache.	B-symptom
+}
+
+{\intent	p: అది evening timeలో duty నుంచి రాగానే చాలా ఇబ్బంది పడుతున్నారు	STATEMENT}
+{\slot
+అది	O
+evening	B-time_period
+timeలో	I-time_period
+duty	B-profession
+నుంచి	O
+రాగానే	O
+చాలా	O
+ఇబ్బంది	B-symptom
+పడుతున్నారు	O
+}
+
+{\intent	d: ok ok fine	ACK}
+{\slot
+ok	O
+ok	O
+fine	O
+}
+
+{\intent	d: so ఇప్పుడు ఈ one weekగానే problem అనేటిది ఉందా or ఇంతకుముందు అనేటిది ఎప్పుడైనా ఇట్ల headache రావడం జరుగుతుందా?	INFO_REQUEST}
+{\slot
+so	O
+ఇప్పుడు	O
+ఈ	O
+one	B-time_period
+weekగానే	I-time_period
+problem	O
+అనేటిది	O
+ఉందా	O
+or	O
+ఇంతకుముందు	O
+అనేటిది	O
+ఎప్పుడైనా	O
+ఇట్ల	O
+headache	B-symptom
+రావడం	O
+జరుగుతుందా?	O
+}
+
+{\intent	p: 1 week నుంచే నండీ ఎక్కువ	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచే	O
+నండీ	O
+ఎక్కువ	B-intensity
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇది migrane కిందికి రాడండి.	STATEMENT}
+{\slot
+ఇది	O
+migrane	B-symptom
+కిందికి	O
+రాడండి.	O
+}
+
+{\intent	d: basicalగా ఏంటి అంటే stress, tensions వలన వచ్చే headaches కూడా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+basicalగా	O
+ఏంటి	O
+అంటే	O
+stress,	B-medical_condition
+tensions	B-medical_condition
+వలన	O
+వచ్చే	O
+headaches	B-symptom
+కూడా	O
+ఉంటాయి.	O
+}
+
+{\intent	d: plus ఎక్కువగా travel చేసిన కానీ, correct time కి food తీసుకోకపోయినా కానీ	MEDICAL_EXPLANATION}
+{\slot
+plus	O
+ఎక్కువగా	B-intensity
+travel	O
+చేసిన	O
+కానీ,	O
+correct	O
+time	B-time_period
+కి	O
+food	B-food_substance
+తీసుకోకపోయినా	B-symptom
+కానీ	O
+}
+
+{\intent	p: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+

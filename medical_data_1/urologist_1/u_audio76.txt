@@ -1,0 +1,72 @@
+{\intent	d: చెప్పు Sammayya	ACTION_DIR}
+{\slot
+చెప్పు	O
+Sammayya	B-name
+}
+
+{\intent	d: ఎమి ఇబ్బంది?	INFO_REQUEST}
+{\slot
+ఎమి	O
+ఇబ్బంది?	B-symptom
+}
+
+{\intent	d: 2 వైపుల kidneyలో రాళ్ళున్నాయి Sammayya మీకు, tablets వాడుకోవాల, సరేనా?	DIAGNOSIS}
+{\slot
+2	B-location
+వైపుల	I-location
+kidneyలో	B-body_part
+రాళ్ళున్నాయి	B-body_substance
+Sammayya	B-name
+మీకు,	O
+tablets	B-medicine
+వాడుకోవాల,	O
+సరేనా?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: 2 వైపుల kidneyలో రాళ్ళున్నాయి నీకు	REPEAT_REPHRASE}
+{\slot
+2	B-location
+వైపుల	I-location
+kidneyలో	B-body_part
+రాళ్ళున్నాయి	B-body_substance
+నీకు	O
+}
+
+{\intent	p: ఆ sir అదే చెప్పినారు.	ACK}
+{\slot
+ఆ	O
+sir	O
+అదే	O
+చెప్పినారు.	O
+}
+
+{\intent	d: ఆ రాళ్ళకి గోళీలు వాడుకోవాల	ACTION_DIR}
+{\slot
+ఆ	O
+రాళ్ళకి	B-body_substance
+గోళీలు	B-medicine
+వాడుకోవాల	O
+}
+
+{\intent	d: ఒక కుడి వైపు ఉన్నది కొంచం పెద్దగానే ఉన్నది, చూద్దాం, మందులకి తగ్గితే ఇబ్బంది ఏం లేదు.	STATEMENT}
+{\slot
+ఒక	O
+కుడి	B-location
+వైపు	I-location
+ఉన్నది	O
+కొంచం	O
+పెద్దగానే	O
+ఉన్నది,	O
+చూద్దాం,	O
+మందులకి	B-medicine
+తగ్గితే	O
+ఇబ్బంది	O
+ఏం	O
+లేదు.	O
+}
+

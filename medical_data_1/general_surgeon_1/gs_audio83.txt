@@ -1,0 +1,171 @@
+{\intent	p: Hello అండి.	SU}
+{\slot
+Hello	O
+అండి.	O
+}
+
+{\intent	d: Ashokగారు చెప్పండి.	CONV_OPEN}
+{\slot
+Ashokగారు	B-name
+చెప్పండి.	O
+}
+
+{\intent	p: sir నమస్కారం sir	GREETING}
+{\slot
+sir	O
+నమస్కారం	O
+sir	O
+}
+
+{\intent	d: నమస్కారం అండి.	GREETING}
+{\slot
+నమస్కారం	O
+అండి.	O
+}
+
+{\intent	p: sir ఇది మాకు గత ఒక 9 సంవత్సరాలనుంచి ఒక fistula లాగా, ఉంటాయి కదా sir మన urinal pass చేసే దాని పక్కకు	STATEMENT}
+{\slot
+sir	O
+ఇది	O
+మాకు	O
+గత	B-time_period
+ఒక	O
+9	B-time_period
+సంవత్సరాలనుంచి	I-time_period
+ఒక	O
+fistula	B-medical_condition
+లాగా,	O
+ఉంటాయి	O
+కదా	O
+sir	O
+మన	O
+urinal	B-body_substance
+pass	B-bodily_process
+చేసే	O
+దాని	O
+పక్కకు	B-location
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: ఆ పక్క sideలో ఏమైతుంది అని అంటే ఒక చిన్న hole లాగా పట్టి ప్రతీ 15 రోజులకొకసారి close అయితుంది చీము కారుతుంది sir అది.	STATEMENT}
+{\slot
+ఆ	O
+పక్క	B-location
+sideలో	I-location
+ఏమైతుంది	O
+అని	O
+అంటే	O
+ఒక	O
+చిన్న	O
+hole	B-symptom
+లాగా	O
+పట్టి	O
+ప్రతీ	O
+15	B-time_period
+రోజులకొకసారి	I-time_period
+close	B-symptom
+అయితుంది	I-symptom
+చీము	B-symptom
+కారుతుంది	I-symptom
+sir	O
+అది.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: బాగా	STATEMENT}
+{\slot
+బాగా	O
+}
+
+{\intent	p: అయితే వేరే doctor దెగ్గరికి పోతే గతంలో surgery చేసింది. surgery చేసిన తరువాత doctor Shekar అని సుర్యాపేటలో ఉంటారు sir, surgery చేసిండు sir	STATEMENT}
+{\slot
+అయితే	O
+వేరే	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+పోతే	O
+గతంలో	B-time_period
+surgery	B-treatment
+చేసింది.	O
+surgery	B-treatment
+చేసిన	O
+తరువాత	B-time_period
+doctor	B-medical_professional
+Shekar	I-health_professional
+అని	O
+సుర్యాపేటలో	B-place
+ఉంటారు	O
+sir,	O
+surgery	B-treatment
+చేసిండు	O
+sir	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చేసిన తరువాత ఏం లేదు అయిపోతది అని చెప్పిండు	STATEMENT}
+{\slot
+చేసిన	O
+తరువాత	B-time_period
+ఏం	O
+లేదు	B-negative
+అయిపోతది	B-normal
+అని	O
+చెప్పిండు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చెప్పిన తర్వాత మళ్ళి 1 year తర్వాత వచ్చింది కానీ దాని చూసి fistula అని చెప్పిండు sir అది	STATEMENT}
+{\slot
+చెప్పిన	O
+తర్వాత	B-time_period
+మళ్ళి	O
+1	B-time_period
+year	I-time_period
+తర్వాత	B-time_period
+వచ్చింది	O
+కానీ	O
+దాని	O
+చూసి	O
+fistula	B-medical_condition
+అని	O
+చెప్పిండు	O
+sir	O
+అది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు 1st కూడా fistula ఉండొచ్చు, 2nd time కూడా fistula నే.	DIAGNOSIS}
+{\slot
+ఇప్పుడు	O
+1st	B-mtest_value
+కూడా	O
+fistula	B-medical_condition
+ఉండొచ్చు,	O
+2nd	B-frequency
+time	I-frequency
+కూడా	O
+fistula	B-medical_condition
+నే.	O
+}
+

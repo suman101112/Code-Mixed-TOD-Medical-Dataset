@@ -1,0 +1,271 @@
+{\intent	d: srujaana, ఏంటి మీ problem?	INFO_REQUEST}
+{\slot
+srujaana,	B-name
+ఏంటి	O
+మీ	O
+problem?	O
+}
+
+{\intent	p: అంటే 3 months back periods రాలేదు madam	ANSWER}
+{\slot
+అంటే	O
+3	B-time_period
+months	I-time_period
+back	I-time_period
+periods	B-bodily_process
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అయితే Kavitha madam దెగ్గర medicines వాడిన	STATEMENT}
+{\slot
+అయితే	O
+Kavitha	B-medical_professional
+madam	O
+దెగ్గర	O
+medicines	B-medicine
+వాడిన	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మళ్ళి మొన్న January వరకు వచ్చింది, January 18th రోజూ వచ్చింది.	STATEMENT}
+{\slot
+మళ్ళి	O
+మొన్న	B-time_period
+January	I-time_period
+వరకు	O
+వచ్చింది,	O
+January	B-time_period
+18th	I-time_period
+రోజూ	O
+వచ్చింది.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: మళ్ళి ఈ  month రాలేదు.	STATEMENT}
+{\slot
+మళ్ళి	O
+ఈ	O
+month	B-time_period
+రాలేదు.	B-negative
+}
+
+{\intent	d: నీ age ఎంత?	INFO_REQUEST}
+{\slot
+నీ	O
+age	B-time_period
+ఎంత?	O
+}
+
+{\intent	p: 36 madam	ANSWER}
+{\slot
+36	B-age
+madam	O
+}
+
+{\intent	d: అంటే January కన్నా ముందు ఎప్పుడు ఉన్నావ్?	INFO_REQUEST}
+{\slot
+అంటే	O
+January	B-time_period
+కన్నా	O
+ముందు	O
+ఎప్పుడు	O
+ఉన్నావ్?	O
+}
+
+{\intent	d: november?	INFO_REQUEST}
+{\slot
+november?	B-time_period
+}
+
+{\intent	p: december	ANSWER}
+{\slot
+december	B-time_period
+}
+
+{\intent	p: decemberలో ఉన్న	REPEAT_REPHRASE}
+{\slot
+decemberలో	B-time_period
+ఉన్న	O
+}
+
+{\intent	p: octoberలో ఉన్న madam last	STATEMENT}
+{\slot
+octoberలో	B-time_period
+ఉన్న	O
+madam	O
+last	O
+}
+
+{\intent	d: ఎంత మంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+మంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: 2 madam పాప బాబు.	ANSWER}
+{\slot
+2	B-frequency
+madam	O
+పాప	B-person
+బాబు.	B-person
+}
+
+{\intent	d: weight gain అయితున్నావా ఈ మధ్య?	INFO_REQUEST}
+{\slot
+weight	B-bm
+gain	B-symptom
+అయితున్నావా	O
+ఈ	O
+మధ్య?	O
+}
+
+{\intent	p: ఏం లేదు madam	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: అంటే.	SNU}
+{\slot
+అంటే.	O
+}
+
+{\intent	d: thyroid ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: pche, లేదు ma'am.	ANSWER}
+{\slot
+pche,	O
+లేదు	B-negative
+ma'am.	O
+}
+
+{\intent	d: సరే ఇప్పుడు 18th వచ్చింది, ని period రలేదు, ని age 36, ఇద్దరు పిల్లలు.	ACK}
+{\slot
+సరే	O
+ఇప్పుడు	O
+18th	B-time_period
+వచ్చింది,	O
+ని	O
+period	B-bodily_process
+రలేదు,	B-negative
+ని	O
+age	O
+36,	B-age
+ఇద్దరు	B-frequency
+పిల్లలు.	B-familal
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: కాకుండా నువ్వే చేయించుకున్నావ్	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+నువ్వే	O
+చేయించుకున్నావ్	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: నీ husband ఏ	INFO_REQUEST}
+{\slot
+నీ	O
+husband	B-familal
+ఏ	O
+}
+
+{\intent	p: ఆ husband ఏ	ANSWER}
+{\slot
+ఆ	B-positive
+husband	B-familal
+ఏ	O
+}
+
+{\intent	d: నీ husband ఏ చేయించుకున్నారు.	ACK}
+{\slot
+నీ	O
+husband	B-familal
+ఏ	O
+చేయించుకున్నారు.	O
+}
+
+{\intent	d: పడుకోమ్మా చూస్తాను.	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+చూస్తాను.	O
+}
+
+{\intent	d: periods రాలేదు.	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+రాలేదు.	B-negative
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: pregnancy ఏం కాదు.	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+ఏం	O
+కాదు.	B-negative
+}
+
+{\intent	p: ఆహ<neg>	ANSWER}
+{\slot
+ఆహ<neg>	B-negative
+}
+
+{\intent	d: irregularity కి వెళ్తున్నావ్	INFO_REQUEST}
+{\slot
+irregularity	B-symptom
+కి	O
+వెళ్తున్నావ్	O
+}
+
+{\intent	p: అదే అదే.	ANSWER}
+{\slot
+అదే	B-positive
+అదే.	B-positive
+}
+
+{\intent	d: 36 years	ACK}
+{\slot
+36	B-age
+years	I-age
+}
+
+{\intent	d: ok, fine పడుకో	ACTION_DIR}
+{\slot
+ok,	O
+fine	O
+పడుకో	O
+}
+

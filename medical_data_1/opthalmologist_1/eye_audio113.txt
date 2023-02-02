@@ -1,0 +1,65 @@
+{\intent	p: doctor గారు నా పేరు Bhadra	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Bhadra	B-name
+}
+
+{\intent	p: నాకు కళ్ళ ఒంపులు దెగ్గర noseకు కంటికి మధ్య 2 వైపులా చిన్న బొడిపెల్లాగా ఏర్పడ్డాయి.	STATEMENT}
+{\slot
+నాకు	O
+కళ్ళ	B-body_part
+ఒంపులు	I-body_part
+దెగ్గర	B-location
+noseకు	B-body_part
+కంటికి	B-body_part
+మధ్య	B-location
+2	O
+వైపులా	O
+చిన్న	O
+బొడిపెల్లాగా	B-medical_condition
+ఏర్పడ్డాయి.	B-symptom
+}
+
+{\intent	p: వాటిని తొలగించడానికి ఏమైనా చికిత్స ఉందా?	INFO_REQUEST}
+{\slot
+వాటిని	O
+తొలగించడానికి	O
+ఏమైనా	O
+చికిత్స	B-treatment
+ఉందా?	O
+}
+
+{\intent	d: మీ generalగా మీరు complaint చేసే బుడగలు గానీ బొడిపెలు గానీ ఒకసారి చూడాలి అండి ఏ రకంగా ఉన్నాయి అన్నది.	MEDICAL_EXPLANATION}
+{\slot
+మీ	O
+generalగా	O
+మీరు	O
+complaint	O
+చేసే	O
+బుడగలు	B-medical_condition
+గానీ	O
+బొడిపెలు	B-medical_condition
+గానీ	O
+ఒకసారి	O
+చూడాలి	O
+అండి	O
+ఏ	O
+రకంగా	O
+ఉన్నాయి	O
+అన్నది.	O
+}
+
+{\intent	d: generalగా ఈ సమస్య ఎక్కువ మాటుకూ wartsలో ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+generalగా	O
+ఈ	O
+సమస్య	O
+ఎక్కువ	O
+మాటుకూ	O
+wartsలో	B-medical_condition
+ఉంటుంది.	O
+}
+

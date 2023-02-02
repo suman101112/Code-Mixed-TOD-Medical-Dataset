@@ -1,0 +1,191 @@
+{\intent	d: ఏం పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p1: Vijaya	ANSWER}
+{\slot
+Vijaya	B-name
+}
+
+{\intent	d: చెప్పండి ఏంటి problem?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p1: జ్వరం వస్తుంది. सर्दी అయింది.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+వస్తుంది.	O
+सर्दी	B-medical_condition
+అయింది.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఇటు తలకాయ తో పడుకునేట్టు.	ACTION_DIR}
+{\slot
+ఇటు	O
+తలకాయ	B-body_part
+తో	O
+పడుకునేట్టు.	O
+}
+
+{\intent	p1: బక్కగా అయితుంది. weight తక్కువ ఉంది.	STATEMENT}
+{\slot
+బక్కగా	B-symptom
+అయితుంది.	O
+weight	O
+తక్కువ	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: బక్కగా లావుగా కాదమ్మా	MEDICAL_EXPLANATION}
+{\slot
+బక్కగా	O
+లావుగా	O
+కాదమ్మా	O
+}
+
+{\intent	d: 6 ఏళ్ళ పాప, 17 kgలు normal	MEDICAL_EXPLANATION}
+{\slot
+6	B-age
+ఏళ్ళ	I-age
+పాప,	B-person
+17	B-bm
+kgలు	I-bm
+normal	B-normal
+}
+
+{\intent	d: పొడుగు పెరుగుతున్నది ఆమె	MEDICAL_EXPLANATION}
+{\slot
+పొడుగు	O
+పెరుగుతున్నది	O
+ఆమె	O
+}
+
+{\intent	d: పిల్లలు లావు కారు, first పొడుగు పెరుగుతారు తర్వాత fat వస్తది.	MEDICAL_EXPLANATION}
+{\slot
+పిల్లలు	B-person
+లావు	B-body_substance
+కారు,	B-negative
+first	B-quantity
+పొడుగు	O
+పెరుగుతారు	O
+తర్వాత	B-time_period
+fat	B-body_substance
+వస్తది.	O
+}
+
+{\intent	d: ఆమె weight సంబంధించి normal weight ఏ	MEDICAL_EXPLANATION}
+{\slot
+ఆమె	O
+weight	O
+సంబంధించి	O
+normal	B-normal
+weight	O
+ఏ	O
+}
+
+{\intent	d: ఇప్పుడు ఏంటి problem అని?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+problem	O
+అని?	O
+}
+
+{\intent	p1: జ్వరం వస్తుంది, కొంచం జలుబు , सर्दी ఉంది	ANSWER}
+{\slot
+జ్వరం	B-symptom
+వస్తుంది,	O
+కొంచం	O
+జలుబు	B-medical_condition
+,	O
+सर्दी	B-medical_condition
+ఉంది	B-time_period
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: 101.5	STATEMENT}
+{\slot
+101.5	B-mtest_value
+}
+
+{\intent	d: ఎన్నో రోజు జ్వరం రాబట్టి?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+రోజు	B-time_period
+జ్వరం	B-symptom
+రాబట్టి?	O
+}
+
+{\intent	p1: నిన్న night.	ANSWER}
+{\slot
+నిన్న	B-time_period
+night.	I-time_period
+}
+
+{\intent	d: అంతే కదా	STATEMENT}
+{\slot
+అంతే	O
+కదా	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: కుర్చో.	ACTION_DIR}
+{\slot
+కుర్చో.	O
+}
+
+{\intent	p1: ఏం problem ఏం ఉండదు కదా sir	INFO_REQUEST}
+{\slot
+ఏం	O
+problem	O
+ఏం	O
+ఉండదు	O
+కదా	O
+sir	O
+}
+
+{\intent	d: ఏం problem ఉంటది, 2 3 రోజులు జ్వరం ఉండి తగ్గుతది	STATEMENT}
+{\slot
+ఏం	O
+problem	O
+ఉంటది,	O
+2	B-time_period
+3	I-time_period
+రోజులు	I-time_period
+జ్వరం	B-symptom
+ఉండి	O
+తగ్గుతది	B-normal
+}
+
+{\intent	d: జలుబు దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ sir.	ANSWER}
+{\slot
+ఆ	B-positive
+sir.	O
+}
+

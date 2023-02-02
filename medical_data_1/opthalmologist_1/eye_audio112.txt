@@ -1,0 +1,105 @@
+{\intent	p: doctor గారు మా grand mother వయస్సు 74 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+grand	B-familal
+mother	I-familial
+వయస్సు	O
+74	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: bp normalగా ఉంది.	STATEMENT}
+{\slot
+bp	B-medical_condition
+normalగా	B-normal
+ఉంది.	B-positive
+}
+
+{\intent	p: sugar లేదు.	STATEMENT}
+{\slot
+sugar	B-medical_condition
+లేదు.	B-negative
+}
+
+{\intent	p: 9, 10 సంవత్సరాల క్రితం acute kidney fail అయింది.	STATEMENT}
+{\slot
+9,	B-time_period
+10	B-time_period
+సంవత్సరాల	I-time_period
+క్రితం	O
+acute	B-medical_condition
+kidney	I-medical_condition
+fail	I-medical_condition
+అయింది.	O
+}
+
+{\intent	p: ప్రస్తుతం కంటిలో ఎర్రగా swell వస్తే doctor దెగ్గరికి తీసుకోని వెళితే కంటి, ముక్కు నుంచి liquid పంపించే ఒక nerve damage అయింది అని అన్నారు.	STATEMENT}
+{\slot
+ప్రస్తుతం	O
+కంటిలో	B-body_part
+ఎర్రగా	B-color
+swell	B-symptom
+వస్తే	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+తీసుకోని	O
+వెళితే	O
+కంటి,	B-body_part
+ముక్కు	B-body_part
+నుంచి	O
+liquid	B-body_substance
+పంపించే	O
+ఒక	O
+nerve	B-body_part
+damage	B-symptom
+అయింది	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	p: దానిని surgery చేయాలి అని అన్నారు.	STATEMENT}
+{\slot
+దానిని	O
+surgery	B-treatment
+చేయాలి	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	p: surgery చేయడం వల్ల కొన్ని సమస్యలు వస్తాయి అని doctor అన్నారు.	STATEMENT}
+{\slot
+surgery	B-treatment
+చేయడం	O
+వల్ల	O
+కొన్ని	O
+సమస్యలు	O
+వస్తాయి	O
+అని	O
+doctor	B-medical_professional
+అన్నారు.	O
+}
+
+{\intent	p: 2nd opinion కోసం మిమ్మల్ని అడుగుతున్నాను.	STATEMENT}
+{\slot
+2nd	O
+opinion	O
+కోసం	O
+మిమ్మల్ని	O
+అడుగుతున్నాను.	O
+}
+
+{\intent	d: 74 year old లో surgery ఎంతన్నా కొంచం tricky నే.	MEDICAL_EXPLANATION}
+{\slot
+74	B-age
+year	I-age
+old	I-age
+లో	O
+surgery	B-treatment
+ఎంతన్నా	O
+కొంచం	O
+tricky	O
+నే.	O
+}
+

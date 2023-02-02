@@ -1,0 +1,55 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 50, m	ANSWER}
+{\slot
+50,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చేతులు కాళ్ళ చర్మం పెచ్చులు లాగా అవుతుంది.	ANSWER}
+{\slot
+చేతులు	B-body_part
+కాళ్ళ	I-body_part
+చర్మం	I-body_part
+పెచ్చులు	B-symptom
+లాగా	I-symptom
+అవుతుంది.	I-symptom
+}
+
+{\intent	d: skin dry అయితుందా?	INFO_REQUEST}
+{\slot
+skin	B-body_part
+dry	B-symptom
+అయితుందా?	I-symptom
+}
+
+{\intent	p: అవును.	ANSWER}
+{\slot
+అవును.	B-positive
+}
+
+{\intent	d: అరచేతికి, కాళ్ల దగ్గర, అవుతుంది.	STATEMENT}
+{\slot
+అరచేతికి,	B-body_part
+కాళ్ల	B-body_part
+దగ్గర,	I-body_part
+అవుతుంది.	B-symptom
+}
+
+{\intent	p: cut అయినప్పుడు blood వస్తుంది.	STATEMENT}
+{\slot
+cut	B-trauma
+అయినప్పుడు	B-time_period
+blood	B-symptom
+వస్తుంది.	I-symptom
+}
+

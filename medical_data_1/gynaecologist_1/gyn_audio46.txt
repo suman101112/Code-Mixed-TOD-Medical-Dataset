@@ -1,0 +1,372 @@
+{\intent	d: ఏం పేరు	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+}
+
+{\intent	p: ఇది నా 2nd బాబు madam	STATEMENT}
+{\slot
+ఇది	O
+నా	O
+2nd	B-frequency
+బాబు	B-person
+madam	O
+}
+
+{\intent	d: ఏం పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+}
+
+{\intent	d: Lavanya	ANSWER}
+{\slot
+Lavanya	B-name
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు ఏంటి ని బాధ?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+ని	O
+బాధ?	O
+}
+
+{\intent	d: ఇద్దరు పిల్లలు	STATEMENT}
+{\slot
+ఇద్దరు	B-frequency
+పిల్లలు	B-familal
+}
+
+{\intent	p: ఇద్దరు	ACK}
+{\slot
+ఇద్దరు	B-frequency
+}
+
+{\intent	d: చిన్నాయినె వయస్సు?	INFO_REQUEST}
+{\slot
+చిన్నాయినె	O
+వయస్సు?	O
+}
+
+{\intent	p: ఈనె 4 months	ANSWER}
+{\slot
+ఈనె	O
+4	B-time_period
+months	I-time_period
+}
+
+{\intent	d: ఇప్పుడు ఏంటి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి?	O
+}
+
+{\intent	p: కడుపుల 2 days నుంచి కడుపు నొస్తుంది	ANSWER}
+{\slot
+కడుపుల	B-body_part
+2	B-time_period
+days	I-time_period
+నుంచి	O
+కడుపు	B-body_part
+నొస్తుంది	B-symptom
+}
+
+{\intent	d: ఎక్కడ పై కడుపులోనా కింద కడుపులోనా?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+పై	B-location
+కడుపులోనా	B-body_part
+కింద	B-location
+కడుపులోనా?	B-body_part
+}
+
+{\intent	p: బొడ్డు పైనే	ANSWER}
+{\slot
+బొడ్డు	B-body_part
+పైనే	B-location
+}
+
+{\intent	d: బెవూళ్లోస్తున్నాయా?	INFO_REQUEST}
+{\slot
+బెవూళ్లోస్తున్నాయా?	B-symptom
+}
+
+{\intent	p: బేవుళ్ళు ఏం లేవు	ANSWER}
+{\slot
+బేవుళ్ళు	B-symptom
+ఏం	O
+లేవు	B-negative
+}
+
+{\intent	d: vomitings అయితున్నాయా?	INFO_REQUEST}
+{\slot
+vomitings	B-symptom
+అయితున్నాయా?	O
+}
+
+{\intent	p: లేదండీ , lightగా కొంచం bleeding	ANSWER}
+{\slot
+లేదండీ	B-negative
+,	O
+lightగా	B-intensity
+కొంచం	I-intensity
+bleeding	B-medical_condition
+}
+
+{\intent	d: motions అయితున్నాయా? loose motions లాగా?	INFO_REQUEST}
+{\slot
+motions	B-symptom
+అయితున్నాయా?	O
+loose	B-symptom
+motions	I-symptom
+లాగా?	O
+}
+
+{\intent	p: ఆ అయితున్నాయి madam	ANSWER}
+{\slot
+ఆ	B-positive
+అయితున్నాయి	O
+madam	O
+}
+
+{\intent	d: దొడ్డికి साफ़ ఉందా?	INFO_REQUEST}
+{\slot
+దొడ్డికి	B-body_substance
+साफ़	B-normal
+ఉందా?	O
+}
+
+{\intent	p: साफ़ అంటే, साफ़ ఎం లేదు madam	ANSWER}
+{\slot
+साफ़	B-normal
+అంటే,	O
+साफ़	B-normal
+ఎం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: అంటే?	INFO_REQUEST}
+{\slot
+అంటే?	O
+}
+
+{\intent	d: 2 రోజుల కొకసారి 3 రోజుల కొకసారి అయితుందా?	INFO_REQUEST}
+{\slot
+2	B-time_period
+రోజుల	I-time_period
+కొకసారి	O
+3	B-time_period
+రోజుల	I-time_period
+కొకసారి	O
+అయితుందా?	O
+}
+
+{\intent	p: 2 days కి ఒకసారి అయితుంది, morning 2 times అయింది.	ANSWER}
+{\slot
+2	B-time_period
+days	I-time_period
+కి	O
+ఒకసారి	O
+అయితుంది,	O
+morning	B-time_period
+2	B-frequency
+times	I-frequency
+అయింది.	O
+}
+
+{\intent	d: loose motions అయినాయి. ఎన్ని అయినాయి?	INFO_REQUEST}
+{\slot
+loose	B-symptom
+motions	I-symptom
+అయినాయి.	O
+ఎన్ని	O
+అయినాయి?	O
+}
+
+{\intent	p: 1 time	ANSWER}
+{\slot
+1	B-time_period
+time	I-time_period
+}
+
+{\intent	d: బయట food తిన్నావా? నిన్న? మొన్న? ఏమైనా?	INFO_REQUEST}
+{\slot
+బయట	B-location
+food	B-food_substance
+తిన్నావా?	B-bodily_process
+నిన్న?	B-time_period
+మొన్న?	B-time_period
+ఏమైనా?	O
+}
+
+{\intent	p: ఏం లేదు కానీ, మొన్న చాపలు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+కానీ,	O
+మొన్న	B-time_period
+చాపలు	B-food_substance
+}
+
+{\intent	d: పాలు నీవేనా?	INFO_REQUEST}
+{\slot
+పాలు	B-food_substance
+నీవేనా?	O
+}
+
+{\intent	p: నాదె	ANSWER}
+{\slot
+నాదె	B-positive
+}
+
+{\intent	d: నెల నెల ఉంటున్నావా? లేదా?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	B-bodily_process
+ఉంటున్నావా?	O
+లేదా?	O
+}
+
+{\intent	p: కాలేదు madam	ANSWER}
+{\slot
+కాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: ఇంకా లేదు	ACK}
+{\slot
+ఇంకా	O
+లేదు	B-negative
+}
+
+{\intent	p: ఇంకా లేదు	ACK}
+{\slot
+ఇంకా	O
+లేదు	B-negative
+}
+
+{\intent	d: కాకుండా ఎవరు? చేయించుకున్నారు?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+ఎవరు?	O
+చేయించుకున్నారు?	B-treatment
+}
+
+{\intent	p: చేయించుకోలే madam	ANSWER}
+{\slot
+చేయించుకోలే	B-negative
+madam	O
+}
+
+{\intent	d: మరి కాన్పు వస్తే ఎట్ల? కలిసే ఉంటున్నారా భార్య భర్తలు?	INFO_REQUEST}
+{\slot
+మరి	O
+కాన్పు	B-bodily_process
+వస్తే	O
+ఎట్ల?	O
+కలిసే	O
+ఉంటున్నారా	O
+భార్య	B-familal
+భర్తలు?	I-familial
+}
+
+{\intent	p: ఆ మొన్ననే ఇంటికి పోయిన	ANSWER}
+{\slot
+ఆ	O
+మొన్ననే	B-time_period
+ఇంటికి	B-place
+పోయిన	O
+}
+
+{\intent	d: మరి కాన్పు వస్తే ఏం చేస్తావ్? ఇంకొకరిని కందామన్నా?	INFO_REQUEST}
+{\slot
+మరి	O
+కాన్పు	B-bodily_process
+వస్తే	O
+ఏం	O
+చేస్తావ్?	O
+ఇంకొకరిని	B-frequency
+కందామన్నా?	B-bodily_process
+}
+
+{\intent	p: లేదు madam, అదే tension అవుతుంది	ANSWER}
+{\slot
+లేదు	B-negative
+madam,	O
+అదే	O
+tension	B-medical_condition
+అవుతుంది	O
+}
+
+{\intent	d: మూత్రం మంట ఏం లేదు కదా	STATEMENT}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+ఏం	O
+లేదు	O
+కదా	O
+}
+
+{\intent	p: ఏం లేదు madam	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: motion ఒకసారి loose motion అయింది అంతే	STATEMENT}
+{\slot
+motion	B-bodily_process
+ఒకసారి	B-frequency
+loose	B-symptom
+motion	I-symptom
+అయింది	O
+అంతే	O
+}
+
+{\intent	p: ఒక్కసారి అయింది	ANSWER}
+{\slot
+ఒక్కసారి	B-frequency
+అయింది	O
+}
+
+{\intent	d: తెలుపు దురద అదేం లేదు	INFO_REQUEST}
+{\slot
+తెలుపు	B-symptom
+దురద	B-symptom
+అదేం	O
+లేదు	O
+}
+
+{\intent	p: ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+
+{\intent	d: normal ఆ? caesarean ఆ?	INFO_REQUEST}
+{\slot
+normal	B-normal
+ఆ?	O
+caesarean	B-treatment
+ఆ?	O
+}
+
+{\intent	p: normal ఈ	ANSWER}
+{\slot
+normal	B-normal
+ఈ	O
+}
+

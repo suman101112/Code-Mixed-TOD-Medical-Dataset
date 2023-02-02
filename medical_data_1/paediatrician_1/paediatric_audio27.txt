@@ -1,0 +1,132 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: చెప్పమ్మా	ACTION_DIR}
+{\slot
+చెప్పమ్మా	O
+}
+
+{\intent	p: ఈ ఆయనకు fever వస్తుంది అండి	STATEMENT}
+{\slot
+ఈ	O
+ఆయనకు	O
+fever	B-symptom
+వస్తుంది	O
+అండి	O
+}
+
+{\intent	d: పాడుకోబెట్టు.	ACTION_DIR}
+{\slot
+పాడుకోబెట్టు.	O
+}
+
+{\intent	p: నిన్న motions అయ్యాయి, జలుబు దగ్గు ఉన్నాయి	STATEMENT}
+{\slot
+నిన్న	O
+motions	B-bodily_process
+అయ్యాయి,	O
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఉన్నాయి	O
+}
+
+{\intent	p: సరిగ్గా తిండి తినదు sir, అన్నం తినదు	STATEMENT}
+{\slot
+సరిగ్గా	O
+తిండి	B-food_substance
+తినదు	B-bodily_process
+sir,	O
+అన్నం	B-food_substance
+తినదు	B-symptom
+}
+
+{\intent	d: పేరు చెప్పు నువ్వు	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పు	O
+నువ్వు	O
+}
+
+{\intent	p: Rizwaan kumar	ANSWER}
+{\slot
+Rizwaan	B-name
+kumar	I-name
+}
+
+{\intent	d: ఇవన్నీ exaggeration of complaints	MEDICAL_EXPLANATION}
+{\slot
+ఇవన్నీ	O
+exaggeration	O
+of	O
+complaints	O
+}
+
+{\intent	d: పిల్లలు ఎవరు ఎంత physic, ఎవరు ఎంత constitution అంతే తింటారండీ.	MEDICAL_EXPLANATION}
+{\slot
+పిల్లలు	B-person
+ఎవరు	O
+ఎంత	O
+physic,	O
+ఎవరు	O
+ఎంత	O
+constitution	O
+అంతే	O
+తింటారండీ.	B-bodily_process
+}
+
+{\intent	d: జలుబు , దగ్గు బాగా ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు	B-symptom
+బాగా	B-intensity
+ఉందా?	O
+}
+
+{\intent	p: ఊరికే repeat అయితున్నాయి అండి.	ANSWER}
+{\slot
+ఊరికే	O
+repeat	O
+అయితున్నాయి	O
+అండి.	O
+}
+
+{\intent	d: జలుబు , దగ్గు పిల్లలకి అందరి వస్తాయి. seasonలో, one yearలో 5 నుంచి 6 సార్లు వస్తాయి, జలుబు దగ్గులు, అవి common పిల్లలకి.	MEDICAL_EXPLANATION}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు	B-symptom
+పిల్లలకి	B-person
+అందరి	O
+వస్తాయి.	O
+seasonలో,	O
+one	O
+yearలో	O
+5	B-quantity
+నుంచి	O
+6	B-quantity
+సార్లు	B-frequency
+వస్తాయి,	O
+జలుబు	B-medical_condition
+దగ్గులు,	B-symptom
+అవి	O
+common	O
+పిల్లలకి.	B-person
+}
+
+{\intent	d: టీకాలన్నీ పడ్డాయా?	INFO_REQUEST}
+{\slot
+టీకాలన్నీ	B-medicine
+పడ్డాయా?	O
+}
+
+{\intent	p: ఆ పడ్డాయి sir.	ANSWER}
+{\slot
+ఆ	B-positive
+పడ్డాయి	O
+sir.	O
+}
+

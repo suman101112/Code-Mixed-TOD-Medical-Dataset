@@ -1,0 +1,250 @@
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: అంటే actualగా మాకు marriage అయి 3 years అవుతుంది sir.	STATEMENT}
+{\slot
+అంటే	O
+actualగా	O
+మాకు	O
+marriage	B-marital_status
+అయి	O
+3	B-time_period
+years	I-time_period
+అవుతుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే, marriage అయినా సంవత్సరం నుంచి వాడుతున్నాం medicines	STATEMENT}
+{\slot
+అంటే,	O
+marriage	B-marital_status
+అయినా	O
+సంవత్సరం	B-time_period
+నుంచి	O
+వాడుతున్నాం	O
+medicines	B-medicine
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే, నాకు egg release 3 eggs అలా release అవుతున్నాయి అని చెప్పారు sir	STATEMENT}
+{\slot
+అయితే,	O
+నాకు	O
+egg	B-body_part
+release	B-bodily_process
+3	B-frequency
+eggs	B-body_part
+అలా	O
+release	B-bodily_process
+అవుతున్నాయి	O
+అని	O
+చెప్పారు	O
+sir	O
+}
+
+{\intent	d: తక్వ ఉంది అని చెప్పారా egg release?	INFO_REQUEST}
+{\slot
+తక్వ	B-intensity
+ఉంది	O
+అని	O
+చెప్పారా	O
+egg	B-body_part
+release?	B-bodily_process
+}
+
+{\intent	p: ఆ తక్వ ఉంది అని చెప్పారు	ANSWER}
+{\slot
+ఆ	O
+తక్వ	B-intensity
+ఉంది	B-positive
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: మా husband sperm కూడా 12 millions ఉన్నాయి అని చెప్పారు	STATEMENT}
+{\slot
+మా	O
+husband	B-familal
+sperm	B-body_substance
+కూడా	O
+12	B-mtest_value
+millions	I-mtest_value
+ఉన్నాయి	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: normal	STATEMENT}
+{\slot
+normal	B-normal
+}
+
+{\intent	p: normal కాదు sir, అంటే కొద్దిగా తక్వ ఉంటే medicines వాడారు	STATEMENT}
+{\slot
+normal	B-normal
+కాదు	B-negative
+sir,	O
+అంటే	O
+కొద్దిగా	B-intensity
+తక్వ	I-intensity
+ఉంటే	O
+medicines	B-medicine
+వాడారు	O
+}
+
+{\intent	d: ok అండి. hmm	ACK}
+{\slot
+ok	O
+అండి.	O
+hmm	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: 15 million husband కణాల counts 15 million per ml and above normal అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+15	B-mtest_value
+million	I-mtest_value
+husband	B-familal
+కణాల	B-body_substance
+counts	O
+15	B-mtest_value
+million	I-mtest_value
+per	I-mtest_value
+ml	I-mtest_value
+and	O
+above	B-normal
+normal	I-normal
+అంటారు.	O
+}
+
+{\intent	d: అది	ACK}
+{\slot
+అది	O
+}
+
+{\intent	p: 2 times IUI కూడా చేసారు sir.	STATEMENT}
+{\slot
+2	B-time_period
+times	I-time_period
+IUI	B-treatment
+కూడా	O
+చేసారు	O
+sir.	O
+}
+
+{\intent	p: success అవ్వలేదు	STATEMENT}
+{\slot
+success	O
+అవ్వలేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so మీది IUI timeకి ముందు egg release check చేసుకుంటారా? అది egg Rupture అయిందా?	INFO_REQUEST}
+{\slot
+so	O
+మీది	O
+IUI	B-treatment
+timeకి	B-time_period
+ముందు	I-time_period
+egg	B-body_part
+release	B-bodily_process
+check	B-mtest
+చేసుకుంటారా?	O
+అది	O
+egg	B-body_part
+Rupture	B-bodily_process
+అయిందా?	O
+}
+
+{\intent	p: ఆ అయింది sir.	ANSWER}
+{\slot
+ఆ	O
+అయింది	B-positive
+sir.	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: so 2 times IUI చేయించుకున్నారు, and ఇప్పుడు already eggs తగ్గిపోతున్నాయి.	STATEMENT}
+{\slot
+so	O
+2	B-frequency
+times	I-frequency
+IUI	B-treatment
+చేయించుకున్నారు,	O
+and	O
+ఇప్పుడు	O
+already	O
+eggs	B-body_part
+తగ్గిపోతున్నాయి.	B-symptom
+}
+
+{\intent	d: so ఈ Ovarian reserve very important మనకు,	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+Ovarian	B-body_part
+reserve	I-body_part
+very	O
+important	O
+మనకు,	O
+}
+
+{\intent	d: time waste చేయకూడదు, ఇలాంటి situationలో తొందరగా మనం IVFకి వెళ్ళాలి if self eggs మీరు వాడుకోవాలి అట్ల అని మీకు intention ఉంటే.	STATEMENT}
+{\slot
+time	O
+waste	O
+చేయకూడదు,	O
+ఇలాంటి	O
+situationలో	O
+తొందరగా	O
+మనం	O
+IVFకి	B-treatment
+వెళ్ళాలి	O
+if	O
+self	O
+eggs	B-body_part
+మీరు	O
+వాడుకోవాలి	O
+అట్ల	O
+అని	O
+మీకు	O
+intention	O
+ఉంటే.	O
+}
+

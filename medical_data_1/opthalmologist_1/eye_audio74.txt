@@ -1,0 +1,77 @@
+{\intent	p: doctor గారు నా age 50 years.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+age	O
+50	B-age
+years.	I-age
+}
+
+{\intent	p: ఈ మధ్య చూపు మందగిస్తుంది.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+చూపు	B-bodily_process
+మందగిస్తుంది.	B-symptom
+}
+
+{\intent	p: నేను ఎలాంటి పరిక్షలు చేయించుకోవాలి?	INFO_REQUEST}
+{\slot
+నేను	O
+ఎలాంటి	O
+పరిక్షలు	B-mtest
+చేయించుకోవాలి?	O
+}
+
+{\intent	d: generally 50 ఏళ్ళ తరువాత చాలా మందిలో చూపు మందగించడానికి కారణాలు cateract develop అవ్వడం వల్ల, కంట్లో ఉండే అద్దం మబ్బు అవ్వడం వల్ల లేకపోతే cateract develop అవ్వడం వల్ల visual blurring develop అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+generally	O
+50	B-age
+ఏళ్ళ	I-age
+తరువాత	B-time_period
+చాలా	O
+మందిలో	O
+చూపు	B-bodily_process
+మందగించడానికి	B-symptom
+కారణాలు	O
+cateract	B-medical_condition
+develop	B-bodily_process
+అవ్వడం	O
+వల్ల,	O
+కంట్లో	B-body_part
+ఉండే	I-body_part
+అద్దం	I-body_part
+మబ్బు	B-symptom
+అవ్వడం	O
+వల్ల	O
+లేకపోతే	O
+cateract	B-medical_condition
+develop	O
+అవ్వడం	O
+వల్ల	O
+visual	B-bodily_process
+blurring	B-symptom
+develop	O
+అవుతుంది.	O
+}
+
+{\intent	d: ఇలా cateract develop అయినా వాళ్ళల్లో పరిక్షలు చేసి cateract అని confirm చేసిన తరువాత cateract surgery చేయించుకోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+ఇలా	O
+cateract	B-medical_condition
+develop	B-bodily_process
+అయినా	O
+వాళ్ళల్లో	O
+పరిక్షలు	B-mtest
+చేసి	O
+cateract	B-medical_condition
+అని	O
+confirm	O
+చేసిన	O
+తరువాత	O
+cateract	B-medical_condition
+surgery	I-treatment
+చేయించుకోవచ్చు.	O
+}
+

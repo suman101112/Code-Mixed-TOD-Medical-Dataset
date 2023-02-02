@@ -1,0 +1,42 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 30, female	ANSWER}
+{\slot
+30,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: eyes మండుతున్నాయి ఇంకా జ్వరం వస్తుంది.	ANSWER}
+{\slot
+eyes	B-body_part
+మండుతున్నాయి	B-symptom
+ఇంకా	O
+జ్వరం	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: ఒక 3 days అయింది.	ANSWER}
+{\slot
+ఒక	O
+3	B-time_period
+days	I-time_period
+అయింది.	O
+}
+

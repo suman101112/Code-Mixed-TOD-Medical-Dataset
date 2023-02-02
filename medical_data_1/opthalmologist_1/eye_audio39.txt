@@ -1,0 +1,131 @@
+{\intent	p: doctor గారు నా వయస్సు 28 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+28	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: 3 years back lasik surgery చేయించుకున్నాను.	STATEMENT}
+{\slot
+3	B-time_period
+years	I-time_period
+back	I-time_period
+lasik	B-treatment
+surgery	I-treatment
+చేయించుకున్నాను.	O
+}
+
+{\intent	p: తరువాత eyes బాగానే ఉన్నాయి. కళ్ళజోడు కూడా వాడలేదు.	STATEMENT}
+{\slot
+తరువాత	B-time_period
+eyes	B-body_part
+బాగానే	B-normal
+ఉన్నాయి.	O
+కళ్ళజోడు	O
+కూడా	O
+వాడలేదు.	O
+}
+
+{\intent	p: ఇప్పుడు కళ్ళు కొంచం మసకగా కనిపిస్తున్నాయి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+కళ్ళు	B-body_part
+కొంచం	O
+మసకగా	B-symptom
+కనిపిస్తున్నాయి.	B-bodily_process
+}
+
+{\intent	p: ఇప్పుడు నేను మళ్ళి lasik చేయించుకోవాలా లేకపోతే కళ్ళజోడు వాడాలా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+నేను	O
+మళ్ళి	O
+lasik	B-treatment
+చేయించుకోవాలా	O
+లేకపోతే	O
+కళ్ళజోడు	O
+వాడాలా?	O
+}
+
+{\intent	d: lasik laser అనేది ఇప్పుడు ప్రపంచ వ్యప్తంగా బాగా popular ఉన్న treatment.	MEDICAL_EXPLANATION}
+{\slot
+lasik	B-treatment
+laser	I-treatment
+అనేది	O
+ఇప్పుడు	O
+ప్రపంచ	O
+వ్యప్తంగా	O
+బాగా	O
+popular	O
+ఉన్న	O
+treatment.	B-treatment
+}
+
+{\intent	d: కళ్ళజోడు వద్దు, contact lensలు వద్దు అనుకునే వాళ్ళందరికీ	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళజోడు	O
+వద్దు,	O
+contact	O
+lensలు	O
+వద్దు	O
+అనుకునే	O
+వాళ్ళందరికీ	O
+}
+
+{\intent	d: so ప్రపంచవ్యప్తంగా ఎన్నో లక్షల మంది operations చేయించుకుంటున్నారు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ప్రపంచవ్యప్తంగా	O
+ఎన్నో	O
+లక్షల	O
+మంది	O
+operations	B-treatment
+చేయించుకుంటున్నారు.	O
+}
+
+{\intent	d: అయితే తరచుగా మనకు FAQ అంటే frequently asked question ఏంటి అంటే మళ్ళి వస్తుందా doctor గారు ఇది చేయించుకున్నాక అని?	INFO_REQUEST}
+{\slot
+అయితే	O
+తరచుగా	O
+మనకు	O
+FAQ	O
+అంటే	O
+frequently	O
+asked	O
+question	O
+ఏంటి	O
+అంటే	O
+మళ్ళి	O
+వస్తుందా	O
+doctor	B-medical_professional
+గారు	O
+ఇది	O
+చేయించుకున్నాక	O
+అని?	O
+}
+
+{\intent	d: so మీ సమస్య అదే. మళ్ళి ఏమన్నా మసకగా ఉంది అంటే తిరిగి వచ్చే అవకాశాలు ఒక 5 శాతం మందిలో ఉంటుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీ	O
+సమస్య	O
+అదే.	O
+మళ్ళి	O
+ఏమన్నా	O
+మసకగా	B-symptom
+ఉంది	O
+అంటే	O
+తిరిగి	O
+వచ్చే	O
+అవకాశాలు	O
+ఒక	O
+5	O
+శాతం	O
+మందిలో	O
+ఉంటుంది	O
+అండి.	O
+}
+

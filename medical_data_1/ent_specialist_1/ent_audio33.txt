@@ -1,0 +1,196 @@
+{\intent	d: పేరు?	INFO_REQUEST}
+{\slot
+పేరు?	O
+}
+
+{\intent	p: Sravan	ANSWER}
+{\slot
+Sravan	B-name
+}
+
+{\intent	d: age, 48	ANSWER}
+{\slot
+age,	O
+48	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: sir ఈ మందులు 1 month వాడిన sir.	STATEMENT}
+{\slot
+sir	O
+ఈ	O
+మందులు	B-medicine
+1	B-time_period
+month	I-time_period
+వాడిన	O
+sir.	O
+}
+
+{\intent	d: ఈ మందులు 1 month వాడినవ్.	ACK}
+{\slot
+ఈ	O
+మందులు	B-medicine
+1	B-time_period
+month	I-time_period
+వాడినవ్.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: sir ఈ నాలుక పగులుడు కుడా బాగా ఉండే sir అవి ఇప్పుడు వేసుకున్న కాడ నుంచి 4, 5 నెలల కొంచం	STATEMENT}
+{\slot
+sir	O
+ఈ	O
+నాలుక	B-body_part
+పగులుడు	B-symptom
+కుడా	O
+బాగా	B-intensity
+ఉండే	O
+sir	O
+అవి	O
+ఇప్పుడు	B-time_period
+వేసుకున్న	O
+కాడ	O
+నుంచి	O
+4,	B-time_period
+5	B-time_period
+నెలల	I-time_period
+కొంచం	O
+}
+
+{\intent	d: ఆ ok	ACK}
+{\slot
+ఆ	O
+ok	O
+}
+
+{\intent	p: తరువాత చెవులు sir, ఇప్పుడు ఉన్నట్లు ఉండయి sir. అప్పుడప్పుడు బాగా అయితాయి, అప్పుడప్పుడు..	STATEMENT}
+{\slot
+తరువాత	B-time_period
+చెవులు	B-body_part
+sir,	O
+ఇప్పుడు	B-time_period
+ఉన్నట్లు	O
+ఉండయి	O
+sir.	O
+అప్పుడప్పుడు	B-time_period
+బాగా	B-intensity
+అయితాయి,	O
+అప్పుడప్పుడు..	O
+}
+
+{\intent	p: night వేసుకున్న sir,	STATEMENT}
+{\slot
+night	B-time_period
+వేసుకున్న	O
+sir,	O
+}
+
+{\intent	p: మీ దెగ్గరనే వాడిన.	STATEMENT}
+{\slot
+మీ	O
+దెగ్గరనే	O
+వాడిన.	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఇది?	ACTION_DIR}
+{\slot
+ఇది?	O
+}
+
+{\intent	d: audiogram చెప్పించినావా?	INFO_REQUEST}
+{\slot
+audiogram	B-mtest
+చెప్పించినావా?	O
+}
+
+{\intent	p: ఆ చెప్పించిన sir, ఈ రోజూ పట్టుకరాలేదు sir, ఇదివరకు పట్టుకొచ్చేది నేను.	ANSWER}
+{\slot
+ఆ	O
+చెప్పించిన	O
+sir,	O
+ఈ	O
+రోజూ	O
+పట్టుకరాలేదు	O
+sir,	O
+ఇదివరకు	O
+పట్టుకొచ్చేది	O
+నేను.	O
+}
+
+{\intent	d: అది ఎంత ఉండే అది?	INFO_REQUEST}
+{\slot
+అది	O
+ఎంత	O
+ఉండే	O
+అది?	O
+}
+
+{\intent	p: తక్వనే ఉంది.	ANSWER}
+{\slot
+తక్వనే	O
+ఉంది.	O
+}
+
+{\intent	d: ఆహా.	ACK}
+{\slot
+ఆహా.	O
+}
+
+{\intent	p: అయితే అప్పటిలాగా లేదు sir soundలు అప్పుడు బాగా ఉండే audiogram చేయించినప్పుడు	STATEMENT}
+{\slot
+అయితే	O
+అప్పటిలాగా	B-time_period
+లేదు	B-negative
+sir	O
+soundలు	B-bodily_process
+అప్పుడు	B-time_period
+బాగా	B-intensity
+ఉండే	O
+audiogram	B-mtest
+చేయించినప్పుడు	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అప్పుడపుడైతే ఆ అయితా కనబడుతలేదు కానీ అప్పుడప్పుడు మళ్ళ గుయ్యి అని వినిపించినట్లు అయితాంది.	STATEMENT}
+{\slot
+అప్పుడపుడైతే	B-time_period
+ఆ	O
+అయితా	O
+కనబడుతలేదు	O
+కానీ	O
+అప్పుడప్పుడు	B-time_period
+మళ్ళ	O
+గుయ్యి	B-symptom
+అని	O
+వినిపించినట్లు	B-bodily_process
+అయితాంది.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+

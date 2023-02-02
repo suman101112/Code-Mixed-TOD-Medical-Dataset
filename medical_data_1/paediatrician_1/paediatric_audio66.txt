@@ -1,0 +1,182 @@
+{\intent	d: చెప్పమ్మా ఏమైంది	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏమైంది	O
+}
+
+{\intent	p: బాబుకు sir, జ్వరం వచ్చింది	ANSWER}
+{\slot
+బాబుకు	B-person
+sir,	O
+జ్వరం	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: ఏం పేరు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా?	O
+}
+
+{\intent	p: kiran Raju	ANSWER}
+{\slot
+kiran	B-name
+Raju	I-name
+}
+
+{\intent	p1: మెడలు నొస్తాన్నయనీ అని.	STATEMENT}
+{\slot
+మెడలు	B-body_part
+నొస్తాన్నయనీ	B-symptom
+అని.	O
+}
+
+{\intent	d: కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+}
+
+{\intent	p1: జ్వరం వస్తాంది, 2 రోజుల నుంచి దగ్గు బాగా లేస్తాంది.	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+వస్తాంది,	O
+2	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+దగ్గు	B-symptom
+బాగా	B-intensity
+లేస్తాంది.	O
+}
+
+{\intent	d: 101.5	STATEMENT}
+{\slot
+101.5	B-mtest_value
+}
+
+{\intent	p1: కడుపు నొప్పి లేస్తాంది అంటాడు.	STATEMENT}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తాంది	O
+అంటాడు.	O
+}
+
+{\intent	d: ఇట్ల అను, ఇట్ల అను	ACTION_DIR}
+{\slot
+ఇట్ల	O
+అను,	O
+ఇట్ల	O
+అను	O
+}
+
+{\intent	d: నోప్పి ఏ positionలో నొస్తుంది?	INFO_REQUEST}
+{\slot
+నోప్పి	B-symptom
+ఏ	O
+positionలో	O
+నొస్తుంది?	O
+}
+
+{\intent	d: ఎక్కడ నొస్తాంది?	REPEAT_REPHRASE}
+{\slot
+ఎక్కడ	O
+నొస్తాంది	B-symptom
+}
+
+{\intent	p: ఇక్కడ	ANSWER}
+{\slot
+ఇక్కడ	B-location
+}
+
+{\intent	d: ఎన్ని రోజులు అయింది నొప్పి	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది	O
+నొప్పి	B-symptom
+}
+
+{\intent	p: చాలా రోజులే అయితాంది	ANSWER}
+{\slot
+చాలా	B-intensity
+రోజులే	B-time_period
+అయితాంది	O
+}
+
+{\intent	d: ఎంత 10 రోజులు అయిందా?	INFO_REQUEST}
+{\slot
+ఎంత	O
+10	B-time_period
+రోజులు	I-time_period
+అయిందా?	O
+}
+
+{\intent	d: జ్వరం రాబట్టి ఎన్ని రోజులు అయింది	REPEAT_REPHRASE}
+{\slot
+జ్వరం	B-symptom
+రాబట్టి	O
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది	O
+}
+
+{\intent	p: 3 రోజులు అయితాంది	ANSWER}
+{\slot
+3	B-time_period
+రోజులు	I-time_period
+అయితాంది	O
+}
+
+{\intent	p: కానీ sir బాగా బక్కగా అయితాండు	STATEMENT}
+{\slot
+కానీ	O
+sir	O
+బాగా	B-intensity
+బక్కగా	B-symptom
+అయితాండు	O
+}
+
+{\intent	d: బక్కగా కాదు పొడుగ్గా అయితున్నడు	MEDICAL_EXPLANATION}
+{\slot
+బక్కగా	B-symptom
+కాదు	B-negative
+పొడుగ్గా	O
+అయితున్నడు	O
+}
+
+{\intent	d: 26 kgలు ఉన్నాడు	STATEMENT}
+{\slot
+26	B-bm
+kgలు	I-bm
+ఉన్నాడు	O
+}
+
+{\intent	d: దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: ఆ చాలా ఉంది	ANSWER}
+{\slot
+ఆ	O
+చాలా	B-intensity
+ఉంది	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఉంది	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	p1: 10 రోజుల నుంచి	ANSWER}
+{\slot
+10	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+}
+

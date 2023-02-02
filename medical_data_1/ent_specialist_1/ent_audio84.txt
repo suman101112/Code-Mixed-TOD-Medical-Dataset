@@ -1,0 +1,186 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Laxmi sir	ANSWER}
+{\slot
+Laxmi	B-name
+sir	O
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 60	ANSWER}
+{\slot
+60	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: గొంతులో పుండయినట్లు. మింగొస్తలేదు sir.	ANSWER}
+{\slot
+గొంతులో	B-body_part
+పుండయినట్లు.	B-symptom
+మింగొస్తలేదు	B-symptom
+sir.	O
+}
+
+{\intent	d: సక్కగా కుర్చో, సక్కగా కుర్చో అమ్మా	ACTION_DIR}
+{\slot
+సక్కగా	O
+కుర్చో,	O
+సక్కగా	O
+కుర్చో	O
+అమ్మా	O
+}
+
+{\intent	p: మొస వస్తలేదు	STATEMENT}
+{\slot
+మొస	B-bodily_process
+వస్తలేదు	B-negative
+}
+
+{\intent	d: ఇటు కుర్చో అమ్మా	ACTION_DIR}
+{\slot
+ఇటు	O
+కుర్చో	O
+అమ్మా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: కొంచం వెనక జరుగు, లే	ACTION_DIR}
+{\slot
+కొంచం	O
+వెనక	O
+జరుగు,	O
+లే	O
+}
+
+{\intent	d: ఆ,	ACTION_DIR}
+{\slot
+ఆ,	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయింది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది?	O
+}
+
+{\intent	p: ఇగ 5 6 రోజులు అయితాంది గొంతు	ANSWER}
+{\slot
+ఇగ	O
+5	B-time_period
+6	B-time_period
+రోజులు	I-time_period
+అయితాంది	O
+గొంతు	B-body_part
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: తలకాయ వంచు	ACTION_DIR}
+{\slot
+తలకాయ	B-body_part
+వంచు	O
+}
+
+{\intent	d: सर्दी, దగ్గు, ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी,	B-medical_condition
+దగ్గు,	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	p1: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	p1: దగ్గు మాత్రలు సుత తెచ్చుకున్న	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+మాత్రలు	B-medicine
+సుత	O
+తెచ్చుకున్న	O
+}
+
+{\intent	d: శ్వాస తీసుకో	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+తీసుకో	B-bodily_process
+}
+
+{\intent	d: దగ్గు బాగా ఉందా, రాత్రి పూట బాగా వస్తదా.	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+బాగా	B-intensity
+ఉందా,	O
+రాత్రి	B-time_period
+పూట	I-time_period
+బాగా	B-intensity
+వస్తదా.	O
+}
+
+{\intent	p1: ఆ వస్తది sir.	ANSWER}
+{\slot
+ఆ	O
+వస్తది	O
+sir.	O
+}
+
+{\intent	p: వస్తది, ఇగ దగ్గు మందుతోటి కొద్దిగా తక్వయింది.	STATEMENT}
+{\slot
+వస్తది,	O
+ఇగ	O
+దగ్గు	B-symptom
+మందుతోటి	B-medicine
+కొద్దిగా	B-intensity
+తక్వయింది.	B-normal
+}
+

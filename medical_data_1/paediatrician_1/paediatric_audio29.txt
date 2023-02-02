@@ -1,0 +1,94 @@
+{\intent	d: Vrunda?	INFO_REQUEST}
+{\slot
+Vrunda?	B-name
+}
+
+{\intent	p: Vrunda	ANSWER}
+{\slot
+Vrunda	B-name
+}
+
+{\intent	d: చెప్పండి ఏం అయింది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏం	O
+అయింది?	O
+}
+
+{\intent	p: జ్వరం ఉంది, fits వచ్చినాయి.	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+ఉంది,	O
+fits	B-medical_condition
+వచ్చినాయి.	O
+}
+
+{\intent	d: జ్వరంతోని కదా.	INFO_REQUEST}
+{\slot
+జ్వరంతోని	B-symptom
+కదా.	O
+}
+
+{\intent	d: జ్వరంతోని fits రావడం, కొద్ది జగ్రత్త పాటించాలి	ACTION_DIR}
+{\slot
+జ్వరంతోని	B-symptom
+fits	B-medical_condition
+రావడం,	O
+కొద్ది	O
+జగ్రత్త	O
+పాటించాలి	O
+}
+
+{\intent	d: first 6 years ఏ కారణం చేత జ్వరం వచ్చినా, జ్వరం మందు తో పాటు fits మొదటి 3 రోజూ మందు వేయ్యాలి.	ACTION_DIR}
+{\slot
+first	O
+6	B-time_period
+years	I-time_period
+ఏ	O
+కారణం	O
+చేత	O
+జ్వరం	B-symptom
+వచ్చినా,	O
+జ్వరం	B-symptom
+మందు	B-medicine
+తో	O
+పాటు	O
+fits	B-medical_condition
+మొదటి	O
+3	B-time_period
+రోజూ	I-time_period
+మందు	B-medicine
+వేయ్యాలి.	O
+}
+
+{\intent	d: గుడ్డ పెట్టి తుడవాలి	STATEMENT}
+{\slot
+గుడ్డ	O
+పెట్టి	O
+తుడవాలి	O
+}
+
+{\intent	d: పక్కకు తిప్పండి అంతే	ACTION_DIR}
+{\slot
+పక్కకు	O
+తిప్పండి	O
+అంతే	O
+}
+
+{\intent	d: కుడి పక్కకు తిప్పి ఒక 6 7 minutesలో మెలకువ రాకపోతే nearest hospitalలో admit చేయాలి.	ACTION_DIR}
+{\slot
+కుడి	O
+పక్కకు	O
+తిప్పి	O
+ఒక	O
+6	B-time_period
+7	B-time_period
+minutesలో	I-time_period
+మెలకువ	B-bodily_process
+రాకపోతే	B-negative
+nearest	O
+hospitalలో	B-place
+admit	O
+చేయాలి.	O
+}
+

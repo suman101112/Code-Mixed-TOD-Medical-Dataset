@@ -1,0 +1,181 @@
+{\intent	p: Satish అండి నా పేరు	STATEMENT}
+{\slot
+Satish	B-name
+అండి	O
+నా	O
+పేరు	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ నాకు ఒక 2 years నుంచి esophagus acid reflux అనేది ఎక్కువగా ఉందండీ	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+ఒక	O
+2	B-time_period
+years	B-time_period
+నుంచి	O
+esophagus	B-body_part
+acid	B-medical_condition
+reflux	I-medical_condition
+అనేది	O
+ఎక్కువగా	B-intensity
+ఉందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2 years కాదండి ఇంకా ఎక్కువే 4 years నుంచి ఉందండీ	STATEMENT}
+{\slot
+2	B-time_period
+years	I-time_period
+కాదండి	O
+ఇంకా	O
+ఎక్కువే	O
+4	B-time_period
+years	I-time_period
+నుంచి	O
+ఉందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది చాలా ఇబ్బంది పెట్టేస్తుందండి	STATEMENT}
+{\slot
+అది	O
+చాలా	O
+ఇబ్బంది	B-symptom
+పెట్టేస్తుందండి	O
+}
+
+{\intent	p: ఏది తిన్న పైకి కొట్టేయటం	STATEMENT}
+{\slot
+ఏది	O
+తిన్న	B-bodily_process
+పైకి	B-location
+కొట్టేయటం	B-symptom
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: కొద్దిగా uneasyness బాగా ఎక్కువ అండి. ఏ పని చేయలేక uneasyness	STATEMENT}
+{\slot
+కొద్దిగా	O
+uneasyness	B-symptom
+బాగా	O
+ఎక్కువ	B-intensity
+అండి.	O
+ఏ	O
+పని	B-symptom
+చేయలేక	I-symptom
+uneasyness	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అవునండీ.	ACK}
+{\slot
+అవునండీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే ఏమన్నారు doctor అంటే	HOLD}
+{\slot
+అంటే	O
+ఏమన్నారు	O
+doctor	B-medical_professional
+అంటే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ tube కింద ఏదైతే acid reflux పైకి వస్తుందో ఆ tube open అయింది అని అన్నారు	STATEMENT}
+{\slot
+ఆ	O
+tube	B-body_part
+కింద	O
+ఏదైతే	O
+acid	B-medical_condition
+reflux	B-medical_condition
+పైకి	B-location
+వస్తుందో	O
+ఆ	O
+tube	B-body_part
+open	B-symptom
+అయింది	I-symptom
+అని	O
+అన్నారు	O
+}
+
+{\intent	d: loose అయిపోయింది	STATEMENT}
+{\slot
+loose	B-symptom
+అయిపోయింది	I-symptom
+}
+
+{\intent	p: అవును అండి loose అయింది అని అన్నారు	ACK}
+{\slot
+అవును	O
+అండి	O
+loose	B-symptom
+అయింది	I-symptom
+అని	O
+అన్నారు	O
+}
+
+{\intent	d: అవును	ACK}
+{\slot
+అవును	O
+}
+
+{\intent	p: అది ఇంకా ఎలా madam	INFO_REQUEST}
+{\slot
+అది	O
+ఇంకా	O
+ఎలా	O
+madam	O
+}
+
+{\intent	d: ok Satishగారు మీరు చెప్తున్నది Gastroesophageal Reflux Disease దీన్నే GERD అంటుంటాం	DIAGNOSIS}
+{\slot
+ok	O
+Satishగారు	B-name
+మీరు	O
+చెప్తున్నది	O
+Gastroesophageal	B-medical_condition
+Reflux	B-medical_condition
+Disease	B-medical_condition
+దీన్నే	O
+GERD	B-medical_condition
+అంటుంటాం	O
+}
+

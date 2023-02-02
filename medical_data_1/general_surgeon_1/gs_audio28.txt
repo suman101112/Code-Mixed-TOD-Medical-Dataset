@@ -1,0 +1,156 @@
+{\intent	d: IBS complaint ఉంది ok.	STATEMENT}
+{\slot
+IBS	B-symptom
+complaint	I-symptom
+ఉంది	O
+ok.	O
+}
+
+{\intent	p: ఆ అప్పుడు 5 years నుంచి ఉంది.	STATEMENT}
+{\slot
+ఆ	O
+అప్పుడు	B-time_period
+5	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది.	O
+}
+
+{\intent	p: ulcer వచ్చేస్తుంది ఏదైనా తిన్న కొద్దిగా junk food అంటే కొద్దిగా oil food తీసుకుంటే ఇబ్బంది వచ్చేస్తుందండి.	STATEMENT}
+{\slot
+ulcer	B-medical_condition
+వచ్చేస్తుంది	O
+ఏదైనా	O
+తిన్న	O
+కొద్దిగా	O
+junk	B-food_substance
+food	I-food_substance
+అంటే	O
+కొద్దిగా	O
+oil	B-food_substance
+food	I-food_substance
+తీసుకుంటే	O
+ఇబ్బంది	O
+వచ్చేస్తుందండి.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఇప్పుడు ఏమైనా medicines	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏమైనా	O
+medicines	B-medicine
+}
+
+{\intent	p: ఈ మొత్తం వాడడం మానేసాను, medicines వాడినంత సేపు ఎక్కువైతుందని మొత్తం వాడడం మానేసాను	ANSWER}
+{\slot
+ఈ	O
+మొత్తం	O
+వాడడం	O
+మానేసాను,	O
+medicines	B-medicine
+వాడినంత	O
+సేపు	O
+ఎక్కువైతుందని	B-intensity
+మొత్తం	O
+వాడడం	O
+మానేసాను	O
+}
+
+{\intent	p: 4 years నుంచి వాడలే medicines	STATEMENT}
+{\slot
+4	B-time_period
+years	I-time_period
+నుంచి	O
+వాడలే	O
+medicines	B-medicine
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: బరువు ఎంత ఉంటారు సుమారుగా?	INFO_REQUEST}
+{\slot
+బరువు	B-bm
+ఎంత	O
+ఉంటారు	O
+సుమారుగా?	O
+}
+
+{\intent	p: నేను వచ్చేసి 73, 72	ANSWER}
+{\slot
+నేను	O
+వచ్చేసి	O
+73,	B-bm
+72	B-bm
+}
+
+{\intent	d: 72	ACK}
+{\slot
+72	B-bm
+}
+
+{\intent	d: age ఎంత అండి?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: age వచ్చేసి 29 అండి.	ANSWER}
+{\slot
+age	O
+వచ్చేసి	O
+29	B-age
+అండి.	O
+}
+
+{\intent	d: 29, 72	ACK}
+{\slot
+29,	B-age
+72	B-bm
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా ఇది కాకుండా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా	O
+ఇది	O
+కాకుండా?	O
+}
+
+{\intent	p: ఏందండి?	SNU}
+{\slot
+ఏందండి?	O
+}
+
+{\intent	d: ఇంకేమైనా doubts ఇది కాకుండా?	REPEAT_REPHRASE}
+{\slot
+ఇంకేమైనా	O
+doubts	O
+ఇది	O
+కాకుండా?	O
+}
+
+{\intent	p: అదే motionలోనే gum పడుతదండి	ANSWER}
+{\slot
+అదే	O
+motionలోనే	B-bodily_process
+gum	B-body_part
+పడుతదండి	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+

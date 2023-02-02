@@ -1,0 +1,120 @@
+{\intent	p: నాకు leftside kidneyలో 4.7mm stone ఉంది madamగారు	STATEMENT}
+{\slot
+నాకు	O
+leftside	B-location
+kidneyలో	B-body_part
+4.7mm	B-mtest_value
+stone	B-body_substance
+ఉంది	O
+madamగారు	O
+}
+
+{\intent	d: ఆ చెప్పండి	ACTION_DIR}
+{\slot
+ఆ	O
+చెప్పండి	O
+}
+
+{\intent	p: దానివల్ల కొంచం lightగా pain వస్తుంది	STATEMENT}
+{\slot
+దానివల్ల	O
+కొంచం	O
+lightగా	O
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	p: మరి అది laser system లేదా water ద్వారా పోతదా లేదా tablets ద్వారా పోయిద్దా?	INFO_REQUEST}
+{\slot
+మరి	O
+అది	O
+laser	B-treatment
+system	I-treatment
+లేదా	O
+water	B-food_substance
+ద్వారా	O
+పోతదా	O
+లేదా	O
+tablets	B-medicine
+ద్వారా	O
+పోయిద్దా?	O
+}
+
+{\intent	d: so normalగా 4.5mm stone నొప్పి, bleeding అయితా ఉంటే గిన laser తీయాల్సి పడుతుంది	ANSWER}
+{\slot
+so	O
+normalగా	O
+4.5mm	B-mtest_value
+stone	B-body_substance
+నొప్పి,	B-symptom
+bleeding	B-medical_condition
+అయితా	O
+ఉంటే	O
+గిన	O
+laser	B-treatment
+తీయాల్సి	O
+పడుతుంది	O
+}
+
+{\intent	d: ఎందుకంటే గిన ఆ small stone బయటికి రాలేదు అంటే there might be a stricture formation అయ్యే chances ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+గిన	O
+ఆ	O
+small	O
+stone	B-body_substance
+బయటికి	O
+రాలేదు	O
+అంటే	O
+there	B-location
+might	O
+be	O
+a	O
+stricture	B-medical_condition
+formation	I-medical_condition
+అయ్యే	O
+chances	O
+ఉంటుంది	O
+}
+
+{\intent	p: stricture?	INFO_REQUEST}
+{\slot
+stricture?	B-medical_condition
+}
+
+{\intent	d: stricture అంటే ఆ stone pipeలో,	ANSWER}
+{\slot
+stricture	B-medical_condition
+అంటే	O
+ఆ	O
+stone	B-body_substance
+pipeలో,	B-body_part
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: stricture అంటే pipe సన్నగా అయ్యి ఉంటుంది అప్పుడు ఆ సన్న stone కూడా struck అయితుంది	MEDICAL_EXPLANATION}
+{\slot
+stricture	B-medical_condition
+అంటే	O
+pipe	B-body_part
+సన్నగా	B-symptom
+అయ్యి	O
+ఉంటుంది	O
+అప్పుడు	B-time_period
+ఆ	O
+సన్న	O
+stone	B-body_substance
+కూడా	O
+struck	B-symptom
+అయితుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

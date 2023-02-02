@@ -1,0 +1,183 @@
+{\intent	p: सर्दी बहुत हो रहा sir.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+बहुत	B-intensity
+हो	O
+रहा	O
+sir.	O
+}
+
+{\intent	d: नाम बोलो.	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो.	O
+}
+
+{\intent	p: सर्दी तो बहुत हो रहा sir.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+तो	O
+बहुत	B-intensity
+हो	O
+रहा	O
+sir.	O
+}
+
+{\intent	p: सर्दी बहुत हो रहा sir	REPEAT_REPHRASE}
+{\slot
+सर्दी	B-medical_condition
+बहुत	B-intensity
+हो	O
+रहा	O
+sir	O
+}
+
+{\intent	d: सर्दी बहुत हो गया?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+बहुत	B-intensity
+हो	O
+गया?	O
+}
+
+{\intent	p: हां साहब	ANSWER}
+{\slot
+हां	O
+साहब	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: दमा नहीं लेना आता	INFO_REQUEST}
+{\slot
+दमा	B-medical_condition
+नहीं	B-negative
+लेना	O
+आता	O
+}
+
+{\intent	d: नाम क्या?	INFO_REQUEST}
+{\slot
+नाम	O
+क्या?	O
+}
+
+{\intent	p: sarvar	ANSWER}
+{\slot
+sarvar	B-name
+}
+
+{\intent	d: sarvar	ACK}
+{\slot
+sarvar	B-name
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: छींका का बहुत आ रहे?	INFO_REQUEST}
+{\slot
+छींका	B-symptom
+का	O
+बहुत	B-intensity
+आ	O
+रहे?	O
+}
+
+{\intent	p: हां साहब	ANSWER}
+{\slot
+हां	O
+साहब	O
+}
+
+{\intent	d: नाक मैं से नेट जैसा आ रहा पानी जैसा आ रहा?	INFO_REQUEST}
+{\slot
+नाक	B-body_part
+मैं	O
+से	O
+नेट	B-symptom
+जैसा	O
+आ	O
+रहा	O
+पानी	B-food_substance
+जैसा	O
+आ	O
+रहा?	O
+}
+
+{\intent	p: पानी जैसा.	ANSWER}
+{\slot
+पानी	B-food_substance
+जैसा.	O
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: पानी जैसा .	REPEAT_REPHRASE}
+{\slot
+पानी	B-food_substance
+जैसा	O
+.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: सर दर्द, बुखार, ऐसा कुछ नहीं है?	INFO_REQUEST}
+{\slot
+सर	B-body_part
+दर्द,	B-symptom
+बुखार,	O
+ऐसा	O
+कुछ	O
+नहीं	B-negative
+है?	O
+}
+
+{\intent	p: नहीं sir. सर्दी दमा नहीं ले रहीं	ANSWER}
+{\slot
+नहीं	B-negative
+sir.	O
+सर्दी	B-medical_condition
+दमा	B-medical_condition
+नहीं	O
+ले	O
+रहीं	O
+}
+
+{\intent	d: खांसी?	INFO_REQUEST}
+{\slot
+खांसी?	B-symptom
+}
+
+{\intent	p: खांसी नहीं है है. बलगम आ रहा.	ANSWER}
+{\slot
+खांसी	B-symptom
+नहीं	B-negative
+है	O
+है.	O
+बलगम	B-symptom
+आ	O
+रहा.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

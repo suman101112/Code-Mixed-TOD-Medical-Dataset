@@ -1,0 +1,224 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఆ madam problem అంటే మాకు పెళ్ళై 4 సంవత్సరాలు అయింది madam	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+problem	O
+అంటే	O
+మాకు	O
+పెళ్ళై	B-marital_status
+4	B-time_period
+సంవత్సరాలు	I-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: అయితే laproscopy కూడా చేయించినాము	STATEMENT}
+{\slot
+అయితే	O
+laproscopy	B-treatment
+కూడా	O
+చేయించినాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: laproscopy అయినా తరువాత just 10 days back confirm అయింది madam	STATEMENT}
+{\slot
+laproscopy	B-treatment
+అయినా	O
+తరువాత	O
+just	O
+10	B-time_period
+days	I-time_period
+back	I-time_period
+confirm	B-mtest_value
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: అయితే laproscopy operation తరువాత 6 months tablets అన్నీ మనేసినం actualగా hyderabad Mamata hospitalలో	STATEMENT}
+{\slot
+అయితే	O
+laproscopy	B-treatment
+operation	I-treatment
+తరువాత	B-time_period
+6	I-time_period
+months	I-time_period
+tablets	B-medicine
+అన్నీ	O
+మనేసినం	O
+actualగా	O
+hyderabad	B-place
+Mamata	B-hospital_name
+hospitalలో	I-hospital_name
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే presentగా normalగా confirm అయింది madam	STATEMENT}
+{\slot
+అయితే	O
+presentగా	O
+normalగా	B-normal
+confirm	B-mtest_value
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే మనకు problem అయితే ఏం ఉండదు కదా madam	STATEMENT}
+{\slot
+అయితే	O
+మనకు	O
+problem	O
+అయితే	O
+ఏం	O
+ఉండదు	O
+కదా	O
+madam	O
+}
+
+{\intent	d: ఏం కాదు అండి ఇప్పుడు presentగా లోపల ఏం problems లేవు కదా నీటి బుడగలు కానీ అట్లాంటివి మీ mrsకి?	INFO_REQUEST}
+{\slot
+ఏం	O
+కాదు	B-negative
+అండి	O
+ఇప్పుడు	O
+presentగా	O
+లోపల	O
+ఏం	O
+problems	O
+లేవు	B-negative
+కదా	O
+నీటి	B-medical_condition
+బుడగలు	I-medical_condition
+కానీ	O
+అట్లాంటివి	O
+మీ	O
+mrsకి	B-familal
+}
+
+{\intent	p: అయితే first అవి ఉన్నాయి అన్నారు దానికి clear చేసేసినట్లు	ANSWER}
+{\slot
+అయితే	O
+first	B-frequency
+అవి	O
+ఉన్నాయి	O
+అన్నారు	O
+దానికి	O
+clear	O
+చేసేసినట్లు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: ఇంతకు ముందు కొద్దిగా problem ఉంది కాబట్టి జగ్రత్తగా ఉండాలండి.	STATEMENT}
+{\slot
+ఇంతకు	O
+ముందు	O
+కొద్దిగా	O
+problem	O
+ఉంది	O
+కాబట్టి	O
+జగ్రత్తగా	O
+ఉండాలండి.	O
+}
+
+{\intent	d: pregnancy confirm అయింది మంచిదే కానీ జాగ్రత్తగా ఉండాలి, every month checkupsకి వెళ్ళాలి, చూయించుకోవాలి, correctగా scans చేయించుకోవాలి, బరువులు ఎత్తకూడదు, ఎక్కువ మంసాహరం బయట వస్తూవులు ఎక్కువ తినకూడదు	STATEMENT}
+{\slot
+pregnancy	B-bodily_process
+confirm	B-mtest_value
+అయింది	O
+మంచిదే	O
+కానీ	O
+జాగ్రత్తగా	O
+ఉండాలి,	O
+every	B-time_period
+month	I-time_period
+checkupsకి	B-mtest
+వెళ్ళాలి,	O
+చూయించుకోవాలి,	O
+correctగా	O
+scans	B-mtest
+చేయించుకోవాలి,	O
+బరువులు	O
+ఎత్తకూడదు,	O
+ఎక్కువ	B-intensity
+మంసాహరం	B-food_substance
+బయట	O
+వస్తూవులు	O
+ఎక్కువ	B-intensity
+తినకూడదు	B-negative
+}
+
+{\intent	d: శారికిక ఒత్తిడి తర్వాత మనసిక ఒత్తిడి ఏం పెట్టుకోకూడదు	STATEMENT}
+{\slot
+శారికిక	B-body_part
+ఒత్తిడి	B-symptom
+తర్వాత	B-time_period
+మనసిక	B-body_part
+ఒత్తిడి	B-symptom
+ఏం	O
+పెట్టుకోకూడదు	B-negative
+}
+
+{\intent	d: so ఇవన్నీ జాగ్రత్తగా ఉండాలి,	STATEMENT}
+{\slot
+so	O
+ఇవన్నీ	O
+జాగ్రత్తగా	O
+ఉండాలి,	O
+}
+
+{\intent	d: motionకి strain అవ్వడం, అవ్వకూడదు అన్నమాట	STATEMENT}
+{\slot
+motionకి	B-bodily_process
+strain	B-medical_condition
+అవ్వడం,	O
+అవ్వకూడదు	B-negative
+అన్నమాట	O
+}
+

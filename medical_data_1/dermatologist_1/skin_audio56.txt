@@ -1,0 +1,41 @@
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 28, m	ANSWER}
+{\slot
+28,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: పొక్కులు వస్తున్నాయి sir. మందులు వాడుతున్నప్పుడు ఎండిపోతున్నాయి.	ANSWER}
+{\slot
+పొక్కులు	B-symptom
+వస్తున్నాయి	I-symptom
+sir.	O
+మందులు	B-treatment
+వాడుతున్నప్పుడు	I-treatment
+ఎండిపోతున్నాయి.	B-normal
+}
+
+{\intent	p: కడిగేటప్పుడు నొప్పి లేస్తుంది. ఇబ్బంది అవుతుంది.	STATEMENT}
+{\slot
+కడిగేటప్పుడు	B-time_period
+నొప్పి	B-symptom
+లేస్తుంది.	I-symptom
+ఇబ్బంది	B-symptom
+అవుతుంది.	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

@@ -1,0 +1,226 @@
+{\intent	d: కుర్చో అమ్మ	ACTION_DIR}
+{\slot
+కుర్చో	O
+అమ్మ	O
+}
+
+{\intent	d: పేరు చెప్పు	ACTION_DIR}
+{\slot
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Niharika	STATEMENT}
+{\slot
+Niharika	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 21 sir	ANSWER}
+{\slot
+21	B-age
+sir	O
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది అమ్మ?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+అమ్మ?	O
+}
+
+{\intent	p: sinusitis అయింది	STATEMENT}
+{\slot
+sinusitis	B-symptom
+అయింది	O
+}
+
+{\intent	d: sinusitis కాదు అమ్మా. నీ బాధ ఏందో చెప్పు.	ACTION_DIR}
+{\slot
+sinusitis	B-symptom
+కాదు	O
+అమ్మా.	O
+నీ	O
+బాధ	B-symptom
+ఏందో	O
+చెప్పు.	O
+}
+
+{\intent	p: జలుబు	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+}
+
+{\intent	d: తుమ్ములు వస్తాయా బాగా.	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+వస్తాయా	O
+బాగా.	B-intensity
+}
+
+{\intent	p: అవును.	ANSWER}
+{\slot
+అవును.	B-positive
+}
+
+{\intent	p1: వస్తున్నాయి sir.	STATEMENT}
+{\slot
+వస్తున్నాయి	B-positive
+sir.	O
+}
+
+{\intent	p1: 2 days నుంచి ఇదంతా నొస్తుందని అంట sir.	STATEMENT}
+{\slot
+2	B-time_period
+days	I-time_period
+నుంచి	O
+ఇదంతా	O
+నొస్తుందని	B-symptom
+అంట	O
+sir.	O
+}
+
+{\intent	d: ఇది sinusitis.	DIAGNOSIS}
+{\slot
+ఇది	O
+sinusitis.	B-medical_condition
+}
+
+{\intent	d: జ్వరం వస్తుందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: lightగా అప్పుడప్పుడు	ANSWER}
+{\slot
+lightగా	B-intensity
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	d: ముక్కు నుంచి నీరు లాగా వస్తుందా? చీమిడి లాగా వస్తుందా?	INFO_REQUEST}
+{\slot
+ముక్కు	B-body_part
+నుంచి	O
+నీరు	B-food_substance
+లాగా	O
+వస్తుందా?	O
+చీమిడి	B-symptom
+లాగా	O
+వస్తుందా?	O
+}
+
+{\intent	p: చీమిడి లాగా.	ANSWER}
+{\slot
+చీమిడి	B-symptom
+లాగా.	O
+}
+
+{\intent	p1: ఇక్కడ బాగా నొస్తుందంట sir	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+బాగా	B-intensity
+నొస్తుందంట	B-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p1: eyes కూడా కొంచం	HOLD}
+{\slot
+eyes	B-body_part
+కూడా	O
+కొంచం	B-intensity
+}
+
+{\intent	d: అంటే regular గా వస్తదా ఇలానే?	INFO_REQUEST}
+{\slot
+అంటే	O
+regular	O
+గా	O
+వస్తదా	O
+ఇలానే?	O
+}
+
+{\intent	p: winterలో ఎక్కువ వస్తది.	ANSWER}
+{\slot
+winterలో	B-time_period
+ఎక్కువ	B-intensity
+వస్తది.	O
+}
+
+{\intent	p1: 10 days నుంచి అలానే continue ఉంటుంది.	STATEMENT}
+{\slot
+10	B-time_period
+days	I-time_period
+నుంచి	O
+అలానే	O
+continue	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఒక 1 weekకి మందులు రాసి ఇస్తా	STATEMENT}
+{\slot
+ఒక	O
+1	B-time_period
+weekకి	I-time_period
+మందులు	B-medicine
+రాసి	O
+ఇస్తా	O
+}
+
+{\intent	p1: వాడినవ్ కదా, నువ్వు వాడే మందులు ఏంటి?	INFO_REQUEST}
+{\slot
+వాడినవ్	O
+కదా,	O
+నువ్వు	O
+వాడే	O
+మందులు	B-medicine
+ఏంటి?	O
+}
+
+{\intent	p: Montelukast	ANSWER}
+{\slot
+Montelukast	B-medicine
+}
+
+{\intent	p1: ఆ sir అదే	ACK}
+{\slot
+ఆ	O
+sir	O
+అదే	O
+}
+
+{\intent	d: ఏ లేదమ్మ antibiotic వాడాలి.	STATEMENT}
+{\slot
+ఏ	O
+లేదమ్మ	O
+antibiotic	B-medicine
+వాడాలి.	O
+}
+
+{\intent	p1: antibiotic ఆ?	INFO_REQUEST}
+{\slot
+antibiotic	B-medicine
+ఆ?	O
+}
+
+{\intent	p: ఆ antibiotic వాడుతాను.	COMMIT}
+{\slot
+ఆ	O
+antibiotic	B-medicine
+వాడుతాను.	O
+}
+

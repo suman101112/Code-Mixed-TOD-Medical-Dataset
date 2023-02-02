@@ -1,0 +1,177 @@
+{\intent	d: చెప్పండమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Sujata sir	ANSWER}
+{\slot
+Sujata	B-name
+sir	O
+}
+
+{\intent	d: చెప్పండి problem చెప్పండి.	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+problem	O
+చెప్పండి.	O
+}
+
+{\intent	p: కడుపులో నొస్తుంది sir	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+నొస్తుంది	B-symptom
+sir	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: దెగ్గర దెగ్గర 2 3 వారలు అయితాంది	ANSWER}
+{\slot
+దెగ్గర	O
+దెగ్గర	O
+2	B-time_period
+3	B-time_period
+వారలు	I-time_period
+అయితాంది	O
+}
+
+{\intent	d: ఎక్కడ నొప్పి, ఎటు side?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+నొప్పి,	B-symptom
+ఎటు	O
+side?	B-location
+}
+
+{\intent	p: ఒక side వస్తుంది sir, బాగా లేస్తాంది	ANSWER}
+{\slot
+ఒక	O
+side	B-location
+వస్తుంది	O
+sir,	O
+బాగా	B-intensity
+లేస్తాంది	O
+}
+
+{\intent	d: మూత్రంలో మంట అట్ల ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+అట్ల	O
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: మంట ఏం లేదు	ANSWER}
+{\slot
+మంట	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: జ్వరం ఏమైనా వస్తుందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఏమైనా	O
+వస్తుందా?	O
+}
+
+{\intent	p: జ్వరమొస్తాంది.	ANSWER}
+{\slot
+జ్వరమొస్తాంది.	B-symptom
+}
+
+{\intent	p: నడిస్తే నడుముల నొస్తాంది, కళ్ళు గుంజుతాంది	STATEMENT}
+{\slot
+నడిస్తే	B-bodily_process
+నడుముల	B-body_part
+నొస్తాంది,	B-symptom
+కళ్ళు	B-body_part
+గుంజుతాంది	B-symptom
+}
+
+{\intent	p: నడువొస్తలే, కడుపు బాగా ఉబ్బుకొస్తాంది,, ఇట్ల tightగా అయితాంది	STATEMENT}
+{\slot
+నడువొస్తలే,	B-symptom
+కడుపు	B-body_part
+బాగా	B-intensity
+ఉబ్బుకొస్తాంది,,	B-symptom
+ఇట్ల	O
+tightగా	B-symptom
+అయితాంది	O
+}
+
+{\intent	d: ఏం లేదు అమ్మా, చిన్న రవుతు ఉంది	DIAGNOSIS}
+{\slot
+ఏం	O
+లేదు	O
+అమ్మా,	O
+చిన్న	O
+రవుతు	B-body_substance
+ఉంది	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎడమ వైపు	STATEMENT}
+{\slot
+ఎడమ	B-location
+వైపు	I-location
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అందుకే నొస్తుంది	MEDICAL_EXPLANATION}
+{\slot
+అందుకే	O
+నొస్తుంది	B-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: నీళ్లు బాగా తాగితే	ACTION_DIR}
+{\slot
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగితే	B-bodily_process
+}
+
+{\intent	d: and మందులు రాసి ఇస్తాం కొన్ని	COMMIT}
+{\slot
+and	O
+మందులు	B-medicine
+రాసి	O
+ఇస్తాం	O
+కొన్ని	O
+}
+
+{\intent	d: తగ్గిపోతుంది	STATEMENT}
+{\slot
+తగ్గిపోతుంది	O
+}
+
+{\intent	d: ఆ రవుతు అనేది మూత్రంలోనే పడిపోతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+రవుతు	B-body_substance
+అనేది	O
+మూత్రంలోనే	B-body_substance
+పడిపోతుంది.	O
+}
+

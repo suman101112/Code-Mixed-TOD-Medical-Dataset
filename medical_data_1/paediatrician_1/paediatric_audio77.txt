@@ -1,0 +1,219 @@
+{\intent	d: good afternoon	GREETING}
+{\slot
+good	O
+afternoon	B-time_period
+}
+
+{\intent	p: sir మా బాబుకి 5 years ఉన్నాయి	STATEMENT}
+{\slot
+sir	O
+మా	O
+బాబుకి	B-familal
+5	B-age
+years	I-age
+ఉన్నాయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే 3 years నుంచే school కి పంపిస్తున్నాము	STATEMENT}
+{\slot
+అయితే	O
+3	B-age
+years	I-age
+నుంచే	O
+school	B-place
+కి	O
+పంపిస్తున్నాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: nursery, LKG అని	STATEMENT}
+{\slot
+nursery,	B-profession
+LKG	B-profession
+అని	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే బాబు oralగా చెప్తున్నాడు కానీ, written part ఏం రాయలేకపోతున్నాడు	STATEMENT}
+{\slot
+అయితే	O
+బాబు	B-person
+oralగా	O
+చెప్తున్నాడు	O
+కానీ,	O
+written	O
+part	O
+ఏం	O
+రాయలేకపోతున్నాడు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒకవేల రాసినా కూడా limited amount of timeలో మరచిపోతున్నాడు	STATEMENT}
+{\slot
+ఒకవేల	O
+రాసినా	O
+కూడా	O
+limited	O
+amount	O
+of	O
+timeలో	B-time_period
+మరచిపోతున్నాడు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: teacherలు ఎంత చెప్పినా కూడా అతనికి రావట్లేదు	STATEMENT}
+{\slot
+teacherలు	O
+ఎంత	O
+చెప్పినా	O
+కూడా	O
+అతనికి	O
+రావట్లేదు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే ఇప్పుడు 2 years అయిపోయింది	STATEMENT}
+{\slot
+అంటే	O
+ఇప్పుడు	O
+2	B-time_period
+years	I-time_period
+అయిపోయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: still he is going on A B C D only sir	STATEMENT}
+{\slot
+still	O
+he	O
+is	O
+going	O
+on	O
+A	O
+B	O
+C	O
+D	O
+only	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అంటే బాబు మీగితా విషయలలో respond అవుతున్నాడు కదా బానే	INFO_REQUEST}
+{\slot
+అంటే	O
+బాబు	B-person
+మీగితా	O
+విషయలలో	O
+respond	O
+అవుతున్నాడు	O
+కదా	O
+బానే	O
+}
+
+{\intent	p: respond అవుతున్నాడు	ANSWER}
+{\slot
+respond	O
+అవుతున్నాడు	O
+}
+
+{\intent	p: అంటే milk packet తీసుకురా అంటే తీసుకువస్తున్నాడు	STATEMENT}
+{\slot
+అంటే	O
+milk	B-food_substance
+packet	O
+తీసుకురా	O
+అంటే	O
+తీసుకువస్తున్నాడు	O
+}
+
+{\intent	p: plus tap on చేయమంటే , on చేస్తున్నాడు	STATEMENT}
+{\slot
+plus	O
+tap	O
+on	O
+చేయమంటే	O
+,	O
+on	O
+చేస్తున్నాడు	O
+}
+
+{\intent	p: చిన్న చిన్న పనులు చేయమంటే చేస్తాడు sir	STATEMENT}
+{\slot
+చిన్న	O
+చిన్న	O
+పనులు	O
+చేయమంటే	O
+చేస్తాడు	O
+sir	O
+}
+
+{\intent	d: మాటలు?	INFO_REQUEST}
+{\slot
+మాటలు?	O
+}
+
+{\intent	p: sir	SNU}
+{\slot
+sir	O
+}
+
+{\intent	d: మాటలు?	INFO_REQUEST}
+{\slot
+మాటలు?	O
+}
+
+{\intent	p: మాటలు బానే మట్లాడతాడు sir, మంచిగానే మట్లాడతాడు	ANSWER}
+{\slot
+మాటలు	O
+బానే	B-normal
+మట్లాడతాడు	B-bodily_process
+sir,	O
+మంచిగానే	B-normal
+మట్లాడతాడు	B-bodily_process
+}
+
+{\intent	d: వదిలేయండి, పెద్ద ఏం పట్టించుకోవద్దు, దాదాపుగా ఏం problem లేదు.	STATEMENT}
+{\slot
+వదిలేయండి,	O
+పెద్ద	O
+ఏం	O
+పట్టించుకోవద్దు,	O
+దాదాపుగా	O
+ఏం	O
+problem	O
+లేదు.	O
+}
+

@@ -1,0 +1,280 @@
+{\intent	p: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: నాకు sugar వచ్చింది అండి	STATEMENT}
+{\slot
+నాకు	O
+sugar	B-medical_condition
+వచ్చింది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sugar కోసమని glyciphage 500mg ది వాడుతున్నాను	STATEMENT}
+{\slot
+sugar	B-medical_condition
+కోసమని	O
+glyciphage	B-medicine
+500mg	B-medicine_dose
+ది	O
+వాడుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ ఇంతకుముందు 1 tablet ఇచ్చారు, తరువాత 2 చేస్సారు, తరువాత 3 చేసారు	STATEMENT}
+{\slot
+ఆ	O
+ఇంతకుముందు	O
+1	B-frequency
+tablet	B-medicine
+ఇచ్చారు,	O
+తరువాత	O
+2	B-frequency
+చేస్సారు,	O
+తరువాత	O
+3	B-frequency
+చేసారు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకా ఇప్పుడు మళ్ళి power మార్చేసి morning 1000mg evening 1000mg ఇస్తున్నారండి	STATEMENT}
+{\slot
+ఇంకా	O
+ఇప్పుడు	O
+మళ్ళి	B-body_part
+power	B-medicine
+మార్చేసి	O
+morning	B-time_period
+1000mg	B-medicine_dose
+evening	B-time_period
+1000mg	B-medicine_dose
+ఇస్తున్నారండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు recentగా Vijaya diagnosticsలో test చేయించుకున్నాను	STATEMENT}
+{\slot
+ఇప్పుడు	O
+recentగా	O
+Vijaya	B-place
+diagnosticsలో	I-place
+test	B-mtest
+చేయించుకున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: test చేయించుకుంటే blood 8 percentకి వచ్చిందండీ	STATEMENT}
+{\slot
+test	B-mtest
+చేయించుకుంటే	O
+blood	B-body_substance
+8	B-mtest_value
+percentకి	I-mtest_value
+వచ్చిందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: blood కూడా చాలా తక్వయిందన్నమాట	STATEMENT}
+{\slot
+blood	B-body_substance
+కూడా	O
+చాలా	B-intensity
+తక్వయిందన్నమాట	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక పక్క blood improve కావడానికి ఏం తినాలో తెలియడంలేదు	INFO_REQUEST}
+{\slot
+ఒక	O
+పక్క	O
+blood	B-body_substance
+improve	O
+కావడానికి	O
+ఏం	O
+తినాలో	B-bodily_process
+తెలియడంలేదు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: sugar తగ్గాలి	ACTION_DIR}
+{\slot
+sugar	B-food_substance
+తగ్గాలి	O
+}
+
+{\intent	d: ok, fine fine	ACK}
+{\slot
+ok,	O
+fine	O
+fine	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు ఆ 3 tablets 1000mg వాడుతున్నారు కదా sugar controlలోనే ఉందా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఆ	O
+3	B-frequency
+tablets	B-medicine
+1000mg	B-medicine_dose
+వాడుతున్నారు	O
+కదా	O
+sugar	B-medical_condition
+controlలోనే	B-normal
+ఉందా?	O
+}
+
+{\intent	p: అది control అంటే, తగ్గుతున్నదండీ మళ్ళ పెరుగుతూనే ఉంది	ANSWER}
+{\slot
+అది	O
+control	B-normal
+అంటే,	O
+తగ్గుతున్నదండీ	O
+మళ్ళ	O
+పెరుగుతూనే	O
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: బరువు ఏమైనా అధికంగా ఉంటారా అమ్మా?	INFO_REQUEST}
+{\slot
+బరువు	B-bm
+ఏమైనా	O
+అధికంగా	B-symptom
+ఉంటారా	O
+అమ్మా?	O
+}
+
+{\intent	p: అంటే ఇప్పుడు ఇవి diagnostic centerలో కూడా చాలా తేడా వస్తున్నదండీ	STATEMENT}
+{\slot
+అంటే	O
+ఇప్పుడు	O
+ఇవి	O
+diagnostic	B-place
+centerలో	I-place
+కూడా	O
+చాలా	B-intensity
+తేడా	O
+వస్తున్నదండీ	O
+}
+
+{\intent	p: అందుకే మొన్న doubt వచ్చేసి, మొన్న fasting వచ్చేసి 145 ఉన్నది	STATEMENT}
+{\slot
+అందుకే	O
+మొన్న	B-time_period
+doubt	O
+వచ్చేసి,	O
+మొన్న	B-time_period
+fasting	B-bodily_process
+వచ్చేసి	O
+145	B-mtest_value
+ఉన్నది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది తర్వాత వచ్చేసి 153 ఉన్నది	STATEMENT}
+{\slot
+అది	O
+తర్వాత	B-time_period
+వచ్చేసి	O
+153	B-mtest_value
+ఉన్నది	O
+}
+
+{\intent	d: ok fine fine అమ్మా,	ACK}
+{\slot
+ok	O
+fine	O
+fine	O
+అమ్మా,	O
+}
+
+{\intent	d: అది 1000mcgతో అంతేనా?	INFO_REQUEST}
+{\slot
+అది	O
+1000mcgతో	B-medicine_dose
+అంతేనా?	O
+}
+
+{\intent	p: ఆ ఏంటండీ?	SNU}
+{\slot
+ఆ	O
+ఏంటండీ?	O
+}
+
+{\intent	d: 1000 tabletతో కదా మీరు వాడుతున్నా tablet తో.	REPEAT_REPHRASE}
+{\slot
+1000	B-medicine_dose
+tabletతో	I-medicine
+కదా	O
+మీరు	O
+వాడుతున్నా	O
+tablet	B-medicine
+తో.	O
+}
+
+{\intent	p: ఆ అవునండీ.	ANSWER}
+{\slot
+ఆ	O
+అవునండీ.	O
+}
+
+{\intent	d: ok fine fine	ACK}
+{\slot
+ok	O
+fine	O
+fine	O
+}
+

@@ -1,0 +1,91 @@
+{\intent	p: doctor గారు నా వయస్సు 50 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+50	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు sugar ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+sugar	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: కంటి మధ్యలో central vision నల్లగా మచ్చలాగా వస్తుంది.	STATEMENT}
+{\slot
+కంటి	B-body_part
+మధ్యలో	B-location
+central	B-bodily_process
+vision	I-bodily_process
+నల్లగా	B-color
+మచ్చలాగా	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: మీరు diabetes అంటున్నారు, ఓ diabetic అంటున్నారు కాబట్టి.	ACK}
+{\slot
+మీరు	O
+diabetes	B-medical_condition
+అంటున్నారు,	O
+ఓ	O
+diabetic	B-medical_condition
+అంటున్నారు	O
+కాబట్టి.	O
+}
+
+{\intent	d: ఆ usualగా diabetes ఉన్న patients వల్ల duration మీద వల్ల fluctuations మీద retinalలో definiteగా కొన్ని changes వస్తాయి మనకు.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+usualగా	O
+diabetes	B-medical_condition
+ఉన్న	O
+patients	B-person
+వల్ల	O
+duration	B-time_period
+మీద	O
+వల్ల	O
+fluctuations	B-symptom
+మీద	O
+retinalలో	B-body_part
+definiteగా	O
+కొన్ని	O
+changes	O
+వస్తాయి	O
+మనకు.	O
+}
+
+{\intent	d: especially fluctuations ఉన్నాయి అంటే central part of the retina ఏదైతే macula అంటాము అక్కడ కొంచము swelling వచ్చే chance ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+especially	O
+fluctuations	B-symptom
+ఉన్నాయి	O
+అంటే	O
+central	B-location
+part	I-location
+of	O
+the	O
+retina	B-body_part
+ఏదైతే	O
+macula	B-body_part
+అంటాము	O
+అక్కడ	O
+కొంచము	O
+swelling	B-symptom
+వచ్చే	O
+chance	O
+ఉంటుంది.	O
+}
+
+{\intent	d: దాని మేము diabetic maculoedema అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+దాని	O
+మేము	O
+diabetic	B-symptom
+maculoedema	I-symptom
+అంటాము.	O
+}
+

@@ -1,0 +1,135 @@
+{\intent	d: పేరు	INFO_REQUEST}
+{\slot
+పేరు	O
+}
+
+{\intent	p1: Bhuvan	ANSWER}
+{\slot
+Bhuvan	B-name
+}
+
+{\intent	d: Buvan	ACK}
+{\slot
+Buvan	B-name
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p1: 10 years	ANSWER}
+{\slot
+10	B-time_period
+years	I-time_period
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p2: left	HOLD}
+{\slot
+left	B-location
+}
+
+{\intent	p1: చెవిలో	HOLD}
+{\slot
+చెవిలో	B-body_part
+}
+
+{\intent	d: చెవిలో	ACK}
+{\slot
+చెవిలో	B-body_part
+}
+
+{\intent	p1: ఈ చెవిలో చిన్న గడ్డలాగా అయింది అది ఏంటో తెలవట్లేదు.	STATEMENT}
+{\slot
+ఈ	O
+చెవిలో	B-body_part
+చిన్న	O
+గడ్డలాగా	B-symptom
+అయింది	O
+అది	O
+ఏంటో	O
+తెలవట్లేదు.	O
+}
+
+{\intent	p2: earbud పెడితే blood వచ్చింది.	STATEMENT}
+{\slot
+earbud	O
+పెడితే	O
+blood	B-body_substance
+వచ్చింది.	O
+}
+
+{\intent	d: wax అమ్మా ఇది.	DIAGNOSIS}
+{\slot
+wax	B-body_substance
+అమ్మా	O
+ఇది.	O
+}
+
+{\intent	p1: wax ఏ నా?	INFO_REQUEST}
+{\slot
+wax	B-body_substance
+ఏ	O
+నా?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: పోతదా?	INFO_REQUEST}
+{\slot
+పోతదా?	O
+}
+
+{\intent	d: ఆ.. తీయ్యలే	STATEMENT}
+{\slot
+ఆ..	O
+తీయ్యలే	O
+}
+
+{\intent	d: మందువేస్తా	COMMIT}
+{\slot
+మందువేస్తా	B-medicine
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: 10 నిమిషాలు కుర్చోండి	ACTION_DIR}
+{\slot
+10	B-time_period
+నిమిషాలు	I-time_period
+కుర్చోండి	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: తీసేస్తా	COMMIT}
+{\slot
+తీసేస్తా	O
+}
+
+{\intent	p1: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	p2: ok.	ACK}
+{\slot
+ok.	O
+}
+

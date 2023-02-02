@@ -1,0 +1,205 @@
+{\intent	p: ఆ నాకు headache ఎక్కువగా వస్తుందండీ	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+headache	B-symptom
+ఎక్కువగా	B-intensity
+వస్తుందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: doctor గారి దెగ్గర చూపిస్తే migrane అన్నారు	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారి	O
+దెగ్గర	O
+చూపిస్తే	O
+migrane	B-symptom
+అన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: migranex 10 tablet రాసారు	STATEMENT}
+{\slot
+migranex	B-medicine
+10	I-medicine
+tablet	I-medicine
+రాసారు	O
+}
+
+{\intent	d: తప్పకుండా అమ్మా, Kamalaగారు ఎంత కాలంగా ఉందమ్మా ఇది	STATEMENT}
+{\slot
+తప్పకుండా	O
+అమ్మా,	O
+Kamalaగారు	B-name
+ఎంత	O
+కాలంగా	B-time_period
+ఉందమ్మా	O
+ఇది	O
+}
+
+{\intent	p: నాకు ఒక 5 6 years నుంచి ఉంది,	ANSWER}
+{\slot
+నాకు	O
+ఒక	O
+5	B-time_period
+6	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది,	O
+}
+
+{\intent	p: octoberలో ఎక్కువ వస్తుందండీ.	STATEMENT}
+{\slot
+octoberలో	B-time_period
+ఎక్కువ	B-medical_condition
+వస్తుందండీ.	O
+}
+
+{\intent	p: కళ్ళు తిరుగుతాయి అండి	STATEMENT}
+{\slot
+కళ్ళు	B-body_part
+తిరుగుతాయి	B-symptom
+అండి	O
+}
+
+{\intent	d: కళ్ళు తిరుగుతాయి విపరీతంగా	ACK}
+{\slot
+కళ్ళు	B-body_part
+తిరుగుతాయి	B-symptom
+విపరీతంగా	I-intensity
+}
+
+{\intent	d: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: ఆ విపరీతంగా, ఎటువైపు చూసినా తిరిగినట్లు ఉంటాయి	ANSWER}
+{\slot
+ఆ	O
+విపరీతంగా,	B-intensity
+ఎటువైపు	B-location
+చూసినా	B-bodily_process
+తిరిగినట్లు	B-symptom
+ఉంటాయి	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: పడిపోను	STATEMENT}
+{\slot
+పడిపోను	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అంటే bp controlలో ఉండడం వల్ల నేను పడిపోనండి	REPEAT_REPHRASE}
+{\slot
+అంటే	O
+bp	B-medical_condition
+controlలో	B-normal
+ఉండడం	O
+వల్ల	O
+నేను	O
+పడిపోనండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: but దానికి వేరే ఏదైనా tablet రాసారు	STATEMENT}
+{\slot
+but	O
+దానికి	O
+వేరే	O
+ఏదైనా	O
+tablet	B-medicine
+రాసారు	O
+}
+
+{\intent	d: age ఎంత అండి మీది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి	O
+మీది?	O
+}
+
+{\intent	p: ఇప్పుడు 33 years అండి	ANSWER}
+{\slot
+ఇప్పుడు	O
+33	B-age
+years	I-age
+అండి	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: మెడ నొప్పి ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+మెడ	B-body_part
+నొప్పి	B-symptom
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: 1 month నుంచి నాకు మెడ నొప్పి వస్తుందండీ.	ANSWER}
+{\slot
+1	B-time_period
+month	I-time_period
+నుంచి	O
+నాకు	O
+మెడ	B-body_part
+నొప్పి	B-symptom
+వస్తుందండీ.	O
+}
+
+{\intent	p: దేనిగురించో నాకు తెలియదు. అంటే దీనిగురించే అనుకుటున్నా.	STATEMENT}
+{\slot
+దేనిగురించో	O
+నాకు	O
+తెలియదు.	O
+అంటే	O
+దీనిగురించే	O
+అనుకుటున్నా.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా?	ACTION_DIR}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: ఇంకేం లేదు, ఇదే problem	ANSWER}
+{\slot
+ఇంకేం	O
+లేదు,	O
+ఇదే	O
+problem	O
+}
+

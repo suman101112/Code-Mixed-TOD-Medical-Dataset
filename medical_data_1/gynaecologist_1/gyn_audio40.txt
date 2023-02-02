@@ -1,0 +1,260 @@
+{\intent	d: Sujata	STATEMENT}
+{\slot
+Sujata	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p1: 43	ANSWER}
+{\slot
+43	B-age
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p1: 2	ANSWER}
+{\slot
+2	B-frequency
+}
+
+{\intent	p: 2	ANSWER}
+{\slot
+2	B-frequency
+}
+
+{\intent	d: కాకుండా అయిపోయిందా?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+అయిపోయిందా?	B-treatment
+}
+
+{\intent	p: కాకుండా ఏం చేయలేదు, మళ్ళి నాకు రాలేదు	ANSWER}
+{\slot
+కాకుండా	B-bodily_process
+ఏం	O
+చేయలేదు,	B-negative
+మళ్ళి	O
+నాకు	O
+రాలేదు	B-negative
+}
+
+{\intent	d: pregnancy రాలేదు.	ACK}
+{\slot
+pregnancy	B-bodily_process
+రాలేదు.	B-negative
+}
+
+{\intent	d: చిన్నామె వయసు ఎంత?	INFO_REQUEST}
+{\slot
+చిన్నామె	O
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: చిన్నామె 12 సంవత్సరాలు.	ANSWER}
+{\slot
+చిన్నామె	O
+12	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	d: నెల నెల correctఏ ఉంటున్నావ్?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	B-bodily_process
+correctఏ	B-normal
+ఉంటున్నావ్?	O
+}
+
+{\intent	p: నెల నెల ముందే ఉంట	ANSWER}
+{\slot
+నెల	B-bodily_process
+నెల	B-bodily_process
+ముందే	B-time_period
+ఉంట	O
+}
+
+{\intent	d: ఎంత ముందు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+ముందు?	O
+}
+
+{\intent	p: 25 రోజులు	ANSWER}
+{\slot
+25	B-time_period
+రోజులు	I-time_period
+}
+
+{\intent	d: 25 days ok fine, అదే correct అమ్మా	STATEMENT}
+{\slot
+25	B-time_period
+days	I-time_period
+ok	O
+fine,	O
+అదే	O
+correct	B-normal
+అమ్మా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అయినప్పుడు ఎన్ని రోజులు అయితది?	INFO_REQUEST}
+{\slot
+అయినప్పుడు	O
+ఎన్ని	O
+రోజులు	B-time_period
+అయితది?	O
+}
+
+{\intent	p: 3 days	ANSWER}
+{\slot
+3	B-time_period
+days	I-time_period
+}
+
+{\intent	d: ఎక్కువ అయితదా? మామూలుగా అయితదా?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+అయితదా?	B-bodily_process
+మామూలుగా	B-normal
+అయితదా?	B-bodily_process
+}
+
+{\intent	p: మామూలుగానే అయితది, 2 days ఏ అయితది, 3 days దాక ఇగ నొప్పి	ANSWER}
+{\slot
+మామూలుగానే	B-normal
+అయితది,	B-bodily_process
+2	B-time_period
+days	I-time_period
+ఏ	O
+అయితది,	B-bodily_process
+3	B-time_period
+days	I-time_period
+దాక	O
+ఇగ	O
+నొప్పి	B-symptom
+}
+
+{\intent	d: నొప్పి బాగా ఉంటుంది.	ACK}
+{\slot
+నొప్పి	B-symptom
+బాగా	B-intensity
+ఉంటుంది.	O
+}
+
+{\intent	d: periods అప్పుడు నొప్పి అని వచ్చారు	ACK}
+{\slot
+periods	B-bodily_process
+అప్పుడు	B-time_period
+నొప్పి	B-symptom
+అని	O
+వచ్చారు	O
+}
+
+{\intent	p: ఆ, periods అప్పుడే ఉత్తప్పుడు ఏం రాదు	STATEMENT}
+{\slot
+ఆ,	O
+periods	B-bodily_process
+అప్పుడే	B-time_period
+ఉత్తప్పుడు	B-normal
+ఏం	O
+రాదు	B-negative
+}
+
+{\intent	d: ఉత్తప్పుడు రాదు.	ACK}
+{\slot
+ఉత్తప్పుడు	B-normal
+రాదు.	B-negative
+}
+
+{\intent	d: ఇవల్టికి నెల వచ్చి ఎన్ని రోజులు అమ్మా?	INFO_REQUEST}
+{\slot
+ఇవల్టికి	B-time_period
+నెల	B-time_period
+వచ్చి	O
+ఎన్ని	O
+రోజులు	B-time_period
+అమ్మా?	O
+}
+
+{\intent	p: ఇవల్టికి 2 days, నిన్న ఇవ్వాలనే	ANSWER}
+{\slot
+ఇవల్టికి	B-time_period
+2	B-time_period
+days,	I-time_period
+నిన్న	B-time_period
+ఇవ్వాలనే	B-time_period
+}
+
+{\intent	d: బాగా నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+బాగా	B-intensity
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	d: tablets ఏమైనా వేసుకుంటావా మామూలుగా? ఏం వేసుకోవు?	INFO_REQUEST}
+{\slot
+tablets	B-medicine
+ఏమైనా	O
+వేసుకుంటావా	O
+మామూలుగా?	O
+ఏం	O
+వేసుకోవు?	O
+}
+
+{\intent	p: ఎమి వేసుకోను	ANSWER}
+{\slot
+ఎమి	O
+వేసుకోను	B-negative
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: ఎం లేదు.	ANSWER}
+{\slot
+ఎం	O
+లేదు.	B-negative
+}
+
+{\intent	d: నాలుక చూపియండి.	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+చూపియండి.	O
+}
+
+{\intent	d: పడుకోమ్మా చూద్దాం	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+చూద్దాం	O
+}
+
+{\intent	d: పడుకోమ్మా, చూడాలి కదా, మరి చూస్తేనే గర్భసంచి ఎలా ఉందో తెలిసేది.	ACTION_DIR}
+{\slot
+పడుకోమ్మా,	O
+చూడాలి	O
+కదా,	O
+మరి	O
+చూస్తేనే	O
+గర్భసంచి	B-body_part
+ఎలా	O
+ఉందో	O
+తెలిసేది.	O
+}
+

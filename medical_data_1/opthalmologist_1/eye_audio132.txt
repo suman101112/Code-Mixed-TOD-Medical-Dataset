@@ -1,0 +1,46 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 35, female	ANSWER}
+{\slot
+35,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: కంట్లో dust పడింది.	ANSWER}
+{\slot
+కంట్లో	B-body_part
+dust	B-symptom
+పడింది.	I-symptom
+}
+
+{\intent	d: ఎప్పుడు?	INFO_REQUEST}
+{\slot
+ఎప్పుడు?	O
+}
+
+{\intent	p: నిన్న.	ANSWER}
+{\slot
+నిన్న.	O
+}
+
+{\intent	p: కంట్లో నుంచి నీళ్లు వస్తున్నాయి. కుడి కన్ను వాసింది.	STATEMENT}
+{\slot
+కంట్లో	B-body_part
+నుంచి	B-location
+నీళ్లు	B-body_substance
+వస్తున్నాయి.	O
+కుడి	B-location
+కన్ను	B-body_part
+వాసింది.	B-symptom
+}
+

@@ -1,0 +1,236 @@
+{\intent	d: क्या problem है?	INFO_REQUEST}
+{\slot
+क्या	O
+problem	O
+है?	O
+}
+
+{\intent	p: महीने वारी नहीं होता	ANSWER}
+{\slot
+महीने	B-bodily_process
+वारी	I-bodily_process
+नहीं	B-negative
+होता	O
+}
+
+{\intent	d: शादी हुआ?	INFO_REQUEST}
+{\slot
+शादी	B-marital_status
+हुआ?	O
+}
+
+{\intent	p: नहीं जी	ANSWER}
+{\slot
+नहीं	B-negative
+जी	O
+}
+
+{\intent	d: उम्र कितना?	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना?	O
+}
+
+{\intent	p: 18	ANSWER}
+{\slot
+18	B-age
+}
+
+{\intent	d: 18 years	ACK}
+{\slot
+18	B-age
+years	I-age
+}
+
+{\intent	d: periods regular नहीं है	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regular	B-normal
+नहीं	B-negative
+है	O
+}
+
+{\intent	p: नहीं है.	ANSWER}
+{\slot
+नहीं	B-negative
+है.	O
+}
+
+{\intent	d: कितने बार को एक बार आता?	INFO_REQUEST}
+{\slot
+कितने	O
+बार	O
+को	O
+एक	O
+बार	O
+आता?	O
+}
+
+{\intent	p: 4 months को	ANSWER}
+{\slot
+4	B-time_period
+months	I-time_period
+को	O
+}
+
+{\intent	d: आहा 5 months एक महीना.	STATEMENT}
+{\slot
+आहा	O
+5	B-time_period
+months	I-time_period
+एक	B-time_period
+महीना.	I-time_period
+}
+
+{\intent	d: कितने दिन होता हुआ तो?	INFO_REQUEST}
+{\slot
+कितने	O
+दिन	B-time_period
+होता	O
+हुआ	O
+तो?	O
+}
+
+{\intent	p: 3 days or 4 days होता	ANSWER}
+{\slot
+3	B-time_period
+days	I-time_period
+or	O
+4	B-time_period
+days	I-time_period
+होता	O
+}
+
+{\intent	d: अभी हो कर कितने महीने.	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+हो	O
+कर	O
+कितने	O
+महीने.	B-time_period
+}
+
+{\intent	p: 5 months	ANSWER}
+{\slot
+5	B-time_period
+months	I-time_period
+}
+
+{\intent	d: 5 months से नहीं हां .	ACK}
+{\slot
+5	B-time_period
+months	I-time_period
+से	O
+नहीं	B-negative
+हां	O
+.	O
+}
+
+{\intent	d: thyroid है आपको?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+है	O
+आपको.	O
+}
+
+{\intent	p: नहीं है. test करवाएं.	ANSWER}
+{\slot
+नहीं	B-negative
+है.	O
+test	B-mtest
+करवाएं.	O
+}
+
+{\intent	d: थोड़ा बाला ज़्यादा रहते हाथ के ऊपर?	INFO_REQUEST}
+{\slot
+थोड़ा	O
+बाला	B-body_part
+ज़्यादा	B-intensity
+रहते	O
+हाथ	B-body_part
+के	O
+ऊपर?	B-location
+}
+
+{\intent	p: नहीं है .	ANSWER}
+{\slot
+नहीं	B-negative
+है	O
+.	O
+}
+
+{\intent	d: निकाल के बताओ, गर्दन बताओ	ACTION_DIR}
+{\slot
+निकाल	O
+के	O
+बताओ,	O
+गर्दन	B-body_part
+बताओ	O
+}
+
+{\intent	d: ज़्यादा होता या bleeding कम ही होता ?	INFO_REQUEST}
+{\slot
+ज़्यादा	B-intensity
+होता	O
+या	O
+bleeding	B-medical_condition
+कम	B-intensity
+ही	O
+होता	O
+?	O
+}
+
+{\intent	p: आ एक एक बार कम होता एक एक बार ज़्यादा	ANSWER}
+{\slot
+आ	O
+एक	B-frequency
+एक	I-frequency
+बार	I-frequency
+कम	B-intensity
+होता	O
+एक	B-frequency
+एक	I-frequency
+बार	I-frequency
+ज़्यादा	B-intensity
+}
+
+{\intent	d: 5 महीनेंको अपने आप होता यह गोली डालने तो होता.?	INFO_REQUEST}
+{\slot
+5	B-time_period
+महीनेंको	I-time_period
+अपने	O
+आप	O
+होता	O
+यह	O
+गोली	B-medicine
+डालने	O
+तो	O
+होता.?	O
+}
+
+{\intent	p: गोली बीच में चला जब 6 months पूरा खाये तो हुआ उसके बाद ख़तम बंद हुआ	ANSWER}
+{\slot
+गोली	B-medicine
+बीच	O
+में	O
+चला	O
+जब	B-time_period
+6	B-time_period
+months	I-time_period
+पूरा	O
+खाये	O
+तो	O
+हुआ	O
+उसके	O
+बाद	B-time_period
+ख़तम	O
+बंद	B-symptom
+हुआ	I-symptom
+}
+
+{\intent	d: लेटो देखेंगे	ACTION_DIR}
+{\slot
+लेटो	O
+देखेंगे	O
+}
+

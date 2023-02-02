@@ -1,0 +1,222 @@
+{\intent	p: sir good evening sir	GREETING}
+{\slot
+sir	O
+good	O
+evening	O
+sir	O
+}
+
+{\intent	d: good evening అండి. Vijay గారు	GREETING}
+{\slot
+good	O
+evening	O
+అండి.	O
+Vijay	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir actualగా నేను 2017 లో test చేయించుకున్నానండి, colonoscopy	STATEMENT}
+{\slot
+sir	O
+actualగా	O
+నేను	O
+2017	B-time_period
+లో	O
+test	B-mtest
+చేయించుకున్నానండి,	O
+colonoscopy	B-mtest
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so దానిలో ఏంటి అంటే పేగు మొత్తం కొద్దిగా ఒదుపులో ఉంది అని చెప్పారు	STATEMENT}
+{\slot
+so	O
+దానిలో	O
+ఏంటి	O
+అంటే	O
+పేగు	B-body_part
+మొత్తం	B-location
+కొద్దిగా	O
+ఒదుపులో	B-symptom
+ఉంది	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: medicine ఇచ్చారు, వాడాను, చాలా వరకు వాడాను.	STATEMENT}
+{\slot
+medicine	B-medicine
+ఇచ్చారు,	O
+వాడాను,	O
+చాలా	O
+వరకు	O
+వాడాను.	O
+}
+
+{\intent	p: ఏంటి అంటే నాకు చాలావరకు mucus వస్తుందండీ motionలో	STATEMENT}
+{\slot
+ఏంటి	O
+అంటే	O
+నాకు	O
+చాలావరకు	O
+mucus	B-symptom
+వస్తుందండీ	O
+motionలో	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: motions కూడా 3 4 times అయిపోతుంది	STATEMENT}
+{\slot
+motions	B-symptom
+కూడా	O
+3	B-frequency
+4	B-frequency
+times	I-frequency
+అయిపోతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత కొన్ని సార్లు ఏమవుతుంది అంటే sir bloating అవుతుంది, కొన్నిసార్లు mucus అది ఎక్కువగా పడుతుందండీ.	STATEMENT}
+{\slot
+తరువాత	B-time_period
+కొన్ని	O
+సార్లు	O
+ఏమవుతుంది	O
+అంటే	O
+sir	O
+bloating	B-bodily_process
+అవుతుంది,	B-symptom
+కొన్నిసార్లు	O
+mucus	B-body_substance
+అది	O
+ఎక్కువగా	B-intensity
+పడుతుందండీ.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత stomach మొత్తం మంట ఆ typeలో వస్తుందండీ.	STATEMENT}
+{\slot
+తరువాత	O
+stomach	B-body_part
+మొత్తం	O
+మంట	B-symptom
+ఆ	O
+typeలో	O
+వస్తుందండీ.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఒక్క ప్రశ్న అండి.	INFO_REQUEST}
+{\slot
+ఒక్క	O
+ప్రశ్న	O
+అండి.	O
+}
+
+{\intent	d: అప్పుడు doctorగారు ఈ conditionని ఎమి పేరు చెప్పారండీ report లో?	INFO_REQUEST}
+{\slot
+అప్పుడు	B-time_period
+doctorగారు	O
+ఈ	O
+conditionని	O
+ఎమి	O
+పేరు	O
+చెప్పారండీ	O
+report	O
+లో?	O
+}
+
+{\intent	p: UC ulcerative Colitis గానీ లేదంటే Chron's అని చెప్పారు అండి.	ANSWER}
+{\slot
+UC	B-symptom
+ulcerative	B-symptom
+Colitis	I-symptom
+గానీ	O
+లేదంటే	O
+Chron's	B-medical_condition
+అని	O
+చెప్పారు	O
+అండి.	O
+}
+
+{\intent	d: right అండి	ACK}
+{\slot
+right	O
+అండి	O
+}
+
+{\intent	d: ఇంకేమైనా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా?	O
+}
+
+{\intent	p: ఇది continuousగా అవుతుంది.	ANSWER}
+{\slot
+ఇది	O
+continuousగా	O
+అవుతుంది.	O
+}
+
+{\intent	p: చాలా వరకు Alopathy వాడాను sir నాకు ఎమి utilize లేదండీ .	STATEMENT}
+{\slot
+చాలా	O
+వరకు	O
+Alopathy	B-medicine
+వాడాను	O
+sir	O
+నాకు	O
+ఎమి	O
+utilize	O
+లేదండీ	O
+.	O
+}
+
+{\intent	d: ఈ UC లేదా ulcerative Colitisలో రోజుకు 4 నుంచి 6 సార్లకు కుడా motionsకు వెళ్ళాల్సినటువంటి ఇబ్బంది	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+UC	B-symptom
+లేదా	O
+ulcerative	B-symptom
+Colitisలో	I-symptom
+రోజుకు	B-time_period
+4	B-frequency
+నుంచి	O
+6	B-frequency
+సార్లకు	I-frequency
+కుడా	O
+motionsకు	B-bodily_process
+వెళ్ళాల్సినటువంటి	O
+ఇబ్బంది	B-symptom
+}
+

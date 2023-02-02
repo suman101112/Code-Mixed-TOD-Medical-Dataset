@@ -1,0 +1,186 @@
+{\intent	p: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: madam, piles madam.	STATEMENT}
+{\slot
+madam,	O
+piles	B-symptom
+madam.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: అది ఒక వారం నుంచి వస్తునే ఉంది అది .	STATEMENT}
+{\slot
+అది	O
+ఒక	O
+వారం	B-time_period
+నుంచి	O
+వస్తునే	O
+ఉంది	O
+అది	O
+.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: blood కారుతుంది.	STATEMENT}
+{\slot
+blood	B-body_substance
+కారుతుంది.	B-symptom
+}
+
+{\intent	d: ok. hmm.	ACK}
+{\slot
+ok.	O
+hmm.	O
+}
+
+{\intent	p: అది madam. అది పరిస్థితి.	STATEMENT}
+{\slot
+అది	O
+madam.	O
+అది	O
+పరిస్థితి.	O
+}
+
+{\intent	d: అంటే అందాక ముందు ఉండేనా అండి ఇప్పుడే start అవుతుందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+అందాక	O
+ముందు	O
+ఉండేనా	O
+అండి	O
+ఇప్పుడే	O
+start	O
+అవుతుందా?	O
+}
+
+{\intent	p: ఏం లేదు madam.	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఏం చేస్తుంటారు?	INFO_REQUEST}
+{\slot
+ఏం	O
+చేస్తుంటారు?	O
+}
+
+{\intent	p: నేను job madam.	ANSWER}
+{\slot
+నేను	O
+job	B-profession
+madam.	O
+}
+
+{\intent	d: fine. fine.	ACK}
+{\slot
+fine.	O
+fine.	O
+}
+
+{\intent	d: అంటే 1 week నుంచి అంటున్నారు. but at a time bleeding అవుతుంది. అంటే piles లో కూడా రకాలు ఉంటాయి అండి. అంటే grade 1 to grade 4 ఉంటుంది. తర్వాత internal piles external piles ఉంటుంది. దీనిలో దాదాపుగా symptoms అనేది bleeding అవుతూ ఉండడం	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+1	B-time_period
+week	B-time_period
+నుంచి	O
+అంటున్నారు.	O
+but	O
+at	O
+a	O
+time	B-time_period
+bleeding	B-medical_condition
+అవుతుంది.	B-symptom
+అంటే	O
+piles	B-symptom
+లో	O
+కూడా	O
+రకాలు	O
+ఉంటాయి	O
+అండి.	O
+అంటే	O
+grade	O
+1	O
+to	O
+grade	O
+4	O
+ఉంటుంది.	O
+తర్వాత	B-time_period
+internal	B-symptom
+piles	I-symptom
+external	B-symptom
+piles	I-symptom
+ఉంటుంది.	O
+దీనిలో	O
+దాదాపుగా	O
+symptoms	B-symptom
+అనేది	O
+bleeding	B-medical_condition
+అవుతూ	B-symptom
+ఉండడం	I-symptom
+}
+
+{\intent	d: తర్వాత నోప్పి ఉండడం motion వెళ్ళినా తర్వాత. మలబద్ధకం రావడం. అక్కడ skin లోపల బాగా అంటే blood vessels అనేది swollen అయిపోతే infection కి గురి అవ్వడం వల్ల వాపు వచ్చేసి skin tax లాగా బయటికి రావడం itching ఉండడం మంట రావడం అనేది piles యొక్క లక్షణాలు.	MEDICAL_EXPLANATION}
+{\slot
+తర్వాత	B-time_period
+నోప్పి	B-symptom
+ఉండడం	I-symptom
+motion	B-bodily_process
+వెళ్ళినా	O
+తర్వాత.	B-time_period
+మలబద్ధకం	B-symptom
+రావడం.	O
+అక్కడ	B-location
+skin	B-body_part
+లోపల	B-location
+బాగా	B-intensity
+అంటే	O
+blood	B-body_substance
+vessels	B-body_part
+అనేది	O
+swollen	B-symptom
+అయిపోతే	O
+infection	B-medical_condition
+కి	O
+గురి	O
+అవ్వడం	O
+వల్ల	O
+వాపు	B-symptom
+వచ్చేసి	O
+skin	B-body_part
+tax	B-symptom
+లాగా	O
+బయటికి	B-location
+రావడం	B-symptom
+itching	B-symptom
+ఉండడం	O
+మంట	B-symptom
+రావడం	O
+అనేది	O
+piles	B-symptom
+యొక్క	O
+లక్షణాలు.	O
+}
+

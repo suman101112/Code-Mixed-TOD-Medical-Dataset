@@ -1,0 +1,43 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 40, female	ANSWER}
+{\slot
+40,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: दूर का नहीं दिख रहा.	ANSWER}
+{\slot
+दूर	B-location
+का	O
+नहीं	B-negative
+दिख	B-bodily_process
+रहा.	O
+}
+
+{\intent	d: नजदीक का दिख रहा है क्या?	INFO_REQUEST}
+{\slot
+नजदीक	B-location
+का	O
+दिख	B-bodily_process
+रहा	O
+है	O
+क्या?	O
+}
+
+{\intent	p: हां .	ANSWER}
+{\slot
+हां	B-positive
+.	O
+}
+

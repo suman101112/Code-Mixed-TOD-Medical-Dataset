@@ -1,0 +1,113 @@
+{\intent	p: sir నమస్తే అండి.	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: నమస్కారం అండి.	GREETING}
+{\slot
+నమస్కారం	O
+అండి.	O
+}
+
+{\intent	p: ఆ నమస్తే అండి madam	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+అండి	O
+madam	O
+}
+
+{\intent	p: నాకు కుడి, ఎడమ, పక్కన రెండు kidneyలో రాళ్ళు ఉన్నాయి, 10 mm	STATEMENT}
+{\slot
+నాకు	O
+కుడి,	B-location
+ఎడమ	B-location
+పక్కన	I-location
+రెండు	B-frequency
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+ఉన్నాయి,	O
+10	B-mtest_value
+mm	I-mtest_value
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి ఉన్నాయి అమ్మా?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఉన్నాయి	O
+అమ్మా?	O
+}
+
+{\intent	p: ఆ ఇప్పుడు 2010 లో కుడి పక్కన operation అయిందండి.	ANSWER}
+{\slot
+ఆ	O
+ఇప్పుడు	O
+2010	B-time_period
+లో	O
+కుడి	B-location
+పక్కన	I-location
+operation	B-treatment
+అయిందండి.	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: 2nd పక్కన ఎమో operation అయిందండి	STATEMENT}
+{\slot
+2nd	B-frequency
+పక్కన	B-location
+ఎమో	O
+operation	B-treatment
+అయిందండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి 10, 10 ఉందండి first ఆ పక్కన	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+10,	B-mtest_value
+10	B-mtest_value
+ఉందండి	O
+first	O
+ఆ	O
+పక్కన	O
+}
+
+{\intent	d: ok అమ్మా, నేను చెప్తాను నీకు	COMMIT}
+{\slot
+ok	O
+అమ్మా,	O
+నేను	O
+చెప్తాను	O
+నీకు	O
+}
+
+{\intent	d: అంటే మామూలుగా kidney stones అన్నట్లుగా repetitiveగా formation అనేది జరుగుతుంటాయి	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+మామూలుగా	O
+kidney	B-body_part
+stones	B-body_substance
+అన్నట్లుగా	O
+repetitiveగా	B-symptom
+formation	I-symptom
+అనేది	O
+జరుగుతుంటాయి	O
+}
+

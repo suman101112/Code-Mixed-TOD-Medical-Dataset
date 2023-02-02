@@ -1,0 +1,36 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 50, m	ANSWER}
+{\slot
+50,	B-age
+m	B-gender
+}
+
+{\intent	d: ఎలా ఉన్నావ్?	INFO_REQUEST}
+{\slot
+ఎలా	O
+ఉన్నావ్?	O
+}
+
+{\intent	p: కాళ్ల దగ్గర పుండు అయింది. పెద్దగా ఉంది చీము లాగా నీళ్ల లాగా వస్తుంది. బాగా నొప్పి వస్తుంది.	ANSWER}
+{\slot
+కాళ్ల	B-body_part
+దగ్గర	I-body_part
+పుండు	B-symptom
+అయింది.	I-symptom
+పెద్దగా	B-symptom
+ఉంది	I-symptom
+చీము	B-symptom
+లాగా	I-symptom
+నీళ్ల	I-symptom
+లాగా	I-symptom
+వస్తుంది.	I-symptom
+బాగా	B-symptom
+నొప్పి	I-symptom
+వస్తుంది.	I-symptom
+}
+

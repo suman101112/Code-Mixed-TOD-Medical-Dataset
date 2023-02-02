@@ -1,0 +1,171 @@
+{\intent	d: ఏం పేరు మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+మా?	O
+}
+
+{\intent	p: Mahalakshmi	ANSWER}
+{\slot
+Mahalakshmi	B-name
+}
+
+{\intent	d: pregnancy?	INFO_REQUEST}
+{\slot
+pregnancy?	B-bodily_process
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: last period date?	INFO_REQUEST}
+{\slot
+last	B-frequency
+period	B-bodily_process
+date?	B-time_period
+}
+
+{\intent	p: december 1st	ANSWER}
+{\slot
+december	B-time_period
+1st	I-time_period
+}
+
+{\intent	d: ఇప్పుడు 3 months completion time	STATEMENT}
+{\slot
+ఇప్పుడు	O
+3	B-time_period
+months	I-time_period
+completion	I-time_period
+time	I-time_period
+}
+
+{\intent	d: vomitings ఉన్నాయా?	INFO_REQUEST}
+{\slot
+vomitings	B-symptom
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఉన్నాయి madam	ANSWER}
+{\slot
+ఉన్నాయి	O
+madam	O
+}
+
+{\intent	d: బాగా అయితున్నాయా?	INFO_REQUEST}
+{\slot
+బాగా	B-intensity
+అయితున్నాయా?	O
+}
+
+{\intent	p: వేసుకున్నాక కూడా 2 daysకి ఒకసారి అన్నా అయితున్నాయి	ANSWER}
+{\slot
+వేసుకున్నాక	O
+కూడా	O
+2	B-time_period
+daysకి	I-time_period
+ఒకసారి	O
+అన్నా	O
+అయితున్నాయి	O
+}
+
+{\intent	d: that is ok.	STATEMENT}
+{\slot
+that	O
+is	O
+ok.	O
+}
+
+{\intent	d: periods regularగా ఎప్పుడు ఉన్నవ్?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regularగా	B-normal
+ఎప్పుడు	O
+ఉన్నవ్?	O
+}
+
+{\intent	p: regularగా అంటే	INFO_REQUEST}
+{\slot
+regularగా	B-normal
+అంటే	O
+}
+
+{\intent	d: అంతకు ముందు periods regular time కే	INFO_REQUEST}
+{\slot
+అంతకు	O
+ముందు	O
+periods	B-bodily_process
+regular	B-normal
+time	B-time_period
+కే	O
+}
+
+{\intent	p: ఆ, కాకపోతే 4 days ముందు ఉండే	ANSWER}
+{\slot
+ఆ,	B-positive
+కాకపోతే	O
+4	B-time_period
+days	I-time_period
+ముందు	I-time_period
+ఉండే	O
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: లేదండీ	ANSWER}
+{\slot
+లేదండీ	B-negative
+}
+
+{\intent	d: మేనరికమా?	INFO_REQUEST}
+{\slot
+మేనరికమా?	B-familal
+}
+
+{\intent	p: ఆహ<neg> లేదండీ	ANSWER}
+{\slot
+ఆహ<neg>	O
+లేదండీ	B-negative
+}
+
+{\intent	d: దగ్గు, దమ్ము, medical problems, ఏం మందులు ఏం వాడటం లేదు కదా?	INFO_REQUEST}
+{\slot
+దగ్గు,	B-symptom
+దమ్ము,	B-medical_condition
+medical	O
+problems,	O
+ఏం	O
+మందులు	B-medicine
+ఏం	O
+వాడటం	O
+లేదు	O
+కదా?	O
+}
+
+{\intent	p: ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: planned pregnancy ఏ ఇది	INFO_REQUEST}
+{\slot
+planned	B-time_period
+pregnancy	B-bodily_process
+ఏ	O
+ఇది	O
+}
+
+{\intent	p: umm planned	ANSWER}
+{\slot
+umm	O
+planned	B-positive
+}
+

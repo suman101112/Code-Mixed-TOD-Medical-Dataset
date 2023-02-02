@@ -1,0 +1,109 @@
+{\intent	d: చెప్పండి బాబు పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: <>	UNINTERPRET}
+{\slot
+<>	O
+}
+
+{\intent	d: ఏం ఇబ్బంది ఉంది.	INFO_REQUEST}
+{\slot
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: kidneyలలో బాగా నొప్పి ఉంటుంది	ANSWER}
+{\slot
+kidneyలలో	B-body_part
+బాగా	B-intensity
+నొప్పి	B-symptom
+ఉంటుంది	O
+}
+
+{\intent	d: ఎటు side ఉంది నొప్పి ఉంది	INFO_REQUEST}
+{\slot
+ఎటు	O
+side	I-location
+ఉంది	O
+నొప్పి	B-symptom
+ఉంది	O
+}
+
+{\intent	p: మూడు నెలల కింద వచ్చి బాగా నొప్పి లేస్తుంది sir.	ANSWER}
+{\slot
+మూడు	B-time_period
+నెలల	I-time_period
+కింద	O
+వచ్చి	O
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది	O
+sir.	O
+}
+
+{\intent	p: మూత్రం పోస్తే, కింద పోస్తే ఏదో మచ మచ్చగా తెల్లగా తెల్లగా అవుపడుతుంది.	STATEMENT}
+{\slot
+మూత్రం	B-body_substance
+పోస్తే,	B-bodily_process
+కింద	B-location
+పోస్తే	B-bodily_process
+ఏదో	O
+మచ	B-symptom
+మచ్చగా	I-symptom
+తెల్లగా	B-color
+తెల్లగా	I-color
+అవుపడుతుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఇలా?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇలా?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఇలా?	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇలా?	O
+}
+
+{\intent	p: ఒక 5 6 నెలలు అవుతుంది.	ANSWER}
+{\slot
+ఒక	O
+5	B-time_period
+6	B-time_period
+నెలలు	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: 92లో ఏ పరిక్ష చేస్తారు, తీసుకొని రండి.	ACTION_DIR}
+{\slot
+92లో	O
+ఏ	O
+పరిక్ష	B-mtest
+చేస్తారు,	O
+తీసుకొని	O
+రండి.	O
+}
+
+{\intent	d: scan చేస్తారు.	ACTION_DIR}
+{\slot
+scan	B-mtest
+చేస్తారు.	O
+}
+

@@ -1,0 +1,100 @@
+{\intent	p: good evening sir.	GREETING}
+{\slot
+good	O
+evening	O
+sir.	O
+}
+
+{\intent	p: sir ఇది 2 days back వచ్చాను sir.	STATEMENT}
+{\slot
+sir	O
+ఇది	O
+2	B-time_period
+days	I-time_period
+back	I-time_period
+వచ్చాను	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: spray కొట్టుకున్న తరువాత ఒక nasal block అవుతుంది sir. ఒక nasal free అవుతుంది sir.	STATEMENT}
+{\slot
+spray	B-medicine
+కొట్టుకున్న	O
+తరువాత	B-time_period
+ఒక	O
+nasal	B-symptom
+block	I-symptom
+అవుతుంది	O
+sir.	O
+ఒక	B-frequency
+nasal	B-body_part
+free	B-normal
+అవుతుంది	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: day by day ఇట్ల అవుతుంది.	STATEMENT}
+{\slot
+day	B-time_period
+by	O
+day	B-time_period
+ఇట్ల	O
+అవుతుంది.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కొంచం breathing, 80 percent sneezing తక్వ అయింది.	STATEMENT}
+{\slot
+కొంచం	O
+breathing,	B-bodily_process
+80	O
+percent	O
+sneezing	B-symptom
+తక్వ	B-normal
+అయింది.	I-normal
+}
+
+{\intent	d: ఆ అది కూడా సక్కగా అయితది.	STATEMENT}
+{\slot
+ఆ	O
+అది	O
+కూడా	O
+సక్కగా	O
+అయితది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: మెల్లగా slowగా అయితది.	STATEMENT}
+{\slot
+మెల్లగా	O
+slowగా	O
+అయితది.	O
+}
+
+{\intent	p: ఒక దాంట్లొకెళ్ళి వస్తుంది sir ఇది.	STATEMENT}
+{\slot
+ఒక	O
+దాంట్లొకెళ్ళి	O
+వస్తుంది	O
+sir	O
+ఇది.	O
+}
+

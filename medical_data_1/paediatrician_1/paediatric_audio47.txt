@@ -1,0 +1,142 @@
+{\intent	p1: सर में दर्द , कान में दर्द	STATEMENT}
+{\slot
+सर	B-body_part
+में	B-location
+दर्द	B-symptom
+,	O
+कान	B-body_part
+में	B-location
+दर्द	B-symptom
+}
+
+{\intent	d: కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+}
+
+{\intent	d: ఏం పేరు	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+}
+
+{\intent	p1: Nidaa Nausheen	ANSWER}
+{\slot
+Nidaa	B-name
+Nausheen	I-name
+}
+
+{\intent	d: वो scarf निकाल के ఒకసారి लेटो	ACTION_DIR}
+{\slot
+वो	O
+scarf	O
+निकाल	O
+के	O
+ఒకసారి	O
+लेटो	O
+}
+
+{\intent	d: कौनसा कान में दर्द बोलता है ?	INFO_REQUEST}
+{\slot
+कौनसा	O
+कान	B-body_part
+में	B-location
+दर्द	B-symptom
+बोलता	O
+है	O
+?	O
+}
+
+{\intent	p: 2 कान में	ANSWER}
+{\slot
+2	B-quantity
+कान	B-body_part
+में	B-location
+}
+
+{\intent	d: sneezing के  time? normal time?	INFO_REQUEST}
+{\slot
+sneezing	B-bodily_process
+के	O
+time?	B-time_period
+normal	O
+time?	B-time_period
+}
+
+{\intent	p: normal time	ANSWER}
+{\slot
+normal	O
+time	B-time_period
+}
+
+{\intent	d: आ बोलो	ACTION_DIR}
+{\slot
+आ	O
+बोलो	O
+}
+
+{\intent	p1: 3 दिन में बहुत दर्द दे रहा तो ये डाले drops कान में	STATEMENT}
+{\slot
+3	B-quantity
+दिन	B-time_period
+में	O
+बहुत	B-intensity
+दर्द	B-symptom
+दे	O
+रहा	O
+तो	O
+ये	O
+डाले	O
+drops	B-medicine
+कान	B-body_part
+में	B-location
+}
+
+{\intent	p1: हो तो भी दर्द दे रहा	STATEMENT}
+{\slot
+हो	O
+तो	O
+भी	O
+दर्द	B-symptom
+दे	O
+रहा	O
+}
+
+{\intent	d: गोली निगलते	INFO_REQUEST}
+{\slot
+गोली	B-medicine
+निगलते	O
+}
+
+{\intent	p: हां	ANSWER}
+{\slot
+हां	O
+}
+
+{\intent	d: खांसी है ?	INFO_REQUEST}
+{\slot
+खांसी	B-symptom
+है	O
+?	O
+}
+
+{\intent	p1: नहीं ये खांसी है ?	INFO_REQUEST}
+{\slot
+नहीं	O
+ये	O
+खांसी	B-symptom
+है	O
+?	O
+}
+
+{\intent	p1: नहीं	ANSWER}
+{\slot
+नहीं	B-negative
+}
+
+{\intent	d: ये लो	ACTION_DIR}
+{\slot
+ये	O
+लो	O
+}
+

@@ -1,0 +1,85 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 50, female	ANSWER}
+{\slot
+50,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: కంటి దగ్గర బాగా దురద వస్తుంది. రెప్పల మీద బాగా దురద ఉంది.	ANSWER}
+{\slot
+కంటి	B-body_part
+దగ్గర	I-body_part
+బాగా	B-symptom
+దురద	I-symptom
+వస్తుంది.	I-symptom
+రెప్పల	B-body_part
+మీద	I-body_part
+బాగా	B-symptom
+దురద	I-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: బాగా గొకుతుంటావా?	INFO_REQUEST}
+{\slot
+బాగా	B-symptom
+గొకుతుంటావా?	I-symptom
+}
+
+{\intent	p: అవును కానీ రెప్పల మీద బాగా దురద వస్తుంది.	STATEMENT}
+{\slot
+అవును	B-postiive
+కానీ	O
+రెప్పల	B-body_part
+మీద	I-body_part
+బాగా	B-symptom
+దురద	I-symptom
+వస్తుంది.	I-symptom
+}
+
+{\intent	d: అది allergy అది.	DIAGNOSIS}
+{\slot
+అది	O
+allergy	B-symptom
+అది.	O
+}
+
+{\intent	d: ఏమైనా పని చేస్తావా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+పని	O
+చేస్తావా?	O
+}
+
+{\intent	p: garden లో మొక్కలు పీకినా sir.	ANSWER}
+{\slot
+garden	B-place
+లో	I-place
+మొక్కలు	B-profession
+పీకినా	I-profession
+sir.	O
+}
+
+{\intent	d: అదే మొక్కలు పెట్టడం వలన కంటి రెప్పల మీద పడి దురద వచ్చింది.	MEDICAL_EXPLANATION}
+{\slot
+అదే	O
+మొక్కలు	B-profession
+పెట్టడం	I-profession
+వలన	O
+కంటి	B-body_part
+రెప్పల	I-body_part
+మీద	I-body_part
+పడి	O
+దురద	B-symptom
+వచ్చింది.	I-symptom
+}
+

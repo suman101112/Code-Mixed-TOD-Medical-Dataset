@@ -1,0 +1,122 @@
+{\intent	d: good afternoon అండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: ఆ 4 years క్రితం మా పాపకు వచ్చింది sir fever	STATEMENT}
+{\slot
+ఆ	O
+4	B-time_period
+years	I-time_period
+క్రితం	O
+మా	O
+పాపకు	B-familal
+వచ్చింది	O
+sir	O
+fever	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి రాకూండా ఉండలంటే ఏమైనా vaccines ఉంటాయా sir అది?	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+రాకూండా	O
+ఉండలంటే	O
+ఏమైనా	O
+vaccines	B-medicine
+ఉంటాయా	O
+sir	O
+అది?	O
+}
+
+{\intent	d: అదే అండి. actually ఆ, ఒక Dengvacci అనే ఒక vaccine create అయిందండి, ఒక 11 countryలలో release చేసారు, కానీ దాని వల్ల వచ్చే complications వల్ల చాలా మంది వాడట్లేదు అది.	ANSWER}
+{\slot
+అదే	O
+అండి.	O
+actually	O
+ఆ,	O
+ఒక	O
+Dengvacci	B-medicine
+అనే	O
+ఒక	O
+vaccine	B-medicine
+create	O
+అయిందండి,	O
+ఒక	O
+11	O
+countryలలో	B-place
+release	O
+చేసారు,	O
+కానీ	O
+దాని	O
+వల్ల	O
+వచ్చే	O
+complications	B-medical_condition
+వల్ల	O
+చాలా	O
+మంది	O
+వాడట్లేదు	B-negative
+అది.	O
+}
+
+{\intent	d: so Dengue feverకి సంబంధించినటువంటి vaccine లేదండీ.	ANSWER}
+{\slot
+so	O
+Dengue	B-medical_condition
+feverకి	I-medical_condition
+సంబంధించినటువంటి	O
+vaccine	B-medicine
+లేదండీ.	B-negative
+}
+
+{\intent	d: కానీ మన ఇంటి చుట్టూ దోమ నివరణ చర్యలు తీసుకుంటే మంచిది. ఇది ఇక్కడే కాదు ఇక్కడనా నేను చెప్పేది ఒక్కటే	ACTION_DIR}
+{\slot
+కానీ	O
+మన	O
+ఇంటి	O
+చుట్టూ	O
+దోమ	O
+నివరణ	O
+చర్యలు	O
+తీసుకుంటే	O
+మంచిది.	O
+ఇది	O
+ఇక్కడే	O
+కాదు	O
+ఇక్కడనా	O
+నేను	O
+చెప్పేది	O
+ఒక్కటే	O
+}
+
+{\intent	d: మన బయట మన community లో మన colony లో ఏ దోమ నివరణ చర్యలు తీసుకుంటే మనకు వ్యాపించకుండా ఉంటది.	STATEMENT}
+{\slot
+మన	O
+బయట	O
+మన	O
+community	B-place
+లో	O
+మన	O
+colony	B-place
+లో	O
+ఏ	O
+దోమ	O
+నివరణ	O
+చర్యలు	O
+తీసుకుంటే	O
+మనకు	O
+వ్యాపించకుండా	O
+ఉంటది.	O
+}
+

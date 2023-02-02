@@ -1,0 +1,298 @@
+{\intent	d: karuna Sri	STATEMENT}
+{\slot
+karuna	B-name
+Sri	I-name
+}
+
+{\intent	p: ఆ karuna Sri	STATEMENT}
+{\slot
+ఆ	O
+karuna	B-name
+Sri	B-name
+}
+
+{\intent	d: ఏంటమ్మా ఇప్పుడు ని age ఎంత?	INFO_REQUEST}
+{\slot
+ఏంటమ్మా	O
+ఇప్పుడు	O
+ని	O
+age	O
+ఎంత?	O
+}
+
+{\intent	p: నా age 28	ANSWER}
+{\slot
+నా	O
+age	O
+28	B-age
+}
+
+{\intent	p: 28	REPEAT_REPHRASE}
+{\slot
+28	B-age
+}
+
+{\intent	d: pregnancy ఆ?	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+ఆ?	O
+}
+
+{\intent	p: ఆ మొన్ననే positive వచ్చింది..	ANSWER}
+{\slot
+ఆ	O
+మొన్ననే	B-time_period
+positive	B-mtest_value
+వచ్చింది..	O
+}
+
+{\intent	d: positive అని వచ్చింది.	ACK}
+{\slot
+positive	B-mtest_value
+అని	O
+వచ్చింది.	O
+}
+
+{\intent	d: first pregnancy? second?	INFO_REQUEST}
+{\slot
+first	B-frequency
+pregnancy?	B-bodily_process
+second?	B-frequency
+}
+
+{\intent	p: second.	ANSWER}
+{\slot
+second.	B-frequency
+}
+
+{\intent	d: 2nd pregnancy	ACK}
+{\slot
+2nd	B-frequency
+pregnancy	B-bodily_process
+}
+
+{\intent	d: first పాప?	INFO_REQUEST}
+{\slot
+first	B-frequency
+పాప?	B-person
+}
+
+{\intent	p: బాబు.	ANSWER}
+{\slot
+బాబు	B-person
+}
+
+{\intent	d: బాబు age?	INFO_REQUEST}
+{\slot
+బాబు	B-person
+age?	O
+}
+
+{\intent	p: 2 months అయితే 2 years	ANSWER}
+{\slot
+2	B-time_period
+months	I-time_period
+అయితే	O
+2	B-time_period
+years	I-time_period
+}
+
+{\intent	d: 2 years	ACK}
+{\slot
+2	B-time_period
+years	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: బానే healthy. first pregnancy లో problem ఏమీ లేదు.	INFO_REQUEST}
+{\slot
+బానే	B-normal
+healthy.	I-normal
+first	B-frequency
+pregnancy	B-bodily_process
+లో	O
+problem	O
+ఏమీ	O
+లేదు.	B-negative
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: bp sugar అంతా normal.	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+అంతా	O
+normal.	B-normal
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: వీడి weight ఎంత వచ్చింది?	INFO_REQUEST}
+{\slot
+వీడి	O
+weight	B-bm
+ఎంత	O
+వచ్చింది?	O
+}
+
+{\intent	p: ఇప్పుడా 12 kgs ఉన్నాడు.	ANSWER}
+{\slot
+ఇప్పుడా	O
+12	B-bm
+kgs	I-bm
+ఉన్నాడు.	O
+}
+
+{\intent	d: ఇప్పుడు కాదు పుట్టినప్పుడు, birth weight.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+కాదు	O
+పుట్టినప్పుడు,	B-bodily_process
+birth	B-bm
+weight.	I-bm
+}
+
+{\intent	p: 3.6 ఉన్నాడు.	ANSWER}
+{\slot
+3.6	B-bm
+ఉన్నాడు.	O
+}
+
+{\intent	d: sugar ఉండిందా first pregnancyలో ఉన్నప్పుడు?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉండిందా	O
+first	B-frequency
+pregnancyలో	B-bodily_process
+ఉన్నప్పుడు?	O
+}
+
+{\intent	p: ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: smooth గానే అయిపోయింది caesarean.	INFO_REQUEST}
+{\slot
+smooth	B-normal
+గానే	O
+అయిపోయింది	O
+caesarean.	B-treatment
+}
+
+{\intent	p: అవును.	ANSWER}
+{\slot
+అవును.	B-positive
+}
+
+{\intent	d: పాలు బంద్ చేసావా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+పాలు	B-food_substance
+బంద్	O
+చేసావా	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: లేదు. తాగుతున్నాడు.	ANSWER}
+{\slot
+లేదు.	B-negative
+తాగుతున్నాడు.	B-bodily_process
+}
+
+{\intent	d: बंद చేయాలి ఇంకా	STATEMENT}
+{\slot
+बंद	O
+చేయాలి	O
+ఇంకా	O
+}
+
+{\intent	d: ని blood group idea ఉందా?	INFO_REQUEST}
+{\slot
+ని	O
+blood	B-body_substance
+group	B-mtest
+idea	O
+ఉందా?	O
+}
+
+{\intent	p: ఆ b positive.	ANSWER}
+{\slot
+ఆ	O
+b	B-mtest_value
+positive.	B-mtest_value
+}
+
+{\intent	d: last బయట ఉన్న తారీకు	INFO_REQUEST}
+{\slot
+last	B-frequency
+బయట	B-bodily_process
+ఉన్న	O
+తారీకు	B-time_period
+}
+
+{\intent	p: december 15th	ANSWER}
+{\slot
+december	B-time_period
+15th	I-time_period
+}
+
+{\intent	d: regular cycles ఆ irregular cycles ఆ.	INFO_REQUEST}
+{\slot
+regular	B-normal
+cycles	B-bodily_process
+ఆ	O
+irregular	B-symptom
+cycles	B-bodily_process
+ఆ.	O
+}
+
+{\intent	p: irregular cycles.	ANSWER}
+{\slot
+irregular	B-symptom
+cycles.	B-bodily_process
+}
+
+{\intent	d: అందుకే తెలియలేదా?	INFO_REQUEST}
+{\slot
+అందుకే	O
+తెలియలేదా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: condoms, ఎమి protection వాడలేదా?	INFO_REQUEST}
+{\slot
+condoms,	O
+ఎమి	O
+protection	O
+వాడలేదా?	O
+}
+
+{\intent	p: ఎమి వాడలేదు	ANSWER}
+{\slot
+ఎమి	O
+వాడలేదు	B-negative
+}
+
+{\intent	d: సరే పడుకో.	ACTION_DIR}
+{\slot
+సరే	O
+పడుకో.	O
+}
+

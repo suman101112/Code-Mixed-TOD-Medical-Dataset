@@ -1,0 +1,178 @@
+{\intent	p: madam good afternoon madam	GREETING}
+{\slot
+madam	O
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: good afternoon	GREETING}
+{\slot
+good	O
+afternoon	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam నాకు marriage అయి 1 year అవుతుంది	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+1	B-time_period
+year	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: PCOD అని చెప్పారు చూయించుకుంటే	STATEMENT}
+{\slot
+PCOD	B-medical_condition
+అని	O
+చెప్పారు	O
+చూయించుకుంటే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2 times pregnancy వచ్చి miscarriage అయింది madam 4th monthలో	STATEMENT}
+{\slot
+2	B-time_period
+times	I-time_period
+pregnancy	B-bodily_process
+వచ్చి	O
+miscarriage	B-symptom
+అయింది	O
+madam	O
+4th	B-frequency
+monthలో	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే PCOD అని చెప్పారు	STATEMENT}
+{\slot
+అయితే	O
+PCOD	B-medical_condition
+అని	O
+చెప్పారు	O
+}
+
+{\intent	p: tablets ఇచ్చారు 2 months	STATEMENT}
+{\slot
+tablets	B-medicine
+ఇచ్చారు	O
+2	B-time_period
+months	I-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: వాడాను	STATEMENT}
+{\slot
+వాడాను	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకొకటి 1 month వాడమన్నారు	STATEMENT}
+{\slot
+ఇంకొకటి	O
+1	B-time_period
+month	I-time_period
+వాడమన్నారు	O
+}
+
+{\intent	p: అయితే contraceptive mypil tablet ఇచ్చారు madam	STATEMENT}
+{\slot
+అయితే	O
+contraceptive	B-medicine
+mypil	I-medicine
+tablet	I-medicine
+ఇచ్చారు	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే నేను pregnancy కి plan చేస్తున్నాను. నాకు అది ఎందుకు ఇచ్చారో అర్ధం కాలేదు,	STATEMENT}
+{\slot
+అయితే	O
+నేను	O
+pregnancy	B-bodily_process
+కి	O
+plan	B-bodily_process
+చేస్తున్నాను.	I-bodily_process
+నాకు	O
+అది	O
+ఎందుకు	O
+ఇచ్చారో	O
+అర్ధం	O
+కాలేదు,	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: PCOD ఉంది	STATEMENT}
+{\slot
+PCOD	B-medical_condition
+ఉంది	O
+}
+
+{\intent	d: हां	ACK}
+{\slot
+हां	O
+}
+
+{\intent	p: pregnancy వచ్చే chance ఉన్నాయా లేదా?	INFO_REQUEST}
+{\slot
+pregnancy	B-bodily_process
+వచ్చే	O
+chance	O
+ఉన్నాయా	O
+లేదా?	O
+}
+
+{\intent	d: actually abortions historyలో మనకు secondary infertility ఉంటుంది, so PCOD casesలో ovulation problem ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+actually	O
+abortions	B-symptom
+historyలో	O
+మనకు	O
+secondary	B-medical_condition
+infertility	I-medical_condition
+ఉంటుంది,	O
+so	O
+PCOD	B-medical_condition
+casesలో	O
+ovulation	B-bodily_process
+problem	B-symptom
+ఉంటుంది.	O
+}
+

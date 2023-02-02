@@ -1,0 +1,252 @@
+{\intent	d: Lavanya ని age ఎంతమ్మా?	INFO_REQUEST}
+{\slot
+Lavanya	B-name
+ని	O
+age	O
+ఎంతమ్మా?	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: 24	ACK}
+{\slot
+24	B-age
+}
+
+{\intent	d: first pregnancy?	INFO_REQUEST}
+{\slot
+first	B-frequency
+pregnancy?	B-bodily_process
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	d: పెళ్ళై ఎన్ని నెలలు? ఎన్ని సంవత్సరాలు?	INFO_REQUEST}
+{\slot
+పెళ్ళై	B-marital_status
+ఎన్ని	O
+నెలలు?	B-time_period
+ఎన్ని	O
+సంవత్సరాలు?	B-time_period
+}
+
+{\intent	p: సంవత్సరంలోపే ఇంకా, may last year may 10th కి అయింది	ANSWER}
+{\slot
+సంవత్సరంలోపే	B-time_period
+ఇంకా,	O
+may	B-time_period
+last	B-time_period
+year	I-time_period
+may	I-time_period
+10th	I-time_period
+కి	O
+అయింది	O
+}
+
+{\intent	d: last period date?	INFO_REQUEST}
+{\slot
+last	O
+period	B-bodily_process
+date?	B-time_period
+}
+
+{\intent	p: june 21st	ANSWER}
+{\slot
+june	B-time_period
+21st	I-time_period
+}
+
+{\intent	d: june 21st	ACK}
+{\slot
+june	B-time_period
+21st	I-time_period
+}
+
+{\intent	d: ఎప్పుడు regular cycles ఆ అమ్మ?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+regular	B-normal
+cycles	B-bodily_process
+ఆ	O
+అమ్మ?	O
+}
+
+{\intent	p: అవును.	ANSWER}
+{\slot
+అవును.	B-positive
+}
+
+{\intent	d: ఎప్పుడు late ఉండే దానివి కాదు.	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+late	B-symptom
+ఉండే	O
+దానివి	O
+కాదు.	B-negative
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: always regular cycle	INFO_REQUEST}
+{\slot
+always	O
+regular	B-normal
+cycle	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: first 3 trimister vomitings ఏమైనా problems?	INFO_REQUEST}
+{\slot
+first	B-frequency
+3	I-frequency
+trimister	B-time_period
+vomitings	B-symptom
+ఏమైనా	O
+problems?	O
+}
+
+{\intent	p: అంటే first second monthలో అది spotting అయింది.	ANSWER}
+{\slot
+అంటే	O
+first	B-frequency
+second	B-frequency
+monthలో	B-time_period
+అది	O
+spotting	B-symptom
+అయింది.	O
+}
+
+{\intent	d: ok first trimister bleeding	ACK}
+{\slot
+ok	O
+first	B-frequency
+trimister	B-time_period
+bleeding	B-medical_condition
+}
+
+{\intent	p: తర్వాత ఇంకా vomitings అంటే కొద్దిగా 8th month లో అయింది మళ్ళ 5th monthలో అయింది., ఇంకేం కాలేదు ఇంకా తరువాత	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+ఇంకా	O
+vomitings	B-symptom
+అంటే	O
+కొద్దిగా	O
+8th	B-frequency
+month	I-time_period
+లో	O
+అయింది	O
+మళ్ళ	O
+5th	B-frequency
+monthలో	B-time_period
+అయింది.,	O
+ఇంకేం	O
+కాలేదు	O
+ఇంకా	O
+తరువాత	O
+}
+
+{\intent	d: మళ్ళి spotting ఏం లేదు	INFO_REQUEST}
+{\slot
+మళ్ళి	B-body_part
+spotting	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	p: spotting ఏం లేదు	ANSWER}
+{\slot
+spotting	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: bp sugar అంతా normalఏ thyorid normalఏ.	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+అంతా	O
+normalఏ	B-normal
+thyorid	B-medical_condition
+normalఏ.	B-normal
+}
+
+{\intent	p: ఆ అన్ని normalఏ ఉన్నాయి.	ANSWER}
+{\slot
+ఆ	O
+అన్ని	O
+normalఏ	B-normal
+ఉన్నాయి.	O
+}
+
+{\intent	d: TT రెండు అయిపోయినాయి	INFO_REQUEST}
+{\slot
+TT	B-medicine
+రెండు	B-frequency
+అయిపోయినాయి	O
+}
+
+{\intent	p: ఆ అయిపోయినాయి	STATEMENT}
+{\slot
+ఆ	O
+అయిపోయినాయి	B-positive
+}
+
+{\intent	d: family history of diabetes, hypertension?	INFO_REQUEST}
+{\slot
+family	B-familal
+history	O
+of	O
+diabetes,	B-medical_condition
+hypertension?	B-medical_condition
+}
+
+{\intent	d: ఇంట్లో ఎవరికైనా bp sugar?	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+ఎవరికైనా	O
+bp	B-medical_condition
+sugar?	B-medical_condition
+}
+
+{\intent	p: ఆ daddyకి bp ఉంది.	ANSWER}
+{\slot
+ఆ	O
+daddyకి	B-familal
+bp	B-medical_condition
+ఉంది.	B-positive
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు almost 9th month begin అయిపోయింది.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+almost	O
+9th	B-time_period
+month	I-time_period
+begin	I-time_period
+అయిపోయింది.	O
+}
+
+{\intent	p: 21st కి	STATEMENT}
+{\slot
+21st	B-time_period
+కి	O
+}
+

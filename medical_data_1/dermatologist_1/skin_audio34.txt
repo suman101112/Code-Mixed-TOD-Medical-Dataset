@@ -1,0 +1,196 @@
+{\intent	p: మట్లాడుతున్నాను	SU}
+{\slot
+మట్లాడుతున్నాను	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam నాకు ఒక 15 days నుంచి hairలోనే చెంపల దెగ్గర కొంచం whiteగా వస్తుంది madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+ఒక	B-time_period
+15	I-time_period
+days	I-time_period
+నుంచి	I-time_period
+hairలోనే	B-body_part
+చెంపల	B-body_part
+దెగ్గర	I-body_part
+కొంచం	B-symptom
+whiteగా	I-symptom
+వస్తుంది	I-symptom
+madam	O
+}
+
+{\intent	p: దాని psoriasis అంటారా madam?	INFO_REQUEST}
+{\slot
+దాని	O
+psoriasis	B-symptom
+అంటారా	O
+madam?	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: ఇంకేదన్నా problem ఉందా?	INFO_REQUEST}
+{\slot
+ఇంకేదన్నా	O
+problem	O
+ఉందా?	O
+}
+
+{\intent	p: అంటే దీనివల్ల ఏంటి అంటే కొంచం redగా skin అవ్వడం కొంచం next దురదలాగా వస్తుంది	STATEMENT}
+{\slot
+అంటే	O
+దీనివల్ల	O
+ఏంటి	O
+అంటే	O
+కొంచం	B-symptom
+redగా	I-symptom
+skin	I-symptom
+అవ్వడం	I-symptom
+కొంచం	B-time_period
+next	I-time_period
+దురదలాగా	B-symptom
+వస్తుంది	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: doctor ని already consult చేసాను	STATEMENT}
+{\slot
+doctor	B-medical_professional
+ని	O
+already	O
+consult	B-consult
+చేసాను	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది shampoo మారడం వల్ల వచ్చింది అని అంటున్నారు	DIAGNOSIS}
+{\slot
+అది	O
+shampoo	O
+మారడం	O
+వల్ల	O
+వచ్చింది	O
+అని	O
+అంటున్నారు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కొంచం doubt ఉంది, కొద్దిగా clarify చేస్తారా madam.	ACTION_DIR}
+{\slot
+కొంచం	O
+doubt	O
+ఉంది,	O
+కొద్దిగా	O
+clarify	O
+చేస్తారా	O
+madam.	O
+}
+
+{\intent	d: ok , ok,	ACK}
+{\slot
+ok	O
+,	O
+ok,	O
+}
+
+{\intent	d: అయితే only 15 days నుంచి problem వస్తుంది అంటే ఏదైనా చిన్నగానే start అవుతుంది అండి,	MEDICAL_EXPLANATION}
+{\slot
+అయితే	O
+only	B-time_period
+15	I-time_period
+days	I-time_period
+నుంచి	I-time_period
+problem	B-symptom
+వస్తుంది	I-symptom
+అంటే	O
+ఏదైనా	O
+చిన్నగానే	B-symptom
+start	I-symptom
+అవుతుంది	I-symptom
+అండి,	O
+}
+
+{\intent	d: scalpలో వచ్చేవి generalగా fungal infections వస్తూ ఉంటాయి. hair root infections అనేటివి వస్తూ ఉంటాయి	MEDICAL_EXPLANATION}
+{\slot
+scalpలో	B-body_part
+వచ్చేవి	O
+generalగా	O
+fungal	B-symptom
+infections	I-symptom
+వస్తూ	I-symptom
+ఉంటాయి.	I-symptom
+hair	B-symptom
+root	I-symptom
+infections	I-symptom
+అనేటివి	O
+వస్తూ	O
+ఉంటాయి	O
+}
+
+{\intent	d: తర్వాత ఏదైనా పడని cosmetics use చేస్తే వాళ్ళకి, dyeing ఎక్కువ చేసేవాళ్ళకి, ఇట్ల కొద్దిగా infection ద్వారా allergy ద్వారా వస్తూ ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+తర్వాత	B-time_period
+ఏదైనా	O
+పడని	O
+cosmetics	O
+use	O
+చేస్తే	O
+వాళ్ళకి,	O
+dyeing	O
+ఎక్కువ	O
+చేసేవాళ్ళకి,	O
+ఇట్ల	O
+కొద్దిగా	O
+infection	B-symptom
+ద్వారా	I-symptom
+allergy	B-symptom
+ద్వారా	I-symptom
+వస్తూ	I-symptom
+ఉంటుంది	I-symptom
+}
+
+{\intent	d: కొంత మందికి Seborrheic dermatitis అనేది వస్తూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+కొంత	O
+మందికి	O
+Seborrheic	B-medical_condition
+dermatitis	I-medical_condition
+అనేది	O
+వస్తూ	B-symptom
+ఉంటుంది.	I-symptom
+}
+
+{\intent	d: కాకపోతే అది చూస్తే differentiation అనేది తెలుస్తూ ఉంటుంది అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+కాకపోతే	O
+అది	O
+చూస్తే	O
+differentiation	O
+అనేది	O
+తెలుస్తూ	O
+ఉంటుంది	O
+అన్నమాట.	O
+}
+

@@ -1,0 +1,300 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: ఈ చెవులో ఎందో	HOLD}
+{\slot
+ఈ	O
+చెవులో	B-body_part
+ఎందో	O
+}
+
+{\intent	d: ఆహా పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+ఆహా	O
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Anjali, r Anjali	ANSWER}
+{\slot
+Anjali,	B-name
+r	B-name
+Anjali	I-name
+}
+
+{\intent	d: r Anjali	ACK}
+{\slot
+r	B-name
+Anjali	I-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 53	ANSWER}
+{\slot
+53	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇగొ చెవు అంతా చీమెల్తాంది గీడ పొడిచినట్లు అయితాంది	ANSWER}
+{\slot
+ఇగొ	O
+చెవు	B-body_part
+అంతా	B-location
+చీమెల్తాంది	B-symptom
+గీడ	B-location
+పొడిచినట్లు	B-symptom
+అయితాంది	O
+}
+
+{\intent	d: operation అయింది కదా?	INFO_REQUEST}
+{\slot
+operation	B-treatment
+అయింది	O
+కదా?	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయితాంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయితాంది?	O
+}
+
+{\intent	p1: ఓ చాన ఏళ్ళు అయితాంది.	ANSWER}
+{\slot
+ఓ	O
+చాన	B-intensity
+ఏళ్ళు	B-time_period
+అయితాంది.	O
+}
+
+{\intent	d: మందులు రాసి ఇస్తా.	COMMIT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా.	O
+}
+
+{\intent	p: ఏమైంది sir నాకు?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+sir	O
+నాకు?	O
+}
+
+{\intent	p1: ఏమైనా కురుపు అయిందా sir?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+కురుపు	B-symptom
+అయిందా	O
+sir?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: నీళ్లు పోయినాయా?	INFO_REQUEST}
+{\slot
+నీళ్లు	B-food_substance
+పోయినాయా?	O
+}
+
+{\intent	d: ఆ కొంచం నీళ్లు పోయి అట్ల అయింది.	ANSWER}
+{\slot
+ఆ	O
+కొంచం	O
+నీళ్లు	B-food_substance
+పోయి	O
+అట్ల	O
+అయింది.	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: water పోయిందా మళ్ళి.	INFO_REQUEST}
+{\slot
+water	B-food_substance
+పోయిందా	O
+మళ్ళి.	O
+}
+
+{\intent	d: మందులు వేయ్యి తగ్గుతది.	ACTION_DIR}
+{\slot
+మందులు	B-medicine
+వేయ్యి	O
+తగ్గుతది.	O
+}
+
+{\intent	d: ఏం కాదు.	STATEMENT}
+{\slot
+ఏం	O
+కాదు.	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆహా, లోపల కాదు	STATEMENT}
+{\slot
+ఆహా,	O
+లోపల	B-location
+కాదు	B-negative
+}
+
+{\intent	d: బయటనే	STATEMENT}
+{\slot
+బయటనే	B-location
+}
+
+{\intent	p: ఇక్కడ	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+}
+
+{\intent	d: ఏం కాదు అమ్మా	STATEMENT}
+{\slot
+ఏం	O
+కాదు	B-negative
+అమ్మా	O
+}
+
+{\intent	d: నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p1: నొప్పి ఉన్నదా అడుగుతాండు doctorగారు	REPEAT_REPHRASE}
+{\slot
+నొప్పి	B-symptom
+ఉన్నదా	O
+అడుగుతాండు	O
+doctorగారు	B-medical_professional
+}
+
+{\intent	p1: నొప్పి? నొప్పి?	REPEAT_REPHRASE}
+{\slot
+నొప్పి?	B-symptom
+నొప్పి?	B-symptom
+}
+
+{\intent	p: ఆ ఉన్నది కొంచం నొప్పి	ANSWER}
+{\slot
+ఆ	O
+ఉన్నది	O
+కొంచం	O
+నొప్పి	B-symptom
+}
+
+{\intent	d: దురద పెడుతుందా ఏమన్నా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+పెడుతుందా	O
+ఏమన్నా?	O
+}
+
+{\intent	p: దురద లేదు.	ANSWER}
+{\slot
+దురద	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	p: నొప్పి ఏ ఉన్నది	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+ఏ	O
+ఉన్నది	O
+}
+
+{\intent	p: ఇట్ల పొడిచినట్లు అయితుంది.	STATEMENT}
+{\slot
+ఇట్ల	O
+పొడిచినట్లు	B-symptom
+అయితుంది.	O
+}
+
+{\intent	p: ఇలా నీళ్లు పోయినందుకు అలా అయిందా sir?	INFO_REQUEST}
+{\slot
+ఇలా	O
+నీళ్లు	B-food_substance
+పోయినందుకు	O
+అలా	O
+అయిందా	O
+sir?	O
+}
+
+{\intent	d: ఆ తలస్నానం చేసేటప్పుడు దూది పెట్టుకో	ACTION_DIR}
+{\slot
+ఆ	O
+తలస్నానం	O
+చేసేటప్పుడు	O
+దూది	O
+పెట్టుకో	O
+}
+
+{\intent	p: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: మరి లోపట కదా?	INFO_REQUEST}
+{\slot
+మరి	O
+లోపట	B-location
+కదా?	O
+}
+
+{\intent	d: ఏం కాదమ్మా మంచిగా ఉంది.	STATEMENT}
+{\slot
+ఏం	O
+కాదమ్మా	B-negative
+మంచిగా	B-normal
+ఉంది.	O
+}
+
+{\intent	p: సరే నమస్తే sir.	CONV_CLOSE}
+{\slot
+సరే	O
+నమస్తే	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

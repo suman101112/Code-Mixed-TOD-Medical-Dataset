@@ -1,0 +1,149 @@
+{\intent	d: 2	ANSWER}
+{\slot
+2	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p1: మెడ దగ్గర వాపు వచ్చింది	ANSWER}
+{\slot
+మెడ	B-body_part
+దగ్గర	B-location
+వాపు	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: ఇంట్లో ఎవరికైనా school పిల్లలకు వచ్చినయా	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+ఎవరికైనా	O
+school	B-place
+పిల్లలకు	B-person
+వచ్చినయా	O
+}
+
+{\intent	p: పిల్లలకు కాదు నాకు వచ్చింది	ANSWER}
+{\slot
+పిల్లలకు	B-person
+కాదు	O
+నాకు	O
+వచ్చింది	O
+}
+
+{\intent	d: throat ది కాదమ్మా	STATEMENT}
+{\slot
+throat	B-body_part
+ది	O
+కాదమ్మా	O
+}
+
+{\intent	d: దీన్ని mumps అంటారు, చెంప గడ్డలు	STATEMENT}
+{\slot
+దీన్ని	O
+mumps	B-medical_condition
+అంటారు,	O
+చెంప	B-body_part
+గడ్డలు	B-symptom
+}
+
+{\intent	d: 2 3 రోజులు ఉండి, తగ్గిపోతది	MEDICAL_EXPLANATION}
+{\slot
+2	B-quantity
+3	B-quantity
+రోజులు	B-time_period
+ఉండి,	O
+తగ్గిపోతది	O
+}
+
+{\intent	d: చిన్నపిల్లలకు వస్తాయి, పెద్దవాళ్ళకు రావు.	MEDICAL_EXPLANATION}
+{\slot
+చిన్నపిల్లలకు	B-person
+వస్తాయి,	O
+పెద్దవాళ్ళకు	B-person
+రావు.	O
+}
+
+{\intent	d: school పిల్లలు ఉన్నారా ఎవరైనా?	INFO_REQUEST}
+{\slot
+school	B-place
+పిల్లలు	B-person
+ఉన్నారా	O
+ఎవరైనా?	O
+}
+
+{\intent	p: ఆ పాప ఉంది	ANSWER}
+{\slot
+ఆ	O
+పాప	B-person
+ఉంది	O
+}
+
+{\intent	d: ఆమెకు వచ్చినయా?	INFO_REQUEST}
+{\slot
+ఆమెకు	O
+వచ్చినయా?	O
+}
+
+{\intent	p1: రాలేదు	ANSWER}
+{\slot
+రాలేదు	O
+}
+
+{\intent	d: fever రావొచ్చు దానితోని, కడుపులో నొప్పి ఉండి	MEDICAL_EXPLANATION}
+{\slot
+fever	B-symptom
+రావొచ్చు	O
+దానితోని,	O
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+ఉండి	O
+}
+
+{\intent	p1: ఆ, ఏడుస్తాడు బాగా	STATEMENT}
+{\slot
+ఆ,	O
+ఏడుస్తాడు	B-symptom
+బాగా	B-intensity
+}
+
+{\intent	d: గొంతులో మింగడం కష్టంగా ఉంది కాబట్టి. కొద్దిగా తేలికగా మింగేది ఏమైనా పెట్టండి.	STATEMENT}
+{\slot
+గొంతులో	B-body_part
+మింగడం	B-bodily_process
+కష్టంగా	B-symptom
+ఉంది	O
+కాబట్టి.	O
+కొద్దిగా	O
+తేలికగా	O
+మింగేది	O
+ఏమైనా	O
+పెట్టండి.	O
+}
+
+{\intent	d: ఇంట్లో పక్క పిల్లలకు ఎవరికైనా ఎత్తుకునే వాళ్ళకు ఉందా?	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+పక్క	O
+పిల్లలకు	B-person
+ఎవరికైనా	O
+ఎత్తుకునే	O
+వాళ్ళకు	B-person
+ఉందా?	O
+}
+
+{\intent	p1: ఆ లేదు sir.	ANSWER}
+{\slot
+ఆ	O
+లేదు	B-negative
+sir.	O
+}
+

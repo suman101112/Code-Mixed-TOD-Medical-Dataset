@@ -1,0 +1,99 @@
+{\intent	d: చెప్పండమ్మా పేరు	STATEMENT}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+}
+
+{\intent	p: Sahana	ANSWER}
+{\slot
+Sahana	B-name
+}
+
+{\intent	d: చెప్పండి problem ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p: ఇక్కడ బాగా నొప్పి లేస్తుంది	ANSWER}
+{\slot
+ఇక్కడ	B-location
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 1 week అవుతుంది. ఇక్కడ 5 minute కూడా సరిగ్గా కూర్చోవడం రావట్లేదు. అంటే 1.5 సంవత్సరాల ముందు stones వచ్చినాయి.	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+అవుతుంది.	O
+ఇక్కడ	O
+5	B-time_period
+minute	I-time_period
+కూడా	O
+సరిగ్గా	O
+కూర్చోవడం	B-bodily_process
+రావట్లేదు.	B-symptom
+అంటే	O
+1.5	B-time_period
+సంవత్సరాల	I-time_period
+ముందు	I-time_period
+stones	B-body_substance
+వచ్చినాయి.	O
+}
+
+{\intent	d: జ్వరం ఏమైనా వస్తోందా	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఏమైనా	O
+వస్తోందా	O
+}
+
+{\intent	p: ఆహా	ANSWER}
+{\slot
+ఆహా	B-negative
+}
+
+{\intent	d: మూత్రంలో మంట?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట?	O
+}
+
+{\intent	p: మంట ఉంది sir. బాగా నొప్పి లేస్తుంది. కూర్చోవడం రావట్లేదు 5 minute కూడా. చాలా నొప్పిగా ఉంది.	ANSWER}
+{\slot
+మంట	B-symptom
+ఉంది	B-positive
+sir.	O
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది.	O
+కూర్చోవడం	B-bodily_process
+రావట్లేదు	B-negative
+5	B-time_period
+minute	I-time_period
+కూడా.	O
+చాలా	B-intensity
+నొప్పిగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: 92లో scan తీస్తారు అండి, తీసుకోని రండి.	ACTION_DIR}
+{\slot
+92లో	O
+scan	B-mtest
+తీస్తారు	O
+అండి,	O
+తీసుకోని	O
+రండి.	O
+}
+

@@ -1,0 +1,127 @@
+{\intent	d: చెప్పండి బాబు పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: నా పేరు verayya sir	ANSWER}
+{\slot
+నా	O
+పేరు	O
+verayya	B-name
+sir	O
+}
+
+{\intent	d: చెప్పండి ఇబ్బంది ఏం ఏం ఉన్నాయి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఇబ్బంది	O
+ఏం	O
+ఏం	O
+ఉన్నాయి?	O
+}
+
+{\intent	p: నడుం నొప్పి లేస్తుంది. మూత్రం ఆగి ఆగి వస్తుంది దాని వల్ల నడుం బాగా నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+నడుం	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది.	O
+మూత్రం	B-body_substance
+ఆగి	B-symptom
+ఆగి	I-symptom
+వస్తుంది	I-symptom
+దాని	O
+వల్ల	O
+నడుం	B-body_part
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+}
+
+{\intent	p: ఒక 5 6 రోజులు అయితుంది.	ANSWER}
+{\slot
+ఒక	O
+5	B-time_period
+6	B-time_period
+రోజులు	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: జ్వరం ఏమైనా వస్తుందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఏమైనా	O
+వస్తుందా?	O
+}
+
+{\intent	p: జ్వరం ఏం లేదు , తిమ్మిర్లు, చెమట వచ్చుడు	ANSWER}
+{\slot
+జ్వరం	B-symptom
+ఏం	O
+లేదు	B-negative
+,	O
+తిమ్మిర్లు,	B-symptom
+చెమట	B-body_substance
+వచ్చుడు	O
+}
+
+{\intent	d: మూత్రంలో మంట అట్ల ఏమైనా ఉందా ఇబ్బంది?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+అట్ల	O
+ఏమైనా	O
+ఉందా	O
+ఇబ్బంది?	B-symptom
+}
+
+{\intent	p: ఇబ్బంది. మూత్రంలో మంట కొద్దిగా ఉంది.	ANSWER}
+{\slot
+ఇబ్బంది.	B-symptom
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+కొద్దిగా	O
+ఉంది.	O
+}
+
+{\intent	d: బయట scan ఏమైనా అయినాయా అమ్మా?	INFO_REQUEST}
+{\slot
+బయట	O
+scan	B-mtest
+ఏమైనా	O
+అయినాయా	O
+అమ్మా?	O
+}
+
+{\intent	p: బయట నా?	INFO_REQUEST}
+{\slot
+బయట	O
+నా?	O
+}
+
+{\intent	d: reports ఏమైనా ఉన్నాయా అమ్మా మీ దెగ్గర	INFO_REQUEST}
+{\slot
+reports	O
+ఏమైనా	O
+ఉన్నాయా	O
+అమ్మా	O
+మీ	O
+దెగ్గర	O
+}
+
+{\intent	p: ఏం లేవు sir.	ANSWER}
+{\slot
+ఏం	O
+లేవు	B-negative
+sir.	O
+}
+

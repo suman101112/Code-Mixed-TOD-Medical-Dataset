@@ -1,0 +1,195 @@
+{\intent	p: నాకు 5 సంవత్సరాల నుంచి బాగా piles అయినాయి అండి.	STATEMENT}
+{\slot
+నాకు	O
+5	B-time_period
+సంవత్సరాల	B-time_period
+నుంచి	O
+బాగా	B-intensity
+piles	B-symptom
+అయినాయి	O
+అండి.	O
+}
+
+{\intent	p: piles అన్నారండి doctor గారి దెగ్గరకు వెళితే	STATEMENT}
+{\slot
+piles	B-symptom
+అన్నారండి	O
+doctor	B-medical_professional
+గారి	O
+దెగ్గరకు	O
+వెళితే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: doctor దెగ్గరికి వెళితే చేయాలమ్మా injection అని చెప్పేసి ఏదో చేసారంది	STATEMENT}
+{\slot
+doctor	B-medical_professional
+దెగ్గరికి	O
+వెళితే	O
+చేయాలమ్మా	O
+injection	B-medicine
+అని	O
+చెప్పేసి	O
+ఏదో	O
+చేసారంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తర్వాత నుంచి కొంచం రక్తం కారడం, చీములాగా బంక బంకగా ఉందటం అలా జరుగుతుందండీ.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+నుంచి	O
+కొంచం	O
+రక్తం	B-body_substance
+కారడం,	O
+చీములాగా	B-symptom
+బంక	I-symptom
+బంకగా	I-symptom
+ఉందటం	O
+అలా	O
+జరుగుతుందండీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు doctorగారి దెగ్గరకు వెళితే కొంచం మందులు ఇచ్చారు మళ్ళి తరువాత మళ్ళి అలానే ఉంటుందండి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+doctorగారి	O
+దెగ్గరకు	O
+వెళితే	O
+కొంచం	O
+మందులు	B-medicine
+ఇచ్చారు	O
+మళ్ళి	O
+తరువాత	O
+మళ్ళి	O
+అలానే	O
+ఉంటుందండి	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: తగ్గట్లేదు, అండి	ACK}
+{\slot
+తగ్గట్లేదు,	B-symptom
+అండి	O
+}
+
+{\intent	p: బంక బంకగా చీములాగా, వాసన రావడం ఉందండీ	STATEMENT}
+{\slot
+బంక	B-symptom
+బంకగా	I-symptom
+చీములాగా,	I-symptom
+వాసన	B-symptom
+రావడం	O
+ఉందండీ	O
+}
+
+{\intent	d: అలాగే అండి	ACK}
+{\slot
+అలాగే	O
+అండి	O
+}
+
+{\intent	d: అలాగే Vijay గారు	ACK}
+{\slot
+అలాగే	O
+Vijay	B-name
+గారు	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: దాని గురించి చెప్తాను	COMMIT}
+{\slot
+దాని	O
+గురించి	O
+చెప్తాను	O
+}
+
+{\intent	d: so piles లక్షణంలో కేవలం bleeding మాత్రమే ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+piles	B-symptom
+లక్షణంలో	O
+కేవలం	O
+bleeding	B-medical_condition
+మాత్రమే	O
+ఉంటుంది.	O
+}
+
+{\intent	d: నొప్పి మంట bleeding ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+నొప్పి	B-symptom
+మంట	B-symptom
+bleeding	B-medical_condition
+ఉంటుంది.	O
+}
+
+{\intent	d: ఇలా చీములాగా discharge అవ్వడం, బంక విరోచనాలు అవ్వడం ఉండదు	MEDICAL_EXPLANATION}
+{\slot
+ఇలా	O
+చీములాగా	B-symptom
+discharge	B-bodily_process
+అవ్వడం,	O
+బంక	B-symptom
+విరోచనాలు	I-symptom
+అవ్వడం	O
+ఉండదు	O
+}
+
+{\intent	d: మీ complaintకి 2 రెండు కారణాలు ఉన్నాయి	MEDICAL_EXPLANATION}
+{\slot
+మీ	O
+complaintకి	O
+2	B-frequency
+రెండు	O
+కారణాలు	O
+ఉన్నాయి	O
+}
+
+{\intent	d: ఒక్కటి ulcerative Colitis అంటారు	STATEMENT}
+{\slot
+ఒక్కటి	O
+ulcerative	B-symptom
+Colitis	I-symptom
+అంటారు	O
+}
+
+{\intent	d: రెండోది Amoebiasis అంటారు	STATEMENT}
+{\slot
+రెండోది	O
+Amoebiasis	B-medical_condition
+అంటారు	O
+}
+
+{\intent	d: ఈ రెండు లక్షణాల్లో ఏదో మిమ్మల్ని బాగా వెధిస్తూ ఉంది.	STATEMENT}
+{\slot
+ఈ	O
+రెండు	O
+లక్షణాల్లో	O
+ఏదో	O
+మిమ్మల్ని	O
+బాగా	B-intensity
+వెధిస్తూ	O
+ఉంది.	O
+}
+

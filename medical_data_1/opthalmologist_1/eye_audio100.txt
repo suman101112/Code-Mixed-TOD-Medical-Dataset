@@ -1,0 +1,122 @@
+{\intent	p: doctor గారు ఏందని గానీ ఎక్కువ lightని కానీ నేను చూడాలేకపోతున్నాను.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+ఏందని	O
+గానీ	O
+ఎక్కువ	O
+lightని	O
+కానీ	O
+నేను	O
+చూడాలేకపోతున్నాను.	B-symptom
+}
+
+{\intent	p: కళ్ళు మూసుకపోతున్నాయి.	STATEMENT}
+{\slot
+కళ్ళు	B-body_part
+మూసుకపోతున్నాయి.	B-symptom
+}
+
+{\intent	p: doctor గారిని consult చేస్తే iris సమస్య అన్నారు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారిని	O
+consult	O
+చేస్తే	O
+iris	B-body_part
+సమస్య	O
+అన్నారు.	O
+}
+
+{\intent	d: మీరు ఎండలో వీలైతే sudden brightగా అంటే మీకు మామూలు brightness కంటే ఎక్కువ brightగా కనిపిస్తుందని complaint చేస్తున్నారండి.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+ఎండలో	O
+వీలైతే	O
+sudden	O
+brightగా	O
+అంటే	O
+మీకు	O
+మామూలు	B-normal
+brightness	B-symptom
+కంటే	O
+ఎక్కువ	B-intensity
+brightగా	B-symptom
+కనిపిస్తుందని	I-symptom
+complaint	O
+చేస్తున్నారండి.	O
+}
+
+{\intent	d: so ఇది generalగా మీరు మీ eye doctor దెగ్గరికి వెళ్తే వాలు iris related సమస్య అని మీరు చెప్పినట్లు తెలుస్తుంది ఇక్కడ.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇది	O
+generalగా	O
+మీరు	O
+మీ	O
+eye	B-medical_professional
+doctor	I-health_professional
+దెగ్గరికి	O
+వెళ్తే	O
+వాలు	O
+iris	B-body_part
+related	O
+సమస్య	O
+అని	O
+మీరు	O
+చెప్పినట్లు	O
+తెలుస్తుంది	O
+ఇక్కడ.	O
+}
+
+{\intent	d: so one thing is iris సమస్య కన్ను brightగా ఎండలోకి వెళితే brightగా కనిపిస్తుంది అన్నా దానికి most important cause కొంచం partial absence or complete absence of iris అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+one	O
+thing	O
+is	O
+iris	B-body_part
+సమస్య	O
+కన్ను	B-body_part
+brightగా	O
+ఎండలోకి	O
+వెళితే	O
+brightగా	O
+కనిపిస్తుంది	O
+అన్నా	O
+దానికి	O
+most	O
+important	O
+cause	O
+కొంచం	O
+partial	B-medical_condition
+absence	I-medical_condition
+or	O
+complete	B-medical_condition
+absence	I-medical_condition
+of	O
+iris	B-body_part
+అండి.	O
+}
+
+{\intent	d: అది మనం చూసుకోవాలి.	STATEMENT}
+{\slot
+అది	O
+మనం	O
+చూసుకోవాలి.	O
+}
+
+{\intent	d: complete absence of iris అంటే Aniridia అనే ఒక condition అండి.	MEDICAL_EXPLANATION}
+{\slot
+complete	B-medical_condition
+absence	I-medical_condition
+of	O
+iris	B-body_part
+అంటే	O
+Aniridia	B-medical_condition
+అనే	O
+ఒక	O
+condition	O
+అండి.	O
+}
+

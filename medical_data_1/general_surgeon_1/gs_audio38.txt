@@ -1,0 +1,235 @@
+{\intent	p: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: నమస్తే అమ్మా kumari గారు	GREETING}
+{\slot
+నమస్తే	O
+అమ్మా	O
+kumari	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి ఏంటి సమస్య?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+సమస్య?	O
+}
+
+{\intent	p: అంటే మా fatherకి 83 years అండి.	ANSWER}
+{\slot
+అంటే	O
+మా	O
+fatherకి	B-familal
+83	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మా fatherకి ఇలా varicose veins ఉందేమో అని doubt వచ్చిందండీ.	STATEMENT}
+{\slot
+మా	O
+fatherకి	B-familal
+ఇలా	O
+varicose	B-medical_condition
+veins	I-medical_condition
+ఉందేమో	O
+అని	O
+doubt	O
+వచ్చిందండీ.	O
+}
+
+{\intent	d: ఏంటమ్మా	INFO_REQUEST}
+{\slot
+ఏంటమ్మా	O
+}
+
+{\intent	p: ఇలా నరాలు ఉబ్బి,	STATEMENT}
+{\slot
+ఇలా	O
+నరాలు	B-body_part
+ఉబ్బి,	B-symptom
+}
+
+{\intent	d: ok ok అమ్మా	ACK}
+{\slot
+ok	O
+ok	O
+అమ్మా	O
+}
+
+{\intent	p: చాలా pain వస్తుందండీ	STATEMENT}
+{\slot
+చాలా	B-intensity
+pain	B-symptom
+వస్తుందండీ	O
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: ఆ దానికి treatment అనేది ఎలాగా ఏంటి అనేది?	INFO_REQUEST}
+{\slot
+ఆ	O
+దానికి	O
+treatment	B-treatment
+అనేది	O
+ఎలాగా	O
+ఏంటి	O
+అనేది	O
+}
+
+{\intent	d: ok ok అమ్మా	ACK}
+{\slot
+ok	O
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: varicose ఉందా fatherకి?	INFO_REQUEST}
+{\slot
+varicose	B-medical_condition
+ఉందా	O
+fatherకి?	B-familal
+}
+
+{\intent	d: ఎలా ఉన్నాయి అమ్మా కాళ్లల్లో ఎలా ఉన్నాయి అవి? సన్నటి దారాలు లాగా కనిపిస్తున్నాయి.	INFO_REQUEST}
+{\slot
+ఎలా	O
+ఉన్నాయి	O
+అమ్మా	O
+కాళ్లల్లో	B-body_part
+ఎలా	O
+ఉన్నాయి	O
+అవి?	O
+సన్నటి	B-symptom
+దారాలు	I-symptom
+లాగా	O
+కనిపిస్తున్నాయి.	O
+}
+
+{\intent	p: కాళ్ల నరాలు ఇలా ఉబ్బి, ఉన్నాయి అండి మోకాళ్ళ కింద వెనకాల	ANSWER}
+{\slot
+కాళ్ల	B-body_part
+నరాలు	I-body_part
+ఇలా	O
+ఉబ్బి,	B-symptom
+ఉన్నాయి	I-symptom
+అండి	O
+మోకాళ్ళ	B-body_part
+కింద	B-location
+వెనకాల	I-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నొప్పి వస్తుందండీ బాగా pain	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+వస్తుందండీ	O
+బాగా	B-intensity
+pain	B-symptom
+}
+
+{\intent	p: కింద పెడుతుంటే నొప్పి	STATEMENT}
+{\slot
+కింద	O
+పెడుతుంటే	O
+నొప్పి	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కాలు కొంచం ఎత్తు మీద అలా పెట్టుకుంటే కొంచం బాగా ఉంటుంది.	STATEMENT}
+{\slot
+కాలు	B-body_part
+కొంచం	O
+ఎత్తు	O
+మీద	B-location
+అలా	O
+పెట్టుకుంటే	O
+కొంచం	O
+బాగా	B-normal
+ఉంటుంది.	O
+}
+
+{\intent	d: ok అమ్మా. ok	ACK}
+{\slot
+ok	O
+అమ్మా.	O
+ok	O
+}
+
+{\intent	d: కాలు పైన అంతా బాగా నల్లగా అయిపోయిందా అలాగా. black colorలాగా	STATEMENT}
+{\slot
+కాలు	B-body_part
+పైన	I-location
+అంతా	O
+బాగా	B-intensity
+నల్లగా	B-color
+అయిపోయిందా	O
+అలాగా.	O
+black	B-color
+colorలాగా	I-color
+}
+
+{\intent	d: ok అమ్మా.	ACK}
+{\slot
+ok	O
+అమ్మా.	O
+}
+
+{\intent	d: ఈ job ఏం చేస్తుంటారు father ముందు?	INFO_REQUEST}
+{\slot
+ఈ	O
+job	B-profession
+ఏం	O
+చేస్తుంటారు	O
+father	B-familal
+ముందు?	O
+}
+
+{\intent	p: father retired అండి.	ANSWER}
+{\slot
+father	B-familal
+retired	B-profession
+అండి.	O
+}
+
+{\intent	p: 83	ANSWER}
+{\slot
+83	B-age
+}
+
+{\intent	d: maximum varicose ఏ ఉంటుందండీ అన్నమాట మనకి.	DIAGNOSIS}
+{\slot
+maximum	O
+varicose	B-medical_condition
+ఏ	O
+ఉంటుందండీ	O
+అన్నమాట	O
+మనకి.	O
+}
+

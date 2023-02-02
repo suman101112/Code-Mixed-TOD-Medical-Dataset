@@ -1,0 +1,110 @@
+{\intent	p: doctor గారు నా పేరు Ambika.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Ambika.	B-name
+}
+
+{\intent	p: వయస్సు 21 సంవత్సరాలు.	STATEMENT}
+{\slot
+వయస్సు	O
+21	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు కళ్ళ కింద dark circles వస్తున్నాయి.	STATEMENT}
+{\slot
+నాకు	O
+కళ్ళ	B-body_part
+కింద	B-location
+dark	B-symptom
+circles	I-symptom
+వస్తున్నాయి.	O
+}
+
+{\intent	p: దీనికి remedy ఏంటి?	INFO_REQUEST}
+{\slot
+దీనికి	O
+remedy	B-treatment
+ఏంటి?	O
+}
+
+{\intent	d: Ambika గారు మీ వయస్సు 21 అని చెప్తున్నారు.	ACK}
+{\slot
+Ambika	B-name
+గారు	O
+మీ	O
+వయస్సు	O
+21	B-age
+అని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: కళ్ళ కింద dark circles వస్తున్నాయి.	ACK}
+{\slot
+కళ్ళ	B-body_part
+కింద	B-location
+dark	B-symptom
+circles	I-symptom
+వస్తున్నాయి.	O
+}
+
+{\intent	d: ఈ మధ్య కాలంలో కళ్ళ కింద dark circles చాలా ఎక్కువగా చూస్తున్నాం.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కాలంలో	I-time_period
+కళ్ళ	B-body_part
+కింద	B-location
+dark	B-symptom
+circles	I-symptom
+చాలా	B-intensity
+ఎక్కువగా	B-intensity
+చూస్తున్నాం.	O
+}
+
+{\intent	d: కారణాలు ఏంటి అంటే, ఎక్కువగా TV చూడాడం, రాత్రి నిద్ర లేకపోవడం అలాగే రక్త హీనత అలాగే computer ముందు కుర్చోని చాలా సేపు work చేయడం, tiredness, stress ఇవన్నీ కూడా కారణాలే	MEDICAL_EXPLANATION}
+{\slot
+కారణాలు	O
+ఏంటి	O
+అంటే,	O
+ఎక్కువగా	B-intensity
+TV	O
+చూడాడం,	O
+రాత్రి	B-time_period
+నిద్ర	B-bodily_process
+లేకపోవడం	B-negative
+అలాగే	O
+రక్త	B-body_substance
+హీనత	B-symptom
+అలాగే	O
+computer	O
+ముందు	O
+కుర్చోని	O
+చాలా	B-intensity
+సేపు	B-time_period
+work	B-profession
+చేయడం,	O
+tiredness,	B-symptom
+stress	B-symptom
+ఇవన్నీ	O
+కూడా	O
+కారణాలే	O
+}
+
+{\intent	d: అలాగే వంశ పారంపర్యంగా కూడా కళ్ళ చుట్టూ వలయాలు వచ్చే chances ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+అలాగే	O
+వంశ	O
+పారంపర్యంగా	O
+కూడా	O
+కళ్ళ	B-body_part
+చుట్టూ	B-location
+వలయాలు	B-symptom
+వచ్చే	O
+chances	O
+ఉంటాయి.	O
+}
+

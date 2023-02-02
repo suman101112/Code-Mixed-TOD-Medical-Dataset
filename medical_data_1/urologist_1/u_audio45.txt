@@ -1,0 +1,130 @@
+{\intent	d: చెప్పండమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Bikshapati	STATEMENT}
+{\slot
+Bikshapati	B-name
+}
+
+{\intent	d: చెప్పండి బాబు ఇబ్బంది ఏంటి	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+ఇబ్బంది	B-symptom
+ఏంటి	O
+}
+
+{\intent	p: kidney stones problem sir, scanning ఉన్నాయి sir పాతవి.	ANSWER}
+{\slot
+kidney	B-body_substance
+stones	B-body_substance
+problem	B-symptom
+sir,	O
+scanning	B-mtest
+ఉన్నాయి	O
+sir	O
+పాతవి.	O
+}
+
+{\intent	p: మొన్న తీసుకున్నవి	STATEMENT}
+{\slot
+మొన్న	B-time_period
+తీసుకున్నవి	O
+}
+
+{\intent	d: నీకు నొప్పి కానీ ఇబ్బంది కానీ ఉందా?	INFO_REQUEST}
+{\slot
+నీకు	O
+నొప్పి	B-symptom
+కానీ	O
+ఇబ్బంది	B-symptom
+కానీ	O
+ఉందా?	O
+}
+
+{\intent	p: ఇప్పుడు ఇబ్బంది ఏం లేదు sir కానీ normal అయిందా కాలేదా, totalగా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఇబ్బంది	B-symptom
+ఏం	O
+లేదు	B-negative
+sir	O
+కానీ	O
+normal	O
+అయిందా	O
+కాలేదా,	O
+totalగా?	O
+}
+
+{\intent	p: first 9 ఉండే, తరువాత 7 అయింది కానీ మళ్ళ ఈడికి తీసుకోలే కదా అని	STATEMENT}
+{\slot
+first	O
+9	B-mtest_value
+ఉండే,	O
+తరువాత	O
+7	B-mtest_value
+అయింది	O
+కానీ	O
+మళ్ళ	O
+ఈడికి	O
+తీసుకోలే	O
+కదా	O
+అని	O
+}
+
+{\intent	d: ఇప్పుడు ఇబ్బంది కానీ మూత్రంలో మంట కానీ ఉందా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఇబ్బంది	B-symptom
+కానీ	O
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+కానీ	O
+ఉందా?	O
+}
+
+{\intent	p: ఏం లేదు sir.	STATEMENT}
+{\slot
+ఏం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: ఈ రిపోర్టు తీసుకుని రండి	ACTION_DIR}
+{\slot
+ఈ	O
+రిపోర్టు	O
+తీసుకుని	O
+రండి	O
+}
+
+{\intent	p: sir మళ్ళీ తీద్దామా sir?	INFO_REQUEST}
+{\slot
+sir	O
+మళ్ళీ	O
+తీద్దామా	O
+sir?	O
+}
+
+{\intent	d: మళ్ళి scan తీస్తే తెలుస్తది stones ఉందో లేదో అని	STATEMENT}
+{\slot
+మళ్ళి	O
+scan	B-mtest
+తీస్తే	O
+తెలుస్తది	O
+stones	B-body_substance
+ఉందో	O
+లేదో	O
+అని?	O
+}
+
+{\intent	p: సరే sir.	ACK}
+{\slot
+సరే	O
+sir.	O
+}
+

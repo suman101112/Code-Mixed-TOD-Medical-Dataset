@@ -1,0 +1,270 @@
+{\intent	p: actualగా problem నా wifeకి అండి	STATEMENT}
+{\slot
+actualగా	O
+problem	O
+నా	O
+wifeకి	B-familal
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: చెప్పండి sir	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: అంటే recentగా deliver అయింది	STATEMENT}
+{\slot
+అంటే	O
+recentగా	O
+deliver	B-bodily_process
+అయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎప్పుడైతే pregnant అయిందో అప్పుడు normal general checkup చేసినప్పుడు	STATEMENT}
+{\slot
+ఎప్పుడైతే	O
+pregnant	B-medical_condition
+అయిందో	O
+అప్పుడు	B-time_period
+normal	O
+general	O
+checkup	O
+చేసినప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తనకు HBSAG positive అని వచ్చిందండీ	STATEMENT}
+{\slot
+తనకు	O
+HBSAG	B-medical_condition
+positive	I-medical_condition
+అని	O
+వచ్చిందండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: after delivery	STATEMENT}
+{\slot
+after	O
+delivery	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తనకు motions రావడం కానీ	STATEMENT}
+{\slot
+తనకు	O
+motions	B-bodily_process
+రావడం	O
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కడుపులో pain రావడం కానీ	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+pain	B-symptom
+రావడం	O
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎక్కువగా heavyగా ఉంది అండి.	STATEMENT}
+{\slot
+ఎక్కువగా	B-intensity
+heavyగా	B-intensity
+ఉంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so నాకు ఈ 2 clarifications కావలండీ	INFO_REQUEST}
+{\slot
+so	O
+నాకు	O
+ఈ	O
+2	O
+clarifications	O
+కావలండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక్కటి, HBSAGకి treatment అది ఇప్పుడు నుంచి తీసుకోవాలా లేకపోతే further futureలో తీసుకోవాలా అనేది నాది ఒక doubt?	INFO_REQUEST}
+{\slot
+ఒక్కటి,	O
+HBSAGకి	B-medical_condition
+treatment	B-treatment
+అది	O
+ఇప్పుడు	O
+నుంచి	O
+తీసుకోవాలా	O
+లేకపోతే	O
+further	O
+futureలో	B-time_period
+తీసుకోవాలా	O
+అనేది	O
+నాది	O
+ఒక	O
+doubt	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే ఇంకోటి, ఇలా normalగానే motions pregnant అయి	STATEMENT}
+{\slot
+అలాగే	O
+ఇంకోటి,	O
+ఇలా	O
+normalగానే	B-normal
+motions	B-symptom
+pregnant	B-medical_condition
+అయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: delivery అయినా తర్వాత	STATEMENT}
+{\slot
+delivery	B-bodily_process
+అయినా	O
+తర్వాత	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కానీ తనకు heavyగా ఉంది	STATEMENT}
+{\slot
+కానీ	O
+తనకు	O
+heavyగా	B-intensity
+ఉంది	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే దానికి separate medicines ఏమన్నా treatment ఏమన్నా ఉంటదా?	INFO_REQUEST}
+{\slot
+అంటే	O
+దానికి	O
+separate	O
+medicines	B-medicine
+ఏమన్నా	O
+treatment	B-treatment
+ఏమన్నా	O
+ఉంటదా?	O
+}
+
+{\intent	p: లేకుంటే HBSAGకి treatment తీసుకుంటే సరిపోతదా అనేది doubt	STATEMENT}
+{\slot
+లేకుంటే	O
+HBSAGకి	B-medical_condition
+treatment	B-treatment
+తీసుకుంటే	O
+సరిపోతదా	O
+అనేది	O
+doubt	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే తీసుకోవాలంటే ఎక్కడ తీసుకోవాలి	INFO_REQUEST}
+{\slot
+అంటే	O
+తీసుకోవాలంటే	O
+ఎక్కడ	O
+తీసుకోవాలి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎలాంటి hospital తీసుకోవాలి?	INFO_REQUEST}
+{\slot
+ఎలాంటి	O
+hospital	O
+తీసుకోవాలి?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అనేది doubt	STATEMENT}
+{\slot
+అనేది	O
+doubt	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ముఖ్యంగా hepatitis B surface antigen అని చెప్తూ ఉంటాము.	MEDICAL_EXPLANATION}
+{\slot
+ముఖ్యంగా	O
+hepatitis	B-medical_condition
+B	I-medical_condition
+surface	I-medical_condition
+antigen	I-medical_condition
+అని	O
+చెప్తూ	O
+ఉంటాము.	O
+}
+

@@ -1,0 +1,130 @@
+{\intent	p: నా కళ్ళు రెండు మూసుకుపోయినట్లు ఉంటాయి.	STATEMENT}
+{\slot
+నా	O
+కళ్ళు	B-body_part
+రెండు	B-frequency
+మూసుకుపోయినట్లు	B-symptom
+ఉంటాయి.	O
+}
+
+{\intent	p: అంటే కనురెప్పల పై part ఉబ్బెత్తుగా, ఉంటుంది.	STATEMENT}
+{\slot
+అంటే	O
+కనురెప్పల	B-body_part
+పై	B-location
+part	B-body_part
+ఉబ్బెత్తుగా,	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: కన్నులు మూసుకుపోయినట్లుగా ఉంది.	STATEMENT}
+{\slot
+కన్నులు	B-body_part
+మూసుకుపోయినట్లుగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: దీనినే medical terminologyలో tosis అంటారట.	STATEMENT}
+{\slot
+దీనినే	O
+medical	O
+terminologyలో	O
+tosis	B-medical_condition
+అంటారట.	O
+}
+
+{\intent	p: ఈ tosis పరిస్థితి నుంచి బయటికి రావాలంటే మళ్ళి మామూలుగా చూడాలంటే, పైకి చూడాలంటే చాలా ఇబ్బంది పడుతున్నాను.	STATEMENT}
+{\slot
+ఈ	O
+tosis	B-medical_condition
+పరిస్థితి	O
+నుంచి	O
+బయటికి	O
+రావాలంటే	O
+మళ్ళి	O
+మామూలుగా	B-normal
+చూడాలంటే,	B-bodily_process
+పైకి	B-location
+చూడాలంటే	B-bodily_process
+చాలా	B-intensity
+ఇబ్బంది	B-symptom
+పడుతున్నాను.	I-symptom
+}
+
+{\intent	p: ఈ eyelidsకి ఏమన్నా surgery ఉందా? తెలియచేయండి.	INFO_REQUEST}
+{\slot
+ఈ	O
+eyelidsకి	B-body_part
+ఏమన్నా	O
+surgery	B-treatment
+ఉందా?	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: nerve related problems ఏమైనా ఉన్న, కొంతమందికి age related problems ఏమైనా ఉంటే గనక ఈ tosis develop అయితుంది.	MEDICAL_EXPLANATION}
+{\slot
+nerve	B-body_part
+related	O
+problems	O
+ఏమైనా	O
+ఉన్న,	O
+కొంతమందికి	O
+age	O
+related	O
+problems	O
+ఏమైనా	O
+ఉంటే	O
+గనక	O
+ఈ	O
+tosis	B-medical_condition
+develop	B-symptom
+అయితుంది.	I-symptom
+}
+
+{\intent	d: ఈ tosisకి treatment ఏంటి అని అంటే, వాళ్ళు వీలు అయితే గనక neurological problem ఉంటే గనక first neurophysicianకి చూపించి దాని rectify చేయగలిగితే చెప్పియాలి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+tosisకి	B-medical_condition
+treatment	B-treatment
+ఏంటి	O
+అని	O
+అంటే,	O
+వాళ్ళు	O
+వీలు	O
+అయితే	O
+గనక	O
+neurological	B-medical_condition
+problem	I-medical_condition
+ఉంటే	O
+గనక	O
+first	O
+neurophysicianకి	B-medical_professional
+చూపించి	O
+దాని	O
+rectify	O
+చేయగలిగితే	O
+చెప్పియాలి.	O
+}
+
+{\intent	d: దాని తరువాత ఒకవేల వీలు కాదు ఇంకా surgery నే మర్గం అన్నా తరువాత మీరు అన్నట్లు eyelidకి మేము surgery కూడా చేస్తాము.	MEDICAL_EXPLANATION}
+{\slot
+దాని	O
+తరువాత	O
+ఒకవేల	O
+వీలు	O
+కాదు	O
+ఇంకా	O
+surgery	B-treatment
+నే	O
+మర్గం	O
+అన్నా	O
+తరువాత	O
+మీరు	O
+అన్నట్లు	O
+eyelidకి	B-body_part
+మేము	O
+surgery	B-treatment
+కూడా	O
+చేస్తాము.	O
+}
+

@@ -1,0 +1,271 @@
+{\intent	d: ఏం పేరు అమ్మా నీది?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా	O
+నీది?	O
+}
+
+{\intent	p: Maalika	ANSWER}
+{\slot
+Maalika	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 29	STATEMENT}
+{\slot
+29	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: దేనికోసం వచ్చావు?	INFO_REQUEST}
+{\slot
+దేనికోసం	O
+వచ్చావు?	O
+}
+
+{\intent	p1: ఈ చిట్టీలు చూపెట్టు	STATEMENT}
+{\slot
+ఈ	O
+చిట్టీలు	O
+చూపెట్టు	O
+}
+
+{\intent	p: మేము already sir కి చూపెట్టము పోయినసారి 2 months 3 months	STATEMENT}
+{\slot
+మేము	O
+already	O
+sir	O
+కి	O
+చూపెట్టము	O
+పోయినసారి	B-frequency
+2	B-time_period
+months	I-time_period
+3	B-time_period
+months	I-time_period
+}
+
+{\intent	d: అంటే pregnancies రావట్లేదనా?	INFO_REQUEST}
+{\slot
+అంటే	O
+pregnancies	B-bodily_process
+రావట్లేదనా?	B-negative
+}
+
+{\intent	p: ఆ	STATEMENT}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: Narsimha reddy దెగ్గర వాడినము	STATEMENT}
+{\slot
+Narsimha	B-medical_professional
+reddy	I-health_professional
+దెగ్గర	O
+వాడినము	O
+}
+
+{\intent	d: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కానీ ఆ tablets పడక కొంచం sick అయిపోయినా	STATEMENT}
+{\slot
+కానీ	O
+ఆ	O
+tablets	B-medicine
+పడక	O
+కొంచం	B-intensity
+sick	B-symptom
+అయిపోయినా	O
+}
+
+{\intent	d: ఆ ఏమైంది?	INFO_REQUEST}
+{\slot
+ఆ	O
+ఏమైంది?	O
+}
+
+{\intent	d: అంటే pregnancies కోసం వాడుతున్నారు, pregnancy రాలే	STATEMENT}
+{\slot
+అంటే	O
+pregnancies	B-bodily_process
+కోసం	O
+వాడుతున్నారు,	O
+pregnancy	B-bodily_process
+రాలే	B-negative
+}
+
+{\intent	d: పెళ్ళయి ఎన్ని సంవత్సరాలు?	INFO_REQUEST}
+{\slot
+పెళ్ళయి	B-marital_status
+ఎన్ని	O
+సంవత్సరాలు?	O
+}
+
+{\intent	p: 2 years. ఇప్పుడు 2nd year	ANSWER}
+{\slot
+2	B-time_period
+years.	I-time_period
+ఇప్పుడు	O
+2nd	B-frequency
+year	B-time_period
+}
+
+{\intent	d: 2 years	ANSWER}
+{\slot
+2	B-time_period
+years	I-time_period
+}
+
+{\intent	d: periods regular ఆ?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regular	B-normal
+ఆ?	O
+}
+
+{\intent	p: కొంచెం irregular ఏ అంది.	STATEMENT}
+{\slot
+కొంచెం	B-intensity
+irregular	B-symptom
+ఏ	O
+అంది.	O
+}
+
+{\intent	d: 2 months 3 months	STATEMENT}
+{\slot
+2	B-time_period
+months	I-time_period
+3	B-time_period
+months	I-time_period
+}
+
+{\intent	p: thyroid ఉంది.	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: 3 months దాకా వెళ్ళిందండి.	STATEMENT}
+{\slot
+3	B-time_period
+months	I-time_period
+దాకా	O
+వెళ్ళిందండి.	O
+}
+
+{\intent	d: thyriodకి ఎంత వేసుకుంటావ్?	INFO_REQUEST}
+{\slot
+thyriodకి	B-medical_condition
+ఎంత	O
+వేసుకుంటావ్?	O
+}
+
+{\intent	p: 125 mcg	STATEMENT}
+{\slot
+125	B-medicine_dose
+mcg	I-medicine_dose
+}
+
+{\intent	d: ఏం చదువుకున్నావు నువ్వు?	INFO_REQUEST}
+{\slot
+ఏం	O
+చదువుకున్నావు	O
+నువ్వు?	O
+}
+
+{\intent	p: నేను dentistని అండి.	STATEMENT}
+{\slot
+నేను	O
+dentistని	B-medical_professional
+అండి.	O
+}
+
+{\intent	d: నీ husband?	INFO_REQUEST}
+{\slot
+నీ	O
+husband?	B-familal
+}
+
+{\intent	d: test చేయించుకున్నావా?	INFO_REQUEST}
+{\slot
+test	B-mtest
+చేయించుకున్నావా?	O
+}
+
+{\intent	p: ఏం అవ్వలేదు, ఏం చేయలేదు just 2 months ఏ వెళ్ళినా	STATEMENT}
+{\slot
+ఏం	O
+అవ్వలేదు,	B-negative
+ఏం	O
+చేయలేదు	B-negative
+just	O
+2	B-time_period
+months	I-time_period
+ఏ	O
+వెళ్ళినా	O
+}
+
+{\intent	d: sir మళ్ళి test చేసుకోకుండా  చూడరే?	INFO_REQUEST}
+{\slot
+sir	O
+మళ్ళి	O
+test	B-mtest
+చేసుకోకుండా	O
+చూడరే?	O
+}
+
+{\intent	p: అంటే నేను period మధ్యలో వెళ్ళాను, 15 days కి తర్వాత వెళ్ళాను	STATEMENT}
+{\slot
+అంటే	O
+నేను	O
+period	B-bodily_process
+మధ్యలో	B-time_period
+వెళ్ళాను,	O
+15	B-time_period
+days	I-time_period
+కి	O
+తర్వాత	B-time_period
+వెళ్ళాను	O
+}
+
+{\intent	d: ok ఇప్పుడు period వచ్చి ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+ok	O
+ఇప్పుడు	B-time_period
+period	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు?	B-time_period
+}
+
+{\intent	p: ఈ రోజు 1st day madam.	STATEMENT}
+{\slot
+ఈ	O
+రోజు	B-time_period
+1st	B-time_period
+day	I-time_period
+madam.	O
+}
+
+{\intent	d: 1st day	STATEMENT}
+{\slot
+1st	B-time_period
+day	I-time_period
+}
+
+{\intent	d: పడుకోమ్మా	STATEMENT}
+{\slot
+పడుకోమ్మా	O
+}
+

@@ -1,0 +1,578 @@
+{\intent	p: sir	SU}
+{\slot
+sir	O
+}
+
+{\intent	p: sir నమస్తే sir.	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir.	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: sir నా పేరు Ranadheer sir. Hanamkonda.	STATEMENT}
+{\slot
+sir	O
+నా	O
+పేరు	O
+Ranadheer	B-name
+sir.	O
+Hanamkonda.	B-place
+}
+
+{\intent	d: కొద్దిగా గట్టిగా మట్లాడండి please	SNU}
+{\slot
+కొద్దిగా	O
+గట్టిగా	O
+మట్లాడండి	O
+please	O
+}
+
+{\intent	p: sir నా పేరు Ranadheer Reddy sir, Hanamkonda.	REPEAT_REPHRASE}
+{\slot
+sir	O
+నా	O
+పేరు	O
+Ranadheer	B-name
+Reddy	I-name
+sir,	O
+Hanamkonda.	B-place
+}
+
+{\intent	d: yes yes చెప్పండి	ACTION_DIR}
+{\slot
+yes	O
+yes	O
+చెప్పండి	O
+}
+
+{\intent	p: sir ఇది నాకు last 4 years వచ్చేసి migrane one side headache వస్తుంది.	STATEMENT}
+{\slot
+sir	O
+ఇది	O
+నాకు	O
+last	B-time_period
+4	I-time_period
+years	I-time_period
+వచ్చేసి	O
+migrane	B-symptom
+one	B-frequency
+side	B-location
+headache	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: last 4 years నుంచి one side headache బాగా వస్తుంది	STATEMENT}
+{\slot
+last	B-time_period
+4	I-time_period
+years	I-time_period
+నుంచి	O
+one	B-frequency
+side	B-location
+headache	B-symptom
+బాగా	B-intensity
+వస్తుంది	O
+}
+
+{\intent	p: అది midnightలా గానీ అది ఇది అని వస్తుంది. దాని కొరకు మామూలుగా treatment తీసుకుంటే ఒక 3 months తరువాత మళ్ళి అదే continue అవుతుంది.	STATEMENT}
+{\slot
+అది	O
+midnightలా	B-time_period
+గానీ	O
+అది	O
+ఇది	O
+అని	O
+వస్తుంది.	O
+దాని	O
+కొరకు	O
+మామూలుగా	O
+treatment	B-treatment
+తీసుకుంటే	O
+ఒక	O
+3	B-time_period
+months	I-time_period
+తరువాత	O
+మళ్ళి	O
+అదే	O
+continue	O
+అవుతుంది.	O
+}
+
+{\intent	p: permanent solution దొరకట్లే నాకు last 4 years నుంచి	STATEMENT}
+{\slot
+permanent	O
+solution	O
+దొరకట్లే	O
+నాకు	O
+last	B-time_period
+4	I-time_period
+years	I-time_period
+నుంచి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	p: ఒకసారి వచ్చిందంటే midnight 12 తరువాత వచ్చేసిందంటే ఇగ అది right నా వర్న అతీతంగా ఉంటుంది ఆ pain నాకు.	STATEMENT}
+{\slot
+ఒకసారి	O
+వచ్చిందంటే	O
+midnight	B-time_period
+12	I-time_period
+తరువాత	I-time_period
+వచ్చేసిందంటే	O
+ఇగ	O
+అది	O
+right	B-location
+నా	O
+వర్న	O
+అతీతంగా	O
+ఉంటుంది	O
+ఆ	O
+pain	B-symptom
+నాకు.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అట్లానే continuation 1 month ఉంటుంది. 1 month తర్వాత నేను దాదాపుగా Yashoda secunderabad చూసుకున్న hospital పోయిన నాకు permanent solution అది దొరకలేదు sir.	STATEMENT}
+{\slot
+అట్లానే	O
+continuation	O
+1	B-time_period
+month	I-time_period
+ఉంటుంది.	O
+1	B-time_period
+month	I-time_period
+తర్వాత	I-time_period
+నేను	O
+దాదాపుగా	O
+Yashoda	B-hospital_name
+secunderabad	B-place
+చూసుకున్న	O
+hospital	O
+పోయిన	O
+నాకు	O
+permanent	O
+solution	O
+అది	O
+దొరకలేదు	O
+sir.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: మీరు పని ఏం చేస్తార?	INFO_REQUEST}
+{\slot
+మీరు	O
+పని	O
+ఏం	O
+చేస్తార?	O
+}
+
+{\intent	p: ఏంటి sir? ఏమంటారు?	SNU}
+{\slot
+ఏంటి	O
+sir?	O
+ఏమంటారు?	O
+}
+
+{\intent	d: మీరు ఏం పని చేస్తారు?	REPEAT_REPHRASE}
+{\slot
+మీరు	O
+ఏం	O
+పని	O
+చేస్తారు?	O
+}
+
+{\intent	p: నేను మామూలుగా real estate వ్రుత్తి లో ఉన్న.	ANSWER}
+{\slot
+నేను	O
+మామూలుగా	O
+real	B-profession
+estate	I-profession
+వ్రుత్తి	I-profession
+లో	O
+ఉన్న.	O
+}
+
+{\intent	d: ఏంటండీ? railway లో?	SNU}
+{\slot
+ఏంటండీ?	O
+railway	B-profession
+లో?	O
+}
+
+{\intent	p1: real estate.	REPEAT_REPHRASE}
+{\slot
+real	B-profession
+estate.	I-profession
+}
+
+{\intent	d: real estate.	ACK}
+{\slot
+real	B-profession
+estate.	I-profession
+}
+
+{\intent	p: real estate లో ఉన్నాను అండి.	ACK}
+{\slot
+real	B-profession
+estate	I-profession
+లో	O
+ఉన్నాను	O
+అండి.	O
+}
+
+{\intent	d: మీ sleeping time ఏంటి?	INFO_REQUEST}
+{\slot
+మీ	O
+sleeping	B-bodily_process
+time	B-time_period
+ఏంటి?	O
+}
+
+{\intent	p: madam?	SNU}
+{\slot
+madam?	O
+}
+
+{\intent	d: మీరు ఎన్ని గంటలకు పడుకుంటారా?	INFO_REQUEST}
+{\slot
+మీరు	O
+ఎన్ని	O
+గంటలకు	B-time_period
+పడుకుంటారా?	O
+}
+
+{\intent	p: sir నేను మామూలుగా అయితే late night పడుకుంటాను అండి.	ANSWER}
+{\slot
+sir	O
+నేను	O
+మామూలుగా	O
+అయితే	O
+late	B-time_period
+night	I-time_period
+పడుకుంటాను	B-bodily_process
+అండి.	O
+}
+
+{\intent	d: late night.	ACK}
+{\slot
+late	B-time_period
+night.	I-time_period
+}
+
+{\intent	d: food timeకి తింటారా? లేదా?	INFO_REQUEST}
+{\slot
+food	B-food_substance
+timeకి	B-time_period
+తింటారా?	B-bodily_process
+లేదా?	O
+}
+
+{\intent	p: timeకి అంటే in-time లో తినను.	ANSWER}
+{\slot
+timeకి	B-time_period
+అంటే	O
+in-time	B-time_period
+లో	O
+తినను.	B-bodily_process
+}
+
+{\intent	p: headache వచ్చినప్పుడు అయితే నాకు motionsకి ఉన్ను vomits అయితాయి madam.	STATEMENT}
+{\slot
+headache	B-symptom
+వచ్చినప్పుడు	B-time_period
+అయితే	O
+నాకు	O
+motionsకి	B-symptom
+ఉన్ను	O
+vomits	B-symptom
+అయితాయి	O
+madam.	O
+}
+
+{\intent	d: umm. umm. umm.	ACK}
+{\slot
+umm.	O
+umm.	O
+umm.	O
+}
+
+{\intent	p: కొంచం motion ఇంకా vomiting అయితది కొంచం cure అయితది.	STATEMENT}
+{\slot
+కొంచం	O
+motion	B-symptom
+ఇంకా	O
+vomiting	B-symptom
+అయితది	O
+కొంచం	O
+cure	B-normal
+అయితది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: తల తిప్పుతదా?	INFO_REQUEST}
+{\slot
+తల	B-body_part
+తిప్పుతదా?	B-symptom
+}
+
+{\intent	p: తల మామూలుగా తిరగదు sir అది. ఎటు పడుకున్నా గానీ పడుకోలేకపొతా	ANSWER}
+{\slot
+తల	B-body_part
+మామూలుగా	O
+తిరగదు	B-symptom
+sir	O
+అది.	O
+ఎటు	O
+పడుకున్నా	B-bodily_process
+గానీ	O
+పడుకోలేకపొతా	B-symptom
+}
+
+{\intent	d: phoneలో ఎక్కువ మట్లాడుతారా?	INFO_REQUEST}
+{\slot
+phoneలో	O
+ఎక్కువ	B-intensity
+మట్లాడుతారా?	B-bodily_process
+}
+
+{\intent	p: ఆ దాదాపు phone calls అనేవి ఎక్కువ ఉంటది.	ANSWER}
+{\slot
+ఆ	O
+దాదాపు	O
+phone	O
+calls	O
+అనేవి	O
+ఎక్కువ	B-intensity
+ఉంటది.	O
+}
+
+{\intent	d: yes yes. ok.	ACK}
+{\slot
+yes	O
+yes.	O
+ok.	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: sir sir?	SNU}
+{\slot
+sir	O
+sir?	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 47 అండి.	ANSWER}
+{\slot
+47	B-age
+అండి.	O
+}
+
+{\intent	d: 47	ACK}
+{\slot
+47	B-age
+}
+
+{\intent	d: bp sugar thyroid అలాంటివి ఏమైనా problems ఉన్నాయా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+thyroid	B-medical_condition
+అలాంటివి	O
+ఏమైనా	O
+problems	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: sugar ఉంది అండి. sugarకు నేను last 1 n half year నుంచి tablet వాడుతున్నా.	ANSWER}
+{\slot
+sugar	B-medical_condition
+ఉంది	O
+అండి.	O
+sugarకు	B-medical_condition
+నేను	O
+last	O
+1	B-time_period
+n	I-time_period
+half	I-time_period
+year	I-time_period
+నుంచి	O
+tablet	B-medicine
+వాడుతున్నా.	O
+}
+
+{\intent	d: sugar control లో ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+control	B-normal
+లో	O
+ఉందా?	O
+}
+
+{\intent	p: control లో ఉందండి. control means 180 190 range లో వస్తుంది అండి.	ANSWER}
+{\slot
+control	B-normal
+లో	O
+ఉందండి.	B-positive
+control	B-normal
+means	O
+180	B-mtest_value
+190	B-mtest_value
+range	O
+లో	O
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: after post lunch	STATEMENT}
+{\slot
+after	B-time_period
+post	I-time_period
+lunch	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so మీ problem ఎమిటంటే మేము chronic migrane అని మేము అంటాము.	DIAGNOSIS}
+{\slot
+so	O
+మీ	O
+problem	O
+ఎమిటంటే	O
+మేము	O
+chronic	B-symptom
+migrane	B-symptom
+అని	O
+మేము	O
+అంటాము.	O
+}
+
+{\intent	d: so frequentగా వస్తుంది. more than 15 days a month వస్తుంది and it has been there for more than 3 months అంటే 3 నెలల నుంచి ఎక్కువ అయింది.	ACK}
+{\slot
+so	O
+frequentగా	O
+వస్తుంది.	O
+more	O
+than	O
+15	B-time_period
+days	I-time_period
+a	O
+month	B-time_period
+వస్తుంది	O
+and	O
+it	O
+has	O
+been	O
+there	B-location
+for	O
+more	O
+than	O
+3	B-time_period
+months	I-time_period
+అంటే	O
+3	B-time_period
+నెలల	I-time_period
+నుంచి	O
+ఎక్కువ	B-intensity
+అయింది.	O
+}
+
+{\intent	d: so ఈ chronic migrane కి treatment difficult గా ఉంటుంది.	STATEMENT}
+{\slot
+so	O
+ఈ	O
+chronic	B-symptom
+migrane	I-symptom
+కి	O
+treatment	B-treatment
+difficult	O
+గా	O
+ఉంటుంది.	O
+}
+
+{\intent	d: migrane treatment based on ఏంటి అంటే అది lifestyle మార్చాలి ఆ జీవన శైలి ఉంటుంది కదా దానితో పాటు దెగ్గర సంబంధం ఉంటుంది migraneకి.	MEDICAL_EXPLANATION}
+{\slot
+migrane	B-symptom
+treatment	B-treatment
+based	O
+on	O
+ఏంటి	O
+అంటే	O
+అది	O
+lifestyle	O
+మార్చాలి	O
+ఆ	O
+జీవన	O
+శైలి	O
+ఉంటుంది	O
+కదా	O
+దానితో	O
+పాటు	O
+దెగ్గర	O
+సంబంధం	O
+ఉంటుంది	O
+migraneకి.	B-symptom
+}
+
+{\intent	d: జీవన శైలి మార్చాలి అది చాలా important.	MEDICAL_EXPLANATION}
+{\slot
+జీవన	O
+శైలి	O
+మార్చాలి	O
+అది	O
+చాలా	O
+important.	O
+}
+

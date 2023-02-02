@@ -1,0 +1,143 @@
+{\intent	p: doctor గారు నా పేరు Mahesh.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Mahesh.	B-name
+}
+
+{\intent	p: నా వయస్సు 27 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+27	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు ఎప్పుడు కళ్ళు దురదగా, కంటి నుంచి నీరు కారుతూ ఉంటుంది.	STATEMENT}
+{\slot
+నాకు	O
+ఎప్పుడు	O
+కళ్ళు	B-body_part
+దురదగా,	B-symptom
+కంటి	B-body_part
+నుంచి	B-location
+నీరు	B-food_substance
+కారుతూ	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: కారణం ఏమై ఉంటుంది?	INFO_REQUEST}
+{\slot
+కారణం	O
+ఏమై	O
+ఉంటుంది?	O
+}
+
+{\intent	d: మీరు చెప్పినా symptoms బట్టి అయితే నా అంచనా అంటే ఇది allergy ఉన్నవాళ్ళకి	STATEMENT}
+{\slot
+మీరు	O
+చెప్పినా	O
+symptoms	B-symptom
+బట్టి	O
+అయితే	O
+నా	O
+అంచనా	O
+అంటే	O
+ఇది	O
+allergy	B-medical_condition
+ఉన్నవాళ్ళకి	O
+}
+
+{\intent	d: అంటే కంట్లో allergy ఉంటుంది.	REPEAT_REPHRASE}
+{\slot
+అంటే	O
+కంట్లో	B-body_part
+allergy	B-medical_condition
+ఉంటుంది.	O
+}
+
+{\intent	d: allergic conjunctivitis అంటూ ఉంటారు.	DIAGNOSIS}
+{\slot
+allergic	B-medical_condition
+conjunctivitis	I-medical_condition
+అంటూ	O
+ఉంటారు.	O
+}
+
+{\intent	d: ఈ allergic conjunctivitis ఉన్నవాళ్ళకి తరచు కన్ను red అవ్వడం. కంట్లో నీరు కారడం, కనులు బాగా దురదగా ఉండడం, బయటికి వెళ్ళగానే కళ్ళు ఎరుపు అయిపోవడం, పొద్దున్న నుంచి సాయంత్రం తిరుగుతున్నప్పుడు suddenగా సాయింత్రం కన్ను ఎరుపు అయిపోయి ఆ నల్ల గుడ్డు చుట్టూ ప్రక్కల ఒక layer లాగా form అయ్యి చిన్న పొక్కులు లాగా form అయి నల్ల గుడ్డు white గుడ్డు junctionలో దురదగా ఉండడం నలపడం కన్ను, వెలుతురులో చూడాలేకపోవడం తరువాత కంట్లో నీరు కారడం, జిగురు జిగురుగా కంట్లో నీరు రావడం ఇవన్నీ allergic conjunctivitis కి సంబంధించిన లక్షణాలు ఇవి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+allergic	B-medical_condition
+conjunctivitis	I-medical_condition
+ఉన్నవాళ్ళకి	O
+తరచు	O
+కన్ను	B-body_part
+red	B-color
+అవ్వడం.	O
+కంట్లో	B-body_part
+నీరు	B-food_substance
+కారడం,	B-symptom
+కనులు	B-body_part
+బాగా	B-intensity
+దురదగా	B-symptom
+ఉండడం,	O
+బయటికి	O
+వెళ్ళగానే	O
+కళ్ళు	B-body_part
+ఎరుపు	B-color
+అయిపోవడం,	B-symptom
+పొద్దున్న	B-time_period
+నుంచి	O
+సాయంత్రం	B-time_period
+తిరుగుతున్నప్పుడు	O
+suddenగా	O
+సాయింత్రం	B-time_period
+కన్ను	B-body_part
+ఎరుపు	B-color
+అయిపోయి	O
+ఆ	O
+నల్ల	B-body_part
+గుడ్డు	I-body_part
+చుట్టూ	B-location
+ప్రక్కల	I-location
+ఒక	O
+layer	B-medical_condition
+లాగా	O
+form	O
+అయ్యి	O
+చిన్న	O
+పొక్కులు	B-symptom
+లాగా	O
+form	O
+అయి	O
+నల్ల	B-body_part
+గుడ్డు	I-body_part
+white	B-body_part
+గుడ్డు	I-body_part
+junctionలో	B-location
+దురదగా	B-symptom
+ఉండడం	O
+నలపడం	B-symptom
+కన్ను,	I-body_part
+వెలుతురులో	B-time_period
+చూడాలేకపోవడం	B-symptom
+తరువాత	B-time_period
+కంట్లో	B-body_part
+నీరు	B-food_substance
+కారడం,	B-symptom
+జిగురు	B-symptom
+జిగురుగా	I-symptom
+కంట్లో	B-body_part
+నీరు	I-food_substance
+రావడం	B-symptom
+ఇవన్నీ	O
+allergic	B-medical_condition
+conjunctivitis	I-medical_condition
+కి	O
+సంబంధించిన	O
+లక్షణాలు	O
+ఇవి.	O
+}
+

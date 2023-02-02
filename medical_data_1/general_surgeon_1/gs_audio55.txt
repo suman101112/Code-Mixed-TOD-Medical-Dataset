@@ -1,0 +1,179 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి Praveenగారు	CONV_OPEN}
+{\slot
+చెప్పండి	O
+Praveenగారు	B-name
+}
+
+{\intent	p: ఆ అది last 1 week నుంచి	HOLD}
+{\slot
+ఆ	O
+అది	O
+last	B-time_period
+1	I-time_period
+week	I-time_period
+నుంచి	O
+}
+
+{\intent	d: ఏముందండి ఇబ్బంది?	INFO_REQUEST}
+{\slot
+ఏముందండి	O
+ఇబ్బంది?	O
+}
+
+{\intent	p: last 1 week నుంచి washroom వెళ్తా ఉంటే full మండుతా ఉందండి	ANSWER}
+{\slot
+last	B-time_period
+1	I-time_period
+week	I-time_period
+నుంచి	O
+washroom	B-place
+వెళ్తా	O
+ఉంటే	O
+full	B-intensity
+మండుతా	B-symptom
+ఉందండి	O
+}
+
+{\intent	d: ok తనతో పాటు వేరే ఏమైనా ఇబ్బందిగా ఉందా?	INFO_REQUEST}
+{\slot
+ok	O
+తనతో	O
+పాటు	O
+వేరే	O
+ఏమైనా	O
+ఇబ్బందిగా	O
+ఉందా?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: bleeding ఏమైనా పడుతుందా?	REPEAT_REPHRASE}
+{\slot
+bleeding	B-medical_condition
+ఏమైనా	O
+పడుతుందా?	O
+}
+
+{\intent	p: ఏం లేదండీ దానితో పాటు	ANSWER}
+{\slot
+ఏం	O
+లేదండీ	O
+దానితో	O
+పాటు	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: motion అనేది freeగా ఉంటుందా అండి?	INFO_REQUEST}
+{\slot
+motion	B-bodily_process
+అనేది	O
+freeగా	B-symptom
+ఉంటుందా	O
+అండి?	O
+}
+
+{\intent	d: stool softగానే ఉంటుండా? hardగా ఉంటుందా?	REPEAT_REPHRASE}
+{\slot
+stool	B-body_substance
+softగానే	B-symptom
+ఉంటుండా?	O
+hardగా	B-symptom
+ఉంటుందా?	O
+}
+
+{\intent	p: hardగానే ఉంటుంది	ANSWER}
+{\slot
+hardగానే	B-symptom
+ఉంటుంది	B-positive
+}
+
+{\intent	d: hardగా ఉంటుంది	ACK}
+{\slot
+hardగా	B-symptom
+ఉంటుంది	I-symptom
+}
+
+{\intent	d: right	CONV_CLOSE}
+{\slot
+right	O
+}
+
+{\intent	d: so ఒక్కటే అండి కేవలం 1 week మాత్రమే అయింది అంటున్నారు	ACK}
+{\slot
+so	O
+ఒక్కటే	O
+అండి	O
+కేవలం	O
+1	B-time_period
+week	I-time_period
+మాత్రమే	O
+అయింది	O
+అంటున్నారు	O
+}
+
+{\intent	d: వేరే ఇంకేం ఇబ్బందులు లేవు అని చెప్తున్నారు	ACK}
+{\slot
+వేరే	O
+ఇంకేం	O
+ఇబ్బందులు	O
+లేవు	O
+అని	O
+చెప్తున్నారు	O
+}
+
+{\intent	d: కేవలం నొప్పి మంట కింద ఉంది కాబట్టి	ACK}
+{\slot
+కేవలం	O
+నొప్పి	B-symptom
+మంట	I-symptom
+కింద	B-location
+ఉంది	O
+కాబట్టి	O
+}
+
+{\intent	d: కంగారు పడవలసిన విషయం ఏం లేదు.	STATEMENT}
+{\slot
+కంగారు	O
+పడవలసిన	O
+విషయం	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	d: immediateగా మీరు కొద్దిగా, చిన్నపాటుగా dietలో changes చేయడానికి ప్రయత్నం చేయండి	ACTION_DIR}
+{\slot
+immediateగా	O
+మీరు	O
+కొద్దిగా,	O
+చిన్నపాటుగా	O
+dietలో	B-food_substance
+changes	O
+చేయడానికి	O
+ప్రయత్నం	O
+చేయండి	O
+}
+
+{\intent	d: అప్పుడు కూడా తగ్గకుంటే definiteగా immediateగా కూడా doctorను సంప్రదించండి.	ACTION_DIR}
+{\slot
+అప్పుడు	B-time_period
+కూడా	O
+తగ్గకుంటే	O
+definiteగా	O
+immediateగా	O
+కూడా	O
+doctorను	B-medical_professional
+సంప్రదించండి.	O
+}
+

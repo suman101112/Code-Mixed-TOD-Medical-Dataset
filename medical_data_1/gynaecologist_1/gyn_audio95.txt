@@ -1,0 +1,126 @@
+{\intent	p: ఆ marriage అయి 1 half year అయింది madam	STATEMENT}
+{\slot
+ఆ	O
+marriage	B-marital_status
+అయి	O
+1	B-time_period
+half	I-time_period
+year	I-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పటి వరకు 4 IUI's అయ్యాయి madam	STATEMENT}
+{\slot
+ఇప్పటి	O
+వరకు	O
+4	B-frequency
+IUI's	B-treatment
+అయ్యాయి	O
+madam	O
+}
+
+{\intent	p: first నాకు count తక్కువ ఉండే madam	STATEMENT}
+{\slot
+first	O
+నాకు	O
+count	B-mtest
+తక్కువ	B-intensity
+ఉండే	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 6 millions ఉండే	STATEMENT}
+{\slot
+6	B-mtest_value
+millions	I-mtest_value
+ఉండే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత 3 monthsకి 16 వచ్చింది.	STATEMENT}
+{\slot
+తరువాత	O
+3	B-time_period
+monthsకి	I-time_period
+16	B-mtest_value
+వచ్చింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: present 40 ఉంది madam	STATEMENT}
+{\slot
+present	B-time_period
+40	B-mtest_value
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కానీ IUI's fail అయితున్నాయి madam ఎందుకోను	STATEMENT}
+{\slot
+కానీ	O
+IUI's	B-treatment
+fail	B-negative
+అయితున్నాయి	O
+madam	O
+ఎందుకోను	O
+}
+
+{\intent	d: so IUI అనేది relatively simpler and easier procedure అండి	STATEMENT}
+{\slot
+so	O
+IUI	B-treatment
+అనేది	O
+relatively	O
+simpler	O
+and	O
+easier	O
+procedure	O
+అండి	O
+}
+
+{\intent	d: ఇందులో naturalగా try చేస్తే success rate ఏదైతే 8% ఉంటుండో దీని IUI ద్వారా మనం 15 to 20% కు చేయగలము	STATEMENT}
+{\slot
+ఇందులో	O
+naturalగా	O
+try	O
+చేస్తే	O
+success	O
+rate	O
+ఏదైతే	O
+8%	O
+ఉంటుండో	O
+దీని	O
+IUI	B-treatment
+ద్వారా	O
+మనం	O
+15	O
+to	O
+20%	O
+కు	O
+చేయగలము	O
+}
+

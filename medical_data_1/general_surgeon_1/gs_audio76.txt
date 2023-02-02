@@ -1,0 +1,91 @@
+{\intent	p: ఇది 2 3 days నుంచి motions అవుతున్నాయి madam	STATEMENT}
+{\slot
+ఇది	O
+2	B-time_period
+3	B-time_period
+days	I-time_period
+నుంచి	O
+motions	B-symptom
+అవుతున్నాయి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాసన తో పాటు blood పడుతుంది madam	STATEMENT}
+{\slot
+వాసన	B-symptom
+తో	O
+పాటు	O
+blood	B-body_substance
+పడుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అవి piles, మామూలుగాని కిందనూ చిన్న పిలకలు లాగా వచ్చినాయి madam	STATEMENT}
+{\slot
+అవి	O
+piles,	B-symptom
+మామూలుగాని	O
+కిందనూ	O
+చిన్న	B-symptom
+పిలకలు	I-symptom
+లాగా	O
+వచ్చినాయి	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది blood పడుతుంది,	STATEMENT}
+{\slot
+అది	O
+blood	B-body_substance
+పడుతుంది,	O
+}
+
+{\intent	p: అది ఎందువల్ల ఏంటి అనేది	INFO_REQUEST}
+{\slot
+అది	O
+ఎందువల్ల	O
+ఏంటి	O
+అనేది	O
+}
+
+{\intent	d: blood పడుతుంది, lumps లాగా form అవుతుంది, external tags ఉన్నాయి అంటే కచ్చితంగా piles అండి.	STATEMENT}
+{\slot
+blood	B-body_substance
+పడుతుంది,	O
+lumps	B-symptom
+లాగా	O
+form	O
+అవుతుంది,	O
+external	B-location
+tags	B-symptom
+ఉన్నాయి	O
+అంటే	O
+కచ్చితంగా	O
+piles	B-symptom
+అండి.	O
+}
+
+{\intent	d: హర్ష మొలలు అని చెప్తూ ఉంటాం	MEDICAL_EXPLANATION}
+{\slot
+హర్ష	B-symptom
+మొలలు	I-symptom
+అని	O
+చెప్తూ	O
+ఉంటాం	O
+}
+

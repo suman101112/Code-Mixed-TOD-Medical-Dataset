@@ -1,0 +1,133 @@
+{\intent	p: మాకు marriage అయి 2 years అయిందండి	STATEMENT}
+{\slot
+మాకు	O
+marriage	B-marital_status
+అయి	O
+2	B-time_period
+years	I-time_period
+అయిందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇంకా conceive అవ్వలేదు	STATEMENT}
+{\slot
+ఇంకా	O
+conceive	B-bodily_process
+అవ్వలేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎక్కడైన చూయించుకున్నారా అండి?	INFO_REQUEST}
+{\slot
+ఎక్కడైన	O
+చూయించుకున్నారా	O
+అండి?	O
+}
+
+{\intent	p: ఆ చూయించుకున్నానండీ, normalగా hormonal testలు అన్నీ చేసారు అన్నీ normalగానే ఉన్నాయండి	STATEMENT}
+{\slot
+ఆ	O
+చూయించుకున్నానండీ,	O
+normalగా	B-normal
+hormonal	B-mtest
+testలు	I-mtest
+అన్నీ	O
+చేసారు	O
+అన్నీ	O
+normalగానే	B-normal
+ఉన్నాయండి	O
+}
+
+{\intent	d: మీ husband ది చేసారా అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+husband	B-familal
+ది	O
+చేసారా	O
+అండి?	O
+}
+
+{\intent	p: ఆ అది normalగానే ఉంది.	ANSWER}
+{\slot
+ఆ	O
+అది	O
+normalగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	p: lastలో laproscopy చేయాలన్నారండి	STATEMENT}
+{\slot
+lastలో	B-frequency
+laproscopy	B-treatment
+చేయాలన్నారండి	O
+}
+
+{\intent	p: కానీ problem ఏంటో తెలియకుండా surgery ఎలా చేయించుకోవాలండీ?	INFO_REQUEST}
+{\slot
+కానీ	O
+problem	O
+ఏంటో	O
+తెలియకుండా	O
+surgery	B-treatment
+ఎలా	O
+చేయించుకోవాలండీ?	O
+}
+
+{\intent	d: direct laproscopy కంటే ఒక tubal evaluation అయితే first చేయించుకోవాల్సి ఉంటుంది.	ANSWER}
+{\slot
+direct	O
+laproscopy	B-treatment
+కంటే	O
+ఒక	O
+tubal	B-mtest
+evaluation	I-mtest
+అయితే	O
+first	O
+చేయించుకోవాల్సి	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అంటే tubes మనకు simple scansలో కానీ bloodలో కానీ అవి open ఉన్నాయా లేదా తెలియడం జరగదండీ	STATEMENT}
+{\slot
+అంటే	O
+tubes	B-body_part
+మనకు	O
+simple	O
+scansలో	B-mtest
+కానీ	O
+bloodలో	B-body_substance
+కానీ	O
+అవి	O
+open	B-normal
+ఉన్నాయా	O
+లేదా	B-negative
+తెలియడం	O
+జరగదండీ	O
+}
+
+{\intent	d: so మీరు ఒక వేళ severe PCOD plus tubal evaluation చేయాలి అనుకుంటేనే laproscopy కి వెళ్ళాలి	STATEMENT}
+{\slot
+so	O
+మీరు	O
+ఒక	O
+వేళ	O
+severe	O
+PCOD	B-medical_condition
+plus	O
+tubal	B-mtest
+evaluation	I-mtest
+చేయాలి	O
+అనుకుంటేనే	O
+laproscopy	B-treatment
+కి	O
+వెళ్ళాలి	O
+}
+

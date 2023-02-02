@@ -1,0 +1,61 @@
+{\intent	d: 3	ANSWER}
+{\slot
+3	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p1: खांसी हुआ साहब	STATEMENT}
+{\slot
+खांसी	B-symptom
+हुआ	O
+साहब	O
+}
+
+{\intent	p1: थोड़ा fever भी है साहब	STATEMENT}
+{\slot
+थोड़ा	B-intensity
+fever	B-symptom
+भी	O
+है	O
+साहब	O
+}
+
+{\intent	d: fever के भी लिखते	COMMIT}
+{\slot
+fever	B-symptom
+के	O
+भी	O
+लिखते	O
+}
+
+{\intent	p1: fever, cold	STATEMENT}
+{\slot
+fever,	B-symptom
+cold	B-medical_condition
+}
+
+{\intent	p1: खांसी तो बहुत है साहब ,	STATEMENT}
+{\slot
+खांसी	B-symptom
+तो	O
+बहुत	B-intensity
+है	O
+साहब	O
+,	O
+}
+
+{\intent	p1: non stop, 2 दिन से non stop	STATEMENT}
+{\slot
+non	O
+stop,	O
+2	B-time_period
+दिन	I-time_period
+से	O
+non	O
+stop	O
+}
+

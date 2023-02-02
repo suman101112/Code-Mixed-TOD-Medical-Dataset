@@ -1,0 +1,96 @@
+{\intent	d: పేరు చెప్పు	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Kapatayya	ANSWER}
+{\slot
+Kapatayya	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 33 ఉంటాయి	ANSWER}
+{\slot
+33	B-age
+ఉంటాయి	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైతాంది?	INFO_REQUEST}
+{\slot
+ఏమైతాంది?	O
+}
+
+{\intent	p: దురద వస్తుంది దీన్ల.	ANSWER}
+{\slot
+దురద	B-symptom
+వస్తుంది	O
+దీన్ల.	O
+}
+
+{\intent	p: water ఇట్ల పడిందో	HOLD}
+{\slot
+water	B-food_substance
+ఇట్ల	O
+పడిందో	O
+}
+
+{\intent	d: వినబడుతుందా ఏమన్నా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా	B-bodily_process
+ఏమన్నా?	O
+}
+
+{\intent	p: ఆ వినబడుతుంది	ANSWER}
+{\slot
+ఆ	O
+వినబడుతుంది	B-bodily_process
+}
+
+{\intent	p: వినపడుడు మంచిగానే వినపడుతుంది కానీ దురద వస్తుంది.	STATEMENT}
+{\slot
+వినపడుడు	B-bodily_process
+మంచిగానే	B-normal
+వినపడుతుంది	B-bodily_process
+కానీ	O
+దురద	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p: మొన్న అంతముందు కురుపు అయింది sir.	STATEMENT}
+{\slot
+మొన్న	B-time_period
+అంతముందు	O
+కురుపు	B-symptom
+అయింది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: RMP doctorకి చూపిస్తే కొంచం..	HOLD}
+{\slot
+RMP	B-medical_professional
+doctorకి	I-health_professional
+చూపిస్తే	O
+కొంచం..	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

@@ -1,0 +1,220 @@
+{\intent	p: sir నమస్తే sir doctor గారు.	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir	O
+doctor	B-medical_professional
+గారు.	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: Narender గారు చెప్పండి.	ACTION_DIR}
+{\slot
+Narender	B-name
+గారు	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir, నాకు కడుపుకి పైభాగాన బాగా నొప్పి అండి.	STATEMENT}
+{\slot
+sir,	O
+నాకు	O
+కడుపుకి	B-body_part
+పైభాగాన	B-location
+బాగా	B-intensity
+నొప్పి	B-symptom
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: పేగు దెగ్గర. పెద్ద పేగు. బాగా నొప్పి. ఛాతిలో నొప్పి వస్తుంది.	STATEMENT}
+{\slot
+పేగు	B-body_part
+దెగ్గర.	B-location
+పెద్ద	B-body_part
+పేగు.	I-body_part
+బాగా	B-intensity
+నొప్పి.	B-symptom
+ఛాతిలో	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	d: ఎంత కాలంగా అండి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+అండి?	O
+}
+
+{\intent	p: ఒక 3 months నుంచి అండి.	ANSWER}
+{\slot
+ఒక	O
+3	B-time_period
+months	B-time_period
+నుంచి	O
+అండి.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఏమన్నా కలిసారా sir, doctor ని కలిసారా?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+కలిసారా	O
+sir,	O
+doctor	B-medical_professional
+ని	O
+కలిసారా?	O
+}
+
+{\intent	p: ఆ doctor ని కలిసానండీ.	ANSWER}
+{\slot
+ఆ	O
+doctor	B-medical_professional
+ని	O
+కలిసానండీ.	O
+}
+
+{\intent	d: ఏమంటారు?	INFO_REQUEST}
+{\slot
+ఏమంటారు?	O
+}
+
+{\intent	p: medicines వాడుతున్నాను. వాడున్నాను. వాడుతున్నాగాని తగ్గుతుంది గానీ మళ్ళి వస్తుందండీ.	ANSWER}
+{\slot
+medicines	B-medicine
+వాడుతున్నాను.	O
+వాడున్నాను.	O
+వాడుతున్నాగాని	O
+తగ్గుతుంది	B-normal
+గానీ	O
+మళ్ళి	O
+వస్తుందండీ.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఏమన్నా scanning చేసారా? పరిక్ష?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+scanning	B-mtest
+చేసారా?	O
+పరిక్ష?	O
+}
+
+{\intent	p: ఆ scanning ఏం చేయలేదండీ.	ANSWER}
+{\slot
+ఆ	O
+scanning	B-mtest
+ఏం	O
+చేయలేదండీ.	O
+}
+
+{\intent	p: Echo తీయించుకున్నాను.	ANSWER}
+{\slot
+Echo	B-mtest
+తీయించుకున్నాను.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఛాతిలో నొప్పొస్తుంది అని echo తెస్తే echo clear ఉంది  అన్నారు.	ANSWER}
+{\slot
+ఛాతిలో	B-body_part
+నొప్పొస్తుంది	B-symptom
+అని	O
+echo	B-mtest
+తెస్తే	O
+echo	B-mtest
+clear	O
+ఉంది	O
+అన్నారు.	O
+}
+
+{\intent	p: gas కి సంబంధించిన tablets వాడుతున్నానండీ.	STATEMENT}
+{\slot
+gas	B-medical_condition
+కి	O
+సంబంధించిన	O
+tablets	B-medicine
+వాడుతున్నానండీ.	O
+}
+
+{\intent	d: right అండి చెప్తాను.	ACK}
+{\slot
+right	O
+అండి	O
+చెప్తాను.	O
+}
+
+{\intent	p: motion వస్తుంది.	STATEMENT}
+{\slot
+motion	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: అలాగే అండి.	ACK}
+{\slot
+అలాగే	O
+అండి.	O
+}
+
+{\intent	d: so ముందుగా కడుపు పైభాగంలో నొప్పి అంటే సరిగ్గా tie కట్టుకునే కింది భాగంలో epi gastric pain అంటారు.	DIAGNOSIS}
+{\slot
+so	O
+ముందుగా	O
+కడుపు	B-body_part
+పైభాగంలో	B-location
+నొప్పి	B-symptom
+అంటే	O
+సరిగ్గా	O
+tie	O
+కట్టుకునే	O
+కింది	B-location
+భాగంలో	I-location
+epi	B-symptom
+gastric	I-symptom
+pain	I-symptom
+అంటారు.	O
+}
+
+{\intent	d: ఈ భగంలో వచ్చేటటువంటి 90 శాతం పైగా gastric లక్షణాలు మాత్రమే ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+భగంలో	B-location
+వచ్చేటటువంటి	O
+90	O
+శాతం	O
+పైగా	O
+gastric	B-medical_condition
+లక్షణాలు	O
+మాత్రమే	O
+ఉంటాయి.	O
+}
+

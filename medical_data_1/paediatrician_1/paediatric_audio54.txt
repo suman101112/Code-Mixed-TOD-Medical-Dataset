@@ -1,0 +1,227 @@
+{\intent	p1: sir ये रात से बुखार, vomitings बहुत हो रहे sir	STATEMENT}
+{\slot
+sir	O
+ये	O
+रात	B-time_period
+से	O
+बुखार,	B-symptom
+vomitings	B-symptom
+बहुत	B-intensity
+हो	O
+रहे	O
+sir	O
+}
+
+{\intent	d: ऐसा लेटावो	ACTION_DIR}
+{\slot
+ऐसा	O
+लेटावो	O
+}
+
+{\intent	d: दावत को partyको गया	INFO_REQUEST}
+{\slot
+दावत	O
+को	O
+partyको	O
+गया	O
+}
+
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p1: Fareeha	ANSWER}
+{\slot
+Fareeha	B-name
+}
+
+{\intent	d: अब last vomiting कितने बजे हुआ	INFO_REQUEST}
+{\slot
+अब	B-time_period
+last	O
+vomiting	B-symptom
+कितने	O
+बजे	B-time_period
+हुआ	O
+}
+
+{\intent	p1: अब 12:00 बजे.	ANSWER}
+{\slot
+अब	B-time_period
+12:00	I-time_period
+बजे.	I-time_period
+}
+
+{\intent	d: कुछ खिलाये तो हुआ?	INFO_REQUEST}
+{\slot
+कुछ	O
+खिलाये	O
+तो	O
+हुआ?	O
+}
+
+{\intent	d: खिलाये तो हुआ? normal हुआ?	REPEAT_REPHRASE}
+{\slot
+खिलाये	O
+तो	O
+हुआ?	O
+normal	B-normal
+हुआ?	O
+}
+
+{\intent	p1: water पीते भी हो रहा. दूध पीने के बाद, नाश्ता करने के बाद, भी हो रहा.	STATEMENT}
+{\slot
+water	B-food_substance
+पीते	B-bodily_process
+भी	O
+हो	O
+रहा.	O
+दूध	B-food_substance
+पीने	B-bodily_process
+के	O
+बाद,	O
+नाश्ता	B-food_substance
+करने	O
+के	O
+बाद,	O
+भी	O
+हो	O
+रहा.	O
+}
+
+{\intent	p1: रात में 4 करें. सुबह से 3 times करें	STATEMENT}
+{\slot
+रात	B-time_period
+में	O
+4	B-frequency
+करें.	O
+सुबह	B-time_period
+से	O
+3	B-frequency
+times	I-frequency
+करें	O
+}
+
+{\intent	p1: fever है sir	STATEMENT}
+{\slot
+fever	B-symptom
+है	O
+sir	O
+}
+
+{\intent	d: 101	STATEMENT}
+{\slot
+101	B-mtest_value
+}
+
+{\intent	d: आज सुबह से क्या क्या दवा डाले?	INFO_REQUEST}
+{\slot
+आज	B-time_period
+सुबह	B-time_period
+से	O
+क्या	O
+क्या	O
+दवा	B-medicine
+डाले?	O
+}
+
+{\intent	p: एक vomiting की डाली sir	STATEMENT}
+{\slot
+एक	O
+vomiting	B-symptom
+की	O
+डाली	O
+sir	O
+}
+
+{\intent	p1: कल देखी, कल रात में fever चढ़ी दो paracetamol डाली.	STATEMENT}
+{\slot
+कल	B-time_period
+देखी,	B-bodily_process
+कल	B-time_period
+रात	B-time_period
+में	O
+fever	B-symptom
+चढ़ी	O
+दो	O
+paracetamol	B-medicine
+डाली.	O
+}
+
+{\intent	p1: motions भी हो रहे sir, बहुत हो रहे.	STATEMENT}
+{\slot
+motions	B-symptom
+भी	O
+हो	O
+रहे	O
+sir,	O
+बहुत	B-intensity
+हो	O
+रहे.	O
+}
+
+{\intent	d: दूध bottle का दूध पीता है या माँ का दूध?	INFO_REQUEST}
+{\slot
+दूध	B-food_substance
+bottle	O
+का	O
+दूध	B-food_substance
+पीता	B-bodily_process
+है	O
+या	O
+माँ	B-person
+का	O
+दूध?	B-food_substance
+}
+
+{\intent	p1: मेरा sir और 15 days से भैंस का दूध पी रहा.	ANSWER}
+{\slot
+मेरा	O
+sir	O
+और	O
+15	B-time_period
+days	I-time_period
+से	O
+भैंस	O
+का	O
+दूध	B-food_substance
+पी	O
+रहा.	O
+}
+
+{\intent	d: भैंस का दूध अच्छा नहीं माँ का दूध जितना है वो बस होता	MEDICAL_EXPLANATION}
+{\slot
+भैंस	O
+का	O
+दूध	B-food_substance
+अच्छा	O
+नहीं	O
+माँ	B-person
+का	O
+दूध	B-food_substance
+जितना	O
+है	O
+वो	O
+बस	O
+होता	O
+}
+
+{\intent	d: रात में ఇడ్లి खिचड़ी खिलावो	ACTION_DIR}
+{\slot
+रात	B-time_period
+में	O
+ఇడ్లి	B-food_substance
+खिचड़ी	B-food_substance
+खिलावो	O
+}
+
+{\intent	d: खाना खिलावो	ACTION_DIR}
+{\slot
+खाना	B-food_substance
+खिलावो	B-bodily_process
+}
+

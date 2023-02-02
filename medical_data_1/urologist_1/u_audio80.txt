@@ -1,0 +1,134 @@
+{\intent	d: నువ్వు ఆ మధ్య ఎప్పుడో వచ్చినట్లున్నావ్ కదా Kantha?	INFO_REQUEST}
+{\slot
+నువ్వు	O
+ఆ	O
+మధ్య	O
+ఎప్పుడో	O
+వచ్చినట్లున్నావ్	O
+కదా	O
+Kantha?	B-name
+}
+
+{\intent	p: ఆ వచ్చిన sir	ANSWER}
+{\slot
+ఆ	O
+వచ్చిన	B-positive
+sir	O
+}
+
+{\intent	d: ఆ ఏమైంది?	INFO_REQUEST}
+{\slot
+ఆ	O
+ఏమైంది?	O
+}
+
+{\intent	p: sir ఇది	STATEMENT}
+{\slot
+sir	O
+ఇది	O
+}
+
+{\intent	d: kidneyలో రాళ్ళున్నాయిగా మరి	DIAGNOSIS}
+{\slot
+kidneyలో	B-body_part
+రాళ్ళున్నాయిగా	B-body_substance
+మరి	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: kidneyలో రాళ్ళున్నాయి, చిన్న చిన్న రాళ్ళున్నాయి	STATEMENT}
+{\slot
+kidneyలో	B-body_part
+రాళ్ళున్నాయి,	B-body_substance
+చిన్న	O
+చిన్న	O
+రాళ్ళున్నాయి	B-body_substance
+}
+
+{\intent	p: రాళ్ళున్నాయా?	INFO_REQUEST}
+{\slot
+రాళ్ళున్నాయా?	B-body_substance
+}
+
+{\intent	d: ఆ, గోళీలు వాడుకోవాల	ACTION_DIR}
+{\slot
+ఆ,	B-positive
+గోళీలు	B-medicine
+వాడుకోవాల	O
+}
+
+{\intent	p: నొప్పి తగ్గుతలేదు కదా sir	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+తగ్గుతలేదు	I-symptom
+కదా	O
+sir	O
+}
+
+{\intent	p: ఇట్ల మూత్రం వస్తాంది sir	STATEMENT}
+{\slot
+ఇట్ల	O
+మూత్రం	B-body_substance
+వస్తాంది	O
+sir	O
+}
+
+{\intent	d: ఆ, అదే అదే	ACK}
+{\slot
+ఆ,	O
+అదే	O
+అదే	O
+}
+
+{\intent	p: మూత్రం అసలు ఆగుతలేదు,	STATEMENT}
+{\slot
+మూత్రం	B-body_substance
+అసలు	B-symptom
+ఆగుతలేదు,	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కళ్ళ నొప్పి, మోకాళ్ళ నొప్పి, లేవస్తలేదు అసలే, मस्त ఇబ్బంది అయితాంది,	STATEMENT}
+{\slot
+కళ్ళ	B-body_part
+నొప్పి,	B-symptom
+మోకాళ్ళ	B-body_part
+నొప్పి,	B-symptom
+లేవస్తలేదు	B-symptom
+అసలే,	O
+मस्त	B-intensity
+ఇబ్బంది	B-symptom
+అయితాంది,	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: kidney బాగా నొప్పి, మొస వస్తాంది.	STATEMENT}
+{\slot
+kidney	B-body_part
+బాగా	B-intensity
+నొప్పి,	B-symptom
+మొస	B-medical_condition
+వస్తాంది.	O
+}
+
+{\intent	d: గోళీలు వాడుకోవాలే, గోళీలు తీసుకోని వాడుకో.	ACTION_DIR}
+{\slot
+గోళీలు	B-medicine
+వాడుకోవాలే,	O
+గోళీలు	B-medicine
+తీసుకోని	O
+వాడుకో.	O
+}
+

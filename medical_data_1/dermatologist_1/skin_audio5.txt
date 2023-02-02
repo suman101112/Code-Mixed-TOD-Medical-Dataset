@@ -1,0 +1,107 @@
+{\intent	p: అస్తమానం pimples వస్తాయి అండి.	STATEMENT}
+{\slot
+అస్తమానం	B-time_period
+pimples	B-symptom
+వస్తాయి	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: vaasu గారు, ok చెప్పండి sir	ACTION_DIR}
+{\slot
+vaasu	B-name
+గారు,	O
+ok	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఒకసారి తక్వ వచ్చి మరో ఒకసారి ఎక్కువ వస్తున్నాయి అండి, మళ్ళి తగ్గుతున్నాయి మళ్ళి ఎక్కువ అయితున్నాయి అండి automaticగా.	STATEMENT}
+{\slot
+ఒకసారి	B-frequency
+తక్వ	B-intensity
+వచ్చి	O
+మరో	B-frequency
+ఒకసారి	I-frequency
+ఎక్కువ	B-intensity
+వస్తున్నాయి	O
+అండి,	O
+మళ్ళి	B-time_period
+తగ్గుతున్నాయి	I-normal
+మళ్ళి	B-time_period
+ఎక్కువ	B-intensity
+అయితున్నాయి	O
+అండి	O
+automaticగా.	O
+}
+
+{\intent	d: vaasu గారు pimples ఎక్కువగా వస్తున్నాయి అంటారు, దీనికి hormonal changes ఒక్కటి చాలా ఎక్కువగా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+vaasu	B-name
+గారు	O
+pimples	B-symptom
+ఎక్కువగా	B-intensity
+వస్తున్నాయి	O
+అంటారు,	O
+దీనికి	O
+hormonal	B-body_substance
+changes	B-symptom
+ఒక్కటి	B-frequency
+చాలా	B-intensity
+ఎక్కువగా	I-intensity
+ఉంటది.	O
+}
+
+{\intent	d: రెండోది మన skin ఏ రకమైనది, అంటే oily skin ఆ dry skin ఆ అని ఉంటది అండి.	MEDICAL_EXPLANATION}
+{\slot
+రెండోది	O
+మన	O
+skin	B-body_part
+ఏ	O
+రకమైనది,	O
+అంటే	O
+oily	B-body_part
+skin	I-body_part
+ఆ	O
+dry	B-body_part
+skin	I-body_part
+ఆ	O
+అని	O
+ఉంటది	O
+అండి.	O
+}
+
+{\intent	p: అవును sir.	ACK}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: oily skin వల్ల ఏమైతది అంటే ఎక్కువ oil మన face మీద వస్తున్నప్పుడు అవి pimplesగా మారి మనకు బొడిపెలు లాగా వస్తా ఉంటది అండి..	MEDICAL_EXPLANATION}
+{\slot
+oily	B-body_part
+skin	I-body_part
+వల్ల	O
+ఏమైతది	O
+అంటే	O
+ఎక్కువ	B-intensity
+oil	B-body_substance
+మన	O
+face	B-body_part
+మీద	B-location
+వస్తున్నప్పుడు	O
+అవి	O
+pimplesగా	B-symptom
+మారి	O
+మనకు	O
+బొడిపెలు	B-symptom
+లాగా	O
+వస్తా	O
+ఉంటది	O
+అండి..	O
+}
+

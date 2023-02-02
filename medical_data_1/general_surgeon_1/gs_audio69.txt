@@ -1,0 +1,158 @@
+{\intent	p: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	d: sir ఏం problem ఉంది?	INFO_REQUEST}
+{\slot
+sir	O
+ఏం	O
+problem	O
+ఉంది?	O
+}
+
+{\intent	p: నాకు pressure ఉండింది  madam	ANSWER}
+{\slot
+నాకు	O
+pressure	B-medical_condition
+ఉండింది	O
+madam	O
+}
+
+{\intent	d: hmm, ఏమవుతుంది sir దానివల్ల?	INFO_REQUEST}
+{\slot
+hmm,	O
+ఏమవుతుంది	O
+sir	O
+దానివల్ల	O
+}
+
+{\intent	p: ఇప్పుడు కూడా motions పోతు ఉంటే blood వస్తునే ఉంటుంది madam	ANSWER}
+{\slot
+ఇప్పుడు	O
+కూడా	O
+motions	B-bodily_process
+పోతు	O
+ఉంటే	O
+blood	B-body_substance
+వస్తునే	O
+ఉంటుంది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: కింద motion area దెగ్గర ఏమైనా ఉబ్బుతున్నాయా, sir బయటికి?	INFO_REQUEST}
+{\slot
+కింద	O
+motion	B-bodily_process
+area	B-body_part
+దెగ్గర	O
+ఏమైనా	O
+ఉబ్బుతున్నాయా,	B-symptom
+sir	O
+బయటికి?	O
+}
+
+{\intent	p: అవును madam	ANSWER}
+{\slot
+అవును	O
+madam	O
+}
+
+{\intent	d: ummhum	ACK}
+{\slot
+ummhum	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి ఇది	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+ఇది	O
+}
+
+{\intent	p: ఇది 3 years back నుంచి ఉంది madam, 3 yearsగా	ANSWER}
+{\slot
+ఇది	O
+3	B-time_period
+years	I-time_period
+back	I-time_period
+నుంచి	O
+ఉంది	O
+madam,	O
+3	B-time_period
+yearsగా	I-time_period
+}
+
+{\intent	d: అవునా sir	INFO_REQUEST}
+{\slot
+అవునా	O
+sir	O
+}
+
+{\intent	d: అయితే దీనికి treatment ఉంది sir, చెప్తాను వినండీ.	ACTION_DIR}
+{\slot
+అయితే	O
+దీనికి	O
+treatment	B-treatment
+ఉంది	O
+sir,	O
+చెప్తాను	O
+వినండీ.	O
+}
+
+{\intent	d: అయితే మీకు చెప్పేదాంట్లో ఏ problem అనేది మీకు తెలియదు sir	STATEMENT}
+{\slot
+అయితే	O
+మీకు	O
+చెప్పేదాంట్లో	O
+ఏ	O
+problem	O
+అనేది	O
+మీకు	O
+తెలియదు	O
+sir	O
+}
+
+{\intent	d: కాకపోతే ఏందంటే motion area దెగ్గర బయటికి ఉబ్బుతున్నాయి, అంటే అది గడ్డలు కావొచ్చు, prolapse కావొచ్చు లేదంటే piles కావొచ్చు	STATEMENT}
+{\slot
+కాకపోతే	O
+ఏందంటే	O
+motion	B-bodily_process
+area	B-body_part
+దెగ్గర	O
+బయటికి	B-location
+ఉబ్బుతున్నాయి,	B-symptom
+అంటే	O
+అది	O
+గడ్డలు	B-symptom
+కావొచ్చు,	O
+prolapse	B-symptom
+కావొచ్చు	O
+లేదంటే	O
+piles	B-symptom
+కావొచ్చు	O
+}
+
+{\intent	d: commonగా మాత్రం 90 percent మాత్రం piles ఏ ఉంటది, హర్ష మొలలే ఉంటాయి అన్నా మాట	STATEMENT}
+{\slot
+commonగా	O
+మాత్రం	O
+90	O
+percent	O
+మాత్రం	O
+piles	B-symptom
+ఏ	O
+ఉంటది,	O
+హర్ష	B-symptom
+మొలలే	I-symptom
+ఉంటాయి	O
+అన్నా	O
+మాట	O
+}
+

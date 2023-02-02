@@ -1,0 +1,176 @@
+{\intent	d: చెప్పండి బాబు పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: kabir అండి	ANSWER}
+{\slot
+kabir	B-name
+అండి	O
+}
+
+{\intent	d: చెప్పండి ఇబ్బంది ఏం ఉంది.	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది.	O
+}
+
+{\intent	p: operation అయింది. మూత్రం దెగ్గర	ANSWER}
+{\slot
+operation	B-treatment
+అయింది.	O
+మూత్రం	B-body_part
+దెగ్గర	B-location
+}
+
+{\intent	d: um hmm	ACK}
+{\slot
+um	O
+hmm	O
+}
+
+{\intent	p: ఇప్పుడు 2 నెలలు అయితాంది, వస్తాన్నా	STATEMENT}
+{\slot
+ఇప్పుడు	O
+2	B-time_period
+నెలలు	I-time_period
+అయితాంది,	O
+వస్తాన్నా	O
+}
+
+{\intent	d: operation అయినా paper ఉందా? discharge card?	INFO_REQUEST}
+{\slot
+operation	B-treatment
+అయినా	O
+paper	O
+ఉందా?	O
+discharge	O
+card?	O
+}
+
+{\intent	p: operation కాలేదు కానీ	STATEMENT}
+{\slot
+operation	B-treatment
+కాలేదు	O
+కానీ	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: ఈ మందులు వాడుతున్నా sir.	STATEMENT}
+{\slot
+ఈ	O
+మందులు	B-medicine
+వాడుతున్నా	O
+sir.	O
+}
+
+{\intent	d: camera పెట్టి చూశారు కదా.	INFO_REQUEST}
+{\slot
+camera	B-mtest
+పెట్టి	O
+చూశారు	O
+కదా.	O
+}
+
+{\intent	p: ఆ camera పెట్టి	ANSWER}
+{\slot
+ఆ	O
+camera	B-mtest
+పెట్టి	O
+}
+
+{\intent	d: ఎన్ని రోజుల కింద బాబు ఇది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+కింద	O
+బాబు	B-person
+ఇది?	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	p: 2 3 నెలలు అవుతుంది.	ANSWER}
+{\slot
+2	B-time_period
+3	B-time_period
+నెలలు	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: ఇప్పుడు ఇబ్బంది ఏంటి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఇబ్బంది	B-symptom
+ఏంటి?	O
+}
+
+{\intent	p: మంట మండుతుంది, మూత్రం ఉత్తిగానే వస్తాంది ఊరికే	ANSWER}
+{\slot
+మంట	B-symptom
+మండుతుంది,	I-symptom
+మూత్రం	B-body_substance
+ఉత్తిగానే	O
+వస్తాంది	O
+ఊరికే	O
+}
+
+{\intent	d: మూత్రం ఆపుకోలేక పోతున్నావా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+ఆపుకోలేక	B-symptom
+పోతున్నావా?	O
+}
+
+{\intent	p: మంట మండుతుంది. బాగా మంట మండుతుంది sir.	ANSWER}
+{\slot
+మంట	B-symptom
+మండుతుంది.	I-symptom
+బాగా	O
+మంట	B-symptom
+మండుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: 92లో ఈ పరిక్ష చేసారండీ scan, scan తీసుకోని రండీ.	ACTION_DIR}
+{\slot
+92లో	O
+ఈ	O
+పరిక్ష	B-mtest
+చేసారండీ	O
+scan,	B-mtest
+scan	B-mtest
+తీసుకోని	O
+రండీ.	O
+}
+
+{\intent	p1: ఇప్పుడే చేసారా sir	INFO_REQUEST}
+{\slot
+ఇప్పుడే	B-time_period
+చేసారా	O
+sir	O
+}
+
+{\intent	d: ఆ చేస్తారు.	ANSWER}
+{\slot
+ఆ	O
+చేస్తారు.	B-positive
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

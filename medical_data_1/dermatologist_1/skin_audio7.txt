@@ -1,0 +1,146 @@
+{\intent	p: thyroid వచ్చిందండీ, pregnancyల నాకు thyroid వచ్చింది	STATEMENT}
+{\slot
+thyroid	B-medical_condiion
+వచ్చిందండీ,	B-positive
+pregnancyల	B-bodily_process
+నాకు	O
+thyroid	B-medical_condiion
+వచ్చింది	B-positive
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	p: thyroid వస్తే తరువాత automaticగా delivery అయినా తరువాత తగ్గిపోయింది	STATEMENT}
+{\slot
+thyroid	B-symptom
+వస్తే	B-positive
+తరువాత	B-time_period
+automaticగా	O
+delivery	B-time_period
+అయినా	I-time_period
+తరువాత	I-time_period
+తగ్గిపోయింది	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇంకా అప్పటినుంచి బాగా hair fall ఎక్కువ అయిపోయిందండి.	STATEMENT}
+{\slot
+ఇంకా	O
+అప్పటినుంచి	B-time_period
+బాగా	B-intensity
+hair	B-body_part
+fall	B-symptom
+ఎక్కువ	B-intensity
+అయిపోయిందండి.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బాగా hair fall ఇప్పటికి అలా continue అయితూనే ఉందండీ.	STATEMENT}
+{\slot
+బాగా	B-intensity
+hair	B-body_part
+fall	B-symptom
+ఇప్పటికి	B-time_period
+అలా	O
+continue	B-time_period
+అయితూనే	O
+ఉందండీ.	B-positive
+}
+
+{\intent	d: right అమ్మా	ACK}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	d: hair fall అంటే, జుట్టు రాలిపొవటం అనే సమస్య ఎందుకు వస్తది అంటే అమ్మా, mainly మన hormonal imbalance రావడం,	MEDICAL_EXPLANATION}
+{\slot
+hair	B-body_part
+fall	B-symptom
+అంటే,	O
+జుట్టు	B-body_part
+రాలిపొవటం	I-symptom
+అనే	O
+సమస్య	B-symptom
+ఎందుకు	O
+వస్తది	O
+అంటే	O
+అమ్మా,	O
+mainly	O
+మన	O
+hormonal	B-body_substance
+imbalance	B-symptom
+రావడం,	I-symptom
+}
+
+{\intent	d: thyroid సమస్య అంటే main, దాని మూలాన జుట్టు రాలటం అనేది జరుగుతా ఉంటది	MEDICAL_EXPLANATION}
+{\slot
+thyroid	B-medical_condition
+సమస్య	B-symptom
+అంటే	O
+main,	O
+దాని	O
+మూలాన	O
+జుట్టు	B-body_part
+రాలటం	B-symptom
+అనేది	O
+జరుగుతా	O
+ఉంటది	O
+}
+
+{\intent	d: మీకు already thyroid సమస్య start అయింది మళ్ళి pregnancy తరువాత తగ్గిపోయింది అంటున్నారు	ACK}
+{\slot
+మీకు	O
+already	O
+thyroid	B-medical_condition
+సమస్య	B-symptom
+start	O
+అయింది	O
+మళ్ళి	O
+pregnancy	B-time_period
+తరువాత	I-time_period
+తగ్గిపోయింది	B-normal
+అంటున్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మళ్ళి ఒకసారి recheck చేసుకోండి, ఒకసారి blood test చేయించుకోండి.	ACTION_DIR}
+{\slot
+మళ్ళి	O
+ఒకసారి	O
+recheck	B-mtest
+చేసుకోండి,	O
+ఒకసారి	O
+blood	B-mtest
+test	I-mtest
+చేయించుకోండి.	O
+}
+
+{\intent	d: T3, T4, TSH levelsను మళ్ళి ఒకసారి recheck చేసుకోండి	ACTION_DIR}
+{\slot
+T3,	B-mtest
+T4,	B-mtest
+TSH	B-mtest
+levelsను	I-mtest
+మళ్ళి	O
+ఒకసారి	O
+recheck	B-mtest
+చేసుకోండి	O
+}
+

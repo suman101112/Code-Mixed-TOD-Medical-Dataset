@@ -1,0 +1,129 @@
+{\intent	d: ఎట్లా ఉంది అమ్మా?	INFO_REQUEST}
+{\slot
+ఎట్లా	O
+ఉంది	O
+అమ్మా?	O
+}
+
+{\intent	p: గొంతు నొప్పి తగ్గింది కానీ నాలుక ముళ్ళు లాగా	ANSWER}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+తగ్గింది	B-normal
+కానీ	O
+నాలుక	B-body_part
+ముళ్ళు	B-symptom
+లాగా	O
+}
+
+{\intent	d: నీ పేరు చెప్పు	INFO_REQUEST}
+{\slot
+నీ	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	d: నీ పేరు చెప్పు	REPEAT_REPHRASE}
+{\slot
+నీ	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Pushpa	ANSWER}
+{\slot
+Pushpa	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 57 దాక ఉంటది sir.	ANSWER}
+{\slot
+57	B-age
+దాక	O
+ఉంటది	O
+sir.	O
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఇప్పుడు ఏమైంది చెప్పు నీకు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఏమైంది	O
+చెప్పు	O
+నీకు?	O
+}
+
+{\intent	p: నాలుక మీద చిన్న చిన్న కురుపులు. sideలకు, sideలకు కూడా ఇట్ల వచ్చి తాగుతున్నాయి	ANSWER}
+{\slot
+నాలుక	B-body_part
+మీద	B-location
+చిన్న	B-intensity
+చిన్న	I-intensity
+కురుపులు.	B-medical_condition
+sideలకు,	B-location
+sideలకు	B-location
+కూడా	O
+ఇట్ల	O
+వచ్చి	O
+తాగుతున్నాయి	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఆ అను అమ్మా	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+అమ్మా	O
+}
+
+{\intent	p: ఇదివరకు ఆ sir దెగ్గర వాడి వాడే మీ దెగ్గరకు వచ్చిన sir	STATEMENT}
+{\slot
+ఇదివరకు	O
+ఆ	O
+sir	O
+దెగ్గర	O
+వాడి	O
+వాడే	O
+మీ	O
+దెగ్గరకు	O
+వచ్చిన	O
+sir	O
+}
+
+{\intent	d: ointment 10 రోజులకు..	STATEMENT}
+{\slot
+ointment	B-medicine
+10	B-time_period
+రోజులకు..	I-time_period
+}
+
+{\intent	p: వారాం వారాంకి, 10 రోజులకి ఊరికే జలుబు వస్తోంది.	STATEMENT}
+{\slot
+వారాం	B-time_period
+వారాంకి,	I-time_period
+10	B-time_period
+రోజులకి	I-time_period
+ఊరికే	O
+జలుబు	B-medical_condition
+వస్తోంది.	O
+}
+
+{\intent	d: నెలకు రాస్తా.	COMMIT}
+{\slot
+నెలకు	B-time_period
+రాస్తా.	O
+}
+

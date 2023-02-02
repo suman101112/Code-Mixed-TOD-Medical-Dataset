@@ -1,0 +1,276 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Padmavati	ANSWER}
+{\slot
+Padmavati	B-name
+}
+
+{\intent	d: age, 74	STATEMENT}
+{\slot
+age,	O
+74	B-age
+}
+
+{\intent	d: ఎట్లుంది?	INFO_REQUEST}
+{\slot
+ఎట్లుంది?	O
+}
+
+{\intent	p: ఇప్పటివరకైతే చాలా తగ్గినట్లుగా అనిపిస్తుంది నాకైతే.	STATEMENT}
+{\slot
+ఇప్పటివరకైతే	B-time_period
+చాలా	B-intensity
+తగ్గినట్లుగా	B-normal
+అనిపిస్తుంది	I-normal
+నాకైతే.	O
+}
+
+{\intent	d: మొత్తానికి అయితే ఆపరేషన్ చేసి తీయాలి.	STATEMENT}
+{\slot
+మొత్తానికి	O
+అయితే	O
+ఆపరేషన్	B-treatment
+చేసి	O
+తీయాలి.	O
+}
+
+{\intent	p: తీయాలినా	INFO_REQUEST}
+{\slot
+తీయాలినా	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: పెద్ద ప్రమాదం అయింది, cancer అయితే కాదు	STATEMENT}
+{\slot
+పెద్ద	O
+ప్రమాదం	O
+అయింది,	O
+cancer	B-medical_condition
+అయితే	B-negative
+కాదు	I-negative
+}
+
+{\intent	p: కాదు	ACK}
+{\slot
+కాదు	B-negative
+}
+
+{\intent	p1: కాదు	ACK}
+{\slot
+కాదు	B-negative
+}
+
+{\intent	d: అయినా కానీ మందులతో మాత్రం తగ్గదు	STATEMENT}
+{\slot
+అయినా	O
+కానీ	O
+మందులతో	B-medicine
+మాత్రం	O
+తగ్గదు	B-negative
+}
+
+{\intent	p: తగ్గదు	ACK}
+{\slot
+తగ్గదు	B-negative
+}
+
+{\intent	d: అప్పటికి ఇప్పుడూ size మాత్రం తగ్గింది	STATEMENT}
+{\slot
+అప్పటికి	B-time_period
+ఇప్పుడూ	B-time_period
+size	O
+మాత్రం	O
+తగ్గింది	B-normal
+}
+
+{\intent	p: తగ్గింది	ACK}
+{\slot
+తగ్గింది	B-normal
+}
+
+{\intent	d: మీరు వస్తే రేపు పొద్దున్న pallavi hospital లో చేస్తా	ACTION_DIR}
+{\slot
+మీరు	O
+వస్తే	O
+రేపు	B-time_period
+పొద్దున్న	I-time_period
+pallavi	B-hospital_name
+hospital	I-hospital_name
+లో	O
+చేస్తా	O
+}
+
+{\intent	p1: sir, EHS card ఉంది sir.	STATEMENT}
+{\slot
+sir,	O
+EHS	O
+card	O
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: పనిచేయదు	STATEMENT}
+{\slot
+పనిచేయదు	O
+}
+
+{\intent	p1: అదే అందుకే అడుగుతున్నా	STATEMENT}
+{\slot
+అదే	O
+అందుకే	O
+అడుగుతున్నా	O
+}
+
+{\intent	p: నాలుక కూడా అండి అయినా మొన్న మొత్తం జ్వరం వచ్చేసింది ఆ tablet వాడుతూనే ఉన్నా. జ్వరం వస్తే ఆ doctor దగ్గరికి వెళ్లిన	STATEMENT}
+{\slot
+నాలుక	B-body_part
+కూడా	O
+అండి	O
+అయినా	O
+మొన్న	B-time_period
+మొత్తం	B-location
+జ్వరం	B-symptom
+వచ్చేసింది	I-symptom
+ఆ	O
+tablet	B-medicine
+వాడుతూనే	O
+ఉన్నా.	O
+జ్వరం	B-symptom
+వస్తే	O
+ఆ	O
+doctor	B-medical_professional
+దగ్గరికి	O
+వెళ్లిన	O
+}
+
+{\intent	p1: అక్కడ hospitalల చూపించాను	STATEMENT}
+{\slot
+అక్కడ	B-location
+hospitalల	O
+చూపించాను	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అక్కడ doctor రాసి ఇచ్చిండు	STATEMENT}
+{\slot
+అక్కడ	B-location
+doctor	B-medical_professional
+రాసి	O
+ఇచ్చిండు	O
+}
+
+{\intent	p1: నోరంతా పగిలింది	STATEMENT}
+{\slot
+నోరంతా	B-body_part
+పగిలింది	B-symptom
+}
+
+{\intent	p: నాలిక అంతా పగిలింది.	STATEMENT}
+{\slot
+నాలిక	B-body_part
+అంతా	B-location
+పగిలింది.	B-symptom
+}
+
+{\intent	d: ఇది ఏమిటంటే అమ్మ ఇది మందులతో మాత్రమే పోదు.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+ఏమిటంటే	O
+అమ్మ	O
+ఇది	O
+మందులతో	B-medicine
+మాత్రమే	O
+పోదు.	B-negative
+}
+
+{\intent	d: తీయాలి. మీరు రేపు పొద్దున వస్తే ఆపరేషన్ చేసి తీస్తా. మీ ఇష్టం	ACTION_DIR}
+{\slot
+తీయాలి.	O
+మీరు	O
+రేపు	B-time_period
+పొద్దున	I-time_period
+వస్తే	O
+ఆపరేషన్	B-treatment
+చేసి	O
+తీస్తా.	O
+మీ	O
+ఇష్టం	O
+}
+
+{\intent	p1: రేపు పొద్దున రమ్మంటారా	INFO_REQUEST}
+{\slot
+రేపు	B-time_period
+పొద్దున	I-time_period
+రమ్మంటారా	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: ఎక్కడ అది	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+అది	O
+}
+
+{\intent	d: pallavi hospital	ANSWER}
+{\slot
+pallavi	B-hospital_name
+hospital	I-hospital_name
+}
+
+{\intent	p1: Shiva Nagar ఆ?	INFO_REQUEST}
+{\slot
+Shiva	B-place
+Nagar	I-place
+ఆ?	O
+}
+
+{\intent	p: పొద్దున్న ఎన్ని గంటలకు రమ్మంటారు?	INFO_REQUEST}
+{\slot
+పొద్దున్న	B-time_period
+ఎన్ని	O
+గంటలకు	B-time_period
+రమ్మంటారు?	O
+}
+
+{\intent	d: పొద్దున 7 8కి అలా రండి.	ANSWER}
+{\slot
+పొద్దున	B-time_period
+7	I-time_period
+8కి	I-time_period
+అలా	I-time_period
+రండి.	O
+}
+
+{\intent	p: 8కి అలా.	STATEMENT}
+{\slot
+8కి	B-time_period
+అలా.	O
+}
+
+{\intent	d: pallavi hospital	STATEMENT}
+{\slot
+pallavi	B-hospital_name
+hospital	I-hospital_name
+}
+
+{\intent	p: ఆ.	ACK}
+{\slot
+ఆ.	O
+}
+

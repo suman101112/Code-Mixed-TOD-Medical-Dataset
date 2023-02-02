@@ -1,0 +1,159 @@
+{\intent	d: ఇవాళ ఎన్ని రోజులండి పుట్టి?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+ఎన్ని	O
+రోజులండి	B-time_period
+పుట్టి?	O
+}
+
+{\intent	p1: 5 అయింది sir	ANSWER}
+{\slot
+5	B-age
+అయింది	O
+sir	O
+}
+
+{\intent	d: test కోసం రమ్మని చెప్పాను	STATEMENT}
+{\slot
+test	B-mtest
+కోసం	O
+రమ్మని	O
+చెప్పాను	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: test చేయించి	ACTION_DIR}
+{\slot
+test	B-mtest
+చేయించి	O
+}
+
+{\intent	d: 2 kgల 300 ఉందా పాప?	INFO_REQUEST}
+{\slot
+2	B-age
+kgల	I-age
+300	I-age
+ఉందా	O
+పాప?	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: బరువు తక్వ ఉంది	STATEMENT}
+{\slot
+బరువు	B-bm
+తక్వ	B-symptom
+ఉంది	O
+}
+
+{\intent	d: గంట గంటకు లేపాలి	ACTION_DIR}
+{\slot
+గంట	B-time_period
+గంటకు	I-time_period
+లేపాలి	O
+}
+
+{\intent	d: ఇంత మంది babyని ఎత్తుకోకూడదు	MEDICAL_EXPLANATION}
+{\slot
+ఇంత	O
+మంది	O
+babyని	B-person
+ఎత్తుకోకూడదు	O
+}
+
+{\intent	d: 3 kgల వచ్చేవరకు స్నానం పోయొద్దు	MEDICAL_EXPLANATION}
+{\slot
+3	B-age
+kgల	I-age
+వచ్చేవరకు	O
+స్నానం	O
+పోయొద్దు	O
+}
+
+{\intent	p1: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: తల్లి బిడ్డ కలిసే ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+తల్లి	B-person
+బిడ్డ	B-person
+కలిసే	O
+ఉండాలి	O
+}
+
+{\intent	p1: రాత్రి బాగా ఏడుస్తాడు night	STATEMENT}
+{\slot
+రాత్రి	B-time_period
+బాగా	B-intensity
+ఏడుస్తాడు	B-symptom
+night	B-time_period
+}
+
+{\intent	p1: motions సరిగ్గా పోతలేదు, మూత్రం సరిగ్గా పోతలేడు	STATEMENT}
+{\slot
+motions	B-symptom
+సరిగ్గా	O
+పోతలేదు,	B-negative
+మూత్రం	B-body_substance
+సరిగ్గా	O
+పోతలేడు	B-negative
+}
+
+{\intent	d: మరి పాలు సరిగ్గా తాగితేనే కదా దొడ్డికి వచ్చేది	STATEMENT}
+{\slot
+మరి	O
+పాలు	B-food_substance
+సరిగ్గా	O
+తాగితేనే	B-bodily_process
+కదా	O
+దొడ్డికి	B-bodily_process
+వచ్చేది	O
+}
+
+{\intent	p1: పుట్టిన రెండు రోజులైతే మంచిగానే పోయిండు కానీ	STATEMENT}
+{\slot
+పుట్టిన	B-bodily_process
+రెండు	B-age
+రోజులైతే	I-age
+మంచిగానే	O
+పోయిండు	O
+కానీ	O
+}
+
+{\intent	d: పుట్టిన రెండు రోజులు పోయింది ఇప్పడిది కాదు నాయనా	MEDICAL_EXPLANATION}
+{\slot
+పుట్టిన	B-bodily_process
+రెండు	B-age
+రోజులు	I-age
+పోయింది	O
+ఇప్పడిది	O
+కాదు	O
+నాయనా	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: 9 నెలలది అది	MEDICAL_EXPLANATION}
+{\slot
+9	B-time_period
+నెలలది	I-time_period
+అది	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

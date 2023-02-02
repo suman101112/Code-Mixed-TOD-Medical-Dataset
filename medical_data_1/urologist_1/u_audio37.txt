@@ -1,0 +1,164 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: ఆ నమస్కారం	GREETING}
+{\slot
+ఆ	O
+నమస్కారం	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: sir నాకు ఇంత ముందు 1 year కిందట kidneyలో stones ఉంటే operation చేసారు	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+ఇంత	O
+ముందు	O
+1	B-time_period
+year	I-time_period
+కిందట	O
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉంటే	O
+operation	B-treatment
+చేసారు	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: 2 side	ACK}
+{\slot
+2	B-frequency
+side	B-location
+}
+
+{\intent	d: ఎంత size ఉండింది అప్పుడు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+size	O
+ఉండింది	O
+అప్పుడు?	O
+}
+
+{\intent	p: అప్పుడు 9.1 ఉంది sir	ANSWER}
+{\slot
+అప్పుడు	B-time_period
+9.1	B-mtest_value
+ఉంది	O
+sir	O
+}
+
+{\intent	d: 6.1mm ఉండింది?	INFO_REQUEST}
+{\slot
+6.1mm	B-mtest_value
+ఉండింది?	O
+}
+
+{\intent	p: అవును sir	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	d: ఇప్పుడు ఏం అయితా ఉంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+అయితా	O
+ఉంది?	O
+}
+
+{\intent	p: 9.1, 6.1 ఉంది sir	STATEMENT}
+{\slot
+9.1,	B-mtest_value
+6.1	B-mtest_value
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: Tirupatiలో ఓ ramesh అని చేసారు sir sneha hospitalలో	STATEMENT}
+{\slot
+Tirupatiలో	B-place
+ఓ	O
+ramesh	B-name
+అని	O
+చేసారు	O
+sir	O
+sneha	B-hospital_name
+hospitalలో	O
+}
+
+{\intent	d: ఆ సరే	ACK}
+{\slot
+ఆ	O
+సరే	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి నడుములు నొస్తున్నాయి,	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+నడుములు	B-body_part
+నొస్తున్నాయి,	B-symptom
+}
+
+{\intent	p: మళ్ళి ఇంత ముందు 2 ఉన్నాయి అని చెప్పినారు sir	STATEMENT}
+{\slot
+మళ్ళి	O
+ఇంత	O
+ముందు	O
+2	B-frequency
+ఉన్నాయి	O
+అని	O
+చెప్పినారు	O
+sir	O
+}
+
+{\intent	d: అదే problem ఎమిటి గిన publicలో ఒక్కటి stone operation చేసుకునేస్తే గనక మళ్ళి రాదు అనుకుంటాం.	MEDICAL_EXPLANATION}
+{\slot
+అదే	O
+problem	O
+ఎమిటి	O
+గిన	O
+publicలో	O
+ఒక్కటి	O
+stone	B-body_substance
+operation	B-treatment
+చేసుకునేస్తే	O
+గనక	O
+మళ్ళి	O
+రాదు	O
+అనుకుంటాం.	O
+}
+
+{\intent	d: maintenance of the post operative is important.	MEDICAL_EXPLANATION}
+{\slot
+maintenance	O
+of	O
+the	O
+post	O
+operative	B-treatment
+is	O
+important.	O
+}
+

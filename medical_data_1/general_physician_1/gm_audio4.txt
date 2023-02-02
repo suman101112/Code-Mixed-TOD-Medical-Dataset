@@ -1,0 +1,118 @@
+{\intent	p: Hello good evening అండి madam.	GREETING}
+{\slot
+Hello	O
+good	O
+evening	O
+అండి	O
+madam.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: నా వయస్సు 35 years	INFO_REQUEST}
+{\slot
+నా	O
+వయస్సు	O
+35	B-age
+years	I-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: recentగా one week back నాకు sugar వచ్చింది.	INFO_REQUEST}
+{\slot
+recentగా	B-time_period
+one	B-time_period
+week	I-time_period
+back	I-time_period
+నాకు	O
+sugar	B-medical_condition
+వచ్చింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ 256 ఉంది నా sugar levels	STATEMENT}
+{\slot
+ఆ	O
+256	B-mtest_value
+ఉంది	O
+నా	O
+sugar	B-mtest
+levels	I-mtest
+}
+
+{\intent	d: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	p: 256 ఉంది.	STATEMENT}
+{\slot
+256	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	d: 250. ok.	ACK}
+{\slot
+250.	B-mtest_value
+ok.	O
+}
+
+{\intent	p: తిన్న తర్వాత.	STATEMENT}
+{\slot
+తిన్న	B-bodily_process
+తర్వాత.	B-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: దీని level చేసుకోవాలంటే ఎట్లా అండి చెప్పండి.	INFO_REQUEST}
+{\slot
+దీని	O
+level	B-normal
+చేసుకోవాలంటే	O
+ఎట్లా	O
+అండి	O
+చెప్పండి.	O
+}
+
+{\intent	d: ya. ok. అంటే 250 ఉండి తిన్న తర్వాత అంటే అది మనం diabetic అనే consider చేయాలండి. diagnose చేయొచ్చు.	STATEMENT}
+{\slot
+ya.	O
+ok.	O
+అంటే	O
+250	B-mtest_value
+ఉండి	O
+తిన్న	B-bodily_process
+తర్వాత	B-time_period
+అంటే	O
+అది	O
+మనం	O
+diabetic	B-medical_condition
+అనే	O
+consider	O
+చేయాలండి.	O
+diagnose	O
+చేయొచ్చు.	O
+}
+
+{\intent	d: so homeopathy వాడండి.	ACTION_DIR}
+{\slot
+so	O
+homeopathy	B-medicine
+వాడండి.	O
+}
+

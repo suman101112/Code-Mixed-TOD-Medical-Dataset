@@ -1,0 +1,145 @@
+{\intent	d: ఆ నమస్కారం	GREETING}
+{\slot
+ఆ	O
+నమస్కారం	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir మొన్న december 14 తారీకు operation చేసారు sir prashanta hospitalలో	STATEMENT}
+{\slot
+sir	O
+మొన్న	B-time_period
+december	B-time_period
+14	I-time_period
+తారీకు	I-time_period
+operation	B-treatment
+చేసారు	O
+sir	O
+prashanta	B-hospital_name
+hospitalలో	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది ఏమైతుందంటే 3 రోజుల నుంచి బాగా నొప్పొచ్చి urineలో blood పడుతుంది sir 2 రోజుల నుంచి	STATEMENT}
+{\slot
+అది	O
+ఏమైతుందంటే	O
+3	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+బాగా	B-intensity
+నొప్పొచ్చి	B-symptom
+urineలో	B-body_substance
+blood	B-body_substance
+పడుతుంది	B-symptom
+sir	O
+2	B-quantity
+రోజుల	B-time_period
+నుంచి	O
+}
+
+{\intent	d: ఏం operation చేసారు మీకు?	INFO_REQUEST}
+{\slot
+ఏం	O
+operation	B-treatment
+చేసారు	O
+మీకు?	O
+}
+
+{\intent	p: అది stones అండి, kidneyలో stones కోసం	ANSWER}
+{\slot
+అది	O
+stones	B-body_substance
+అండి,	O
+kidneyలో	B-body_part
+stones	B-body_substance
+కోసం	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: చేసారు, present అయితే ఇవాళ పొద్దున కూడా blood పడిందండీ. urineలో	STATEMENT}
+{\slot
+చేసారు,	O
+present	B-time_period
+అయితే	O
+ఇవాళ	B-time_period
+పొద్దున	I-time_period
+కూడా	O
+blood	B-body_substance
+పడిందండీ.	B-symptom
+urineలో	B-body_substance
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: అది కొద్దిగా బాగా నొప్పొచ్చేటప్పుడు అట్ల పడుతుందండీ అప్పుడప్పుడు	STATEMENT}
+{\slot
+అది	O
+కొద్దిగా	O
+బాగా	B-intensity
+నొప్పొచ్చేటప్పుడు	B-symptom
+అట్ల	O
+పడుతుందండీ	B-symptom
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	d: normalగా stone operation చేసినప్పుడు, they will put a stunt, stunt వేసి ఉంటారు	MEDICAL_EXPLANATION}
+{\slot
+normalగా	O
+stone	B-body_substance
+operation	B-treatment
+చేసినప్పుడు,	O
+they	O
+will	O
+put	O
+a	O
+stunt,	B-treatment
+stunt	B-treatment
+వేసి	O
+ఉంటారు	O
+}
+
+{\intent	d: stunt వేసినా తరువాత bleeding అవుతా ఉంటది	MEDICAL_EXPLANATION}
+{\slot
+stunt	B-treatment
+వేసినా	O
+తరువాత	O
+bleeding	B-medical_condition
+అవుతా	O
+ఉంటది	O
+}
+
+{\intent	d: ఒక 2 weeks 3 weeks తరువాత ఆ stunt తీసేస్తే you will become 100 percent normal.	MEDICAL_EXPLANATION}
+{\slot
+ఒక	O
+2	B-time_period
+weeks	I-time_period
+3	B-time_period
+weeks	I-time_period
+తరువాత	I-time_period
+ఆ	O
+stunt	B-treatment
+తీసేస్తే	O
+you	O
+will	O
+become	O
+100	O
+percent	O
+normal.	O
+}
+

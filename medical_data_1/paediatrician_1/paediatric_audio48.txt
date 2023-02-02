@@ -1,0 +1,145 @@
+{\intent	d: చెప్పమ్మా	CONV_OPEN}
+{\slot
+చెప్పమ్మా	O
+}
+
+{\intent	p1: सर्दी అండి.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+అండి.	O
+}
+
+{\intent	d: వాళ్ళమ్మ రాలేదా?	INFO_REQUEST}
+{\slot
+వాళ్ళమ్మ	B-person
+రాలేదా?	O
+}
+
+{\intent	p1: రాలేదండి.	ANSWER}
+{\slot
+రాలేదండి.	O
+}
+
+{\intent	d: తల్లి లేకుండా ఎట్లా తీసుకోని వచ్చారు	INFO_REQUEST}
+{\slot
+తల్లి	B-person
+లేకుండా	O
+ఎట్లా	O
+తీసుకోని	O
+వచ్చారు	O
+}
+
+{\intent	p: ఇక్కడనే	ANSWER}
+{\slot
+ఇక్కడనే	O
+}
+
+{\intent	d: ఆ ఇక్కడే నా.	ACK}
+{\slot
+ఆ	O
+ఇక్కడే	O
+నా.	O
+}
+
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Priyansh	ANSWER}
+{\slot
+Priyansh	B-name
+}
+
+{\intent	p: 3 రోజుల నుంచి सर्दी	STATEMENT}
+{\slot
+3	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+सर्दी	B-medical_condition
+}
+
+{\intent	d: తల్లిపాలా, bottle పాలా?	INFO_REQUEST}
+{\slot
+తల్లిపాలా,	B-food_substance
+bottle	O
+పాలా?	B-food_substance
+}
+
+{\intent	p: తల్లిపాలే, bottle పాలు కూడా ఇస్తుంది.	ANSWER}
+{\slot
+తల్లిపాలే,	B-food_substance
+bottle	O
+పాలు	B-food_substance
+కూడా	O
+ఇస్తుంది.	O
+}
+
+{\intent	d: bottle పాలు ఇయ్యకూడదు, తల్లిపాలు plus అన్నం పెట్టాలి	ACTION_DIR}
+{\slot
+bottle	O
+పాలు	B-food_substance
+ఇయ్యకూడదు,	O
+తల్లిపాలు	B-food_substance
+plus	O
+అన్నం	B-food_substance
+పెట్టాలి	O
+}
+
+{\intent	d: 10వ నెల కదా	INFO_REQUEST}
+{\slot
+10వ	B-age
+నెల	I-age
+కదా	O
+}
+
+{\intent	p: ఆ 10వ నెల	ANSWER}
+{\slot
+ఆ	B-positive
+10వ	B-age
+నెల	I-age
+}
+
+{\intent	d: అన్నం కొద్ది కొద్దిగా,	ACTION_DIR}
+{\slot
+అన్నం	B-food_substance
+కొద్ది	O
+కొద్దిగా,	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: రాత్రి పూట తల్లిపాలు ఇవ్వాలి, పగలు పూట అన్నం పెట్టలి	ACTION_DIR}
+{\slot
+రాత్రి	B-time_period
+పూట	I-time_period
+తల్లిపాలు	B-food_substance
+ఇవ్వాలి,	O
+పగలు	B-time_period
+పూట	B-time_period
+అన్నం	B-food_substance
+పెట్టలి	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: bottle పాలు cerelac పెట్టకూడదు	ACTION_DIR}
+{\slot
+bottle	O
+పాలు	B-food_substance
+cerelac	B-food_substance
+పెట్టకూడదు	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

@@ -1,0 +1,215 @@
+{\intent	p: ఆ Hello doctor	STATEMENT}
+{\slot
+ఆ	O
+Hello	O
+doctor	B-medical_professional
+}
+
+{\intent	d: నమస్కారం చెప్పండి	ACTION_DIR}
+{\slot
+నమస్కారం	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ actually నాకు నేను recentగా normal health checkup చేయించుకుంటే ఆ cystలు ఉన్నాయి అని చెప్పారు	STATEMENT}
+{\slot
+ఆ	O
+actually	O
+నాకు	O
+నేను	O
+recentగా	B-time_period
+normal	B-normal
+health	B-mtest
+checkup	I-mtest
+చేయించుకుంటే	O
+ఆ	O
+cystలు	B-medical_condition
+ఉన్నాయి	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: ovaryలో? అండాశయం లో?	INFO_REQUEST}
+{\slot
+ovaryలో?	B-body_part
+అండాశయం	B-body_part
+లో?	B-location
+}
+
+{\intent	p: ఆ అవును	ANSWER}
+{\slot
+ఆ	O
+అవును	B-positive
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే అవి వాళ్ళు general health checkup ఏ	STATEMENT}
+{\slot
+అంటే	O
+అవి	O
+వాళ్ళు	O
+general	O
+health	B-mtest
+checkup	I-mtest
+ఏ	O
+}
+
+{\intent	p: నాకు issues అయితే ఏం లేవు,	STATEMENT}
+{\slot
+నాకు	O
+issues	O
+అయితే	O
+ఏం	O
+లేవు,	O
+}
+
+{\intent	p: 30 years నాకు	STATEMENT}
+{\slot
+30	B-age
+years	I-age
+నాకు	O
+}
+
+{\intent	p: ఒక బాబు కూడా ఉన్నాడు	STATEMENT}
+{\slot
+ఒక	O
+బాబు	B-person
+కూడా	O
+ఉన్నాడు	O
+}
+
+{\intent	d: ఒక బాబు	ACK}
+{\slot
+ఒక	O
+బాబు	B-person
+}
+
+{\intent	p: period cycles కూడా regularగా ఉన్నవి	STATEMENT}
+{\slot
+period	B-bodily_process
+cycles	I-bodily_process
+కూడా	O
+regularగా	B-normal
+ఉన్నవి	O
+}
+
+{\intent	d: periods regular, ok	ACK}
+{\slot
+periods	B-bodily_process
+regular,	B-normal
+ok	O
+}
+
+{\intent	d: size ఎంత చెప్పారు? Ovarian cyst ది?	INFO_REQUEST}
+{\slot
+size	O
+ఎంత	O
+చెప్పారు?	O
+Ovarian	B-body_part
+cyst	B-medical_condition
+ది?	O
+}
+
+{\intent	p: actually నాకు అంతా గుర్తులేదు	ANSWER}
+{\slot
+actually	O
+నాకు	O
+అంతా	O
+గుర్తులేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే recentగానే అయింది	STATEMENT}
+{\slot
+అంటే	O
+recentగానే	B-time_period
+అయింది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: i mean gynicని consult చేద్దాం అనుకుంటున్నాము	STATEMENT}
+{\slot
+i	O
+mean	O
+gynicని	B-medical_professional
+consult	O
+చేద్దాం	O
+అనుకుంటున్నాము	O
+}
+
+{\intent	p: ఇది seriousఆ? లేకపోతే ఏంటి?	INFO_REQUEST}
+{\slot
+ఇది	O
+seriousఆ?	O
+లేకపోతే	O
+ఏంటి?	O
+}
+
+{\intent	d: right right right	ACK}
+{\slot
+right	O
+right	O
+right	O
+}
+
+{\intent	d: so good question ఇప్పుడు Ovariesలో cyst వస్తే చాలా panic అయిపోతారు	STATEMENT}
+{\slot
+so	O
+good	O
+question	O
+ఇప్పుడు	O
+Ovariesలో	B-body_part
+cyst	B-medical_condition
+వస్తే	O
+చాలా	B-intensity
+panic	B-medical_condition
+అయిపోతారు	O
+}
+
+{\intent	d: many ladies they wonder that పోతదా or పెరగదు కదా	MEDICAL_EXPLANATION}
+{\slot
+many	O
+ladies	O
+they	O
+wonder	O
+that	O
+పోతదా	O
+or	O
+పెరగదు	O
+కదా	O
+}
+
+{\intent	d: basically చిన్న cyst ఉంటే below 5 cm conservatively manage చేసుకోవచ్చు	MEDICAL_EXPLANATION}
+{\slot
+basically	O
+చిన్న	B-intensity
+cyst	B-medical_condition
+ఉంటే	O
+below	O
+5	B-time_period
+cm	I-time_period
+conservatively	O
+manage	O
+చేసుకోవచ్చు	O
+}
+
+{\intent	d: simple cyst ఉంటే	STATEMENT}
+{\slot
+simple	O
+cyst	B-medical_condition
+ఉంటే	O
+}
+

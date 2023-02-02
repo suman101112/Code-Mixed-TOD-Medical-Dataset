@@ -1,0 +1,250 @@
+{\intent	d: ramanaగారు	STATEMENT}
+{\slot
+ramanaగారు	B-name
+}
+
+{\intent	p: actually నాకు 2 సరి అండి, first పాప పుట్టింది	STATEMENT}
+{\slot
+actually	O
+నాకు	O
+2	B-frequency
+సరి	O
+అండి,	O
+first	B-frequency
+పాప	B-person
+పుట్టింది	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 5 years అవుతుంది actualగా	STATEMENT}
+{\slot
+5	B-time_period
+years	I-time_period
+అవుతుంది	O
+actualగా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: పాప పుట్టి 4 years అవుతుంది but ఇప్పుడు ఏం confirm అవ్వలేదు.	STATEMENT}
+{\slot
+పాప	B-person
+పుట్టి	B-bodily_process
+4	B-time_period
+years	I-time_period
+అవుతుంది	O
+but	O
+ఇప్పుడు	O
+ఏం	O
+confirm	B-mtest
+అవ్వలేదు.	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: first time ఎమి medicine ఎమి వాడలేదు	STATEMENT}
+{\slot
+first	B-frequency
+time	I-frequency
+ఎమి	O
+medicine	B-medicine
+ఎమి	O
+వాడలేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బానే అయిపోయింది, కానీ ఇప్పుడు ఏంత అయితుంది అంటే	STATEMENT}
+{\slot
+బానే	B-normal
+అయిపోయింది,	O
+కానీ	O
+ఇప్పుడు	O
+ఏంత	O
+అయితుంది	O
+అంటే	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: egg formation సరిగ్గా లేదని అంటున్నారు doctorగారు	STATEMENT}
+{\slot
+egg	B-body_part
+formation	B-bodily_process
+సరిగ్గా	B-normal
+లేదని	B-negative
+అంటున్నారు	O
+doctorగారు	B-medical_professional
+}
+
+{\intent	d: egg form అవ్వడం లేదు.	STATEMENT}
+{\slot
+egg	B-body_part
+form	B-bodily_process
+అవ్వడం	O
+లేదు.	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ egg formation తక్కువగా ఉంది అంటున్నారు	STATEMENT}
+{\slot
+ఆ	O
+egg	B-body_part
+formation	B-bodily_process
+తక్కువగా	B-intensity
+ఉంది	O
+అంటున్నారు	O
+}
+
+{\intent	p: medicine, injectionలు అవి ఇవి చేసారు, almost 6 months treatment తీసుకున్నం	STATEMENT}
+{\slot
+medicine,	B-medicine
+injectionలు	B-medicine
+అవి	O
+ఇవి	O
+చేసారు,	O
+almost	O
+6	B-time_period
+months	I-time_period
+treatment	B-treatment
+తీసుకున్నం	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయినా కూడా ఏం work అవ్వలేదు	STATEMENT}
+{\slot
+అయినా	O
+కూడా	O
+ఏం	O
+work	O
+అవ్వలేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so ఎందువల్ల problem అంటారు?	INFO_REQUEST}
+{\slot
+so	O
+ఎందువల్ల	O
+problem	O
+అంటారు?	O
+}
+
+{\intent	d: age ఎంత అండి మీ wife ది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి	O
+మీ	O
+wife	B-familal
+ది?	O
+}
+
+{\intent	p: age 24 అండి.	ANSWER}
+{\slot
+age	O
+24	B-age
+అండి.	O
+}
+
+{\intent	d: 24	ACK}
+{\slot
+24	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: weight ఎక్కువగా ఏమైనా ఉంటారా?	INFO_REQUEST}
+{\slot
+weight	B-bm
+ఎక్కువగా	B-intensity
+ఏమైనా	O
+ఉంటారా?	O
+}
+
+{\intent	p: లేదండీ , normalగా ఉంటారు.	ANSWER}
+{\slot
+లేదండీ	B-negative
+,	O
+normalగా	B-normal
+ఉంటారు.	O
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా అండి?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: thyroid ఆ ఒకసారి అప్పుడు check చేయించుకుంటే, lightగా ఉంది పర్వాలేదు అది అని చెప్పారు.	ANSWER}
+{\slot
+thyroid	B-medical_condition
+ఆ	O
+ఒకసారి	O
+అప్పుడు	O
+check	B-mtest
+చేయించుకుంటే,	O
+lightగా	B-intensity
+ఉంది	O
+పర్వాలేదు	O
+అది	O
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: ok fine అండి	ACK}
+{\slot
+ok	O
+fine	O
+అండి	O
+}
+
+{\intent	p: ramanaగారు ఈ condition అనేది secondary infertility కింద తీసుకుంటామంటే	DIAGNOSIS}
+{\slot
+ramanaగారు	B-name
+ఈ	O
+condition	O
+అనేది	O
+secondary	B-medical_condition
+infertility	I-medical_condition
+కింద	O
+తీసుకుంటామంటే	O
+}
+

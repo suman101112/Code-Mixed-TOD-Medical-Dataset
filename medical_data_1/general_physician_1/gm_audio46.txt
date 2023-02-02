@@ -1,0 +1,171 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: ఆ చెప్పండి. చెప్పండి Tirupati గారు.	ACTION_DIR}
+{\slot
+ఆ	O
+చెప్పండి.	O
+చెప్పండి	O
+Tirupati	B-place
+గారు.	O
+}
+
+{\intent	p: madam నాకు left side ఒక gland తీసేశారండీ thyroid.	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+left	B-location
+side	I-location
+ఒక	O
+gland	B-body_part
+తీసేశారండీ	O
+thyroid.	B-body_part
+}
+
+{\intent	p: 15 years అయితుంది.	STATEMENT}
+{\slot
+15	B-time_period
+years	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు అప్పుడు 25mg ఏ వాడుతున్నా. అప్పటికెళ్ళి.	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+అప్పుడు	B-time_period
+25mg	B-medicine_dose
+ఏ	O
+వాడుతున్నా.	O
+అప్పటికెళ్ళి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 6 months కి ఒకసారి test చేయించుకుంట.	STATEMENT}
+{\slot
+6	B-time_period
+months	I-time_period
+కి	O
+ఒకసారి	O
+test	B-mtest
+చేయించుకుంట.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది ent special ఆ MD దెగ్గర చూయించుకోవాల madam? ఎవరి దెగ్గర చూయించుకోవాలి?	INFO_REQUEST}
+{\slot
+ఇది	O
+ent	B-medical_professional
+special	I-health_professional
+ఆ	O
+MD	B-medical_professional
+దెగ్గర	O
+చూయించుకోవాల	O
+madam?	O
+ఎవరి	O
+దెగ్గర	O
+చూయించుకోవాలి?	O
+}
+
+{\intent	p: side effects చాలా వస్తునాయి అండి.	STATEMENT}
+{\slot
+side	O
+effects	O
+చాలా	O
+వస్తునాయి	O
+అండి.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: liver కొంచం infection సుత వచ్చేసింది. ఈ thyroid కి దీనికి ఏమైనా సంబంధం ఉంటుందా?	INFO_REQUEST}
+{\slot
+liver	B-body_part
+కొంచం	O
+infection	B-medical_condition
+సుత	O
+వచ్చేసింది.	O
+ఈ	O
+thyroid	B-medical_condition
+కి	O
+దీనికి	O
+ఏమైనా	O
+సంబంధం	O
+ఉంటుందా?	O
+}
+
+{\intent	d: ఆ కొంత వరకు ఉండొచ్చండి.	ANSWER}
+{\slot
+ఆ	O
+కొంత	O
+వరకు	O
+ఉండొచ్చండి.	O
+}
+
+{\intent	d: so partial thyroidectomy అనేది gland లో swelling అనేది ఎక్కువగా ఉన్నప్పుడు సాధారనంగా suggest చేస్తారు	MEDICAL_EXPLANATION}
+{\slot
+so	O
+partial	B-treatment
+thyroidectomy	I-treatment
+అనేది	O
+gland	B-body_part
+లో	O
+swelling	B-symptom
+అనేది	O
+ఎక్కువగా	B-intensity
+ఉన్నప్పుడు	O
+సాధారనంగా	O
+suggest	O
+చేస్తారు	O
+}
+
+{\intent	d: so మీరు already ఆ process అనేది under went అయ్యారు.	ACK}
+{\slot
+so	O
+మీరు	O
+already	O
+ఆ	O
+process	O
+అనేది	O
+under	O
+went	O
+అయ్యారు.	O
+}
+
+{\intent	d: so medication కూడా వాడుతున్నారు.	ACK}
+{\slot
+so	O
+medication	B-medicine
+కూడా	O
+వాడుతున్నారు.	O
+}
+
+{\intent	d: so ఇప్పుడు మీరు other infections కూడా చెప్తున్నారు.	ACK}
+{\slot
+so	O
+ఇప్పుడు	O
+మీరు	O
+other	O
+infections	B-medical_condition
+కూడా	O
+చెప్తున్నారు.	O
+}
+

@@ -1,0 +1,176 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: మా పెద్ద పాప 4, 5 years వరకు చాలా activeగా ఉండేది sir	STATEMENT}
+{\slot
+మా	O
+పెద్ద	O
+పాప	B-familal
+4,	B-age
+5	B-age
+years	I-age
+వరకు	O
+చాలా	O
+activeగా	B-normal
+ఉండేది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత నుండి తను పిలిస్తే పలకకపోవడం	STATEMENT}
+{\slot
+తరువాత	B-time_period
+నుండి	O
+తను	O
+పిలిస్తే	O
+పలకకపోవడం	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వెంటనే respond కాదు	STATEMENT}
+{\slot
+వెంటనే	O
+respond	B-bodily_process
+కాదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: studiesలో కూడా firstలో బాగుండేది, తర్వాత తర్వాత ఆ schoolలో ఈ year చదివింది, next yearకి మరచిపోతుంది.	STATEMENT}
+{\slot
+studiesలో	B-profession
+కూడా	O
+firstలో	O
+బాగుండేది,	B-normal
+తర్వాత	B-time_period
+తర్వాత	B-time_period
+ఆ	O
+schoolలో	B-place
+ఈ	O
+year	B-time_period
+చదివింది,	O
+next	B-time_period
+yearకి	I-time_period
+మరచిపోతుంది.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏమన్నా medicines ఏమన్నా ఎక్కువ వాడారా అమ్మా?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+medicines	B-medicine
+ఏమన్నా	O
+ఎక్కువ	B-intensity
+వాడారా	O
+అమ్మా?	O
+}
+
+{\intent	p: అదేం లేదు sir	ANSWER}
+{\slot
+అదేం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: ఏదైనా problemకి, health problem గానీ, hospitalలో admit చేయడం గానీ	INFO_REQUEST}
+{\slot
+ఏదైనా	O
+problemకి,	O
+health	B-medical_condition
+problem	O
+గానీ,	O
+hospitalలో	B-place
+admit	O
+చేయడం	O
+గానీ	O
+}
+
+{\intent	p: hospitalలో admit ఏం చేయలేదు	ANSWER}
+{\slot
+hospitalలో	B-place
+admit	O
+ఏం	O
+చేయలేదు	O
+}
+
+{\intent	p: 6 months back typhoid fever వస్తే 15, 20 days medicine వాడాము అండి.	STATEMENT}
+{\slot
+6	B-quantity
+months	I-time_period
+back	O
+typhoid	B-medical_condition
+fever	I-medical_condition
+వస్తే	O
+15,	B-time_period
+20	B-time_period
+days	I-time_period
+medicine	B-medicine
+వాడాము	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి పాప అలా behave చేస్తుంది?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+పాప	B-person
+అలా	O
+behave	B-symptom
+చేస్తుంది?	O
+}
+
+{\intent	p: ఒక 2 3 years నుంచి	ANSWER}
+{\slot
+ఒక	O
+2	B-time_period
+3	B-time_period
+years	I-time_period
+నుంచి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so ఈ పాప healthలోకి వస్తే గనక ADHD problem లోకి వెళ్ళిపోయింది.	DIAGNOSIS}
+{\slot
+so	O
+ఈ	O
+పాప	B-person
+healthలోకి	O
+వస్తే	O
+గనక	O
+ADHD	B-medical_condition
+problem	I-medical_condition
+లోకి	O
+వెళ్ళిపోయింది.	O
+}
+

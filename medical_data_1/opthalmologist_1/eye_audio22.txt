@@ -1,0 +1,110 @@
+{\intent	p: doctor గారు మా బాబుకు 4 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబుకు	B-person
+4	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: ఆడుతూ కంట్లో bodyspray కొట్టుకున్నాడు.	STATEMENT}
+{\slot
+ఆడుతూ	O
+కంట్లో	B-body_part
+bodyspray	O
+కొట్టుకున్నాడు.	O
+}
+
+{\intent	p: రెండు గంటల వరకు కళ్ళు తెరవలేకపోయాడు.	STATEMENT}
+{\slot
+రెండు	B-time_period
+గంటల	I-time_period
+వరకు	B-body_part
+కళ్ళు	B-symptom
+}
+
+{\intent	p: ఆ తరువాత వాడి కళ్ళు ఎర్రగా మారాయి	STATEMENT}
+{\slot
+ఆ	O
+తరువాత	O
+వాడి	O
+కళ్ళు	B-body_part
+ఎర్రగా	B-color
+మారాయి	B-symptom
+}
+
+{\intent	p: ఇదేమన్నా సమస్యకు దారి తీస్తుందా?	INFO_REQUEST}
+{\slot
+ఇదేమన్నా	O
+సమస్యకు	B-symptom
+దారి	O
+తీస్తుందా?	O
+}
+
+{\intent	d: sprayలో కచ్చితంగా chemicals ఉంటాయి.	STATEMENT}
+{\slot
+sprayలో	O
+కచ్చితంగా	O
+chemicals	O
+ఉంటాయి.	O
+}
+
+{\intent	d: ఇందులో అంత చిన్న వయస్సులో అది కచ్చితంగా కంటిమీద effect పడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఇందులో	O
+అంత	O
+చిన్న	B-time_period
+వయస్సులో	I-time_period
+అది	O
+కచ్చితంగా	O
+కంటిమీద	B-body_part
+effect	B-symptom
+పడుతుంది.	O
+}
+
+{\intent	d: అంటే మనం నల్ల గుడ్డు లేదా cornea అంటాము దానిపై దీని effect చాలా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+మనం	O
+నల్ల	B-color
+గుడ్డు	B-body_part
+లేదా	O
+cornea	B-body_part
+అంటాము	O
+దానిపై	O
+దీని	O
+effect	B-symptom
+చాలా	B-intensity
+ఉంటుంది.	O
+}
+
+{\intent	d: అందుకనే వాడు 2 గంటలకు బహుశా కళ్ళు తెరవకుండా మంట నొప్పి వాటితో బాధపడుతూ ఉంటాడు.	STATEMENT}
+{\slot
+అందుకనే	O
+వాడు	O
+2	B-time_period
+గంటలకు	I-time_period
+బహుశా	O
+కళ్ళు	B-body_part
+తెరవకుండా	B-symptom
+మంట	B-symptom
+నొప్పి	B-symptom
+వాటితో	O
+బాధపడుతూ	B-symptom
+ఉంటాడు.	O
+}
+
+{\intent	d: damage ఏమైనా అయ్యిందా లేదా అనేది కంటి doctorఏ చూసి చెప్పగలుగుతాడు.	STATEMENT}
+{\slot
+damage	B-symptom
+ఏమైనా	O
+అయ్యిందా	O
+లేదా	O
+అనేది	O
+కంటి	B-medical_professional
+doctorఏ	I-health_professional
+చూసి	O
+చెప్పగలుగుతాడు.	O
+}
+

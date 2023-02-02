@@ -1,0 +1,131 @@
+{\intent	d: పాప ఎన్ని రోజులమ్మా పుట్టి	INFO_REQUEST}
+{\slot
+పాప	B-person
+ఎన్ని	O
+రోజులమ్మా	B-time_period
+పుట్టి	B-bodily_process
+}
+
+{\intent	p1: 4 days sir	ANSWER}
+{\slot
+4	B-age
+days	I-age
+sir	O
+}
+
+{\intent	d: వల్ల అమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+వల్ల	O
+అమ్మా	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p1: Maadhavi	ANSWER}
+{\slot
+Maadhavi	B-name
+}
+
+{\intent	d: వదిలిపెట్టు	ACTION_DIR}
+{\slot
+వదిలిపెట్టు	O
+}
+
+{\intent	d: ఇప్పుడు ఎన్నో కాన్పు	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎన్నో	O
+కాన్పు	B-bodily_process
+}
+
+{\intent	p1: రెండోది	ANSWER}
+{\slot
+రెండోది	B-frequency
+}
+
+{\intent	p1: first అబ్బయి, ఇప్పుడు అమ్మాయి	STATEMENT}
+{\slot
+first	B-quantity
+అబ్బయి,	B-person
+ఇప్పుడు	B-time_period
+అమ్మాయి	B-person
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మొన్న చెప్పింది ఇన్నారా?	INFO_REQUEST}
+{\slot
+మొన్న	B-time_period
+చెప్పింది	O
+ఇన్నారా?	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: పాలు రాకపోవట్లేదు, lactodex,	STATEMENT}
+{\slot
+పాలు	B-food_substance
+రాకపోవట్లేదు,	B-symptom
+lactodex,	B-food_substance
+}
+
+{\intent	d: పాలు ఇస్తే వస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+పాలు	B-food_substance
+ఇస్తే	O
+వస్తాయి	O
+}
+
+{\intent	d: తల్లి బిడ్డ attachment సరిగ్గా ఉండి, తల్లిపాలు ఇవ్వాలనుకుంటే పాలు వస్తాయి.	MEDICAL_EXPLANATION}
+{\slot
+తల్లి	B-person
+బిడ్డ	B-person
+attachment	O
+సరిగ్గా	O
+ఉండి,	O
+తల్లిపాలు	B-food_substance
+ఇవ్వాలనుకుంటే	O
+పాలు	B-food_substance
+వస్తాయి.	O
+}
+
+{\intent	d: negative attitudeకి పోవద్దు. positive attitude ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+negative	O
+attitudeకి	O
+పోవద్దు.	O
+positive	O
+attitude	O
+ఉండాలి	O
+}
+
+{\intent	d: approach కూడా ఎట్ల ఉండాలి తల్లి బిడ్డ attachment ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+approach	O
+కూడా	O
+ఎట్ల	O
+ఉండాలి	O
+తల్లి	B-person
+బిడ్డ	B-person
+attachment	O
+ఉండాలి	O
+}
+
+{\intent	d: ఎక్కువ మంది ఉండకూడదు room చుట్టూ, తక్వ మంది ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువ	O
+మంది	O
+ఉండకూడదు	O
+room	B-place
+చుట్టూ,	O
+తక్వ	O
+మంది	O
+ఉండాలి	O
+}
+

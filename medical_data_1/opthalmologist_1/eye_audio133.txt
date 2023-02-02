@@ -1,0 +1,31 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 75, female	ANSWER}
+{\slot
+75,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	CONV_OPEN}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: ఈ కన్ను కనిపిస్త లేదు. మెల్ల మెల్లగా దూరం చూపు తగ్గుతుంది.	ANSWER}
+{\slot
+ఈ	O
+కన్ను	B-body_part
+కనిపిస్త	B-bodily_process
+లేదు.	B-negative
+మెల్ల	O
+మెల్లగా	O
+దూరం	B-location
+చూపు	B-bodily_process
+తగ్గుతుంది.	B-symptom
+}
+

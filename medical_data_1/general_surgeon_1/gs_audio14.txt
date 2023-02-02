@@ -1,0 +1,171 @@
+{\intent	p: ఈ 10 years నుంచి బాగా ఈ piles problemతో ఇబ్బంది పడుతున్నాను అండి.	STATEMENT}
+{\slot
+ఈ	O
+10	B-time_period
+years	I-time_period
+నుంచి	O
+బాగా	B-intensity
+ఈ	O
+piles	B-symptom
+problemతో	O
+ఇబ్బంది	B-symptom
+పడుతున్నాను	O
+అండి.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: కింద చర్మం అనేది బాగా కిందకు వచ్చేసింది.	STATEMENT}
+{\slot
+కింద	B-location
+చర్మం	B-body_part
+అనేది	O
+బాగా	B-intensity
+కిందకు	B-location
+వచ్చేసింది.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బాగా constipation వస్తుంది. బాగా bleeding అవుతుంది.	STATEMENT}
+{\slot
+బాగా	B-intensity
+constipation	B-symptom
+వస్తుంది.	O
+బాగా	B-intensity
+bleeding	B-medical_condition
+అవుతుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఏమైనా laxatives వాడితేనే motions అయితుంది కానీ అవ్వట్లేదు అండి.	STATEMENT}
+{\slot
+ఏమైనా	O
+laxatives	B-medicine
+వాడితేనే	O
+motions	B-bodily_process
+అయితుంది	I-positive
+కానీ	O
+అవ్వట్లేదు	B-symptom
+అండి.	O
+}
+
+{\intent	p: ఆ motion అయినా కూడా minimum ఒక 3 to 4 hours compulsory pain వస్తుంది.	STATEMENT}
+{\slot
+ఆ	O
+motion	B-bodily_process
+అయినా	O
+కూడా	O
+minimum	O
+ఒక	O
+3	B-time_period
+to	O
+4	I-time_period
+hours	I-time_period
+compulsory	O
+pain	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: right అండి. ఇది వరకు ఎవరైనా doctor ని కలిసారా?	INFO_REQUEST}
+{\slot
+right	O
+అండి.	O
+ఇది	O
+వరకు	O
+ఎవరైనా	O
+doctor	B-medical_professional
+ని	O
+కలిసారా?	O
+}
+
+{\intent	p: body weight వచ్చేసి...	ABANDONED}
+{\slot
+body	B-body_part
+weight	B-bm
+వచ్చేసి...	O
+}
+
+{\intent	p: ఆ కలవలేదు అండి.	ANSWER}
+{\slot
+ఆ	O
+కలవలేదు	O
+అండి.	O
+}
+
+{\intent	p: ఒకసారి అడుగుతే external piles అని చెప్పారు అండి. sir గారిని కలిస్తే.	STATEMENT}
+{\slot
+ఒకసారి	O
+అడుగుతే	O
+external	B-symptom
+piles	I-symptom
+అని	O
+చెప్పారు	O
+అండి.	O
+sir	O
+గారిని	O
+కలిస్తే.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: operation చేయించుకుందామంటే body weight 100 పైన ఉంది .	STATEMENT}
+{\slot
+operation	B-treatment
+చేయించుకుందామంటే	O
+body	B-bm
+weight	I-bm
+100	B-bm
+పైన	O
+ఉంది	O
+.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: దానికోసం ఏం చెద్దామని అడిగినం.	INFO_REQUEST}
+{\slot
+దానికోసం	O
+ఏం	O
+చెద్దామని	O
+అడిగినం.	O
+}
+
+{\intent	d: తప్పకుండా అండి. చెప్తానండీ Santoshగారు .	COMMIT}
+{\slot
+తప్పకుండా	O
+అండి.	O
+చెప్తానండీ	O
+Santoshగారు	B-name
+.	O
+}
+
+{\intent	d: so external piles అనే లక్షణం అంటే మలద్వారం బయటి భాగం..	MEDICAL_EXPLANATION}
+{\slot
+so	O
+external	B-symptom
+piles	I-symptom
+అనే	O
+లక్షణం	O
+అంటే	O
+మలద్వారం	B-body_part
+బయటి	B-location
+భాగం..	O
+}
+

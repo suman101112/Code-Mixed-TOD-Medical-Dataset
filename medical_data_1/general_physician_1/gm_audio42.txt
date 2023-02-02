@@ -1,0 +1,232 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir నాకు continue గా మనం food digestion కాకపోయినా. లేకపోతే ఇంకేదైనా smells, వాసనాలు చూసినా..	HOLD}
+{\slot
+sir	O
+నాకు	O
+continue	O
+గా	O
+మనం	O
+food	B-food_substance
+digestion	B-bodily_process
+కాకపోయినా.	B-symptom
+లేకపోతే	O
+ఇంకేదైనా	O
+smells,	O
+వాసనాలు	O
+చూసినా..	O
+}
+
+{\intent	p: Hello	SNU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి. Prasannaగారు వింటున్నాను చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+Prasannaగారు	B-name
+వింటున్నాను	O
+చెప్పండి.	O
+}
+
+{\intent	p: ఇనపడుతుందా అండి?	INFO_REQUEST}
+{\slot
+ఇనపడుతుందా	O
+అండి?	O
+}
+
+{\intent	d: ఆ right అండి.	ANSWER}
+{\slot
+ఆ	O
+right	O
+అండి.	O
+}
+
+{\intent	d: ఇప్పుడు వినిపిస్తుంది చెప్పండి.	ACTION_DIR}
+{\slot
+ఇప్పుడు	O
+వినిపిస్తుంది	O
+చెప్పండి.	O
+}
+
+{\intent	p: ఇప్పుడు food ఎప్పుడైనా digestion కాకపోయినా.	HOLD}
+{\slot
+ఇప్పుడు	O
+food	B-food_substance
+ఎప్పుడైనా	O
+digestion	B-bodily_process
+కాకపోయినా.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: లేకపోతే ఏదన్న smell ఉంటది కదా మల్లెపూలు కానీ scentలో కానీ	HOLD}
+{\slot
+లేకపోతే	O
+ఏదన్న	O
+smell	O
+ఉంటది	O
+కదా	O
+మల్లెపూలు	O
+కానీ	O
+scentలో	O
+కానీ	O
+}
+
+{\intent	d: అవును అండి.	ACK}
+{\slot
+అవును	O
+అండి.	O
+}
+
+{\intent	p: ఇలాంటివి ఏమన్నా ఉన్న side అంటే ఉదయాన early morning లేచేసరికి ఒక side మొత్తం headache వచ్చేస్తాది అండి.	STATEMENT}
+{\slot
+ఇలాంటివి	O
+ఏమన్నా	O
+ఉన్న	O
+side	B-location
+అంటే	O
+ఉదయాన	B-time_period
+early	B-time_period
+morning	I-time_period
+లేచేసరికి	B-bodily_process
+ఒక	O
+side	B-location
+మొత్తం	I-location
+headache	B-symptom
+వచ్చేస్తాది	O
+అండి.	O
+}
+
+{\intent	d: right అండి. right.	ACK}
+{\slot
+right	O
+అండి.	O
+right.	O
+}
+
+{\intent	p: అది బాగా severeగా వస్తాది. ఎంత అంటే అసల్ తట్టుకోలేని ఇదిగా వస్తాది.	STATEMENT}
+{\slot
+అది	O
+బాగా	B-intensity
+severeగా	B-intensity
+వస్తాది.	O
+ఎంత	O
+అంటే	O
+అసల్	O
+తట్టుకోలేని	B-symptom
+ఇదిగా	O
+వస్తాది.	O
+}
+
+{\intent	d: right.	ACK}
+{\slot
+right.	O
+}
+
+{\intent	p: దానితో doctorగారిని కలిసాను ఈ విషయంగా	STATEMENT}
+{\slot
+దానితో	O
+doctorగారిని	B-medical_professional
+కలిసాను	O
+ఈ	O
+విషయంగా	O
+}
+
+{\intent	d: ok. ఆ	ACK}
+{\slot
+ok.	O
+ఆ	O
+}
+
+{\intent	p: కలిస్తే ఏందంటే దీనికి separate medicine ఎమి ఉండదు ఏదైతే మీకు పడడంలేదో దానిని avoid చేయడం తప్ప అని చెప్పి అంటున్నారు.	STATEMENT}
+{\slot
+కలిస్తే	O
+ఏందంటే	O
+దీనికి	O
+separate	O
+medicine	B-medicine
+ఎమి	O
+ఉండదు	O
+ఏదైతే	O
+మీకు	O
+పడడంలేదో	O
+దానిని	O
+avoid	O
+చేయడం	O
+తప్ప	O
+అని	O
+చెప్పి	O
+అంటున్నారు.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఇంకేమన్నా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: అదే sir. దానికే ఏమన్నా..	ANSWER}
+{\slot
+అదే	O
+sir.	O
+దానికే	O
+ఏమన్నా..	O
+}
+
+{\intent	d: తప్పకుండా అండి. పరిష్కారం చెప్తాను.	COMMIT}
+{\slot
+తప్పకుండా	O
+అండి.	O
+పరిష్కారం	O
+చెప్తాను.	O
+}
+
+{\intent	d: so migrane లక్షణానికి మంచి ఉదాహరణగా మీ call ని చెప్పుకోవచ్చు	STATEMENT}
+{\slot
+so	O
+migrane	B-symptom
+లక్షణానికి	O
+మంచి	O
+ఉదాహరణగా	O
+మీ	O
+call	O
+ని	O
+చెప్పుకోవచ్చు	O
+}
+
+{\intent	d: ప్రధానంగా కొన్ని food items పడకపొవడం మూలంగా కొన్ని వాసనాలు పడకపొవడం మూలంగా ఈ తలనొప్పి అధికమవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ప్రధానంగా	O
+కొన్ని	O
+food	B-food_substance
+items	I-food_substance
+పడకపొవడం	B-symptom
+మూలంగా	O
+కొన్ని	O
+వాసనాలు	O
+పడకపొవడం	B-symptom
+మూలంగా	O
+ఈ	O
+తలనొప్పి	B-symptom
+అధికమవుతుంది.	B-intensity
+}
+

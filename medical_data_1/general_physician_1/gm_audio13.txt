@@ -1,0 +1,92 @@
+{\intent	p: good evening అండి madam doctorగారు	GREETING}
+{\slot
+good	O
+evening	O
+అండి	O
+madam	O
+doctorగారు	B-medical_professional
+}
+
+{\intent	d: good evening అండి	GREETING}
+{\slot
+good	O
+evening	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఎక్కువగా night, passకి వెళ్తున్నాన్నండీ	STATEMENT}
+{\slot
+ఎక్కువగా	B-intensity
+night,	B-time_period
+passకి	B-bodily_process
+వెళ్తున్నాన్నండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sugar లేదు అంటున్నారు కానీ ఎక్కువ సార్లు వెళ్ళడం జరుగుతుంది	STATEMENT}
+{\slot
+sugar	B-medical_condition
+లేదు	B-negative
+అంటున్నారు	O
+కానీ	O
+ఎక్కువ	B-intensity
+సార్లు	B-frequency
+వెళ్ళడం	B-bodily_process
+జరుగుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: sugar, మీకు diabetes problem లేకపోయినా, night timesలో urine ఎక్కువగా pass చేస్తామని చెప్తా ఉన్నారు	ACK}
+{\slot
+sugar,	B-medical_condition
+మీకు	O
+diabetes	B-medical_condition
+problem	I-medical_condition
+లేకపోయినా,	B-negative
+night	B-time_period
+timesలో	I-time_period
+urine	B-body_substance
+ఎక్కువగా	B-intensity
+pass	B-bodily_process
+చేస్తామని	I-bodily_process
+చెప్తా	O
+ఉన్నారు	O
+}
+
+{\intent	d: కొన్ని problems malesలో వచ్చే అవకాశం ఉంటుంది.	STATEMENT}
+{\slot
+కొన్ని	O
+problems	O
+malesలో	B-gender
+వచ్చే	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఒక్కసారి మీరు scrotal scan చేసుకున్నారు అంటే ఏమైనా problem ఉందా చూడొచ్చు.	STATEMENT}
+{\slot
+ఒక్కసారి	O
+మీరు	O
+scrotal	B-body_part
+scan	B-mtest
+చేసుకున్నారు	O
+అంటే	O
+ఏమైనా	O
+problem	O
+ఉందా	O
+చూడొచ్చు.	O
+}
+

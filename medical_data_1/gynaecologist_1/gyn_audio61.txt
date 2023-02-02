@@ -1,0 +1,140 @@
+{\intent	d: అమ్మా?	INFO_REQUEST}
+{\slot
+అమ్మా?	O
+}
+
+{\intent	p: నాకు 2 caesareans madam first	STATEMENT}
+{\slot
+నాకు	O
+2	B-frequency
+caesareans	B-treatment
+madam	O
+first	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2nd baby వచ్చేసి 2019 aprilలో born అయింది కానీ ఒక 4 monthsకే expire అయింది	STATEMENT}
+{\slot
+2nd	B-frequency
+baby	B-person
+వచ్చేసి	O
+2019	B-time_period
+aprilలో	I-time_period
+born	B-bodily_process
+అయింది	O
+కానీ	O
+ఒక	O
+4	B-age
+monthsకే	I-age
+expire	B-bodily_process
+అయింది	O
+}
+
+{\intent	p: ఇప్పుడు 8 months అయింది madam baby చనిపోయి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+8	B-time_period
+months	I-time_period
+అయింది	O
+madam	O
+baby	B-person
+చనిపోయి	B-bodily_process
+}
+
+{\intent	d: oh very unfortunate అమ్మా	STATEMENT}
+{\slot
+oh	O
+very	O
+unfortunate	O
+అమ్మా	O
+}
+
+{\intent	p: tubectomy కూడా అయిపోయింది	STATEMENT}
+{\slot
+tubectomy	B-treatment
+కూడా	O
+అయిపోయింది	O
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	p: చిన్న reoperation chance ఉంటుందా?	INFO_REQUEST}
+{\slot
+చిన్న	O
+reoperation	B-treatment
+chance	O
+ఉంటుందా?	O
+}
+
+{\intent	p: నా age 28 madam	STATEMENT}
+{\slot
+నా	O
+age	O
+28	B-age
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 29 madam	CORRECT}
+{\slot
+29	B-age
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: tubectomy అయింది అన్నారు కదా అమ్మ caesarean అయినా తరువాత అది కూడా 2019 recently కబట్టి donot worry too much	STATEMENT}
+{\slot
+tubectomy	B-treatment
+అయింది	O
+అన్నారు	O
+కదా	O
+అమ్మ	O
+caesarean	B-treatment
+అయినా	O
+తరువాత	B-time_period
+అది	O
+కూడా	O
+2019	B-time_period
+recently	I-time_period
+కబట్టి	O
+donot	O
+worry	O
+too	O
+much	O
+}
+
+{\intent	d: and మీ age కూడా 28 ఏ	STATEMENT}
+{\slot
+and	O
+మీ	O
+age	O
+కూడా	O
+28	B-age
+ఏ	O
+}
+
+{\intent	d: so ఈ recanalization అని ఉంటది	STATEMENT}
+{\slot
+so	O
+ఈ	O
+recanalization	B-treatment
+అని	O
+ఉంటది	B-positive
+}
+

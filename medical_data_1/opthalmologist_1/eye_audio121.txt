@@ -1,0 +1,157 @@
+{\intent	p: doctor గారు నా వయసు 18 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయసు	O
+18	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నేను గత 2 సంవత్సరాలుగా sight తో బాధపడుతున్నాను.	STATEMENT}
+{\slot
+నేను	O
+గత	O
+2	B-time_period
+సంవత్సరాలుగా	I-time_period
+sight	B-bodily_process
+తో	O
+బాధపడుతున్నాను.	B-symptom
+}
+
+{\intent	p: నా రెండు కళ్ళల్లో 2.75 power ఉంది.	STATEMENT}
+{\slot
+నా	O
+రెండు	B-frequency
+కళ్ళల్లో	B-body_part
+2.75	B-mtest_value
+power	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: దీనికి treatment ఉందా? తెలియచేయండి.	INFO_REQUEST}
+{\slot
+దీనికి	O
+treatment	B-treatment
+ఉందా?	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: minus ఆ plus ఆ చెప్పలేదు. generalగా minus ఏ అయి ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+minus	B-mtest_value
+ఆ	O
+plus	B-mtest_value
+ఆ	O
+చెప్పలేదు.	O
+generalగా	O
+minus	B-mtest_value
+ఏ	O
+అయి	O
+ఉంటది.	O
+}
+
+{\intent	d: usualగా minus power ఎక్కువ common, plus కూడా రావొచ్చు but minus అయినా plus అయినా 18 age అంటున్నారు కబట్టి ముందు కళ్ళజోడు తోటే దానికి పరిష్కారం ఇస్తాము.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+minus	B-mtest_value
+power	B-symptom
+ఎక్కువ	O
+common,	O
+plus	B-mtest_value
+కూడా	O
+రావొచ్చు	O
+but	O
+minus	B-mtest_value
+అయినా	O
+plus	B-mtest_value
+అయినా	O
+18	B-age
+age	O
+అంటున్నారు	O
+కబట్టి	O
+ముందు	O
+కళ్ళజోడు	O
+తోటే	O
+దానికి	O
+పరిష్కారం	B-treatment
+ఇస్తాము.	O
+}
+
+{\intent	d: లేదా ఇస్తాం లేకపోతే contact lens కూడా దొరుకుతాయి. అవి రోజుకి 7, 8 గంటల పాటు పెట్టుకోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+లేదా	O
+ఇస్తాం	O
+లేకపోతే	O
+contact	O
+lens	O
+కూడా	O
+దొరుకుతాయి.	O
+అవి	O
+రోజుకి	B-time_period
+7,	B-time_period
+8	I-time_period
+గంటల	I-time_period
+పాటు	O
+పెట్టుకోవచ్చు.	O
+}
+
+{\intent	d: అస్తమానం పెట్టుకోకూడదు.	MEDICAL_EXPLANATION}
+{\slot
+అస్తమానం	O
+పెట్టుకోకూడదు.	O
+}
+
+{\intent	d: అంటే రాత్రల్లా కూడా అంటే పొద్దున నుంచి రాత్రివరకు కొంతమంది ఇది పెట్టి మళ్ళి night వరకు అలా ఉంచి మళ్ళి పడుకుంటారు.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+రాత్రల్లా	B-time_period
+కూడా	O
+అంటే	O
+పొద్దున	B-time_period
+నుంచి	O
+రాత్రివరకు	B-time_period
+కొంతమంది	O
+ఇది	O
+పెట్టి	O
+మళ్ళి	O
+night	B-time_period
+వరకు	O
+అలా	O
+ఉంచి	O
+మళ్ళి	O
+పడుకుంటారు.	O
+}
+
+{\intent	d: అది మంచి పద్ధతి కాదు.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+మంచి	O
+పద్ధతి	O
+కాదు.	O
+}
+
+{\intent	d: రోజుకి 7, 8 గంటలు contact lensలు వాడొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+రోజుకి	B-time_period
+7,	I-time_period
+8	I-time_period
+గంటలు	I-time_period
+contact	O
+lensలు	O
+వాడొచ్చు.	O
+}
+
+{\intent	d: ఇవి రెండు కూడా వద్దు అనుకుంటే lasik విధానం అమలులో ఉంది.	MEDICAL_EXPLANATION}
+{\slot
+ఇవి	O
+రెండు	O
+కూడా	O
+వద్దు	O
+అనుకుంటే	O
+lasik	B-treatment
+విధానం	O
+అమలులో	O
+ఉంది.	O
+}
+

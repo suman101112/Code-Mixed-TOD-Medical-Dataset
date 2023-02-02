@@ -1,0 +1,178 @@
+{\intent	p: ఆ నమస్కారం అండి, నా పేరు Praveen అండి.	GREETING}
+{\slot
+ఆ	O
+నమస్కారం	O
+అండి,	O
+నా	O
+పేరు	O
+Praveen	B-name
+అండి.	O
+}
+
+{\intent	d: చెప్పండి Praveen గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Praveen	B-name
+గారు	O
+}
+
+{\intent	p: sir మా బాబు first class అండి.	STATEMENT}
+{\slot
+sir	O
+మా	O
+బాబు	B-person
+first	B-profession
+class	I-profession
+అండి.	O
+}
+
+{\intent	d: first class ఆ?	INFO_REQUEST}
+{\slot
+first	B-profession
+class	I-profession
+ఆ?	O
+}
+
+{\intent	d: age ఎంత? 3 years ఆ? 4 years	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+3	B-age
+years	I-age
+ఆ?	O
+4	B-age
+years	I-age
+}
+
+{\intent	p: first class అండి, age 6 years	ANSWER}
+{\slot
+first	B-age
+class	I-age
+అండి,	O
+age	O
+6	B-age
+years	I-age
+}
+
+{\intent	d: చెప్పండి sir చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+చెప్పండి	O
+}
+
+{\intent	p: school లో అసలు ఎమి రాయట్లేదు అండి.	STATEMENT}
+{\slot
+school	B-place
+లో	O
+అసలు	O
+ఎమి	O
+రాయట్లేదు	B-symptom
+అండి.	O
+}
+
+{\intent	p: classలొ అసలు ఏం చేస్తాదో తెలియదు	STATEMENT}
+{\slot
+classలొ	B-place
+అసలు	O
+ఏం	O
+చేస్తాదో	O
+తెలియదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చెప్తే అంటే ఎమో మెగితా వాళ్ళు రాసేస్తున్నారు, నాకు late అయిపోతుంది అని చెప్తాడు	STATEMENT}
+{\slot
+చెప్తే	O
+అంటే	O
+ఎమో	O
+మెగితా	O
+వాళ్ళు	O
+రాసేస్తున్నారు,	O
+నాకు	O
+late	O
+అయిపోతుంది	O
+అని	O
+చెప్తాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మా దెగ్గర చెప్తేనేమో మంచిగానే రాస్తాడు మళ్ళి	STATEMENT}
+{\slot
+మా	O
+దెగ్గర	O
+చెప్తేనేమో	O
+మంచిగానే	O
+రాస్తాడు	O
+మళ్ళి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే concentration కూడా ఈ మధ్య తగ్గుతుందండీ.	STATEMENT}
+{\slot
+అంటే	O
+concentration	B-bodily_process
+కూడా	O
+ఈ	O
+మధ్య	O
+తగ్గుతుందండీ.	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి చదివినదాన్ని గుర్తుపెట్టుకుంటాడు but రాయడం మాత్రం చాలా బద్దకం అండి	STATEMENT}
+{\slot
+మళ్ళి	B-body_part
+చదివినదాన్ని	O
+గుర్తుపెట్టుకుంటాడు	O
+but	O
+రాయడం	O
+మాత్రం	O
+చాలా	O
+బద్దకం	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి ఆ problem ఏంటో మాకు కూడా అర్ధం కావడంలేదు	STATEMENT}
+{\slot
+మళ్ళి	B-body_part
+ఆ	O
+problem	O
+ఏంటో	O
+మాకు	O
+కూడా	O
+అర్ధం	O
+కావడంలేదు	O
+}
+
+{\intent	d: ఏం లేదు అండి, ఇవన్నీ కూడా hyperactive కిందికి	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+అండి,	O
+ఇవన్నీ	O
+కూడా	O
+hyperactive	B-medical_condition
+కిందికి	B-location
+}
+

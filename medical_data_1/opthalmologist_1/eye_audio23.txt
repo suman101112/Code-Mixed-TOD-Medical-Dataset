@@ -1,0 +1,136 @@
+{\intent	p: మా అమ్మగారి వయస్సు 57 సంవత్సరాలు.	STATEMENT}
+{\slot
+మా	O
+అమ్మగారి	B-familal
+వయస్సు	O
+57	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: తనకి eye allergy ఉంది.	STATEMENT}
+{\slot
+తనకి	O
+eye	B-medical_condition
+allergy	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: గత వారం 10 రోజులుగా కంటి ముందు మబ్బులా కనిపిస్తుంది. మసకగా ఉంటుంది.	STATEMENT}
+{\slot
+గత	B-time_period
+వారం	I-time_period
+10	I-time_period
+రోజులుగా	I-time_period
+కంటి	B-body_part
+ముందు	B-location
+మబ్బులా	B-symptom
+కనిపిస్తుంది.	B-bodily_process
+మసకగా	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: కొంచం సేపటికే మళ్ళి normal అవుతుంది.	STATEMENT}
+{\slot
+కొంచం	B-intensity
+సేపటికే	B-time_period
+మళ్ళి	O
+normal	B-normal
+అవుతుంది.	O
+}
+
+{\intent	p: bp sugar లాంటివి ఎమి లేవు.	ANSWER}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+లాంటివి	O
+ఎమి	O
+లేవు.	B-negative
+}
+
+{\intent	p: ఈ eye allergy వల్లనే ఇలా అవుతుందా?	INFO_REQUEST}
+{\slot
+ఈ	O
+eye	B-medical_condition
+allergy	I-medical_condition
+వల్లనే	O
+ఇలా	O
+అవుతుందా?	O
+}
+
+{\intent	d: ఈ eye allergy వలన ఏమైతుంది అంటే మన కంట్లో continuousగా ఊసులు లాగా వస్తూ ఉండడము.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+eye	B-medical_condition
+allergy	I-medical_condition
+వలన	O
+ఏమైతుంది	O
+అంటే	O
+మన	O
+కంట్లో	B-body_part
+continuousగా	B-symptom
+ఊసులు	I-symptom
+లాగా	O
+వస్తూ	O
+ఉండడము.	O
+}
+
+{\intent	d: కంట్లో నీళ్లు కారడము దురద పెట్టడము ఇది బాగా rub చేయడము జరుగుతూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+కంట్లో	B-body_part
+నీళ్లు	B-food_substance
+కారడము	B-symptom
+దురద	B-symptom
+పెట్టడము	O
+ఇది	O
+బాగా	B-intensity
+rub	B-symptom
+చేయడము	O
+జరుగుతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అలాంటప్పుడు ఏమవుతుంది అంటే మన కంట్లో నీరు శాతం అంటే tear film ఏదైతే ఒక తేమ లాంటి ఇది ఉంటుందో మన కంటి పైన అది కూడా తగ్గిపోతూ ఉంటుంది అన్నమాట ఈ allergy వల్ల	MEDICAL_EXPLANATION}
+{\slot
+అలాంటప్పుడు	O
+ఏమవుతుంది	O
+అంటే	O
+మన	O
+కంట్లో	B-body_part
+నీరు	B-food_substance
+శాతం	O
+అంటే	O
+tear	B-body_part
+film	I-body_part
+ఏదైతే	O
+ఒక	O
+తేమ	O
+లాంటి	O
+ఇది	O
+ఉంటుందో	O
+మన	O
+కంటి	B-body_part
+పైన	I-location
+అది	O
+కూడా	O
+తగ్గిపోతూ	B-symptom
+ఉంటుంది	O
+అన్నమాట	O
+ఈ	O
+allergy	B-medical_condition
+వల్ల	O
+}
+
+{\intent	d: so దానివల్ల dry eye అంటే కంట్లో పొడిబారి పోయే తనం వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+దానివల్ల	O
+dry	B-symptom
+eye	I-symptom
+అంటే	O
+కంట్లో	B-body_part
+పొడిబారి	B-symptom
+పోయే	I-symptom
+తనం	I-symptom
+వస్తుంది.	O
+}
+

@@ -1,0 +1,129 @@
+{\intent	d: 1	ANSWER}
+{\slot
+1	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఇప్పుడు haemoglobin చాలా తక్కువ ఉంది కదా	STATEMENT}
+{\slot
+ఇప్పుడు	O
+haemoglobin	B-body_substance
+చాలా	O
+తక్కువ	B-intensity
+ఉంది	O
+కదా	O
+}
+
+{\intent	d: ఏం పేరు, ఈమె పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు,	O
+ఈమె	O
+పేరు?	O
+}
+
+{\intent	p: Neha sir.	ANSWER}
+{\slot
+Neha	B-name
+sir.	O
+}
+
+{\intent	d: fever ఏమైనా ఉందా	INFO_REQUEST}
+{\slot
+fever	B-symptom
+ఏమైనా	O
+ఉందా	O
+}
+
+{\intent	p1: fever లేదు sir.	ANSWER}
+{\slot
+fever	B-symptom
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: విరోచనాలు వాంతులు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+విరోచనాలు	B-symptom
+వాంతులు	B-symptom
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p1: వాంతులు లేవు కానీ కొంచం motionsకే పోతంది	ANSWER}
+{\slot
+వాంతులు	B-symptom
+లేవు	B-negative
+కానీ	O
+కొంచం	O
+motionsకే	B-bodily_process
+పోతంది	B-positive
+}
+
+{\intent	d: iron tablets వేస్తున్నాం కదా	STATEMENT}
+{\slot
+iron	B-body_substance
+tablets	B-medicine
+వేస్తున్నాం	O
+కదా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: iron tablets వల్ల నల్లగా పోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+iron	B-body_substance
+tablets	B-medicine
+వల్ల	O
+నల్లగా	B-color
+పోవచ్చు.	B-bodily_process
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: తినట్లేదు sir.	STATEMENT}
+{\slot
+తినట్లేదు	B-symptom
+sir.	O
+}
+
+{\intent	d: ఒక్కరోజు improve కావు అమ్మా అవి	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కరోజు	B-time_period
+improve	O
+కావు	O
+అమ్మా	O
+అవి	O
+}
+
+{\intent	d: first iron పెరగాలి, gradualగా haemoglobin పెరగాలి.	MEDICAL_EXPLANATION}
+{\slot
+first	B-quantity
+iron	B-body_substance
+పెరగాలి,	O
+gradualగా	O
+haemoglobin	B-body_substance
+పెరగాలి.	O
+}
+
+{\intent	d: ironవి haemoglobin పెరగాలి అంటే 3 నెలలు పడుతుందమ్మా	MEDICAL_EXPLANATION}
+{\slot
+ironవి	B-body_substance
+haemoglobin	B-body_substance
+పెరగాలి	O
+అంటే	O
+3	B-time_period
+నెలలు	I-time_period
+పడుతుందమ్మా	O
+}
+

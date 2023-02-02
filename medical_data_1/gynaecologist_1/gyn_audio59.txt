@@ -1,0 +1,126 @@
+{\intent	p: నమస్కారం sir	GREETING}
+{\slot
+నమస్కారం	O
+sir	O
+}
+
+{\intent	d: నమస్కారం అండి చెప్పండి	ACTION_DIR}
+{\slot
+నమస్కారం	O
+అండి	O
+చెప్పండి	O
+}
+
+{\intent	p: sir నాకు అంటే చాలా సార్లు IVF కి వెళ్ళాను, unsuccessful అయింది	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+అంటే	O
+చాలా	B-intensity
+సార్లు	B-frequency
+IVF	B-treatment
+కి	O
+వెళ్ళాను,	O
+unsuccessful	B-negative
+అయింది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అంటే నాకు Ovarian cyst problem ఉండింది	STATEMENT}
+{\slot
+అంటే	O
+నాకు	O
+Ovarian	B-body_part
+cyst	B-medical_condition
+problem	O
+ఉండింది	O
+}
+
+{\intent	d: ya size ఎంత చెప్పారు?	INFO_REQUEST}
+{\slot
+ya	O
+size	B-mtest_value
+ఎంత	O
+చెప్పారు?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: size ఎంత చెప్పారు?	INFO_REQUEST}
+{\slot
+size	B-mtest_value
+ఎంత	O
+చెప్పారు?	O
+}
+
+{\intent	p: size తెలియదు sir. అప్పుడు operation అయి చాలా ఏళ్ళు అయిపోతుంది	ANSWER}
+{\slot
+size	O
+తెలియదు	O
+sir.	O
+అప్పుడు	B-time_period
+operation	B-treatment
+అయి	O
+చాలా	B-intensity
+ఏళ్ళు	B-time_period
+అయిపోతుంది	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: ఇప్పుడు నేను 42 ఉన్నాను	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+నేను	O
+42	B-age
+ఉన్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: actualగా నాకు 39 కి నాకు menopause వచ్చింది	STATEMENT}
+{\slot
+actualగా	O
+నాకు	O
+39	B-age
+కి	O
+నాకు	O
+menopause	B-bodily_process
+వచ్చింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ conditionsలో మళ్ళి try చేయొచ్చా Fertility కోసం	INFO_REQUEST}
+{\slot
+ఈ	O
+conditionsలో	O
+మళ్ళి	O
+try	O
+చేయొచ్చా	O
+Fertility	B-bodily_process
+కోసం	O
+}
+
+{\intent	d: yes	ANSWER}
+{\slot
+yes	O
+}
+

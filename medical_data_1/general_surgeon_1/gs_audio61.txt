@@ -1,0 +1,190 @@
+{\intent	p: good afternoon sir	GREETING}
+{\slot
+good	O
+afternoon	O
+sir	O
+}
+
+{\intent	d: good afternoon అమ్మా చెప్పండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అమ్మా	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir మా పాపకి 1 n half year అండి.	STATEMENT}
+{\slot
+sir	O
+మా	O
+పాపకి	B-familal
+1	B-age
+n	I-age
+half	I-age
+year	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తను motion వెళ్ళేటప్పుడు చాలా tightగా వెళ్తుంది బాగా ఏడుస్తుంది	STATEMENT}
+{\slot
+తను	O
+motion	B-bodily_process
+వెళ్ళేటప్పుడు	I-bodily_process
+చాలా	B-intensity
+tightగా	B-symptom
+వెళ్తుంది	O
+బాగా	B-intensity
+ఏడుస్తుంది	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ motion దెగ్గర చిన్న skinలాగా కింద బయటికి వచ్చింది sir	STATEMENT}
+{\slot
+అక్కడ	B-location
+motion	B-body_part
+దెగ్గర	O
+చిన్న	O
+skinలాగా	B-body_part
+కింద	B-location
+బయటికి	B-symptom
+వచ్చింది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తను రోజూ daily ఏడుస్తుంది.	STATEMENT}
+{\slot
+తను	O
+రోజూ	B-time_period
+daily	I-time_period
+ఏడుస్తుంది.	B-symptom
+}
+
+{\intent	p: motion అయితే రోజు వెళ్తుంది కానీ ఏడుస్తుంది బాగా	STATEMENT}
+{\slot
+motion	B-bodily_process
+అయితే	O
+రోజు	B-time_period
+వెళ్తుంది	O
+కానీ	O
+ఏడుస్తుంది	B-symptom
+బాగా	B-intensity
+}
+
+{\intent	d: right అమ్మా	ACK}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	d: ఇప్పటివరకు ఏమైనా పిల్లల doctorని చూపించావా?	INFO_REQUEST}
+{\slot
+ఇప్పటివరకు	O
+ఏమైనా	O
+పిల్లల	O
+doctorని	B-medical_professional
+చూపించావా?	O
+}
+
+{\intent	p: చూపించాను sir	ANSWER}
+{\slot
+చూపించాను	O
+sir	O
+}
+
+{\intent	p: మందులు వేస్తేనే freeగా అవుతుంది sir. లేకపోతే అవ్వట్లేదు	STATEMENT}
+{\slot
+మందులు	B-medicine
+వేస్తేనే	O
+freeగా	B-normal
+అవుతుంది	O
+sir.	O
+లేకపోతే	O
+అవ్వట్లేదు	B-symptom
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: food లో non-veg కానీ ఇదేమన్నా పెడుతున్నావా?	INFO_REQUEST}
+{\slot
+food	B-food_substance
+లో	O
+non-veg	B-food_substance
+కానీ	O
+ఇదేమన్నా	O
+పెడుతున్నావా?	O
+}
+
+{\intent	p: ఆ పెడుతున్నాను sir	ANSWER}
+{\slot
+ఆ	O
+పెడుతున్నాను	O
+sir	O
+}
+
+{\intent	p: 1 n half year sir, అయితే పెడుతున్నాను	ANSWER}
+{\slot
+1	B-mtest_value
+n	O
+half	B-time_period
+year	B-time_period
+sir,	O
+అయితే	O
+పెడుతున్నాను	O
+}
+
+{\intent	d: right అమ్మా	ACK}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	d: ఇంకేమన్నా అడగదలచుకున్నావా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+అడగదలచుకున్నావా?	O
+}
+
+{\intent	p: ఇంకేం లేదు sir, అదే problem sir మాకు	ANSWER}
+{\slot
+ఇంకేం	O
+లేదు	O
+sir,	O
+అదే	O
+problem	O
+sir	O
+మాకు	O
+}
+
+{\intent	d: so 1 to 3 years వయస్సు ఉండేటటువంటి పిల్లల్లో సహజంగా మలబద్ధకం కనిపిస్తూ ఉంటుంది.	STATEMENT}
+{\slot
+so	O
+1	B-age
+to	O
+3	B-age
+years	I-age
+వయస్సు	I-age
+ఉండేటటువంటి	O
+పిల్లల్లో	O
+సహజంగా	O
+మలబద్ధకం	B-symptom
+కనిపిస్తూ	O
+ఉంటుంది.	O
+}
+

@@ -1,0 +1,292 @@
+{\intent	d: పేరు చెప్పు	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Saarayya sir	ANSWER}
+{\slot
+Saarayya	B-name
+sir	O
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Saarayya	ANSWER}
+{\slot
+Saarayya	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 53 ఉంటది	ANSWER}
+{\slot
+53	B-age
+ఉంటది	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: గొంతుల తట్టుకున్నట్లు అయితాంది sir.	ANSWER}
+{\slot
+గొంతుల	B-body_part
+తట్టుకున్నట్లు	B-symptom
+అయితాంది	O
+sir.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: ఓ చాలా రోజులు అయితాంది	ANSWER}
+{\slot
+ఓ	O
+చాలా	B-intensity
+రోజులు	B-time_period
+అయితాంది	O
+}
+
+{\intent	p: ఇదో మీద ఉబ్బినట్ల,	STATEMENT}
+{\slot
+ఇదో	O
+మీద	B-location
+ఉబ్బినట్ల,	B-symptom
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: అన్నం మింగడం కష్టంగా ఉందా?	INFO_REQUEST}
+{\slot
+అన్నం	B-food_substance
+మింగడం	B-bodily_process
+కష్టంగా	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: అన్నం మింగడం కష్టంగా ఉందా?	REPEAT_REPHRASE}
+{\slot
+అన్నం	B-food_substance
+మింగడం	B-bodily_process
+కష్టంగా	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ. తట్టుకున్నట్లు అయితాంది.	ANSWER}
+{\slot
+ఆ.	B-positive
+తట్టుకున్నట్లు	B-symptom
+అయితాంది.	O
+}
+
+{\intent	d: ఎన్ని రోజులు అయితాంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయితాంది?	O
+}
+
+{\intent	p: ఓ చాలా రోజులు అయితాంది	ANSWER}
+{\slot
+ఓ	O
+చాలా	B-intensity
+రోజులు	B-time_period
+అయితాంది	O
+}
+
+{\intent	p: చాలా రోజులు అయితాంది	ACK}
+{\slot
+చాలా	B-intensity
+రోజులు	B-time_period
+అయితాంది	O
+}
+
+{\intent	d: వాంతులు గిట్ల ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+వాంతులు	B-symptom
+గిట్ల	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: వాంతులు ఏం లేవు sir.	ANSWER}
+{\slot
+వాంతులు	B-symptom
+ఏం	O
+లేవు	B-negative
+sir.	O
+}
+
+{\intent	d: కడుపు మంట?	INFO_REQUEST}
+{\slot
+కడుపు	B-body_part
+మంట?	B-symptom
+}
+
+{\intent	p: ఆకలి అయితుంది అనిపిస్తుంది. ఆకలి లేదు.	ANSWER}
+{\slot
+ఆకలి	B-bodily_process
+అయితుంది	I-bodily_process
+అనిపిస్తుంది.	O
+ఆకలి	B-bodily_process
+లేదు.	B-negative
+}
+
+{\intent	p: నీళ్లు తాగినా తట్టుకున్నట్లు అయితాంది. అన్నం తిన్నా తట్టుకున్నట్లు అయితాంది.	STATEMENT}
+{\slot
+నీళ్లు	B-food_substance
+తాగినా	B-bodily_process
+తట్టుకున్నట్లు	B-symptom
+అయితాంది.	O
+అన్నం	B-food_substance
+తిన్నా	B-bodily_process
+తట్టుకున్నట్లు	B-symptom
+అయితాంది.	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: ఈ	EX_PERFORM}
+{\slot
+ఈ	O
+}
+
+{\intent	d: శబ్దం చేయి	ACTION_DIR}
+{\slot
+శబ్దం	O
+చేయి	O
+}
+
+{\intent	p: ఆ	EX_PERFORM}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఈ	EX_PERFORM}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	EX_PERFORM}
+{\slot
+ఆ	O
+}
+
+{\intent	d: తలకాయ వంచు	ACTION_DIR}
+{\slot
+తలకాయ	B-body_part
+వంచు	O
+}
+
+{\intent	d: కళ్ళు సారా తాగుతావా?	INFO_REQUEST}
+{\slot
+కళ్ళు	B-habit
+సారా	B-habit
+తాగుతావా?	B-bodily_process
+}
+
+{\intent	p: కళ్ళు పడుతలేదు sir నాకు	ANSWER}
+{\slot
+కళ్ళు	B-habit
+పడుతలేదు	B-symptom
+sir	O
+నాకు	O
+}
+
+{\intent	d: తర్వాత smoking?	INFO_REQUEST}
+{\slot
+తర్వాత	B-time_period
+smoking?	O
+}
+
+{\intent	p: లేదు. smoking లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+smoking	B-habit
+లేదు.	B-negative
+}
+
+{\intent	d: కొన్ని రోజులు మందులు వాడి చూద్దాం	STATEMENT}
+{\slot
+కొన్ని	B-intensity
+రోజులు	B-time_period
+మందులు	B-medicine
+వాడి	O
+చూద్దాం	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: తగ్గకపోతే, లోపల pipe వేసి చూడాలి	STATEMENT}
+{\slot
+తగ్గకపోతే,	B-symptom
+లోపల	O
+pipe	B-medical_apparatus
+వేసి	O
+చూడాలి	O
+}
+
+{\intent	p: అవును sir	ACK}
+{\slot
+అవును	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పులుపు కారం మసాలాలు తక్వ తీసుకో	ACTION_DIR}
+{\slot
+పులుపు	B-food_substance
+కారం	B-food_substance
+మసాలాలు	B-food_substance
+తక్వ	B-intensity
+తీసుకో	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

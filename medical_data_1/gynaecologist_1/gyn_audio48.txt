@@ -1,0 +1,240 @@
+{\intent	p: నా పేరు Sanjeeva Naidu madam	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Sanjeeva	B-name
+Naidu	I-name
+madam	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మా అన్న కూతురు 40, 42 ఏళ్ళు ఉంటాయి madam	STATEMENT}
+{\slot
+మా	O
+అన్న	B-familal
+కూతురు	I-familial
+40,	B-age
+42	B-age
+ఏళ్ళు	O
+ఉంటాయి	O
+madam	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: madam?	INFO_REQUEST}
+{\slot
+madam?	O
+}
+
+{\intent	d: చెప్పండి వింటున్నాను	ACTION_DIR}
+{\slot
+చెప్పండి	O
+వింటున్నాను	O
+}
+
+{\intent	p: మా అన్నా కూతురు 40, 42 సంవత్సరాలు ఉంటుంది.	STATEMENT}
+{\slot
+మా	O
+అన్నా	B-familal
+కూతురు	I-familial
+40,	B-age
+42	B-age
+సంవత్సరాలు	I-age
+ఉంటుంది.	O
+}
+
+{\intent	p: ఆమెకు ఒక్కటే పిల్ల పుట్టింది, ఆడపిల్ల	STATEMENT}
+{\slot
+ఆమెకు	O
+ఒక్కటే	B-frequency
+పిల్ల	B-person
+పుట్టింది,	B-bodily_process
+ఆడపిల్ల	B-person
+}
+
+{\intent	p: మొన్న 14 సంవత్సరాలకి ఆ పాప పుట్టినా తరువాత మొన్న 15 రోజుల కింద ఆ పాప చనిపోయింది	STATEMENT}
+{\slot
+మొన్న	B-time_period
+14	B-time_period
+సంవత్సరాలకి	I-time_period
+ఆ	O
+పాప	B-person
+పుట్టినా	B-bodily_process
+తరువాత	B-time_period
+మొన్న	B-time_period
+15	I-time_period
+రోజుల	I-time_period
+కింద	I-time_period
+ఆ	O
+పాప	B-person
+చనిపోయింది	B-bodily_process
+}
+
+{\intent	p: Dengue జ్వరం వచ్చి	STATEMENT}
+{\slot
+Dengue	B-medical_condition
+జ్వరం	I-medical_condition
+వచ్చి	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇప్పుడు ఏమైనా చూయించుకుంటే మళ్ళి పిల్లలు అయ్యే అవకాశం ఉంటుందా madam?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏమైనా	O
+చూయించుకుంటే	O
+మళ్ళి	O
+పిల్లలు	B-person
+అయ్యే	O
+అవకాశం	O
+ఉంటుందా	O
+madam?	O
+}
+
+{\intent	d: Dengue జ్వరం వచ్చిందా అండి 15 days back?	INFO_REQUEST}
+{\slot
+Dengue	B-medical_condition
+జ్వరం	I-medical_condition
+వచ్చిందా	O
+అండి	O
+15	B-time_period
+days	I-time_period
+back?	I-time_period
+}
+
+{\intent	p: అవును madam	ANSWER}
+{\slot
+అవును	B-positive
+madam	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: Dengue జ్వరం వచ్చి చనిపోయింది madam 15 రోజులు అయింది ఈ రోజుకి	STATEMENT}
+{\slot
+Dengue	B-medical_condition
+జ్వరం	I-medical_condition
+వచ్చి	O
+చనిపోయింది	B-bodily_process
+madam	O
+15	B-time_period
+రోజులు	I-time_period
+అయింది	O
+ఈ	B-time_period
+రోజుకి	I-time_period
+}
+
+{\intent	d: పాప చనిపోయిందా?	INFO_REQUEST}
+{\slot
+పాప	B-person
+చనిపోయిందా?	B-bodily_process
+}
+
+{\intent	p: చనిపోయింది madam ఒక్కటే పాప ఉండే 14 సంవత్సరాలు ఆ పాపకి	ANSWER}
+{\slot
+చనిపోయింది	B-bodily_process
+madam	O
+ఒక్కటే	B-frequency
+పాప	B-person
+ఉండే	O
+14	B-time_period
+సంవత్సరాలు	I-time_period
+ఆ	O
+పాపకి	B-person
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చనిపోయింది	STATEMENT}
+{\slot
+చనిపోయింది	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: పాప పుట్టినా తర్వాత ఇగ పిల్లలు కాలా? వాళ్ళు కూడా operation ఏం చేయించుకోలే పిల్లలు కాకుండా	STATEMENT}
+{\slot
+పాప	B-person
+పుట్టినా	B-bodily_process
+తర్వాత	B-time_period
+ఇగ	O
+పిల్లలు	B-familal
+కాలా?	O
+వాళ్ళు	O
+కూడా	O
+operation	B-treatment
+ఏం	O
+చేయించుకోలే	B-bodily_process
+పిల్లలు	B-familal
+కాకుండా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు ఏమైనా అవకాశాలు ఉన్నాయా అని	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏమైనా	O
+అవకాశాలు	O
+ఉన్నాయా	O
+అని	O
+}
+
+{\intent	d: మనకు first thing ఏంటి అంటే మనకు అవకాశాలు ఉన్నాయా లేవా అని తెలుసుకోవాలంటే first thing మనకు ఏం ఇబ్బందులు ఉన్నాయి అనేటివి తెలుసుకోవాలి.	STATEMENT}
+{\slot
+మనకు	O
+first	O
+thing	O
+ఏంటి	O
+అంటే	O
+మనకు	O
+అవకాశాలు	O
+ఉన్నాయా	O
+లేవా	O
+అని	O
+తెలుసుకోవాలంటే	O
+first	O
+thing	O
+మనకు	O
+ఏం	O
+ఇబ్బందులు	B-symptom
+ఉన్నాయి	O
+అనేటివి	O
+తెలుసుకోవాలి.	O
+}
+
+{\intent	d: అంటే మనము దీనికి secondary infertility అంటుంటాము.	DIAGNOSIS}
+{\slot
+అంటే	O
+మనము	O
+దీనికి	O
+secondary	B-medical_condition
+infertility	I-medical_condition
+అంటుంటాము.	O
+}
+

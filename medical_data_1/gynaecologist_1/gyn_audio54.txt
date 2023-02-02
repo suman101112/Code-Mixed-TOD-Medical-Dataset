@@ -1,0 +1,143 @@
+{\intent	p: మళ్ళి పిల్లగాన్లు	STATEMENT}
+{\slot
+మళ్ళి	O
+పిల్లగాన్లు	B-familal
+}
+
+{\intent	d: ok ఒకసారి సంతానం ఉంది ok	ACK}
+{\slot
+ok	O
+ఒకసారి	B-frequency
+సంతానం	B-familal
+ఉంది	O
+ok	O
+}
+
+{\intent	p: ఒక బాబు	STATEMENT}
+{\slot
+ఒక	B-frequency
+బాబు	B-person
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: అయితే 4 years అయితాంది ఇంకా అయితలేదు అయితే ఊరికే నెల దాటి అయిపోయేమోపుకు 1 month అయిపోయి 2 month పడే అయిపోయేమోపుకే ఉంటానండి date	STATEMENT}
+{\slot
+అయితే	O
+4	B-time_period
+years	I-time_period
+అయితాంది	O
+ఇంకా	O
+అయితలేదు	B-symptom
+అయితే	O
+ఊరికే	O
+నెల	B-time_period
+దాటి	I-time_period
+అయిపోయేమోపుకు	O
+1	B-time_period
+month	I-time_period
+అయిపోయి	O
+2	B-time_period
+month	I-time_period
+పడే	O
+అయిపోయేమోపుకే	O
+ఉంటానండి	O
+date	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: eggs size పెరగట్లేదా?	INFO_REQUEST}
+{\slot
+eggs	B-body_part
+size	O
+పెరగట్లేదా?	B-negative
+}
+
+{\intent	p: ఆ	STATEMENT}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఏమైనా cyst ఉందా? అట్ల ఏమైనా చెప్పారా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+cyst	B-medical_condition
+ఉందా?	O
+అట్ల	O
+ఏమైనా	O
+చెప్పారా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: scanning అంతా normal ఉందని చెప్పారా reportలో?	REPEAT_REPHRASE}
+{\slot
+scanning	B-mtest
+అంతా	O
+normal	B-normal
+ఉందని	O
+చెప్పారా	O
+reportలో?	B-mtest
+}
+
+{\intent	p: ఆ normal ఏ doctor	STATEMENT}
+{\slot
+ఆ	O
+normal	B-normal
+ఏ	O
+doctor	B-medical_professional
+}
+
+{\intent	d: right right right	ACK}
+{\slot
+right	O
+right	O
+right	O
+}
+
+{\intent	d: so ఇప్పుడు most importantly egg size పెరగట్లేదు అంటే it could be poor Ovarian reserve or PCOD	DIAGNOSIS}
+{\slot
+so	O
+ఇప్పుడు	O
+most	O
+importantly	O
+egg	B-body_part
+size	O
+పెరగట్లేదు	B-symptom
+అంటే	O
+it	O
+could	O
+be	O
+poor	O
+Ovarian	B-body_part
+reserve	I-symptom
+or	O
+PCOD	B-medical_condition
+}
+
+{\intent	d: so PCOD check చేసుకోవాలంటే కొన్ని hormones ఉంటాయి.	STATEMENT}
+{\slot
+so	O
+PCOD	B-medical_condition
+check	B-mtest
+చేసుకోవాలంటే	O
+కొన్ని	O
+hormones	B-body_substance
+ఉంటాయి.	O
+}
+

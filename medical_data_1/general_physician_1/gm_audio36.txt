@@ -1,0 +1,206 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: Shiva Shanker గారు వింటున్నా చెప్పండి	CONV_OPEN}
+{\slot
+Shiva	B-name
+Shanker	I-name
+గారు	O
+వింటున్నా	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ sir నాకు ఇది one side headache వస్తుంది sir, ఎడమ వైపు, left sideకి	STATEMENT}
+{\slot
+ఆ	O
+sir	O
+నాకు	O
+ఇది	O
+one	B-frequency
+side	B-location
+headache	B-symptom
+వస్తుంది	O
+sir,	O
+ఎడమ	B-location
+వైపు,	B-location
+left	B-location
+sideకి	B-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వెనక, వెనకాల భాగంలో వస్తుంది అండి.	STATEMENT}
+{\slot
+వెనక,	B-location
+వెనకాల	B-location
+భాగంలో	B-location
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే అది ఎప్పుడు వస్తుందంటే, మనకు ఇట్ల చల్ల గాలి తగులుతుంది కదా sir ఎప్పుడైనా bike మీద వెళ్ళినప్పుడు గానీ	STATEMENT}
+{\slot
+అయితే	O
+అది	O
+ఎప్పుడు	O
+వస్తుందంటే,	O
+మనకు	O
+ఇట్ల	O
+చల్ల	O
+గాలి	O
+తగులుతుంది	O
+కదా	O
+sir	O
+ఎప్పుడైనా	O
+bike	O
+మీద	O
+వెళ్ళినప్పుడు	O
+గానీ	O
+}
+
+{\intent	p: లేదంటే బయటికి వెళ్ళినప్పుడు గానీ	STATEMENT}
+{\slot
+లేదంటే	O
+బయటికి	O
+వెళ్ళినప్పుడు	O
+గానీ	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: లేదంటే ఎక్కువగా ఎండలో తిరిగినప్పుడు కానీ	STATEMENT}
+{\slot
+లేదంటే	O
+ఎక్కువగా	B-intensity
+ఎండలో	O
+తిరిగినప్పుడు	O
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: timeకి అన్నం తిననప్పుడు గానీ	STATEMENT}
+{\slot
+timeకి	B-time_period
+అన్నం	B-food_substance
+తిననప్పుడు	B-symptom
+గానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ timeలో వస్తుంది sir నాకు	STATEMENT}
+{\slot
+ఈ	O
+timeలో	B-time_period
+వస్తుంది	O
+sir	O
+నాకు	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఏమైనా medicines వాడుతున్నారా sir ఇప్పుడు?	STATEMENT}
+{\slot
+ఏమైనా	O
+medicines	B-medicine
+వాడుతున్నారా	O
+sir	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: అంటే, medicines ఏం వడట్లేదు sir, Saridon tablet వేస్తే 2 hoursలో తగ్గిపోతుంది sir	ANSWER}
+{\slot
+అంటే,	O
+medicines	B-medicine
+ఏం	O
+వడట్లేదు	O
+sir,	O
+Saridon	B-medicine
+tablet	I-medicine
+వేస్తే	O
+2	B-time_period
+hoursలో	I-time_period
+తగ్గిపోతుంది	B-normal
+sir	O
+}
+
+{\intent	d: ok ok, ఇంకేమైనా అడగదల్చుకున్నారా?	INFO_REQUEST}
+{\slot
+ok	O
+ok,	O
+ఇంకేమైనా	O
+అడగదల్చుకున్నారా?	O
+}
+
+{\intent	p: ఇంకేం లేదు sir.	ANSWER}
+{\slot
+ఇంకేం	O
+లేదు	O
+sir.	O
+}
+
+{\intent	p: అంటే చాలా రోజుల నుంచి ఉంది sir ఒక 10 సంవత్సరాల నుంచి ఉంది	STATEMENT}
+{\slot
+అంటే	O
+చాలా	B-intensity
+రోజుల	B-time_period
+నుంచి	O
+ఉంది	O
+sir	O
+ఒక	O
+10	B-time_period
+సంవత్సరాల	B-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: అదే అదే నండీ, right అండి.	ACK}
+{\slot
+అదే	O
+అదే	O
+నండీ,	O
+right	O
+అండి.	O
+}
+
+{\intent	d: చూపుకు సంబంధించి ఏమైనా ఇబ్బంది ఉన్న కూడా ఇలా one sided headache తల వెనుకభాగంలో కనిపిస్తుంటుంది.	DIAGNOSIS}
+{\slot
+చూపుకు	B-bodily_process
+సంబంధించి	O
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఉన్న	O
+కూడా	O
+ఇలా	O
+one	B-frequency
+sided	B-location
+headache	B-symptom
+తల	B-body_part
+వెనుకభాగంలో	B-location
+కనిపిస్తుంటుంది.	O
+}
+

@@ -1,0 +1,55 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 55, female	ANSWER}
+{\slot
+55,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: ఒక కంటికి operation అయింది. ఇప్పుడు వేరే కంటి operation కోసం doctor రమ్మన్నాడు.	ANSWER}
+{\slot
+ఒక	O
+కంటికి	B-body_part
+operation	B-treatment
+అయింది.	O
+ఇప్పుడు	O
+వేరే	O
+కంటి	B-treatment
+operation	I-treatment
+కోసం	O
+doctor	B-medical_professional
+రమ్మన్నాడు.	O
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+

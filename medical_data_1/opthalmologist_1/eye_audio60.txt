@@ -1,0 +1,187 @@
+{\intent	p: doctor గారు నా age 28 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+age	O
+28	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా పేరు Saraswati.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Saraswati.	B-name
+}
+
+{\intent	p: గత 5 సంవత్సరాల నుంచి నాకు sugar ఉంది.	STATEMENT}
+{\slot
+గత	O
+5	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+నాకు	O
+sugar	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఇప్పుడు 5th month pregnant ని .	STATEMENT}
+{\slot
+ఇప్పుడు	O
+5th	B-time_period
+month	I-time_period
+pregnant	B-medical_condition
+ని	O
+.	O
+}
+
+{\intent	p: ఈ మధ్య కంటి చూపు బాగా మసకబారుతుంది. అలాగే ఉదయం లేచిన వెంటనే double vision కనిపిస్తుంది.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+కంటి	B-body_part
+చూపు	B-bodily_process
+బాగా	B-intensity
+మసకబారుతుంది.	B-symptom
+అలాగే	O
+ఉదయం	B-time_period
+లేచిన	O
+వెంటనే	O
+double	B-symptom
+vision	I-symptom
+కనిపిస్తుంది.	B-bodily_process
+}
+
+{\intent	p: ఈ diabetes మూలాన పుట్టబోయే బిడ్డకు ఏదైనా సమస్య వస్తుందా?	INFO_REQUEST}
+{\slot
+ఈ	O
+diabetes	B-medical_condition
+మూలాన	O
+పుట్టబోయే	B-bodily_process
+బిడ్డకు	B-person
+ఏదైనా	O
+సమస్య	O
+వస్తుందా?	O
+}
+
+{\intent	d: pregnancyలో ఉన్న diabetesని మనం gestational diabetes అంటాం అండి.	MEDICAL_EXPLANATION}
+{\slot
+pregnancyలో	B-medical_condition
+ఉన్న	O
+diabetesని	B-medical_condition
+మనం	O
+gestational	B-medical_condition
+diabetes	I-medical_condition
+అంటాం	O
+అండి.	O
+}
+
+{\intent	d: so ఇది 2 రకాలుగా మనకి కనపడొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇది	O
+2	O
+రకాలుగా	O
+మనకి	O
+కనపడొచ్చు.	O
+}
+
+{\intent	d: ఒక్కటి ఏంటి అంటే మీరు already diabetes ఉంది అన్నారు 5 సంవత్సరాల నుంచి.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటి	O
+ఏంటి	O
+అంటే	O
+మీరు	O
+already	O
+diabetes	B-medical_condition
+ఉంది	O
+అన్నారు	O
+5	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి.	O
+}
+
+{\intent	d: అంటే ఇప్పుడు pregnant అయి ఇప్పుడు diabetes ఉంది అని చెప్పారు.	STATEMENT}
+{\slot
+అంటే	O
+ఇప్పుడు	O
+pregnant	B-medical_condition
+అయి	O
+ఇప్పుడు	O
+diabetes	B-medical_condition
+ఉంది	O
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: so వీళ్ళలో ఈ gestational where as కొంత మందికి pregnancyలో ఉన్నప్పుడే diabetes కూడా detect అవ్వడానికి అవకాశం ఉంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+వీళ్ళలో	O
+ఈ	O
+gestational	O
+where	O
+as	O
+కొంత	O
+మందికి	O
+pregnancyలో	B-medical_condition
+ఉన్నప్పుడే	O
+diabetes	B-medical_condition
+కూడా	O
+detect	O
+అవ్వడానికి	O
+అవకాశం	O
+ఉంది.	O
+}
+
+{\intent	d: ఈ ఒక్క pregnancyలో ఉన్నప్పుడు diabetes ఉన్నప్పుడు చాలా ముఖ్యమైన విషయం ఎమిటి అంటే 1st trimister అంటే pregnancy అని తెలిసిన first 3 నెలలు లోనే ఒకసారి మనం ఈ retinopathy ఇప్పుడు ఈ diabetes వల్ల ఏ కన్ను లోపల retinal problem ఉందా లేదా అన్నది ఒక fundus examination dialated eye examination చేసుకోవడం చాలా ముఖ్యం.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+ఒక్క	O
+pregnancyలో	B-medical_condition
+ఉన్నప్పుడు	O
+diabetes	B-medical_condition
+ఉన్నప్పుడు	O
+చాలా	B-intensity
+ముఖ్యమైన	O
+విషయం	O
+ఎమిటి	O
+అంటే	O
+1st	B-frequency
+trimister	I-time_period
+అంటే	O
+pregnancy	B-medical_condition
+అని	O
+తెలిసిన	O
+first	B-frequency
+3	B-time_period
+నెలలు	I-time_period
+లోనే	O
+ఒకసారి	O
+మనం	O
+ఈ	O
+retinopathy	B-treatment
+ఇప్పుడు	O
+ఈ	O
+diabetes	B-medical_condition
+వల్ల	O
+ఏ	O
+కన్ను	B-body_part
+లోపల	B-location
+retinal	B-medical_condition
+problem	I-medical_condition
+ఉందా	O
+లేదా	O
+అన్నది	O
+ఒక	O
+fundus	B-mtest
+examination	I-mtest
+dialated	B-mtest
+eye	I-mtest
+examination	I-mtest
+చేసుకోవడం	O
+చాలా	B-intensity
+ముఖ్యం.	O
+}
+

@@ -1,0 +1,225 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Razia sultana	ANSWER}
+{\slot
+Razia	B-name
+sultana	I-name
+}
+
+{\intent	d: आ ?	SNU}
+{\slot
+आ	O
+?	O
+}
+
+{\intent	p: Razia sultana	ANSWER}
+{\slot
+Razia	B-name
+sultana	I-name
+}
+
+{\intent	d: कैसा है	INFO_REQUEST}
+{\slot
+कैसा	O
+है	O
+}
+
+{\intent	p: थोड़ा वैसे हीच है	ANSWER}
+{\slot
+थोड़ा	B-intensity
+वैसे	O
+हीच	O
+है	O
+}
+
+{\intent	p1: आवाज़ कम नहीं हो रही आवाज़ वैसे same आ रही	STATEMENT}
+{\slot
+आवाज़	B-bodily_process
+कम	B-intensity
+नहीं	B-negative
+हो	O
+रही	O
+आवाज़	B-bodily_process
+वैसे	O
+same	O
+आ	O
+रही	O
+}
+
+{\intent	p: वैसे हीच आ रही सुबह में भी	STATEMENT}
+{\slot
+वैसे	O
+हीच	O
+आ	O
+रही	O
+सुबह	B-time_period
+में	O
+भी	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p: भाप लेलिया 2 time तो भी	HOLD}
+{\slot
+भाप	O
+लेलिया	O
+2	B-frequency
+time	I-frequency
+तो	O
+भी	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p: आवाज़ वैसे हीच है , सुबह भी बिल्कुल नहीं आ रहीं बस	STATEMENT}
+{\slot
+आवाज़	B-bodily_process
+वैसे	O
+हीच	O
+है	O
+,	O
+सुबह	B-time_period
+भी	O
+बिल्कुल	O
+नहीं	B-negative
+आ	O
+रहीं	O
+बस	O
+}
+
+{\intent	d: आहा	ACK}
+{\slot
+आहा	O
+}
+
+{\intent	p1: खांसी थोड़ी कम है	STATEMENT}
+{\slot
+खांसी	B-symptom
+थोड़ी	B-intensity
+कम	B-intensity
+है	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p: खांसी कम हो गई	STATEMENT}
+{\slot
+खांसी	B-symptom
+कम	B-intensity
+हो	O
+गई	O
+}
+
+{\intent	d: नज़दीक आ वो	ACTION_DIR}
+{\slot
+नज़दीक	O
+आ	O
+वो	O
+}
+
+{\intent	d: भाप लेलो	ACTION_DIR}
+{\slot
+भाप	O
+लेलो	O
+}
+
+{\intent	p1: भाप ले रहे	STATEMENT}
+{\slot
+भाप	O
+ले	O
+रहे	O
+}
+
+{\intent	d: गोलियां है? हो गये?	INFO_REQUEST}
+{\slot
+गोलियां	B-medicine
+है?	O
+हो	O
+गये?	O
+}
+
+{\intent	p: हो गये	ANSWER}
+{\slot
+हो	O
+गये	O
+}
+
+{\intent	d: हो गये?	INFO_REQUEST}
+{\slot
+हो	O
+गये?	O
+}
+
+{\intent	p: भाप ले रहीं हूँ 2 time भी ले रहीं हूँ	STATEMENT}
+{\slot
+भाप	O
+ले	O
+रहीं	O
+हूँ	O
+2	B-frequency
+time	I-frequency
+भी	O
+ले	O
+रहीं	O
+हूँ	O
+}
+
+{\intent	p1: आवाज़ कैकु clear नहीं हो रहीं वो?	INFO_REQUEST}
+{\slot
+आवाज़	B-bodily_process
+कैकु	O
+clear	B-normal
+नहीं	B-negative
+हो	O
+रहीं	O
+वो?	O
+}
+
+{\intent	d: वो ज़रा vocal chords है , थोड़ा time लगता	ANSWER}
+{\slot
+वो	O
+ज़रा	O
+vocal	B-body_part
+chords	I-body_part
+है	O
+,	O
+थोड़ा	B-intensity
+time	B-time_period
+लगता	O
+}
+
+{\intent	p1: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	d: और एक 5 दिन डालने के बाद, TV में देखेंगे ज़रुरत पड़ी तो	STATEMENT}
+{\slot
+और	O
+एक	B-time_period
+5	I-time_period
+दिन	I-time_period
+डालने	O
+के	O
+बाद,	O
+TV	O
+में	O
+देखेंगे	O
+ज़रुरत	O
+पड़ी	O
+तो	O
+}
+

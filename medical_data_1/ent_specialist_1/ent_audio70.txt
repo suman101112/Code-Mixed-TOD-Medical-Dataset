@@ -1,0 +1,228 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Vijaya Lakshmi	ANSWER}
+{\slot
+Vijaya	B-name
+Lakshmi	I-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Vijaya Lakshmi	REPEAT_REPHRASE}
+{\slot
+Vijaya	B-name
+Lakshmi	I-name
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 44	ANSWER}
+{\slot
+44	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఎంత ఏమైంది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+ఏమైంది?	O
+}
+
+{\intent	p: నాకు ఇది గొంతు problem sir. ఎక్కువ దగ్గు వస్తది ఎప్పటికి, travel చేసిన గానీ.	ANSWER}
+{\slot
+నాకు	O
+ఇది	O
+గొంతు	B-body_part
+problem	B-symptom
+sir.	O
+ఎక్కువ	B-intensity
+దగ్గు	B-symptom
+వస్తది	O
+ఎప్పటికి,	O
+travel	O
+చేసిన	O
+గానీ.	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: మాట మారిందా?	INFO_REQUEST}
+{\slot
+మాట	B-bodily_process
+మారిందా?	B-symptom
+}
+
+{\intent	p: నిద్ర పడదు	ANSWER}
+{\slot
+నిద్ర	B-bodily_process
+పడదు	B-negative
+}
+
+{\intent	p: ఆ గొంతు కూడా change అయింది.	STATEMENT}
+{\slot
+ఆ	O
+గొంతు	B-body_part
+కూడా	O
+change	B-symptom
+అయింది.	O
+}
+
+{\intent	d: ఆ అను అమ్మా.	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+అమ్మా.	O
+}
+
+{\intent	p: ఊరికే జలుబు చేస్తది, ఊడ్చినా పడదు, dust పడదు నాకు.	STATEMENT}
+{\slot
+ఊరికే	O
+జలుబు	B-medical_condition
+చేస్తది,	O
+ఊడ్చినా	O
+పడదు,	O
+dust	O
+పడదు	O
+నాకు.	O
+}
+
+{\intent	p: ఊరికే ముక్కు నుంచి water కారడమే జలుబు చేసి	STATEMENT}
+{\slot
+ఊరికే	O
+ముక్కు	B-body_part
+నుంచి	O
+water	B-food_substance
+కారడమే	B-symptom
+జలుబు	B-medical_condition
+చేసి	O
+}
+
+{\intent	p: dustకి వచ్చేస్తా ఉంటది	STATEMENT}
+{\slot
+dustకి	O
+వచ్చేస్తా	O
+ఉంటది	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: నాలుక బయటకు తీయి	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+బయటకు	B-location
+తీయి	O
+}
+
+{\intent	d: ఈ అను	ACTION_DIR}
+{\slot
+ఈ	O
+అను	O
+}
+
+{\intent	d: చెప్పినట్లు చేయాలి ఈ అని.	STATEMENT}
+{\slot
+చెప్పినట్లు	O
+చేయాలి	O
+ఈ	O
+అని.	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ముక్కు.	ACTION_DIR}
+{\slot
+ముక్కు.	B-body_part
+}
+
+{\intent	d: ఆవిరి పట్టే మందు	HOLD}
+{\slot
+ఆవిరి	O
+పట్టే	O
+మందు	B-medicine
+}
+
+{\intent	p: వేరే ఊరికి వెళ్లిన కానీ ఒక 1 week వెళ్ళి వస్తే ఇగ 1 month వరకు దగ్గు తగ్గదు. దగ్గు heavy అయిపోయింది అండి.	STATEMENT}
+{\slot
+వేరే	O
+ఊరికి	O
+వెళ్లిన	O
+కానీ	O
+ఒక	O
+1	B-time_period
+week	I-time_period
+వెళ్ళి	O
+వస్తే	O
+ఇగ	O
+1	B-time_period
+month	I-time_period
+వరకు	O
+దగ్గు	B-symptom
+తగ్గదు.	O
+దగ్గు	B-symptom
+heavy	B-intensity
+అయిపోయింది	O
+అండి.	O
+}
+
+{\intent	p: ఇప్పుడు నిద్ర లేదండీ నాకు 4 days నుంచి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+నిద్ర	B-bodily_process
+లేదండీ	B-negative
+నాకు	O
+4	B-time_period
+days	I-time_period
+నుంచి.	O
+}
+

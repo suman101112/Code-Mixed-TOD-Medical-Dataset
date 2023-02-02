@@ -1,0 +1,216 @@
+{\intent	d: చెప్పండి Nareshగారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Nareshగారు	B-name
+}
+
+{\intent	p: ఆ sir, bleeding అవుతుండంది ఈ మధ్య	STATEMENT}
+{\slot
+ఆ	O
+sir,	O
+bleeding	B-medical_condition
+అవుతుండంది	O
+ఈ	O
+మధ్య	O
+}
+
+{\intent	d: bleeding అవుతుంది	ACK}
+{\slot
+bleeding	B-medical_condition
+అవుతుంది	O
+}
+
+{\intent	d: ఎంత కాలంగా	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+}
+
+{\intent	p: ఆ అంటే 1 n half, 2 years అవుతుంది	ANSWER}
+{\slot
+ఆ	O
+అంటే	O
+1	B-time_period
+n	I-time_period
+half,	I-time_period
+2	B-time_period
+years	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: 1 n half, 2 years నుంచి ఉంది	ACK}
+{\slot
+1	B-time_period
+n	I-time_period
+half,	I-time_period
+2	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: doctorని కలిసారా?	INFO_REQUEST}
+{\slot
+doctorని	B-medical_professional
+కలిసారా?	O
+}
+
+{\intent	p: umm, ఆ కలిసాం అండి, medicines వాడాము	ANSWER}
+{\slot
+umm,	O
+ఆ	O
+కలిసాం	O
+అండి,	O
+medicines	B-medicine
+వాడాము	O
+}
+
+{\intent	d: doctor ఏం అన్నారు?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+ఏం	O
+అన్నారు?	O
+}
+
+{\intent	p: doctor ఏం అన్నారు, piles అని చెప్పారు	ANSWER}
+{\slot
+doctor	B-medical_professional
+ఏం	O
+అన్నారు,	O
+piles	B-symptom
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: piles అని చెప్పారు	ACK}
+{\slot
+piles	B-symptom
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: మరి ఏం doctor tablets కానీ, surgery చెద్దామని మరేమన్నా అన్నారా?	INFO_REQUEST}
+{\slot
+మరి	O
+ఏం	O
+doctor	B-medical_professional
+tablets	B-medicine
+కానీ,	O
+surgery	B-treatment
+చెద్దామని	O
+మరేమన్నా	O
+అన్నారా?	O
+}
+
+{\intent	p: surgery ఏం లేదు, tablets ఇచ్చారు, నేను 6 months ఎమో వాడాను.	ANSWER}
+{\slot
+surgery	B-treatment
+ఏం	O
+లేదు,	B-negative
+tablets	B-medicine
+ఇచ్చారు,	O
+నేను	O
+6	B-time_period
+months	I-time_period
+ఎమో	O
+వాడాను.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: వాడిన తరువాత ఇప్పుడు 1 n half year తర్వాత మళ్ళి start అయిందండి, 6 monthsకి ఒకసారి అలా అవుతుంది	ANSWER}
+{\slot
+వాడిన	O
+తరువాత	O
+ఇప్పుడు	O
+1	B-time_period
+n	I-time_period
+half	I-time_period
+year	I-time_period
+తర్వాత	B-time_period
+మళ్ళి	O
+start	O
+అయిందండి,	O
+6	B-time_period
+monthsకి	I-time_period
+ఒకసారి	O
+అలా	O
+అవుతుంది	O
+}
+
+{\intent	d: ఇప్పుడు ఈ 6 monthsగా కూడా వాడారా మందులు అప్పుడు	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఈ	O
+6	B-time_period
+monthsగా	I-time_period
+కూడా	O
+వాడారా	O
+మందులు	B-medicine
+అప్పుడు	B-time_period
+}
+
+{\intent	p: ఆ 6 month వాడానండీ	ANSWER}
+{\slot
+ఆ	O
+6	B-time_period
+month	I-time_period
+వాడానండీ	O
+}
+
+{\intent	d: అలాగే	ACK}
+{\slot
+అలాగే	O
+}
+
+{\intent	d: ఇంకేమన్నా తెలుసుకోవాలనుకుంటున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+తెలుసుకోవాలనుకుంటున్నారా?	O
+}
+
+{\intent	p: అదే అండి, bleeding అవుతుంది కానీ నోప్పి ఏం ఉండదు.	ANSWER}
+{\slot
+అదే	O
+అండి,	O
+bleeding	B-medical_condition
+అవుతుంది	O
+కానీ	O
+నోప్పి	B-symptom
+ఏం	O
+ఉండదు.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: మామూలుగా bleeding అవుతుంది	STATEMENT}
+{\slot
+మామూలుగా	O
+bleeding	B-medical_condition
+అవుతుంది	O
+}
+
+{\intent	d: right అండి, దానిగురించి చెప్తాను.	COMMIT}
+{\slot
+right	O
+అండి,	O
+దానిగురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: so ఈ condition, painless hemorrhoids అంటారు	DIAGNOSIS}
+{\slot
+so	O
+ఈ	O
+condition,	O
+painless	B-medical_condition
+hemorrhoids	B-medical_condition
+అంటారు	O
+}
+

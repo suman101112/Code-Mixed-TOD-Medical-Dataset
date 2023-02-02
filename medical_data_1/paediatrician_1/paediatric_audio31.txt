@@ -1,0 +1,178 @@
+{\intent	d: 7	ANSWER}
+{\slot
+7	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p1: at a time vomitings అవుతున్నాయి sir.	ANSWER}
+{\slot
+at	O
+a	O
+time	B-time_period
+vomitings	B-symptom
+అవుతున్నాయి	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: daily morning 2 times vomiting చేసుకుంటున్నాడు, night 2 times vomiting చేసుకుంటున్నాడు.	STATEMENT}
+{\slot
+daily	O
+morning	B-time_period
+2	B-frequency
+times	I-frequency
+vomiting	B-symptom
+చేసుకుంటున్నాడు,	O
+night	B-time_period
+2	B-frequency
+times	I-frequency
+vomiting	B-symptom
+చేసుకుంటున్నాడు.	O
+}
+
+{\intent	d: పడుకో బాబు	ACTION_DIR}
+{\slot
+పడుకో	O
+బాబు	B-person
+}
+
+{\intent	d: ఇటు తల అటు కాళ్ళు	ACTION_DIR}
+{\slot
+ఇటు	O
+తల	B-body_part
+అటు	O
+కాళ్ళు	B-body_part
+}
+
+{\intent	d: vomiting ఏమైనా మందు పోస్తే అయితుందా ఉత్తగా అయితుందా	INFO_REQUEST}
+{\slot
+vomiting	B-symptom
+ఏమైనా	O
+మందు	B-medicine
+పోస్తే	O
+అయితుందా	O
+ఉత్తగా	O
+అయితుందా	O
+}
+
+{\intent	p1: మందు ఏం పోయలే	ANSWER}
+{\slot
+మందు	B-medicine
+ఏం	O
+పోయలే	B-negative
+}
+
+{\intent	d: మీరు regularగా వాడే medications ఏం లేవు కదా	INFO_REQUEST}
+{\slot
+మీరు	O
+regularగా	O
+వాడే	O
+medications	B-medicine
+ఏం	O
+లేవు	B-negative
+కదా	O
+}
+
+{\intent	p1: ఏం లేవు sir	ANSWER}
+{\slot
+ఏం	O
+లేవు	B-negative
+sir	O
+}
+
+{\intent	d: last vomiting ఎన్ని గంటలకు అయింది పొద్దున	INFO_REQUEST}
+{\slot
+last	O
+vomiting	B-symptom
+ఎన్ని	O
+గంటలకు	B-time_period
+అయింది	O
+పొద్దున	B-time_period
+}
+
+{\intent	p1: 2'o clock కి sir	ANSWER}
+{\slot
+2'o	B-time_period
+clock	I-time_period
+కి	O
+sir	O
+}
+
+{\intent	d: early morning	INFO_REQUEST}
+{\slot
+early	B-time_period
+morning	I-time_period
+}
+
+{\intent	p1: ఆ early morning	ANSWER}
+{\slot
+ఆ	O
+early	B-time_period
+morning	I-time_period
+}
+
+{\intent	d: ఇక తర్వాత ఏం కాలే	INFO_REQUEST}
+{\slot
+ఇక	O
+తర్వాత	B-time_period
+ఏం	O
+కాలే	O
+}
+
+{\intent	p1: ఏం కాలే	ANSWER}
+{\slot
+ఏం	O
+కాలే	O
+}
+
+{\intent	d: పొద్దున ఆహారం ఏమైనా తిన్నాడా?	INFO_REQUEST}
+{\slot
+పొద్దున	B-time_period
+ఆహారం	B-food_substance
+ఏమైనా	O
+తిన్నాడా?	O
+}
+
+{\intent	p: dosa తిన్నా	ANSWER}
+{\slot
+dosa	B-food_substance
+తిన్నా	B-bodily_process
+}
+
+{\intent	d: అది vomiting ఏం కాలే కదా	INFO_REQUEST}
+{\slot
+అది	O
+vomiting	B-symptom
+ఏం	O
+కాలే	O
+కదా	O
+}
+
+{\intent	p1: అది అయిందా? vomiting అయిందా dosa	INFO_REQUEST}
+{\slot
+అది	O
+అయిందా?	O
+vomiting	B-symptom
+అయిందా	O
+dosa	B-food_substance
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+

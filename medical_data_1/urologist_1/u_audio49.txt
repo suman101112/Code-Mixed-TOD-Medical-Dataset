@@ -1,0 +1,247 @@
+{\intent	d: చెప్పండి బాబు పేరేంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+పేరేంటి?	O
+}
+
+{\intent	p: Farib	ANSWER}
+{\slot
+Farib	B-name
+}
+
+{\intent	d: problems ఏం ఉంది?	INFO_REQUEST}
+{\slot
+problems	O
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: kidney	HOLD}
+{\slot
+kidney	B-body_part
+}
+
+{\intent	p1: kidney में problem है doctor साहब	STATEMENT}
+{\slot
+kidney	B-body_part
+में	B-location
+problem	O
+है	O
+doctor	B-medical_professional
+साहब	O
+}
+
+{\intent	p1: दर्द हो रहा	STATEMENT}
+{\slot
+दर्द	B-symptom
+हो	O
+रहा	O
+}
+
+{\intent	d: నొప్పి వస్తుందా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: हां बहुत दर्द हो रहा उधर.	ANSWER}
+{\slot
+हां	B-positive
+बहुत	B-intensity
+दर्द	B-symptom
+हो	O
+रहा	O
+उधर.	B-location
+}
+
+{\intent	p1: scanning लिए इससे पहले, वो बोले दिखा के आ वो उसके बाद scanning लेंगे , देखेंगे बोले doctorसाभ	STATEMENT}
+{\slot
+scanning	B-mtest
+लिए	O
+इससे	O
+पहले,	O
+वो	O
+बोले	O
+दिखा	B-bodily_process
+के	O
+आ	O
+वो	O
+उसके	O
+बाद	O
+scanning	B-mtest
+लेंगे	O
+,	O
+देखेंगे	B-bodily_process
+बोले	O
+doctorसाभ	B-medical_professional
+}
+
+{\intent	d: कितने दिन से है अम्मा यह दर्द?	INFO_REQUEST}
+{\slot
+कितने	O
+दिन	B-time_period
+से	O
+है	O
+अम्मा	B-person
+यह	O
+दर्द?	O
+}
+
+{\intent	p: 2 3 महीने से है	ANSWER}
+{\slot
+2	B-time_period
+3	B-time_period
+महीने	I-time_period
+से	O
+है	O
+}
+
+{\intent	d: पेशाब में जलन ऐसा कुछ आ रहा?	INFO_REQUEST}
+{\slot
+पेशाब	B-body_substance
+में	O
+जलन	B-symptom
+ऐसा	O
+कुछ	O
+आ	O
+रहा?	O
+}
+
+{\intent	p1: ఆ जलन	ANSWER}
+{\slot
+ఆ	B-positive
+जलन	B-symptom
+}
+
+{\intent	p: बार-बार पेशाब आ रहा.	STATEMENT}
+{\slot
+बार-बार	B-symptom
+पेशाब	B-body_substance
+आ	O
+रहा.	O
+}
+
+{\intent	p: सर्दी खांसी साहब है.	STATEMENT}
+{\slot
+सर्दी	B-symptom
+खांसी	B-symptom
+साहब	O
+है.	O
+}
+
+{\intent	d: दोनों side छोटे छोटे stones है kidney में.	DIAGNOSIS}
+{\slot
+दोनों	B-frequency
+side	B-location
+छोटे	O
+छोटे	O
+stones	B-body_substance
+है	O
+kidney	B-body_part
+में.	B-location
+}
+
+{\intent	p1: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: पानी ज़्यादा पी के	STATEMENT}
+{\slot
+पानी	B-food_substance
+ज़्यादा	B-intensity
+पी	B-bodily_process
+के	O
+}
+
+{\intent	d: थोड़ा medicines लिखके देता हूं, उससे पेशाब में निकल जाता stones	STATEMENT}
+{\slot
+थोड़ा	O
+medicines	B-medicine
+लिखके	O
+देता	O
+हूं,	O
+उससे	O
+पेशाब	B-body_substance
+में	O
+निकल	O
+जाता	O
+stones	B-body_substance
+}
+
+{\intent	p1: निकल जाता ?	INFO_REQUEST}
+{\slot
+निकल	O
+जाता	O
+?	O
+}
+
+{\intent	d: हां निकल जाता	ANSWER}
+{\slot
+हां	B-positive
+निकल	O
+जाता	O
+}
+
+{\intent	d: 4mm बोले तो बहुत छोटा है .	MEDICAL_EXPLANATION}
+{\slot
+4mm	B-mtest_value
+बोले	O
+तो	O
+बहुत	O
+छोटा	O
+है	O
+.	O
+}
+
+{\intent	d: उसके लिए surgeryకి ज़रुरत नहीं है .	MEDICAL_EXPLANATION}
+{\slot
+उसके	O
+लिए	O
+surgeryకి	B-treatment
+ज़रुरत	O
+नहीं	O
+है	O
+.	O
+}
+
+{\intent	d: medicines लिखता हूँ	COMMIT}
+{\slot
+medicines	B-medicine
+लिखता	O
+हूँ	O
+}
+
+{\intent	p1: faty liver भी है बच्चेको	STATEMENT}
+{\slot
+faty	B-medical_condition
+liver	I-medical_condition
+भी	O
+है	O
+बच्चेको	B-person
+}
+
+{\intent	d: वो कुछ नहीं होता , वो ज़्यादा problem नहीं रहता	STATEMENT}
+{\slot
+वो	O
+कुछ	O
+नहीं	O
+होता	O
+,	O
+वो	O
+ज़्यादा	O
+problem	O
+नहीं	O
+रहता	O
+}
+
+{\intent	d: oily foods ज़्यादा नहीं खाना	ACTION_DIR}
+{\slot
+oily	B-food_substance
+foods	I-food_substance
+ज़्यादा	O
+नहीं	B-negative
+खाना	B-bodily_process
+}
+

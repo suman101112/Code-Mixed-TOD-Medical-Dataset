@@ -1,0 +1,138 @@
+{\intent	p: doctor గారు నాకు కొన్ని సంవత్సరాల నుంచి కళ్ళు మంటలు అవుతున్నాయి.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నాకు	O
+కొన్ని	O
+సంవత్సరాల	B-time_period
+నుంచి	O
+కళ్ళు	B-body_part
+మంటలు	B-symptom
+అవుతున్నాయి.	O
+}
+
+{\intent	p: తిన్న తరువాత ఎక్కువగా అవుతుంది.	STATEMENT}
+{\slot
+తిన్న	O
+తరువాత	O
+ఎక్కువగా	B-intensity
+అవుతుంది.	O
+}
+
+{\intent	p: తల తిప్పుతున్నట్లుగా ఉంటుంది.	STATEMENT}
+{\slot
+తల	B-body_part
+తిప్పుతున్నట్లుగా	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: చేతులు కూడా బాగా నొప్పి వస్తున్నాయి.	STATEMENT}
+{\slot
+చేతులు	B-body_part
+కూడా	O
+బాగా	B-intensity
+నొప్పి	B-symptom
+వస్తున్నాయి.	O
+}
+
+{\intent	p: ఇలా ఎందుకు అవుతుంది?	INFO_REQUEST}
+{\slot
+ఇలా	O
+ఎందుకు	O
+అవుతుంది?	O
+}
+
+{\intent	p: sugar test కూడా చేయించాను ఎమి లేదని చెప్పారు.	STATEMENT}
+{\slot
+sugar	B-mtest
+test	I-mtest
+కూడా	O
+చేయించాను	O
+ఎమి	O
+లేదని	B-negative
+చెప్పారు.	O
+}
+
+{\intent	d: మీరు చెప్పే జబ్బు లక్షణాలు ఏది ఒక ప్రత్యేకమైన జబ్బు లక్షణాల లెక్క కనిపించడం లేదండీ .	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+చెప్పే	O
+జబ్బు	B-medical_condition
+లక్షణాలు	B-symptom
+ఏది	O
+ఒక	O
+ప్రత్యేకమైన	O
+జబ్బు	B-medical_condition
+లక్షణాల	B-symptom
+లెక్క	O
+కనిపించడం	O
+లేదండీ	O
+.	O
+}
+
+{\intent	d: ఆ కొన్ని multiple somatic complaints అంటాం వీటిని.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+కొన్ని	O
+multiple	B-medical_condition
+somatic	I-medical_condition
+complaints	I-medical_condition
+అంటాం	O
+వీటిని.	O
+}
+
+{\intent	d: so ఈ రకమైన symptoms ఉండే వాళ్ళకి usualగా ఇదిమితంగా పలానా జబ్బు ఉంటుందని చెప్పడం కష్టం.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+రకమైన	O
+symptoms	O
+ఉండే	O
+వాళ్ళకి	O
+usualగా	O
+ఇదిమితంగా	O
+పలానా	O
+జబ్బు	B-medical_condition
+ఉంటుందని	O
+చెప్పడం	O
+కష్టం.	O
+}
+
+{\intent	d: ఒక కళ్ళు మంటలు ఒకవేళ ప్రత్యేకించి ఎక్కువ సమస్య ఉంటే గనక ముందు కళ్ళ doctorతో పరిక్ష చేయించుకోండి.	ACTION_DIR}
+{\slot
+ఒక	O
+కళ్ళు	B-body_part
+మంటలు	B-symptom
+ఒకవేళ	O
+ప్రత్యేకించి	O
+ఎక్కువ	O
+సమస్య	O
+ఉంటే	O
+గనక	O
+ముందు	O
+కళ్ళ	B-body_part
+doctorతో	B-medical_professional
+పరిక్ష	O
+చేయించుకోండి.	O
+}
+
+{\intent	d: మిగిలిన సమస్యల గురించి ఒకసారి routine physical examination, routineగా చేసే రక్త పరిక్షలు చేయడం వల్ల మేము సలహా ఇవ్వగలుగుతాం.	MEDICAL_EXPLANATION}
+{\slot
+మిగిలిన	O
+సమస్యల	O
+గురించి	O
+ఒకసారి	O
+routine	B-mtest
+physical	I-mtest
+examination,	I-mtest
+routineగా	I-mtest
+చేసే	O
+రక్త	B-body_substance
+పరిక్షలు	B-mtest
+చేయడం	O
+వల్ల	O
+మేము	O
+సలహా	O
+ఇవ్వగలుగుతాం.	O
+}
+

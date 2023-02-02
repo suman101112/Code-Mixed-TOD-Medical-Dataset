@@ -1,0 +1,233 @@
+{\intent	d: ఏం problem అమ్మ?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem	O
+అమ్మ?	O
+}
+
+{\intent	p: పొత్తికడుపు నొప్పి. బాగా నొస్తుంది.	ANSWER}
+{\slot
+పొత్తికడుపు	B-body_part
+నొప్పి.	B-symptom
+బాగా	B-intensity
+నొస్తుంది.	O
+}
+
+{\intent	d: పొత్తికడుపులో నొప్పి	ACK}
+{\slot
+పొత్తికడుపులో	B-body_part
+నొప్పి	B-symptom
+}
+
+{\intent	d: ఎప్పటి నుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటి	O
+నుంచి?	O
+}
+
+{\intent	p: వారం 10 రోజులు అయితాంది. గోళీలు వేసుకుంటే తగ్గినాయి.	ANSWER}
+{\slot
+వారం	B-time_period
+10	B-time_period
+రోజులు	I-time_period
+అయితాంది.	O
+గోళీలు	B-medicine
+వేసుకుంటే	O
+తగ్గినాయి.	B-normal
+}
+
+{\intent	d: వారం 10.	ACK}
+{\slot
+వారం	B-time_period
+10.	I-time_period
+}
+
+{\intent	d: మూత్రంలో మంట ఉంటదా?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+ఉంటదా?	O
+}
+
+{\intent	p: ఆ ఉంటది madam	ANSWER}
+{\slot
+ఆ	O
+ఉంటది	B-positive
+madam	O
+}
+
+{\intent	d: దొడ్డికి साफ़ ఏ వస్తుంది.	INFO_REQUEST}
+{\slot
+దొడ్డికి	B-bodily_process
+साफ़	B-normal
+ఏ	O
+వస్తుంది.	O
+}
+
+{\intent	p: ఆ साफ़ ఏ ఉంది madam	ANSWER}
+{\slot
+ఆ	O
+साफ़	B-normal
+ఏ	O
+ఉంది	B-positive
+madam	O
+}
+
+{\intent	d: గర్భసంచి ?	INFO_REQUEST}
+{\slot
+గర్భసంచి	B-body_part
+?	O
+}
+
+{\intent	p: మంచిగానే ఉన్నది	ANSWER}
+{\slot
+మంచిగానే	B-normal
+ఉన్నది	O
+}
+
+{\intent	d: గర్భసంచి తీయించుకున్నావు.	STATEMENT}
+{\slot
+గర్భసంచి	B-body_part
+తీయించుకున్నావు.	B-treatment
+}
+
+{\intent	p: ఆ చాలా రోజులు అయింది	STATEMENT}
+{\slot
+ఆ	B-positive
+చాలా	B-intensity
+రోజులు	B-time_period
+అయింది	O
+}
+
+{\intent	d: నెలలు ఆగిపోయినయి	STATEMENT}
+{\slot
+నెలలు	B-time_period
+ఆగిపోయినయి	O
+}
+
+{\intent	p: ఆ ఎప్పుడో	STATEMENT}
+{\slot
+ఆ	B-positive
+ఎప్పుడో	O
+}
+
+{\intent	d: నీ వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+నీ	O
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: నాకు 54 ఉంటది madam	ANSWER}
+{\slot
+నాకు	O
+54	B-age
+ఉంటది	O
+madam	O
+}
+
+{\intent	d: తెలుపు దురద వాసన?	INFO_REQUEST}
+{\slot
+తెలుపు	B-symptom
+దురద	B-symptom
+వాసన?	B-symptom
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: మూత్రం మంట ఉంది, దొడ్డికి साफ़ ఏ ఉంది	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+ఉంది,	B-positive
+దొడ్డికి	B-bodily_process
+साफ़	B-normal
+ఏ	O
+ఉంది	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: మూత్రం problem ఏ ఎక్కువగా ఉంది	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+problem	B-symptom
+ఏ	O
+ఎక్కువగా	B-intensity
+ఉంది	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: కడుపు లో నొప్పి తో?	INFO_REQUEST}
+{\slot
+కడుపు	B-body_part
+లో	B-location
+నొప్పి	B-symptom
+తో?	O
+}
+
+{\intent	p: ఆ ఇలా	ANSWER}
+{\slot
+ఆ	B-positive
+ఇలా	O
+}
+
+{\intent	d: రోజంతా వస్తుందా? అప్పుడప్పుడేనా?	INFO_REQUEST}
+{\slot
+రోజంతా	B-time_period
+వస్తుందా?	O
+అప్పుడప్పుడేనా?	B-time_period
+}
+
+{\intent	p: అప్పుడప్పుడే madam	ANSWER}
+{\slot
+అప్పుడప్పుడే	B-time_period
+madam	O
+}
+
+{\intent	d: సరే పడుకో	ACTION_DIR}
+{\slot
+సరే	O
+పడుకో	O
+}
+
+{\intent	p: ఎండలో పోయి వస్తే బయట	STATEMENT}
+{\slot
+ఎండలో	O
+పోయి	O
+వస్తే	O
+బయట	O
+}
+
+{\intent	d: నీళ్లు బాగా తాగాలమ్మా	STATEMENT}
+{\slot
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగాలమ్మా	B-bodily_process
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: నీళ్లు తాగితే ఈ problem ఉండదు.	STATEMENT}
+{\slot
+నీళ్లు	B-food_substance
+తాగితే	B-intensity
+ఈ	O
+problem	B-symptom
+ఉండదు.	B-negative
+}
+

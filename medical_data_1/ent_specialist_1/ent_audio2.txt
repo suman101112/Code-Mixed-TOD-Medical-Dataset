@@ -1,0 +1,249 @@
+{\intent	d: దెగ్గరికి రా.	ACTION_DIR}
+{\slot
+దెగ్గరికి	O
+రా.	O
+}
+
+{\intent	d: నీ పేరు చెప్పు	INFO_REQUEST}
+{\slot
+నీ	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Yashwanth	ANSWER}
+{\slot
+Yashwanth	B-name
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Yashwanth	ANSWER}
+{\slot
+Yashwanth	B-name
+}
+
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 14	ANSWER}
+{\slot
+14	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైతుంది?	INFO_REQUEST}
+{\slot
+ఏమైతుంది?	O
+}
+
+{\intent	p: ముక్కులో శ్వాస వస్తలేదు.	ANSWER}
+{\slot
+ముక్కులో	B-body_part
+శ్వాస	B-symptom
+వస్తలేదు.	I-symptom
+}
+
+{\intent	d: ముక్కులో శ్వాస వస్తలేదా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+శ్వాస	B-symptom
+వస్తలేదా?	I-symptom
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: తుమ్ములు వస్తున్నాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+వస్తున్నాయా?	I-symptom
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p1: చెప్పు మంచిగా	ACTION_DIR}
+{\slot
+చెప్పు	O
+మంచిగా	O
+}
+
+{\intent	d: ఎన్ని రోజు అయితుంది.	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజు	B-time_period
+అయితుంది.	I-time_period
+}
+
+{\intent	p: వారం రోజులు	ANSWER}
+{\slot
+వారం	B-time_period
+రోజులు	I-time_period
+}
+
+{\intent	d: తల నొప్పి?	INFO_REQUEST}
+{\slot
+తల	B-symptom
+నొప్పి?	I-symptom
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: ముక్కు నుంచి చీమిడి ఇట్ల కారుడు ఇట్ల వస్తుందా?	INFO_REQUEST}
+{\slot
+ముక్కు	B-body_part
+నుంచి	I-body_part
+చీమిడి	B-symptom
+ఇట్ల	I-symptom
+కారుడు	I-symptom
+ఇట్ల	O
+వస్తుందా?	O
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: చీమిడి వస్తుంది.	ANSWER}
+{\slot
+చీమిడి	B-symptom
+వస్తుంది.	I-symptom
+}
+
+{\intent	d: రెండు ముక్కు నుంచా ఒక ముక్కు నుంచా చీమిడి వచ్చేది?	INFO_REQUEST}
+{\slot
+రెండు	B-body_part
+ముక్కు	I-body_part
+నుంచా	B-symptom
+ఒక	B-body_part
+ముక్కు	I-body_part
+నుంచా	B-symptom
+చీమిడి	I-symptom
+వచ్చేది?	I-symptom
+}
+
+{\intent	p: రెండు .	ANSWER}
+{\slot
+రెండు	B-frequency
+.	O
+}
+
+{\intent	d: జ్వరం ఉందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: దగ్గు?	INFO_REQUEST}
+{\slot
+దగ్గు?	B-symptom
+}
+
+{\intent	p: దగ్గు ఉంది	ANSWER}
+{\slot
+దగ్గు	B-symptom
+ఉంది	B-positive
+}
+
+{\intent	p1: దగ్గు వస్తుంది.	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+వస్తుంది.	B-positive
+}
+
+{\intent	d: ఆ అను అమ్మా.	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+అమ్మా.	O
+}
+
+{\intent	d: నోప్పి ఉందా?	INFO_REQUEST}
+{\slot
+నోప్పి	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ఇప్పుడు ఎన్ని రోజులు అయితుంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎన్ని	O
+రోజులు	B-time_period
+అయితుంది?	O
+}
+
+{\intent	p: వారం రోజులు అవుతుంది	ANSWER}
+{\slot
+వారం	B-time_period
+రోజులు	I-time_period
+అవుతుంది	I-time_period
+}
+
+{\intent	d: దీని sinusitis అంటారు.	DIAGNOSIS}
+{\slot
+దీని	O
+sinusitis	B-symptom
+అంటారు.	O
+}
+
+{\intent	p: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	d: ice cream, cool drinks, chocolates తీసుకోవద్దు. పులుపు పెట్టకండీ అమ్మ	ACTION_DIR}
+{\slot
+ice	B-food_substance
+cream,	I-food_substance
+cool	B-food_substance
+drinks,	I-food_substance
+chocolates	B-food_substance
+తీసుకోవద్దు.	B-negative
+పులుపు	B-food_substance
+పెట్టకండీ	B-negative
+అమ్మ	O
+}
+
+{\intent	p: పైన మొత్తం మంట మండుతాంది.	STATEMENT}
+{\slot
+పైన	B-body_part
+మొత్తం	I-body_part
+మంట	B-symptom
+మండుతాంది.	I-symptom
+}
+
+{\intent	d: ok రాస్తున్నా.	COMMIT}
+{\slot
+ok	O
+రాస్తున్నా.	O
+}
+

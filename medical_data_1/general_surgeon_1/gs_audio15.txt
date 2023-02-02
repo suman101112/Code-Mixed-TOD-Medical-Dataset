@@ -1,0 +1,214 @@
+{\intent	p: ఆ మలద్వారం దెగ్గర.	HOLD}
+{\slot
+ఆ	O
+మలద్వారం	B-body_part
+దెగ్గర.	B-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక కురుపులాగా బయటికి వచ్చేసింది.	STATEMENT}
+{\slot
+ఒక	O
+కురుపులాగా	B-symptom
+బయటికి	B-location
+వచ్చేసింది.	B-symptom
+}
+
+{\intent	d: right అమ్మా.	ACK}
+{\slot
+right	O
+అమ్మా.	O
+}
+
+{\intent	p: అది ఎలాంటి నొప్పి లేదు.	STATEMENT}
+{\slot
+అది	O
+ఎలాంటి	O
+నొప్పి	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: ఎలాంటి వాపు లేదు.	STATEMENT}
+{\slot
+ఎలాంటి	O
+వాపు	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: ఎప్పుడైతే నా body వెడి చేసిందాని నాకు అనిపిస్తుందో అప్పుడు మాత్రం చిన్న blood చూస్తున్నాను.	STATEMENT}
+{\slot
+ఎప్పుడైతే	O
+నా	O
+body	B-body_part
+వెడి	B-symptom
+చేసిందాని	O
+నాకు	O
+అనిపిస్తుందో	O
+అప్పుడు	B-time_period
+మాత్రం	O
+చిన్న	O
+blood	B-body_substance
+చూస్తున్నాను.	O
+}
+
+{\intent	d: right అమ్మా.	ACK}
+{\slot
+right	O
+అమ్మా.	O
+}
+
+{\intent	p: ఒక 6 months నుంచి ఉంది.	STATEMENT}
+{\slot
+ఒక	O
+6	B-time_period
+months	I-time_period
+నుంచి	O
+ఉంది.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: ఇది external layerలో ఉంది నాకు.	STATEMENT}
+{\slot
+ఇది	O
+external	B-location
+layerలో	B-body_part
+ఉంది	O
+నాకు.	O
+}
+
+{\intent	d: ఎమిటమ్మా?	SNU}
+{\slot
+ఎమిటమ్మా?	O
+}
+
+{\intent	p: external layerలో ఉంది.	REPEAT_REPHRASE}
+{\slot
+external	B-location
+layerలో	B-body_part
+ఉంది.	O
+}
+
+{\intent	d: centinel pile అనేటటువంటి లక్షణమే ఇది. దీనితో చిన్న కురుపులాగా బయటికి ఏర్పడి ఉంటుంది.	STATEMENT}
+{\slot
+centinel	B-symptom
+pile	I-symptom
+అనేటటువంటి	O
+లక్షణమే	O
+ఇది.	O
+దీనితో	O
+చిన్న	O
+కురుపులాగా	B-symptom
+బయటికి	B-location
+ఏర్పడి	O
+ఉంటుంది.	O
+}
+
+{\intent	d: దురద, మంట, వాపు, bleeding ఇక ఎలాంటి లక్షణాలు నీకు లేవు. so centinel pile లో ఆ లక్షణం కనపడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+దురద,	B-symptom
+మంట,	B-symptom
+వాపు,	B-symptom
+bleeding	B-medical_condition
+ఇక	O
+ఎలాంటి	O
+లక్షణాలు	O
+నీకు	O
+లేవు.	B-negative
+so	O
+centinel	B-symptom
+pile	I-symptom
+లో	O
+ఆ	O
+లక్షణం	O
+కనపడుతుంది.	O
+}
+
+{\intent	d: అంటే, చర్మం అనేది ఇప్పుడు మనకు పులిపిర్లు ఏర్పడుతూ ఉంటాయి. మెడ చుట్టూరాగాని అరచేతిలో గానీ పాదాలలో గానీ చంకల్లో అని పులిపిర్లు ఏర్పడుతూ ఉంటాయి. అలా ఒక foreskin అనేది చర్మం అనేది కొంచం బయటికి సాగి ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే,	O
+చర్మం	B-body_part
+అనేది	O
+ఇప్పుడు	O
+మనకు	O
+పులిపిర్లు	B-medical_condition
+ఏర్పడుతూ	O
+ఉంటాయి.	O
+మెడ	B-body_part
+చుట్టూరాగాని	B-location
+అరచేతిలో	B-body_part
+గానీ	O
+పాదాలలో	B-body_part
+గానీ	O
+చంకల్లో	B-body_part
+అని	O
+పులిపిర్లు	B-medical_condition
+ఏర్పడుతూ	O
+ఉంటాయి.	O
+అలా	O
+ఒక	O
+foreskin	B-body_part
+అనేది	O
+చర్మం	B-body_part
+అనేది	O
+కొంచం	O
+బయటికి	B-location
+సాగి	B-symptom
+ఉంటుంది.	I-symptom
+}
+
+{\intent	d: దానితో ఎటువంటి ప్రమాదం లేదమ్మా. కాస్త వెడి చేసినప్పుడు ఆ విధంగా కనపడుతుంది. మళ్ళి చిన్నగా దాని అంతట అదే తగ్గుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+దానితో	O
+ఎటువంటి	O
+ప్రమాదం	O
+లేదమ్మా.	O
+కాస్త	O
+వెడి	B-symptom
+చేసినప్పుడు	O
+ఆ	O
+విధంగా	O
+కనపడుతుంది.	O
+మళ్ళి	B-body_part
+చిన్నగా	O
+దాని	O
+అంతట	O
+అదే	O
+తగ్గుతుంది.	B-normal
+}
+
+{\intent	d: water బాగా తీసుకో, fruits అలవాటు చేస్కో, నిద్ర correctగా ఉంచుకో, diet management చేస్కో పూర్తిగా తగ్గుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+water	B-food_substance
+బాగా	B-intensity
+తీసుకో,	O
+fruits	B-food_substance
+అలవాటు	O
+చేస్కో,	O
+నిద్ర	B-bodily_process
+correctగా	B-normal
+ఉంచుకో,	O
+diet	B-food_substance
+management	O
+చేస్కో	O
+పూర్తిగా	O
+తగ్గుతుంది.	B-normal
+}
+

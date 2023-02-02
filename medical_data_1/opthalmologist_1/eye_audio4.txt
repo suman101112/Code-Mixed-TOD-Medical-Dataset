@@ -1,0 +1,42 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 22, m	ANSWER}
+{\slot
+22,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	CONV_OPEN}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: తలనొప్పి ఉంది ఇంకా eyes లాగుతున్నట్లు ఉన్నాయి.	ANSWER}
+{\slot
+తలనొప్పి	B-symptom
+ఉంది	O
+ఇంకా	O
+eyes	B-body_part
+లాగుతున్నట్లు	B-symptom
+ఉన్నాయి.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 1 week నుంచి.	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచి.	O
+}
+

@@ -1,0 +1,137 @@
+{\intent	p: అసలు ఏంటి అంటే madam మన ఎదలో gas trouble లాగా వస్తుంది	STATEMENT}
+{\slot
+అసలు	O
+ఏంటి	O
+అంటే	O
+madam	O
+మన	O
+ఎదలో	B-body_part
+gas	B-medical_condition
+trouble	I-medical_condition
+లాగా	O
+వస్తుంది	O
+}
+
+{\intent	p: సాయంత్రం అవ్వగానే ఊపిరి తీసుకోవడం బాగా ఇబ్బంది అవుతుంది.	STATEMENT}
+{\slot
+సాయంత్రం	B-time_period
+అవ్వగానే	O
+ఊపిరి	B-bodily_process
+తీసుకోవడం	I-bodily_process
+బాగా	B-intensity
+ఇబ్బంది	B-symptom
+అవుతుంది.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అలానే ఏమైనా tight t-shirts కానీ అట్లాంటివి వేసుకుంటే ఊపిరి రావడానికి ఇబ్బంది అవుతుంది.	STATEMENT}
+{\slot
+అలానే	O
+ఏమైనా	O
+tight	O
+t-shirts	O
+కానీ	O
+అట్లాంటివి	O
+వేసుకుంటే	O
+ఊపిరి	B-bodily_process
+రావడానికి	I-bodily_process
+ఇబ్బంది	B-symptom
+అవుతుంది.	O
+}
+
+{\intent	p: ఇక్కడ localలో checkup చేయించుకుంటే ఏం problem లేదు, gastric problem ఉంది అని చెప్పారన్నమాట.	STATEMENT}
+{\slot
+ఇక్కడ	O
+localలో	O
+checkup	B-mtest
+చేయించుకుంటే	O
+ఏం	O
+problem	O
+లేదు,	O
+gastric	B-medical_condition
+problem	I-medical_condition
+ఉంది	B-positive
+అని	O
+చెప్పారన్నమాట.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: మామూలుగా కడుపులో కాకుండా కొద్దిగా పైన ఎదలో ఉంటుంది బాగా ఊపిరి తీసుకోవడానికి ఇబ్బంది అవుతుంది.	STATEMENT}
+{\slot
+మామూలుగా	O
+కడుపులో	B-body_part
+కాకుండా	O
+కొద్దిగా	O
+పైన	B-location
+ఎదలో	B-body_part
+ఉంటుంది	O
+బాగా	B-intensity
+ఊపిరి	B-bodily_process
+తీసుకోవడానికి	I-bodily_process
+ఇబ్బంది	B-symptom
+అవుతుంది.	I-symptom
+}
+
+{\intent	d: ok sir ok	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+}
+
+{\intent	d: నేను చెప్తాను sir వినండి Nareshగారు	ACTION_DIR}
+{\slot
+నేను	O
+చెప్తాను	O
+sir	O
+వినండి	O
+Nareshగారు	B-name
+}
+
+{\intent	d: so ఊపిరి తీసుకోవడానికి ఇబ్బందిగా ఉంది, ఛాతిలో ఇబ్బంది ఉంది, కడుపు కాకుండా కడుపు కన్న పైన అంటే దానికి ఎన్నో కారణాలు ఉంటాయి అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఊపిరి	B-bodily_process
+తీసుకోవడానికి	O
+ఇబ్బందిగా	B-symptom
+ఉంది,	O
+ఛాతిలో	B-body_part
+ఇబ్బంది	O
+ఉంది,	O
+కడుపు	B-body_part
+కాకుండా	O
+కడుపు	B-body_part
+కన్న	O
+పైన	B-location
+అంటే	O
+దానికి	O
+ఎన్నో	O
+కారణాలు	O
+ఉంటాయి	O
+అండి.	O
+}
+
+{\intent	d: so especialగా ఏంటి అంటే GERD అంటాము అంటే Gastroesophageal Reflux Disease అని	DIAGNOSIS}
+{\slot
+so	O
+especialగా	O
+ఏంటి	O
+అంటే	O
+GERD	B-medical_condition
+అంటాము	O
+అంటే	O
+Gastroesophageal	B-medical_condition
+Reflux	B-medical_condition
+Disease	B-medical_condition
+అని	O
+}
+

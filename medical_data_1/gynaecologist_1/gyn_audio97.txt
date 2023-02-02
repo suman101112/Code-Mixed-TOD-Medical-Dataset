@@ -1,0 +1,230 @@
+{\intent	p: ఆ నాకు marriage అయి 4 years తరువాత pregnancy వచ్చింది madam	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+4	B-time_period
+years	I-time_period
+తరువాత	I-time_period
+pregnancy	B-bodily_process
+వచ్చింది	O
+madam	O
+}
+
+{\intent	p: అది normalగా రలేదు, IUI చేయించుకున్నాను	STATEMENT}
+{\slot
+అది	O
+normalగా	B-normal
+రలేదు,	B-negative
+IUI	B-treatment
+చేయించుకున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది నాకు PCOD problem ఉంది అన్నారు madam test చేయించుకుంటే	STATEMENT}
+{\slot
+అది	O
+నాకు	O
+PCOD	B-medical_condition
+problem	I-medical_condition
+ఉంది	O
+అన్నారు	O
+madam	O
+test	B-mtest
+చేయించుకుంటే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so normalగా medicines use చేసారు 2 years	ANSWER}
+{\slot
+so	O
+normalగా	B-normal
+medicines	B-medicine
+use	O
+చేసారు	O
+2	B-time_period
+years	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత కూడా normalగా రాకపోయేసరికి ఇంకా next IUI first cycleలో success అయింది pregnancy వచ్చింది	STATEMENT}
+{\slot
+తరువాత	B-time_period
+కూడా	O
+normalగా	B-normal
+రాకపోయేసరికి	B-negative
+ఇంకా	O
+next	O
+IUI	B-treatment
+first	B-frequency
+cycleలో	B-bodily_process
+success	O
+అయింది	O
+pregnancy	B-bodily_process
+వచ్చింది	B-positive
+}
+
+{\intent	p: ఇప్పుడు బాబుకి 3 years madam	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+బాబుకి	B-person
+3	B-time_period
+years	I-time_period
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కానీ next pregnancy రావట్లేదు, అంటే మళ్ళి నేను IUI కి వెళ్ళాలా? మళ్ళి PCOD problem ఏమన్నా ఉందా? continue అవుంతుందో లేదా normalకి వచ్చిందో లేదో తెలియట్లేదు madam.	INFO_REQUEST}
+{\slot
+కానీ	O
+next	B-frequency
+pregnancy	B-bodily_process
+రావట్లేదు,	B-negative
+అంటే	O
+మళ్ళి	O
+నేను	O
+IUI	B-treatment
+కి	O
+వెళ్ళాలా?	O
+మళ్ళి	O
+PCOD	B-medical_condition
+problem	O
+ఏమన్నా	O
+ఉందా?	O
+continue	O
+అవుంతుందో	O
+లేదా	O
+normalకి	B-normal
+వచ్చిందో	O
+లేదో	B-negative
+తెలియట్లేదు	O
+madam.	O
+}
+
+{\intent	d: so మీరు first మీ cycles regularగా ఉన్నాయా అండి నెల నెల?	INFO_REQUEST}
+{\slot
+so	O
+మీరు	O
+first	B-frequency
+మీ	O
+cycles	B-bodily_process
+regularగా	B-normal
+ఉన్నాయా	O
+అండి	O
+నెల	B-time_period
+నెల?	I-time_period
+}
+
+{\intent	p: ఆ cycle regularగానే ఉంది madam	ANSWER}
+{\slot
+ఆ	O
+cycle	B-bodily_process
+regularగానే	B-normal
+ఉంది	O
+madam	O
+}
+
+{\intent	p: starting first pregnancyకి ముందు irregular ఉండేది	STATEMENT}
+{\slot
+starting	O
+first	B-frequency
+pregnancyకి	B-bodily_process
+ముందు	O
+irregular	B-symptom
+ఉండేది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇక pregnancy తర్వాత నుంచి regularగానే ఉంటుంది.	STATEMENT}
+{\slot
+ఇక	O
+pregnancy	B-bodily_process
+తర్వాత	B-time_period
+నుంచి	O
+regularగానే	B-normal
+ఉంటుంది.	O
+}
+
+{\intent	d: so usually cycles regularగా ఉన్నవారిలో 80% of the time normalగా ovulation అనేది జరుగుతుంది అన్నమాట	STATEMENT}
+{\slot
+so	O
+usually	O
+cycles	B-bodily_process
+regularగా	B-normal
+ఉన్నవారిలో	O
+80%	O
+of	O
+the	O
+time	O
+normalగా	B-normal
+ovulation	B-bodily_process
+అనేది	O
+జరుగుతుంది	O
+అన్నమాట	O
+}
+
+{\intent	d: PCOSలో ఉన్న main problem ఈ egg release జరగకపొవడం	STATEMENT}
+{\slot
+PCOSలో	B-medical_condition
+ఉన్న	O
+main	O
+problem	O
+ఈ	O
+egg	B-body_part
+release	B-bodily_process
+జరగకపొవడం	B-negative
+}
+
+{\intent	d: మీ cycles regularగా ఉన్న మీకు 3 years అయింది అంటున్నారు కదా బాబు age.	ANSWER}
+{\slot
+మీ	O
+cycles	B-bodily_process
+regularగా	B-normal
+ఉన్న	O
+మీకు	O
+3	B-time_period
+years	I-time_period
+అయింది	O
+అంటున్నారు	O
+కదా	O
+బాబు	B-person
+age.	O
+}
+
+{\intent	d: మీకు ఒక్కసారి scanలో follicular study చేయించుకోండి, మీ husband ఒక్కసారి semen test చేయించుకోండి.	ACTION_DIR}
+{\slot
+మీకు	O
+ఒక్కసారి	O
+scanలో	B-mtest
+follicular	B-mtest
+study	I-mtest
+చేయించుకోండి,	O
+మీ	O
+husband	B-familal
+ఒక్కసారి	O
+semen	B-body_substance
+test	B-mtest
+చేయించుకోండి.	O
+}
+

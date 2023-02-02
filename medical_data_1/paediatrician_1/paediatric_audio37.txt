@@ -1,0 +1,53 @@
+{\intent	p: रात में खांसी थी साहब	STATEMENT}
+{\slot
+रात	B-time_period
+में	O
+खांसी	B-symptom
+थी	O
+साहब	O
+}
+
+{\intent	d: एक बाहर लेटावो	ACTION_DIR}
+{\slot
+एक	O
+बाहर	O
+लेटावो	O
+}
+
+{\intent	p: नहीं साहब , आवाज़ आ के बुखार आई	STATEMENT}
+{\slot
+नहीं	O
+साहब	O
+,	O
+आवाज़	B-bodily_process
+आ	O
+के	O
+बुखार	B-symptom
+आई	O
+}
+
+{\intent	d: आवाज़ आ के बुखार आई	ACK}
+{\slot
+आवाज़	B-bodily_process
+आ	O
+के	O
+बुखार	B-symptom
+आई	O
+}
+
+{\intent	p: बुखार आई, खांसी आई, tonic डाले	STATEMENT}
+{\slot
+बुखार	B-symptom
+आई,	O
+खांसी	B-symptom
+आई,	O
+tonic	B-medicine
+डाले	O
+}
+
+{\intent	d: 98 ही	STATEMENT}
+{\slot
+98	B-mtest_value
+ही	O
+}
+

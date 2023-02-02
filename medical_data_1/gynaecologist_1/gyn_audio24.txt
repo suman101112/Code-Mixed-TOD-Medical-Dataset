@@ -1,0 +1,320 @@
+{\intent	d: ఏం పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p: Sukanya	ANSWER}
+{\slot
+Sukanya	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: age, 27	ANSWER}
+{\slot
+age,	O
+27	B-age
+}
+
+{\intent	d: 27	STATEMENT}
+{\slot
+27	B-age
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: పిల్లలు లేరు madam	ANSWER}
+{\slot
+పిల్లలు	B-familal
+లేరు	B-negative
+madam	O
+}
+
+{\intent	d: పెళ్ళయి ఎన్ని సంవత్సరాలు?	INFO_REQUEST}
+{\slot
+పెళ్ళయి	B-marital_status
+ఎన్ని	O
+సంవత్సరాలు?	B-time_period
+}
+
+{\intent	p: పెళ్ళయి 10 months అయితుంది	ANSWER}
+{\slot
+పెళ్ళయి	B-marital_status
+10	B-time_period
+months	I-time_period
+అయితుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ 4 months అయింది abortion అయి.	STATEMENT}
+{\slot
+అక్కడ	O
+4	B-time_period
+months	I-time_period
+అయింది	O
+abortion	B-symptom
+అయి.	O
+}
+
+{\intent	p: అక్కడ rainbow hospitalలో చేయించాము	STATEMENT}
+{\slot
+అక్కడ	O
+rainbow	B-hospital_name
+hospitalలో	I-hospital_name
+చేయించాము	O
+}
+
+{\intent	d: 4 months అయింది abortion అయి.	ACK}
+{\slot
+4	B-time_period
+months	I-time_period
+అయింది	O
+abortion	B-symptom
+అయి.	O
+}
+
+{\intent	d: ఎన్నో month abortion?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+month	B-time_period
+abortion?	B-symptom
+}
+
+{\intent	p: అంటే 1 month 20 daysకి	ANSWER}
+{\slot
+అంటే	O
+1	B-time_period
+month	I-time_period
+20	I-time_period
+daysకి	I-time_period
+}
+
+{\intent	d: అంటే మందులు వేయించారు కదా medical termination?	INFO_REQUEST}
+{\slot
+అంటే	O
+మందులు	B-medicine
+వేయించారు	O
+కదా	O
+medical	B-treatment
+termination?	I-treatment
+}
+
+{\intent	p: ఆ. అక్కడ అయిపోయింది ఇక్కడికి వచ్చాను	ANSWER}
+{\slot
+ఆ.	B-positive
+అక్కడ	O
+అయిపోయింది	O
+ఇక్కడికి	O
+వచ్చాను	O
+}
+
+{\intent	d: అంటే మందులతోనే పడిపోయేందుకు చూశారు కదా?	REPEAT_REPHRASE}
+{\slot
+అంటే	O
+మందులతోనే	B-medicine
+పడిపోయేందుకు	O
+చూశారు	O
+కదా?	O
+}
+
+{\intent	p: ఆ మందులతోనే	ANSWER}
+{\slot
+ఆ	B-positive
+మందులతోనే	B-medicine
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: thyroid ఉందా మీకు అప్పుడు?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఉందా	O
+మీకు	O
+అప్పుడు?	O
+}
+
+{\intent	p: అంటే thyroid ఉండడం వల్లనే abortion అయింది ma'am నాకు.	ANSWER}
+{\slot
+అంటే	O
+thyroid	B-medical_condition
+ఉండడం	O
+వల్లనే	O
+abortion	B-symptom
+అయింది	O
+ma'am	O
+నాకు.	O
+}
+
+{\intent	d: ఎంత ఉండే thyroid అప్పుడు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+ఉండే	O
+thyroid	B-medical_condition
+అప్పుడు?	O
+}
+
+{\intent	p: 7 ఉంది.	ANSWER}
+{\slot
+7	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	d: ఇప్పుడు ఎంత వేసుకుంటావ్?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎంత	O
+వేసుకుంటావ్?	O
+}
+
+{\intent	p: ఇప్పుడు test చేయించుకోలే	ANSWER}
+{\slot
+ఇప్పుడు	O
+test	B-mtest
+చేయించుకోలే	O
+}
+
+{\intent	d: ఎంత వేసుకుంటావ్?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వేసుకుంటావ్?	O
+}
+
+{\intent	p: 12.5 mcg	ANSWER}
+{\slot
+12.5	B-medicine_dose
+mcg	I-medicine_dose
+}
+
+{\intent	d: ok, మళ్లీ ఒకసారి check చేసుకోవాలి.	ACTION_DIR}
+{\slot
+ok,	O
+మళ్లీ	O
+ఒకసారి	O
+check	B-mtest
+చేసుకోవాలి.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు pregnancy planningలో ఉన్నవ్ మళ్ళి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+pregnancy	B-bodily_process
+planningలో	O
+ఉన్నవ్	O
+మళ్ళి.	O
+}
+
+{\intent	d: periods regular.	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regular.	B-normal
+}
+
+{\intent	p: ఆ regular	ANSWER}
+{\slot
+ఆ	B-positive
+regular	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పడుకోమ్మా	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+}
+
+{\intent	d: ఏం చేస్తారు మీ husband?	INFO_REQUEST}
+{\slot
+ఏం	O
+చేస్తారు	O
+మీ	O
+husband?	B-familal
+}
+
+{\intent	p: మా husband software ma'am, oracle లో	STATEMENT}
+{\slot
+మా	O
+husband	B-familal
+software	B-profession
+ma'am,	O
+oracle	B-place
+లో	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	d: vitamin B12 levels, D levels అలంటివి ఏమైనా చేసారా అక్కడ వాళ్ళు ఏమన్నా?	INFO_REQUEST}
+{\slot
+vitamin	B-body_substance
+B12	I-body_substance
+levels,	B-mtest
+D	B-body_substance
+levels	B-mtest
+అలంటివి	O
+ఏమైనా	O
+చేసారా	O
+అక్కడ	O
+వాళ్ళు	O
+ఏమన్నా?	O
+}
+
+{\intent	p: ఆ అన్నీ చేసారు ma'am	ANSWER}
+{\slot
+ఆ	B-positive
+అన్నీ	O
+చేసారు	O
+ma'am	O
+}
+
+{\intent	d: thyroid ఒక్కటి cross చేస్కో చేసుకో. ఇప్పుడు చూసి పంపిస్తాం	ACTION_DIR}
+{\slot
+thyroid	B-medical_condition
+ఒక్కటి	O
+cross	O
+చేస్కో	O
+చేసుకో.	O
+ఇప్పుడు	O
+చూసి	O
+పంపిస్తాం	O
+}
+
+{\intent	d: regular cycles ఆ నీకు?	INFO_REQUEST}
+{\slot
+regular	B-normal
+cycles	B-bodily_process
+ఆ	O
+నీకు?	O
+}
+
+{\intent	p: ఆ regular ma'am.	ANSWER}
+{\slot
+ఆ	B-positive
+regular	B-normal
+ma'am.	O
+}
+

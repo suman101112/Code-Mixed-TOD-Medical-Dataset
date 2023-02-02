@@ -1,0 +1,122 @@
+{\intent	p: Hello sir	GREETING}
+{\slot
+Hello	O
+sir	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: problem actualగా మా daddy కి	STATEMENT}
+{\slot
+problem	O
+actualగా	O
+మా	O
+daddy	B-familal
+కి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆయనకి 4 years, 5 yearగా sugar ఉంది.	STATEMENT}
+{\slot
+ఆయనకి	O
+4	B-time_period
+years,	I-time_period
+5	B-time_period
+yearగా	I-time_period
+sugar	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: tablets వాడుతున్నాడు, control అవుతుంది	STATEMENT}
+{\slot
+tablets	B-medicine
+వాడుతున్నాడు,	O
+control	B-normal
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎప్పుడన్నా tablets వాడేసి తగ్గించిన వెంటనే మళ్ళీ sugar level ఎక్కువైపోతుందండి	STATEMENT}
+{\slot
+ఎప్పుడన్నా	O
+tablets	B-medicine
+వాడేసి	O
+తగ్గించిన	O
+వెంటనే	B-time_period
+మళ్ళీ	O
+sugar	B-medical_condition
+level	B-mtest_value
+ఎక్కువైపోతుందండి	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది continuousగా tablets మింగల్సిందేనా?	INFO_REQUEST}
+{\slot
+ఇది	O
+continuousగా	B-time_period
+tablets	B-medicine
+మింగల్సిందేనా?	O
+}
+
+{\intent	p: లేదా మనదెగ్గర tablets మింగకుండా ఏమన్నా?	INFO_REQUEST}
+{\slot
+లేదా	O
+మనదెగ్గర	O
+tablets	B-medicine
+మింగకుండా	O
+ఏమన్నా?	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	d: అంటే మీరు అన్నట్లుగా permanentగా కూడా చేయొచ్చు.	ANSWER}
+{\slot
+అంటే	O
+మీరు	O
+అన్నట్లుగా	O
+permanentగా	O
+కూడా	O
+చేయొచ్చు.	O
+}
+
+{\intent	d: అంటే ఏ stageలో ఉన్నారు మీ father, sugar levels ఎలా ఉన్నాయి కూడా చూడాలి	STATEMENT}
+{\slot
+అంటే	O
+ఏ	O
+stageలో	O
+ఉన్నారు	O
+మీ	O
+father,	B-familal
+sugar	B-medical_condition
+levels	B-mtest_value
+ఎలా	O
+ఉన్నాయి	O
+కూడా	O
+చూడాలి	O
+}
+

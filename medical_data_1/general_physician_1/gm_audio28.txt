@@ -1,0 +1,118 @@
+{\intent	p: madam	SU}
+{\slot
+madam	O
+}
+
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ age 28 madam నాది	STATEMENT}
+{\slot
+ఆ	O
+age	O
+28	B-age
+madam	O
+నాది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ one side నొస్తుంది, right side	STATEMENT}
+{\slot
+ఆ	O
+one	B-frequency
+side	B-location
+నొస్తుంది,	B-symptom
+right	B-location
+side	I-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 1 week నుంచి	STATEMENT}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచి	O
+}
+
+{\intent	p: అంటే doctor దెగ్గరికి వెళ్ళలేదు	STATEMENT}
+{\slot
+అంటే	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+వెళ్ళలేదు	O
+}
+
+{\intent	p: vomiting కూడా అయి ఉంటది	STATEMENT}
+{\slot
+vomiting	B-symptom
+కూడా	O
+అయి	O
+ఉంటది	O
+}
+
+{\intent	p: migrane ఏ అంటారా madam?	INFO_REQUEST}
+{\slot
+migrane	B-symptom
+ఏ	O
+అంటారా	O
+madam?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: only one week నుంచి ఉందా అండి మీకు headache?	INFO_REQUEST}
+{\slot
+only	O
+one	B-time_period
+week	I-time_period
+నుంచి	O
+ఉందా	O
+అండి	O
+మీకు	O
+headache?	B-symptom
+}
+
+{\intent	p: అవును madam, 1 week అయితుంది.	ANSWER}
+{\slot
+అవును	B-positive
+madam,	O
+1	B-time_period
+week	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: చాలా stressగా అలా feel అయితే కూడా, అలా కొంత timeలో కూడా మీకు అలా కొంచం feel అయ్యే chances ఉంటది అండి.	STATEMENT}
+{\slot
+చాలా	B-intensity
+stressగా	B-symptom
+అలా	O
+feel	O
+అయితే	O
+కూడా,	O
+అలా	O
+కొంత	O
+timeలో	B-time_period
+కూడా	O
+మీకు	O
+అలా	O
+కొంచం	O
+feel	O
+అయ్యే	O
+chances	O
+ఉంటది	O
+అండి.	O
+}
+

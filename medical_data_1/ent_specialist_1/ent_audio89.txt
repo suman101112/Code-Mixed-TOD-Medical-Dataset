@@ -1,0 +1,277 @@
+{\intent	d: नाम बोलो	ACTION_DIR}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Jasbeer Singh	ANSWER}
+{\slot
+Jasbeer	B-name
+Singh	I-name
+}
+
+{\intent	d: कितना उम्र?	INFO_REQUEST}
+{\slot
+कितना	O
+उम्र?	O
+}
+
+{\intent	p: 12	ANSWER}
+{\slot
+12	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p1: कान में सुरंग है sir दर्द दे रहा.	ANSWER}
+{\slot
+कान	B-body_part
+में	B-location
+सुरंग	B-symptom
+है	O
+sir	O
+दर्द	B-symptom
+दे	O
+रहा.	O
+}
+
+{\intent	d: कभ से दर्द?	INFO_REQUEST}
+{\slot
+कभ	B-time_period
+से	O
+दर्द?	B-symptom
+}
+
+{\intent	p1: एक 12 दिन, हफ्ते से हो रहा साहब	ANSWER}
+{\slot
+एक	O
+12	B-time_period
+दिन,	I-time_period
+हफ्ते	B-time_period
+से	O
+हो	O
+रहा	O
+साहब	O
+}
+
+{\intent	d: आहा	ACK}
+{\slot
+आहा	O
+}
+
+{\intent	d: आ बोलो	ACTION_DIR}
+{\slot
+आ	O
+बोलो	O
+}
+
+{\intent	d: सर्दी, खांसी है ?	INFO_REQUEST}
+{\slot
+सर्दी,	B-medical_condition
+खांसी	B-symptom
+है	O
+?	O
+}
+
+{\intent	p1: खांसी है .	ANSWER}
+{\slot
+खांसी	B-symptom
+है	O
+.	O
+}
+
+{\intent	p: सर्दी है , खांसी है .	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+है	O
+,	O
+खांसी	B-symptom
+है	O
+.	O
+}
+
+{\intent	d: आ बोलो	ACTION_DIR}
+{\slot
+आ	O
+बोलो	O
+}
+
+{\intent	d: कान में मैल तो नहीं है	DIAGNOSIS}
+{\slot
+कान	B-body_part
+में	B-location
+मैल	B-symptom
+तो	O
+नहीं	B-negative
+है	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p1: हां sir	ACK}
+{\slot
+हां	O
+sir	O
+}
+
+{\intent	d: सर्दी के वजह से ऐसा हुआ	DIAGNOSIS}
+{\slot
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+ऐसा	O
+हुआ	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p1: आ sir	ACK}
+{\slot
+आ	O
+sir	O
+}
+
+{\intent	d: इनका उम्र कितना?	INFO_REQUEST}
+{\slot
+इनका	O
+उम्र	B-time_period
+कितना?	O
+}
+
+{\intent	p1: 12	ANSWER}
+{\slot
+12	B-age
+}
+
+{\intent	p: सुनाई नहीं दे रहा	STATEMENT}
+{\slot
+सुनाई	B-bodily_process
+नहीं	B-negative
+दे	O
+रहा	O
+}
+
+{\intent	p1: सुनाई नहीं दे रहा बोल रहा	STATEMENT}
+{\slot
+सुनाई	B-bodily_process
+नहीं	B-negative
+दे	O
+रहा	O
+बोल	O
+रहा	O
+}
+
+{\intent	d: आवाज़ आ रही	ACTION_DIR}
+{\slot
+आवाज़	B-bodily_process
+आ	O
+रही	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: अब?	INFO_REQUEST}
+{\slot
+अब?	B-time_period
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: अब?	INFO_REQUEST}
+{\slot
+अब?	B-bodily_process
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: बोलो, आवाज़ आ रही ? नहीं आ रही?	INFO_REQUEST}
+{\slot
+बोलो,	O
+आवाज़	B-bodily_process
+आ	O
+रही	O
+?	O
+नहीं	B-negative
+आ	O
+रही?	O
+}
+
+{\intent	p: ज़रा lightly	ANSWER}
+{\slot
+ज़रा	B-intensity
+lightly	B-intensity
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	d: ये कान का एक test करवाके ले आ वो मेरेको	ACTION_DIR}
+{\slot
+ये	O
+कान	B-body_part
+का	O
+एक	O
+test	B-mtest
+करवाके	O
+ले	O
+आ	O
+वो	O
+मेरेको	O
+}
+
+{\intent	p: क्या sir?	SNU}
+{\slot
+क्या	O
+sir?	O
+}
+
+{\intent	d: कान का, Hanamkonda में test करके ले आना	REPEAT_REPHRASE}
+{\slot
+कान	B-body_part
+का,	O
+Hanamkonda	B-place
+में	O
+test	B-mtest
+करके	O
+ले	O
+आना	O
+}
+
+{\intent	p1: बुखार भी है. paracetamol भी डाल दी थी.	STATEMENT}
+{\slot
+बुखार	B-symptom
+भी	O
+है.	O
+paracetamol	B-medicine
+भी	O
+डाल	O
+दी	O
+थी.	O
+}
+

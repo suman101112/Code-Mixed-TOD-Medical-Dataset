@@ -1,0 +1,117 @@
+{\intent	d: 3	ANSWER}
+{\slot
+3	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	p: ఎట్లా sir అంటే మొస లేకుండా	STATEMENT}
+{\slot
+ఎట్లా	O
+sir	O
+అంటే	O
+మొస	B-medical_condition
+లేకుండా	O
+}
+
+{\intent	p: night 12 గంటలకు మళ్ళ పొద్దున 12 గంటలకు start అయితాంది.	STATEMENT}
+{\slot
+night	B-time_period
+12	B-age
+గంటలకు	B-time_period
+మళ్ళ	O
+పొద్దున	B-time_period
+12	B-age
+గంటలకు	B-time_period
+start	O
+అయితాంది.	O
+}
+
+{\intent	p: मस्त భయం అనిపిస్తాంది.	STATEMENT}
+{\slot
+मस्त	O
+భయం	O
+అనిపిస్తాంది.	O
+}
+
+{\intent	d: cough కి reflex అది	MEDICAL_EXPLANATION}
+{\slot
+cough	B-symptom
+కి	O
+reflex	B-bodily_process
+అది	O
+}
+
+{\intent	d: కంగారు పడాల్సిన అవసరం ఏం లేదు	STATEMENT}
+{\slot
+కంగారు	O
+పడాల్సిన	O
+అవసరం	O
+ఏం	O
+లేదు	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: cough ఆయాసం లేదు మంచిగానే ఆడుకుంటాంది మిగితా time?	INFO_REQUEST}
+{\slot
+cough	B-symptom
+ఆయాసం	B-medical_condition
+లేదు	B-negative
+మంచిగానే	O
+ఆడుకుంటాంది	B-bodily_process
+మిగితా	O
+time?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: cough ఆయాసం ఏం లేదు కబట్టి, మెగితా time మంచిగానే ఆడుకుంటాంది కాబట్టి	STATEMENT}
+{\slot
+cough	B-symptom
+ఆయాసం	B-medical_condition
+ఏం	O
+లేదు	B-negative
+కబట్టి,	O
+మెగితా	O
+time	B-time_period
+మంచిగానే	O
+ఆడుకుంటాంది	B-normal
+కాబట్టి	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: గుర్ గుర్ అంటాంది sir, దగ్గు వచ్చినప్పుడల్లా	STATEMENT}
+{\slot
+గుర్	B-bodily_process
+గుర్	B-bodily_process
+అంటాంది	O
+sir,	O
+దగ్గు	B-symptom
+వచ్చినప్పుడల్లా	B-time_period
+}
+
+{\intent	p: మళ్ళ tonic తాగుడు ఏం లేదు sir, కక్కుడే.	STATEMENT}
+{\slot
+మళ్ళ	O
+tonic	B-medicine
+తాగుడు	O
+ఏం	O
+లేదు	O
+sir,	O
+కక్కుడే.	B-symptom
+}
+

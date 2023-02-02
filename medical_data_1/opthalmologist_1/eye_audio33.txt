@@ -1,0 +1,50 @@
+{\intent	p: doctor గారు నేను నిద్ర బాగానే పోతాను.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నేను	O
+నిద్ర	B-bodily_process
+బాగానే	B-normal
+పోతాను.	O
+}
+
+{\intent	p: నాకు ఎటువంటి tensions లేవు అయినా కూడా నా కళ్ళ కింద నల్లగా అవుతుంది.	STATEMENT}
+{\slot
+నాకు	O
+ఎటువంటి	O
+tensions	B-medical_condition
+లేవు	B-negative
+అయినా	O
+కూడా	O
+నా	O
+కళ్ళ	B-body_part
+కింద	B-location
+నల్లగా	B-color
+అవుతుంది.	O
+}
+
+{\intent	p: అందరూ tensionలో ఉన్నవా అని అడుగుతున్నారు.	STATEMENT}
+{\slot
+అందరూ	O
+tensionలో	B-medical_condition
+ఉన్నవా	O
+అని	O
+అడుగుతున్నారు.	O
+}
+
+{\intent	d: కంటి కింద dark circles అనేది most common reason మీరు అన్నట్లు నిద్రలేకపోవడం అండి.	MEDICAL_EXPLANATION}
+{\slot
+కంటి	B-body_part
+కింద	B-location
+dark	B-symptom
+circles	I-symptom
+అనేది	O
+most	O
+common	O
+reason	O
+మీరు	O
+అన్నట్లు	O
+నిద్రలేకపోవడం	B-symptom
+అండి.	O
+}
+

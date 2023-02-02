@@ -1,0 +1,192 @@
+{\intent	d: పడుకోబెట్టమ్మా	ACTION_DIR}
+{\slot
+పడుకోబెట్టమ్మా	O
+}
+
+{\intent	d: ఏం పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p1: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: problem ఏంటి?	INFO_REQUEST}
+{\slot
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p1: జలుబు దగ్గు ఊరికే వస్తాంది, motions అయితున్నాయి.	ANSWER}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఊరికే	O
+వస్తాంది,	O
+motions	B-symptom
+అయితున్నాయి.	O
+}
+
+{\intent	p1: అప్పటికప్పుడే ఆకలైతాంది అప్పటికప్పుడే చికాకుగా చేస్తాండు	ANSWER}
+{\slot
+అప్పటికప్పుడే	B-symptom
+ఆకలైతాంది	B-bodily_process
+అప్పటికప్పుడే	B-symptom
+చికాకుగా	B-symptom
+చేస్తాండు	O
+}
+
+{\intent	d: నెలలు తక్కువ పుట్టాడా?	INFO_REQUEST}
+{\slot
+నెలలు	B-time_period
+తక్కువ	O
+పుట్టాడా?	O
+}
+
+{\intent	p1: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	p1: night కి వస్తుంది జ్వరం	ANSWER}
+{\slot
+night	B-time_period
+కి	O
+వస్తుంది	O
+జ్వరం	B-symptom
+}
+
+{\intent	d: మొత్తం ఎన్ని రోజులమ్మా దగ్గు జలుబు వచ్చి?	INFO_REQUEST}
+{\slot
+మొత్తం	O
+ఎన్ని	O
+రోజులమ్మా	B-time_period
+దగ్గు	B-symptom
+జలుబు	B-medical_condition
+వచ్చి?	O
+}
+
+{\intent	p1: 3 days sir	ANSWER}
+{\slot
+3	B-time_period
+days	I-time_period
+sir	O
+}
+
+{\intent	p1: motion కూడా smell వస్తుంది	STATEMENT}
+{\slot
+motion	B-symptom
+కూడా	O
+smell	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: రకరకాల రంగులో పోవొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+రకరకాల	O
+రంగులో	B-color
+పోవొచ్చు	B-bodily_process
+}
+
+{\intent	d: ఎక్కువ సార్లు పోతున్నాడా?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+సార్లు	B-frequency
+పోతున్నాడా?	B-bodily_process
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: activity wise బానే ఉంది.	STATEMENT}
+{\slot
+activity	B-bodily_process
+wise	O
+బానే	B-normal
+ఉంది.	O
+}
+
+{\intent	d: తీసుకో	ACTION_DIR}
+{\slot
+తీసుకో	O
+}
+
+{\intent	p1: అప్పుడు Haemoglobin కూడా తక్వ ఉంది అన్నారు	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+Haemoglobin	B-body_substance
+కూడా	O
+తక్వ	B-symptom
+ఉంది	O
+అన్నారు	O
+}
+
+{\intent	d: Haemoglobin అప్పుడు చేయించావా అమ్మా పరిక్ష అప్పుడు?	INFO_REQUEST}
+{\slot
+Haemoglobin	B-body_substance
+అప్పుడు	B-time_period
+చేయించావా	O
+అమ్మా	B-person
+పరిక్ష	B-mtest
+అప్పుడు?	O
+}
+
+{\intent	p1: అప్పుడు చేయించా, syrup రాసినారు	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+చేయించా,	O
+syrup	B-medicine
+రాసినారు	O
+}
+
+{\intent	d: ఇప్పుడు చేయిస్తావంటే ఇక్కడ రాసిన ఇక్కడ	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+చేయిస్తావంటే	O
+ఇక్కడ	O
+రాసిన	O
+ఇక్కడ	O
+}
+
+{\intent	p1: రాసినారా?	INFO_REQUEST}
+{\slot
+రాసినారా?	O
+}
+
+{\intent	d: ఇక్కడ Haemogram అనే పరిక్ష ఉంటది	STATEMENT}
+{\slot
+ఇక్కడ	O
+Haemogram	B-mtest
+అనే	O
+పరిక్ష	B-mtest
+ఉంటది	O
+}
+
+{\intent	p1: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: అది చేస్తే ఎంత ఉందా అని తెలుస్తది	STATEMENT}
+{\slot
+అది	O
+చేస్తే	O
+ఎంత	O
+ఉందా	O
+అని	O
+తెలుస్తది	O
+}
+
+{\intent	d: ఇప్పుడు చేయించుకోని రాత్రి reports తీసుకోండి.	ACTION_DIR}
+{\slot
+ఇప్పుడు	B-time_period
+చేయించుకోని	O
+రాత్రి	B-time_period
+reports	O
+తీసుకోండి.	O
+}
+

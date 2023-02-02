@@ -1,0 +1,277 @@
+{\intent	d: बोलो माँ क्या problem आपका?	INFO_REQUEST}
+{\slot
+बोलो	O
+माँ	O
+क्या	O
+problem	O
+आपका?	O
+}
+
+{\intent	p: इनको पैदा होने से date नहीं आया.	ANSWER}
+{\slot
+इनको	O
+पैदा	B-bodily_process
+होने	O
+से	O
+date	B-bodily_process
+नहीं	B-negative
+आया.	O
+}
+
+{\intent	d: आ?	SNU}
+{\slot
+आ?	O
+}
+
+{\intent	p: date, period नहीं आया	REPEAT_REPHRASE}
+{\slot
+date,	B-bodily_process
+period	B-bodily_process
+नहीं	B-negative
+आया	O
+}
+
+{\intent	d: बच्चे के पैदा होने के बाद period नहीं आया.	STATEMENT}
+{\slot
+बच्चे	B-familal
+के	O
+पैदा	B-bodily_process
+होने	O
+के	O
+बाद	B-time_period
+period	B-bodily_process
+नहीं	B-negative
+आया.	O
+}
+
+{\intent	d: बच्चे का उम्र?	INFO_REQUEST}
+{\slot
+बच्चे	B-familal
+का	O
+उम्र?	O
+}
+
+{\intent	p: 4 months.	ANSWER}
+{\slot
+4	B-time_period
+months.	I-time_period
+}
+
+{\intent	d: दूध दे रहे?	INFO_REQUEST}
+{\slot
+दूध	B-food_substance
+दे	B-bodily_process
+रहे?	O
+}
+
+{\intent	p: हां दे रहे.	ANSWER}
+{\slot
+हां	B-positive
+दे	O
+रहे.	O
+}
+
+{\intent	d: दूध देने के time में periods नहीं आते ना .	MEDICAL_EXPLANATION}
+{\slot
+दूध	B-food_substance
+देने	B-bodily_process
+के	O
+time	B-time_period
+में	O
+periods	B-bodily_process
+नहीं	B-negative
+आते	O
+ना	O
+.	O
+}
+
+{\intent	p: नहीं आते?	INFO_REQUEST}
+{\slot
+नहीं	B-negative
+आते?	O
+}
+
+{\intent	d: हां	ANSWER}
+{\slot
+हां	B-positive
+}
+
+{\intent	p: वो ही पतली पतली हो रही, vomiting जैसा लग रहा	STATEMENT}
+{\slot
+वो	O
+ही	O
+पतली	B-symptom
+पतली	I-symptom
+हो	O
+रही,	O
+vomiting	B-symptom
+जैसा	O
+लग	O
+रहा	O
+}
+
+{\intent	d: बच्चे नहीं होने के जैसे कुछ इस्तेमाल कर रहे, condoms वैसा?	INFO_REQUEST}
+{\slot
+बच्चे	B-familal
+नहीं	B-negative
+होने	B-bodily_process
+के	O
+जैसे	O
+कुछ	O
+इस्तेमाल	O
+कर	O
+रहे,	O
+condoms	O
+वैसा?	O
+}
+
+{\intent	p: कुछ नहीं	ANSWER}
+{\slot
+कुछ	O
+नहीं	B-negative
+}
+
+{\intent	d: मिया बीवी मिलके रहते.	INFO_REQUEST}
+{\slot
+मिया	B-familal
+बीवी	I-familial
+मिलके	O
+रहते.	O
+}
+
+{\intent	p: हां.	ANSWER}
+{\slot
+हां.	B-positive
+}
+
+{\intent	d: क्या नाम है आप का?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+आप	O
+का?	O
+}
+
+{\intent	p: Shaazia	ANSWER}
+{\slot
+Shaazia	B-name
+}
+
+{\intent	d: Shaazia	ACK}
+{\slot
+Shaazia	B-name
+}
+
+{\intent	d: उम्र कितना.	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना.	O
+}
+
+{\intent	p: 21	ANSWER}
+{\slot
+21	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: 21	ACK}
+{\slot
+21	B-age
+}
+
+{\intent	d: period नहीं आये , दूध दे रहे, बच्चे కా उम्र 4 महीना.	ACK}
+{\slot
+period	B-bodily_process
+नहीं	B-negative
+आये	O
+,	O
+दूध	B-food_substance
+दे	B-bodily_process
+रहे,	O
+बच्चे	B-familal
+కా	O
+उम्र	O
+4	B-age
+महीना.	I-age
+}
+
+{\intent	d: पहले में एक था वो? एक ही बच्चा?	INFO_REQUEST}
+{\slot
+पहले	O
+में	O
+एक	O
+था	O
+वो?	O
+एक	B-frequency
+ही	O
+बच्चा?	B-familal
+}
+
+{\intent	p: नहीं 2.	ANSWER}
+{\slot
+नहीं	B-negative
+2.	B-frequency
+}
+
+{\intent	d: 2.	ACK}
+{\slot
+2.	B-frequency
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	d: पहले बच्चे का उम्र?	INFO_REQUEST}
+{\slot
+पहले	O
+बच्चे	B-familal
+का	O
+उम्र?	O
+}
+
+{\intent	p: आ 20 months.	ANSWER}
+{\slot
+आ	O
+20	B-age
+months.	I-age
+}
+
+{\intent	d: 20 months, 1 year, फिर pregnancy?	INFO_REQUEST}
+{\slot
+20	B-age
+months,	I-age
+1	B-age
+year,	I-age
+फिर	O
+pregnancy?	B-bodily_process
+}
+
+{\intent	p: हां	ANSWER}
+{\slot
+हां	B-positive
+}
+
+{\intent	d: test करे?	INFO_REQUEST}
+{\slot
+test	B-mtest
+करे?	O
+}
+
+{\intent	p: नहीं करे.	ANSWER}
+{\slot
+नहीं	B-negative
+करे.	O
+}
+
+{\intent	d: लेटो	ACTION_DIR}
+{\slot
+लेटो	O
+}
+

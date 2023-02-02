@@ -1,0 +1,137 @@
+{\intent	p: నా age 29 madam	STATEMENT}
+{\slot
+నా	O
+age	O
+29	B-age
+madam	O
+}
+
+{\intent	p: పాప expire అయిపొయింది.	STATEMENT}
+{\slot
+పాప	B-person
+expire	B-bodily_process
+అయిపొయింది.	O
+}
+
+{\intent	p: tubectomy కూడా అయింది, tubes కల్చేసారు	STATEMENT}
+{\slot
+tubectomy	B-treatment
+కూడా	O
+అయింది,	O
+tubes	B-body_part
+కల్చేసారు	B-treatment
+}
+
+{\intent	d: ooh sorry అమ్మా	STATEMENT}
+{\slot
+ooh	O
+sorry	O
+అమ్మా	O
+}
+
+{\intent	p: మళ్ళ reconciliationకి chance ఉంటుందా?	INFO_REQUEST}
+{\slot
+మళ్ళ	O
+reconciliationకి	B-treatment
+chance	O
+ఉంటుందా?	O
+}
+
+{\intent	d: ఒక్క babyకుడా లేదా అమ్మా, Sweetaగారు మీకు?	INFO_REQUEST}
+{\slot
+ఒక్క	B-frequency
+babyకుడా	B-person
+లేదా	B-negative
+అమ్మా,	O
+Sweetaగారు	B-name
+మీకు?	O
+}
+
+{\intent	p: ఒక్క baby ఉంది madam	STATEMENT}
+{\slot
+ఒక్క	B-frequency
+baby	B-person
+ఉంది	B-positive
+madam	O
+}
+
+{\intent	d: ఒక్క baby ఉంది	ACK}
+{\slot
+ఒక్క	B-frequency
+baby	B-person
+ఉంది	B-positive
+}
+
+{\intent	p: బాబు	STATEMENT}
+{\slot
+బాబు	B-person
+}
+
+{\intent	d: so usually tubectomyలో కల్చారు అంటే we call it as diathermy అన్నట్టు	MEDICAL_EXPLANATION}
+{\slot
+so	O
+usually	O
+tubectomyలో	B-treatment
+కల్చారు	B-treatment
+అంటే	O
+we	O
+call	O
+it	O
+as	O
+diathermy	B-treatment
+అన్నట్టు	O
+}
+
+{\intent	d: అంటే ఒక instrument పెట్టి దాన్ని burn చేస్తారన్నట్టు.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+ఒక	O
+instrument	B-medical_apparatus
+పెట్టి	O
+దాన్ని	O
+burn	B-treatment
+చేస్తారన్నట్టు.	O
+}
+
+{\intent	d: ఆ burn చేసిన తరువాత మళ్ళి tubesని join చేస్తే మళ్ళి success rate కొంచం తక్వ ఉంటదమ్మా	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+burn	B-treatment
+చేసిన	O
+తరువాత	B-time_period
+మళ్ళి	O
+tubesని	B-body_part
+join	B-treatment
+చేస్తే	O
+మళ్ళి	O
+success	O
+rate	O
+కొంచం	O
+తక్వ	B-intensity
+ఉంటదమ్మా	O
+}
+
+{\intent	d: ఆ ఎందుకంటే i should tell you the proper treatment కదా	STATEMENT}
+{\slot
+ఆ	O
+ఎందుకంటే	O
+i	O
+should	O
+tell	O
+you	O
+the	O
+proper	O
+treatment	B-treatment
+కదా	O
+}
+
+{\intent	d: నీకు better is the IVF అన్నమాట	STATEMENT}
+{\slot
+నీకు	O
+better	O
+is	O
+the	O
+IVF	B-treatment
+అన్నమాట	O
+}
+

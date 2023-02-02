@@ -1,0 +1,166 @@
+{\intent	p: ఇంత ముందు వచ్చిన కదా sir	STATEMENT}
+{\slot
+ఇంత	O
+ముందు	O
+వచ్చిన	O
+కదా	O
+sir	O
+}
+
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Vishwesh	ANSWER}
+{\slot
+Vishwesh	B-name
+}
+
+{\intent	d: Vishwesh	ACK}
+{\slot
+Vishwesh	B-name
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 27	ANSWER}
+{\slot
+27	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇంత ముందు వస్తే లోపట కురుపైంది అన్నారు. తర్వాత మళ్ళి రమ్మన్నారు	ANSWER}
+{\slot
+ఇంత	O
+ముందు	B-time_period
+వస్తే	O
+లోపట	B-location
+కురుపైంది	B-medical_condition
+అన్నారు.	O
+తర్వాత	B-time_period
+మళ్ళి	O
+రమ్మన్నారు	O
+}
+
+{\intent	d: దెగ్గర రా	ACTION_DIR}
+{\slot
+దెగ్గర	O
+రా	O
+}
+
+{\intent	p: ఇదంతా నొప్పిలేస్తాంది sir.	ANSWER}
+{\slot
+ఇదంతా	B-location
+నొప్పిలేస్తాంది	B-symptom
+sir.	O
+}
+
+{\intent	d: అద్దాలు తీయండి	ACTION_DIR}
+{\slot
+అద్దాలు	O
+తీయండి	O
+}
+
+{\intent	d: January	STATEMENT}
+{\slot
+January	B-time_period
+}
+
+{\intent	d: ఇక్కడ నొస్తుందా?	INFO_REQUEST}
+{\slot
+ఇక్కడ	O
+నొస్తుందా?	B-symptom
+}
+
+{\intent	p: ఇదంతా sir గుంజుతుంది sir	ANSWER}
+{\slot
+ఇదంతా	B-location
+sir	O
+గుంజుతుంది	B-symptom
+sir	O
+}
+
+{\intent	d: నోరు తెరవమ్మా	ACTION_DIR}
+{\slot
+నోరు	B-body_part
+తెరవమ్మా	O
+}
+
+{\intent	d: ఇక్కడనా?	INFO_REQUEST}
+{\slot
+ఇక్కడనా?	O
+}
+
+{\intent	d: ఇక్కడనా?	INFO_REQUEST}
+{\slot
+ఇక్కడనా?	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	p: ఏం problem ఉండదు కదా sir	INFO_REQUEST}
+{\slot
+ఏం	O
+problem	O
+ఉండదు	O
+కదా	O
+sir	O
+}
+
+{\intent	d: లేదు	ANSWER}
+{\slot
+లేదు	O
+}
+
+{\intent	p: కొంచం వినబడతలేదు sir అది కొంచం problem	STATEMENT}
+{\slot
+కొంచం	B-intensity
+వినబడతలేదు	B-symptom
+sir	O
+అది	O
+కొంచం	O
+problem	O
+}
+
+{\intent	d: ఏం లేదు	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+}
+
+{\intent	p: అది sir	ACK}
+{\slot
+అది	O
+sir	O
+}
+
+{\intent	p: thank you	APPRECIATE}
+{\slot
+thank	O
+you	O
+}
+

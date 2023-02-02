@@ -1,0 +1,167 @@
+{\intent	p: good evening sir.	GREETING}
+{\slot
+good	O
+evening	O
+sir.	O
+}
+
+{\intent	p: sir అసలే తగ్గట్లేదు, sir.	STATEMENT}
+{\slot
+sir	O
+అసలే	O
+తగ్గట్లేదు,	B-symptom
+sir.	O
+}
+
+{\intent	p: చాలా ఇబ్బందైతుంది బాగా	STATEMENT}
+{\slot
+చాలా	B-intensity
+ఇబ్బందైతుంది	B-symptom
+బాగా	B-intensity
+}
+
+{\intent	d: ఏం తగ్గుతలేదు చెప్పాలి నాకు	INFO_REQUEST}
+{\slot
+ఏం	O
+తగ్గుతలేదు	B-symptom
+చెప్పాలి	O
+నాకు	O
+}
+
+{\intent	p: దగ్గు, జలుబు	STATEMENT}
+{\slot
+దగ్గు,	B-symptom
+జలుబు	B-medical_condition
+}
+
+{\intent	d: ఒక x-ray తీసుకోని రండి ఒకటి	ACTION_DIR}
+{\slot
+ఒక	O
+x-ray	B-mtest
+తీసుకోని	O
+రండి	O
+ఒకటి	O
+}
+
+{\intent	d: ఇది ఒక x-ray ఛాతిది తీసుకోని రండి	CORRECT}
+{\slot
+ఇది	O
+ఒక	O
+x-ray	B-mtest
+ఛాతిది	B-body_part
+తీసుకోని	O
+రండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	p: ఉంటారా sir మీరు ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఉంటారా	O
+sir	O
+మీరు	O
+ఇప్పుడు?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: చాన అవస్థ అయితుంది sir.	STATEMENT}
+{\slot
+చాన	B-intensity
+అవస్థ	B-symptom
+అయితుంది	O
+sir.	O
+}
+
+{\intent	d: ముక్కు నుంచి నీరు లాగా కారుతుందా చీమిడి లాగా కారుతుందా?	INFO_REQUEST}
+{\slot
+ముక్కు	B-body_part
+నుంచి	O
+నీరు	B-food_substance
+లాగా	O
+కారుతుందా	B-symptom
+చీమిడి	B-symptom
+లాగా	O
+కారుతుందా?	B-symptom
+}
+
+{\intent	p: లేదు sir. తెల్లారి ముక్కులో నుంచి మొత్తం block అవుతుంది తెల్లారి. ఇంత తేమడ లెక్క వస్తుంది. ఇది కూడా ఉబ్బుతుంది, అని అనిపిస్తుంది sir నాకు.	ANSWER}
+{\slot
+లేదు	B-negative
+sir.	O
+తెల్లారి	B-time_period
+ముక్కులో	B-body_part
+నుంచి	O
+మొత్తం	O
+block	B-symptom
+అవుతుంది	O
+తెల్లారి.	B-time_period
+ఇంత	O
+తేమడ	B-symptom
+లెక్క	O
+వస్తుంది.	O
+ఇది	O
+కూడా	O
+ఉబ్బుతుంది,	B-symptom
+అని	O
+అనిపిస్తుంది	O
+sir	O
+నాకు.	O
+}
+
+{\intent	d: ఏం ఉబ్బలేదు,	STATEMENT}
+{\slot
+ఏం	O
+ఉబ్బలేదు,	B-negative
+}
+
+{\intent	p: ఆ thyroid ఉందా నాకు ఏమన్నా కొద్దిగా doubt.	STATEMENT}
+{\slot
+ఆ	O
+thyroid	B-medical_condition
+ఉందా	O
+నాకు	O
+ఏమన్నా	O
+కొద్దిగా	O
+doubt.	O
+}
+
+{\intent	p: ఇంత ముందు last 2 years back నేను వచ్చినప్పుడు thyroid కొద్దిగా ఉంది అని చెప్పారు.	STATEMENT}
+{\slot
+ఇంత	O
+ముందు	O
+last	O
+2	B-time_period
+years	I-time_period
+back	I-time_period
+నేను	O
+వచ్చినప్పుడు	O
+thyroid	B-medical_condition
+కొద్దిగా	O
+ఉంది	O
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: ఇది రకంతో తెలుస్తది కానీ ఇక్కడయితే లేదు thyroid.	STATEMENT}
+{\slot
+ఇది	O
+రకంతో	B-body_substance
+తెలుస్తది	O
+కానీ	O
+ఇక్కడయితే	O
+లేదు	O
+thyroid.	B-medical_condition
+}
+

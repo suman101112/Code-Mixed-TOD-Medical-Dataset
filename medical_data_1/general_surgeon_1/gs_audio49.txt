@@ -1,0 +1,174 @@
+{\intent	p: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి sir	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: madam నాకు 1 year నుంచి stomach problem madam, కడుపు చాలా ఉబ్బిపోతుంది, madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+1	B-time_period
+year	B-time_period
+నుంచి	O
+stomach	B-body_part
+problem	B-symptom
+madam,	O
+కడుపు	B-body_part
+చాలా	B-intensity
+ఉబ్బిపోతుంది,	B-symptom
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: శ్వాస తీసుకోవడానికి కూడా చాలా ఇబ్బంది అయిపోతుంది	STATEMENT}
+{\slot
+శ్వాస	B-bodily_process
+తీసుకోవడానికి	I-bodily_process
+కూడా	O
+చాలా	B-intensity
+ఇబ్బంది	B-symptom
+అయిపోతుంది	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: సాయంత్రం 7 8 9 గంటల నుంచి సాయంత్రం 7 గంటల దాక ఎక్కడ పడితే అక్కడ కుర్చోబుద్ధి అయితుంది madam కడుపు బాగా ఉబ్బిపోయి.	STATEMENT}
+{\slot
+సాయంత్రం	O
+7	B-time_period
+8	B-time_period
+9	B-time_period
+గంటల	I-time_period
+నుంచి	O
+సాయంత్రం	B-time_period
+7	I-time_period
+గంటల	I-time_period
+దాక	O
+ఎక్కడ	O
+పడితే	O
+అక్కడ	O
+కుర్చోబుద్ధి	O
+అయితుంది	O
+madam	O
+కడుపు	B-body_part
+బాగా	B-intensity
+ఉబ్బిపోయి.	B-symptom
+}
+
+{\intent	p: ఎవరితో మాట్లాడాలన్నా కొంచం ఆవేశం లాగా వచ్చి ఎక్కువసేపు మట్లాడలేకపోతున్నాను madam	STATEMENT}
+{\slot
+ఎవరితో	O
+మాట్లాడాలన్నా	O
+కొంచం	O
+ఆవేశం	B-symptom
+లాగా	O
+వచ్చి	O
+ఎక్కువసేపు	B-time_period
+మట్లాడలేకపోతున్నాను	B-symptom
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చాలా ఇబ్బంది అయిపోతుంది madam	STATEMENT}
+{\slot
+చాలా	B-intensity
+ఇబ్బంది	B-symptom
+అయిపోతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే Vijayawaadaలో endoscopy పెట్టించుకోని చూయించుకున్నాను madam	STATEMENT}
+{\slot
+అయితే	O
+Vijayawaadaలో	B-place
+endoscopy	B-mtest
+పెట్టించుకోని	O
+చూయించుకున్నాను	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sir అన్నారు ulcer ఉందమ్మా కడుపులో అన్నారు	STATEMENT}
+{\slot
+sir	O
+అన్నారు	O
+ulcer	B-medical_condition
+ఉందమ్మా	O
+కడుపులో	B-body_part
+అన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pills వాడాను 4 నెలలు అయితుంది	STATEMENT}
+{\slot
+pills	B-medicine
+వాడాను	O
+4	B-time_period
+నెలలు	I-time_period
+అయితుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి సాయంత్రానికల్లా ఉబ్బిపోతుంది, madam, చాలా ఇబ్బంది అయిపోతుంది నాకు ఇది	STATEMENT}
+{\slot
+మళ్ళి	O
+సాయంత్రానికల్లా	B-time_period
+ఉబ్బిపోతుంది,	B-symptom
+madam,	O
+చాలా	B-intensity
+ఇబ్బంది	B-symptom
+అయిపోతుంది	O
+నాకు	O
+ఇది	O
+}
+
+{\intent	d: మనకి జీర్ణాశయంలో ఉండేటటువంటి mucus membraneలో పుండు లాగా ఏర్పడడాన్ని మనం ulcer అని అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+మనకి	O
+జీర్ణాశయంలో	B-body_part
+ఉండేటటువంటి	O
+mucus	B-body_part
+membraneలో	I-body_part
+పుండు	B-medical_condition
+లాగా	O
+ఏర్పడడాన్ని	O
+మనం	O
+ulcer	B-medical_condition
+అని	O
+అంటాము.	O
+}
+

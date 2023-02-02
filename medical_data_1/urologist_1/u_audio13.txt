@@ -1,0 +1,92 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: Hello, చెప్పండి	ACTION_DIR}
+{\slot
+Hello,	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ నమస్తే అండి	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: wifeకు	HOLD}
+{\slot
+wifeకు	B-familal
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: left urinaryలో 7mm size stone ఉంది అండి.	STATEMENT}
+{\slot
+left	B-location
+urinaryలో	B-body_part
+7mm	B-mtest_value
+size	I-mtest_value
+stone	B-body_substance
+ఉంది	O
+అండి.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: దానికి medicine ఏదైనా అలాగే వెళ్ళడానికి వీలవుతుందా?	INFO_REQUEST}
+{\slot
+దానికి	O
+medicine	B-medicine
+ఏదైనా	O
+అలాగే	O
+వెళ్ళడానికి	O
+వీలవుతుందా?	O
+}
+
+{\intent	d: actualగా 7mm stone మీకు ureterలో struck-up అయిపోయింది, actualగా 7mm pass కాదు	MEDICAL_EXPLANATION}
+{\slot
+actualగా	O
+7mm	B-mtest_value
+stone	B-body_substance
+మీకు	O
+ureterలో	B-body_part
+struck-up	B-symptom
+అయిపోయింది,	O
+actualగా	O
+7mm	B-mtest_value
+pass	B-bodily_process
+కాదు	B-symptom
+}
+
+{\intent	d: బాగా water తాగినా కూడా రాసుకొని దానివల్ల blood రావడం, pain రావడం చాలా severeగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+బాగా	B-intensity
+water	B-food_substance
+తాగినా	O
+కూడా	O
+రాసుకొని	O
+దానివల్ల	O
+blood	B-body_substance
+రావడం,	B-symptom
+pain	B-symptom
+రావడం	O
+చాలా	O
+severeగా	O
+ఉంటుంది.	O
+}
+

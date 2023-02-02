@@ -1,0 +1,103 @@
+{\intent	p: బయటికి పోయినప్పుడు అంటే motionsకి పోయినప్పుడు blood వస్తుంది madam	STATEMENT}
+{\slot
+బయటికి	B-time_period
+పోయినప్పుడు	O
+అంటే	O
+motionsకి	B-bodily_process
+పోయినప్పుడు	O
+blood	B-body_substance
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి అండి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	O
+నుంచి	O
+అండి?	O
+}
+
+{\intent	p: ఓ 6 months అవుతుంది madam	ANSWER}
+{\slot
+ఓ	O
+6	B-time_period
+months	B-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ఏమైనా treatments తీసుకున్నారా, reports ఏమైనా చేయించారా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+treatments	B-treatment
+తీసుకున్నారా,	O
+reports	O
+ఏమైనా	O
+చేయించారా?	O
+}
+
+{\intent	p: ఎమి చేయించలేదు madam	ANSWER}
+{\slot
+ఎమి	O
+చేయించలేదు	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	d: ఇది ఒకటేనా, చేతికి ఏమైనా తగులుతున్నాయా?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఒకటేనా,	O
+చేతికి	B-body_part
+ఏమైనా	O
+తగులుతున్నాయా?	B-symptom
+}
+
+{\intent	d: బయటికి ఏమైనా skin ఉబ్బుతుందా?,	REPEAT_REPHRASE}
+{\slot
+బయటికి	B-location
+ఏమైనా	O
+skin	B-body_part
+ఉబ్బుతుందా?,	B-symptom
+}
+
+{\intent	p: ఏం లేదు madam	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	p: కాకపోతే allergyలాగా వస్తుంది madam	STATEMENT}
+{\slot
+కాకపోతే	O
+allergyలాగా	B-medical_condition
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: so ఏందంటే ఈ హర్షమొలల problemలో కూడా ఇట్ల వేడి ఎక్కువ అయినా కూడా ఇట్ల bleeding అనేది ఏర్పడుతూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఏందంటే	O
+ఈ	O
+హర్షమొలల	B-medical_condition
+problemలో	I-medical_condition
+కూడా	O
+ఇట్ల	O
+వేడి	B-symptom
+ఎక్కువ	B-intensity
+అయినా	O
+కూడా	O
+ఇట్ల	O
+bleeding	B-medical_condition
+అనేది	O
+ఏర్పడుతూ	O
+ఉంటుంది.	O
+}
+

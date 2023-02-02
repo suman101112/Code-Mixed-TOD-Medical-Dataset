@@ -1,0 +1,144 @@
+{\intent	d: क्या नाम है	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+}
+
+{\intent	p: Afraan है साहब	ANSWER}
+{\slot
+Afraan	B-name
+है	O
+साहब	O
+}
+
+{\intent	d: 2	ANSWER}
+{\slot
+2	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p: sir non-stop खांसी आ रही साहब	STATEMENT}
+{\slot
+sir	O
+non-stop	B-intensity
+खांसी	B-symptom
+आ	O
+रही	O
+साहब	O
+}
+
+{\intent	p: सर्दी खांसी बहुत है साहब	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+खांसी	B-symptom
+बहुत	B-intensity
+है	O
+साहब	O
+}
+
+{\intent	d: लेटावो पहले	ACTION_DIR}
+{\slot
+लेटावो	O
+पहले	O
+}
+
+{\intent	d: रात में आ रहे? दिन में आ रहे?	INFO_REQUEST}
+{\slot
+रात	B-time_period
+में	O
+आ	O
+रहे?	O
+दिन	B-time_period
+में	O
+आ	O
+रहे?	O
+}
+
+{\intent	p: 24 hours.	ANSWER}
+{\slot
+24	B-time_period
+hours.	I-time_period
+}
+
+{\intent	d: बैठने दो	ACTION_DIR}
+{\slot
+बैठने	O
+दो	O
+}
+
+{\intent	d: दमा चल रहा ? खाली खांसी	INFO_REQUEST}
+{\slot
+दमा	B-medical_condition
+चल	O
+रहा	O
+?	O
+खाली	O
+खांसी	B-symptom
+}
+
+{\intent	p: नहीं नहीं normal खांसी	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं	B-negative
+normal	O
+खांसी	B-symptom
+}
+
+{\intent	d: उनको खांसने दो लेकिन normal time पर अच्छा सो रहा, नहीं सो रहा	INFO_REQUEST}
+{\slot
+उनको	O
+खांसने	B-symptom
+दो	O
+लेकिन	O
+normal	B-time_period
+time	I-time_period
+पर	O
+अच्छा	B-normal
+सो	B-bodily_process
+रहा,	I-bodily_process
+नहीं	B-negative
+सो	B-bodily_process
+रहा	I-bodily_process
+}
+
+{\intent	p: नहीं रातों रात खांसी	ANSWER}
+{\slot
+नहीं	B-negative
+रातों	B-time_period
+रात	I-time_period
+खांसी	B-symptom
+}
+
+{\intent	p: sir इसके मुँह में छाले है sir, नहीं खा रहा, देखिये ना.	STATEMENT}
+{\slot
+sir	O
+इसके	O
+मुँह	B-body_part
+में	B-location
+छाले	B-medical_condition
+है	O
+sir,	O
+नहीं	B-negative
+खा	B-bodily_process
+रहा,	I-bodily_process
+देखिये	O
+ना.	O
+}
+
+{\intent	d: खाने का छाले का कुछ भी संबंध नहीं.	MEDICAL_EXPLANATION}
+{\slot
+खाने	B-food_substance
+का	O
+छाले	B-medical_condition
+का	O
+कुछ	O
+भी	O
+संबंध	O
+नहीं.	O
+}
+

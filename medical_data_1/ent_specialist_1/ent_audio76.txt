@@ -1,0 +1,175 @@
+{\intent	d: పేరు చెప్పండి?	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి?	O
+}
+
+{\intent	p: Shanti Kiran sir	ANSWER}
+{\slot
+Shanti	B-name
+Kiran	I-name
+sir	O
+}
+
+{\intent	d: Shanti Kiran	ACK}
+{\slot
+Shanti	B-name
+Kiran	I-name
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 22 ఉంటది sir	ANSWER}
+{\slot
+22	B-age
+ఉంటది	O
+sir	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: sir ఈ గొంతు అంతా red అయింది sir.	ANSWER}
+{\slot
+sir	O
+ఈ	O
+గొంతు	B-body_part
+అంతా	O
+red	B-color
+అయింది	B-symptom
+sir.	O
+}
+
+{\intent	p: noise బయటికి వస్తుంది, బాగా దగ్గు ఉంది sir.	STATEMENT}
+{\slot
+noise	B-symptom
+బయటికి	B-location
+వస్తుంది,	O
+బాగా	B-intensity
+దగ్గు	B-symptom
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ఆ అను?	ACTION_DIR}
+{\slot
+ఆ	O
+అను?	O
+}
+
+{\intent	d: smoking చేస్తావా?	INFO_REQUEST}
+{\slot
+smoking	B-habit
+చేస్తావా?	O
+}
+
+{\intent	p: ఆ చేస్తాను sir	ANSWER}
+{\slot
+ఆ	O
+చేస్తాను	O
+sir	O
+}
+
+{\intent	d: drinks?	INFO_REQUEST}
+{\slot
+drinks?	B-habit
+}
+
+{\intent	p: చేస్తాను	ANSWER}
+{\slot
+చేస్తాను	O
+}
+
+{\intent	d: వచ్చి రోజులు అయితాంది?	INFO_REQUEST}
+{\slot
+వచ్చి	O
+రోజులు	B-time_period
+అయితాంది?	O
+}
+
+{\intent	p: 5 days.	ANSWER}
+{\slot
+5	B-time_period
+days.	I-time_period
+}
+
+{\intent	d: ఈ అను?	ACTION_DIR}
+{\slot
+ఈ	O
+అను?	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: smoking बंद చేయలే	STATEMENT}
+{\slot
+smoking	B-habit
+बंद	O
+చేయలే	O
+}
+
+{\intent	d: లేకపోతే అసలుకే మంచిది కాదు	STATEMENT}
+{\slot
+లేకపోతే	O
+అసలుకే	O
+మంచిది	O
+కాదు	O
+}
+
+{\intent	d: అర్ధమైందా?	INFO_REQUEST}
+{\slot
+అర్ధమైందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: మెల్లగా మట్లాడు, తక్వ మట్లాడు	ACTION_DIR}
+{\slot
+మెల్లగా	B-intensity
+మట్లాడు,	B-bodily_process
+తక్వ	B-intensity
+మట్లాడు	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+

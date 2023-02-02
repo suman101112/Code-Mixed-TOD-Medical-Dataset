@@ -1,0 +1,400 @@
+{\intent	d: Nagendra గారు Hello	SU}
+{\slot
+Nagendra	B-name
+గారు	O
+Hello	O
+}
+
+{\intent	p: Hello madam నమస్తే madam	GREETING}
+{\slot
+Hello	O
+madam	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: Nagendra గారు చెప్పండి sir.	ACTION_DIR}
+{\slot
+Nagendra	B-name
+గారు	O
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	p: madam, ఆ, పాపకు పుట్టిన 3 సంవత్సరాల పాపకు diabetes attack అయింది madam.	STATEMENT}
+{\slot
+madam,	O
+ఆ,	O
+పాపకు	B-person
+పుట్టిన	B-bodily_process
+3	B-age
+సంవత్సరాల	I-age
+పాపకు	B-person
+diabetes	B-medical_condition
+attack	B-symptom
+అయింది	O
+madam.	O
+}
+
+{\intent	d: ok. hmm	ACK}
+{\slot
+ok.	O
+hmm	O
+}
+
+{\intent	p: అయిపోయినా తర్వాత. sugar levels, bodyలో ఉన్నాయా అని చెప్పి kurnool hospital లో admit చేసుంటిమి.	STATEMENT}
+{\slot
+అయిపోయినా	O
+తర్వాత.	O
+sugar	B-mtest
+levels,	I-mtest
+bodyలో	B-body_part
+ఉన్నాయా	O
+అని	O
+చెప్పి	O
+kurnool	B-place
+hospital	O
+లో	O
+admit	O
+చేసుంటిమి.	O
+}
+
+{\intent	d: ok. hmm	ACK}
+{\slot
+ok.	O
+hmm	O
+}
+
+{\intent	p: తర్వాత doctorగారు వచ్చేసి ఉదయం night వచ్చేసి insulin పెట్టారు madam.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+doctorగారు	O
+వచ్చేసి	O
+ఉదయం	B-time_period
+night	B-time_period
+వచ్చేసి	O
+insulin	B-medicine
+పెట్టారు	O
+madam.	O
+}
+
+{\intent	d: ok. hmm	ACK}
+{\slot
+ok.	O
+hmm	O
+}
+
+{\intent	p: దాదాపు అంటే ఇప్పుడు పాపకు వచ్చేసి 10 years madam.	STATEMENT}
+{\slot
+దాదాపు	O
+అంటే	O
+ఇప్పుడు	O
+పాపకు	B-person
+వచ్చేసి	O
+10	B-age
+years	I-age
+madam.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే 7 years అయింది	STATEMENT}
+{\slot
+అంటే	O
+7	B-time_period
+years	I-time_period
+అయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ పాపకు వచ్చేసి morning వచ్చేసి 20 evening వచ్చేసి 11 ఇస్తున్నాం madam insulin	STATEMENT}
+{\slot
+ఆ	O
+పాపకు	B-person
+వచ్చేసి	O
+morning	B-time_period
+వచ్చేసి	O
+20	B-medicine_dose
+evening	B-time_period
+వచ్చేసి	O
+11	B-medicine_dose
+ఇస్తున్నాం	O
+madam	O
+insulin	B-medicine
+}
+
+{\intent	d: 11 units ok.	ACK}
+{\slot
+11	B-medicine_dose
+units	I-medicine_dose
+ok.	O
+}
+
+{\intent	p: ఇస్తున్న తర్వాత morning ఓసారి sugar check చేస్తే madam. అదే strip ద్వారా check చేస్తే 400 300 above వస్తుంది madam.	STATEMENT}
+{\slot
+ఇస్తున్న	O
+తర్వాత	B-time_period
+morning	B-time_period
+ఓసారి	O
+sugar	B-medical_condition
+check	B-mtest
+చేస్తే	O
+madam.	O
+అదే	O
+strip	B-medical_apparatus
+ద్వారా	O
+check	B-mtest
+చేస్తే	O
+400	B-mtest_value
+300	B-mtest_value
+above	I-mtest_value
+వస్తుంది	O
+madam.	O
+}
+
+{\intent	d: ok. ok. hmm	ACK}
+{\slot
+ok.	O
+ok.	O
+hmm	O
+}
+
+{\intent	p: అనేది తర్వాత next నాకు కూడా attack అయింది madam. నాకు వచ్చేసి 190 200 ఉన్నది.	STATEMENT}
+{\slot
+అనేది	O
+తర్వాత	B-time_period
+next	O
+నాకు	O
+కూడా	O
+attack	B-symptom
+అయింది	O
+madam.	O
+నాకు	O
+వచ్చేసి	O
+190	B-mtest_value
+200	B-mtest_value
+ఉన్నది.	O
+}
+
+{\intent	d: ok. hmm	ACK}
+{\slot
+ok.	O
+hmm	O
+}
+
+{\intent	p: అయిపోయినా తర్వాత నాకు glucomate 500 పెట్టి దాని నుంచి glucomate gb1కి వచ్చింది madam.	STATEMENT}
+{\slot
+అయిపోయినా	O
+తర్వాత	B-time_period
+నాకు	O
+glucomate	B-medicine
+500	B-medicine_dose
+పెట్టి	O
+దాని	O
+నుంచి	O
+glucomate	B-medicine
+gb1కి	B-medicine
+వచ్చింది	O
+madam.	O
+}
+
+{\intent	p: ఈ పాప విషయం అనేది కొంచం అర్ధం కావడం లేదు madam.	STATEMENT}
+{\slot
+ఈ	O
+పాప	B-person
+విషయం	O
+అనేది	O
+కొంచం	O
+అర్ధం	O
+కావడం	O
+లేదు	O
+madam.	O
+}
+
+{\intent	d: yes అనేది మీరు reviewకి ఎప్పుడు వెళ్ళారు అండి. doctor మీకు 20 and 11 advice చేసారు కదా. ఎన్నాళ్ళు అయితుంది ఈ dose continue చేయబట్టి?	INFO_REQUEST}
+{\slot
+yes	O
+అనేది	O
+మీరు	O
+reviewకి	O
+ఎప్పుడు	O
+వెళ్ళారు	O
+అండి.	O
+doctor	B-medical_professional
+మీకు	O
+20	B-medicine_dose
+and	O
+11	B-medicine_dose
+advice	O
+చేసారు	O
+కదా.	O
+ఎన్నాళ్ళు	O
+అయితుంది	O
+ఈ	O
+dose	B-medicine
+continue	O
+చేయబట్టి?	O
+}
+
+{\intent	p: ఆ ఒక, 2 months, రెండు నెలలు అవుతుంది.	ANSWER}
+{\slot
+ఆ	O
+ఒక,	O
+2	B-time_period
+months,	I-time_period
+రెండు	B-time_period
+నెలలు	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: రెండు నెలలు అవుతుంది. ok.	ACK}
+{\slot
+రెండు	B-time_period
+నెలలు	I-time_period
+అవుతుంది.	O
+ok.	O
+}
+
+{\intent	p: అవును madam	ACK}
+{\slot
+అవును	O
+madam	O
+}
+
+{\intent	d: ఈ రెండు నెలల నుంచే fluctuations ఉన్నాయా? అంతకు ముందే fluctuations ఉండేనా?	INFO_REQUEST}
+{\slot
+ఈ	O
+రెండు	B-time_period
+నెలల	I-time_period
+నుంచే	O
+fluctuations	B-symptom
+ఉన్నాయా?	O
+అంతకు	O
+ముందే	O
+fluctuations	B-symptom
+ఉండేనా?	O
+}
+
+{\intent	p: అంతకు ముందు normal state ఉండే madam	ANSWER}
+{\slot
+అంతకు	O
+ముందు	B-time_period
+normal	B-normal
+state	O
+ఉండే	O
+madam	O
+}
+
+{\intent	d: normal state ok.	ACK}
+{\slot
+normal	B-normal
+state	O
+ok.	O
+}
+
+{\intent	p: ఆ morning 110, 120 ఉన్నది	STATEMENT}
+{\slot
+ఆ	O
+morning	B-time_period
+110,	B-medicine_dose
+120	B-medicine_dose
+ఉన్నది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ మధ్య కాలంలో 300 to 400 మధ్యలో వస్తుంది madam.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కాలంలో	I-time_period
+300	B-mtest_value
+to	O
+400	B-mtest_value
+మధ్యలో	O
+వస్తుంది	O
+madam.	O
+}
+
+{\intent	d: పాప body లో ఏమైనా symptoms ఉన్నాయా? అంటే అలసట కానివ్వండి, weight loss అయిపోవడం కానీ ఇలాంటి symptoms observe చేస్తున్నారా తొందరగా అలసిపోవడం?	INFO_REQUEST}
+{\slot
+పాప	B-person
+body	B-body_part
+లో	O
+ఏమైనా	O
+symptoms	O
+ఉన్నాయా?	O
+అంటే	O
+అలసట	B-symptom
+కానివ్వండి,	O
+weight	B-symptom
+loss	I-symptom
+అయిపోవడం	I-symptom
+కానీ	O
+ఇలాంటి	O
+symptoms	O
+observe	O
+చేస్తున్నారా	O
+తొందరగా	B-symptom
+అలసిపోవడం?	I-symptom
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: fine sir.	ACK}
+{\slot
+fine	O
+sir.	O
+}
+
+{\intent	d: so ఇక్కడ మీరు అంటే childhood history type1 diabetes and insulin dependent diabetes ఇది completeగా .	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇక్కడ	O
+మీరు	O
+అంటే	O
+childhood	B-time_period
+history	O
+type1	B-medical_condition
+diabetes	I-medical_condition
+and	O
+insulin	B-body_substance
+dependent	I-medical_condition
+diabetes	I-medical_condition
+ఇది	O
+completeగా	O
+.	O
+}
+
+{\intent	d: so అయినప్పటి కూడా past 2 months నుంచి లక్షణాలు కనిపిస్తున్నాయి అంటే కొద్దిగా insulin dosage increase చేయాల్సి ఉంటుంది.	ACTION_DIR}
+{\slot
+so	O
+అయినప్పటి	O
+కూడా	O
+past	B-time_period
+2	B-time_period
+months	I-time_period
+నుంచి	O
+లక్షణాలు	O
+కనిపిస్తున్నాయి	O
+అంటే	O
+కొద్దిగా	O
+insulin	B-body_substance
+dosage	B-medicine
+increase	O
+చేయాల్సి	O
+ఉంటుంది.	O
+}
+

@@ -1,0 +1,227 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ madam నాకు	HOLD}
+{\slot
+ఆ	O
+madam	O
+నాకు	O
+}
+
+{\intent	p: madam నమస్తే madam	GREETING}
+{\slot
+madam	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: ya నమస్తే అండి. చెప్పండి	ACTION_DIR}
+{\slot
+ya	O
+నమస్తే	O
+అండి.	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ madam నాకు pregnant first వచ్చింది madam	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+నాకు	O
+pregnant	B-bodily_process
+first	B-frequency
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే 6 monthsకి abortion అయిపోయింది madam	STATEMENT}
+{\slot
+అయితే	O
+6	B-time_period
+monthsకి	I-time_period
+abortion	B-symptom
+అయిపోయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి 10 years అవుతుంది ఇంతవరకి pregnancy లేదు madam	STATEMENT}
+{\slot
+మళ్ళి	O
+10	B-time_period
+years	I-time_period
+అవుతుంది	O
+ఇంతవరకి	O
+pregnancy	B-bodily_process
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే testలన్ని చెప్పించామండీ	STATEMENT}
+{\slot
+అయితే	O
+testలన్ని	B-mtest
+చెప్పించామండీ	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: histroscopy చెప్పించాము, మళ్ళి DNC చేయించాము	STATEMENT}
+{\slot
+histroscopy	B-mtest
+చెప్పించాము,	O
+మళ్ళి	O
+DNC	B-treatment
+చేయించాము	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: blood testలన్ని చేయించాము madam	STATEMENT}
+{\slot
+blood	B-body_substance
+testలన్ని	B-mtest
+చేయించాము	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: bleeding date రాదు madam, వస్తే మాత్రం bleeding one month ఎక్కువ అవుతా ఉంటది madam	STATEMENT}
+{\slot
+bleeding	B-medical_condition
+date	B-bodily_process
+రాదు	B-negative
+madam,	O
+వస్తే	O
+మాత్రం	O
+bleeding	B-medical_condition
+one	B-time_period
+month	I-time_period
+ఎక్కువ	B-intensity
+అవుతా	O
+ఉంటది	O
+madam	O
+}
+
+{\intent	d: ఎక్కువ అవుతుంది ok	ACK}
+{\slot
+ఎక్కువ	B-intensity
+అవుతుంది	O
+ok	O
+}
+
+{\intent	p: దేనివల్ల madam ఇది	STATEMENT}
+{\slot
+దేనివల్ల	O
+madam	O
+ఇది	O
+}
+
+{\intent	d: మీకు ఏ cycles అండి అంటే like ఇట్ల రాకపోవడం అంటే ఎన్ని రోజుల నుంచి ఉండమ్మా?	INFO_REQUEST}
+{\slot
+మీకు	O
+ఏ	O
+cycles	B-bodily_process
+అండి	O
+అంటే	O
+like	O
+ఇట్ల	O
+రాకపోవడం	B-negative
+అంటే	O
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉండమ్మా?	O
+}
+
+{\intent	p: నాకు first నుంచి date అనేది problem ఏ madam	ANSWER}
+{\slot
+నాకు	O
+first	B-frequency
+నుంచి	O
+date	B-bodily_process
+అనేది	O
+problem	O
+ఏ	O
+madam	O
+}
+
+{\intent	d: date అనేది problem ఏ	ACK}
+{\slot
+date	B-bodily_process
+అనేది	O
+problem	O
+ఏ	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీరు ఇవన్నీ testలు అయినాయి అంటున్నారు కదా scanningలో ఏమన్నా PCOS ఉంది అని చెప్పారమ్మా అమ్మా?	INFO_REQUEST}
+{\slot
+మీరు	O
+ఇవన్నీ	O
+testలు	B-mtest
+అయినాయి	O
+అంటున్నారు	O
+కదా	O
+scanningలో	B-mtest
+ఏమన్నా	O
+PCOS	B-symptom
+ఉంది	O
+అని	O
+చెప్పారమ్మా	O
+అమ్మా?	O
+}
+
+{\intent	p: first PCOD ఉంది madam అది ఇప్పుడు clear అయిపోయింది	ANSWER}
+{\slot
+first	B-frequency
+PCOD	B-medical_condition
+ఉంది	O
+madam	O
+అది	O
+ఇప్పుడు	O
+clear	B-normal
+అయిపోయింది	O
+}
+
+{\intent	d: hmm, ok	ACK}
+{\slot
+hmm,	O
+ok	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

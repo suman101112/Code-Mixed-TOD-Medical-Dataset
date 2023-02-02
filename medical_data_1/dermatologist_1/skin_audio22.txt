@@ -1,0 +1,188 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: ya	SU}
+{\slot
+ya	O
+}
+
+{\intent	p: నా పేరు Vijay అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Vijay	B-name
+అండి.	O
+}
+
+{\intent	d: ya, చెప్పండి.	ACTION_DIR}
+{\slot
+ya,	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir ఇది నాకు చిన్న fungal లాగా వచ్చింది sir. ఇది 2 years back	STATEMENT}
+{\slot
+sir	O
+ఇది	O
+నాకు	O
+చిన్న	O
+fungal	B-symptom
+లాగా	I-symptom
+వచ్చింది	I-symptom
+sir.	O
+ఇది	O
+2	B-time_period
+years	I-time_period
+back	I-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇది మన hip back side ఉంటది కదా కుర్చొనే దెగ్గర	STATEMENT}
+{\slot
+ఇది	O
+మన	O
+hip	B-body_part
+back	B-body_part
+side	I-body_part
+ఉంటది	O
+కదా	O
+కుర్చొనే	B-location
+దెగ్గర	I-location
+}
+
+{\intent	d: ya ya	ACK}
+{\slot
+ya	O
+ya	O
+}
+
+{\intent	p: అయితే అక్కడ నేను అప్పుడు దెగ్గరలో doctorను చూపిస్తే fungal infection అని చెప్పి చిన్న ointment ఇచ్చినారు	STATEMENT}
+{\slot
+అయితే	O
+అక్కడ	B-location
+నేను	O
+అప్పుడు	B-time_period
+దెగ్గరలో	O
+doctorను	B-medical_professional
+చూపిస్తే	O
+fungal	B-symptom
+infection	I-symptom
+అని	O
+చెప్పి	O
+చిన్న	B-treatment
+ointment	I-treatment
+ఇచ్చినారు	I-treatment
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే అది july ఉంటదా sir, ointment?	INFO_REQUEST}
+{\slot
+అయితే	O
+అది	O
+july	B-time_period
+ఉంటదా	O
+sir,	O
+ointment?	B-medicine
+}
+
+{\intent	d: అంటే మళ్ళి వస్తుందా మీకు? తగ్గిపోయిందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+మళ్ళి	B-symptom
+వస్తుందా	I-symptom
+మీకు?	O
+తగ్గిపోయిందా?	B-normal
+}
+
+{\intent	p: తగ్గిపోయింది, మళ్ళి వస్తుంది	ANSWER}
+{\slot
+తగ్గిపోయింది,	B-normal
+మళ్ళి	B-symptom
+వస్తుంది	I-symptom
+}
+
+{\intent	d: yayaya	ACK}
+{\slot
+yayaya	O
+}
+
+{\intent	p: అట్ల అట్ల అట్ల పెరుగుతూ పెరుగుతూ చాలా అయిపోయింది	STATEMENT}
+{\slot
+అట్ల	O
+అట్ల	O
+అట్ల	O
+పెరుగుతూ	B-symptom
+పెరుగుతూ	I-symptom
+చాలా	I-symptom
+అయిపోయింది	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది పోవాలంటే ఎట్ల sir మొత్తం completeగానే	INFO_REQUEST}
+{\slot
+అది	O
+పోవాలంటే	O
+ఎట్ల	O
+sir	O
+మొత్తం	O
+completeగానే	O
+}
+
+{\intent	d: yaya	ACK}
+{\slot
+yaya	O
+}
+
+{\intent	p: వాడుతుంటే తగ్గుతుంది, మళ్ళి పెరుగుతుంది.	STATEMENT}
+{\slot
+వాడుతుంటే	B-treatment
+తగ్గుతుంది,	B-normal
+మళ్ళి	O
+పెరుగుతుంది.	B-symptom
+}
+
+{\intent	d: ఇప్పుడు external ointments అనే 99 percent avoid చేయండి, అదేం use ఉండదు.	ACTION_DIR}
+{\slot
+ఇప్పుడు	O
+external	B-medicine
+ointments	I-medicine
+అనే	O
+99	O
+percent	O
+avoid	O
+చేయండి,	O
+అదేం	O
+use	O
+ఉండదు.	O
+}
+
+{\intent	d: externalగా మీరు చేయాల్సింది ఏంటి అంటే, neatness, hygenic condition, dryness ఇది maintain చేయాలి	ACTION_DIR}
+{\slot
+externalగా	O
+మీరు	O
+చేయాల్సింది	O
+ఏంటి	O
+అంటే,	O
+neatness,	B-treatment
+hygenic	I-treatment
+condition,	I-treatment
+dryness	I-treatment
+ఇది	I-treatment
+maintain	I-treatment
+చేయాలి	O
+}
+

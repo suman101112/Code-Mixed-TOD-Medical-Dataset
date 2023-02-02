@@ -1,0 +1,204 @@
+{\intent	p: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండమ్మా వింటున్నాను	CONV_OPEN}
+{\slot
+చెప్పండమ్మా	O
+వింటున్నాను	O
+}
+
+{\intent	p: నా పేరు Sravya	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Sravya	B-name
+}
+
+{\intent	p: నా age వచ్చేసి 20 years	STATEMENT}
+{\slot
+నా	O
+age	O
+వచ్చేసి	O
+20	B-age
+years	I-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు 1 month నుంచి ఉన్నాయి అండి piles, piles ఉంది sir	STATEMENT}
+{\slot
+నాకు	O
+1	B-time_period
+month	I-time_period
+నుంచి	O
+ఉన్నాయి	O
+అండి	O
+piles,	B-symptom
+piles	B-symptom
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: bleeding ఉంది	STATEMENT}
+{\slot
+bleeding	B-medical_condition
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను మములు doctor దెగ్గర నాటు వైద్యం ఉంటుంది కదా, అది తీసుకున్నాను	STATEMENT}
+{\slot
+నేను	O
+మములు	O
+doctor	B-medical_professional
+దెగ్గర	O
+నాటు	B-medicine
+వైద్యం	B-medicine
+ఉంటుంది	O
+కదా,	O
+అది	O
+తీసుకున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తగ్గలెదండీ,	STATEMENT}
+{\slot
+తగ్గలెదండీ,	O
+}
+
+{\intent	p: itching ఉంటుంది, pain ఉంటుంది	STATEMENT}
+{\slot
+itching	B-symptom
+ఉంటుంది,	O
+pain	B-symptom
+ఉంటుంది	O
+}
+
+{\intent	d: అంటే tablets వాడావా అమ్మా? injections తీసుకున్నావా?	INFO_REQUEST}
+{\slot
+అంటే	O
+tablets	B-medicine
+వాడావా	O
+అమ్మా?	O
+injections	B-medicine
+తీసుకున్నావా?	O
+}
+
+{\intent	p: tablets use చేసానండి.	STATEMENT}
+{\slot
+tablets	B-medicine
+use	O
+చేసానండి.	O
+}
+
+{\intent	d: అలాగే	ACK}
+{\slot
+అలాగే	O
+}
+
+{\intent	d: ఇప్పుడు ఏం ఇబ్బంది అవుతుంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+ఇబ్బంది	O
+అవుతుంది?	O
+}
+
+{\intent	p: ఇప్పుడు ఇబ్బంది ఏం లేదండీ .	ANSWER}
+{\slot
+ఇప్పుడు	O
+ఇబ్బంది	O
+ఏం	O
+లేదండీ	O
+.	O
+}
+
+{\intent	p: itching ఉంటుంది. అప్పుడప్పుడు pain ఉంటుంది.	STATEMENT}
+{\slot
+itching	B-symptom
+ఉంటుంది.	O
+అప్పుడప్పుడు	B-time_period
+pain	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అసలు ఇవి piles ఆ కాదా? అర్ధం కావడంలేదు	INFO_REQUEST}
+{\slot
+అసలు	O
+ఇవి	O
+piles	B-symptom
+ఆ	O
+కాదా?	O
+అర్ధం	O
+కావడంలేదు	O
+}
+
+{\intent	d: right అమ్మా Sravya, అంతేనా ఇంకేమన్నా అడగదలచుకున్నావా?	INFO_REQUEST}
+{\slot
+right	O
+అమ్మా	O
+Sravya,	B-name
+అంతేనా	O
+ఇంకేమన్నా	O
+అడగదలచుకున్నావా?	O
+}
+
+{\intent	p: అంతేలెండి	ANSWER}
+{\slot
+అంతేలెండి	O
+}
+
+{\intent	d: right అమ్మా దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+right	O
+అమ్మా	O
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: so 20 సంవత్సరాలు అంటున్నావ్, లక్షణము, ఇబ్బంది కలుగుతుంది, ఈ మాత్రలు వాడావు, తగ్గలేదు,	ACK}
+{\slot
+so	O
+20	B-age
+సంవత్సరాలు	I-age
+అంటున్నావ్,	O
+లక్షణము,	O
+ఇబ్బంది	B-symptom
+కలుగుతుంది,	O
+ఈ	O
+మాత్రలు	B-medicine
+వాడావు,	O
+తగ్గలేదు,	O
+}
+
+{\intent	d: మళ్ళి తిరగబడుతుంది అంటున్నావ్.	ACK}
+{\slot
+మళ్ళి	O
+తిరగబడుతుంది	O
+అంటున్నావ్.	O
+}
+

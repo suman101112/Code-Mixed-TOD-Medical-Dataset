@@ -1,0 +1,131 @@
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: 47, m	ANSWER}
+{\slot
+47,	B-age
+m	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: 3 4 दिन से पाव मैं white patches हो रही. खुजली बहुत आ रही. dry हो जा रही.	STATEMENT}
+{\slot
+3	B-time_period
+4	I-time_period
+दिन	I-time_period
+से	I-time_period
+पाव	B-body_part
+मैं	I-body_part
+white	B-symptom
+patches	I-symptom
+हो	I-symptom
+रही.	I-symptom
+खुजली	B-symptom
+बहुत	I-symptom
+आ	I-symptom
+रही.	I-symptom
+dry	B-symptom
+हो	I-symptom
+जा	I-symptom
+रही.	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: खुजली बहुत आ रहा. white white हो रहा. dry हो रहा.	STATEMENT}
+{\slot
+खुजली	B-symptom
+बहुत	I-symptom
+आ	I-symptom
+रहा.	I-symptom
+white	B-symptom
+white	I-symptom
+हो	I-symptom
+रहा.	I-symptom
+dry	B-symptom
+हो	I-symptom
+रहा.	I-symptom
+}
+
+{\intent	d: खुजली बहुत आ रहा क्या?	INFO_REQUEST}
+{\slot
+खुजली	B-symptom
+बहुत	I-symptom
+आ	I-symptom
+रहा	I-symptom
+क्या?	O
+}
+
+{\intent	p: red red होने लग गया.	ANSWER}
+{\slot
+red	B-symptom
+red	I-symptom
+होने	I-symptom
+लग	I-symptom
+गया.	I-symptom
+}
+
+{\intent	d: कितने दिन से?	INFO_REQUEST}
+{\slot
+कितने	O
+दिन	B-time_period
+से?	I-time_period
+}
+
+{\intent	p: 2 दिन से ऐसे हो रहा	ANSWER}
+{\slot
+2	B-time_period
+दिन	B-time_period
+से	I-time_period
+ऐसे	B-symptom
+हो	I-symptom
+रहा	I-symptom
+}
+
+{\intent	d: क्या हाथों में आ रहा खुजली?	INFO_REQUEST}
+{\slot
+क्या	O
+हाथों	B-body_part
+में	B-location
+आ	B-symptom
+रहा	I-symptom
+खुजली?	I-symptom
+}
+
+{\intent	p: हां और पाव में dry होने से खुजली आ रहा. बहुत जलन हो रहा हाथ में. white white red red patches हो रहा.	ANSWER}
+{\slot
+हां	B-positive
+और	O
+पाव	B-body_part
+में	I-body_part
+dry	B-symptom
+होने	I-symptom
+से	I-symptom
+खुजली	B-symptom
+आ	I-symptom
+रहा.	I-symptom
+बहुत	B-symptom
+जलन	I-symptom
+हो	I-symptom
+रहा	I-symptom
+हाथ	B-body_part
+में.	I-body_part
+white	B-symptom
+white	I-symptom
+red	I-symptom
+red	I-symptom
+patches	I-symptom
+हो	I-symptom
+रहा.	I-symptom
+}
+

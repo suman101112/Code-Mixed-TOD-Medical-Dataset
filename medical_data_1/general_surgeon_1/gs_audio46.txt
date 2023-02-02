@@ -1,0 +1,208 @@
+{\intent	d: నమస్కారం Shiva గారు	GREETING}
+{\slot
+నమస్కారం	O
+Shiva	B-name
+గారు	O
+}
+
+{\intent	p: sir నాకు వచ్చి	HOLD}
+{\slot
+sir	O
+నాకు	O
+వచ్చి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: భొజనం చేసిన తరువాత	HOLD}
+{\slot
+భొజనం	B-bodily_process
+చేసిన	O
+తరువాత	B-time_period
+}
+
+{\intent	d: umm భొజనం చేసిన తరువాత	ACK}
+{\slot
+umm	O
+భొజనం	B-bodily_process
+చేసిన	O
+తరువాత	B-time_period
+}
+
+{\intent	p: breathing తీసుకోలేం sir ఎక్కువ	STATEMENT}
+{\slot
+breathing	B-bodily_process
+తీసుకోలేం	B-symptom
+sir	O
+ఎక్కువ	O
+}
+
+{\intent	d: ఏంటి breathing తీసుకోలేక పోతున్నారా?	REPEAT_REPHRASE}
+{\slot
+ఏంటి	O
+breathing	B-bodily_process
+తీసుకోలేక	B-symptom
+పోతున్నారా?	I-symptom
+}
+
+{\intent	p: అవును sir	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: వెనకాల నొప్పొచ్చేస్తుంది sir వెనకాల	ANSWER}
+{\slot
+వెనకాల	B-location
+నొప్పొచ్చేస్తుంది	B-symptom
+sir	O
+వెనకాల	B-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇలా backside వంగినా	HOLD}
+{\slot
+ఇలా	O
+backside	B-location
+వంగినా	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒకసారి ఇలా back side bend అయినా	HOLD}
+{\slot
+ఒకసారి	O
+ఇలా	O
+back	B-location
+side	I-location
+bend	O
+అయినా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బాగా విపరీతంగా వొళ్ళంతా నొప్పొచ్చేస్తుంది sir	STATEMENT}
+{\slot
+బాగా	B-intensity
+విపరీతంగా	B-intensity
+వొళ్ళంతా	B-body_part
+నొప్పొచ్చేస్తుంది	B-symptom
+sir	O
+}
+
+{\intent	d: ok Shivaగారు	ACK}
+{\slot
+ok	O
+Shivaగారు	B-name
+}
+
+{\intent	p: గుండెల్లో మంటని	STATEMENT}
+{\slot
+గుండెల్లో	B-body_part
+మంటని	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇగ కడుపు పట్టేయడం tightగా	STATEMENT}
+{\slot
+ఇగ	O
+కడుపు	B-body_part
+పట్టేయడం	B-symptom
+tightగా	I-symptom
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: తేణుపు ఎక్కువ	ANSWER}
+{\slot
+తేణుపు	B-symptom
+ఎక్కువ	B-intensity
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: Shivaగారు బయట ఏమైనా food తింటారా లేదంటే ఏమైనా alcohol ఎక్కువగా తీసుకుంటారా?	INFO_REQUEST}
+{\slot
+Shivaగారు	B-name
+బయట	B-location
+ఏమైనా	O
+food	B-food_substance
+తింటారా	B-bodily_process
+లేదంటే	O
+ఏమైనా	O
+alcohol	B-habit
+ఎక్కువగా	B-intensity
+తీసుకుంటారా?	B-bodily_process
+}
+
+{\intent	p: లేదు sir అలాంటి ఏం లేదు sir	ANSWER}
+{\slot
+లేదు	B-negative
+sir	O
+అలాంటి	O
+ఏం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: ok ok sivaగారు	ACK}
+{\slot
+ok	O
+ok	O
+sivaగారు	B-name
+}
+
+{\intent	d: మీకు ఉన్న problem ఎమిటి అంటే GERD అంటారండి, అంటే reflux Esophagitis అంటారు	DIAGNOSIS}
+{\slot
+మీకు	O
+ఉన్న	O
+problem	O
+ఎమిటి	O
+అంటే	O
+GERD	B-medical_condition
+అంటారండి,	O
+అంటే	O
+reflux	B-medical_condition
+Esophagitis	I-medical_condition
+అంటారు	O
+}
+

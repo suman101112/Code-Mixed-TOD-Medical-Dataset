@@ -1,0 +1,140 @@
+{\intent	d: sir చెప్పండి sir	CONV_OPEN}
+{\slot
+sir	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: అది మా mrsకి thyroid ఉందండీ.	STATEMENT}
+{\slot
+అది	O
+మా	O
+mrsకి	B-familal
+thyroid	B-medical_condition
+ఉందండీ.	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి sir.	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	O
+నుంచి	O
+sir.	O
+}
+
+{\intent	p: ఆ ఒక సంవత్సరం నుంచి ఉన్నది.	ANSWER}
+{\slot
+ఆ	O
+ఒక	O
+సంవత్సరం	B-time_period
+నుంచి	O
+ఉన్నది.	O
+}
+
+{\intent	d: ఏం వాడుతుందండి?	INFO_REQUEST}
+{\slot
+ఏం	O
+వాడుతుందండి?	O
+}
+
+{\intent	p: ఈ 75 వాడున్నాం, గోళీ, dose	ANSWER}
+{\slot
+ఈ	O
+75	B-medicine_dose
+వాడున్నాం,	O
+గోళీ,	B-medicine
+dose	B-medicine_dose
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఎట్ల ఉంది sir, health, ఎట్లా ఉంది ?	INFO_REQUEST}
+{\slot
+ఎట్ల	O
+ఉంది	O
+sir,	O
+health,	O
+ఎట్లా	O
+ఉంది	O
+?	O
+}
+
+{\intent	p: ఆమె లావైపోతుంది కొద్దిగా	ANSWER}
+{\slot
+ఆమె	O
+లావైపోతుంది	B-symptom
+కొద్దిగా	O
+}
+
+{\intent	d: లావు అవుతుంది.	ACK}
+{\slot
+లావు	B-symptom
+అవుతుంది.	I-symptom
+}
+
+{\intent	p: ఇంకా అదే, లావవుతుంది, ఇంకా ఎందుకంటే చల్లటి నీళ్లు తాగొద్దన్నారు doctor, చల్లని నీళ్లు తాగట్లేదు	STATEMENT}
+{\slot
+ఇంకా	O
+అదే,	O
+లావవుతుంది,	B-symptom
+ఇంకా	O
+ఎందుకంటే	O
+చల్లటి	O
+నీళ్లు	B-food_substance
+తాగొద్దన్నారు	O
+doctor,	O
+చల్లని	O
+నీళ్లు	B-food_substance
+తాగట్లేదు	B-negative
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఎన్ని సంవత్సరాల నుంచి ఉందండి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+సంవత్సరాల	B-time_period
+నుంచి	O
+ఉందండి?	O
+}
+
+{\intent	p: ఈ 4 సంవత్సరాల నుంచి	ANSWER}
+{\slot
+ఈ	O
+4	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+}
+
+{\intent	d: ok sir ok, ఏం చేయాల్నో చెప్తాను sir.	COMMIT}
+{\slot
+ok	O
+sir	O
+ok,	O
+ఏం	O
+చేయాల్నో	O
+చెప్తాను	O
+sir.	O
+}
+
+{\intent	d: అయితే ఇప్పుడు మీ mrsకి అయితే hypothyroid అనే problem ఉంది sir.	DIAGNOSIS}
+{\slot
+అయితే	O
+ఇప్పుడు	O
+మీ	O
+mrsకి	B-familal
+అయితే	O
+hypothyroid	B-medical_condition
+అనే	O
+problem	O
+ఉంది	O
+sir.	O
+}
+

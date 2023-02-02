@@ -1,0 +1,304 @@
+{\intent	d: Gudiya	STATEMENT}
+{\slot
+Gudiya	B-name
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఏమి Gudiya. क्या problem है?	INFO_REQUEST}
+{\slot
+ఏమి	O
+Gudiya.	B-name
+क्या	O
+problem	O
+है?	O
+}
+
+{\intent	p: महीने नहीं आए	ANSWER}
+{\slot
+महीने	B-bodily_process
+नहीं	B-negative
+आए	O
+}
+
+{\intent	d: अभी pregnant फिर.	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+pregnant	B-bodily_process
+फिर.	O
+}
+
+{\intent	p: क्या है की नहीं मालुम	ANSWER}
+{\slot
+क्या	O
+है	O
+की	O
+नहीं	O
+मालुम	O
+}
+
+{\intent	d: अभी test करें तो negative आया?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+test	B-mtest
+करें	O
+तो	O
+negative	B-mtest_value
+आया?	O
+}
+
+{\intent	p: नहीं.	ANSWER}
+{\slot
+नहीं.	B-negative
+}
+
+{\intent	d: positive आया?	INFO_REQUEST}
+{\slot
+positive	B-mtest_value
+आया?	O
+}
+
+{\intent	p: एक ही चु आ रहा.	ANSWER}
+{\slot
+एक	B-frequency
+ही	O
+चु	O
+आ	O
+रहा.	O
+}
+
+{\intent	d: एक ही चु आ रहा.	ACK}
+{\slot
+एक	B-frequency
+ही	O
+चु	O
+आ	O
+रहा.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: छोटी का उम्र कितना?	INFO_REQUEST}
+{\slot
+छोटी	B-familal
+का	O
+उम्र	O
+कितना?	O
+}
+
+{\intent	p: 2 साल हुए बच्चीको	ANSWER}
+{\slot
+2	B-age
+साल	I-age
+हुए	O
+बच्चीको	B-familal
+}
+
+{\intent	d: पहले बच्ची?	INFO_REQUEST}
+{\slot
+पहले	B-frequency
+बच्ची?	B-familal
+}
+
+{\intent	p: आ दोनों बच्चियाँ	ANSWER}
+{\slot
+आ	O
+दोनों	B-frequency
+बच्चियाँ	B-familal
+}
+
+{\intent	d: बच्ची का उम्र?	INFO_REQUEST}
+{\slot
+बच्ची	B-familal
+का	O
+उम्र?	O
+}
+
+{\intent	p: बड़ी बच्ची 5 साल हुए	ANSWER}
+{\slot
+बड़ी	O
+बच्ची	B-familal
+5	B-age
+साल	I-age
+हुए	O
+}
+
+{\intent	d: 5 साल	ACK}
+{\slot
+5	B-age
+साल	I-age
+}
+
+{\intent	d: दूसरी 2 साल	ACK}
+{\slot
+दूसरी	B-frequency
+2	B-age
+साल	I-age
+}
+
+{\intent	p: 2 साल	ACK}
+{\slot
+2	B-age
+साल	I-age
+}
+
+{\intent	d: थोड़ा वजन कम पैदा हुई ना.	INFO_REQUEST}
+{\slot
+थोड़ा	O
+वजन	B-bm
+कम	B-intensity
+पैदा	B-bodily_process
+हुई	O
+ना.	O
+}
+
+{\intent	p: हां.	ACK}
+{\slot
+हां.	B-positive
+}
+
+{\intent	d: थोड़ा वो पानी कम था	INFO_REQUEST}
+{\slot
+थोड़ा	B-intensity
+वो	O
+पानी	B-food_substance
+कम	B-intensity
+था	O
+}
+
+{\intent	p: हां	ANSWER}
+{\slot
+हां	B-positive
+}
+
+{\intent	d: आखरी महीने का तारीख	INFO_REQUEST}
+{\slot
+आखरी	B-frequency
+महीने	B-bodily_process
+का	O
+तारीख	B-time_period
+}
+
+{\intent	p: november 25	ANSWER}
+{\slot
+november	B-time_period
+25	I-time_period
+}
+
+{\intent	d: november 25	ACK}
+{\slot
+november	B-time_period
+25	I-time_period
+}
+
+{\intent	d: महीना बराबर नहीं रहते?	INFO_REQUEST}
+{\slot
+महीना	B-bodily_process
+बराबर	B-normal
+नहीं	B-negative
+रहते?	O
+}
+
+{\intent	p: november में 2 बार हुए में	ANSWER}
+{\slot
+november	B-time_period
+में	O
+2	B-frequency
+बार	B-frequency
+हुए	B-bodily_process
+में	O
+}
+
+{\intent	d: इससे पहले 2 महीने 3 महीने को एक बार होते थे?	INFO_REQUEST}
+{\slot
+इससे	O
+पहले	B-time_period
+2	B-time_period
+महीने	I-time_period
+3	B-time_period
+महीने	I-time_period
+को	O
+एक	B-frequency
+बार	I-frequency
+होते	B-bodily_process
+थे?	O
+}
+
+{\intent	p: नहीं इससे पहले बराबर अच्छे हुए	ANSWER}
+{\slot
+नहीं	B-negative
+इससे	O
+पहले	O
+बराबर	B-normal
+अच्छे	O
+हुए	O
+}
+
+{\intent	d: कभी भी late नहीं हुआ	INFO_REQUEST}
+{\slot
+कभी	B-time_period
+भी	O
+late	B-symptom
+नहीं	B-negative
+हुआ	O
+}
+
+{\intent	p: नहीं	ANSWER}
+{\slot
+नहीं	B-negative
+}
+
+{\intent	d: उल्टियां हो जा रहा बहुत	INFO_REQUEST}
+{\slot
+उल्टियां	B-symptom
+हो	O
+जा	O
+रहा	O
+बहुत	B-intensity
+}
+
+{\intent	p: अभी दो बार हुए उल्टी	ANSWER}
+{\slot
+अभी	B-time_period
+दो	B-frequency
+बार	I-frequency
+हुए	O
+उल्टी	B-symptom
+}
+
+{\intent	d: अभी ये continue करने का pregnancy, और एक चाहिए?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+ये	O
+continue	O
+करने	O
+का	O
+pregnancy	B-bodily_process
+और	O
+एक	O
+चाहिए?	O
+}
+
+{\intent	p: क्या है की वो नहीं है बोले तो आप के पास आये .	ANSWER}
+{\slot
+क्या	O
+है	O
+की	O
+वो	O
+नहीं	O
+है	O
+बोले	O
+तो	O
+आप	O
+के	O
+पास	O
+आये	O
+.	O
+}
+

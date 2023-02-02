@@ -1,0 +1,136 @@
+{\intent	d: పడుకోబెట్టండి.	ACTION_DIR}
+{\slot
+పడుకోబెట్టండి.	O
+}
+
+{\intent	d: ఏం పేరు అమ్మా	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా	O
+}
+
+{\intent	p1: Manvita sir	ANSWER}
+{\slot
+Manvita	B-name
+sir	O
+}
+
+{\intent	d: చెప్పండి ఏం problem ఉంది	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏం	O
+problem	O
+ఉంది	O
+}
+
+{\intent	p1: morning fever ఉండే	ANSWER}
+{\slot
+morning	B-time_period
+fever	B-symptom
+ఉండే	O
+}
+
+{\intent	p1: 3 days నుంచి motions అయినయి	STATEMENT}
+{\slot
+3	B-time_period
+days	I-time_period
+నుంచి	O
+motions	B-symptom
+అయినయి	O
+}
+
+{\intent	p1: తగ్గిపోయింది	STATEMENT}
+{\slot
+తగ్గిపోయింది	B-normal
+}
+
+{\intent	d: ఈ రోజూ problem ఏంటి అండి?	INFO_REQUEST}
+{\slot
+ఈ	O
+రోజూ	O
+problem	O
+ఏంటి	O
+అండి?	O
+}
+
+{\intent	p1: morning నుంచి లేచినప్పటినుంచి urine పోయలే	ANSWER}
+{\slot
+morning	B-time_period
+నుంచి	O
+లేచినప్పటినుంచి	B-time_period
+urine	B-body_substance
+పోయలే	B-negative
+}
+
+{\intent	d: urine, దొడ్డికి పోయింది కానీ మూత్రం పోయలే?	INFO_REQUEST}
+{\slot
+urine,	B-body_substance
+దొడ్డికి	B-body_substance
+పోయింది	B-bodily_process
+కానీ	O
+మూత్రం	B-body_substance
+పోయలే?	B-bodily_process
+}
+
+{\intent	p1: దొడ్డికి కూడా పోలేదు sir.	ANSWER}
+{\slot
+దొడ్డికి	B-body_substance
+కూడా	O
+పోలేదు	B-negative
+sir.	O
+}
+
+{\intent	d: మూత్రం ఎప్పటి నుంచి time	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+ఎప్పటి	O
+నుంచి	O
+time	B-time_period
+}
+
+{\intent	p1: పడుకునే ముందు పోసింది sir.	ANSWER}
+{\slot
+పడుకునే	B-bodily_process
+ముందు	O
+పోసింది	O
+sir.	O
+}
+
+{\intent	d: serum creatinine అని ఉంటుంది, చెప్పించి నాకు చూపించండి.	ACTION_DIR}
+{\slot
+serum	B-mtest
+creatinine	I-mtest
+అని	O
+ఉంటుంది,	O
+చెప్పించి	O
+నాకు	O
+చూపించండి.	O
+}
+
+{\intent	p1: మూత్రం పోయడంలో ఇట్ల మంట మండుతాంది అని చెప్తుంది.	STATEMENT}
+{\slot
+మూత్రం	B-body_substance
+పోయడంలో	B-bodily_process
+ఇట్ల	O
+మంట	B-symptom
+మండుతాంది	I-symptom
+అని	O
+చెప్తుంది.	O
+}
+
+{\intent	d: అదే creatinine చేస్తే normal ఆ, నీళ్లు సరిగ్గా లేకపోవడం వల్ల రావట్లేదా తెలుస్తుంది?	STATEMENT}
+{\slot
+అదే	O
+creatinine	B-body_substance
+చేస్తే	O
+normal	B-normal
+ఆ,	O
+నీళ్లు	B-food_substance
+సరిగ్గా	O
+లేకపోవడం	B-negative
+వల్ల	O
+రావట్లేదా	O
+తెలుస్తుంది?	O
+}
+

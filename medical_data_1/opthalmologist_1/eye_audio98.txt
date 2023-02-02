@@ -1,0 +1,94 @@
+{\intent	p: doctor గారు నా పేరు Kamalaakar.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Kamalaakar.	B-name
+}
+
+{\intent	p: నా వయస్సు 20 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+20	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: degree చదువుతున్నాను.	STATEMENT}
+{\slot
+degree	B-profession
+చదువుతున్నాను.	O
+}
+
+{\intent	p: నాకు చిన్నప్పటి నుంచి ఒక వైపు తలనొప్పి వస్తుంది.	STATEMENT}
+{\slot
+నాకు	O
+చిన్నప్పటి	O
+నుంచి	O
+ఒక	O
+వైపు	B-location
+తలనొప్పి	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p: ఎండాకాలం మొదలయ్యే కొద్ది ఈ తలనొప్పి బాధపెడుతూ ఉంటుంది.	STATEMENT}
+{\slot
+ఎండాకాలం	O
+మొదలయ్యే	O
+కొద్ది	O
+ఈ	O
+తలనొప్పి	B-symptom
+బాధపెడుతూ	I-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: ఉదయం నుంచి మధ్యానం వరకు ఎడమ వైపు తలనొప్పిగా ఉంటుంది. సాయింత్రం అయ్యేసారికి తగ్గుతూ ఉంటుంది.	STATEMENT}
+{\slot
+ఉదయం	B-time_period
+నుంచి	O
+మధ్యానం	B-time_period
+వరకు	O
+ఎడమ	B-location
+వైపు	I-location
+తలనొప్పిగా	B-symptom
+ఉంటుంది.	O
+సాయింత్రం	B-time_period
+అయ్యేసారికి	O
+తగ్గుతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	p: కనుబొమ్మ పైభాగంలో వచ్చే ఈ తలనొప్పికి పరిష్కారం తెలియజేయండి.	STATEMENT}
+{\slot
+కనుబొమ్మ	B-body_part
+పైభాగంలో	B-location
+వచ్చే	O
+ఈ	O
+తలనొప్పికి	B-symptom
+పరిష్కారం	B-treatment
+తెలియజేయండి.	O
+}
+
+{\intent	d: మీరు చెప్పినా దాని ప్రకారంగా తలనొప్పి అనే సమస్యకు 2 కారణాలు ఉండొచ్చండి.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+చెప్పినా	O
+దాని	O
+ప్రకారంగా	O
+తలనొప్పి	B-symptom
+అనే	O
+సమస్యకు	O
+2	O
+కారణాలు	O
+ఉండొచ్చండి.	O
+}
+
+{\intent	d: ఒక్కటి commonగా ఉండేది sinusitis.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటి	O
+commonగా	O
+ఉండేది	O
+sinusitis.	B-symptom
+}
+

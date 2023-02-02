@@ -1,0 +1,281 @@
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Baala Krishna	ANSWER}
+{\slot
+Baala	B-name
+Krishna	I-name
+}
+
+{\intent	p: K Baala Krishna	ANSWER}
+{\slot
+K	B-name
+Baala	I-name
+Krishna	I-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 19	ANSWER}
+{\slot
+19	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఈ చెవి ఏ బాగా నొస్తాంది. చీమెల్తాంది.	ANSWER}
+{\slot
+ఈ	O
+చెవి	B-body_part
+ఏ	O
+బాగా	B-intensity
+నొస్తాంది.	B-symptom
+చీమెల్తాంది.	B-symptom
+}
+
+{\intent	d: దెగ్గర రా	ACTION_DIR}
+{\slot
+దెగ్గర	O
+రా	O
+}
+
+{\intent	p: ఆ గడ్డ కట్టింది.	STATEMENT}
+{\slot
+ఆ	O
+గడ్డ	B-symptom
+కట్టింది.	I-symptom
+}
+
+{\intent	d: ok ఈ చెవు	ACTION_DIR}
+{\slot
+ok	O
+ఈ	O
+చెవు	B-body_part
+}
+
+{\intent	d: सर्दी దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: మందులు రాసి ఇస్తా.	COMMIT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా.	O
+}
+
+{\intent	p: ఇట్ల బాగా నొస్తుంది	STATEMENT}
+{\slot
+ఇట్ల	O
+బాగా	B-intensity
+నొస్తుంది	B-symptom
+}
+
+{\intent	p: ఇది జీబిడి ఉంది.	STATEMENT}
+{\slot
+ఇది	O
+జీబిడి	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ఆ జీబిలి ఉంది నొస్తుంది గా.	STATEMENT}
+{\slot
+ఆ	O
+జీబిలి	B-symptom
+ఉంది	O
+నొస్తుంది	B-symptom
+గా.	O
+}
+
+{\intent	d: జీబిలి లేదు.	CORRECT}
+{\slot
+జీబిలి	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: చెవు cleanగా ఉంది	STATEMENT}
+{\slot
+చెవు	B-body_part
+cleanగా	B-normal
+ఉంది	O
+}
+
+{\intent	d: పుండు అయింది.	STATEMENT}
+{\slot
+పుండు	B-medical_condition
+అయింది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అర్ధమైతుందా? వినపడుతుందా మంచిగా?	INFO_REQUEST}
+{\slot
+అర్ధమైతుందా?	O
+వినపడుతుందా	B-bodily_process
+మంచిగా?	B-normal
+}
+
+{\intent	p: వినపడుతుంది sir.	ANSWER}
+{\slot
+వినపడుతుంది	B-bodily_process
+sir.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఇట్లా?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇట్లా?	O
+}
+
+{\intent	p: 10 days అయితుంది.	ANSWER}
+{\slot
+10	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: జీబిలి లేదు.	STATEMENT}
+{\slot
+జీబిలి	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: పుండు ఉంది, మందులు వేస్కో, తగ్గుతది.	ACTION_DIR}
+{\slot
+పుండు	B-medical_condition
+ఉంది,	O
+మందులు	B-medicine
+వేస్కో,	O
+తగ్గుతది.	O
+}
+
+{\intent	d: పుల్లలు పెట్టకు.	ACTION_DIR}
+{\slot
+పుల్లలు	O
+పెట్టకు.	O
+}
+
+{\intent	d: అర్ధమైందా?	INFO_REQUEST}
+{\slot
+అర్ధమైందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: జీబిలి గడ్డ కట్టిస్తుంది.	STATEMENT}
+{\slot
+జీబిలి	B-symptom
+గడ్డ	B-medical_condition
+కట్టిస్తుంది.	O
+}
+
+{\intent	d: జీబిలి లేదురా బాబు.	STATEMENT}
+{\slot
+జీబిలి	B-symptom
+లేదురా	B-negative
+బాబు.	O
+}
+
+{\intent	d: neatగా ఉంది చెవు ఒక్క జీబిలి లేదు	STATEMENT}
+{\slot
+neatగా	B-normal
+ఉంది	O
+చెవు	B-body_part
+ఒక్క	O
+జీబిలి	B-symptom
+లేదు	B-negative
+}
+
+{\intent	d: ఇప్పుడు నువ్వేం చేయకు, మందులు వేస్కో, తగ్గుతది.	ACTION_DIR}
+{\slot
+ఇప్పుడు	O
+నువ్వేం	O
+చేయకు,	O
+మందులు	B-medicine
+వేస్కో,	O
+తగ్గుతది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అర్ధమైందా?	INFO_REQUEST}
+{\slot
+అర్ధమైందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: నువ్వు పుల్లలు పెట్టకు, జీబిలి లేదు	ACTION_DIR}
+{\slot
+నువ్వు	O
+పుల్లలు	O
+పెట్టకు,	O
+జీబిలి	B-symptom
+లేదు	B-negative
+}
+
+{\intent	d: పుండు ఉంది, మందులతోని తగ్గుతది.	DIAGNOSIS}
+{\slot
+పుండు	B-medical_condition
+ఉంది,	O
+మందులతోని	B-medicine
+తగ్గుతది.	O
+}
+
+{\intent	p: సరే	ACK}
+{\slot
+సరే	O
+}
+

@@ -1,0 +1,140 @@
+{\intent	p: sir, kidney problemsతో బాధపడుతున్నాను sir	STATEMENT}
+{\slot
+sir,	O
+kidney	B-body_part
+problemsతో	B-symptom
+బాధపడుతున్నాను	B-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: creatinine వచ్చేసి 7.8 ఉన్నది	STATEMENT}
+{\slot
+creatinine	B-body_substance
+వచ్చేసి	O
+7.8	B-mtest_value
+ఉన్నది	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: అది creatinine level 7.8 ఉన్నది అండి.	REPEAT_REPHRASE}
+{\slot
+అది	O
+creatinine	B-body_substance
+level	O
+7.8	B-mtest_value
+ఉన్నది	O
+అండి.	O
+}
+
+{\intent	d: మీ వయస్సు sir?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+sir?	O
+}
+
+{\intent	p: 57 years	ANSWER}
+{\slot
+57	B-age
+years	I-age
+}
+
+{\intent	d: sugar కానీ bp కానీ ఉన్నాయా అండి	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+కానీ	O
+bp	B-medical_condition
+కానీ	O
+ఉన్నాయా	O
+అండి	O
+}
+
+{\intent	p: ఆ sugar controlలో ఉంది , bp రెండు controlలోనే ఉన్నాయి.	ANSWER}
+{\slot
+ఆ	O
+sugar	B-medical_condition
+controlలో	B-normal
+ఉంది	O
+,	O
+bp	B-medical_condition
+రెండు	O
+controlలోనే	B-normal
+ఉన్నాయి.	O
+}
+
+{\intent	d: so ఇది ఎప్పటినుంచి ఉన్నది problem, creatinine ఎక్కువగా ఉందటం అనేది?	INFO_REQUEST}
+{\slot
+so	O
+ఇది	O
+ఎప్పటినుంచి	O
+ఉన్నది	O
+problem,	O
+creatinine	B-body_substance
+ఎక్కువగా	B-intensity
+ఉందటం	O
+అనేది?	O
+}
+
+{\intent	p: ఆ ఉంది ఒక 5 6 సంవత్సరాల నుంచి ఉంది	ANSWER}
+{\slot
+ఆ	O
+ఉంది	O
+ఒక	O
+5	B-quantity
+6	B-quantity
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: Dialysis ఏమైనా start చేసారా?	INFO_REQUEST}
+{\slot
+Dialysis	B-treatment
+ఏమైనా	O
+start	O
+చేసారా?	O
+}
+
+{\intent	p: ఆ start చేయలేదు అండి	ANSWER}
+{\slot
+ఆ	O
+start	O
+చేయలేదు	O
+అండి	O
+}
+
+{\intent	d: చేయలేదా అండి?	INFO_REQUEST}
+{\slot
+చేయలేదా	O
+అండి?	O
+}
+
+{\intent	p: ఆ start చేయలేదు అండి	ANSWER}
+{\slot
+ఆ	O
+start	O
+చేయలేదు	O
+అండి	O
+}
+
+{\intent	d: usualగా మీకున్నా problemకి chronic kidney disease అంటారు	DIAGNOSIS}
+{\slot
+usualగా	O
+మీకున్నా	O
+problemకి	O
+chronic	B-medical_condition
+kidney	I-medical_condition
+disease	I-medical_condition
+అంటారు	O
+}
+

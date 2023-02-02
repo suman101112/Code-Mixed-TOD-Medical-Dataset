@@ -1,0 +1,72 @@
+{\intent	p: doctor గారు నా పేరు Jilaani.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Jilaani.	B-name
+}
+
+{\intent	p: నాకు చీకటి పడగానే కంటి చూపు తగ్గుతుంది.	STATEMENT}
+{\slot
+నాకు	O
+చీకటి	B-time_period
+పడగానే	O
+కంటి	B-body_part
+చూపు	B-bodily_process
+తగ్గుతుంది.	B-symptom
+}
+
+{\intent	p: ఇదేమన్నా vitamin లోపమా?	INFO_REQUEST}
+{\slot
+ఇదేమన్నా	O
+vitamin	B-body_substance
+లోపమా?	O
+}
+
+{\intent	d: వెలుతురు లేనప్పుడు చూపు మందగించింది అంటే 2 రకాలుగా మీరు అన్నట్టు vitamin A deficiency ఉన్నప్పుడు జరిగే సమస్య ఇది ఒక్కటి.	MEDICAL_EXPLANATION}
+{\slot
+వెలుతురు	O
+లేనప్పుడు	O
+చూపు	B-bodily_process
+మందగించింది	B-symptom
+అంటే	O
+2	O
+రకాలుగా	O
+మీరు	O
+అన్నట్టు	O
+vitamin	B-body_substance
+A	I-body_substance
+deficiency	I-medical_condition
+ఉన్నప్పుడు	O
+జరిగే	O
+సమస్య	O
+ఇది	O
+ఒక్కటి.	O
+}
+
+{\intent	d: ఇంకో కారణం ఉంది. అది geneticalగా జెన్యుపరంగా generalగా మేనరికం చేసుకున్నా వాళ్ళలో పుట్టే పిల్లలకు కనబడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఇంకో	O
+కారణం	O
+ఉంది.	O
+అది	O
+geneticalగా	O
+జెన్యుపరంగా	O
+generalగా	O
+మేనరికం	O
+చేసుకున్నా	O
+వాళ్ళలో	O
+పుట్టే	O
+పిల్లలకు	O
+కనబడుతుంది.	O
+}
+
+{\intent	d: దీని Retinitis pigmentosa అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+దీని	O
+Retinitis	B-medical_condition
+pigmentosa	I-medical_condition
+అంటాము.	O
+}
+

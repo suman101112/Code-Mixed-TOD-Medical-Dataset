@@ -1,0 +1,215 @@
+{\intent	p: Hello good morning అండి doctor	GREETING}
+{\slot
+Hello	O
+good	O
+morning	O
+అండి	O
+doctor	B-medical_professional
+}
+
+{\intent	p: నేను Suresh baabu మట్లాడుతున్నాను అండి	STATEMENT}
+{\slot
+నేను	O
+Suresh	B-name
+baabu	I-name
+మట్లాడుతున్నాను	O
+అండి	O
+}
+
+{\intent	d: ఆ good morning అండి	GREETING}
+{\slot
+ఆ	O
+good	O
+morning	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: sir నాకు lower lip and upper lip మీద మచ్చలు ఉన్నాయి అన్నమాట	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+lower	B-body_part
+lip	I-body_part
+and	O
+upper	B-body_part
+lip	I-body_part
+మీద	I-body_part
+మచ్చలు	B-symptom
+ఉన్నాయి	I-symptom
+అన్నమాట	O
+}
+
+{\intent	p: ఆ ఆ i mean vitiligo అని చెప్పారు నాకు	STATEMENT}
+{\slot
+ఆ	O
+ఆ	O
+i	O
+mean	O
+vitiligo	B-symptom
+అని	O
+చెప్పారు	O
+నాకు	O
+}
+
+{\intent	p: actualగా నేను treatment తీసుకున్న	STATEMENT}
+{\slot
+actualగా	O
+నేను	O
+treatment	B-treatment
+తీసుకున్న	I-treatment
+}
+
+{\intent	p: ఇది ఒక 8 9 years నుంచి ఉంది అండి.	STATEMENT}
+{\slot
+ఇది	O
+ఒక	B-time_period
+8	I-time_period
+9	I-time_period
+years	I-time_period
+నుంచి	I-time_period
+ఉంది	B-positive
+అండి.	O
+}
+
+{\intent	p: అది treatment తీసుకుంటున్న but అయితే తగ్గట్లేదు, అండి.	STATEMENT}
+{\slot
+అది	O
+treatment	B-treatment
+తీసుకుంటున్న	I-treatment
+but	O
+అయితే	O
+తగ్గట్లేదు,	B-negative
+అండి.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	d: అలాగే stableగా ఉన్నాయా అండి మచ్చలు?	INFO_REQUEST}
+{\slot
+అలాగే	O
+stableగా	B-normal
+ఉన్నాయా	I-normal
+అండి	O
+మచ్చలు?	B-symptom
+}
+
+{\intent	p: అవును stableగా ఉన్నాయి sir.	ANSWER}
+{\slot
+అవును	B-positive
+stableగా	B-normal
+ఉన్నాయి	I-normal
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇక పోతే under arm కింద ఒక 1cm అంత వచ్చింది	STATEMENT}
+{\slot
+ఇక	O
+పోతే	O
+under	B-body_part
+arm	I-body_part
+కింద	I-body_part
+ఒక	O
+1cm	B-mtest_value
+అంత	I-mtest_value
+వచ్చింది	B-symptom
+}
+
+{\intent	p: అయితే అది medicine వాడినప్పుడు తగ్గిపోయింది	STATEMENT}
+{\slot
+అయితే	O
+అది	O
+medicine	B-treatment
+వాడినప్పుడు	B-time_period
+తగ్గిపోయింది	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆపేసినప్పుడు అట్లానే ఉంది అన్నమాట అంటే ఎక్కడికి ఆగిపోయిందో అట్లానే ఉంది	STATEMENT}
+{\slot
+ఆపేసినప్పుడు	B-time_period
+అట్లానే	B-symptom
+ఉంది	I-symptom
+అన్నమాట	O
+అంటే	O
+ఎక్కడికి	B-location
+ఆగిపోయిందో	I-location
+అట్లానే	B-symptom
+ఉంది	I-symptom
+}
+
+{\intent	d: overallగా మీరు చెప్పేది ఏంటి అంటే lips మీద బొల్లి మచ్చలు వచ్చాయి, అవి తగ్గడం లేదు	STATEMENT}
+{\slot
+overallగా	O
+మీరు	O
+చెప్పేది	O
+ఏంటి	O
+అంటే	O
+lips	B-body_part
+మీద	B-location
+బొల్లి	B-symptom
+మచ్చలు	I-symptom
+వచ్చాయి,	I-symptom
+అవి	B-symptom
+తగ్గడం	B-normal
+లేదు	I-negative
+}
+
+{\intent	d: iam right?	INFO_REQUEST}
+{\slot
+iam	O
+right?	O
+}
+
+{\intent	d: so వాటికి ultra thin grafting అనేది చాలా మంచిగా పనిచెస్తుదండి.	STATEMENT}
+{\slot
+so	O
+వాటికి	O
+ultra	B-treatment
+thin	I-treatment
+grafting	I-treatment
+అనేది	O
+చాలా	O
+మంచిగా	O
+పనిచెస్తుదండి.	O
+}
+
+{\intent	d: first అయితే laser treatment అనేది ఒక 12 settings తీసుకోని చూడండి, generally laser ద్వారా కూడా lips పైన improvement వస్తుంది.	STATEMENT}
+{\slot
+first	O
+అయితే	O
+laser	B-treatment
+treatment	I-treatment
+అనేది	O
+ఒక	O
+12	B-treatment
+settings	I-treatment
+తీసుకోని	I-treatment
+చూడండి,	O
+generally	O
+laser	B-treatment
+ద్వారా	O
+కూడా	O
+lips	B-body_part
+పైన	I-body_part
+improvement	B-normal
+వస్తుంది.	I-normal
+}
+

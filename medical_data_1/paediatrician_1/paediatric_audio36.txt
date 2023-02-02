@@ -1,0 +1,109 @@
+{\intent	d: 10	ANSWER}
+{\slot
+10	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p1: మొన్న నిన్న night జ్వరం వచ్చి, దగ్గు	ANSWER}
+{\slot
+మొన్న	B-time_period
+నిన్న	O
+night	B-time_period
+జ్వరం	B-symptom
+వచ్చి,	O
+దగ్గు	B-symptom
+}
+
+{\intent	d: దగ్గు, జ్వరము	ACK}
+{\slot
+దగ్గు,	B-symptom
+జ్వరము	B-symptom
+}
+
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p1: Darsha	ANSWER}
+{\slot
+Darsha	B-name
+}
+
+{\intent	d: ఎప్పటినుంచి జ్వరం దగ్గు ఇవన్నీ.	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+జ్వరం	B-symptom
+దగ్గు	B-symptom
+ఇవన్నీ.	O
+}
+
+{\intent	p1: మొన్ననే suddenగా	ANSWER}
+{\slot
+మొన్ననే	B-time_period
+suddenగా	O
+}
+
+{\intent	d: ఇప్పుడు 101.2	STATEMENT}
+{\slot
+ఇప్పుడు	O
+101.2	B-mtest_value
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+
+{\intent	d: కుర్చో.	ACTION_DIR}
+{\slot
+కుర్చో.	O
+}
+
+{\intent	d: syrup మింగుతాదా, గోళీలా?	INFO_REQUEST}
+{\slot
+syrup	B-medicine
+మింగుతాదా,	O
+గోళీలా?	B-medicine
+}
+
+{\intent	p1: గోళీలు కూడా sir, syrup రాయండి.	ACTION_DIR}
+{\slot
+గోళీలు	B-medicine
+కూడా	O
+sir,	O
+syrup	B-medicine
+రాయండి.	O
+}
+
+{\intent	p1: కొంచం పెరుగుతుంది కొంచం తగ్గుతుంది.	STATEMENT}
+{\slot
+కొంచం	O
+పెరుగుతుంది	O
+కొంచం	O
+తగ్గుతుంది.	O
+}
+
+{\intent	d: सर्दी బాగా ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+బాగా	B-intensity
+ఉందా?	O
+}
+
+{\intent	p1: మామూలుగా	ANSWER}
+{\slot
+మామూలుగా	O
+}
+

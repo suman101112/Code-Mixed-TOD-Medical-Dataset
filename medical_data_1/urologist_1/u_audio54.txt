@@ -1,0 +1,55 @@
+{\intent	d: కుర్చోండి బాబు,	ACTION_DIR}
+{\slot
+కుర్చోండి	O
+బాబు,	O
+}
+
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: sir	SNU}
+{\slot
+sir	O
+}
+
+{\intent	d: చెప్పండి ఏం ఇబ్బంది ఉంది.	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: ఇదిగో ఇది గజ్జల ఉబ్బుతది,,	ANSWER}
+{\slot
+ఇదిగో	O
+ఇది	O
+గజ్జల	B-body_part
+ఉబ్బుతది,,	B-symptom
+}
+
+{\intent	p: గజ్జల	STATEMENT}
+{\slot
+గజ్జల	B-body_part
+}
+
+{\intent	d: చూపీ,	ACTION_DIR}
+{\slot
+చూపీ,	O
+}
+
+{\intent	d: అక్కడ చూపియండి	ACTION_DIR}
+{\slot
+అక్కడ	O
+చూపియండి	O
+}
+
+{\intent	d: paper తీసుకోండి.	ACTION_DIR}
+{\slot
+paper	O
+తీసుకోండి.	O
+}
+

@@ -1,0 +1,42 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 65, m.	ANSWER}
+{\slot
+65,	B-age
+m.	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: గజ్జల మధ్య బాగా దురద పెడుతుంది sir.	ANSWER}
+{\slot
+గజ్జల	B-body_part
+మధ్య	I-body_part
+బాగా	B-symptom
+దురద	I-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: morning అయితుందా? night అయితుందా?	INFO_REQUEST}
+{\slot
+morning	B-time_period
+అయితుందా?	B-symptom
+night	B-time_period
+అయితుందా?	B-symptom
+}
+
+{\intent	p: night అయితుంది sir.	ANSWER}
+{\slot
+night	B-time_period
+అయితుంది	B-positive
+sir.	O
+}
+

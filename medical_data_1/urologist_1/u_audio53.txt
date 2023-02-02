@@ -1,0 +1,167 @@
+{\intent	d: రండమ్మా కుర్చోండి	ACTION_DIR}
+{\slot
+రండమ్మా	O
+కుర్చోండి	O
+}
+
+{\intent	d: ఏం లేదమ్మా scanలో చిన్న రవుతులున్నాయి, రెండు sideలు రవుతులున్నాయి చిన్నవి.	DIAGNOSIS}
+{\slot
+ఏం	O
+లేదమ్మా	O
+scanలో	O
+చిన్న	O
+రవుతులున్నాయి,	B-body_substance
+రెండు	B-frequency
+sideలు	B-location
+రవుతులున్నాయి	B-body_substance
+చిన్నవి.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: operation చేసే అవసరం లేదు	STATEMENT}
+{\slot
+operation	B-treatment
+చేసే	O
+అవసరం	O
+లేదు	B-negative
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: నీళ్లు బాగా తాగి, కొన్ని మందులు రాసి ఇస్తా, వాటితోనే కరిగిపోతుంది	STATEMENT}
+{\slot
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగి,	B-bodily_process
+కొన్ని	O
+మందులు	B-medicine
+రాసి	O
+ఇస్తా,	O
+వాటితోనే	O
+కరిగిపోతుంది	B-normal
+}
+
+{\intent	p: సరే	ACK}
+{\slot
+సరే	O
+}
+
+{\intent	d: మూత్రంలోనే కిందకి వచ్చేస్తుంది	MEDICAL_EXPLANATION}
+{\slot
+మూత్రంలోనే	B-body_substance
+కిందకి	B-location
+వచ్చేస్తుంది	O
+}
+
+{\intent	p: సరే doctor	ACK}
+{\slot
+సరే	O
+doctor	B-medical_professional
+}
+
+{\intent	d: కానీ నీళ్లు బాగా తాగాలి	STATEMENT}
+{\slot
+కానీ	O
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగాలి	B-bodily_process
+}
+
+{\intent	p: సరే	ACK}
+{\slot
+సరే	O
+}
+
+{\intent	p: ఇది బాగా గుంజుతాంది sir, ఈ కళ్ళు బాగా గుంజుతాంది.	STATEMENT}
+{\slot
+ఇది	O
+బాగా	B-intensity
+గుంజుతాంది	B-symptom
+sir,	O
+ఈ	O
+కళ్ళు	B-body_part
+బాగా	B-intensity
+గుంజుతాంది.	B-symptom
+}
+
+{\intent	d: అదేనమ్మా రవుతులు ఉన్నాయి కదా	STATEMENT}
+{\slot
+అదేనమ్మా	O
+రవుతులు	B-body_substance
+ఉన్నాయి	O
+కదా	O
+}
+
+{\intent	d: గుంజుతది	MEDICAL_EXPLANATION}
+{\slot
+గుంజుతది	B-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అట్లానే ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+అట్లానే	O
+ఉంటుంది	O
+}
+
+{\intent	p: मस्त నొస్తాంది నాకు	STATEMENT}
+{\slot
+मस्त	B-intensity
+నొస్తాంది	B-symptom
+నాకు	O
+}
+
+{\intent	d: ఒక వారం అంతా గట్లనే ఉంటది	STATEMENT}
+{\slot
+ఒక	O
+వారం	B-time_period
+అంతా	O
+గట్లనే	O
+ఉంటది	O
+}
+
+{\intent	p: ఓపిక లేదు sir నాకు, చాన ఓపిక లేదు, చాన నొప్పి బాగా ఉన్నది sir	STATEMENT}
+{\slot
+ఓపిక	O
+లేదు	O
+sir	O
+నాకు,	O
+చాన	O
+ఓపిక	O
+లేదు,	O
+చాన	B-intensity
+నొప్పి	B-symptom
+బాగా	B-intensity
+ఉన్నది	O
+sir	O
+}
+
+{\intent	d: సరే అమ్మా, తగ్గుతది, తగ్గుతది, ఒక వారం time పడతది అంతే.	STATEMENT}
+{\slot
+సరే	O
+అమ్మా,	B-person
+తగ్గుతది,	B-normal
+తగ్గుతది,	B-normal
+ఒక	O
+వారం	B-time_period
+time	B-time_period
+పడతది	O
+అంతే.	O
+}
+

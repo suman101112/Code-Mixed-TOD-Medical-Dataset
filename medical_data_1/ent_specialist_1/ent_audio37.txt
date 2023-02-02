@@ -1,0 +1,147 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Pravalika sir	ANSWER}
+{\slot
+Pravalika	B-name
+sir	O
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 27	ANSWER}
+{\slot
+27	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: నంజు గుడ్డలు తీసి సంవత్సరం అయితుంది sir.	ANSWER}
+{\slot
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+తీసి	B-treatment
+సంవత్సరం	B-time_period
+అయితుంది	O
+sir.	O
+}
+
+{\intent	d: ఎవరు తీసినారు?	INFO_REQUEST}
+{\slot
+ఎవరు	O
+తీసినారు?	B-treatment
+}
+
+{\intent	p: Vijay	ANSWER}
+{\slot
+Vijay	B-medical_professional
+}
+
+{\intent	p1: మన Vijay kumar గారు	ANSWER}
+{\slot
+మన	O
+Vijay	B-medical_professional
+kumar	I-health_professional
+గారు	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అప్పుడప్పుడు గొంతు నొప్పిలేస్తుంది. పచ్చి చేసినట్లు అయితుంది	STATEMENT}
+{\slot
+అప్పుడప్పుడు	B-time_period
+గొంతు	B-body_part
+నొప్పిలేస్తుంది.	B-symptom
+పచ్చి	B-symptom
+చేసినట్లు	O
+అయితుంది	O
+}
+
+{\intent	d: ఇది సక్కగా కుర్చో అమ్మా	ACTION_DIR}
+{\slot
+ఇది	O
+సక్కగా	O
+కుర్చో	O
+అమ్మా	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: cold ఉందా?	INFO_REQUEST}
+{\slot
+cold	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: cough ఉందా?	INFO_REQUEST}
+{\slot
+cough	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: కడుపులో మంట ఉందా?	INFO_REQUEST}
+{\slot
+కడుపులో	B-body_part
+మంట	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: కడుపులో మంట కూడా లేదు	ANSWER}
+{\slot
+కడుపులో	B-body_part
+మంట	B-symptom
+కూడా	O
+లేదు	B-negative
+}
+
+{\intent	p1: అయితే ముఖం కడుగుతుంటే అప్పుడు blood వస్తోంది.	STATEMENT}
+{\slot
+అయితే	O
+ముఖం	B-body_part
+కడుగుతుంటే	O
+అప్పుడు	B-time_period
+blood	B-body_substance
+వస్తోంది.	O
+}
+
+{\intent	p: blood వస్తుంది sir.	STATEMENT}
+{\slot
+blood	B-body_substance
+వస్తుంది	O
+sir.	O
+}
+

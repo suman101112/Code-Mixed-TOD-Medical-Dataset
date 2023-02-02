@@ -1,0 +1,185 @@
+{\intent	p: నాకు కడుపులో మంట చాలా ఎక్కువగా వస్తుంది అండి.	STATEMENT}
+{\slot
+నాకు	O
+కడుపులో	B-body_part
+మంట	B-symptom
+చాలా	B-intensity
+ఎక్కువగా	B-intensity
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే ఇప్పుడు naan తిన్నా, మసాలాలు కొంచం ఎక్కువ ఉన్నా. కారం ఎక్కువ ఉన్నా అంటే కొంచం అయినా ఎక్కువ వేసినా మంట వస్తూ ఉంటున్నదని ఎక్కువ	STATEMENT}
+{\slot
+అంటే	O
+ఇప్పుడు	O
+naan	B-food_substance
+తిన్నా,	B-bodily_process
+మసాలాలు	B-food_substance
+కొంచం	O
+ఎక్కువ	B-intensity
+ఉన్నా.	O
+కారం	B-food_substance
+ఎక్కువ	B-intensity
+ఉన్నా	O
+అంటే	O
+కొంచం	O
+అయినా	O
+ఎక్కువ	B-intensity
+వేసినా	O
+మంట	B-symptom
+వస్తూ	O
+ఉంటున్నదని	O
+ఎక్కువ	B-intensity
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏమైనా మాత్రలు వాడుతున్నావా మరి ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+మాత్రలు	B-medicine
+వాడుతున్నావా	O
+మరి	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: ఆ morning onez tablets వేసుకుంటున్నానండీ	ANSWER}
+{\slot
+ఆ	O
+morning	B-time_period
+onez	B-medicine
+tablets	I-medicine
+వేసుకుంటున్నానండీ	O
+}
+
+{\intent	d: ok ఎలా ఉంది ఇప్పుడు వాడుతూ ఉంటే?	INFO_REQUEST}
+{\slot
+ok	O
+ఎలా	O
+ఉంది	O
+ఇప్పుడు	O
+వాడుతూ	O
+ఉంటే?	O
+}
+
+{\intent	p: వాడుతుంటే ఒక్కోసారి బాగుంటుంది. కొంచం కారం అది కొంచం తక్కువ అయితే బాగుంటుంది. కాస్త ఎక్కువైన వచ్చేస్తాది అన్నా మాట.	ANSWER}
+{\slot
+వాడుతుంటే	O
+ఒక్కోసారి	O
+బాగుంటుంది.	B-normal
+కొంచం	O
+కారం	B-food_substance
+అది	O
+కొంచం	O
+తక్కువ	B-intensity
+అయితే	O
+బాగుంటుంది.	B-normal
+కాస్త	O
+ఎక్కువైన	B-intensity
+వచ్చేస్తాది	O
+అన్నా	O
+మాట.	O
+}
+
+{\intent	d: వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+వయస్సు	B-time_period
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 43 అండి.	ANSWER}
+{\slot
+43	B-age
+అండి.	O
+}
+
+{\intent	d: ఇంకా ఏమైనా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+ఏమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: అదే అండి. మంట ఎక్కువ వస్తాదండి. అదే problem.	ANSWER}
+{\slot
+అదే	O
+అండి.	O
+మంట	B-symptom
+ఎక్కువ	B-intensity
+వస్తాదండి.	O
+అదే	O
+problem.	O
+}
+
+{\intent	d: fasting ఏమైనా ఉంటారా? ఉపవాసాలు?	INFO_REQUEST}
+{\slot
+fasting	B-bodily_process
+ఏమైనా	O
+ఉంటారా?	O
+ఉపవాసాలు?	O
+}
+
+{\intent	p: ఆ. ఈ month లోనే ఉంటానండి. ఎక్కువ అంతే ఇంకా. మిగితాప్పుడు ఏం ఉండనండి	ANSWER}
+{\slot
+ఆ.	O
+ఈ	O
+month	B-time_period
+లోనే	O
+ఉంటానండి.	O
+ఎక్కువ	B-intensity
+అంతే	O
+ఇంకా.	O
+మిగితాప్పుడు	B-time_period
+ఏం	O
+ఉండనండి	O
+}
+
+{\intent	d: మిగితా సంవత్సరం పొడుగున ఉండరా?	INFO_REQUEST}
+{\slot
+మిగితా	O
+సంవత్సరం	B-time_period
+పొడుగున	O
+ఉండరా?	O
+}
+
+{\intent	p: ఇంకేం ఉండను అండి. ఎప్పుడూనూ.	ANSWER}
+{\slot
+ఇంకేం	O
+ఉండను	B-negative
+అండి.	O
+ఎప్పుడూనూ.	O
+}
+
+{\intent	d: అలాగే అమ్మ దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+అలాగే	O
+అమ్మ	O
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: ప్రధానంగా fasting ఎక్కువగా ఉండడం మూలాన కూడా ఈ gastric లక్షణాలు తలెత్తుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+ప్రధానంగా	O
+fasting	B-bodily_process
+ఎక్కువగా	B-intensity
+ఉండడం	O
+మూలాన	O
+కూడా	O
+ఈ	O
+gastric	B-medical_condition
+లక్షణాలు	O
+తలెత్తుతాయి.	O
+}
+

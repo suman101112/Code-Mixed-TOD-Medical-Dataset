@@ -1,0 +1,169 @@
+{\intent	p: నా వయస్సు 48 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+48	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: 6 సంవత్సరాల నుంచి diabetes ఉంది.	STATEMENT}
+{\slot
+6	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+diabetes	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య నేను వస్తూవులను కూడా గుర్తు పట్టడం లేదు.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+నేను	O
+వస్తూవులను	O
+కూడా	O
+గుర్తు	B-symptom
+పట్టడం	I-symptom
+లేదు.	I-negative
+}
+
+{\intent	p: paper కూడా చదవలేకపోతున్నను.	STATEMENT}
+{\slot
+paper	O
+కూడా	O
+చదవలేకపోతున్నను.	B-symptom
+}
+
+{\intent	p: ఇది ఎలాంటి సమస్య?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎలాంటి	O
+సమస్య?	O
+}
+
+{\intent	p: diabetes ఉంటే కంటి మీద ప్రభావం ఉంటుందా?	INFO_REQUEST}
+{\slot
+diabetes	B-medical_condition
+ఉంటే	O
+కంటి	B-body_part
+మీద	B-location
+ప్రభావం	O
+ఉంటుందా?	O
+}
+
+{\intent	d: diabetes ఉన్నవారిలో సాధారనంగా ఒక వయస్సు దాటిన తరువాత, 45 సంవత్సరాలు దాటిన తరువాత కన్ను కనిపించకపోవడం diabetes వల్ల ఉండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+ఉన్నవారిలో	O
+సాధారనంగా	O
+ఒక	O
+వయస్సు	O
+దాటిన	O
+తరువాత,	B-time_period
+45	B-age
+సంవత్సరాలు	I-age
+దాటిన	O
+తరువాత	B-time_period
+కన్ను	B-body_part
+కనిపించకపోవడం	B-symptom
+diabetes	B-medical_condition
+వల్ల	O
+ఉండొచ్చు.	O
+}
+
+{\intent	d: diabetes కాకుండా వేరే కారణాల వలన కూడా కన్ను కనిపించక పోవచు.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+కాకుండా	O
+వేరే	O
+కారణాల	O
+వలన	O
+కూడా	O
+కన్ను	B-body_part
+కనిపించక	B-symptom
+పోవచు.	I-symptom
+}
+
+{\intent	d: but diabetes ఉన్న వారు ముఖ్యంగా కన్ను పరిక్ష చేయించుకోవాలి అంటే మామూలుగా optical shop కి వెళ్ళి just కన్ను అద్దాలు check చేసుకుంటే సరిపోదండీ .	MEDICAL_EXPLANATION}
+{\slot
+but	O
+diabetes	B-medical_condition
+ఉన్న	O
+వారు	O
+ముఖ్యంగా	O
+కన్ను	B-body_part
+పరిక్ష	B-mtest
+చేయించుకోవాలి	O
+అంటే	O
+మామూలుగా	O
+optical	B-place
+shop	I-place
+కి	O
+వెళ్ళి	O
+just	O
+కన్ను	B-body_part
+అద్దాలు	O
+check	B-mtest
+చేసుకుంటే	I-mtest
+సరిపోదండీ	O
+.	O
+}
+
+{\intent	d: diabetes అనగా మనకి కన్ను ఎలా ఉంటుంది అంటే కన్ను అనేది ఒక cameraల ఉంటుంది. cameraలో ఈ ఒక్క retina అనేది ఒక film లాంటిది అన్నా మాట.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+అనగా	O
+మనకి	O
+కన్ను	B-body_part
+ఎలా	O
+ఉంటుంది	O
+అంటే	O
+కన్ను	B-body_part
+అనేది	O
+ఒక	O
+cameraల	O
+ఉంటుంది.	O
+cameraలో	O
+ఈ	O
+ఒక్క	O
+retina	B-body_part
+అనేది	O
+ఒక	O
+film	O
+లాంటిది	O
+అన్నా	O
+మాట.	O
+}
+
+{\intent	d: ఈ diabetes ఉన్న వారిలో కొన్ని especially 6 సంవత్సరాలు 10 సంవత్సరాలు దాటిన తరువాత ఈ sugar వల్ల చిన్న చిన్న రక్త నాళాలను effect అయ్యి diabetic retinopathy అనేది ఒక వ్యాధిని మనం పరిశీలిస్తాము.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+diabetes	B-medical_condition
+ఉన్న	O
+వారిలో	O
+కొన్ని	O
+especially	O
+6	B-time_period
+సంవత్సరాలు	I-time_period
+10	B-time_period
+సంవత్సరాలు	I-time_period
+దాటిన	I-time_period
+తరువాత	I-time_period
+ఈ	O
+sugar	B-medical_condition
+వల్ల	O
+చిన్న	O
+చిన్న	O
+రక్త	B-body_substance
+నాళాలను	B-body_part
+effect	B-symptom
+అయ్యి	O
+diabetic	B-treatment
+retinopathy	I-treatment
+అనేది	O
+ఒక	O
+వ్యాధిని	B-medical_condition
+మనం	O
+పరిశీలిస్తాము.	O
+}
+

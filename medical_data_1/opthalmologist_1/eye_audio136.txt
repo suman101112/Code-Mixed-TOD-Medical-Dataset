@@ -1,0 +1,25 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 29, m	ANSWER}
+{\slot
+29,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: దూరంది కనిపిస్త లేదు.	ANSWER}
+{\slot
+దూరంది	B-location
+కనిపిస్త	B-bodily_process
+లేదు.	B-symptom
+}
+

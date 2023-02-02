@@ -1,0 +1,237 @@
+{\intent	p: ఇది actually మా mother 44 years అండి.	STATEMENT}
+{\slot
+ఇది	O
+actually	O
+మా	O
+mother	B-familal
+44	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తనకు వచ్చి ఇలా first కురుపు వచ్చిందని చూయించుకుంది. వాళ్ళు వచ్చి pilonidal sinus అని చెప్పారు	STATEMENT}
+{\slot
+తనకు	O
+వచ్చి	O
+ఇలా	O
+first	O
+కురుపు	B-symptom
+వచ్చిందని	O
+చూయించుకుంది.	O
+వాళ్ళు	O
+వచ్చి	O
+pilonidal	B-medical_condition
+sinus	I-medical_condition
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: right అమ్మా	ACK}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	p: అది operation చేసారు, ఇప్పటికి 6 months అవుతుంది.	STATEMENT}
+{\slot
+అది	O
+operation	B-treatment
+చేసారు,	O
+ఇప్పటికి	O
+6	B-time_period
+months	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మొన్న ఇలానే కొంచం blood, అలా చీము వస్తే, MRI తీస్తే వాళ్ళు చెప్పారు fistulas అనేవి internalగా spread అయితుంది.	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+మొన్న	O
+ఇలానే	O
+కొంచం	O
+blood,	B-body_substance
+అలా	O
+చీము	B-body_substance
+వస్తే,	O
+MRI	B-mtest
+తీస్తే	O
+వాళ్ళు	O
+చెప్పారు	O
+fistulas	B-symptom
+అనేవి	O
+internalగా	B-symptom
+spread	I-symptom
+అయితుంది.	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 3 tracks ఉన్నాయి లోపల అని చెప్పేసి మళ్ళి surgery అంటున్నారు	STATEMENT}
+{\slot
+3	B-mtest_value
+tracks	I-mtest_value
+ఉన్నాయి	O
+లోపల	O
+అని	O
+చెప్పేసి	O
+మళ్ళి	O
+surgery	B-treatment
+అంటున్నారు	O
+}
+
+{\intent	p: ఇప్పుడు ఏం చేస్తే better ఉంటుంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+చేస్తే	O
+better	O
+ఉంటుంది?	O
+}
+
+{\intent	d: అమ్మ బరువు ఎంత ఉంటారు అమ్మా?	INFO_REQUEST}
+{\slot
+అమ్మ	O
+బరువు	O
+ఎంత	O
+ఉంటారు	O
+అమ్మా?	O
+}
+
+{\intent	p: 60 ఉంటారు	ANSWER}
+{\slot
+60	B-age
+ఉంటారు	O
+}
+
+{\intent	d: 60 ఉంటుంది	ACK}
+{\slot
+60	B-age
+ఉంటుంది	O
+}
+
+{\intent	d: ఇప్పుడు fistula in Ano అంటున్నారా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+fistula	B-medical_condition
+in	I-medical_condition
+Ano	I-medical_condition
+అంటున్నారా?	O
+}
+
+{\intent	p: అవును, fistula ఉంది అంటున్నారు	ANSWER}
+{\slot
+అవును,	O
+fistula	B-medical_condition
+ఉంది	O
+అంటున్నారు	O
+}
+
+{\intent	d: right, ఇప్పుడు pilonidal sinus మాత్రం పుర్తిగా close అయిందన్నారా?	INFO_REQUEST}
+{\slot
+right,	O
+ఇప్పుడు	O
+pilonidal	B-medical_condition
+sinus	I-medical_condition
+మాత్రం	O
+పుర్తిగా	O
+close	B-normal
+అయిందన్నారా?	O
+}
+
+{\intent	p: ఆ దానితో analతో connection ఉందా? లేదా? చూస్తున్నారు doctor	ANSWER}
+{\slot
+ఆ	O
+దానితో	O
+analతో	B-body_part
+connection	O
+ఉందా?	O
+లేదా?	O
+చూస్తున్నారు	O
+doctor	B-medical_professional
+}
+
+{\intent	d: అలాగేనమ్మా, ఇంకేమన్నా తెలుసుకోవాలి అనుకుంటున్నారా?	INFO_REQUEST}
+{\slot
+అలాగేనమ్మా,	O
+ఇంకేమన్నా	O
+తెలుసుకోవాలి	O
+అనుకుంటున్నారా?	O
+}
+
+{\intent	p: అవును అవును	ANSWER}
+{\slot
+అవును	O
+అవును	O
+}
+
+{\intent	d: అంతే నా?	INFO_REQUEST}
+{\slot
+అంతే	O
+నా?	O
+}
+
+{\intent	p: అవును	ANSWER}
+{\slot
+అవును	O
+}
+
+{\intent	d: right అమ్మా, చెప్తాను	COMMIT}
+{\slot
+right	O
+అమ్మా,	O
+చెప్తాను	O
+}
+
+{\intent	p: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	d: మలద్వారం దెగ్గర చిన్న కురుపు లాగా ఏర్పడడం, అక్కడ నుంచి sweating వచ్చినట్లుగా నీరు రావడం లక్షణాన్ని pilonidal sinus అంటారు	MEDICAL_EXPLANATION}
+{\slot
+మలద్వారం	B-body_part
+దెగ్గర	B-location
+చిన్న	O
+కురుపు	B-symptom
+లాగా	O
+ఏర్పడడం,	O
+అక్కడ	B-location
+నుంచి	O
+sweating	B-symptom
+వచ్చినట్లుగా	O
+నీరు	B-food_substance
+రావడం	O
+లక్షణాన్ని	O
+pilonidal	B-medical_condition
+sinus	I-medical_condition
+అంటారు	O
+}
+
+{\intent	d: ఈ లక్షణంలో ఉన్నవారికి నడుము నొప్పి అనే లక్షణం చాలా commonగా కనిపిస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+లక్షణంలో	O
+ఉన్నవారికి	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+అనే	O
+లక్షణం	O
+చాలా	B-intensity
+commonగా	O
+కనిపిస్తుంది.	O
+}
+

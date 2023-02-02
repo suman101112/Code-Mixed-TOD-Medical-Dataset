@@ -1,0 +1,203 @@
+{\intent	d: good evening	GREETING}
+{\slot
+good	O
+evening	O
+}
+
+{\intent	p: madam నాకు marriage అయి 8 years అవుతుంది madam	ANSWER}
+{\slot
+madam	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+8	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: నాకు IVF first time అయింది madam అది	STATEMENT}
+{\slot
+నాకు	O
+IVF	B-treatment
+first	O
+time	O
+అయింది	O
+madam	O
+అది	O
+}
+
+{\intent	p: అయినంక 2 months complete అయినంక heartbeat రాలేదు madam	STATEMENT}
+{\slot
+అయినంక	O
+2	B-time_period
+months	I-time_period
+complete	O
+అయినంక	O
+heartbeat	B-bodily_process
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: మళ్ళి 2nd time IVF చేయించాక అప్పుడు కూడా heartbeat రాలేదు madam	STATEMENT}
+{\slot
+మళ్ళి	O
+2nd	B-frequency
+time	I-frequency
+IVF	B-treatment
+చేయించాక	O
+అప్పుడు	O
+కూడా	O
+heartbeat	B-bodily_process
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	p: దానంతట అదే date అయింది అన్నట్లు	STATEMENT}
+{\slot
+దానంతట	O
+అదే	O
+date	B-bodily_process
+అయింది	O
+అన్నట్లు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: మళ్ళ నాకు tubes కూడా block ఉన్నాయి అన్నట్లు 2	STATEMENT}
+{\slot
+మళ్ళ	O
+నాకు	O
+tubes	B-body_part
+కూడా	O
+block	B-symptom
+ఉన్నాయి	O
+అన్నట్లు	O
+2	B-frequency
+}
+
+{\intent	p: అంటే both tubal block అని చెప్పేసి ఉండి	STATEMENT}
+{\slot
+అంటే	O
+both	B-frequency
+tubal	B-body_part
+block	B-symptom
+అని	O
+చెప్పేసి	O
+ఉండి	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: మళ్ళి అది ఒక్కటా 2 అనేది అర్ధం అవ్వట్లేదు madam	STATEMENT}
+{\slot
+మళ్ళి	O
+అది	O
+ఒక్కటా	O
+2	B-frequency
+అనేది	O
+అర్ధం	O
+అవ్వట్లేదు	O
+madam	O
+}
+
+{\intent	p: మరి అది naturalగా pregnancy వచ్చే అవకాశం ఉంటదా madam అనేసి అడుగుతున్నాను	STATEMENT}
+{\slot
+మరి	O
+అది	O
+naturalగా	B-normal
+pregnancy	B-bodily_process
+వచ్చే	O
+అవకాశం	O
+ఉంటదా	O
+madam	O
+అనేసి	O
+అడుగుతున్నాను	O
+}
+
+{\intent	d: నీకు tubes block అయితే దేనివల్ల block అయింది అని తెలియదు కబట్టి ఒకసారి laproscopy చేసి simultaneously tube clear చేయడనికి possible ఉంటుందా అనేది చేసుకోండి treatment	STATEMENT}
+{\slot
+నీకు	O
+tubes	B-body_part
+block	B-symptom
+అయితే	O
+దేనివల్ల	O
+block	B-symptom
+అయింది	O
+అని	O
+తెలియదు	O
+కబట్టి	O
+ఒకసారి	O
+laproscopy	B-treatment
+చేసి	O
+simultaneously	O
+tube	B-body_part
+clear	B-treatment
+చేయడనికి	O
+possible	O
+ఉంటుందా	O
+అనేది	O
+చేసుకోండి	O
+treatment	B-treatment
+}
+
+{\intent	d: తర్వాత tubes open అవ్వకపోతే repeat IVF చేయాల్సి వస్తుంది	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+tubes	B-body_part
+open	B-bodily_process
+అవ్వకపోతే	B-negative
+repeat	O
+IVF	B-treatment
+చేయాల్సి	O
+వస్తుంది	O
+}
+
+{\intent	d: tubes open అయి మీకు అండాశయం అంతా బాగానే అయితే గనక మీరు husband factors ఏవి problems ఏవి లేవు అని ఉంటే గానీ naturally try చేయొచ్చు, IUI లాంటి treatment try చేసి చూసుకోవచూ	STATEMENT}
+{\slot
+tubes	B-body_part
+open	B-bodily_process
+అయి	O
+మీకు	O
+అండాశయం	B-body_part
+అంతా	O
+బాగానే	B-normal
+అయితే	O
+గనక	O
+మీరు	O
+husband	B-familal
+factors	O
+ఏవి	O
+problems	B-symptom
+ఏవి	O
+లేవు	B-negative
+అని	O
+ఉంటే	O
+గానీ	O
+naturally	B-normal
+try	O
+చేయొచ్చు,	O
+IUI	B-treatment
+లాంటి	O
+treatment	B-treatment
+try	O
+చేసి	O
+చూసుకోవచూ	O
+}
+

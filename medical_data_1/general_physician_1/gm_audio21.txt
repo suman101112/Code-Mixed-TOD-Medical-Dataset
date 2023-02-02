@@ -1,0 +1,177 @@
+{\intent	p: diabetes ఉందండి.	STATEMENT}
+{\slot
+diabetes	B-medical_condition
+ఉందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ నమస్తే madam	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: చెప్పండి, చెప్పండి sir.	ACTION_DIR}
+{\slot
+చెప్పండి,	O
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	p: ఆ అది 2010 నుండి sir నాకు diabetes తెలిసింది	STATEMENT}
+{\slot
+ఆ	O
+అది	O
+2010	B-time_period
+నుండి	O
+sir	O
+నాకు	O
+diabetes	B-medical_condition
+తెలిసింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అప్పటినుంచి నేను normalగా english medicines use చేసేవాన్ని sir	STATEMENT}
+{\slot
+అప్పటినుంచి	B-time_period
+నేను	O
+normalగా	B-normal
+english	B-medicine
+medicines	I-medicine
+use	O
+చేసేవాన్ని	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అప్పుడు కొద్దిగా నేను weight ఉండేవాన్ని ఇప్పుడు weight నేను తగ్గిన sir	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+కొద్దిగా	O
+నేను	O
+weight	B-bm
+ఉండేవాన్ని	O
+ఇప్పుడు	O
+weight	B-bm
+నేను	O
+తగ్గిన	B-normal
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదే normalగా ఇప్పుడు local doctor నుండి నేను medicines use చేస్తున్నాను	STATEMENT}
+{\slot
+అదే	O
+normalగా	O
+ఇప్పుడు	O
+local	B-medical_professional
+doctor	I-health_professional
+నుండి	O
+నేను	O
+medicines	B-medicine
+use	O
+చేస్తున్నాను	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: ఏమన్నా diet ఎలా తీసుకోవాలాని, మనకు control చేసుకోవాలంటే ఏం చేయాలి, చాలా ఇబ్బంది అయితుంది sir నాకు	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+diet	B-food_substance
+ఎలా	O
+తీసుకోవాలాని,	O
+మనకు	O
+control	O
+చేసుకోవాలంటే	O
+ఏం	O
+చేయాలి,	O
+చాలా	O
+ఇబ్బంది	B-symptom
+అయితుంది	O
+sir	O
+నాకు	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: మీకు 8 years నుంచి sugar ఉంది, tablets వాడుతున్నారు	ACK}
+{\slot
+మీకు	O
+8	B-time_period
+years	I-time_period
+నుంచి	O
+sugar	B-medical_condition
+ఉంది,	O
+tablets	B-medicine
+వాడుతున్నారు	O
+}
+
+{\intent	d: కాకపోతే mainగా ఏంటిది అంటే weight అనేది suddenగా loss అయిపోవడం జరుగుతుందండీ.	MEDICAL_EXPLANATION}
+{\slot
+కాకపోతే	O
+mainగా	O
+ఏంటిది	O
+అంటే	O
+weight	B-bm
+అనేది	O
+suddenగా	B-symptom
+loss	I-symptom
+అయిపోవడం	I-symptom
+జరుగుతుందండీ.	O
+}
+
+{\intent	d: diet అనేది కొంతవరకు ఉపయోగ పడుతుంది అండి. అంటే 20 to 30% వరకు మనం diet వల్ల control చేసుకోవచ్చు మెగితా 70 to 80 percent medicines అప్పుడు కచ్చితంగా ఉండాలి.	ANSWER}
+{\slot
+diet	B-food_substance
+అనేది	O
+కొంతవరకు	O
+ఉపయోగ	O
+పడుతుంది	O
+అండి.	O
+అంటే	O
+20	O
+to	O
+30%	O
+వరకు	O
+మనం	O
+diet	B-food_substance
+వల్ల	O
+control	B-normal
+చేసుకోవచ్చు	O
+మెగితా	O
+70	O
+to	O
+80	O
+percent	O
+medicines	B-medicine
+అప్పుడు	B-time_period
+కచ్చితంగా	O
+ఉండాలి.	O
+}
+

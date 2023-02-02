@@ -1,0 +1,326 @@
+{\intent	d: చెప్పమ్మా Mounika age ఎంత?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+Mounika	B-name
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 22	STATEMENT}
+{\slot
+22	B-age
+}
+
+{\intent	d: ఏం problem?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem?	O
+}
+
+{\intent	p: ఇటు left side కడుపు నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+ఇటు	O
+left	B-location
+side	I-location
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: కడుపు నొప్పి వస్తుంది.	ACK}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: left side?	INFO_REQUEST}
+{\slot
+left	B-location
+side?	I-location
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	d: motion freeగా ఉందా?	INFO_REQUEST}
+{\slot
+motion	B-symptom
+freeగా	B-normal
+ఉందా?	O
+}
+
+{\intent	p: free గా నే ఉంది.	ANSWER}
+{\slot
+free	B-normal
+గా	O
+నే	O
+ఉంది.	B-positive
+}
+
+{\intent	d: urine freeగా ఉందా?	INFO_REQUEST}
+{\slot
+urine	B-body_substance
+freeగా	B-normal
+ఉందా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: urine problem లేదు. motion problem లేదు.	ACK}
+{\slot
+urine	B-body_substance
+problem	B-symptom
+లేదు.	B-negative
+motion	B-bodily_process
+problem	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	d: బేవుళ్ళు వస్తాయా బాగా?	INFO_REQUEST}
+{\slot
+బేవుళ్ళు	B-symptom
+వస్తాయా	O
+బాగా?	B-intensity
+}
+
+{\intent	p: ఆహా<neg>, బేవుళ్ళు కూడా ఏం రావు కానీ left side నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+ఆహా<neg>,	B-negative
+బేవుళ్ళు	B-symptom
+కూడా	O
+ఏం	O
+రావు	B-negative
+కానీ	O
+left	B-location
+side	I-location
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: ulcer నొప్పిలాగా ఇక్కడ నొప్పిలేస్తాది	STATEMENT}
+{\slot
+ulcer	B-medical_condition
+నొప్పిలాగా	B-symptom
+ఇక్కడ	B-location
+నొప్పిలేస్తాది	B-symptom
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: కొంచెం lateగా తిన్న కూడా నొప్పి లేస్తుంది.	STATEMENT}
+{\slot
+కొంచెం	O
+lateగా	B-time_period
+తిన్న	B-bodily_process
+కూడా	O
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: ఆ, అది నీకు పేగుల problem	STATEMENT}
+{\slot
+ఆ,	O
+అది	O
+నీకు	O
+పేగుల	B-body_part
+problem	B-symptom
+}
+
+{\intent	d: నెల నెల correct ఏ ఉంటావా?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	I-bodily_process
+correct	B-normal
+ఏ	O
+ఉంటావా?	O
+}
+
+{\intent	p: ఆ correct ఏ ఉంట ఉంటా.	ANSWER}
+{\slot
+ఆ	O
+correct	B-normal
+ఏ	O
+ఉంట	B-positive
+ఉంటా.	O
+}
+
+{\intent	d: ఎప్పుడు lateగా ఉండవ్.	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+lateగా	B-symptom
+ఉండవ్.	O
+}
+
+{\intent	p: ఒక 5 days 10 days అట్ల late ఉంటా.	ANSWER}
+{\slot
+ఒక	O
+5	B-time_period
+days	I-time_period
+10	B-time_period
+days	I-time_period
+అట్ల	O
+late	B-symptom
+ఉంటా.	O
+}
+
+{\intent	d: పెళ్లయిందా?	INFO_REQUEST}
+{\slot
+పెళ్లయిందా?	B-marital_status
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: unmarried	ACK}
+{\slot
+unmarried	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: urine మంట ఉంటుంది.	INFO_REQUEST}
+{\slot
+urine	B-body_substance
+మంట	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: lightగా	ANSWER}
+{\slot
+lightగా	B-intensity
+}
+
+{\intent	d: urine మంట లేదు. motion problem లేదు.	STATEMENT}
+{\slot
+urine	B-body_substance
+మంట	B-symptom
+లేదు.	B-negative
+motion	B-bodily_process
+problem	B-symptom
+లేదు.	B-negative
+}
+
+{\intent	d: కొంచం తినడం అటు ఇటు అయితే	STATEMENT}
+{\slot
+కొంచం	O
+తినడం	O
+అటు	O
+ఇటు	O
+అయితే	O
+}
+
+{\intent	p: కడుపు నొప్పి వస్తుంది	STATEMENT}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: కడుపు నొప్పి వస్తుంది	ACK}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+
+{\intent	d: నెల నెల correct ఏ ఉంటావ్?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	I-bodily_process
+correct	B-normal
+ఏ	O
+ఉంటావ్?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: ఇవాళ బయట ఉండి ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+బయట	B-bodily_process
+ఉండి	O
+ఎన్ని	O
+రోజులు?	B-time_period
+}
+
+{\intent	p: 5 days.	ANSWER}
+{\slot
+5	B-time_period
+days.	B-time_period
+}
+
+{\intent	d: ఇంతకు ముందు kidney stones అలా ఏమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+ఇంతకు	O
+ముందు	O
+kidney	B-body_substance
+stones	I-body_substance
+అలా	O
+ఏమన్నా	O
+ఉందా?	O
+}
+
+{\intent	p: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	d: periods అప్పుడు pain ఎక్కువ ఉంటుందా?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+అప్పుడు	B-time_period
+pain	B-symptom
+ఎక్కువ	B-intensity
+ఉంటుందా?	O
+}
+
+{\intent	p: వస్తుంది.	ANSWER}
+{\slot
+వస్తుంది.	B-positive
+}
+
+{\intent	d: పడుకో చూద్దాం	ACTION_DIR}
+{\slot
+పడుకో	O
+చూద్దాం	O
+}
+
+{\intent	p1: అన్నం కొంచం late అయితది అంటే కడుపు నొప్పిలేస్తాంది అంటది.	STATEMENT}
+{\slot
+అన్నం	O
+కొంచం	O
+late	B-symptom
+అయితది	O
+అంటే	O
+కడుపు	B-body_part
+నొప్పిలేస్తాంది	B-symptom
+అంటది.	O
+}
+

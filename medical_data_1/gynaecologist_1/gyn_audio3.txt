@@ -1,0 +1,295 @@
+{\intent	d: నిన్న వచ్చావ్ కదా నువ్వు	STATEMENT}
+{\slot
+నిన్న	O
+వచ్చావ్	O
+కదా	O
+నువ్వు	O
+}
+
+{\intent	p: हां	ANSWER}
+{\slot
+हां	O
+}
+
+{\intent	d: ఇప్పుడేంటి problem?	INFO_REQUEST}
+{\slot
+ఇప్పుడేంటి	O
+problem?	O
+}
+
+{\intent	p: ఈ రాత్రి కొంచము అర గంట లేచినట్లు తీసి మూత్రం పొద్దున్న red color వచ్చింది.	STATEMENT}
+{\slot
+ఈ	O
+రాత్రి	B-time_period
+కొంచము	O
+అర	B-time_period
+గంట	I-time_period
+లేచినట్లు	O
+తీసి	O
+మూత్రం	B-body_substance
+పొద్దున్న	B-time_period
+red	B-color
+color	I-color
+వచ్చింది.	O
+}
+
+{\intent	p1: రక్తం లాగా వచ్చింది అట	STATEMENT}
+{\slot
+రక్తం	B-body_substance
+లాగా	O
+వచ్చింది	O
+అట	O
+}
+
+{\intent	p: అయితే ఒక injection వేసుకున్న ఇంటికాడనే	STATEMENT}
+{\slot
+అయితే	O
+ఒక	O
+injection	B-medicine
+వేసుకున్న	O
+ఇంటికాడనే	B-place
+}
+
+{\intent	d: మంట ఉందా మూత్రంలో?	INFO_REQUEST}
+{\slot
+మంట	B-symptom
+ఉందా	O
+మూత్రంలో?	B-body_substance
+}
+
+{\intent	p: ఆ మూత్రం పోసినప్పుడు మండుతుంది.	ANSWER}
+{\slot
+ఆ	B-positive
+మూత్రం	B-body_substance
+పోసినప్పుడు	B-bodily_process
+మండుతుంది.	B-symptom
+}
+
+{\intent	d: మంట ఉంది.	ACK}
+{\slot
+మంట	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ఎక్కువ సార్లు మూత్రం వస్తుందా?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+సార్లు	B-frequency
+మూత్రం	B-body_substance
+వస్తుందా?	O
+}
+
+{\intent	d: మూత్రం urgent గా వస్తుందా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+urgent	B-symptom
+గా	O
+వస్తుందా?	O
+}
+
+{\intent	p: ఆ అదే ఆ మూత్రం వచ్చినట్లు అయింది	ANSWER}
+{\slot
+ఆ	B-positive
+అదే	O
+ఆ	O
+మూత్రం	B-body_substance
+వచ్చినట్లు	B-symptom
+అయింది	O
+}
+
+{\intent	p: చానాసేపు పోతలేను ఆ ఇప్పుడు పోతలేను ఇక.	ANSWER}
+{\slot
+చానాసేపు	B-time_period
+పోతలేను	B-symptom
+ఆ	O
+ఇప్పుడు	B-time_period
+పోతలేను	B-symptom
+ఇక.	O
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: 2 కొడుకులు	ANSWER}
+{\slot
+2	B-frequency
+కొడుకులు	B-familal
+}
+
+{\intent	d: కాకుండా అయిపోయింది నీకు	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+అయిపోయింది	B-treatment
+నీకు	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: నెల నెల correct ఏ ఉంటావు?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	I-bodily_process
+correct	B-normal
+ఏ	O
+ఉంటావు?	O
+}
+
+{\intent	p: ఆ.	ANSWER}
+{\slot
+ఆ.	B-positive
+}
+
+{\intent	d: ఇప్పుడు sugar ఉందా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఆమెకు ఏం అన్నీ testలు చేయలే.	STATEMENT}
+{\slot
+ఆమెకు	O
+ఏం	O
+అన్నీ	O
+testలు	B-mtest
+చేయలే.	B-negative
+}
+
+{\intent	d: కింద ఏమైనా దురద అలా అనిపిస్తుందా?	INFO_REQUEST}
+{\slot
+కింద	B-location
+ఏమైనా	O
+దురద	B-symptom
+అలా	O
+అనిపిస్తుందా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	p1: తెలుపు గిట్ల అయితది ఎప్పుడన్నా గిట్ల అయితది	STATEMENT}
+{\slot
+తెలుపు	B-symptom
+గిట్ల	O
+అయితది	O
+ఎప్పుడన్నా	B-time_period
+గిట్ల	O
+అయితది	O
+}
+
+{\intent	p: అప్పుడు ముందు మీ దగ్గరకు వస్తే తగ్గింది.	STATEMENT}
+{\slot
+అప్పుడు	B-time_period
+ముందు	O
+మీ	O
+దగ్గరకు	O
+వస్తే	O
+తగ్గింది.	B-normal
+}
+
+{\intent	d: సరే పడుకో	ACTION_DIR}
+{\slot
+సరే	O
+పడుకో	O
+}
+
+{\intent	d: మూత్రం మంట	ACK}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+}
+
+{\intent	d: కొంచం ఎర్రగా వచ్చింది మూత్రం	ACK}
+{\slot
+కొంచం	B-intensity
+ఎర్రగా	B-symptom
+వచ్చింది	O
+మూత్రం	B-body_substance
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: injection వేసుకుంటే మళ్ళ తెల్లగా వచ్చింది కానీ, భయమైంది	STATEMENT}
+{\slot
+injection	B-medicine
+వేసుకుంటే	O
+మళ్ళ	O
+తెల్లగా	B-symptom
+వచ్చింది	O
+కానీ,	O
+భయమైంది	B-symptom
+}
+
+{\intent	p1: red color బాగా వచ్చింది	STATEMENT}
+{\slot
+red	B-color
+color	I-color
+బాగా	B-intensity
+వచ్చింది	O
+}
+
+{\intent	d: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+
+{\intent	d1: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p1: 35 దాక ఉంటాయి.	ANSWER}
+{\slot
+35	B-age
+దాక	O
+ఉంటాయి.	O
+}
+
+{\intent	d: hmm పడుకో	ACTION_DIR}
+{\slot
+hmm	O
+పడుకో	O
+}
+
+{\intent	d: ఇద్దరు పిల్లలా?	INFO_REQUEST}
+{\slot
+ఇద్దరు	B-frequency
+పిల్లలా?	B-familal
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: చిన్న ఆయన వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+చిన్న	O
+ఆయన	B-person
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p1: 8	ANSWER}
+{\slot
+8	B-age
+}
+
+{\intent	p: 8 సంవత్సరాలు.	ANSWER}
+{\slot
+8	B-age
+సంవత్సరాలు.	I-age
+}
+

@@ -1,0 +1,188 @@
+{\intent	d: చెప్పండమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: <>	STATEMENT}
+{\slot
+<>	O
+}
+
+{\intent	d: ఏం ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	d: ఇబ్బంది ఏం ఉంది?	INFO_REQUEST}
+{\slot
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 34, female	ANSWER}
+{\slot
+34,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండమ్మా ఏమి ఇబ్బంది?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+ఏమి	O
+ఇబ్బంది?	B-symptom
+}
+
+{\intent	p: బాగా నొప్పి లేస్తుంది, నడుము నొస్తాన్నది	ANSWER}
+{\slot
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది,	O
+నడుము	B-body_part
+నొస్తాన్నది	B-symptom
+}
+
+{\intent	d: జ్వరం కానీ మూత్రంలో మంట కానీ ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+కానీ	O
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+కానీ	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: మంట బాగా ఉంది sir.	ANSWER}
+{\slot
+మంట	B-symptom
+బాగా	B-intensity
+ఉంది	O
+sir.	O
+}
+
+{\intent	p: ఒక గంట బానే ఉంటుంది. ఒక గంట pain ఎక్కువ అయితుంది sir	ANSWER}
+{\slot
+ఒక	B-time_period
+గంట	I-time_period
+బానే	B-normal
+ఉంటుంది.	O
+ఒక	B-time_period
+గంట	I-time_period
+pain	B-symptom
+ఎక్కువ	B-intensity
+అయితుంది	O
+sir	O
+}
+
+{\intent	d: పాతవి ఏమైనా scan ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+పాతవి	O
+ఏమైనా	O
+scan	B-mtest
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: పాత scan reports ఏమైనా ఏమైనా ఉన్నాయా?	REPEAT_REPHRASE}
+{\slot
+పాత	O
+scan	B-mtest
+reports	I-mtest
+ఏమైనా	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: ఇక్కడనే scan చేయించాము	STATEMENT}
+{\slot
+ఇక్కడనే	B-location
+scan	B-mtest
+చేయించాము	O
+}
+
+{\intent	d: ఎక్కడ చేయించారు ఇది?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+చేయించారు	O
+ఇది?	O
+}
+
+{\intent	d: 92లో కదా	INFO_REQUEST}
+{\slot
+92లో	O
+కదా	O
+}
+
+{\intent	p: ఆ 92లో నే	ANSWER}
+{\slot
+ఆ	O
+92లో	O
+నే	O
+}
+
+{\intent	d: ఇప్పుడు problem అయితే ఏం లేవు	DIAGNOSIS}
+{\slot
+ఇప్పుడు	O
+problem	O
+అయితే	O
+ఏం	O
+లేవు	O
+}
+
+{\intent	d: ఒక్కోసారి చిన్న stones ఉంటే అవి scanలో కూడా కనిపించవు	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కోసారి	O
+చిన్న	O
+stones	B-body_substance
+ఉంటే	O
+అవి	O
+scanలో	B-mtest
+కూడా	O
+కనిపించవు	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: water ఎక్కువ తాగి	ACTION_DIR}
+{\slot
+water	B-food_substance
+ఎక్కువ	B-intensity
+తాగి	B-bodily_process
+}
+
+{\intent	d: మందులు రాసి ఇస్తాం, ఆ చిన్న stones తొందరగానే వచ్చేస్తాయి.	STATEMENT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తాం,	O
+ఆ	O
+చిన్న	O
+stones	B-body_substance
+తొందరగానే	O
+వచ్చేస్తాయి.	O
+}
+

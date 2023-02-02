@@ -1,0 +1,265 @@
+{\intent	d: ఏం problem తల్లి ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem	O
+తల్లి	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: తెల్ల బట్ట madam	ANSWER}
+{\slot
+తెల్ల	B-symptom
+బట్ట	I-symptom
+madam	O
+}
+
+{\intent	d: white discharge	ACK}
+{\slot
+white	B-symptom
+discharge	I-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి?	O
+}
+
+{\intent	p: మా చిన్న అబ్బయి పుట్టినప్పటినుంచి madam	ANSWER}
+{\slot
+మా	O
+చిన్న	O
+అబ్బయి	B-familal
+పుట్టినప్పటినుంచి	B-bodily_process
+madam	O
+}
+
+{\intent	d: అంటే ఒక 2 3 years నుంచి.	ACK}
+{\slot
+అంటే	O
+ఒక	O
+2	B-time_period
+3	B-time_period
+years	I-time_period
+నుంచి.	O
+}
+
+{\intent	D: రోజూ ఉంటుందా white discharge?	INFO_REQUEST}
+{\slot
+రోజూ	B-time_period
+ఉంటుందా	O
+white	B-symptom
+discharge?	I-symptom
+}
+
+{\intent	p: రోజు ఉంటది madam.	ANSWER}
+{\slot
+రోజు	B-time_period
+ఉంటది	B-positive
+madam.	O
+}
+
+{\intent	d: white discharge ఉండలమ్మా ఆడవాళ్లందరికి.	MEDICAL_EXPLANATION}
+{\slot
+white	B-symptom
+discharge	I-symptom
+ఉండలమ్మా	O
+ఆడవాళ్లందరికి.	O
+}
+
+{\intent	d: దురద ఉంటుందా?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉంటుందా?	O
+}
+
+{\intent	p: దురద ఉండదు ma'am.	ANSWER}
+{\slot
+దురద	B-symptom
+ఉండదు	B-negative
+ma'am.	O
+}
+
+{\intent	p1: దురద ఉండదు కానీ smell వస్తంది.	STATEMENT}
+{\slot
+దురద	B-symptom
+ఉండదు	B-symptom
+కానీ	O
+smell	B-bodily_process
+వస్తంది.	B-positive
+}
+
+{\intent	d: కొంచం ఒక type of smell ఉంటుంది white dischargeకి అది common ఏ.	MEDICAL_EXPLANATION}
+{\slot
+కొంచం	O
+ఒక	O
+type	O
+of	O
+smell	B-bodily_process
+ఉంటుంది	B-positive
+white	B-symptom
+dischargeకి	I-symptom
+అది	O
+common	B-normal
+ఏ.	O
+}
+
+{\intent	d: భార్యాభర్తలు కలిసినప్పుడు కష్టం ఉంటుందా?	INFO_REQUEST}
+{\slot
+భార్యాభర్తలు	B-familal
+కలిసినప్పుడు	O
+కష్టం	B-symptom
+ఉంటుందా?	O
+}
+
+{\intent	p: అ ఉంటుంది ma'am.	ANSWER}
+{\slot
+అ	O
+ఉంటుంది	B-positive
+ma'am.	O
+}
+
+{\intent	d: ఏం కష్టము?	INFO_REQUEST}
+{\slot
+ఏం	O
+కష్టము?	B-symptom
+}
+
+{\intent	p: కొంచం looseగా జరిపోతుంది.	ANSWER}
+{\slot
+కొంచం	B-intensity
+looseగా	B-symptom
+జరిపోతుంది.	I-symptom
+}
+
+{\intent	d: అది కొంచం నీకు ఇద్దరు పిల్లలు కదా	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+కొంచం	B-intensity
+నీకు	O
+ఇద్దరు	B-frequency
+పిల్లలు	B-familal
+కదా	O
+}
+
+{\intent	d: normal deliveries ఆ?	INFO_REQUEST}
+{\slot
+normal	B-normal
+deliveries	B-bodily_process
+ఆ?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: caesarean ఏ	ACK}
+{\slot
+caesarean	B-treatment
+ఏ	O
+}
+
+{\intent	d: నీకు దురద, మంట, వాసన అలాంటివి ఏమైనా ఉంటే అది చెడు, దానికి treatment ఇవ్వాలి.	MEDICAL_EXPLANATION}
+{\slot
+నీకు	O
+దురద,	B-symptom
+మంట,	B-symptom
+వాసన	B-symptom
+అలాంటివి	O
+ఏమైనా	O
+ఉంటే	O
+అది	O
+చెడు,	O
+దానికి	O
+treatment	B-treatment
+ఇవ్వాలి.	O
+}
+
+{\intent	d: sugar ఉందా? నీకు కానీ, నే ఆయనకు కానీ?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+నీకు	O
+కానీ,	O
+నే	O
+ఆయనకు	O
+కానీ?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: నెల నెల correct ఏ ఉంటావా?	INFO_REQUEST}
+{\slot
+నెల	B-bodily_process
+నెల	B-bodily_process
+correct	B-normal
+ఏ	O
+ఉంటావా?	O
+}
+
+{\intent	p: ఆ correct గానే ఉంట madam	ANSWER}
+{\slot
+ఆ	O
+correct	B-normal
+గానే	O
+ఉంట	B-positive
+madam	O
+}
+
+{\intent	d: కాకుండా ఎవరు చేయించుకున్నారు?	INFO_REQUEST}
+{\slot
+కాకుండా	B-treatment
+ఎవరు	O
+చేయించుకున్నారు?	O
+}
+
+{\intent	p: మా ఆయన చేయించుకున్నారు madam	ANSWER}
+{\slot
+మా	O
+ఆయన	B-familal
+చేయించుకున్నారు	O
+madam	O
+}
+
+{\intent	d: పడుకో చూస్తాను.	ACTION_DIR}
+{\slot
+పడుకో	O
+చూస్తాను.	O
+}
+
+{\intent	d: ఇవాల్టికి నెల వచ్చి ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+ఇవాల్టికి	O
+నెల	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు?	O
+}
+
+{\intent	p: మొన్న, ఈ నెల 12 కి వచ్చింది ma'am.	ANSWER}
+{\slot
+మొన్న,	B-time_period
+ఈ	B-time_period
+నెల	I-time_period
+12	I-time_period
+కి	O
+వచ్చింది	O
+ma'am.	O
+}
+
+{\intent	d: umm పడుకో.	ACTION_DIR}
+{\slot
+umm	O
+పడుకో.	O
+}
+

@@ -1,0 +1,158 @@
+{\intent	p: ఆ madam	CONV_OPEN}
+{\slot
+ఆ	O
+madam	O
+}
+
+{\intent	d: చెప్పండి krishnaగారు	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+krishnaగారు	B-name
+}
+
+{\intent	p: good afternoon madam	GREETING}
+{\slot
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: good afternoon అండి sir, చెప్పండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి	O
+sir,	O
+చెప్పండి.	O
+}
+
+{\intent	p: ఏం లేదండీ actually నేను lunch timings కొంచం బాగా delay అవుతుందండి madam	STATEMENT}
+{\slot
+ఏం	O
+లేదండీ	O
+actually	O
+నేను	O
+lunch	B-food_substance
+timings	B-time_period
+కొంచం	O
+బాగా	B-intensity
+delay	B-time_period
+అవుతుందండి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ రోజూ after 2:30 3 వల్ల ఈ మధ్య కొంచం gas form అయినట్లు ఉంది.	STATEMENT}
+{\slot
+ఆ	O
+రోజూ	O
+after	O
+2:30	B-time_period
+3	B-time_period
+వల్ల	O
+ఈ	O
+మధ్య	O
+కొంచం	O
+gas	B-medical_condition
+form	I-medical_condition
+అయినట్లు	O
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఏదైనా తిన్న తరువాత కొంచం కడుపు ఉబ్బరంగా, ఉండడం ఇలా జరుగుతుంది madam	STATEMENT}
+{\slot
+ఏదైనా	O
+తిన్న	O
+తరువాత	O
+కొంచం	O
+కడుపు	B-body_part
+ఉబ్బరంగా,	B-symptom
+ఉండడం	I-symptom
+ఇలా	O
+జరుగుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏం చేస్తుంటారు sir మీరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+చేస్తుంటారు	O
+sir	O
+మీరు?	O
+}
+
+{\intent	p: night కూడా కొంచం నిద్ర అది పట్టట్లేదు, morning time freeగా washroomకి వెళ్ళినా motion రావడం కొంచం tightగా ఉంది.	STATEMENT}
+{\slot
+night	B-time_period
+కూడా	O
+కొంచం	O
+నిద్ర	B-bodily_process
+అది	O
+పట్టట్లేదు,	B-symptom
+morning	B-time_period
+time	B-time_period
+freeగా	O
+washroomకి	O
+వెళ్ళినా	O
+motion	B-bodily_process
+రావడం	O
+కొంచం	O
+tightగా	B-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: so reason అనేది, ఏం చేస్తుంటారు sir మీరు?	REPEAT_REPHRASE}
+{\slot
+so	O
+reason	O
+అనేది,	O
+ఏం	O
+చేస్తుంటారు	O
+sir	O
+మీరు?	O
+}
+
+{\intent	p: private finance companyలో చేస్తుంటాను.	ANSWER}
+{\slot
+private	B-place
+finance	I-place
+companyలో	I-place
+చేస్తుంటాను.	O
+}
+
+{\intent	d: so మీరే చెప్తున్నారు, irregular dietary and irregular sleep pattern	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీరే	O
+చెప్తున్నారు,	O
+irregular	B-symptom
+dietary	B-food_substance
+and	O
+irregular	B-symptom
+sleep	B-bodily_process
+pattern	O
+}
+
+{\intent	d: so దానివల్ల మీకు ఇబ్బందులు అవుతున్నాయండి.	STATEMENT}
+{\slot
+so	O
+దానివల్ల	O
+మీకు	O
+ఇబ్బందులు	B-symptom
+అవుతున్నాయండి.	O
+}
+

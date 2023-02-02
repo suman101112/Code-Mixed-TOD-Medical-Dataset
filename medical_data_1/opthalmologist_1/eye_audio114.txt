@@ -1,0 +1,146 @@
+{\intent	p: doctor గారు నా వయస్సు 33 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+33	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: 2, 3 రోజులుగా నా కంటిరెప్పలు ఎక్కువగా కొట్టుకుంటున్నాయి.	STATEMENT}
+{\slot
+2,	B-time_period
+3	I-time_period
+రోజులుగా	I-time_period
+నా	O
+కంటిరెప్పలు	B-body_part
+ఎక్కువగా	B-intensity
+కొట్టుకుంటున్నాయి.	B-symptom
+}
+
+{\intent	p: కొన్ని సార్లు నా ప్రమేయం లేకుండానే జరుగుతుంది.	STATEMENT}
+{\slot
+కొన్ని	O
+సార్లు	O
+నా	O
+ప్రమేయం	B-symptom
+లేకుండానే	I-symptom
+జరుగుతుంది.	I-symptom
+}
+
+{\intent	p: ఇంతకుముందు చాలా సంవత్సరాల క్రితం ఇలాగే అయ్యి చివరికి fits వచ్చింది.	STATEMENT}
+{\slot
+ఇంతకుముందు	O
+చాలా	B-intensity
+సంవత్సరాల	B-time_period
+క్రితం	O
+ఇలాగే	O
+అయ్యి	O
+చివరికి	O
+fits	B-medical_condition
+వచ్చింది.	O
+}
+
+{\intent	p: fits వచ్చే ముందు లక్షణాలు ఎలా ఉంటాయి?	INFO_REQUEST}
+{\slot
+fits	B-medical_condition
+వచ్చే	O
+ముందు	O
+లక్షణాలు	B-symptom
+ఎలా	O
+ఉంటాయి?	O
+}
+
+{\intent	d: మీరు ఇంతకు ముందు fits ఉన్నాయి కాబట్టి fits ఉండే వాళ్ళకు కళ్ళు frequentగా blink చేసి తర్వాత fits వచ్చే అవకాశం కూడా ఉండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+ఇంతకు	O
+ముందు	O
+fits	B-medical_condition
+ఉన్నాయి	O
+కాబట్టి	O
+fits	B-medical_condition
+ఉండే	O
+వాళ్ళకు	O
+కళ్ళు	B-body_part
+frequentగా	B-time_period
+blink	B-bodily_process
+చేసి	O
+తర్వాత	O
+fits	B-medical_condition
+వచ్చే	O
+అవకాశం	O
+కూడా	O
+ఉండొచ్చు.	O
+}
+
+{\intent	d: అంటే ఉదహరణకు especially hospitalలో seizures ఉండెవాళ్ళకు అంటే frontal lobe లో ఓ రకంగా కళ్ళు deviate అయి వచ్చి కళ్ళు frequentగా blink చేసేవాళ్ళకి frontal lobeలో problem ఉండడం మూలాన కానీ fits వచ్చే ముందు ఇది కూడా ఓ లక్షణంగా ఉండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+ఉదహరణకు	O
+especially	O
+hospitalలో	B-hospital_name
+seizures	B-symptom
+ఉండెవాళ్ళకు	O
+అంటే	O
+frontal	B-body_part
+lobe	I-body_part
+లో	O
+ఓ	O
+రకంగా	O
+కళ్ళు	B-body_part
+deviate	B-symptom
+అయి	O
+వచ్చి	O
+కళ్ళు	B-body_part
+frequentగా	B-time_period
+blink	B-bodily_process
+చేసేవాళ్ళకి	O
+frontal	B-body_part
+lobeలో	I-body_part
+problem	B-symptom
+ఉండడం	O
+మూలాన	O
+కానీ	O
+fits	B-medical_condition
+వచ్చే	O
+ముందు	O
+ఇది	O
+కూడా	O
+ఓ	O
+లక్షణంగా	O
+ఉండొచ్చు.	O
+}
+
+{\intent	d: so కళ్ళు ఆర్పడం frequentగా అనేది ఒక చిన్న problem నుంచి major problems ఉదహరణకి fits కి కానీ అలాగే కొద్దిమందికి wilsons disease అనే problems ఉండెవాళ్ళలో కూడా ఈ కళ్ళు frequentగా ఆర్పొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+కళ్ళు	B-body_part
+ఆర్పడం	O
+frequentగా	O
+అనేది	O
+ఒక	O
+చిన్న	O
+problem	O
+నుంచి	O
+major	O
+problems	O
+ఉదహరణకి	O
+fits	O
+కి	O
+కానీ	O
+అలాగే	O
+కొద్దిమందికి	O
+wilsons	B-medical_condition
+disease	I-medical_condition
+అనే	O
+problems	O
+ఉండెవాళ్ళలో	O
+కూడా	O
+ఈ	O
+కళ్ళు	B-body_part
+frequentగా	B-frequency
+ఆర్పొచ్చు.	B-symptom
+}
+

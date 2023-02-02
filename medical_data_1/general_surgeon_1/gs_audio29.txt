@@ -1,0 +1,133 @@
+{\intent	p: sir ఇప్పుడు నాకు వచ్చేసి gas trouble ఎక్కువగా ఉంది sir	STATEMENT}
+{\slot
+sir	O
+ఇప్పుడు	O
+నాకు	O
+వచ్చేసి	O
+gas	B-medical_condition
+trouble	I-medical_condition
+ఎక్కువగా	B-intensity
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది నేను already endoscope 2 3 సార్లు చేసుకున్నాను	STATEMENT}
+{\slot
+ఇది	O
+నేను	O
+already	O
+endoscope	B-mtest
+2	B-frequency
+3	B-frequency
+సార్లు	I-frequency
+చేసుకున్నాను	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఆ already నాకు heart problem	STATEMENT}
+{\slot
+ఆ	O
+already	O
+నాకు	O
+heart	B-body_part
+problem	I-medical_condition
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ heart tablets వాడుతున్నాను	STATEMENT}
+{\slot
+ఈ	O
+heart	B-body_part
+tablets	B-medicine
+వాడుతున్నాను	O
+}
+
+{\intent	d: right అండి	ACK}
+{\slot
+right	O
+అండి	O
+}
+
+{\intent	p: heart tablets వాడడం వల్ల ఈ కడుపులో ఏమైతాంది అంటే మంట	STATEMENT}
+{\slot
+heart	B-body_part
+tablets	B-medicine
+వాడడం	O
+వల్ల	O
+ఈ	O
+కడుపులో	B-body_part
+ఏమైతాంది	O
+అంటే	O
+మంట	B-symptom
+}
+
+{\intent	d: అజీర్ణత ఉంటుంది.	ACK}
+{\slot
+అజీర్ణత	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: నాకు 54 sir	ANSWER}
+{\slot
+నాకు	O
+54	B-age
+sir	O
+}
+
+{\intent	d: 54	ACK}
+{\slot
+54	B-age
+}
+
+{\intent	d: ఎక్కువగా gas trouble ఉంది.	ACK}
+{\slot
+ఎక్కువగా	B-intensity
+gas	B-medical_condition
+trouble	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: ఆ gas, కడుపులో మంట వచ్చేసి pain ఇట్ల మన	STATEMENT}
+{\slot
+ఆ	O
+gas,	B-medical_condition
+కడుపులో	B-body_part
+మంట	B-symptom
+వచ్చేసి	O
+pain	B-symptom
+ఇట్ల	O
+మన	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+

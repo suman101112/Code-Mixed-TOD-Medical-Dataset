@@ -1,0 +1,134 @@
+{\intent	p: 3 years నుంచి thyroid ఉందండి.	STATEMENT}
+{\slot
+3	B-time_period
+years	I-time_period
+నుంచి	O
+thyroid	B-medical_condition
+ఉందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: umm, 6.21 ఉందండి మాకు ఇప్పుడు మొన్న check చేసుకుంటే	STATEMENT}
+{\slot
+umm,	O
+6.21	B-mtest_value
+ఉందండి	O
+మాకు	O
+ఇప్పుడు	O
+మొన్న	O
+check	O
+చేసుకుంటే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: supplement ఎంత వాడుతున్నారమ్మా?	INFO_REQUEST}
+{\slot
+supplement	B-medicine
+ఎంత	O
+వాడుతున్నారమ్మా?	O
+}
+
+{\intent	p: మేము homeopathy ఏ వాడుతున్నామండీ	ANSWER}
+{\slot
+మేము	O
+homeopathy	B-medicine
+ఏ	O
+వాడుతున్నామండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: very good	APPRECIATE}
+{\slot
+very	O
+good	O
+}
+
+{\intent	p: Vijayawaadaలో homeopathy వాడుతున్నాను	REPEAT_REPHRASE}
+{\slot
+Vijayawaadaలో	B-place
+homeopathy	B-medicine
+వాడుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: weight ఎక్కువ అయ్యాను బాగా	STATEMENT}
+{\slot
+weight	B-bm
+ఎక్కువ	B-intensity
+అయ్యాను	O
+బాగా	B-intensity
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: age ఎంత అండి మీది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి	O
+మీది?	O
+}
+
+{\intent	p: age 25 అండి.	ANSWER}
+{\slot
+age	O
+25	B-age
+అండి.	O
+}
+
+{\intent	d: so already మీరు homeo తీసుకుంటున్నారు, 3 years నుంచి ఉన్న కూడా level అనేది బానే ఉందండీ.	ACK}
+{\slot
+so	O
+already	O
+మీరు	O
+homeo	B-medicine
+తీసుకుంటున్నారు,	O
+3	B-time_period
+years	I-time_period
+నుంచి	O
+ఉన్న	O
+కూడా	O
+level	O
+అనేది	O
+బానే	O
+ఉందండీ.	O
+}
+
+{\intent	d: కాకపోతే, weight పెరగడం అనేది thyroid తో associate అయి ఉన్న కూడా మనం కూడా కొన్ని జగ్రత్తలు తీసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+కాకపోతే,	O
+weight	B-bm
+పెరగడం	B-symptom
+అనేది	O
+thyroid	B-medical_condition
+తో	O
+associate	O
+అయి	O
+ఉన్న	O
+కూడా	O
+మనం	O
+కూడా	O
+కొన్ని	O
+జగ్రత్తలు	O
+తీసుకోవాలి.	O
+}
+

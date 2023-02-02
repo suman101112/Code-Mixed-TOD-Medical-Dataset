@@ -1,0 +1,194 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Rajya Laxmi	ANSWER}
+{\slot
+Rajya	B-name
+Laxmi	I-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 48	ANSWER}
+{\slot
+48	B-age
+}
+
+{\intent	p: 48	ANSWER}
+{\slot
+48	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఈ చెవు అప్పుడప్పుడు 2 3 రోజులకు ఒకసారి అట్ల నొప్పి వస్తోంది. ఒక 2 నిమిషాలు నొప్పి వస్తాంది, పోతాంది.	ANSWER}
+{\slot
+ఈ	O
+చెవు	B-body_part
+అప్పుడప్పుడు	B-time_period
+2	B-time_period
+3	B-time_period
+రోజులకు	I-time_period
+ఒకసారి	O
+అట్ల	O
+నొప్పి	B-symptom
+వస్తోంది.	O
+ఒక	O
+2	B-time_period
+నిమిషాలు	I-time_period
+నొప్పి	B-symptom
+వస్తాంది,	O
+పోతాంది.	O
+}
+
+{\intent	d: 2 3 daysకి ఒకసారి?	INFO_REQUEST}
+{\slot
+2	B-time_period
+3	B-time_period
+daysకి	I-time_period
+ఒకసారి?	O
+}
+
+{\intent	p: ఆ.	ANSWER}
+{\slot
+ఆ.	O
+}
+
+{\intent	d: ఆ చెవు	ACTION_DIR}
+{\slot
+ఆ	O
+చెవు	B-body_part
+}
+
+{\intent	d: వినపడుతుందా మంచిగా?	INFO_REQUEST}
+{\slot
+వినపడుతుందా	B-bodily_process
+మంచిగా?	B-normal
+}
+
+{\intent	p: వినపడుతుంది	ANSWER}
+{\slot
+వినపడుతుంది	B-bodily_process
+}
+
+{\intent	d: గుయ్యి అని శబ్దం గిట్ల ఏమైనా వస్తుందా ఉత్తప్పుడు చెవుల	INFO_REQUEST}
+{\slot
+గుయ్యి	B-symptom
+అని	O
+శబ్దం	B-bodily_process
+గిట్ల	O
+ఏమైనా	O
+వస్తుందా	O
+ఉత్తప్పుడు	O
+చెవుల	B-body_part
+}
+
+{\intent	p: ఏం రావట్లే	ANSWER}
+{\slot
+ఏం	O
+రావట్లే	B-negative
+}
+
+{\intent	d: చీము కారుడు ఇట్ల అయితే ఏం లేదు	INFO_REQUEST}
+{\slot
+చీము	B-symptom
+కారుడు	I-symptom
+ఇట్ల	O
+అయితే	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	p: ఏం లేదు	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	p: కొద్దిసేపు నొప్పిలేస్తాంది, మళ్ళ మానిపోతాంది.	STATEMENT}
+{\slot
+కొద్దిసేపు	O
+నొప్పిలేస్తాంది,	B-symptom
+మళ్ళ	O
+మానిపోతాంది.	O
+}
+
+{\intent	p: నొప్పి వచ్చినప్పుడు కొంచం వాపు వస్తాంది	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+వచ్చినప్పుడు	O
+కొంచం	O
+వాపు	B-symptom
+వస్తాంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: నొప్పి వచ్చినప్పుడు కొంచం వాపు వస్తాంది, మళ్ళ అదే తగ్గిపోతాంది	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+వచ్చినప్పుడు	O
+కొంచం	O
+వాపు	B-symptom
+వస్తాంది,	O
+మళ్ళ	O
+అదే	O
+తగ్గిపోతాంది	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చెవులు దురదలేస్తే ఏం వేసుకోవాలి?	INFO_REQUEST}
+{\slot
+చెవులు	B-body_part
+దురదలేస్తే	B-symptom
+ఏం	O
+వేసుకోవాలి?	O
+}
+
+{\intent	p: oil వేసుకోవచ్చా?	INFO_REQUEST}
+{\slot
+oil	B-food_substance
+వేసుకోవచ్చా?	O
+}
+
+{\intent	d: వద్దు	STATEMENT}
+{\slot
+వద్దు	O
+}
+
+{\intent	d: same మందు వేయండి	ACTION_DIR}
+{\slot
+same	O
+మందు	B-medicine
+వేయండి	O
+}
+
+{\intent	p: same మందు వేయాల్నా?	INFO_REQUEST}
+{\slot
+same	O
+మందు	B-medicine
+వేయాల్నా?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+

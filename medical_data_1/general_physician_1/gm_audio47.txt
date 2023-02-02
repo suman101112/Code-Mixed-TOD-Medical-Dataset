@@ -1,0 +1,143 @@
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నాకు thyroid problem ఉంది అండి.	STATEMENT}
+{\slot
+నాకు	O
+thyroid	B-medical_condition
+problem	I-medical_condition
+ఉంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: already నాకు వాళ్ళు glands తీసారు	STATEMENT}
+{\slot
+already	O
+నాకు	O
+వాళ్ళు	O
+glands	B-body_part
+తీసారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు ఒక 25 years అయితుంది అండి thyroid ఉండి.	STATEMENT}
+{\slot
+నాకు	O
+ఒక	O
+25	B-time_period
+years	I-time_period
+అయితుంది	O
+అండి	O
+thyroid	B-medical_condition
+ఉండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ అప్పటి నుంచి నేను ఇప్పటివరకు ఒక 100mg మాత్రమే వేసుకుంటున్నాను నేను tablet	STATEMENT}
+{\slot
+ఆ	O
+అప్పటి	B-time_period
+నుంచి	O
+నేను	O
+ఇప్పటివరకు	O
+ఒక	O
+100mg	B-medicine_dose
+మాత్రమే	O
+వేసుకుంటున్నాను	O
+నేను	O
+tablet	B-medicine
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు ఇప్పుడు కొంచం ఎక్కువైపోయింది, periods రావడంలేదు	STATEMENT}
+{\slot
+నాకు	O
+ఇప్పుడు	O
+కొంచం	O
+ఎక్కువైపోయింది,	B-symptom
+periods	B-bodily_process
+రావడంలేదు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: completeగా 6 months నుంచెల్లి	STATEMENT}
+{\slot
+completeగా	O
+6	B-time_period
+months	I-time_period
+నుంచెల్లి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: age ఎంత అమ్మా మీది?	INFO_REQUEST}
+{\slot
+age	B-time_period
+ఎంత	O
+అమ్మా	O
+మీది?	O
+}
+
+{\intent	p: 48 years అండి.	ANSWER}
+{\slot
+48	B-time_period
+years	I-time_period
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు gland తీయడం వలన problem అయిందంటారా? లేకపోతే ఎట్ల అనేసి?	INFO_REQUEST}
+{\slot
+నాకు	O
+gland	B-body_part
+తీయడం	O
+వలన	O
+problem	O
+అయిందంటారా?	O
+లేకపోతే	O
+ఎట్ల	O
+అనేసి?	O
+}
+
+{\intent	d: so మీకు glandలో problem ఉన్నప్పుడు thyroidectomy చేయడం జరుగుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీకు	O
+glandలో	B-body_part
+problem	O
+ఉన్నప్పుడు	O
+thyroidectomy	B-treatment
+చేయడం	O
+జరుగుతుంది.	O
+}
+

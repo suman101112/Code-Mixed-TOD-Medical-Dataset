@@ -1,0 +1,138 @@
+{\intent	p: sir నమస్తే sir.	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir.	O
+}
+
+{\intent	p: గొంతు గిట్ల బొంగురు పోయినట్లు వచ్చింది sir.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+గిట్ల	O
+బొంగురు	B-symptom
+పోయినట్లు	O
+వచ్చింది	O
+sir.	O
+}
+
+{\intent	d: ఇప్పుడు ఎట్లుంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎట్లుంది?	O
+}
+
+{\intent	p: ఇప్పుడు free అయింది sir.	ANSWER}
+{\slot
+ఇప్పుడు	B-time_period
+free	B-normal
+అయింది	O
+sir.	O
+}
+
+{\intent	p: అంటే ఒకసారి మరి ఇంకేమన్నా lightగా ఉన్నట్లు అనిపించింది sir మరి వాడల్నా వద్దా అని మిమ్మల్ని అడగాలని	STATEMENT}
+{\slot
+అంటే	O
+ఒకసారి	O
+మరి	O
+ఇంకేమన్నా	O
+lightగా	O
+ఉన్నట్లు	O
+అనిపించింది	O
+sir	O
+మరి	O
+వాడల్నా	O
+వద్దా	O
+అని	O
+మిమ్మల్ని	O
+అడగాలని	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం తెడావచ్చిందా sir అప్పటికెళ్ళి?	INFO_REQUEST}
+{\slot
+కొంచం	O
+తెడావచ్చిందా	O
+sir	O
+అప్పటికెళ్ళి?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కొద్దిగా గిత్త గుట్కా మింగినప్పుడు pain వస్తుంది sir lightగా	STATEMENT}
+{\slot
+కొద్దిగా	O
+గిత్త	O
+గుట్కా	B-habit
+మింగినప్పుడు	O
+pain	B-symptom
+వస్తుంది	O
+sir	O
+lightగా	O
+}
+
+{\intent	p: అయితే ఆవిరి నోట్ల కూడా పట్టిన sir నేను.	STATEMENT}
+{\slot
+అయితే	O
+ఆవిరి	O
+నోట్ల	B-body_part
+కూడా	O
+పట్టిన	O
+sir	O
+నేను.	O
+}
+
+{\intent	p: ఇంకా ఎన్ని రోజులు వాడాలి sir?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+ఎన్ని	O
+రోజులు	O
+వాడాలి	O
+sir?	O
+}
+
+{\intent	d: ఇంకో 1 week వాడు.	ANSWER}
+{\slot
+ఇంకో	O
+1	B-time_period
+week	I-time_period
+వాడు.	O
+}
+
+{\intent	p: సరిపోద్ది కదా sir?	INFO_REQUEST}
+{\slot
+సరిపోద్ది	O
+కదా	O
+sir?	O
+}
+
+{\intent	d: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	p: sir thank you sir.	APPRECIATE}
+{\slot
+sir	O
+thank	O
+you	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

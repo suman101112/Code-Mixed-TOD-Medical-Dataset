@@ -1,0 +1,438 @@
+{\intent	p: నాకు ఇక్కడ కొంచం నొప్పిలేసి.	STATEMENT}
+{\slot
+నాకు	O
+ఇక్కడ	B-location
+కొంచం	B-intensity
+నొప్పిలేసి.	B-symptom
+}
+
+{\intent	d: ఆ మొదల పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+ఆ	O
+మొదల	O
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: D Sri Devi.	ANSWER}
+{\slot
+D	B-name
+Sri	I-name
+Devi.	I-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 52.	ANSWER}
+{\slot
+52.	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	p: ఇక్కడ కొంచెం నొప్పి లేస్తుంది 4, 5 రోజులు అయి. కొంచెం మళ్లీ తగ్గింది నిన్నటి నుంచి బాగా నొప్పి లేస్తుంది.	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+కొంచెం	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది	B-symptom
+4,	B-time_period
+5	B-time_period
+రోజులు	I-time_period
+అయి.	O
+కొంచెం	O
+మళ్లీ	O
+తగ్గింది	B-normal
+నిన్నటి	B-time_period
+నుంచి	I-time_period
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది.	I-symptom
+}
+
+{\intent	d: ముక్కు దగ్గర గొంతులో నొప్పి.	ACK}
+{\slot
+ముక్కు	B-body_part
+దగ్గర	B-location
+గొంతులో	B-body_part
+నొప్పి.	B-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇవాళ లేదు కానీ నొప్పి బాగా వస్తుంది. గుంజుకు వస్తుంది,	STATEMENT}
+{\slot
+ఇవాళ	B-time_period
+లేదు	B-negative
+కానీ	O
+నొప్పి	B-symptom
+బాగా	B-intensity
+వస్తుంది.	B-symptom
+గుంజుకు	B-symptom
+వస్తుంది,	I-symptom
+}
+
+{\intent	p1: లోపల కూడా ఏదో తట్టినట్లు అవుతుంది sir.	STATEMENT}
+{\slot
+లోపల	B-location
+కూడా	O
+ఏదో	O
+తట్టినట్లు	B-symptom
+అవుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: సక్కగా కూర్చో	ACTION_DIR}
+{\slot
+సక్కగా	O
+కూర్చో	O
+}
+
+{\intent	d: ముక్కులో గాడ్పు ఆడుతుందా? ఆగిపోయిందా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+గాడ్పు	B-bodily_process
+ఆడుతుందా?	B-normal
+ఆగిపోయిందా?	B-symptom
+}
+
+{\intent	p: ఆ ఉంది sir	ANSWER}
+{\slot
+ఆ	O
+ఉంది	B-positive
+sir	O
+}
+
+{\intent	d: మంచిగానే ఉంది.	ACK}
+{\slot
+మంచిగానే	B-normal
+ఉంది.	I-positive
+}
+
+{\intent	d: చీమిడి లాగా వస్తుందా?	INFO_REQUEST}
+{\slot
+చీమిడి	B-body_substance
+లాగా	I-body_substance
+వస్తుందా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: గాడ్పు మంచిగా వస్తుందా?	INFO_REQUEST}
+{\slot
+గాడ్పు	B-bodily_process
+మంచిగా	B-normal
+వస్తుందా?	O
+}
+
+{\intent	p: వస్తుంది.	ANSWER}
+{\slot
+వస్తుంది.	B-positive
+}
+
+{\intent	d: జలుబు सर्दी దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+सर्दी	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఏమి లేదు	ANSWER}
+{\slot
+ఏమి	B-negative
+లేదు	I-negative
+}
+
+{\intent	d: ఏమి లేదు.	ACK}
+{\slot
+ఏమి	B-negative
+లేదు.	I-negative
+}
+
+{\intent	p: 4, 5 సార్ల ఈ spects పెట్టుకుంటా కదా అండి రొజు.	STATEMENT}
+{\slot
+4,	B-frequency
+5	I-frequency
+సార్ల	I-frequency
+ఈ	O
+spects	O
+పెట్టుకుంటా	O
+కదా	O
+అండి	O
+రొజు.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: వాటి మీదకు వెళ్లి మా మనవడు బాగా కొట్టిండు sir. వాటి మీదకెళ్ళి కొంచెం రక్తం వచ్చింది sir.	STATEMENT}
+{\slot
+వాటి	O
+మీదకు	O
+వెళ్లి	O
+మా	B-familial
+మనవడు	I-familial
+బాగా	B-intensity
+కొట్టిండు	B-trauma
+sir.	O
+వాటి	O
+మీదకెళ్ళి	O
+కొంచెం	O
+రక్తం	B-body_substance
+వచ్చింది	B-symptom
+sir.	O
+}
+
+{\intent	d: తల నొప్పి వచ్చినప్పుడు వాంతులు గిట్ల అవుతున్నాయా? వాంతి వచ్చినట్లు అనిపిస్తుందా?	INFO_REQUEST}
+{\slot
+తల	B-body_part
+నొప్పి	B-symptom
+వచ్చినప్పుడు	B-time_period
+వాంతులు	B-symptom
+గిట్ల	O
+అవుతున్నాయా?	O
+వాంతి	B-symptom
+వచ్చినట్లు	O
+అనిపిస్తుందా?	O
+}
+
+{\intent	p: తల నొప్పి వచ్చినప్పుడు ఆ?	INFO_REQUEST}
+{\slot
+తల	B-symptom
+నొప్పి	I-symptom
+వచ్చినప్పుడు	B-time_period
+ఆ?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: journey చేసినప్పుడల్లా వచ్చేది. ఇంట్లో ఉంటే తల నొప్పి వస్తాది.	ANSWER}
+{\slot
+journey	O
+చేసినప్పుడల్లా	O
+వచ్చేది.	O
+ఇంట్లో	B-place
+ఉంటే	O
+తల	B-symptom
+నొప్పి	I-symptom
+వస్తాది.	O
+}
+
+{\intent	d: ఇప్పుడు, ఇదంతా నొప్పి లేస్తుందా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు,	B-time_period
+ఇదంతా	B-location
+నొప్పి	B-symptom
+లేస్తుందా	I-symptom
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: ఇట్లనే, ఇక్కడే బాగా నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+ఇట్లనే,	O
+ఇక్కడే	B-location
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది.	I-symptom
+}
+
+{\intent	p: గుంజుతుంది అండి అంతే. ఇప్పుడు ఏం లేదు.	STATEMENT}
+{\slot
+గుంజుతుంది	B-symptom
+అండి	O
+అంతే.	O
+ఇప్పుడు	B-time_period
+ఏం	B-negative
+లేదు.	I-negative
+}
+
+{\intent	p: ఏదో తట్టినట్లు అవుతుంది అంతే.	STATEMENT}
+{\slot
+ఏదో	O
+తట్టినట్లు	B-symptom
+అవుతుంది	I-symptom
+అంతే.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ముక్కులో <non_verbal> అను.	ACTION_DIR}
+{\slot
+ముక్కులో	B-body_part
+<non_verbal>	O
+అను.	O
+}
+
+{\intent	p: <non_verbal>	COMMIT}
+{\slot
+<non_verbal>	O
+}
+
+{\intent	d: మంచిగుంది.	APPRECIATE}
+{\slot
+మంచిగుంది.	B-normal
+}
+
+{\intent	d: ఇది migrane అంటారు దీన్ని.	STATEMENT}
+{\slot
+ఇది	O
+migrane	B-symptom
+అంటారు	O
+దీన్ని.	O
+}
+
+{\intent	p1: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	d: పార్శ్వపు నొప్పి type ఇది.	MEDICAL_EXPLANATION}
+{\slot
+పార్శ్వపు	B-symptom
+నొప్పి	I-symptom
+type	I-symptom
+ఇది.	O
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: cold, sinusitis అలా ఏం కాదు ఇది.	MEDICAL_EXPLANATION}
+{\slot
+cold,	B-symptom
+sinusitis	B-symptom
+అలా	O
+ఏం	B-negative
+కాదు	I-negative
+ఇది.	O
+}
+
+{\intent	p1: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: నేను ఒక 15 రోజులకు మందులు రాసిస్తా	COMMIT}
+{\slot
+నేను	O
+ఒక	O
+15	B-time_period
+రోజులకు	I-time_period
+మందులు	B-medicine
+రాసిస్తా	O
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: నాకు వచ్చి మళ్లీ చూపించాలి	ACTION_DIR}
+{\slot
+నాకు	O
+వచ్చి	O
+మళ్లీ	O
+చూపించాలి	O
+}
+
+{\intent	p1: సరే sir.	COMMIT}
+{\slot
+సరే	O
+sir.	O
+}
+
+{\intent	p1: లోపల అయితే ఏం లేదు కదా sir?	INFO_REQUEST}
+{\slot
+లోపల	O
+అయితే	O
+ఏం	B-negative
+లేదు	I-negative
+కదా	O
+sir?	O
+}
+
+{\intent	d: లేదు	STATEMENT}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	d: మాంసం పెరగడం లేదు గాడ్పు మంచిగానే వస్తుంది	STATEMENT}
+{\slot
+మాంసం	B-symptom
+పెరగడం	I-bodily_process
+లేదు	B-negative
+గాడ్పు	B-bodily_process
+మంచిగానే	B-normal
+వస్తుంది	I-normal
+}
+
+{\intent	p1: అదే ఏదో తట్టినట్లు అవుతుంది అని చెబుతోంది.	STATEMENT}
+{\slot
+అదే	O
+ఏదో	O
+తట్టినట్లు	B-symptom
+అవుతుంది	I-symptom
+అని	O
+చెబుతోంది.	O
+}
+
+{\intent	p: కొంచెం ఇలా కిందకు తట్టినట్లు అవుతుంది sir.	STATEMENT}
+{\slot
+కొంచెం	B-intensity
+ఇలా	O
+కిందకు	B-location
+తట్టినట్లు	B-symptom
+అవుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	p: అది ఏం కాదు కదా sir.	INFO_REQUEST}
+{\slot
+అది	O
+ఏం	B-negative
+కాదు	I-negative
+కదా	O
+sir.	O
+}
+
+{\intent	d: అదేం కాదు పార్శ్వపు నొప్పి నరాల నొప్పి అది.	DIAGNOSIS}
+{\slot
+అదేం	B-negative
+కాదు	I-negative
+పార్శ్వపు	B-symptom
+నొప్పి	I-symptom
+నరాల	B-body_part
+నొప్పి	I-symptom
+అది.	O
+}
+

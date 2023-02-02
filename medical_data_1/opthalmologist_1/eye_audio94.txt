@@ -1,0 +1,212 @@
+{\intent	p: doctor గారు మా అమ్మాయి కుడి కంటిలో -6 power ఉంది అలాగే ఎడమ కంటిలో -8.5 ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+అమ్మాయి	B-familal
+కుడి	B-location
+కంటిలో	B-body_part
+-6	B-mtest_value
+power	B-symptom
+ఉంది	O
+అలాగే	O
+ఎడమ	B-location
+కంటిలో	B-body_part
+-8.5	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	p: నల్లగుడ్డు మందంగా ఉంది, lasik చేయలేము అంటున్నారు.	STATEMENT}
+{\slot
+నల్లగుడ్డు	B-body_part
+మందంగా	B-symptom
+ఉంది,	O
+lasik	B-treatment
+చేయలేము	B-negative
+అంటున్నారు.	O
+}
+
+{\intent	p: మా అమ్మాయికి కళ్ళజోడు లేకుండా చేయవచ్చా?	INFO_REQUEST}
+{\slot
+మా	O
+అమ్మాయికి	B-familal
+కళ్ళజోడు	O
+లేకుండా	O
+చేయవచ్చా?	O
+}
+
+{\intent	d: ఇప్పుడు మీ మొదటి ప్రశ్న వచ్చి పాపకి మీ పాపకి మీరు చెప్తుంది ఒక కంటికి -6 ఇంకో కంటికి -8.5 power.	ACK}
+{\slot
+ఇప్పుడు	O
+మీ	O
+మొదటి	O
+ప్రశ్న	O
+వచ్చి	O
+పాపకి	B-person
+మీ	O
+పాపకి	B-person
+మీరు	O
+చెప్తుంది	O
+ఒక	O
+కంటికి	B-body_part
+-6	B-mtest_value
+ఇంకో	O
+కంటికి	B-body_part
+-8.5	B-mtest_value
+power.	B-symptom
+}
+
+{\intent	d: అంటే చాన high power.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+చాన	B-intensity
+high	B-intensity
+power.	B-symptom
+}
+
+{\intent	d: ఈ powerలో short sight, long sight అనే రెండు రకాలు plus power minus power ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+powerలో	B-symptom
+short	B-location
+sight,	B-bodily_process
+long	B-location
+sight	B-bodily_process
+అనే	O
+రెండు	O
+రకాలు	O
+plus	B-mtest
+power	B-symptom
+minus	B-mtest
+power	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: ఇప్పుడు మీరు చెప్పింది minus power.	MEDICAL_EXPLANATION}
+{\slot
+ఇప్పుడు	O
+మీరు	O
+చెప్పింది	O
+minus	B-mtest
+power.	B-symptom
+}
+
+{\intent	d: 2 విషయం మీరు ఎమి చెప్పారు అంటే కంటిలో lasik అనే treatment power లేకుండా తీసే laser treatment సరిపడట్లేదు అని మీరు ఏ doctorని అయితే చూసారో ఆ doctor మీకు చెప్పడం జరిగింది.	MEDICAL_EXPLANATION}
+{\slot
+2	O
+విషయం	O
+మీరు	O
+ఎమి	O
+చెప్పారు	O
+అంటే	O
+కంటిలో	B-body_part
+lasik	B-treatment
+అనే	O
+treatment	B-treatment
+power	B-symptom
+లేకుండా	B-negative
+తీసే	O
+laser	B-treatment
+treatment	I-treatment
+సరిపడట్లేదు	O
+అని	O
+మీరు	O
+ఏ	O
+doctorని	B-medical_professional
+అయితే	O
+చూసారో	O
+ఆ	O
+doctor	B-medical_professional
+మీకు	O
+చెప్పడం	O
+జరిగింది.	O
+}
+
+{\intent	d: అంటే కంటిలో ఉన్న నల్ల గుడ్డు మీద ఉన్న పొర, cornea అంటాం దీని మందం సరిగ్గా లేకపోవడం వలన lasik suitable కాదు అని doctorగారు చెప్పారు అది correct.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+కంటిలో	B-body_part
+ఉన్న	O
+నల్ల	B-body_part
+గుడ్డు	B-body_part
+మీద	B-location
+ఉన్న	O
+పొర,	B-body_part
+cornea	B-body_part
+అంటాం	O
+దీని	O
+మందం	B-symptom
+సరిగ్గా	I-symptom
+లేకపోవడం	I-symptom
+వలన	O
+lasik	B-treatment
+suitable	O
+కాదు	B-negative
+అని	O
+doctorగారు	B-medical_professional
+చెప్పారు	O
+అది	O
+correct.	O
+}
+
+{\intent	d: కాబట్టి lasik చేయకూడదు.	MEDICAL_EXPLANATION}
+{\slot
+కాబట్టి	O
+lasik	B-treatment
+చేయకూడదు.	B-negative
+}
+
+{\intent	d: ఇట్లాటి పిల్లలకి ఈ రోజూ మనం ఈ రోజులే కాదు గత 20 సంవత్సరాలుగా చేస్తున్నాం. అది ఏంటి అంటే కంటి లోపల lens అమరుస్తాం. మనం బయట పెట్టే contact lens ఏ permanentగా కంట్లో పెడతాం.	MEDICAL_EXPLANATION}
+{\slot
+ఇట్లాటి	O
+పిల్లలకి	O
+ఈ	O
+రోజూ	B-time_period
+మనం	O
+ఈ	O
+రోజులే	B-time_period
+కాదు	O
+గత	B-time_period
+20	B-time_period
+సంవత్సరాలుగా	B-time_period
+చేస్తున్నాం.	O
+అది	O
+ఏంటి	O
+అంటే	O
+కంటి	B-body_part
+లోపల	B-location
+lens	O
+అమరుస్తాం.	O
+మనం	O
+బయట	O
+పెట్టే	O
+contact	O
+lens	O
+ఏ	O
+permanentగా	O
+కంట్లో	B-body_part
+పెడతాం.	O
+}
+
+{\intent	d: పెడితే అది lasik laser లాగానే	MEDICAL_EXPLANATION}
+{\slot
+పెడితే	O
+అది	O
+lasik	B-treatment
+laser	I-treatment
+లాగానే	O
+}
+
+{\intent	d: మీకు చూసే వాళ్ళకి చేసినట్లుగా తెలియదు, మీకు full vision వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+మీకు	O
+చూసే	B-bodily_process
+వాళ్ళకి	O
+చేసినట్లుగా	O
+తెలియదు,	O
+మీకు	O
+full	B-bodily_process
+vision	I-bodily_process
+వస్తుంది.	O
+}
+

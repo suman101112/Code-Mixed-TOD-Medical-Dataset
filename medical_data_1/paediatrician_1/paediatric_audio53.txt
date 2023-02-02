@@ -1,0 +1,108 @@
+{\intent	p1: sir ये गोली डाले तो वोकर सो वांत हो रहा	STATEMENT}
+{\slot
+sir	O
+ये	O
+गोली	B-medicine
+डाले	O
+तो	O
+वोकर	B-symptom
+सो	O
+वांत	B-symptom
+हो	O
+रहा	O
+}
+
+{\intent	d: वोकर सो वांत है	ACK}
+{\slot
+वोकर	B-symptom
+सो	O
+वांत	B-symptom
+है	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: कौनसा गोली डाले तो?	INFO_REQUEST}
+{\slot
+कौनसा	O
+गोली	B-medicine
+डाले	O
+तो?	O
+}
+
+{\intent	p: ఇదిగోండి doctor	STATEMENT}
+{\slot
+ఇదిగోండి	O
+doctor	B-medical_professional
+}
+
+{\intent	d: అదా?	STATEMENT}
+{\slot
+అదా?	O
+}
+
+{\intent	d: ఇది మింగేది కాదు	STATEMENT}
+{\slot
+ఇది	O
+మింగేది	O
+కాదు	O
+}
+
+{\intent	d: అర్ధమైందా?	INFO_REQUEST}
+{\slot
+అర్ధమైందా?	O
+}
+
+{\intent	d: ऐसा tongue पर रखे तो, కరిగిపోవాలి	STATEMENT}
+{\slot
+ऐसा	O
+tongue	B-body_part
+पर	O
+रखे	O
+तो,	O
+కరిగిపోవాలి	O
+}
+
+{\intent	d: ఇప్పుడు వాంతులు ఇవాళ ఎన్ని అయినాయి	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+వాంతులు	B-symptom
+ఇవాళ	O
+ఎన్ని	O
+అయినాయి	O
+}
+
+{\intent	p1: మొన్న 2 అయినయి sir.	ANSWER}
+{\slot
+మొన్న	B-time_period
+2	B-frequency
+అయినయి	O
+sir.	O
+}
+
+{\intent	d: జ్వరం ఉందా ఏమన్నా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఉందా	O
+ఏమన్నా?	O
+}
+
+{\intent	p1: ఏం లేదు sir	ANSWER}
+{\slot
+ఏం	O
+లేదు	O
+sir	O
+}
+
+{\intent	d: ORS 200ml water కలిపి తాగిపీ	ACTION_DIR}
+{\slot
+ORS	B-medicine
+200ml	B-medicine_dose
+water	B-food_substance
+కలిపి	O
+తాగిపీ	B-bodily_process
+}
+

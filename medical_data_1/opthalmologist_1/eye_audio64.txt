@@ -1,0 +1,138 @@
+{\intent	p: doctor గారు నా పేరు Munna.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Munna.	B-age
+}
+
+{\intent	p: వయస్సు 34 సంవత్సరాలు.	STATEMENT}
+{\slot
+వయస్సు	O
+34	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నేను ఎక్కువగా journey చేస్తూ ఉంటాను.	STATEMENT}
+{\slot
+నేను	O
+ఎక్కువగా	B-intensity
+journey	B-profession
+చేస్తూ	O
+ఉంటాను.	O
+}
+
+{\intent	p: నా కనులు ఎక్కువగా దురద పెడుతూ ఉంటాయి.	STATEMENT}
+{\slot
+నా	O
+కనులు	B-body_part
+ఎక్కువగా	B-intensity
+దురద	B-symptom
+పెడుతూ	I-symptom
+ఉంటాయి.	O
+}
+
+{\intent	p: ఎక్కువగా రుద్దుకుంటూ ఉంటాను.	STATEMENT}
+{\slot
+ఎక్కువగా	B-intensity
+రుద్దుకుంటూ	B-symptom
+ఉంటాను.	O
+}
+
+{\intent	p: అలాగే నా కళ్ళ కింద dark circles బాగా ఉన్నాయి.	STATEMENT}
+{\slot
+అలాగే	O
+నా	O
+కళ్ళ	B-body_part
+కింద	B-location
+dark	B-medical_condition
+circles	I-medical_condition
+బాగా	B-intensity
+ఉన్నాయి.	O
+}
+
+{\intent	d: మీరు ఎక్కువగా journey చేస్తూ ఉంటారు కబట్టి మీకు ఏమైనా allergy ఉందేమో చిన్నప్పటి నుంచి ఒక్కసారి మీరు అది నాకు historyలో చెప్పలేదు అండి.	STATEMENT}
+{\slot
+మీరు	O
+ఎక్కువగా	O
+journey	B-profession
+చేస్తూ	O
+ఉంటారు	O
+కబట్టి	O
+మీకు	O
+ఏమైనా	O
+allergy	B-medical_condition
+ఉందేమో	O
+చిన్నప్పటి	O
+నుంచి	O
+ఒక్కసారి	O
+మీరు	O
+అది	O
+నాకు	O
+historyలో	O
+చెప్పలేదు	O
+అండి.	O
+}
+
+{\intent	d: మీకు allergy ఉన్నట్లు అయితే మీకు ఒక్కొక్కసారి ఈ దుమ్ము ధూళి కి కూడా allergy ఉంటూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+మీకు	O
+allergy	B-medical_condition
+ఉన్నట్లు	O
+అయితే	O
+మీకు	O
+ఒక్కొక్కసారి	O
+ఈ	O
+దుమ్ము	O
+ధూళి	O
+కి	O
+కూడా	O
+allergy	B-medical_condition
+ఉంటూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అలాంటప్పుడు మనం కళ్ళు బాగా నలుపుతూ ఉంటాము.	MEDICAL_EXPLANATION}
+{\slot
+అలాంటప్పుడు	O
+మనం	O
+కళ్ళు	B-body_part
+బాగా	B-intensity
+నలుపుతూ	B-symptom
+ఉంటాము.	O
+}
+
+{\intent	d: నలిపేటప్పటికీ కళ్ళు ఎర్రబడి నీళ్లు కారి అది ఒక cycle లాగా అవుతూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+నలిపేటప్పటికీ	O
+కళ్ళు	B-body_part
+ఎర్రబడి	B-color
+నీళ్లు	B-food_substance
+కారి	B-symptom
+అది	O
+ఒక	O
+cycle	O
+లాగా	O
+అవుతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: so అలాంటప్పుడు దానికి తగిన medicines మీరు ఒక కంటి doctor దెగ్గరికి వెళితే medicines prescribe చేస్తారు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అలాంటప్పుడు	O
+దానికి	O
+తగిన	O
+medicines	B-medicine
+మీరు	O
+ఒక	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరికి	O
+వెళితే	O
+medicines	B-medicine
+prescribe	O
+చేస్తారు.	O
+}
+

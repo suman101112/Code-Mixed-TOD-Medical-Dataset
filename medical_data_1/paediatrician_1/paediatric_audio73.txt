@@ -1,0 +1,176 @@
+{\intent	p: ఆ sir మా బాబుకు ఇప్పుడు 7 years అండి	ANSWER}
+{\slot
+ఆ	O
+sir	O
+మా	O
+బాబుకు	B-person
+ఇప్పుడు	O
+7	B-age
+years	I-age
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ అంటే చదవడము చాలా కష్టంగా అనుకుంటాడు, చదవడు	STATEMENT}
+{\slot
+ఆ	O
+అంటే	O
+చదవడము	B-bodily_process
+చాలా	B-intensity
+కష్టంగా	B-symptom
+అనుకుంటాడు,	O
+చదవడు	B-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఏమన్నా అడిగితే నాకు ఇంకా గుర్తుండడం లేదు mummy అని చెప్పి, చెప్పేస్తాడు, ఏడుస్తాడు	STATEMENT}
+{\slot
+ఏమన్నా	O
+అడిగితే	O
+నాకు	O
+ఇంకా	O
+గుర్తుండడం	B-bodily_process
+లేదు	B-negative
+mummy	B-person
+అని	O
+చెప్పి,	O
+చెప్పేస్తాడు,	O
+ఏడుస్తాడు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎందుకు గుర్తుండదో అర్ధం కావట్లేదు	STATEMENT}
+{\slot
+ఎందుకు	O
+గుర్తుండదో	O
+అర్ధం	O
+కావట్లేదు	O
+}
+
+{\intent	d: చిన్నప్పుడు ఏమైనా health problems వచ్చాయా బాబుకి?	INFO_REQUEST}
+{\slot
+చిన్నప్పుడు	B-person
+ఏమైనా	O
+health	B-medical_condition
+problems	I-medical_condition
+వచ్చాయా	O
+బాబుకి?	O
+}
+
+{\intent	p: ఆ లేదండీ .	ANSWER}
+{\slot
+ఆ	O
+లేదండీ	O
+.	O
+}
+
+{\intent	d: ఏదన్నా medicines ఎక్కువ వాడడము, ఏదైనా skin problems	INFO_REQUEST}
+{\slot
+ఏదన్నా	O
+medicines	B-medicine
+ఎక్కువ	B-intensity
+వాడడము,	O
+ఏదైనా	O
+skin	B-body_part
+problems	I-medical_condition
+}
+
+{\intent	p: ఇప్పటివరకు ఏది లేదు, కాకపోతే జ్వరము, జలుబు అట్ల ఏమైనా వస్తే చూపిస్తాము, medicines use చేస్తాము	ANSWER}
+{\slot
+ఇప్పటివరకు	O
+ఏది	O
+లేదు,	O
+కాకపోతే	O
+జ్వరము,	B-symptom
+జలుబు	B-medical_condition
+అట్ల	O
+ఏమైనా	O
+వస్తే	O
+చూపిస్తాము,	O
+medicines	B-medicine
+use	O
+చేస్తాము	O
+}
+
+{\intent	d: ఎన్ని రోజులకొకసారి వస్తది, suppose ఒక 1 yearలో ఎన్ని రోజులకొకసారి వస్తాదమ్మా? ఒక 1 month, 2 months 3 monthsకి వస్తుంటుందా?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులకొకసారి	B-time_period
+వస్తది,	O
+suppose	O
+ఒక	O
+1	B-time_period
+yearలో	I-time_period
+ఎన్ని	O
+రోజులకొకసారి	B-time_period
+వస్తాదమ్మా?	O
+ఒక	O
+1	B-time_period
+month,	I-time_period
+2	B-time_period
+months	I-time_period
+3	B-time_period
+monthsకి	I-time_period
+వస్తుంటుందా?	O
+}
+
+{\intent	p: 3 monthsకి అట్ల ఒకసారి వస్తున్నదండీ	ANSWER}
+{\slot
+3	B-time_period
+monthsకి	I-time_period
+అట్ల	O
+ఒకసారి	O
+వస్తున్నదండీ	O
+}
+
+{\intent	d: so అప్పుడు ఎక్కువ antibiotic వాడుతారా?	INFO_REQUEST}
+{\slot
+so	O
+అప్పుడు	B-time_period
+ఎక్కువ	B-intensity
+antibiotic	B-medicine
+వాడుతారా?	O
+}
+
+{\intent	p: ఆ వాడుతాం	ANSWER}
+{\slot
+ఆ	O
+వాడుతాం	O
+}
+
+{\intent	d: so అక్కడే, అక్కడే disturb అవుతది	STATEMENT}
+{\slot
+so	O
+అక్కడే,	O
+అక్కడే	O
+disturb	B-symptom
+అవుతది	O
+}
+
+{\intent	d: ఈ antibiotics వల్ల, మనకు immunity disturb అవ్వడం వలన, వాళ్ళకు attention తగ్గిపోతది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+antibiotics	B-medicine
+వల్ల,	O
+మనకు	O
+immunity	B-symptom
+disturb	I-symptom
+అవ్వడం	O
+వలన,	O
+వాళ్ళకు	O
+attention	B-symptom
+తగ్గిపోతది.	I-symptom
+}
+

@@ -1,0 +1,26 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 64, m	STATEMENT}
+{\slot
+64,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: general checkup కి వచ్చాము	STATEMENT}
+{\slot
+general	O
+checkup	O
+కి	O
+వచ్చాము	O
+}
+

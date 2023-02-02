@@ -1,0 +1,98 @@
+{\intent	d: చెప్పండి తాత, పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+తాత,	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Raami reddy sir	ANSWER}
+{\slot
+Raami	B-name
+reddy	I-name
+sir	O
+}
+
+{\intent	d: చెప్పండి ఏం ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: kidney operation అయింది sir	ANSWER}
+{\slot
+kidney	B-treatment
+operation	I-treatment
+అయింది	O
+sir	O
+}
+
+{\intent	d: ఇప్పుడు ఏమి ఇబ్బంది అవుతుంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏమి	O
+ఇబ్బంది	O
+అవుతుంది?	O
+}
+
+{\intent	p: కడుపు నొప్పి లేస్తుంది sir.	ANSWER}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది	O
+sir.	O
+}
+
+{\intent	d: కడుపు నొప్పి వస్తుంది	ACK}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 6 రోజులు అయ్యే,	ANSWER}
+{\slot
+6	B-time_period
+రోజులు	I-time_period
+అయ్యే,	O
+}
+
+{\intent	p: జ్వరం వచ్చింది	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: 92లో scan చేస్తారు తాత	STATEMENT}
+{\slot
+92లో	O
+scan	B-mtest
+చేస్తారు	O
+తాత	B-person
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: పొట్ట scan చేస్తారు 92లో, పరిక్ష చేయించుకోని రాపో	ACTION_DIR}
+{\slot
+పొట్ట	B-body_part
+scan	B-mtest
+చేస్తారు	O
+92లో,	O
+పరిక్ష	B-mtest
+చేయించుకోని	O
+రాపో	O
+}
+

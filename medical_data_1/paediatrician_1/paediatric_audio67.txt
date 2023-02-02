@@ -1,0 +1,250 @@
+{\intent	p: sir నమస్తే sir	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే అమ్మా చెప్పండి ramesh గారు	ACTION_DIR}
+{\slot
+నమస్తే	B-location
+అమ్మా	O
+చెప్పండి	O
+ramesh	B-name
+గారు	O
+}
+
+{\intent	p: మా పాపకి దెగ్గర దెగ్గర 14 years వచ్చింది sir	ANSWER}
+{\slot
+మా	O
+పాపకి	B-person
+దెగ్గర	O
+దెగ్గర	O
+14	B-age
+years	I-age
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: చెప్పండి చెప్పండి ramesh గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+చెప్పండి	O
+ramesh	B-name
+గారు	O
+}
+
+{\intent	p: పాపకి 14 సంవత్సరాలు sir, 5 సంవత్సరాలు ఉన్నప్పుడు మంచం మీద నుంచి jump చేసి పట్టుకోమని నా దెగ్గరికి catch చేయమండీ	STATEMENT}
+{\slot
+పాపకి	B-person
+14	B-age
+సంవత్సరాలు	I-age
+sir,	O
+5	B-age
+సంవత్సరాలు	B-age
+ఉన్నప్పుడు	B-time_period
+మంచం	O
+మీద	O
+నుంచి	O
+jump	O
+చేసి	O
+పట్టుకోమని	O
+నా	O
+దెగ్గరికి	O
+catch	O
+చేయమండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: but నేను catch slip అయ్యేసారికి తల వచ్చి groundకి తగిలింది	STATEMENT}
+{\slot
+but	O
+నేను	O
+catch	O
+slip	O
+అయ్యేసారికి	O
+తల	B-body_part
+వచ్చి	O
+groundకి	O
+తగిలింది	B-trauma
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తగిలిన తరువాత ఒక 10 minutes unconscious లో వెళ్ళింది, మళ్ళి నీళ్లు అయి తీసుకొచ్చి నెత్తి మీద కొట్టము మళ్ళి होशలోకి వచ్చింది	STATEMENT}
+{\slot
+తగిలిన	B-trauma
+తరువాత	B-time_period
+ఒక	O
+10	B-time_period
+minutes	I-time_period
+unconscious	B-symptom
+లో	O
+వెళ్ళింది,	O
+మళ్ళి	O
+నీళ్లు	B-food_substance
+అయి	O
+తీసుకొచ్చి	O
+నెత్తి	B-body_part
+మీద	B-location
+కొట్టము	O
+మళ్ళి	O
+होशలోకి	B-normal
+వచ్చింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: immediately hospitalకి వెళ్ళి చూపిస్తే ఇప్పుడు ఎమి scan చేయరండీ పాప situation బానే ఉందన్నారు	STATEMENT}
+{\slot
+immediately	O
+hospitalకి	B-place
+వెళ్ళి	O
+చూపిస్తే	O
+ఇప్పుడు	O
+ఎమి	O
+scan	B-mtest
+చేయరండీ	O
+పాప	B-person
+situation	O
+బానే	B-normal
+ఉందన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే పెరిగేకొద్ది చాలా అల్లరి చేయడము ఎవరు చెప్పినా మాట వినకపొవటము	STATEMENT}
+{\slot
+అలాగే	O
+పెరిగేకొద్ది	O
+చాలా	O
+అల్లరి	B-symptom
+చేయడము	O
+ఎవరు	O
+చెప్పినా	O
+మాట	B-symptom
+వినకపొవటము	I-symptom
+}
+
+{\intent	p: ఇప్పుడు 14 years వచ్చినాయి sir maturity కూడా అయింది పాప ఇప్పుడు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+14	B-age
+years	I-age
+వచ్చినాయి	O
+sir	O
+maturity	B-bodily_process
+కూడా	O
+అయింది	O
+పాప	B-person
+ఇప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఎవరి మాట వినట్లేదు ఏం చేసుకుంటారు, కొడతారా కొట్టండి, అన్నం పెట్టారా? నేను పడుకుంటాను	STATEMENT}
+{\slot
+అయితే	O
+ఎవరి	O
+మాట	B-symptom
+వినట్లేదు	I-symptom
+ఏం	O
+చేసుకుంటారు,	O
+కొడతారా	O
+కొట్టండి,	O
+అన్నం	O
+పెట్టారా?	O
+నేను	O
+పడుకుంటాను	B-bodily_process
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: నేను schoolలోనే చదివేస్తున్నాను కానీ నేను ఇంటికాడ వచ్చినప్పుడు చదవను	STATEMENT}
+{\slot
+నేను	O
+schoolలోనే	B-place
+చదివేస్తున్నాను	O
+కానీ	O
+నేను	O
+ఇంటికాడ	O
+వచ్చినప్పుడు	O
+చదవను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ ఇంట్లో పిల్లలు అటువంటి behaviour ఉందా?	INFO_REQUEST}
+{\slot
+మీ	O
+ఇంట్లో	O
+పిల్లలు	O
+అటువంటి	O
+behaviour	O
+ఉందా?	O
+}
+
+{\intent	p: ఆ లేదు sir	ANSWER}
+{\slot
+ఆ	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	p: fatherతో divorce అయింది sir, husband	STATEMENT}
+{\slot
+fatherతో	B-familal
+divorce	O
+అయింది	O
+sir,	O
+husband	B-familal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానివల్ల maturityలో ఏమన్నా disturb అయిందా?	INFO_REQUEST}
+{\slot
+దానివల్ల	O
+maturityలో	B-bodily_process
+ఏమన్నా	O
+disturb	B-symptom
+అయిందా?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అనే doubt వచ్చిందన్నమాట	STATEMENT}
+{\slot
+అనే	O
+doubt	O
+వచ్చిందన్నమాట	O
+}
+

@@ -1,0 +1,176 @@
+{\intent	d: sir నమస్కారం అండి.	GREETING}
+{\slot
+sir	O
+నమస్కారం	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి sir ఏంటి సమస్య.	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+sir	O
+ఏంటి	O
+సమస్య.	O
+}
+
+{\intent	p: gastric problem.	ANSWER}
+{\slot
+gastric	B-medical_condition
+problem.	I-medical_condition
+}
+
+{\intent	p: అయిపోయి 3 4 సంవత్సరాలు అయింది sir.	STATEMENT}
+{\slot
+అయిపోయి	O
+3	B-time_period
+4	B-time_period
+సంవత్సరాలు	I-time_period
+అయింది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే sir. tablets నేను doctor గారు. నేను english medicines ఏ వాడుతున్నాను.	STATEMENT}
+{\slot
+అయితే	O
+sir.	O
+tablets	B-medicine
+నేను	O
+doctor	B-medical_professional
+గారు.	O
+నేను	O
+english	B-medicine
+medicines	B-medicine
+ఏ	O
+వాడుతున్నాను.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కానీ ఏదన్నా మసాలా అలా కడుపులో ఉండిపోయి motion అవ్వట్లేదు 2 3 రోజుల నుంచి sir. అదే problem ఎక్కువగా.	STATEMENT}
+{\slot
+కానీ	O
+ఏదన్నా	O
+మసాలా	O
+అలా	O
+కడుపులో	B-body_part
+ఉండిపోయి	O
+motion	B-bodily_process
+అవ్వట్లేదు	I-symptom
+2	B-time_period
+3	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+sir.	O
+అదే	O
+problem	O
+ఎక్కువగా.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఇంకేమన్నా సమస్య ఉందా Babji గారు?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+సమస్య	O
+ఉందా	O
+Babji	B-name
+గారు?	O
+}
+
+{\intent	p: నాకు అదే సమస్య అండి. కాకపోతే కడుపు పొంగుతది, అది ఒక మధ్యానం తింటే మరి సాయంకాలం తినకపోతే బాగుంటది. సాయంకాలం కూడా కొద్దిగా తింటే motion అవ్వదు. అదే problem	ANSWER}
+{\slot
+నాకు	O
+అదే	O
+సమస్య	O
+అండి.	O
+కాకపోతే	O
+కడుపు	B-body_part
+పొంగుతది,	I-symptom
+అది	O
+ఒక	O
+మధ్యానం	B-time_period
+తింటే	B-bodily_process
+మరి	O
+సాయంకాలం	B-time_period
+తినకపోతే	B-symptom
+బాగుంటది.	B-normal
+సాయంకాలం	B-time_period
+కూడా	O
+కొద్దిగా	O
+తింటే	B-bodily_process
+motion	B-bodily_process
+అవ్వదు.	B-symptom
+అదే	O
+problem	O
+}
+
+{\intent	d: ok. ok Babji గారు ఇంకా?	INFO_REQUEST}
+{\slot
+ok.	O
+ok	O
+Babji	B-name
+గారు	O
+ఇంకా?	O
+}
+
+{\intent	p: అదే అండి. main problem నాకు gastric. అంటే ఏమైనా తిందామన్నా chicken తిందామన్నా ఏం తిందామన్నా భయమే. కాయగూరలు తిన్న problem లేదు. chicken తిందామంటే మాత్రం చాలా problemగా ఉంటది.	ANSWER}
+{\slot
+అదే	O
+అండి.	O
+main	O
+problem	O
+నాకు	O
+gastric.	B-medical_condition
+అంటే	O
+ఏమైనా	O
+తిందామన్నా	O
+chicken	B-food_substance
+తిందామన్నా	O
+ఏం	O
+తిందామన్నా	O
+భయమే.	O
+కాయగూరలు	B-food_substance
+తిన్న	O
+problem	B-symptom
+లేదు.	B-negative
+chicken	B-food_substance
+తిందామంటే	O
+మాత్రం	O
+చాలా	B-intensity
+problemగా	B-symptom
+ఉంటది.	B-positive
+}
+
+{\intent	d: ok Babji గారు. Babji గారు మీకు ఉన్నది సమస్య ఏంటి అంటే gastritis అన్నమాట. దీర్ఘకాలికంగా వేధించే కడుపులో పూసే పూత అన్నమాట.	DIAGNOSIS}
+{\slot
+ok	O
+Babji	O
+గారు.	O
+Babji	B-name
+గారు	O
+మీకు	O
+ఉన్నది	O
+సమస్య	O
+ఏంటి	O
+అంటే	O
+gastritis	B-symptom
+అన్నమాట.	O
+దీర్ఘకాలికంగా	B-time_period
+వేధించే	O
+కడుపులో	B-body_part
+పూసే	O
+పూత	B-medical_condition
+అన్నమాట.	O
+}
+

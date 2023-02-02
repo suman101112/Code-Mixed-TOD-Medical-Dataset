@@ -1,0 +1,209 @@
+{\intent	p: నమస్కారమండీ doctorగారు	GREETING}
+{\slot
+నమస్కారమండీ	O
+doctorగారు	B-medical_professional
+}
+
+{\intent	d: ఆ నమస్కారమండీ,	GREETING}
+{\slot
+ఆ	O
+నమస్కారమండీ,	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నాకు bariatric surgery అయిందండి.	STATEMENT}
+{\slot
+నాకు	O
+bariatric	B-treatment
+surgery	I-treatment
+అయిందండి.	O
+}
+
+{\intent	d: కొద్దిగా గట్టిగా మట్లాడండమ్మా	SNU}
+{\slot
+కొద్దిగా	O
+గట్టిగా	O
+మట్లాడండమ్మా	O
+}
+
+{\intent	p: కొద్దిగా నాకు bariatric surgery అయిందండి.	STATEMENT}
+{\slot
+కొద్దిగా	O
+నాకు	O
+bariatric	B-treatment
+surgery	I-treatment
+అయిందండి.	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: అయినా తరువాత thyroid ఎక్కువగా ఉండడం వల్ల బాగా అది dose పెంచారండీ	STATEMENT}
+{\slot
+అయినా	O
+తరువాత	O
+thyroid	B-medical_condition
+ఎక్కువగా	B-intensity
+ఉండడం	O
+వల్ల	O
+బాగా	B-intensity
+అది	O
+dose	B-medicine
+పెంచారండీ	O
+}
+
+{\intent	p: thyroid నేను 75mg వాడుతాను	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+నేను	O
+75mg	B-medicine_dose
+వాడుతాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: actually నాకు thyroid మళ్ళి వచ్చినట్లు అనిపిస్తే, మళ్ళి doctorగారు dose పెంచారు	STATEMENT}
+{\slot
+actually	O
+నాకు	O
+thyroid	B-medical_condition
+మళ్ళి	O
+వచ్చినట్లు	O
+అనిపిస్తే,	O
+మళ్ళి	O
+doctorగారు	B-medical_professional
+dose	B-medicine
+పెంచారు	O
+}
+
+{\intent	p: అది వాడిన దెగ్గర నుంచి బాగా వేడి ఎక్కువై ఎమో మరి cystల లాగా వచ్చి, piles లాగా వచ్చి బాగా బాధపెట్టి, ఎర్రగా మండిపోయి, bathroomకి వెళ్ళడానికి ఇబ్బందిగా ఉండేదండి.	STATEMENT}
+{\slot
+అది	O
+వాడిన	O
+దెగ్గర	O
+నుంచి	O
+బాగా	B-intensity
+వేడి	B-symptom
+ఎక్కువై	B-intensity
+ఎమో	O
+మరి	O
+cystల	B-medical_condition
+లాగా	O
+వచ్చి,	O
+piles	B-symptom
+లాగా	O
+వచ్చి	O
+బాగా	B-intensity
+బాధపెట్టి,	B-symptom
+ఎర్రగా	B-color
+మండిపోయి,	B-symptom
+bathroomకి	B-bodily_process
+వెళ్ళడానికి	I-bodily_process
+ఇబ్బందిగా	B-symptom
+ఉండేదండి.	O
+}
+
+{\intent	d: right అమ్మా ఇప్పుడు thyroid మాత్ర 75 చేసిన ఆ thyroid పరిక్ష చేయించారా blood test?	INFO_REQUEST}
+{\slot
+right	O
+అమ్మా	O
+ఇప్పుడు	O
+thyroid	B-medical_condition
+మాత్ర	B-medicine
+75	B-age
+చేసిన	O
+ఆ	O
+thyroid	B-medical_condition
+పరిక్ష	B-mtest
+చేయించారా	O
+blood	B-body_substance
+test?	B-mtest
+}
+
+{\intent	d: ఎమ్మా?	REPEAT_REPHRASE}
+{\slot
+ఎమ్మా?	O
+}
+
+{\intent	p: 1 point ఎక్కువ ఉంది అన్నారండి	INFO_REQUEST}
+{\slot
+1	B-mtest_value
+point	I-mtest_value
+ఎక్కువ	B-intensity
+ఉంది	O
+అన్నారండి	O
+}
+
+{\intent	d: right మా	ACK}
+{\slot
+right	O
+మా	O
+}
+
+{\intent	d: ఇంకేమన్నా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: అదే దీని గురించే అండి	ANSWER}
+{\slot
+అదే	O
+దీని	O
+గురించే	O
+అండి	O
+}
+
+{\intent	d: తప్పకుండా అమ్మా, చెప్తాను	COMMIT}
+{\slot
+తప్పకుండా	O
+అమ్మా,	O
+చెప్తాను	O
+}
+
+{\intent	p: ఈ dose పెంచడం వల్లనే ఇలా అయిందా? లేకపోతే ఏమన్నా problemఆ?	INFO_REQUEST}
+{\slot
+ఈ	O
+dose	B-medicine
+పెంచడం	O
+వల్లనే	O
+ఇలా	O
+అయిందా?	O
+లేకపోతే	O
+ఏమన్నా	O
+problemఆ?	O
+}
+
+{\intent	d: తప్పకుండా, దానిగురించి చెప్తాను, అమ్మా	COMMIT}
+{\slot
+తప్పకుండా,	O
+దానిగురించి	O
+చెప్తాను,	O
+అమ్మా	O
+}
+
+{\intent	d: bariatric surgery చేసిన తరువాత కొలుకునే దశలో ఇలాంటి లక్షణాలు చాలా సహజంగా కనిపిస్తాయి.	STATEMENT}
+{\slot
+bariatric	B-treatment
+surgery	I-treatment
+చేసిన	O
+తరువాత	O
+కొలుకునే	O
+దశలో	B-time_period
+ఇలాంటి	O
+లక్షణాలు	O
+చాలా	O
+సహజంగా	O
+కనిపిస్తాయి.	O
+}
+

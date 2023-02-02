@@ -1,0 +1,178 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: Hello madam	SU}
+{\slot
+Hello	O
+madam	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ madam మాకు marriage అయి 4 years అయింది madam	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+మాకు	O
+marriage	B-marital_status
+అయి	O
+4	B-time_period
+years	I-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇంకా మా mrsకి pregnancy అనేది ఇంకా రాలేదు madam	STATEMENT}
+{\slot
+ఇంకా	O
+మా	O
+mrsకి	B-familal
+pregnancy	B-bodily_process
+అనేది	O
+ఇంకా	O
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అయితే మేము మా gynecologist దెగ్గర checkup చేయిపిస్తున్నాను madam	STATEMENT}
+{\slot
+అయితే	O
+మేము	O
+మా	O
+gynecologist	B-medical_professional
+దెగ్గర	O
+checkup	O
+చేయిపిస్తున్నాను	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే ఏంటంటే అంతా బాగానే ఉందని అన్నారు.	STATEMENT}
+{\slot
+అలాగే	O
+ఏంటంటే	O
+అంతా	O
+బాగానే	B-normal
+ఉందని	O
+అన్నారు.	O
+}
+
+{\intent	p: PCOS ఉందన్నారు madam	STATEMENT}
+{\slot
+PCOS	B-symptom
+ఉందన్నారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది clear అయింది madam	STATEMENT}
+{\slot
+అది	O
+clear	B-normal
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: next conceive కోసం ఎంత try చేసిన అవ్వట్లేదు madam	STATEMENT}
+{\slot
+next	O
+conceive	B-bodily_process
+కోసం	O
+ఎంత	O
+try	O
+చేసిన	O
+అవ్వట్లేదు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: next ఇంకోటి ఏంటి అంటే egg size అనేది రావట్లేదు madam naturalగా	STATEMENT}
+{\slot
+next	O
+ఇంకోటి	O
+ఏంటి	O
+అంటే	O
+egg	B-body_part
+size	B-mtest
+అనేది	O
+రావట్లేదు	B-negative
+madam	O
+naturalగా	B-normal
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే injections అవి ఇస్తేనే గానీ size పెరగడం అలాంటివి జరుగుతున్నాయి madam	STATEMENT}
+{\slot
+అయితే	O
+injections	B-medicine
+అవి	O
+ఇస్తేనే	O
+గానీ	O
+size	B-mtest
+పెరగడం	B-bodily_process
+అలాంటివి	O
+జరుగుతున్నాయి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది madam problem	STATEMENT}
+{\slot
+అది	O
+madam	O
+problem	O
+}
+
+{\intent	d: ok, మీరు చెప్పే problem బట్టి చూస్తుంటే PCOD problemగా ఉంది.	DIAGNOSIS}
+{\slot
+ok,	O
+మీరు	O
+చెప్పే	O
+problem	O
+బట్టి	O
+చూస్తుంటే	O
+PCOD	B-medical_condition
+problemగా	I-medical_condition
+ఉంది.	O
+}
+

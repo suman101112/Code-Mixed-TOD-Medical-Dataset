@@ -1,0 +1,197 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p1: Rishabh	ANSWER}
+{\slot
+Rishabh	B-name
+}
+
+{\intent	p: Rishabh	ANSWER}
+{\slot
+Rishabh	B-name
+}
+
+{\intent	d: कितना उम्र?	INFO_REQUEST}
+{\slot
+कितना	O
+उम्र?	O
+}
+
+{\intent	p1: 4 साल	ANSWER}
+{\slot
+4	B-age
+साल	I-age
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p1: ये नाक पे कल	HOLD}
+{\slot
+ये	O
+नाक	B-body_part
+पे	O
+कल	B-time_period
+}
+
+{\intent	p2: गिर गया साहब.	STATEMENT}
+{\slot
+गिर	B-trauma
+गया	I-trauma
+साहब.	O
+}
+
+{\intent	p1: नाक पर मार लगा गया दीवार से	STATEMENT}
+{\slot
+नाक	B-body_part
+पर	O
+मार	B-symptom
+लगा	I-symptom
+गया	O
+दीवार	O
+से	O
+}
+
+{\intent	d: नाक मैं से खून निकला?	INFO_REQUEST}
+{\slot
+नाक	B-body_part
+मैं	B-symptom
+से	O
+खून	B-body_substance
+निकला?	O
+}
+
+{\intent	p1: खून नहीं निकला. अंदर जमा हो गया.	STATEMENT}
+{\slot
+खून	B-body_substance
+नहीं	B-negative
+निकला.	O
+अंदर	B-location
+जमा	B-symptom
+हो	I-symptom
+गया.	O
+}
+
+{\intent	d: नाक मैं से सांस आ रही?	INFO_REQUEST}
+{\slot
+नाक	B-body_part
+मैं	B-location
+से	O
+सांस	B-bodily_process
+आ	O
+रही?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: कैसे गिरा?	INFO_REQUEST}
+{\slot
+कैसे	O
+गिरा?	O
+}
+
+{\intent	p1: गोल घूमते घूमते दीवार लग गया.	ANSWER}
+{\slot
+गोल	O
+घूमते	O
+घूमते	O
+दीवार	O
+लग	O
+गया.	O
+}
+
+{\intent	d: गोलियां लिखके देता हूं, ज़रा ये पूरा जाने तक time लगता	COMMIT}
+{\slot
+गोलियां	B-medicine
+लिखके	O
+देता	O
+हूं,	O
+ज़रा	O
+ये	O
+पूरा	O
+जाने	O
+तक	O
+time	B-time_period
+लगता	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: डरना नहीं	STATEMENT}
+{\slot
+डरना	O
+नहीं	O
+}
+
+{\intent	d: fracture तो कुछ भी नहीं हुआ	DIAGNOSIS}
+{\slot
+fracture	B-medical_condition
+तो	O
+कुछ	O
+भी	O
+नहीं	B-negative
+हुआ	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	B-positive
+}
+
+{\intent	p2: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: खांसी है?	INFO_REQUEST}
+{\slot
+खांसी	B-symptom
+है?	O
+}
+
+{\intent	d: बुखार आ रहा?	INFO_REQUEST}
+{\slot
+बुखार	B-symptom
+आ	O
+रहा?	O
+}
+
+{\intent	P1: बुखार तो नहीं है	ANSWER}
+{\slot
+बुखार	B-symptom
+तो	O
+नहीं	B-negative
+है	O
+}
+
+{\intent	p1: थोड़ा सर्दी भी है.	STATEMENT}
+{\slot
+थोड़ा	B-intensity
+सर्दी	B-medical_condition
+भी	O
+है.	O
+}
+
+{\intent	p1: thank you	APPRECIATE}
+{\slot
+thank	O
+you	O
+}
+
+{\intent	p: thank you	APPRECIATE}
+{\slot
+thank	O
+you	O
+}
+

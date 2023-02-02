@@ -1,0 +1,71 @@
+{\intent	p: doctor గారు నా పేరు Suresh	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Suresh	B-name
+}
+
+{\intent	p: నా వయస్సు 26 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+26	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు left eye -5.5 ఉంది, right eye sight -4 ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+left	B-location
+eye	B-body_part
+-5.5	B-mtest_value
+ఉంది,	O
+right	B-location
+eye	B-body_part
+sight	B-symptom
+-4	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	p: దీనికి lasik surgery చేసుకోవచ్చ?	INFO_REQUEST}
+{\slot
+దీనికి	O
+lasik	B-treatment
+surgery	I-treatment
+చేసుకోవచ్చ?	O
+}
+
+{\intent	d: మీరు చెప్పినా -5 -4 powerలు lasik చేసుకోవడానికి తప్పనిసరిగా lasik చేసుకునే rangeలోనే ఉంటాయి	ANSWER}
+{\slot
+మీరు	O
+చెప్పినా	O
+-5	B-mtest_value
+-4	B-mtest_value
+powerలు	O
+lasik	B-treatment
+చేసుకోవడానికి	O
+తప్పనిసరిగా	O
+lasik	B-treatment
+చేసుకునే	O
+rangeలోనే	O
+ఉంటాయి	O
+}
+
+{\intent	d: usualగా -3 to -6 lasikకి కి చక్కని range అని మేము మామూలుగా అనుకుంటాము.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+-3	B-mtest_value
+to	O
+-6	B-mtest_value
+lasikకి	B-treatment
+కి	O
+చక్కని	O
+range	O
+అని	O
+మేము	O
+మామూలుగా	O
+అనుకుంటాము.	O
+}
+

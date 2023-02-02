@@ -1,0 +1,68 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 41, female	ANSWER}
+{\slot
+41,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: కళ్ళు దురద పెడుతున్నాయి. తల నొప్పి వస్తుంది.	ANSWER}
+{\slot
+కళ్ళు	B-body_part
+దురద	B-symptom
+పెడుతున్నాయి.	O
+తల	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 10 days అవుతున్నాయి.	ANSWER}
+{\slot
+10	B-time_period
+days	I-time_period
+అవుతున్నాయి.	O
+}
+
+{\intent	d: దగ్గర చూపు సరిగ్గా ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గర	B-location
+చూపు	B-bodily_process
+సరిగ్గా	O
+ఉందా?	O
+}
+
+{\intent	p: అంటే?	SNU}
+{\slot
+అంటే?	O
+}
+
+{\intent	d: సూదిలో దారం వేయొస్తుందా?	REPEAT_REPHRASE}
+{\slot
+సూదిలో	O
+దారం	O
+వేయొస్తుందా?	O
+}
+
+{\intent	p: తెలవదు. చూసుకోవాలి	ANSWER}
+{\slot
+తెలవదు.	O
+చూసుకోవాలి	O
+}
+

@@ -1,0 +1,38 @@
+{\intent	d: 10 months	ANSWER}
+{\slot
+10	B-age
+months	I-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏం పేరు అమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+అమ్మా?	O
+}
+
+{\intent	p: Maahira	ANSWER}
+{\slot
+Maahira	B-name
+}
+
+{\intent	p1: Maahira	ANSWER}
+{\slot
+Maahira	B-name
+}
+
+{\intent	d: ఈ mmr2 ఉన్ను chicken pox ఇవ్వాలమ్మా	STATEMENT}
+{\slot
+ఈ	O
+mmr2	B-medicine
+ఉన్ను	O
+chicken	B-medicine
+pox	I-medicine
+ఇవ్వాలమ్మా	O
+}
+

@@ -1,0 +1,47 @@
+{\intent	p: మధుమేహం ఉన్న వాళ్ళు నేత్ర దానం చేయవచ్చా?	INFO_REQUEST}
+{\slot
+మధుమేహం	B-medical_condition
+ఉన్న	O
+వాళ్ళు	O
+నేత్ర	B-body_part
+దానం	O
+చేయవచ్చా?	O
+}
+
+{\intent	p: నేత్ర దానానికి ఎలాంటి అర్హతలు ఊడాలి?	INFO_REQUEST}
+{\slot
+నేత్ర	B-body_part
+దానానికి	O
+ఎలాంటి	O
+అర్హతలు	O
+ఊడాలి?	O
+}
+
+{\intent	d: diabetesలో వాళ్ళకి eye unhealthy ఉంటుంది కాబట్టి మనం అలాంటి వాళ్ళ corneas తీసుకోవడం ముందు మనం కొంచం పరీక్ష చేస్తే గానీ వాళ్ళని ఆ corneal trasplantation అనేది జరగదు అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+diabetesలో	B-medical_condition
+వాళ్ళకి	O
+eye	B-body_part
+unhealthy	B-medical_condition
+ఉంటుంది	O
+కాబట్టి	O
+మనం	O
+అలాంటి	O
+వాళ్ళ	O
+corneas	B-body_part
+తీసుకోవడం	O
+ముందు	O
+మనం	O
+కొంచం	O
+పరీక్ష	B-mtest
+చేస్తే	O
+గానీ	O
+వాళ్ళని	O
+ఆ	O
+corneal	B-treatment
+trasplantation	I-treatment
+అనేది	O
+జరగదు	O
+అన్నమాట.	O
+}
+

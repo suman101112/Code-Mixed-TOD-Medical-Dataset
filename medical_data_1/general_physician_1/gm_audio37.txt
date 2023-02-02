@@ -1,0 +1,217 @@
+{\intent	p: intermediate 1 year అండి.	STATEMENT}
+{\slot
+intermediate	B-profession
+1	I-profession
+year	I-profession
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 10th లో ఉన్నప్పుడు migrane start అయింది sir.	STATEMENT}
+{\slot
+10th	B-frequency
+లో	O
+ఉన్నప్పుడు	O
+migrane	B-symptom
+start	O
+అయింది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది మాకు migrane అని తెలియదు ఒక side తలనొప్పి వచ్చేది sir.	STATEMENT}
+{\slot
+అది	O
+మాకు	O
+migrane	B-symptom
+అని	O
+తెలియదు	O
+ఒక	O
+side	B-location
+తలనొప్పి	B-symptom
+వచ్చేది	O
+sir.	O
+}
+
+{\intent	d: uhum.	ACK}
+{\slot
+uhum.	O
+}
+
+{\intent	p: దాని గురించి అని Vijayawada CT scan తీసారు sir doctorగారు.	STATEMENT}
+{\slot
+దాని	O
+గురించి	O
+అని	O
+Vijayawada	B-place
+CT	B-mtest
+scan	I-mtest
+తీసారు	O
+sir	O
+doctorగారు.	B-medical_professional
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: migrane అని చెప్పారు	STATEMENT}
+{\slot
+migrane	B-symptom
+అని	O
+చెప్పారు	O
+}
+
+{\intent	p: అప్పటి నుంచి medicines వాడుతున్నాను కానీ sir తను tension అయినా, కొంచం ఇదిగా ఉన్న కానీ మళ్ళి వచ్చేస్తుంది sir.	STATEMENT}
+{\slot
+అప్పటి	B-time_period
+నుంచి	I-time_period
+medicines	B-medicine
+వాడుతున్నాను	O
+కానీ	O
+sir	O
+తను	O
+tension	B-medical_condition
+అయినా,	O
+కొంచం	O
+ఇదిగా	O
+ఉన్న	O
+కానీ	O
+మళ్ళి	O
+వచ్చేస్తుంది	O
+sir.	O
+}
+
+{\intent	d: తిరగబడుతుంది. అదే అదే.	ACK}
+{\slot
+తిరగబడుతుంది.	B-symptom
+అదే	O
+అదే.	O
+}
+
+{\intent	p: ఆ తిరగబడుతుంది అండి.	ACK}
+{\slot
+ఆ	O
+తిరగబడుతుంది	B-symptom
+అండి.	O
+}
+
+{\intent	p: దానితోటి రొంప తనకి.	STATEMENT}
+{\slot
+దానితోటి	O
+రొంప	B-symptom
+తనకి.	O
+}
+
+{\intent	d: అవును.	ACK}
+{\slot
+అవును.	O
+}
+
+{\intent	p: గొంతు infection కూడా వచ్చేస్తున్నాయి sir.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+infection	B-medical_condition
+కూడా	O
+వచ్చేస్తున్నాయి	O
+sir.	O
+}
+
+{\intent	d: మరి వీటికి తగ్గేందుకు ఈ గొంతు infection తగ్గేందుకు ఏమైనా medicines వాడుతున్నారా? అమ్మా?	INFO_REQUEST}
+{\slot
+మరి	O
+వీటికి	O
+తగ్గేందుకు	O
+ఈ	O
+గొంతు	B-body_part
+infection	B-medical_condition
+తగ్గేందుకు	O
+ఏమైనా	O
+medicines	B-medicine
+వాడుతున్నారా?	O
+అమ్మా?	O
+}
+
+{\intent	p: వాడుతున్నాం sir కానీ తనకేమి cure అవ్వట్లేదు అని చెప్తుంది sir.	ANSWER}
+{\slot
+వాడుతున్నాం	O
+sir	O
+కానీ	O
+తనకేమి	O
+cure	B-normal
+అవ్వట్లేదు	B-negative
+అని	O
+చెప్తుంది	O
+sir.	O
+}
+
+{\intent	d: relief అవ్వట్లేదు అని.	ACK}
+{\slot
+relief	B-normal
+అవ్వట్లేదు	B-negative
+అని.	O
+}
+
+{\intent	p: ఆ relief అవ్వట్లేదు అని.	ACK}
+{\slot
+ఆ	O
+relief	B-normal
+అవ్వట్లేదు	B-negative
+అని.	O
+}
+
+{\intent	d: అలాగే అమ్మా.	ACK}
+{\slot
+అలాగే	O
+అమ్మా.	O
+}
+
+{\intent	d: దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so మీ అమ్మాయి intermediate అంటున్నారు అంటే 15 16 ఏళ్ళ వయసు సుమారుగా 15 ageలో కనబడింది అంటున్నారు. అంటే సుమారుగా 1.5 2 సంవత్సరాలనుంచి ఈ సమస్య ఉంది .	ACK}
+{\slot
+so	O
+మీ	O
+అమ్మాయి	O
+intermediate	B-profession
+అంటున్నారు	O
+అంటే	O
+15	B-age
+16	B-age
+ఏళ్ళ	I-age
+వయసు	O
+సుమారుగా	O
+15	B-age
+ageలో	I-age
+కనబడింది	O
+అంటున్నారు.	O
+అంటే	O
+సుమారుగా	O
+1.5	B-time_period
+2	B-time_period
+సంవత్సరాలనుంచి	I-time_period
+ఈ	O
+సమస్య	O
+ఉంది	O
+.	O
+}
+

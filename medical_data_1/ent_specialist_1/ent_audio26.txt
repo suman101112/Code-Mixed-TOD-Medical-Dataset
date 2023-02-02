@@ -1,0 +1,152 @@
+{\intent	p: నాకు గొంతు కొండనాలుక పెరుగుతుంది.	STATEMENT}
+{\slot
+నాకు	O
+గొంతు	B-body_part
+కొండనాలుక	I-body_part
+పెరుగుతుంది.	O
+}
+
+{\intent	p: ఇదంతా గొంతు అంతా మంట మండుతాంది బాగా.	STATEMENT}
+{\slot
+ఇదంతా	O
+గొంతు	B-body_part
+అంతా	B-location
+మంట	B-symptom
+మండుతాంది	O
+బాగా.	O
+}
+
+{\intent	d: నీ పేరు చెప్పు మొదలు.	INFO_REQUEST}
+{\slot
+నీ	O
+పేరు	O
+చెప్పు	O
+మొదలు.	O
+}
+
+{\intent	p: sudhakar.	ANSWER}
+{\slot
+sudhakar.	B-name
+}
+
+{\intent	p: నేను ఇంతకుముందు మీ దెగ్గర operation కూడా చేయించుకున్నా.	STATEMENT}
+{\slot
+నేను	O
+ఇంతకుముందు	O
+మీ	O
+దెగ్గర	O
+operation	B-treatment
+కూడా	O
+చేయించుకున్నా.	O
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 23 ఉంటది.	ANSWER}
+{\slot
+23	B-age
+ఉంటది.	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: చెప్పండి. ఇప్పుడు ఏమైతాంది?	INFO_REQUEST}
+{\slot
+చెప్పండి.	O
+ఇప్పుడు	O
+ఏమైతాంది?	O
+}
+
+{\intent	p: గొంతు కొండె నాలుక పెరిగి ఇప్పుడు అంతా మంట మండుతాంది గొంతు అంతా.	ANSWER}
+{\slot
+గొంతు	B-body_part
+కొండె	I-body_part
+నాలుక	I-body_part
+పెరిగి	B-symptom
+ఇప్పుడు	B-time_period
+అంతా	B-location
+మంట	B-symptom
+మండుతాంది	B-symptom
+గొంతు	B-body_part
+అంతా.	B-location
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: నేను operation ఎప్పుడు చేసిన?	INFO_REQUEST}
+{\slot
+నేను	O
+operation	B-treatment
+ఎప్పుడు	O
+చేసిన?	O
+}
+
+{\intent	p: గొంతు operation చేసినారు sir.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+operation	B-treatment
+చేసినారు	O
+sir.	O
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 2 years back.	ANSWER}
+{\slot
+2	B-time_period
+years	I-time_period
+back.	O
+}
+
+{\intent	d: ముక్కు చూపీయి	ACTION_DIR}
+{\slot
+ముక్కు	B-body_part
+చూపీయి	O
+}
+
+{\intent	p: బాగా తొందరగా सर्दी అవుతుంది.	STATEMENT}
+{\slot
+బాగా	B-intensity
+తొందరగా	O
+सर्दी	B-medical_condition
+అవుతుంది.	O
+}
+
+{\intent	d: చీమిడి వస్తుందా ?	INFO_REQUEST}
+{\slot
+చీమిడి	B-symptom
+వస్తుందా	O
+?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	O
+}
+
+{\intent	p: చెవులు కూడా దిబ్బడ పోయినట్లు అవుతున్నాయి. सर्दी బాగా అయితాంది	STATEMENT}
+{\slot
+చెవులు	B-body_part
+కూడా	O
+దిబ్బడ	B-symptom
+పోయినట్లు	I-symptom
+అవుతున్నాయి.	O
+सर्दी	B-medical_condition
+బాగా	B-intensity
+అయితాంది	O
+}
+

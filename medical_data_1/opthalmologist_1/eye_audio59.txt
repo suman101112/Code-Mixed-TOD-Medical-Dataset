@@ -1,0 +1,110 @@
+{\intent	p: doctor గారు నాకు 8 సంవత్సరాల నుంచి sugar ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నాకు	O
+8	B-time_period
+సంవత్సరాల	B-time_period
+నుంచి	O
+sugar	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: నా వయస్సు 48 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+48	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత వారాం రోజులుగా కంటి చూపు మందగించింది.	STATEMENT}
+{\slot
+గత	O
+వారాం	B-time_period
+రోజులుగా	I-time_period
+కంటి	B-body_part
+చూపు	B-bodily_process
+మందగించింది.	B-symptom
+}
+
+{\intent	d: తప్పకుండా అండి.	COMMIT}
+{\slot
+తప్పకుండా	O
+అండి.	O
+}
+
+{\intent	d: 48 సంవత్సరాల వయస్సు అనేది చాలా ముఖ్యమైన వయస్సు అండి ఇది.	MEDICAL_EXPLANATION}
+{\slot
+48	B-age
+సంవత్సరాల	I-age
+వయస్సు	O
+అనేది	O
+చాలా	B-intensity
+ముఖ్యమైన	O
+వయస్సు	O
+అండి	O
+ఇది.	O
+}
+
+{\intent	d: అదే సమయంలో మనకి diabetes ఉంది అని కూడా మీరు చెప్తున్నారు.	MEDICAL_EXPLANATION}
+{\slot
+అదే	O
+సమయంలో	O
+మనకి	O
+diabetes	B-medical_condition
+ఉంది	O
+అని	O
+కూడా	O
+మీరు	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: diabetes ఉన్నప్పుడు మనకు గత 8 సంవత్సరాలుగా తప్పకుండా మీరు immediateగా retina evaluation అనేది చేయించుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+ఉన్నప్పుడు	O
+మనకు	O
+గత	O
+8	B-time_period
+సంవత్సరాలుగా	I-time_period
+తప్పకుండా	O
+మీరు	O
+immediateగా	B-time_period
+retina	B-mtest
+evaluation	I-mtest
+అనేది	O
+చేయించుకోవాలి.	O
+}
+
+{\intent	d: 48 సంవత్సరాలలో చూపు తగ్గడానికి వివిధ కారణాలు ఉన్నాయి. ప్రధానమైన కారణం cateract, glaucoma, retinal disorders.	MEDICAL_EXPLANATION}
+{\slot
+48	B-age
+సంవత్సరాలలో	I-age
+చూపు	B-bodily_process
+తగ్గడానికి	B-symptom
+వివిధ	O
+కారణాలు	O
+ఉన్నాయి.	O
+ప్రధానమైన	O
+కారణం	O
+cateract,	B-medical_condition
+glaucoma,	B-medical_condition
+retinal	B-medical_condition
+disorders.	I-medical_condition
+}
+
+{\intent	d: మీకు diabetes ఉంది అంటున్నారు కబట్టి retinal evaluation అనేది చాలా ముఖ్యం.	MEDICAL_EXPLANATION}
+{\slot
+మీకు	O
+diabetes	B-medical_condition
+ఉంది	O
+అంటున్నారు	O
+కబట్టి	O
+retinal	B-mtest
+evaluation	I-mtest
+అనేది	O
+చాలా	B-intensity
+ముఖ్యం.	O
+}
+

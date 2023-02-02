@@ -1,0 +1,181 @@
+{\intent	d: పేరు చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p1: Sanjana	ANSWER}
+{\slot
+Sanjana	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p1: 17, ఈ month 18	ANSWER}
+{\slot
+17,	B-age
+ఈ	B-time_period
+month	I-time_period
+18	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: throatలో pain. tonsils ఉన్నాయి మింగనీకి వస్తలేదు.	ANSWER}
+{\slot
+throatలో	B-body_part
+pain.	B-symptom
+tonsils	B-body_part
+ఉన్నాయి	O
+మింగనీకి	B-bodily_process
+వస్తలేదు.	B-negative
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: सर्दी దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఇంతకు ముందు ఉండే tablets వేసుకున్నప్పుడు తగ్గింది. but కొంచం ఉన్నట్లు అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఇంతకు	O
+ముందు	O
+ఉండే	O
+tablets	B-medicine
+వేసుకున్నప్పుడు	O
+తగ్గింది.	B-normal
+but	O
+కొంచం	B-intensity
+ఉన్నట్లు	O
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: ఊరికే regular వస్తదా ఇట్లా?	INFO_REQUEST}
+{\slot
+ఊరికే	O
+regular	O
+వస్తదా	O
+ఇట్లా?	O
+}
+
+{\intent	p: uhum<neg>	ANSWER}
+{\slot
+uhum<neg>	B-negative
+}
+
+{\intent	d: first time ఇది.	STATEMENT}
+{\slot
+first	B-frequency
+time	I-frequency
+ఇది.	O
+}
+
+{\intent	p: ఆహా no, వచ్చింది already	STATEMENT}
+{\slot
+ఆహా	O
+no,	B-negative
+వచ్చింది	O
+already	O
+}
+
+{\intent	p1: అంటే ఇంతకుముందు ఒకసారి వచ్చింది sir, medicines వాడినం	STATEMENT}
+{\slot
+అంటే	O
+ఇంతకుముందు	O
+ఒకసారి	O
+వచ్చింది	O
+sir,	O
+medicines	B-medicine
+వాడినం	O
+}
+
+{\intent	d: చెవు చూపీయి అమ్మా	ACTION_DIR}
+{\slot
+చెవు	B-body_part
+చూపీయి	O
+అమ్మా	O
+}
+
+{\intent	p1: Saturday వచ్చింది, ఒకసారి పచ్చిగా గొంతు నొప్పి ఉన్ను fever start అయింది.	STATEMENT}
+{\slot
+Saturday	B-time_period
+వచ్చింది,	O
+ఒకసారి	O
+పచ్చిగా	B-symptom
+గొంతు	B-body_part
+నొప్పి	B-symptom
+ఉన్ను	O
+fever	B-symptom
+start	O
+అయింది.	O
+}
+
+{\intent	p1: చెవిలో కూడా నొప్పి ఉంది అని చెప్పింది	STATEMENT}
+{\slot
+చెవిలో	B-body_part
+కూడా	O
+నొప్పి	B-symptom
+ఉంది	O
+అని	O
+చెప్పింది	O
+}
+
+{\intent	d: గోరు వెచ్చని నీళ్ళల్లో ఉప్పేసుకొని పుక్కిలించి ఉమ్ము	ACTION_DIR}
+{\slot
+గోరు	O
+వెచ్చని	O
+నీళ్ళల్లో	B-food_substance
+ఉప్పేసుకొని	B-food_substance
+పుక్కిలించి	B-bodily_process
+ఉమ్ము	B-bodily_process
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	O
+}
+
+{\intent	p: గొంతు దగ్గర కూడా ఇక nose దగ్గర అక్కడ కొంచం ఉన్నట్లు అనిపిస్తుంది.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+దగ్గర	B-location
+కూడా	O
+ఇక	O
+nose	B-body_part
+దగ్గర	B-location
+అక్కడ	B-location
+కొంచం	B-intensity
+ఉన్నట్లు	O
+అనిపిస్తుంది.	O
+}
+
+{\intent	p1: నొప్పా?	INFO_REQUEST}
+{\slot
+నొప్పా?	B-symptom
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+

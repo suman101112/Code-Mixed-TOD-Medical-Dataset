@@ -1,0 +1,81 @@
+{\intent	p: doctor గారు నా భార్య వయస్సు 46 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+భార్య	B-familal
+వయస్సు	O
+46	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: తనకి long sight అలాగే short sight కూడా ఉన్నాయి.	STATEMENT}
+{\slot
+తనకి	O
+long	B-location
+sight	B-bodily_process
+అలాగే	O
+short	B-location
+sight	B-bodily_process
+కూడా	B-positive
+}
+
+{\intent	p: కళ్ళజోడు పెట్టుకోవడం తనకు ఇష్టం లేదు.	STATEMENT}
+{\slot
+కళ్ళజోడు	O
+పెట్టుకోవడం	O
+తనకు	O
+ఇష్టం	O
+లేదు.	O
+}
+
+{\intent	p: కళ్ళజోడు లేకుండా ఏమైనా surgery చేయొచ్చా?	INFO_REQUEST}
+{\slot
+కళ్ళజోడు	O
+లేకుండా	O
+ఏమైనా	O
+surgery	B-treatment
+చేయొచ్చా?	O
+}
+
+{\intent	d: మీరు అడిగిన ప్రశ్న అంటే మీ wife కి వచ్చి 46 సంవత్సరాలు.	ACK}
+{\slot
+మీరు	O
+అడిగిన	O
+ప్రశ్న	O
+అంటే	O
+మీ	O
+wife	B-familal
+కి	O
+వచ్చి	O
+46	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	d: కళ్ళజోడు పెట్టుకోవడం ఇష్టం లేదు	ACK}
+{\slot
+కళ్ళజోడు	O
+పెట్టుకోవడం	O
+ఇష్టం	O
+లేదు.	O
+}
+
+{\intent	d: lasik laser విధానాలు తనకు suitable అవుతాయా అనేది ప్రశ్న	ACK}
+{\slot
+lasik	B-treatment
+laser	I-treatment
+విధానాలు	O
+తనకు	O
+suitable	O
+అవుతాయా	O
+అనేది	O
+ప్రశ్న	O
+}
+
+{\intent	d: తప్పకుండా suitable అవుతాయి.	ANSWER}
+{\slot
+తప్పకుండా	O
+suitable	O
+అవుతాయి.	O
+}
+

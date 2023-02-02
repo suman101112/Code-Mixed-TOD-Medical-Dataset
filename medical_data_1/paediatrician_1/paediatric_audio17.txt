@@ -1,0 +1,95 @@
+{\intent	d: ఈన పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+ఈన	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	d: prudwith ఆ?	INFO_REQUEST}
+{\slot
+prudwith	B-name
+ఆ?	O
+}
+
+{\intent	p: prudwith	ANSWER}
+{\slot
+prudwith	B-name
+}
+
+{\intent	d: ఇప్పుడు జలుబు దగ్గు ఎన్ని రోజుల నుంచి ఉంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉంది?	O
+}
+
+{\intent	p: 3 రోజులు sir	ANSWER}
+{\slot
+3	B-time_period
+రోజులు	I-time_period
+sir	O
+}
+
+{\intent	d: ఇదంటే ఏంటంటే దగ్గు ఆయాసం లాగా ఉంది.	STATEMENT}
+{\slot
+ఇదంటే	O
+ఏంటంటే	O
+దగ్గు	B-symptom
+ఆయాసం	B-medical_condition
+లాగా	O
+ఉంది.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: first ఇంట్లో dust	MEDICAL_EXPLANATION}
+{\slot
+first	B-quantity
+ఇంట్లో	O
+dust	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: schoolలల్లో ఇది groundలల్లో ఆడిస్తారు కదా	MEDICAL_EXPLANATION}
+{\slot
+schoolలల్లో	B-place
+ఇది	O
+groundలల్లో	B-place
+ఆడిస్తారు	B-bodily_process
+కదా	O
+}
+
+{\intent	p: అవును sir	ACK}
+{\slot
+అవును	O
+sir	O
+}
+
+{\intent	d: అదంతా avoid చేసి, మనం regularగా తినే diet తినొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+అదంతా	O
+avoid	O
+చేసి,	O
+మనం	O
+regularగా	O
+తినే	B-bodily_process
+diet	B-food_substance
+తినొచ్చు.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+

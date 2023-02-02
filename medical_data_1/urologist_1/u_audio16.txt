@@ -1,0 +1,264 @@
+{\intent	p: sir నమస్తే అండి	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: sir నేను ఒక 6 months before stones surgery అయింది sir	STATEMENT}
+{\slot
+sir	O
+నేను	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+before	O
+stones	B-body_substance
+surgery	B-treatment
+అయింది	O
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అయితే అది ఏమైతుంది అంటే ఈ back side right side మళ్ళి నొప్పొస్తుంది	STATEMENT}
+{\slot
+అయితే	O
+అది	O
+ఏమైతుంది	O
+అంటే	O
+ఈ	O
+back	B-location
+side	I-location
+right	B-location
+side	I-location
+మళ్ళి	O
+నొప్పొస్తుంది	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే 2 stones urine ద్వారా పడిపోయినాయి	STATEMENT}
+{\slot
+అయితే	O
+2	B-frequency
+stones	B-body_substance
+urine	B-body_substance
+ద్వారా	O
+పడిపోయినాయి	B-normal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇంకోటి చిన్నగుంది అంటున్నారు గానీ మళ్ళి surgery చెప్పడం అంటే money అసలు సరిపోతలేదు sir అది	STATEMENT}
+{\slot
+ఇంకోటి	O
+చిన్నగుంది	O
+అంటున్నారు	O
+గానీ	O
+మళ్ళి	O
+surgery	B-treatment
+చెప్పడం	O
+అంటే	O
+money	O
+అసలు	O
+సరిపోతలేదు	O
+sir	O
+అది	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: back pain బాగా వస్తుంది	STATEMENT}
+{\slot
+back	B-body_part
+pain	B-symptom
+బాగా	B-intensity
+వస్తుంది	O
+}
+
+{\intent	d: మీకు surgery అంటే kidneyకి రంధ్రం పెట్టి చేసారా ?	INFO_REQUEST}
+{\slot
+మీకు	O
+surgery	B-treatment
+అంటే	O
+kidneyకి	B-body_part
+రంధ్రం	O
+పెట్టి	O
+చేసారా	O
+?	O
+}
+
+{\intent	p: back నుంచి hole చేసి చేసారు sir	ANSWER}
+{\slot
+back	B-body_part
+నుంచి	O
+hole	O
+చేసి	O
+చేసారు	O
+sir	O
+}
+
+{\intent	d: చేసారు కదా.	ACK}
+{\slot
+చేసారు	O
+కదా.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అంటే stones surgery అయిపోయినా తరువాత scanningలో ఇంకేమైనా stones ఉన్నాయని చెప్పారా?	INFO_REQUEST}
+{\slot
+అంటే	O
+stones	B-body_substance
+surgery	B-treatment
+అయిపోయినా	O
+తరువాత	O
+scanningలో	B-mtest
+ఇంకేమైనా	O
+stones	B-body_substance
+ఉన్నాయని	O
+చెప్పారా?	O
+}
+
+{\intent	d: లేకపోతే అన్నీ పడిపోయినాయి అని అన్నారా?	INFO_REQUEST}
+{\slot
+లేకపోతే	O
+అన్నీ	O
+పడిపోయినాయి	O
+అని	O
+అన్నారా?	O
+}
+
+{\intent	p: right side చిన్నగా ఉంది బాబు, urineలో పడిపోతుంది అంటున్నారు	STATEMENT}
+{\slot
+right	B-location
+side	I-location
+చిన్నగా	O
+ఉంది	O
+బాబు,	B-person
+urineలో	I-body_substance
+పడిపోతుంది	B-bodily_process
+అంటున్నారు	O
+}
+
+{\intent	d: size ఎంత ఉంది?	INFO_REQUEST}
+{\slot
+size	O
+ఎంత	O
+ఉంది?	O
+}
+
+{\intent	p: size చిన్నగానే ఉంది చెప్పినారు sir, అది చెప్పినారు గానీ దాని పెద్దగా ఏం పట్టించుకోలే sir	ANSWER}
+{\slot
+size	O
+చిన్నగానే	O
+ఉంది	O
+చెప్పినారు	O
+sir,	O
+అది	O
+చెప్పినారు	O
+గానీ	O
+దాని	O
+పెద్దగా	O
+ఏం	O
+పట్టించుకోలే	O
+sir	O
+}
+
+{\intent	d: stunt ఏమైనా వేసారా మీకు surgery తర్వాత?	INFO_REQUEST}
+{\slot
+stunt	B-treatment
+ఏమైనా	O
+వేసారా	O
+మీకు	O
+surgery	B-treatment
+తర్వాత?	O
+}
+
+{\intent	p: ఆ చేసారు sir	ANSWER}
+{\slot
+ఆ	O
+చేసారు	O
+sir	O
+}
+
+{\intent	d: stunt, stunt అని ఒక pipe వేస్తారు లోపల	REPEAT_REPHRASE}
+{\slot
+stunt,	B-treatment
+stunt	B-treatment
+అని	O
+ఒక	O
+pipe	O
+వేస్తారు	O
+లోపల	O
+}
+
+{\intent	p: ఆ pipe ఏం వేయలేడు sir.	ANSWER}
+{\slot
+ఆ	O
+pipe	O
+ఏం	O
+వేయలేడు	O
+sir.	O
+}
+
+{\intent	d: ఇప్పుడు ఇబ్బంది ఏమైనా ఉంది అంటే ఒక చిన్న ultrasound scanning చేసుకుంటే ఇంకేమన్నా రాళ్ళు ఏమైనా ఉన్నాయా, వాపు ఏమైనా ఉందా తెలుస్తుంది	ACTION_DIR}
+{\slot
+ఇప్పుడు	O
+ఇబ్బంది	O
+ఏమైనా	O
+ఉంది	O
+అంటే	O
+ఒక	O
+చిన్న	O
+ultrasound	B-mtest
+scanning	B-mtest
+చేసుకుంటే	O
+ఇంకేమన్నా	O
+రాళ్ళు	B-body_substance
+ఏమైనా	O
+ఉన్నాయా,	O
+వాపు	B-symptom
+ఏమైనా	O
+ఉందా	O
+తెలుస్తుంది	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: దాని బట్టి furtherగా ఏం చేయాలి అనేది ఆలోచించవచ్చు	STATEMENT}
+{\slot
+దాని	O
+బట్టి	O
+furtherగా	O
+ఏం	O
+చేయాలి	O
+అనేది	O
+ఆలోచించవచ్చు	O
+}
+

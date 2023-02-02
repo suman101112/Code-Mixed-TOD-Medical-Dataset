@@ -1,0 +1,151 @@
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాది అయితే అంతా normalగానే ఉంది	STATEMENT}
+{\slot
+నాది	O
+అయితే	O
+అంతా	O
+normalగానే	B-normal
+ఉంది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: plus మా husband sperm count 0 ఉంది	STATEMENT}
+{\slot
+plus	O
+మా	O
+husband	B-familal
+sperm	B-body_substance
+count	B-mtest
+0	B-mtest_value
+ఉంది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: furtherగా ఎమి?	INFO_REQUEST}
+{\slot
+furtherగా	O
+ఎమి?	O
+}
+
+{\intent	d: మీ marriage అయి ఎంత కాలం అవుతుంది?	INFO_REQUEST}
+{\slot
+మీ	O
+marriage	B-marital_status
+అయి	O
+ఎంత	O
+కాలం	O
+అవుతుంది?	O
+}
+
+{\intent	p: 1 n half year.	ANSWER}
+{\slot
+1	B-time_period
+n	I-time_period
+half	I-time_period
+year.	I-time_period
+}
+
+{\intent	d: 1 n half year.	ACK}
+{\slot
+1	B-time_period
+n	I-time_period
+half	I-time_period
+year.	I-time_period
+}
+
+{\intent	d: age ఎంత అమ్మా మీ husband ది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అమ్మా	O
+మీ	O
+husband	B-familal
+ది?	O
+}
+
+{\intent	p: తనది వచ్చి 31	ANSWER}
+{\slot
+తనది	B-familal
+వచ్చి	O
+31	B-age
+}
+
+{\intent	d: 31 years	ACK}
+{\slot
+31	B-age
+years	I-age
+}
+
+{\intent	d: ok, fine అమ్మా	ACK}
+{\slot
+ok,	O
+fine	O
+అమ్మా	O
+}
+
+{\intent	d: ఇక్కడ ivestigations ఏమైనా చేయించారా not only semen analysis ఇంకా hormonal evaluation ఏమన్నా తీయించారా అమ్మా?	INFO_REQUEST}
+{\slot
+ఇక్కడ	O
+ivestigations	B-mtest
+ఏమైనా	O
+చేయించారా	O
+not	O
+only	O
+semen	B-body_substance
+analysis	B-mtest
+ఇంకా	O
+hormonal	B-body_substance
+evaluation	B-mtest
+ఏమన్నా	O
+తీయించారా	O
+అమ్మా?	O
+}
+
+{\intent	p: ఆ చేయించామండీ .	ANSWER}
+{\slot
+ఆ	O
+చేయించామండీ	B-positive
+.	O
+}
+
+{\intent	d: ok fine అమ్మా	ACK}
+{\slot
+ok	O
+fine	O
+అమ్మా	O
+}
+
+{\intent	d: ఒకసారి reports study చెద్దాము	COMMIT}
+{\slot
+ఒకసారి	O
+reports	B-mtest
+study	O
+చెద్దాము	O
+}
+
+{\intent	d: ఇక్కడ ఏంటి అంటే like zero sperm count conditions	DIAGNOSIS}
+{\slot
+ఇక్కడ	O
+ఏంటి	O
+అంటే	O
+like	O
+zero	B-mtest_value
+sperm	B-body_substance
+count	B-mtest
+conditions	O
+}
+

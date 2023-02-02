@@ -1,0 +1,214 @@
+{\intent	p: madam Sumatiగారు నమస్తే madam	GREETING}
+{\slot
+madam	O
+Sumatiగారు	B-name
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	d: చెప్పండి అమ్మా	CONV_OPEN}
+{\slot
+చెప్పండి	O
+అమ్మా	O
+}
+
+{\intent	p: నాకు urineలో వెళితే మంటగా ఉంటుంది madam	STATEMENT}
+{\slot
+నాకు	O
+urineలో	B-body_part
+వెళితే	O
+మంటగా	B-symptom
+ఉంటుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే night అంతా వెళ్ళకుండా, night పడుకొనేసరికి late అవుతుంది	STATEMENT}
+{\slot
+అంటే	O
+night	B-time_period
+అంతా	O
+వెళ్ళకుండా,	O
+night	B-time_period
+పడుకొనేసరికి	B-bodily_process
+late	B-time_period
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి ఉదయం లేసే timeకి ఈ side అంతా ఇగ bladder నిండిపోయి, ఈ side right side అంతా చాలా painగా	STATEMENT}
+{\slot
+మళ్ళి	B-body_part
+ఉదయం	B-time_period
+లేసే	B-bodily_process
+timeకి	O
+ఈ	O
+side	B-location
+అంతా	B-location
+ఇగ	O
+bladder	B-body_part
+నిండిపోయి,	B-symptom
+ఈ	O
+side	B-location
+right	B-location
+side	I-location
+అంతా	O
+చాలా	B-intensity
+painగా	B-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చాలా వొళ్ళంతా వేడిగా ఉన్నట్లు అనిపిస్తుంది madam	STATEMENT}
+{\slot
+చాలా	B-intensity
+వొళ్ళంతా	B-body_part
+వేడిగా	B-symptom
+ఉన్నట్లు	O
+అనిపిస్తుంది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: right side అంతా pain ఎక్కువగా ఉంటుంది	STATEMENT}
+{\slot
+right	B-location
+side	I-location
+అంతా	O
+pain	B-symptom
+ఎక్కువగా	B-intensity
+ఉంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళ urine pass చేసినాక కూడా చాలా సేపటి వరకు ఉంటుంది.	STATEMENT}
+{\slot
+మళ్ళ	O
+urine	B-body_substance
+pass	B-bodily_process
+చేసినాక	O
+కూడా	O
+చాలా	B-intensity
+సేపటి	B-time_period
+వరకు	O
+ఉంటుంది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: right side	STATEMENT}
+{\slot
+right	B-location
+side	I-location
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది urine కూడా మంటగా, ప్రతీసారీ మంటగా అనిపిస్తుంది madam, వెళ్లి వచ్చినప్పటి కూడా చాలా సేపటి వరకు మంటగా ఉంటుంది madam.	STATEMENT}
+{\slot
+అది	O
+urine	B-body_substance
+కూడా	O
+మంటగా,	O
+ప్రతీసారీ	B-frequency
+మంటగా	B-symptom
+అనిపిస్తుంది	O
+madam,	O
+వెళ్లి	O
+వచ్చినప్పటి	O
+కూడా	O
+చాలా	B-intensity
+సేపటి	B-time_period
+వరకు	O
+మంటగా	B-symptom
+ఉంటుంది	O
+madam.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 45 madam	ANSWER}
+{\slot
+45	B-age
+madam	O
+}
+
+{\intent	d: so ఎప్పటినుంచి ఉంది ఈ సమస్య అనేది?	INFO_REQUEST}
+{\slot
+so	O
+ఎప్పటినుంచి	O
+ఉంది	O
+ఈ	O
+సమస్య	O
+అనేది?	O
+}
+
+{\intent	p: ఇది ఒక 2 3 నెలలుగా అట్ల ఉంది madam	ANSWER}
+{\slot
+ఇది	O
+ఒక	O
+2	B-time_period
+3	B-time_period
+నెలలుగా	I-time_period
+అట్ల	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: yes	ACK}
+{\slot
+yes	O
+}
+
+{\intent	d: so normalగా Cystitis అంటాము అండి, femaleలో common	DIAGNOSIS}
+{\slot
+so	O
+normalగా	O
+Cystitis	B-medical_condition
+అంటాము	O
+అండి,	O
+femaleలో	B-gender
+common	O
+}
+

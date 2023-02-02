@@ -1,0 +1,318 @@
+{\intent	d: చెప్పమ్మా ఏంటి ని పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏంటి	O
+ని	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: నా పేరు Jayashree madam	ANSWER}
+{\slot
+నా	O
+పేరు	O
+Jayashree	B-name
+madam	O
+}
+
+{\intent	d: ఏంటి ని problem?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+ని	O
+problem?	O
+}
+
+{\intent	p: ఈ month 2nd కి date రావాల్సింది 31st కి వచ్చింది.	ANSWER}
+{\slot
+ఈ	O
+month	B-bodily_process
+2nd	B-time_period
+కి	O
+date	B-time_period
+రావాల్సింది	O
+31st	B-time_period
+కి	O
+వచ్చింది.	O
+}
+
+{\intent	d: ఈ 2nd?	INFO_REQUEST}
+{\slot
+ఈ	B-time_period
+2nd?	I-time_period
+}
+
+{\intent	d: January 2nd కి రావాల్సిందా?	REPEAT_REPHRASE}
+{\slot
+January	B-time_period
+2nd	I-time_period
+కి	O
+రావాల్సిందా?	O
+}
+
+{\intent	d: 31st లేదు గా	STATEMENT}
+{\slot
+31st	B-time_period
+లేదు	B-negative
+గా	O
+}
+
+{\intent	d: um?	INFO_REQUEST}
+{\slot
+um?	O
+}
+
+{\intent	p: ఆ January కాదు madam ఈ month february 2nd కి రావాల్సింది January 31st కి వచ్చింది.	STATEMENT}
+{\slot
+ఆ	O
+January	B-time_period
+కాదు	B-negative
+madam	O
+ఈ	O
+month	B-bodily_process
+february	B-time_period
+2nd	I-time_period
+కి	O
+రావాల్సింది	O
+January	B-time_period
+31st	I-time_period
+కి	O
+వచ్చింది.	O
+}
+
+{\intent	d: 2 రోజులు ముందే కదా, correct ఏ గా?	INFO_REQUEST}
+{\slot
+2	B-time_period
+రోజులు	I-time_period
+ముందే	O
+కదా,	O
+correct	B-normal
+ఏ	O
+గా?	O
+}
+
+{\intent	p: ఆ correct ఏ వచ్చింది.	ANSWER}
+{\slot
+ఆ	O
+correct	B-normal
+ఏ	O
+వచ్చింది.	B-positive
+}
+
+{\intent	p: మళ్ళ 10th కి వచ్చింది ఈ monthలో	STATEMENT}
+{\slot
+మళ్ళ	O
+10th	B-time_period
+కి	O
+వచ్చింది	O
+ఈ	B-time_period
+monthలో	I-time_period
+}
+
+{\intent	d: 31st Januaryకి ఉన్నావు	INFO_REQUEST}
+{\slot
+31st	B-time_period
+Januaryకి	I-time_period
+ఉన్నావు	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: 31st January కన్నా ముందు 2nd January కి ఉన్నవా?	INFO_REQUEST}
+{\slot
+31st	B-time_period
+January	I-time_period
+కన్నా	O
+ముందు	O
+2nd	B-time_period
+January	I-time_period
+కి	O
+ఉన్నవా?	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ఇప్పుడు ఎప్పుడు ఉన్నవ్? మళ్ళ 10 days కే ఉన్నవా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎప్పుడు	O
+ఉన్నవ్?	O
+మళ్ళ	O
+10	B-time_period
+days	I-time_period
+కే	O
+ఉన్నవా?	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: మళ్ళ 10 days కే ఉన్నాను, మొన్న 24th కి కూడా వచ్చింది.	STATEMENT}
+{\slot
+మళ్ళ	O
+10	B-time_period
+days	I-time_period
+కే	O
+ఉన్నాను,	O
+మొన్న	B-time_period
+24th	I-time_period
+కి	O
+కూడా	O
+వచ్చింది.	O
+}
+
+{\intent	d: ఎంత మంది పిల్లలు	INFO_REQUEST}
+{\slot
+ఎంత	O
+మంది	O
+పిల్లలు	B-familal
+}
+
+{\intent	p: 2 పిల్లలు	ANSWER}
+{\slot
+2	B-frequency
+పిల్లలు	B-familal
+}
+
+{\intent	d: కాకుండా ఎవరు చేయించుకున్నారు?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+ఎవరు	O
+చేయించుకున్నారు?	B-treatment
+}
+
+{\intent	p: నేనే చేయించుకున్నా	ANSWER}
+{\slot
+నేనే	O
+చేయించుకున్నా	B-treatment
+}
+
+{\intent	d: ని age ఎంత?	INFO_REQUEST}
+{\slot
+ని	O
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 34	ANSWER}
+{\slot
+34	B-age
+}
+
+{\intent	d: ఈ మధ్య fever అలా వచ్చిందా?	INFO_REQUEST}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+fever	B-symptom
+అలా	O
+వచ్చిందా?	O
+}
+
+{\intent	p: fever అంటే కొంచం జలుబు దగ్గు లాగా వచ్చింది.	ANSWER}
+{\slot
+fever	B-symptom
+అంటే	O
+కొంచం	O
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+లాగా	O
+వచ్చింది.	O
+}
+
+{\intent	d: వేరే ఏమైనా మందులు వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+వేరే	O
+ఏమైనా	O
+మందులు	B-medicine
+వాడుతున్నారా?	O
+}
+
+{\intent	p: అదే skin allergyకి medicine వాడుతున్నా madam	ANSWER}
+{\slot
+అదే	O
+skin	B-body_part
+allergyకి	B-medical_condition
+medicine	B-medicine
+వాడుతున్నా	O
+madam	O
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: thyroid ఏం లేదు madam	ANSWER}
+{\slot
+thyroid	B-medical_condition
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: అయినప్పుడల్లా బాగా అయితుందా? కొంచం కొంచం అయితుందా?	INFO_REQUEST}
+{\slot
+అయినప్పుడల్లా	O
+బాగా	B-intensity
+అయితుందా?	O
+కొంచం	B-intensity
+కొంచం	B-intensity
+అయితుందా?	O
+}
+
+{\intent	p: ఒక 2 days అవుతుంది. తరువాత ఇక మామూలుగా	ANSWER}
+{\slot
+ఒక	O
+2	B-time_period
+days	I-time_period
+అవుతుంది.	O
+తరువాత	B-time_period
+ఇక	O
+మామూలుగా	B-normal
+}
+
+{\intent	d: అయితే ఇప్పుడు period 24th కి అంటే ఇవల్టికి 5 days	STATEMENT}
+{\slot
+అయితే	O
+ఇప్పుడు	O
+period	B-bodily_process
+24th	B-time_period
+కి	O
+అంటే	O
+ఇవల్టికి	B-time_period
+5	I-time_period
+days	I-time_period
+}
+
+{\intent	d: పడుకోమ్మా చూద్దాం	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+చూద్దాం	O
+}
+
+{\intent	d: ఇవాళ అయితుందా? ఆగిపోయిందా?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+అయితుందా?	O
+ఆగిపోయిందా?	B-symptom
+}
+
+{\intent	p: ఆ ఏం లేదు. ఇవాళ ఏం అయితలేదు.	ANSWER}
+{\slot
+ఆ	O
+ఏం	O
+లేదు.	B-negative
+ఇవాళ	B-time_period
+ఏం	O
+అయితలేదు.	B-negative
+}
+

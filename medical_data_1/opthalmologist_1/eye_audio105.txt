@@ -1,0 +1,92 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 9 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+వయస్సు	O
+9	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: వీడు 5 సంవత్సరాలు ఉన్నప్పుడు ఆడుతూ కంట్లో ఇసుక పడి కన్ను ఎర్రగా మారింది.	STATEMENT}
+{\slot
+వీడు	B-person
+5	B-time_period
+సంవత్సరాలు	I-time_period
+ఉన్నప్పుడు	O
+ఆడుతూ	O
+కంట్లో	B-body_part
+ఇసుక	B-trauma
+పడి	I-trauma
+కన్ను	B-body_part
+ఎర్రగా	B-color
+మారింది.	O
+}
+
+{\intent	p: చికిత్స తీసుకున్నాడు అయినా ఆ ఎరుపుదనం తగ్గలేదు.,	STATEMENT}
+{\slot
+చికిత్స	B-treatment
+తీసుకున్నాడు	O
+అయినా	O
+ఆ	O
+ఎరుపుదనం	B-color
+తగ్గలేదు.,	B-symptom
+}
+
+{\intent	p: తగ్గడానికి ఏమైనా మర్గాలు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+తగ్గడానికి	B-normal
+ఏమైనా	O
+మర్గాలు	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: మీ బాబుకి ఇసుక పడినప్పుడు అది ఎర్రగా అవ్వడం అనేది commonఏ.	MEDICAL_EXPLANATION}
+{\slot
+మీ	O
+బాబుకి	B-person
+ఇసుక	B-trauma
+పడినప్పుడు	I-trauma
+అది	O
+ఎర్రగా	B-symptom
+అవ్వడం	I-symptom
+అనేది	O
+commonఏ.	B-normal
+}
+
+{\intent	d: కానీ చాన మందికి అది తగ్గిపోవాల 1 నెల, 2 నెలలలో.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+చాన	O
+మందికి	O
+అది	O
+తగ్గిపోవాల	B-normal
+1	B-time_period
+నెల,	I-time_period
+2	B-time_period
+నెలలలో.	I-time_period
+}
+
+{\intent	d: తగ్గలేదు, అంటే ఒకసారి చూడాల్సి వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+తగ్గలేదు,	O
+అంటే	O
+ఒకసారి	O
+చూడాల్సి	O
+వస్తుంది.	O
+}
+
+{\intent	d: అదేమన్నా dryness అయిందా? ఏమైనా infection అయిందా? అనేది చూసుకోవల్సి వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+అదేమన్నా	O
+dryness	B-medical_condition
+అయిందా?	O
+ఏమైనా	O
+infection	B-medical_condition
+అయిందా?	O
+అనేది	O
+చూసుకోవల్సి	O
+వస్తుంది.	O
+}
+

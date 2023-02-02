@@ -1,0 +1,140 @@
+{\intent	p: doctor గారు నా వయస్సు 38 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+38	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నేను గృహిణిని .	STATEMENT}
+{\slot
+నేను	O
+గృహిణిని	B-profession
+.	O
+}
+
+{\intent	p: నాకు కంటి చుట్టూ ముడతలు ఏర్పడుతున్నాయి.	STATEMENT}
+{\slot
+నాకు	O
+కంటి	B-body_part
+చుట్టూ	B-location
+ముడతలు	B-symptom
+ఏర్పడుతున్నాయి.	O
+}
+
+{\intent	p: ఇవి తగ్గే మర్గాలు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇవి	O
+తగ్గే	O
+మర్గాలు	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: తెలియచేయండి.	ACTION_DIR}
+{\slot
+తెలియచేయండి.	O
+}
+
+{\intent	d: మీకు 38 years అంటున్నారండి.	ACK}
+{\slot
+మీకు	O
+38	B-age
+years	I-age
+అంటున్నారండి.	O
+}
+
+{\intent	d: usually 38 yearsలో aging వలన వచ్చే ముడతలు అనేది start అవ్వడం చాలా వరకు common.	MEDICAL_EXPLANATION}
+{\slot
+usually	O
+38	B-age
+yearsలో	I-age
+aging	B-bodily_process
+వలన	O
+వచ్చే	O
+ముడతలు	B-symptom
+అనేది	O
+start	O
+అవ్వడం	O
+చాలా	O
+వరకు	O
+common.	O
+}
+
+{\intent	d: usually aging process అనేది after 15 to 20 years తర్వాత కచ్చితంగా slow slowగా aging వల్ల వచ్చే changes faceలో మనం గమనించవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+usually	O
+aging	B-bodily_process
+process	I-bodily_process
+అనేది	O
+after	B-time_period
+15	B-time_period
+to	O
+20	B-time_period
+years	I-time_period
+తర్వాత	I-time_period
+కచ్చితంగా	O
+slow	O
+slowగా	O
+aging	B-bodily_process
+వల్ల	O
+వచ్చే	O
+changes	O
+faceలో	B-body_part
+మనం	O
+గమనించవచ్చు.	O
+}
+
+{\intent	d: otherwise ఏంటి అంటే అవి prominent గా అయ్యేంతవరకూ అందరూ identify చేయలేదు.	MEDICAL_EXPLANATION}
+{\slot
+otherwise	O
+ఏంటి	O
+అంటే	O
+అవి	O
+prominent	O
+గా	O
+అయ్యేంతవరకూ	O
+అందరూ	O
+identify	O
+చేయలేదు.	O
+}
+
+{\intent	d: కానీ మనం తీసుకునే precautions ఆ 25 30 yearsలో మనం start చేస్తే ఈ ముడతలు అనేది easyగా control చేయడం	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+మనం	O
+తీసుకునే	O
+precautions	O
+ఆ	O
+25	B-age
+30	I-age
+yearsలో	I-age
+మనం	O
+start	O
+చేస్తే	O
+ఈ	O
+ముడతలు	B-symptom
+అనేది	O
+easyగా	O
+control	O
+చేయడం	O
+}
+
+{\intent	d: అంటే ఇంత తొందరగా start అవ్వకుండా, దానికోసం మనం treatments వరకు వెళ్ళకుండా మనం precautions తీసుకోవచ్చు.	STATEMENT}
+{\slot
+అంటే	O
+ఇంత	O
+తొందరగా	O
+start	O
+అవ్వకుండా,	O
+దానికోసం	O
+మనం	O
+treatments	B-treatment
+వరకు	O
+వెళ్ళకుండా	O
+మనం	O
+precautions	O
+తీసుకోవచ్చు.	O
+}
+

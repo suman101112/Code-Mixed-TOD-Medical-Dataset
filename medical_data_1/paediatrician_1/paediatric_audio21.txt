@@ -1,0 +1,129 @@
+{\intent	d: ఎన్నో నెల?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+నెల?	B-time_period
+}
+
+{\intent	p1: ఇప్పుడు 8 months	ANSWER}
+{\slot
+ఇప్పుడు	O
+8	B-time_period
+months	I-time_period
+}
+
+{\intent	d: తల్లిపాలే నా?	INFO_REQUEST}
+{\slot
+తల్లిపాలే	B-food_substance
+నా?	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p1: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: weight 6.5	STATEMENT}
+{\slot
+weight	B-bm
+6.5	I-bm
+}
+
+{\intent	d: తల్లిపాలు కాకుండా అన్నం పెడుతున్నారా?	INFO_REQUEST}
+{\slot
+తల్లిపాలు	B-food_substance
+కాకుండా	O
+అన్నం	B-food_substance
+పెడుతున్నారా?	O
+}
+
+{\intent	p1: umm.	ANSWER}
+{\slot
+umm.	B-positive
+}
+
+{\intent	d: చెప్పండి ఏంటి problem?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p1: జ్వరం, జలుబు, దగ్గు, ఉంది.	ANSWER}
+{\slot
+జ్వరం,	B-symptom
+జలుబు,	B-medical_condition
+దగ్గు,	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: రాత్రి నిద్ర పోయినాడా?	INFO_REQUEST}
+{\slot
+రాత్రి	B-time_period
+నిద్ర	B-bodily_process
+పోయినాడా?	O
+}
+
+{\intent	p1: మధ్య మధ్యలో లేస్తున్నాడు sir.	ANSWER}
+{\slot
+మధ్య	O
+మధ్యలో	O
+లేస్తున్నాడు	B-bodily_process
+sir.	O
+}
+
+{\intent	p1: జలుబు , దగ్గు ఉంది sir	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు	B-symptom
+ఉంది	O
+sir	O
+}
+
+{\intent	p1: నాలుక కూడా మడతపెట్టి మూతిని umm అని ఇట్ల అంటున్నాడు sir	STATEMENT}
+{\slot
+నాలుక	B-body_part
+కూడా	O
+మడతపెట్టి	O
+మూతిని	B-body_part
+umm	O
+అని	O
+ఇట్ల	O
+అంటున్నాడు	O
+sir	O
+}
+
+{\intent	d: అది mannerism	STATEMENT}
+{\slot
+అది	O
+mannerism	O
+}
+
+{\intent	p1: నిద్రలో కూడా అలానే పెడుతున్నాడు.	STATEMENT}
+{\slot
+నిద్రలో	B-bodily_process
+కూడా	O
+అలానే	O
+పెడుతున్నాడు.	O
+}
+
+{\intent	d: టీకాలన్నీ పడ్డాయా అమ్మ?	INFO_REQUEST}
+{\slot
+టీకాలన్నీ	B-medicine
+పడ్డాయా	O
+అమ్మ?	O
+}
+
+{\intent	p1: ఆ పడ్డాయి sir.	ANSWER}
+{\slot
+ఆ	B-positive
+పడ్డాయి	O
+sir.	O
+}
+

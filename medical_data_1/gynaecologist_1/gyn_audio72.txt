@@ -1,0 +1,113 @@
+{\intent	d: నమస్తే మా	GREETING}
+{\slot
+నమస్తే	O
+మా	O
+}
+
+{\intent	p: madam నాకు మొదటి నుంచి regularగా periods అసలు ఉండవు madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+మొదటి	O
+నుంచి	O
+regularగా	B-normal
+periods	B-bodily_process
+అసలు	O
+ఉండవు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ 1 yearకి ఒకసారి tablets వాడితేనే రావడం లేకుండే రాకపోవడం జరుగుతుంది.	STATEMENT}
+{\slot
+ఆ	O
+1	B-time_period
+yearకి	I-time_period
+ఒకసారి	O
+tablets	B-medicine
+వాడితేనే	O
+రావడం	O
+లేకుండే	O
+రాకపోవడం	O
+జరుగుతుంది.	O
+}
+
+{\intent	d: ok ఎప్పటినుంచి ఇలా	INFO_REQUEST}
+{\slot
+ok	O
+ఎప్పటినుంచి	O
+ఇలా	O
+}
+
+{\intent	p: starting నుంచి madam	ANSWER}
+{\slot
+starting	B-time_period
+నుంచి	O
+madam	O
+}
+
+{\intent	d: అంటే	SNU}
+{\slot
+అంటే	O
+}
+
+{\intent	p: ఇప్పుడు 1 n half year అయితుంది marriage అయి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+1	B-time_period
+n	I-time_period
+half	I-time_period
+year	I-time_period
+అయితుంది	O
+marriage	B-marital_status
+అయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: marriage అయినప్పటి నుంచి కూడా periods regularగా రావట్లేదు madam	STATEMENT}
+{\slot
+marriage	B-marital_status
+అయినప్పటి	O
+నుంచి	O
+కూడా	O
+periods	B-bodily_process
+regularగా	B-normal
+రావట్లేదు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది FSH, LH, AMH testలు ఎప్పుడు చేయించుకోవాలి madam?	INFO_REQUEST}
+{\slot
+ఇది	O
+FSH,	B-body_substance
+LH,	I-body_substance
+AMH	I-body_substance
+testలు	B-mtest
+ఎప్పుడు	O
+చేయించుకోవాలి	O
+madam?	O
+}
+
+{\intent	d: so period అయిన 2 రోజూ అమ్మా.	ANSWER}
+{\slot
+so	O
+period	B-bodily_process
+అయిన	O
+2	B-frequency
+రోజూ	O
+అమ్మా.	O
+}
+

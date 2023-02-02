@@ -1,0 +1,67 @@
+{\intent	p: sir గంట గంటకు వెళ్ళాల్సి వస్తుంది మూత్రం	STATEMENT}
+{\slot
+sir	O
+గంట	B-time_period
+గంటకు	B-time_period
+వెళ్ళాల్సి	O
+వస్తుంది	O
+మూత్రం	B-body_substance
+}
+
+{\intent	d: ఒక tablet బయటకు రాసిస్తా అది కొనుక్కో.	ACTION_DIR}
+{\slot
+ఒక	O
+tablet	B-medicine
+బయటకు	B-location
+రాసిస్తా	O
+అది	O
+కొనుక్కో.	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: అవి వాడు, తగ్గుతది.	STATEMENT}
+{\slot
+అవి	O
+వాడు,	O
+తగ్గుతది.	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: వచ్చిందంటే ఇగ ఆగలేదు, 2 minutes అయిపోవాలి, bathroomకి వెళ్ళాల్సింది అంతే	STATEMENT}
+{\slot
+వచ్చిందంటే	O
+ఇగ	O
+ఆగలేదు,	B-symptom
+2	B-quantity
+minutes	B-time_period
+అయిపోవాలి,	O
+bathroomకి	B-place
+వెళ్ళాల్సింది	O
+అంతే	O
+}
+
+{\intent	p: బాగా trouble అయితుంది.	STATEMENT}
+{\slot
+బాగా	B-intensity
+trouble	B-symptom
+అయితుంది.	O
+}
+
+{\intent	p: motions కూడా అలానే ఉన్నాయి. బయటికి వెళ్ళలేకపొతున్నాను	STATEMENT}
+{\slot
+motions	B-bodily_process
+కూడా	O
+అలానే	O
+ఉన్నాయి.	O
+బయటికి	B-location
+వెళ్ళలేకపొతున్నాను	B-symptom
+}
+

@@ -1,0 +1,119 @@
+{\intent	d: చెప్పు Srikanth ఏం ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పు	O
+Srikanth	B-name
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	d: మూత్రంలో మంట అయితాందా?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+అయితాందా?	O
+}
+
+{\intent	p: మంట వస్తుంది sir.	ANSWER}
+{\slot
+మంట	B-symptom
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: మంట అయితాంది, ఎక్కువసార్లు పోసుకుంటున్నావా?	INFO_REQUEST}
+{\slot
+మంట	B-symptom
+అయితాంది,	O
+ఎక్కువసార్లు	B-intensity
+పోసుకుంటున్నావా?	B-bodily_process
+}
+
+{\intent	p: frequentగా వస్తుంది sir	ANSWER}
+{\slot
+frequentగా	B-symptom
+వస్తుంది	I-symptom
+sir	O
+}
+
+{\intent	p: ఈ some times night, 6 hours కి ఒకసారి వస్తది కదా sir అప్పుడు starting pain వస్తుంది. ఒక 2 3 drops బయటకి వచ్చేసిన తరువాత తర్వాత మళ్ళి మామూలుగా, normalగా వస్తోంది.	STATEMENT}
+{\slot
+ఈ	O
+some	O
+times	O
+night,	B-time_period
+6	B-time_period
+hours	I-time_period
+కి	O
+ఒకసారి	O
+వస్తది	O
+కదా	O
+sir	O
+అప్పుడు	B-time_period
+starting	O
+pain	B-symptom
+వస్తుంది.	O
+ఒక	O
+2	B-quantity
+3	B-quantity
+drops	B-body_substance
+బయటకి	B-location
+వచ్చేసిన	O
+తరువాత	B-time_period
+తర్వాత	B-time_period
+మళ్ళి	B-body_part
+మామూలుగా,	B-normal
+normalగా	B-normal
+వస్తోంది.	O
+}
+
+{\intent	d: సరే	ACK}
+{\slot
+సరే	O
+}
+
+{\intent	d: మీరు చెప్పేదాని ప్రకారం ఒక్కొకసారి మూత్రం సంచిలో గాని, మూత్ర నాళాలలోగాని infection ఉన్న కుడా అట్ల అవుతా ఉంటది.	STATEMENT}
+{\slot
+మీరు	O
+చెప్పేదాని	O
+ప్రకారం	O
+ఒక్కొకసారి	O
+మూత్రం	B-body_part
+సంచిలో	I-body_part
+గాని,	O
+మూత్ర	B-body_part
+నాళాలలోగాని	I-body_part
+infection	B-medical_condition
+ఉన్న	O
+కుడా	O
+అట్ల	O
+అవుతా	O
+ఉంటది.	O
+}
+
+{\intent	p: ఇంతకు ముందు infection ఉండే sir.	STATEMENT}
+{\slot
+ఇంతకు	O
+ముందు	O
+infection	B-medical_condition
+ఉండే	O
+sir.	O
+}
+
+{\intent	d: so దానివల్ల అట్ల అయితా ఉంటది.	STATEMENT}
+{\slot
+so	O
+దానివల్ల	O
+అట్ల	O
+అయితా	O
+ఉంటది.	O
+}
+
+{\intent	d: ఈ tablet తీసుకొని వాడూకో.	ACTION_DIR}
+{\slot
+ఈ	O
+tablet	B-medicine
+తీసుకొని	O
+వాడూకో.	O
+}
+

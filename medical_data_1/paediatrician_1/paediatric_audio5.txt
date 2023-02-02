@@ -1,0 +1,209 @@
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p1: Aarush	ANSWER}
+{\slot
+Aarush	B-name
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: उम्र कितना?	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना?	O
+}
+
+{\intent	p1: 3 years and 7 months	ANSWER}
+{\slot
+3	B-age
+years	I-age
+and	I-age
+7	I-age
+months	I-age
+}
+
+{\intent	d: क्या है problem इनका ?	INFO_REQUEST}
+{\slot
+क्या	O
+है	O
+problem	O
+इनका	O
+?	O
+}
+
+{\intent	p1: कलसे बुखार आ रहा	ANSWER}
+{\slot
+कलसे	B-time_period
+बुखार	B-symptom
+आ	O
+रहा	O
+}
+
+{\intent	p1: सर्दी है .	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+है	O
+.	O
+}
+
+{\intent	p1: सो रहा नहीं	STATEMENT}
+{\slot
+सो	B-bodily_process
+रहा	O
+नहीं	B-negative
+}
+
+{\intent	d: अभी वो operation होने के बाद profylaxis नहीं दे रहा नहीं urinary profylaxis	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+वो	O
+operation	B-treatment
+होने	O
+के	O
+बाद	B-time_period
+profylaxis	B-symptom
+नहीं	O
+दे	O
+रहा	O
+नहीं	O
+urinary	B-symptom
+profylaxis	I-symptom
+}
+
+{\intent	p1: नहीं नहीं	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं	B-negative
+}
+
+{\intent	d: नहीं दे रहा	ACK}
+{\slot
+नहीं	B-negative
+दे	O
+रहा	O
+}
+
+{\intent	d: रोज़ school जाता?	INFO_REQUEST}
+{\slot
+रोज़	B-time_period
+school	B-place
+जाता?	O
+}
+
+{\intent	d: कौनसा school, play school?	INFO_REQUEST}
+{\slot
+कौनसा	O
+school,	B-place
+play	B-place
+school?	I-place
+}
+
+{\intent	p1: तेरे school का name क्या है ?	INFO_REQUEST}
+{\slot
+तेरे	O
+school	B-place
+का	O
+name	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p: Montessori world	ANSWER}
+{\slot
+Montessori	B-place
+world	I-place
+}
+
+{\intent	d: सर्दी, खांसी बुखार, 3 में से ज्यादा क्या है ?	INFO_REQUEST}
+{\slot
+सर्दी,	B-medical_condition
+खांसी	B-symptom
+बुखार,	B-symptom
+3	B-quantity
+में	O
+से	O
+ज्यादा	B-intensity
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p: sir, सर्दी, बुखार	ANSWER}
+{\slot
+sir,	O
+सर्दी,	B-medical_condition
+बुखार	B-symptom
+}
+
+{\intent	d: दवा डाले?	INFO_REQUEST}
+{\slot
+दवा	B-medicine
+डाले?	O
+}
+
+{\intent	p: हां sir	ANSWER}
+{\slot
+हां	B-positive
+sir	O
+}
+
+{\intent	d: कौनसा दवा डाले?	INFO_REQUEST}
+{\slot
+कौनसा	O
+दवा	B-medicine
+डाले?	O
+}
+
+{\intent	p: p250	ANSWER}
+{\slot
+p250	B-medicine
+}
+
+{\intent	d: vaccination up to date है?	INFO_REQUEST}
+{\slot
+vaccination	B-medicine
+up	O
+to	O
+date	B-time_period
+है?	O
+}
+
+{\intent	p1: हां sir.	ANSWER}
+{\slot
+हां	B-positive
+sir.	O
+}
+
+{\intent	p1: yes sir	ANSWER}
+{\slot
+yes	O
+sir	O
+}
+
+{\intent	d: last vaccine क्या दिलाये ? typhoid का?	INFO_REQUEST}
+{\slot
+last	O
+vaccine	B-medicine
+क्या	O
+दिलाये	O
+?	O
+typhoid	B-medical_condition
+का?	O
+}
+
+{\intent	p1: हां sir.	ANSWER}
+{\slot
+हां	B-positive
+sir.	O
+}
+

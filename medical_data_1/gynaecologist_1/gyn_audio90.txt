@@ -1,0 +1,192 @@
+{\intent	d: చెప్పండమ్మా	ACTION_DIR}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: నాకు continuousగా ఒక 3 4 abortions అయినాయి ma'am	STATEMENT}
+{\slot
+నాకు	O
+continuousగా	O
+ఒక	O
+3	B-frequency
+4	B-frequency
+abortions	B-symptom
+అయినాయి	O
+ma'am	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: testలు చేయించుకుంటే thyroid ఉందని చెప్పినారు	STATEMENT}
+{\slot
+testలు	B-mtest
+చేయించుకుంటే	O
+thyroid	B-medical_condition
+ఉందని	O
+చెప్పినారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pills వాడుతున్నా	STATEMENT}
+{\slot
+pills	B-medicine
+వాడుతున్నా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మళ్ళి అదే repeat అవుతదా అని భయమేస్తది.	STATEMENT}
+{\slot
+మళ్ళి	O
+అదే	O
+repeat	O
+అవుతదా	O
+అని	O
+భయమేస్తది.	O
+}
+
+{\intent	d: అంటే ఎంత వాడుతున్నారు అమ్మా మీరు	INFO_REQUEST}
+{\slot
+అంటే	O
+ఎంత	O
+వాడుతున్నారు	O
+అమ్మా	O
+మీరు	O
+}
+
+{\intent	p: 25 mcg	ANSWER}
+{\slot
+25	B-medicine_dose
+mcg	I-medicine_dose
+}
+
+{\intent	d: controlలోనే ఉంటుందా 25mcg తోని thyroid levels మొత్తం?	INFO_REQUEST}
+{\slot
+controlలోనే	B-normal
+ఉంటుందా	O
+25mcg	B-medicine_dose
+తోని	O
+thyroid	B-medical_condition
+levels	B-mtest
+మొత్తం?	O
+}
+
+{\intent	p: ఎమో madam ఇంకా నేను check చేసుకోలేదు.	ANSWER}
+{\slot
+ఎమో	O
+madam	O
+ఇంకా	O
+నేను	O
+check	B-mtest
+చేసుకోలేదు.	B-negative
+}
+
+{\intent	p: just 40 days అయితుంది నేను continuousగా వాడేసి	STATEMENT}
+{\slot
+just	O
+40	B-time_period
+days	I-time_period
+అయితుంది	O
+నేను	O
+continuousగా	O
+వాడేసి	O
+}
+
+{\intent	d: అంటే మీరు thyronorm 25 వాడక ముందే ఎంత ఉంది మీ thyroid level?	INFO_REQUEST}
+{\slot
+అంటే	O
+మీరు	O
+thyronorm	B-medicine
+25	B-medicine_dose
+వాడక	B-negative
+ముందే	B-time_period
+ఎంత	O
+ఉంది	O
+మీ	O
+thyroid	B-medical_condition
+level?	B-mtest
+}
+
+{\intent	p: 7.35	ANSWER}
+{\slot
+7.35	B-mtest_value
+}
+
+{\intent	d: 7.35	ACK}
+{\slot
+7.35	B-mtest_value
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: ఒకసారి thyroid ఉన్న కూడా అంటే మనకు abortions అయ్యే histories ఉంటాయి.	STATEMENT}
+{\slot
+ఒకసారి	O
+thyroid	B-medical_condition
+ఉన్న	O
+కూడా	O
+అంటే	O
+మనకు	O
+abortions	B-symptom
+అయ్యే	O
+histories	O
+ఉంటాయి.	O
+}
+
+{\intent	d: కానీ ఇప్పుడు మీరు thyroid medicines వాడుతున్నారు కాబట్టి controlలో ఉందో లేదో ఒకసారి thyroid profile మళ్ళి చేయించుకోండి	ACTION_DIR}
+{\slot
+కానీ	O
+ఇప్పుడు	O
+మీరు	O
+thyroid	B-medical_condition
+medicines	B-medicine
+వాడుతున్నారు	O
+కాబట్టి	O
+controlలో	B-normal
+ఉందో	O
+లేదో	O
+ఒకసారి	O
+thyroid	B-medical_condition
+profile	B-mtest
+మళ్ళి	O
+చేయించుకోండి	O
+}
+
+{\intent	d: అంటే t3 t4 TSH చేయించుకోండి.	ACTION_DIR}
+{\slot
+అంటే	O
+t3	B-mtest
+t4	B-mtest
+TSH	B-mtest
+చేయించుకోండి.	O
+}
+
+{\intent	d: at the same time anti TPO అనే ఒక test కూడా ఉంటుంది.	STATEMENT}
+{\slot
+at	O
+the	O
+same	O
+time	O
+anti	B-mtest
+TPO	I-mtest
+అనే	O
+ఒక	O
+test	B-mtest
+కూడా	O
+ఉంటుంది.	O
+}
+

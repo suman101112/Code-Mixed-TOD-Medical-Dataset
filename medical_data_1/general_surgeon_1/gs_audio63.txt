@@ -1,0 +1,218 @@
+{\intent	p: sir, ఏం లేదు sir, bathroom పోయేదెగ్గర చిన్నగా కురుపవుతుంది	STATEMENT}
+{\slot
+sir,	O
+ఏం	O
+లేదు	O
+sir,	O
+bathroom	B-bodily_process
+పోయేదెగ్గర	I-bodily_process
+చిన్నగా	O
+కురుపవుతుంది	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అదేమైనా నొప్పిగా ఉందా?	INFO_REQUEST}
+{\slot
+అదేమైనా	O
+నొప్పిగా	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: నొప్పి ఏం లేదు sir	ANSWER}
+{\slot
+నొప్పి	B-symptom
+ఏం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	p: నొప్పి లేదు	REPEAT_REPHRASE}
+{\slot
+నొప్పి	B-symptom
+లేదు	B-negative
+}
+
+{\intent	p: అది ఒక 2 2 n half years అవుతుంది sir	STATEMENT}
+{\slot
+అది	O
+ఒక	O
+2	B-time_period
+2	B-time_period
+n	I-time_period
+half	I-time_period
+years	I-time_period
+అవుతుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది కొందరికి చూయిస్తే అది surgery చేసి తీసేయాలి అది ఇది అని అంటున్నారు sir	STATEMENT}
+{\slot
+అది	O
+కొందరికి	O
+చూయిస్తే	O
+అది	O
+surgery	B-treatment
+చేసి	O
+తీసేయాలి	O
+అది	O
+ఇది	O
+అని	O
+అంటున్నారు	O
+sir	O
+}
+
+{\intent	d: ఒక ప్రశ్న అండి	STATEMENT}
+{\slot
+ఒక	O
+ప్రశ్న	O
+అండి	O
+}
+
+{\intent	d: దానితో మీకు నొప్పి, దురద, వాపు, మంట వాపు ఏమైనా ఇబ్బందులు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+దానితో	O
+మీకు	O
+నొప్పి,	B-symptom
+దురద,	B-symptom
+వాపు,	B-symptom
+మంట	B-symptom
+వాపు	B-symptom
+ఏమైనా	O
+ఇబ్బందులు	B-symptom
+ఉన్నాయా?	O
+}
+
+{\intent	d: Srikanth గారు	SU}
+{\slot
+Srikanth	B-name
+గారు	O
+}
+
+{\intent	p: ఆ sir, ఏం ఇబ్బందులు లేవు sir అలాంటిది	ANSWER}
+{\slot
+ఆ	O
+sir,	O
+ఏం	O
+ఇబ్బందులు	B-symptom
+లేవు	B-negative
+sir	O
+అలాంటిది	O
+}
+
+{\intent	d: అలా ఏం ఇబ్బందులు లేవు	ACK}
+{\slot
+అలా	O
+ఏం	O
+ఇబ్బందులు	B-symptom
+లేవు	B-negative
+}
+
+{\intent	d: కానీ దాని తీసేయాలన్నట్టుగా అనుకుంటున్నారా?	INFO_REQUEST}
+{\slot
+కానీ	O
+దాని	O
+తీసేయాలన్నట్టుగా	B-treatment
+అనుకుంటున్నారా?	O
+}
+
+{\intent	p: అవును sir అది తీసేయల్నా? ఏదైనా ఇబ్బంది అవుతుందా futureలో అని మరి ఏదన్నా	INFO_REQUEST}
+{\slot
+అవును	O
+sir	O
+అది	O
+తీసేయల్నా?	B-treatment
+ఏదైనా	O
+ఇబ్బంది	B-symptom
+అవుతుందా	O
+futureలో	B-time_period
+అని	O
+మరి	O
+ఏదన్నా	O
+}
+
+{\intent	d: తప్పకుండా మరి దాని గురించి చెప్తానండీ	COMMIT}
+{\slot
+తప్పకుండా	O
+మరి	O
+దాని	O
+గురించి	O
+చెప్తానండీ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: so Sreekanth గారు	INFO_REQUEST}
+{\slot
+so	O
+Sreekanth	B-name
+గారు	O
+}
+
+{\intent	p: ఆ sir చెప్పండి	SU}
+{\slot
+ఆ	O
+sir	O
+చెప్పండి	O
+}
+
+{\intent	d: ఎక్కువ కాలంగా hardగా stools ఉన్నప్పుడు లక్షణంలో ఏర్పడేటటువంటి లక్షణంలో చిన్న మేర ఒక కండ protrude అయి కండ బయటికి కనబడుతూ ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువ	B-intensity
+కాలంగా	B-time_period
+hardగా	B-symptom
+stools	B-body_substance
+ఉన్నప్పుడు	O
+లక్షణంలో	B-symptom
+ఏర్పడేటటువంటి	O
+లక్షణంలో	B-symptom
+చిన్న	O
+మేర	O
+ఒక	O
+కండ	B-body_part
+protrude	B-symptom
+అయి	I-symptom
+కండ	B-body_part
+బయటికి	B-location
+కనబడుతూ	O
+ఉంటుంది	O
+}
+
+{\intent	d: ఒక చిన్న కురుపులాగా ఏర్పడే అవకాశం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక	O
+చిన్న	O
+కురుపులాగా	B-symptom
+ఏర్పడే	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఇది నొప్పి, దురద, మంట, వాపు, bleeding ఎమి లేకపోతే దాని గురించి పూర్తిగా పట్టించుకోనవసరం లేదు	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+నొప్పి,	B-symptom
+దురద,	B-symptom
+మంట,	B-symptom
+వాపు,	B-symptom
+bleeding	B-medical_condition
+ఎమి	O
+లేకపోతే	O
+దాని	O
+గురించి	O
+పూర్తిగా	O
+పట్టించుకోనవసరం	O
+లేదు	O
+}
+

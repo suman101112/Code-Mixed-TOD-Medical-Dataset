@@ -1,0 +1,226 @@
+{\intent	d: చెప్పమ్మా ఏంటి నే పేరు?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏంటి	O
+నే	O
+పేరు?	O
+}
+
+{\intent	p: నా పేరు Laxmi madam	ANSWER}
+{\slot
+నా	O
+పేరు	O
+Laxmi	B-name
+madam	I-name
+}
+
+{\intent	d: ఏంటి ని problem?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+ని	O
+problem?	O
+}
+
+{\intent	p: date అయిపోయినప్పుడు bleeding వస్తుంది.	ANSWER}
+{\slot
+date	B-bodily_process
+అయిపోయినప్పుడు	O
+bleeding	B-medical_condition
+వస్తుంది.	O
+}
+
+{\intent	d: అంటే period అయింపోయినా తర్వాత కూడా periods కొంచం కొంచం కనిపిస్తుంది.	INFO_REQUEST}
+{\slot
+అంటే	O
+period	B-bodily_process
+అయింపోయినా	O
+తర్వాత	B-time_period
+కూడా	O
+periods	B-bodily_process
+కొంచం	B-intensity
+కొంచం	I-intensity
+కనిపిస్తుంది.	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: 2 madam	ANSWER}
+{\slot
+2	B-frequency
+madam	O
+}
+
+{\intent	d: 2 operationల?	INFO_REQUEST}
+{\slot
+2	B-age
+operationల?	B-treatment
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అంటే period ఇప్పుడు timeకే వస్తుంది కానీ ఎక్కువ రోజులు కనిపిస్తుంది.	INFO_REQUEST}
+{\slot
+అంటే	O
+period	B-bodily_process
+ఇప్పుడు	O
+timeకే	B-normal
+వస్తుంది	O
+కానీ	O
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+కనిపిస్తుంది.	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ఎక్కువ రోజులు ఎక్కువ అయితుందా? కొంచం కొంచం అయి తర్వాత?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+ఎక్కువ	B-intensity
+అయితుందా?	O
+కొంచం	B-intensity
+కొంచం	B-intensity
+అయి	O
+తర్వాత?	O
+}
+
+{\intent	p: కొంచం కొంచం	ANSWER}
+{\slot
+కొంచం	B-intensity
+కొంచం	B-intensity
+}
+
+{\intent	d: ఈ సరి ఎట్ల అయింది tablets తరువాత?	INFO_REQUEST}
+{\slot
+ఈ	O
+సరి	O
+ఎట్ల	O
+అయింది	O
+tablets	B-medicine
+తరువాత?	B-time_period
+}
+
+{\intent	p: ఈ సరి అంటే first రోజు కొంచం కనిపించింది	ANSWER}
+{\slot
+ఈ	O
+సరి	O
+అంటే	O
+first	B-frequency
+రోజు	O
+కొంచం	B-intensity
+కనిపించింది	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మళ్ళ ఆ రోజంతా లేదు, night అంతా మళ్ళ next day సాయింత్రం నుంచి start అయింది.	STATEMENT}
+{\slot
+మళ్ళ	O
+ఆ	O
+రోజంతా	B-time_period
+లేదు,	B-negative
+night	B-time_period
+అంతా	O
+మళ్ళ	O
+next	B-time_period
+day	I-time_period
+సాయింత్రం	I-time_period
+నుంచి	O
+start	O
+అయింది.	O
+}
+
+{\intent	d: ఇప్పుడు ఎన్నో రోజూ?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎన్నో	O
+రోజూ?	O
+}
+
+{\intent	p: 5 రోజూ	ANSWER}
+{\slot
+5	B-time_period
+రోజూ	I-time_period
+}
+
+{\intent	d: ఇంకా అయితుందా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+అయితుందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: పడుకో చూస్తా	ACTION_DIR}
+{\slot
+పడుకో	O
+చూస్తా	O
+}
+
+{\intent	d: చిన్న పాప వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+చిన్న	O
+పాప	B-person
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 3 years madam	ANSWER}
+{\slot
+3	B-time_period
+years	I-time_period
+madam	O
+}
+
+{\intent	d: ok bleeding కొంచం కొంచం	ACK}
+{\slot
+ok	O
+bleeding	B-medical_condition
+కొంచం	B-intensity
+కొంచం	I-intensity
+}
+
+{\intent	d: వాసన ఏమైనా వస్తాదా bleeding?	INFO_REQUEST}
+{\slot
+వాసన	B-symptom
+ఏమైనా	O
+వస్తాదా	O
+bleeding?	B-medical_condition
+}
+
+{\intent	p: ఆ కొంచం lightగా వస్తాది madam.	ANSWER}
+{\slot
+ఆ	O
+కొంచం	B-intensity
+lightగా	I-intensity
+వస్తాది	B-positive
+madam.	O
+}
+

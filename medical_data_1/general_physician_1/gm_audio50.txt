@@ -1,0 +1,276 @@
+{\intent	p: good afternoon Archana గారు	GREETING}
+{\slot
+good	O
+afternoon	O
+Archana	B-name
+గారు	O
+}
+
+{\intent	d: good afternoon అండి. చెప్పండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి.	O
+చెప్పండి.	O
+}
+
+{\intent	p: ఆ అది నాకు thyroid ఉంది అండి. అంటే after delivery వచ్చింది. actualగా delivery timeలోనే వచ్చింది.	STATEMENT}
+{\slot
+ఆ	O
+అది	O
+నాకు	O
+thyroid	B-medical_condition
+ఉంది	O
+అండి.	O
+అంటే	O
+after	B-time_period
+delivery	B-bodily_process
+వచ్చింది.	O
+actualగా	O
+delivery	B-bodily_process
+timeలోనే	B-time_period
+వచ్చింది.	O
+}
+
+{\intent	d: hmm.	ACK}
+{\slot
+hmm.	O
+}
+
+{\intent	p: అది పోతుందేమో అన్నారు కానీ but still continue ఉంది.	STATEMENT}
+{\slot
+అది	O
+పోతుందేమో	O
+అన్నారు	O
+కానీ	O
+but	O
+still	O
+continue	O
+ఉంది.	O
+}
+
+{\intent	p: నాకు delivery అయి 3 years అయింది.	STATEMENT}
+{\slot
+నాకు	O
+delivery	B-bodily_process
+అయి	O
+3	B-time_period
+years	I-time_period
+అయింది.	O
+}
+
+{\intent	p: అంటే మా familyలో ఎవ్వరికీ లేదు so నాకే ఎందుకు వచ్చింది? అది తగ్గే అవకాశం chances ఉన్నాయా?	STATEMENT}
+{\slot
+అంటే	O
+మా	O
+familyలో	B-familal
+ఎవ్వరికీ	O
+లేదు	B-negative
+so	O
+నాకే	O
+ఎందుకు	O
+వచ్చింది?	O
+అది	O
+తగ్గే	B-normal
+అవకాశం	O
+chances	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: ఇప్పుడు ఎంత ఉంది అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎంత	O
+ఉంది	O
+అండి?	O
+}
+
+{\intent	d: ఏం వాడుతున్నారు? medication ఏమన్నా వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+ఏం	O
+వాడుతున్నారు?	O
+medication	B-medicine
+ఏమన్నా	O
+వాడుతున్నారా?	O
+}
+
+{\intent	p: ఇప్పుడు medication నాకు 50mg ఇచ్చింది doctor	ANSWER}
+{\slot
+ఇప్పుడు	O
+medication	B-medicine
+నాకు	O
+50mg	B-medicine_dose
+ఇచ్చింది	O
+doctor	B-medical_professional
+}
+
+{\intent	d: 50 mcg	ACK}
+{\slot
+50	B-medicine_dose
+mcg	I-medicine_dose
+}
+
+{\intent	p: ఆ 50mcg. sorry.	CORRECT}
+{\slot
+ఆ	O
+50mcg.	B-medicine_dose
+sorry.	O
+}
+
+{\intent	d: ఆ 50mcg వాడుతున్నప్పుడు controlలోనే ఉంటుందా?	INFO_REQUEST}
+{\slot
+ఆ	O
+50mcg	B-medicine_dose
+వాడుతున్నప్పుడు	O
+controlలోనే	B-normal
+ఉంటుందా?	O
+}
+
+{\intent	p: ఆ controlలోనే.	ANSWER}
+{\slot
+ఆ	B-positive
+controlలోనే.	B-normal
+}
+
+{\intent	p: first 25mcg ఇచ్చారు తర్వాత 50mcg ఇచ్చారు. అయితే controlలో.	STATEMENT}
+{\slot
+first	O
+25mcg	B-medicine_dose
+ఇచ్చారు	O
+తర్వాత	B-time_period
+50mcg	B-medicine_dose
+ఇచ్చారు.	O
+అయితే	O
+controlలో.	O
+}
+
+{\intent	d: ok fine fine.	ACK}
+{\slot
+ok	O
+fine	O
+fine.	O
+}
+
+{\intent	d: ya ya	ACK}
+{\slot
+ya	O
+ya	O
+}
+
+{\intent	d: అంటే pregnancyలో వచ్చింది అంటున్నారు.	ACK}
+{\slot
+అంటే	O
+pregnancyలో	B-medical_condition
+వచ్చింది	O
+అంటున్నారు.	O
+}
+
+{\intent	p: అవును అవును.	ACK}
+{\slot
+అవును	O
+అవును.	O
+}
+
+{\intent	d: అంటే pregnancy ఏ నెల వచ్చింది అమ్మా?	INFO_REQUEST}
+{\slot
+అంటే	O
+pregnancy	B-medical_condition
+ఏ	O
+నెల	B-time_period
+వచ్చింది	O
+అమ్మా?	O
+}
+
+{\intent	p: first నుంచి ఉంది అండి నాకు.	ANSWER}
+{\slot
+first	O
+నుంచి	O
+ఉంది	O
+అండి	O
+నాకు.	O
+}
+
+{\intent	d: అంటే pregnancy ముందు నుంచి ఉండే అవకాశం ఏమైనా ఉండేనా?	INFO_REQUEST}
+{\slot
+అంటే	O
+pregnancy	B-bodily_process
+ముందు	O
+నుంచి	O
+ఉండే	O
+అవకాశం	O
+ఏమైనా	O
+ఉండేనా?	O
+}
+
+{\intent	p: ఎమో అది నాకు తెలియదు. pregnancy time లో అది బయట పడింది	ANSWER}
+{\slot
+ఎమో	O
+అది	O
+నాకు	O
+తెలియదు.	O
+pregnancy	B-medical_condition
+time	B-time_period
+లో	O
+అది	O
+బయట	O
+పడింది	O
+}
+
+{\intent	d: ok fine.	ACK}
+{\slot
+ok	O
+fine.	O
+}
+
+{\intent	d: కానీ abortions history కాని అలా ఏం లేకుండే.	INFO_REQUEST}
+{\slot
+కానీ	O
+abortions	B-symptom
+history	B-time_period
+కాని	O
+అలా	O
+ఏం	O
+లేకుండే.	O
+}
+
+{\intent	p: ఆహా  అవి ఏం లేవు.	ANSWER}
+{\slot
+ఆహా	O
+అవి	O
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	d: ok అండి. fine ఇప్పుడు మీరు thyroid 50mcg వాడుతున్నా అంటున్నారు.	ACK}
+{\slot
+ok	O
+అండి.	O
+fine	O
+ఇప్పుడు	O
+మీరు	O
+thyroid	B-medical_condition
+50mcg	B-medicine_dose
+వాడుతున్నా	O
+అంటున్నారు.	O
+}
+
+{\intent	d: ఒకసారి అది ఎంత severityలో ఉంది. ఎన్ని రోజుల నుంచి ఉంది అనేటటువంటి test ఒక్కటి ఉంటుంది. anti TPO test.	STATEMENT}
+{\slot
+ఒకసారి	O
+అది	O
+ఎంత	O
+severityలో	B-intensity
+ఉంది.	O
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉంది	O
+అనేటటువంటి	O
+test	B-mtest
+ఒక్కటి	O
+ఉంటుంది.	O
+anti	B-mtest
+TPO	I-mtest
+test.	I-mtest
+}
+

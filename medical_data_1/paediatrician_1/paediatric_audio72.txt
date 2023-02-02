@@ -1,0 +1,107 @@
+{\intent	d: చెప్పండమ్మా Sridevi గారు	CONV_OPEN}
+{\slot
+చెప్పండమ్మా	O
+Sridevi	B-name
+గారు	O
+}
+
+{\intent	p: ఆ మా బాబుకి 13 years అండి.	ANSWER}
+{\slot
+ఆ	O
+మా	O
+బాబుకి	B-familal
+13	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాడెప్పుడూ mobile చూస్తూ ఉంటాడు, అది TV కూడా ఎక్కువగా చూస్తూ ఉంటాడు	STATEMENT}
+{\slot
+వాడెప్పుడూ	O
+mobile	O
+చూస్తూ	O
+ఉంటాడు,	O
+అది	O
+TV	O
+కూడా	O
+ఎక్కువగా	B-intensity
+చూస్తూ	O
+ఉంటాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మనేద్దాం అనుకోని చాలా సార్లు మనేద్దాం అనుకుంటాడు కానీ అయినా సరే దాని మానలేక ఉన్నాడు	STATEMENT}
+{\slot
+మనేద్దాం	O
+అనుకోని	O
+చాలా	B-intensity
+సార్లు	B-frequency
+మనేద్దాం	O
+అనుకుంటాడు	O
+కానీ	O
+అయినా	O
+సరే	O
+దాని	O
+మానలేక	B-symptom
+ఉన్నాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇది autism problem ఏ నా అంటారా?	INFO_REQUEST}
+{\slot
+ఇది	O
+autism	B-symptom
+problem	I-symptom
+ఏ	O
+నా	O
+అంటారా?	O
+}
+
+{\intent	d: ఇది autism కాదమ్మా, only restless condition	DIAGNOSIS}
+{\slot
+ఇది	O
+autism	B-symptom
+కాదమ్మా,	O
+only	O
+restless	B-medical_condition
+condition	I-medical_condition
+}
+
+{\intent	d: అంటే గనక మనసికంగా ఒక స్తిమితం లేకుండా ఉండడం వలన	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+గనక	O
+మనసికంగా	O
+ఒక	O
+స్తిమితం	B-symptom
+లేకుండా	I-symptom
+ఉండడం	O
+వలన	O
+}
+
+{\intent	d: అంటే change కావడం వలన తొందరగా mobileకు attract అవ్వడం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+change	O
+కావడం	O
+వలన	O
+తొందరగా	O
+mobileకు	O
+attract	O
+అవ్వడం	O
+ఉంటుంది.	O
+}
+

@@ -1,0 +1,62 @@
+{\intent	p: నా age 28 years.	STATEMENT}
+{\slot
+నా	O
+age	O
+28	B-age
+years.	I-age
+}
+
+{\intent	p: తరచు కళ్ళ దురద, ఎర్రగా మారుతున్నాయి.	STATEMENT}
+{\slot
+తరచు	O
+కళ్ళ	B-body_part
+దురద,	B-symptom
+ఎర్రగా	B-color
+మారుతున్నాయి.	B-symptom
+}
+
+{\intent	p: నేను desk job చేస్తుంటాను దీనికి పరిష్కారం ఏంటో తెలియజేయండి అని అంటున్నారు.	STATEMENT}
+{\slot
+నేను	O
+desk	O
+job	O
+చేస్తుంటాను	O
+దీనికి	O
+పరిష్కారం	B-treatment
+ఏంటో	O
+తెలియజేయండి	O
+అని	O
+అంటున్నారు.	O
+}
+
+{\intent	d: దీనికి మేము computer eye syndrome అని అంటుంటాము.	MEDICAL_EXPLANATION}
+{\slot
+దీనికి	O
+మేము	O
+computer	B-symptom
+eye	I-symptom
+syndrome	I-symptom
+అని	O
+అంటుంటాము.	O
+}
+
+{\intent	d: ఇవి అదే పనిగా computer screen చూసినప్పుడు కొన్ని గంటల తర్వాతనో అయ్యేలోపు సాయింత్రం అయ్యే లోపునా కళ్ళు బాగా పొడిబారిపొతుంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇవి	O
+అదే	O
+పనిగా	O
+computer	O
+screen	O
+చూసినప్పుడు	O
+కొన్ని	O
+గంటల	B-time_period
+తర్వాతనో	I-time_period
+అయ్యేలోపు	O
+సాయింత్రం	B-time_period
+అయ్యే	O
+లోపునా	O
+కళ్ళు	B-body_part
+బాగా	B-intensity
+పొడిబారిపొతుంటాయి.	B-symptom
+}
+

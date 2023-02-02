@@ -1,0 +1,108 @@
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: దగ్గుతే బాగా.	HOLD}
+{\slot
+దగ్గుతే	B-symptom
+బాగా.	B-intensity
+}
+
+{\intent	d: పేరు, పేరు చెప్పు	INFO_REQUEST}
+{\slot
+పేరు,	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Mahesh	ANSWER}
+{\slot
+Mahesh	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 42 sir	ANSWER}
+{\slot
+42	B-age
+sir	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: దగ్గు వస్తుందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: దగ్గు వస్తోంది sir. night నిద్రల బాగా వస్తుంది sir	ANSWER}
+{\slot
+దగ్గు	B-symptom
+వస్తోంది	O
+sir.	O
+night	B-time_period
+నిద్రల	B-bodily_process
+బాగా	B-intensity
+వస్తుంది	O
+sir	O
+}
+
+{\intent	d: జ్వరం?	INFO_REQUEST}
+{\slot
+జ్వరం?	B-symptom
+}
+
+{\intent	p: జ్వరం ఏం లేదు	ANSWER}
+{\slot
+జ్వరం	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: రాత్రి పూట బాగా వస్తుందా?	INFO_REQUEST}
+{\slot
+రాత్రి	B-time_period
+పూట	I-time_period
+బాగా	B-intensity
+వస్తుందా?	O
+}
+
+{\intent	p: రాత్రి పూట బాగా వస్తోంది.	ANSWER}
+{\slot
+రాత్రి	B-time_period
+పూట	I-time_period
+బాగా	B-intensity
+వస్తోంది.	O
+}
+
+{\intent	p: day time అంటే normalగా వస్తుంది	STATEMENT}
+{\slot
+day	B-time_period
+time	I-time_period
+అంటే	O
+normalగా	B-normal
+వస్తుంది	O
+}
+
+{\intent	p: ఇగ పడుకుంటే బాగా.	ANSWER}
+{\slot
+ఇగ	O
+పడుకుంటే	B-bodily_process
+బాగా.	B-intensity
+}
+

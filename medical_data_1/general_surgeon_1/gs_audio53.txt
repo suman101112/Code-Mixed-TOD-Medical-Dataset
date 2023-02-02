@@ -1,0 +1,159 @@
+{\intent	p: ఆ కొద్దిగా Cholestrol లెక్క వచ్చింది madam	STATEMENT}
+{\slot
+ఆ	O
+కొద్దిగా	O
+Cholestrol	B-body_substance
+లెక్క	O
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆయన drink తీసుకుంటుండూ	STATEMENT}
+{\slot
+ఆయన	B-familal
+drink	B-habit
+తీసుకుంటుండూ	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంత ముందల్లా drink తీసుకుంటుండె ఈ మధ్యల మానేసిండు.	STATEMENT}
+{\slot
+ఇంత	O
+ముందల్లా	O
+drink	B-habit
+తీసుకుంటుండె	O
+ఈ	O
+మధ్యల	O
+మానేసిండు.	O
+}
+
+{\intent	p: కానీ, drink తోనే వచ్చిందా? ఎందుకొచ్చింది మాకు కొద్దిగా చెప్పండి madam	INFO_REQUEST}
+{\slot
+కానీ,	O
+drink	B-habit
+తోనే	O
+వచ్చిందా?	O
+ఎందుకొచ్చింది	O
+మాకు	O
+కొద్దిగా	O
+చెప్పండి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏం treatment తీసుకుంటున్నారు ఇప్పుడు medicines?	INFO_REQUEST}
+{\slot
+ఏం	O
+treatment	B-treatment
+తీసుకుంటున్నారు	O
+ఇప్పుడు	O
+medicines?	B-medicine
+}
+
+{\intent	p: మేము ఆ english medicines ఏ తీసుకుంటున్నాం madam ఇప్పటివరకైతే	ANSWER}
+{\slot
+మేము	O
+ఆ	O
+english	B-medicine
+medicines	B-medicine
+ఏ	O
+తీసుకుంటున్నాం	O
+madam	O
+ఇప్పటివరకైతే	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	d: చెప్తున్నారు already అంటే faty liver లాగా form అయింది medicines వాడుతున్నారని.	STATEMENT}
+{\slot
+చెప్తున్నారు	O
+already	O
+అంటే	O
+faty	B-medical_condition
+liver	I-medical_condition
+లాగా	O
+form	B-symptom
+అయింది	I-symptom
+medicines	B-medicine
+వాడుతున్నారని.	O
+}
+
+{\intent	d: అంటే only ఇది ఒక్క alcohol తీసుకోవడం వల్లనే కాదండి మనం foodలో correctగా manage చేసుకోకపొయినా	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+only	O
+ఇది	O
+ఒక్క	O
+alcohol	B-habit
+తీసుకోవడం	O
+వల్లనే	O
+కాదండి	O
+మనం	O
+foodలో	B-food_substance
+correctగా	O
+manage	O
+చేసుకోకపొయినా	O
+}
+
+{\intent	d: ఇంకేమన్నా smoking ఏమన్నా habits ఉన్న	MEDICAL_EXPLANATION}
+{\slot
+ఇంకేమన్నా	O
+smoking	B-habit
+ఏమన్నా	O
+habits	O
+ఉన్న	O
+}
+
+{\intent	d: correct exercise చేయకుండా కూడా, correctగా sunకి expose కాకున్నా కూడా	MEDICAL_EXPLANATION}
+{\slot
+correct	O
+exercise	O
+చేయకుండా	O
+కూడా,	O
+correctగా	O
+sunకి	O
+expose	O
+కాకున్నా	O
+కూడా	O
+}
+
+{\intent	d: saladలు fruits ఇంకోటి ఏంటి అంటే correctగా waterlevel తీసుకోకుండా ఉన్న కూడా దేనివల్లనైనా వచ్చే chances ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+saladలు	B-food_substance
+fruits	B-food_substance
+ఇంకోటి	O
+ఏంటి	O
+అంటే	O
+correctగా	O
+waterlevel	B-food_substance
+తీసుకోకుండా	O
+ఉన్న	O
+కూడా	O
+దేనివల్లనైనా	O
+వచ్చే	O
+chances	O
+ఉంటది.	O
+}
+

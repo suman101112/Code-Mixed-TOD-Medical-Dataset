@@ -1,0 +1,137 @@
+{\intent	p: stone ఉంది madam	STATEMENT}
+{\slot
+stone	B-body_substance
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది పొత్తికడుపులో pain వస్తుంది	STATEMENT}
+{\slot
+అది	O
+పొత్తికడుపులో	B-body_part
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది morning time లేస్తేనే back pain వస్తుంది కొంచం సేపు	STATEMENT}
+{\slot
+అది	O
+morning	B-time_period
+time	B-time_period
+లేస్తేనే	B-bodily_process
+back	B-body_part
+pain	B-symptom
+వస్తుంది	O
+కొంచం	B-intensity
+సేపు	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి తరువాత ఉండదు	STATEMENT}
+{\slot
+మళ్ళి	O
+తరువాత	B-time_period
+ఉండదు	B-normal
+}
+
+{\intent	p: urine కూడా అప్పుడప్పుడు కొద్దిగా మంటగా ఉంటుంది అండి.	STATEMENT}
+{\slot
+urine	B-body_substance
+కూడా	O
+అప్పుడప్పుడు	B-time_period
+కొద్దిగా	O
+మంటగా	B-symptom
+ఉంటుంది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి ఉందండీ మీకు?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఉందండీ	O
+మీకు?	O
+}
+
+{\intent	p: 4.5 ఉంది అది scan కూడా చెప్పించాను	STATEMENT}
+{\slot
+4.5	B-mtest_value
+ఉంది	O
+అది	O
+scan	B-mtest
+కూడా	O
+చెప్పించాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pain వస్తుంది అండి	STATEMENT}
+{\slot
+pain	B-symptom
+వస్తుంది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: every one, one hour వస్తుంది, మళ్ళి తగ్గుతుంది, one hour వస్తుంది అట్ల	ANSWER}
+{\slot
+every	B-time_period
+one,	B-time_period
+one	B-time_period
+hour	I-time_period
+వస్తుంది,	O
+మళ్ళి	O
+తగ్గుతుంది,	B-normal
+one	B-time_period
+hour	I-time_period
+వస్తుంది	O
+అట్ల	O
+}
+
+{\intent	d: yes yes yes	ACK}
+{\slot
+yes	O
+yes	O
+yes	O
+}
+
+{\intent	d: ఎప్పుడైతే urinary bladder full up అయితూ ఉంటుందో మీకు pain రావడం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఎప్పుడైతే	O
+urinary	B-body_part
+bladder	I-body_part
+full	O
+up	O
+అయితూ	O
+ఉంటుందో	O
+మీకు	O
+pain	B-symptom
+రావడం	O
+ఉంటుంది.	O
+}
+

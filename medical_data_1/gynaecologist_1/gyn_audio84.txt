@@ -1,0 +1,184 @@
+{\intent	p: ఆ doctorగారు ఉన్నారా?	INFO_REQUEST}
+{\slot
+ఆ	O
+doctorగారు	B-medical_professional
+ఉన్నారా?	O
+}
+
+{\intent	d: కొంచం గట్టిగా మట్లాడుతారా?	INFO_REQUEST}
+{\slot
+కొంచం	O
+గట్టిగా	O
+మట్లాడుతారా?	O
+}
+
+{\intent	p: Hello	STATEMENT}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ అండి ఆ నాకు marriage అయి 6 years అవుతుందండి	ANSWER}
+{\slot
+ఆ	O
+అండి	O
+ఆ	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+6	B-time_period
+years	I-time_period
+అవుతుందండి	O
+}
+
+{\intent	d: ok 6 years ok	ANSWER}
+{\slot
+ok	O
+6	B-time_period
+years	I-time_period
+ok	O
+}
+
+{\intent	p: ఆ కానీ ఇంకా ఇప్పటి వరకు పిల్లలు ఏం పుట్టలేదండి.	STATEMENT}
+{\slot
+ఆ	O
+కానీ	O
+ఇంకా	O
+ఇప్పటి	O
+వరకు	O
+పిల్లలు	B-familal
+ఏం	O
+పుట్టలేదండి.	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so మీరు ఏమన్నా పరిక్షలు చేయించుకుంటున్నారా? మీ wife? మీరు?	INFO_REQUEST}
+{\slot
+so	O
+మీరు	O
+ఏమన్నా	O
+పరిక్షలు	B-mtest
+చేయించుకుంటున్నారా?	O
+మీ	O
+wife?	B-familal
+మీరు?	O
+}
+
+{\intent	p: అండి?	SNU}
+{\slot
+అండి?	O
+}
+
+{\intent	d: మీ wife కానీ మీరు కానీ పరిక్షలు ఏమైనా చేయించుకున్నారా?	INFO_REQUEST}
+{\slot
+మీ	O
+wife	B-familal
+కానీ	O
+మీరు	O
+కానీ	O
+పరిక్షలు	B-mtest
+ఏమైనా	O
+చేయించుకున్నారా?	O
+}
+
+{\intent	p: ఆ ఏం చేయించుకోలేదు ఇప్పటి దాక	ANSWER}
+{\slot
+ఆ	O
+ఏం	O
+చేయించుకోలేదు	B-negative
+ఇప్పటి	O
+దాక	O
+}
+
+{\intent	d: 6 years వరకు ఎమి చేయించుకోలేదు అసల్	INFO_REQUEST}
+{\slot
+6	B-time_period
+years	I-time_period
+వరకు	O
+ఎమి	O
+చేయించుకోలేదు	O
+అసల్	O
+}
+
+{\intent	p: ఆహా లేదండీ .	ANSWER}
+{\slot
+ఆహా	O
+లేదండీ	B-negative
+.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే startingలో planning చేసుకున్నాము వద్దని	STATEMENT}
+{\slot
+అంటే	O
+startingలో	B-time_period
+planning	B-bodily_process
+చేసుకున్నాము	O
+వద్దని	B-negative
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తర్వాత ఇంకా try చేసిన అవ్వట్లేదండి.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+ఇంకా	O
+try	O
+చేసిన	O
+అవ్వట్లేదండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so first initialగా gap తీసుకున్నారు తర్వాత try చేసిన అవ్వట్లేదు	STATEMENT}
+{\slot
+so	O
+first	O
+initialగా	B-time_period
+gap	B-bodily_process
+తీసుకున్నారు	O
+తర్వాత	B-time_period
+try	B-bodily_process
+చేసిన	O
+అవ్వట్లేదు	B-negative
+}
+
+{\intent	p: అవును	ACK}
+{\slot
+అవును	B-positive
+}
+
+{\intent	d: but normalగా 6 years అంటే definitely ఇప్పటికయితే ఒక baby అయితే definiteగా ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+but	O
+normalగా	B-normal
+6	B-time_period
+years	I-time_period
+అంటే	O
+definitely	O
+ఇప్పటికయితే	O
+ఒక	O
+baby	B-person
+అయితే	O
+definiteగా	O
+ఉండాలి	O
+}
+

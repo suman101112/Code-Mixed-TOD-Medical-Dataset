@@ -1,0 +1,225 @@
+{\intent	p: sir మాకు పెళ్ళై 2 years అయితుంది sir	STATEMENT}
+{\slot
+sir	O
+మాకు	O
+పెళ్ళై	O
+2	B-time_period
+years	I-time_period
+అయితుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఇంకా సంతానం లేదు sir	STATEMENT}
+{\slot
+అయితే	O
+ఇంకా	O
+సంతానం	B-familal
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే gynecologist దెగ్గర వెళ్ళినం	STATEMENT}
+{\slot
+అయితే	O
+gynecologist	B-medical_professional
+దెగ్గర	O
+వెళ్ళినం	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే testలు చేసాడు	STATEMENT}
+{\slot
+అయితే	O
+testలు	B-mtest
+చేసాడు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: scanning గిట్ల తీసాడు	STATEMENT}
+{\slot
+scanning	B-mtest
+గిట్ల	O
+తీసాడు	O
+}
+
+{\intent	p: బానే ఉండమ్మా, egg మాత్రం ఎక్కువ size పెరగట్లేదు sir	STATEMENT}
+{\slot
+బానే	B-normal
+ఉండమ్మా,	O
+egg	B-body_part
+మాత్రం	O
+ఎక్కువ	B-intensity
+size	O
+పెరగట్లేదు	B-symptom
+sir	O
+}
+
+{\intent	d: మీకు periods regularగా వస్తాయా? నెలకొకసారి?	INFO_REQUEST}
+{\slot
+మీకు	O
+periods	B-bodily_process
+regularగా	B-normal
+వస్తాయా?	O
+నెలకొకసారి?	B-time_period
+}
+
+{\intent	p: ఆ regularగా వస్తున్నాయి sir	ANSWER}
+{\slot
+ఆ	O
+regularగా	B-normal
+వస్తున్నాయి	O
+sir	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: husband ది కణాల పరిక్ష చేయిపించారా?	INFO_REQUEST}
+{\slot
+husband	B-familal
+ది	O
+కణాల	O
+పరిక్ష	B-mtest
+చేయిపించారా?	O
+}
+
+{\intent	p: ఆ చేయించాం sir	STATEMENT}
+{\slot
+ఆ	O
+చేయించాం	O
+sir	O
+}
+
+{\intent	d: normal చెప్పారా?	INFO_REQUEST}
+{\slot
+normal	B-normal
+చెప్పారా?	O
+}
+
+{\intent	p: ఆ normal అని చెప్పారు	ANSWER}
+{\slot
+ఆ	O
+normal	B-normal
+అని	O
+చెప్పారు	B-positive
+}
+
+{\intent	d: గర్భసంచిది scanning అంతా బానే ఉందని చెప్పారా?	INFO_REQUEST}
+{\slot
+గర్భసంచిది	B-body_part
+scanning	B-mtest
+అంతా	O
+బానే	B-normal
+ఉందని	O
+చెప్పారా?	O
+}
+
+{\intent	p: ఆ చెప్పారు sir	ANSWER}
+{\slot
+ఆ	O
+చెప్పారు	B-positive
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ok మీది tubes test చేసారా? open ఉందా? block ఎమన్నా ఉందని?	INFO_REQUEST}
+{\slot
+ok	O
+మీది	O
+tubes	B-body_part
+test	B-mtest
+చేసారా?	O
+open	B-normal
+ఉందా?	O
+block	B-symptom
+ఎమన్నా	O
+ఉందని?	O
+}
+
+{\intent	p: ఆహా చేయలేదు sir, అది ఒక్కటి మాత్రం చేయలే	ANSWER}
+{\slot
+ఆహా	O
+చేయలేదు	B-negative
+sir,	O
+అది	O
+ఒక్కటి	B-frequency
+మాత్రం	O
+చేయలే	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇద్దరు as a couple మీరు Fertility center visit చేసారు	ACK}
+{\slot
+ఇద్దరు	O
+as	O
+a	O
+couple	O
+మీరు	O
+Fertility	B-place
+center	I-place
+visit	O
+చేసారు	O
+}
+
+{\intent	d: husband ది semen analysis normal అని చెప్పారు వాళ్ళు scanning చేసుకున్నారు	ACK}
+{\slot
+husband	B-familal
+ది	O
+semen	B-body_substance
+analysis	B-mtest
+normal	B-normal
+అని	O
+చెప్పారు	O
+వాళ్ళు	O
+scanning	B-mtest
+చేసుకున్నారు	O
+}
+
+{\intent	d: so ఇప్పుడు ఏం pending అంటే hormones test చేసుకోవాలి, Fsh LH, prolactin	STATEMENT}
+{\slot
+so	O
+ఇప్పుడు	O
+ఏం	O
+pending	O
+అంటే	O
+hormones	B-body_substance
+test	B-mtest
+చేసుకోవాలి,	O
+Fsh	B-body_substance
+LH,	B-body_substance
+prolactin	B-body_substance
+}
+

@@ -1,0 +1,280 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: ఆ madam. madam నాకు marriage అయి 4 years అవుతుంది madam	ANSWER}
+{\slot
+ఆ	O
+madam.	O
+madam	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+4	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pregnancy కోసం plan చేస్తున్నాము, అది కావాట్లేదు	STATEMENT}
+{\slot
+pregnancy	B-bodily_process
+కోసం	O
+plan	O
+చేస్తున్నాము,	O
+అది	O
+కావాట్లేదు	B-negative
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అయితే మేము doctorగారిని సంప్రదించినాము	STATEMENT}
+{\slot
+అయితే	O
+మేము	O
+doctorగారిని	B-medical_professional
+సంప్రదించినాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే మన date వచ్చిన ప్రతీ సారి కూడా blood shed కావట్లేదు	STATEMENT}
+{\slot
+అయితే	O
+మన	O
+date	B-bodily_process
+వచ్చిన	O
+ప్రతీ	B-frequency
+సారి	I-frequency
+కూడా	O
+blood	B-body_substance
+shed	B-bodily_process
+కావట్లేదు	B-negative
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అది continuousగా వస్తుంది	STATEMENT}
+{\slot
+అది	O
+continuousగా	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అని చెప్తున్నారు madam even 10th day కూడా	STATEMENT}
+{\slot
+అని	O
+చెప్తున్నారు	O
+madam	O
+even	O
+10th	B-frequency
+day	B-time_period
+కూడా	O
+}
+
+{\intent	d: 10th day	STATEMENT}
+{\slot
+10th	B-frequency
+day	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది ఏంటో అర్ధం కావడంలేదు నాకు	STATEMENT}
+{\slot
+అది	O
+ఏంటో	O
+అర్ధం	O
+కావడంలేదు	O
+నాకు	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: ప్రతీ సారి కూడా 10th day వరకు కూడా blood shed కాలేదు blood అలాగే ఉంటుంది అన్నట్టుగా చెప్తున్నారు	STATEMENT}
+{\slot
+ప్రతీ	B-frequency
+సారి	I-frequency
+కూడా	O
+10th	B-frequency
+day	B-time_period
+వరకు	O
+కూడా	O
+blood	B-body_substance
+shed	B-bodily_process
+కాలేదు	B-negative
+blood	B-body_substance
+అలాగే	O
+ఉంటుంది	O
+అన్నట్టుగా	O
+చెప్తున్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: uterus సంబంధించి ఏమన్నా మరి ఏమన్నా problem ఆ అండి?	INFO_REQUEST}
+{\slot
+uterus	B-body_part
+సంబంధించి	O
+ఏమన్నా	O
+మరి	O
+ఏమన్నా	O
+problem	O
+ఆ	O
+అండి?	O
+}
+
+{\intent	d: age ఎంత అండి?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: age వచ్చేసి 30	ANSWER}
+{\slot
+age	O
+వచ్చేసి	O
+30	B-age
+}
+
+{\intent	d: మీ wifeది 30 ఆ అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+wifeది	B-familal
+30	B-age
+ఆ	O
+అండి?	O
+}
+
+{\intent	p: madam మా madam wifeది 30 అండి	ANSWER}
+{\slot
+madam	O
+మా	O
+madam	O
+wifeది	B-familal
+30	B-age
+అండి	O
+}
+
+{\intent	d: మీ wifeది 30	ACK}
+{\slot
+మీ	O
+wifeది	B-familal
+30	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: and ఇలా period వచ్చిన 2nd day అట్ల hormone test ఏమైనా చేయించారా అండి?	INFO_REQUEST}
+{\slot
+and	O
+ఇలా	O
+period	B-bodily_process
+వచ్చిన	O
+2nd	B-frequency
+day	B-time_period
+అట్ల	O
+hormone	B-body_substance
+test	B-mtest
+ఏమైనా	O
+చేయించారా	O
+అండి?	O
+}
+
+{\intent	p: hormonal test అంటే గతంలో 1 year back చేయించాము	ANSWER}
+{\slot
+hormonal	B-body_substance
+test	B-mtest
+అంటే	O
+గతంలో	B-time_period
+1	B-time_period
+year	I-time_period
+back	I-time_period
+చేయించాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంతే estrogen test చేసారు	STATEMENT}
+{\slot
+అంతే	O
+estrogen	B-body_substance
+test	B-mtest
+చేసారు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ testలో ఏముందో idea లేదు మరి అది	STATEMENT}
+{\slot
+ఆ	O
+testలో	O
+ఏముందో	O
+idea	O
+లేదు	O
+మరి	O
+అది	O
+}
+
+{\intent	d: ఒక్కసారి ఏంటి అంటే అండి period వచ్చిన second day hormonal profile అనేది చేయించాలి.	STATEMENT}
+{\slot
+ఒక్కసారి	O
+ఏంటి	O
+అంటే	O
+అండి	O
+period	B-bodily_process
+వచ్చిన	O
+second	B-frequency
+day	B-time_period
+hormonal	B-mtest
+profile	I-mtest
+అనేది	O
+చేయించాలి.	O
+}
+

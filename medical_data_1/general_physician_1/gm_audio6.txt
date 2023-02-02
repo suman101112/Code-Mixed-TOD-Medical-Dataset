@@ -1,0 +1,231 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: నమస్తే doctor గారు	GREETING}
+{\slot
+నమస్తే	O
+doctor	B-medical_professional
+గారు	O
+}
+
+{\intent	d: నమస్కారమండీ Rajitha గారు	GREETING}
+{\slot
+నమస్కారమండీ	O
+Rajitha	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: doctor నేను మొన్న blood test చేయిపించాను	STATEMENT}
+{\slot
+doctor	B-medical_professional
+నేను	O
+మొన్న	B-time_period
+blood	B-body_substance
+test	B-mtest
+చేయిపించాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తినక ముందు 140 ఉంది అండి నాకు	STATEMENT}
+{\slot
+తినక	O
+ముందు	O
+140	B-mtest_value
+ఉంది	O
+అండి	O
+నాకు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తిన్న తరువాత ఎమో 150 ఉంది	STATEMENT}
+{\slot
+తిన్న	B-bodily_process
+తరువాత	B-time_period
+ఎమో	O
+150	B-mtest_value
+ఉంది	O
+}
+
+{\intent	d: ఆ ok	ACK}
+{\slot
+ఆ	O
+ok	O
+}
+
+{\intent	p: 3 monthsకి చెప్పిస్తేనేమో 6.9 ఉంది ma'am	STATEMENT}
+{\slot
+3	B-time_period
+monthsకి	I-time_period
+చెప్పిస్తేనేమో	O
+6.9	B-mtest_value
+ఉంది	O
+ma'am	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను ఇంతవరకు medicines లాంటివి ఏం వేయ్యలేదు	STATEMENT}
+{\slot
+నేను	O
+ఇంతవరకు	O
+medicines	B-medicine
+లాంటివి	O
+ఏం	O
+వేయ్యలేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: honey తీసుకోవచ్చా అండి?	INFO_REQUEST}
+{\slot
+honey	B-food_substance
+తీసుకోవచ్చా	O
+అండి	O
+}
+
+{\intent	d: honey ఆ అండి?	INFO_REQUEST}
+{\slot
+honey	B-food_substance
+ఆ	O
+అండి?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: honey	REPEAT_REPHRASE}
+{\slot
+honey	B-food_substance
+}
+
+{\intent	d: ya అండి	ANSWER}
+{\slot
+ya	B-positive
+అండి	O
+}
+
+{\intent	d: and మీ age ఎంత అండి?	INFO_REQUEST}
+{\slot
+and	O
+మీ	O
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: నాది 40 అండి.	ANSWER}
+{\slot
+నాది	O
+40	B-age
+అండి.	O
+}
+
+{\intent	d: 40	ACK}
+{\slot
+40	B-age
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అంటే ఏ symptoms తో? అంటే random checkup చేయించారా? bodyలో ఏమన్నా symptoms వచ్చాయా మీకు?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఏ	O
+symptoms	O
+తో?	O
+అంటే	O
+random	O
+checkup	O
+చేయించారా?	O
+bodyలో	B-body_part
+ఏమన్నా	O
+symptoms	O
+వచ్చాయా	O
+మీకు?	O
+}
+
+{\intent	p: bodyలో ఏం లేదు, just health checkupకనీ వెళ్ళాను	ANSWER}
+{\slot
+bodyలో	B-body_part
+ఏం	O
+లేదు,	B-negative
+just	O
+health	B-mtest
+checkupకనీ	I-mtest
+వెళ్ళాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వెళితే అది వచ్చిందండీ.	STATEMENT}
+{\slot
+వెళితే	O
+అది	O
+వచ్చిందండీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: Cholestrol కూడా అన్నీ 50 50 ఎక్కువ ఉన్నాయండి అన్నిట్లల్లో	STATEMENT}
+{\slot
+Cholestrol	B-body_substance
+కూడా	O
+అన్నీ	O
+50	B-mtest_value
+50	B-mtest_value
+ఎక్కువ	B-intensity
+ఉన్నాయండి	O
+అన్నిట్లల్లో	O
+}
+
+{\intent	d: ok ok fine మా	ACK}
+{\slot
+ok	O
+ok	O
+fine	O
+మా	O
+}
+
+{\intent	d: so honey తీసుకోవడం వల్ల ఎలాంటి problem లేదు	STATEMENT}
+{\slot
+so	O
+honey	B-food_substance
+తీసుకోవడం	O
+వల్ల	O
+ఎలాంటి	O
+problem	O
+లేదు	O
+}
+

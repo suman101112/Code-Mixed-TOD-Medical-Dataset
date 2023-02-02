@@ -1,0 +1,105 @@
+{\intent	p: నా పేరు Manjusha.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Manjusha.	B-name
+}
+
+{\intent	p: నా కంటి చివర పైభాగంలో చిన్న గడ్డ ఏర్పడింది.	STATEMENT}
+{\slot
+నా	O
+కంటి	B-body_part
+చివర	I-body_part
+పైభాగంలో	B-location
+చిన్న	O
+గడ్డ	B-symptom
+ఏర్పడింది.	I-symptom
+}
+
+{\intent	p: రెండు నెలలుగా అలాగే ఉంది.	STATEMENT}
+{\slot
+రెండు	B-time_period
+నెలలుగా	I-time_period
+అలాగే	O
+ఉంది.	O
+}
+
+{\intent	p: తగ్గడం లేదు.	STATEMENT}
+{\slot
+తగ్గడం	B-normal
+లేదు.	B-negative
+}
+
+{\intent	d: Manjusha గారు. కంటి రెప్ప పైన, కంటి లోపట గడ్డనో కచ్చితంగా చెప్పలేదు.	STATEMENT}
+{\slot
+Manjusha	B-name
+గారు.	O
+కంటి	B-body_part
+రెప్ప	I-body_part
+పైన,	B-location
+కంటి	B-body_part
+లోపట	I-location
+గడ్డనో	B-symptom
+కచ్చితంగా	O
+చెప్పలేదు.	O
+}
+
+{\intent	d: బహుశా ఒక వేళ కంటి రెప్పపైన గడ్డలాగా ఉన్నట్లు అయితే అది చాలా మందికి కంటి కురుపు అంటాం అంటే అది చాలామందికి అది infection వల్ల వచ్చే అవకాశం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+బహుశా	O
+ఒక	O
+వేళ	O
+కంటి	B-body_part
+రెప్పపైన	B-body_part
+గడ్డలాగా	B-symptom
+ఉన్నట్లు	O
+అయితే	O
+అది	O
+చాలా	B-intensity
+మందికి	O
+కంటి	B-body_part
+కురుపు	B-symptom
+అంటాం	O
+అంటే	O
+అది	O
+చాలామందికి	O
+అది	O
+infection	B-medical_condition
+వల్ల	O
+వచ్చే	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఒక చిన్న కురుపులాగా అట్ల ఉండే అవకాశం ఎక్కువగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక	O
+చిన్న	B-intensity
+కురుపులాగా	B-symptom
+అట్ల	O
+ఉండే	O
+అవకాశం	O
+ఎక్కువగా	B-intensity
+ఉంటుంది.	O
+}
+
+{\intent	d: వేరే కారణాలు అనేవి correctగా examine చేసి furthurగా test ద్వారానే తెలుస్తుంది కాబట్టి బహుశా మీరు doctorని సంప్రదించాలని అనుకుంటున్నాను.	STATEMENT}
+{\slot
+వేరే	O
+కారణాలు	O
+అనేవి	O
+correctగా	O
+examine	B-mtest
+చేసి	O
+furthurగా	B-time_period
+test	B-mtest
+ద్వారానే	O
+తెలుస్తుంది	O
+కాబట్టి	O
+బహుశా	O
+మీరు	O
+doctorని	B-medical_professional
+సంప్రదించాలని	O
+అనుకుంటున్నాను.	O
+}
+

@@ -1,0 +1,297 @@
+{\intent	p1: దగ్గొస్తాంది sir.	STATEMENT}
+{\slot
+దగ్గొస్తాంది	B-symptom
+sir.	O
+}
+
+{\intent	d: పేరు చెప్పమ్మా మొదాలు	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+మొదాలు	O
+}
+
+{\intent	p: Keertana	ANSWER}
+{\slot
+Keertana	B-name
+}
+
+{\intent	d: Keertana	ACK}
+{\slot
+Keertana	B-name
+}
+
+{\intent	d: వయస్సు?	INFO_REQUEST}
+{\slot
+వయస్సు?	O
+}
+
+{\intent	p: 18	ANSWER}
+{\slot
+18	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: cough వస్తుంది.	ANSWER}
+{\slot
+cough	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: దగ్గు వస్తుంది.	ACK}
+{\slot
+దగ్గు	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p1: 10 రోజులు అయితాంది బాగా వస్తుంది.	STATEMENT}
+{\slot
+10	B-time_period
+రోజులు	I-time_period
+అయితాంది	O
+బాగా	B-intensity
+వస్తుంది.	O
+}
+
+{\intent	d: తుమ్ములు వస్తున్నాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+వస్తున్నాయా?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: తుమ్ము వస్తుంది, దగ్గొస్తుంది,	ACK}
+{\slot
+తుమ్ము	B-symptom
+వస్తుంది,	O
+దగ్గొస్తుంది,	B-symptom
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: జ్వరం	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+}
+
+{\intent	p: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	d: దగ్గుతుంటే నంజు లాగా పడుతుందా?	INFO_REQUEST}
+{\slot
+దగ్గుతుంటే	B-symptom
+నంజు	B-symptom
+లాగా	O
+పడుతుందా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: ఉత్తి పొడి దగ్గు.	INFO_REQUEST}
+{\slot
+ఉత్తి	O
+పొడి	B-symptom
+దగ్గు.	I-symptom
+}
+
+{\intent	p: hmm.	ANSWER}
+{\slot
+hmm.	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: జ్వరం ఎన్ని రోజులు అయితాంది.	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఎన్ని	O
+రోజులు	B-time_period
+అయితాంది.	O
+}
+
+{\intent	p: 3 రోజులు అయితాంది.	ANSWER}
+{\slot
+3	B-time_period
+రోజులు	I-time_period
+అయితాంది.	O
+}
+
+{\intent	d: అద్దాలు తీయి.	ACTION_DIR}
+{\slot
+అద్దాలు	O
+తీయి.	O
+}
+
+{\intent	d: చెవు నొప్పి గిట్ల ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+చెవు	B-body_part
+నొప్పి	B-symptom
+గిట్ల	O
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: ముక్కులో గాడ్పు ఆడుతుందా? ఆగిపోతుందా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+గాడ్పు	B-bodily_process
+ఆడుతుందా?	B-normal
+ఆగిపోతుందా?	B-symptom
+}
+
+{\intent	p: దగ్గు వచ్చినప్పుడు ఆగిపోతుంది.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+వచ్చినప్పుడు	O
+ఆగిపోతుంది.	B-symptom
+}
+
+{\intent	d: ముక్కులో ఆగిపోతుంది.	REPEAT_REPHRASE}
+{\slot
+ముక్కులో	B-body_part
+ఆగిపోతుంది.	B-symptom
+}
+
+{\intent	p: hmm.	ACK}
+{\slot
+hmm.	O
+}
+
+{\intent	d: శ్వాస తీసుకో	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+తీసుకో	O
+}
+
+{\intent	d: శ్వాస తీసుకో	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+తీసుకో	O
+}
+
+{\intent	d: వెనక	ACTION_DIR}
+{\slot
+వెనక	O
+}
+
+{\intent	d: చెవు నొప్పి ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+చెవు	B-body_part
+నొప్పి	B-symptom
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	p1: night బాగా వస్తాంది sir	STATEMENT}
+{\slot
+night	B-time_period
+బాగా	B-intensity
+వస్తాంది	O
+sir	O
+}
+
+{\intent	p: night బాగా	REPEAT_REPHRASE}
+{\slot
+night	B-time_period
+బాగా	B-intensity
+}
+
+{\intent	p1: చాన ఎక్కువ రోజులు ఉంటాంది sir అసలు తగ్గుతలేదు.	STATEMENT}
+{\slot
+చాన	B-intensity
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+ఉంటాంది	O
+sir	O
+అసలు	O
+తగ్గుతలేదు.	O
+}
+
+{\intent	p: జ్వరం లాగా కూడా ఉంటుంది sir.	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+లాగా	O
+కూడా	O
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	d: regularగా tablets వాడండి.	ACTION_DIR}
+{\slot
+regularగా	O
+tablets	B-medicine
+వాడండి.	O
+}
+
+{\intent	p: ఇదేంటి sir?	INFO_REQUEST}
+{\slot
+ఇదేంటి	O
+sir?	O
+}
+
+{\intent	d: allergy అమ్మా, infection కాదు.	DIAGNOSIS}
+{\slot
+allergy	B-medical_condition
+అమ్మా,	O
+infection	B-medical_condition
+కాదు.	B-negative
+}
+
+{\intent	p: అలాగే sir tablets వాడుతాను.	COMMIT}
+{\slot
+అలాగే	O
+sir	O
+tablets	B-medicine
+వాడుతాను.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఒకసారి రక్త పరీక్ష చెసి నాకు చూపియండి.	ACTION_DIR}
+{\slot
+ఒకసారి	O
+రక్త	B-body_substance
+పరీక్ష	B-mtest
+చెసి	O
+నాకు	O
+చూపియండి.	O
+}
+

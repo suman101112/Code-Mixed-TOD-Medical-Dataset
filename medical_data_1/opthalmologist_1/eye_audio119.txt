@@ -1,0 +1,124 @@
+{\intent	p: doctor గారు నా పేరు baabaaji.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+baabaaji.	B-name
+}
+
+{\intent	p: నా వయస్సు 63 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+63	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా ఎడమ కంటి చుట్టూ ఎమో వలయంలా కనిపిస్తున్నాయి.	STATEMENT}
+{\slot
+నా	O
+ఎడమ	B-location
+కంటి	B-body_part
+చుట్టూ	B-location
+ఎమో	O
+వలయంలా	B-medical_condition
+కనిపిస్తున్నాయి.	B-symptom
+}
+
+{\intent	p: doctor ని సంప్రదిస్తే optive eye drops ఇచ్చారు	STATEMENT}
+{\slot
+doctor	B-medical_professional
+ని	O
+సంప్రదిస్తే	O
+optive	B-medicine
+eye	I-medicine
+drops	I-medicine
+ఇచ్చారు	O
+}
+
+{\intent	p: ఈ సమస్య ఎందుకు వస్తుంది?	INFO_REQUEST}
+{\slot
+ఈ	O
+సమస్య	O
+ఎందుకు	O
+వస్తుంది?	O
+}
+
+{\intent	d: baabajiగారు మీకు floaters ఉన్నాయి అంటున్నారు.	STATEMENT}
+{\slot
+baabajiగారు	B-name
+మీకు	O
+floaters	B-medical_condition
+ఉన్నాయి	O
+అంటున్నారు.	O
+}
+
+{\intent	d: అంటే కంటి ముందర ఏదో shadowలాగా మీరు ఎటు చూస్తే అటు కనిపిస్తూ ఉండుంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+కంటి	B-body_part
+ముందర	B-location
+ఏదో	O
+shadowలాగా	B-symptom
+మీరు	O
+ఎటు	O
+చూస్తే	O
+అటు	O
+కనిపిస్తూ	B-bodily_process
+ఉండుంటాయి.	O
+}
+
+{\intent	d: మీ age 63 సంవత్సరాలు అండి.	ACK}
+{\slot
+మీ	O
+age	O
+63	B-age
+సంవత్సరాలు	I-age
+అండి.	O
+}
+
+{\intent	d: మీకు sugar bp ఏమైనా ఉన్నాయో first మనం అది చూసుకోవాలి.	ACTION_DIR}
+{\slot
+మీకు	O
+sugar	B-medical_condition
+bp	B-medical_condition
+ఏమైనా	O
+ఉన్నాయో	O
+first	O
+మనం	O
+అది	O
+చూసుకోవాలి.	O
+}
+
+{\intent	d: generalగా floaters అనేవి commonఏ అండి మీ age కి .	MEDICAL_EXPLANATION}
+{\slot
+generalగా	O
+floaters	B-medical_condition
+అనేవి	O
+commonఏ	O
+అండి	O
+మీ	O
+age	O
+కి	O
+.	O
+}
+
+{\intent	d: అంటే మీకు sugar, bp ఎమి ఉన్న, లేకపోయినా మీ age groupలో ఈ floaters అనేవి commonఏ	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+మీకు	O
+sugar,	B-medical_condition
+bp	B-medical_condition
+ఎమి	O
+ఉన్న,	O
+లేకపోయినా	O
+మీ	O
+age	O
+groupలో	O
+ఈ	O
+floaters	B-medical_condition
+అనేవి	O
+commonఏ	O
+}
+

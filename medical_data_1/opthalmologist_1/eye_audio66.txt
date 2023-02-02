@@ -1,0 +1,161 @@
+{\intent	p: doctor గారు నా వయస్సు 20 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+20	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు రోజు బాగా headacheగా ఉంటే doctor ని కలిసాను doctor గారు ophthalmologist ని కలవమన్నారు.	STATEMENT}
+{\slot
+నాకు	O
+రోజు	B-time_period
+బాగా	B-intensity
+headacheగా	B-symptom
+ఉంటే	O
+doctor	B-medical_professional
+ని	O
+కలిసాను	O
+doctor	B-medical_professional
+గారు	O
+ophthalmologist	B-medical_professional
+ని	O
+కలవమన్నారు.	O
+}
+
+{\intent	p: అసల్ కంటికి headache కి సంబంధం ఉంటుందా?	INFO_REQUEST}
+{\slot
+అసల్	O
+కంటికి	B-body_part
+headache	B-symptom
+కి	O
+సంబంధం	O
+ఉంటుందా?	O
+}
+
+{\intent	d: తలనొప్పి అనేది, headache అనేది చాలా మందికి సర్వ సాధారనంగా వస్తూ ఉంటుంది. ఈ సమస్య.	MEDICAL_EXPLANATION}
+{\slot
+తలనొప్పి	B-symptom
+అనేది,	O
+headache	B-symptom
+అనేది	O
+చాలా	B-intensity
+మందికి	O
+సర్వ	O
+సాధారనంగా	O
+వస్తూ	O
+ఉంటుంది.	O
+ఈ	O
+సమస్య.	O
+}
+
+{\intent	d: so మనము ladiesలో అయితే మీకు ఉన్న age group 20 years అంటున్నారండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మనము	O
+ladiesలో	B-person
+అయితే	O
+మీకు	O
+ఉన్న	O
+age	O
+group	O
+20	B-age
+years	I-age
+అంటున్నారండి.	O
+}
+
+{\intent	d: so మీకు మీ weight కూడా చూసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీకు	O
+మీ	O
+weight	B-bm
+కూడా	O
+చూసుకోవాలి.	O
+}
+
+{\intent	d: ఒక్కొకసారి headache చాలా commonగా మీకు ఏమన్నా కంట్లో చూసేటప్పుడు refractive error వల్ల ఇబ్బంది ఉంటే అలాంటప్పుడు కూడా మనకు headache వస్తూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కొకసారి	O
+headache	B-symptom
+చాలా	B-intensity
+commonగా	O
+మీకు	O
+ఏమన్నా	O
+కంట్లో	B-body_part
+చూసేటప్పుడు	B-bodily_process
+refractive	B-symptom
+error	I-symptom
+వల్ల	O
+ఇబ్బంది	O
+ఉంటే	O
+అలాంటప్పుడు	O
+కూడా	O
+మనకు	O
+headache	B-symptom
+వస్తూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అలాంటప్పుడు మనం అద్దాలు పెట్టుకుంటే ఆ headache అనేది తగ్గుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+అలాంటప్పుడు	O
+మనం	O
+అద్దాలు	O
+పెట్టుకుంటే	O
+ఆ	O
+headache	B-symptom
+అనేది	O
+తగ్గుతుంది.	B-normal
+}
+
+{\intent	d: so headache వచ్చేటప్పుడు అసల్ headache ఎప్పుడు ఎక్కువగా వస్తుంది?	INFO_REQUEST}
+{\slot
+so	O
+headache	B-symptom
+వచ్చేటప్పుడు	O
+అసల్	O
+headache	B-symptom
+ఎప్పుడు	O
+ఎక్కువగా	B-intensity
+వస్తుంది?	O
+}
+
+{\intent	d: పొద్దున పూట ఎక్కువగా ఉందా? వంగితే ఎక్కువ అవుతుందా? లేకపోతే సాయింత్రం evening అయ్యేటప్పటికీ ఎక్కువవుతుందా?	INFO_REQUEST}
+{\slot
+పొద్దున	B-time_period
+పూట	I-time_period
+ఎక్కువగా	B-intensity
+ఉందా?	O
+వంగితే	O
+ఎక్కువ	B-intensity
+అవుతుందా?	O
+లేకపోతే	O
+సాయింత్రం	B-time_period
+evening	B-time_period
+అయ్యేటప్పటికీ	O
+ఎక్కువవుతుందా?	B-intensity
+}
+
+{\intent	d: పడుకుని లేస్తూ లేస్తునే headacheతో లేస్తున్నావా?	INFO_REQUEST}
+{\slot
+పడుకుని	O
+లేస్తూ	O
+లేస్తునే	O
+headacheతో	B-symptom
+లేస్తున్నావా?	O
+}
+
+{\intent	d: ఈ headache దాని యొక్క nature మనం చూసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+headache	B-symptom
+దాని	O
+యొక్క	O
+nature	O
+మనం	O
+చూసుకోవాలి.	O
+}
+

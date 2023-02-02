@@ -1,0 +1,102 @@
+{\intent	p: sir నమస్తే sir	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: అమ్మా నాకు ఒక వారం రోజుల నుంచి నడుము నొప్పి ఉందండి	STATEMENT}
+{\slot
+అమ్మా	O
+నాకు	O
+ఒక	B-time_period
+వారం	I-time_period
+రోజుల	I-time_period
+నుంచి	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+ఉందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: plus ఒక పక్కన నొప్పిగా ఉందండి, పొత్తికడుపులో	STATEMENT}
+{\slot
+plus	O
+ఒక	O
+పక్కన	B-location
+నొప్పిగా	B-symptom
+ఉందండి,	O
+పొత్తికడుపులో	B-body_part
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: feces కి వెళ్ళినప్పుడు బాగా మంట వచ్చి మంటగా ఉంటుందండి	STATEMENT}
+{\slot
+feces	B-bodily_process
+కి	O
+వెళ్ళినప్పుడు	O
+బాగా	B-intensity
+మంట	B-symptom
+వచ్చి	O
+మంటగా	B-symptom
+ఉంటుందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: doctor साहब	ACK}
+{\slot
+doctor	B-medical_professional
+साहब	O
+}
+
+{\intent	d: sir మీరు చెప్తున్న symptom అయితే, నడుము నొప్పి ఉంటుంది, అట్లాగే పొత్తికడుపులో నొప్పి, on and off మంట వస్తుంది అంటున్నారు కాబట్టి	ACK}
+{\slot
+sir	O
+మీరు	O
+చెప్తున్న	O
+symptom	O
+అయితే,	O
+నడుము	B-body_part
+నొప్పి	B-symptom
+ఉంటుంది,	O
+అట్లాగే	O
+పొత్తికడుపులో	B-body_part
+నొప్పి,	B-symptom
+on	O
+and	O
+off	O
+మంట	B-symptom
+వస్తుంది	O
+అంటున్నారు	O
+కాబట్టి	O
+}
+
+{\intent	d: so kidneyలో రాళ్ళు ఉండే అవకాశం ఉంటుంది అండి.	DIAGNOSIS}
+{\slot
+so	O
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+ఉండే	O
+అవకాశం	O
+ఉంటుంది	O
+అండి.	O
+}
+

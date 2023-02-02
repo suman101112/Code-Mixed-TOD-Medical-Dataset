@@ -1,0 +1,114 @@
+{\intent	d: చెప్పమ్మా, పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా,	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Shanti	ANSWER}
+{\slot
+Shanti	B-name
+}
+
+{\intent	d: ఏం ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: బాగా ఉబ్బుతాన్నాయి,, సురుకు సురుకున పొడుస్తాన్నది	ANSWER}
+{\slot
+బాగా	B-intensity
+ఉబ్బుతాన్నాయి,,	B-symptom
+సురుకు	B-symptom
+సురుకున	I-symptom
+పొడుస్తాన్నది	I-symptom
+}
+
+{\intent	d: మూత్రంకి సంబంధించిన ఇబ్బందులు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+మూత్రంకి	B-body_substance
+సంబంధించిన	O
+ఇబ్బందులు	B-symptom
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: మూత్రం మంచిగానే వస్తుంది కానీ, అంటే kidney నొప్పి అంటది.	ANSWER}
+{\slot
+మూత్రం	B-body_substance
+మంచిగానే	B-normal
+వస్తుంది	O
+కానీ,	O
+అంటే	O
+kidney	B-body_part
+నొప్పి	B-symptom
+అంటది.	O
+}
+
+{\intent	d: ఎటు side నొప్పి ఉంటుంది?	INFO_REQUEST}
+{\slot
+ఎటు	O
+side	B-location
+నొప్పి	B-symptom
+ఉంటుంది?	O
+}
+
+{\intent	p: ఇటు side. sir సూదులతో గుచ్చినట్లు అయితుంది.	ANSWER}
+{\slot
+ఇటు	O
+side.	B-location
+sir	O
+సూదులతో	O
+గుచ్చినట్లు	B-symptom
+అయితుంది.	O
+}
+
+{\intent	d: చూపిచండమ్మా, బయట reports అవి ఉన్నాయా?	INFO_REQUEST}
+{\slot
+చూపిచండమ్మా,	O
+బయట	O
+reports	O
+అవి	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: ఎక్కడ తీయించారు ఇవి?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+తీయించారు	O
+ఇవి?	O
+}
+
+{\intent	p: ఇక్కడ, kidneyలల, చేదు వచ్చింది, అది ఇది అని చెప్పినారు	STATEMENT}
+{\slot
+ఇక్కడ,	O
+kidneyలల,	B-body_part
+చేదు	B-symptom
+వచ్చింది,	O
+అది	O
+ఇది	O
+అని	O
+చెప్పినారు	O
+}
+
+{\intent	d: పట్టుకోండీ.	ACTION_DIR}
+{\slot
+పట్టుకోండీ.	O
+}
+
+{\intent	d: అమ్మా 92లో ఈ పరిక్ష అయితది, scan అయితది, scan తీసుకోని రండి	ACTION_DIR}
+{\slot
+అమ్మా	O
+92లో	O
+ఈ	O
+పరిక్ష	B-mtest
+అయితది,	O
+scan	B-mtest
+అయితది,	O
+scan	B-mtest
+తీసుకోని	O
+రండి	O
+}
+

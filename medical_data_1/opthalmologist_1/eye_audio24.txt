@@ -1,0 +1,54 @@
+{\intent	p: గుడ్డి వారికి కన్ను దానం చేయవచ్చా?	INFO_REQUEST}
+{\slot
+గుడ్డి	B-medical_condition
+వారికి	B-person
+కన్ను	B-body_part
+దానం	O
+చేయవచ్చా?	O
+}
+
+{\intent	p: ఏ వయస్సు వారైనా కన్ను దానం చేయవచ్చా?	INFO_REQUEST}
+{\slot
+ఏ	O
+వయస్సు	O
+వారైనా	O
+కన్ను	B-body_part
+దానం	O
+చేయవచ్చా?	O
+}
+
+{\intent	d: usualగా మనము healthy individuals నుంచే కంటి donation అనేది eye donation అనేది generalగా accept చేస్తూ ఉంటాము.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+మనము	O
+healthy	B-normal
+individuals	B-person
+నుంచే	O
+కంటి	B-body_part
+donation	O
+అనేది	O
+eye	B-body_part
+donation	O
+అనేది	O
+generalగా	O
+accept	O
+చేస్తూ	O
+ఉంటాము.	O
+}
+
+{\intent	d: ఒక్కొకసారి కొంత పెద్ద వాళ్ళలో కూడా కన్ను healthyగా ఉందంటే eye donation అనేది చేయొచ్చండి.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కొకసారి	O
+కొంత	O
+పెద్ద	O
+వాళ్ళలో	O
+కూడా	O
+కన్ను	B-body_part
+healthyగా	B-normal
+ఉందంటే	O
+eye	B-body_part
+donation	O
+అనేది	O
+చేయొచ్చండి.	O
+}
+

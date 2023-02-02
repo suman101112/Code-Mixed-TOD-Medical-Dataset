@@ -1,0 +1,348 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Saraswati	ANSWER}
+{\slot
+Saraswati	B-name
+}
+
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: ఓ 48 ఉంటాయి sir	ANSWER}
+{\slot
+ఓ	O
+48	B-age
+ఉంటాయి	O
+sir	O
+}
+
+{\intent	d: 40?	HOLD}
+{\slot
+40?	B-age
+}
+
+{\intent	p: 8	STATEMENT}
+{\slot
+8	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+}
+
+{\intent	p: sir గొంతు బాగా నొప్పి పెడుతుంది	ANSWER}
+{\slot
+sir	O
+గొంతు	B-body_part
+బాగా	B-intensity
+నొప్పి	B-symptom
+పెడుతుంది	I-symptom
+}
+
+{\intent	d: గొంతు నొప్పొస్తుంది	ACK}
+{\slot
+గొంతు	B-body_part
+నొప్పొస్తుంది	B-symptom
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: దగ్గు వస్తుంది	ANSWER}
+{\slot
+దగ్గు	B-symptom
+వస్తుంది	I-symptom
+}
+
+{\intent	d: మాట మారిందా.	INFO_REQUEST}
+{\slot
+మాట	B-bodily_process
+మారిందా.	B-symptom
+}
+
+{\intent	p: ఆ మారింది sir.	ANSWER}
+{\slot
+ఆ	B-positive
+మారింది	B-symptom
+sir.	O
+}
+
+{\intent	d: దీనికన్నా ముందు వచ్చినావు కదా అమ్మ నువ్వు	INFO_REQUEST}
+{\slot
+దీనికన్నా	O
+ముందు	O
+వచ్చినావు	O
+కదా	O
+అమ్మ	O
+నువ్వు	O
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: 6 నెలలకొక సారి ఇలా అయితాంది.	STATEMENT}
+{\slot
+6	B-time_period
+నెలలకొక	I-time_period
+సారి	I-time_period
+ఇలా	B-symptom
+అయితాంది.	I-symptom
+}
+
+{\intent	d: అంటే regular patient నువ్వు.	STATEMENT}
+{\slot
+అంటే	O
+regular	B-frequency
+patient	B-person
+నువ్వు.	O
+}
+
+{\intent	d: ఆహా.	ACK}
+{\slot
+ఆహా.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: దమ్ము వస్తుందా?	INFO_REQUEST}
+{\slot
+దమ్ము	B-medical_condition
+వస్తుందా?	O
+}
+
+{\intent	p: ఆ లేదు. బాగా దగ్గెవరకు ఎట్లనో అయితాంది ఛాతిల.	ANSWER}
+{\slot
+ఆ	O
+లేదు.	B-negative
+బాగా	B-intensity
+దగ్గెవరకు	B-symptom
+ఎట్లనో	B-symptom
+అయితాంది	I-symptom
+ఛాతిల.	B-body_part
+}
+
+{\intent	p: sir నేను నరాల బలహీనత tabletలు ఎప్పటికీ వేసుకుంటా sir.	STATEMENT}
+{\slot
+sir	O
+నేను	O
+నరాల	B-body_part
+బలహీనత	B-medical_condition
+tabletలు	B-medicine
+ఎప్పటికీ	B-time_period
+వేసుకుంటా	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానివల్ల దమ్ము ఎందుకో 6 నెలలకు ఒకసారి 6 నెలలకు ఒకసారి ఇట్లనే వస్తుంది sir.	STATEMENT}
+{\slot
+దానివల్ల	O
+దమ్ము	B-medical_condition
+ఎందుకో	O
+6	B-time_period
+నెలలకు	I-time_period
+ఒకసారి	I-time_period
+6	B-time_period
+నెలలకు	I-time_period
+ఒకసారి	I-time_period
+ఇట్లనే	O
+వస్తుంది	B-symptom
+sir.	O
+}
+
+{\intent	d: ఆ అను అమ్మ	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+అమ్మ	O
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: ఈ అను	ACTION_DIR}
+{\slot
+ఈ	O
+అను	O
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: దగ్గు దమ్ము ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+దమ్ము	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p1: దమ్ము లేదు sir. దగ్గు	ANSWER}
+{\slot
+దమ్ము	B-medical_condition
+లేదు	B-negative
+sir.	O
+దగ్గు	B-symptom
+}
+
+{\intent	p: దగ్గె sir. దగ్గు నంజు వస్తుంది దగ్గు తోనే	STATEMENT}
+{\slot
+దగ్గె	B-symptom
+sir.	O
+దగ్గు	B-symptom
+నంజు	B-body_substance
+వస్తుంది	B-symptom
+దగ్గు	B-symptom
+తోనే	I-symptom
+}
+
+{\intent	d: వెనకకు తిరుగు	ACTION_DIR}
+{\slot
+వెనకకు	O
+తిరుగు	O
+}
+
+{\intent	p1: గొంతులో అంతా మండుతాంది.	STATEMENT}
+{\slot
+గొంతులో	B-body_part
+అంతా	B-location
+మండుతాంది.	B-symptom
+}
+
+{\intent	p: బాగా మంట. భరించలేని మంట sir.	STATEMENT}
+{\slot
+బాగా	B-intensity
+మంట.	B-symptom
+భరించలేని	I-symptom
+మంట	B-symptom
+sir.	O
+}
+
+{\intent	d: మెల్లగా మాట్లాడాలి తక్కువ మాట్లాడాలి అమ్మ.	ACTION_DIR}
+{\slot
+మెల్లగా	O
+మాట్లాడాలి	O
+తక్కువ	O
+మాట్లాడాలి	O
+అమ్మ.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ తర్వాత ఏమిటంటే ఆవిరి పట్టు.	ACTION_DIR}
+{\slot
+ఆ	O
+తర్వాత	B-time_period
+ఏమిటంటే	O
+ఆవిరి	B-medicine
+పట్టు.	I-medicine
+}
+
+{\intent	p: వేడి నీళ్లలో నా?	INFO_REQUEST}
+{\slot
+వేడి	B-food_substance
+నీళ్లలో	I-food_substance
+నా?	O
+}
+
+{\intent	d: ఆవిరి వచ్చే నీళ్లలో vicks అన్నా amrutanjan అన్నా వేసి నోటిగుండా రెండుసార్లు ఆవిరి పట్టు	ACTION_DIR}
+{\slot
+ఆవిరి	B-food_substance
+వచ్చే	I-food_substance
+నీళ్లలో	I-food_substance
+vicks	B-medicine
+అన్నా	O
+amrutanjan	B-medicine
+అన్నా	O
+వేసి	O
+నోటిగుండా	B-body_part
+రెండుసార్లు	B-frequency
+ఆవిరి	B-bodily_process
+పట్టు	B-bodily_process
+}
+
+{\intent	p: కడుపులో నొప్పి వస్తుంది. బాగా దగ్గు వల్ల.	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	I-symptom
+బాగా	B-intensity
+దగ్గు	B-symptom
+వల్ల.	I-symptom
+}
+
+{\intent	d: పులుపు ఇట్లా తీసుకోకు.	ACTION_DIR}
+{\slot
+పులుపు	B-food_substance
+ఇట్లా	O
+తీసుకోకు.	B-negative
+}
+
+{\intent	p: పండ్లు తీసుకోవచ్చా?	INFO_REQUEST}
+{\slot
+పండ్లు	B-food_substance
+తీసుకోవచ్చా?	O
+}
+
+{\intent	d: ఆ తీసుకో	ANSWER}
+{\slot
+ఆ	O
+తీసుకో	B-positive
+}
+

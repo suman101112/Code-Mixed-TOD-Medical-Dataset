@@ -1,0 +1,86 @@
+{\intent	p: doctor గారు దుర అలవాట్ల వలన కంటి చూపుకి ఏమైనా ప్రమాదమా?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+దుర	B-habit
+అలవాట్ల	I-habit
+వలన	O
+కంటి	B-body_part
+చూపుకి	B-bodily_process
+ఏమైనా	O
+ప్రమాదమా?	O
+}
+
+{\intent	d: దుర అలవాట్లు అంటే ముందుగా చెప్పుకోవాల్సింది smoking, alcohol, ఇవి రెండు	STATEMENT}
+{\slot
+దుర	B-habit
+అలవాట్లు	I-habit
+అంటే	O
+ముందుగా	O
+చెప్పుకోవాల్సింది	O
+smoking,	B-habit
+alcohol,	B-habit
+ఇవి	O
+రెండు	B-frequency
+}
+
+{\intent	d: ఇవి రెండు కూడా కంటి వెనకాల ఉన్న నరాన్ని optic nerve అని ఉంటుంది మనకు రెండు ఇటు పక్కల అటు పక్క.	MEDICAL_EXPLANATION}
+{\slot
+ఇవి	O
+రెండు	B-frequency
+కూడా	O
+కంటి	B-body_part
+వెనకాల	B-location
+ఉన్న	O
+నరాన్ని	B-body_part
+optic	I-body_part
+nerve	I-body_part
+అని	O
+ఉంటుంది	O
+మనకు	O
+రెండు	B-frequency
+ఇటు	B-location
+పక్కల	I-location
+అటు	B-location
+పక్క.	I-location
+}
+
+{\intent	d: అది కంటి నుంచి brainకి connection ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+కంటి	B-body_part
+నుంచి	O
+brainకి	B-body_part
+connection	O
+ఉంటుంది.	O
+}
+
+{\intent	d: toxicity రావొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+toxicity	B-symptom
+రావొచ్చు.	O
+}
+
+{\intent	d: smoking అంటే tobacco toxicity alcohol కూడా toxicity వచ్చినప్పుడు రెండు కళ్ళను effect చేయొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+smoking	O
+అంటే	O
+tobacco	B-habit
+toxicity	B-symptom
+alcohol	B-habit
+కూడా	O
+toxicity	B-symptom
+వచ్చినప్పుడు	O
+రెండు	B-frequency
+కళ్ళను	B-body_part
+effect	B-symptom
+చేయొచ్చు.	O
+}
+
+{\intent	d: suddenగా vision తగ్గిపోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+suddenగా	O
+vision	B-bodily_process
+తగ్గిపోవచ్చు.	B-symptom
+}
+

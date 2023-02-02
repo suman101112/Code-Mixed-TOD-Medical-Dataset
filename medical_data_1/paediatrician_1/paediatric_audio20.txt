@@ -1,0 +1,100 @@
+{\intent	p1: 15 months हो गए	STATEMENT}
+{\slot
+15	B-time_period
+months	I-time_period
+हो	O
+गए	O
+}
+
+{\intent	d: क्या problem	INFO_REQUEST}
+{\slot
+क्या	O
+problem	O
+}
+
+{\intent	p1: सर्दी खांसी बहुत है. नाक में से पानी जा रहा.	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+खांसी	B-symptom
+बहुत	B-intensity
+है.	O
+नाक	B-body_part
+में	B-location
+से	O
+पानी	B-food_substance
+जा	O
+रहा.	O
+}
+
+{\intent	d: bottle का दूध या माँ का दूध? खाना कहते	INFO_REQUEST}
+{\slot
+bottle	O
+का	O
+दूध	B-food_substance
+या	O
+माँ	B-person
+का	O
+दूध?	B-food_substance
+खाना	B-food_substance
+कहते	B-bodily_process
+}
+
+{\intent	p1: माँ का दूध.	ANSWER}
+{\slot
+माँ	B-person
+का	O
+दूध.	B-food_substance
+}
+
+{\intent	p1: नाक में से पानी बहुत जा रहा.	STATEMENT}
+{\slot
+नाक	B-body_part
+में	B-location
+से	O
+पानी	B-food_substance
+बहुत	B-intensity
+जा	B-symptom
+रहा.	I-symptom
+}
+
+{\intent	p1: रात में नहीं सो रहा जी	STATEMENT}
+{\slot
+रात	B-time_period
+में	O
+नहीं	B-negative
+सो	B-bodily_process
+रहा	O
+जी	O
+}
+
+{\intent	p1: एक बजे सो रहा	STATEMENT}
+{\slot
+एक	B-time_period
+बजे	I-time_period
+सो	B-bodily_process
+रहा	O
+}
+
+{\intent	p1: नाक बंद है .	STATEMENT}
+{\slot
+नाक	B-body_part
+बंद	B-symptom
+है	O
+.	O
+}
+
+{\intent	d: थोड़ा सर्दी है? ज्यादा है?	INFO_REQUEST}
+{\slot
+थोड़ा	B-intensity
+सर्दी	B-medical_condition
+है?	O
+ज्यादा	B-intensity
+है?	O
+}
+
+{\intent	p1: थोड़ा है	ANSWER}
+{\slot
+थोड़ा	B-intensity
+है	O
+}
+

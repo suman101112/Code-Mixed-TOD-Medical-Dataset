@@ -1,0 +1,126 @@
+{\intent	p: urineలో నొప్పి లేస్తుంది sir అప్పుడప్పుడు	STATEMENT}
+{\slot
+urineలో	B-body_substance
+నొప్పి	B-symptom
+లేస్తుంది	O
+sir	O
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: నాలుగు రోజులు అవుతుంది.	STATEMENT}
+{\slot
+నాలుగు	B-time_period
+రోజులు	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	p: అన్నం గిట్ల ఆకలి అయితలేదు అసలు.	STATEMENT}
+{\slot
+అన్నం	B-food_substance
+గిట్ల	O
+ఆకలి	B-bodily_process
+అయితలేదు	B-symptom
+అసలు.	O
+}
+
+{\intent	p: దొడ్డికి పోయి దొడ్డికి వస్తలేదు	STATEMENT}
+{\slot
+దొడ్డికి	B-bodily_process
+పోయి	O
+దొడ్డికి	B-bodily_process
+వస్తలేదు	B-negative
+}
+
+{\intent	p: ఆకలి అయితే అసలు అయితలేదు	STATEMENT}
+{\slot
+ఆకలి	B-bodily_process
+అయితే	O
+అసలు	O
+అయితలేదు	B-negative
+}
+
+{\intent	d: సరే	ACK}
+{\slot
+సరే	O
+}
+
+{\intent	d: పరిక్షలు అన్నీ చేయించుకోని reports తో రా.	ACTION_DIR}
+{\slot
+పరిక్షలు	B-mtest
+అన్నీ	O
+చేయించుకోని	O
+reports	O
+తో	O
+రా.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: శుక్రవారం రోజూ	STATEMENT}
+{\slot
+శుక్రవారం	B-time_period
+రోజూ	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: scan తీసుకోవాలన్నా sir?	INFO_REQUEST}
+{\slot
+scan	B-mtest
+తీసుకోవాలన్నా	O
+sir?	O
+}
+
+{\intent	d: అవన్నీ రాస్తున్నా	COMMIT}
+{\slot
+అవన్నీ	O
+రాస్తున్నా	O
+}
+
+{\intent	p1: మళ్ళి శుక్రవారం రావాలా sir?	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+శుక్రవారం	B-time_period
+రావాలా	O
+sir	O
+}
+
+{\intent	d: ఆ అమ్మా	ANSWER}
+{\slot
+ఆ	O
+అమ్మా	B-person
+}
+
+{\intent	d: అప్పటివరకు మందులు రాసి ఇస్తాము.	STATEMENT}
+{\slot
+అప్పటివరకు	B-time_period
+మందులు	B-medicine
+రాసి	O
+ఇస్తాము.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+

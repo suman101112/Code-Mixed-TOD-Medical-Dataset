@@ -1,0 +1,221 @@
+{\intent	d: Dineshగారు చెప్పండి.	CONV_OPEN}
+{\slot
+Dineshగారు	O
+చెప్పండి.	O
+}
+
+{\intent	p: నేను gastric నుండి చాలా trouble చేస్తున్నాను అండి.	STATEMENT}
+{\slot
+నేను	O
+gastric	B-medical_condition
+నుండి	O
+చాలా	B-intensity
+trouble	B-symptom
+చేస్తున్నాను	I-symptom
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ పొదున్నే వకరకయ్యేది, tiffin తిననీకి ఇష్టం రాదు.	STATEMENT}
+{\slot
+ఆ	O
+పొదున్నే	B-time_period
+వకరకయ్యేది,	B-symptom
+tiffin	B-food_substance
+తిననీకి	B-bodily_process
+ఇష్టం	B-symptom
+రాదు.	I-symptom
+}
+
+{\intent	d: ఎమ్మా. voice clearగా లేదు.	SNU}
+{\slot
+ఎమ్మా.	O
+voice	O
+clearగా	O
+లేదు.	O
+}
+
+{\intent	p: tiffin తిననీకి ఇష్టం కాదు.	REPEAT_REPHRASE}
+{\slot
+tiffin	B-food_substance
+తిననీకి	B-bodily_process
+ఇష్టం	B-symptom
+కాదు.	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇలాంటి problems ఉన్నాయండి. రాత్రి పూట్ల చాలా భోజనం తింటాను. కానీ పొద్దున అయితే తినలేను.	REPEAT_REPHRASE}
+{\slot
+ఇలాంటి	O
+problems	O
+ఉన్నాయండి.	O
+రాత్రి	B-time_period
+పూట్ల	I-time_period
+చాలా	B-intensity
+భోజనం	B-food_substance
+తింటాను.	B-bodily_process
+కానీ	O
+పొద్దున	B-time_period
+అయితే	O
+తినలేను.	B-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: అంతే అండి.	ANSWER}
+{\slot
+అంతే	O
+అండి.	O
+}
+
+{\intent	d: right అమ్మ. చెప్తాను.	ACK}
+{\slot
+right	O
+అమ్మ.	O
+చెప్తాను.	O
+}
+
+{\intent	d: so రాత్రి భోజనం correctగా చేయగలవు ఉదయం పూట tiffin చేయబుద్ధి అనిపించట్లేదు. ఇవి నీ 2 ప్రశ్నలు.	ACK}
+{\slot
+so	O
+రాత్రి	B-time_period
+భోజనం	B-bodily_process
+correctగా	B-normal
+చేయగలవు	B-bodily_process
+ఉదయం	B-time_period
+పూట	B-time_period
+tiffin	B-food_substance
+చేయబుద్ధి	B-symptom
+అనిపించట్లేదు.	I-symptom
+ఇవి	O
+నీ	O
+2	O
+ప్రశ్నలు.	O
+}
+
+{\intent	d: వయస్సు సుమారు 25 లోపు ఉంది.	STATEMENT}
+{\slot
+వయస్సు	O
+సుమారు	O
+25	B-age
+లోపు	O
+ఉంది.	O
+}
+
+{\intent	d: దీంట్లో ప్రధానమైన విషయం చెప్పుకోవాలమ్మా, ఉదయం పూట tiffin skip చేసినట్లయితే liver పడాయే అవకాశాలు ఎక్కువగా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+దీంట్లో	O
+ప్రధానమైన	O
+విషయం	O
+చెప్పుకోవాలమ్మా,	O
+ఉదయం	B-time_period
+పూట	I-time_period
+tiffin	B-food_substance
+skip	O
+చేసినట్లయితే	O
+liver	B-body_part
+పడాయే	B-symptom
+అవకాశాలు	O
+ఎక్కువగా	B-intensity
+ఉంటాయి.	O
+}
+
+{\intent	d: ఉదయం పూట liver damage కావొద్దు అంటే నువ్వు కచ్చితంగా tiffin చేయాలి. tiffin అంటే ఏదైనా సరే limited food కచ్చితంగా తీసుకోవాలి.	ACTION_DIR}
+{\slot
+ఉదయం	B-time_period
+పూట	B-time_period
+liver	B-body_part
+damage	B-symptom
+కావొద్దు	O
+అంటే	O
+నువ్వు	O
+కచ్చితంగా	O
+tiffin	B-food_substance
+చేయాలి.	O
+tiffin	B-food_substance
+అంటే	O
+ఏదైనా	O
+సరే	O
+limited	O
+food	B-food_substance
+కచ్చితంగా	O
+తీసుకోవాలి.	B-bodily_process
+}
+
+{\intent	d: breakfast అనే అర్ధం అది ఉంది.	MEDICAL_EXPLANATION}
+{\slot
+breakfast	B-food_substance
+అనే	O
+అర్ధం	O
+అది	O
+ఉంది.	O
+}
+
+{\intent	d: so రాత్రి నువ్వు భోజనం చేసిన తర్వాత 10 12 గంటలు పడుకుంటావు. లేచిన తర్వాత ఆ fasting ని break చేయడమే breakfast కబట్టి కచ్చితంగా ఉదయం పూట నువ్వు tiffin తీసుకోవాలి.	ACTION_DIR}
+{\slot
+so	O
+రాత్రి	B-time_period
+నువ్వు	O
+భోజనం	B-bodily_process
+చేసిన	O
+తర్వాత	B-time_period
+10	B-time_period
+12	B-time_period
+గంటలు	I-time_period
+పడుకుంటావు.	O
+లేచిన	B-bodily_process
+తర్వాత	B-time_period
+ఆ	O
+fasting	B-bodily_process
+ని	O
+break	O
+చేయడమే	O
+breakfast	B-food_substance
+కబట్టి	O
+కచ్చితంగా	O
+ఉదయం	B-time_period
+పూట	B-time_period
+నువ్వు	O
+tiffin	B-food_substance
+తీసుకోవాలి.	O
+}
+
+{\intent	d: చిన్నగా, ఒకవేల తీసుకోలేని పక్షంలో చిన్నగా 2 3 bread ఒక చిన్న fruit తీసుకోవడం అలవాటు చేస్కో.	ACTION_DIR}
+{\slot
+చిన్నగా,	O
+ఒకవేల	O
+తీసుకోలేని	O
+పక్షంలో	O
+చిన్నగా	O
+2	B-frequency
+3	B-frequency
+bread	B-food_substance
+ఒక	O
+చిన్న	O
+fruit	B-food_substance
+తీసుకోవడం	B-bodily_process
+అలవాటు	O
+చేస్కో.	O
+}
+

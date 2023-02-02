@@ -1,0 +1,191 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: K Kumaraswamy	ANSWER}
+{\slot
+K	B-name
+Kumaraswamy	I-name
+}
+
+{\intent	d: K?	SNU}
+{\slot
+K?	B-name
+}
+
+{\intent	p: Kumaraswamy	REPEAT_REPHRASE}
+{\slot
+Kumaraswamy	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: sir?	SNU}
+{\slot
+sir?	O
+}
+
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 58	ANSWER}
+{\slot
+58	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఈ మొన్న పడిశం బట్టింది.	ANSWER}
+{\slot
+ఈ	O
+మొన్న	B-time_period
+పడిశం	B-medical_condition
+బట్టింది.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: బాగా దగ్గిన	STATEMENT}
+{\slot
+బాగా	B-intensity
+దగ్గిన	B-symptom
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆ దగ్గుడుల చెవులు గడియలు పట్టినట్లు అయింది.	STATEMENT}
+{\slot
+ఆ	O
+దగ్గుడుల	B-symptom
+చెవులు	B-body_part
+గడియలు	B-symptom
+పట్టినట్లు	O
+అయింది.	O
+}
+
+{\intent	d: తక్వ వినపడుతుందా?	INFO_REQUEST}
+{\slot
+తక్వ	B-intensity
+వినపడుతుందా?	B-bodily_process
+}
+
+{\intent	p: ఆ తక్వ వినపడుతుంది.	ANSWER}
+{\slot
+ఆ	O
+తక్వ	B-intensity
+వినపడుతుంది.	B-bodily_process
+}
+
+{\intent	d: నొప్పొస్తుందా?	INFO_REQUEST}
+{\slot
+నొప్పొస్తుందా?	B-symptom
+}
+
+{\intent	p: నొప్పి ఏం అనిపిస్తలేదు	ANSWER}
+{\slot
+నొప్పి	B-symptom
+ఏం	O
+అనిపిస్తలేదు	O
+}
+
+{\intent	d: తక్వ వినపడుతుంది.	ACK}
+{\slot
+తక్వ	B-intensity
+వినపడుతుంది.	B-bodily_process
+}
+
+{\intent	p: తక్వ వినపడుతుంది.	ACK}
+{\slot
+తక్వ	B-intensity
+వినపడుతుంది.	B-bodily_process
+}
+
+{\intent	p: ఇది బాగా అది దగ్గు ఉంది.	STATEMENT}
+{\slot
+ఇది	O
+బాగా	B-intensity
+అది	O
+దగ్గు	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ముక్కు	ACTION_DIR}
+{\slot
+ముక్కు	B-body_part
+}
+
+{\intent	p: ఇది బానే ఉంది కానీ పడిశం బట్టి	STATEMENT}
+{\slot
+ఇది	O
+బానే	B-normal
+ఉంది	O
+కానీ	O
+పడిశం	B-medical_condition
+బట్టి	O
+}
+
+{\intent	d: వినబడుతుందా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా?	B-bodily_process
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	B-positive
+}
+
+{\intent	p: చిన్నగా	ANSWER}
+{\slot
+చిన్నగా	B-intensity
+}
+
+{\intent	d: చెవుల ఏం వేయ్యొద్దు	ACTION_DIR}
+{\slot
+చెవుల	B-body_part
+ఏం	O
+వేయ్యొద్దు	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+

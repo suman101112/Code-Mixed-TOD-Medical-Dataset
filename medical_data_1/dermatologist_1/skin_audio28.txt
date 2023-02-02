@@ -1,0 +1,203 @@
+{\intent	p: sir నమస్కారం sir	GREETING}
+{\slot
+sir	O
+నమస్కారం	O
+sir	O
+}
+
+{\intent	d: నమస్తే అండి,	GREETING}
+{\slot
+నమస్తే	O
+అండి,	O
+}
+
+{\intent	d: చెప్పండి sir Karim Ullah గారు	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+Karim	B-name
+Ullah	I-name
+గారు	I-name
+}
+
+{\intent	p: sir నాకు skin problem ఉంది sir	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+skin	B-symptom
+problem	I-symptom
+ఉంది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎలా ఉంది అండి? ఏం అనిపిస్తుంది?	INFO_REQUEST}
+{\slot
+ఎలా	O
+ఉంది	O
+అండి?	O
+ఏం	O
+అనిపిస్తుంది?	O
+}
+
+{\intent	p: నేను ఏం మందు వాడడం లేదు	STATEMENT}
+{\slot
+నేను	O
+ఏం	O
+మందు	B-treatment
+వాడడం	I-treatment
+లేదు	B-negative
+}
+
+{\intent	d: Hello	SNU}
+{\slot
+Hello	O
+}
+
+{\intent	p: నాకు psoriasis వస్తుంది sir	STATEMENT}
+{\slot
+నాకు	O
+psoriasis	B-symptom
+వస్తుంది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పొట్టేమైనా రాలుతుందా అండి?	INFO_REQUEST}
+{\slot
+పొట్టేమైనా	B-symptom
+రాలుతుందా	I-symptom
+అండి?	O
+}
+
+{\intent	p: ఆ అవునండీ రాలుతుందండీ	ANSWER}
+{\slot
+ఆ	O
+అవునండీ	B-positive
+రాలుతుందండీ	B-symptom
+}
+
+{\intent	d: ఎక్కడ ఎక్కువ ఉంటుంది అండి?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+ఎక్కువ	B-symptom
+ఉంటుంది	I-symptom
+అండి?	O
+}
+
+{\intent	p: నాకు front sideలో ఉందండీ	ANSWER}
+{\slot
+నాకు	O
+front	B-location
+sideలో	I-location
+ఉందండీ	B-positive
+}
+
+{\intent	d: ఎక్కడ అండి?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+అండి?	O
+}
+
+{\intent	p: frontలో	ANSWER}
+{\slot
+frontలో	B-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: కొంచం చీము కనబడుతుంటుందా అండి?	INFO_REQUEST}
+{\slot
+కొంచం	B-symptom
+చీము	I-symptom
+కనబడుతుంటుందా	I-symptom
+అండి?	O
+}
+
+{\intent	p: ఏం లేదండీ	ANSWER}
+{\slot
+ఏం	B-negative
+లేదండీ	I-negative
+}
+
+{\intent	p: పొట్టు రాలుతూ ఉంటది	STATEMENT}
+{\slot
+పొట్టు	B-symptom
+రాలుతూ	I-symptom
+ఉంటది	I-symptom
+}
+
+{\intent	d: अच्छा	STATEMENT}
+{\slot
+अच्छा	O
+}
+
+{\intent	d: ఎప్పటినుంచి ఉందండీ ఇది?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఉందండి	O
+ఇది?	O
+}
+
+{\intent	d: ఏమైనా treatment తీసుకున్నారా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+treatment	B-treatment
+తీసుకున్నారా?	I-treatment
+}
+
+{\intent	p: 3 నెలల నుంచి ఉందండి	ANSWER}
+{\slot
+3	B-time_period
+నెలల	I-time_period
+నుంచి	I-time_period
+ఉందండి	B-positive
+}
+
+{\intent	p: నేను skin doctor గారి దెగ్గరకు చూపించాను	ANSWER}
+{\slot
+నేను	O
+skin	B-medical_professional
+doctor	I-medical_professional
+గారి	I-medical_professional
+దెగ్గరకు	O
+చూపించాను	O
+}
+
+{\intent	d: ummhmm	ACK}
+{\slot
+ummhmm	O
+}
+
+{\intent	p: ఆయన మందులు ఇచ్చారు, ఏ మందు పనిచెయట్లేదు	STATEMENT}
+{\slot
+ఆయన	O
+మందులు	B-treatment
+ఇచ్చారు,	O
+ఏ	B-treatment
+మందు	I-treatment
+పనిచెయట్లేదు	B-negative
+}
+
+{\intent	d: अच्छा , अच्छा , ok అండి చెప్తాను	ACK}
+{\slot
+अच्छा	O
+,	O
+अच्छा	O
+,	O
+ok	O
+అండి	O
+చెప్తాను	O
+}
+

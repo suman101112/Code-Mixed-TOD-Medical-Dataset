@@ -1,0 +1,164 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే అమ్మా	GREETING}
+{\slot
+నమస్తే	O
+అమ్మా	O
+}
+
+{\intent	p: మా అబ్బయి ఇప్పుడు 13 years అండి, 8th class చదువుతున్నాడు	ANSWER}
+{\slot
+మా	O
+అబ్బయి	O
+ఇప్పుడు	O
+13	B-age
+years	I-age
+అండి,	O
+8th	B-profession
+class	I-profession
+చదువుతున్నాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు ఏంటి అంటే, night time ఏమో చదవమంటే మేము దెగ్గర ఉండి చదివించాలంటాడు, దెగ్గర ఉంటేనే చదువుతాడు. లేదంటే బయటికి వచ్చేస్తాడు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+అంటే,	O
+night	B-time_period
+time	I-time_period
+ఏమో	O
+చదవమంటే	O
+మేము	O
+దెగ్గర	O
+ఉండి	O
+చదివించాలంటాడు,	O
+దెగ్గర	O
+ఉంటేనే	O
+చదువుతాడు.	O
+లేదంటే	O
+బయటికి	O
+వచ్చేస్తాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ప్రతీదీ తినమంటే తినడు	STATEMENT}
+{\slot
+ప్రతీదీ	O
+తినమంటే	O
+తినడు	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం అన్నీ, hyperactiveగా ఉంటాడు sir	STATEMENT}
+{\slot
+కొంచం	O
+అన్నీ,	O
+hyperactiveగా	B-medical_condition
+ఉంటాడు	O
+sir	O
+}
+
+{\intent	d: ఏమన్నా చిన్నప్పటి నుంచి health problems వచ్చాయా బాబుకి?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+చిన్నప్పటి	B-time_period
+నుంచి	O
+health	B-medical_condition
+problems	I-medical_condition
+వచ్చాయా	O
+బాబుకి?	O
+}
+
+{\intent	p: లేదు, విరోచనాలు and vomitings ఇలా ఉండేవండి.	ANSWER}
+{\slot
+లేదు,	O
+విరోచనాలు	B-symptom
+and	O
+vomitings	B-symptom
+ఇలా	O
+ఉండేవండి.	O
+}
+
+{\intent	p: ఇప్పుడు ఏం చేస్తున్నాదంటే ప్రతీదానికీ చిన్నప్పుడు hyperactiveగా ఏదైనా వస్తువు కావలన్నా అల అలా ఎక్కువ మోతాదులో దాన్ని అడిగేవాడండీ	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+చేస్తున్నాదంటే	O
+ప్రతీదానికీ	O
+చిన్నప్పుడు	B-person
+hyperactiveగా	B-medical_condition
+ఏదైనా	O
+వస్తువు	O
+కావలన్నా	O
+అల	O
+అలా	O
+ఎక్కువ	B-intensity
+మోతాదులో	O
+దాన్ని	O
+అడిగేవాడండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తర్వాత ఇప్పుడు ఏం చేస్తున్నాదంటే, అలాగ అలాగ కొంచం calm అయ్యాడు.	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+ఇప్పుడు	B-time_period
+ఏం	O
+చేస్తున్నాదంటే,	O
+అలాగ	O
+అలాగ	O
+కొంచం	O
+calm	B-normal
+అయ్యాడు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చదువు విషయం వచ్చేసరికి, నా husbandకి , నాకుగా తగవులు పెట్టేస్తున్నాడు	STATEMENT}
+{\slot
+చదువు	O
+విషయం	O
+వచ్చేసరికి,	O
+నా	O
+husbandకి	B-familal
+,	O
+నాకుగా	O
+తగవులు	O
+పెట్టేస్తున్నాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది sir	ACK}
+{\slot
+అది	O
+sir	O
+}
+

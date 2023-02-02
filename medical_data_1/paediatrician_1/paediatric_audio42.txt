@@ -1,0 +1,96 @@
+{\intent	d: చెప్పండి ఏంటి problem?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p1: జ్వరం ఉంది sir, vomiting sir, నంజు బాగా వస్తుంది.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+ఉంది	O
+sir,	O
+vomiting	B-symptom
+sir,	O
+నంజు	B-body_substance
+బాగా	B-intensity
+వస్తుంది.	O
+}
+
+{\intent	d: పేరు?	INFO_REQUEST}
+{\slot
+పేరు?	O
+}
+
+{\intent	p1: Harshita	ANSWER}
+{\slot
+Harshita	B-name
+}
+
+{\intent	d: పడుకోబెట్టు	ACTION_DIR}
+{\slot
+పడుకోబెట్టు	O
+}
+
+{\intent	d: జ్వరం ఒక్కటేనా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఒక్కటేనా?	O
+}
+
+{\intent	d: జలుబు దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: జలుబు దగ్గు ఉంది sir	ANSWER}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఉంది	O
+sir	O
+}
+
+{\intent	d: కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+}
+
+{\intent	d: ఎప్పటినుంచి జ్వరం అమ్మా?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+జ్వరం	B-symptom
+అమ్మా?	O
+}
+
+{\intent	p1: ఇవాళ పొద్దటి నుంచి sir	ANSWER}
+{\slot
+ఇవాళ	O
+పొద్దటి	B-time_period
+నుంచి	O
+sir	O
+}
+
+{\intent	p1: water తాగితే వాంతులైతున్నాయి sir.	STATEMENT}
+{\slot
+water	B-food_substance
+తాగితే	B-bodily_process
+వాంతులైతున్నాయి	B-symptom
+sir.	O
+}
+
+{\intent	d: దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: దగ్గు లేదు sir.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+లేదు	O
+sir.	O
+}
+

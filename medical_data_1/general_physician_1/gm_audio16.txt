@@ -1,0 +1,242 @@
+{\intent	p: నా పేరు Koti అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Koti	B-name
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: మా ఆవిడకు 23 years అండి.	STATEMENT}
+{\slot
+మా	O
+ఆవిడకు	B-familal
+23	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే sugar వచ్చింది అని చెప్పేసి last year test లో వచ్చింది అది.	STATEMENT}
+{\slot
+అంటే	O
+sugar	B-medical_condition
+వచ్చింది	O
+అని	O
+చెప్పేసి	O
+last	B-time_period
+year	I-time_period
+test	B-mtest
+లో	O
+వచ్చింది	O
+అది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే madam Sathipalliలో మందులు వాడుతున్నాం Srikanthగారి దెగ్గర	STATEMENT}
+{\slot
+అయితే	O
+madam	O
+Sathipalliలో	B-place
+మందులు	B-medicine
+వాడుతున్నాం	O
+Srikanthగారి	B-medical_professional
+దెగ్గర	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: diabeticగా	STATEMENT}
+{\slot
+diabeticగా	B-medical_condition
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: diabeticది madam ఆయన	STATEMENT}
+{\slot
+diabeticది	B-medical_condition
+madam	O
+ఆయన	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఈ మందుల వల్ల futureలో ఏమైనా problems ఉంటాయా madam?	INFO_REQUEST}
+{\slot
+అయితే	O
+ఈ	O
+మందుల	B-medicine
+వల్ల	O
+futureలో	B-time_period
+ఏమైనా	O
+problems	O
+ఉంటాయా	O
+madam?	O
+}
+
+{\intent	d: ఏ మందుల వల్ల?	INFO_REQUEST}
+{\slot
+ఏ	O
+మందుల	B-medicine
+వల్ల?	O
+}
+
+{\intent	p: అంటే ఈ 850 వాడుతున్నాను madam నేను.	ANSWER}
+{\slot
+అంటే	O
+ఈ	O
+850	B-medicine_dose
+వాడుతున్నాను	O
+madam	O
+నేను.	O
+}
+
+{\intent	d: 850 వాడుతున్నారు.	ACK}
+{\slot
+850	B-medicine_dose
+వాడుతున్నారు.	O
+}
+
+{\intent	p: ఈ మందుల వల్ల ఏమైనా problems futureలో ఏమైనా ఉంటాయా? వేసుకోవడం వల్ల?	INFO_REQUEST}
+{\slot
+ఈ	O
+మందుల	B-medicine
+వల్ల	O
+ఏమైనా	O
+problems	O
+futureలో	B-time_period
+ఏమైనా	O
+ఉంటాయా?	O
+వేసుకోవడం	O
+వల్ల?	O
+}
+
+{\intent	d: ya but futureలో problems అంటే కానీ sugar అయితే compulsoryగా control లో ఉండాలి.	STATEMENT}
+{\slot
+ya	O
+but	O
+futureలో	B-time_period
+problems	O
+అంటే	O
+కానీ	O
+sugar	B-medical_condition
+అయితే	O
+compulsoryగా	O
+control	B-normal
+లో	O
+ఉండాలి.	O
+}
+
+{\intent	d: sugar control లో లేకపోయినా కూడా problems చాలా తీవ్రతగా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+sugar	B-medical_condition
+control	B-normal
+లో	O
+లేకపోయినా	B-negative
+కూడా	O
+problems	O
+చాలా	B-intensity
+తీవ్రతగా	B-intensity
+ఉంటాయి.	O
+}
+
+{\intent	d: కాకపోతే మీరు ఏంటంటే 850 ఏదో వాడుతున్నానని చెప్తున్నారు. కానీ ఏం combination లో వాడుతున్నానని చెప్పలేదు.	STATEMENT}
+{\slot
+కాకపోతే	O
+మీరు	O
+ఏంటంటే	O
+850	B-medicine_dose
+ఏదో	O
+వాడుతున్నానని	O
+చెప్తున్నారు.	O
+కానీ	O
+ఏం	O
+combination	O
+లో	O
+వాడుతున్నానని	O
+చెప్పలేదు.	O
+}
+
+{\intent	d: normalగా minimum to minimum dose diabetic or other convention treatmentలో 500 నుంచి start అవుతూ ఉంటుంది కబట్టి మీరు in between moderate doseలో ఉన్నారు.	STATEMENT}
+{\slot
+normalగా	O
+minimum	O
+to	O
+minimum	O
+dose	B-medicine
+diabetic	B-medical_condition
+or	O
+other	O
+convention	O
+treatmentలో	B-treatment
+500	B-medicine_dose
+నుంచి	O
+start	O
+అవుతూ	O
+ఉంటుంది	O
+కబట్టి	O
+మీరు	O
+in	O
+between	O
+moderate	O
+doseలో	B-medicine
+ఉన్నారు.	O
+}
+
+{\intent	d: అది చిన్న age 22 to 25 years of an age. చిన్న age లో start అయింది కబట్టి కచ్చితంగా medicine అనేటటువంటిది higher dosagesకి వెళ్ళకుండా sugar చాలా వరకు control లో ఉండేటట్టు precautions అనేది తీసుకోవాలి.	ACTION_DIR}
+{\slot
+అది	O
+చిన్న	O
+age	O
+22	B-age
+to	O
+25	B-age
+years	I-age
+of	O
+an	O
+age.	O
+చిన్న	O
+age	O
+లో	O
+start	O
+అయింది	O
+కబట్టి	O
+కచ్చితంగా	O
+medicine	B-medicine
+అనేటటువంటిది	O
+higher	O
+dosagesకి	B-medicine
+వెళ్ళకుండా	O
+sugar	B-medical_condition
+చాలా	B-intensity
+వరకు	O
+control	B-normal
+లో	O
+ఉండేటట్టు	O
+precautions	O
+అనేది	O
+తీసుకోవాలి.	O
+}
+

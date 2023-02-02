@@ -1,0 +1,155 @@
+{\intent	p: 12 mm stones చేసారు sir	STATEMENT}
+{\slot
+12	B-mtest_value
+mm	B-mtest_value
+stones	B-body_substance
+చేసారు	O
+sir	O
+}
+
+{\intent	d: problem ఏంటో clearగా చెప్పండి	ACTION_DIR}
+{\slot
+problem	O
+ఏంటో	O
+clearగా	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ stones ఉంది madam, kidneyలోపు	STATEMENT}
+{\slot
+ఆ	O
+stones	B-body_substance
+ఉంది	O
+madam,	O
+kidneyలోపు	B-body_part
+}
+
+{\intent	d: ok stones ఉన్నాయి	ACK}
+{\slot
+ok	O
+stones	B-body_substance
+ఉన్నాయి	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మొన్ననే operation చేసి 12 mm stone cut చేసి తీసాము	STATEMENT}
+{\slot
+మొన్ననే	B-time_period
+operation	B-treatment
+చేసి	O
+12	B-mtest_value
+mm	I-mtest_value
+stone	B-body_substance
+cut	O
+చేసి	O
+తీసాము	B-treatment
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు 15 రోజులు అయింది	STATEMENT}
+{\slot
+ఇప్పుడు	O
+15	B-time_period
+రోజులు	I-time_period
+అయింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయినా ఇప్పుడు మూత్రం బాగానే అవుతుంది. మూత్రం పోయేటప్పుడు loose motion అవుతుంది	STATEMENT}
+{\slot
+అయినా	O
+ఇప్పుడు	O
+మూత్రం	B-body_substance
+బాగానే	B-normal
+అవుతుంది.	O
+మూత్రం	B-body_substance
+పోయేటప్పుడు	O
+loose	B-symptom
+motion	I-symptom
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: మీకు ఉన్న problemకి specificగా ఇది కారణం అని చెప్పటానికి వీలు కాదు sir	STATEMENT}
+{\slot
+మీకు	O
+ఉన్న	O
+problemకి	O
+specificగా	O
+ఇది	O
+కారణం	O
+అని	O
+చెప్పటానికి	O
+వీలు	O
+కాదు	O
+sir	O
+}
+
+{\intent	d: మనం వాడే మాత్రల కారణంగా కూడా కొంతమందికి motions అవ్వటం కానీ	STATEMENT}
+{\slot
+మనం	O
+వాడే	O
+మాత్రల	B-medicine
+కారణంగా	O
+కూడా	O
+కొంతమందికి	O
+motions	B-symptom
+అవ్వటం	O
+కానీ	O
+}
+
+{\intent	d: లేదంటే మూత్రంలో ఏమైనా infection ఉన్న కూడా అలాంటి symptoms రావొచ్చు.	STATEMENT}
+{\slot
+లేదంటే	O
+మూత్రంలో	B-body_substance
+ఏమైనా	O
+infection	B-medical_condition
+ఉన్న	O
+కూడా	O
+అలాంటి	O
+symptoms	O
+రావొచ్చు.	O
+}
+
+{\intent	d: దయచేసి మూత్రం పరిక్ష	STATEMENT}
+{\slot
+దయచేసి	O
+మూత్రం	B-body_substance
+పరిక్ష	B-mtest
+}
+
+{\intent	d: దాని తరువాత మీ kidney నిపుణుల్ని కలిసి మీ problem set చేసుకోవొచ్చండీ	ACTION_DIR}
+{\slot
+దాని	O
+తరువాత	O
+మీ	O
+kidney	B-body_part
+నిపుణుల్ని	B-medical_professional
+కలిసి	O
+మీ	O
+problem	O
+set	O
+చేసుకోవొచ్చండీ	O
+}
+

@@ -1,0 +1,33 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 41, female	ANSWER}
+{\slot
+41,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: మెడనొప్పి ఉంది, తల నొప్పొస్తుంది. కళ్ళు ఎర్రగా అయితున్నయి. అప్పుడప్పుడు సరిగ్గా కనిపిస్త లేదు.	ANSWER}
+{\slot
+మెడనొప్పి	B-symptom
+ఉంది,	O
+తల	B-body_part
+నొప్పొస్తుంది.	B-symptom
+కళ్ళు	B-body_part
+ఎర్రగా	B-color
+అయితున్నయి.	O
+అప్పుడప్పుడు	B-time_period
+సరిగ్గా	O
+కనిపిస్త	B-bodily_process
+లేదు.	B-negative
+}
+

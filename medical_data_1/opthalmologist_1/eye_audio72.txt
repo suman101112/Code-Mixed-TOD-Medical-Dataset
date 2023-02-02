@@ -1,0 +1,52 @@
+{\intent	p: doctor గారు నేను lens వాడుతాను.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నేను	O
+lens	O
+వాడుతాను.	O
+}
+
+{\intent	p: school లో work చేస్తున్నాను.	STATEMENT}
+{\slot
+school	B-place
+లో	I-place
+work	B-profession
+చేస్తున్నాను.	O
+}
+
+{\intent	p: ఆ lens వాడడం వలన దురద లాగా ఉంటుంది.	STATEMENT}
+{\slot
+ఆ	O
+lens	O
+వాడడం	O
+వలన	O
+దురద	B-symptom
+లాగా	O
+ఉంటుంది.	O
+}
+
+{\intent	p: దీనివల్ల ఏమైనా allergies వస్తాయా?	INFO_REQUEST}
+{\slot
+దీనివల్ల	O
+ఏమైనా	O
+allergies	B-medical_condition
+వస్తాయా?	O
+}
+
+{\intent	d: కంట్లో ఉన్న contact lens వాడడం వల్ల కొంత మందిలో allergies వచ్చే అవకాశం ఉంటుందండి.	MEDICAL_EXPLANATION}
+{\slot
+కంట్లో	B-body_part
+ఉన్న	O
+contact	O
+lens	O
+వాడడం	O
+వల్ల	O
+కొంత	O
+మందిలో	O
+allergies	B-medical_condition
+వచ్చే	O
+అవకాశం	O
+ఉంటుందండి.	O
+}
+

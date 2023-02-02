@@ -1,0 +1,147 @@
+{\intent	p: నా వయస్సు 45 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+45	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: diabetic ని .	STATEMENT}
+{\slot
+diabetic	B-medical_condition
+ని	O
+.	O
+}
+
+{\intent	p: గత సంవత్సరం నుంచి చూపు మందగిస్తుంది.	STATEMENT}
+{\slot
+గత	B-time_period
+సంవత్సరం	I-time_period
+నుంచి	O
+చూపు	B-bodily_process
+మందగిస్తుంది.	B-symptom
+}
+
+{\intent	d: మీకు 45 సంవత్సరాలు అని చెప్తున్నారు మీకు చూపు ఎన్నాళ్ళ నుంచి మందగిస్తుంది అనేది మనకు ముఖ్యమైన ఇది అండి.	ACK}
+{\slot
+మీకు	O
+45	B-age
+సంవత్సరాలు	I-age
+అని	O
+చెప్తున్నారు	O
+మీకు	O
+చూపు	B-bodily_process
+ఎన్నాళ్ళ	B-time_period
+నుంచి	O
+మందగిస్తుంది	B-symptom
+అనేది	O
+మనకు	O
+ముఖ్యమైన	O
+ఇది	O
+అండి.	O
+}
+
+{\intent	d: మీకు గత ఏడాది నుంచి మందగిస్తుందా లేదా 2 ఏళ్ళ నుంచి మందగిస్తుందా?	INFO_REQUEST}
+{\slot
+మీకు	O
+గత	B-time_period
+ఏడాది	I-time_period
+నుంచి	O
+మందగిస్తుందా	B-symptom
+లేదా	O
+2	B-time_period
+ఏళ్ళ	I-time_period
+నుంచి	O
+మందగిస్తుందా?	B-symptom
+}
+
+{\intent	d: ఎంతవరకు చూపు మందగిస్తుంది?	INFO_REQUEST}
+{\slot
+ఎంతవరకు	O
+చూపు	B-bodily_process
+మందగిస్తుంది?	B-symptom
+}
+
+{\intent	d: మధ్యలో మీరు కంటి doctor దెగ్గరకు వెళ్ళి checkup చేయించుకున్నారా లేదా అన్నది కూడా చాలా important.	STATEMENT}
+{\slot
+మధ్యలో	O
+మీరు	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరకు	O
+వెళ్ళి	O
+checkup	O
+చేయించుకున్నారా	O
+లేదా	O
+అన్నది	O
+కూడా	O
+చాలా	O
+important.	O
+}
+
+{\intent	d: మీరు కంటి doctor దెగ్గరికి వచ్చినట్లయితే, చూపు ఇన్నాళ్ల నుంచి మందగిస్తూ ఉంది వచ్చినట్లయితే మీకు test చేయడం జరుగుతుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరికి	O
+వచ్చినట్లయితే,	O
+చూపు	B-bodily_process
+ఇన్నాళ్ల	B-time_period
+నుంచి	O
+మందగిస్తూ	B-symptom
+ఉంది	O
+వచ్చినట్లయితే	O
+మీకు	O
+test	B-mtest
+చేయడం	O
+జరుగుతుంది	O
+అండి.	O
+}
+
+{\intent	d: basicalగా మీకు problem ఏంటి? మీకు sugar ఉంది కబట్టి మీ sugar కూడా అసలు controlలో ఉందా లేదా అనేది కూడా చూసుకోవడం చాలా important.	MEDICAL_EXPLANATION}
+{\slot
+basicalగా	O
+మీకు	O
+problem	O
+ఏంటి?	O
+మీకు	O
+sugar	B-medical_condition
+ఉంది	O
+కబట్టి	O
+మీ	O
+sugar	B-medical_condition
+కూడా	O
+అసలు	O
+controlలో	B-normal
+ఉందా	O
+లేదా	O
+అనేది	O
+కూడా	O
+చూసుకోవడం	O
+చాలా	O
+important.	O
+}
+
+{\intent	d: sugar ఒక్కొకసారి controlలో లేక బాగా fluctuations అంటే ఒక్కొక్కసారి ఎక్కువగా ఒక్కొకసారి తక్కువగా అవుతున్నా అది చూపు మీద effect బాగా పడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+sugar	B-medical_condition
+ఒక్కొకసారి	O
+controlలో	B-symptom
+లేక	O
+బాగా	B-intensity
+fluctuations	B-symptom
+అంటే	O
+ఒక్కొక్కసారి	O
+ఎక్కువగా	B-intensity
+ఒక్కొకసారి	O
+తక్కువగా	B-intensity
+అవుతున్నా	O
+అది	O
+చూపు	B-bodily_process
+మీద	O
+effect	B-symptom
+బాగా	B-intensity
+పడుతుంది.	B-symptom
+}
+

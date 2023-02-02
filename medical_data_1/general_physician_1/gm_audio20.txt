@@ -1,0 +1,330 @@
+{\intent	d: Hello, చెప్పండి ఇబ్బంది ఏం ఉంది?	INFO_REQUEST}
+{\slot
+Hello,	O
+చెప్పండి	O
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: నమస్తే sir.	GREETING}
+{\slot
+నమస్తే	O
+sir.	O
+}
+
+{\intent	p: నేను జగిత్యాల నుంచి.	STATEMENT}
+{\slot
+నేను	O
+జగిత్యాల	B-location
+నుంచి.	O
+}
+
+{\intent	d: చెప్పండి. చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+చెప్పండి.	O
+}
+
+{\intent	p: నాకు diabetes అయి బానే రోజులు అయింది sir కనీసం 2010 నుంచి ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+diabetes	B-medical_condition
+అయి	O
+బానే	O
+రోజులు	B-time_period
+అయింది	O
+sir	O
+కనీసం	O
+2010	B-time_period
+నుంచి	B-time_period
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ ప్రస్తుతానికి cover అయితలేదు sir. నాకు ఇప్పుడు పళ్లు కూడా loose అయితున్నాయి అన్నీ.	STATEMENT}
+{\slot
+ఆ	O
+ప్రస్తుతానికి	O
+cover	O
+అయితలేదు	O
+sir.	O
+నాకు	O
+ఇప్పుడు	B-time_period
+పళ్లు	B-body_part
+కూడా	O
+loose	B-symptom
+అయితున్నాయి	I-symptom
+అన్నీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: పళ్లు loose అయితున్నాయి అప్పుడప్పుడు.	REPEAT_REPHRASE}
+{\slot
+పళ్లు	B-body_part
+loose	B-symptom
+అయితున్నాయి	I-symptom
+అప్పుడప్పుడు.	B-time_period
+}
+
+{\intent	d: right ok.	ACK}
+{\slot
+right	O
+ok.	O
+}
+
+{\intent	d: sugar ఈ మధ్యలో control లో ఉందా అండి? లేదా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఈ	B-time_period
+మధ్యలో	I-time_period
+control	B-normal
+లో	O
+ఉందా	O
+అండి?	O
+లేదా?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: Hello?	SU}
+{\slot
+Hello?	O
+}
+
+{\intent	p: 400 చిల్లర ఉంది sir food తిన్న తరువాత.	ANSWER}
+{\slot
+400	B-mtest_value
+చిల్లర	O
+ఉంది	O
+sir	O
+food	B-food_substance
+తిన్న	B-bodily_process
+తరువాత.	B-time_period
+}
+
+{\intent	d: right right right right.	ACK}
+{\slot
+right	O
+right	O
+right	O
+right.	O
+}
+
+{\intent	d: insulin అనేది వాడుతున్నారా అండి?	INFO_REQUEST}
+{\slot
+insulin	B-medicine
+అనేది	O
+వాడుతున్నారా	O
+అండి?	O
+}
+
+{\intent	p: ఆ వాడుతున్నాను sir.	ANSWER}
+{\slot
+ఆ	O
+వాడుతున్నాను	O
+sir.	O
+}
+
+{\intent	d: ఎంత units insulin వాడుతున్నారు ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+units	B-mtest_value
+insulin	B-medicine
+వాడుతున్నారు	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: ప్రస్తుతానికి ఎక్కువ తెలవదు కానీ వాడుతున్నారు sir ఇప్పుడు జగిత్యాలలో treatment తీసుకుంటున్న.	ANSWER}
+{\slot
+ప్రస్తుతానికి	O
+ఎక్కువ	B-medical_condition
+తెలవదు	O
+కానీ	O
+వాడుతున్నారు	O
+sir	O
+ఇప్పుడు	O
+జగిత్యాలలో	B-place
+treatment	B-treatment
+తీసుకుంటున్న.	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: so వయస్సు ఎంత ఉందండి మీది ఇప్పుడు?	INFO_REQUEST}
+{\slot
+so	O
+వయస్సు	O
+ఎంత	O
+ఉందండి	O
+మీది	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: 51	ANSWER}
+{\slot
+51	B-age
+}
+
+{\intent	d: ok 51.	ANSWER}
+{\slot
+ok	O
+51.	B-age
+}
+
+{\intent	d: ok. almost 8 9 years నుంచి కూడా diabetes ఉంది అంటున్నారు.	ACK}
+{\slot
+ok.	O
+almost	B-time_period
+8	B-time_period
+9	B-time_period
+years	I-time_period
+నుంచి	O
+కూడా	O
+diabetes	B-medical_condition
+ఉంది	O
+అంటున్నారు.	O
+}
+
+{\intent	d: plus ఈ మధ్య కాలంలో అసలు కూడా control లో లేదు complications కూడా తలెత్తుతున్నాయి అని చెప్తున్నారు.	ACK}
+{\slot
+plus	O
+ఈ	B-time_period
+మధ్య	I-time_period
+కాలంలో	I-time_period
+అసలు	O
+కూడా	O
+control	B-normal
+లో	O
+లేదు	B-negative
+complications	B-medical_condition
+కూడా	O
+తలెత్తుతున్నాయి	O
+అని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: so definiteగా అండి 1st విషయం జ్ఞాపకం లో పెట్టుకోండి diabeticని controlలో పెట్టుకోవడనికి ప్రయత్నం చేయడం, blood sugar levels ని control లో పెట్టుకోవడం చాలా important అని చెప్పలి. దీనివల్లనే మనం అనేక రకాల complications మనకు అడ్డుకట్ట వేసే అవకాశాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+definiteగా	O
+అండి	O
+1st	O
+విషయం	O
+జ్ఞాపకం	O
+లో	O
+పెట్టుకోండి	O
+diabeticని	B-medical_condition
+controlలో	B-normal
+పెట్టుకోవడనికి	O
+ప్రయత్నం	O
+చేయడం,	O
+blood	B-body_substance
+sugar	I-body_substance
+levels	B-mtest_value
+ని	O
+control	B-normal
+లో	O
+పెట్టుకోవడం	O
+చాలా	O
+important	O
+అని	O
+చెప్పలి.	O
+దీనివల్లనే	O
+మనం	O
+అనేక	O
+రకాల	O
+complications	B-medical_condition
+మనకు	O
+అడ్డుకట్ట	O
+వేసే	O
+అవకాశాలు	O
+ఉంటాయి.	O
+}
+
+{\intent	d: ఈ diabetic కానీ. blood sugar levels అనేది controlలో లేనప్పుడు, లేకపోతే ఉండవలసిన దానికంటే చాలా అధిక మోతాదులో ఉన్నప్పుడు medicines సరిగ్గా వాడనప్పుడు ఏమవుతుంది అంటే అప్పుడు తొందరగా మనకు ఈ complications కి సంబంధించిన ఇబ్బందులు అంటే నరాలకు సంబంధించిన ఇబ్బందులు కావొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+diabetic	B-medical_condition
+కానీ.	O
+blood	B-body_substance
+sugar	I-body_substance
+levels	B-mtest_value
+అనేది	O
+controlలో	B-normal
+లేనప్పుడు,	B-negative
+లేకపోతే	O
+ఉండవలసిన	O
+దానికంటే	O
+చాలా	O
+అధిక	O
+మోతాదులో	O
+ఉన్నప్పుడు	O
+medicines	B-medicine
+సరిగ్గా	O
+వాడనప్పుడు	O
+ఏమవుతుంది	O
+అంటే	O
+అప్పుడు	B-time_period
+తొందరగా	O
+మనకు	O
+ఈ	O
+complications	B-medical_condition
+కి	O
+సంబంధించిన	O
+ఇబ్బందులు	B-symptom
+అంటే	O
+నరాలకు	B-body_part
+సంబంధించిన	O
+ఇబ్బందులు	B-symptom
+కావొచ్చు	O
+}
+
+{\intent	d: తిమ్మిర్లు, పోట్లు, మంటలు ఇటువంటి లక్షణాలు మీరు చెప్తున్నటువంటిది అంటే, ఈ gums loose అయిపోతూ ఉంటాయి వీటి సంబంధించ, gums కి సంబంధించిన ఇబ్బందులు కానీ, pain గానీ sensitivity కానీ, పళ్ళు loose అవ్వటం కానీ, ulcers కానీ తలెత్తుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+తిమ్మిర్లు,	B-symptom
+పోట్లు,	B-symptom
+మంటలు	B-symptom
+ఇటువంటి	O
+లక్షణాలు	B-symptom
+మీరు	O
+చెప్తున్నటువంటిది	O
+అంటే,	O
+ఈ	O
+gums	B-body_part
+loose	B-symptom
+అయిపోతూ	O
+ఉంటాయి	O
+వీటి	O
+సంబంధించ,	O
+gums	B-body_part
+కి	O
+సంబంధించిన	O
+ఇబ్బందులు	B-symptom
+కానీ,	O
+pain	B-symptom
+గానీ	O
+sensitivity	B-medical_condition
+కానీ,	O
+పళ్ళు	B-body_part
+loose	B-symptom
+అవ్వటం	I-symptom
+కానీ,	O
+ulcers	B-medical_condition
+కానీ	O
+తలెత్తుతాయి.	O
+}
+

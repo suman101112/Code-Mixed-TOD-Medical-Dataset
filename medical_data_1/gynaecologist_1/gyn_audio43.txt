@@ -1,0 +1,270 @@
+{\intent	d: ఏం పేరు మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+మా?	O
+}
+
+{\intent	p: Vaani	ANSWER}
+{\slot
+Vaani	B-name
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 39	ANSWER}
+{\slot
+39	B-age
+}
+
+{\intent	d: bleeding problem ఆ?	INFO_REQUEST}
+{\slot
+bleeding	B-medical_condition
+problem	I-medical_condition
+ఆ?	O
+}
+
+{\intent	p: అదే madam	ANSWER}
+{\slot
+అదే	O
+madam	O
+}
+
+{\intent	d: ఇప్పుడు ఎట్ల ఉంది periods?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎట్ల	O
+ఉంది	O
+periods?	B-bodily_process
+}
+
+{\intent	p: periods మొన్న వచ్చింది madam	ANSWER}
+{\slot
+periods	B-bodily_process
+మొన్న	B-time_period
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ఏ తారీకు వచ్చింది?	INFO_REQUEST}
+{\slot
+ఏ	O
+తారీకు	B-time_period
+వచ్చింది?	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-time_period
+}
+
+{\intent	d: 24	ACK}
+{\slot
+24	B-time_period
+}
+
+{\intent	d: 5 days ఇవల్టికి	STATEMENT}
+{\slot
+5	B-time_period
+days	I-time_period
+ఇవల్టికి	I-time_period
+}
+
+{\intent	d: బానే అయిందా?	INFO_REQUEST}
+{\slot
+బానే	B-intensity
+అయిందా?	O
+}
+
+{\intent	p: బానే అయింది madam	ANSWER}
+{\slot
+బానే	B-intensity
+అయింది	B-positive
+madam	O
+}
+
+{\intent	p: 3 days వరకు బాగా అయింది.	STATEMENT}
+{\slot
+3	B-time_period
+days	I-time_period
+వరకు	O
+బాగా	B-intensity
+అయింది.	O
+}
+
+{\intent	d: ఎన్ని pads per day అయింది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+pads	O
+per	O
+day	B-time_period
+అయింది?	O
+}
+
+{\intent	p: రోజూ 3 4 అట్ల	ANSWER}
+{\slot
+రోజూ	B-time_period
+3	B-frequency
+4	I-frequency
+అట్ల	O
+}
+
+{\intent	d: ఎంత మంది పిల్లలు	STATEMENT}
+{\slot
+ఎంత	O
+మంది	O
+పిల్లలు	B-familal
+}
+
+{\intent	p: 2	ANSWER}
+{\slot
+2	B-frequency
+}
+
+{\intent	d: 2	ACK}
+{\slot
+2	B-frequency
+}
+
+{\intent	d: చిన్నామె వయస్సు?	INFO_REQUEST}
+{\slot
+చిన్నామె	O
+వయస్సు?	O
+}
+
+{\intent	p: 12 years	ANSWER}
+{\slot
+12	B-age
+years	I-age
+}
+
+{\intent	d: కాకుండా మీరే చేయించుకున్నారా?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+మీరే	O
+చేయించుకున్నారా?	B-treatment
+}
+
+{\intent	p: లేదు మా sir చేయించుకున్నారు	ANSWER}
+{\slot
+లేదు	B-negative
+మా	O
+sir	B-familal
+చేయించుకున్నారు	B-positive
+}
+
+{\intent	d: సరే ఇప్పుడు మాత్రం 5 days అయింది ఇప్పుడు ఆగిపోయిందా?	INFO_REQUEST}
+{\slot
+సరే	O
+ఇప్పుడు	B-time_period
+మాత్రం	O
+5	B-time_period
+days	I-time_period
+అయింది	O
+ఇప్పుడు	B-time_period
+ఆగిపోయిందా?	O
+}
+
+{\intent	p: కొంచం అంటే lightగా అట్ల వస్తుంది.	ANSWER}
+{\slot
+కొంచం	B-intensity
+అంటే	O
+lightగా	B-intensity
+అట్ల	O
+వస్తుంది.	O
+}
+
+{\intent	d: ఎక్కువ అయితే tablets వేసుకోమని ఇచ్చాం అది వేసుకున్నారా?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+అయితే	O
+tablets	B-medicine
+వేసుకోమని	O
+ఇచ్చాం	O
+అది	O
+వేసుకున్నారా?	O
+}
+
+{\intent	p: అవి వేసుకున్నాము, 3 days అవి వేసుకున్నాక ఆగిపోయింది	ANSWER}
+{\slot
+అవి	O
+వేసుకున్నాము,	B-positive
+3	B-time_period
+days	I-time_period
+అవి	O
+వేసుకున్నాక	O
+ఆగిపోయింది	O
+}
+
+{\intent	d: పడుకోండి చూద్దాం	ACTION_DIR}
+{\slot
+పడుకోండి	O
+చూద్దాం	O
+}
+
+{\intent	d: ఇప్పుడైతే bleeding ఆగింది, 5th day, ఎక్కువైతున్నప్పుడు వేసుకునే tablets వేసుకున్నారు.	ACK}
+{\slot
+ఇప్పుడైతే	B-time_period
+bleeding	B-medical_condition
+ఆగింది,	B-normal
+5th	B-time_period
+day,	I-time_period
+ఎక్కువైతున్నప్పుడు	B-intensity
+వేసుకునే	O
+tablets	B-medicine
+వేసుకున్నారు.	O
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: check చేయించుకున్నారా?	INFO_REQUEST}
+{\slot
+check	B-mtest
+చేయించుకున్నారా?	O
+}
+
+{\intent	p: చేయించాను	ANSWER}
+{\slot
+చేయించాను	B-positive
+}
+
+{\intent	d: ఎప్పుడు చేయించారు?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+చేయించారు?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: వేరే sugar, bp అదేం లేదుగా	INFO_REQUEST}
+{\slot
+వేరే	O
+sugar,	B-medical_condition
+bp	B-medical_condition
+అదేం	O
+లేదుగా	O
+}
+
+{\intent	p: లేదు madam.	ANSWER}
+{\slot
+లేదు	B-negative
+madam.	O
+}
+

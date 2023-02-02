@@ -1,0 +1,66 @@
+{\intent	p: doctor గారు మా బాబుకి 8 నెలలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబుకి	B-person
+8	B-age
+నెలలు.	I-age
+}
+
+{\intent	p: నల్లగా ఉన్న కంటిపాప దెగ్గర ఒక light లాగా వెలుగు లాగా కనిపిస్తూ ఉంటుంది.	STATEMENT}
+{\slot
+నల్లగా	B-color
+ఉన్న	O
+కంటిపాప	B-body_part
+దెగ్గర	B-location
+ఒక	O
+light	O
+లాగా	O
+వెలుగు	B-symptom
+లాగా	I-symptom
+కనిపిస్తూ	I-bodily_process
+ఉంటుంది.	O
+}
+
+{\intent	d: 8 నెలల పిల్లలకి కంటి పాప మామూలుగానే pupil reaction normalగానే ఉంటది, కంటిపాప కొద్దిగా పెద్దదిగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+8	B-time_period
+నెలల	I-time_period
+పిల్లలకి	B-person
+కంటి	B-body_part
+పాప	I-body_part
+మామూలుగానే	O
+pupil	B-bodily_process
+reaction	I-bodily_process
+normalగానే	B-normal
+ఉంటది,	O
+కంటిపాప	B-body_part
+కొద్దిగా	O
+పెద్దదిగా	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అది మామూలుగా నల్లని రంగులో ఉంటుంది. లోపల నుంచి తెల్లని వెలుగు అట్ల కనబడినట్లు అయితే దాన్ని cats eye reflex అని అంటాము మామూలుగా.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+మామూలుగా	O
+నల్లని	B-color
+రంగులో	I-color
+ఉంటుంది.	O
+లోపల	B-location
+నుంచి	O
+తెల్లని	B-color
+వెలుగు	O
+అట్ల	O
+కనబడినట్లు	B-bodily_process
+అయితే	O
+దాన్ని	O
+cats	B-medical_condition
+eye	I-medical_condition
+reflex	I-medical_condition
+అని	O
+అంటాము	O
+మామూలుగా.	O
+}
+

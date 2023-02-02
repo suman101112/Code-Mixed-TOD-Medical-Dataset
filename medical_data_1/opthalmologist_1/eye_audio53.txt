@@ -1,0 +1,150 @@
+{\intent	p: doctor గారు నా వయస్సు 52 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+52	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత 10 సంవత్సరాలుగా diabetes ఉంది.	STATEMENT}
+{\slot
+గత	O
+10	I-time_period
+సంవత్సరాలుగా	B-time_period
+diabetes	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య కంటి చూపు మసకగా కనిపిస్తుంది.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కంటి	B-body_part
+చూపు	B-bodily_process
+మసకగా	B-symptom
+కనిపిస్తుంది.	B-bodily_process
+}
+
+{\intent	p: ఈ diabetes వలన కంటి చూపుకి ఏదైనా ఇబ్బంది ఉంటుందా?	INFO_REQUEST}
+{\slot
+ఈ	O
+diabetes	B-medical_condition
+వలన	O
+కంటి	B-body_part
+చూపుకి	B-bodily_process
+ఏదైనా	O
+ఇబ్బంది	B-symptom
+ఉంటుందా?	O
+}
+
+{\intent	d: మీరు diabetes ఉంది 10 సంవత్సరాల నుంచి ఆ more than 10 years అని చెప్పారు.	ACK}
+{\slot
+మీరు	O
+diabetes	B-medical_condition
+ఉంది	O
+10	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఆ	O
+more	B-time_period
+than	I-time_period
+10	I-time_period
+years	I-time_period
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: అలాగే మీ వయస్సు 50 సంవత్సరాలు అన్నారు.	ACK}
+{\slot
+అలాగే	O
+మీ	O
+వయస్సు	O
+50	B-age
+సంవత్సరాలు	I-age
+అన్నారు.	O
+}
+
+{\intent	d: సాధారనంగా sugar లేదా diabetes ఉన్నవాళ్ళకి కంటికి సంబంధించిన సమస్యలు ఎక్కువగా వచ్చే అవకాశం ఉంది.	MEDICAL_EXPLANATION}
+{\slot
+సాధారనంగా	O
+sugar	B-medical_condition
+లేదా	O
+diabetes	B-medical_condition
+ఉన్నవాళ్ళకి	O
+కంటికి	B-body_part
+సంబంధించిన	O
+సమస్యలు	O
+ఎక్కువగా	B-intensity
+వచ్చే	O
+అవకాశం	O
+ఉంది.	O
+}
+
+{\intent	d: కానీ uncontrolled diabetes ఎవరికైతే sugar లేదా ఈ diabetes అనే వ్యాధి controlలో ఉండకుండా up and downs. అంటే fasting sugars ఎక్కువగా ఉండడం.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+uncontrolled	B-medical_condition
+diabetes	I-medical_condition
+ఎవరికైతే	O
+sugar	B-medical_condition
+లేదా	O
+ఈ	O
+diabetes	B-medical_condition
+అనే	O
+వ్యాధి	B-medical_condition
+controlలో	B-normal
+ఉండకుండా	O
+up	O
+and	O
+downs.	O
+అంటే	O
+fasting	B-mtest
+sugars	I-mtest
+ఎక్కువగా	B-intensity
+ఉండడం.	O
+}
+
+{\intent	d: ఎక్కువ రోజులు high levels of glycemic conditions ఉండడం. duration of sugar diabetes కూడా చాలా important.	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+high	B-medical_condition
+levels	I-medical_condition
+of	I-medical_condition
+glycemic	I-medical_condition
+conditions	I-medical_condition
+ఉండడం.	O
+duration	B-time_period
+of	O
+sugar	B-medical_condition
+diabetes	I-medical_condition
+కూడా	O
+చాలా	B-intensity
+important.	O
+}
+
+{\intent	d: ఎక్కువ రోజులు దాదాపు 5 నుంచి 10 సంవత్సరాల 10 సంవత్సరాలు పైన ఇలా uncontrolled diabetes ఉన్నవాళ్ళకి కంటి సమస్యలు రావడం చాలా సాధారనం	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువ	B-intensity
+రోజులు	B-time_period
+దాదాపు	O
+5	B-time_period
+నుంచి	O
+10	B-time_period
+సంవత్సరాల	I-time_period
+10	B-time_period
+సంవత్సరాలు	I-time_period
+పైన	I-time_period
+ఇలా	O
+uncontrolled	B-medical_condition
+diabetes	I-medical_condition
+ఉన్నవాళ్ళకి	O
+కంటి	B-body_part
+సమస్యలు	B-symptom
+రావడం	O
+చాలా	B-intensity
+సాధారనం	O
+}
+

@@ -1,0 +1,285 @@
+{\intent	d: Sridevi	STATEMENT}
+{\slot
+Sridevi	B-name
+}
+
+{\intent	p: ఆ Sridevi	ACK}
+{\slot
+ఆ	O
+Sridevi	B-name
+}
+
+{\intent	d: age ఎంత అమ్మా	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అమ్మా	O
+}
+
+{\intent	p: 38	ANSWER}
+{\slot
+38	B-age
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: ఇద్దరు పిల్లలు	ANSWER}
+{\slot
+ఇద్దరు	B-frequency
+పిల్లలు	B-familal
+}
+
+{\intent	d: ఏం problem?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem?	O
+}
+
+{\intent	p: urine infection.	ANSWER}
+{\slot
+urine	B-medical_condition
+infection.	I-medical_condition
+}
+
+{\intent	d: urine లో మంట.	ACK}
+{\slot
+urine	B-body_substance
+లో	B-location
+మంట.	B-symptom
+}
+
+{\intent	p: ఆ మంట	ACK}
+{\slot
+ఆ	O
+మంట	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కింద మానంలో కూడా పుచ్చినట్లు అనిపిస్తుంది.	STATEMENT}
+{\slot
+కింద	B-location
+మానంలో	B-body_part
+కూడా	O
+పుచ్చినట్లు	B-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: దురద ఉందా కింద?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+ఉందా	O
+కింద?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: దురద ఏం లేదు	ACK}
+{\slot
+దురద	B-symptom
+ఏం	O
+లేదు	O
+}
+
+{\intent	p: లేదు	ACK}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	d: urineలో మంట ఎక్కువ అనిపిస్తుంది.	ACK}
+{\slot
+urineలో	B-medical_condition
+మంట	B-symptom
+ఎక్కువ	B-intensity
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: ఎక్కువసార్లు పోవాలనిపిస్తుంది?	INFO_REQUEST}
+{\slot
+ఎక్కువసార్లు	B-frequency
+పోవాలనిపిస్తుంది?	O
+}
+
+{\intent	p: లేదు కానీ వచ్చినప్పుడు ఇలా తెరుచుకొని పోయినప్పుడు జివ్వుమని గుంజుతా ఉంది.	ANSWER}
+{\slot
+లేదు	B-negative
+కానీ	O
+వచ్చినప్పుడు	O
+ఇలా	O
+తెరుచుకొని	O
+పోయినప్పుడు	O
+జివ్వుమని	B-symptom
+గుంజుతా	I-symptom
+ఉంది.	O
+}
+
+{\intent	d: ఎప్పటి ఇది?	INFO_REQUEST}
+{\slot
+ఎప్పటి	O
+ఇది?	O
+}
+
+{\intent	p: ఇది 3, 4 days అయితుంది.	ANSWER}
+{\slot
+ఇది	O
+3,	B-time_period
+4	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: sugar ఉందా నీకు కానీ నీ husbandకి కానీ?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా	O
+నీకు	O
+కానీ	O
+నీ	O
+husbandకి	B-familal
+కానీ?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: భార్యాభర్తలు కలిసినప్పుడు ఏమన్నా problem అనిపిస్తుందా? itching కానీ మంట?	INFO_REQUEST}
+{\slot
+భార్యాభర్తలు	O
+కలిసినప్పుడు	O
+ఏమన్నా	O
+problem	O
+అనిపిస్తుందా?	O
+itching	B-symptom
+కానీ	O
+మంట?	B-symptom
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: periods వచ్చి ఎన్ని రోజులు ఇవాల్టికి?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు	B-time_period
+ఇవాల్టికి?	O
+}
+
+{\intent	p: ఇవల్టికి 4 days.	ANSWER}
+{\slot
+ఇవల్టికి	B-time_period
+4	B-time_period
+days.	I-time_period
+}
+
+{\intent	d: periods వచ్చి ఇవల్టికి 4 days.	ACK}
+{\slot
+periods	B-bodily_process
+వచ్చి	O
+ఇవల్టికి	B-time_period
+4	B-time_period
+days.	I-time_period
+}
+
+{\intent	p: ఆ కాదు periods అయిపోయి ఇవల్టికి 3 days	CORRECT}
+{\slot
+ఆ	O
+కాదు	O
+periods	B-bodily_process
+అయిపోయి	O
+ఇవల్టికి	B-time_period
+3	I-time_period
+days	I-time_period
+}
+
+{\intent	d: ఏ తారీకు ఉన్నవ్?	INFO_REQUEST}
+{\slot
+ఏ	O
+తారీకు	B-time_period
+ఉన్నవ్?	O
+}
+
+{\intent	p: నేను 19 ఉన్న	ANSWER}
+{\slot
+నేను	O
+19	B-time_period
+ఉన్న	O
+}
+
+{\intent	d: 19 అంటే ఇవల్టికి 4 days ఏ కదా ఇవాళ	STATEMENT}
+{\slot
+19	B-time_period
+అంటే	O
+ఇవల్టికి	B-time_period
+4	B-time_period
+days	I-time_period
+ఏ	O
+కదా	O
+ఇవాళ	O
+}
+
+{\intent	p: మొన్నటికి 5 days అయిపోయినాయి madam	STATEMENT}
+{\slot
+మొన్నటికి	B-time_period
+5	B-time_period
+days	I-time_period
+అయిపోయినాయి	O
+madam	O
+}
+
+{\intent	p: రేపు, వెళుతుంది శివరాత్రి అనంగా 5 days అయిపోయినాయి	STATEMENT}
+{\slot
+రేపు,	B-time_period
+వెళుతుంది	O
+శివరాత్రి	O
+అనంగా	O
+5	B-time_period
+days	I-time_period
+అయిపోయినాయి	O
+}
+
+{\intent	d: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+
+{\intent	d: umm పడుకో	ACTION_DIR}
+{\slot
+umm	O
+పడుకో	O
+}
+
+{\intent	p: కుచ్చినట్లు అనిపిస్తాంది madam	STATEMENT}
+{\slot
+కుచ్చినట్లు	B-symptom
+అనిపిస్తాంది	O
+madam	O
+}
+
+{\intent	d: చూద్దాం పడుకో	ACTION_DIR}
+{\slot
+చూద్దాం	O
+పడుకో	O
+}
+
+{\intent	d: చూద్దాం	ACTION_DIR}
+{\slot
+చూద్దాం	O
+}
+

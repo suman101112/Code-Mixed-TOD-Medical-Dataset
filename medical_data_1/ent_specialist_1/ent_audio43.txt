@@ -1,0 +1,356 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p1: नाम कहते बोलना	ACTION_DIR}
+{\slot
+नाम	O
+कहते	O
+बोलना	O
+}
+
+{\intent	d: घट्ट बोलना	ACTION_DIR}
+{\slot
+घट्ट	O
+बोलना	O
+}
+
+{\intent	p: ras pal	ANSWER}
+{\slot
+ras	B-name
+pal	I-name
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ras pal	ANSWER}
+{\slot
+ras	B-name
+pal	I-name
+}
+
+{\intent	p1: पूरा नाम बोल अच्छा .	ACTION_DIR}
+{\slot
+पूरा	O
+नाम	O
+बोल	O
+अच्छा	O
+.	O
+}
+
+{\intent	p: ras pal	ANSWER}
+{\slot
+ras	B-name
+pal	I-name
+}
+
+{\intent	p1: ras pal Singh	ANSWER}
+{\slot
+ras	B-name
+pal	I-name
+Singh	I-name
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	d: उम्र बोलो	INFO_REQUEST}
+{\slot
+उम्र	O
+बोलो	O
+}
+
+{\intent	p: कान मैं दर्द हो रही.	ANSWER}
+{\slot
+कान	B-body_part
+मैं	O
+दर्द	B-symptom
+हो	O
+रही.	O
+}
+
+{\intent	d: उम्र .	INFO_REQUEST}
+{\slot
+उम्र	O
+.	O
+}
+
+{\intent	p1: उम्र	INFO_REQUEST}
+{\slot
+उम्र	O
+}
+
+{\intent	p1: 6 साल है साहब	ANSWER}
+{\slot
+6	B-time_period
+साल	I-time_period
+है	O
+साहब	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: कान मैं दर्द दे रहा.	ANSWER}
+{\slot
+कान	B-body_part
+मैं	B-location
+दर्द	B-symptom
+दे	O
+रहा.	O
+}
+
+{\intent	p1: जोर से बोलना नहीं आता.	STATEMENT}
+{\slot
+जोर	O
+से	O
+बोलना	O
+नहीं	O
+आता.	O
+}
+
+{\intent	d: कान में दर्द हो रहा जोर से बोलना	ANSWER}
+{\slot
+कान	B-body_part
+में	B-location
+दर्द	B-symptom
+हो	O
+रहा	O
+जोर	O
+से	O
+बोलना	O
+}
+
+{\intent	d: नज़दीक आ वो	ACTION_DIR}
+{\slot
+नज़दीक	O
+आ	O
+वो	O
+}
+
+{\intent	p1: पीप आ रहा sir यहाँ से	STATEMENT}
+{\slot
+पीप	B-symptom
+आ	O
+रहा	O
+sir	O
+यहाँ	O
+से	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: नज़दीक आ वो	ACTION_DIR}
+{\slot
+नज़दीक	O
+आ	O
+वो	O
+}
+
+{\intent	d: सर्दी हुआ कुछ तो भी?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+हुआ	O
+कुछ	O
+तो	O
+भी?	O
+}
+
+{\intent	p1: नहीं sir. अभी तो नहीं है .	ANSWER}
+{\slot
+नहीं	B-negative
+sir.	O
+अभी	B-time_period
+तो	O
+नहीं	O
+है	O
+.	O
+}
+
+{\intent	d: यह पीप आना पहले है या इससे पहले भी आया?	INFO_REQUEST}
+{\slot
+यह	O
+पीप	B-symptom
+आना	O
+पहले	O
+है	O
+या	O
+इससे	O
+पहले	O
+भी	O
+आया?	O
+}
+
+{\intent	p1: इससे पहले भी आया sir.	ANSWER}
+{\slot
+इससे	O
+पहले	O
+भी	O
+आया	B-positive
+sir.	O
+}
+
+{\intent	p1: एक बार वो mgmके पास है hospital	STATEMENT}
+{\slot
+एक	O
+बार	O
+वो	O
+mgmके	B-place
+पास	O
+है	O
+hospital	O
+}
+
+{\intent	p1: लेके गया sir, सर्दी हुए तो आता सर्दी हुए तो आता. आ रहा जा रहा आ रहा जा रहा .	STATEMENT}
+{\slot
+लेके	O
+गया	O
+sir,	O
+सर्दी	B-medical_condition
+हुए	O
+तो	O
+आता	O
+सर्दी	B-medical_condition
+हुए	O
+तो	O
+आता.	O
+आ	O
+रहा	O
+जा	O
+रहा	O
+आ	O
+रहा	O
+जा	O
+रहा	O
+.	O
+}
+
+{\intent	d: कान के अंदर सुरंग है छोटा,	DIAGNOSIS}
+{\slot
+कान	B-body_part
+के	O
+अंदर	B-location
+सुरंग	B-symptom
+है	O
+छोटा,	B-intensity
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: सर्दी के वजह से आता.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+आता.	O
+}
+
+{\intent	d: नाक बताओ.	ACTION_DIR}
+{\slot
+नाक	B-body_part
+बताओ.	O
+}
+
+{\intent	p1: नाक कहते बताओ	ACTION_DIR}
+{\slot
+नाक	B-body_part
+कहते	O
+बताओ	O
+}
+
+{\intent	d: सर्दी.	STATEMENT}
+{\slot
+सर्दी.	B-medical_condition
+}
+
+{\intent	d: ఆ बोलो	ACTION_DIR}
+{\slot
+ఆ	O
+बोलो	O
+}
+
+{\intent	p1: ఆ करो.	ACTION_DIR}
+{\slot
+ఆ	O
+करो.	O
+}
+
+{\intent	d: दो ही दो चीज	STATEMENT}
+{\slot
+दो	O
+ही	O
+दो	O
+चीज	O
+}
+
+{\intent	d: कान के अंदर पानी नहीं जाने देना	ACTION_DIR}
+{\slot
+कान	B-body_part
+के	O
+अंदर	B-location
+पानी	B-food_substance
+नहीं	O
+जाने	O
+देना	O
+}
+
+{\intent	p1: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: सर्दी नहीं आये सा देख लेना.	ACTION_DIR}
+{\slot
+सर्दी	B-medical_condition
+नहीं	O
+आये	O
+सा	O
+देख	O
+लेना.	O
+}
+
+{\intent	p1: सर्दी नहीं आये सा देख लेना.	ACK}
+{\slot
+सर्दी	B-medical_condition
+नहीं	O
+आये	O
+सा	O
+देख	O
+लेना.	O
+}
+
+{\intent	p1: समझे, कान के अंदर पानी नहीं जाने देना	ACTION_DIR}
+{\slot
+समझे,	O
+कान	B-body_part
+के	O
+अंदर	B-location
+पानी	B-food_substance
+नहीं	B-negative
+जाने	O
+देना	O
+}
+

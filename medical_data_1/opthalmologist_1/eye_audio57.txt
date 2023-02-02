@@ -1,0 +1,176 @@
+{\intent	p: మా నాన్నగారు diabetic patient.	STATEMENT}
+{\slot
+మా	O
+నాన్నగారు	B-familal
+diabetic	B-medical_condition
+patient.	B-person
+}
+
+{\intent	p: ఈ మధ్య sugar levels పెరిగి కంటి చూపు కొంచం మందగించింది.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+sugar	B-medical_condition
+levels	I-medical_condition
+పెరిగి	O
+కంటి	B-body_part
+చూపు	B-bodily_process
+కొంచం	B-intensity
+మందగించింది.	B-symptom
+}
+
+{\intent	p: అసలు ఇలా జరగడానికి కారణాలు ఏంటి?	INFO_REQUEST}
+{\slot
+అసలు	O
+ఇలా	O
+జరగడానికి	O
+కారణాలు	O
+ఏంటి?	O
+}
+
+{\intent	p: diabeticకి కంటి చూపుకి ఏమైనా సంబంధం ఉంటుందా?	INFO_REQUEST}
+{\slot
+diabeticకి	B-medical_condition
+కంటి	B-body_part
+చూపుకి	B-bodily_process
+ఏమైనా	O
+సంబంధం	O
+ఉంటుందా?	O
+}
+
+{\intent	d: మీ father ఎంత age అనేది ఒక్కటి చాలా important అండి.	STATEMENT}
+{\slot
+మీ	O
+father	B-familal
+ఎంత	O
+age	O
+అనేది	O
+ఒక్కటి	O
+చాలా	B-intensity
+important	O
+అండి.	O
+}
+
+{\intent	d: ఎన్నాళ్ళ నుంచి sugar ఉంది?	INFO_REQUEST}
+{\slot
+ఎన్నాళ్ళ	O
+నుంచి	O
+sugar	B-medical_condition
+ఉంది?	O
+}
+
+{\intent	d: ఆ sugar ఉన్న అంతా durationలో ఎప్పుడైతే controlలో లేకుండా ఉంది?	INFO_REQUEST}
+{\slot
+ఆ	O
+sugar	B-medical_condition
+ఉన్న	O
+అంతా	O
+durationలో	B-time_period
+ఎప్పుడైతే	O
+controlలో	B-normal
+లేకుండా	B-negative
+ఉంది?	O
+}
+
+{\intent	d: ఇవన్నీ factors కూడా చాలా important factors అండి.	MEDICAL_EXPLANATION}
+{\slot
+ఇవన్నీ	O
+factors	O
+కూడా	O
+చాలా	B-intensity
+important	O
+factors	O
+అండి.	O
+}
+
+{\intent	d: so మీ fatherకి ఎన్నాళ్ళ నుంచి ఉంది అనేది first important consideration అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీ	O
+fatherకి	B-familal
+ఎన్నాళ్ళ	O
+నుంచి	O
+ఉంది	O
+అనేది	O
+first	O
+important	O
+consideration	O
+అండి.	O
+}
+
+{\intent	d: second ఏంటి అంటే ఆ ఉన్న periodలో ఎట్ల controlలో ఉంది? ఎంత fluctuations ఉన్నాయి?	INFO_REQUEST}
+{\slot
+second	O
+ఏంటి	O
+అంటే	O
+ఆ	O
+ఉన్న	O
+periodలో	O
+ఎట్ల	O
+controlలో	B-normal
+ఉంది?	O
+ఎంత	O
+fluctuations	B-symptom
+ఉన్నాయి?	O
+}
+
+{\intent	d: చాలా high కి వెళ్ళి low కి వస్తుందా?	INFO_REQUEST}
+{\slot
+చాలా	B-intensity
+high	B-symptom
+కి	O
+వెళ్ళి	O
+low	B-symptom
+కి	O
+వస్తుందా?	O
+}
+
+{\intent	d: so అది monitor చేసుకోవడం జరుగుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అది	O
+monitor	B-mtest
+చేసుకోవడం	O
+జరుగుతుంది.	O
+}
+
+{\intent	d: hba1c levels అని చేస్తాం blood investigationsలో, ఎట్ల ఉన్నాయి వెళ్ళ sugar levels.	MEDICAL_EXPLANATION}
+{\slot
+hba1c	B-mtest
+levels	I-mtest
+అని	O
+చేస్తాం	O
+blood	B-mtest
+investigationsలో,	I-mtest
+ఎట్ల	O
+ఉన్నాయి	O
+వెళ్ళ	O
+sugar	B-medical_condition
+levels.	I-medical_condition
+}
+
+{\intent	d: దాని వల్ల కంటి మీద ఏమన్నా affect ఉందా?	INFO_REQUEST}
+{\slot
+దాని	O
+వల్ల	O
+కంటి	B-body_part
+మీద	B-location
+ఏమన్నా	O
+affect	O
+ఉందా?	O
+}
+
+{\intent	d: ఎందుకంటే sugar పెరిగినప్పుడు మీకు mainగా affect అయ్యేది కన్ను, kidneyలు నరాలు.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+sugar	B-medical_condition
+పెరిగినప్పుడు	O
+మీకు	O
+mainగా	O
+affect	O
+అయ్యేది	O
+కన్ను,	B-body_part
+kidneyలు	B-body_part
+నరాలు.	B-body_part
+}
+

@@ -1,0 +1,266 @@
+{\intent	p: నాకు 4 years నుంచి diabetes ఉంది అండి.	STATEMENT}
+{\slot
+నాకు	O
+4	B-time_period
+years	I-time_period
+నుంచి	O
+diabetes	B-medical_condition
+ఉంది	O
+అండి.	O
+}
+
+{\intent	d: ok, 4 years నుంచి diabetes ఉంది. ok	ACK}
+{\slot
+ok,	O
+4	B-time_period
+years	I-time_period
+నుంచి	O
+diabetes	B-medical_condition
+ఉంది.	O
+ok	O
+}
+
+{\intent	p: అయితే 7 months back HBA1C 10.5 ఉందండి.	STATEMENT}
+{\slot
+అయితే	O
+7	B-time_period
+months	I-time_period
+back	I-time_period
+HBA1C	B-mtest
+10.5	B-mtest_value
+ఉందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అన్నం తిన్న తరువాత 400 ఉందండి.	STATEMENT}
+{\slot
+అన్నం	B-food_substance
+తిన్న	B-bodily_process
+తరువాత	B-time_period
+400	B-mtest_value
+ఉందండి.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అయితే diet control అవన్నీ చేసిన తరువాత HBA1C 7 కి వచ్చింది అండి	STATEMENT}
+{\slot
+అయితే	O
+diet	B-food_substance
+control	O
+అవన్నీ	O
+చేసిన	O
+తరువాత	O
+HBA1C	B-mtest
+7	B-mtest_value
+కి	O
+వచ్చింది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు recentగా మళ్ళి అన్నం తిన్న తరువాత 200 ఉంది అండి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+recentగా	B-time_period
+మళ్ళి	B-body_part
+అన్నం	B-food_substance
+తిన్న	B-bodily_process
+తరువాత	B-time_period
+200	B-mtest_value
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: మళ్ళి పెరుగుతుందా?	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+పెరుగుతుందా?	O
+}
+
+{\intent	p: 200 ఉంది, 200 అట్లానే continue అవుతుంది	ANSWER}
+{\slot
+200	B-mtest_value
+ఉంది,	O
+200	B-mtest_value
+అట్లానే	O
+continue	O
+అవుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: C-peptide 9 ఉంది అండి	STATEMENT}
+{\slot
+C-peptide	B-body_substance
+9	B-mtest_value
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	p: C-peptide 9 ఉంది అండి	REPEAT_REPHRASE}
+{\slot
+C-peptide	B-body_substance
+9	B-mtest_value
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ఆ. ok	ACK}
+{\slot
+ఆ.	O
+ok	O
+}
+
+{\intent	p: HBA1C 7 ఏ ఉంది అండి	STATEMENT}
+{\slot
+HBA1C	B-mtest
+7	B-mtest_value
+ఏ	O
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంతకుముందు 400 ఉన్నప్పుడు బాగా sweating రావడం	STATEMENT}
+{\slot
+అంతకుముందు	O
+400	B-mtest_value
+ఉన్నప్పుడు	B-time_period
+బాగా	B-intensity
+sweating	B-symptom
+రావడం	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అలా ఉంది అండి, ఇప్పుడు present అరికాలు అరిచేతులు అది B12 ఏమైనా deficiency ఉందా అని చూస్తే అది normalఏ ఉంది అండి	STATEMENT}
+{\slot
+అలా	O
+ఉంది	O
+అండి,	O
+ఇప్పుడు	O
+present	B-time_period
+అరికాలు	O
+అరిచేతులు	O
+అది	O
+B12	B-body_substance
+ఏమైనా	O
+deficiency	B-medical_condition
+ఉందా	O
+అని	O
+చూస్తే	O
+అది	O
+normalఏ	B-normal
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ok, fine fine	ACK}
+{\slot
+ok,	O
+fine	O
+fine	O
+}
+
+{\intent	p: అయితే ఇప్పుడు కొంచం బాగా muscle weakness ఉంది అండి, dizziness అలా ఉంది అండి	STATEMENT}
+{\slot
+అయితే	O
+ఇప్పుడు	O
+కొంచం	O
+బాగా	B-intensity
+muscle	B-medical_condition
+weakness	I-medical_condition
+ఉంది	O
+అండి,	O
+dizziness	B-symptom
+అలా	O
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ఒక్కటి ఉంది	ACK}
+{\slot
+ఒక్కటి	O
+ఉంది	O
+}
+
+{\intent	p: నాకు ఇంకో problem కూడా ఉందండి, నాకు stomach ulcers ఉన్నాయి, indigestion problem కూడా ఉందండి.	STATEMENT}
+{\slot
+నాకు	O
+ఇంకో	O
+problem	O
+కూడా	O
+ఉందండి,	O
+నాకు	O
+stomach	B-body_part
+ulcers	B-medical_condition
+ఉన్నాయి,	O
+indigestion	B-symptom
+problem	I-symptom
+కూడా	O
+ఉందండి.	O
+}
+
+{\intent	d: indigestion ఉంది, ulcers ఉన్నాయి	ACK}
+{\slot
+indigestion	B-symptom
+ఉంది,	O
+ulcers	B-medical_condition
+ఉన్నాయి	O
+}
+
+{\intent	p: fiber తింటే stomach అంతా fullnessగా ఉందటం అలా ఉంటుందండి.	STATEMENT}
+{\slot
+fiber	B-food_substance
+తింటే	O
+stomach	B-body_part
+అంతా	O
+fullnessగా	B-symptom
+ఉందటం	O
+అలా	O
+ఉంటుందండి.	O
+}
+
+{\intent	d: fine fine అండి.	ACK}
+{\slot
+fine	O
+fine	O
+అండి.	O
+}
+
+{\intent	d: ya, sugar కొంచం ఎక్కువగానే ఉంది.	ACK}
+{\slot
+ya,	O
+sugar	B-medical_condition
+కొంచం	O
+ఎక్కువగానే	B-intensity
+ఉంది.	O
+}
+

@@ -1,0 +1,44 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 2 నెలలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+వయస్సు	O
+2	B-time_period
+నెలలు.	I-time_period
+}
+
+{\intent	p: కంటి నల్ల గుడ్డు పై తెల్లగా మచ ఉంది.	STATEMENT}
+{\slot
+కంటి	B-body_part
+నల్ల	I-body_part
+గుడ్డు	I-body_part
+పై	O
+తెల్లగా	B-color
+మచ	B-symptom
+ఉంది.	I-symptom
+}
+
+{\intent	d: ఆ తెల్ల మచ దేనివల్ల అయినా రావొచ్చు అండి.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+తెల్ల	B-symptom
+మచ	I-symptom
+దేనివల్ల	O
+అయినా	O
+రావొచ్చు	O
+అండి.	O
+}
+
+{\intent	d: పుట్టుకతో ఉందా? తర్వాత వచ్చిందా అనేది చాలా important.	MEDICAL_EXPLANATION}
+{\slot
+పుట్టుకతో	B-bodily_process
+ఉందా?	O
+తర్వాత	B-time_period
+వచ్చిందా	O
+అనేది	O
+చాలా	O
+important.	O
+}
+

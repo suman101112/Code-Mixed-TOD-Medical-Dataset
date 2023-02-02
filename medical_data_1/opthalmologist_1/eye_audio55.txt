@@ -1,0 +1,20 @@
+{\intent	p: diabetes వలన కంటిచూపు మందగిస్తుందని విన్నాం.	STATEMENT}
+{\slot
+diabetes	B-medical_condition
+వలన	O
+కంటిచూపు	B-bodily_process
+మందగిస్తుందని	B-symptom
+విన్నాం.	O
+}
+
+{\intent	d: yes diabetes వల్ల main కంటిచూపు సమస్యలు కలుగుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+yes	O
+diabetes	B-medical_condition
+వల్ల	O
+main	O
+కంటిచూపు	B-bodily_process
+సమస్యలు	O
+కలుగుతాయి.	O
+}
+

@@ -1,0 +1,36 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: కంట్లో itching వస్తుంది. మెడ నొప్పి. ఈ ఎడమ వైపు మెడ నొప్పి వస్తుంది. తల నొప్పి వస్తుంది.	ANSWER}
+{\slot
+కంట్లో	B-body_part
+itching	B-symptom
+వస్తుంది.	O
+మెడ	B-body_part
+నొప్పి.	B-symptom
+ఈ	O
+ఎడమ	B-location
+వైపు	I-location
+మెడ	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	O
+తల	B-body_part
+నొప్పి	B-symptom
+వస్తుంది.	O
+}
+

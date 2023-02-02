@@ -1,0 +1,97 @@
+{\intent	p: doctor గారు నా వయస్సు 36 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+36	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: ఒక కంటిలో నల్ల గుడ్డు పక్కన తెల్ల మచ్చలాగా ఉంది.	STATEMENT}
+{\slot
+ఒక	O
+కంటిలో	B-body_part
+నల్ల	B-body_part
+గుడ్డు	I-body_part
+పక్కన	O
+తెల్ల	B-color
+మచ్చలాగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: ఇది ఎమిటి?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎమిటి?	O
+}
+
+{\intent	p: నేను ఎలాంటి పరిక్షలు చేయించుకోవాలి?	INFO_REQUEST}
+{\slot
+నేను	O
+ఎలాంటి	O
+పరిక్షలు	B-mtest
+చేయించుకోవాలి?	O
+}
+
+{\intent	p: ఇదేమైనా కంటి శుక్లానికి దారి తీస్తుందా?	INFO_REQUEST}
+{\slot
+ఇదేమైనా	O
+కంటి	B-body_part
+శుక్లానికి	B-medical_condition
+దారి	O
+తీస్తుందా?	O
+}
+
+{\intent	d: నల్ల గుడ్డు పక్కన తెల్ల మచ అంటున్నారు.	ACK}
+{\slot
+నల్ల	B-body_part
+గుడ్డు	I-body_part
+పక్కన	O
+తెల్ల	B-color
+మచ	B-symptom
+అంటున్నారు.	O
+}
+
+{\intent	d: usualగా నల్ల గుడ్డు పక్కన తెల్ల మచ అని అంటే అది cateract కి సంబంధించి కాకపోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+నల్ల	B-body_part
+గుడ్డు	I-body_part
+పక్కన	O
+తెల్ల	B-color
+మచ	B-symptom
+అని	O
+అంటే	O
+అది	O
+cateract	B-medical_condition
+కి	O
+సంబంధించి	O
+కాకపోవచ్చు.	O
+}
+
+{\intent	d: మనకు ఏదైతే కంటిపాప నల్ల గుడ్డు మధ్యలో కంటిపాప ఉంటది. కంటిపాప వెనక కొంచం తెల్లగా మనకు అలా కనబడ్డది అనుకోండి అది శుక్లము. శుక్లముగా మనం పరిగణించవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+మనకు	O
+ఏదైతే	O
+కంటిపాప	B-body_part
+నల్ల	I-body_part
+గుడ్డు	I-body_part
+మధ్యలో	B-location
+కంటిపాప	B-body_part
+ఉంటది.	O
+కంటిపాప	B-body_part
+వెనక	B-location
+కొంచం	B-intensity
+తెల్లగా	B-color
+మనకు	O
+అలా	O
+కనబడ్డది	B-bodily_process
+అనుకోండి	O
+అది	O
+శుక్లము.	B-medical_condition
+శుక్లముగా	B-medical_condition
+మనం	O
+పరిగణించవచ్చు.	O
+}
+

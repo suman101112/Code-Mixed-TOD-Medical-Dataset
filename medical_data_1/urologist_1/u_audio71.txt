@@ -1,0 +1,145 @@
+{\intent	d: Abhinavi, ఇది మీరు చెప్తున్నా దాని బట్టి మూత్రంలో, మూత్ర పిండంలో చిన్న రాయి ఉండొచ్చు,	DIAGNOSIS}
+{\slot
+Abhinavi,	B-name
+ఇది	O
+మీరు	O
+చెప్తున్నా	O
+దాని	O
+బట్టి	O
+మూత్రంలో,	B-body_substance
+మూత్ర	B-body_part
+పిండంలో	I-body_part
+చిన్న	O
+రాయి	B-body_substance
+ఉండొచ్చు,	O
+}
+
+{\intent	d: అది అక్కడి నుంచి జారి మూత్రనాళం నుంచి బయటికి రావడానికి try చేస్తా ఉండొచ్చు	STATEMENT}
+{\slot
+అది	O
+అక్కడి	B-location
+నుంచి	B-location
+జారి	O
+మూత్రనాళం	B-body_part
+నుంచి	O
+బయటికి	O
+రావడానికి	O
+try	O
+చేస్తా	O
+}
+
+{\intent	d: అది మధ్యలో అక్కడ ఆగిపోవడం వల్ల మీకు అక్కడ నొప్పి వచ్చింది	STATEMENT}
+{\slot
+అది	O
+మధ్యలో	B-location
+అక్కడ	B-location
+ఆగిపోవడం	B-symptom
+వల్ల	O
+మీకు	O
+అక్కడ	B-location
+నొప్పి	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: ఒకసారి చూద్దాం, పరిక్ష చేసి చూపిస్తాను, scanning చెద్దాము	ACTION_DIR}
+{\slot
+ఒకసారి	O
+చూద్దాం,	O
+పరిక్ష	B-mtest
+చేసి	O
+చూపిస్తాను,	O
+scanning	B-mtest
+చెద్దాము	O
+}
+
+{\intent	d: scanning చేసి అంతా మంచిగానే ఉంటే గోళీలు రాసి ఇస్తా	ACTION_DIR}
+{\slot
+scanning	B-mtest
+చేసి	O
+అంతా	O
+మంచిగానే	O
+ఉంటే	O
+గోళీలు	B-medicine
+రాసి	O
+ఇస్తా	O
+}
+
+{\intent	d: సరే నా?	INFO_REQUEST}
+{\slot
+సరే	O
+నా?	O
+}
+
+{\intent	p: ఆ సరే sir	ANSWER}
+{\slot
+ఆ	O
+సరే	B-positive
+sir	O
+}
+
+{\intent	d: దానిలో వచ్చిన report బట్టి ఏం చేయాలి, ఏం అనేది నేను రాసి ఇస్తా, సరే నా?	INFO_REQUEST}
+{\slot
+దానిలో	O
+వచ్చిన	O
+report	B-mtest
+బట్టి	O
+ఏం	O
+చేయాలి,	O
+ఏం	O
+అనేది	O
+నేను	O
+రాసి	O
+ఇస్తా,	O
+సరే	O
+నా?	O
+}
+
+{\intent	p: ఆ సరే doctor.	ANSWER}
+{\slot
+ఆ	O
+సరే	O
+doctor.	B-medical_professional
+}
+
+{\intent	p: వేరే doctor దెగ్గరకు పోతే చిన్న చిన్న stones ఉన్నాయి అన్నారు, Srinivas doctor	STATEMENT}
+{\slot
+వేరే	O
+doctor	B-medical_professional
+దెగ్గరకు	O
+పోతే	O
+చిన్న	O
+చిన్న	O
+stones	B-body_substance
+ఉన్నాయి	O
+అన్నారు,	O
+Srinivas	B-name
+doctor	B-medical_professional
+}
+
+{\intent	d: వచ్చేస్తాయి అవి, బయటికి వచ్చేస్తాయి, చూద్దాం, ఇక్కడ కూడా పరిక్ష చేసి.	STATEMENT}
+{\slot
+వచ్చేస్తాయి	O
+అవి,	O
+బయటికి	O
+వచ్చేస్తాయి,	O
+చూద్దాం,	O
+ఇక్కడ	O
+కూడా	O
+పరిక్ష	B-mtest
+చేసి.	O
+}
+
+{\intent	d: పరిస్థితిని బట్టి ఏం చేయాలి, ఏం అనేది నేను చెప్తా. సరే నా?	INFO_REQUEST}
+{\slot
+పరిస్థితిని	O
+బట్టి	O
+ఏం	O
+చేయాలి,	O
+ఏం	O
+అనేది	O
+నేను	O
+చెప్తా.	O
+సరే	O
+నా?	O
+}
+

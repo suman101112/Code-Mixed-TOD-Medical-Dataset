@@ -1,0 +1,319 @@
+{\intent	d: age ఎంత అమ్మా Sri Vaani?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అమ్మా	O
+Sri	B-name
+Vaani?	I-name
+}
+
+{\intent	p: 43 madam	ANSWER}
+{\slot
+43	B-age
+madam	O
+}
+
+{\intent	d: Sri Vaani, 43	ACK}
+{\slot
+Sri	B-name
+Vaani,	I-name
+43	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: చెప్పమ్మా ఏం problem?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏం	O
+problem?	O
+}
+
+{\intent	p: just december లో ఒక 25 days కి వచ్చే date 1 month 10 daysకి వచ్చింది madam	ANSWER}
+{\slot
+just	O
+december	B-time_period
+లో	O
+ఒక	O
+25	B-time_period
+days	I-time_period
+కి	O
+వచ్చే	O
+date	B-bodily_process
+1	B-time_period
+month	I-time_period
+10	B-time_period
+daysకి	I-time_period
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: हां .	STATEMENT}
+{\slot
+हां	B-positive
+.	O
+}
+
+{\intent	d: periods కొంచెం irregular అయినాయి.	ACK}
+{\slot
+periods	B-bodily_process
+కొంచెం	O
+irregular	B-symptom
+అయినాయి.	O
+}
+
+{\intent	p: ఆహా ఆ ఒక్క 1 monthల, 1 month 20 days లో start అయినా periods, continue అయితున్నాయి	STATEMENT}
+{\slot
+ఆహా	O
+ఆ	O
+ఒక్క	O
+1	B-time_period
+monthల,	I-time_period
+1	B-time_period
+month	I-time_period
+20	I-time_period
+days	I-time_period
+లో	O
+start	O
+అయినా	O
+periods,	B-bodily_process
+continue	B-symptom
+అయితున్నాయి	I-symptom
+}
+
+{\intent	d: continuous bleeding అయితుంది.	ACK}
+{\slot
+continuous	B-medical_condition
+bleeding	I-medical_condition
+అయితుంది.	O
+}
+
+{\intent	d: ఎప్పటి నుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటి	O
+నుంచి?	O
+}
+
+{\intent	p: february 4th	ANSWER}
+{\slot
+february	B-time_period
+4th	I-time_period
+}
+
+{\intent	d: అంటే 20 రోజుల నుంచి bleeding అయితుంది.	STATEMENT}
+{\slot
+అంటే	O
+20	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+bleeding	B-medical_condition
+అయితుంది.	O
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: బాగా అయితుందా? కొంచం కొంచమా?	INFO_REQUEST}
+{\slot
+బాగా	B-intensity
+అయితుందా?	O
+కొంచం	B-intensity
+కొంచమా?	I-intensity
+}
+
+{\intent	p: అంటే morning కొద్దిగా ok, కొద్దిగా ఇంకొంచం అయితుంది.	ACK}
+{\slot
+అంటే	O
+morning	B-time_period
+కొద్దిగా	B-intensity
+ok,	O
+కొద్దిగా	B-intensity
+ఇంకొంచం	I-intensity
+అయితుంది.	O
+}
+
+{\intent	d: ఏమైనా tablets వాడుతున్నావా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+tablets	B-medicine
+వాడుతున్నావా?	O
+}
+
+{\intent	p: tablets, steptovit ఒక్కటే వాడినం	ANSWER}
+{\slot
+tablets,	B-medicine
+steptovit	B-medicine
+ఒక్కటే	O
+వాడినం	O
+}
+
+{\intent	d: steptovit ఒక్కటే ఇంకేం hormones వేసుకోవట్లే కదా ఇంకేమి?	INFO_REQUEST}
+{\slot
+steptovit	B-medicine
+ఒక్కటే	O
+ఇంకేం	O
+hormones	B-body_substance
+వేసుకోవట్లే	O
+కదా	O
+ఇంకేమి?	O
+}
+
+{\intent	p: ఆహా ఇంకేం లేదు.	ANSWER}
+{\slot
+ఆహా,	O
+ఇంకేం	O
+లేదు.	B-negative
+}
+
+{\intent	d: ఎంతమంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంతమంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: 2 అమ్మాయిలు.	ANSWER}
+{\slot
+2	B-frequency
+అమ్మాయిలు.	B-familal
+}
+
+{\intent	d: కాకుండా అయిపోయిందా?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+అయిపోయిందా?	B-treatment
+}
+
+{\intent	p: అయిపోయింది.	ANSWER}
+{\slot
+అయిపోయింది.	B-positive
+}
+
+{\intent	d: అదేంటి, చిన్నామె వయసు ఎంత?	INFO_REQUEST}
+{\slot
+అదేంటి,	O
+చిన్నామె	B-familal
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 15.	STATEMENT}
+{\slot
+15.	B-age
+}
+
+{\intent	d: 15.	ACK}
+{\slot
+15.	B-age
+}
+
+{\intent	d: thyroid ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	d: check చేయించుకున్నావా?	INFO_REQUEST}
+{\slot
+check	O
+చేయించుకున్నావా?	O
+}
+
+{\intent	p: చాలా రోజులు అయింది	STATEMENT}
+{\slot
+చాలా	B-intensity
+రోజులు	B-time_period
+అయింది	O
+}
+
+{\intent	p1: ఏం లేదు madam	ACK}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: sugar thyroid ఏం లేదు	ACK}
+{\slot
+sugar	B-medical_condition
+thyroid	B-medical_condition
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు continuous bleeding 20 రోజుల నుంచి అయితుంది.	ACK}
+{\slot
+ఇప్పుడు	O
+continuous	B-medical_condition
+bleeding	I-medical_condition
+20	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+అయితుంది.	O
+}
+
+{\intent	d: ఎన్ని pads per day అయితుంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+pads	O
+per	O
+day	B-time_period
+అయితుంది?	O
+}
+
+{\intent	p: pads, అంటే ఇంట్లో ఉంటే night మొత్తం వెళ్తున్నా, bathroom వెళ్తున్నా	STATEMENT}
+{\slot
+pads,	O
+అంటే	O
+ఇంట్లో	O
+ఉంటే	O
+night	B-time_period
+మొత్తం	O
+వెళ్తున్నా,	O
+bathroom	B-bodily_process
+వెళ్తున్నా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: morning మాత్రం 2 3 తడుస్తున్నాయి.,	ANSWER}
+{\slot
+morning	B-time_period
+మాత్రం	O
+2	B-frequency
+3	B-frequency
+తడుస్తున్నాయి.,	O
+}
+
+{\intent	d: 2 3 తడుస్తున్నాయి,	ACK}
+{\slot
+2	B-frequency
+3	B-frequency
+తడుస్తున్నాయి,	O
+}
+
+{\intent	d: నాలుక చూపియమ్మా	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+చూపియమ్మా	O
+}
+
+{\intent	d: పడుకో చూద్దాం.	ACTION_DIR}
+{\slot
+పడుకో	O
+చూద్దాం.	O
+}
+

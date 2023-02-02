@@ -1,0 +1,224 @@
+{\intent	p: good afternoon doctorగారు అండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+doctorగారు	B-medical_professional
+అండి.	O
+}
+
+{\intent	d: good afternoon అమ్మా	GREETING}
+{\slot
+good	O
+afternoon	O
+అమ్మా	O
+}
+
+{\intent	d: చెప్పండి Vaani గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Vaani	B-name
+గారు	O
+}
+
+{\intent	p: doctorగారండి ఇప్పుడు అదే motion వెళ్ళేటప్పుడు చిన్నది blood లాగా పడుతూ ఉండండి.	STATEMENT}
+{\slot
+doctorగారండి	O
+ఇప్పుడు	O
+అదే	O
+motion	B-bodily_process
+వెళ్ళేటప్పుడు	I-bodily_process
+చిన్నది	O
+blood	B-body_substance
+లాగా	O
+పడుతూ	O
+ఉండండి.	O
+}
+
+{\intent	p: motion వెళ్ళేటప్పుడు కూడా కొంచం దురద లాగా వస్తూ ఉందండి.	STATEMENT}
+{\slot
+motion	B-bodily_process
+వెళ్ళేటప్పుడు	I-bodily_process
+కూడా	O
+కొంచం	O
+దురద	B-symptom
+లాగా	O
+వస్తూ	O
+ఉందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: motionలో కూడా కొంచం ఇబ్బందిగా ఉంటూ ఉందండి.	STATEMENT}
+{\slot
+motionలో	B-bodily_process
+కూడా	O
+కొంచం	O
+ఇబ్బందిగా	B-symptom
+ఉంటూ	O
+ఉందండి.	O
+}
+
+{\intent	p: ఏం చేయాలో ఒకసారి చెప్పండి	ACTION_DIR}
+{\slot
+ఏం	O
+చేయాలో	O
+ఒకసారి	O
+చెప్పండి	O
+}
+
+{\intent	d: తప్పకుండా	COMMIT}
+{\slot
+తప్పకుండా	O
+}
+
+{\intent	d: వయస్సు ఎంత అమ్మా?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అమ్మా?	O
+}
+
+{\intent	p: ఇంచు మించు ఒక 25 days నుంచి అలా జరుగుతుందండీ.	INFO_REQUEST}
+{\slot
+ఇంచు	O
+మించు	O
+ఒక	O
+25	B-time_period
+days	B-time_period
+నుంచి	O
+అలా	O
+జరుగుతుందండీ.	O
+}
+
+{\intent	p: మామూలు tablet కొని వేసుకున్న సరే	HOLD}
+{\slot
+మామూలు	O
+tablet	B-medicine
+కొని	O
+వేసుకున్న	O
+సరే	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: నాకు ఎమి అనిపించట్లేదు	STATEMENT}
+{\slot
+నాకు	O
+ఎమి	O
+అనిపించట్లేదు	O
+}
+
+{\intent	p: ఒకసారి కొంచం ఏం చెప్పండి.	INFO_REQUEST}
+{\slot
+ఒకసారి	O
+కొంచం	O
+ఏం	O
+చెప్పండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: వయస్సు ఎంత అమ్మా నీది?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అమ్మా	O
+నీది?	O
+}
+
+{\intent	p: నా వయస్సు 37 అండి	ANSWER}
+{\slot
+నా	O
+వయస్సు	O
+37	B-age
+అండి	O
+}
+
+{\intent	d: 37	ACK}
+{\slot
+37	B-age
+}
+
+{\intent	d: ఇప్పుడు present కూడా medicines వాడుతున్నావా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+present	B-time_period
+కూడా	O
+medicines	B-medicine
+వాడుతున్నావా?	O
+}
+
+{\intent	p: ఆహా<neg> లేదండీ	ANSWER}
+{\slot
+ఆహా<neg>	O
+లేదండీ	O
+}
+
+{\intent	p: మామూలుగా 10 days ముందు 3 days tablet కొని వేసుకున్నానండీ.	ANSWER}
+{\slot
+మామూలుగా	O
+10	B-time_period
+days	I-time_period
+ముందు	O
+3	B-time_period
+days	I-time_period
+tablet	B-medicine
+కొని	O
+వేసుకున్నానండీ.	O
+}
+
+{\intent	p: అయితే మామూలుగా ఉంది.	STATEMENT}
+{\slot
+అయితే	O
+మామూలుగా	O
+ఉంది.	O
+}
+
+{\intent	p: తరువాత మళ్ళి, నాకొకసారి blood చిన్న చిన్నది అవుతున్నట్లు అనిపిస్తుంది	STATEMENT}
+{\slot
+తరువాత	B-time_period
+మళ్ళి,	O
+నాకొకసారి	O
+blood	B-body_substance
+చిన్న	O
+చిన్నది	O
+అవుతున్నట్లు	O
+అనిపిస్తుంది	O
+}
+
+{\intent	p: తరువాత ఎమో చిన్న దురద	STATEMENT}
+{\slot
+తరువాత	O
+ఎమో	O
+చిన్న	O
+దురద	B-symptom
+}
+
+{\intent	d: చెప్తాను అండి దాని గురించి.	COMMIT}
+{\slot
+చెప్తాను	O
+అండి	O
+దాని	O
+గురించి.	O
+}
+
+{\intent	d: మీ లక్షణం ఎమిటి అంటే దీన్ని fissure అంటారమ్మా	DIAGNOSIS}
+{\slot
+మీ	O
+లక్షణం	O
+ఎమిటి	O
+అంటే	O
+దీన్ని	O
+fissure	B-symptom
+అంటారమ్మా	O
+}
+

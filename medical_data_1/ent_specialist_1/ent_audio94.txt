@@ -1,0 +1,145 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Fatima Tabassum	ANSWER}
+{\slot
+Fatima	B-name
+Tabassum	I-name
+}
+
+{\intent	d: उम्र	INFO_REQUEST}
+{\slot
+उम्र	O
+}
+
+{\intent	p: umm?	SNU}
+{\slot
+umm?	O
+}
+
+{\intent	d: 12	ANSWER}
+{\slot
+12	B-age
+}
+
+{\intent	d: कैसा है ?	INFO_REQUEST}
+{\slot
+कैसा	O
+है	O
+?	O
+}
+
+{\intent	p1: सर्दी है पर मुँह ऐसा फुलगया है sir	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+है	O
+पर	O
+मुँह	B-body_part
+ऐसा	O
+फुलगया	B-symptom
+है	O
+sir	O
+}
+
+{\intent	d: कान बताओ	ACTION_DIR}
+{\slot
+कान	B-body_part
+बताओ	O
+}
+
+{\intent	p1: सर्दी है , छींका आ रहे.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+है	O
+,	O
+छींका	B-symptom
+आ	O
+रहे.	O
+}
+
+{\intent	p1: आप दिये सो गोलियां 10 दिन को पूरा डाली	STATEMENT}
+{\slot
+आप	O
+दिये	O
+सो	O
+गोलियां	B-medicine
+10	B-time_period
+दिन	I-time_period
+को	O
+पूरा	O
+डाली	O
+}
+
+{\intent	d: कान का तो मस्त है , अच्छा है कान	APPRECIATE}
+{\slot
+कान	B-body_part
+का	O
+तो	O
+मस्त	B-normal
+है	O
+,	O
+अच्छा	B-normal
+है	O
+कान	B-body_part
+}
+
+{\intent	p1: जी साहब	ACK}
+{\slot
+जी	O
+साहब	O
+}
+
+{\intent	d: इतना बाड़ा operation अच्छा हुआ	APPRECIATE}
+{\slot
+इतना	O
+बाड़ा	O
+operation	B-treatment
+अच्छा	O
+हुआ	O
+}
+
+{\intent	d: सुनाई अच्छा दे रहा नहीं अब?	INFO_REQUEST}
+{\slot
+सुनाई	B-bodily_process
+अच्छा	B-normal
+दे	O
+रहा	O
+नहीं	O
+अब?	O
+}
+
+{\intent	d: पानी मत जाने दो	ACTION_DIR}
+{\slot
+पानी	B-food_substance
+मत	B-negative
+जाने	O
+दो	O
+}
+
+{\intent	p1: जी नहीं जाने दे रहे	ANSWER}
+{\slot
+जी	O
+नहीं	O
+जाने	O
+दे	O
+रहे	O
+}
+
+{\intent	d: कुछ नहीं होता .	STATEMENT}
+{\slot
+कुछ	O
+नहीं	O
+होता	O
+.	O
+}
+
+{\intent	d: नज़दीक आ वो.	ACTION_DIR}
+{\slot
+नज़दीक	O
+आ	O
+वो.	O
+}
+

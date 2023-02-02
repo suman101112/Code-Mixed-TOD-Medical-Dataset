@@ -1,0 +1,178 @@
+{\intent	p: నా వయస్సు 44 ఏళ్ళు అండి	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+44	B-age
+ఏళ్ళు	I-age
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2 years నుంచి ఉందండి, borderలో ఉంది అని చెప్తున్నారు blood test చేయించినప్పుడు, 147, 150, 160	STATEMENT}
+{\slot
+2	B-time_period
+years	I-time_period
+నుంచి	O
+ఉందండి,	O
+borderలో	B-mtest_value
+ఉంది	O
+అని	O
+చెప్తున్నారు	O
+blood	B-body_substance
+test	B-mtest
+చేయించినప్పుడు,	O
+147,	B-mtest_value
+150,	B-mtest_value
+160	B-mtest_value
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలా కనిపిస్తుందండి	ACK}
+{\slot
+అలా	O
+కనిపిస్తుందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ రోజూ వెళ్ళి blood test చేయిస్తే 173 ఉంది అని చెప్పారండీ	STATEMENT}
+{\slot
+ఈ	O
+రోజూ	O
+వెళ్ళి	O
+blood	B-body_substance
+test	B-mtest
+చేయిస్తే	O
+173	B-mtest_value
+ఉంది	O
+అని	O
+చెప్పారండీ	O
+}
+
+{\intent	d: అది తినక ముందా అమ్మా? తిన్న తరువాతనా?	INFO_REQUEST}
+{\slot
+అది	O
+తినక	B-bodily_process
+ముందా	B-time_period
+అమ్మా?	B-person
+తిన్న	B-bodily_process
+తరువాతనా?	B-time_period
+}
+
+{\intent	p: మామూలుగా randomగానే చేసారండీ,	ANSWER}
+{\slot
+మామూలుగా	O
+randomగానే	B-time_period
+చేసారండీ,	O
+}
+
+{\intent	d: randomగా చేసారు	ACK}
+{\slot
+randomగా	B-time_period
+చేసారు	O
+}
+
+{\intent	p: నెలకోసరి చేయిస్తుంటాను	STATEMENT}
+{\slot
+నెలకోసరి	B-time_period
+చేయిస్తుంటాను	O
+}
+
+{\intent	p: ఏం sweetలు, పళ్ళు, ఏం తినట్లేదండీ	STATEMENT}
+{\slot
+ఏం	O
+sweetలు,	B-food_substance
+పళ్ళు,	I-food_substance
+ఏం	O
+తినట్లేదండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: very good	APPRECIATE}
+{\slot
+very	O
+good	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ రోజూ వెళ్ళి randomగానే చేయిస్తే 173 ఉంది అని చెప్పారు	STATEMENT}
+{\slot
+ఈ	O
+రోజూ	O
+వెళ్ళి	O
+randomగానే	B-time_period
+చేయిస్తే	O
+173	B-mtest_value
+ఉంది	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	p: అసలు ఎంత ఉండాలి?	INFO_REQUEST}
+{\slot
+అసలు	O
+ఎంత	O
+ఉండాలి?	O
+}
+
+{\intent	p: diet ఏం తీసుకోవాలి	INFO_REQUEST}
+{\slot
+diet	B-food_substance
+ఏం	O
+తీసుకోవాలి	O
+}
+
+{\intent	d: right right	ACK}
+{\slot
+right	O
+right	O
+}
+
+{\intent	p: అని తెలుసుకోవడానికి చేసానండి	STATEMENT}
+{\slot
+అని	O
+తెలుసుకోవడానికి	O
+చేసానండి	O
+}
+
+{\intent	d: preventive aspect గురించి తెలుసుకోవడానికి చేసారు	ACK}
+{\slot
+preventive	O
+aspect	O
+గురించి	O
+తెలుసుకోవడానికి	O
+చేసారు	O
+}
+
+{\intent	d: prediabetic rangeలో ఉన్నారు అంటున్నారు 2 years పైనుంచి కూడా ను.	ACK}
+{\slot
+prediabetic	B-medical_condition
+rangeలో	I-medical_condition
+ఉన్నారు	O
+అంటున్నారు	O
+2	B-time_period
+years	I-time_period
+పైనుంచి	I-time_period
+కూడా	O
+ను.	O
+}
+

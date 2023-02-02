@@ -1,0 +1,244 @@
+{\intent	d: Anita?	INFO_REQUEST}
+{\slot
+Anita?	B-name
+}
+
+{\intent	d: ఏంటి problem అమ్మా?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+problem	O
+అమ్మా?	O
+}
+
+{\intent	p: madam నాకు 36 years madam	ANSWER}
+{\slot
+madam	O
+నాకు	O
+36	B-time_period
+years	I-time_period
+madam	O
+}
+
+{\intent	p: periods last month 11th కి వచ్చింది	STATEMENT}
+{\slot
+periods	B-bodily_process
+last	B-frequency
+month	B-time_period
+11th	I-time_period
+కి	O
+వచ్చింది	O
+}
+
+{\intent	d: ఎప్పుడు?	INFO_REQUEST}
+{\slot
+ఎప్పుడు?	O
+}
+
+{\intent	p: 11 తారీకు కి వచ్చింది	ANSWER}
+{\slot
+11	B-time_period
+తారీకు	I-time_period
+కి	O
+వచ్చింది	O
+}
+
+{\intent	d: ఈ 11?	INFO_REQUEST}
+{\slot
+ఈ	B-time_period
+11?	I-time_period
+}
+
+{\intent	p: ఈ 11 కాదు January 11 తారీకు	ANSWER}
+{\slot
+ఈ	B-time_period
+11	I-time_period
+కాదు	B-negative
+January	B-time_period
+11	I-time_period
+తారీకు	I-time_period
+}
+
+{\intent	p: ఈ month రాలేదు ma'am.	STATEMENT}
+{\slot
+ఈ	B-time_period
+month	I-time_period
+రాలేదు	B-negative
+ma'am.	O
+}
+
+{\intent	d: ఈ month రాలేదు	ACK}
+{\slot
+ఈ	B-time_period
+month	I-time_period
+రాలేదు	B-negative
+}
+
+{\intent	d: నీకు కాకుండా అయ్యిందా?	INFO_REQUEST}
+{\slot
+నీకు	O
+కాకుండా	B-bodily_process
+అయ్యిందా?	B-treatment
+}
+
+{\intent	p: లేదు మా వారికి అయింది ma'am.	ANSWER}
+{\slot
+లేదు	B-negative
+మా	O
+వారికి	B-familal
+అయింది	B-treatment
+ma'am.	O
+}
+
+{\intent	d: మీ వారికి అయింది	ACK}
+{\slot
+మీ	O
+వారికి	B-familal
+అయింది	B-treatment
+}
+
+{\intent	d: ఎంత మంది పిల్లలు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+మంది	O
+పిల్లలు?	B-familal
+}
+
+{\intent	p: ఇద్దరు. ఒక పాప బాబు.	ANSWER}
+{\slot
+ఇద్దరు.	B-frequency
+ఒక	B-frequency
+పాప	B-person
+బాబు.	B-person
+}
+
+{\intent	d: కాకుండా అయిపోయింది	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+అయిపోయింది	B-treatment
+}
+
+{\intent	p: husband చేయించుకున్నారు.	ANSWER}
+{\slot
+husband	B-familal
+చేయించుకున్నారు.	B-treatment
+}
+
+{\intent	d: చిన్న పాప వయసు ఎంత?	INFO_REQUEST}
+{\slot
+చిన్న	O
+పాప	B-person
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: b-tech 2nd year madam	ANSWER}
+{\slot
+b-tech	B-profession
+2nd	I-profession
+year	I-profession
+madam	O
+}
+
+{\intent	d: అంటే 20 years	STATEMENT}
+{\slot
+అంటే	O
+20	B-age
+years	I-age
+}
+
+{\intent	p: 19 years పాప, 16 years బాబు.	STATEMENT}
+{\slot
+19	B-age
+years	I-age
+పాప,	B-person
+16	B-age
+years	I-age
+బాబు.	B-person
+}
+
+{\intent	d: ok. 16 years last child	STATEMENT}
+{\slot
+ok.	O
+16	B-age
+years	I-age
+last	B-frequency
+child	B-person
+}
+
+{\intent	p: అవును.	ACK}
+{\slot
+అవును.	B-positive
+}
+
+{\intent	d: ఇంతకు ముందు regular ఉండే?	INFO_REQUEST}
+{\slot
+ఇంతకు	O
+ముందు	O
+regular	B-normal
+ఉండే?	O
+}
+
+{\intent	p: regular ఉండే periods,	ANSWER}
+{\slot
+regular	B-normal
+ఉండే	B-positive
+periods,	B-bodily_process
+}
+
+{\intent	d: ఈ ఒక్కసారే late అయింది	INFO_REQUEST}
+{\slot
+ఈ	O
+ఒక్కసారే	O
+late	B-symptom
+అయింది	O
+}
+
+{\intent	p: ఆ, ఈ ఒక్కసారి late అయింది	ANSWER}
+{\slot
+ఆ,	O
+ఈ	B-frequency
+ఒక్కసారి	I-frequency
+late	B-symptom
+అయింది	O
+}
+
+{\intent	p: 6 days 7 days before అలా అయ్యేవి.	STATEMENT}
+{\slot
+6	B-time_period
+days	I-time_period
+7	B-time_period
+days	I-time_period
+before	B-time_period
+అలా	O
+అయ్యేవి.	B-bodily_process
+}
+
+{\intent	d: ఈ మధ్య జ్వరం కానీ అలానా?	INFO_REQUEST}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+జ్వరం	B-symptom
+కానీ	O
+అలానా?	O
+}
+
+{\intent	p: ఎమి రాలేదు madam	ANSWER}
+{\slot
+ఎమి	O
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: నాలుక చూపీ అమ్మా?	INFO_REQUEST}
+{\slot
+నాలుక	B-body_part
+చూపీ	O
+అమ్మా?	O
+}
+
+{\intent	d: పడుకో అమ్మా	ACTION_DIR}
+{\slot
+పడుకో	O
+అమ్మా	O
+}
+

@@ -1,0 +1,101 @@
+{\intent	p: doctor గారు మా అమ్మాయికి 3.5 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+అమ్మాయికి	B-familal
+3.5	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: ఏడుస్తున్నప్పుడు కానీ నవ్వుతున్నప్పుడు కానీ ఎడమ కన్ను చిన్నదిగానూ కుడి కన్ను పెద్దదిగా అవుతుంది.	STATEMENT}
+{\slot
+ఏడుస్తున్నప్పుడు	B-bodily_process
+కానీ	O
+నవ్వుతున్నప్పుడు	B-bodily_process
+కానీ	O
+ఎడమ	B-location
+కన్ను	B-body_part
+చిన్నదిగానూ	B-symptom
+కుడి	B-location
+కన్ను	B-body_part
+పెద్దదిగా	B-symptom
+అవుతుంది.	O
+}
+
+{\intent	d: ఒక కన్ను పెద్దగానూ ఒక కన్ను చిన్నగానూ అంటున్నారు కదా.	ACK}
+{\slot
+ఒక	O
+కన్ను	B-body_part
+పెద్దగానూ	B-symptom
+ఒక	O
+కన్ను	B-body_part
+చిన్నగానూ	B-symptom
+అంటున్నారు	O
+కదా.	O
+}
+
+{\intent	d: అది ఏడుస్తున్నప్పుడు, నవ్వుతున్నప్పుడు అని కాకుండా మీరు గమనించండి సహజంగానే ఒక eye size పెద్దగా ఉందేమో.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+ఏడుస్తున్నప్పుడు,	O
+నవ్వుతున్నప్పుడు	O
+అని	O
+కాకుండా	O
+మీరు	O
+గమనించండి	O
+సహజంగానే	O
+ఒక	O
+eye	B-body_part
+size	O
+పెద్దగా	B-symptom
+ఉందేమో.	O
+}
+
+{\intent	d: ఒక eye normalగా ఉండొచ్చు. మీ normalగా ఉన్న కన్ను బహుశా అది చిన్నదిగానూ అనిపిస్తుండొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+ఒక	O
+eye	B-body_part
+normalగా	B-normal
+ఉండొచ్చు.	O
+మీ	O
+normalగా	B-normal
+ఉన్న	O
+కన్ను	B-body_part
+బహుశా	O
+అది	O
+చిన్నదిగానూ	O
+అనిపిస్తుండొచ్చు	O
+}
+
+{\intent	d: పెద్దదిగా ఉన్నది probably కొంచం size దాంట్లో minus power ఏమన్నా ఉంటే, సాధారనంగా minus power ఉన్నప్పుడు	MEDICAL_EXPLANATION}
+{\slot
+పెద్దదిగా	O
+ఉన్నది	O
+probably	O
+కొంచం	O
+size	O
+దాంట్లో	O
+minus	B-symptom
+power	I-symptom
+ఏమన్నా	O
+ఉంటే,	O
+సాధారనంగా	O
+minus	B-symptom
+power	I-symptom
+ఉన్నప్పుడు	O
+}
+
+{\intent	d: అనుకున్న length కంటే పెద్దగా ఉన్నప్పుడు ఈ minus power వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+అనుకున్న	O
+length	O
+కంటే	O
+పెద్దగా	O
+ఉన్నప్పుడు	O
+ఈ	O
+minus	B-symptom
+power	I-symptom
+వస్తుంది.	O
+}
+

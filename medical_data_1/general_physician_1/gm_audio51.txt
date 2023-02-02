@@ -1,0 +1,303 @@
+{\intent	p: madam నమస్తే madam	GREETING}
+{\slot
+madam	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: ఏం లేదు madam మా పాపకి ఇప్పుడు age 11 years madam.	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+madam	O
+మా	O
+పాపకి	B-familal
+ఇప్పుడు	O
+age	O
+11	B-age
+years	I-age
+madam.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: మెడ కింద భగమున ఏందంటే కొంచం వాసినట్లు ఉంటది.	STATEMENT}
+{\slot
+మెడ	B-body_part
+కింద	B-location
+భగమున	I-location
+ఏందంటే	O
+కొంచం	O
+వాసినట్లు	B-symptom
+ఉంటది.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: అది ఉండడంవల్ల ఎవరికి వెళ్ళినా కానీ ఎక్కడికి వెళ్ళినా ఎవరైనా చూసినా సరే వాళ్ళు ఏం అంటున్నారు అంటే thyroid test ఒకసారి చేయించండి ఎమన్నా problem ఉందేమో అని అన్నారు.	STATEMENT}
+{\slot
+అది	O
+ఉండడంవల్ల	O
+ఎవరికి	O
+వెళ్ళినా	O
+కానీ	O
+ఎక్కడికి	O
+వెళ్ళినా	O
+ఎవరైనా	O
+చూసినా	O
+సరే	O
+వాళ్ళు	O
+ఏం	O
+అంటున్నారు	O
+అంటే	O
+thyroid	B-medical_condition
+test	B-mtest
+ఒకసారి	O
+చేయించండి	O
+ఎమన్నా	O
+problem	O
+ఉందేమో	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: అయితే thyroid profile అయితే చెప్పించాను madam.	STATEMENT}
+{\slot
+అయితే	O
+thyroid	B-medical_condition
+profile	B-mtest
+అయితే	O
+చెప్పించాను	O
+madam.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చెప్పించిన దానిలోనే t3 total అన్నది normalగానే ఉన్నది. t4 total అన్నది normalగానే ఉన్నది, thyroid simulating hormone అది కూడా normalగానే ఉన్నది madam.	STATEMENT}
+{\slot
+చెప్పించిన	O
+దానిలోనే	O
+t3	B-mtest
+total	I-mtest
+అన్నది	O
+normalగానే	B-normal
+ఉన్నది.	O
+t4	B-mtest
+total	I-mtest
+అన్నది	O
+normalగానే	B-normal
+ఉన్నది,	O
+thyroid	B-mtest
+simulating	I-mtest
+hormone	I-mtest
+అది	O
+కూడా	O
+normalగానే	B-normal
+ఉన్నది	O
+madam.	O
+}
+
+{\intent	p: ఇంకొకటి ఏదో pre-t3 FT3 serum అని ఉంది madam అది కొంచం normal range వచ్చి 2.5 to 3.9 అయితే పాపకు 4.09 ఉంది madam.	STATEMENT}
+{\slot
+ఇంకొకటి	O
+ఏదో	O
+pre-t3	B-mtest
+FT3	B-mtest
+serum	B-body_substance
+అని	O
+ఉంది	O
+madam	O
+అది	O
+కొంచం	O
+normal	O
+range	O
+వచ్చి	O
+2.5	B-mtest_value
+to	O
+3.9	B-mtest_value
+అయితే	O
+పాపకు	B-person
+4.09	B-mtest_value
+ఉంది	O
+madam.	O
+}
+
+{\intent	d: ok ok.	ACK}
+{\slot
+ok	O
+ok.	O
+}
+
+{\intent	d: అయితే దానివల్ల body లో ఏమైనా problems అవుతున్నాయా పాపకి?	INFO_REQUEST}
+{\slot
+అయితే	O
+దానివల్ల	O
+body	B-body_part
+లో	O
+ఏమైనా	O
+problems	O
+అవుతున్నాయా	O
+పాపకి?	O
+}
+
+{\intent	p: అయితే ఇంకా mature అవ్వలేదు she is 11 years old.	STATEMENT}
+{\slot
+అయితే	O
+ఇంకా	O
+mature	B-bodily_process
+అవ్వలేదు	B-negative
+she	O
+is	O
+11	B-age
+years	I-age
+old.	I-age
+}
+
+{\intent	d: ok ok.	ACK}
+{\slot
+ok	O
+ok.	O
+}
+
+{\intent	d: అయితే ఎన్నాళ్ళ నుంచి గమనిస్తున్నారు?	INFO_REQUEST}
+{\slot
+అయితే	O
+ఎన్నాళ్ళ	O
+నుంచి	O
+గమనిస్తున్నారు?	O
+}
+
+{\intent	p: అది ఒక 3 years నుంచి ఉంది madam.	ANSWER}
+{\slot
+అది	O
+ఒక	O
+3	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది	O
+madam.	O
+}
+
+{\intent	d: uhum.	ACK}
+{\slot
+uhum.	O
+}
+
+{\intent	d: ఇంకా family లో ఎవరికైనా ఉందా అండి ఇట్ల?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+family	B-familal
+లో	O
+ఎవరికైనా	O
+ఉందా	O
+అండి	O
+ఇట్ల?	O
+}
+
+{\intent	p: ఆహా. ఎవరికి లేదు madam.	ANSWER}
+{\slot
+ఆహా.	O
+ఎవరికి	O
+లేదు	B-negative
+madam.	O
+}
+
+{\intent	d: ok అండి. నేను చెప్తాను worry కానవసరం లేదు. దాని గురించి tension పడనవసరంలేదు. అంటే thyroid అనేది కొంచం borderline లో ఉందండి దాని functioning అనేది కొద్దిగా borderlineగా ఉంది.	STATEMENT}
+{\slot
+ok	O
+అండి.	O
+నేను	O
+చెప్తాను	O
+worry	O
+కానవసరం	O
+లేదు.	O
+దాని	O
+గురించి	O
+tension	O
+పడనవసరంలేదు.	O
+అంటే	O
+thyroid	B-medical_condition
+అనేది	O
+కొంచం	O
+borderline	B-mtest_value
+లో	O
+ఉందండి	O
+దాని	O
+functioning	O
+అనేది	O
+కొద్దిగా	O
+borderlineగా	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	d: thyroid గ్రంధి బయటికి ఉబ్బినట్లుగా, కనిపించడం గుటకలేస్తున్నప్పుడు మింగినప్పుడు ఆ thyroid గ్రంధి బయటికి ఉబ్బినట్లు, కనిపిస్తుంది అన్నమాట. ఆ ఉబ్బడంలో, కొంతమందికి naturalగా చిన్నగానే ఉంటుంది. కొంతమందికి ఏంటిది అంటే ఆ thyroid functioning correct గా ఉన్న కూడా దాని size అనేది ఉబ్బినట్లుగా, కనిపిస్తుంది. దీనిని thyroiditis అంటారు అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+thyroid	B-body_part
+గ్రంధి	I-body_part
+బయటికి	B-location
+ఉబ్బినట్లుగా,	B-symptom
+కనిపించడం	O
+గుటకలేస్తున్నప్పుడు	B-bodily_process
+మింగినప్పుడు	B-bodily_process
+ఆ	O
+thyroid	B-body_part
+గ్రంధి	I-body_part
+బయటికి	B-location
+ఉబ్బినట్లు,	B-symptom
+కనిపిస్తుంది	O
+అన్నమాట.	O
+ఆ	O
+ఉబ్బడంలో,	B-symptom
+కొంతమందికి	O
+naturalగా	O
+చిన్నగానే	O
+ఉంటుంది.	O
+కొంతమందికి	O
+ఏంటిది	O
+అంటే	O
+ఆ	O
+thyroid	B-body_part
+functioning	O
+correct	O
+గా	O
+ఉన్న	O
+కూడా	O
+దాని	O
+size	O
+అనేది	O
+ఉబ్బినట్లుగా,	B-symptom
+కనిపిస్తుంది.	O
+దీనిని	O
+thyroiditis	B-symptom
+అంటారు	O
+అన్నమాట.	O
+}
+

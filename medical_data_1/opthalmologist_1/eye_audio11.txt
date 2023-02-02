@@ -1,0 +1,97 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: కళ్ళు ఎర్రగా అవుతున్నాయి.	ANSWER}
+{\slot
+కళ్ళు	B-body_part
+ఎర్రగా	B-color
+అవుతున్నాయి.	B-symptom
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 6 years	ANSWER}
+{\slot
+6	B-time_period
+years	I-time_period
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: ఓ చాన ఏళ్లయింది ఒక 30 years నుంచి కావచ్చు.	ANSWER}
+{\slot
+ఓ	O
+చాన	B-time_period
+ఏళ్లయింది	I-time_period
+ఒక	O
+30	B-time_period
+years	I-time_period
+నుంచి	O
+కావచ్చు.	O
+}
+
+{\intent	p: మందులు వాడుతున్నా.	STATEMENT}
+{\slot
+మందులు	B-medicine
+వాడుతున్నా.	O
+}
+
+{\intent	d: control లోనే ఉందా?	INFO_REQUEST}
+{\slot
+control	B-normal
+లోనే	O
+ఉందా?	O
+}
+
+{\intent	p: ఆ.	ANSWER}
+{\slot
+ఆ.	B-positive
+}
+

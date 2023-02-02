@@ -1,0 +1,134 @@
+{\intent	p: madam, మాకు పెళ్ళై 7, 8, సంవత్సరాలు అయింది madam	STATEMENT}
+{\slot
+madam,	O
+మాకు	O
+పెళ్ళై	B-marital_status
+7,	B-time_period
+8,	B-time_period
+సంవత్సరాలు	I-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అంటే పెళ్ళైన 2 సంవత్సరాల నుంచి పిల్లల కోసం treatment తీసుకుంటున్నాము	STATEMENT}
+{\slot
+అంటే	O
+పెళ్ళైన	B-marital_status
+2	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+పిల్లల	B-familal
+కోసం	O
+treatment	B-treatment
+తీసుకుంటున్నాము	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఆ PCOD problem ఉందని చెప్పారు	STATEMENT}
+{\slot
+ఆ	O
+PCOD	B-medical_condition
+problem	I-medical_condition
+ఉందని	O
+చెప్పారు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఆ, దాదాపుగా ఇప్పుడు treatment ఆపేసి ఒక 2 years అయింది madam	STATEMENT}
+{\slot
+ఆ,	O
+దాదాపుగా	O
+ఇప్పుడు	O
+treatment	B-treatment
+ఆపేసి	O
+ఒక	O
+2	B-time_period
+years	I-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఇట్ల IVF try చేయాలని అనుకుంటున్నాను	STATEMENT}
+{\slot
+ఇట్ల	O
+IVF	B-treatment
+try	O
+చేయాలని	O
+అనుకుంటున్నాను	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: కానీ మా భార్యకి problem ఎమిటి అంటే eggs సరిగ్గా release release అవ్వట్లేదు అని చెప్పారు treatment చేయించుకున్నాప్పుడల్లానూ	STATEMENT}
+{\slot
+కానీ	O
+మా	O
+భార్యకి	B-familal
+problem	O
+ఎమిటి	O
+అంటే	O
+eggs	B-body_part
+సరిగ్గా	O
+release	B-bodily_process
+release	B-bodily_process
+అవ్వట్లేదు	B-negative
+అని	O
+చెప్పారు	O
+treatment	B-treatment
+చేయించుకున్నాప్పుడల్లానూ	B-time_period
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అలాంటివాళ్లకి IVF try చేస్తే success rate ఎలా ఉంటది? చేయొచ్చా? లేదా? అనేది doubt madam	INFO_REQUEST}
+{\slot
+అలాంటివాళ్లకి	O
+IVF	B-treatment
+try	O
+చేస్తే	O
+success	O
+rate	O
+ఎలా	O
+ఉంటది?	O
+చేయొచ్చా?	O
+లేదా?	O
+అనేది	O
+doubt	O
+madam	O
+}
+
+{\intent	d: అలాంటి వాళ్ళకినే actually IVF suggest చేస్తాం మనము	ANSWER}
+{\slot
+అలాంటి	O
+వాళ్ళకినే	O
+actually	O
+IVF	B-treatment
+suggest	O
+చేస్తాం	O
+మనము	O
+}
+

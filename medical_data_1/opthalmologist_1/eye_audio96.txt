@@ -1,0 +1,85 @@
+{\intent	p: నా కనుబొమ్మలపై dandruff వచ్చి నా కనుబొమ్మలు పల్చబడుతున్నాయి.	STATEMENT}
+{\slot
+నా	O
+కనుబొమ్మలపై	B-body_part
+dandruff	B-medical_condition
+వచ్చి	O
+నా	O
+కనుబొమ్మలు	B-body_part
+పల్చబడుతున్నాయి.	B-symptom
+}
+
+{\intent	p: dandruff కి పరిష్కారం ఉందా?	INFO_REQUEST}
+{\slot
+dandruff	B-medical_condition
+కి	O
+పరిష్కారం	B-treatment
+ఉందా?	O
+}
+
+{\intent	d: కనుబొమ్మలపై dandruff, ఎమి లేదండీ dandruff తలలో ఎలా వస్తుందో అలాగే కనుబొమ్మలకి ముక్కుకి ఇటు పక్క అటుపక్క అలాగే ఛాతి మీద front side ఈ మన dandruff రావడానికి chances ఉన్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+కనుబొమ్మలపై	B-body_part
+dandruff,	B-medical_condition
+ఎమి	O
+లేదండీ	B-negative
+dandruff	B-medical_condition
+తలలో	B-body_part
+ఎలా	O
+వస్తుందో	O
+అలాగే	O
+కనుబొమ్మలకి	B-body_part
+ముక్కుకి	B-body_part
+ఇటు	B-location
+పక్క	I-location
+అటుపక్క	B-location
+అలాగే	O
+ఛాతి	B-body_part
+మీద	B-location
+front	B-location
+side	I-location
+ఈ	O
+మన	O
+dandruff	B-medical_condition
+రావడానికి	O
+chances	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: dandruff అంటే కారణాలు ఏంటి? oil glands excessive గా పనిచెస్తుంటేనే మనకు dandruff వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+dandruff	B-medical_condition
+అంటే	O
+కారణాలు	O
+ఏంటి?	O
+oil	B-body_part
+glands	I-body_part
+excessive	B-symptom
+గా	O
+పనిచెస్తుంటేనే	I-symptom
+మనకు	O
+dandruff	B-medical_condition
+వస్తుంది.	O
+}
+
+{\intent	d: over expression అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+over	B-medical_condition
+expression	I-medical_condition
+అంటాము.	O
+}
+
+{\intent	d: over active oil glands వాటి మూలంగా మనకి ఈ dandruff వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+over	B-symptom
+active	I-symptom
+oil	B-body_part
+glands	I-body_part
+వాటి	O
+మూలంగా	O
+మనకి	O
+ఈ	O
+dandruff	B-medical_condition
+వస్తుంది.	O
+}
+

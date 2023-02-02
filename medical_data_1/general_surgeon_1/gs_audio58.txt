@@ -1,0 +1,168 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: ya Vinata గారు మట్లాడండి	CONV_OPEN}
+{\slot
+ya	O
+Vinata	B-name
+గారు	O
+మట్లాడండి	O
+}
+
+{\intent	p: నాకు కూడా ఇదే piles గురించే చాలా నొప్పిలేస్తుంది	STATEMENT}
+{\slot
+నాకు	O
+కూడా	O
+ఇదే	O
+piles	B-symptom
+గురించే	O
+చాలా	B-intensity
+నొప్పిలేస్తుంది	B-symptom
+}
+
+{\intent	p: ఎన్ని మందులు వాడిన తగ్గడం లేదు.	STATEMENT}
+{\slot
+ఎన్ని	O
+మందులు	B-medicine
+వాడిన	O
+తగ్గడం	B-normal
+లేదు.	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలంగా ఉందమ్మా ఈ problem?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+ఉందమ్మా	O
+ఈ	O
+problem?	O
+}
+
+{\intent	p: ఒక 6 years నుంచి ఉంది	ANSWER}
+{\slot
+ఒక	O
+6	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: 6 years నుంచి ఉంది	ACK}
+{\slot
+6	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 37	ANSWER}
+{\slot
+37	B-age
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఇది కాకుండా ఇంకేమైనా అడగదల్చుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇది	O
+కాకుండా	O
+ఇంకేమైనా	O
+అడగదల్చుకున్నారా?	O
+}
+
+{\intent	p: ఆహా ఇది ఒక్కటే, problem చాలా నొప్పి, ఈ 15 రోజుల నుంచి అయితే అసలు అయితానే లేదు నొప్పి.	ANSWER}
+{\slot
+ఆహా	O
+ఇది	O
+ఒక్కటే,	O
+problem	O
+చాలా	O
+నొప్పి,	B-symptom
+ఈ	O
+15	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+అయితే	O
+అసలు	O
+అయితానే	O
+లేదు	O
+నొప్పి	B-symptom
+}
+
+{\intent	d: pregnancy సమయంలో ఏమైనా వచ్చిందమ్మా ఇది?	INFO_REQUEST}
+{\slot
+pregnancy	B-medical_condition
+సమయంలో	B-time_period
+ఏమైనా	O
+వచ్చిందమ్మా	O
+ఇది?	O
+}
+
+{\intent	p: ఆ మా చిన్న పాప పుట్టినాక వచ్చింది.	ANSWER}
+{\slot
+ఆ	O
+మా	O
+చిన్న	O
+పాప	B-familal
+పుట్టినాక	B-time_period
+వచ్చింది.	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఇంకేమైనా అడగదల్చుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదల్చుకున్నారా?	O
+}
+
+{\intent	p: అంతే, ఎన్ని మందులు వాడిన తగ్గడం లేదు	ANSWER}
+{\slot
+అంతే,	O
+ఎన్ని	O
+మందులు	B-medicine
+వాడిన	O
+తగ్గడం	O
+లేదు	O
+}
+
+{\intent	p: అసల్ ఎట్ల తగ్గుతదేమో అని	INFO_REQUEST}
+{\slot
+అసల్	O
+ఎట్ల	O
+తగ్గుతదేమో	O
+అని	O
+}
+
+{\intent	d: అలాగే అమ్మా, తప్పకుండా	COMMIT}
+{\slot
+అలాగే	O
+అమ్మా,	O
+తప్పకుండా	O
+}
+

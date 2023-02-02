@@ -1,0 +1,130 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే Kalyani గారు	GREETING}
+{\slot
+నమస్తే	O
+Kalyani	B-name
+గారు	O
+}
+
+{\intent	p: నాకు 9 months madam ఇప్పుడు, అప్పుడు నాకు pain వస్తుంది అండి పొత్తి కడుపులో నుంచి	STATEMENT}
+{\slot
+నాకు	O
+9	B-time_period
+months	I-time_period
+madam	O
+ఇప్పుడు,	O
+అప్పుడు	B-time_period
+నాకు	O
+pain	B-symptom
+వస్తుంది	O
+అండి	O
+పొత్తి	B-body_part
+కడుపులో	I-body_part
+నుంచి	O
+}
+
+{\intent	d: ఏమైందమ్మా first	SNU}
+{\slot
+ఏమైందమ్మా	O
+first	O
+}
+
+{\intent	p: 9 months madam	REPEAT_REPHRASE}
+{\slot
+9	B-time_period
+months	I-time_period
+madam	O
+}
+
+{\intent	d: ఇప్పుడు very nice 9 months pregnant ok అమ్మా	ACK}
+{\slot
+ఇప్పుడు	O
+very	O
+nice	O
+9	B-time_period
+months	I-time_period
+pregnant	B-bodily_process
+ok	O
+అమ్మా	O
+}
+
+{\intent	p: అయితే పొత్తి కడుపులో ఒక 5 నిమిషాలు కుర్చుంటే pain వస్తుంది madam	STATEMENT}
+{\slot
+అయితే	O
+పొత్తి	B-body_part
+కడుపులో	I-body_part
+ఒక	O
+5	B-time_period
+నిమిషాలు	I-time_period
+కుర్చుంటే	B-bodily_process
+pain	B-symptom
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so donot worry అమ్మా. 9 months అయ్యేటప్పుడు babyది head అనేది కింద అంటే bladder, urinary bladder కింద, delivery time వస్తుంది కదా దెగ్గర. It goes down అన్నమాట.	STATEMENT}
+{\slot
+so	O
+donot	O
+worry	O
+అమ్మా.	O
+9	B-time_period
+months	I-time_period
+అయ్యేటప్పుడు	O
+babyది	B-person
+head	B-body_part
+అనేది	O
+కింద	O
+అంటే	O
+bladder,	B-body_part
+urinary	B-body_part
+bladder	I-body_part
+కింద,	O
+delivery	B-bodily_process
+time	B-time_period
+వస్తుంది	O
+కదా	O
+దెగ్గర.	O
+It	O
+goes	O
+down	B-location
+అన్నమాట.	O
+}
+
+{\intent	d: ఆ timeలో ఎక్కువ సేపు మీరు కుర్చుంటే కింద pressure symptoms ఉంటాయి అన్నట్టు	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+timeలో	B-time_period
+ఎక్కువ	B-intensity
+సేపు	B-time_period
+మీరు	O
+కుర్చుంటే	B-bodily_process
+కింద	B-location
+pressure	B-symptom
+symptoms	I-symptom
+ఉంటాయి	O
+అన్నట్టు	O
+}
+
+{\intent	d: so ఇది అని common symptoms అమ్మా donot worry.	STATEMENT}
+{\slot
+so	O
+ఇది	O
+అని	O
+common	B-normal
+symptoms	B-symptom
+అమ్మా	O
+donot	O
+worry.	O
+}
+

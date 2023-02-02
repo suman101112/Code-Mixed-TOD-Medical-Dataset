@@ -1,0 +1,108 @@
+{\intent	p: doctor గారు. మా నాన్న గారి వయస్సు 67 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు.	O
+మా	O
+నాన్న	B-familal
+గారి	O
+వయస్సు	O
+67	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: తనకు గత 10 సంవత్సరాల నుంచి diabetes ఉంది.	STATEMENT}
+{\slot
+తనకు	O
+గత	B-time_period
+10	I-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+diabetes	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య చూపులో తేడా paper కూడా సరిగ్గా చదువలేక పోతున్నారు. మసకగా ఉంది అంటున్నారు.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+చూపులో	B-bodily_process
+తేడా	B-symptom
+paper	O
+కూడా	O
+సరిగ్గా	O
+చదువలేక	B-symptom
+పోతున్నారు.	O
+మసకగా	B-symptom
+ఉంది	O
+అంటున్నారు.	O
+}
+
+{\intent	p: ఇదేమన్నా పలు సమస్యలకు దారి తీస్తుందా?	INFO_REQUEST}
+{\slot
+ఇదేమన్నా	O
+పలు	O
+సమస్యలకు	O
+దారి	O
+తీస్తుందా?	O
+}
+
+{\intent	d: మధుమేహం 10 సంవత్సరాల నుంచి ఉంది అని చెప్తున్నారు మీ నాన్నగారికి.	ACK}
+{\slot
+మధుమేహం	B-medical_condition
+10	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఉంది	O
+అని	O
+చెప్తున్నారు	O
+మీ	O
+నాన్నగారికి.	B-familal
+}
+
+{\intent	d: so మధుమేహం 10 సంవత్సరాల నుంచి ఉంది అనగా మధుమేహం వల్ల మనకు diabetic retinopathy తో పాటు కన్ను మసకగా ఉంది అంటే మనకు వేరే కారణాలు కూడా ఆలోచించాలి.	STATEMENT}
+{\slot
+so	O
+మధుమేహం	B-medical_condition
+10	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఉంది	O
+అనగా	O
+మధుమేహం	B-medical_condition
+వల్ల	O
+మనకు	O
+diabetic	B-treatment
+retinopathy	I-treatment
+తో	O
+పాటు	O
+కన్ను	B-body_part
+మసకగా	B-symptom
+ఉంది	O
+అంటే	O
+మనకు	O
+వేరే	O
+కారణాలు	O
+కూడా	O
+ఆలోచించాలి.	O
+}
+
+{\intent	d: వేరే examinations ద్వారా మీ నాన్నగారికి actualగా ఏ problem clearగా ఉంది అనేది మనకు తెలుసుకోవడానికి వీలుగా అవుతుంది అండి.	STATEMENT}
+{\slot
+వేరే	O
+examinations	B-mtest
+ద్వారా	O
+మీ	O
+నాన్నగారికి	B-familal
+actualగా	O
+ఏ	O
+problem	O
+clearగా	O
+ఉంది	O
+అనేది	O
+మనకు	O
+తెలుసుకోవడానికి	O
+వీలుగా	O
+అవుతుంది	O
+అండి.	O
+}
+

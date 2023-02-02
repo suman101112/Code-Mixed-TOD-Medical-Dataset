@@ -1,0 +1,134 @@
+{\intent	p: నాకు piles ఉంది madam	STATEMENT}
+{\slot
+నాకు	O
+piles	B-symptom
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి అండి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+అండి?	O
+}
+
+{\intent	p: ఆ 4 సంవత్సరాలు, 5 సంవత్సరాలు అయితుంది madam	ANSWER}
+{\slot
+ఆ	O
+4	B-time_period
+సంవత్సరాలు,	I-time_period
+5	B-time_period
+సంవత్సరాలు	I-time_period
+అయితుంది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఏం ఇబ్బంది పడుతున్నారు మీరు	INFO_REQUEST}
+{\slot
+ఏం	O
+ఇబ్బంది	B-symptom
+పడుతున్నారు	O
+మీరు	O
+}
+
+{\intent	p: అయితే latrine పోతున్నప్పుడు blood లాగా పోతుంది.	ANSWER}
+{\slot
+అయితే	O
+latrine	B-bodily_process
+పోతున్నప్పుడు	I-bodily_process
+blood	B-body_substance
+లాగా	O
+పోతుంది.	O
+}
+
+{\intent	p: అయితే homeopathy మందులు కూడా వాడినాము, తగ్గలేదు.,	STATEMENT}
+{\slot
+అయితే	O
+homeopathy	B-medicine
+మందులు	B-medicine
+కూడా	O
+వాడినాము,	O
+తగ్గలేదు.,	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఎన్నాళ్ళ క్రితం sir?	INFO_REQUEST}
+{\slot
+ఎన్నాళ్ళ	B-time_period
+క్రితం	O
+sir?	O
+}
+
+{\intent	p: మొన్నటివరకు వాడినం madam, తగ్గలేదు,	ANSWER}
+{\slot
+మొన్నటివరకు	B-time_period
+వాడినం	O
+madam,	O
+తగ్గలేదు,	O
+}
+
+{\intent	d: ఇంకేరకమైన treatments తీసుకున్నారు? ఏమైనా surgery గిట్ల చేయించుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేరకమైన	O
+treatments	B-treatment
+తీసుకున్నారు?	O
+ఏమైనా	O
+surgery	B-treatment
+గిట్ల	O
+చేయించుకున్నారా?	O
+}
+
+{\intent	p: ఇప్పుడు ayurveda వాడుతున్నాను madam	ANSWER}
+{\slot
+ఇప్పుడు	O
+ayurveda	B-treatment
+వాడుతున్నాను	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఇంకేమైనా surgeryలు అయినాయా ఇంతకుముందు?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+surgeryలు	B-treatment
+అయినాయా	O
+ఇంతకుముందు?	O
+}
+
+{\intent	p: ఏం కాలే madam	ANSWER}
+{\slot
+ఏం	O
+కాలే	B-negative
+madam	O
+}
+
+{\intent	d: ok sir ok	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+}
+

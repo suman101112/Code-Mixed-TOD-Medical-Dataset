@@ -1,0 +1,154 @@
+{\intent	p: నాకు back pain అంటే కడుపులో నొప్పి వస్తా ఉంది madam	STATEMENT}
+{\slot
+నాకు	O
+back	B-body_part
+pain	B-symptom
+అంటే	O
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+వస్తా	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే side నోప్పి	STATEMENT}
+{\slot
+అంటే	O
+side	B-location
+నోప్పి	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదే latrine పోయేటప్పుడు చాలా నోప్పిగా ఉంటానండి, మంటగా ఉంటది, latrine పోయేటప్పుడు మంటగా ఉంటుందండి	STATEMENT}
+{\slot
+అదే	O
+latrine	B-bodily_process
+పోయేటప్పుడు	I-bodily_process
+చాలా	B-intensity
+నోప్పిగా	B-symptom
+ఉంటానండి,	O
+మంటగా	B-symptom
+ఉంటది,	O
+latrine	I-bodily_process
+పోయేటప్పుడు	B-symptom
+మంటగా	O
+ఉంటుందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ Hello	SU}
+{\slot
+ఆ	O
+Hello	O
+}
+
+{\intent	d: చెప్పండి చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: అదే ఎక్కువ మంట ఉంటది, urine పోయేటప్పుడు మంట ఉంటాది, back pain ఉంటది	STATEMENT}
+{\slot
+అదే	O
+ఎక్కువ	B-intensity
+మంట	B-symptom
+ఉంటది,	O
+urine	B-body_substance
+పోయేటప్పుడు	O
+మంట	B-symptom
+ఉంటాది,	O
+back	B-body_part
+pain	B-symptom
+ఉంటది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: side pain	STATEMENT}
+{\slot
+side	B-location
+pain	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: side pain ఎక్కువ ఉంటది	REPEAT_REPHRASE}
+{\slot
+side	B-location
+pain	B-symptom
+ఎక్కువ	B-intensity
+ఉంటది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: sir మీరు పొత్తికడుపులో నొప్పి ఉంది అంటున్నారు, back pain ఉంది అంటున్నారు, urine వచ్చేటప్పుడు మంట అంటున్నారు.	ACK}
+{\slot
+sir	O
+మీరు	O
+పొత్తికడుపులో	B-body_part
+నొప్పి	B-symptom
+ఉంది	O
+అంటున్నారు,	O
+back	B-body_part
+pain	B-symptom
+ఉంది	O
+అంటున్నారు,	O
+urine	B-body_substance
+వచ్చేటప్పుడు	O
+మంట	B-symptom
+అంటున్నారు.	O
+}
+
+{\intent	d: so, ఎక్కువ శాతంగా మీరు చెప్తున్నా symptoms ని బట్టి kidneyలో రాళ్ళు ఉండే అవకాశం ఉంటుంది అండి.	DIAGNOSIS}
+{\slot
+so,	O
+ఎక్కువ	B-intensity
+శాతంగా	O
+మీరు	O
+చెప్తున్నా	O
+symptoms	O
+ని	O
+బట్టి	O
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+ఉండే	O
+అవకాశం	O
+ఉంటుంది	O
+అండి.	O
+}
+
+{\intent	d: అలాగే కొన్ని సార్లు urinary tract infection	STATEMENT}
+{\slot
+అలాగే	O
+కొన్ని	O
+సార్లు	B-time_period
+urinary	B-medical_condition
+tract	I-medical_condition
+infection	I-medical_condition
+}
+

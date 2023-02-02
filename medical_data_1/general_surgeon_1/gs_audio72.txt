@@ -1,0 +1,197 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఆ madam, నమస్తే madam	GREETING}
+{\slot
+ఆ	O
+madam,	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే sir చెప్పండి	ACTION_DIR}
+{\slot
+నమస్తే	O
+sir	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ madam మా mrsకు piles ఉన్నాయి madam	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+మా	O
+mrsకు	B-familal
+piles	B-symptom
+ఉన్నాయి	O
+madam	O
+}
+
+{\intent	d: ok అండి, ఎంత కాలం నుంచి?	INFO_REQUEST}
+{\slot
+ok	O
+అండి,	O
+ఎంత	O
+కాలం	O
+నుంచి?	O
+}
+
+{\intent	p: అయితే ముందు నుంచి ఉన్నది, అదేదో ayurvedic మందు పొడి చేసుకొని వేడి నీళ్ళల్లో తాగడము అట్ల చేస్తున్నది.	ANSWER}
+{\slot
+అయితే	O
+ముందు	B-time_period
+నుంచి	O
+ఉన్నది,	O
+అదేదో	O
+ayurvedic	B-medicine
+మందు	B-medicine
+పొడి	O
+చేసుకొని	O
+వేడి	O
+నీళ్ళల్లో	B-food_substance
+తాగడము	O
+అట్ల	O
+చేస్తున్నది.	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఇప్పుడు పరిస్థితి ఏంటి తనకి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+పరిస్థితి	O
+ఏంటి	O
+తనకి?	O
+}
+
+{\intent	p: ఇప్పుడు పరిస్థితి ఏంటి అంటే తను pregnant madam	ANSWER}
+{\slot
+ఇప్పుడు	O
+పరిస్థితి	O
+ఏంటి	O
+అంటే	O
+తను	O
+pregnant	B-medical_condition
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: ఆ 6th month	STATEMENT}
+{\slot
+ఆ	O
+6th	B-time_period
+month	B-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే motion problem, ఏడవడము బాగా నొప్పి, ఇప్పుడు కనీసం operation చేయిస్దామన్నా వీలు లేని పరిస్థితి ఉంది.	STATEMENT}
+{\slot
+అయితే	O
+motion	B-bodily_process
+problem,	O
+ఏడవడము	B-symptom
+బాగా	B-intensity
+నొప్పి,	B-symptom
+ఇప్పుడు	O
+కనీసం	O
+operation	B-treatment
+చేయిస్దామన్నా	O
+వీలు	O
+లేని	O
+పరిస్థితి	O
+ఉంది.	O
+}
+
+{\intent	d: అవును అవును	ACK}
+{\slot
+అవును	O
+అవును	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: ఇప్పుడు ఏం చేయమంటారు	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏం	O
+చేయమంటారు	O
+}
+
+{\intent	d: నేను చెప్తాను sir	COMMIT}
+{\slot
+నేను	O
+చెప్తాను	O
+sir	O
+}
+
+{\intent	d: అయితే ఈ piles problem అనేది చాలా మంది స్త్రీలలో pregnant womenలో అంటే pregnancy timeలో ఇవి వచ్చే అవకాశాలు ఎక్కువగా ఉంటాయి అన్నా మాట	MEDICAL_EXPLANATION}
+{\slot
+అయితే	O
+ఈ	O
+piles	B-symptom
+problem	I-symptom
+అనేది	O
+చాలా	O
+మంది	O
+స్త్రీలలో	O
+pregnant	B-medical_condition
+womenలో	B-person
+అంటే	O
+pregnancy	B-medical_condition
+timeలో	B-time_period
+ఇవి	O
+వచ్చే	O
+అవకాశాలు	O
+ఎక్కువగా	B-intensity
+ఉంటాయి	O
+అన్నా	O
+మాట	O
+}
+
+{\intent	d: temporaryగా ఏంటి అంటే మీరు homeo medicines కూడా use చేయొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+temporaryగా	O
+ఏంటి	O
+అంటే	O
+మీరు	O
+homeo	B-medicine
+medicines	B-medicine
+కూడా	O
+use	O
+చేయొచ్చు	O
+}
+
+{\intent	d: permanent cure కూడా ఉంది దీనికి.	MEDICAL_EXPLANATION}
+{\slot
+permanent	B-time_period
+cure	B-treatment
+కూడా	O
+ఉంది	O
+దీనికి.	O
+}
+

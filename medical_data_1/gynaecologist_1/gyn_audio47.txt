@@ -1,0 +1,156 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	d: చెప్పండి problem ఏంటో	REPEAT_REPHRASE}
+{\slot
+చెప్పండి	O
+problem	O
+ఏంటో	O
+}
+
+{\intent	p: అయితే madam మా ఆవిడకు thyroid ఉంటది madam	STATEMENT}
+{\slot
+అయితే	O
+madam	O
+మా	O
+ఆవిడకు	O
+thyroid	B-medical_condition
+ఉంటది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆమెకు 3 నెలలకు 4 నెలలకు ఒకసారి బయట ఉంటది	STATEMENT}
+{\slot
+ఆమెకు	O
+3	B-time_period
+నెలలకు	I-time_period
+4	B-time_period
+నెలలకు	I-time_period
+ఒకసారి	O
+బయట	B-bodily_process
+ఉంటది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇప్పుడు ఈ అండం విడుదల అయ్యే దానికి ఎమన్నా testలు గిట్ల ఏమైనా ఉంటదా madam?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఈ	O
+అండం	B-body_part
+విడుదల	B-bodily_process
+అయ్యే	O
+దానికి	O
+ఎమన్నా	O
+testలు	B-mtest
+గిట్ల	O
+ఏమైనా	O
+ఉంటదా	O
+madam?	O
+}
+
+{\intent	p: ఇప్పుడు test కి  ఏ రోజులు విడుదల అయితుంది అనే దానికి తెలుసుకోవడానికి	STATEMENT}
+{\slot
+ఇప్పుడు	B-time_period
+test	B-mtest
+కి	O
+ఏ	O
+రోజులు	B-time_period
+విడుదల	B-bodily_process
+అయితుంది	O
+అనే	O
+దానికి	O
+తెలుసుకోవడానికి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు pregnant testకు ఇట్ల ఉంటాయి కదా	STATEMENT}
+{\slot
+ఇప్పుడు	O
+pregnant	B-bodily_process
+testకు	B-mtest
+ఇట్ల	O
+ఉంటాయి	O
+కదా	O
+}
+
+{\intent	p: అలాంటిది అండం విడుదల ఏ timeకి అయితుంది అని తెలుసుకోవడానికి ఎందుకంటే ఆ timeలో మనం కలవడానికి	STATEMENT}
+{\slot
+అలాంటిది	O
+అండం	B-body_part
+విడుదల	B-bodily_process
+ఏ	O
+timeకి	B-time_period
+అయితుంది	O
+అని	O
+తెలుసుకోవడానికి	O
+ఎందుకంటే	O
+ఆ	O
+timeలో	B-time_period
+మనం	O
+కలవడానికి	B-bodily_process
+}
+
+{\intent	p: ఎందుకంటే 3 నెలల కొకసారి 4 నెలల కొకసారి అట్ల బయట ఉంటది.	STATEMENT}
+{\slot
+ఎందుకంటే	O
+3	B-time_period
+నెలల	I-time_period
+కొకసారి	O
+4	B-time_period
+నెలల	I-time_period
+కొకసారి	O
+అట్ల	O
+బయట	B-bodily_process
+ఉంటది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అట్ల ఏమైనా ఉంటాయా madam అట్ల test కు సంబంధించినవి?	INFO_REQUEST}
+{\slot
+అట్ల	O
+ఏమైనా	O
+ఉంటాయా	O
+madam	O
+అట్ల	O
+test	B-mtest
+కు	O
+సంబంధించినవి?	O
+}
+
+{\intent	d: చెప్తాను	COMMIT}
+{\slot
+చెప్తాను	O
+}
+
+{\intent	d: మామూలుగా మనకు pregnancy kit లాగానే ovulation kit కూడా ఉంటుంది	STATEMENT}
+{\slot
+మామూలుగా	O
+మనకు	O
+pregnancy	B-medical_apparatus
+kit	I-medical_apparatus
+లాగానే	O
+ovulation	B-medical_apparatus
+kit	I-medical_apparatus
+కూడా	O
+ఉంటుంది	O
+}
+

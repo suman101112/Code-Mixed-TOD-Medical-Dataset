@@ -1,0 +1,73 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి, చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి,	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: నాకు 10 mm stones ఉంది 3 months కింద surgery అయింది అండి	STATEMENT}
+{\slot
+నాకు	O
+10	B-mtest_value
+mm	I-mtest_value
+stones	B-body_substance
+ఉంది	O
+3	B-time_period
+months	I-time_period
+కింద	O
+surgery	B-treatment
+అయింది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి pain వచ్చింది, hospitalకు వెళితే మళ్ళి 7mm ఉంది అంటున్నారు అండి	STATEMENT}
+{\slot
+మళ్ళి	O
+pain	B-symptom
+వచ్చింది,	O
+hospitalకు	O
+వెళితే	O
+మళ్ళి	O
+7mm	B-mtest_value
+ఉంది	O
+అంటున్నారు	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so మీరు ఏదో ఏదో చెప్తున్నారు, అనే stone already operate అయినా తరువాత reoccurance వచ్చినాయి అంటే మళ్ళి stone formation అవుతుంది.	STATEMENT}
+{\slot
+so	O
+మీరు	O
+ఏదో	O
+ఏదో	O
+చెప్తున్నారు,	O
+అనే	O
+stone	B-body_substance
+already	O
+operate	B-treatment
+అయినా	O
+తరువాత	O
+reoccurance	B-medical_condition
+వచ్చినాయి	O
+అంటే	O
+మళ్ళి	B-body_part
+stone	B-body_substance
+formation	B-medical_condition
+అవుతుంది.	O
+}
+

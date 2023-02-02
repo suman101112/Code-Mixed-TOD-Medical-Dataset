@@ -1,0 +1,283 @@
+{\intent	p: జలుబు చేస్తాంది sir దగ్గులేసి	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+చేస్తాంది	O
+sir	O
+దగ్గులేసి	B-symptom
+}
+
+{\intent	d: పేరు, మొదల్ల పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు,	O
+మొదల్ల	O
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: నా పేరు Srinivaasulu	ANSWER}
+{\slot
+నా	O
+పేరు	O
+Srinivaasulu	B-name
+}
+
+{\intent	d: Srinivaasulu	ACK}
+{\slot
+Srinivaasulu	B-name
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: age 70 ఉంటాయి sir	ANSWER}
+{\slot
+age	O
+70	B-age
+ఉంటాయి	O
+sir	O
+}
+
+{\intent	d: 70	ACK}
+{\slot
+70	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: problem ఏంటి?	INFO_REQUEST}
+{\slot
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p: గొంతు అంతా మండుతుంది. లోపల దగ్గు లేసి తెమడ వస్తోంది. 10 రోజులు అయితాంది. తగ్గుత లేదు.	ANSWER}
+{\slot
+గొంతు	B-body_part
+అంతా	O
+మండుతుంది.	B-symptom
+లోపల	O
+దగ్గు	B-symptom
+లేసి	O
+తెమడ	B-symptom
+వస్తోంది.	O
+10	B-time_period
+రోజులు	I-time_period
+అయితాంది.	O
+తగ్గుత	B-normal
+లేదు.	B-negative
+}
+
+{\intent	d: జ్వరం ఉందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: లేదు	ANSWER}
+{\slot
+లేదు	B-negative
+}
+
+{\intent	p: జ్వరం లేదు	ANSWER}
+{\slot
+జ్వరం	B-symptom
+లేదు	B-negative
+}
+
+{\intent	d: మాట మారిందా?	INFO_REQUEST}
+{\slot
+మాట	B-bodily_process
+మారిందా?	B-symptom
+}
+
+{\intent	p: ఆ కొంచెం మారింది.	ANSWER}
+{\slot
+ఆ	B-positive
+కొంచెం	B-intensity
+మారింది.	B-symptom
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇదంతా మంట?	INFO_REQUEST}
+{\slot
+ఇదంతా	O
+మంట?	B-symptom
+}
+
+{\intent	p: మంటొస్తాంది	ANSWER}
+{\slot
+మంటొస్తాంది	B-symptom
+}
+
+{\intent	d: దగ్గు	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+}
+
+{\intent	p: ఉబ్బుతాంది, దగ్గేవరకు ఉబ్బుతాంది.	STATEMENT}
+{\slot
+ఉబ్బుతాంది,	B-symptom
+దగ్గేవరకు	B-symptom
+ఉబ్బుతాంది.	B-symptom
+}
+
+{\intent	p: 10 రోజుల నుంచెల్లి ఇది.	STATEMENT}
+{\slot
+10	B-time_period
+రోజుల	I-time_period
+నుంచెల్లి	O
+ఇది.	O
+}
+
+{\intent	d: శ్వాస.	ACTION_DIR}
+{\slot
+శ్వాస.	B-bodily_process
+}
+
+{\intent	d: రాత్రిపూట దమ్ము దగ్గు బాగా వస్తుందా?	INFO_REQUEST}
+{\slot
+రాత్రిపూట	B-time_period
+దమ్ము	B-medical_condition
+దగ్గు	B-symptom
+బాగా	B-intensity
+వస్తుందా?	O
+}
+
+{\intent	p: ఆ, నిద్రపోతలేను అసలైతే	ANSWER}
+{\slot
+ఆ,	B-positive
+నిద్రపోతలేను	B-symptom
+అసలైతే	O
+}
+
+{\intent	p1: దగ్గినప్పుడు	STATEMENT}
+{\slot
+దగ్గినప్పుడు	B-symptom
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: జ్వరం ఉందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: జ్వరం ఏం లేదు కదా sir.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+ఏం	O
+లేదు	B-negative
+కదా	O
+sir.	O
+}
+
+{\intent	d: జ్వరం అయితే లేదు కదా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+అయితే	O
+లేదు	B-negative
+కదా?	O
+}
+
+{\intent	p1: లేదు. ఆ దగ్గినప్పుడే	ANSWER}
+{\slot
+లేదు.	B-negative
+ఆ	O
+దగ్గినప్పుడే	B-symptom
+}
+
+{\intent	d: శ్వాస	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+}
+
+{\intent	p: అదే గుర్రు అలా	STATEMENT}
+{\slot
+అదే	O
+గుర్రు	B-symptom
+అలా	O
+}
+
+{\intent	p: పచ్చగా తేమడ పడతాంది	STATEMENT}
+{\slot
+పచ్చగా	B-color
+తేమడ	B-symptom
+పడతాంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దగ్గి దగ్గి దగ్గి 10 రోజుల నుండి అవస్థ అయితాంది.	STATEMENT}
+{\slot
+దగ్గి	B-symptom
+దగ్గి	B-symptom
+దగ్గి	B-symptom
+10	B-time_period
+రోజుల	I-time_period
+నుండి	O
+అవస్థ	B-symptom
+అయితాంది.	O
+}
+
+{\intent	p1: దగ్గు అంటే 10 నిమిషాలకు వస్తాంది sir వచ్చినప్పుడల్లా.	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+అంటే	O
+10	B-time_period
+నిమిషాలకు	I-time_period
+వస్తాంది	O
+sir	O
+వచ్చినప్పుడల్లా.	O
+}
+
+{\intent	d: bp sugar ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఆ ఉంది sir.	ANSWER}
+{\slot
+ఆ	O
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	p1: ఆ, bp sugar ఉంది	REPEAT_REPHRASE}
+{\slot
+ఆ,	O
+bp	B-medical_condition
+sugar	B-medical_condition
+ఉంది	B-positive
+}
+
+{\intent	p: bp sugar రెండును.	REPEAT_REPHRASE}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+రెండును.	O
+}
+

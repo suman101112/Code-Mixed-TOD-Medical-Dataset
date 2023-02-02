@@ -1,0 +1,262 @@
+{\intent	d: ఏం పెరమ్మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పెరమ్మా?	O
+}
+
+{\intent	p1: Deeksha Saayini	ANSWER}
+{\slot
+Deeksha	B-name
+Saayini	I-name
+}
+
+{\intent	d: Deeksha Saayini	ACK}
+{\slot
+Deeksha	B-name
+Saayini	I-name
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎంత వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p1: 3	ANSWER}
+{\slot
+3	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	p1: పాపకు fits లాగా ఉంది	STATEMENT}
+{\slot
+పాపకు	B-person
+fits	B-medical_condition
+లాగా	O
+ఉంది	O
+}
+
+{\intent	d: చెప్తా, చెప్తా	COMMIT}
+{\slot
+చెప్తా,	O
+చెప్తా	O
+}
+
+{\intent	d: ఇది మొదటి సారి నా? రెండో సారా	INFO_REQUEST}
+{\slot
+ఇది	O
+మొదటి	B-quantity
+సారి	O
+నా?	O
+రెండో	B-quantity
+సారా	O
+}
+
+{\intent	p1: అంటే?	SNU}
+{\slot
+అంటే?	O
+}
+
+{\intent	d: fits ఎన్నిసార్లు వచ్చినాయి?	INFO_REQUEST}
+{\slot
+fits	B-medical_condition
+ఎన్నిసార్లు	B-frequency
+వచ్చినాయి?	O
+}
+
+{\intent	p1: fits ఈమెకు fits అంటే మొత్తం కింద పడదు.	STATEMENT}
+{\slot
+fits	B-medical_condition
+ఈమెకు	O
+fits	B-medical_condition
+అంటే	O
+మొత్తం	O
+కింద	B-symptom
+పడదు.	I-symptom
+}
+
+{\intent	p1: 1 second అట్ల చూస్తది.	STATEMENT}
+{\slot
+1	B-time_period
+second	I-time_period
+అట్ల	O
+చూస్తది.	B-bodily_process
+}
+
+{\intent	d: ఇట్ల fits అంటే చాలా రకాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇట్ల	O
+fits	B-medical_condition
+అంటే	O
+చాలా	O
+రకాలు	O
+ఉంటాయి.	O
+}
+
+{\intent	d: ఇట్ల suddenగా చూస్తుంటారు	MEDICAL_EXPLANATION}
+{\slot
+ఇట్ల	O
+suddenగా	B-bodily_process
+చూస్తుంటారు	I-bodily_process
+}
+
+{\intent	p: ఆ, అట్లానే చూసుకుంది.	ACK}
+{\slot
+ఆ,	O
+అట్లానే	O
+చూసుకుంది.	B-bodily_process
+}
+
+{\intent	d: 3 సెకన్ల కంటే ఎక్కువ ఉండదు.	MEDICAL_EXPLANATION}
+{\slot
+3	B-time_period
+సెకన్ల	I-time_period
+కంటే	O
+ఎక్కువ	B-intensity
+ఉండదు.	B-negative
+}
+
+{\intent	d: రోజు ఎన్ని సార్లు వస్తుంది	INFO_REQUEST}
+{\slot
+రోజు	B-time_period
+ఎన్ని	O
+సార్లు	B-frequency
+వస్తుంది	O
+}
+
+{\intent	d: EEG పెట్టు ఇక్కడ	ACTION_DIR}
+{\slot
+EEG	B-mtest
+పెట్టు	O
+ఇక్కడ	O
+}
+
+{\intent	d: నేను చూస్తా	COMMIT}
+{\slot
+నేను	O
+చూస్తా	O
+}
+
+{\intent	p1: చాలా సార్లే వస్తుంది	ANSWER}
+{\slot
+చాలా	B-intensity
+సార్లే	B-frequency
+వస్తుంది	O
+}
+
+{\intent	d: అంటే రోజుకు మొత్తం ఇలా అంటుందా jerk లాగా ?	INFO_REQUEST}
+{\slot
+అంటే	O
+రోజుకు	B-time_period
+మొత్తం	O
+ఇలా	O
+అంటుందా	O
+jerk	B-symptom
+లాగా	O
+?	O
+}
+
+{\intent	p1: ఆ అవును sir.	ANSWER}
+{\slot
+ఆ	O
+అవును	O
+sir.	O
+}
+
+{\intent	d: ఇట్ల	INFO_REQUEST}
+{\slot
+ఇట్ల	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: అట్ల అనుకుంట కూడా పనులు అన్నీ చేసుకుంటుంది.	STATEMENT}
+{\slot
+అట్ల	O
+అనుకుంట	O
+కూడా	O
+పనులు	O
+అన్నీ	O
+చేసుకుంటుంది.	O
+}
+
+{\intent	d: ఇవాళ మొత్తం కూడా ఎన్ని సార్లు వచ్చినాయి పొద్దటినుంచి?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+మొత్తం	O
+కూడా	O
+ఎన్ని	O
+సార్లు	B-frequency
+వచ్చినాయి	O
+పొద్దటినుంచి?	B-time_period
+}
+
+{\intent	p1: అంటే ఇవాళ 10 times అలా వచ్చినాయి morning నుంచి.	ANSWER}
+{\slot
+అంటే	O
+ఇవాళ	O
+10	B-frequency
+times	I-frequency
+అలా	O
+వచ్చినాయి	O
+morning	B-time_period
+నుంచి.	O
+}
+
+{\intent	d: ఇది Myoclonic jerks అంటారు.	STATEMENT}
+{\slot
+ఇది	O
+Myoclonic	B-medical_condition
+jerks	I-medical_condition
+అంటారు.	O
+}
+
+{\intent	p1: అంటే food ఏమైనా change?	INFO_REQUEST}
+{\slot
+అంటే	O
+food	B-food_substance
+ఏమైనా	O
+change?	O
+}
+
+{\intent	d: ఏం లేదు, అన్ని తినొచ్చు.	ANSWER}
+{\slot
+ఏం	O
+లేదు,	O
+అన్ని	O
+తినొచ్చు.	B-bodily_process
+}
+
+{\intent	p1: అన్నీ తినొచ్చా sir.	ACK}
+{\slot
+అన్నీ	O
+తినొచ్చా	B-bodily_process
+sir.	O
+}
+
+{\intent	d: ఎప్పుడైనా ఇట్లాటి పిల్లలను ఒక్కలానే వదిలి పెట్టొద్దు first schoolకి పోయేటప్పుడు.	MEDICAL_EXPLANATION}
+{\slot
+ఎప్పుడైనా	O
+ఇట్లాటి	O
+పిల్లలను	B-person
+ఒక్కలానే	O
+వదిలి	O
+పెట్టొద్దు	O
+first	B-quantity
+schoolకి	B-place
+పోయేటప్పుడు.	O
+}
+

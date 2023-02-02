@@ -1,0 +1,181 @@
+{\intent	d: ఎన్ని రోజులమ్మా పాప పుట్టి	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులమ్మా	B-time_period
+పాప	B-person
+పుట్టి	B-bodily_process
+}
+
+{\intent	p1: hmm?	SNU}
+{\slot
+hmm?	O
+}
+
+{\intent	d: ఎన్ని రోజులు పుట్టి	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+పుట్టి	B-bodily_process
+}
+
+{\intent	p1: 4 నెలలు	ANSWER}
+{\slot
+4	B-age
+నెలలు	I-age
+}
+
+{\intent	d: 4వ నెల	ACK}
+{\slot
+4వ	B-age
+నెల	I-age
+}
+
+{\intent	p1: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: తల్లి పేరు చెప్పు	INFO_REQUEST}
+{\slot
+తల్లి	B-person
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p1: Rajita	ANSWER}
+{\slot
+Rajita	B-name
+}
+
+{\intent	d: ఏ hospitalలో పుట్టింది	INFO_REQUEST}
+{\slot
+ఏ	O
+hospitalలో	B-place
+పుట్టింది	B-bodily_process
+}
+
+{\intent	p1: వర్ధన్నపేట, government hospital లో	ANSWER}
+{\slot
+వర్ధన్నపేట,	B-place
+government	B-name
+hospital	I-name
+లో	O
+}
+
+{\intent	d: ఇప్పుడు దేనికోసం వచ్చావమ్మా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+దేనికోసం	O
+వచ్చావమ్మా?	O
+}
+
+{\intent	p1: బాగా దురద పెడుతుంది sir. దద్దుర్లు వస్తున్నాయి sir.	ANSWER}
+{\slot
+బాగా	B-intensity
+దురద	B-symptom
+పెడుతుంది	O
+sir.	O
+దద్దుర్లు	B-symptom
+వస్తున్నాయి	O
+sir.	O
+}
+
+{\intent	d: వదిలిపెట్టు	ACTION_DIR}
+{\slot
+వదిలిపెట్టు	O
+}
+
+{\intent	d: మీ ఇంట్లో మామూలుగా ఎంత మంది ఎత్తుకుంటారు ఇంట్లో	INFO_REQUEST}
+{\slot
+మీ	O
+ఇంట్లో	O
+మామూలుగా	O
+ఎంత	O
+మంది	O
+ఎత్తుకుంటారు	O
+ఇంట్లో	O
+}
+
+{\intent	d: పత్తి ఉందా ఇంట్లో?	INFO_REQUEST}
+{\slot
+పత్తి	O
+ఉందా	O
+ఇంట్లో?	O
+}
+
+{\intent	p1: పత్తి ఏం లేదు	ANSWER}
+{\slot
+పత్తి	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: మొత్తం ఎన్ని రోజులు అయింది రాబట్టి	INFO_REQUEST}
+{\slot
+మొత్తం	O
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది	O
+రాబట్టి	O
+}
+
+{\intent	p1: 6	ANSWER}
+{\slot
+6	B-quantity
+}
+
+{\intent	d: ఇంట్లో ఎత్తూకునే వాళ్ళకు ఎవరికైనా ఉందా?	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+ఎత్తూకునే	O
+వాళ్ళకు	O
+ఎవరికైనా	O
+ఉందా?	O
+}
+
+{\intent	p1: ఎవరికి లేదు గానీ, ఈమె ద్వారా నాకు వచ్చింది.	ANSWER}
+{\slot
+ఎవరికి	O
+లేదు	B-negative
+గానీ,	O
+ఈమె	O
+ద్వారా	O
+నాకు	O
+వచ్చింది.	O
+}
+
+{\intent	d: ఇంట్లో ఎవరికి లేదు.	ACK}
+{\slot
+ఇంట్లో	O
+ఎవరికి	O
+లేదు.	B-negative
+}
+
+{\intent	p1: ఎవరికి లేదు.	ACK}
+{\slot
+ఎవరికి	O
+లేదు.	B-negative
+}
+
+{\intent	p1: కొంచం నిద్రపోయేటప్పుడు బాగా గురక పెడుతుంది బాగా	STATEMENT}
+{\slot
+కొంచం	O
+నిద్రపోయేటప్పుడు	B-bodily_process
+బాగా	B-intensity
+గురక	B-bodily_process
+పెడుతుంది	O
+బాగా	O
+}
+
+{\intent	d: జలుబు ఉందా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+ఉందా	O
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p1: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+

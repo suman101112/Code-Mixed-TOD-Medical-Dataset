@@ -1,0 +1,294 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: D Ramulu sir	ANSWER}
+{\slot
+D	B-name
+Ramulu	I-name
+sir	O
+}
+
+{\intent	d: D Ramulu	ACK}
+{\slot
+D	B-name
+Ramulu	I-name
+}
+
+{\intent	d: age	INFO_REQUEST}
+{\slot
+age	O
+}
+
+{\intent	p: 47	ANSWER}
+{\slot
+47	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇది అన్నీ pain వస్తాయి sir	ANSWER}
+{\slot
+ఇది	O
+అన్నీ	O
+pain	B-symptom
+వస్తాయి	O
+sir	O
+}
+
+{\intent	d: ముఖమంతా నొప్పి.	ACK}
+{\slot
+ముఖమంతా	B-body_part
+నొప్పి.	B-symptom
+}
+
+{\intent	p: ఆ నొప్పి.	ACK}
+{\slot
+ఆ	O
+నొప్పి.	B-symptom
+}
+
+{\intent	d: ముక్కు నొప్పి వస్తుందా?	INFO_REQUEST}
+{\slot
+ముక్కు	B-body_part
+నొప్పి	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: ఇటు side అంతా నొప్పి ఉంది sir.	ANSWER}
+{\slot
+ఇటు	B-location
+side	I-location
+అంతా	I-location
+నొప్పి	B-symptom
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇక్కడ అంతా గుచ్చుకపోయినట్లు ఉంది sir. శ్వాస ఆడదు.	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+అంతా	I-location
+గుచ్చుకపోయినట్లు	B-symptom
+ఉంది	O
+sir.	O
+శ్వాస	B-bodily_process
+ఆడదు.	B-symptom
+}
+
+{\intent	p: తింటే ఒక్కొక్కసారి.	HOLD}
+{\slot
+తింటే	O
+ఒక్కొక్కసారి.	O
+}
+
+{\intent	d: తుమ్ములు, తుమ్ములు వస్తాయా బాగా?	INFO_REQUEST}
+{\slot
+తుమ్ములు,	B-symptom
+తుమ్ములు	B-symptom
+వస్తాయా	O
+బాగా?	B-intensity
+}
+
+{\intent	p: అప్పుడు వచ్చేవి sir. ఈ మధ్యనా వస్తలేదు.	ANSWER}
+{\slot
+అప్పుడు	B-time_period
+వచ్చేవి	B-positive
+sir.	O
+ఈ	B-time_period
+మధ్యనా	B-time_period
+వస్తలేదు.	B-negative
+}
+
+{\intent	d: ఇక్కడ అంతా ఇవన్నీ నొప్పులు	INFO_REQUEST}
+{\slot
+ఇక్కడ	B-location
+అంతా	I-location
+ఇవన్నీ	I-location
+నొప్పులు	B-symptom
+}
+
+{\intent	p: ఆ నొప్పులు	ANSWER}
+{\slot
+ఆ	B-positive
+నొప్పులు	B-symptom
+}
+
+{\intent	p: లోపట అన్నం తింటే ఒకసారి గుచ్చుకపోయినట్లు	STATEMENT}
+{\slot
+లోపట	B-location
+అన్నం	B-food_substance
+తింటే	B-bodily_process
+ఒకసారి	O
+గుచ్చుకపోయినట్లు	B-symptom
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: కడుపులో మంట గిట్ల ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+కడుపులో	B-body_part
+మంట	B-symptom
+గిట్ల	O
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: కడుపు మంట ఏం లేదు sir. మాములుగా	ANSWER}
+{\slot
+కడుపు	B-body_part
+మంట	B-symptom
+ఏం	O
+లేదు	B-negative
+sir.	O
+మాములుగా	O
+}
+
+{\intent	p: ఇగ కన్నులు అన్నీ నిద్ర వచ్చినట్లు గుంజుకపోతాయి లోపట లోపట sir, కండ్లు తిరుగుతాయి.	STATEMENT}
+{\slot
+ఇగ	O
+కన్నులు	B-body_part
+అన్నీ	O
+నిద్ర	B-bodily_process
+వచ్చినట్లు	O
+గుంజుకపోతాయి	B-symptom
+లోపట	O
+లోపట	O
+sir,	O
+కండ్లు	B-body_part
+తిరుగుతాయి.	B-symptom
+}
+
+{\intent	d: శ్వాస.	ACTION_DIR}
+{\slot
+శ్వాస.	B-bodily_process
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: వెనకకు	ACTION_DIR}
+{\slot
+వెనకకు	O
+}
+
+{\intent	p: <sound>	COMMIT}
+{\slot
+<sound>	O
+}
+
+{\intent	d: నరాల బలహీనత తప్ప వేరే ఏం లేదు.	DIAGNOSIS}
+{\slot
+నరాల	B-medical_condition
+బలహీనత	I-medical_condition
+తప్ప	O
+వేరే	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	p: అంతే అంటారా?	INFO_REQUEST}
+{\slot
+అంతే	O
+అంటారా?	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కండ్లు అన్నీ గుంజుకపోతాయి sir.	STATEMENT}
+{\slot
+కండ్లు	B-body_part
+అన్నీ	O
+గుంజుకపోతాయి	B-symptom
+sir.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: కారం తింటే కూడా ఘాటువి తింటే కూడా ఉక్కిరి బిక్కిరి అయితది sir,	STATEMENT}
+{\slot
+కారం	B-food_substance
+తింటే	B-bodily_process
+కూడా	O
+ఘాటువి	B-food_substance
+తింటే	B-bodily_process
+కూడా	O
+ఉక్కిరి	B-symptom
+బిక్కిరి	I-symptom
+అయితది	O
+sir,	O
+}
+
+{\intent	d: ok రాస్తున్నా	ACK}
+{\slot
+ok	O
+రాస్తున్నా	O
+}
+
+{\intent	p: ఘాటువి తింటే खत्म ఏ sir ఇవి కారం కావొచ్చు cool వి కావొచ్చు.	STATEMENT}
+{\slot
+ఘాటువి	B-food_substance
+తింటే	B-bodily_process
+खत्म	B-symptom
+ఏ	O
+sir	O
+ఇవి	O
+కారం	B-food_substance
+కావొచ్చు	O
+cool	B-food_substance
+వి	O
+కావొచ్చు.	O
+}
+
+{\intent	p: నరాల బలహీనత ఉందా sir?	INFO_REQUEST}
+{\slot
+నరాల	B-medical_condition
+బలహీనత	I-medical_condition
+ఉందా	O
+sir?	O
+}
+
+{\intent	d: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	p: thank you sir	CONV_CLOSE}
+{\slot
+thank	O
+you	O
+sir	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+

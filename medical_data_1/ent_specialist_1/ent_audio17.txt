@@ -1,0 +1,201 @@
+{\intent	d: నీ పేరు ఏంటి? bikshapati కదా	INFO_REQUEST}
+{\slot
+నీ	O
+పేరు	O
+ఏంటి?	O
+bikshapati	B-name
+కదా	O
+}
+
+{\intent	p: ఆ sir.	ANSWER}
+{\slot
+ఆ	O
+sir.	O
+}
+
+{\intent	d: bikshapati name.	STATEMENT}
+{\slot
+bikshapati	B-name
+name.	O
+}
+
+{\intent	d: 70	STATEMENT}
+{\slot
+70	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఈ పుండు ఎన్ని రోజుల నుంచి ఉన్నది.	INFO_REQUEST}
+{\slot
+ఈ	O
+పుండు	B-medical_condition
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉన్నది.	O
+}
+
+{\intent	p: 3 నెలలు అయింది sir.	ANSWER}
+{\slot
+3	B-time_period
+నెలలు	I-time_period
+అయింది	O
+sir.	O
+}
+
+{\intent	d: మళ్ళ ఎప్పుడు చెప్పలేదు నాకు మళ్ళి.	STATEMENT}
+{\slot
+మళ్ళ	O
+ఎప్పుడు	O
+చెప్పలేదు	O
+నాకు	O
+మళ్ళి.	O
+}
+
+{\intent	p: రాలేదు ఎప్పుడు రలేదు, ఈ జలుబు అయితుందని వచ్చిన sir.	STATEMENT}
+{\slot
+రాలేదు	B-negative
+ఎప్పుడు	O
+రలేదు,	B-negative
+ఈ	O
+జలుబు	B-medical_condition
+అయితుందని	O
+వచ్చిన	O
+sir.	O
+}
+
+{\intent	d: ఇలాంటివాటికి అశ్రద్ధ చేయొద్దు.	STATEMENT}
+{\slot
+ఇలాంటివాటికి	O
+అశ్రద్ధ	O
+చేయొద్దు.	O
+}
+
+{\intent	p: మామూలుగా కొంచమే ఉండే	STATEMENT}
+{\slot
+మామూలుగా	O
+కొంచమే	O
+ఉండే	O
+}
+
+{\intent	d: ఆ అది ఇగ మీరు పాన్లు గుట్కాలు గిట్ల బంద్ చేయాలి.	ACTION_DIR}
+{\slot
+ఆ	O
+అది	O
+ఇగ	O
+మీరు	O
+పాన్లు	B-habit
+గుట్కాలు	B-habit
+గిట్ల	O
+బంద్	O
+చేయాలి.	O
+}
+
+{\intent	p: ఆ sir.	COMMIT}
+{\slot
+ఆ	O
+sir.	O
+}
+
+{\intent	p: ఇప్పుడు మనం అయిన తరువాత అన్నం గిట్ల తినవచ్చా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+మనం	O
+అయిన	O
+తరువాత	B-time_period
+అన్నం	B-food_substance
+గిట్ల	O
+తినవచ్చా?	B-bodily_process
+}
+
+{\intent	d: ఆ తినవొచ్చు.	ANSWER}
+{\slot
+ఆ	B-positive
+తినవొచ్చు.	B-bodily_process
+}
+
+{\intent	p: నొప్పి గిట్ల ఏం ఉండదు కదా sir.	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+గిట్ల	O
+ఏం	O
+ఉండదు	B-negative
+కదా	O
+sir.	O
+}
+
+{\intent	d: ఏం ఉండదు.	ANSWER}
+{\slot
+ఏం	O
+ఉండదు.	B-negative
+}
+
+{\intent	d: చిన్న మాటు మందు ఇచ్చి తీసేస్తాను	STATEMENT}
+{\slot
+చిన్న	B-intensity
+మాటు	O
+మందు	B-medicine
+ఇచ్చి	O
+తీసేస్తాను	B-treatment
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	d: తీసి అది VBRకి ఇయాలే	STATEMENT}
+{\slot
+తీసి	O
+అది	O
+VBRకి	B-place
+ఇయాలే	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	d: report 4, 5 రోజులకి ఇస్తాడు.	STATEMENT}
+{\slot
+report	O
+4,	B-time_period
+5	B-time_period
+రోజులకి	I-time_period
+ఇస్తాడు.	O
+}
+
+{\intent	p: 4, 5 రోజుల తర్వాత నా.	INFO_REQUEST}
+{\slot
+4,	B-time_period
+5	B-time_period
+రోజుల	I-time_period
+తర్వాత	I-time_period
+నా.	O
+}
+
+{\intent	d: అది వచ్చిన తరువాత నేను ఏం చేయాలో చెప్తా నేను.	STATEMENT}
+{\slot
+అది	O
+వచ్చిన	O
+తరువాత	B-time_period
+నేను	O
+ఏం	O
+చేయాలో	O
+చెప్తా	O
+నేను.	O
+}
+
+{\intent	d: ok ఆ?	INFO_REQUEST}
+{\slot
+ok	O
+ఆ?	O
+}
+

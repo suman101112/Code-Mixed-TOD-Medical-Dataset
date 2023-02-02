@@ -1,0 +1,253 @@
+{\intent	d: Manasa	STATEMENT}
+{\slot
+Manasa	B-name
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 23	ANSWER}
+{\slot
+23	B-age
+}
+
+{\intent	d: నెల నెల correct ఉంటలేవు	STATEMENT}
+{\slot
+నెల	B-bodily_process
+నెల	I-bodily_process
+correct	B-normal
+ఉంటలేవు	B-negative
+}
+
+{\intent	p: umm.	ACK}
+{\slot
+umm.	B-positive
+}
+
+{\intent	d: ఎన్ని నెలలకొకసారి ఉంటావు?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+నెలలకొకసారి	B-time_period
+ఉంటావు?	O
+}
+
+{\intent	p: ఒక 2 నెలలు 3 నెలలు	STATEMENT}
+{\slot
+ఒక	O
+2	B-time_period
+నెలలు	I-time_period
+3	B-time_period
+నెలలు	I-time_period
+}
+
+{\intent	d: ఎప్పుడు అంతేనా 2 నెలల కోసారి ఉంటావా?	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+అంతేనా	O
+2	B-time_period
+నెలల	I-time_period
+కోసారి	O
+ఉంటావా?	O
+}
+
+{\intent	p: ఆ అప్పుడు ఒకసారి, 2 నెలలకొకసారి ఉంట	ANSWER}
+{\slot
+ఆ	B-positive
+అప్పుడు	B-time_period
+ఒకసారి,	O
+2	B-time_period
+నెలలకొకసారి	I-time_period
+ఉంట	O
+}
+
+{\intent	d: మామూలు గా routine గా ఎలా ఉంటావు?	INFO_REQUEST}
+{\slot
+మామూలు	O
+గా	O
+routine	O
+గా	O
+ఎలా	O
+ఉంటావు?	O
+}
+
+{\intent	p: నెల 15 రోజులు, 2 నెలలు	ANSWER}
+{\slot
+నెల	B-time_period
+15	B-time_period
+రోజులు,	I-time_period
+2	B-time_period
+నెలలు	I-time_period
+}
+
+{\intent	d: ఎప్పుడు timeకి అయితే ఉండవు.	INFO_REQUEST}
+{\slot
+ఎప్పుడు	O
+timeకి	B-time_period
+అయితే	O
+ఉండవు.	B-negative
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: అయినప్పుడు ఎన్ని రోజులు అయితది అమ్మ ఇలా.	INFO_REQUEST}
+{\slot
+అయినప్పుడు	B-bodily_process
+ఎన్ని	O
+రోజులు	B-time_period
+అయితది	O
+అమ్మ	B-person
+ఇలా.	O
+}
+
+{\intent	p: 5 days అయితది	ANSWER}
+{\slot
+5	B-time_period
+days	I-time_period
+అయితది	O
+}
+
+{\intent	d: నొప్పి ఉంటుందా అయినప్పుడు.	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉంటుందా	O
+అయినప్పుడు.	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: కొచ్చమే అయితది మైలా ఎక్కువ కాదు	INFO_REQUEST}
+{\slot
+కొచ్చమే	O
+అయితది	O
+మైలా	B-bodily_process
+ఎక్కువ	O
+కాదు	O
+}
+
+{\intent	p: మామూలుగా అయితది.	ANSWER}
+{\slot
+మామూలుగా	B-normal
+అయితది.	O
+}
+
+{\intent	d: మామూలుగా అయితది.	ACK}
+{\slot
+మామూలుగా	B-normal
+అయితది.	O
+}
+
+{\intent	d: పెళ్లి అయి ఎన్ని సంవత్సరాలు?	INFO_REQUEST}
+{\slot
+పెళ్లి	B-marital_status
+అయి	O
+ఎన్ని	O
+సంవత్సరాలు?	O
+}
+
+{\intent	p: 10 నెలలు అయితుంది.	ANSWER}
+{\slot
+10	B-time_period
+నెలలు	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: కాన్పు కోసం ప్రయత్నమా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+కాన్పు	B-medical_condition
+కోసం	O
+ప్రయత్నమా	O
+ఇప్పుడు?	O
+}
+
+{\intent	p1: ఆ అదే madam మరి 2 నెలలకు పైననే అయింది కదా	ANSWER}
+{\slot
+ఆ	O
+అదే	O
+madam	O
+మరి	O
+2	B-time_period
+నెలలకు	I-time_period
+పైననే	O
+అయింది	O
+కదా	O
+}
+
+{\intent	d: urine test చేయించుకున్నావా? కాన్పు అన్నారా?	INFO_REQUEST}
+{\slot
+urine	B-mtest
+test	I-mtest
+చేయించుకున్నావా?	O
+కాన్పు	B-medical_condition
+అన్నారా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	p: చేయించుకోలే madam	ANSWER}
+{\slot
+చేయించుకోలే	O
+madam	O
+}
+
+{\intent	d: అంతకు ముందు చూస్తే కాన్పు రాలేదా ఇప్పటికి	INFO_REQUEST}
+{\slot
+అంతకు	O
+ముందు	O
+చూస్తే	O
+కాన్పు	B-medical_condition
+రాలేదా	O
+ఇప్పటికి	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: నెల set చేసుకోడానికి వచ్చినవ్ ఇప్పుడు.	STATEMENT}
+{\slot
+నెల	B-bodily_process
+set	B-normal
+చేసుకోడానికి	O
+వచ్చినవ్	O
+ఇప్పుడు.	B-time_period
+}
+
+{\intent	p: umm.	ACK}
+{\slot
+umm.	B-positive
+}
+
+{\intent	p1: అదే madam కాన్పు అంటారా మరి ఏదన్న నా madam దెగ్గరికి పోతే తెలుస్తది అని.	STATEMENT}
+{\slot
+అదే	O
+madam	O
+కాన్పు	B-medical_condition
+అంటారా	O
+మరి	O
+ఏదన్న	O
+నా	O
+madam	O
+దెగ్గరికి	O
+పోతే	O
+తెలుస్తది	O
+అని.	O
+}
+

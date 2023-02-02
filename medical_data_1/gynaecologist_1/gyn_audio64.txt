@@ -1,0 +1,220 @@
+{\intent	p: నేను IVF చేయించాను madam ఈ 1 year back	STATEMENT}
+{\slot
+నేను	O
+IVF	B-treatment
+చేయించాను	O
+madam	O
+ఈ	O
+1	B-time_period
+year	I-time_period
+back	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే positive వచ్చింది madam, positive వచ్చి 2 months అట్లానే continue ఉంది heartbeat రాలేదు madam	STATEMENT}
+{\slot
+అయితే	O
+positive	B-mtest_value
+వచ్చింది	O
+madam,	O
+positive	B-mtest_value
+వచ్చి	O
+2	B-time_period
+months	I-time_period
+అట్లానే	O
+continue	B-normal
+ఉంది	O
+heartbeat	B-bodily_process
+రాలేదు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి 2nd time కూడా మళ్ళి IVF ఏ చేయించాము madam	STATEMENT}
+{\slot
+మళ్ళి	O
+2nd	B-frequency
+time	I-frequency
+కూడా	O
+మళ్ళి	O
+IVF	B-treatment
+ఏ	O
+చేయించాము	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: చెప్పిస్తే అప్పుడు కూడా positive ఏ వచ్చింది కానీ heartbeat లేదు ఏం లేదు madam	STATEMENT}
+{\slot
+చెప్పిస్తే	O
+అప్పుడు	B-time_period
+కూడా	O
+positive	B-mtest_value
+ఏ	O
+వచ్చింది	O
+కానీ	O
+heartbeat	B-bodily_process
+లేదు	B-negative
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: మళ్ళి both tubal block అని వచ్చింది madam	STATEMENT}
+{\slot
+మళ్ళి	O
+both	B-frequency
+tubal	B-body_part
+block	B-symptom
+అని	O
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకో solution ఏంటి మళ్ళి నాకు ఏం అర్ధం కావడం లేదు madam	STATEMENT}
+{\slot
+ఇంకో	O
+solution	O
+ఏంటి	O
+మళ్ళి	O
+నాకు	O
+ఏం	O
+అర్ధం	O
+కావడం	O
+లేదు	O
+madam	O
+}
+
+{\intent	d: ok, మీ age ఎంత అండి?	INFO_REQUEST}
+{\slot
+ok,	O
+మీ	O
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: age, 27 madam	ANSWER}
+{\slot
+age,	O
+27	B-age
+madam	O
+}
+
+{\intent	d: మీ husband ది ?	INFO_REQUEST}
+{\slot
+మీ	O
+husband	B-familal
+ది	O
+?	O
+}
+
+{\intent	p: ఆయన 28 ఉంటది	ANSWER}
+{\slot
+ఆయన	O
+28	B-age
+ఉంటది	O
+}
+
+{\intent	d: and మీ లో egg quality అంతా బానే ఉంది అన్నారా అండి IVF చేసినప్పుడు?	INFO_REQUEST}
+{\slot
+and	O
+మీ	O
+లో	O
+egg	B-body_part
+quality	B-mtest
+అంతా	O
+బానే	B-normal
+ఉంది	O
+అన్నారా	O
+అండి	O
+IVF	B-treatment
+చేసినప్పుడు?	O
+}
+
+{\intent	p: ఆ బానే ఉంది అన్నారు madam	STATEMENT}
+{\slot
+ఆ	O
+బానే	B-normal
+ఉంది	B-positive
+అన్నారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: embryo quality కూడా బాగుంది అన్నారా?	INFO_REQUEST}
+{\slot
+embryo	B-body_part
+quality	B-mtest
+కూడా	O
+బాగుంది	B-normal
+అన్నారా?	O
+}
+
+{\intent	p: ఆ అంతా బాగుంది, normal ఉంది అని చెప్పేసి అన్నారు madam	ANSWER}
+{\slot
+ఆ	O
+అంతా	O
+బాగుంది,	B-normal
+normal	B-normal
+ఉంది	O
+అని	O
+చెప్పేసి	O
+అన్నారు	O
+madam	O
+}
+
+{\intent	d: ok అండి, ok	ACK}
+{\slot
+ok	O
+అండి,	O
+ok	O
+}
+
+{\intent	d: 2 times abortion అయితుంది అన్నారు కాబట్టి ఒక్కసారి ఏం చేయండి అంటే మీ గర్భాశయంది hysteroscopy అనే procedure ఉంటుందన్నమాట	STATEMENT}
+{\slot
+2	B-frequency
+times	I-frequency
+abortion	B-symptom
+అయితుంది	O
+అన్నారు	O
+కాబట్టి	O
+ఒక్కసారి	O
+ఏం	O
+చేయండి	O
+అంటే	O
+మీ	O
+గర్భాశయంది	B-body_part
+hysteroscopy	B-mtest
+అనే	O
+procedure	O
+ఉంటుందన్నమాట	O
+}
+

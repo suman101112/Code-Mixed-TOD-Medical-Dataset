@@ -1,0 +1,149 @@
+{\intent	p: నమస్తే doctor గారు	GREETING}
+{\slot
+నమస్తే	O
+doctor	B-medical_professional
+గారు	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఇప్పుడు నాకు వారం రోజులకొకసారి headache వస్తుందండీ left side	STATEMENT}
+{\slot
+ఇప్పుడు	O
+నాకు	O
+వారం	B-time_period
+రోజులకొకసారి	B-time_period
+headache	B-symptom
+వస్తుందండీ	O
+left	B-location
+side	I-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వచ్చింది వాంతులయ్యి అయిపోతున్నాయండి	STATEMENT}
+{\slot
+వచ్చింది	O
+వాంతులయ్యి	B-symptom
+అయిపోతున్నాయండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: night తెల్లవార్లు headache అంతా విపరీతం వచ్చేస్తూ ఉంటది	STATEMENT}
+{\slot
+night	B-time_period
+తెల్లవార్లు	B-time_period
+headache	B-symptom
+అంతా	O
+విపరీతం	B-intensity
+వచ్చేస్తూ	O
+ఉంటది	B-time_period
+}
+
+{\intent	p: head అంతా బుర్ర అంతా వెనక నుంచి	STATEMENT}
+{\slot
+head	B-body_part
+అంతా	B-location
+బుర్ర	B-body_part
+అంతా	B-location
+వెనక	B-location
+నుంచి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: medicines వాడుతున్నారా అండి?	INFO_REQUEST}
+{\slot
+medicines	B-medicine
+వాడుతున్నారా	O
+అండి?	O
+}
+
+{\intent	p: ఏమండి?	SNU}
+{\slot
+ఏమండి?	O
+}
+
+{\intent	d: medicines వాడుతున్నారా, ఏమన్నా medicines వాడుతున్నారా?	REPEAT_REPHRASE}
+{\slot
+medicines	B-medicine
+వాడుతున్నారా,	O
+ఏమన్నా	O
+medicines	B-medicine
+వాడుతున్నారా?	O
+}
+
+{\intent	p: ఆ medicines english మందులు వాడుతున్నాం అండి.	ANSWER}
+{\slot
+ఆ	O
+medicines	B-medicine
+english	B-medicine
+మందులు	I-medicine
+వాడుతున్నాం	O
+అండి.	O
+}
+
+{\intent	p: neuro surgeonకి చూపించాను, తగ్గలేదు, అండి	STATEMENT}
+{\slot
+neuro	B-medical_professional
+surgeonకి	I-medical_professional
+చూపించాను,	O
+తగ్గలేదు,	O
+అండి	O
+}
+
+{\intent	p: 8 months నుంచి వాడుతున్నాము అండి.	STATEMENT}
+{\slot
+8	B-time_period
+months	I-time_period
+నుంచి	O
+వాడుతున్నాము	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ evening నుంచి తగ్గుతుంది అండి మళ్ళి ఆ tablets వేసుకుంటే	STATEMENT}
+{\slot
+ఆ	O
+evening	B-time_period
+నుంచి	O
+తగ్గుతుంది	B-normal
+అండి	O
+మళ్ళి	O
+ఆ	O
+tablets	B-medicine
+వేసుకుంటే	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: చాలా irregularగా 10 రోజులకొకసారి వచ్చేస్తుందండి.	STATEMENT}
+{\slot
+చాలా	B-intensity
+irregularగా	O
+10	B-time_period
+రోజులకొకసారి	I-time_period
+వచ్చేస్తుందండి.	O
+}
+

@@ -1,0 +1,78 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 60, m	ANSWER}
+{\slot
+60,	B-age
+m	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: పాదాల దగ్గర బాగా గోకుడు అయితాంది. నల్లగా అయితాంది. 10 days నుంచి బాగా అవస్థ అయితాంది.	ANSWER}
+{\slot
+పాదాల	B-body_part
+దగ్గర	I-body_part
+బాగా	B-symptom
+గోకుడు	I-symptom
+అయితాంది.	I-symptom
+నల్లగా	B-symptom
+అయితాంది.	I-symptom
+10	B-time_period
+days	I-time_period
+నుంచి	I-time_period
+బాగా	B-symptom
+అవస్థ	I-symptom
+అయితాంది.	I-symptom
+}
+
+{\intent	p: సన్నగా పొక్కులు లాగా వచ్చి దురద పెడుతుంది. 10 days నుంచి బాగా దురద పెడుతుంది.	STATEMENT}
+{\slot
+సన్నగా	B-symptom
+పొక్కులు	I-symptom
+లాగా	I-symptom
+వచ్చి	I-symptom
+దురద	B-symptom
+పెడుతుంది.	I-symptom
+10	B-time_period
+days	I-time_period
+నుంచి	I-time_period
+బాగా	B-symptom
+దురద	I-symptom
+పెడుతుంది.	I-symptom
+}
+
+{\intent	d: ఎక్కడ ఉంది గోకుడు?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+ఉంది	O
+గోకుడు?	B-symptom
+}
+
+{\intent	p: కాళ్లకు, తొడలకు, కడుపుకు, ఉంది గోకుడు.	ANSWER}
+{\slot
+కాళ్లకు,	B-body_part
+తొడలకు,	B-body_part
+కడుపుకు,	B-body_part
+ఉంది	B-symptom
+గోకుడు.	I-symptom
+}
+
+{\intent	d: ఇంకా ఎక్కడైనా ఉందా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+ఎక్కడైనా	O
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+

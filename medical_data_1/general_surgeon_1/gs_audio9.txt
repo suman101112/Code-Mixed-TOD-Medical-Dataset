@@ -1,0 +1,298 @@
+{\intent	p: Hello.	SU}
+{\slot
+Hello.	O
+}
+
+{\intent	d: నమస్కారం Harish గారు.	GREETING}
+{\slot
+నమస్కారం	O
+Harish	B-name
+గారు.	O
+}
+
+{\intent	p: sir నమస్కారం sir.	GREETING}
+{\slot
+sir	O
+నమస్కారం	O
+sir.	O
+}
+
+{\intent	d: నమస్కారం	GREETING}
+{\slot
+నమస్కారం	O
+}
+
+{\intent	d: చెప్పండి ఏంటి మీ సమస్య.	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+మీ	O
+సమస్య.	O
+}
+
+{\intent	p: sir నాకు problem ఏమంటే sir నాకు మొన్ననే ఓ 3 months కింద sugar వచ్చింది అండి.	ANSWER}
+{\slot
+sir	O
+నాకు	O
+problem	O
+ఏమంటే	O
+sir	O
+నాకు	O
+మొన్ననే	B-time_period
+ఓ	O
+3	B-time_period
+months	I-time_period
+కింద	O
+sugar	B-medical_condition
+వచ్చింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే actually నేను metformin 500 tablet తీసుకుంటున్నను.	STATEMENT}
+{\slot
+అయితే	O
+actually	O
+నేను	O
+metformin	B-medicine
+500	B-medicine_dose
+tablet	B-medicine
+తీసుకుంటున్నను.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ tablet తీసుకున్నప్పుడల్లా ఏమైతుందంటే కడుపు మొత్తం ఇట్ల gas లాగా అయిపోయి ఉబ్బిపోతుంది, అండి.	STATEMENT}
+{\slot
+ఆ	O
+tablet	B-medicine
+తీసుకున్నప్పుడల్లా	O
+ఏమైతుందంటే	O
+కడుపు	B-body_part
+మొత్తం	B-location
+ఇట్ల	O
+gas	B-medical_condition
+లాగా	O
+అయిపోయి	O
+ఉబ్బిపోతుంది,	B-symptom
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానివల్ల కొంచం నేను ఇబ్బంది పడుతున్నాను sir.	STATEMENT}
+{\slot
+దానివల్ల	O
+కొంచం	O
+నేను	O
+ఇబ్బంది	B-symptom
+పడుతున్నాను	O
+sir.	O
+}
+
+{\intent	d: ఇది sugar ఎంత ఉంది మీది?	INFO_REQUEST}
+{\slot
+ఇది	O
+sugar	B-medical_condition
+ఎంత	O
+ఉంది	O
+మీది?	O
+}
+
+{\intent	p: starting range 340 ఉండే అండి.	ANSWER}
+{\slot
+starting	O
+range	O
+340	B-mtest_value
+ఉండే	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 340 ఉంది.	REPEAT_REPHRASE}
+{\slot
+340	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు కొంచం control చేసుకున్నప్పుడు 120 అయితుంది అండి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+కొంచం	O
+control	B-normal
+చేసుకున్నప్పుడు	O
+120	B-mtest_value
+అయితుంది	O
+అండి.	O
+}
+
+{\intent	d: ok. right.	ACK}
+{\slot
+ok.	O
+right.	O
+}
+
+{\intent	p: కానీ ఏమైతుంది అంటే ఇగ ఆ tablet తిన్నప్పటినుంచి problem ఏమైతుంది అంటే, ఆ tablet తిన్న ఒక గంట రెండు గంటలు మాత్రం అవస్థ పడాల్సి వస్తుంది నాకు కొంచం stomach tight అయిపోవడం.	STATEMENT}
+{\slot
+కానీ	O
+ఏమైతుంది	O
+అంటే	O
+ఇగ	O
+ఆ	O
+tablet	B-medicine
+తిన్నప్పటినుంచి	O
+problem	O
+ఏమైతుంది	O
+అంటే,	O
+ఆ	O
+tablet	B-medicine
+తిన్న	O
+ఒక	B-time_period
+గంట	I-time_period
+రెండు	B-time_period
+గంటలు	I-time_period
+మాత్రం	O
+అవస్థ	B-symptom
+పడాల్సి	O
+వస్తుంది	O
+నాకు	O
+కొంచం	O
+stomach	B-body_part
+tight	B-symptom
+అయిపోవడం.	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: gas గానీ వెళ్ళిపోవడం అలాంటివి.	STATEMENT}
+{\slot
+gas	B-medical_condition
+గానీ	O
+వెళ్ళిపోవడం	B-symptom
+అలాంటివి.	O
+}
+
+{\intent	d: ok Harish గారు ఇంకా?	INFO_REQUEST}
+{\slot
+ok	O
+Harish	B-name
+గారు	O
+ఇంకా?	O
+}
+
+{\intent	p: కడుపు ఉబ్బి, పోతుంది.	ANSWER}
+{\slot
+కడుపు	B-body_part
+ఉబ్బి,	B-symptom
+పోతుంది.	I-symptom
+}
+
+{\intent	d: ఇంకేమన్నా ఉందా సమస్య?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+ఉందా	O
+సమస్య?	O
+}
+
+{\intent	p: ఏం లేదు sir. ఇదే.	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+sir.	O
+ఇదే.	O
+}
+
+{\intent	d: ok Harish గారు metformin 500 వేస్తున్నారు కదా. ఇది generalగా ఏందంటే diabetes లో వాడే చాలా commonగా ఉన్న tablet అన్న మాట.	MEDICAL_EXPLANATION}
+{\slot
+ok	O
+Harish	O
+గారు	O
+metformin	B-medicine
+500	B-medicine_dose
+వేస్తున్నారు	O
+కదా.	O
+ఇది	O
+generalగా	O
+ఏందంటే	O
+diabetes	B-medical_condition
+లో	O
+వాడే	O
+చాలా	O
+commonగా	O
+ఉన్న	O
+tablet	B-medicine
+అన్న	O
+మాట.	O
+}
+
+{\intent	d: అంటే మనం sugar మనం చేసుకున్నాప్పుడు ఒక 253 నుంచి 500 గానీ ఉన్నప్పుడు just ఆ 500 mg కానీ లేదంటే 500 mg తో పాటు ఇంకో 100 mg tablet ఇస్తా ఉంటారు అన్నమాట. ఆ tablet అనేది అందరికీ పడదు ఆ metformin అది, ఇలా పడనప్పుడు చిన్నగా ఇలా gas trouble లాగా వస్తా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+మనం	O
+sugar	B-medical_condition
+మనం	O
+చేసుకున్నాప్పుడు	O
+ఒక	O
+253	B-mtest_value
+నుంచి	O
+500	B-medicine_dose
+గానీ	O
+ఉన్నప్పుడు	O
+just	O
+ఆ	O
+500	B-medicine_dose
+mg	I-medicine_dose
+కానీ	O
+లేదంటే	O
+500	B-medicine_dose
+mg	I-medicine_dose
+తో	O
+పాటు	O
+ఇంకో	O
+100	B-medicine_dose
+mg	I-medicine_dose
+tablet	B-medicine
+ఇస్తా	O
+ఉంటారు	O
+అన్నమాట.	O
+ఆ	O
+tablet	B-medicine
+అనేది	O
+అందరికీ	O
+పడదు	O
+ఆ	O
+metformin	B-medicine
+అది,	O
+ఇలా	O
+పడనప్పుడు	O
+చిన్నగా	O
+ఇలా	O
+gas	B-medical_condition
+trouble	I-medical_condition
+లాగా	O
+వస్తా	O
+ఉంటది.	O
+}
+

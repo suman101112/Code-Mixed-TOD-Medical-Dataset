@@ -1,0 +1,131 @@
+{\intent	p: doctor గారు Deepavali రోజున టపాసులు కల్చేటప్పుడు కళ్ళను ఎలా సంరక్షించుకోవాలో తెలియచేయండి.	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+Deepavali	B-time_period
+రోజున	I-time_period
+టపాసులు	O
+కల్చేటప్పుడు	O
+కళ్ళను	B-body_part
+ఎలా	O
+సంరక్షించుకోవాలో	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: పెద్దవాళ్ళైనా చిన్న పిల్లలన్నా protective glasses పెట్టుకోవాలి.	ANSWER}
+{\slot
+పెద్దవాళ్ళైనా	O
+చిన్న	O
+పిల్లలన్నా	O
+protective	O
+glasses	O
+పెట్టుకోవాలి.	O
+}
+
+{\intent	d: ఈ glasses ఎందుకు పెట్టుకోవాలి అంటే కొన్ని సార్లు ఈ crakers suddenగా burst అవుతాయి	STATEMENT}
+{\slot
+ఈ	O
+glasses	O
+ఎందుకు	O
+పెట్టుకోవాలి	O
+అంటే	O
+కొన్ని	O
+సార్లు	O
+ఈ	O
+crakers	O
+suddenగా	O
+burst	O
+అవుతాయి	O
+}
+
+{\intent	d: ఇవి controlగా burst అవ్వవు.	STATEMENT}
+{\slot
+ఇవి	O
+controlగా	O
+burst	O
+అవ్వవు.	O
+}
+
+{\intent	d: చిచ్చుబుడ్డి ఉండే అది suddenగా కాలుస్తూ ఉన్నాము దెగ్గరగా వెళ్ళి కలుస్తూ ఉంటారు.	STATEMENT}
+{\slot
+చిచ్చుబుడ్డి	O
+ఉండే	O
+అది	O
+suddenగా	O
+కాలుస్తూ	O
+ఉన్నాము	O
+దెగ్గరగా	O
+వెళ్ళి	O
+కలుస్తూ	O
+ఉంటారు.	O
+}
+
+{\intent	d: ఆ suddenగా అది కొన్నిసార్లు uncontrolableగా blast అయింది అంటే అది కంట్లో పడుతుంది	STATEMENT}
+{\slot
+ఆ	O
+suddenగా	O
+అది	O
+కొన్నిసార్లు	O
+uncontrolableగా	O
+blast	O
+అయింది	O
+అంటే	O
+అది	O
+కంట్లో	B-body_part
+పడుతుంది	O
+}
+
+{\intent	d: కంట్లో పడింది అంటే అది severe injury అయిపోయే అవకాశం ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+కంట్లో	B-body_part
+పడింది	O
+అంటే	O
+అది	O
+severe	B-trauma
+injury	I-trauma
+అయిపోయే	O
+అవకాశం	O
+ఉంటది.	O
+}
+
+{\intent	d: నల్ల గుడ్డు damage అయి. నల్ల గుడ్డు perforation అయింది అంటే పెద్ద major problem అది.	MEDICAL_EXPLANATION}
+{\slot
+నల్ల	B-color
+గుడ్డు	B-body_part
+damage	B-symptom
+అయి.	O
+నల్ల	B-color
+గుడ్డు	B-body_part
+perforation	B-symptom
+అయింది	O
+అంటే	O
+పెద్ద	O
+major	O
+problem	O
+అది.	O
+}
+
+{\intent	d: దీనికి మనం prevention చాలా బాగా తీసుకోవాల్సి ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+దీనికి	O
+మనం	O
+prevention	O
+చాలా	O
+బాగా	B-intensity
+తీసుకోవాల్సి	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఆ జగ్రత్తలే తీసుకోవాల్సింది important కళ్ళ అద్దాలు పెట్టుకోవడం. protection glasses.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+జగ్రత్తలే	O
+తీసుకోవాల్సింది	O
+important	O
+కళ్ళ	B-body_part
+అద్దాలు	O
+పెట్టుకోవడం.	O
+protection	O
+glasses.	O
+}
+

@@ -1,0 +1,119 @@
+{\intent	p: doctor గారు నా వయస్సు 39 సంవత్సరాలు .	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	B-time_period
+39	B-age
+సంవత్సరాలు	B-age
+.	O
+}
+
+{\intent	p: నా కంటి కింద eye bags లాగా వస్తున్నాయి.	STATEMENT}
+{\slot
+నా	O
+కంటి	B-body_part
+కింద	B-location
+eye	B-body_part
+bags	I-body_part
+లాగా	O
+వస్తున్నాయి.	B-symptom
+}
+
+{\intent	p: అవి ఎందుకు వస్తున్నాయి.	INFO_REQUEST}
+{\slot
+అవి	O
+ఎందుకు	O
+వస్తున్నాయి.	O
+}
+
+{\intent	p: అసలు ఇవి తగ్గించడానికి ఏమైనా drops గానీ surgery కానీ ఉన్నాయా?	INFO_REQUEST}
+{\slot
+అసలు	O
+ఇవి	O
+తగ్గించడానికి	O
+ఏమైనా	O
+drops	B-medicine
+గానీ	O
+surgery	B-treatment
+కానీ	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: eyebags లాంటివి కంటికింద అంటే కొంచం ఉబ్బెత్తుగా, ఉండడం అనేది ఇవి geneticalగా కొంతమందిలో early ageలో అనేది 39 years కి రావడం అనేది కొంచం అరుదుగానే వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+eyebags	B-body_part
+లాంటివి	O
+కంటికింద	B-body_part
+అంటే	O
+కొంచం	O
+ఉబ్బెత్తుగా,	B-symptom
+ఉండడం	O
+అనేది	O
+ఇవి	O
+geneticalగా	O
+కొంతమందిలో	O
+early	O
+ageలో	O
+అనేది	O
+39	B-age
+years	I-age
+కి	O
+రావడం	O
+అనేది	O
+కొంచం	O
+అరుదుగానే	O
+వస్తుంది.	O
+}
+
+{\intent	d: సాధారనంగా 50 60 age దాటినాక wrinkles లాంటివి అన్నమాట అవ్వడం జరుగుతూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+సాధారనంగా	O
+50	B-age
+60	B-age
+age	I-age
+దాటినాక	O
+wrinkles	B-symptom
+లాంటివి	O
+అన్నమాట	O
+అవ్వడం	O
+జరుగుతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఇంత ageలో వచ్చింది అంటే maybe కొంచం skin మీద already sag అయ్యి ఉండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+ఇంత	O
+ageలో	O
+వచ్చింది	O
+అంటే	O
+maybe	O
+కొంచం	O
+skin	B-body_part
+మీద	B-location
+already	O
+sag	B-symptom
+అయ్యి	O
+ఉండొచ్చు.	O
+}
+
+{\intent	d: వీటికి medicines లాంటివి ఏం ఉండవు.	MEDICAL_EXPLANATION}
+{\slot
+వీటికి	O
+medicines	B-medicine
+లాంటివి	O
+ఏం	O
+ఉండవు.	O
+}
+
+{\intent	d: వీటికి blepharoplasty అట్ల కొన్ని surgical methods ఉన్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+వీటికి	O
+blepharoplasty	B-treatment
+అట్ల	O
+కొన్ని	O
+surgical	B-treatment
+methods	I-treatment
+ఉన్నాయి.	O
+}
+

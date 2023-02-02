@@ -1,0 +1,233 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: ఏంటండీ.	SNU}
+{\slot
+ఏంటండీ.	O
+}
+
+{\intent	d: పేరు	INFO_REQUEST}
+{\slot
+పేరు	O
+}
+
+{\intent	p: Raani, Uma Raani.	ANSWER}
+{\slot
+Raani,	B-name
+Uma	B-name
+Raani.	I-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	d: 45	INFO_REQUEST}
+{\slot
+45	B-age
+}
+
+{\intent	p: 44 అండి.	ANSWER}
+{\slot
+44	B-age
+అండి.	O
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: జలుబు అంటే frequentగా వస్తుంది అండి. చాలా వస్తుంది.	ANSWER}
+{\slot
+జలుబు	B-medical_condition
+అంటే	O
+frequentగా	O
+వస్తుంది	O
+అండి.	O
+చాలా	B-intensity
+వస్తుంది.	O
+}
+
+{\intent	p1: అసలు ఆ medicines వాడితే మొత్తం	HOLD}
+{\slot
+అసలు	O
+ఆ	O
+medicines	B-medicine
+వాడితే	O
+మొత్తం	O
+}
+
+{\intent	p: అసలు మొత్తం నిద్రపోయినట్లే ఉంది.	STATEMENT}
+{\slot
+అసలు	O
+మొత్తం	O
+నిద్రపోయినట్లే	B-bodily_process
+ఉంది.	O
+}
+
+{\intent	p1: complete	STATEMENT}
+{\slot
+complete	O
+}
+
+{\intent	p: 10 days నిద్రపోయినట్లే , 10 days ఏ వాడను.	STATEMENT}
+{\slot
+10	B-time_period
+days	I-time_period
+నిద్రపోయినట్లే	B-bodily_process
+,	O
+10	B-time_period
+days	I-time_period
+ఏ	O
+వాడను.	O
+}
+
+{\intent	p1: మళ్ళ వాడి बंद చేసింది అసలే.	STATEMENT}
+{\slot
+మళ్ళ	O
+వాడి	O
+बंद	B-symptom
+చేసింది	O
+అసలే.	O
+}
+
+{\intent	d: वापस చేసుకో.	ACTION_DIR}
+{\slot
+वापस	O
+చేసుకో.	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: తుమ్ములు వస్తున్నాయా బాగా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+వస్తున్నాయా	O
+బాగా?	B-intensity
+}
+
+{\intent	p: అంతకుముందు వచ్చేటివి అని వచ్చాను.	ANSWER}
+{\slot
+అంతకుముందు	O
+వచ్చేటివి	B-positive
+అని	O
+వచ్చాను.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: తుమ్ములు తగ్గినయి కానీ లోపట అంతా తల భారంగా అనిపిస్తుంది	STATEMENT}
+{\slot
+తుమ్ములు	B-symptom
+తగ్గినయి	B-normal
+కానీ	O
+లోపట	B-location
+అంతా	O
+తల	B-body_part
+భారంగా	B-symptom
+అనిపిస్తుంది	O
+}
+
+{\intent	d: spray ఉందా?	INFO_REQUEST}
+{\slot
+spray	B-medicine
+ఉందా?	O
+}
+
+{\intent	p: spray ఉంది.	ANSWER}
+{\slot
+spray	B-medicine
+ఉంది.	B-positive
+}
+
+{\intent	p: nightకి ఈ side మొత్తం శ్వాస ఆడనట్లు అయింది అండి. మొత్తం close అయినట్లు,	STATEMENT}
+{\slot
+nightకి	B-time_period
+ఈ	O
+side	O
+మొత్తం	O
+శ్వాస	B-bodily_process
+ఆడనట్లు	B-symptom
+అయింది	O
+అండి.	O
+మొత్తం	O
+close	B-symptom
+అయినట్లు,	I-symptom
+}
+
+{\intent	d: దగ్గొస్తుందా అమ్మ?	INFO_REQUEST}
+{\slot
+దగ్గొస్తుందా	B-symptom
+అమ్మ?	O
+}
+
+{\intent	p: దగ్గు చాలా ఏం లేదు అండి. lightగా ఉంది.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+చాలా	B-intensity
+ఏం	O
+లేదు	B-negative
+అండి.	O
+lightగా	O
+ఉంది.	O
+}
+
+{\intent	p1: చాన ఎక్కువ రోజులు ఉంటాంది sir,	STATEMENT}
+{\slot
+చాన	B-intensity
+ఎక్కువ	B-intensity
+రోజులు	I-time_period
+ఉంటాంది	O
+sir,	O
+}
+
+{\intent	p: జ్వరం లాగా కూడా ఉంటుంది అండి.	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+లాగా	O
+కూడా	O
+ఉంటుంది	O
+అండి.	O
+}
+
+{\intent	d: allergy అమ్మా, infection కాదు.	STATEMENT}
+{\slot
+allergy	B-medical_condition
+అమ్మా,	O
+infection	B-medical_condition
+కాదు.	B-negative
+}
+
+{\intent	p: అలాగే sir.	ACK}
+{\slot
+అలాగే	O
+sir.	O
+}
+
+{\intent	d: ఒకసారి రక్త పరిక్ష చేసి నాకు చూపియండి.	INFO_REQUEST}
+{\slot
+ఒకసారి	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+చేసి	O
+నాకు	O
+చూపియండి.	O
+}
+

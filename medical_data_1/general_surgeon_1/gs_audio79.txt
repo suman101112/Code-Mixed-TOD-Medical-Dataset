@@ -1,0 +1,107 @@
+{\intent	p: ఆ నాకు గత 2 3 సంవత్సరాలుగా అట్ల అనిపిస్తుంటుంది sir	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+గత	B-time_period
+2	B-time_period
+3	B-time_period
+సంవత్సరాలుగా	I-time_period
+అట్ల	O
+అనిపిస్తుంటుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇక్కడ అట్ల అనిపిస్తుంటుంది.	INFO_REQUEST}
+{\slot
+ఇక్కడ	O
+అట్ల	O
+అనిపిస్తుంటుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: plus ఎప్పుడైనా non veg తింటుంటాం కదా. non-veg తిన్నప్పుడు కొద్దిగా blood కూడా పడుతుంది	STATEMENT}
+{\slot
+plus	O
+ఎప్పుడైనా	O
+non	B-food_substance
+veg	I-food_substance
+తింటుంటాం	B-bodily_process
+కదా.	O
+non-veg	B-food_substance
+తిన్నప్పుడు	B-time_period
+కొద్దిగా	O
+blood	B-body_substance
+కూడా	O
+పడుతుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదే sir problem	ACK}
+{\slot
+అదే	O
+sir	O
+problem	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	p: non veg తిన్నప్పుడు మాత్రమే problem వస్తుంది, మెగితా timeలో ఏం అనిపించట్లేదు	STATEMENT}
+{\slot
+non	B-food_substance
+veg	I-food_substance
+తిన్నప్పుడు	O
+మాత్రమే	O
+problem	O
+వస్తుంది,	O
+మెగితా	O
+timeలో	B-time_period
+ఏం	O
+అనిపించట్లేదు	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: non veg కానీ, మసాలా కానీ తీసుకున్నప్పుడే ఏ bleeding అనేది ఇబ్బంది అవుతుంటుంది అని చెప్తూ ఉంటారు.	STATEMENT}
+{\slot
+non	B-food_substance
+veg	I-food_substance
+కానీ,	O
+మసాలా	O
+కానీ	O
+తీసుకున్నప్పుడే	O
+ఏ	O
+bleeding	B-medical_condition
+అనేది	O
+ఇబ్బంది	B-symptom
+అవుతుంటుంది	O
+అని	O
+చెప్తూ	O
+ఉంటారు.	O
+}
+

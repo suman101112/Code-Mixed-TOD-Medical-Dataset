@@ -1,0 +1,150 @@
+{\intent	p1: बुखार आ रहा	STATEMENT}
+{\slot
+बुखार	B-symptom
+आ	O
+रहा	O
+}
+
+{\intent	p2: खांसी आ रही	STATEMENT}
+{\slot
+खांसी	B-symptom
+आ	O
+रही	O
+}
+
+{\intent	d: scarf निकालो	ACTION_DIR}
+{\slot
+scarf	O
+निकालो	O
+}
+
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p1: Sanya	ANSWER}
+{\slot
+Sanya	B-name
+}
+
+{\intent	d: उम्र कितना?	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना?	O
+}
+
+{\intent	p1: 8 months	ANSWER}
+{\slot
+8	B-age
+months	I-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: माँ का दूध पीता है, bottle का?	INFO_REQUEST}
+{\slot
+माँ	B-person
+का	O
+दूध	B-food_substance
+पीता	B-bodily_process
+है,	O
+bottle	O
+का?	O
+}
+
+{\intent	p1: हां, माँ का दूध .	ANSWER}
+{\slot
+हां,	O
+माँ	B-person
+का	O
+दूध	B-food_substance
+.	O
+}
+
+{\intent	d: अभी तकलीफ क्या है ?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+तकलीफ	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p1: सुबह से है खांसी, सर्दी	ANSWER}
+{\slot
+सुबह	B-time_period
+से	O
+है	O
+खांसी,	B-symptom
+सर्दी	B-medical_condition
+}
+
+{\intent	d: माँ का दूध पीता है,	ACK}
+{\slot
+माँ	B-person
+का	O
+दूध	B-food_substance
+पीता	O
+है,	O
+}
+
+{\intent	p1: हां.	ACK}
+{\slot
+हां.	O
+}
+
+{\intent	d: कंधे पर लो	ACTION_DIR}
+{\slot
+कंधे	B-body_part
+पर	O
+लो	O
+}
+
+{\intent	d: आज सुबह से कुछ दवा डाले?	INFO_REQUEST}
+{\slot
+आज	B-time_period
+सुबह	B-time_period
+से	O
+कुछ	O
+दवा	B-medicine
+डाले?	O
+}
+
+{\intent	p1: आ drops डाले	ANSWER}
+{\slot
+आ	O
+drops	B-medicine
+डाले	O
+}
+
+{\intent	d: वो syrup डालो, drops नहीं	ACTION_DIR}
+{\slot
+वो	O
+syrup	B-medicine
+डालो,	O
+drops	B-medicine
+नहीं	O
+}
+
+{\intent	p1: ज़रा सुबह से खांसी है , खांस रहे, सर्दी है .	STATEMENT}
+{\slot
+ज़रा	O
+सुबह	B-time_period
+से	O
+खांसी	B-symptom
+है	O
+,	O
+खांस	B-symptom
+रहे,	O
+सर्दी	B-medical_condition
+है	O
+.	O
+}
+

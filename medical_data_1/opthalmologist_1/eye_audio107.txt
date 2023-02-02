@@ -1,0 +1,48 @@
+{\intent	p: నా పేరు ramesh.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+ramesh.	B-age
+}
+
+{\intent	p: నా వయస్సు 32 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+32	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: కళ్ళ దురద, కంటి నుంచి నీరు కారడం, కంటి రెప్ప పై బొబ్బలు, dandruff ఉన్నాయి.	STATEMENT}
+{\slot
+కళ్ళ	B-body_part
+దురద,	B-symptom
+కంటి	B-body_part
+నుంచి	B-location
+నీరు	B-food_substance
+కారడం,	B-symptom
+కంటి	B-body_part
+రెప్ప	I-body_part
+పై	B-location
+బొబ్బలు,	B-symptom
+dandruff	B-medical_condition
+ఉన్నాయి.	O
+}
+
+{\intent	p: దీనికి పరిష్కారం ఏంటో తెలియచేయండి.	STATEMENT}
+{\slot
+దీనికి	O
+పరిష్కారం	B-treatment
+ఏంటో	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: దీని మేము Meibomitis అంటాం అండి.	DIAGNOSIS}
+{\slot
+దీని	O
+మేము	O
+Meibomitis	B-medical_condition
+అంటాం	O
+అండి.	O
+}
+

@@ -1,0 +1,265 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Purva Pandey	ANSWER}
+{\slot
+Purva	B-name
+Pandey	I-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Purva Pandey	ANSWER}
+{\slot
+Purva	B-name
+Pandey	I-name
+}
+
+{\intent	d: Purva	HOLD}
+{\slot
+Purva	B-name
+}
+
+{\intent	p: Pandey	STATEMENT}
+{\slot
+Pandey	I-name
+}
+
+{\intent	d: कितना उम्र?	INFO_REQUEST}
+{\slot
+कितना	O
+उम्र?	O
+}
+
+{\intent	p1: 10	ANSWER}
+{\slot
+10	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p1: यह कान से दर्द बोल रहा.	ANSWER}
+{\slot
+यह	O
+कान	O
+से	O
+दर्द	B-symptom
+बोल	O
+रहा.	O
+}
+
+{\intent	p2: सर्दी भी है sir इसको	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+भी	O
+है	O
+sir	O
+इसको	O
+}
+
+{\intent	p1: सर्दी भी बहुत हो रहे	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+भी	O
+बहुत	B-intensity
+हो	O
+रहे	O
+}
+
+{\intent	d: नाक	ACTION_DIR}
+{\slot
+नाक	B-body_part
+}
+
+{\intent	d: ఆ बोलो.	ACTION_DIR}
+{\slot
+ఆ	O
+बोलो.	O
+}
+
+{\intent	d: ये सर्दी की वजह से	DIAGNOSIS}
+{\slot
+ये	O
+सर्दी	B-medical_condition
+की	O
+वजह	O
+से	O
+}
+
+{\intent	p1: ठंडी चीज खाने की वजह से से हो रहा sir यह.	STATEMENT}
+{\slot
+ठंडी	B-food_substance
+चीज	I-food_substance
+खाने	B-bodily_process
+की	O
+वजह	O
+से	O
+से	O
+हो	O
+रहा	O
+sir	O
+यह.	O
+}
+
+{\intent	d: हाउ ice creams, cooldrinks, chocolates, नहीं खाना.	ACTION_DIR}
+{\slot
+हाउ	O
+ice	B-food_substance
+creams,	I-food_substance
+cooldrinks,	B-food_substance
+chocolates,	B-food_substance
+नहीं	O
+खाना.	O
+}
+
+{\intent	p1: सुन लेवो doctorसाभ क्या बोल रहे होना बोल के नहीं बोलना वापस .	ACTION_DIR}
+{\slot
+सुन	O
+लेवो	O
+doctorसाभ	B-medical_professional
+क्या	O
+बोल	O
+रहे	O
+होना	O
+बोल	O
+के	O
+नहीं	O
+बोलना	O
+वापस	O
+.	O
+}
+
+{\intent	p1: बिल्कुल नहीं सुनते sir.	STATEMENT}
+{\slot
+बिल्कुल	O
+नहीं	O
+सुनते	O
+sir.	O
+}
+
+{\intent	p1: कुछ भी नहीं खाना, बिल्कुल ठंडी चीज नहीं खाना	ACTION_DIR}
+{\slot
+कुछ	O
+भी	O
+नहीं	O
+खाना,	O
+बिल्कुल	O
+ठंडी	O
+चीज	O
+नहीं	O
+खाना	O
+}
+
+{\intent	p: कान में गुर गुर	STATEMENT}
+{\slot
+कान	B-body_part
+में	B-location
+गुर	B-symptom
+गुर	I-symptom
+}
+
+{\intent	p1: कान में गुर गुर बोल रहा sir	STATEMENT}
+{\slot
+कान	B-body_part
+में	B-location
+गुर	B-symptom
+गुर	I-symptom
+बोल	O
+रहा	O
+sir	O
+}
+
+{\intent	p1: सर्दी की वजह से	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+की	O
+वजह	O
+से	O
+}
+
+{\intent	d: हां हाउ हाउ	ANSWER}
+{\slot
+हां	B-positive
+हाउ	O
+हाउ	O
+}
+
+{\intent	d: कान में कुछ भी नहीं डालना	ACTION_DIR}
+{\slot
+कान	B-body_part
+में	I-location
+कुछ	O
+भी	O
+नहीं	O
+डालना	O
+}
+
+{\intent	p1: कुछ भी नहीं डालना	ACK}
+{\slot
+कुछ	O
+भी	O
+नहीं	O
+डालना	O
+}
+
+{\intent	d: नाक की दवा डाले तो कान ठीक हो जाता .	MEDICAL_EXPLANATION}
+{\slot
+नाक	B-body_part
+की	O
+दवा	B-medicine
+डाले	O
+तो	O
+कान	B-body_part
+ठीक	B-normal
+हो	O
+जाता	O
+.	O
+}
+
+{\intent	p1: नाक की दवाई डाले तो कान ठीक हो जाता बोल के बोल रहे doctor.	ACK}
+{\slot
+नाक	B-body_part
+की	O
+दवाई	B-medicine
+डाले	O
+तो	O
+कान	B-body_part
+ठीक	B-normal
+हो	O
+जाता	O
+बोल	O
+के	O
+बोल	O
+रहे	O
+doctor.	O
+}
+
+{\intent	p1: सर्दी है ना उससे कान में गुर गुर बोल रहे.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+है	O
+ना	O
+उससे	O
+कान	B-body_part
+में	B-location
+गुर	B-symptom
+गुर	I-symptom
+बोल	O
+रहे.	O
+}
+

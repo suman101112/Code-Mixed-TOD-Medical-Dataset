@@ -1,0 +1,121 @@
+{\intent	d: 9	ANSWER}
+{\slot
+9	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p1: కడుపు నొప్పి లేస్తుందట. vomitings అవుతున్నాయి.	STATEMENT}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తుందట.	O
+vomitings	B-symptom
+అవుతున్నాయి.	O
+}
+
+{\intent	d: ఎన్నిసార్లు అయినయి వాంతులు?	INFO_REQUEST}
+{\slot
+ఎన్నిసార్లు	O
+అయినయి	O
+వాంతులు?	O
+}
+
+{\intent	p1: మొన్న bus ఎక్కి busలో పోయినం sir,	STATEMENT}
+{\slot
+మొన్న	B-time_period
+bus	O
+ఎక్కి	O
+busలో	O
+పోయినం	O
+sir,	O
+}
+
+{\intent	p1: 3 సార్లు అయినాయి sir	ANSWER}
+{\slot
+3	B-frequency
+సార్లు	I-frequency
+అయినాయి	O
+sir	O
+}
+
+{\intent	d: యాత్రకు పోయినారా?	INFO_REQUEST}
+{\slot
+యాత్రకు	B-place
+పోయినారా?	O
+}
+
+{\intent	p1: పాకాల పోయిన	STATEMENT}
+{\slot
+పాకాల	B-place
+పోయిన	O
+}
+
+{\intent	d: last వాంతి ఎన్ని గంటలకు అయింది?	INFO_REQUEST}
+{\slot
+last	O
+వాంతి	B-symptom
+ఎన్ని	O
+గంటలకు	B-time_period
+అయింది?	O
+}
+
+{\intent	p1: 3 గంటలకు అయింది.	ANSWER}
+{\slot
+3	B-time_period
+గంటలకు	I-time_period
+అయింది.	O
+}
+
+{\intent	p1: ఇప్పుడు ఏమైనా తినంగానే కడుపు నొప్పి లేస్తాంది అంటున్నాడు sir.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏమైనా	O
+తినంగానే	B-bodily_process
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తాంది	O
+అంటున్నాడు	O
+sir.	O
+}
+
+{\intent	d: biscuits అని, chips అని, పాపడాలు అని బయట కొన్నుక్కునేవి తినొద్దు అని చెప్పు	ACTION_DIR}
+{\slot
+biscuits	B-food_substance
+అని,	O
+chips	B-food_substance
+అని,	O
+పాపడాలు	B-food_substance
+అని	O
+బయట	B-location
+కొన్నుక్కునేవి	O
+తినొద్దు	B-bodily_process
+అని	O
+చెప్పు	O
+}
+
+{\intent	p1: ok sir	ANSWER}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఒకసారి vomiting మొదలయితే మళ్ళి గంటవరకు ఎమి ఇవ్వొద్దు	ACTION_DIR}
+{\slot
+ఒకసారి	O
+vomiting	B-symptom
+మొదలయితే	O
+మళ్ళి	O
+గంటవరకు	B-time_period
+ఎమి	O
+ఇవ్వొద్దు	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+

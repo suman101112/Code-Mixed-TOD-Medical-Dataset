@@ -1,0 +1,244 @@
+{\intent	p: sir ఇక్కడ నాకు gas problem ఉంది sir నాకు ఇది కొంచము నాకు ఒక 7 years నుంచి బాధపెడుతుంది	STATEMENT}
+{\slot
+sir	O
+ఇక్కడ	O
+నాకు	O
+gas	B-medical_condition
+problem	I-medical_condition
+ఉంది	O
+sir	O
+నాకు	O
+ఇది	O
+కొంచము	O
+నాకు	O
+ఒక	O
+7	B-time_period
+years	B-time_period
+నుంచి	O
+బాధపెడుతుంది	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది బాగా ఇక్కడ ఒక leftలో chestలో pain వస్తుంది	STATEMENT}
+{\slot
+అది	O
+బాగా	B-intensity
+ఇక్కడ	O
+ఒక	O
+leftలో	B-location
+chestలో	B-body_part
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: ఎక్కడ leftలో వస్తుందా?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+leftలో	B-location
+వస్తుందా?	O
+}
+
+{\intent	p: ఆ ఇక్కడ heart కింద వస్తుంది	ANSWER}
+{\slot
+ఆ	O
+ఇక్కడ	O
+heart	B-body_part
+కింద	B-location
+వస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: next కడుపులో బాగా మండుతుంది	STATEMENT}
+{\slot
+next	O
+కడుపులో	B-body_part
+బాగా	B-intensity
+మండుతుంది	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తిమ్మిర్లు	STATEMENT}
+{\slot
+తిమ్మిర్లు	B-symptom
+}
+
+{\intent	d: ఇంకా Shivakrishnaగారు ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+Shivakrishnaగారు	B-name
+ఇంకా?	O
+}
+
+{\intent	p: ఇక్కడ pain వస్తుంది sir అది కడుపులో బాగా మంట వస్తుంది.	ANSWER}
+{\slot
+ఇక్కడ	O
+pain	B-symptom
+వస్తుంది	O
+sir	O
+అది	O
+కడుపులో	B-body_part
+బాగా	B-intensity
+మంట	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: motions కూడా clear అవ్వట్లేదు, చల్ల water తాగుతుంటే morning నాకు కొంచం కొంచం అవుతుంది.	STATEMENT}
+{\slot
+motions	B-bodily_process
+కూడా	O
+clear	B-symptom
+అవ్వట్లేదు,	I-symptom
+చల్ల	O
+water	B-food_substance
+తాగుతుంటే	B-bodily_process
+morning	B-time_period
+నాకు	O
+కొంచం	O
+కొంచం	O
+అవుతుంది.	B-bodily_process
+}
+
+{\intent	d: మంట ఏమైనా వస్తుందా ఛాతిల, కడుపులో నుంచి పైవరకు?	INFO_REQUEST}
+{\slot
+మంట	B-symptom
+ఏమైనా	O
+వస్తుందా	O
+ఛాతిల,	B-body_part
+కడుపులో	B-body_part
+నుంచి	O
+పైవరకు?	B-location
+}
+
+{\intent	p: ఆ మంట వస్తుంది sir, చాలా pain వస్తుంది	ANSWER}
+{\slot
+ఆ	O
+మంట	B-symptom
+వస్తుంది	O
+sir,	O
+చాలా	O
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇట్ల గొంతులోపలికి వెళ్ళిపోతూ ఉందా మంట?	INFO_REQUEST}
+{\slot
+ఇట్ల	O
+గొంతులోపలికి	B-body_part
+వెళ్ళిపోతూ	O
+ఉందా	O
+మంట?	B-symptom
+}
+
+{\intent	p: ఇక్కడ కడుపులో అయితే మంట వస్తుంది.	ANSWER}
+{\slot
+ఇక్కడ	O
+కడుపులో	B-body_part
+అయితే	O
+మంట	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అప్పుడప్పుడు ఇక్కడ left side గుండె కింద pain వస్తుంది.	STATEMENT}
+{\slot
+అప్పుడప్పుడు	B-time_period
+ఇక్కడ	O
+left	B-location
+side	I-location
+గుండె	B-body_part
+కింద	B-location
+pain	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ok Shivakrishna గారు ఇంకేమైనా ఉందా సమస్య	INFO_REQUEST}
+{\slot
+ok	O
+Shivakrishna	B-name
+గారు	O
+ఇంకేమైనా	O
+ఉందా	O
+సమస్య	O
+}
+
+{\intent	d: ఏమైనా వాడుతున్నారా tabletలు ఏమైనా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+వాడుతున్నారా	O
+tabletలు	B-medicine
+ఏమైనా?	O
+}
+
+{\intent	p: ఇంత ముందు చాలా వాడిన sir tabletలు తగ్గలేదు,, అంటే health problem కూడా ఉంది దానివల్ల వాడాను.	ANSWER}
+{\slot
+ఇంత	O
+ముందు	B-medicine
+చాలా	O
+వాడిన	O
+sir	O
+tabletలు	B-medicine
+తగ్గలేదు,,	O
+అంటే	O
+health	B-medical_condition
+problem	I-medical_condition
+కూడా	O
+ఉంది	O
+దానివల్ల	O
+వాడాను.	O
+}
+
+{\intent	d: ok ok Shivakrishnaగారు	CONV_CLOSE}
+{\slot
+ok	O
+ok	O
+Shivakrishnaగారు	B-name
+}
+
+{\intent	d: మీకు ఉన్న problem ఏంటి అంటే మనకు రెండు ఉన్నాయి అన్నమాట మనకు	MEDICAL_EXPLANATION}
+{\slot
+మీకు	O
+ఉన్న	O
+problem	O
+ఏంటి	O
+అంటే	O
+మనకు	O
+రెండు	O
+ఉన్నాయి	O
+అన్నమాట	O
+మనకు	O
+}
+
+{\intent	d: ఒక్కటి heartburn అంటారు అన్నమాట	DIAGNOSIS}
+{\slot
+ఒక్కటి	O
+heartburn	B-symptom
+అంటారు	O
+అన్నమాట	O
+}
+

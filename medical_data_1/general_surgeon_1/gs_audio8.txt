@@ -1,0 +1,189 @@
+{\intent	p: madam, age వచ్చేసి 44.	STATEMENT}
+{\slot
+madam,	O
+age	O
+వచ్చేసి	O
+44.	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మాకు కొంచం ఛాతిలో నొప్పి వస్తా ఉంటే పుట్టపర్తి Satya Institute Super Speciality Hospital లో చూపించాను madam.	STATEMENT}
+{\slot
+మాకు	O
+కొంచం	O
+ఛాతిలో	B-body_part
+నొప్పి	B-symptom
+వస్తా	O
+ఉంటే	O
+పుట్టపర్తి	B-hospital_name
+Satya	I-hospital_name
+Institute	I-hospital_name
+Super	I-hospital_name
+Speciality	I-hospital_name
+Hospital	I-hospital_name
+లో	O
+చూపించాను	O
+madam.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ Endocscopy అని చేసారు.	STATEMENT}
+{\slot
+అక్కడ	B-location
+Endocscopy	B-mtest
+అని	O
+చేసారు.	O
+}
+
+{\intent	p: Rantac అనే tablets ఇచ్చారు.	STATEMENT}
+{\slot
+Rantac	B-medicine
+అనే	O
+tablets	B-medicine
+ఇచ్చారు.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: so. చిన్న bulb మాదిరి పంపించేసారు లోపలికి అది.	REPEAT_REPHRASE}
+{\slot
+so.	O
+చిన్న	O
+bulb	O
+మాదిరి	O
+పంపించేసారు	O
+లోపలికి	O
+అది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ తరువాత వచ్చేసి మసాలా ఇవన్నీ ఎక్కువగా తినొద్దని చెప్పారు. అప్పటినుంచి ఏం ప్రస్తుతానికి అయితే బానే ఉంది. 5 years అయితాంది.	STATEMENT}
+{\slot
+ఆ	O
+తరువాత	O
+వచ్చేసి	O
+మసాలా	B-food_substance
+ఇవన్నీ	O
+ఎక్కువగా	B-intensity
+తినొద్దని	O
+చెప్పారు.	O
+అప్పటినుంచి	B-time_period
+ఏం	O
+ప్రస్తుతానికి	O
+అయితే	O
+బానే	B-normal
+ఉంది.	O
+5	B-time_period
+years	I-time_period
+అయితాంది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకా తర్వాత ఏమన్నా మళ్ళ ఏమన్నా వచ్చే అవకాశం ఉందా? దేనికి ఏమన్నా చేయమంటారా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+తర్వాత	B-time_period
+ఏమన్నా	O
+మళ్ళ	O
+ఏమన్నా	O
+వచ్చే	O
+అవకాశం	O
+ఉందా?	O
+దేనికి	O
+ఏమన్నా	O
+చేయమంటారా?	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: actualగా you are on under diet only.	ANSWER}
+{\slot
+actualగా	O
+you	O
+are	O
+on	O
+under	O
+diet	B-food_substance
+only.	O
+}
+
+{\intent	d: so మీరు చేస్తుండె అదే విధంగా maintain చేయండి sir, మళ్ళ problem అయితే repeat రాలేదు. మసాలా అవి spicy కానీ పులుపు పదర్ధాలు తగ్గించుకుంటూ అంటే food గనక తీసుకుంటుంటే మళ్ళి మీకు ఈ problem repeat అయ్యే chances తక్కువ.	ACTION_DIR}
+{\slot
+so	O
+మీరు	O
+చేస్తుండె	O
+అదే	O
+విధంగా	O
+maintain	O
+చేయండి	O
+sir,	O
+మళ్ళ	O
+problem	O
+అయితే	O
+repeat	O
+రాలేదు.	O
+మసాలా	B-food_substance
+అవి	O
+spicy	B-food_substance
+కానీ	O
+పులుపు	B-food_substance
+పదర్ధాలు	I-food_substance
+తగ్గించుకుంటూ	O
+అంటే	O
+food	B-food_substance
+గనక	O
+తీసుకుంటుంటే	O
+మళ్ళి	O
+మీకు	O
+ఈ	O
+problem	O
+repeat	O
+అయ్యే	O
+chances	O
+తక్కువ.	O
+}
+
+{\intent	d: కొంతమందికి sedentary activity ఉంటుంది అది కొద్ది physical activityలోకి చేసుకోవడం వల్ల కూడా మళ్ళ problem రాకూండా ఉంటుంది. అది చూసుకోవచ్చు అండి.	MEDICAL_EXPLANATION}
+{\slot
+కొంతమందికి	O
+sedentary	O
+activity	O
+ఉంటుంది	O
+అది	O
+కొద్ది	O
+physical	O
+activityలోకి	O
+చేసుకోవడం	O
+వల్ల	O
+కూడా	O
+మళ్ళ	O
+problem	O
+రాకూండా	O
+ఉంటుంది.	O
+అది	O
+చూసుకోవచ్చు	O
+అండి.	O
+}
+

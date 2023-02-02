@@ -1,0 +1,131 @@
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p1: Manvita	ANSWER}
+{\slot
+Manvita	B-name
+}
+
+{\intent	d: 1	ANSWER}
+{\slot
+1	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: జ్వరం ఒక్కటేనా	HOLD}
+{\slot
+జ్వరం	B-symptom
+ఒక్కటేనా	O
+}
+
+{\intent	d: ఇంకేమన్నా problem ఉందా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+problem	O
+ఉందా?	O
+}
+
+{\intent	p: తినట్లేదు అసలు, ఓకరించుకుంటుంది బాగా	ANSWER}
+{\slot
+తినట్లేదు	B-symptom
+అసలు,	O
+ఓకరించుకుంటుంది	B-symptom
+బాగా	B-intensity
+}
+
+{\intent	d: పళ్ళు కొరకడం ఇట్ల ఏమైనా చేస్తుందా?	INFO_REQUEST}
+{\slot
+పళ్ళు	B-body_part
+కొరకడం	B-symptom
+ఇట్ల	O
+ఏమైనా	O
+చేస్తుందా?	O
+}
+
+{\intent	p: uhum<neg>	ANSWER}
+{\slot
+uhum<neg>	B-negative
+}
+
+{\intent	p: ఏమైనా పెట్టంగానే ఓకరించుకుంటుంది	STATEMENT}
+{\slot
+ఏమైనా	O
+పెట్టంగానే	O
+ఓకరించుకుంటుంది	B-symptom
+}
+
+{\intent	p: night అంతా fever బాగా ఉంది sir.	STATEMENT}
+{\slot
+night	B-time_period
+అంతా	O
+fever	B-symptom
+బాగా	B-intensity
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ఇట్ల ఎత్తుకోండి	ACTION_DIR}
+{\slot
+ఇట్ల	O
+ఎత్తుకోండి	O
+}
+
+{\intent	d: main complaint ఏంటి?	INFO_REQUEST}
+{\slot
+main	O
+complaint	O
+ఏంటి?	O
+}
+
+{\intent	d: జ్వరం తగ్గలేదా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+తగ్గలేదా?	B-normal
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: ఇప్పుడైతే లేదు కదా, ఆమె ఆడుకుంటుంది బానే	STATEMENT}
+{\slot
+ఇప్పుడైతే	B-time_period
+లేదు	O
+కదా,	O
+ఆమె	O
+ఆడుకుంటుంది	B-bodily_process
+బానే	O
+}
+
+{\intent	p: ఆమె ఆడుకుంటుంది sir. fever ఉన్నా కూడా ఆడుకుంటుంది .	STATEMENT}
+{\slot
+ఆమె	O
+ఆడుకుంటుంది	B-bodily_process
+sir.	O
+fever	B-symptom
+ఉన్నా	O
+కూడా	O
+ఆడుకుంటుంది	B-bodily_process
+.	O
+}
+
+{\intent	d: తల్లిపాలే నా?	INFO_REQUEST}
+{\slot
+తల్లిపాలే	B-food_substance
+నా?	O
+}
+
+{\intent	p1: తల్లిపాలే sir.	ANSWER}
+{\slot
+తల్లిపాలే	B-food_substance
+sir.	O
+}
+

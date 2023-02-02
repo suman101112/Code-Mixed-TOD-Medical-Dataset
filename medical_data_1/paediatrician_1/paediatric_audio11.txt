@@ -1,0 +1,185 @@
+{\intent	d: ఏం పేరు? పేరు వచ్చేసి?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+పేరు	O
+వచ్చేసి?	O
+}
+
+{\intent	p1: <inaudible>	UNINTERPRET}
+{\slot
+<inaudible>	O
+}
+
+{\intent	d: 4	ANSWER}
+{\slot
+4	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p1: జలుబు ఉంది. బాగా vomiting అవుతుంది, ఎమి తింటలేడు.	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+ఉంది.	O
+బాగా	B-intensity
+vomiting	B-symptom
+అవుతుంది,	O
+ఎమి	O
+తింటలేడు.	B-symptom
+}
+
+{\intent	d: అంటే ఆకలి కావడం లేదా?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఆకలి	B-bodily_process
+కావడం	O
+లేదా?	O
+}
+
+{\intent	p1: ఏమి తింటలేడు. vomiting వచ్చినట్లు ఉందని చెబుతున్నాడు.	ANSWER}
+{\slot
+ఏమి	O
+తింటలేడు.	B-symptom
+vomiting	B-symptom
+వచ్చినట్లు	O
+ఉందని	O
+చెబుతున్నాడు.	O
+}
+
+{\intent	d: schoolకి వెళ్తున్నావా?	INFO_REQUEST}
+{\slot
+schoolకి	B-place
+వెళ్తున్నావా?	O
+}
+
+{\intent	p1: hmm	ANSWER}
+{\slot
+hmm	O
+}
+
+{\intent	p1: schoolలో vomiting చేసుకున్నాడు sir, తింటలేడు.	STATEMENT}
+{\slot
+schoolలో	B-place
+vomiting	B-symptom
+చేసుకున్నాడు	O
+sir,	O
+తింటలేడు.	B-symptom
+}
+
+{\intent	d: కుర్చో.	ACTION_DIR}
+{\slot
+కుర్చో.	O
+}
+
+{\intent	d: urine పచ్చగా ఉందా?	INFO_REQUEST}
+{\slot
+urine	B-body_substance
+పచ్చగా	B-color
+ఉందా?	O
+}
+
+{\intent	p1: మామూలుగానే ఉంది sir.	ANSWER}
+{\slot
+మామూలుగానే	B-normal
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ఈనె మట్టి, పెచ్చులు, బలపాలు, సున్నం అలా తింటాడా?	INFO_REQUEST}
+{\slot
+ఈనె	O
+మట్టి,	O
+పెచ్చులు,	O
+బలపాలు,	O
+సున్నం	O
+అలా	O
+తింటాడా?	O
+}
+
+{\intent	p1: ఎమి తినడు sir.	ANSWER}
+{\slot
+ఎమి	O
+తినడు	O
+sir.	O
+}
+
+{\intent	d: అంటే ఆహారం పెడితే వాంతి వచ్చినట్లు అనిపిస్తుందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఆహారం	B-food_substance
+పెడితే	O
+వాంతి	B-symptom
+వచ్చినట్లు	O
+అనిపిస్తుందా?	O
+}
+
+{\intent	p1: అట్ల అంటుండు, వాంతికి వచ్చినట్లు ఉందని	ANSWER}
+{\slot
+అట్ల	O
+అంటుండు,	O
+వాంతికి	B-symptom
+వచ్చినట్లు	O
+ఉందని	O
+}
+
+{\intent	p1: జలుబు ఉంది	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+ఉంది	O
+}
+
+{\intent	d: ఎన్ని రోజులు నుంచి ఉంది ఈ ఆకలి లేకపోవడం?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+నుంచి	O
+ఉంది	O
+ఈ	O
+ఆకలి	B-bodily_process
+లేకపోవడం?	B-symptom
+}
+
+{\intent	p1: 3 రోజుల నుంచి.	ANSWER}
+{\slot
+3	B-quantity
+రోజుల	B-time_period
+నుంచి.	O
+}
+
+{\intent	p1: బలానికి రాసివ్వండి.	STATEMENT}
+{\slot
+బలానికి	O
+రాసివ్వండి.	O
+}
+
+{\intent	p1: food ఏం పెట్టొచ్చు మామూలుగా	INFO_REQUEST}
+{\slot
+food	B-food_substance
+ఏం	O
+పెట్టొచ్చు	O
+మామూలుగా	O
+}
+
+{\intent	d: మనం ఏది తింటే అది పెట్టొచ్చు, ఇడ్లి పెట్టొచ్చు, खिचड़ी పెట్టొచ్చు, ఉప్మా పెట్టొచ్చు, రవ్వ పెట్టొచ్చు, ఏదైనా పెట్టొచ్చు.	STATEMENT}
+{\slot
+మనం	O
+ఏది	O
+తింటే	B-bodily_process
+అది	O
+పెట్టొచ్చు,	O
+ఇడ్లి	B-food_substance
+పెట్టొచ్చు,	O
+खिचड़ी	B-food_substance
+పెట్టొచ్చు,	O
+ఉప్మా	B-food_substance
+పెట్టొచ్చు,	O
+రవ్వ	B-food_substance
+పెట్టొచ్చు,	O
+ఏదైనా	O
+పెట్టొచ్చు.	O
+}
+

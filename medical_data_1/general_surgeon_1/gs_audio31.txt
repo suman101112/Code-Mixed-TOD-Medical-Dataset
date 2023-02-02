@@ -1,0 +1,220 @@
+{\intent	p: kurnool district sir మాది మంత్రలయము.	STATEMENT}
+{\slot
+kurnool	B-place
+district	I-place
+sir	O
+మాది	O
+మంత్రలయము.	B-place
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sir 1 year నుంచి నాకు కడుపులోనూ అంతా వాపు వచ్చేసింది.	STATEMENT}
+{\slot
+sir	O
+1	B-time_period
+year	B-time_period
+నుంచి	O
+నాకు	O
+కడుపులోనూ	B-body_part
+అంతా	O
+వాపు	B-symptom
+వచ్చేసింది.	I-symptom
+}
+
+{\intent	p: కొద్దిగా తిండి అరగడం సరిగ్గా లేదు.	STATEMENT}
+{\slot
+కొద్దిగా	O
+తిండి	B-food_substance
+అరగడం	B-symptom
+సరిగ్గా	O
+లేదు.	B-negative
+}
+
+{\intent	p: తేణుపు వచ్చినప్పుడు పులుపు అనేది బయటికి వచ్చేస్తుంది.	STATEMENT}
+{\slot
+తేణుపు	B-symptom
+వచ్చినప్పుడు	O
+పులుపు	B-food_substance
+అనేది	O
+బయటికి	B-symptom
+వచ్చేస్తుంది.	I-symptom
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను ఇంతకుముందు 2 3 సార్లు admit అయినా sir heart attack అనుకోని భయపడి admit అయినా sir	STATEMENT}
+{\slot
+నేను	O
+ఇంతకుముందు	O
+2	B-frequency
+3	B-frequency
+సార్లు	I-frequency
+admit	O
+అయినా	O
+sir	O
+heart	B-body_part
+attack	B-medical_condition
+అనుకోని	O
+భయపడి	O
+admit	O
+అయినా	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాళ్ళు doctorలు మాత్రం treatment చేసినప్పుడు బానే ఉండేది మళ్ళి వచ్చింది sir	STATEMENT}
+{\slot
+వాళ్ళు	O
+doctorలు	B-medical_professional
+మాత్రం	O
+treatment	B-treatment
+చేసినప్పుడు	O
+బానే	O
+ఉండేది	O
+మళ్ళి	O
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: మళ్ళి వస్తుంది.	STATEMENT}
+{\slot
+మళ్ళి	B-body_part
+వస్తుంది.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: ఏమైనా అలవాట్లు ఉన్నాయా smoking కానీ alcohol లాంటివి అలవాట్లు ?	STATEMENT}
+{\slot
+ఏమైనా	O
+అలవాట్లు	O
+ఉన్నాయా	O
+smoking	B-habit
+కానీ	O
+alcohol	B-habit
+లాంటివి	O
+అలవాట్లు	O
+?	O
+}
+
+{\intent	p: ఇంతకుముందు ఉండేవి sir ఇప్పుడు smoking అనేది 12 సంవత్సరాలు అయింది sir నేను వదిలేసాను	ANSWER}
+{\slot
+ఇంతకుముందు	B-time_period
+ఉండేవి	B-positive
+sir	O
+ఇప్పుడు	O
+smoking	B-habit
+అనేది	O
+12	B-time_period
+సంవత్సరాలు	I-time_period
+అయింది	O
+sir	O
+నేను	O
+వదిలేసాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలవాట్లు అంటే alcohol వదిలేసి 5 7 సంవత్సరాలు అయింది sir ఇప్పుడు	ANSWER}
+{\slot
+అలవాట్లు	O
+అంటే	O
+alcohol	B-habit
+వదిలేసి	O
+5	B-time_period
+7	I-time_period
+సంవత్సరాలు	I-time_period
+అయింది	O
+sir	O
+ఇప్పుడు	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	p: ఒక సంవత్సరం నుంచి kurnool hospitalలో చూపించుకుంటున్నాను sir నేను	STATEMENT}
+{\slot
+ఒక	O
+సంవత్సరం	B-time_period
+నుంచి	O
+kurnool	B-hospital_name
+hospitalలో	B-hospital_name
+చూపించుకుంటున్నాను	O
+sir	O
+నేను	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఒక్క సంవత్సరం నుంచి problem అనేది ఇంతవరకు solve కాలేదు	STATEMENT}
+{\slot
+ఒక్క	O
+సంవత్సరం	B-time_period
+నుంచి	O
+problem	O
+అనేది	O
+ఇంతవరకు	O
+solve	O
+కాలేదు	O
+}
+
+{\intent	p: ఇప్పటి వరకు medicine మింగుతూనే ఉన్నాను sir	STATEMENT}
+{\slot
+ఇప్పటి	O
+వరకు	O
+medicine	B-medicine
+మింగుతూనే	O
+ఉన్నాను	O
+sir	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: మీ విషయంలో ఈ complaint ని GERD అంటాము. Gastroesophageal Reflux Disease అంటాము.	DIAGNOSIS}
+{\slot
+మీ	O
+విషయంలో	O
+ఈ	O
+complaint	O
+ని	O
+GERD	B-medical_condition
+అంటాము.	O
+Gastroesophageal	B-medical_condition
+Reflux	I-medical_condition
+Disease	I-medical_condition
+అంటాము.	O
+}
+

@@ -1,0 +1,207 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నా పేరు Saambashiva అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Saambashiva	B-name
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదే అండి ఇప్పుడు, మా, medicine వాడుతున్నాము అండి.	STATEMENT}
+{\slot
+అదే	O
+అండి	O
+ఇప్పుడు,	O
+మా,	O
+medicine	B-medicine
+వాడుతున్నాము	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎన్ని years అయింది marriage అయి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+అయింది	O
+marriage	B-marital_status
+అయి?	O
+}
+
+{\intent	p: marriage అయి 3rd year అండి.	ANSWER}
+{\slot
+marriage	B-marital_status
+అయి	O
+3rd	B-frequency
+year	B-time_period
+అండి.	O
+}
+
+{\intent	d: 3 years ok	ACK}
+{\slot
+3	B-time_period
+years	I-time_period
+ok	O
+}
+
+{\intent	p: scanning అవి చేయించుకున్నాం, నాకు sperm count initialగా అయితే తక్వగా ఉండే	STATEMENT}
+{\slot
+scanning	B-mtest
+అవి	O
+చేయించుకున్నాం,	O
+నాకు	O
+sperm	B-body_substance
+count	B-mtest
+initialగా	B-time_period
+అయితే	O
+తక్వగా	B-intensity
+ఉండే	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఎప్పుడు అంటే ఒక 6 months back	STATEMENT}
+{\slot
+ఎప్పుడు	O
+అంటే	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+back	I-time_period
+}
+
+{\intent	p: ఇప్పుడు ఏంటి అంటే sperm count అనేది normalగా ఉంది అని చెప్పారు వాళ్ళు test చేసి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+అంటే	O
+sperm	B-body_substance
+count	B-mtest
+అనేది	O
+normalగా	B-normal
+ఉంది	O
+అని	O
+చెప్పారు	O
+వాళ్ళు	O
+test	B-mtest
+చేసి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మా mrs అనేది egg అనేది, eggsకి medicine వాడుతున్నాము మామూలుగా	STATEMENT}
+{\slot
+మా	O
+mrs	B-familal
+అనేది	O
+egg	B-body_part
+అనేది,	O
+eggsకి	B-body_part
+medicine	B-medicine
+వాడుతున్నాము	O
+మామూలుగా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: egg అనేది చిన్నగా ఉన్నాయని చెప్పేసి	STATEMENT}
+{\slot
+egg	B-body_part
+అనేది	O
+చిన్నగా	B-symptom
+ఉన్నాయని	O
+చెప్పేసి	O
+}
+
+{\intent	d: PCOD ఏమన్నా ఉందని చెప్పారా?	INFO_REQUEST}
+{\slot
+PCOD	B-medical_condition
+ఏమన్నా	O
+ఉందని	O
+చెప్పారా?	O
+}
+
+{\intent	p: ఆ మా mrsకి PCOD ఉందండి	ANSWER}
+{\slot
+ఆ	O
+మా	O
+mrsకి	B-familal
+PCOD	B-medical_condition
+ఉందండి	B-positive
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: PCOD ఉంది కానీ lowerగా ఉంది , పర్వాలేదు	STATEMENT}
+{\slot
+PCOD	B-medical_condition
+ఉంది	B-positive
+కానీ	O
+lowerగా	B-mtest_value
+ఉంది	O
+,	O
+పర్వాలేదు	O
+}
+
+{\intent	d: బరువు కూడా కొంచం ఎక్కువగా ఉన్నారా?	INFO_REQUEST}
+{\slot
+బరువు	B-bm
+కూడా	O
+కొంచం	B-intensity
+ఎక్కువగా	I-intensity
+ఉన్నారా?	O
+}
+
+{\intent	p: ఆ వాళ్ళు weight కూడా కొంచం ఎక్కువ ఉంటారు అండి.	ANSWER}
+{\slot
+ఆ	O
+వాళ్ళు	O
+weight	B-bm
+కూడా	O
+కొంచం	O
+ఎక్కువ	B-intensity
+ఉంటారు	O
+అండి.	O
+}
+
+{\intent	d: ok, ok	ACK}
+{\slot
+ok,	O
+ok	O
+}
+
+{\intent	d: so definitely PCOD symptoms అయితే ఉన్నాయి.	DIAGNOSIS}
+{\slot
+so	O
+definitely	O
+PCOD	B-medical_condition
+symptoms	O
+అయితే	O
+ఉన్నాయి.	O
+}
+

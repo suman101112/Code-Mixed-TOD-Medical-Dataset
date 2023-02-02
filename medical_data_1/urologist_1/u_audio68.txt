@@ -1,0 +1,102 @@
+{\intent	d: Aanand ఇది కొంచం కుడివైపు kidney వాపు వచ్చినట్టుగా ఉండమ్మా	DIAGNOSIS}
+{\slot
+Aanand	O
+ఇది	O
+కొంచం	O
+కుడివైపు	B-location
+kidney	B-body_part
+వాపు	B-symptom
+వచ్చినట్టుగా	O
+ఉండమ్మా	O
+}
+
+{\intent	d: దానికి ఒక రక్త పరిక్ష చేసి చూడాలా, సరేనా?	INFO_REQUEST}
+{\slot
+దానికి	O
+ఒక	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+చేసి	O
+చూడాలా,	O
+సరేనా?	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఒక రక్త పరిక్ష రాస్తాను	COMMIT}
+{\slot
+ఒక	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+రాస్తాను	O
+}
+
+{\intent	d: ఆ రక్త పరిక్ష దానితో పాటు గోళీలు కూడా వాడుకో	ACTION_DIR}
+{\slot
+ఆ	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+దానితో	O
+పాటు	O
+గోళీలు	B-medicine
+కూడా	O
+వాడుకో	O
+}
+
+{\intent	p: బాగా నొప్పిలేస్తాంది sir	STATEMENT}
+{\slot
+బాగా	O
+నొప్పిలేస్తాంది	B-symptom
+sir	O
+}
+
+{\intent	d: అదే అదే, ఇప్పుడు ఈ రక్త పరిక్ష తీసుకోవాల, ఇప్పుడు ఇస్తే నీకు రేపు కానీ, ఎల్లుండి కానీ, report ఇస్తారు	ACTION_DIR}
+{\slot
+అదే	O
+అదే,	O
+ఇప్పుడు	B-time_period
+ఈ	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+తీసుకోవాల,	O
+ఇప్పుడు	O
+ఇస్తే	O
+నీకు	O
+రేపు	O
+కానీ,	O
+ఎల్లుండి	O
+కానీ,	O
+report	B-mtest
+ఇస్తారు	O
+}
+
+{\intent	d: so Monday ఒకసారి వచ్చి శుక్రవారం నాకు చూపియ్యలి సరేనా?	INFO_REQUEST}
+{\slot
+so	O
+Monday	B-time_period
+ఒకసారి	O
+వచ్చి	O
+శుక్రవారం	B-time_period
+నాకు	O
+చూపియ్యలి	O
+సరేనా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడైతే గోళీలు రాస్తాను, గోళీలు తీసుకోని వాడు.	ACTION_DIR}
+{\slot
+ఇప్పుడైతే	O
+గోళీలు	B-medicine
+రాస్తాను,	O
+గోళీలు	B-medicine
+తీసుకోని	O
+వాడు.	O
+}
+

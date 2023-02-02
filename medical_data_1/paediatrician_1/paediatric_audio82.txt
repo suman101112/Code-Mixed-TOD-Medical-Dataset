@@ -1,0 +1,130 @@
+{\intent	p: ఆ నమస్తే sir	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: మా బాబు degree చదువుతున్నాడు.	STATEMENT}
+{\slot
+మా	O
+బాబు	B-person
+degree	B-profession
+చదువుతున్నాడు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: speedగా ఉంటాడు sir	STATEMENT}
+{\slot
+speedగా	B-symptom
+ఉంటాడు	O
+sir	O
+}
+
+{\intent	d: speed	ACK}
+{\slot
+speed	B-symptom
+}
+
+{\intent	d: తొందర ఎక్కువనా?	INFO_REQUEST}
+{\slot
+తొందర	O
+ఎక్కువనా?	O
+}
+
+{\intent	p: ఆ sir	ANSWER}
+{\slot
+ఆ	B-positive
+sir	O
+}
+
+{\intent	p: degreeలో ఉన్న వాడు, 2 years waste చేసుకున్నాడు	STATEMENT}
+{\slot
+degreeలో	B-profession
+ఉన్న	O
+వాడు,	O
+2	B-time_period
+years	I-time_period
+waste	B-symptom
+చేసుకున్నాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే autism ఉందనేది doubt వస్తుంది sir	STATEMENT}
+{\slot
+అంటే	O
+autism	B-symptom
+ఉందనేది	O
+doubt	O
+వస్తుంది	O
+sir	O
+}
+
+{\intent	d: మీరు పిలుస్తే మాత్రం పలకడం, అన్నీ studies విషయాల్లో ok నా బాబు?	INFO_REQUEST}
+{\slot
+మీరు	O
+పిలుస్తే	O
+మాత్రం	O
+పలకడం,	O
+అన్నీ	O
+studies	O
+విషయాల్లో	O
+ok	O
+నా	O
+బాబు?	O
+}
+
+{\intent	p: అన్నీ విషయాల్లో బానే ఉంటాడు, బాగా speed sir	ANSWER}
+{\slot
+అన్నీ	O
+విషయాల్లో	O
+బానే	B-normal
+ఉంటాడు,	O
+బాగా	B-intensity
+speed	B-symptom
+sir	O
+}
+
+{\intent	p: ప్రతీదాంట్లో కూడా వేరే వాళ్ళకన్నా ఎక్కువగా ఆలోచిస్తాడు	STATEMENT}
+{\slot
+ప్రతీదాంట్లో	O
+కూడా	O
+వేరే	O
+వాళ్ళకన్నా	O
+ఎక్కువగా	B-intensity
+ఆలోచిస్తాడు	B-bodily_process
+}
+
+{\intent	d: ఇవన్నీ కూడా autism కాదు అండి, ఇది hurried and haisty speech, అంటే గనక ఆత్రుత గానీ, తొందర గానీ	DIAGNOSIS}
+{\slot
+ఇవన్నీ	O
+కూడా	O
+autism	B-symptom
+కాదు	B-negative
+అండి,	O
+ఇది	O
+hurried	B-medical_condition
+and	I-medical_condition
+haisty	I-medical_condition
+speech,	I-medical_condition
+అంటే	O
+గనక	O
+ఆత్రుత	B-symptom
+గానీ,	O
+తొందర	B-symptom
+గానీ	O
+}
+

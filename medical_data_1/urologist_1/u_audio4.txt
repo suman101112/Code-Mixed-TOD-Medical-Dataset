@@ -1,0 +1,241 @@
+{\intent	p: ఆ నమస్తే sir	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: చెప్పండి sir	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: నాకు serum creatinine 1.6 1.7 ఆ రకంగా ఉంటుంది sir	STATEMENT}
+{\slot
+నాకు	O
+serum	B-body_substance
+creatinine	I-body_substance
+1.6	B-mtest_value
+1.7	B-mtest_value
+ఆ	O
+రకంగా	O
+ఉంటుంది	O
+sir	O
+}
+
+{\intent	d: వయస్సు ఎంత అండి	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అండి	O
+}
+
+{\intent	p: వయస్సు 65 sir, 65 అండి.	ANSWER}
+{\slot
+వయస్సు	O
+65	B-age
+sir,	O
+65	B-age
+అండి.	O
+}
+
+{\intent	d: ఇది ఎప్పటినుంచి ఉంది sir	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎప్పటినుంచి	O
+ఉంది	O
+sir	O
+}
+
+{\intent	p: సుమారు 1 year నుంచి అట్ల ఉంటుంది sir.	ANSWER}
+{\slot
+సుమారు	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+అట్ల	O
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so నేను hyderabad Kamineni hospitalలో చూపించానండి	STATEMENT}
+{\slot
+so	O
+నేను	O
+hyderabad	B-place
+Kamineni	B-hospital_name
+hospitalలో	I-hospital_name
+చూపించానండి	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: చూపిస్తే వాళ్ళు ఏదో tablets అయ్యి రాసి ఇచ్చారు,	STATEMENT}
+{\slot
+చూపిస్తే	O
+వాళ్ళు	O
+ఏదో	O
+tablets	B-medicine
+అయ్యి	O
+రాసి	O
+ఇచ్చారు,	O
+}
+
+{\intent	p: అన్నీ రకాల పరిక్షలు scanning తీసారు, blood test తీసారు, urine తీసారు, protein test	STATEMENT}
+{\slot
+అన్నీ	O
+రకాల	O
+పరిక్షలు	O
+scanning	B-mtest
+తీసారు,	O
+blood	B-body_substance
+test	B-mtest
+తీసారు,	O
+urine	B-body_substance
+తీసారు,	O
+protein	B-body_substance
+test	I-mtest
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: electroral test అని అన్నీ రకాల testలు చేసారు sir	STATEMENT}
+{\slot
+electroral	B-mtest
+test	B-mtest
+అని	O
+అన్నీ	O
+రకాల	O
+testలు	B-mtest
+చేసారు	O
+sir	O
+}
+
+{\intent	d: అవును sir అవునండీ.	ACK}
+{\slot
+అవును	O
+sir	O
+అవునండీ.	O
+}
+
+{\intent	p: అన్నిటిలోనూ normalఏ ఉందండి మాకు ఏం అర్ధం కావడంలేదు, last and finalగా biopsy చేయాలి	STATEMENT}
+{\slot
+అన్నిటిలోనూ	O
+normalఏ	B-normal
+ఉందండి	O
+మాకు	O
+ఏం	O
+అర్ధం	O
+కావడంలేదు,	O
+last	O
+and	O
+finalగా	O
+biopsy	B-mtest
+చేయాలి	O
+}
+
+{\intent	d: అవునండీ	ACK}
+{\slot
+అవునండీ	O
+}
+
+{\intent	p: అని చెప్పారు sir	STATEMENT}
+{\slot
+అని	O
+చెప్పారు	O
+sir	O
+}
+
+{\intent	d: అవును	ACK}
+{\slot
+అవును	O
+}
+
+{\intent	p: అయితే biopsy ఇంతవరకు చేయించుకోలేదు	STATEMENT}
+{\slot
+అయితే	O
+biopsy	B-mtest
+ఇంతవరకు	O
+చేయించుకోలేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ Nephrologist ఏ మరి అన్నీ normalగానే ఉన్నాయి, నాకు ఇంకేం లేదు అని Ketofen tablets రాసారు అండి.	STATEMENT}
+{\slot
+అక్కడ	B-location
+Nephrologist	B-medical_professional
+ఏ	O
+మరి	O
+అన్నీ	O
+normalగానే	B-normal
+ఉన్నాయి,	O
+నాకు	O
+ఇంకేం	O
+లేదు	O
+అని	O
+Ketofen	B-medicine
+tablets	I-medicine
+రాసారు	O
+అండి.	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: ఆ tablet ఒక 3 నెలలు వాడమన్నారు, అవి వాడిన కూడా తగ్గలేదు, అండి	STATEMENT}
+{\slot
+ఆ	O
+tablet	B-medicine
+ఒక	O
+3	B-time_period
+నెలలు	I-time_period
+వాడమన్నారు,	O
+అవి	O
+వాడిన	O
+కూడా	O
+తగ్గలేదు,	B-symptom
+అండి	O
+}
+
+{\intent	p: అదే 1.5, 1.6 ఉంటుంది sir	STATEMENT}
+{\slot
+అదే	O
+1.5,	B-mtest_value
+1.6	B-mtest_value
+ఉంటుంది	O
+sir	O
+}
+
+{\intent	d: so మీకు ఉండే problemని chronic kidney disease అంటారు	DIAGNOSIS}
+{\slot
+so	O
+మీకు	O
+ఉండే	O
+problemని	O
+chronic	B-medical_condition
+kidney	I-medical_condition
+disease	I-medical_condition
+అంటారు	O
+}
+

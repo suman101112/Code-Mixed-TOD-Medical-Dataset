@@ -1,0 +1,150 @@
+{\intent	p: madam నా పేరు Mounika	STATEMENT}
+{\slot
+madam	O
+నా	O
+పేరు	O
+Mounika	B-name
+}
+
+{\intent	p: నా age 24 madam	STATEMENT}
+{\slot
+నా	O
+age	O
+24	B-age
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: నేను ఇట్లనే motion వెళ్ళే దెగ్గర నుంచి blood వస్తుంటే, khammamలో చూయించుకున్నానండీ	STATEMENT}
+{\slot
+నేను	O
+ఇట్లనే	O
+motion	B-bodily_process
+వెళ్ళే	O
+దెగ్గర	O
+నుంచి	O
+blood	B-body_substance
+వస్తుంటే,	O
+khammamలో	B-place
+చూయించుకున్నానండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చూయించుకున్నప్పుడు వాళ్ళు fissures అని చెప్పేసి medicines వాడమన్నారు	STATEMENT}
+{\slot
+చూయించుకున్నప్పుడు	O
+వాళ్ళు	O
+fissures	B-symptom
+అని	O
+చెప్పేసి	O
+medicines	B-medicine
+వాడమన్నారు	O
+}
+
+{\intent	d: uhmm	ACK}
+{\slot
+uhmm	O
+}
+
+{\intent	p: వాడిన 1 month 2 months తరువాత అలాగే blood రావడం మళ్ళి motion వెళ్ళినా దెగ్గర బాగా మంటను, pain వచ్చేసేసి బాగా blood వస్తుంది madam	STATEMENT}
+{\slot
+వాడిన	O
+1	B-time_period
+month	I-time_period
+2	B-time_period
+months	I-time_period
+తరువాత	O
+అలాగే	O
+blood	B-body_substance
+రావడం	O
+మళ్ళి	O
+motion	B-bodily_process
+వెళ్ళినా	O
+దెగ్గర	B-location
+బాగా	O
+మంటను,	O
+pain	B-symptom
+వచ్చేసేసి	O
+బాగా	O
+blood	B-body_substance
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అంటే నాకు 3 caesareans అయ్యాయి అండి	STATEMENT}
+{\slot
+అంటే	O
+నాకు	O
+3	B-frequency
+caesareans	B-treatment
+అయ్యాయి	O
+అండి	O
+}
+
+{\intent	p: తరువాత అలా motion వెళ్ళినా దెగ్గర నుంచి బాగా bleed అవుతుంది madam	STATEMENT}
+{\slot
+తరువాత	O
+అలా	O
+motion	B-bodily_process
+వెళ్ళినా	O
+దెగ్గర	O
+నుంచి	O
+బాగా	B-intensity
+bleed	B-symptom
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2 monthsకి ఒకసారి అలా ఇబ్బంది పడుతున్నాను madam.	STATEMENT}
+{\slot
+2	B-time_period
+monthsకి	B-time_period
+ఒకసారి	O
+అలా	O
+ఇబ్బంది	O
+పడుతున్నాను	O
+madam.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: దీనికి treatment ఉంది.	STATEMENT}
+{\slot
+దీనికి	O
+treatment	B-treatment
+ఉంది.	O
+}
+
+{\intent	d: so దీనికి naturalగా homeopathy treatment ఉంది.	STATEMENT}
+{\slot
+so	O
+దీనికి	O
+naturalగా	O
+homeopathy	B-medicine
+treatment	B-treatment
+ఉంది.	O
+}
+

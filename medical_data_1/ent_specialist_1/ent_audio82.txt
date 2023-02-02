@@ -1,0 +1,345 @@
+{\intent	d: नाम बोलो	ACTION_DIR}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Khaazid	ANSWER}
+{\slot
+Khaazid	B-name
+}
+
+{\intent	d: Khaazid	ACK}
+{\slot
+Khaazid	B-name
+}
+
+{\intent	p1: haji, HAZI	CORRECT}
+{\slot
+haji,	B-name
+HAZI	B-name
+}
+
+{\intent	d: haj	INFO_REQUEST}
+{\slot
+haj	B-name
+}
+
+{\intent	p1: i	ANSWER}
+{\slot
+i	B-name
+}
+
+{\intent	d: उम्र बोलो.	INFO_REQUEST}
+{\slot
+उम्र	O
+बोलो.	O
+}
+
+{\intent	p: 11.5	ANSWER}
+{\slot
+11.5	B-age
+}
+
+{\intent	p1: उम्र बोलो doctorसाभ को	ACTION_DIR}
+{\slot
+उम्र	O
+बोलो	O
+doctorसाभ	B-medical_professional
+को	O
+}
+
+{\intent	p1: 12 years बोलो	ANSWER}
+{\slot
+12	B-age
+years	I-age
+बोलो	O
+}
+
+{\intent	p: 12 years	ANSWER}
+{\slot
+12	B-age
+years	I-age
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: कान दर्द	ANSWER}
+{\slot
+कान	B-body_part
+दर्द	B-symptom
+}
+
+{\intent	d: कान का	HOLD}
+{\slot
+कान	B-body_part
+का	O
+}
+
+{\intent	p: दर्द है	STATEMENT}
+{\slot
+दर्द	B-symptom
+है	O
+}
+
+{\intent	d: सर्दी है?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+है?	O
+}
+
+{\intent	p1: है sir	ANSWER}
+{\slot
+है	O
+sir	O
+}
+
+{\intent	p1: दवाई डाले sir कान का दर्द है तो	STATEMENT}
+{\slot
+दवाई	B-medicine
+डाले	O
+sir	O
+कान	B-body_part
+का	O
+दर्द	B-symptom
+है	O
+तो	O
+}
+
+{\intent	d: कान साफ़ करना	STATEMENT}
+{\slot
+कान	B-body_part
+साफ़	B-treatment
+करना	O
+}
+
+{\intent	p1: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: पहले ये दर्द कम होने दो	MEDICAL_EXPLANATION}
+{\slot
+पहले	O
+ये	O
+दर्द	B-symptom
+कम	B-intensity
+होने	O
+दो	O
+}
+
+{\intent	p1: अच्छी बात	ACK}
+{\slot
+अच्छी	O
+बात	O
+}
+
+{\intent	d: अभी ये दर्द Dewax तो continue करो	ACTION_DIR}
+{\slot
+अभी	B-time_period
+ये	O
+दर्द	B-symptom
+Dewax	B-medicine
+तो	O
+continue	O
+करो	O
+}
+
+{\intent	p1: अच्छी बात	ACK}
+{\slot
+अच्छी	O
+बात	O
+}
+
+{\intent	d: ये सर्दी के वजह से दर्द	DIAGNOSIS}
+{\slot
+ये	O
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+दर्द	B-symptom
+}
+
+{\intent	p1: दर्द	STATEMENT}
+{\slot
+दर्द	B-symptom
+}
+
+{\intent	d: एक 3 दिन होने के बाद आ जाओ	ACTION_DIR}
+{\slot
+एक	O
+3	B-time_period
+दिन	I-time_period
+होने	O
+के	O
+बाद	B-time_period
+आ	O
+जाओ	O
+}
+
+{\intent	p1: अच्छा	ACK}
+{\slot
+अच्छा	O
+}
+
+{\intent	d: कान साफ़ करते	COMMIT}
+{\slot
+कान	B-body_part
+साफ़	O
+करते	O
+}
+
+{\intent	d: um	ACK}
+{\slot
+um	O
+}
+
+{\intent	p1: अच्छी	ACK}
+{\slot
+अच्छी	O
+}
+
+{\intent	p2: बुखार भी है	STATEMENT}
+{\slot
+बुखार	B-symptom
+भी	O
+है	O
+}
+
+{\intent	d: ये दर्द इसके वजह से सर्दी के वजह से	DIAGNOSIS}
+{\slot
+ये	O
+दर्द	B-symptom
+इसके	O
+वजह	O
+से	O
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+}
+
+{\intent	p1: fever रहता sir	INFO_REQUEST}
+{\slot
+fever	B-symptom
+रहता	O
+sir	O
+}
+
+{\intent	d: रहता	ACK}
+{\slot
+रहता	O
+}
+
+{\intent	p1: में 2 दिन से दवाई डाल रहा हूँ sir	STATEMENT}
+{\slot
+में	O
+2	B-time_period
+दिन	I-time_period
+से	O
+दवाई	B-medicine
+डाल	O
+रहा	O
+हूँ	O
+sir	O
+}
+
+{\intent	p2: बहुत है doctor साहब मैल?	INFO_REQUEST}
+{\slot
+बहुत	B-intensity
+है	O
+doctor	B-medical_professional
+साहब	O
+मैल?	B-symptom
+}
+
+{\intent	d: आ ,	ANSWER}
+{\slot
+आ	B-positive
+,	O
+}
+
+{\intent	d: मैल के वजह से दर्द नहीं होता	MEDICAL_EXPLANATION}
+{\slot
+मैल	B-symptom
+के	O
+वजह	O
+से	O
+दर्द	B-symptom
+नहीं	B-negative
+होता	O
+}
+
+{\intent	p1: infection से	STATEMENT}
+{\slot
+infection	B-medical_condition
+से	O
+}
+
+{\intent	d: पहले सर्दी कम हो जाना	MEDICAL_EXPLANATION}
+{\slot
+पहले	O
+सर्दी	B-medical_condition
+कम	B-normal
+हो	O
+जाना	O
+}
+
+{\intent	d: में गोलियां लिखके देता हूं,	COMMIT}
+{\slot
+में	O
+गोलियां	B-medicine
+लिखके	O
+देता	O
+हूं,	O
+}
+
+{\intent	p1: अच्छा	ACK}
+{\slot
+अच्छा	O
+}
+
+{\intent	p1: कान में drops डालें sir.	STATEMENT}
+{\slot
+कान	B-body_part
+में	O
+drops	B-medicine
+डालें	O
+sir.	O
+}
+
+{\intent	p1: food में क्या है ?	INFO_REQUEST}
+{\slot
+food	B-food_substance
+में	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	d: आ?	SNU}
+{\slot
+आ?	O
+}
+
+{\intent	p1: food, food	REPEAT_REPHRASE}
+{\slot
+food,	B-food_substance
+food	B-food_substance
+}
+
+{\intent	d: ज़रा खट्टे चीज मत दो .	ACTION_DIR}
+{\slot
+ज़रा	O
+खट्टे	B-food_substance
+चीज	I-food_substance
+मत	B-negative
+दो	O
+.	O
+}
+

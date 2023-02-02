@@ -1,0 +1,238 @@
+{\intent	d: పేరు	INFO_REQUEST}
+{\slot
+పేరు	O
+}
+
+{\intent	p: Buchayya.	ANSWER}
+{\slot
+Buchayya.	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 70 ఉంటాయి కదా sir.	ANSWER}
+{\slot
+70	B-age
+ఉంటాయి	O
+కదా	O
+sir.	O
+}
+
+{\intent	p1: 70 ఉంటాయి	ACK}
+{\slot
+70	B-age
+ఉంటాయి	O
+}
+
+{\intent	d: umm?	SNU}
+{\slot
+umm?	O
+}
+
+{\intent	p1: 70 ఉంటాయా?	INFO_REQUEST}
+{\slot
+70	B-age
+ఉంటాయా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p1: 70 ఉంటాయి కదా.	REPEAT_REPHRASE}
+{\slot
+70	B-age
+ఉంటాయి	O
+కదా.	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: వినిపిస్తలేదు అట sir. ఇనబడుతలేదు.	STATEMENT}
+{\slot
+వినిపిస్తలేదు	B-symptom
+అట	O
+sir.	O
+ఇనబడుతలేదు.	B-symptom
+}
+
+{\intent	p: చెవు నరాలు తలకాయ గుంజినట్లు	STATEMENT}
+{\slot
+చెవు	B-body_part
+నరాలు	I-body_part
+తలకాయ	B-body_part
+గుంజినట్లు	B-symptom
+}
+
+{\intent	p: చెవులు ఏ మాత్రం వినబడుతలేవు	STATEMENT}
+{\slot
+చెవులు	B-body_part
+ఏ	O
+మాత్రం	O
+వినబడుతలేవు	B-symptom
+}
+
+{\intent	d: చెవులు వినబడుట లేవు.	ACK}
+{\slot
+చెవులు	B-body_part
+వినబడుట	B-bodily_process
+లేవు.	B-negative
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: MGMకు వచ్చిన.	STATEMENT}
+{\slot
+MGMకు	B-place
+వచ్చిన.	O
+}
+
+{\intent	d: గవన్నీ కాదు కాని ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+గవన్నీ	O
+కాదు	O
+కాని	O
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p1: ఎన్ని రోజుల నుంచి ఇనబడుతలేవు అంటాడు.	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇనబడుతలేవు	B-symptom
+అంటాడు.	O
+}
+
+{\intent	p: ఇప్పుడు నెల రోజులు అయింది.	ANSWER}
+{\slot
+ఇప్పుడు	O
+నెల	B-time_period
+రోజులు	I-time_period
+అయింది.	O
+}
+
+{\intent	p: MGMకి వచ్చి ఇది.	STATEMENT}
+{\slot
+MGMకి	B-place
+వచ్చి	O
+ఇది.	O
+}
+
+{\intent	d: MGM వాడిన మాటలు చెప్పమాకయ్యా.	STATEMENT}
+{\slot
+MGM	B-place
+వాడిన	O
+మాటలు	O
+చెప్పమాకయ్యా.	O
+}
+
+{\intent	p: వాడను ఇగ	STATEMENT}
+{\slot
+వాడను	O
+ఇగ	O
+}
+
+{\intent	d: చుట్టా బీడీ తాగుతాడా బాగా?	INFO_REQUEST}
+{\slot
+చుట్టా	B-habit
+బీడీ	B-habit
+తాగుతాడా	B-bodily_process
+బాగా?	O
+}
+
+{\intent	p1: ఆ తాగుతాడు sir.	ANSWER}
+{\slot
+ఆ	O
+తాగుతాడు	B-positive
+sir.	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: బంద్ చేయాలే.	ACTION_DIR}
+{\slot
+బంద్	O
+చేయాలే.	O
+}
+
+{\intent	p: बंद చేయాలనా?	INFO_REQUEST}
+{\slot
+बंद	O
+చేయాలనా?	O
+}
+
+{\intent	d: వినబడుతుందా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా?	B-bodily_process
+}
+
+{\intent	p: ఆహ<neg>	ANSWER}
+{\slot
+ఆహ<neg>	B-negative
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: umm కొద్దిగా ఇనబడుతాంది.	ANSWER}
+{\slot
+umm	B-positive
+కొద్దిగా	O
+ఇనబడుతాంది.	B-bodily_process
+}
+
+{\intent	p: ఆహ<neg>	ANSWER}
+{\slot
+ఆహ<neg>	B-negative
+}
+
+{\intent	d: చెవులు నరాలు దెబ్బతిన్నాయి.	DIAGNOSIS}
+{\slot
+చెవులు	B-body_part
+నరాలు	B-body_part
+దెబ్బతిన్నాయి.	B-symptom
+}
+
+{\intent	p1: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	d: చెవులో machine పెట్టుకోవాలె.	STATEMENT}
+{\slot
+చెవులో	B-body_part
+machine	B-medical_apparatus
+పెట్టుకోవాలె.	O
+}
+
+{\intent	p1: sir.	ACK}
+{\slot
+sir.	O
+}
+

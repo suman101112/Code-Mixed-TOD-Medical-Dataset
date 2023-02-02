@@ -1,0 +1,103 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 8 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+వయస్సు	O
+8	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: type 1 diabetes ఉంది.	STATEMENT}
+{\slot
+type	B-medical_condition
+1	I-medical_condition
+diabetes	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: insulin ఇస్తున్నాము.	STATEMENT}
+{\slot
+insulin	B-medicine
+ఇస్తున్నాము.	O
+}
+
+{\intent	p: ఈ మధ్య sight ఉంటే కంటి అద్దాలు ఇప్పించాము అయినా ఫలితం లేదు.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+sight	B-bodily_process
+ఉంటే	O
+కంటి	B-body_part
+అద్దాలు	O
+ఇప్పించాము	O
+అయినా	O
+ఫలితం	O
+లేదు.	O
+}
+
+{\intent	p: diabetes వలన కంటి సమస్య వచ్చిందా?	INFO_REQUEST}
+{\slot
+diabetes	B-medical_condition
+వలన	O
+కంటి	B-body_part
+సమస్య	O
+వచ్చిందా?	O
+}
+
+{\intent	d: పరిక్ష వలన మనకు sugar వల్ల లేకపోతే మధుమేహ వ్యాధి వల్ల కన్నులు ఏ problem ఉన్నాయి ఆ problemకి ఏ చికిత్స చేయొచ్చు అన్నది మనం నిర్ధారణ చేయడనికి అవకాశం ఉంటుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+పరిక్ష	B-mtest
+వలన	O
+మనకు	O
+sugar	B-medical_condition
+వల్ల	O
+లేకపోతే	O
+మధుమేహ	B-medical_condition
+వ్యాధి	I-medical_condition
+వల్ల	O
+కన్నులు	B-body_part
+ఏ	O
+problem	O
+ఉన్నాయి	O
+ఆ	O
+problemకి	O
+ఏ	O
+చికిత్స	B-treatment
+చేయొచ్చు	O
+అన్నది	O
+మనం	O
+నిర్ధారణ	O
+చేయడనికి	O
+అవకాశం	O
+ఉంటుంది	O
+అండి.	O
+}
+
+{\intent	d: so 8 సంవత్సరాలు అయింది అంటున్నారు కబట్టి కచ్చితంగా మీ బాబుకి కన్ను పరిక్షను కన్ను dialate చేసి fundus eye examination చేయడం అనేది చాలా చాలా ముఖ్యం.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+8	B-age
+సంవత్సరాలు	I-age
+అయింది	O
+అంటున్నారు	O
+కబట్టి	O
+కచ్చితంగా	O
+మీ	O
+బాబుకి	B-familal
+కన్ను	B-body_part
+పరిక్షను	B-mtest
+కన్ను	B-body_part
+dialate	B-treatment
+చేసి	O
+fundus	B-mtest
+eye	I-mtest
+examination	I-mtest
+చేయడం	O
+అనేది	O
+చాలా	B-intensity
+చాలా	B-intensity
+ముఖ్యం.	O
+}
+

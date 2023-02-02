@@ -1,0 +1,223 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: ఆ, నమస్తే sir	GREETING}
+{\slot
+ఆ,	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: actualగా నాకు ఒక 2 months back pain వచ్చింది madam	STATEMENT}
+{\slot
+actualగా	O
+నాకు	O
+ఒక	O
+2	B-time_period
+months	I-time_period
+back	I-location
+pain	B-symptom
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: kidneyలో right side pain వచ్చింది, back sideలో కూడా అలానే పట్టేసింది abdomen లో	STATEMENT}
+{\slot
+kidneyలో	B-body_part
+right	B-location
+side	I-location
+pain	B-symptom
+వచ్చింది,	O
+back	B-location
+sideలో	I-location
+కూడా	O
+అలానే	O
+పట్టేసింది	O
+abdomen	B-body_part
+లో	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తర్వాత నేను వెళ్ళి test చేయించుకున్నాను	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+నేను	O
+వెళ్ళి	O
+test	B-mtest
+చేయించుకున్నాను	O
+}
+
+{\intent	p: తరువాత నాకు ఈ 9.4mm kidney stone అని ఉంది	STATEMENT}
+{\slot
+తరువాత	O
+నాకు	O
+ఈ	O
+9.4mm	B-mtest_value
+kidney	B-body_substance
+stone	I-body_substance
+అని	O
+ఉంది	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: దాని తరువాత నేను మళ్ళి treatment తీసుకున్న తరువాత, దాని తరువాత 1 or 2 days కే అది తగ్గింది 6.5 వచ్చింది	STATEMENT}
+{\slot
+దాని	O
+తరువాత	O
+నేను	O
+మళ్ళి	O
+treatment	O
+తీసుకున్న	O
+తరువాత,	O
+దాని	O
+తరువాత	O
+1	B-time_period
+or	O
+2	B-time_period
+days	I-time_period
+కే	O
+అది	O
+తగ్గింది	O
+6.5	B-mtest_value
+వచ్చింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు 5.5mm urine junctionలో ఉంది madam	STATEMENT}
+{\slot
+ఇప్పుడు	O
+5.5mm	B-mtest_value
+urine	B-body_substance
+junctionలో	B-location
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok sir ok sir	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+sir	O
+}
+
+{\intent	d: అయితే దీనికి చెప్తాను sir	COMMIT}
+{\slot
+అయితే	O
+దీనికి	O
+చెప్తాను	O
+sir	O
+}
+
+{\intent	d: ఇంకేమైనా చెప్తారా sir?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+చెప్తారా	O
+sir?	O
+}
+
+{\intent	p: 5.5mm stone ఉంది madam, ఇప్పుడు దానికి నేను మామూలుగా tablets వాడుతున్నాను	ANSWER}
+{\slot
+5.5mm	B-mtest_value
+stone	B-body_substance
+ఉంది	O
+madam,	O
+ఇప్పుడు	O
+దానికి	O
+నేను	O
+మామూలుగా	O
+tablets	B-medicine
+వాడుతున్నాను	O
+}
+
+{\intent	p: but మీ suggestion, ఎలా ఉంటుంది? లేదంటే ఏం foods, medicines, ఏం control చేసుకోవాలి	STATEMENT}
+{\slot
+but	O
+మీ	O
+suggestion,	O
+ఎలా	O
+ఉంటుంది?	O
+లేదంటే	O
+ఏం	O
+foods,	B-food_substance
+medicines,	B-medicine
+ఏం	O
+control	O
+చేసుకోవాలి	O
+}
+
+{\intent	d: నేను చెప్తాను sir, వినండీ	ACTION_DIR}
+{\slot
+నేను	O
+చెప్తాను	O
+sir,	O
+వినండీ	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so 5.5mm first 9 నుండి, బానే తగ్గించుకున్నారు sir, మంచి wayలోనే తగ్గించుకున్నారు,	APPRECIATE}
+{\slot
+so	O
+5.5mm	B-mtest_value
+first	O
+9	B-mtest_value
+నుండి,	O
+బానే	O
+తగ్గించుకున్నారు	O
+sir,	O
+మంచి	O
+wayలోనే	O
+తగ్గించుకున్నారు,	O
+}
+
+{\intent	d: కాకపోతే ఏందంటే sir ఇవి treatment తీసుకున్న లేదంటే after surgeries అయినా అవి మళ్ళి మళ్ళి form అవ్వొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+కాకపోతే	O
+ఏందంటే	O
+sir	O
+ఇవి	O
+treatment	B-treatment
+తీసుకున్న	O
+లేదంటే	O
+after	O
+surgeries	B-treatment
+అయినా	O
+అవి	O
+మళ్ళి	O
+మళ్ళి	O
+form	O
+అవ్వొచ్చు	O
+}
+

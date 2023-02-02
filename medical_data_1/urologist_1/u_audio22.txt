@@ -1,0 +1,235 @@
+{\intent	p: good afternoon madam	GREETING}
+{\slot
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: ఆ good afternoon sir	GREETING}
+{\slot
+ఆ	O
+good	O
+afternoon	O
+sir	O
+}
+
+{\intent	p: actually నాకు 9 stones ఉన్నాయి. left side 4 and right side 5	STATEMENT}
+{\slot
+actually	O
+నాకు	O
+9	B-frequency
+stones	B-body_substance
+ఉన్నాయి.	O
+left	B-location
+side	I-location
+4	B-frequency
+and	O
+right	B-location
+side	I-location
+5	B-frequency
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: maximum size ఎంత ఉన్నాయి sir?	INFO_REQUEST}
+{\slot
+maximum	O
+size	O
+ఎంత	O
+ఉన్నాయి	O
+sir?	O
+}
+
+{\intent	p: ఆ 5.9 i think	ANSWER}
+{\slot
+ఆ	O
+5.9	B-mtest_value
+i	O
+think	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	p: so నేను continuousగా water తాగుతున్నా, and నా urineలో నుంచి కూడా output అయిపోతున్నాయి	STATEMENT}
+{\slot
+so	O
+నేను	O
+continuousగా	O
+water	B-food_substance
+తాగుతున్నా,	O
+and	O
+నా	O
+urineలో	B-bodily_process
+నుంచి	O
+కూడా	O
+output	B-bodily_process
+అయిపోతున్నాయి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: but still నాకు 15 days నుంచి suffer అవుతున్నా.	STATEMENT}
+{\slot
+but	O
+still	O
+నాకు	O
+15	B-quantity
+days	B-time_period
+నుంచి	O
+suffer	B-symptom
+అవుతున్నా.	O
+}
+
+{\intent	p: right side kidneyలో కూడా చాలా pain వస్తుంది,	STATEMENT}
+{\slot
+right	B-location
+side	I-location
+kidneyలో	B-body_part
+కూడా	O
+చాలా	O
+pain	B-symptom
+వస్తుంది,	O
+}
+
+{\intent	p: ఎప్పుడు pain వస్తే అప్పుడు Nephrologist dialysis తీసుకుంటున్న నేను	STATEMENT}
+{\slot
+ఎప్పుడు	O
+pain	B-symptom
+వస్తే	O
+అప్పుడు	B-time_period
+Nephrologist	B-medical_professional
+dialysis	B-treatment
+తీసుకుంటున్న	O
+నేను	O
+}
+
+{\intent	d: ok sir ok	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+}
+
+{\intent	p: so ఆ timeలో cure అవుతుంది, but still బయటికి రావడం లేదు	STATEMENT}
+{\slot
+so	O
+ఆ	O
+timeలో	O
+cure	B-normal
+అవుతుంది,	O
+but	O
+still	O
+బయటికి	B-location
+రావడం	I-symptom
+లేదు	I-symptom
+}
+
+{\intent	p: ఒక వేల నాకు previousగా pain వస్తే stone బయటికి వెళ్ళేది	STATEMENT}
+{\slot
+ఒక	O
+వేల	O
+నాకు	O
+previousగా	B-time_period
+pain	B-symptom
+వస్తే	O
+stone	B-body_substance
+బయటికి	B-location
+వెళ్ళేది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: sir ఇదంతా ఎంత కాలం నుంచి sir?	INFO_REQUEST}
+{\slot
+sir	O
+ఇదంతా	O
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+sir?	O
+}
+
+{\intent	p: ఆ 5 , 6 years అవుతుంది	ANSWER}
+{\slot
+ఆ	O
+5	B-time_period
+,	O
+6	B-time_period
+years	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: నేను చెప్తాను sir	COMMIT}
+{\slot
+నేను	O
+చెప్తాను	O
+sir	O
+}
+
+{\intent	d: వినండీ, solution ఉంది దీనికి	ACTION_DIR}
+{\slot
+వినండీ,	O
+solution	O
+ఉంది	O
+దీనికి	O
+}
+
+{\intent	d: multiple renal calculi అనేది ఉంది sir.	DIAGNOSIS}
+{\slot
+multiple	B-medical_condition
+renal	I-medical_condition
+calculi	I-medical_condition
+అనేది	O
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: kidney stones ఇట్ల 3 4 చాలా మందికి ఇట్ల ఉంటాయి sir	MEDICAL_EXPLANATION}
+{\slot
+kidney	B-body_substance
+stones	I-body_substance
+ఇట్ల	O
+3	B-frequency
+4	B-frequency
+చాలా	O
+మందికి	O
+ఇట్ల	O
+ఉంటాయి	O
+sir	O
+}
+
+{\intent	d: so అంటే తరచుగా అవి వస్తూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అంటే	O
+తరచుగా	O
+అవి	O
+వస్తూ	O
+ఉంటాయి.	O
+}
+

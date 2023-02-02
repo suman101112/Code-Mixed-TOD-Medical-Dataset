@@ -1,0 +1,126 @@
+{\intent	p: Hello good evening sir	GREETING}
+{\slot
+Hello	O
+good	O
+evening	O
+sir	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఇది motionలో blood	STATEMENT}
+{\slot
+ఇది	O
+motionలో	B-bodily_process
+blood	B-body_substance
+}
+
+{\intent	p: motion అంతా అయిపోయినా తరువాత lastకి blood పడుతుంది, pain గానీ ఎమి లేదు	STATEMENT}
+{\slot
+motion	B-bodily_process
+అంతా	O
+అయిపోయినా	O
+తరువాత	B-time_period
+lastకి	O
+blood	B-body_substance
+పడుతుంది,	O
+pain	B-symptom
+గానీ	O
+ఎమి	O
+లేదు	B-negative
+}
+
+{\intent	d: last లో blood పడుతుంది అంటారు	ACK}
+{\slot
+last	O
+లో	O
+blood	B-body_substance
+పడుతుంది	O
+అంటారు	O
+}
+
+{\intent	d: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: ఆ అంతే sir	ANSWER}
+{\slot
+ఆ	O
+అంతే	O
+sir	O
+}
+
+{\intent	p: motion అంతా అయిపోయినా నాకు చివరలో blood బాగా bleeding అయితుంది.	STATEMENT}
+{\slot
+motion	B-symptom
+అంతా	O
+అయిపోయినా	O
+నాకు	O
+చివరలో	O
+blood	B-body_substance
+బాగా	O
+bleeding	B-medical_condition
+అయితుంది.	O
+}
+
+{\intent	d: ఎంత కాలంగా అండి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+అండి?	O
+}
+
+{\intent	p: ఒక 1 , 2 , 3 days అయితుందండి.	ANSWER}
+{\slot
+ఒక	O
+1	B-time_period
+,	O
+2	B-time_period
+,	O
+3	B-time_period
+days	I-time_period
+అయితుందండి.	O
+}
+
+{\intent	d: ఇది కాకుండా ఇంకేమన్నా doubts ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇది	O
+కాకుండా	O
+ఇంకేమన్నా	O
+doubts	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: అంతే ఇంకేం doubts లేవు	ANSWER}
+{\slot
+అంతే	O
+ఇంకేం	O
+doubts	O
+లేవు	O
+}
+
+{\intent	d: motion pass చేసిన తరువాత కేవలం ఒక 2 3 చూక్కల blood పడడం కాని fissure in Ano అంటారు.	DIAGNOSIS}
+{\slot
+motion	B-bodily_process
+pass	I-bodily_process
+చేసిన	O
+తరువాత	B-time_period
+కేవలం	O
+ఒక	O
+2	B-age
+3	B-age
+చూక్కల	O
+blood	B-body_substance
+పడడం	O
+కాని	O
+fissure	B-symptom
+in	I-symptom
+Ano	I-symptom
+అంటారు.	O
+}
+

@@ -1,0 +1,180 @@
+{\intent	p: నా భార్యకి ఇంతవరకు periods లేదు madam	STATEMENT}
+{\slot
+నా	O
+భార్యకి	B-familal
+ఇంతవరకు	O
+periods	B-bodily_process
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: మీ భార్యకి?	SNU}
+{\slot
+మీ	O
+భార్యకి?	B-familal
+}
+
+{\intent	p: ఇంతవరకు periods లేదు madam	REPEAT_REPHRASE}
+{\slot
+ఇంతవరకు	B-time_period
+periods	B-bodily_process
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: periods లేదు	ACK}
+{\slot
+periods	B-bodily_process
+లేదు	B-negative
+}
+
+{\intent	d: ఎప్పటినుంచి అండి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+అండి?	O
+}
+
+{\intent	p: 5 years అవుతుంది madam	ANSWER}
+{\slot
+5	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: 5 years నుంచి periods లేవా?	INFO_REQUEST}
+{\slot
+5	B-time_period
+years	I-time_period
+నుంచి	O
+periods	B-bodily_process
+లేవా?	O
+}
+
+{\intent	p: లేవు madam	ANSWER}
+{\slot
+లేవు	B-negative
+madam	O
+}
+
+{\intent	d: అవి ఏం చూయించుకోలేదా అండి?	INFO_REQUEST}
+{\slot
+అవి	O
+ఏం	O
+చూయించుకోలేదా	O
+అండి?	O
+}
+
+{\intent	d: reports ఏం లేవా?	INFO_REQUEST}
+{\slot
+reports	B-mtest
+ఏం	O
+లేవా?	O
+}
+
+{\intent	p: kurnoolలో అన్నీ చూయించాను madam	ANSWER}
+{\slot
+kurnoolలో	B-place
+అన్నీ	O
+చూయించాను	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: kurnoolలో Tirupati hospitalలో మరి Gayatri hospitalలో	STATEMENT}
+{\slot
+kurnoolలో	B-place
+Tirupati	B-hospital_name
+hospitalలో	I-hospital_name
+మరి	O
+Gayatri	B-hospital_name
+hospitalలో	I-hospital_name
+}
+
+{\intent	d: ఏమని చెప్పారు?	INFO_REQUEST}
+{\slot
+ఏమని	O
+చెప్పారు?	O
+}
+
+{\intent	p: అయితే ఒకసారి చూపిచి వెళితే గర్భసంచి అనేది లేదని చెప్పారు	ANSWER}
+{\slot
+అయితే	O
+ఒకసారి	O
+చూపిచి	O
+వెళితే	O
+గర్భసంచి	B-body_part
+అనేది	O
+లేదని	B-negative
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ప్రస్తుతానికి ఏమైనా వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+ప్రస్తుతానికి	O
+ఏమైనా	O
+వాడుతున్నారా?	O
+}
+
+{\intent	p: ఏం లేదు madam	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	p: అందుగురించే ఏమైనా అడుగుదాం అని.	STATEMENT}
+{\slot
+అందుగురించే	O
+ఏమైనా	O
+అడుగుదాం	O
+అని.	O
+}
+
+{\intent	d: సరే సరే చెప్తానండీ వినండీ.	ACTION_DIR}
+{\slot
+సరే	O
+సరే	O
+చెప్తానండీ	O
+వినండీ.	O
+}
+
+{\intent	d: so గర్భసంచి ఉంటే అది పనిచేయక పోతే దాన్ని మందులతోని సరిచేసే విధంగా treatments ఉన్నాయి అండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+గర్భసంచి	B-body_part
+ఉంటే	O
+అది	O
+పనిచేయక	B-symptom
+పోతే	I-symptom
+దాన్ని	O
+మందులతోని	B-medicine
+సరిచేసే	B-normal
+విధంగా	O
+treatments	B-treatment
+ఉన్నాయి	O
+అండి.	O
+}
+
+{\intent	d: అయితే మీరు చెప్పినదాంట్లొ మనకు ఇంకా clarityగా reports ద్వారా తెలుస్తుందండీ.	STATEMENT}
+{\slot
+అయితే	O
+మీరు	O
+చెప్పినదాంట్లొ	O
+మనకు	O
+ఇంకా	O
+clarityగా	O
+reports	B-mtest
+ద్వారా	O
+తెలుస్తుందండీ.	O
+}
+

@@ -1,0 +1,201 @@
+{\intent	p: leftside బాగా నొప్పి అని చెప్తారు	STATEMENT}
+{\slot
+leftside	B-location
+బాగా	B-intensity
+నొప్పి	B-symptom
+అని	O
+చెప్తారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ ఆ నొప్పి వచ్చినప్పుడు ఏంటి అంటే తనకి vomiting అలా అవుతుందండి	STATEMENT}
+{\slot
+ఆ	O
+ఆ	O
+నొప్పి	B-symptom
+వచ్చినప్పుడు	O
+ఏంటి	O
+అంటే	O
+తనకి	O
+vomiting	B-symptom
+అలా	O
+అవుతుందండి	O
+}
+
+{\intent	d: అమ్మా వయస్సు ఎంత అమ్మా?	INFO_REQUEST}
+{\slot
+అమ్మా	O
+వయస్సు	O
+ఎంత	O
+అమ్మా?	O
+}
+
+{\intent	p: sir mummyకి 38 ఉంటాయి అండి.	ANSWER}
+{\slot
+sir	O
+mummyకి	B-familal
+38	B-age
+ఉంటాయి	O
+అండి.	O
+}
+
+{\intent	d: ఏమైనా మందులు వాడుతున్నారా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+మందులు	B-medicine
+వాడుతున్నారా	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: ఒకసారి చూయించాం sir, చూపిస్తే, తల scanning చేయాలి అని చెప్పారు.	STATEMENT}
+{\slot
+ఒకసారి	O
+చూయించాం	O
+sir,	O
+చూపిస్తే,	O
+తల	B-body_part
+scanning	B-mtest
+చేయాలి	O
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అవి వాడక కొంచం తగ్గింది, మళ్ళి అవి ఆపేయగానే continue అయితుంది	STATEMENT}
+{\slot
+అవి	O
+వాడక	O
+కొంచం	O
+తగ్గింది,	B-normal
+మళ్ళి	O
+అవి	O
+ఆపేయగానే	O
+continue	O
+అయితుంది	O
+}
+
+{\intent	d: right అమ్మా,	ACK}
+{\slot
+right	O
+అమ్మా,	O
+}
+
+{\intent	d: ఇతర సమస్యలు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇతర	O
+సమస్యలు	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: తనకి thyroid ఉందండి	ANSWER}
+{\slot
+తనకి	O
+thyroid	B-medical_condition
+ఉందండి	O
+}
+
+{\intent	d: thyroid అదుపులో ఉందా? control లో ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+అదుపులో	B-normal
+ఉందా?	O
+control	B-normal
+లో	O
+ఉందా?	O
+}
+
+{\intent	p: ఆ అదుపులోనే ఉంది sir	ANSWER}
+{\slot
+ఆ	O
+అదుపులోనే	B-positive
+ఉంది	I-positive
+sir	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: అంతేనా అమ్మా ఇంకేమన్నా అడగదలచుకున్నావా?	INFO_REQUEST}
+{\slot
+అంతేనా	O
+అమ్మా	O
+ఇంకేమన్నా	O
+అడగదలచుకున్నావా?	O
+}
+
+{\intent	p: ఇంక అంతే నండీ.	ANSWER}
+{\slot
+ఇంక	O
+అంతే	O
+నండీ.	O
+}
+
+{\intent	d: right అమ్మా	CONV_CLOSE}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	d: so మీ mother విషయంలో 38 years, తలనొప్పి ఉంది, ఎక్కువ కాలంగా ఉంది, కొన్ని సంవత్సరాలు ఉంది, మాత్ర వాడినప్పుడు అదుపులో ఉంది, వాడినప్పుడు మళ్ళి తిరగబడుతుంది.	ACK}
+{\slot
+so	O
+మీ	O
+mother	B-familal
+విషయంలో	O
+38	B-age
+years,	I-age
+తలనొప్పి	B-symptom
+ఉంది,	O
+ఎక్కువ	B-intensity
+కాలంగా	B-time_period
+ఉంది,	O
+కొన్ని	O
+సంవత్సరాలు	B-time_period
+ఉంది,	O
+మాత్ర	B-medicine
+వాడినప్పుడు	O
+అదుపులో	O
+ఉంది,	O
+వాడినప్పుడు	O
+మళ్ళి	O
+తిరగబడుతుంది.	B-symptom
+}
+
+{\intent	d: so కారణాలు అనేకం ఉన్నాయి	STATEMENT}
+{\slot
+so	O
+కారణాలు	O
+అనేకం	O
+ఉన్నాయి	O
+}
+
+{\intent	d: so doctorగారు తలకు scanning పరీక్ష చేయించాలన్నారు మెదడుకి	ACK}
+{\slot
+so	O
+doctorగారు	B-medical_professional
+తలకు	B-body_part
+scanning	B-mtest
+పరీక్ష	I-mtest
+చేయించాలన్నారు	O
+మెదడుకి	B-body_part
+}
+
+{\intent	d: అది కచ్చితంగా ఒకసారి చేయించమ్మా	ACTION_DIR}
+{\slot
+అది	O
+కచ్చితంగా	O
+ఒకసారి	O
+చేయించమ్మా	O
+}
+

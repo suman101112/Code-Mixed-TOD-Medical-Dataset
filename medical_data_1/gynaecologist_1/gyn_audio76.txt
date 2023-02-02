@@ -1,0 +1,165 @@
+{\intent	p: madam నాకు 5 months back abortion అయింది madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+5	B-time_period
+months	I-time_period
+back	I-time_period
+abortion	B-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: thyroid ఉండడం వల్ల abortion అయింది madam	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+ఉండడం	O
+వల్ల	O
+abortion	B-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: thyroid వాళ్ళనా అమ్మా	ACK}
+{\slot
+thyroid	B-medical_condition
+వాళ్ళనా	O
+అమ్మా	O
+}
+
+{\intent	d: మీ TSH value ఎంత వచ్చింది అమ్మా	INFO_REQUEST}
+{\slot
+మీ	O
+TSH	B-body_substance
+value	B-mtest
+ఎంత	O
+వచ్చింది	O
+అమ్మా	O
+}
+
+{\intent	p: అంటే madam abortion అయినా తరువాత 5 monthsకి doctor దెగ్గరకు వెళ్ళాను madam, పిల్లలు లేరని వెళ్ళాను madam	STATEMENT}
+{\slot
+అంటే	O
+madam	O
+abortion	B-symptom
+అయినా	O
+తరువాత	O
+5	B-time_period
+monthsకి	I-time_period
+doctor	B-medical_professional
+దెగ్గరకు	O
+వెళ్ళాను	O
+madam,	O
+పిల్లలు	B-familal
+లేరని	B-negative
+వెళ్ళాను	O
+madam	O
+}
+
+{\intent	p: వెళితే abortion కి సంబంధించిన test చేసారు madam	STATEMENT}
+{\slot
+వెళితే	O
+abortion	B-symptom
+కి	O
+సంబంధించిన	O
+test	B-mtest
+చేసారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: mother నుంచి babyకి blood abnormal అన్నారు madam	STATEMENT}
+{\slot
+mother	B-familal
+నుంచి	O
+babyకి	B-person
+blood	B-body_substance
+abnormal	B-medical_condition
+అన్నారు	O
+madam	O
+}
+
+{\intent	d: ఆహా ok	ACK}
+{\slot
+ఆహా	O
+ok	O
+}
+
+{\intent	d: so మీకు haemoglobin blood తక్వ అయింది అని చెప్పారా అమ్మా?	INFO_REQUEST}
+{\slot
+so	O
+మీకు	O
+haemoglobin	B-body_substance
+blood	B-body_substance
+తక్వ	B-symptom
+అయింది	O
+అని	O
+చెప్పారా	O
+అమ్మా?	O
+}
+
+{\intent	p: haemoglobin correct ఉంది madam 13.5 ఉంది madam	ANSWER}
+{\slot
+haemoglobin	B-body_substance
+correct	B-normal
+ఉంది	O
+madam	O
+13.5	B-mtest_value
+ఉంది	O
+madam	O
+}
+
+{\intent	d: very nice అమ్మా very good	APPRECIATE}
+{\slot
+very	O
+nice	O
+అమ్మా	O
+very	O
+good	O
+}
+
+{\intent	p: దీనికి cure ఏంటి madam	INFO_REQUEST}
+{\slot
+దీనికి	O
+cure	O
+ఏంటి	O
+madam	O
+}
+
+{\intent	d: ఒక్కటే abortion అయింది కదా అమ్మా	INFO_REQUEST}
+{\slot
+ఒక్కటే	B-frequency
+abortion	B-symptom
+అయింది	O
+కదా	O
+అమ్మా	O
+}
+
+{\intent	p: ఒక్కటే madam	ANSWER}
+{\slot
+ఒక్కటే	B-frequency
+madam	O
+}
+
+{\intent	d: so usually	HOLD}
+{\slot
+so	O
+usually	O
+}
+
+{\intent	d1: abnormal baby అన్నారు.	STATEMENT}
+{\slot
+abnormal	B-medical_condition
+baby	B-person
+అన్నారు.	O
+}
+

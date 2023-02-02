@@ -1,0 +1,118 @@
+{\intent	p: sir, మూత్రం సన్నగా పోస్తున్నాడు, ఒక పక్కకు పోస్తున్నాడు. ఆపుకొని ఆపుకొని పోస్తున్నాడు మరి.	STATEMENT}
+{\slot
+sir,	O
+మూత్రం	B-body_substance
+సన్నగా	B-symptom
+పోస్తున్నాడు,	B-bodily_process
+ఒక	B-symptom
+పక్కకు	I-symptom
+పోస్తున్నాడు.	B-bodily_process
+ఆపుకొని	B-symptom
+ఆపుకొని	I-symptom
+పోస్తున్నాడు	B-bodily_process
+మరి.	O
+}
+
+{\intent	p: ఎప్పుడైనా ఒకసారి ఏడుస్తున్నాడు. ఎప్పటికి ఏడవడు.	STATEMENT}
+{\slot
+ఎప్పుడైనా	O
+ఒకసారి	O
+ఏడుస్తున్నాడు.	B-symptom
+ఎప్పటికి	O
+ఏడవడు.	O
+}
+
+{\intent	p: పిల్లల అటు పోతే మళ్ళి ఇటు పొమ్మన్నారు.	STATEMENT}
+{\slot
+పిల్లల	O
+అటు	O
+పోతే	O
+మళ్ళి	O
+ఇటు	O
+పొమ్మన్నారు.	O
+}
+
+{\intent	p: sideకి పోస్తున్నాడు మూత్రం, పోస్తే	STATEMENT}
+{\slot
+sideకి	B-location
+పోస్తున్నాడు	B-bodily_process
+మూత్రం,	B-body_substance
+పోస్తే	O
+}
+
+{\intent	p: సక్కగా పోయట్లేదు	STATEMENT}
+{\slot
+సక్కగా	B-symptom
+పోయట్లేదు	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: అంటే చక్కగా రావట్లేదా ఇట్ల?	INFO_REQUEST}
+{\slot
+అంటే	O
+చక్కగా	B-symptom
+రావట్లేదా	I-symptom
+ఇట్ల?	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అటు ఇటు పోతుందా?	INFO_REQUEST}
+{\slot
+అటు	B-location
+ఇటు	B-location
+పోతుందా?	B-bodily_process
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: సక్కగా రావట్లేదా?	INFO_REQUEST}
+{\slot
+సక్కగా	B-symptom
+రావట్లేదా?	I-symptom
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: సక్కగా రావట్లేదు	ANSWER}
+{\slot
+సక్కగా	B-symptom
+రావట్లేదు	I-symptom
+}
+
+{\intent	p1: ఇట్ల పోస్తున్నాడు	STATEMENT}
+{\slot
+ఇట్ల	B-location
+పోస్తున్నాడు	B-bodily_process
+}
+
+{\intent	p1: మల్ల ఆపుకుంట ఆపుకుంట సన్నగా చేస్తున్నాడు.	STATEMENT}
+{\slot
+మల్ల	O
+ఆపుకుంట	B-symptom
+ఆపుకుంట	I-symptom
+సన్నగా	B-symptom
+చేస్తున్నాడు.	B-bodily_process
+}
+
+{\intent	p1: అంటే సన్నగా అంటే సన్నగా	STATEMENT}
+{\slot
+అంటే	O
+సన్నగా	B-symptom
+అంటే	O
+సన్నగా	B-symptom
+}
+

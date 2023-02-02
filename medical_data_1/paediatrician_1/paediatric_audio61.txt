@@ -1,0 +1,68 @@
+{\intent	d: ऐसा लेटावो	ACTION_DIR}
+{\slot
+ऐसा	O
+लेटावो	O
+}
+
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p: amir	ANSWER}
+{\slot
+amir	B-name
+}
+
+{\intent	d: उम्र कितना है	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना	O
+है	O
+}
+
+{\intent	p: 2 साल हुए	ANSWER}
+{\slot
+2	B-age
+साल	I-age
+हुए	O
+}
+
+{\intent	d: क्या problem है इनको	INFO_REQUEST}
+{\slot
+क्या	O
+problem	O
+है	O
+इनको	O
+}
+
+{\intent	p: 3 दिन से बुखार आ रही परसों से	ANSWER}
+{\slot
+3	B-time_period
+दिन	I-time_period
+से	O
+बुखार	B-symptom
+आ	O
+रही	O
+परसों	B-time_period
+से	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: syrup डाल रे तो उतराराहे फिर	STATEMENT}
+{\slot
+syrup	B-medicine
+डाल	O
+रे	O
+तो	O
+उतराराहे	O
+फिर	O
+}
+

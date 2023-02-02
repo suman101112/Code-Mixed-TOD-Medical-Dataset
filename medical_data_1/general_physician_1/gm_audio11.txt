@@ -1,0 +1,189 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: నాకు left legలో చాలా సంవత్సరాలనుంచి long acting short acting insulin injections తీసుకుంటున్నాను madam	STATEMENT}
+{\slot
+నాకు	O
+left	B-location
+legలో	B-body_part
+చాలా	B-intensity
+సంవత్సరాలనుంచి	B-time_period
+long	B-medicine
+acting	I-medicine
+short	B-medicine
+acting	I-medicine
+insulin	B-medicine
+injections	I-medicine
+తీసుకుంటున్నాను	O
+madam	O
+}
+
+{\intent	d: వినపడట్లేదు sir, కొద్దిగా loudగా చెప్పండి	ACTION_DIR}
+{\slot
+వినపడట్లేదు	O
+sir,	O
+కొద్దిగా	O
+loudగా	O
+చెప్పండి	O
+}
+
+{\intent	d: left leg	ACK}
+{\slot
+left	B-location
+leg	B-body_part
+}
+
+{\intent	p: left legలో	HOLD}
+{\slot
+left	B-location
+legలో	B-body_part
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: knee నుంచి కింది వరకు అక్కడ అక్కడ boils లాగా వచ్చాయి	STATEMENT}
+{\slot
+knee	B-body_part
+నుంచి	O
+కింది	B-location
+వరకు	O
+అక్కడ	B-location
+అక్కడ	B-location
+boils	B-medical_condition
+లాగా	O
+వచ్చాయి	O
+}
+
+{\intent	p: boils అంటే ఇట్ల గడ్డ కట్టినట్లు అయిద్ది madam	REPEAT_REPHRASE}
+{\slot
+boils	B-medical_condition
+అంటే	O
+ఇట్ల	O
+గడ్డ	B-symptom
+కట్టినట్లు	I-symptom
+అయిద్ది	O
+madam	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: అది ఎందువల్లన?	INFO_REQUEST}
+{\slot
+అది	O
+ఎందువల్లన?	O
+}
+
+{\intent	p: long enduring patient madam	STATEMENT}
+{\slot
+long	B-time_period
+enduring	B-medical_condition
+patient	B-person
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: long acting, short acting insulin ఇస్తాను	STATEMENT}
+{\slot
+long	B-medicine
+acting,	I-medicine
+short	B-medicine
+acting	I-medicine
+insulin	B-medicine
+ఇస్తాను	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: plus supporting వేరే కూడా వాడుతాను	STATEMENT}
+{\slot
+plus	O
+supporting	O
+వేరే	O
+కూడా	O
+వాడుతాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు Ischemic stroke కూడా వచ్చింది madam	STATEMENT}
+{\slot
+నాకు	O
+Ischemic	B-medical_condition
+stroke	I-medical_condition
+కూడా	O
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఇప్పుడు bloodవి ఇలా గడ్డలు లాగా కట్టినాయి	STATEMENT}
+{\slot
+అయితే	O
+ఇప్పుడు	O
+bloodవి	B-body_substance
+ఇలా	O
+గడ్డలు	B-symptom
+లాగా	O
+కట్టినాయి	O
+}
+
+{\intent	p: అవి ఇప్పుడు ఎలా, ఏం చేయాలని	INFO_REQUEST}
+{\slot
+అవి	O
+ఇప్పుడు	O
+ఎలా,	O
+ఏం	O
+చేయాలని	O
+}
+
+{\intent	d: అవి varicose veins అండి.	DIAGNOSIS}
+{\slot
+అవి	O
+varicose	B-medical_condition
+veins	I-medical_condition
+అండి.	O
+}
+
+{\intent	d: ఇప్పుడు మీరు వాడే medicines తోని ఇప్పుడు మీకు varicose veins problem వచ్చింది	DIAGNOSIS}
+{\slot
+ఇప్పుడు	O
+మీరు	O
+వాడే	O
+medicines	B-medicine
+తోని	O
+ఇప్పుడు	B-time_period
+మీకు	O
+varicose	B-medical_condition
+veins	I-medical_condition
+problem	I-medical_condition
+వచ్చింది	O
+}
+

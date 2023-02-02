@@ -1,0 +1,214 @@
+{\intent	p: sir నమస్తే అండి.	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: నమస్తే అండి.	GREETING}
+{\slot
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir నా wife 33 సంవత్సరాలు	STATEMENT}
+{\slot
+sir	O
+నా	O
+wife	B-familal
+33	B-age
+సంవత్సరాలు	I-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను భోజనం చేసిన తరువాత	HOLD}
+{\slot
+నేను	O
+భోజనం	B-food_substance
+చేసిన	O
+తరువాత	B-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కొంచం ఆయాసంగా ఉన్నట్లు అనిపిస్తూ ఉంటుందండి	STATEMENT}
+{\slot
+కొంచం	O
+ఆయాసంగా	B-medical_condition
+ఉన్నట్లు	O
+అనిపిస్తూ	O
+ఉంటుందండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంతసేపు ఉంటుందలా?	INFO_REQUEST}
+{\slot
+ఎంతసేపు	O
+ఉంటుందలా?	O
+}
+
+{\intent	p: అలా ఒక 1 hour దాక అనిపిస్తది అండి.	ANSWER}
+{\slot
+అలా	O
+ఒక	O
+1	B-time_period
+hour	B-time_period
+దాక	O
+అనిపిస్తది	O
+అండి.	O
+}
+
+{\intent	d: ఇంకేమైనా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: ఇంకోటి ఏమైనా కోపమంటే? కోపం వచ్చినప్పుడు నా మాట అనేది, voice అనేది తడబడుతూ, ఉంటుంది.	ANSWER}
+{\slot
+ఇంకోటి	O
+ఏమైనా	O
+కోపమంటే?	O
+కోపం	B-bodily_process
+వచ్చినప్పుడు	I-bodily_process
+నా	O
+మాట	B-bodily_process
+అనేది,	O
+voice	B-bodily_process
+అనేది	O
+తడబడుతూ,	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ ఇవి 2 problems ఉన్నాయి అండి.	STATEMENT}
+{\slot
+ఆ	O
+ఇవి	O
+2	O
+problems	O
+ఉన్నాయి	O
+అండి.	O
+}
+
+{\intent	d: right అమ్మ	ACK}
+{\slot
+right	O
+అమ్మ	O
+}
+
+{\intent	d: so భోజనం చేసిన తరువాత dullగా ఉండడం, ఆయాసంగా అనిపించడం, నీరసంగా ఉండడము చాలా చిన్న విషయం	MEDICAL_EXPLANATION}
+{\slot
+so	O
+భోజనం	B-food_substance
+చేసిన	O
+తరువాత	B-time_period
+dullగా	B-symptom
+ఉండడం,	O
+ఆయాసంగా	B-medical_condition
+అనిపించడం,	O
+నీరసంగా	B-symptom
+ఉండడము	O
+చాలా	O
+చిన్న	O
+విషయం	O
+}
+
+{\intent	d: ఇది చిన్న విషయం	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+చిన్న	O
+విషయం	O
+}
+
+{\intent	d: ఎందుకంటే food తీసుకున్నప్పుడు అది అరగాలి కాబట్టి రక్త సరఫరా అంతటా సక్రమంగా పేగులో అవుతుంది కాబట్టి కొంచం dull అవుతాం	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+food	B-food_substance
+తీసుకున్నప్పుడు	O
+అది	O
+అరగాలి	O
+కాబట్టి	O
+రక్త	B-body_substance
+సరఫరా	O
+అంతటా	O
+సక్రమంగా	O
+పేగులో	B-body_part
+అవుతుంది	O
+కాబట్టి	O
+కొంచం	O
+dull	B-symptom
+అవుతాం	I-symptom
+}
+
+{\intent	d: అంటే brainకి అప్పుడు oxygen సరఫరా తగ్గుతుంది, కడుపులకు రక్త సరఫరా ఎక్కువవుతుంది కాబట్టి ఏ రకంగా కొద్ది సేపు dullగా ఉండడం అనిపిస్తుంది ఆ తర్వాత normal అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+brainకి	B-body_part
+అప్పుడు	B-time_period
+oxygen	B-food_substance
+సరఫరా	O
+తగ్గుతుంది,	B-intensity
+కడుపులకు	B-body_part
+రక్త	B-body_substance
+సరఫరా	O
+ఎక్కువవుతుంది	B-intensity
+కాబట్టి	O
+ఏ	O
+రకంగా	O
+కొద్ది	O
+సేపు	B-time_period
+dullగా	B-symptom
+ఉండడం	O
+అనిపిస్తుంది	O
+ఆ	O
+తర్వాత	B-time_period
+normal	B-normal
+అవుతుంది.	O
+}
+
+{\intent	d: ఇగ 2 అంశం కోపంగా ఉన్నప్పుడు adrenaline అనే hormone ఉత్పత్తి అవుతుంది తద్వారా ఆ మాట తడబడడం, sweating ఎక్కువగా రావడం లేదా నత్తి రావడం జరుగుతుంది	MEDICAL_EXPLANATION}
+{\slot
+ఇగ	O
+2	O
+అంశం	O
+కోపంగా	B-bodily_process
+ఉన్నప్పుడు	O
+adrenaline	B-body_substance
+అనే	O
+hormone	B-body_substance
+ఉత్పత్తి	O
+అవుతుంది	O
+తద్వారా	O
+ఆ	O
+మాట	B-bodily_process
+తడబడడం,	B-symptom
+sweating	B-bodily_process
+ఎక్కువగా	B-intensity
+రావడం	O
+లేదా	O
+నత్తి	B-symptom
+రావడం	O
+జరుగుతుంది	O
+}
+

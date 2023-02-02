@@ -1,0 +1,264 @@
+{\intent	p: sir, కడుపు నొప్పి బాగా ఉంది sir జరా	STATEMENT}
+{\slot
+sir,	O
+కడుపు	B-body_part
+నొప్పి	B-symptom
+బాగా	B-intensity
+ఉంది	O
+sir	O
+జరా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇంత ముందుకు అంటే private companyలో job చేస్తే, పొద్దున్న లేచి పోయేవరకు నొప్పి లేసింది sir	STATEMENT}
+{\slot
+ఇంత	O
+ముందుకు	O
+అంటే	O
+private	O
+companyలో	O
+job	B-profession
+చేస్తే,	O
+పొద్దున్న	B-time_period
+లేచి	B-bodily_process
+పోయేవరకు	B-bodily_process
+నొప్పి	B-symptom
+లేసింది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కడుపుల నీకు తినంగానే పడుకుంటావ్ కదా అది ఇది అని చెప్పారు sir నాకు	STATEMENT}
+{\slot
+కడుపుల	B-body_part
+నీకు	O
+తినంగానే	B-time_period
+పడుకుంటావ్	B-bodily_process
+కదా	O
+అది	O
+ఇది	O
+అని	O
+చెప్పారు	O
+sir	O
+నాకు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ చెప్పి ఏదో x-ray తీసినారు sir	STATEMENT}
+{\slot
+ఆ	O
+చెప్పి	O
+ఏదో	O
+x-ray	B-mtest
+తీసినారు	O
+sir	O
+}
+
+{\intent	p: అంతా బాగుందన్నారు ఇంకా కడుపు నొప్పిలేస్తుంది sir పొద్దుల	STATEMENT}
+{\slot
+అంతా	O
+బాగుందన్నారు	B-normal
+ఇంకా	O
+కడుపు	B-body_part
+నొప్పిలేస్తుంది	B-symptom
+sir	O
+పొద్దుల	B-time_period
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: so reports ఏదైనా చేసినప్పుడు reportsలో ఏమైనా చెప్పారా sir exactly diagnosis ఏంటి problem ఏంటి చెప్పారా?	INFO_REQUEST}
+{\slot
+so	O
+reports	O
+ఏదైనా	O
+చేసినప్పుడు	O
+reportsలో	O
+ఏమైనా	O
+చెప్పారా	O
+sir	O
+exactly	O
+diagnosis	O
+ఏంటి	O
+problem	O
+ఏంటి	O
+చెప్పారా?	O
+}
+
+{\intent	p: మాకు ఏం చెప్పాలె, అంతా బాగానే ఉంటే sir నొప్పి అంటే మాకు company తరఫున	ANSWER}
+{\slot
+మాకు	O
+ఏం	O
+చెప్పాలె,	O
+అంతా	O
+బాగానే	B-normal
+ఉంటే	O
+sir	O
+నొప్పి	B-symptom
+అంటే	O
+మాకు	O
+company	O
+తరఫున	O
+}
+
+{\intent	d: మీ age ఎంత అండి ఇప్పుడు?	INFO_REQUEST}
+{\slot
+మీ	O
+age	O
+ఎంత	O
+అండి	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: మా age 37 ఉంటది sir.	ANSWER}
+{\slot
+మా	O
+age	O
+37	B-age
+ఉంటది	O
+sir.	O
+}
+
+{\intent	d: ఈ problem ఎప్పటినుంచి face చేస్తున్నారు మీరు?	INFO_REQUEST}
+{\slot
+ఈ	O
+problem	O
+ఎప్పటినుంచి	O
+face	O
+చేస్తున్నారు	O
+మీరు?	O
+}
+
+{\intent	p: మాకు 2 months అవుతుంది sir.	ANSWER}
+{\slot
+మాకు	O
+2	B-time_period
+months	I-time_period
+అవుతుంది	O
+sir.	O
+}
+
+{\intent	d: 2 months కడుపులో నొప్పి	ACK}
+{\slot
+2	B-time_period
+months	I-time_period
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+}
+
+{\intent	d: and తేణుపు లాంటివి ఏమైనా ఉన్నాయా sir?	INFO_REQUEST}
+{\slot
+and	O
+తేణుపు	B-symptom
+లాంటివి	O
+ఏమైనా	O
+ఉన్నాయా	O
+sir?	O
+}
+
+{\intent	p: తేణుపు లాంటివి ఏం లేవు sir,	ANSWER}
+{\slot
+తేణుపు	B-symptom
+లాంటివి	O
+ఏం	O
+లేవు	B-negative
+sir,	O
+}
+
+{\intent	p: ఇది మన ఏం లేదు sir కడుపులో అంతా పిసికినట్లు అయితుంది sir.	STATEMENT}
+{\slot
+ఇది	O
+మన	O
+ఏం	O
+లేదు	O
+sir	O
+కడుపులో	B-body_part
+అంతా	O
+పిసికినట్లు	B-symptom
+అయితుంది	O
+sir.	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: alcohol, smoking habit ఏదైనా ఉందా మీకు?	INFO_REQUEST}
+{\slot
+alcohol,	B-habit
+smoking	B-habit
+habit	I-habit
+ఏదైనా	O
+ఉందా	O
+మీకు?	O
+}
+
+{\intent	p: alcohol అంటే ఎప్పుడో ఒకసారి sir అది	ANSWER}
+{\slot
+alcohol	B-habit
+అంటే	O
+ఎప్పుడో	O
+ఒకసారి	O
+sir	O
+అది	O
+}
+
+{\intent	d: సరే అండి.	ACK}
+{\slot
+సరే	O
+అండి.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: generally ఈ 2 months నుంచి problem అంటున్నారు కబట్టి ఇది gastric సమస్య ఉండోచ్చు sir.	DIAGNOSIS}
+{\slot
+generally	O
+ఈ	O
+2	B-time_period
+months	B-time_period
+నుంచి	O
+problem	O
+అంటున్నారు	O
+కబట్టి	O
+ఇది	O
+gastric	B-medical_condition
+సమస్య	O
+ఉండోచ్చు	O
+sir.	O
+}
+
+{\intent	d: మీకు testలో చేసినప్పుడు gastric erosions generally ఉండే అవకాశం ఉంటుంది.	STATEMENT}
+{\slot
+మీకు	O
+testలో	O
+చేసినప్పుడు	O
+gastric	B-medical_condition
+erosions	B-medical_condition
+generally	O
+ఉండే	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+

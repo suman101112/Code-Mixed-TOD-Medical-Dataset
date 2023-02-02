@@ -1,0 +1,137 @@
+{\intent	d: ఇవాళ ఎన్ని రోజులు పుట్టి?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+ఎన్ని	O
+రోజులు	B-time_period
+పుట్టి?	B-bodily_process
+}
+
+{\intent	p: 6వ నెల sir	ANSWER}
+{\slot
+6వ	B-age
+నెల	I-age
+sir	O
+}
+
+{\intent	d: ఎక్కడ పుట్టింది	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+పుట్టింది	B-bodily_process
+}
+
+{\intent	p: భీమవరం sir	ANSWER}
+{\slot
+భీమవరం	B-place
+sir	O
+}
+
+{\intent	d: mother o negative	STATEMENT}
+{\slot
+mother	B-person
+o	B-mtest_value
+negative	I-mtest_value
+}
+
+{\intent	d: mother negative blood group ఉంది.	REPEAT_REPHRASE}
+{\slot
+mother	B-person
+negative	B-mtest_value
+blood	B-body_substance
+group	I-body_substance
+ఉంది.	O
+}
+
+{\intent	p1: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: ఎన్నో కాన్పు ఇది	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+కాన్పు	B-bodily_process
+ఇది	O
+}
+
+{\intent	p1: 3వ కాన్పు	ANSWER}
+{\slot
+3వ	B-frequency
+కాన్పు	B-bodily_process
+}
+
+{\intent	d: first 2 కాన్పులకు అంట injection ఇచ్చారా?	INFO_REQUEST}
+{\slot
+first	O
+2	B-frequency
+కాన్పులకు	B-bodily_process
+అంట	O
+injection	B-medicine
+ఇచ్చారా?	O
+}
+
+{\intent	p1: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: mother ది o negative	REPEAT_REPHRASE}
+{\slot
+mother	B-person
+ది	O
+o	B-mtest_value
+negative	I-mtest_value
+}
+
+{\intent	d: తల్లిది negative blood group ఉన్నప్పుడు 3 4 కాన్పులకు పోకూడదు బాబు	MEDICAL_EXPLANATION}
+{\slot
+తల్లిది	B-person
+negative	B-mtest_value
+blood	B-body_substance
+group	I-body_substance
+ఉన్నప్పుడు	B-time_period
+3	B-frequency
+4	B-frequency
+కాన్పులకు	B-bodily_process
+పోకూడదు	O
+బాబు	B-person
+}
+
+{\intent	d: మొదటి కాన్పు, 2 కాన్పులలో ఆపేసెయ్యాలి.	MEDICAL_EXPLANATION}
+{\slot
+మొదటి	O
+కాన్పు,	B-bodily_process
+2	B-age
+కాన్పులలో	B-bodily_process
+ఆపేసెయ్యాలి.	O
+}
+
+{\intent	d: నీ బిడ్డకు రక్తనాళాలలో antibodies produce కావు	MEDICAL_EXPLANATION}
+{\slot
+నీ	O
+బిడ్డకు	B-person
+రక్తనాళాలలో	B-body_part
+antibodies	B-body_substance
+produce	B-bodily_process
+కావు	B-negative
+}
+
+{\intent	d: Jaundice వస్తది	STATEMENT}
+{\slot
+Jaundice	B-symptom
+వస్తది	O
+}
+
+{\intent	d: plastic తీసెయ్	ACTION_DIR}
+{\slot
+plastic	O
+తీసెయ్	O
+}
+
+{\intent	d: ఇది plastic వాడకూడదు.	STATEMENT}
+{\slot
+ఇది	O
+plastic	O
+వాడకూడదు.	O
+}
+

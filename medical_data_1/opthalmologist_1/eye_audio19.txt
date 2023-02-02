@@ -1,0 +1,45 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 50, m	ANSWER}
+{\slot
+50,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: మెడనొప్పి ఉంది, తల నొప్పి లేస్తుంది.	ANSWER}
+{\slot
+మెడనొప్పి	B-symptom
+ఉంది,	O
+తల	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజులయితుంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులయితుంది?	B-time_period
+}
+
+{\intent	p: 15 రోజుల నుంచి అలానే ఉంది. కుడి కన్ను కనపడదు.	ANSWER}
+{\slot
+15	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+అలానే	O
+ఉంది.	O
+కుడి	B-location
+కన్ను	B-body_part
+కనపడదు.	B-symptom
+}
+

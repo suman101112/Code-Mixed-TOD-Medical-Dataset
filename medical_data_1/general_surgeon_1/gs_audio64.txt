@@ -1,0 +1,249 @@
+{\intent	d: అమ్మా చెప్పండి	ACTION_DIR}
+{\slot
+అమ్మా	O
+చెప్పండి	O
+}
+
+{\intent	p: మా పాపకు ఇప్పుడు 2 years అండి	STATEMENT}
+{\slot
+మా	O
+పాపకు	B-familal
+ఇప్పుడు	O
+2	B-time_period
+years	I-time_period
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: motionలో blood పడింది	STATEMENT}
+{\slot
+motionలో	B-bodily_process
+blood	B-body_substance
+పడింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అప్పుడప్పుడు కొంచం motionలో	HOLD}
+{\slot
+అప్పుడప్పుడు	B-time_period
+కొంచం	O
+motionలో	B-bodily_process
+}
+
+{\intent	d: motionలో	ACK}
+{\slot
+motionలో	B-bodily_process
+}
+
+{\intent	p: బంకలాగా ఇట్ల పడుతూ ఉంటుందండి అప్పుడప్పుడు	STATEMENT}
+{\slot
+బంకలాగా	B-symptom
+ఇట్ల	O
+పడుతూ	O
+ఉంటుందండి	O
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	d: right అమ్మా	ACK}
+{\slot
+right	O
+అమ్మా	O
+}
+
+{\intent	d: motion pass అయ్యేటప్పుడు పాప ఏడుస్తుందా?	INFO_REQUEST}
+{\slot
+motion	B-bodily_process
+pass	I-bodily_process
+అయ్యేటప్పుడు	I-bodily_process
+పాప	B-person
+ఏడుస్తుందా?	B-symptom
+}
+
+{\intent	p: అంటే, బాగా tightగా వెళ్తుంది	ANSWER}
+{\slot
+అంటే,	O
+బాగా	B-intensity
+tightగా	B-symptom
+వెళ్తుంది	O
+}
+
+{\intent	d: tightగా వెళ్తుంది కానీ pass చేసేటప్పుడు ఏడుస్తుందా?	INFO_REQUEST}
+{\slot
+tightగా	B-symptom
+వెళ్తుంది	O
+కానీ	O
+pass	B-bodily_process
+చేసేటప్పుడు	I-bodily_process
+ఏడుస్తుందా?	B-symptom
+}
+
+{\intent	p: ఆహా, ఏడవట్లేదు అండి.	ANSWER}
+{\slot
+ఆహా,	O
+ఏడవట్లేదు	B-negative
+అండి.	O
+}
+
+{\intent	d: మెగితా సమయంలో కడుపునొప్పి గానీ ఏమైనా అంటుందా?	INFO_REQUEST}
+{\slot
+మెగితా	O
+సమయంలో	B-time_period
+కడుపునొప్పి	B-symptom
+గానీ	O
+ఏమైనా	O
+అంటుందా?	O
+}
+
+{\intent	p: ఆహా లేదు అండి	ANSWER}
+{\slot
+ఆహా	O
+లేదు	O
+అండి	O
+}
+
+{\intent	p: అప్పుడప్పుడు ఏడుస్తది, కడుపు నొప్పి అంతా కాదనుకుంటున్నా	ANSWER}
+{\slot
+అప్పుడప్పుడు	B-time_period
+ఏడుస్తది,	B-symptom
+కడుపు	B-body_part
+నొప్పి	B-symptom
+అంతా	O
+కాదనుకుంటున్నా	O
+}
+
+{\intent	d: chalkpieceలు బలపాలు ఏమైనా తినే అలవాటు ఉందా?	INFO_REQUEST}
+{\slot
+chalkpieceలు	O
+బలపాలు	O
+ఏమైనా	O
+తినే	B-bodily_process
+అలవాటు	B-habit
+ఉందా?	O
+}
+
+{\intent	p: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	d: chalkpiece గానీ బలపం గానీ ఏమైనా తినే అలవాటు ఉందా?	INFO_REQUEST}
+{\slot
+chalkpiece	O
+గానీ	O
+బలపం	O
+గానీ	O
+ఏమైనా	O
+తినే	B-bodily_process
+అలవాటు	B-habit
+ఉందా?	O
+}
+
+{\intent	p: ఆహా లేదండీ , అవేం లేదు	ANSWER}
+{\slot
+ఆహా	O
+లేదండీ	B-negative
+,	O
+అవేం	O
+లేదు	B-negative
+}
+
+{\intent	d: అవేం లేదు	ACK}
+{\slot
+అవేం	O
+లేదు	B-negative
+}
+
+{\intent	d: బయట మట్టిలో ఆడడం కాని అవేమన్నా ఉందా?	INFO_REQUEST}
+{\slot
+బయట	O
+మట్టిలో	O
+ఆడడం	B-bodily_process
+కాని	O
+అవేమన్నా	O
+ఉందా?	O
+}
+
+{\intent	p: ఆహా లేదండీ	ANSWER}
+{\slot
+ఆహా	O
+లేదండీ	B-negative
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఇంకేమన్నా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+ఇంకేమన్నా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: ఆహా ఏం లేదు, అదొక్కటే problem	ANSWER}
+{\slot
+ఆహా	O
+ఏం	O
+లేదు,	O
+అదొక్కటే	O
+problem	O
+}
+
+{\intent	d: right అండి right, చెప్తాను.	COMMIT}
+{\slot
+right	O
+అండి	O
+right,	O
+చెప్తాను.	O
+}
+
+{\intent	d: సుమారుగా 5 సంవత్సరాల పిల్లలో ఈ toilet training అనేది చాలా తక్కువగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+సుమారుగా	O
+5	B-time_period
+సంవత్సరాల	I-time_period
+పిల్లలో	B-person
+ఈ	O
+toilet	B-bodily_process
+training	I-bodily_process
+అనేది	O
+చాలా	O
+తక్కువగా	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అంటే వాళ్ళకు motion pass చేయాలి, sensation వచ్చినప్పుడు bathroomకి వెళ్ళాలి కుర్చోవాలి అనే విషయం పూర్తిగా తెలియదు కాబట్టి ఏ విధంగా hard stool అయ్యే ప్రమాదం ఉంటుందమ్మా .	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+వాళ్ళకు	O
+motion	B-bodily_process
+pass	I-bodily_process
+చేయాలి,	I-bodily_process
+sensation	B-bodily_process
+వచ్చినప్పుడు	O
+bathroomకి	I-bodily_process
+వెళ్ళాలి	I-bodily_process
+కుర్చోవాలి	B-bodily_process
+అనే	O
+విషయం	O
+పూర్తిగా	O
+తెలియదు	O
+కాబట్టి	O
+ఏ	O
+విధంగా	O
+hard	B-symptom
+stool	B-body_substance
+అయ్యే	O
+ప్రమాదం	O
+ఉంటుందమ్మా	O
+.	O
+}
+

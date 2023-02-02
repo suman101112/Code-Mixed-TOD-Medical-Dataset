@@ -1,0 +1,346 @@
+{\intent	p: ఆ madam	SU}
+{\slot
+ఆ	O
+madam	O
+}
+
+{\intent	d: Srinivaas గారు	SU}
+{\slot
+Srinivaas	B-name
+గారు	O
+}
+
+{\intent	p: madam, నమస్తే madam	GREETING}
+{\slot
+madam,	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: నా పేరు Srinivas	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Srinivas	B-name
+}
+
+{\intent	p: నేను government employee లాగా పని చేస్తున్నాను	STATEMENT}
+{\slot
+నేను	O
+government	B-profession
+employee	I-profession
+లాగా	O
+పని	O
+చేస్తున్నాను	O
+}
+
+{\intent	p: కొంచం stress feel అవుతున్నాను	STATEMENT}
+{\slot
+కొంచం	O
+stress	B-symptom
+feel	I-symptom
+అవుతున్నాను	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ మధ్యకాలంలోనే నేను కొంచం బరువు తగ్గడం కానీ	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్యకాలంలోనే	I-time_period
+నేను	O
+కొంచం	O
+బరువు	B-bm
+తగ్గడం	I-symptom
+కానీ	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కొంచం అప్పుడప్పుడు weight తగ్గడం	STATEMENT}
+{\slot
+కొంచం	O
+అప్పుడప్పుడు	B-time_period
+weight	B-bm
+తగ్గడం	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చర్మం లాగితే ఇట్ల రావడం అట్లాంటివి జరుగుతున్నాయి	STATEMENT}
+{\slot
+చర్మం	B-body_part
+లాగితే	B-symptom
+ఇట్ల	I-symptom
+రావడం	I-symptom
+అట్లాంటివి	O
+జరుగుతున్నాయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బాగా దప్పిక రావడం	STATEMENT}
+{\slot
+బాగా	B-intensity
+దప్పిక	B-bodily_process
+రావడం	O
+}
+
+{\intent	p: night time urine pass అప్పుడు మొత్తం ఒక 3 times 4 times పోవడం ఇలాంటివన్నీ జరుగుతున్నాయి	STATEMENT}
+{\slot
+night	B-time_period
+time	B-time_period
+urine	B-body_substance
+pass	B-bodily_process
+అప్పుడు	B-time_period
+మొత్తం	O
+ఒక	O
+3	B-frequency
+times	I-frequency
+4	B-frequency
+times	I-frequency
+పోవడం	O
+ఇలాంటివన్నీ	O
+జరుగుతున్నాయి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అలసట ఎక్కువగా ఉంటుంది	STATEMENT}
+{\slot
+అలసట	B-symptom
+ఎక్కువగా	B-intensity
+ఉంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానితో నేను మొన్న చేసాను, testing చేస్తే దాంట్లో random వచ్చేసి 135 వచ్చింది, morning fastingలో 95 అట్ల వచ్చింది	STATEMENT}
+{\slot
+దానితో	O
+నేను	O
+మొన్న	B-time_period
+చేసాను,	O
+testing	B-mtest
+చేస్తే	O
+దాంట్లో	O
+random	B-time_period
+వచ్చేసి	O
+135	B-mtest_value
+వచ్చింది,	O
+morning	B-time_period
+fastingలో	I-time_period
+95	B-mtest_value
+అట్ల	O
+వచ్చింది	O
+}
+
+{\intent	d: 95 ok	ACK}
+{\slot
+95	B-mtest_value
+ok	O
+}
+
+{\intent	p: ఆ, randomలో 135 వచ్చింది	STATEMENT}
+{\slot
+ఆ,	O
+randomలో	B-time_period
+135	B-mtest_value
+వచ్చింది	O
+}
+
+{\intent	p: మన physician ని కలవమన్నారు	ACTION_DIR}
+{\slot
+మన	O
+physician	B-medical_professional
+ని	O
+కలవమన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: physician ని consult అయితే, మన bp check చేసారు, 150 by 110 చూయించారు	STATEMENT}
+{\slot
+physician	B-medical_professional
+ని	O
+consult	O
+అయితే,	O
+మన	O
+bp	B-medical_condition
+check	B-mtest
+చేసారు,	O
+150	B-mtest_value
+by	O
+110	B-mtest_value
+చూయించారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాళ్ళు కూడా 1 month నాకు tablets ఇచ్చారు, దాన్ని నేను continue చేసాను 1 month	STATEMENT}
+{\slot
+వాళ్ళు	O
+కూడా	O
+1	B-time_period
+month	I-time_period
+నాకు	O
+tablets	B-medicine
+ఇచ్చారు,	O
+దాన్ని	O
+నేను	O
+continue	O
+చేసాను	O
+1	B-time_period
+month	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తర్వాత నేను ఆపేసాను అండి	STATEMENT}
+{\slot
+తర్వాత	B-time_period
+నేను	O
+ఆపేసాను	O
+అండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మళ్ళి next ఒక 15 days తరువాత నాకు checkup ఉంది	STATEMENT}
+{\slot
+మళ్ళి	O
+next	O
+ఒక	O
+15	B-time_period
+days	I-time_period
+తరువాత	O
+నాకు	O
+checkup	B-mtest
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దీనిబట్టి నాకు ఏమైనా sugar content ఉందా? నాకు మళ్ళి diabetes ఉందా?	INFO_REQUEST}
+{\slot
+దీనిబట్టి	O
+నాకు	O
+ఏమైనా	O
+sugar	B-medical_condition
+content	B-mtest
+ఉందా?	O
+నాకు	O
+మళ్ళి	O
+diabetes	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఏంటి పరిస్థితి నాకు ఏం అర్ధం కావడం లేదు	STATEMENT}
+{\slot
+ఏంటి	O
+పరిస్థితి	O
+నాకు	O
+ఏం	O
+అర్ధం	O
+కావడం	O
+లేదు	O
+}
+
+{\intent	p: ఈ tension తోనే వస్తుంది అని మా వాళ్ళు అంటున్నారు	STATEMENT}
+{\slot
+ఈ	O
+tension	B-medical_condition
+తోనే	O
+వస్తుంది	O
+అని	O
+మా	O
+వాళ్ళు	O
+అంటున్నారు	O
+}
+
+{\intent	d: మీరు చెప్పినా levels అని 95 fastingలో వచ్చింది and randomలో 132 and	ACK}
+{\slot
+మీరు	O
+చెప్పినా	O
+levels	B-mtest
+అని	O
+95	B-mtest_value
+fastingలో	B-time_period
+వచ్చింది	O
+and	O
+randomలో	B-time_period
+132	B-mtest_value
+and	O
+}
+
+{\intent	d: bp కూడా fluctuate అయింది 150 by 110	ACK}
+{\slot
+bp	B-medical_condition
+కూడా	O
+fluctuate	B-symptom
+అయింది	O
+150	B-mtest_value
+by	O
+110	B-mtest_value
+}
+
+{\intent	d: and age factor కూడా important	STATEMENT}
+{\slot
+and	O
+age	O
+factor	O
+కూడా	O
+important	O
+}
+
+{\intent	d: కొంచం borderline fluctuation ఉంది . prediabetic అని చెప్పొచ్చు.	DIAGNOSIS}
+{\slot
+కొంచం	O
+borderline	B-symptom
+fluctuation	I-symptom
+ఉంది	O
+.	O
+prediabetic	B-medical_condition
+అని	O
+చెప్పొచ్చు.	O
+}
+

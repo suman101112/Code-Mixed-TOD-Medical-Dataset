@@ -1,0 +1,93 @@
+{\intent	p: doctor గారు. 6 నెలల క్రితం నాకు 2 పాప పుట్టింది	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు.	O
+6	B-time_period
+నెలల	I-time_period
+క్రితం	O
+నాకు	O
+2	B-frequency
+పాప	B-person
+పుట్టింది	B-bodily_process
+}
+
+{\intent	p: అప్పటినుంచి నా కంటి రెప్పలపై కణితలు ఏర్పడింది.	STATEMENT}
+{\slot
+అప్పటినుంచి	B-time_period
+నా	O
+కంటి	B-body_part
+రెప్పలపై	B-body_part
+కణితలు	B-symptom
+ఏర్పడింది.	O
+}
+
+{\intent	p: కన్ను కూడా బాగా దురదగా ఉంటుంది.	STATEMENT}
+{\slot
+కన్ను	B-body_part
+కూడా	O
+బాగా	B-intensity
+దురదగా	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: ఈ కణితికి surgery తప్పనిసరా? medicines తో తగ్గుతుందా?	INFO_REQUEST}
+{\slot
+ఈ	O
+కణితికి	B-symptom
+surgery	B-treatment
+తప్పనిసరా?	O
+medicines	B-medicine
+తో	O
+తగ్గుతుందా?	B-normal
+}
+
+{\intent	d: కణితి అనేవి కొన్ని రకాలు ఉంటాయి	MEDICAL_EXPLANATION}
+{\slot
+కణితి	B-symptom
+అనేవి	O
+కొన్ని	O
+రకాలు	O
+ఉంటాయి	O
+}
+
+{\intent	d: కొన్ని కొన్ని ఏమో stye అంటాము అంటే మన కంట్లో ఉండే glands block అయినప్పుడు అది చీములాగా వచ్చి ఉండిపోయేది ఒక్కటి.	MEDICAL_EXPLANATION}
+{\slot
+కొన్ని	O
+కొన్ని	O
+ఏమో	O
+stye	B-medical_condition
+అంటాము	O
+అంటే	O
+మన	O
+కంట్లో	B-body_part
+ఉండే	O
+glands	B-body_part
+block	B-symptom
+అయినప్పుడు	B-time_period
+అది	O
+చీములాగా	B-symptom
+వచ్చి	O
+ఉండిపోయేది	O
+ఒక్కటి.	O
+}
+
+{\intent	d: కొన్ని ఎమో warts లాగా అంటే extra growths అన్నా మాట అది extra growths అయితే మటుకూ తీసేయాల్సి వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+కొన్ని	O
+ఎమో	O
+warts	B-medical_condition
+లాగా	O
+అంటే	O
+extra	B-medical_condition
+growths	I-medical_condition
+అన్నా	O
+మాట	O
+అది	O
+extra	B-medical_condition
+growths	I-medical_condition
+అయితే	O
+మటుకూ	O
+తీసేయాల్సి	B-treatment
+వస్తుంది.	O
+}
+

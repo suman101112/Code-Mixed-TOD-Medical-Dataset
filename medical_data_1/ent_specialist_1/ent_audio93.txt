@@ -1,0 +1,127 @@
+{\intent	d: పేరు చెప్పమ్మా?	ACTION_DIR}
+{\slot
+పేరు	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: Haasini	ANSWER}
+{\slot
+Haasini	B-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Haasini	REPEAT_REPHRASE}
+{\slot
+Haasini	B-name
+}
+
+{\intent	d: Haasini	ACK}
+{\slot
+Haasini	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p1: 6	ANSWER}
+{\slot
+6	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: ఈ వారం నుంచి 4, 5 days జ్వరం వచ్చింది, ఇవల్టినుంచి సాయంత్రం నుంచి చీము వెళ్తా ఉంది.	STATEMENT}
+{\slot
+ఈ	O
+వారం	B-time_period
+నుంచి	O
+4,	B-time_period
+5	B-time_period
+days	I-time_period
+జ్వరం	B-symptom
+వచ్చింది,	O
+ఇవల్టినుంచి	B-time_period
+సాయంత్రం	I-time_period
+నుంచి	O
+చీము	B-symptom
+వెళ్తా	O
+ఉంది.	O
+}
+
+{\intent	d: ఇదిగో, చీము వచ్చుడు ఇది మొదటి సారా?	INFO_REQUEST}
+{\slot
+ఇదిగో,	O
+చీము	B-symptom
+వచ్చుడు	O
+ఇది	O
+మొదటి	O
+సారా?	O
+}
+
+{\intent	p1: ఆ ఇదే first time అసల్ ఇన్ని రొజులు కూడా ఏం లేదు	ANSWER}
+{\slot
+ఆ	O
+ఇదే	O
+first	O
+time	O
+అసల్	O
+ఇన్ని	O
+రొజులు	B-time_period
+కూడా	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: పట్టుకోని	UNINTERPRET}
+{\slot
+పట్టుకోని	O
+}
+
+{\intent	p1: ఏమైనా కురుపులు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+కురుపులు	B-medical_condition
+ఉన్నాయా?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: కురుపులు కాదు ఇది सर्दी వల్ల అయితది.	DIAGNOSIS}
+{\slot
+కురుపులు	B-medical_condition
+కాదు	O
+ఇది	O
+सर्दी	B-medical_condition
+వల్ల	O
+అయితది.	O
+}
+
+{\intent	p1: జలుబు వల్ల నా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+వల్ల	O
+నా?	O
+}
+
+{\intent	d: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+

@@ -1,0 +1,260 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam, ఏది తిన్న సరే, తిన్న వెంటనే digestion అయిపోతున్నట్టు, motion అవుతున్న feeling అవుతుంది madam	STATEMENT}
+{\slot
+madam,	O
+ఏది	O
+తిన్న	B-bodily_process
+సరే,	O
+తిన్న	B-bodily_process
+వెంటనే	O
+digestion	B-bodily_process
+అయిపోతున్నట్టు,	B-symptom
+motion	B-bodily_process
+అవుతున్న	I-bodily_process
+feeling	B-symptom
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: తిన్న వెంటనే అవుతుంది	INFO_REQUEST}
+{\slot
+తిన్న	B-bodily_process
+వెంటనే	O
+అవుతుంది	O
+}
+
+{\intent	p: ఆ అదే.	ANSWER}
+{\slot
+ఆ	O
+అదే.	O
+}
+
+{\intent	p: Amebiasis ఎమో అని కొంచం doubtగా ఉండి madam	STATEMENT}
+{\slot
+Amebiasis	B-medical_condition
+ఎమో	O
+అని	O
+కొంచం	O
+doubtగా	O
+ఉండి	O
+madam	O
+}
+
+{\intent	p: ముందుగా చర్యలలో మనం ఎలాంటి precautions తీసుకోవాలి చెప్తారని	INFO_REQUEST}
+{\slot
+ముందుగా	O
+చర్యలలో	O
+మనం	O
+ఎలాంటి	O
+precautions	O
+తీసుకోవాలి	O
+చెప్తారని	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏమన్నా mucus లాగా ఎమన్నా వస్తుందా అండి motionలో?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+mucus	B-symptom
+లాగా	O
+ఎమన్నా	O
+వస్తుందా	O
+అండి	O
+motionలో?	B-bodily_process
+}
+
+{\intent	d: చీమిడి లాగా పడుతుందా?	REPEAT_REPHRASE}
+{\slot
+చీమిడి	B-symptom
+లాగా	O
+పడుతుందా?	O
+}
+
+{\intent	p: అంటే ఒకసారి చీమిడి లాగా వస్తుంది madam	ANSWER}
+{\slot
+అంటే	O
+ఒకసారి	O
+చీమిడి	B-symptom
+లాగా	O
+వస్తుంది	O
+madam	O
+}
+
+{\intent	p: ఒకసారి normalగానే ఉంటుంది madam	ANSWER}
+{\slot
+ఒకసారి	O
+normalగానే	B-normal
+ఉంటుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: blood ఏమైనా వస్తుందా?	INFO_REQUEST}
+{\slot
+blood	B-body_substance
+ఏమైనా	O
+వస్తుందా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	O
+madam	O
+}
+
+{\intent	d: కడుపు నొప్పి?	INFO_REQUEST}
+{\slot
+కడుపు	B-body_part
+నొప్పి?	B-symptom
+}
+
+{\intent	p: ఆ తిన్న ఒక్కొక్కసారి ఉంటుంది madam అప్పుడప్పుడు	ANSWER}
+{\slot
+ఆ	O
+తిన్న	O
+ఒక్కొక్కసారి	O
+ఉంటుంది	O
+madam	O
+అప్పుడప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: continuousగా అయితే లేదు madam	ANSWER}
+{\slot
+continuousగా	O
+అయితే	O
+లేదు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ముందు మీకేమైనా ఉండేదా అండి ఈ Amebiasis problem?	INFO_REQUEST}
+{\slot
+ముందు	O
+మీకేమైనా	O
+ఉండేదా	O
+అండి	O
+ఈ	O
+Amebiasis	B-medical_condition
+problem?	I-medical_condition
+}
+
+{\intent	p: ఆహా లేదు madam	ANSWER}
+{\slot
+ఆహా	O
+లేదు	O
+madam	O
+}
+
+{\intent	p: అంటే నేను homeopathyకి చుయించుకుంటే ఉండొచ్చు ఎమో అని tablets ఇచ్చారు	STATEMENT}
+{\slot
+అంటే	O
+నేను	O
+homeopathyకి	B-medicine
+చుయించుకుంటే	O
+ఉండొచ్చు	O
+ఎమో	O
+అని	O
+tablets	B-medicine
+ఇచ్చారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అదైతే వాడుతున్నాను madam నేను అప్పుడప్పుడు	STATEMENT}
+{\slot
+అదైతే	O
+వాడుతున్నాను	O
+madam	O
+నేను	O
+అప్పుడప్పుడు	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: regularగా వాడటంలేదు madam tablets	STATEMENT}
+{\slot
+regularగా	O
+వాడటంలేదు	O
+madam	O
+tablets	B-medicine
+}
+
+{\intent	p: ఎమో doubt madam నాకైతే	STATEMENT}
+{\slot
+ఎమో	O
+doubt	O
+madam	O
+నాకైతే	O
+}
+
+{\intent	p: mucus అప్పుడప్పుడు mucusలాగా ఉంటుంది. అప్పుడప్పుడు మామూలు generalగానే ఉంటుంది	STATEMENT}
+{\slot
+mucus	B-symptom
+అప్పుడప్పుడు	O
+mucusలాగా	B-symptom
+ఉంటుంది.	O
+అప్పుడప్పుడు	O
+మామూలు	O
+generalగానే	B-normal
+ఉంటుంది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: ok అండి మీరు చెప్తున్నా symptoms maximum Amebiasis లాగానే ఉన్నాయి	DIAGNOSIS}
+{\slot
+ok	O
+అండి	O
+మీరు	O
+చెప్తున్నా	O
+symptoms	O
+maximum	O
+Amebiasis	B-medical_condition
+లాగానే	O
+ఉన్నాయి	B-time_period
+}
+

@@ -1,0 +1,225 @@
+{\intent	d: చెప్పండమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Sammayya	ANSWER}
+{\slot
+Sammayya	B-name
+}
+
+{\intent	d: చెప్పండి ఏమి ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమి	O
+ఇబ్బంది	O
+ఉంది?	O
+}
+
+{\intent	p: నొప్పి. నొప్పి రాంగనే మూత్రం బంద్ అవుతుంది	ANSWER}
+{\slot
+నొప్పి.	B-symptom
+నొప్పి	B-symptom
+రాంగనే	O
+మూత్రం	B-body_substance
+బంద్	B-symptom
+అవుతుంది	O
+}
+
+{\intent	p1: మూత్రం బంద్ అవుతుంది.	REPEAT_REPHRASE}
+{\slot
+మూత్రం	B-body_substance
+బంద్	B-symptom
+అవుతుంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: ఒక ఐదు సంవత్సరాలు. మందు తాగంగానే అలా అవుతుంది.	ANSWER}
+{\slot
+ఒక	O
+ఐదు	B-time_period
+సంవత్సరాలు.	I-time_period
+మందు	B-habit
+తాగంగానే	B-bodily_process
+అలా	O
+అవుతుంది.	O
+}
+
+{\intent	p1: మందు తాగినప్పుడల్లా అలా అవుతుంది	REPEAT_REPHRASE}
+{\slot
+మందు	B-habit
+తాగినప్పుడల్లా	B-time_period
+అలా	O
+అవుతుంది	O
+}
+
+{\intent	d: నొప్పి ఎక్కడ ఉంది చూపియండి	ACTION_DIR}
+{\slot
+నొప్పి	B-symptom
+ఎక్కడ	O
+ఉంది	O
+చూపియండి	O
+}
+
+{\intent	d: బొడ్డు కింద ఉందా	INFO_REQUEST}
+{\slot
+బొడ్డు	B-body_part
+కింద	B-location
+ఉందా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: scanలో మూత్రం దెగ్గర గడ్డ పెరిగింది	STATEMENT}
+{\slot
+scanలో	B-mtest
+మూత్రం	B-body_substance
+దెగ్గర	B-location
+గడ్డ	B-symptom
+పెరిగింది	I-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అవసరం అయితే operation అవసరం పడొచ్చు	STATEMENT}
+{\slot
+అవసరం	O
+అయితే	O
+operation	B-treatment
+అవసరం	O
+పడొచ్చు	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	d: వయస్సు ఎంత అమ్మా?	REPEAT_REPHRASE}
+{\slot
+వయస్సు	O
+ఎంత	O
+అమ్మా?	O
+}
+
+{\intent	p: ఒక 65 ఉండొచ్చు.	ANSWER}
+{\slot
+ఒక	O
+65	B-age
+ఉండొచ్చు.	O
+}
+
+{\intent	d: మూత్రం మంచిగానే వస్తుందా? ఏమైనా ఇబ్బంది ఆగి ఆగి వస్తుందా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంచిగానే	O
+వస్తుందా?	O
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఆగి	B-symptom
+ఆగి	I-symptom
+వస్తుందా?	I-symptom
+}
+
+{\intent	p: కొద్దిగా ఆగి ఆగి వస్తుంది.	ANSWER}
+{\slot
+కొద్దిగా	O
+ఆగి	B-symptom
+ఆగి	I-symptom
+వస్తుంది.	I-symptom
+}
+
+{\intent	d: కొద్దిగా ఆగి వస్తుంది	ACK}
+{\slot
+కొద్దిగా	O
+ఆగి	B-symptom
+వస్తుంది	I-symptom
+}
+
+{\intent	d: మంట ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+మంట	B-symptom
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: మంట ఉంది	ANSWER}
+{\slot
+మంట	B-symptom
+ఉంది	O
+}
+
+{\intent	p1: మంట కూడా వస్తది అంటాడు	REPEAT_REPHRASE}
+{\slot
+మంట	B-symptom
+కూడా	O
+వస్తది	O
+అంటాడు	O
+}
+
+{\intent	p1: మొన్న పోయిన వారం వచ్చినాం	STATEMENT}
+{\slot
+మొన్న	B-time_period
+పోయిన	O
+వారం	B-time_period
+వచ్చినాం	O
+}
+
+{\intent	d: వచ్చినారా అమ్మా?	INFO_REQUEST}
+{\slot
+వచ్చినారా	O
+అమ్మా?	O
+}
+
+{\intent	p1: scan కోసమని.	ANSWER}
+{\slot
+scan	B-mtest
+కోసమని.	O
+}
+
+{\intent	d: ప్రస్తుతం మంటకి మందులు రాసి ఇస్తాను.	STATEMENT}
+{\slot
+ప్రస్తుతం	O
+మంటకి	B-symptom
+మందులు	B-medicine
+రాసి	O
+ఇస్తాను.	O
+}
+
+{\intent	d: వచ్చేవారం మళ్ళి ఒకసారి తీసుకోని రండి తగ్గిందా లేదా అని.	ACTION_DIR}
+{\slot
+వచ్చేవారం	O
+మళ్ళి	O
+ఒకసారి	O
+తీసుకోని	O
+రండి	O
+తగ్గిందా	O
+లేదా	O
+అని.	O
+}
+

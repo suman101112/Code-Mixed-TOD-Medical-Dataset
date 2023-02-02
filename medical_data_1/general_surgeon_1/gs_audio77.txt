@@ -1,0 +1,245 @@
+{\intent	p: నాకు problem గత 2 years నుంచి ఉంది sir	STATEMENT}
+{\slot
+నాకు	O
+problem	O
+గత	B-time_period
+2	I-time_period
+years	I-time_period
+నుంచి	O
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే నా baby birth అప్పుడు doctors ఎందుకో burn అవుతుంది anus దెగ్గర bleeding అవుతుంది అని చెప్పేసి అంటే కొద్దిగా delivery timeలో వస్తుంది అని చెప్పేసి అన్నారు sir.	STATEMENT}
+{\slot
+అయితే	O
+నా	O
+baby	B-person
+birth	B-bodily_process
+అప్పుడు	B-time_period
+doctors	B-medical_professional
+ఎందుకో	O
+burn	B-symptom
+అవుతుంది	O
+anus	B-body_part
+దెగ్గర	O
+bleeding	B-medical_condition
+అవుతుంది	O
+అని	O
+చెప్పేసి	O
+అంటే	O
+కొద్దిగా	O
+delivery	B-bodily_process
+timeలో	B-time_period
+వస్తుంది	O
+అని	O
+చెప్పేసి	O
+అన్నారు	O
+sir.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	p: మళ్ళి అప్పుడు లేదు అండి.	STATEMENT}
+{\slot
+మళ్ళి	O
+అప్పుడు	B-time_period
+లేదు	O
+అండి.	O
+}
+
+{\intent	p: మళ్ళి మా బాబు కడుపులో పడ్డాక మళ్ళి సమస్య కొంచం కొంచం అయిందండి.	STATEMENT}
+{\slot
+మళ్ళి	B-body_part
+మా	O
+బాబు	B-familal
+కడుపులో	B-body_part
+పడ్డాక	O
+మళ్ళి	O
+సమస్య	O
+కొంచం	O
+కొంచం	O
+అయిందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి వెళితే generalగా ayurvedic government hospitalలో medicine వాడాను	STATEMENT}
+{\slot
+మళ్ళి	O
+వెళితే	O
+generalగా	O
+ayurvedic	B-hospital_name
+government	I-hospital_name
+hospitalలో	I-hospital_name
+medicine	B-medicine
+వాడాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఓ 1 month cure అయింది sir	STATEMENT}
+{\slot
+ఓ	O
+1	B-time_period
+month	B-time_period
+cure	B-normal
+అయింది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎప్పుడైనా chicken అయినా ఏదైనా, ఏం తెలియట్లేదు, ఎప్పుడైనా bleeding అవుతుంది మళ్ళి మంట బాగా వస్తుంది sir అది	STATEMENT}
+{\slot
+ఎప్పుడైనా	O
+chicken	B-food_substance
+అయినా	O
+ఏదైనా,	O
+ఏం	O
+తెలియట్లేదు,	O
+ఎప్పుడైనా	O
+bleeding	B-medical_condition
+అవుతుంది	O
+మళ్ళి	O
+మంట	B-symptom
+బాగా	B-intensity
+వస్తుంది	O
+sir	O
+అది	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: బరువు ఎంత ఉంటారమ్మా మీరు?	INFO_REQUEST}
+{\slot
+బరువు	O
+ఎంత	O
+ఉంటారమ్మా	O
+మీరు?	O
+}
+
+{\intent	p: ఆ బరువు 51 sir	ANSWER}
+{\slot
+ఆ	O
+బరువు	O
+51	B-age
+sir	O
+}
+
+{\intent	d: ఇది కాకుండా ఇంకేమన్నా	INFO_REQUEST}
+{\slot
+ఇది	O
+కాకుండా	O
+ఇంకేమన్నా	O
+}
+
+{\intent	p: 29 years sir	INFO_REQUEST}
+{\slot
+29	B-age
+years	I-age
+sir	O
+}
+
+{\intent	d: 29	ANSWER}
+{\slot
+29	B-age
+}
+
+{\intent	p: ఆ 29 years sir, 51 kgs ఉన్నాను sir	ANSWER}
+{\slot
+ఆ	O
+29	B-age
+years	I-age
+sir,	O
+51	B-bm
+kgs	I-bm
+ఉన్నాను	O
+sir	O
+}
+
+{\intent	d: ఇది కాకుండా ఇంకేమన్నా లక్షణాలు అడగదలచుకున్నావా? అంతేనా?	INFO_REQUEST}
+{\slot
+ఇది	O
+కాకుండా	O
+ఇంకేమన్నా	O
+లక్షణాలు	O
+అడగదలచుకున్నావా?	O
+అంతేనా?	O
+}
+
+{\intent	p: ఆ ఇంతే sir, ఇదే main problem బాగా burning వస్తుంది, bleeding అవుతుంది.	STATEMENT}
+{\slot
+ఆ	O
+ఇంతే	O
+sir,	O
+ఇదే	O
+main	O
+problem	O
+బాగా	B-intensity
+burning	B-symptom
+వస్తుంది,	O
+bleeding	B-medical_condition
+అవుతుంది.	O
+}
+
+{\intent	p: మళ్ళి ఏమైనా food change చేయ్యాలా? ఎట్ల control అవుతుంది?	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+ఏమైనా	O
+food	B-food_substance
+change	O
+చేయ్యాలా?	O
+ఎట్ల	O
+control	B-normal
+అవుతుంది?	O
+}
+
+{\intent	d: తప్పకుండా అమ్మా.	COMMIT}
+{\slot
+తప్పకుండా	O
+అమ్మా.	O
+}
+
+{\intent	p: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఈ fissure in Ano అనే లక్ష్యం మహిళలలో ఎక్కువగా pregnancy సమయంలో కనిపిస్తుంది	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+fissure	B-medical_condition
+in	I-medical_condition
+Ano	I-medical_condition
+అనే	O
+లక్ష్యం	O
+మహిళలలో	O
+ఎక్కువగా	O
+pregnancy	B-medical_condition
+సమయంలో	B-time_period
+కనిపిస్తుంది	O
+}
+

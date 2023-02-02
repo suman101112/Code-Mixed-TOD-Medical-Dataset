@@ -1,0 +1,66 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: Surender	ANSWER}
+{\slot
+Surender	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 20, m	ANSWER}
+{\slot
+20,	B-age
+m	B-gender
+}
+
+{\intent	d: దగ్గా? ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+దగ్గా?	B-symptom
+ఎప్పటినుంచి?	O
+}
+
+{\intent	p: 1 week నుంచి.	ANSWER}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచి.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇట్ల నొప్పిలేస్తుంది.	STATEMENT}
+{\slot
+ఇట్ల	O
+నొప్పిలేస్తుంది.	B-symptom
+}
+
+{\intent	d: దమ్ము వస్తుందా ఏమన్నా?	INFO_REQUEST}
+{\slot
+దమ్ము	B-medical_condition
+వస్తుందా	O
+ఏమన్నా?	O
+}
+
+{\intent	p: ఆ light గా వస్తుంది.	ANSWER}
+{\slot
+ఆ	O
+light	B-intensity
+గా	O
+వస్తుంది.	B-positive
+}
+
+{\intent	d: శ్వాస	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+}
+

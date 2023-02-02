@@ -1,0 +1,159 @@
+{\intent	d: చెప్పండి ఏం పేరు?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p1: Monan	STATEMENT}
+{\slot
+Monan	B-name
+}
+
+{\intent	d: ఆ Monan ఆ	ACK}
+{\slot
+ఆ	O
+Monan	B-name
+ఆ	O
+}
+
+{\intent	d: చెప్పండి problem ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p1: జ్వరం, దగ్గు, జలుబు, ఉంది sir. చేతులకు నోట్లో, మచ్చలు ఉన్నాయి.	ANSWER}
+{\slot
+జ్వరం,	B-symptom
+దగ్గు,	B-symptom
+జలుబు,	B-medical_condition
+ఉంది	O
+sir.	O
+చేతులకు	B-body_part
+నోట్లో,	B-body_part
+మచ్చలు	B-symptom
+ఉన్నాయి.	O
+}
+
+{\intent	d: పడుకోబెట్టండి	ACTION_DIR}
+{\slot
+పడుకోబెట్టండి	O
+}
+
+{\intent	d: ఎప్పటినుంచి అండి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+అండి?	O
+}
+
+{\intent	p1: శనివారం.	ANSWER}
+{\slot
+శనివారం.	B-time_period
+}
+
+{\intent	d: అరచేతులకు, అరికాళ్లకు వచ్చిందా?	INFO_REQUEST}
+{\slot
+అరచేతులకు,	B-body_part
+అరికాళ్లకు	B-body_part
+వచ్చిందా?	O
+}
+
+{\intent	p1: ఆ, ఆ sir	ANSWER}
+{\slot
+ఆ,	O
+ఆ	O
+sir	O
+}
+
+{\intent	d: అరచేతులు, అరికాలు, పిర్రలకు వచ్చిందా?	INFO_REQUEST}
+{\slot
+అరచేతులు,	B-body_part
+అరికాలు,	B-body_part
+పిర్రలకు	B-body_part
+వచ్చిందా?	O
+}
+
+{\intent	p1: పిర్రలకు రాలేదు sir	ANSWER}
+{\slot
+పిర్రలకు	B-body_part
+రాలేదు	B-negative
+sir	O
+}
+
+{\intent	p1: కాలు, నోట్లో ఉంది	STATEMENT}
+{\slot
+కాలు,	B-body_part
+నోట్లో	B-body_part
+ఉంది	O
+}
+
+{\intent	d: hand-foot-mouth disease అంటారు	DIAGNOSIS}
+{\slot
+hand-foot-mouth	B-medical_condition
+disease	I-medical_condition
+అంటారు	O
+}
+
+{\intent	d: అంటే కాళ్ళు, చేతులు నీటి బుగ్గల వస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+కాళ్ళు,	B-body_part
+చేతులు	B-body_part
+నీటి	B-food_substance
+బుగ్గల	B-symptom
+వస్తాయి	O
+}
+
+{\intent	d: నోట్లో నీటి బుగ్గలు లాగా వస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+నోట్లో	B-body_part
+నీటి	B-food_substance
+బుగ్గలు	B-symptom
+లాగా	O
+వస్తాయి	O
+}
+
+{\intent	d: జ్వరం వస్తుంది	MEDICAL_EXPLANATION}
+{\slot
+జ్వరం	B-symptom
+వస్తుంది	O
+}
+
+{\intent	p1: ఆ జ్వరం వస్తుంది sir	ACK}
+{\slot
+ఆ	B-positive
+జ్వరం	B-symptom
+వస్తుంది	O
+sir	O
+}
+
+{\intent	d: 2 3 రోజులు school కి పంపించకు	ACTION_DIR}
+{\slot
+2	B-time_period
+3	I-time_period
+రోజులు	I-time_period
+school	B-place
+కి	O
+పంపించకు	O
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఆహారం ఇది అన్నీ తినొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+ఆహారం	B-food_substance
+ఇది	O
+అన్నీ	O
+తినొచ్చు	O
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+

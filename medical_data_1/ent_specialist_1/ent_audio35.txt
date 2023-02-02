@@ -1,0 +1,246 @@
+{\intent	d: పేరు?	INFO_REQUEST}
+{\slot
+పేరు?	O
+}
+
+{\intent	p: Venkat sir.	ANSWER}
+{\slot
+Venkat	B-name
+sir.	O
+}
+
+{\intent	p: G Venkat	ANSWER}
+{\slot
+G	B-name
+Venkat	I-name
+}
+
+{\intent	d: G?	INFO_REQUEST}
+{\slot
+G?	B-name
+}
+
+{\intent	p: G Venkat.	ANSWER}
+{\slot
+G	B-name
+Venkat.	I-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 34	ANSWER}
+{\slot
+34	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: అంటే cold ఉండే sir.	STATEMENT}
+{\slot
+అంటే	O
+cold	B-medical_condition
+ఉండే	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 1 week నుంచి ఈ ear అసలు కొద్దిగా sound తక్కువ వస్తుంది నిన్నటినుంచి ఇది కూడా.	STATEMENT}
+{\slot
+1	B-time_period
+week	I-time_period
+నుంచి	O
+ఈ	O
+ear	B-body_part
+అసలు	O
+కొద్దిగా	O
+sound	B-bodily_process
+తక్కువ	B-intensity
+వస్తుంది	O
+నిన్నటినుంచి	B-time_period
+ఇది	O
+కూడా.	O
+}
+
+{\intent	d: తక్కువ వినబడుతుందా?	INFO_REQUEST}
+{\slot
+తక్కువ	B-intensity
+వినబడుతుందా?	B-bodily_process
+}
+
+{\intent	p: తట్టినట్లు అనిపిస్తుంది.	ANSWER}
+{\slot
+తట్టినట్లు	B-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	p1: గట్టిగా అరిస్తేనే వినపడుతుంది. పిలిస్తే వినబడుట లేదు .	STATEMENT}
+{\slot
+గట్టిగా	B-intensity
+అరిస్తేనే	B-bodily_process
+వినపడుతుంది.	B-bodily_process
+పిలిస్తే	O
+వినబడుట	B-bodily_process
+లేదు	B-negative
+.	O
+}
+
+{\intent	d: ఈ చెవు.	ACTION_DIR}
+{\slot
+ఈ	O
+చెవు.	B-body_part
+}
+
+{\intent	p: ఇది నిన్నటినుంచి కొంచం lightగా ఇది వినబడుతుంది కాని lightగా నిన్నటినుంచే అట్ల అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఇది	O
+నిన్నటినుంచి	B-time_period
+కొంచం	O
+lightగా	B-intensity
+ఇది	O
+వినబడుతుంది	B-bodily_process
+కాని	O
+lightగా	B-intensity
+నిన్నటినుంచే	B-time_period
+అట్ల	O
+అనిపిస్తుంది.	O
+}
+
+{\intent	p: అయితే నేను microbiology technician sir MGMలో	STATEMENT}
+{\slot
+అయితే	O
+నేను	O
+microbiology	B-profession
+technician	I-profession
+sir	O
+MGMలో	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మన దెగ్గర చూపెట్టాను కానీ amoxyclavunate వేసుకోమన్నారు కానీ ఏం వేసుకోలేదు, levo cetrizine వేసుకున్న.	STATEMENT}
+{\slot
+మన	O
+దెగ్గర	O
+చూపెట్టాను	O
+కానీ	O
+amoxyclavunate	B-medicine
+వేసుకోమన్నారు	O
+కానీ	O
+ఏం	O
+వేసుకోలేదు,	O
+levo	B-medicine
+cetrizine	I-medicine
+వేసుకున్న.	O
+}
+
+{\intent	d: వినబడుతుందా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	O
+}
+
+{\intent	p: వినబడుతుంది sir.	ANSWER}
+{\slot
+వినబడుతుంది	B-bodily_process
+sir.	O
+}
+
+{\intent	d: ఏది బాగొస్తుందో చెప్పు. ఇక్కడ బాగొస్తుందా? వెనకది బాగొస్తుందా?	INFO_REQUEST}
+{\slot
+ఏది	O
+బాగొస్తుందో	O
+చెప్పు.	O
+ఇక్కడ	O
+బాగొస్తుందా?	O
+వెనకది	B-body_part
+బాగొస్తుందా?	O
+}
+
+{\intent	p: వెనకదే బాగొస్తుంది sir.	ANSWER}
+{\slot
+వెనకదే	B-body_part
+బాగొస్తుంది	B-normal
+sir.	O
+}
+
+{\intent	p: ఇక్కడిదే బాగా వస్తుంది.	REPEAT_REPHRASE}
+{\slot
+ఇక్కడిదే	B-location
+బాగా	B-intensity
+వస్తుంది.	O
+}
+
+{\intent	d: నొప్పి ఉందా చెవి ఏమన్నా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉందా	O
+చెవి	B-body_part
+ఏమన్నా?	O
+}
+
+{\intent	p: చెవి ఏం లేదు sir.	ANSWER}
+{\slot
+చెవి	B-body_part
+ఏం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	p: cold ఉంది sir బాగా.	STATEMENT}
+{\slot
+cold	B-medical_condition
+ఉంది	O
+sir	O
+బాగా.	B-intensity
+}
+
+{\intent	d: వచ్చి ఎన్ని రోజులు అయితుంది?	INFO_REQUEST}
+{\slot
+వచ్చి	O
+ఎన్ని	O
+రోజులు	O
+అయితుంది?	O
+}
+
+{\intent	p1: 1 వారం అయితుంది. అసలు మేము పిలిచినా వినపడట్లేదు.	ANSWER}
+{\slot
+1	B-time_period
+వారం	I-time_period
+అయితుంది.	O
+అసలు	O
+మేము	O
+పిలిచినా	B-bodily_process
+వినపడట్లేదు.	B-symptom
+}
+
+{\intent	d: ఆ ఇది सर्दी వల్ల ఇది.	DIAGNOSIS}
+{\slot
+ఆ	O
+ఇది	O
+सर्दी	B-medical_condition
+వల్ల	O
+ఇది.	O
+}
+

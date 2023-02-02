@@ -1,0 +1,111 @@
+{\intent	p: doctor గారు నా వయస్సు 30 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+30	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు కంటి తెల్లగుడ్డు పైన నీలం colorలో మచ్చ ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+కంటి	B-body_part
+తెల్లగుడ్డు	I-body_part
+పైన	B-location
+నీలం	B-color
+colorలో	I-color
+మచ్చ	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: చిన్నప్పటి నుంచి అది అలాగే ఉంది.	STATEMENT}
+{\slot
+చిన్నప్పటి	B-time_period
+నుంచి	I-time_period
+అది	O
+అలాగే	O
+ఉంది.	O
+}
+
+{\intent	p: అది పెరిగే కొద్ది తగ్గుతుంది అని చెప్పారు.	STATEMENT}
+{\slot
+అది	O
+పెరిగే	O
+కొద్ది	O
+తగ్గుతుంది	B-normal
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	p: దీని వలన ఏమైనా problem ఉంటుందా?	INFO_REQUEST}
+{\slot
+దీని	O
+వలన	O
+ఏమైనా	O
+problem	O
+ఉంటుందా?	O
+}
+
+{\intent	d: మీకు తెల్లగుడ్డు పైన మచ్చలాగా ఉన్నాయి.	STATEMENT}
+{\slot
+మీకు	O
+తెల్లగుడ్డు	B-body_part
+పైన	B-location
+మచ్చలాగా	B-symptom
+ఉన్నాయి.	O
+}
+
+{\intent	d: ఇది కొంతమందికి ఈ blue color మచ్చలు, కొంతమందికి మనకైతే moles ఉంటాయో మన వేరే bodyలో ఎక్కడయితే పుట్టుమచ్చలా ఉంటాయో కొంతమందికి ఆ colorలొ brownish colorలొ కూడా కొంతమందికి పుట్టుమచలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+కొంతమందికి	O
+ఈ	O
+blue	B-color
+color	I-color
+మచ్చలు,	B-symptom
+కొంతమందికి	O
+మనకైతే	O
+moles	B-body_part
+ఉంటాయో	O
+మన	O
+వేరే	O
+bodyలో	B-body_part
+ఎక్కడయితే	O
+పుట్టుమచ్చలా	B-body_part
+ఉంటాయో	O
+కొంతమందికి	O
+ఆ	O
+colorలొ	B-color
+brownish	B-color
+colorలొ	I-color
+కూడా	O
+కొంతమందికి	O
+పుట్టుమచలు	B-body_part
+ఉంటాయి.	O
+}
+
+{\intent	d: ఆ అది సహజంగా అలానే ఉంటుంది. అది పెద్దవిగా అవ్వవు. అంతే ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+అది	O
+సహజంగా	O
+అలానే	O
+ఉంటుంది.	O
+అది	O
+పెద్దవిగా	O
+అవ్వవు.	O
+అంతే	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఆ దానితో problem ఏమి అవ్వదు.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+దానితో	O
+problem	O
+ఏమి	O
+అవ్వదు.	O
+}
+

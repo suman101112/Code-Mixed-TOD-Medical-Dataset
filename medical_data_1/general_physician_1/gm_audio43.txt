@@ -1,0 +1,134 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: Hello	ACK}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి Vishwanaath గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Vishwanaath	B-name
+గారు	O
+}
+
+{\intent	p: madam ఏం లేదు madam, నాకు recentగా మా బాబు Americaలో ఉంటాడు	STATEMENT}
+{\slot
+madam	O
+ఏం	O
+లేదు	O
+madam,	O
+నాకు	O
+recentగా	O
+మా	O
+బాబు	B-familal
+Americaలో	B-place
+ఉంటాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆయనకి మొన్న february 11th రోజున ఏదో test చేసి, biopsy అని చెప్పి ఏదో Paraphilic thyroid cancer వచ్చేసింది అని చెప్పి అన్నారు.	STATEMENT}
+{\slot
+ఆయనకి	O
+మొన్న	O
+february	B-time_period
+11th	I-time_period
+రోజున	I-time_period
+ఏదో	O
+test	B-mtest
+చేసి,	O
+biopsy	B-mtest
+అని	O
+చెప్పి	O
+ఏదో	O
+Paraphilic	B-medical_condition
+thyroid	I-medical_condition
+cancer	I-medical_condition
+వచ్చేసింది	O
+అని	O
+చెప్పి	O
+అన్నారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: దానికి treatment ఏంటి madam	INFO_REQUEST}
+{\slot
+దానికి	O
+treatment	B-treatment
+ఏంటి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు thyroid cancer అనేది మీరు చెప్తున్నారు	ACK}
+{\slot
+ఇప్పుడు	O
+thyroid	B-medical_condition
+cancer	I-medical_condition
+అనేది	O
+మీరు	O
+చెప్తున్నారు	O
+}
+
+{\intent	p: umm umm	ACK}
+{\slot
+umm	O
+umm	O
+}
+
+{\intent	d: అది compulsory diagnose అయిందా లేదా అనేది Effinacy test ద్వారా తెలుస్తుందండీ.	STATEMENT}
+{\slot
+అది	O
+compulsory	O
+diagnose	B-mtest
+అయిందా	O
+లేదా	O
+అనేది	O
+Effinacy	B-mtest
+test	B-mtest
+ద్వారా	O
+తెలుస్తుందండీ.	O
+}
+
+{\intent	d: so ఈ thyroid cancer usualగా stageని బట్టి remove చేయడమా లేకపోతే, మీరు oncologistని consult అయినప్పుడు దానికి radiationఆ chemotheraphyఆ దానికి severity బట్టి depend అయి ఉంటుందండి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+thyroid	B-medical_condition
+cancer	I-medical_condition
+usualగా	O
+stageని	B-time_period
+బట్టి	O
+remove	O
+చేయడమా	O
+లేకపోతే,	O
+మీరు	O
+oncologistని	B-medical_professional
+consult	O
+అయినప్పుడు	O
+దానికి	O
+radiationఆ	B-treatment
+chemotheraphyఆ	B-treatment
+దానికి	O
+severity	O
+బట్టి	O
+depend	O
+అయి	O
+ఉంటుందండి.	O
+}
+

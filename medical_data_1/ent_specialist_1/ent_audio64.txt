@@ -1,0 +1,77 @@
+{\intent	p: sir నేను మీ old patient ని	STATEMENT}
+{\slot
+sir	O
+నేను	O
+మీ	O
+old	B-person
+patient	I-person
+ని	O
+}
+
+{\intent	d: umm umm	ACK}
+{\slot
+umm	O
+umm	O
+}
+
+{\intent	d: గుర్తుంది.	STATEMENT}
+{\slot
+గుర్తుంది.	O
+}
+
+{\intent	p: అయితే audio పెట్టించారు sir	STATEMENT}
+{\slot
+అయితే	O
+audio	B-medical_apparatus
+పెట్టించారు	O
+sir	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: ఆది కొంచం మీద నొస్తుంది sir	STATEMENT}
+{\slot
+ఆది	O
+కొంచం	O
+మీద	B-location
+నొస్తుంది	B-symptom
+sir	O
+}
+
+{\intent	d: umm ఏం కాదు	ACK}
+{\slot
+umm	O
+ఏం	O
+కాదు	O
+}
+
+{\intent	p: అది కాకినాడ, కాకినాడ నుంచి sir	STATEMENT}
+{\slot
+అది	O
+కాకినాడ,	B-place
+కాకినాడ	B-place
+నుంచి	O
+sir	O
+}
+
+{\intent	p1: నీకు చూసే doctor ఆ?	INFO_REQUEST}
+{\slot
+నీకు	O
+చూసే	O
+doctor	B-medical_professional
+ఆ?	O
+}
+
+{\intent	p: ఆ sir ఓ సంవత్సరం నుంచి చూసారు	STATEMENT}
+{\slot
+ఆ	O
+sir	O
+ఓ	O
+సంవత్సరం	B-time_period
+నుంచి	O
+చూసారు	O
+}
+

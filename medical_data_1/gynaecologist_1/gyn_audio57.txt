@@ -1,0 +1,228 @@
+{\intent	p: మాకు పెళ్ళై 10 సంవత్సరాల మాటికీ అవ్వొస్తుంది madam	STATEMENT}
+{\slot
+మాకు	O
+పెళ్ళై	O
+10	B-time_period
+సంవత్సరాల	I-time_period
+మాటికీ	O
+అవ్వొస్తుంది	O
+madam	O
+}
+
+{\intent	d: 10 సంవత్సరం, ok	ACK}
+{\slot
+10	B-time_period
+సంవత్సరం,	I-time_period
+ok	O
+}
+
+{\intent	p: ఇంతమాటికి పిల్లలు లేరు sir	STATEMENT}
+{\slot
+ఇంతమాటికి	O
+పిల్లలు	B-familal
+లేరు	B-negative
+sir	O
+}
+
+{\intent	d: పిల్లలు లేరు ఇప్పటివరకి	ACK}
+{\slot
+పిల్లలు	B-familal
+లేరు	B-negative
+ఇప్పటివరకి	B-time_period
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	d: testing అంతా చేసుకున్నారా? ఇప్పటివరకి	INFO_REQUEST}
+{\slot
+testing	B-mtest
+అంతా	O
+చేసుకున్నారా?	O
+ఇప్పటివరకి	B-time_period
+}
+
+{\intent	p: చెప్పించాం sir గర్భసంచి చిన్నగుందని అన్నారు	ANSWER}
+{\slot
+చెప్పించాం	O
+sir	O
+గర్భసంచి	B-body_part
+చిన్నగుందని	B-mtest_value
+అన్నారు	O
+}
+
+{\intent	d: గర్భసంచి చిన్నగుందని చెప్పారా?	INFO_REQUEST}
+{\slot
+గర్భసంచి	B-body_part
+చిన్నగుందని	B-mtest_value
+చెప్పారా?	O
+}
+
+{\intent	p: ఆ అవును	ANSWER}
+{\slot
+ఆ	O
+అవును	B-positive
+}
+
+{\intent	d: ok అండి. ok ok	ACK}
+{\slot
+ok	O
+అండి.	O
+ok	O
+ok	O
+}
+
+{\intent	d: ఇంకా మీ కణాల పరిక్ష అంతా perfect ఉందని చెప్పారా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+మీ	O
+కణాల	O
+పరిక్ష	B-mtest
+అంతా	O
+perfect	B-normal
+ఉందని	O
+చెప్పారా?	O
+}
+
+{\intent	p: అంటే నేను చేయించుకోలే sir అమ్మాయి ఒక్కటి చెప్పించుకుంది	ANSWER}
+{\slot
+అంటే	O
+నేను	O
+చేయించుకోలే	B-negative
+sir	O
+అమ్మాయి	B-person
+ఒక్కటి	O
+చెప్పించుకుంది	O
+}
+
+{\intent	p: అంటే అమ్మాయికి నెలసరి రావట్లేదు అన్నారు ఇంగా	STATEMENT}
+{\slot
+అంటే	O
+అమ్మాయికి	B-person
+నెలసరి	B-bodily_process
+రావట్లేదు	B-negative
+అన్నారు	O
+ఇంగా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: dateలు తక్వ వస్తున్నాయి sir	STATEMENT}
+{\slot
+dateలు	B-bodily_process
+తక్వ	B-intensity
+వస్తున్నాయి	O
+sir	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: periods ఆమెకు సరిగ్గా వస్తాయా? నెలసరి?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+ఆమెకు	O
+సరిగ్గా	B-normal
+వస్తాయా?	O
+నెలసరి?	B-bodily_process
+}
+
+{\intent	p: అది నెలసరి సరిగ్గా రావట్లేదు sir.	STATEMENT}
+{\slot
+అది	O
+నెలసరి	B-bodily_process
+సరిగ్గా	B-normal
+రావట్లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: అంటే bleeding తక్వ అవుతదా? 3 4 నెలలకి ఒకసారి అవుతదా?	INFO_REQUEST}
+{\slot
+అంటే	O
+bleeding	B-medical_condition
+తక్వ	B-intensity
+అవుతదా?	O
+3	B-time_period
+4	B-time_period
+నెలలకి	I-time_period
+ఒకసారి	B-frequency
+అవుతదా?	O
+}
+
+{\intent	p: ఇప్పటికి 2 సంవత్సరాలు, ఇంత మాటుకీ లేదు sir	ANSWER}
+{\slot
+ఇప్పటికి	O
+2	B-time_period
+సంవత్సరాలు,	I-time_period
+ఇంత	O
+మాటుకీ	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: hmm hmm right	ACK}
+{\slot
+hmm	O
+hmm	O
+right	O
+}
+
+{\intent	d: ఇప్పుడు ఈ problemది solution చెప్తాను నేను	COMMIT}
+{\slot
+ఇప్పుడు	O
+ఈ	O
+problemది	O
+solution	O
+చెప్తాను	O
+నేను	O
+}
+
+{\intent	d: ఇప్పుడు గర్భసంచి small size అంటే చిన్నగుంది అని చెప్తున్నారు మీరు	ACK}
+{\slot
+ఇప్పుడు	O
+గర్భసంచి	B-body_part
+small	B-symptom
+size	I-symptom
+అంటే	O
+చిన్నగుంది	B-mtest_value
+అని	O
+చెప్తున్నారు	O
+మీరు	O
+}
+
+{\intent	d: ఇది sometimes hypoplastic uterus అని అంటారు చాలా చిన్నగా ఉంటే.	DIAGNOSIS}
+{\slot
+ఇది	O
+sometimes	O
+hypoplastic	B-medical_condition
+uterus	B-body_part
+అని	O
+అంటారు	O
+చాలా	B-intensity
+చిన్నగా	B-mtest_value
+ఉంటే.	O
+}
+
+{\intent	d: కొన్ని medium size కూడా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+కొన్ని	O
+medium	B-mtest_value
+size	I-mtest_value
+కూడా	O
+ఉంటాయి.	O
+}
+

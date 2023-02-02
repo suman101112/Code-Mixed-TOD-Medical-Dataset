@@ -1,0 +1,205 @@
+{\intent	p: sir నాకు వెనక భగం అంతా painగా అనిపిస్తుంది sir నాకు మెడ అంతా	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+వెనక	B-body_part
+భగం	I-body_part
+అంతా	B-location
+painగా	B-symptom
+అనిపిస్తుంది	O
+sir	O
+నాకు	O
+మెడ	B-body_part
+అంతా	B-location
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ అట్లానే పడుకున్నప్పుడు లేసినప్పుడు right side left side కాలు, చేయి అంతా పట్టేసినట్లు. జుమ్మ్ పట్టినట్లు అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఆ	O
+అట్లానే	O
+పడుకున్నప్పుడు	B-bodily_process
+లేసినప్పుడు	O
+right	B-location
+side	I-location
+left	B-location
+side	I-location
+కాలు,	B-body_part
+చేయి	B-body_part
+అంతా	O
+పట్టేసినట్లు.	B-symptom
+జుమ్మ్	B-symptom
+పట్టినట్లు	I-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: మొద్దు బారినట్లు అనిపిస్తుంది.	STATEMENT}
+{\slot
+మొద్దు	B-symptom
+బారినట్లు	I-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	p: ఆ మొద్దు బారినట్లు అనిపిస్తుంది sir.	ANSWER}
+{\slot
+ఆ	O
+మొద్దు	B-symptom
+బారినట్లు	I-symptom
+అనిపిస్తుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలంగా అమ్మా ఇది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	B-time_period
+అమ్మా	O
+ఇది?	O
+}
+
+{\intent	p: ఒక 2 3 months అయింది sir.	ANSWER}
+{\slot
+ఒక	O
+2	B-time_period
+3	B-time_period
+months	I-time_period
+అయింది	O
+sir.	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: వయస్సు 25 వయస్సు sir.	ANSWER}
+{\slot
+వయస్సు	O
+25	B-age
+వయస్సు	O
+sir.	O
+}
+
+{\intent	d: right.	ACK}
+{\slot
+right.	O
+}
+
+{\intent	d: ఏమన్నా medicines వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+ఏమన్నా	O
+medicines	B-medicine
+వాడుతున్నారా?	O
+}
+
+{\intent	p: ఇంకా ఏం లేదు sir.	ANSWER}
+{\slot
+ఇంకా	O
+ఏం	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: right ఇంకా ఏమన్నా అడగదలచుకున్నారా అమ్మా?	INFO_REQUEST}
+{\slot
+right	O
+ఇంకా	O
+ఏమన్నా	O
+అడగదలచుకున్నారా	O
+అమ్మా?	O
+}
+
+{\intent	p: ఇప్పుడు మనం వర్షాకాలం కదా sir అయినా కూడా వేడిగా చాలా వేడి నీళ్ళు అసలు పడవు sir. అంతా వేడిగా మెడ అంతా వేడిగా అట్ల ఉంటుంది sir.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మనం	O
+వర్షాకాలం	B-time_period
+కదా	O
+sir	O
+అయినా	O
+కూడా	O
+వేడిగా	B-symptom
+చాలా	B-intensity
+వేడి	B-symptom
+నీళ్ళు	B-food_substance
+అసలు	O
+పడవు	B-symptom
+sir.	O
+అంతా	O
+వేడిగా	B-symptom
+మెడ	B-body_part
+అంతా	B-location
+వేడిగా	B-symptom
+అట్ల	O
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	d: అలాగే. అలాగే నమ్మా. దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+అలాగే.	O
+అలాగే	O
+నమ్మా.	O
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: so మీ విషయంలో మెడ వెనుక భాగంలో ఉండేటటువంటి disc problem సమస్య అనేది ఉంది.	DIAGNOSIS}
+{\slot
+so	O
+మీ	O
+విషయంలో	O
+మెడ	B-body_part
+వెనుక	B-location
+భాగంలో	I-location
+ఉండేటటువంటి	O
+disc	B-body_part
+problem	B-medical_condition
+సమస్య	O
+అనేది	O
+ఉంది.	O
+}
+
+{\intent	d: దానితో ఈ spondalities లక్షణం వల్ల మీకు ఎడమ పక్క కూడా కాలు చేయి అంతా మొద్దుబారినట్లు గా జుమ్మ్ పట్టినట్లు చెప్తున్నారు కదా మొద్దుబారినట్లు లక్షణం కనిపిస్తూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+దానితో	O
+ఈ	O
+spondalities	B-symptom
+లక్షణం	B-symptom
+వల్ల	O
+మీకు	O
+ఎడమ	B-location
+పక్క	I-location
+కూడా	O
+కాలు	B-body_part
+చేయి	B-body_part
+అంతా	O
+మొద్దుబారినట్లు	B-symptom
+గా	O
+జుమ్మ్	B-symptom
+పట్టినట్లు	I-symptom
+చెప్తున్నారు	O
+కదా	O
+మొద్దుబారినట్లు	B-symptom
+లక్షణం	O
+కనిపిస్తూ	O
+ఉంటుంది.	O
+}
+

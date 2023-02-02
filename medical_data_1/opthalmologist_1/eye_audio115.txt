@@ -1,0 +1,102 @@
+{\intent	p: doctor గారు నా కుడి కన్ను రెప్ప దాని అంతట అదే పడిపోతుంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+కుడి	B-location
+కన్ను	B-body_part
+రెప్ప	I-body_part
+దాని	B-symptom
+అంతట	I-symptom
+అదే	I-symptom
+పడిపోతుంది.	I-symptom
+}
+
+{\intent	p: ఇంకా అది నా ఎడమ కన్ను రెప్పకి సమానంగా లేదు.	STATEMENT}
+{\slot
+ఇంకా	O
+అది	O
+నా	O
+ఎడమ	B-location
+కన్ను	B-body_part
+రెప్పకి	I-body_part
+సమానంగా	B-symptom
+లేదు.	I-symptom
+}
+
+{\intent	d: మీరు వయస్సు చెప్పలేదు.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+వయస్సు	O
+చెప్పలేదు.	O
+}
+
+{\intent	d: ఆ మేము tosis అంటాం రెప్ప వాళడాన్ని.	DIAGNOSIS}
+{\slot
+ఆ	O
+మేము	O
+tosis	B-medical_condition
+అంటాం	O
+రెప్ప	B-body_part
+వాళడాన్ని	B-symptom
+}
+
+{\intent	d: ఆ కొంత మందికి పుట్టుకలో కూడా పుట్టడమే అలా కన్ను రెప్ప వాలి ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+కొంత	O
+మందికి	O
+పుట్టుకలో	B-bodily_process
+కూడా	O
+పుట్టడమే	B-bodily_process
+అలా	O
+కన్ను	B-body_part
+రెప్ప	I-body_part
+వాలి	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: congenital అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+congenital	B-medical_condition
+అంటారు.	O
+}
+
+{\intent	d: ఒక్కటే eyeలో కనబడుతుంతది అది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటే	O
+eyeలో	B-body_part
+కనబడుతుంతది	B-bodily_process
+అది.	O
+}
+
+{\intent	d: congenital tosis generalగా correction surgery ద్వారానే correct చేయొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+congenital	B-medical_condition
+tosis	I-medical_condition
+generalగా	O
+correction	B-treatment
+surgery	I-treatment
+ద్వారానే	O
+correct	B-normal
+చేయొచ్చు.	O
+}
+
+{\intent	d: 10 ఏళ్ళ వయస్సులో చేయకుండా observe చేస్తారు.	MEDICAL_EXPLANATION}
+{\slot
+10	B-age
+ఏళ్ళ	I-age
+వయస్సులో	O
+చేయకుండా	O
+observe	O
+చేస్తారు.	O
+}
+
+{\intent	d: ఆ తరువాతనే surgeryకి తీసుకుంటారు.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+తరువాతనే	O
+surgeryకి	B-treatment
+తీసుకుంటారు.	O
+}
+

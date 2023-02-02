@@ -1,0 +1,289 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Rakshita	ANSWER}
+{\slot
+Rakshita	B-name
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: Rakshita	ANSWER}
+{\slot
+Rakshita	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 18	ANSWER}
+{\slot
+18	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: nose block అయితుంది	STATEMENT}
+{\slot
+nose	B-body_part
+block	B-symptom
+అయితుంది	O
+}
+
+{\intent	d: nose block	ACK}
+{\slot
+nose	B-body_part
+block	B-symptom
+}
+
+{\intent	p: tissueతో చూస్తే ఒక 2 3 times blood వచ్చింది, tissueతో వచ్చింది	ANSWER}
+{\slot
+tissueతో	O
+చూస్తే	O
+ఒక	O
+2	B-frequency
+3	B-frequency
+times	I-frequency
+blood	B-body_substance
+వచ్చింది,	O
+tissueతో	O
+వచ్చింది	O
+}
+
+{\intent	d: tissue ఎందుకు పెట్టినావ్ అమ్మా ముక్కులో	MEDICAL_EXPLANATION}
+{\slot
+tissue	O
+ఎందుకు	O
+పెట్టినావ్	O
+అమ్మా	O
+ముక్కులో	B-body_part
+}
+
+{\intent	p: అంటే sneeze చేయడానికి.	STATEMENT}
+{\slot
+అంటే	O
+sneeze	B-symptom
+చేయడానికి.	O
+}
+
+{\intent	d: ఎందుకు? అట్ల చేయకూడదు కదా.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకు?	O
+అట్ల	O
+చేయకూడదు	O
+కదా.	O
+}
+
+{\intent	p: sneeze	REPEAT_REPHRASE}
+{\slot
+sneeze	B-symptom
+}
+
+{\intent	d: sneeezeకు అసల అట్ల కాదు, ముక్కులో పెట్టి అసలు అలా బలవంతంగా తుమ్మొద్దు	MEDICAL_EXPLANATION}
+{\slot
+sneeezeకు	B-symptom
+అసల	O
+అట్ల	O
+కాదు,	O
+ముక్కులో	B-body_part
+పెట్టి	O
+అసలు	O
+అలా	O
+బలవంతంగా	O
+తుమ్మొద్దు	B-symptom
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: మంచి పద్ధతి, మంచి అలవాటు కాదు అది	STATEMENT}
+{\slot
+మంచి	O
+పద్ధతి,	O
+మంచి	O
+అలవాటు	O
+కాదు	O
+అది	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: అద్దాలు తీయి	ACTION_DIR}
+{\slot
+అద్దాలు	O
+తీయి	O
+}
+
+{\intent	d: ఊరికే పెట్టి తుమ్ముతుంటావా నువ్వు?	INFO_REQUEST}
+{\slot
+ఊరికే	O
+పెట్టి	O
+తుమ్ముతుంటావా	B-symptom
+నువ్వు?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	p1: తుమ్ములొస్తాయి	STATEMENT}
+{\slot
+తుమ్ములొస్తాయి	B-symptom
+}
+
+{\intent	p: తుమ్ములొస్తాయి అంతే	STATEMENT}
+{\slot
+తుమ్ములొస్తాయి	B-symptom
+అంతే	O
+}
+
+{\intent	p1: headache వస్తుంది అంటుంది.	STATEMENT}
+{\slot
+headache	B-symptom
+వస్తుంది	O
+అంటుంది.	O
+}
+
+{\intent	d: ముక్కులోకెళ్ళి రక్తం గిట్ల ఏమైనా వస్తుందా?	INFO_REQUEST}
+{\slot
+ముక్కులోకెళ్ళి	B-body_part
+రక్తం	B-body_substance
+గిట్ల	O
+ఏమైనా	O
+వస్తుందా?	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఆహ<neg> కారట్లేదు.	ANSWER}
+{\slot
+ఆహ<neg>	O
+కారట్లేదు.	B-negative
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: tissueకి వస్తాది అంతే	ANSWER}
+{\slot
+tissueకి	O
+వస్తాది	O
+అంతే	O
+}
+
+{\intent	d: tissueకి వస్తాది అంటే, tissue paper ముక్కులో మాత్రం పెట్టొద్దు	ACTION_DIR}
+{\slot
+tissueకి	O
+వస్తాది	O
+అంటే,	O
+tissue	O
+paper	O
+ముక్కులో	B-body_part
+మాత్రం	O
+పెట్టొద్దు	O
+}
+
+{\intent	p: ఆహ<neg> పెట్టాను.	COMMIT}
+{\slot
+ఆహ<neg>	O
+పెట్టాను.	O
+}
+
+{\intent	d: ఇదంతా పుండు పుండు అయింది అన్నట్టు అంతా	STATEMENT}
+{\slot
+ఇదంతా	O
+పుండు	B-medical_condition
+పుండు	B-medical_condition
+అయింది	O
+అన్నట్టు	O
+అంతా	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: తుమ్ములు బాగా వస్తాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+బాగా	B-intensity
+వస్తాయా?	O
+}
+
+{\intent	p: వస్తాయి. ఒక్కోసారి వస్తే 15 20 times continuous వస్తాయి.	ANSWER}
+{\slot
+వస్తాయి.	O
+ఒక్కోసారి	O
+వస్తే	O
+15	B-time_period
+20	B-time_period
+times	I-time_period
+continuous	O
+వస్తాయి.	O
+}
+
+{\intent	p1: ఇది Asthma ఉంది sir	STATEMENT}
+{\slot
+ఇది	O
+Asthma	B-medical_condition
+ఉంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇది allergic rhinitis.	DIAGNOSIS}
+{\slot
+ఇది	O
+allergic	B-medical_condition
+rhinitis.	I-medical_condition
+}
+
+{\intent	p1: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+

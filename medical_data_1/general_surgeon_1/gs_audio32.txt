@@ -1,0 +1,262 @@
+{\intent	p: madam మా husbandకి ఈ మధ్యనే airline crack అయింది madam కాలుకి	STATEMENT}
+{\slot
+madam	O
+మా	O
+husbandకి	B-familal
+ఈ	O
+మధ్యనే	O
+airline	B-body_part
+crack	B-symptom
+అయింది	O
+madam	O
+కాలుకి	B-body_part
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: అయితే ఆయనే complete bed rest తీసుకోమన్నరు	STATEMENT}
+{\slot
+అయితే	O
+ఆయనే	O
+complete	O
+bed	I-bodily_process
+rest	B-bodily_process
+తీసుకోమన్నరు	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: so దానికి medicines వాడము madam	STATEMENT}
+{\slot
+so	O
+దానికి	O
+medicines	B-medicine
+వాడము	O
+madam	O
+}
+
+{\intent	p: వాడంగానే ఆయనకి ఏమైంది అంటే gastric trouble చాలా form అయిపోయింది madam	STATEMENT}
+{\slot
+వాడంగానే	O
+ఆయనకి	O
+ఏమైంది	O
+అంటే	O
+gastric	B-medical_condition
+trouble	I-medical_condition
+చాలా	B-intensity
+form	B-symptom
+అయిపోయింది	I-symptom
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: నోట్లో అంతా పూత వస్తుంది, తరువాత బాగా ఎంగిలి వస్తుంది.	STATEMENT}
+{\slot
+నోట్లో	B-body_part
+అంతా	O
+పూత	B-medical_condition
+వస్తుంది,	O
+తరువాత	O
+బాగా	B-intensity
+ఎంగిలి	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p: ఆయనకు ఏ అలవాటు లేదండీ .	ANSWER}
+{\slot
+ఆయనకు	O
+ఏ	O
+అలవాటు	O
+లేదండీ	O
+.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఇంకోటి cigar కానీ, drinks కానీ ఏ అలవాట్లు plus బయటివి foods ఏమి junk foods ఎమి తినరు madam	STATEMENT}
+{\slot
+ఇంకోటి	O
+cigar	B-habit
+కానీ,	O
+drinks	B-habit
+కానీ	O
+ఏ	O
+అలవాట్లు	O
+plus	O
+బయటివి	B-location
+foods	B-food_substance
+ఏమి	O
+junk	B-food_substance
+foods	I-food_substance
+ఎమి	O
+తినరు	B-negative
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎంత severeగా form అయింది అంటే ఆయన unable to sleep at night	STATEMENT}
+{\slot
+ఎంత	O
+severeగా	B-intensity
+form	B-symptom
+అయింది	O
+అంటే	O
+ఆయన	O
+unable	B-symptom
+to	O
+sleep	B-bodily_process
+at	O
+night	B-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఉమ్ముతున్నారు	STATEMENT}
+{\slot
+ఉమ్ముతున్నారు	B-bodily_process
+}
+
+{\intent	p: ఏంటి అంటే బాగా ఎంగిలి ఊరిపోతుంది అంటున్నారు	STATEMENT}
+{\slot
+ఏంటి	O
+అంటే	O
+బాగా	B-intensity
+ఎంగిలి	B-body_substance
+ఊరిపోతుంది	B-symptom
+అంటున్నారు	O
+}
+
+{\intent	p: ఎమి తిన్న బాగా గొంతు వరకి ఉంటుంది అంటున్నారు.	STATEMENT}
+{\slot
+ఎమి	O
+తిన్న	B-bodily_process
+బాగా	B-intensity
+గొంతు	B-body_part
+వరకి	O
+ఉంటుంది	O
+అంటున్నారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: liver function test చేసే normal ఉంది madam	STATEMENT}
+{\slot
+liver	B-mtest
+function	I-mtest
+test	I-mtest
+చేసే	O
+normal	B-normal
+ఉంది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కానీ అక్కడ అక్కడ చిన్న 3 4 bubbles వచ్చాయి అండీ అంటున్నారు.	STATEMENT}
+{\slot
+కానీ	O
+అక్కడ	B-location
+అక్కడ	B-location
+చిన్న	O
+3	B-frequency
+4	B-frequency
+bubbles	I-frequency
+వచ్చాయి	O
+అండీ	O
+అంటున్నారు.	O
+}
+
+{\intent	p: A1 stageలో ఉంది అని చెప్తున్నారు, ఏమంటారు, faty liver అని అంటున్నారు doctor.	STATEMENT}
+{\slot
+A1	O
+stageలో	O
+ఉంది	O
+అని	O
+చెప్తున్నారు,	O
+ఏమంటారు,	O
+faty	B-medical_condition
+liver	I-medical_condition
+అని	O
+అంటున్నారు	O
+doctor.	B-medical_professional
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: gastro enterologist దెగ్గర చేయించాము అండి, endoscopy చేయించాము	STATEMENT}
+{\slot
+gastro	B-medical_condition
+enterologist	B-medical_professional
+దెగ్గర	O
+చేయించాము	O
+అండి,	O
+endoscopy	B-mtest
+చేయించాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చేయిస్తే first A1 stage అని అంటున్నారు madam	STATEMENT}
+{\slot
+చేయిస్తే	O
+first	O
+A1	O
+stage	O
+అని	O
+అంటున్నారు	O
+madam	O
+}
+
+{\intent	d: సరే అండి Sharmila గారు నేను చెప్తాను వినండీ.	ACTION_DIR}
+{\slot
+సరే	O
+అండి	O
+Sharmila	B-name
+గారు	O
+నేను	O
+చెప్తాను	O
+వినండీ.	O
+}
+
+{\intent	d: cure అవుతుంది.	STATEMENT}
+{\slot
+cure	B-normal
+అవుతుంది.	O
+}
+

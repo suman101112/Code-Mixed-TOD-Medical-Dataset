@@ -1,0 +1,99 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి Raaju గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Raaju	B-name
+గారు	O
+}
+
+{\intent	p: అబ్బయి ఏది చెప్పినా మరి పట్టించుకోవట్లేడు అండి	STATEMENT}
+{\slot
+అబ్బయి	O
+ఏది	O
+చెప్పినా	O
+మరి	O
+పట్టించుకోవట్లేడు	B-symptom
+అండి	O
+}
+
+{\intent	d: అన్నీ విషయాలు observe చేస్తున్నదా? మరి మీరు చెప్పేవి అన్నీ విషయాలు బాగా communicate అవుతున్నదా మీతోటి.	INFO_REQUEST}
+{\slot
+అన్నీ	O
+విషయాలు	O
+observe	O
+చేస్తున్నదా?	O
+మరి	O
+మీరు	O
+చెప్పేవి	O
+అన్నీ	O
+విషయాలు	O
+బాగా	O
+communicate	O
+అవుతున్నదా	O
+మీతోటి.	O
+}
+
+{\intent	p: ఆ చెప్పిన పనులయితే చేస్తున్నాడు కానీ concentration అనేది పెట్టట్లేడు sir.	STATEMENT}
+{\slot
+ఆ	O
+చెప్పిన	O
+పనులయితే	O
+చేస్తున్నాడు	O
+కానీ	O
+concentration	B-bodily_process
+అనేది	O
+పెట్టట్లేడు	B-symptom
+sir.	O
+}
+
+{\intent	d: అంటే ADHD ఉండవచ్చు	DIAGNOSIS}
+{\slot
+అంటే	O
+ADHD	B-symptom
+ఉండవచ్చు	O
+}
+
+{\intent	d: అంటే గనక మీరు చెప్పేది symptoms ని బట్టి అన్నీ తెలుస్తున్నాయి మా బాబుకి అన్నీ తెలుసు, బాబుకి ఇష్టమైనటువంటి వాటినే react అవుతున్నాడు, లేదా బాబును గట్టిగా పిలిచినప్పుడే react అవుతున్నాడు అంటే definiteగా గనక it is the attention deficiency hyperactive disorderగా మనం చెప్పవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+గనక	O
+మీరు	O
+చెప్పేది	O
+symptoms	B-symptom
+ని	O
+బట్టి	O
+అన్నీ	O
+తెలుస్తున్నాయి	O
+మా	O
+బాబుకి	B-person
+అన్నీ	O
+తెలుసు,	O
+బాబుకి	B-person
+ఇష్టమైనటువంటి	O
+వాటినే	O
+react	O
+అవుతున్నాడు,	O
+లేదా	O
+బాబును	B-person
+గట్టిగా	O
+పిలిచినప్పుడే	O
+react	O
+అవుతున్నాడు	O
+అంటే	O
+definiteగా	O
+గనక	O
+it	O
+is	O
+the	O
+attention	B-medical_condition
+deficiency	I-medical_condition
+hyperactive	I-medical_condition
+disorderగా	I-medical_condition
+మనం	O
+చెప్పవచ్చు.	O
+}
+

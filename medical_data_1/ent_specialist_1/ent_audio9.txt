@@ -1,0 +1,249 @@
+{\intent	d: उम्र बोलो.	INFO_REQUEST}
+{\slot
+उम्र	O
+बोलो.	O
+}
+
+{\intent	p: 16	ANSWER}
+{\slot
+16	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: सर्दी हो गई और బలగం आ रहा	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+हो	B-symptom
+गई	I-symptom
+और	O
+బలగం	B-symptom
+आ	I-symptom
+रहा	I-symptom
+}
+
+{\intent	p1: खांसी आ रही	STATEMENT}
+{\slot
+खांसी	B-symptom
+आ	I-symptom
+रही	I-symptom
+}
+
+{\intent	p: खांसी	STATEMENT}
+{\slot
+खांसी	B-symptom
+}
+
+{\intent	d: चश्में निकालो	ACTION_DIR}
+{\slot
+चश्में	O
+निकालो	O
+}
+
+{\intent	d: नाको में से नेट आ रही?	INFO_REQUEST}
+{\slot
+नाको	B-body_part
+में	B-location
+से	O
+नेट	B-body_substance
+आ	B-symptom
+रही?	I-symptom
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	O
+}
+
+{\intent	p1: बहुत आ रहा.	STATEMENT}
+{\slot
+बहुत	B-intensity
+आ	B-symptom
+रहा.	I-symptom
+}
+
+{\intent	p: और यहाँ पे दर्द भी दे रहा.	STATEMENT}
+{\slot
+और	O
+यहाँ	O
+पे	O
+दर्द	B-symptom
+भी	I-symptom
+दे	I-symptom
+रहा.	I-symptom
+}
+
+{\intent	d: बुखार है?	INFO_REQUEST}
+{\slot
+बुखार	B-symptom
+है?	O
+}
+
+{\intent	p: थोड़ा	ANSWER}
+{\slot
+थोड़ा	B-intensity
+}
+
+{\intent	p1: छींकें तो दर्द हो रहा	STATEMENT}
+{\slot
+छींकें	B-symptom
+तो	B-time_period
+दर्द	B-symptom
+हो	I-symptom
+रहा?	O
+}
+
+{\intent	d: आ बोलो.	ACTION_DIR}
+{\slot
+आ	B-positive
+बोलो.	O
+}
+
+{\intent	d: कौनसा कान मैं दर्द है?	INFO_REQUEST}
+{\slot
+कौनसा	O
+कान	B-body_part
+मैं	B-location
+दर्द	B-symptom
+है?	O
+}
+
+{\intent	p: अच्छा डकार लिए तो यहाँ पे दर्द दे रहा.	ANSWER}
+{\slot
+अच्छा	O
+डकार	B-bodily_process
+लिए	O
+तो	O
+यहाँ	O
+पे	O
+दर्द	B-symptom
+दे	I-symptom
+रहा.	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ये कान?	INFO_REQUEST}
+{\slot
+ये	B-body_part
+कान?	B-body_part
+}
+
+{\intent	p: ये कान में थोड़ा सा हो रहा.	ANSWER}
+{\slot
+ये	B-body_part
+कान	I-body_part
+में	B-location
+थोड़ा	B-intensity
+सा	I-intensity
+हो	B-symptom
+रहा.	I-symptom
+}
+
+{\intent	d: नेट कैसा आ रहा . दृढ़ आ रहा या पानी जैसा आ रहा ?	INFO_REQUEST}
+{\slot
+नेट	B-body_substance
+कैसा	O
+आ	O
+रहा	O
+.	O
+दृढ़	B-symptom
+आ	I-symptom
+रहा	I-symptom
+या	O
+पानी	B-food_substance
+जैसा	I-food_substance
+आ	B-symptom
+रहा	I-symptom
+?	O
+}
+
+{\intent	p: सफेद का और थोड़ा सा jelly जैसा.	ANSWER}
+{\slot
+सफेद	B-color
+का	O
+और	O
+थोड़ा	B-intensity
+सा	O
+jelly	B-food_substance
+जैसा.	I-food_substance
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p: green मैं निकल रहा और brown मैं आ रहा. 1 हफ्ते से है.	STATEMENT}
+{\slot
+green	B-symptom
+मैं	I-symptom
+निकल	I-symptom
+रहा	I-symptom
+और	O
+brown	B-symptom
+मैं	I-symptom
+आ	I-symptom
+रहा.	I-symptom
+1	B-time_period
+हफ्ते	I-time_period
+से	I-time_period
+है.	B-positive
+}
+
+{\intent	p1: अभी क्या problem है अब?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+क्या	O
+problem	O
+है	O
+अब?	O
+}
+
+{\intent	d: अभी कितने दिन से आ रही?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+कितने	O
+दिन	B-time_period
+से	O
+आ	O
+रही?	O
+}
+
+{\intent	p: 1 हफ्ते से	ANSWER}
+{\slot
+1	B-time_period
+हफ्ते	B-time_period
+से	O
+}
+
+{\intent	d: इसको sinusitis बोलते అమ్మా.	DIAGNOSIS}
+{\slot
+इसको	O
+sinusitis	B-symptom
+बोलते	O
+అమ్మా.	O
+}
+
+{\intent	p1: हां	ACK}
+{\slot
+हां	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+

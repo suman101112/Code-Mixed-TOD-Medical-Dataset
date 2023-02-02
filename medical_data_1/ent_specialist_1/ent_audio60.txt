@@ -1,0 +1,135 @@
+{\intent	p1: చెవుల	HOLD}
+{\slot
+చెవుల	B-name
+}
+
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Lahari	ANSWER}
+{\slot
+Lahari	B-name
+}
+
+{\intent	d: Lahari	ACK}
+{\slot
+Lahari	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 23	ANSWER}
+{\slot
+23	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఈ చెవిలో చిన్న పుండులాగా అయింది.	STATEMENT}
+{\slot
+ఈ	O
+చెవిలో	B-body_part
+చిన్న	B-intensity
+పుండులాగా	B-medical_condition
+అయింది.	O
+}
+
+{\intent	d: నీకు ఏమి కష్టం ఉంది పుండు ఉంటే?	INFO_REQUEST}
+{\slot
+నీకు	O
+ఏమి	O
+కష్టం	O
+ఉంది	O
+పుండు	B-medical_condition
+ఉంటే?	O
+}
+
+{\intent	d: నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ last time clean చేస్తున్నప్పుడు చిన్న blood వచ్చింది so అది తగ్గింది	STATEMENT}
+{\slot
+ఆ	O
+last	B-time_period
+time	I-time_period
+clean	O
+చేస్తున్నప్పుడు	O
+చిన్న	O
+blood	B-body_substance
+వచ్చింది	O
+so	O
+అది	O
+తగ్గింది	B-normal
+}
+
+{\intent	p: ఇంకా అది clean చేయించాలి,	STATEMENT}
+{\slot
+ఇంకా	O
+అది	O
+clean	B-treatment
+చేయించాలి,	O
+}
+
+{\intent	p: ఇది వినిపించట్లేదు ఇప్పుడు.	STATEMENT}
+{\slot
+ఇది	O
+వినిపించట్లేదు	B-symptom
+ఇప్పుడు.	O
+}
+
+{\intent	d: బానే ఉంది.	DIAGNOSIS}
+{\slot
+బానే	B-normal
+ఉంది.	O
+}
+
+{\intent	d: clean చేయాలి ఇది	STATEMENT}
+{\slot
+clean	B-treatment
+చేయాలి	O
+ఇది	O
+}
+
+{\intent	p1: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: మందు వేస్తాం	COMMIT}
+{\slot
+మందు	B-medicine
+వేస్తాం	O
+}
+
+{\intent	d: 10 నిమిషాలు కుర్చో	ACTION_DIR}
+{\slot
+10	B-time_period
+నిమిషాలు	I-time_period
+కుర్చో	O
+}
+
+{\intent	d: clean చేస్తా	COMMIT}
+{\slot
+clean	B-treatment
+చేస్తా	O
+}
+

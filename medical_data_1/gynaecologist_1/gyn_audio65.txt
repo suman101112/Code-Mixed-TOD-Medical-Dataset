@@ -1,0 +1,287 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: Hello అండి	SU}
+{\slot
+Hello	O
+అండి	O
+}
+
+{\intent	p: Hello నమస్తే madam	GREETING}
+{\slot
+Hello	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: ya నమస్తే అండి	GREETING}
+{\slot
+ya	O
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: నా పేరు Bhagya varsha	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Bhagya	B-name
+varsha	I-name
+}
+
+{\intent	d: ya చెప్పండి	ACTION_DIR}
+{\slot
+ya	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ madam నాకు marriage అయ్యి 5 years అవుతుంది madam	ANSWER}
+{\slot
+ఆ	O
+madam	O
+నాకు	O
+marriage	B-marital_status
+అయ్యి	O
+5	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే నాకు PCOD ఉంది అని చెప్పారు madam	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+PCOD	B-medical_condition
+ఉంది	O
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే బాగా weight ఉన్నాను తగ్గమని చెప్తున్నారు, thyroid కూడా ఉంది.	STATEMENT}
+{\slot
+అయితే	O
+బాగా	B-intensity
+weight	B-bm
+ఉన్నాను	O
+తగ్గమని	B-normal
+చెప్తున్నారు,	O
+thyroid	B-medical_condition
+కూడా	O
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: thyroid plus PCOD కూడా normal అయింది, 10 kgs weight loss అవ్వడం వల్ల	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+plus	O
+PCOD	B-medical_condition
+కూడా	O
+normal	B-normal
+అయింది,	O
+10	B-bm
+kgs	I-bm
+weight	I-bm
+loss	I-bm
+అవ్వడం	O
+వల్ల	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే మొన్ననే hospitalకి వెళ్ళినప్పుడు egg develop అవ్వట్లేదు అని చెప్పారు madam	STATEMENT}
+{\slot
+అయితే	O
+మొన్ననే	B-time_period
+hospitalకి	B-place
+వెళ్ళినప్పుడు	O
+egg	B-body_part
+develop	B-bodily_process
+అవ్వట్లేదు	B-negative
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: hmm, ok	ACK}
+{\slot
+hmm,	O
+ok	O
+}
+
+{\intent	p: 0.7 అట్ల ఉండింది అని చెప్పారు madam	STATEMENT}
+{\slot
+0.7	B-mtest_value
+అట్ల	O
+ఉండింది	O
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అసలు egg develop అవుతదా అవ్వదా? అసలు పిల్లలు వస్తారా రారా? అనేదే doubt madam, చాలా భయంగా ఉంది.	INFO_REQUEST}
+{\slot
+అసలు	O
+egg	B-body_part
+develop	B-bodily_process
+అవుతదా	B-negative
+అవ్వదా?	O
+అసలు	O
+పిల్లలు	B-familal
+వస్తారా	O
+రారా?	O
+అనేదే	O
+doubt	O
+madam,	O
+చాలా	B-intensity
+భయంగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ cycles ఎలా ఉన్నాయండి? ప్రతీ నెల correctగా వస్తున్నాయా?	INFO_REQUEST}
+{\slot
+మీ	O
+cycles	B-bodily_process
+ఎలా	O
+ఉన్నాయండి?	O
+ప్రతీ	B-time_period
+నెల	I-time_period
+correctగా	B-normal
+వస్తున్నాయా?	O
+}
+
+{\intent	p: లేదు madam నా cycles అనేవి 3 monthsకి ఒకసారి, అంతకు ముందు వచ్చేవి, వాటంతట అవ్వే వచ్చేవి	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+నా	O
+cycles	B-bodily_process
+అనేవి	O
+3	B-time_period
+monthsకి	I-time_period
+ఒకసారి,	O
+అంతకు	O
+ముందు	O
+వచ్చేవి,	O
+వాటంతట	O
+అవ్వే	O
+వచ్చేవి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: without medicines	STATEMENT}
+{\slot
+without	O
+medicines	B-medicine
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు అవి కూడా రాలేదు madam, 5 months కి tablet తీసుకుంటేనే వస్తుంది	STATEMENT}
+{\slot
+ఇప్పుడు	O
+అవి	O
+కూడా	O
+రాలేదు	B-negative
+madam,	O
+5	B-time_period
+months	I-time_period
+కి	O
+tablet	B-medicine
+తీసుకుంటేనే	O
+వస్తుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు మీ weight ఎంత ఉందండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+మీ	O
+weight	B-bm
+ఎంత	O
+ఉందండి?	O
+}
+
+{\intent	p: ఇప్పుడు నా weight వచ్చేసి 54 అండి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+నా	O
+weight	B-bm
+వచ్చేసి	O
+54	B-bm
+అండి	O
+}
+
+{\intent	d: 64, ok	ACK}
+{\slot
+64,	B-bm
+ok	O
+}
+
+{\intent	d: and ఇది PCOS అంటున్నారు కదా అండి, ఇది కాకుండా ఇంకా మీది ఏమైనా tube test అయిందా?	INFO_REQUEST}
+{\slot
+and	O
+ఇది	O
+PCOS	B-symptom
+అంటున్నారు	O
+కదా	O
+అండి,	O
+ఇది	O
+కాకుండా	O
+ఇంకా	O
+మీది	O
+ఏమైనా	B-body_part
+tube	B-mtest
+test	O
+అయిందా?	O
+}
+
+{\intent	d: ok ok అండి.	ACK}
+{\slot
+ok	O
+ok	O
+అండి.	O
+}
+

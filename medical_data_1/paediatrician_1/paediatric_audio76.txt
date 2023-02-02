@@ -1,0 +1,81 @@
+{\intent	p: మా బాబుకు 2.5 years అండి.	STATEMENT}
+{\slot
+మా	O
+బాబుకు	B-person
+2.5	B-age
+years	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తను బాగా ఎక్కువగా అల్లరి చేస్తాదండీ.	STATEMENT}
+{\slot
+తను	O
+బాగా	B-intensity
+ఎక్కువగా	B-intensity
+అల్లరి	B-symptom
+చేస్తాదండీ.	O
+}
+
+{\intent	p: ఇప్పుడు మేము 2nd floorలో ఉంటాము, అన్నీ కిందకి ఎన్ని సార్లు చెప్పినా ఇంట్లో ఉన్న వస్తూవులు కిందకి విసిరేస్తాడు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మేము	O
+2nd	B-place
+floorలో	I-place
+ఉంటాము,	O
+అన్నీ	O
+కిందకి	O
+ఎన్ని	O
+సార్లు	B-time_period
+చెప్పినా	O
+ఇంట్లో	O
+ఉన్న	O
+వస్తూవులు	O
+కిందకి	B-symptom
+విసిరేస్తాడు	I-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: వద్దు అని చెప్పినా వినకుండా అదే ఏదైనా సరే మనం వద్దు అంటే అదే పని చేస్తాడు ఎక్కువగా	STATEMENT}
+{\slot
+వద్దు	O
+అని	O
+చెప్పినా	O
+వినకుండా	B-symptom
+అదే	O
+ఏదైనా	O
+సరే	O
+మనం	O
+వద్దు	O
+అంటే	O
+అదే	O
+పని	O
+చేస్తాడు	O
+ఎక్కువగా	B-intensity
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇవన్నీ కూడా hyperactive behaviour కిందకే వస్తాయి అమ్మా	DIAGNOSIS}
+{\slot
+ఇవన్నీ	O
+కూడా	O
+hyperactive	B-medical_condition
+behaviour	I-medical_condition
+కిందకే	B-location
+వస్తాయి	O
+అమ్మా	O
+}
+

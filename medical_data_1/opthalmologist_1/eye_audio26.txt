@@ -1,0 +1,153 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 5 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+వయస్సు	O
+5	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: ఎప్పుడూ కంటి రెప్పలు కొడుతూ ఉంటాడు.	STATEMENT}
+{\slot
+ఎప్పుడూ	B-time_period
+కంటి	B-body_part
+రెప్పలు	I-body_part
+కొడుతూ	B-symptom
+ఉంటాడు.	O
+}
+
+{\intent	p: eye allergy వలన ఇలా జరుగుతుందని doctors, drops ఇచ్చారు. వాడుతున్నాము.	STATEMENT}
+{\slot
+eye	B-medical_condition
+allergy	I-medical_condition
+వలన	O
+ఇలా	O
+జరుగుతుందని	O
+doctors,	B-medical_professional
+drops	B-medicine
+ఇచ్చారు.	O
+వాడుతున్నాము.	O
+}
+
+{\intent	p: అయినప్పటికీ తగ్గడంలేదు.	STATEMENT}
+{\slot
+అయినప్పటికీ	O
+తగ్గడంలేదు.	B-symptom
+}
+
+{\intent	d: మీరు usualగా ఒక్కటి allergy problem అనేది commonగా వస్తా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+usualగా	O
+ఒక్కటి	O
+allergy	B-medical_condition
+problem	I-medical_condition
+అనేది	O
+commonగా	O
+వస్తా	O
+ఉంటది.	O
+}
+
+{\intent	d: అది ageతో పాటు తగ్గిపోతా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+ageతో	O
+పాటు	O
+తగ్గిపోతా	B-normal
+ఉంటది.	O
+}
+
+{\intent	d: కానీ frequent blinking అనేది usualగా మనకు allergy కంటే కూడా dryness తో ఎక్కువగా వస్తా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+frequent	B-symptom
+blinking	I-symptom
+అనేది	O
+usualగా	O
+మనకు	O
+allergy	B-medical_condition
+కంటే	O
+కూడా	O
+dryness	B-medical_condition
+తో	O
+ఎక్కువగా	B-intensity
+వస్తా	O
+ఉంటది.	O
+}
+
+{\intent	d: ఈ తరంలో ఈ generationలో అంతా కూడా ఎక్కువ screen time ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+తరంలో	B-time_period
+ఈ	O
+generationలో	B-time_period
+అంతా	O
+కూడా	O
+ఎక్కువ	B-intensity
+screen	O
+time	O
+ఉంటది.	O
+}
+
+{\intent	d: అంటే మీ mobile phones laptops tabs tv అన్నీ ఎక్కువ చూస్తా ఉన్నారు.	STATEMENT}
+{\slot
+అంటే	O
+మీ	O
+mobile	O
+phones	O
+laptops	O
+tabs	O
+tv	O
+అన్నీ	O
+ఎక్కువ	B-intensity
+చూస్తా	O
+ఉన్నారు.	O
+}
+
+{\intent	d: దాని వల్ల evaporative dryness కంట్లో ఉండే water ఎక్కువ evaporate కావడం వల్ల dry అయిపోయి దానివల్ల frequent blinking చేయవలసిన అవసరం వస్తా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+దాని	O
+వల్ల	O
+evaporative	B-medical_condition
+dryness	I-medical_condition
+కంట్లో	B-body_part
+ఉండే	O
+water	B-food_substance
+ఎక్కువ	B-intensity
+evaporate	B-symptom
+కావడం	O
+వల్ల	O
+dry	B-symptom
+అయిపోయి	O
+దానివల్ల	O
+frequent	B-symptom
+blinking	I-symptom
+చేయవలసిన	O
+అవసరం	O
+వస్తా	O
+ఉంటది.	O
+}
+
+{\intent	d: so ఈ blinking తగ్గాలి అంటే మీరు basicalగా focus చేయాల్సినటువంటిది ఈ screen time తగ్గించడం మీద, rest తీసుకోవడం మీద.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+blinking	B-symptom
+తగ్గాలి	O
+అంటే	O
+మీరు	O
+basicalగా	O
+focus	O
+చేయాల్సినటువంటిది	O
+ఈ	O
+screen	O
+time	O
+తగ్గించడం	O
+మీద,	O
+rest	O
+తీసుకోవడం	O
+మీద.	O
+}
+

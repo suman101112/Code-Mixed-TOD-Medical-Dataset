@@ -1,0 +1,58 @@
+{\intent	p: మీరు kidneyలో stones అంటున్నారు కదా	INFO_REQUEST}
+{\slot
+మీరు	O
+kidneyలో	B-body_part
+stones	B-body_substance
+అంటున్నారు	O
+కదా	O
+}
+
+{\intent	p: దేనివల్ల వస్తాది kidney stones?	INFO_REQUEST}
+{\slot
+దేనివల్ల	O
+వస్తాది	O
+kidney	B-body_substance
+stones?	I-body_substance
+}
+
+{\intent	d: so normalగా kidney stones వచ్చేదానికి we will say that so many reasons ఉంటది	STATEMENT}
+{\slot
+so	O
+normalగా	O
+kidney	B-body_substance
+stones	I-body_substance
+వచ్చేదానికి	O
+we	O
+will	O
+say	O
+that	O
+so	O
+many	O
+reasons	O
+ఉంటది	O
+}
+
+{\intent	d: commonest reason is when we take less water	ANSWER}
+{\slot
+commonest	O
+reason	O
+is	O
+when	O
+we	O
+take	O
+less	O
+water	B-food_substance
+}
+
+{\intent	d: నీళ్ళు తక్కువగా తాగినప్పుడు, మన metabolic waste జ్యాస్తి అయినప్పుడు	STATEMENT}
+{\slot
+నీళ్ళు	B-food_substance
+తక్కువగా	B-intensity
+తాగినప్పుడు,	B-bodily_process
+మన	O
+metabolic	B-bodily_process
+waste	B-body_substance
+జ్యాస్తి	B-intensity
+అయినప్పుడు	O
+}
+

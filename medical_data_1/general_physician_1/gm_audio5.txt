@@ -1,0 +1,140 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: ఆ madam, మా భార్యకి sugar ఉంది madam	STATEMENT}
+{\slot
+ఆ	O
+madam,	O
+మా	O
+భార్యకి	B-familal
+sugar	B-medical_condition
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: age 23 years ఉంది madam	STATEMENT}
+{\slot
+age	O
+23	B-age
+years	I-age
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది infection ఉంది madam	STATEMENT}
+{\slot
+అది	O
+infection	B-medical_condition
+ఉంది	O
+madam	O
+}
+
+{\intent	p: దానికి ఏం చేయాలి చెప్పండి madam	INFO_REQUEST}
+{\slot
+దానికి	O
+ఏం	O
+చేయాలి	O
+చెప్పండి	O
+madam	O
+}
+
+{\intent	d: ఎక్కడ ఉంది infection?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+ఉంది	O
+infection?	B-medical_condition
+}
+
+{\intent	p: infection	HOLD}
+{\slot
+infection	B-medical_condition
+}
+
+{\intent	d: ఆ?	ACK}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Hello, urineలో madam	ANSWER}
+{\slot
+Hello,	O
+urineలో	B-body_substance
+madam	O
+}
+
+{\intent	d: ok urine infection ఉంది.	ACK}
+{\slot
+ok	O
+urine	B-medical_condition
+infection	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	d: అంటే ఎన్ని సంవత్సరాల నుంచి start అయింది తనకి ఎక్కువగా అంటే sugar?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఎన్ని	O
+సంవత్సరాల	B-time_period
+నుంచి	O
+start	O
+అయింది	O
+తనకి	O
+ఎక్కువగా	B-intensity
+అంటే	O
+sugar?	B-medical_condition
+}
+
+{\intent	p: ఆ madam. 8 months అవుతుంది madam	ANSWER}
+{\slot
+ఆ	O
+madam.	O
+8	B-time_period
+months	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: 8 months అవుతుంది	ACK}
+{\slot
+8	B-time_period
+months	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: ok ఒక్కసారి CUE చేయించుకోండి, అందులో ఏమైనా infection ఉండి ఉండొచ్చు.	ACTION_DIR}
+{\slot
+ok	O
+ఒక్కసారి	O
+CUE	B-mtest
+చేయించుకోండి,	O
+అందులో	O
+ఏమైనా	O
+infection	B-medical_condition
+ఉండి	O
+ఉండొచ్చు.	O
+}
+

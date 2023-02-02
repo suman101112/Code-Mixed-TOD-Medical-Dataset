@@ -1,0 +1,219 @@
+{\intent	p: infertility problem madam	STATEMENT}
+{\slot
+infertility	B-medical_condition
+problem	I-medical_condition
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే 1 year నుంచి start చేసాం madam hospital కి వెళ్ళడం	STATEMENT}
+{\slot
+అయితే	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+start	O
+చేసాం	O
+madam	O
+hospital	B-hospital_name
+కి	O
+వెళ్ళడం	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: so follicular study కూడా చేసారు madam	STATEMENT}
+{\slot
+so	O
+follicular	B-body_part
+study	I-mtest
+కూడా	O
+చేసారు	O
+madam	O
+}
+
+{\intent	p: అంతా eggs వాళ్ళు medicine ఇస్తే release అవ్వడం growth అవ్వడం బానే అవుతుంది madam	STATEMENT}
+{\slot
+అంతా	O
+eggs	B-body_part
+వాళ్ళు	O
+medicine	B-medicine
+ఇస్తే	O
+release	B-bodily_process
+అవ్వడం	O
+growth	B-bodily_process
+అవ్వడం	O
+బానే	B-normal
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: injection కూడా చేసారు కానీ ఆ 2 cycles అవ్వలేదు madam	STATEMENT}
+{\slot
+injection	B-medicine
+కూడా	O
+చేసారు	O
+కానీ	O
+ఆ	O
+2	B-frequency
+cycles	B-bodily_process
+అవ్వలేదు	B-negative
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: next HSG suggest చేసారు	STATEMENT}
+{\slot
+next	O
+HSG	B-treatment
+suggest	O
+చేసారు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: so ఏంటంటే ఆ test reports రాలేదు madam, ఎందుచేతనో రాలేదు అని చెప్పారు మళ్ళి next month చేయించుకోవాలి అన్నారు	STATEMENT}
+{\slot
+so	O
+ఏంటంటే	O
+ఆ	O
+test	B-mtest
+reports	I-mtest
+రాలేదు	B-negative
+madam,	O
+ఎందుచేతనో	O
+రాలేదు	O
+అని	O
+చెప్పారు	O
+మళ్ళి	O
+next	B-time_period
+month	I-time_period
+చేయించుకోవాలి	O
+అన్నారు	O
+}
+
+{\intent	d: hmm hmm	ACK}
+{\slot
+hmm	O
+hmm	O
+}
+
+{\intent	p: so మళ్ళి నేను భయపడి చేయించుకోలేదు madam	STATEMENT}
+{\slot
+so	O
+మళ్ళి	O
+నేను	O
+భయపడి	B-symptom
+చేయించుకోలేదు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత periods కూడా regular రావు madam, ఒక 10 days 15 days అలా late అవుతూ ఉంటాయి.	STATEMENT}
+{\slot
+తరువాత	B-time_period
+periods	B-bodily_process
+కూడా	O
+regular	B-normal
+రావు	B-negative
+madam,	O
+ఒక	O
+10	B-time_period
+days	I-time_period
+15	B-time_period
+days	I-time_period
+అలా	O
+late	B-symptom
+అవుతూ	O
+ఉంటాయి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ మధ్య కూడా brown dischargeతో అలా వస్తాది madam, period	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కూడా	O
+brown	B-color
+dischargeతో	B-symptom
+అలా	O
+వస్తాది	O
+madam,	O
+period	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: thyroid కూడా check చేయించారా మీరు ఏమన్నా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+కూడా	O
+check	B-mtest
+చేయించారా	O
+మీరు	O
+ఏమన్నా?	O
+}
+
+{\intent	p: ఆ thyroid ఏం లేదు madam అంతా normal ఉంది,	ANSWER}
+{\slot
+ఆ	O
+thyroid	B-medical_condition
+ఏం	O
+లేదు	B-negative
+madam	O
+అంతా	O
+normal	B-normal
+ఉంది,	O
+}
+
+{\intent	d: PCOD ఉందంటున్నారు madam	STATEMENT}
+{\slot
+PCOD	B-medical_condition
+ఉందంటున్నారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so దానికే discharge అవ్వడం ఉంటుంది	STATEMENT}
+{\slot
+so	O
+దానికే	O
+discharge	B-symptom
+అవ్వడం	O
+ఉంటుంది	O
+}
+

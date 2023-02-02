@@ -1,0 +1,139 @@
+{\intent	d: చెప్పు ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పు	O
+ఏమైంది?	O
+}
+
+{\intent	p: జలుబు దగ్గు	ANSWER}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+}
+
+{\intent	d: ఎక్కువ తల్లిపాలు తాగుతాడా? అన్నం ఎక్కువ తింటాడా?	INFO_REQUEST}
+{\slot
+ఎక్కువ	B-intensity
+తల్లిపాలు	B-food_substance
+తాగుతాడా?	O
+అన్నం	B-food_substance
+ఎక్కువ	B-intensity
+తింటాడా?	O
+}
+
+{\intent	p: అన్నమే	ANSWER}
+{\slot
+అన్నమే	B-food_substance
+}
+
+{\intent	d: భుజాన ఎత్తుకో.	ACTION_DIR}
+{\slot
+భుజాన	O
+ఎత్తుకో.	O
+}
+
+{\intent	d: జలుబు , దగ్గు, జ్వరం వీటిలో ఏది ఎక్కువ ఉండమ్మా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు,	B-symptom
+జ్వరం	B-symptom
+వీటిలో	O
+ఏది	O
+ఎక్కువ	B-intensity
+ఉండమ్మా?	O
+}
+
+{\intent	p: జ్వరమే	ANSWER}
+{\slot
+జ్వరమే	B-symptom
+}
+
+{\intent	d: టీకాలన్నీ పడ్డాయా ఈనెకి	INFO_REQUEST}
+{\slot
+టీకాలన్నీ	B-medicine
+పడ్డాయా	O
+ఈనెకి	O
+}
+
+{\intent	p1: పడ్డాయి sir.	ANSWER}
+{\slot
+పడ్డాయి	O
+sir.	O
+}
+
+{\intent	p1: కురుపు	ANSWER}
+{\slot
+కురుపు	B-symptom
+}
+
+{\intent	d: చూపించు కురుపు ఎక్కడ ఉంది?	INFO_REQUEST}
+{\slot
+చూపించు	O
+కురుపు	B-symptom
+ఎక్కడ	O
+ఉంది?	O
+}
+
+{\intent	p1: చెంప మీద	ANSWER}
+{\slot
+చెంప	B-body_part
+మీద	B-location
+}
+
+{\intent	d: గీక్కున్నాడా ఏమైనా?	INFO_REQUEST}
+{\slot
+గీక్కున్నాడా	B-symptom
+ఏమైనా?	O
+}
+
+{\intent	p1: ఆహా ACK గీక్కోలే	ANSWER}
+{\slot
+ఆహా	B-negative
+ACK	O
+గీక్కోలే	B-symptom
+}
+
+{\intent	d: వేరే చోట ఎక్కడైన ఉన్నాయా?	INFO_REQUEST}
+{\slot
+వేరే	O
+చోట	O
+ఎక్కడైన	O
+ఉన్నాయా?	O
+}
+
+{\intent	p1: ఆహ<neg> ఏం లేవు	ANSWER}
+{\slot
+ఆహ<neg>	O
+ఏం	O
+లేవు	O
+}
+
+{\intent	d: ఈ ointment పెట్టు, తగ్గిపోతది	ACTION_DIR}
+{\slot
+ఈ	O
+ointment	B-medicine
+పెట్టు,	O
+తగ్గిపోతది	O
+}
+
+{\intent	d: చిన్న తాయత్తు అయితే ఏం లేవు కదా.	STATEMENT}
+{\slot
+చిన్న	O
+తాయత్తు	O
+అయితే	O
+ఏం	O
+లేవు	O
+కదా.	O
+}
+
+{\intent	d: రాసినా దానికి, గురక గురక లెక్క అంటున్నాడు కదా.	STATEMENT}
+{\slot
+రాసినా	O
+దానికి,	O
+గురక	B-bodily_process
+గురక	I-bodily_process
+లెక్క	O
+అంటున్నాడు	O
+కదా.	O
+}
+

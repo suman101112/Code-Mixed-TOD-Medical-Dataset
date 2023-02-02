@@ -1,0 +1,47 @@
+{\intent	p: doctor గారు diabetes ఉన్నవాళ్ళు ఎన్నాళ్ళకు ఒకసారి కంటి పరిక్ష చేయించుకోవాలి?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+diabetes	B-medical_condition
+ఉన్నవాళ్ళు	O
+ఎన్నాళ్ళకు	O
+ఒకసారి	O
+కంటి	B-body_part
+పరిక్ష	B-mtest
+చేయించుకోవాలి?	O
+}
+
+{\intent	d: diabetes అప్పుడే కనక detect అయితే మీరు ఏడాది 2 ఏళ్లకు ఒక్కసారి చూపించుకోవచ్చు.	ANSWER}
+{\slot
+diabetes	B-medical_condition
+అప్పుడే	B-time_period
+కనక	O
+detect	O
+అయితే	O
+మీరు	O
+ఏడాది	B-time_period
+2	I-time_period
+ఏళ్లకు	I-time_period
+ఒక్కసారి	B-frequency
+చూపించుకోవచ్చు.	O
+}
+
+{\intent	d: ఒకవేల diabetes 5 ఏళ్ళు 10 ఏళ్ళు అలా ఉంటే మట్టుకు సంవత్సరంలో 2 సార్లు అయితే తప్పకుండా చూపించుకోవాలి.	ANSWER}
+{\slot
+ఒకవేల	O
+diabetes	B-medical_condition
+5	B-time_period
+ఏళ్ళు	I-time_period
+10	B-time_period
+ఏళ్ళు	I-time_period
+అలా	O
+ఉంటే	O
+మట్టుకు	O
+సంవత్సరంలో	B-time_period
+2	B-frequency
+సార్లు	I-frequency
+అయితే	O
+తప్పకుండా	O
+చూపించుకోవాలి.	O
+}
+

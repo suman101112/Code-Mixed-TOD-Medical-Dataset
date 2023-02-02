@@ -1,0 +1,123 @@
+{\intent	p: doctor గారు మా పాపకి కంటి చుట్టూ సన్నని గుల్లాలులాగా అవుతున్నాయి.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+పాపకి	B-person
+కంటి	B-body_part
+చుట్టూ	B-location
+సన్నని	B-symptom
+గుల్లాలులాగా	I-symptom
+అవుతున్నాయి.	O
+}
+
+{\intent	p: creams వాడుతున్నాము. కానీ తగ్గట్లేదు.,	STATEMENT}
+{\slot
+creams	B-medicine
+వాడుతున్నాము.	O
+కానీ	O
+తగ్గట్లేదు.,	O
+}
+
+{\intent	p: ఎందుకు ఇలా అవుతున్నాయి? వీటికి చికిత్స ఏంటో తెలియజేయండి	INFO_REQUEST}
+{\slot
+ఎందుకు	O
+ఇలా	O
+అవుతున్నాయి?	O
+వీటికి	O
+చికిత్స	B-treatment
+ఏంటో	O
+తెలియజేయండి	O
+}
+
+{\intent	d: మీ పాప వయస్సు ఎంత అనేది చెప్పలేదు మీరు.	STATEMENT}
+{\slot
+మీ	O
+పాప	B-familal
+వయస్సు	O
+ఎంత	O
+అనేది	O
+చెప్పలేదు	O
+మీరు.	O
+}
+
+{\intent	d: so basicగా కంటి చుట్టూ చిన్న చిన్న గుల్లాలు అవుతున్నాయి అని చెప్తున్నారు మీరు	ACK}
+{\slot
+so	O
+basicగా	O
+కంటి	B-body_part
+చుట్టూ	B-location
+చిన్న	O
+చిన్న	O
+గుల్లాలు	B-symptom
+అవుతున్నాయి	O
+అని	O
+చెప్తున్నారు	O
+మీరు	O
+}
+
+{\intent	d: కంటి చుట్టూ గుల్లాలు commonగా మేము చూసేది syringomas	STATEMENT}
+{\slot
+కంటి	B-body_part
+చుట్టూ	O
+గుల్లాలు	O
+commonగా	O
+మేము	O
+చూసేది	O
+syringomas	B-medical_condition
+}
+
+{\intent	d: syringomas	REPEAT_REPHRASE}
+{\slot
+syringomas	B-medical_condition
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఈ syrigomas అంటే చిన్నగా skin color లో ఉండి, చిన్న చిన్న చూక్కలు లాగా కంటి దెగ్గర ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+syrigomas	B-medical_condition
+అంటే	O
+చిన్నగా	O
+skin	B-body_part
+color	B-color
+లో	O
+ఉండి,	O
+చిన్న	O
+చిన్న	O
+చూక్కలు	B-symptom
+లాగా	O
+కంటి	B-body_part
+దెగ్గర	B-location
+ఉంటాయి.	O
+}
+
+{\intent	d: ఇది actualగా వంశ పారంపర్యంగా వచ్చే chances కూడా ఉన్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+actualగా	O
+వంశ	O
+పారంపర్యంగా	O
+వచ్చే	O
+chances	O
+కూడా	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: వాటి మూలంగా దురద కానీ నొప్పి కానీ ఎమి problem ఉండదు.	MEDICAL_EXPLANATION}
+{\slot
+వాటి	O
+మూలంగా	O
+దురద	B-symptom
+కానీ	O
+నొప్పి	B-symptom
+కానీ	O
+ఎమి	O
+problem	O
+ఉండదు.	I-negative
+}
+

@@ -1,0 +1,97 @@
+{\intent	p: sir good afternoon sir	GREETING}
+{\slot
+sir	O
+good	O
+afternoon	O
+sir	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir ఇప్పుడు నా age వచ్చి 50 years sir	STATEMENT}
+{\slot
+sir	O
+ఇప్పుడు	O
+నా	O
+age	O
+వచ్చి	O
+50	B-age
+years	I-age
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే నాకు ఒక 15 years నుంచి ఈ problem ఉంది sir.	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+ఒక	O
+15	B-time_period
+years	I-time_period
+నుంచి	O
+ఈ	O
+problem	O
+ఉంది	O
+sir.	O
+}
+
+{\intent	p: నాకు ఏమవుతది అంటే ఈ non-veg తిన్నప్పుడు whiskey అవి తగ్గినప్పుడు motionsలో blood వస్తది sir, ఇట్ల చిమ్మినట్లు కొట్టేస్తది sir	STATEMENT}
+{\slot
+నాకు	O
+ఏమవుతది	O
+అంటే	O
+ఈ	O
+non-veg	B-food_substance
+తిన్నప్పుడు	O
+whiskey	B-habit
+అవి	O
+తగ్గినప్పుడు	O
+motionsలో	B-bodily_process
+blood	B-body_substance
+వస్తది	O
+sir,	O
+ఇట్ల	O
+చిమ్మినట్లు	B-symptom
+కొట్టేస్తది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కానీ pain ఏం ఉండేది కాదు.	STATEMENT}
+{\slot
+కానీ	O
+pain	B-symptom
+ఏం	O
+ఉండేది	O
+కాదు.	B-negative
+}
+
+{\intent	p: దాని తర్వాత ఇగ బయటకు వచ్చేసిన తరువాత ఇంకేం ఉండదు sir	STATEMENT}
+{\slot
+దాని	O
+తర్వాత	B-time_period
+ఇగ	O
+బయటకు	B-location
+వచ్చేసిన	O
+తరువాత	B-time_period
+ఇంకేం	O
+ఉండదు	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

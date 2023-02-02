@@ -1,0 +1,124 @@
+{\intent	p: కానీ నాకు symptoms అనేది pain అక్కడ gallbladder right side stomachలో pain వస్తుంది	STATEMENT}
+{\slot
+కానీ	O
+నాకు	O
+symptoms	B-symptom
+అనేది	O
+pain	B-symptom
+అక్కడ	B-location
+gallbladder	B-body_part
+right	B-location
+side	I-location
+stomachలో	B-body_part
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మళ్ళి back side pain వస్తుంది	STATEMENT}
+{\slot
+మళ్ళి	O
+back	B-body_part
+side	B-location
+pain	B-symptom
+వస్తుంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: mouth అయితే అసలు continuousగా wetగా ఉంటుంది. అసలు నాలుక మీద, అసల్ tongue మీద water content అనేది ఉండట్లేదు అండి.	STATEMENT}
+{\slot
+mouth	B-body_part
+అయితే	O
+అసలు	O
+continuousగా	B-symptom
+wetగా	I-symptom
+ఉంటుంది.	O
+అసలు	O
+నాలుక	B-body_part
+మీద,	B-location
+అసల్	O
+tongue	B-body_part
+మీద	B-location
+water	B-food_substance
+content	O
+అనేది	O
+ఉండట్లేదు	O
+అండి.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: problem అది అండి.	STATEMENT}
+{\slot
+problem	O
+అది	O
+అండి.	O
+}
+
+{\intent	d: మీరు చెప్పే complaint అంటే నాలుక dry అయిపోతా ఉండడము	ACK}
+{\slot
+మీరు	O
+చెప్పే	O
+complaint	O
+అంటే	O
+నాలుక	B-body_part
+dry	B-symptom
+అయిపోతా	O
+ఉండడము	O
+}
+
+{\intent	d: లేకపోతే kidney అంటే gallbladder stone లేనట్లుగా కనిపించిన గానీ ఆ ప్రదెశంలో, liver regionలో మీకు చాలా painfulగా ఉందని చెప్తున్నారు.	ACK}
+{\slot
+లేకపోతే	O
+kidney	B-body_part
+అంటే	O
+gallbladder	B-body_substance
+stone	I-body_substance
+లేనట్లుగా	O
+కనిపించిన	O
+గానీ	O
+ఆ	O
+ప్రదెశంలో,	O
+liver	B-body_part
+regionలో	B-location
+మీకు	O
+చాలా	B-intensity
+painfulగా	B-symptom
+ఉందని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: see gallbladder stone ఎప్పుడైతే form అవుతుందో అంటేనే అంటే liver యొక్క functioning సరిగ్గా లేకపోవడం వల్లే ఇలా జరుగుతున్నట్లు మనం చూస్తా ఉంటాం.	MEDICAL_EXPLANATION}
+{\slot
+see	O
+gallbladder	B-body_substance
+stone	I-body_substance
+ఎప్పుడైతే	O
+form	B-symptom
+అవుతుందో	I-symptom
+అంటేనే	O
+అంటే	O
+liver	B-body_part
+యొక్క	O
+functioning	O
+సరిగ్గా	O
+లేకపోవడం	O
+వల్లే	O
+ఇలా	O
+జరుగుతున్నట్లు	O
+మనం	O
+చూస్తా	O
+ఉంటాం.	O
+}
+

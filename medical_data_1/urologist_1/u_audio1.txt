@@ -1,0 +1,221 @@
+{\intent	p: sir నమస్తే sir	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్తే ravindar rao గారు	GREETING}
+{\slot
+నమస్తే	O
+ravindar	B-name
+rao	I-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: sir నాకు every one hour కి ఒకసారి మూత్ర విసర్జన వస్తుంది sir	STATEMENT}
+{\slot
+sir	O
+నాకు	O
+every	B-time_period
+one	I-time_period
+hour	I-time_period
+కి	O
+ఒకసారి	O
+మూత్ర	B-body_substance
+విసర్జన	B-bodily_process
+వస్తుంది	B-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sugar test కూడా చేయించాను	STATEMENT}
+{\slot
+sugar	B-medical_condition
+test	B-mtest
+కూడా	O
+చేయించాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: sugar testలో కూడా ఎలాంటి sugar లేదు అని వెళ్ళింది	STATEMENT}
+{\slot
+sugar	B-medical_condition
+testలో	B-mtest
+కూడా	O
+ఎలాంటి	O
+sugar	B-medical_condition
+లేదు	B-negative
+అని	O
+వెళ్ళింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కాకపోతే ఇది మాత్రం తగ్గట్లేదు,	STATEMENT}
+{\slot
+కాకపోతే	O
+ఇది	O
+మాత్రం	B-body_substance
+తగ్గట్లేదు,	B-symptom
+}
+
+{\intent	d: so urine frequency ఎక్కువ ఉందా sir?	INFO_REQUEST}
+{\slot
+so	O
+urine	B-body_substance
+frequency	B-frequency
+ఎక్కువ	B-intensity
+ఉందా	O
+sir?	O
+}
+
+{\intent	p: అవును sir, every 1 hour కి ఒకసారి ఉంటుంది	STATEMENT}
+{\slot
+అవును	B-positive
+sir,	O
+every	B-time_period
+1	I-time_period
+hour	I-time_period
+కి	O
+ఒకసారి	O
+ఉంటుంది	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: urine వెళ్ళినప్పుడు నొప్పి రావడం కానివ్వండి, ఏమైనా symptoms ఉన్నాయా back pain ఉందా అండి?	INFO_REQUEST}
+{\slot
+urine	B-body_substance
+వెళ్ళినప్పుడు	B-bodily_process
+నొప్పి	B-symptom
+రావడం	O
+కానివ్వండి,	O
+ఏమైనా	O
+symptoms	O
+ఉన్నాయా	O
+back	B-body_part
+pain	B-symptom
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: అలాంటివి ఎమి లేవు sir	ANSWER}
+{\slot
+అలాంటివి	O
+ఎమి	O
+లేవు	B-negative
+sir	O
+}
+
+{\intent	d: abdomen scan చేయించారా sir ఈ మధ్య?	INFO_REQUEST}
+{\slot
+abdomen	B-body_part
+scan	B-mtest
+చేయించారా	O
+sir	O
+ఈ	O
+మధ్య?	O
+}
+
+{\intent	p: ఆ చేయించాను sir, ఒక 1 year back.	ANSWER}
+{\slot
+ఆ	O
+చేయించాను	B-positive
+sir,	O
+ఒక	O
+1	B-time_period
+year	I-time_period
+back.	I-time_period
+}
+
+{\intent	d: normal ఉందా అండి?	INFO_REQUEST}
+{\slot
+normal	O
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: అన్నీ normal ఉన్నాయి sir	ANSWER}
+{\slot
+అన్నీ	O
+normal	B-normal
+ఉన్నాయి	O
+sir	O
+}
+
+{\intent	d: diabetes insipidus అని ఒక problem ఉంటుంది sir.	STATEMENT}
+{\slot
+diabetes	B-medical_condition
+insipidus	I-medical_condition
+అని	O
+ఒక	O
+problem	O
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	d: మనకు ADH levels fluctuate కావడం వల్ల మనకు ఎక్కువ వరకు రావడం జరుగుతా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+మనకు	O
+ADH	B-body_substance
+levels	O
+fluctuate	B-symptom
+కావడం	O
+వల్ల	O
+మనకు	O
+ఎక్కువ	B-intensity
+వరకు	O
+రావడం	O
+జరుగుతా	O
+ఉంటది.	O
+}
+
+{\intent	d: మీకు ఆ problem ఉందా లేకపోతే మీకు chronicగా urinary tract infection symptoms ఉన్నాయా?	INFO_REQUEST}
+{\slot
+మీకు	O
+ఆ	O
+problem	O
+ఉందా	O
+లేకపోతే	O
+మీకు	O
+chronicగా	B-frequency
+urinary	B-medical_condition
+tract	B-medical_condition
+infection	B-medical_condition
+symptoms	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: complete urine examination అని ఒక test ఉంటది sir.	STATEMENT}
+{\slot
+complete	B-mtest
+urine	I-mtest
+examination	I-mtest
+అని	O
+ఒక	O
+test	B-mtest
+ఉంటది	O
+sir.	O
+}
+

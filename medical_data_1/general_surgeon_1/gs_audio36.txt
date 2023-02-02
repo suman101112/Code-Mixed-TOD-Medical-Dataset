@@ -1,0 +1,221 @@
+{\intent	p: కడుపులో కింద మధ్యలో pain వస్తుంది sir.	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+కింద	B-location
+మధ్యలో	I-location
+pain	B-symptom
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ side ఈ side బాగా నొప్పిగా ఉంది. మన పిసికేసినట్లు ఉంటుంది sir	STATEMENT}
+{\slot
+ఆ	B-location
+side	I-location
+ఈ	B-location
+side	I-location
+బాగా	B-intensity
+నొప్పిగా	B-symptom
+ఉంది	O
+మన	O
+పిసికేసినట్లు	B-symptom
+ఉంటుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం శ్వాస అసలు బిగబట్టే తీసుకోవాల్సి వస్తుంది	STATEMENT}
+{\slot
+కొంచం	O
+శ్వాస	B-bodily_process
+అసలు	O
+బిగబట్టే	B-symptom
+తీసుకోవాల్సి	B-bodily_process
+వస్తుంది	I-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నిల్చొవడనికి కుర్చోవడానికి లేదు	STATEMENT}
+{\slot
+నిల్చొవడనికి	B-bodily_process
+కుర్చోవడానికి	B-bodily_process
+లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: బాగా విపరీతంగా ఉంటుంది sir.	STATEMENT}
+{\slot
+బాగా	B-intensity
+విపరీతంగా	B-symptom
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	p: ఏన్ని testలు చేయించామో, ఎన్ని చేయించిన ఎమి లేదు కండరాల నొప్పులు అవి అని అంటున్నారు sir	STATEMENT}
+{\slot
+ఏన్ని	O
+testలు	B-mtest
+చేయించామో,	O
+ఎన్ని	O
+చేయించిన	O
+ఎమి	O
+లేదు	B-negative
+కండరాల	B-body_part
+నొప్పులు	B-symptom
+అవి	O
+అని	O
+అంటున్నారు	O
+sir	O
+}
+
+{\intent	d: ok అమ్మ	ACK}
+{\slot
+ok	O
+అమ్మ	O
+}
+
+{\intent	d: ఎలా వచ్చిందమ్మా ఇది సమస్య ఎలా వచ్చింది మీకు?	INFO_REQUEST}
+{\slot
+ఎలా	O
+వచ్చిందమ్మా	O
+ఇది	O
+సమస్య	O
+ఎలా	O
+వచ్చింది	O
+మీకు?	O
+}
+
+{\intent	p: ఆ first Dengue fever వచ్చింది sir	ANSWER}
+{\slot
+ఆ	O
+first	O
+Dengue	B-medical_condition
+fever	I-medical_condition
+వచ్చింది	O
+sir	O
+}
+
+{\intent	p: Dengue fever తగ్గిన 2 రోజే ఇలా వచ్చింది sir	ANSWER}
+{\slot
+Dengue	B-medical_condition
+fever	I-medical_condition
+తగ్గిన	O
+2	B-time_period
+రోజే	I-time_period
+ఇలా	O
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: ఏమైనా వాడారా మందులు దానికి	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+వాడారా	O
+మందులు	B-medicine
+దానికి	O
+}
+
+{\intent	p: అది MRI, endoscope చేయించాను, తరువాత అది 2010 లో వచ్చింది sir	STATEMENT}
+{\slot
+అది	O
+MRI,	B-mtest
+endoscope	B-mtest
+చేయించాను,	O
+తరువాత	O
+అది	O
+2010	B-time_period
+లో	O
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: ok ok అమ్మా	ACK}
+{\slot
+ok	O
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: ఇంకా ఏమైనా ఉందమ్మా సమస్య?	ACTION_DIR}
+{\slot
+ఇంకా	O
+ఏమైనా	O
+ఉందమ్మా	O
+సమస్య?	O
+}
+
+{\intent	p: ఇదే sir.	ANSWER}
+{\slot
+ఇదే	O
+sir.	O
+}
+
+{\intent	d: ok అమ్మ	ACK}
+{\slot
+ok	O
+అమ్మ	O
+}
+
+{\intent	d: ఏం tension పడకండి first.	STATEMENT}
+{\slot
+ఏం	O
+tension	B-medical_condition
+పడకండి	O
+first.	O
+}
+
+{\intent	d: Dengue feverలో మనకు strong antibiotics ఇస్తాము అన్నా మాట దానికి తగ్గడానికి	MEDICAL_EXPLANATION}
+{\slot
+Dengue	B-medical_condition
+feverలో	I-medical_condition
+మనకు	O
+strong	B-intensity
+antibiotics	B-medicine
+ఇస్తాము	O
+అన్నా	O
+మాట	O
+దానికి	O
+తగ్గడానికి	B-normal
+}
+
+{\intent	d: ఆ strong antibiotic ఆ power ఎక్కువగా ఉండడంవల్ల మనకు ఏంటి అంటే కడుపు పైన effect పడుతుంది.	DIAGNOSIS}
+{\slot
+ఆ	O
+strong	B-intensity
+antibiotic	B-medicine
+ఆ	O
+power	O
+ఎక్కువగా	B-intensity
+ఉండడంవల్ల	O
+మనకు	O
+ఏంటి	O
+అంటే	O
+కడుపు	B-body_part
+పైన	B-location
+effect	B-symptom
+పడుతుంది.	O
+}
+

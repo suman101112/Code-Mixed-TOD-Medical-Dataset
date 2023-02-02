@@ -1,0 +1,219 @@
+{\intent	p: madam మా mrs కు pregnancyలో thyroid అనేది వచ్చింది madam	STATEMENT}
+{\slot
+madam	O
+మా	O
+mrs	O
+కు	O
+pregnancyలో	B-medical_condition
+thyroid	B-medical_condition
+అనేది	O
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఆ మళ్ళి second pregnancy అప్పుడు మళ్ళి రాలేదు madam. అయితే first time medicines అనేది వాడాం.	STATEMENT}
+{\slot
+అయితే	O
+ఆ	O
+మళ్ళి	O
+second	B-frequency
+pregnancy	B-medical_condition
+అప్పుడు	B-time_period
+మళ్ళి	O
+రాలేదు	B-negative
+madam.	O
+అయితే	O
+first	B-frequency
+time	I-frequency
+medicines	B-medicine
+అనేది	O
+వాడాం.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మళ్ళి దాని ద్వారా problem ఉంటదా? మళ్ళి ఎలా ఉంటది అని చెప్పుకోవడానికి phone చేసా madam.	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+దాని	O
+ద్వారా	O
+problem	O
+ఉంటదా?	O
+మళ్ళి	O
+ఎలా	O
+ఉంటది	O
+అని	O
+చెప్పుకోవడానికి	O
+phone	O
+చేసా	O
+madam.	O
+}
+
+{\intent	d: ok fine. అంటే first pregnancyలో వచ్చింది. delivery తర్వాత పోయింది. మళ్ళి second pregnancyలో లేదు అని చెప్తున్నారు.	ACK}
+{\slot
+ok	O
+fine.	O
+అంటే	O
+first	B-frequency
+pregnancyలో	B-medical_condition
+వచ్చింది.	O
+delivery	B-bodily_process
+తర్వాత	B-time_period
+పోయింది.	O
+మళ్ళి	O
+second	B-frequency
+pregnancyలో	B-medical_condition
+లేదు	B-negative
+అని	O
+చెప్తున్నారు.	O
+}
+
+{\intent	d: ఇలాంటి cases ఏంటి అంటే మళ్ళి futureలో thyroid attack అయ్యే అవకాశాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇలాంటి	O
+cases	O
+ఏంటి	O
+అంటే	O
+మళ్ళి	O
+futureలో	B-time_period
+thyroid	B-medical_condition
+attack	I-medical_condition
+అయ్యే	O
+అవకాశాలు	O
+ఉంటాయి.	O
+}
+
+{\intent	d: ఎప్పుడు అంటే ఆమె అధికంగా బరువు పెరగడం కాని కొన్ని రకాలైన goitrogenic foods అంటే cabbage, cauliflower, beans, చిక్కుళ్ళు, పల్లిలు ఇలాంటివి food అనేది మనకు thyroid gland functioning తగ్గించేందుకు మనకు ఆస్కారం ఎక్కువగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఎప్పుడు	O
+అంటే	O
+ఆమె	O
+అధికంగా	B-intensity
+బరువు	B-bm
+పెరగడం	B-symptom
+కాని	O
+కొన్ని	O
+రకాలైన	O
+goitrogenic	B-food_substance
+foods	I-food_substance
+అంటే	O
+cabbage,	B-food_substance
+cauliflower,	B-food_substance
+beans,	B-food_substance
+చిక్కుళ్ళు,	B-food_substance
+పల్లిలు	B-food_substance
+ఇలాంటివి	O
+food	B-food_substance
+అనేది	O
+మనకు	O
+thyroid	B-body_part
+gland	I-body_part
+functioning	O
+తగ్గించేందుకు	B-symptom
+మనకు	O
+ఆస్కారం	O
+ఎక్కువగా	B-intensity
+ఉంటుంది.	O
+}
+
+{\intent	d: so ఈ food అనేది చాలా వరకు avoid చేయవలసిన అవసరం ఉంటుంది.	ACTION_DIR}
+{\slot
+so	O
+ఈ	O
+food	B-food_substance
+అనేది	O
+చాలా	O
+వరకు	O
+avoid	O
+చేయవలసిన	O
+అవసరం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: mental stress అంటే అధికమైన మానసిక ఒత్తిడి ఎక్కువగా ఉన్న కూడా there could be a chance అండి. futureలో వచ్చే అవకాశం కూడా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+mental	B-symptom
+stress	I-symptom
+అంటే	O
+అధికమైన	B-intensity
+మానసిక	B-symptom
+ఒత్తిడి	I-symptom
+ఎక్కువగా	B-intensity
+ఉన్న	O
+కూడా	O
+there	O
+could	O
+be	O
+a	O
+chance	O
+అండి.	O
+futureలో	B-time_period
+వచ్చే	O
+అవకాశం	O
+కూడా	O
+ఉంటుంది.	O
+}
+
+{\intent	d: so రాకూండా ఉండాలి అంటే ఆమె healthy weight అనేది maintain చేయాలి, diet అనేది maintain చేయాలి. so కచ్చితంగా రాకుండే అవకాశం ఉంటుంది.	ACTION_DIR}
+{\slot
+so	O
+రాకూండా	O
+ఉండాలి	B-time_period
+అంటే	O
+ఆమె	O
+healthy	B-normal
+weight	B-bm
+అనేది	O
+maintain	O
+చేయాలి,	O
+diet	B-food_substance
+అనేది	O
+maintain	O
+చేయాలి.	O
+so	O
+కచ్చితంగా	O
+రాకుండే	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: లేదు అంటున్నారు కబట్టి medication ఎం వాడల్సిన అవసరం లేదు.	STATEMENT}
+{\slot
+లేదు	O
+అంటున్నారు	O
+కబట్టి	O
+medication	B-medicine
+ఎం	O
+వాడల్సిన	O
+అవసరం	O
+లేదు.	O
+}
+
+{\intent	d: but every one year thyroid profile చేయించుకోండి.	ACTION_DIR}
+{\slot
+but	O
+every	O
+one	B-frequency
+year	B-time_period
+thyroid	B-mtest
+profile	I-mtest
+చేయించుకోండి.	O
+}
+
+{\intent	d: normalగా ఉంటే. nothing to panic.	STATEMENT}
+{\slot
+normalగా	B-normal
+ఉంటే.	O
+nothing	O
+to	O
+panic.	O
+}
+

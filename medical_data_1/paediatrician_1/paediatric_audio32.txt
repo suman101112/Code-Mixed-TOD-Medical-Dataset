@@ -1,0 +1,41 @@
+{\intent	d: Haemoglobin 8.3 ఉంది	STATEMENT}
+{\slot
+Haemoglobin	B-body_substance
+8.3	B-mtest_value
+ఉంది	O
+}
+
+{\intent	d: fever మందులు ఉన్నాయా అయిపోయినాయా?	INFO_REQUEST}
+{\slot
+fever	B-symptom
+మందులు	B-medicine
+ఉన్నాయా	O
+అయిపోయినాయా?	O
+}
+
+{\intent	p: అన్నీ అయిపోయినాయి sir	ANSWER}
+{\slot
+అన్నీ	O
+అయిపోయినాయి	O
+sir	O
+}
+
+{\intent	p: antibiotic ఉన్నది sir.	STATEMENT}
+{\slot
+antibiotic	B-medicine
+ఉన్నది	O
+sir.	O
+}
+
+{\intent	d: ఇది వాడండి, iron tonic కూడా రాసినా, Haemoglobin పెరగడానికి	STATEMENT}
+{\slot
+ఇది	O
+వాడండి,	O
+iron	B-body_substance
+tonic	B-medicine
+కూడా	O
+రాసినా,	O
+Haemoglobin	B-body_substance
+పెరగడానికి	O
+}
+

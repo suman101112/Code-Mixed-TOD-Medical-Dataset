@@ -1,0 +1,151 @@
+{\intent	p: doctor గారు నాకు 4 నెలల క్రితం cateract surgery జరిగింది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నాకు	O
+4	B-time_period
+నెలల	I-time_period
+క్రితం	I-time_period
+cateract	B-medical_condition
+surgery	B-treatment
+జరిగింది.	O
+}
+
+{\intent	p: ఇప్పటికి నా చూపు blurగా కనిపిస్తుంది.	STATEMENT}
+{\slot
+ఇప్పటికి	O
+నా	O
+చూపు	B-bodily_process
+blurగా	B-symptom
+కనిపిస్తుంది.	B-bodily_process
+}
+
+{\intent	p: Cateract surgery చేసిన doctorని అడిగితే laser surgery చేస్తే చూపు set అవుతుంది అని అంటున్నారు.	STATEMENT}
+{\slot
+Cateract	B-medical_condition
+surgery	B-treatment
+చేసిన	O
+doctorని	B-medical_professional
+అడిగితే	O
+laser	B-treatment
+surgery	I-treatment
+చేస్తే	O
+చూపు	B-bodily_process
+set	B-normal
+అవుతుంది	O
+అని	O
+అంటున్నారు.	O
+}
+
+{\intent	p: నేను మళ్ళి laser surgery చేయించుకోవచ్చా?	INFO_REQUEST}
+{\slot
+నేను	O
+మళ్ళి	O
+laser	B-treatment
+surgery	B-treatment
+చేయించుకోవచ్చా?	O
+}
+
+{\intent	d: ఇది after cateract అంటారు. లేదా మేము post capsular opacification అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+after	O
+cateract	B-medical_condition
+అంటారు.	O
+లేదా	O
+మేము	O
+post	B-medical_condition
+capsular	I-medical_condition
+opacification	I-medical_condition
+అంటాము.	O
+}
+
+{\intent	d: ఇది cateract surgery ఎందుకు చేస్తాము?	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+cateract	B-medical_condition
+surgery	B-treatment
+ఎందుకు	O
+చేస్తాము?	O
+}
+
+{\intent	d: మన natural lensకి పొరలుగా వచ్చినప్పుడు మనకి చూపు మందగిస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+మన	O
+natural	B-body_part
+lensకి	I-body_part
+పొరలుగా	B-symptom
+వచ్చినప్పుడు	O
+మనకి	O
+చూపు	B-bodily_process
+మందగిస్తుంది.	I-symptom
+}
+
+{\intent	d: so అది తీసి ఇంకొక lens పెడతాము.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అది	O
+తీసి	O
+ఇంకొక	O
+lens	B-body_part
+పెడతాము.	O
+}
+
+{\intent	d: so ఈ ప్రక్రియలో కింద ఒక దాన్ని support లాగా ఉంచి దాని మీద ఈ lens ని పెడతాము.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+ప్రక్రియలో	O
+కింద	O
+ఒక	O
+దాన్ని	O
+support	O
+లాగా	O
+ఉంచి	O
+దాని	O
+మీద	O
+ఈ	O
+lens	B-body_part
+ని	O
+పెడతాము.	O
+}
+
+{\intent	d: అప్పుడప్పుడు ఈ పొర మందంగా మళ్ళి ఒక చిన్నటి మందుపాటి పొరలా వస్తున్నప్పుడు మళ్ళి చూపు మందగిస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+అప్పుడప్పుడు	B-time_period
+ఈ	O
+పొర	B-body_part
+మందంగా	B-symptom
+మళ్ళి	O
+ఒక	O
+చిన్నటి	O
+మందుపాటి	B-symptom
+పొరలా	B-body_part
+వస్తున్నప్పుడు	O
+మళ్ళి	O
+చూపు	B-bodily_process
+మందగిస్తుంది.	B-symptom
+}
+
+{\intent	d: అయితే దీనికి treatment చిన్న laser. half minute కూడా ఉండదు. machine ఇలాగే ఉంటుంది. దేనితో అటు కుర్చోపెట్టి half minuteలో చేసేయవచ్చు.	STATEMENT}
+{\slot
+అయితే	O
+దీనికి	O
+treatment	B-treatment
+చిన్న	O
+laser.	B-treatment
+half	B-time_period
+minute	I-time_period
+కూడా	O
+ఉండదు.	O
+machine	B-medical_apparatus
+ఇలాగే	O
+ఉంటుంది.	O
+దేనితో	O
+అటు	B-location
+కుర్చోపెట్టి	O
+half	B-time_period
+minuteలో	I-time_period
+చేసేయవచ్చు.	O
+}
+

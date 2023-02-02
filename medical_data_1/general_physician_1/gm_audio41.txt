@@ -1,0 +1,194 @@
+{\intent	p: అవి headache విపరీతంగా వస్తుంది sir.	STATEMENT}
+{\slot
+అవి	O
+headache	B-symptom
+విపరీతంగా	B-intensity
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎటు వైపు ఉంటుందమ్మా ?	INFO_REQUEST}
+{\slot
+ఎటు	O
+వైపు	O
+ఉంటుందమ్మా	O
+?	O
+}
+
+{\intent	p: ఆ తల పైభాగం నుంచి side, 2 sides కూడా ఉంటుంది sir.	ANSWER}
+{\slot
+ఆ	O
+తల	B-body_part
+పైభాగం	B-location
+నుంచి	O
+side,	B-location
+2	B-frequency
+sides	B-location
+కూడా	O
+ఉంటుంది	O
+sir.	O
+}
+
+{\intent	d: కలిసారా అమ్మా doctorsను ఇప్పటివరకు కలిసారా?	INFO_REQUEST}
+{\slot
+కలిసారా	O
+అమ్మా	O
+doctorsను	B-medical_professional
+ఇప్పటివరకు	O
+కలిసారా?	O
+}
+
+{\intent	p: ఒకసారి కలిసాం sir వెళ్ళేసి	ANSWER}
+{\slot
+ఒకసారి	O
+కలిసాం	O
+sir	O
+వెళ్ళేసి	O
+}
+
+{\intent	d: hmm hmm	ACK}
+{\slot
+hmm	O
+hmm	O
+}
+
+{\intent	p: కలిస్తే దీనికంటూ treatment separateగా ఎమి లేదు, నీకు ఏవేవి పడకుండా ఉంటాయో sounds కానీ, tv కానీ, cell మట్లాడడం కానీ	HOLD}
+{\slot
+కలిస్తే	O
+దీనికంటూ	O
+treatment	B-treatment
+separateగా	O
+ఎమి	O
+లేదు,	O
+నీకు	O
+ఏవేవి	O
+పడకుండా	O
+ఉంటాయో	O
+sounds	O
+కానీ,	O
+tv	O
+కానీ,	O
+cell	O
+మట్లాడడం	O
+కానీ	O
+}
+
+{\intent	d: అదే వాటికి దూరంగా ఉందామని చెప్పారు	HOLD}
+{\slot
+అదే	O
+వాటికి	O
+దూరంగా	O
+ఉందామని	O
+చెప్పారు	O
+}
+
+{\intent	p: avoid చేస్తూ రావాలా అంటేనూ అట్ల అన్నారు	STATEMENT}
+{\slot
+avoid	O
+చేస్తూ	O
+రావాలా	O
+అంటేనూ	O
+అట్ల	O
+అన్నారు	O
+}
+
+{\intent	d: ఎలా ఉంది మరి, వాటికి దూరంగా ఉంటేను ఎలా ఉంది మరి?	INFO_REQUEST}
+{\slot
+ఎలా	O
+ఉంది	O
+మరి,	O
+వాటికి	O
+దూరంగా	O
+ఉంటేను	O
+ఎలా	O
+ఉంది	O
+మరి?	O
+}
+
+{\intent	p: దూరంగా ఉంటే కూడా నాకు headache అనేది తప్పకుండా వస్తానే ఉంది sir అప్పుడప్పుడు	ANSWER}
+{\slot
+దూరంగా	O
+ఉంటే	O
+కూడా	O
+నాకు	O
+headache	B-symptom
+అనేది	O
+తప్పకుండా	O
+వస్తానే	O
+ఉంది	O
+sir	O
+అప్పుడప్పుడు	B-time_period
+}
+
+{\intent	d: right అమ్మా, right right	ACK}
+{\slot
+right	O
+అమ్మా,	O
+right	O
+right	O
+}
+
+{\intent	d: Shailaja దాని గురించి చెప్తానమ్మా	COMMIT}
+{\slot
+Shailaja	B-name
+దాని	O
+గురించి	O
+చెప్తానమ్మా	O
+}
+
+{\intent	d: నీకు ఉండేటటువంటి headaches ని tension headaches అంటారు.	DIAGNOSIS}
+{\slot
+నీకు	O
+ఉండేటటువంటి	O
+headaches	B-symptom
+ని	O
+tension	B-symptom
+headaches	I-symptom
+అంటారు.	O
+}
+
+{\intent	d: మహిళల్లో ముఖ్యంగా ఈ గర్భసంచి సంబంధించినటువంటి సమస్యలు, period కి సంబంధించినటువంటి సమస్యల్లో కూడా ఈ లక్షణం ఏర్పడేటటువంటి ప్రమాదం ఉంటుందమ్మా .	MEDICAL_EXPLANATION}
+{\slot
+మహిళల్లో	O
+ముఖ్యంగా	O
+ఈ	O
+గర్భసంచి	B-body_part
+సంబంధించినటువంటి	O
+సమస్యలు,	O
+period	B-time_period
+కి	O
+సంబంధించినటువంటి	O
+సమస్యల్లో	O
+కూడా	O
+ఈ	O
+లక్షణం	O
+ఏర్పడేటటువంటి	O
+ప్రమాదం	O
+ఉంటుందమ్మా	O
+.	O
+}
+
+{\intent	d: so మీరు పాలనా వాటికి దూరంగా ఉన్న కూడా headaches వస్తున్నాయి అంటే, ఇతర hormone పరిక్షలు చేయించుకోవాలి అమ్మ	ACTION_DIR}
+{\slot
+so	O
+మీరు	O
+పాలనా	O
+వాటికి	O
+దూరంగా	O
+ఉన్న	O
+కూడా	O
+headaches	B-symptom
+వస్తున్నాయి	O
+అంటే,	O
+ఇతర	O
+hormone	B-body_substance
+పరిక్షలు	B-mtest
+చేయించుకోవాలి	O
+అమ్మ	O
+}
+

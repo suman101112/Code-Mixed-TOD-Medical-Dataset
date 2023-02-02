@@ -1,0 +1,109 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 35, female	ANSWER}
+{\slot
+35,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: మొత్తం గోకుడు ఉంది sir. గుండ్రటి ఆకారంలో ఉంది. నోస్తుంది. పొక్కులలాగా ఉన్నాయి.	ANSWER}
+{\slot
+మొత్తం	B-body_part
+గోకుడు	B-symptom
+ఉంది	I-symptom
+sir.	O
+గుండ్రటి	B-symptom
+ఆకారంలో	I-symptom
+ఉంది.	I-symptom
+నోస్తుంది.	B-symptom
+పొక్కులలాగా	B-symptom
+ఉన్నాయి.	I-symptom
+}
+
+{\intent	d: గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: గోకుతుంటే చీము వస్తుందా?	INFO_REQUEST}
+{\slot
+గోకుతుంటే	B-symptom
+చీము	I-symptom
+వస్తుందా?	I-symptom
+}
+
+{\intent	p: అవును sir. మంట వస్తుంది.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+మంట	B-symptom
+వస్తుంది.	I-symptom
+}
+
+{\intent	d: ఇంకా ఎక్కడ ఉన్నాయి?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+ఎక్కడ	O
+ఉన్నాయి?	O
+}
+
+{\intent	p: మొత్తం ఒళ్ళంతా ఉన్నాయి.	ANSWER}
+{\slot
+మొత్తం	B-body_part
+ఒళ్ళంతా	I-body_part
+ఉన్నాయి.	B-symptom
+}
+
+{\intent	d: చంకలో ఉన్నాయా?	INFO_REQUEST}
+{\slot
+చంకలో	B-body_part
+ఉన్నాయా?	B-symptom
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	d: jointలలో ఉందా?	INFO_REQUEST}
+{\slot
+jointలలో	B-body_part
+ఉందా?	B-symptom
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	d: రెండు వైపులా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+రెండు	B-body_part
+వైపులా	I-body_part
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఉంది sir.	ANSWER}
+{\slot
+ఉంది	B-positive
+sir.	O
+}
+

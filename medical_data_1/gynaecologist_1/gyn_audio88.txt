@@ -1,0 +1,165 @@
+{\intent	p: Hello madam	SU}
+{\slot
+Hello	O
+madam	O
+}
+
+{\intent	d: ya	ACK}
+{\slot
+ya	O
+}
+
+{\intent	p: మాకు white ఎక్కువ పోతుందండి ఎం చెయ్యాలి?	INFO_REQUEST}
+{\slot
+మాకు	O
+white	B-bodily_process
+ఎక్కువ	B-intensity
+పోతుందండి	O
+ఎం	O
+చెయ్యాలి?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: age ఎంత అమ్మా?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అమ్మా?	O
+}
+
+{\intent	p: 37 years అండి	ANSWER}
+{\slot
+37	B-age
+years	I-age
+అండి	O
+}
+
+{\intent	d: 37 years	ACK}
+{\slot
+37	B-age
+years	I-age
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి white discharge సమస్య ఉండమ్మా?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+white	B-symptom
+discharge	I-symptom
+సమస్య	O
+ఉండమ్మా?	O
+}
+
+{\intent	p: నాకు ఇది ఒక 2 నెలల నుంచి అయితుంది ఇట్ల	ANSWER}
+{\slot
+నాకు	O
+ఇది	O
+ఒక	O
+2	B-time_period
+నెలల	I-time_period
+నుంచి	O
+అయితుంది	O
+ఇట్ల	O
+}
+
+{\intent	d: 2 months అవుతుంది	ACK}
+{\slot
+2	B-time_period
+months	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: ఆ 2 months అవుతుంది	ACK}
+{\slot
+ఆ	O
+2	B-time_period
+months	I-time_period
+అవుతుంది	O
+}
+
+{\intent	d: periods regularగా ఉన్నాయా madam?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regularగా	B-normal
+ఉన్నాయా	O
+madam?	O
+}
+
+{\intent	p: ఆ periods వచ్చేసి correctగా regularగా ఉన్నాయి.	ANSWER}
+{\slot
+ఆ	O
+periods	B-bodily_process
+వచ్చేసి	O
+correctగా	B-normal
+regularగా	B-normal
+ఉన్నాయి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: timeకి correctగా అయితది.	STATEMENT}
+{\slot
+timeకి	B-time_period
+correctగా	B-normal
+అయితది.	O
+}
+
+{\intent	d: fine మా	ACK}
+{\slot
+fine	O
+మా	O
+}
+
+{\intent	d: so ఈ leucorrhoea condition నుంచి 2 months నుంచి suffer అవుతున్నారు	DIAGNOSIS}
+{\slot
+so	O
+ఈ	O
+leucorrhoea	B-medical_condition
+condition	I-medical_condition
+నుంచి	O
+2	B-time_period
+months	I-time_period
+నుంచి	O
+suffer	B-symptom
+అవుతున్నారు	O
+}
+
+{\intent	d: but ఒక్కసారి pap smear కూడా చేయించండమ్మా	ACTION_DIR}
+{\slot
+but	O
+ఒక్కసారి	O
+pap	B-mtest
+smear	I-mtest
+కూడా	O
+చేయించండమ్మా	O
+}
+
+{\intent	d: ఒకసారి cross verification sugar levels కూడా	ACTION_DIR}
+{\slot
+ఒకసారి	O
+cross	O
+verification	O
+sugar	B-medical_condition
+levels	B-mtest
+కూడా	O
+}
+

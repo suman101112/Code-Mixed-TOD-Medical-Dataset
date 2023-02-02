@@ -1,0 +1,122 @@
+{\intent	p: doctor గారు మా బాబు cricket ఆడుతుంటే ball వచ్చి కంటికి తగిలి కన్ను ఎర్రగా మారింది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+cricket	O
+ఆడుతుంటే	O
+ball	O
+వచ్చి	O
+కంటికి	B-body_part
+తగిలి	B-trauma
+కన్ను	B-body_part
+ఎర్రగా	B-color
+మారింది.	B-symptom
+}
+
+{\intent	p: medicines వాడుతున్నాము కానీ మాకు భయంగా ఉంది.	STATEMENT}
+{\slot
+medicines	B-medicine
+వాడుతున్నాము	O
+కానీ	O
+మాకు	O
+భయంగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: మీ బాబుకి ball తగిలింది అంటున్నారు. మీ బాబు వయస్సు ఏంటో చెప్పలేదు అండి.	STATEMENT}
+{\slot
+మీ	O
+బాబుకి	B-person
+ball	O
+తగిలింది	B-trauma
+అంటున్నారు.	O
+మీ	O
+బాబు	B-person
+వయస్సు	O
+ఏంటో	O
+చెప్పలేదు	O
+అండి.	O
+}
+
+{\intent	d: చూసుకుంటే వయస్సు కూడా చాలా important.	MEDICAL_EXPLANATION}
+{\slot
+చూసుకుంటే	O
+వయస్సు	O
+కూడా	O
+చాలా	O
+important.	O
+}
+
+{\intent	d: so ఆ ball తగిలినపుదు దాని effect కంటి మీద ఎలా ఉంది అనేది చూసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఆ	O
+ball	O
+తగిలినపుదు	O
+దాని	O
+effect	O
+కంటి	B-body_part
+మీద	B-location
+ఎలా	O
+ఉంది	O
+అనేది	O
+చూసుకోవాలి.	O
+}
+
+{\intent	d: ball తో injury కబట్టి generalగా blunt trauma అంటాము మేము.	MEDICAL_EXPLANATION}
+{\slot
+ball	O
+తో	O
+injury	B-trauma
+కబట్టి	O
+generalగా	O
+blunt	B-symptom
+trauma	B-trauma
+అంటాము	O
+మేము.	O
+}
+
+{\intent	d: so దీని వల్ల immediateగా మీరు కంటి doctor దెగ్గరికి తీసుకువెళ్ళి ఉంటే గనక కన్ను ఎర్రపడడమేగాక కంటి లోపల అని testలు చేస్తాము అన్న మాట.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+దీని	O
+వల్ల	O
+immediateగా	O
+మీరు	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరికి	O
+తీసుకువెళ్ళి	O
+ఉంటే	O
+గనక	O
+కన్ను	B-body_part
+ఎర్రపడడమేగాక	B-symptom
+కంటి	B-body_part
+లోపల	B-location
+అని	O
+testలు	B-mtest
+చేస్తాము	O
+అన్న	O
+మాట.	O
+}
+
+{\intent	d: చూక్కల మందు వేసి కంటి నరం మీద కూడా ఈ దీని వల్ల ఏమైనా affect ఉందా చూసుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+చూక్కల	B-medicine
+మందు	I-medicine
+వేసి	O
+కంటి	B-body_part
+నరం	I-body_part
+మీద	B-location
+కూడా	O
+ఈ	O
+దీని	O
+వల్ల	O
+ఏమైనా	O
+affect	O
+ఉందా	O
+చూసుకోవాలి.	O
+}
+

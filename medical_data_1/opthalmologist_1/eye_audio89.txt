@@ -1,0 +1,77 @@
+{\intent	p: నా పేరు sudhakar.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+sudhakar.	B-name
+}
+
+{\intent	p: sugar వచ్చి 6 months అవుతుంది.	STATEMENT}
+{\slot
+sugar	B-medical_condition
+వచ్చి	O
+6	B-time_period
+months	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	p: medicines వాడుతున్నాను. ఇప్పుడు కొంచం control లోనే ఉంది.	STATEMENT}
+{\slot
+medicines	B-medicine
+వాడుతున్నాను.	O
+ఇప్పుడు	O
+కొంచం	O
+control	B-normal
+లోనే	O
+ఉంది.	O
+}
+
+{\intent	p: diabetes ఉన్నవాళ్ళు కంటి doctorని neurologist ని కలవాలని అంటారు.	STATEMENT}
+{\slot
+diabetes	B-medical_condition
+ఉన్నవాళ్ళు	O
+కంటి	B-medical_professional
+doctorని	I-health_professional
+neurologist	B-medical_professional
+ని	O
+కలవాలని	O
+అంటారు.	O
+}
+
+{\intent	d: sugar ఉన్నటువంటి వాళ్ళు కనీసం సంవత్సరానికి ఒకసారి కళ్ళని కాళ్ళని kidneyకి సంబంధించినటువంటి పరిక్షలు చెప్పించుకోవలసినటువంటి అవసరం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+sugar	B-medical_condition
+ఉన్నటువంటి	O
+వాళ్ళు	O
+కనీసం	O
+సంవత్సరానికి	B-time_period
+ఒకసారి	B-frequency
+కళ్ళని	B-body_part
+కాళ్ళని	B-body_part
+kidneyకి	B-body_part
+సంబంధించినటువంటి	O
+పరిక్షలు	B-mtest
+చెప్పించుకోవలసినటువంటి	O
+అవసరం	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఎందుకంటే sugar ఉన్నట్లు అయితే ఆ sugar శరిరంలోని ప్రతీ అవయవం మీద తన యొక్క ప్రభావాన్ని చూపించేటటువంటి ఆస్కారం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+sugar	B-medical_condition
+ఉన్నట్లు	O
+అయితే	O
+ఆ	O
+sugar	B-medical_condition
+శరిరంలోని	B-body_part
+ప్రతీ	B-location
+అవయవం	B-body_part
+మీద	B-location
+తన	O
+యొక్క	O
+ప్రభావాన్ని	O
+చూపించేటటువంటి	O
+ఆస్కారం	O
+ఉంటుంది.	O
+}
+

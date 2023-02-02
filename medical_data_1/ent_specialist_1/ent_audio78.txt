@@ -1,0 +1,181 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Bhadramma	ANSWER}
+{\slot
+Bhadramma	B-name
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: Bhadramma	ANSWER}
+{\slot
+Bhadramma	B-name
+}
+
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 79	ANSWER}
+{\slot
+79	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: నాలుక	STATEMENT}
+{\slot
+నాలుక	B-body_part
+}
+
+{\intent	d: ఎప్పటినుంచి ఇట్ల నాలుక?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఇట్ల	O
+నాలుక?	O
+}
+
+{\intent	p: చాలా రోజులవుతుంది నాలుక	ANSWER}
+{\slot
+చాలా	B-intensity
+రోజులవుతుంది	B-time_period
+నాలుక	B-body_part
+}
+
+{\intent	d: గొంతులో మంట ఉందా?	INFO_REQUEST}
+{\slot
+గొంతులో	B-body_part
+మంట	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ గొంతులో మంట. ఛాతిలో మంట. చెవుల్లో గడియలు.	ANSWER}
+{\slot
+ఆ	O
+గొంతులో	B-body_part
+మంట.	B-symptom
+ఛాతిలో	B-body_part
+మంట.	B-symptom
+చెవుల్లో	B-body_part
+గడియలు.	B-symptom
+}
+
+{\intent	p1: sir already sugar ఉంది sir.	STATEMENT}
+{\slot
+sir	O
+already	O
+sugar	B-medical_condition
+ఉంది	B-positive
+sir.	O
+}
+
+{\intent	p1: Narayana reddy దెగ్గర ఎమో దగ్గుకి coughకి వాడుతున్నాము.	STATEMENT}
+{\slot
+Narayana	B-medical_professional
+reddy	I-health_professional
+దెగ్గర	O
+ఎమో	O
+దగ్గుకి	B-symptom
+coughకి	B-symptom
+వాడుతున్నాము.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p1: Samraksha, Baatula sudarshan sir దెగ్గర ఎమో sugarకి వాడుతున్నాం.	STATEMENT}
+{\slot
+Samraksha,	B-hospital_name
+Baatula	B-medical_professional
+sudarshan	I-health_professional
+sir	O
+దెగ్గర	O
+ఎమో	O
+sugarకి	B-medical_condition
+వాడుతున్నాం.	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	p: నాలుక ఇట్ల నల్లగా	STATEMENT}
+{\slot
+నాలుక	B-body_part
+ఇట్ల	O
+నల్లగా	B-color
+}
+
+{\intent	p1: Sensodyne ఏమైనా paste గిట్ల వాడోచ్చా?	INFO_REQUEST}
+{\slot
+Sensodyne	O
+ఏమైనా	O
+paste	O
+గిట్ల	O
+వాడోచ్చా?	O
+}
+
+{\intent	d: అట్లాంటివి వాడొద్దు.	ANSWER}
+{\slot
+అట్లాంటివి	O
+వాడొద్దు.	O
+}
+
+{\intent	p: ఏం లేవా?	INFO_REQUEST}
+{\slot
+ఏం	O
+లేవా?	O
+}
+
+{\intent	d: ఏం లేవు	ANSWER}
+{\slot
+ఏం	O
+లేవు	O
+}
+
+{\intent	p: నాలుక నల్లగా ఎట్ల అయింది ఇట్ల?	INFO_REQUEST}
+{\slot
+నాలుక	B-body_part
+నల్లగా	B-color
+ఎట్ల	O
+అయింది	O
+ఇట్ల?	O
+}
+
+{\intent	d: sugar వల్ల దాని వల్ల అట్ల అయితది	ANSWER}
+{\slot
+sugar	B-medical_condition
+వల్ల	O
+దాని	O
+వల్ల	O
+అట్ల	O
+అయితది	O
+}
+
+{\intent	p: అంతే నా.	INFO_REQUEST}
+{\slot
+అంతే	O
+నా.	O
+}
+

@@ -1,0 +1,124 @@
+{\intent	p: అండి ఇది actualగా sperm count వచ్చేసి 0 అని వచ్చిందండీ	STATEMENT}
+{\slot
+అండి	O
+ఇది	O
+actualగా	O
+sperm	B-body_substance
+count	B-mtest
+వచ్చేసి	O
+0	B-mtest_value
+అని	O
+వచ్చిందండీ	O
+}
+
+{\intent	d: 0 వచ్చింది ok	ACK}
+{\slot
+0	B-mtest_value
+వచ్చింది	O
+ok	O
+}
+
+{\intent	p: అయితే దీనికి సంబంధించి microbiopsy అన్నిట్లో కూడా possibility లేదని చెప్పారు	STATEMENT}
+{\slot
+అయితే	O
+దీనికి	O
+సంబంధించి	O
+microbiopsy	B-mtest
+అన్నిట్లో	O
+కూడా	O
+possibility	B-normal
+లేదని	B-negative
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే ఇది next step ఏం తీసుకోవాలి?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఇది	O
+next	O
+step	O
+ఏం	O
+తీసుకోవాలి?	O
+}
+
+{\intent	p: అంటే IUI అన్నారు so clearగా నాకు దాని గురించి అంతా idea లేదు చెప్పండి	ACTION_DIR}
+{\slot
+అంటే	O
+IUI	B-treatment
+అన్నారు	O
+so	O
+clearగా	O
+నాకు	O
+దాని	O
+గురించి	O
+అంతా	O
+idea	O
+లేదు	O
+చెప్పండి	O
+}
+
+{\intent	d: so sperm test i mean biopsyలో కూడా మీకు sperm ఇది లేదని చెప్పారా?	INFO_REQUEST}
+{\slot
+so	O
+sperm	B-body_substance
+test	B-mtest
+i	O
+mean	O
+biopsyలో	B-mtest
+కూడా	O
+మీకు	O
+sperm	B-body_substance
+ఇది	O
+లేదని	B-negative
+చెప్పారా?	O
+}
+
+{\intent	p: ఏంటండీ madam?	SNU}
+{\slot
+ఏంటండీ	O
+madam?	O
+}
+
+{\intent	d: biopsyలో కూడా కొంచం sperm అనేది లేదని చెప్పారా?	REPEAT_REPHRASE}
+{\slot
+biopsyలో	B-mtest
+కూడా	O
+కొంచం	O
+sperm	B-body_substance
+అనేది	O
+లేదని	B-negative
+చెప్పారా?	O
+}
+
+{\intent	p: అవునండీ	ANSWER}
+{\slot
+అవునండీ	B-positive
+}
+
+{\intent	d: so 0	ACK}
+{\slot
+so	O
+0	B-mtest_value
+}
+
+{\intent	p: లోపల struck అయింది అవి కూడా లేనట్లు 0 అని, sperm దొరకలేదు అని అన్నారు.	STATEMENT}
+{\slot
+లోపల	B-location
+struck	B-symptom
+అయింది	O
+అవి	O
+కూడా	O
+లేనట్లు	O
+0	B-mtest_value
+అని,	O
+sperm	B-body_substance
+దొరకలేదు	B-symptom
+అని	O
+అన్నారు.	O
+}
+

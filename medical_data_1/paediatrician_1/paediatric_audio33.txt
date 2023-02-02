@@ -1,0 +1,56 @@
+{\intent	d: क्या problem क्या है ?	INFO_REQUEST}
+{\slot
+क्या	O
+problem	O
+क्या	O
+है	O
+?	O
+}
+
+{\intent	p1: cold cough है	ANSWER}
+{\slot
+cold	B-medical_condition
+cough	B-symptom
+है	O
+}
+
+{\intent	p1: maxtra सर्दी को	STATEMENT}
+{\slot
+maxtra	B-medicine
+सर्दी	B-medical_condition
+को	O
+}
+
+{\intent	d: కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+}
+
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p1: haseena बेगम	ANSWER}
+{\slot
+haseena	B-name
+बेगम	O
+}
+
+{\intent	d: एक बार haemogram करे तो कुछ allergy है मालूम होता	STATEMENT}
+{\slot
+एक	O
+बार	O
+haemogram	B-mtest
+करे	O
+तो	O
+कुछ	O
+allergy	B-medical_condition
+है	O
+मालूम	O
+होता	O
+}
+

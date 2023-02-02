@@ -1,0 +1,131 @@
+{\intent	d: పేరు ఏంటి బాబు	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి	O
+బాబు	B-person
+}
+
+{\intent	p: Vijay kumar sir	ANSWER}
+{\slot
+Vijay	B-name
+kumar	I-name
+sir	O
+}
+
+{\intent	d: చెప్పండి ఇబ్బంది ఏం ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: నాది liver వాసింది sir, కొద్దిగా alcohol తీసుకోవడం వల్ల	ANSWER}
+{\slot
+నాది	O
+liver	B-body_part
+వాసింది	B-symptom
+sir,	O
+కొద్దిగా	O
+alcohol	B-habit
+తీసుకోవడం	O
+వల్ల	O
+}
+
+{\intent	d: ఎన్ని సంవత్సరాల నుంచి మందు తాగుతున్నారు?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+సంవత్సరాల	B-time_period
+నుంచి	O
+మందు	B-habit
+తాగుతున్నారు?	O
+}
+
+{\intent	p: నేను 20 years అయితుంది	ANSWER}
+{\slot
+నేను	O
+20	B-time_period
+years	I-time_period
+అయితుంది	O
+}
+
+{\intent	d: umm?	SNU}
+{\slot
+umm?	O
+}
+
+{\intent	p: 20 years అయితుంది.	ANSWER}
+{\slot
+20	B-time_period
+years	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: ఇప్పుడు problem ఏం ఉంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+problem	O
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: vomiting అయితుంది, మందు తాగినప్పుడు vomitings అయితుంది	ANSWER}
+{\slot
+vomiting	B-symptom
+అయితుంది,	O
+మందు	B-habit
+తాగినప్పుడు	O
+vomitings	B-symptom
+అయితుంది	O
+}
+
+{\intent	d: మందు తాగినప్పుడు vomiting అయితుందా?	INFO_REQUEST}
+{\slot
+మందు	B-habit
+తాగినప్పుడు	O
+vomiting	B-symptom
+అయితుందా?	O
+}
+
+{\intent	p: తాగకపొతే అవుతున్నాయి.	ANSWER}
+{\slot
+తాగకపొతే	B-bodily_process
+అవుతున్నాయి.	O
+}
+
+{\intent	d: తాగకపొతే అవుతున్నాయి.	ACK}
+{\slot
+తాగకపొతే	B-bodily_process
+అవుతున్నాయి.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: admit అవుదామని వచ్చినా sir.	ACTION_DIR}
+{\slot
+admit	O
+అవుదామని	O
+వచ్చినా	O
+sir.	O
+}
+
+{\intent	d: 92లో scan చేస్తారండీ, scan తీసుకోని రండి.	ACTION_DIR}
+{\slot
+92లో	O
+scan	B-mtest
+చేస్తారండీ,	O
+scan	B-mtest
+తీసుకోని	O
+రండి.	O
+}
+
+{\intent	p: ఆ సరే sir.	ACK}
+{\slot
+ఆ	O
+సరే	O
+sir.	O
+}
+

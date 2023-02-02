@@ -1,0 +1,66 @@
+{\intent	p: doctor గారు వ్రుద్ధాప్యంలో ఎలాంటి కంటి సమస్యలు వస్తాయి? ఎలాంటి జగ్రత్తలు తీసుకోవాలో తెలియచేయండి.	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+వ్రుద్ధాప్యంలో	B-time_period
+ఎలాంటి	O
+కంటి	B-body_part
+సమస్యలు	O
+వస్తాయి?	O
+ఎలాంటి	O
+జగ్రత్తలు	O
+తీసుకోవాలో	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: 40 ఏళ్ళు ఆ పైన పడిన వాళ్ళల్లో మొట్టమొదటిది cateract, రెండోది glaucoma, 3 retina disease.	MEDICAL_EXPLANATION}
+{\slot
+40	B-age
+ఏళ్ళు	I-age
+ఆ	O
+పైన	O
+పడిన	O
+వాళ్ళల్లో	O
+మొట్టమొదటిది	O
+cateract,	B-medical_condition
+రెండోది	O
+glaucoma,	B-medical_condition
+3	O
+retina	B-medical_condition
+disease.	I-medical_condition
+}
+
+{\intent	d: retina disease is రెండిటి relate అయ్యి ఉంటాయి ఎప్పుడు, ఒక్కటి diabetes రెండోది hypertension.	MEDICAL_EXPLANATION}
+{\slot
+retina	B-medical_condition
+disease	I-medical_condition
+is	O
+రెండిటి	O
+relate	O
+అయ్యి	O
+ఉంటాయి	O
+ఎప్పుడు,	O
+ఒక్కటి	O
+diabetes	B-medical_condition
+రెండోది	O
+hypertension.	B-medical_condition
+}
+
+{\intent	d: hypertension ఉండి లేదా diabetes ఉండి 40 ఏళ్ళలోపల మీకు దృష్టిలోపం వస్తే first మీరు check చేయించుకోవల్సింది retina.	MEDICAL_EXPLANATION}
+{\slot
+hypertension	B-medical_condition
+ఉండి	O
+లేదా	O
+diabetes	B-medical_condition
+ఉండి	O
+40	B-age
+ఏళ్ళలోపల	I-age
+మీకు	O
+దృష్టిలోపం	B-symptom
+వస్తే	O
+first	O
+మీరు	O
+check	B-mtest
+చేయించుకోవల్సింది	B-body_part
+}
+

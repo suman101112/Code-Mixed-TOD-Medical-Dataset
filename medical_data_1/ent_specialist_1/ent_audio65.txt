@@ -1,0 +1,282 @@
+{\intent	d: नाम बोलो इनका.	ACTION_DIR}
+{\slot
+नाम	O
+बोलो	O
+इनका.	O
+}
+
+{\intent	p1: Arham Nawaz	STATEMENT}
+{\slot
+Arham	B-name
+Nawaz	I-name
+}
+
+{\intent	d: Arham Nawaz	ACK}
+{\slot
+Arham	B-name
+Nawaz	I-name
+}
+
+{\intent	d: कितना उम्र?	INFO_REQUEST}
+{\slot
+कितना	O
+उम्र?	O
+}
+
+{\intent	p1: 10 years	ANSWER}
+{\slot
+10	B-age
+years	I-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p1: वो इससे पहले हुआ था नहीं कान पे मारा तो पर्दा गया था बोले नहीं	STATEMENT}
+{\slot
+वो	O
+इससे	O
+पहले	O
+हुआ	O
+था	O
+नहीं	O
+कान	B-body_part
+पे	B-location
+मारा	B-trauma
+तो	O
+पर्दा	B-symptom
+गया	I-symptom
+था	O
+बोले	O
+नहीं	O
+}
+
+{\intent	d: हां	ACK}
+{\slot
+हां	O
+}
+
+{\intent	p1: तो फिरके दर्द बहुत हो रहा कहते	STATEMENT}
+{\slot
+तो	O
+फिरके	O
+दर्द	B-symptom
+बहुत	B-intensity
+हो	O
+रहा	O
+कहते	O
+}
+
+{\intent	p1: कल हमारा गाँव को गए थे	STATEMENT}
+{\slot
+कल	B-time_period
+हमारा	O
+गाँव	B-place
+को	O
+गए	O
+थे	O
+}
+
+{\intent	d: कान में दर्द हो रहा.	ACK}
+{\slot
+कान	B-body_part
+में	B-location
+दर्द	B-symptom
+हो	O
+रहा.	O
+}
+
+{\intent	p1: दर्द कैकई डाल लिया कहते कान में	STATEMENT}
+{\slot
+दर्द	B-symptom
+कैकई	O
+डाल	O
+लिया	O
+कहते	O
+कान	B-body_part
+में	B-location
+}
+
+{\intent	p: umm नहीं डाल दिया	STATEMENT}
+{\slot
+umm	O
+नहीं	B-negative
+डाल	O
+दिया	O
+}
+
+{\intent	p1: मैल  साफ़ किया कहते कुछ कैकई हुआ	STATEMENT}
+{\slot
+मैल	B-symptom
+साफ़	B-treatment
+किया	O
+कहते	O
+कुछ	O
+कैकई	O
+हुआ	O
+}
+
+{\intent	p1: वो दर्द है	STATEMENT}
+{\slot
+वो	O
+दर्द	B-symptom
+है	O
+}
+
+{\intent	p1: छूने नहीं दे रहे	STATEMENT}
+{\slot
+छूने	O
+नहीं	O
+दे	O
+रहे	O
+}
+
+{\intent	d: umm ये सर्दी के वजह से अम्मा	DIAGNOSIS}
+{\slot
+umm	O
+ये	O
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+अम्मा	O
+}
+
+{\intent	p1: सर्दी के वजह से	ACK}
+{\slot
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p1: वो पर्दा गया मार लगी बोले थे वो अच्छा हो गया?	INFO_REQUEST}
+{\slot
+वो	O
+पर्दा	B-symptom
+गया	I-symptom
+मार	B-trauma
+लगी	I-trauma
+बोले	O
+थे	O
+वो	O
+अच्छा	B-normal
+हो	O
+गया?	O
+}
+
+{\intent	d: नहीं नहीं अच्छा हो गया	ANSWER}
+{\slot
+नहीं	O
+नहीं	O
+अच्छा	B-positive
+हो	O
+गया	O
+}
+
+{\intent	d: सर्दी के वजह से कान का दर्द	DIAGNOSIS}
+{\slot
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+कान	B-body_part
+का	O
+दर्द	B-symptom
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: दवा नहीं डालना	ACTION_DIR}
+{\slot
+दवा	B-medicine
+नहीं	B-negative
+डालना	O
+}
+
+{\intent	p1: ये नहीं डालना	INFO_REQUEST}
+{\slot
+ये	O
+नहीं	O
+डालना	O
+}
+
+{\intent	d: pche	ANSWER}
+{\slot
+pche	O
+}
+
+{\intent	p1: बुखार भी है , paracetamol डाली थी	STATEMENT}
+{\slot
+बुखार	B-symptom
+भी	O
+है	O
+,	O
+paracetamol	B-medicine
+डाली	O
+थी	O
+}
+
+{\intent	d: में लिखके देता हूं,	COMMIT}
+{\slot
+में	O
+लिखके	O
+देता	O
+हूं,	O
+}
+
+{\intent	d: सब के लिए लिखके देता हूं,	COMMIT}
+{\slot
+सब	O
+के	O
+लिए	O
+लिखके	O
+देता	O
+हूं,	O
+}
+
+{\intent	p1: ये छोटे बच्चे को कान पकड़ाते	STATEMENT}
+{\slot
+ये	O
+छोटे	O
+बच्चे	O
+को	O
+कान	B-body_part
+पकड़ाते	O
+}
+
+{\intent	p1: ये drops डाल सकते?	INFO_REQUEST}
+{\slot
+ये	O
+drops	B-medicine
+डाल	O
+सकते?	O
+}
+
+{\intent	d: हां	ANSWER}
+{\slot
+हां	B-positive
+}
+
+{\intent	p1: डाल सकते	ACK}
+{\slot
+डाल	O
+सकते	O
+}
+

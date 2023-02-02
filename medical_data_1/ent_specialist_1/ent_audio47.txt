@@ -1,0 +1,174 @@
+{\intent	d: పేరు చెప్పండి.	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి.	O
+}
+
+{\intent	p: sir, Anandaraavu sir, P Anandaraavu.	ANSWER}
+{\slot
+sir,	O
+Anandaraavu	B-name
+sir,	O
+P	B-name
+Anandaraavu.	I-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: P Anandaraavu sir.	ANSWER}
+{\slot
+P	B-name
+Anandaraavu	I-name
+sir.	O
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 65	ANSWER}
+{\slot
+65	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ముక్కులో ఈ 1 month back మీ దెగ్గరకు వచ్చాను sir.	STATEMENT}
+{\slot
+ముక్కులో	B-body_part
+ఈ	O
+1	B-time_period
+month	I-time_period
+back	I-time_period
+మీ	O
+దెగ్గరకు	O
+వచ్చాను	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: operation చేయాలన్నారు sir మందులు వాడిన తర్వాత.	STATEMENT}
+{\slot
+operation	B-treatment
+చేయాలన్నారు	O
+sir	O
+మందులు	B-medicine
+వాడిన	O
+తర్వాత.	B-time_period
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: last sunday ముక్కులో నుంచి blood వచ్చింది sir	STATEMENT}
+{\slot
+last	B-time_period
+sunday	I-time_period
+ముక్కులో	B-body_part
+నుంచి	O
+blood	B-body_substance
+వచ్చింది	O
+sir	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ముక్కులో చీము నిండి ఉంది.	DIAGNOSIS}
+{\slot
+ముక్కులో	B-body_part
+చీము	B-symptom
+నిండి	O
+ఉంది.	O
+}
+
+{\intent	p1: అంటే తొందరగా చేయాలంటారా sir?	INFO_REQUEST}
+{\slot
+అంటే	O
+తొందరగా	O
+చేయాలంటారా	O
+sir?	O
+}
+
+{\intent	d: ఏ తొందర ఏం లేదు.	ANSWER}
+{\slot
+ఏ	O
+తొందర	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	p: అంటే ఇప్పటికే 1 month అయింది sir.	STATEMENT}
+{\slot
+అంటే	O
+ఇప్పటికే	O
+1	B-time_period
+month	I-time_period
+అయింది	O
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అదే భయమైతుంది.	STATEMENT}
+{\slot
+అదే	O
+భయమైతుంది.	B-symptom
+}
+
+{\intent	d: 28thకి operation అదే	STATEMENT}
+{\slot
+28thకి	B-time_period
+operation	I-treatment
+అదే	O
+}
+
+{\intent	p1: 28th నాది పెళ్ళి ఉంది అదే ఆగ గలమా అని.	INFO_REQUEST}
+{\slot
+28th	B-time_period
+నాది	O
+పెళ్ళి	O
+ఉంది	O
+అదే	O
+ఆగ	O
+గలమా	O
+అని.	O
+}
+
+{\intent	d: ఆ ఆగ గలరు.	ANSWER}
+{\slot
+ఆ	O
+ఆగ	O
+గలరు.	O
+}
+
+{\intent	p: 29thకి చెయించుకుంటా	COMMIT}
+{\slot
+29thకి	B-time_period
+చెయించుకుంటా	O
+}
+

@@ -1,0 +1,252 @@
+{\intent	d: నమస్కారమండీ raoగారు	GREETING}
+{\slot
+నమస్కారమండీ	O
+raoగారు	B-name
+}
+
+{\intent	d: చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: నా పేరు Saambashiva rao అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Saambashiva	B-name
+rao	I-name
+అండి.	O
+}
+
+{\intent	p: అయితే నాకు విపరీతమైన తలనొప్పి వస్తాది sir.	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+విపరీతమైన	B-intensity
+తలనొప్పి	B-symptom
+వస్తాది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వచ్చినప్పుడు ఏంటి అంటే కళ్ళు తిరిగిపోతా ఉంటాయి విపరీతంగా వాంతి వచ్చినట్లు ఉంటది	STATEMENT}
+{\slot
+వచ్చినప్పుడు	O
+ఏంటి	O
+అంటే	O
+కళ్ళు	B-body_part
+తిరిగిపోతా	B-symptom
+ఉంటాయి	O
+విపరీతంగా	O
+వాంతి	B-symptom
+వచ్చినట్లు	O
+ఉంటది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత కాలంగా అండి ఈ problem?	STATEMENT}
+{\slot
+ఎంత	O
+కాలంగా	O
+అండి	O
+ఈ	O
+problem?	O
+}
+
+{\intent	p: doctor గారి దెగ్గర వెళితే ఏమన్నారంటే Vertigo అని అన్నారు అండి.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారి	O
+దెగ్గర	O
+వెళితే	O
+ఏమన్నారంటే	O
+Vertigo	B-symptom
+అని	O
+అన్నారు	O
+అండి.	O
+}
+
+{\intent	p: scanning తీయించారు	STATEMENT}
+{\slot
+scanning	B-mtest
+తీయించారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎమి లేదు అన్నారు తలలో	STATEMENT}
+{\slot
+ఎమి	O
+లేదు	B-negative
+అన్నారు	O
+తలలో	B-body_part
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: tablets ఇచ్చారు, 3 నెలలు continueగా వాడమన్నారు వాడాను.	STATEMENT}
+{\slot
+tablets	B-medicine
+ఇచ్చారు,	O
+3	B-time_period
+నెలలు	I-time_period
+continueగా	O
+వాడమన్నారు	O
+వాడాను.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయినా తలకాయ మీద దిండు లేకుండా పడుకోండి అన్నారు	STATEMENT}
+{\slot
+అయినా	O
+తలకాయ	B-body_part
+మీద	B-location
+దిండు	O
+లేకుండా	O
+పడుకోండి	O
+అన్నారు	O
+}
+
+{\intent	d: right అండి	ACK}
+{\slot
+right	O
+అండి	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: అది లేనంతకాలం బానే ఉంటుంది sir	STATEMENT}
+{\slot
+అది	O
+లేనంతకాలం	O
+బానే	O
+ఉంటుంది	O
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: తలకాయ మీద ఎప్పుడు దిండు పెట్టుకోని పడుకుంటానో 2 3 రోజులకు మళ్ళి వస్తుంది	STATEMENT}
+{\slot
+తలకాయ	B-body_part
+మీద	B-location
+ఎప్పుడు	O
+దిండు	O
+పెట్టుకోని	O
+పడుకుంటానో	O
+2	B-time_period
+3	B-time_period
+రోజులకు	I-time_period
+మళ్ళి	O
+వస్తుంది	O
+}
+
+{\intent	d: మళ్ళి వస్తుంది	ACK}
+{\slot
+మళ్ళి	O
+వస్తుంది	O
+}
+
+{\intent	p: ఆ దిండు ఎప్పుడు లేకుండా పడుకుంటానో అప్పుడు బానే ఉంటుంది	STATEMENT}
+{\slot
+ఆ	O
+దిండు	O
+ఎప్పుడు	O
+లేకుండా	O
+పడుకుంటానో	O
+అప్పుడు	B-time_period
+బానే	B-normal
+ఉంటుంది	O
+}
+
+{\intent	d: అలాగేనండి rao గారు మీ వయస్సు ఎంత అండి?	REPEAT_REPHRASE}
+{\slot
+అలాగేనండి	O
+rao	B-name
+గారు	O
+మీ	O
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 39 sir	ANSWER}
+{\slot
+39	B-age
+sir	O
+}
+
+{\intent	d: 39	ACK}
+{\slot
+39	B-age
+}
+
+{\intent	d: ఇవి కాకుండా ఇంకా ఇతర సమస్యలు ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇవి	O
+కాకుండా	O
+ఇంకా	O
+ఇతర	O
+సమస్యలు	O
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: ఇంకేమి లేదు sir	ANSWER}
+{\slot
+ఇంకేమి	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: అలాగేనండి దాని గురించి చెప్తాను	COMMIT}
+{\slot
+అలాగేనండి	O
+దాని	O
+గురించి	O
+చెప్తాను	O
+}
+
+{\intent	d: so rao గారు మీ condition benign positional paroxysmal vertigo అంటారు, BPPV అంటారు.	DIAGNOSIS}
+{\slot
+so	O
+rao	B-name
+గారు	O
+మీ	O
+condition	O
+benign	B-medical_condition
+positional	I-medical_condition
+paroxysmal	I-medical_condition
+vertigo	I-medical_condition
+అంటారు,	O
+BPPV	B-medical_condition
+అంటారు.	O
+}
+

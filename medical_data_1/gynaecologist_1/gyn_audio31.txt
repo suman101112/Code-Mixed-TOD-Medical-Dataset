@@ -1,0 +1,118 @@
+{\intent	d: ఇప్పుడు last బయట ఉన్న తారీకు ఎప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+last	B-frequency
+బయట	B-bodily_process
+ఉన్న	I-bodily_process
+తారీకు	B-time_period
+ఎప్పుడు?	O
+}
+
+{\intent	p: 26	ANSWER}
+{\slot
+26	B-time_period
+}
+
+{\intent	d: 26 6	CORRECT}
+{\slot
+26	B-time_period
+6	I-time_period
+}
+
+{\intent	d: నెలలు ఎప్పుడు correct ఏ నా?	INFO_REQUEST}
+{\slot
+నెలలు	B-time_period
+ఎప్పుడు	O
+correct	B-normal
+ఏ	O
+నా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: అప్పుడప్పుడు late ఉండేదానివా?	INFO_REQUEST}
+{\slot
+అప్పుడప్పుడు	O
+late	B-symptom
+ఉండేదానివా?	O
+}
+
+{\intent	p: లేదు late ఉండేదాన్ని.	ANSWER}
+{\slot
+లేదు	B-negative
+late	B-symptom
+ఉండేదాన్ని.	O
+}
+
+{\intent	d: ఇప్పుడు 8 నెలలు అయిపోయింది. 9 నెల మొదలు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+8	B-time_period
+నెలలు	I-time_period
+అయిపోయింది.	O
+9	B-time_period
+నెల	I-time_period
+మొదలు?	O
+}
+
+{\intent	p: అవును	ANSWER}
+{\slot
+అవును	B-positive
+}
+
+{\intent	d: అవునా?	INFO_REQUEST}
+{\slot
+అవునా?	O
+}
+
+{\intent	d: అంతా బాగానే ఉన్నావా? ఏమైనా problem ఉందా ఏ 3 నెలల నుంచి?	INFO_REQUEST}
+{\slot
+అంతా	O
+బాగానే	B-normal
+ఉన్నావా?	O
+ఏమైనా	O
+problem	O
+ఉందా	O
+ఏ	O
+3	B-time_period
+నెలల	I-time_period
+నుంచి?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: bp sugar ఏం లేదా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+ఏం	O
+లేదా?	B-negative
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: కదలికలు బాగా తెలుస్తుంది కదా?	INFO_REQUEST}
+{\slot
+కదలికలు	B-bodily_process
+బాగా	B-intensity
+తెలుస్తుంది	B-bodily_process
+కదా?	O
+}
+
+{\intent	p: ఆ తెలుస్తుంది.	ANSWER}
+{\slot
+ఆ	B-positive
+తెలుస్తుంది.	B-bodily_process
+}
+

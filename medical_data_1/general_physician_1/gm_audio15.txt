@@ -1,0 +1,171 @@
+{\intent	p: నాకు 2 months అంటే November 2 months back sugar అని తెలిసింది madam	STATEMENT}
+{\slot
+నాకు	O
+2	B-time_period
+months	I-time_period
+అంటే	O
+November	B-time_period
+2	B-time_period
+months	I-time_period
+back	I-time_period
+sugar	B-medical_condition
+అని	O
+తెలిసింది	O
+madam	O
+}
+
+{\intent	p: 1 n half month అయితుంది	STATEMENT}
+{\slot
+1	B-time_period
+n	I-time_period
+half	I-time_period
+month	I-time_period
+అయితుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే starting stage అని తెలిస్తే, urine examination చేయించుకుంటే అయితే 460 వచ్చింది అండి.	STATEMENT}
+{\slot
+అంటే	O
+starting	B-time_period
+stage	I-time_period
+అని	O
+తెలిస్తే,	O
+urine	B-body_substance
+examination	B-mtest
+చేయించుకుంటే	O
+అయితే	O
+460	B-mtest_value
+వచ్చింది	O
+అండి.	O
+}
+
+{\intent	d: ok చెప్పండి	ACK}
+{\slot
+ok	O
+చెప్పండి	O
+}
+
+{\intent	p: అయితే ఇది 80 + 340 వచ్చింది madam	STATEMENT}
+{\slot
+అయితే	O
+ఇది	O
+80	B-mtest_value
++	B-mtest_value
+340	B-mtest_value
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ఏదండి?	ACK}
+{\slot
+ఏదండి?	O
+}
+
+{\intent	p: sugar post lunch, random blood sugar	REPEAT_REPHRASE}
+{\slot
+sugar	B-medical_condition
+post	B-time_period
+lunch,	I-time_period
+random	B-time_period
+blood	B-body_substance
+sugar	B-food_substance
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే tablets ఇచ్చారు, 20 days వాడాను	STATEMENT}
+{\slot
+అయితే	O
+tablets	B-medicine
+ఇచ్చారు,	O
+20	B-time_period
+days	I-time_period
+వాడాను	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: diet weight అన్నీ control చేసాను, అన్నీ control చేస్తే 130, 180 వచ్చింది madam	STATEMENT}
+{\slot
+diet	B-food_substance
+weight	B-bm
+అన్నీ	O
+control	B-normal
+చేసాను,	O
+అన్నీ	O
+control	B-normal
+చేస్తే	O
+130,	B-mtest_value
+180	B-mtest_value
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: కొంచం diet కూడా control చేసాను madam	STATEMENT}
+{\slot
+కొంచం	O
+diet	B-food_substance
+కూడా	O
+control	B-normal
+చేసాను	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కొంచం అరిపాదాలు కొంచం పొడిచినట్లు, చేసినట్లు ఇట్ల అయితున్నాయి madam	STATEMENT}
+{\slot
+కొంచం	O
+అరిపాదాలు	B-body_part
+కొంచం	O
+పొడిచినట్లు,	B-symptom
+చేసినట్లు	O
+ఇట్ల	O
+అయితున్నాయి	O
+madam	O
+}
+
+{\intent	d: ok, fine	ACK}
+{\slot
+ok,	O
+fine	O
+}
+
+{\intent	d: అంటే మీకు diabetes అని తెలియనప్పుడు అది 400 దాటినిది, but medication వాడుతున్నప్పుడు definiteగా అది controlలో వస్తుంది.	ACK}
+{\slot
+అంటే	O
+మీకు	O
+diabetes	B-medical_condition
+అని	O
+తెలియనప్పుడు	O
+అది	O
+400	B-mtest_value
+దాటినిది,	O
+but	O
+medication	B-medicine
+వాడుతున్నప్పుడు	O
+definiteగా	O
+అది	O
+controlలో	B-normal
+వస్తుంది.	O
+}
+

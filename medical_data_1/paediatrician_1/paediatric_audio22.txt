@@ -1,0 +1,94 @@
+{\intent	p: గురక, గురక బాగా ఉన్నది, सर्दी బాగా ఉన్నది sir	STATEMENT}
+{\slot
+గురక,	B-bodily_process
+గురక	B-bodily_process
+బాగా	B-intensity
+ఉన్నది,	O
+सर्दी	B-medical_condition
+బాగా	B-intensity
+ఉన్నది	O
+sir	O
+}
+
+{\intent	p: ఊరికే తిమ్ముతున్నాడు sir	STATEMENT}
+{\slot
+ఊరికే	O
+తిమ్ముతున్నాడు	B-bodily_process
+sir	O
+}
+
+{\intent	d: పిల్లలు మూత్రం పోయినప్పుడు, దొడ్డికి పోయినప్పుడు umm అంటారు అది తిమ్మి కాదమ్మా	MEDICAL_EXPLANATION}
+{\slot
+పిల్లలు	B-person
+మూత్రం	B-body_substance
+పోయినప్పుడు,	B-bodily_process
+దొడ్డికి	B-body_substance
+పోయినప్పుడు	B-bodily_process
+umm	O
+అంటారు	O
+అది	O
+తిమ్మి	O
+కాదమ్మా	O
+}
+
+{\intent	d: దొడ్డికి ఆకుపచ్చ పోవచు	STATEMENT}
+{\slot
+దొడ్డికి	B-body_substance
+ఆకుపచ్చ	B-color
+పోవచు	B-bodily_process
+}
+
+{\intent	p: పోతలేదు sir	ANSWER}
+{\slot
+పోతలేదు	B-bodily_process
+sir	O
+}
+
+{\intent	d: ఆహా పోవచ్చు అంటున్నా	STATEMENT}
+{\slot
+ఆహా	O
+పోవచ్చు	O
+అంటున్నా	O
+}
+
+{\intent	p1: सर्दी sir. सर्दी బాగా ఉన్నది sir.	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+sir.	O
+सर्दी	B-medical_condition
+బాగా	B-intensity
+ఉన్నది	O
+sir.	O
+}
+
+{\intent	p: fever వచ్చింది.	STATEMENT}
+{\slot
+fever	B-symptom
+వచ్చింది.	O
+}
+
+{\intent	d: ఎన్నో నెల అమ్మా?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+నెల	B-time_period
+అమ్మా?	O
+}
+
+{\intent	p: 4th	ANSWER}
+{\slot
+4th	B-age
+}
+
+{\intent	d: తల్లిపాలే కదా ?	INFO_REQUEST}
+{\slot
+తల్లిపాలే	B-food_substance
+కదా	O
+?	O
+}
+
+{\intent	p1: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+

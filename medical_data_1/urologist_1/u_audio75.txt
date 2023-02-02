@@ -1,0 +1,89 @@
+{\intent	d: చెప్పు Ajay ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పు	O
+Ajay	B-name
+ఏమైంది?	O
+}
+
+{\intent	p: ఇగొ అక్కడ pain వస్తుంది.	ANSWER}
+{\slot
+ఇగొ	O
+అక్కడ	B-location
+pain	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: ఎప్పటినుంచి నాన్న?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+నాన్న?	O
+}
+
+{\intent	d: ఎక్కడ వస్తుంది నోప్పి?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+వస్తుంది	O
+నోప్పి?	B-symptom
+}
+
+{\intent	p: side ఈ	ANSWER}
+{\slot
+side	B-location
+ఈ	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి అమ్మా	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+అమ్మా	B-person
+}
+
+{\intent	p: ఒక 3 4 months, ఇట్ల heat heat అవుతది sir.	ANSWER}
+{\slot
+ఒక	O
+3	B-quantity
+4	B-time_period
+months,	I-time_period
+ఇట్ల	O
+heat	B-symptom
+heat	B-symptom
+అవుతది	O
+sir.	O
+}
+
+{\intent	d: దెబ్బ ఏమన్నా తాకిందా?	INFO_REQUEST}
+{\slot
+దెబ్బ	B-trauma
+ఏమన్నా	O
+తాకిందా?	O
+}
+
+{\intent	p: దెబ్బ ఏం తాకలేదు .	ANSWER}
+{\slot
+దెబ్బ	B-trauma
+ఏం	O
+తాకలేదు	B-negative
+.	O
+}
+
+{\intent	d: ఏం చదువుతూ ఉంటావ్?	INFO_REQUEST}
+{\slot
+ఏం	O
+చదువుతూ	O
+ఉంటావ్?	O
+}
+
+{\intent	p: b-tech.	ANSWER}
+{\slot
+b-tech.	B-profession
+}
+

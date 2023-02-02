@@ -1,0 +1,269 @@
+{\intent	d: age ఎంత?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత?	O
+}
+
+{\intent	p: 33	ANSWER}
+{\slot
+33	B-age
+}
+
+{\intent	d: కడుపులో నొప్పి నిన్నటి నుంచి	STATEMENT}
+{\slot
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+నిన్నటి	B-time_period
+నుంచి	O
+}
+
+{\intent	p: morning నుంచి ma'am.	STATEMENT}
+{\slot
+morning	B-time_period
+నుంచి	O
+ma'am.	O
+}
+
+{\intent	d: morning నుంచి.	ACK}
+{\slot
+morning	B-time_period
+నుంచి.	O
+}
+
+{\intent	d: ఇవాళ morning నుంచి.	CORRECT}
+{\slot
+ఇవాళ	B-time_period
+morning	I-time_period
+నుంచి.	O
+}
+
+{\intent	d: ఇవాళ morning నుంచి	ACK}
+{\slot
+ఇవాళ	B-time_period
+morning	I-time_period
+నుంచి	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అంతకుముందు వచ్చి పోయేది	INFO_REQUEST}
+{\slot
+అంతకుముందు	O
+వచ్చి	O
+పోయేది	O
+}
+
+{\intent	p: ఆ వస్తూ ఉంటది	ANSWER}
+{\slot
+ఆ	O
+వస్తూ	O
+ఉంటది	O
+}
+
+{\intent	d: ఇప్పుడు మూత్రం మంట ఉందా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+మూత్రం	B-body_substance
+మంట	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఇప్పుడు లేదు కానీ. కుర్చున్నప్పుడు వస్తాన్నది.	ANSWER}
+{\slot
+ఇప్పుడు	B-time_period
+లేదు	B-negative
+కానీ.	O
+కుర్చున్నప్పుడు	O
+వస్తాన్నది.	O
+}
+
+{\intent	d: motion free ఉందా?	INFO_REQUEST}
+{\slot
+motion	B-bodily_process
+free	B-normal
+ఉందా?	O
+}
+
+{\intent	p: ఆ ఉంది.	ANSWER}
+{\slot
+ఆ	O
+ఉంది.	B-positive
+}
+
+{\intent	d: గర్భసంచి problem. bleeding అది ఏం లేదు కదా.	INFO_REQUEST}
+{\slot
+గర్భసంచి	B-body_part
+problem.	B-symptom
+bleeding	B-medical_condition
+అది	O
+ఏం	O
+లేదు	O
+కదా.	O
+}
+
+{\intent	d: bleeding ఎక్కువగా ఉందటం అది ఏం లేదు గా?	INFO_REQUEST}
+{\slot
+bleeding	B-medical_condition
+ఎక్కువగా	B-intensity
+ఉందటం	O
+అది	O
+ఏం	O
+లేదు	O
+గా?	O
+}
+
+{\intent	p: అది ఏం లేదు	ANSWER}
+{\slot
+అది	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: తెలుపు దురద వాసన?	INFO_REQUEST}
+{\slot
+తెలుపు	B-symptom
+దురద	B-symptom
+వాసన?	B-symptom
+}
+
+{\intent	p: తెలుపు అయితది	ANSWER}
+{\slot
+తెలుపు	B-symptom
+అయితది	B-positive
+}
+
+{\intent	d: దురద వాసన?	INFO_REQUEST}
+{\slot
+దురద	B-symptom
+వాసన?	B-symptom
+}
+
+{\intent	d: దురద వాసన అది ఏమి లేదు.	REPEAT_REPHRASE}
+{\slot
+దురద	B-symptom
+వాసన	B-symptom
+అది	O
+ఏమి	O
+లేదు.	B-negative
+}
+
+{\intent	p: ఆ.	ANSWER}
+{\slot
+ఆ.	B-positive
+}
+
+{\intent	d: periods వచ్చి ఎన్ని రోజులు ఇవాల్టికి?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు	B-time_period
+ఇవాల్టికి?	I-time_period
+}
+
+{\intent	p: 8th వస్తే 1 month	ANSWER}
+{\slot
+8th	B-time_period
+వస్తే	O
+1	B-time_period
+month	I-time_period
+}
+
+{\intent	d: 8th వస్తే 1 month అయితది. అంటే ఇప్పుడు 16 రోజులు అయింది.	ACK}
+{\slot
+8th	B-time_period
+వస్తే	O
+1	B-time_period
+month	I-time_period
+అయితది.	O
+అంటే	O
+ఇప్పుడు	B-time_period
+16	I-time_period
+రోజులు	I-time_period
+అయింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ	STATEMENT}
+{\slot
+ఆ	O
+}
+
+{\intent	d: వచ్చి పోతుందా? continuousగా ఉందా నొప్పి?	INFO_REQUEST}
+{\slot
+వచ్చి	O
+పోతుందా?	O
+continuousగా	B-time_period
+ఉందా	O
+నొప్పి?	B-symptom
+}
+
+{\intent	p: నొప్పి one day మొత్తం ఉంటుందండి వచ్చినప్పుడల్లా.	ANSWER}
+{\slot
+నొప్పి	B-symptom
+one	B-time_period
+day	I-time_period
+మొత్తం	I-time_period
+ఉంటుందండి	O
+వచ్చినప్పుడల్లా.	O
+}
+
+{\intent	d: ok సరే, పడుకో అమ్మా చూస్తాను.	ACTION_DIR}
+{\slot
+ok	O
+సరే,	O
+పడుకో	O
+అమ్మా	O
+చూస్తాను.	O
+}
+
+{\intent	d: అంతకుముందు kidneyలో చిన్న stones ఉన్నాయని అన్నారు కదా.	INFO_REQUEST}
+{\slot
+అంతకుముందు	O
+kidneyలో	B-body_part
+చిన్న	B-intensity
+stones	B-body_substance
+ఉన్నాయని	O
+అన్నారు	O
+కదా.	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: అది పడిపోయిందన్నారా ?	INFO_REQUEST}
+{\slot
+అది	O
+పడిపోయిందన్నారా	B-normal
+?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: మళ్ళి చూపించుకోలేదు	INFO_REQUEST}
+{\slot
+మళ్ళి	O
+చూపించుకోలేదు	O
+}
+
+{\intent	p: చూయించలేదు.	ANSWER}
+{\slot
+చూయించలేదు.	B-negative
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+

@@ -1,0 +1,259 @@
+{\intent	d: పేరు చెప్పండి?	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి?	O
+}
+
+{\intent	p: N kiran kumar	ANSWER}
+{\slot
+N	B-name
+kiran	I-name
+kumar	I-name
+}
+
+{\intent	d: N?	INFO_REQUEST}
+{\slot
+N?	O
+}
+
+{\intent	p: M, M kiran kumar	ANSWER}
+{\slot
+M,	B-name
+M	B-name
+kiran	I-name
+kumar	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 34	ANSWER}
+{\slot
+34	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: దగ్గు బాగా వస్తుంది sir.	ANSWER}
+{\slot
+దగ్గు	B-symptom
+బాగా	B-intensity
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	p: నంజు లేక బాగా పడతాంది.	STATEMENT}
+{\slot
+నంజు	B-symptom
+లేక	O
+బాగా	B-intensity
+పడతాంది.	O
+}
+
+{\intent	d: జ్వరం ఉందా?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: జ్వరం ఉండే కానీ తగ్గిపోయింది.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+ఉండే	O
+కానీ	O
+తగ్గిపోయింది.	B-normal
+}
+
+{\intent	d: सर्दी?	INFO_REQUEST}
+{\slot
+सर्दी?	B-medical_condition
+}
+
+{\intent	p: सर्दी కూడా తగ్గిపోయింది.	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+కూడా	O
+తగ్గిపోయింది.	B-normal
+}
+
+{\intent	p: only	HOLD}
+{\slot
+only	O
+}
+
+{\intent	d: only, ఉత్త దగ్గు.	ACK}
+{\slot
+only,	O
+ఉత్త	O
+దగ్గు.	B-symptom
+}
+
+{\intent	p: ఇదొక్కటే problem ఉంది.	STATEMENT}
+{\slot
+ఇదొక్కటే	O
+problem	O
+ఉంది.	O
+}
+
+{\intent	d: నంజు?	INFO_REQUEST}
+{\slot
+నంజు?	B-symptom
+}
+
+{\intent	p: నంజు వస్తోంది.	ANSWER}
+{\slot
+నంజు	B-symptom
+వస్తోంది.	O
+}
+
+{\intent	d: అంటే ఇలా yellow వస్తుందా? water వస్తుందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఇలా	O
+yellow	B-color
+వస్తుందా?	O
+water	B-food_substance
+వస్తుందా?	O
+}
+
+{\intent	p: అంటే ఇట్ల ముద్ద లెక్క వస్తుంది.	ANSWER}
+{\slot
+అంటే	O
+ఇట్ల	O
+ముద్ద	B-symptom
+లెక్క	O
+వస్తుంది.	O
+}
+
+{\intent	d: గట్టిగా ముద్ద లెక్క.	ACK}
+{\slot
+గట్టిగా	O
+ముద్ద	B-symptom
+లెక్క.	O
+}
+
+{\intent	d: antibiotic వాడినారా ఏమన్నా?	INFO_REQUEST}
+{\slot
+antibiotic	B-medicine
+వాడినారా	O
+ఏమన్నా?	O
+}
+
+{\intent	p: tonic వాడిన.	ANSWER}
+{\slot
+tonic	B-medicine
+వాడిన.	O
+}
+
+{\intent	p: దగ్గే బాగా వస్తాంది	STATEMENT}
+{\slot
+దగ్గే	B-symptom
+బాగా	B-intensity
+వస్తాంది	O
+}
+
+{\intent	p: early moring పొడి దగ్గు	STATEMENT}
+{\slot
+early	B-time_period
+moring	I-time_period
+పొడి	B-symptom
+దగ్గు	I-symptom
+}
+
+{\intent	d: శ్వాస	ACTION_DIR}
+{\slot
+శ్వాస	B-bodily_process
+}
+
+{\intent	d: తీసుకో.	ACTION_DIR}
+{\slot
+తీసుకో.	O
+}
+
+{\intent	p: గొంతు కొద్దిగా నొప్పి ఉంది.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+కొద్దిగా	O
+నొప్పి	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: గోరు వెచ్చని నీళ్ళల్లో ఉప్పేసుకొని, పుక్కిలించి ఉమ్ము.	STATEMENT}
+{\slot
+గోరు	O
+వెచ్చని	O
+నీళ్ళల్లో	B-food_substance
+ఉప్పేసుకొని,	I-food_substance
+పుక్కిలించి	I-bodily_process
+ఉమ్ము.	I-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: కొంచం గొంతు infection ఉంది.	STATEMENT}
+{\slot
+కొంచం	O
+గొంతు	B-body_part
+infection	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	d: lungs గిట్ల clearగానే ఉన్నాయి.	STATEMENT}
+{\slot
+lungs	B-body_part
+గిట్ల	O
+clearగానే	B-normal
+ఉన్నాయి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hot waterలో	INFO_REQUEST}
+{\slot
+hot	O
+waterలో	B-food_substance
+}
+
+{\intent	d: గోరు వెచ్చని నీళ్ళల్లో , నంజుతో సంబంధం లేదు. కొంచం ఉప్పు వేసుకొని పుక్కిలించి ఉమ్మాలె.	STATEMENT}
+{\slot
+గోరు	O
+వెచ్చని	O
+నీళ్ళల్లో	B-food_substance
+,	O
+నంజుతో	B-symptom
+సంబంధం	O
+లేదు.	O
+కొంచం	O
+ఉప్పు	B-food_substance
+వేసుకొని	O
+పుక్కిలించి	I-bodily_process
+ఉమ్మాలె.	I-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

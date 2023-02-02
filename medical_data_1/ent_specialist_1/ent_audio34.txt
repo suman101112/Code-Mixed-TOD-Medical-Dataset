@@ -1,0 +1,157 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: Swetha	ANSWER}
+{\slot
+Swetha	B-name
+}
+
+{\intent	p1: ఇది వరకు వచ్చినాం కానీ ఆ చిట్టి దొరుకుతలేదు.	STATEMENT}
+{\slot
+ఇది	O
+వరకు	O
+వచ్చినాం	O
+కానీ	O
+ఆ	O
+చిట్టి	O
+దొరుకుతలేదు.	O
+}
+
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 20	ANSWER}
+{\slot
+20	B-age
+}
+
+{\intent	p1: 20	ANSWER}
+{\slot
+20	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: ఊరికే జాలుబైతుంది.	ANSWER}
+{\slot
+ఊరికే	O
+జాలుబైతుంది.	B-symptom
+}
+
+{\intent	p: నాకు ముక్కులో అంతకు ముందు మాంసం పెరిగింది ఊరికే జాలుబైతుంది.	STATEMENT}
+{\slot
+నాకు	O
+ముక్కులో	B-body_part
+అంతకు	O
+ముందు	O
+మాంసం	B-symptom
+పెరిగింది	I-symptom
+ఊరికే	O
+జాలుబైతుంది.	B-symptom
+}
+
+{\intent	p1: ఊరికే జాలుబైతుంది.	STATEMENT}
+{\slot
+ఊరికే	O
+జాలుబైతుంది.	B-symptom
+}
+
+{\intent	d: పాత చిట్టి లేదా?	INFO_REQUEST}
+{\slot
+పాత	O
+చిట్టి	O
+లేదా?	O
+}
+
+{\intent	p1: ఆ ఎక్కడనొ పోయిందది, దొరుకుతలేదు.	STATEMENT}
+{\slot
+ఆ	O
+ఎక్కడనొ	O
+పోయిందది,	O
+దొరుకుతలేదు.	O
+}
+
+{\intent	p1: వచ్చినం ఈడికి గానీ, ఆ చిట్టి దొరకలే	STATEMENT}
+{\slot
+వచ్చినం	O
+ఈడికి	O
+గానీ,	O
+ఆ	O
+చిట్టి	O
+దొరకలే	O
+}
+
+{\intent	p1: శ్వాస సక్కగా ఆడుతలేదు అట.	STATEMENT}
+{\slot
+శ్వాస	B-bodily_process
+సక్కగా	O
+ఆడుతలేదు	B-symptom
+అట.	O
+}
+
+{\intent	p: సరిగ్గా breathing..	HOLD}
+{\slot
+సరిగ్గా	O
+breathing..	B-bodily_process
+}
+
+{\intent	d: తుమ్ములు బాగా వస్తాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+బాగా	B-intensity
+వస్తాయా?	O
+}
+
+{\intent	p: umm cold అయినప్పుడు వస్తాయి. normalగా రావట్లేదు.	ANSWER}
+{\slot
+umm	O
+cold	B-medical_condition
+అయినప్పుడు	O
+వస్తాయి.	O
+normalగా	B-normal
+రావట్లేదు.	B-negative
+}
+
+{\intent	d: ఇందులో bone ఒక్కటి bend అయి ఉంది.	STATEMENT}
+{\slot
+ఇందులో	O
+bone	B-body_part
+ఒక్కటి	O
+bend	B-symptom
+అయి	O
+ఉంది.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అది అప్పుడు కూడా అట్లానే చెప్పినారు.	STATEMENT}
+{\slot
+అది	O
+అప్పుడు	B-time_period
+కూడా	O
+అట్లానే	O
+చెప్పినారు.	O
+}
+

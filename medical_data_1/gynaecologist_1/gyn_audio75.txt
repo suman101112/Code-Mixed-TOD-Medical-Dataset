@@ -1,0 +1,143 @@
+{\intent	p: Hello madam	STATEMENT}
+{\slot
+Hello	O
+madam	O
+}
+
+{\intent	d: ఆ Sandhya గారు చెప్పండి.	ACTION_DIR}
+{\slot
+ఆ	O
+Sandhya	B-name
+గారు	O
+చెప్పండి.	O
+}
+
+{\intent	p: new marriage, 8 months అవుతుంది madam	ANSWER}
+{\slot
+new	O
+marriage,	B-marital_status
+8	B-time_period
+months	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ఎన్ని years అమ్మా?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+అమ్మా?	O
+}
+
+{\intent	p: 8 months	ANSWER}
+{\slot
+8	B-time_period
+months	I-time_period
+}
+
+{\intent	d: 8 months ఆ ok	ACK}
+{\slot
+8	B-time_period
+months	I-time_period
+ఆ	O
+ok	O
+}
+
+{\intent	p: periods <inaudible>	UNINTERPRET}
+{\slot
+periods	B-bodily_process
+<inaudible>	O
+}
+
+{\intent	d: మీ voice కొంచం clarityగా లేదమ్మ	SNU}
+{\slot
+మీ	O
+voice	O
+కొంచం	O
+clarityగా	O
+లేదమ్మ	O
+}
+
+{\intent	d: మీకు periodsలో issues ఉన్నాయా?	INFO_REQUEST}
+{\slot
+మీకు	O
+periodsలో	B-bodily_process
+issues	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: అవును madam	ANSWER}
+{\slot
+అవును	B-positive
+madam	O
+}
+
+{\intent	d: pain వస్తుందా అమ్మా periods timeలో?	INFO_REQUEST}
+{\slot
+pain	B-symptom
+వస్తుందా	O
+అమ్మా	O
+periods	B-bodily_process
+timeలో?	B-time_period
+}
+
+{\intent	p: అంటే?	INFO_REQUEST}
+{\slot
+అంటే?	O
+}
+
+{\intent	d1: i think irregular periods అవుతున్నాయి అని	STATEMENT}
+{\slot
+i	O
+think	O
+irregular	B-symptom
+periods	B-bodily_process
+అవుతున్నాయి	O
+అని	O
+}
+
+{\intent	d: irregular periods అవుతున్నాయా అమ్మా?	INFO_REQUEST}
+{\slot
+irregular	B-symptom
+periods	B-bodily_process
+అవుతున్నాయా	O
+అమ్మా?	O
+}
+
+{\intent	d: age ఎంత అండి మీది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి	O
+మీది?	O
+}
+
+{\intent	p: నాది 22 madam	ANSWER}
+{\slot
+నాది	O
+22	B-age
+madam	O
+}
+
+{\intent	d: 23	ACK}
+{\slot
+23	B-age
+}
+
+{\intent	p: 22	CORRECT}
+{\slot
+22	B-age
+}
+
+{\intent	d: ok irregular periods అనేది nothing to worry అమ్మా	STATEMENT}
+{\slot
+ok	O
+irregular	B-symptom
+periods	B-bodily_process
+అనేది	O
+nothing	O
+to	O
+worry	O
+అమ్మా	O
+}
+

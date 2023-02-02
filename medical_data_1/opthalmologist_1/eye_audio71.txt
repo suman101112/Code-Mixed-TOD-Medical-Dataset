@@ -1,0 +1,88 @@
+{\intent	p: doctor గారు నా పేరు Urmila.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Urmila.	B-name
+}
+
+{\intent	p: నా వయస్సు 24 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+24	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాది desk job. ఎక్కువగా computer ముందే ఉంటాను.	STATEMENT}
+{\slot
+నాది	O
+desk	B-profession
+job.	I-profession
+ఎక్కువగా	O
+computer	O
+ముందే	O
+ఉంటాను.	O
+}
+
+{\intent	p: ఈ మధ్య కళ్ళు మండుతున్నాయి.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కళ్ళు	B-body_part
+మండుతున్నాయి.	B-symptom
+}
+
+{\intent	p: రాత్రులు నిద్ర పట్టుట లేదు.	STATEMENT}
+{\slot
+రాత్రులు	B-time_period
+నిద్ర	B-bodily_process
+పట్టుట	B-bodily_process
+లేదు.	B-negative
+}
+
+{\intent	d: కళ్ళలో నీరు కారడం, కళ్ళు మంటలు ఇలాంటివన్నీ ఎక్కువసేపు computer మీద ఉండడం వల్ల కానీ ఎక్కువసేపు gadgets మీద ఆడడం వల్ల కానీ ఎక్కువసేపు TV చూడాడం ఇలాంటివి chronicగా ఎక్కువ రోజులు జరిగినప్పుడు కళ్ళలో ఉండేటటువంటి నీటి పొర అంటాము దీని tear film అంటాము ఈ tear film ఎండిపోవడం జరుగుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళలో	B-body_part
+నీరు	B-food_substance
+కారడం,	B-symptom
+కళ్ళు	B-body_part
+మంటలు	B-symptom
+ఇలాంటివన్నీ	O
+ఎక్కువసేపు	O
+computer	O
+మీద	O
+ఉండడం	O
+వల్ల	O
+కానీ	O
+ఎక్కువసేపు	O
+gadgets	O
+మీద	O
+ఆడడం	O
+వల్ల	O
+కానీ	O
+ఎక్కువసేపు	O
+TV	O
+చూడాడం	B-bodily_process
+ఇలాంటివి	O
+chronicగా	O
+ఎక్కువ	O
+రోజులు	B-time_period
+జరిగినప్పుడు	O
+కళ్ళలో	B-body_part
+ఉండేటటువంటి	O
+నీటి	B-food_substance
+పొర	B-body_part
+అంటాము	O
+దీని	O
+tear	B-body_part
+film	I-body_part
+అంటాము	O
+ఈ	O
+tear	B-body_part
+film	I-body_part
+ఎండిపోవడం	B-symptom
+జరుగుతుంది.	O
+}
+

@@ -1,0 +1,195 @@
+{\intent	p: ఇప్పుడు మనకు	ABANDONED}
+{\slot
+ఇప్పుడు	O
+మనకు	O
+}
+
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి sureshగారు వింటున్నాను	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sureshగారు	B-name
+వింటున్నాను	O
+}
+
+{\intent	p: good afternoon madam	GREETING}
+{\slot
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: good afternoon అండి	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నా వయస్సు 28 years sir.	ANSWER}
+{\slot
+నా	O
+వయస్సు	O
+28	B-age
+years	I-age
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నా వయస్సు 28 years sir.	REPEAT_REPHRASE}
+{\slot
+నా	O
+వయస్సు	O
+28	B-age
+years	I-age
+sir.	O
+}
+
+{\intent	d: చెప్పండి చెప్పండి వింటున్నానండీ . direct గా మట్లాడండి నెరుగా.	SU}
+{\slot
+చెప్పండి	O
+చెప్పండి	O
+వింటున్నానండీ	O
+.	O
+direct	O
+గా	O
+మట్లాడండి	O
+నెరుగా.	O
+}
+
+{\intent	p: అది కాకపోతే piles కింద అదే morning motion వెళ్ళినప్పుడు కాస్త blood కింద వెళ్ళి వెళ్తుంది sir.	STATEMENT}
+{\slot
+అది	O
+కాకపోతే	O
+piles	B-symptom
+కింద	B-location
+అదే	O
+morning	B-time_period
+motion	B-bodily_process
+వెళ్ళినప్పుడు	I-bodily_process
+కాస్త	O
+blood	B-body_substance
+కింద	O
+వెళ్ళి	O
+వెళ్తుంది	O
+sir.	O
+}
+
+{\intent	p: operation లేకుండా ఉంటదా అది?	INFO_REQUEST}
+{\slot
+operation	B-treatment
+లేకుండా	O
+ఉంటదా	O
+అది?	O
+}
+
+{\intent	d: right.	ACK}
+{\slot
+right.	O
+}
+
+{\intent	d: ఎన్ని సంవత్సరాలు నుంచి ఉంది అండి ఇబ్బంది ఇది.	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+సంవత్సరాలు	B-time_period
+నుంచి	O
+ఉంది	O
+అండి	O
+ఇబ్బంది	O
+ఇది.	O
+}
+
+{\intent	p: ఇది 2 years ఉంది sir.	ANSWER}
+{\slot
+ఇది	O
+2	B-time_period
+years	I-time_period
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: 2 years ok.	ACK}
+{\slot
+2	B-time_period
+years	I-time_period
+ok.	O
+}
+
+{\intent	d: present ఏమైనా medicines వాడుతున్నారా?	INFO_REQUEST}
+{\slot
+present	B-time_period
+ఏమైనా	O
+medicines	B-medicine
+వాడుతున్నారా?	O
+}
+
+{\intent	p: అంటే ఇక్కడ doctorగారు దెగ్గర medicines వాడుతున్నాము sir.	ANSWER}
+{\slot
+అంటే	O
+ఇక్కడ	O
+doctorగారు	B-medical_professional
+దెగ్గర	O
+medicines	B-medicine
+వాడుతున్నాము	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు operation అంటే భయం sir. దానిగురించి call అడిగినం sir	STATEMENT}
+{\slot
+నాకు	O
+operation	B-treatment
+అంటే	O
+భయం	O
+sir.	O
+దానిగురించి	O
+call	O
+అడిగినం	O
+sir	O
+}
+
+{\intent	d: ఒక్కటి. almost 2 years పై నుంచి ఇబ్బంది ఉంటుంది. bleeding అవుతుంది అంటున్నారు. ఒక్కటే నండీ operation లేకుండా అవుతుంది అంటే ఏ stageలో ఉంది ఏ gradeలో ఉంది అవసరం.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటి.	O
+almost	O
+2	B-time_period
+years	I-time_period
+పై	O
+నుంచి	O
+ఇబ్బంది	B-symptom
+ఉంటుంది.	O
+bleeding	B-medical_condition
+అవుతుంది	O
+అంటున్నారు.	O
+ఒక్కటే	O
+నండీ	O
+operation	B-treatment
+లేకుండా	O
+అవుతుంది	O
+అంటే	O
+ఏ	O
+stageలో	O
+ఉంది	O
+ఏ	O
+gradeలో	O
+ఉంది	O
+అవసరం.	O
+}
+

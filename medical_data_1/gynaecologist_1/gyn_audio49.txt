@@ -1,0 +1,203 @@
+{\intent	p: మా భర్త కొంచం drink ఎక్కువ చేస్తాడు అండి, దానివల్ల మాకు 9 years అయితుంది marriage అయ్యి	STATEMENT}
+{\slot
+మా	O
+భర్త	O
+కొంచం	O
+drink	B-habit
+ఎక్కువ	B-intensity
+చేస్తాడు	O
+అండి,	O
+దానివల్ల	O
+మాకు	O
+9	B-time_period
+years	I-time_period
+అయితుంది	O
+marriage	B-marital_status
+అయ్యి	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: పిల్లలు ఇంకా కలగట్లేదు అండి	STATEMENT}
+{\slot
+పిల్లలు	B-familal
+ఇంకా	O
+కలగట్లేదు	B-negative
+అండి	O
+}
+
+{\intent	d: ఏంటండీ	SNU}
+{\slot
+ఏంటండీ	O
+}
+
+{\intent	p: పిల్లలు 9 years అయితుంది అండి మా పెళ్ళై, మా భర్త కొంచం drink బాగా చేస్తారు అండి.	REPEAT_REPHRASE}
+{\slot
+పిల్లలు	B-familal
+9	B-time_period
+years	I-time_period
+అయితుంది	O
+అండి	O
+మా	O
+పెళ్ళై,	B-marital_status
+మా	O
+భర్త	B-familal
+కొంచం	O
+drink	B-habit
+బాగా	B-intensity
+చేస్తారు	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: count చేయించారా అమ్మా మరి?	INFO_REQUEST}
+{\slot
+count	B-mtest
+చేయించారా	O
+అమ్మా	O
+మరి?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: మీ husband ది?	REPEAT_REPHRASE}
+{\slot
+మీ	O
+husband	B-familal
+ది?	O
+}
+
+{\intent	p: ఆ చూయించాము అండి చూయించాము	ANSWER}
+{\slot
+ఆ	O
+చూయించాము	O
+అండి	O
+చూయించాము	O
+}
+
+{\intent	p: ఒకసారి సంతానలేమి doctor దెగ్గర కూడా పోయినాము, మామూలుగా మీ ఆయన కొంచం drink మనేస్తే కొంచం బాగుంటది అంటే తగ్గించదు కూడా madam	STATEMENT}
+{\slot
+ఒకసారి	O
+సంతానలేమి	B-medical_condition
+doctor	B-medical_professional
+దెగ్గర	O
+కూడా	O
+పోయినాము,	O
+మామూలుగా	O
+మీ	O
+ఆయన	B-familal
+కొంచం	O
+drink	B-habit
+మనేస్తే	O
+కొంచం	O
+బాగుంటది	O
+అంటే	O
+తగ్గించదు	B-normal
+కూడా	O
+madam	O
+}
+
+{\intent	p: తగ్గించిన కూడా కొంచం అది ఇంకా ఫలించట్లేదు madam	STATEMENT}
+{\slot
+తగ్గించిన	O
+కూడా	O
+కొంచం	O
+అది	O
+ఇంకా	O
+ఫలించట్లేదు	B-symptom
+madam	O
+}
+
+{\intent	d: అంటే ఎంత వయస్సు ఉంటదమ్మా మీ వారికి	INFO_REQUEST}
+{\slot
+అంటే	O
+ఎంత	O
+వయస్సు	O
+ఉంటదమ్మా	O
+మీ	O
+వారికి	B-familal
+}
+
+{\intent	p: 31 ఉంటదండి	ANSWER}
+{\slot
+31	B-age
+ఉంటదండి	O
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+
+{\intent	d: count ఎంత ఉంది ఏమైనా వివరాలు తెలుసా అమ్మా?	INFO_REQUEST}
+{\slot
+count	B-mtest
+ఎంత	O
+ఉంది	O
+ఏమైనా	O
+వివరాలు	O
+తెలుసా	O
+అమ్మా?	O
+}
+
+{\intent	p: count అంటే, అంతా నాకు తెలియదు madam నాకు అది	ANSWER}
+{\slot
+count	B-mtest
+అంటే,	O
+అంతా	O
+నాకు	O
+తెలియదు	B-negative
+madam	O
+నాకు	O
+అది	O
+}
+
+{\intent	d: సరే అమ్మా	ACK}
+{\slot
+సరే	O
+అమ్మా	O
+}
+
+{\intent	d: ముఖ్యంగా మనకు ఏంటి అంటే males లోపల సంతానం కలగడానికి 40. 45 years వరకు కూడా వాళ్లకు ఎలాంటి ఇబ్బంది లేకుండా కూడా సంతానం కలిగేటటువంటి అవకాశాలు females కంటే malesకి చాలా మెరుగుగా ఉంటాయి అండి	MEDICAL_EXPLANATION}
+{\slot
+ముఖ్యంగా	O
+మనకు	O
+ఏంటి	O
+అంటే	O
+males	B-gender
+లోపల	O
+సంతానం	B-bodily_process
+కలగడానికి	O
+40.	B-age
+45	B-age
+years	I-age
+వరకు	O
+కూడా	O
+వాళ్లకు	O
+ఎలాంటి	O
+ఇబ్బంది	O
+లేకుండా	O
+కూడా	O
+సంతానం	B-bodily_process
+కలిగేటటువంటి	O
+అవకాశాలు	O
+females	B-gender
+కంటే	O
+malesకి	B-gender
+చాలా	B-intensity
+మెరుగుగా	B-normal
+ఉంటాయి	O
+అండి	O
+}
+

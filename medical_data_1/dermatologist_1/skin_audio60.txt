@@ -1,0 +1,49 @@
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 44, female	ANSWER}
+{\slot
+44,	B-age
+female	B-gender
+}
+
+{\intent	p: దద్దుర్లు అవుతున్నాయి sir.	STATEMENT}
+{\slot
+దద్దుర్లు	B-symptom
+అవుతున్నాయి	I-symptom
+sir.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: water తో కడుగుతుంటే బాగా నొప్పి లేస్తుంది sir.	ANSWER}
+{\slot
+water	B-bodily_process
+తో	I-bodily_process
+కడుగుతుంటే	I-bodily_process
+బాగా	B-symptom
+నొప్పి	I-symptom
+లేస్తుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: గోకుడు ఉందా?	INFO_REQUEST}
+{\slot
+గోకుడు	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: చాలా తక్కువ గోకుడు ఉంది sir.	ANSWER}
+{\slot
+చాలా	B-symptom
+తక్కువ	I-symptom
+గోకుడు	I-symptom
+ఉంది	B-positive
+sir.	O
+}
+

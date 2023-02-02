@@ -1,0 +1,140 @@
+{\intent	p: Hello, నమస్తే madam గారు	GREETING}
+{\slot
+Hello,	O
+నమస్తే	O
+madam	O
+గారు	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి వింటున్నాను	ACTION_DIR}
+{\slot
+చెప్పండి	O
+వింటున్నాను	O
+}
+
+{\intent	p: madam గారు ఏం భొజనం చేసిన గానీ అరగట్లేదు, పుల్లటి తేణుపు వస్తున్నాయి	STATEMENT}
+{\slot
+madam	O
+గారు	O
+ఏం	O
+భొజనం	B-food_substance
+చేసిన	O
+గానీ	O
+అరగట్లేదు,	B-symptom
+పుల్లటి	B-symptom
+తేణుపు	B-symptom
+వస్తున్నాయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి ఉంది ఈ problem?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+ఉంది	O
+ఈ	O
+problem?	O
+}
+
+{\intent	p: అదే madam ఏం భొజనం చేసిన గానీ అరగట్లేదు	STATEMENT}
+{\slot
+అదే	O
+madam	O
+ఏం	O
+భొజనం	B-food_substance
+చేసిన	O
+గానీ	O
+అరగట్లేదు	B-symptom
+}
+
+{\intent	d: అదే ఎప్పటినుంచి ఉంది అండి, problem ఎప్పటినుంచి ఉంది?	REPEAT_REPHRASE}
+{\slot
+అదే	O
+ఎప్పటినుంచి	O
+ఉంది	O
+అండి,	O
+problem	O
+ఎప్పటినుంచి	O
+ఉంది?	O
+}
+
+{\intent	p: problem ఇది 1 year నుంచి ఉందండి.	ANSWER}
+{\slot
+problem	O
+ఇది	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+ఉందండి.	O
+}
+
+{\intent	d: 1 year నుంచి ఉంది ok	ACK}
+{\slot
+1	B-time_period
+year	I-time_period
+నుంచి	O
+ఉంది	O
+ok	O
+}
+
+{\intent	d: మరి medicines ఏమైనా వాడారా?	INFO_REQUEST}
+{\slot
+మరి	O
+medicines	B-medicine
+ఏమైనా	O
+వాడారా?	O
+}
+
+{\intent	p: medicines వాడుతున్నాను madam అదే ఏ పరిగడుపున tablets ఇచ్చారు	ANSWER}
+{\slot
+medicines	B-medicine
+వాడుతున్నాను	O
+madam	O
+అదే	O
+ఏ	O
+పరిగడుపున	B-time_period
+tablets	B-medicine
+ఇచ్చారు	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: ok Ramana గారు మీరు already చెప్తున్నారు 1 year నుంచి ఉంది	ACK}
+{\slot
+ok	O
+Ramana	B-name
+గారు	O
+మీరు	O
+already	O
+చెప్తున్నారు	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: అంటే పరిగడుపున tablet అంటే maximum panD, pan40 ఇస్తుంటారు.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+పరిగడుపున	B-time_period
+tablet	B-medicine
+అంటే	O
+maximum	O
+panD,	B-medicine
+pan40	B-medicine
+ఇస్తుంటారు.	O
+}
+

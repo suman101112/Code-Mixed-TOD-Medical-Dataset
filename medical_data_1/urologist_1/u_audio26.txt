@@ -1,0 +1,197 @@
+{\intent	p: అంటే right side kidney కింద ఒక 10mm ఉంది stone	STATEMENT}
+{\slot
+అంటే	O
+right	B-location
+side	I-location
+kidney	B-body_part
+కింద	B-location
+ఒక	O
+10mm	B-mtest_value
+ఉంది	O
+stone	B-body_substance
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే bladderలో 4mm ఉంది అండి	STATEMENT}
+{\slot
+అలాగే	O
+bladderలో	B-body_part
+4mm	B-mtest_value
+ఉంది	O
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: దానిగురించి ఏమైనా చెప్తారా	INFO_REQUEST}
+{\slot
+దానిగురించి	O
+ఏమైనా	O
+చెప్తారా	O
+}
+
+{\intent	d: so ఎప్పటినుంచి ఉందండీ మీకు ఈ  సమస్య?	INFO_REQUEST}
+{\slot
+so	O
+ఎప్పటినుంచి	O
+ఉందండీ	O
+మీకు	O
+ఈ	O
+సమస్య?	O
+}
+
+{\intent	p: 10 mm and 4mm, రెండు stones ఉన్నాయి	ACK}
+{\slot
+10	B-mtest_value
+mm	I-mtest_value
+and	O
+4mm,	B-mtest_value
+రెండు	B-frequency
+stones	B-body_substance
+ఉన్నాయి	O
+}
+
+{\intent	d: ఈ  సమస్య మీకు ఎప్పటినుంచి ఉందండీ అండి?	REPEAT_REPHRASE}
+{\slot
+ఈ	O
+సమస్య	O
+మీకు	O
+ఎప్పటినుంచి	O
+ఉందండీ	O
+అండి?	O
+}
+
+{\intent	p: 1 month అండి	ANSWER}
+{\slot
+1	B-time_period
+month	I-time_period
+అండి	O
+}
+
+{\intent	d: only one month. detect అయింది one month	ACK}
+{\slot
+only	O
+one	B-time_period
+month.	I-time_period
+detect	O
+అయింది	O
+one	B-time_period
+month	I-time_period
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: లక్షణాలు ఏమున్నాయండి? ఇబ్బందులు ఏమున్నాయండి మీకు?	INFO_REQUEST}
+{\slot
+లక్షణాలు	O
+ఏమున్నాయండి?	O
+ఇబ్బందులు	O
+ఏమున్నాయండి	O
+మీకు?	O
+}
+
+{\intent	p: నాకు pain బాగా వస్తది	ANSWER}
+{\slot
+నాకు	O
+pain	B-symptom
+బాగా	B-intensity
+వస్తది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: back pain బాగా వస్తది అండి.	STATEMENT}
+{\slot
+back	B-body_part
+pain	B-symptom
+బాగా	B-intensity
+వస్తది	O
+అండి.	O
+}
+
+{\intent	d: back pain severeగా ఉంది	ACK}
+{\slot
+back	B-body_part
+pain	B-symptom
+severeగా	B-intensity
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఏం చేస్తుంటారు మీరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+చేస్తుంటారు	O
+మీరు?	O
+}
+
+{\intent	p: నేను ఒక agent, ఊరిలో ఉంట.	ANSWER}
+{\slot
+నేను	O
+ఒక	O
+agent,	B-profession
+ఊరిలో	O
+ఉంట.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so 10mm, 4mm రెండు ఉన్నాయి	ACK}
+{\slot
+so	O
+10mm,	B-mtest_value
+4mm	B-mtest_value
+రెండు	B-frequency
+ఉన్నాయి	O
+}
+
+{\intent	d: మామూలుగా 4mm అయితే water ఎక్కువగా తీసుకునే మూలంగా పడిపోయే అవకాశం	STATEMENT}
+{\slot
+మామూలుగా	O
+4mm	B-mtest_value
+అయితే	O
+water	B-food_substance
+ఎక్కువగా	B-intensity
+తీసుకునే	B-bodily_process
+మూలంగా	O
+పడిపోయే	O
+అవకాశం	O
+}
+
+{\intent	d: but 10mm medicine వాడితేనే తగ్గిపోయే అవకాశాలు ఉంటాయి అండి.	STATEMENT}
+{\slot
+but	O
+10mm	B-mtest_value
+medicine	B-medicine
+వాడితేనే	O
+తగ్గిపోయే	O
+అవకాశాలు	O
+ఉంటాయి	O
+అండి.	O
+}
+

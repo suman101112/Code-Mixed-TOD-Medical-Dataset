@@ -1,0 +1,105 @@
+{\intent	p: doctor గారు మా 9 నెలల పాపకి MMR vaccine వేయించలేదు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+9	B-age
+నెలల	I-age
+పాపకి	B-person
+MMR	B-medicine
+vaccine	I-medicine
+వేయించలేదు.	O
+}
+
+{\intent	p: తనకు ఇప్పుడు చిన్న అమ్మవారు వచ్చింది.	STATEMENT}
+{\slot
+తనకు	O
+ఇప్పుడు	O
+చిన్న	B-medical_condition
+అమ్మవారు	I-medical_condition
+వచ్చింది.	O
+}
+
+{\intent	p: తన temperature పెరగకుండా dark room లో ఉంచడం వంటివి చేయొచ్చా?	INFO_REQUEST}
+{\slot
+తన	O
+temperature	B-symptom
+పెరగకుండా	O
+dark	O
+room	O
+లో	O
+ఉంచడం	O
+వంటివి	O
+చేయొచ్చా?	O
+}
+
+{\intent	p: ఆ మచ్చలు కంటికి కూడా వెళ్తాయి అని అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఆ	O
+మచ్చలు	B-symptom
+కంటికి	B-body_part
+కూడా	O
+వెళ్తాయి	O
+అని	O
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: ఇది chickenpox అంటారు అండి అమ్మవారు అనేది.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+chickenpox	B-medical_condition
+అంటారు	O
+అండి	O
+అమ్మవారు	B-medical_condition
+అనేది.	O
+}
+
+{\intent	d: ఈ అమ్మవారు అనేది వస్తే కంటికి అనేది particularగా care ఏం లేదు.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+అమ్మవారు	B-medical_condition
+అనేది	O
+వస్తే	O
+కంటికి	B-body_part
+అనేది	O
+particularగా	O
+care	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	d: కానీ ఒకసారి eye doctor దెగ్గర వెళ్ళి చూయించాల్సి వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+ఒకసారి	O
+eye	B-medical_professional
+doctor	I-health_professional
+దెగ్గర	O
+వెళ్ళి	O
+చూయించాల్సి	O
+వస్తుంది.	O
+}
+
+{\intent	d: ఎందుకంటే కంటి మీద మచ వచ్చే chances ఉంటుంది అమ్మవారులో	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+కంటి	B-body_part
+మీద	B-location
+మచ	B-symptom
+వచ్చే	O
+chances	O
+ఉంటుంది	O
+అమ్మవారులో	O
+}
+
+{\intent	d: so అది వస్తే మాత్రం చూపుకి ఇబ్బంది ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అది	O
+వస్తే	O
+మాత్రం	O
+చూపుకి	B-bodily_process
+ఇబ్బంది	B-symptom
+ఉంటుంది.	O
+}
+

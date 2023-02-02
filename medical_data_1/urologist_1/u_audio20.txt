@@ -1,0 +1,49 @@
+{\intent	d: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	p: నా పేరు sudeep baabu అండి	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+sudeep	B-name
+baabu	I-name
+అండి	O
+}
+
+{\intent	d: ఇబ్బంది ఏం ఉంది sir	INFO_REQUEST}
+{\slot
+ఇబ్బంది	O
+ఏం	O
+ఉంది	O
+sir	O
+}
+
+{\intent	p: ఆ madam గారు నాకు 2 kidneyలో కూడా 4mm 5mm రాళ్ళు ఉన్నాయండి	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+గారు	O
+నాకు	O
+2	B-frequency
+kidneyలో	B-body_part
+కూడా	O
+4mm	B-mtest_value
+5mm	B-mtest_value
+రాళ్ళు	B-body_substance
+ఉన్నాయండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+

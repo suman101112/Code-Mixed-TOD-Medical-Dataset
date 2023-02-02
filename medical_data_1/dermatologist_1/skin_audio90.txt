@@ -1,0 +1,61 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 37, female	ANSWER}
+{\slot
+37,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ముఖం మీద నల్లటి మచ్చలు అవుతున్నాయి sir.	ANSWER}
+{\slot
+ముఖం	B-body_part
+మీద	I-body_part
+నల్లటి	B-symptom
+మచ్చలు	I-symptom
+అవుతున్నాయి	I-symptom
+sir.	O
+}
+
+{\intent	d: ఎండల్లో తిరుగుతవా?	INFO_REQUEST}
+{\slot
+ఎండల్లో	O
+తిరుగుతవా?	O
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	p: మీరు మందు ఇచ్చారు sir. కానీ అది పెట్టుకుంటే మండుతుంది.	STATEMENT}
+{\slot
+మీరు	O
+మందు	B-medicine
+ఇచ్చారు	O
+sir.	O
+కానీ	O
+అది	B-treatment
+పెట్టుకుంటే	I-treatment
+మండుతుంది.	B-symptom
+}
+
+{\intent	p: skin అంతా పగిలినట్లు అయి మంట పెడుతుంది	STATEMENT}
+{\slot
+skin	B-body_part
+అంతా	I-body_part
+పగిలినట్లు	I-symptom
+అయి	I-symptom
+మంట	B-symptom
+పెడుతుంది	I-symptom
+}
+

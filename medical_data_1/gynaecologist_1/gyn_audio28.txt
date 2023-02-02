@@ -1,0 +1,163 @@
+{\intent	d: ఏం పెరమ్మా	INFO_REQUEST}
+{\slot
+ఏం	O
+పెరమ్మా	O
+}
+
+{\intent	p: v Rajamani	ANSWER}
+{\slot
+v	B-name
+Rajamani	I-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 55	ANSWER}
+{\slot
+55	B-age
+}
+
+{\intent	d: ఏంటి problem?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p: నాకు మూత్రం మంట వస్తుంది. గర్భసంచి తీసుకొని ఇప్పుడు 2 years.	ANSWER}
+{\slot
+నాకు	O
+మూత్రం	B-body_substance
+మంట	B-symptom
+వస్తుంది.	O
+గర్భసంచి	B-body_part
+తీసుకొని	B-treatment
+ఇప్పుడు	O
+2	B-age
+years.	I-age
+}
+
+{\intent	d: పిల్లలు ఎంతమంది?	INFO_REQUEST}
+{\slot
+పిల్లలు	B-familal
+ఎంతమంది?	O
+}
+
+{\intent	p: 2 బిడ్డలు, పెళ్లిళ్లయినాయి	ANSWER}
+{\slot
+2	B-frequency
+బిడ్డలు,	B-familal
+పెళ్లిళ్లయినాయి	B-marital_status
+}
+
+{\intent	d: గర్భసంచి తీసేసుకొని ఇప్పుడు 22 ఏళ్ళు	STATEMENT}
+{\slot
+గర్భసంచి	B-body_part
+తీసేసుకొని	B-treatment
+ఇప్పుడు	O
+22	B-time_period
+ఏళ్ళు	I-time_period
+}
+
+{\intent	d: అన్ని అలకడి కాన్పులేనా?	INFO_REQUEST}
+{\slot
+అన్ని	O
+అలకడి	B-normal
+కాన్పులేనా?	B-bodily_process
+}
+
+{\intent	p: ఆ అన్నీ అలకడి కాన్పులే	ANSWER}
+{\slot
+ఆ	B-positive
+అన్నీ	O
+అలకడి	B-normal
+కాన్పులే	B-bodily_process
+}
+
+{\intent	p: ఒక్కటి appendix అయింది.	STATEMENT}
+{\slot
+ఒక్కటి	O
+appendix	B-treatment
+అయింది.	O
+}
+
+{\intent	p: గర్భసంచి తీసేశారు. ఇంకా 2 tubes కూడా తీసేశారు.	STATEMENT}
+{\slot
+గర్భసంచి	B-body_part
+తీసేశారు.	B-treatment
+ఇంకా	O
+2	B-frequency
+tubes	B-body_part
+కూడా	O
+తీసేశారు.	B-treatment
+}
+
+{\intent	p: తీసేసిన ఎప్పుడు తిన్నా. టమాటా తిన్నా. chicken తిన్న. urine infection వస్తుంది.	STATEMENT}
+{\slot
+తీసేసిన	O
+ఎప్పుడు	O
+తిన్నా.	B-bodily_process
+టమాటా	B-food_substance
+తిన్నా.	B-bodily_process
+chicken	B-food_substance
+తిన్న.	B-bodily_process
+urine	B-medical_condition
+infection	I-medical_condition
+వస్తుంది.	O
+}
+
+{\intent	d: గర్భసంచి తీసి ఎన్ని సంవత్సరాలు?	INFO_REQUEST}
+{\slot
+గర్భసంచి	B-body_part
+తీసి	O
+ఎన్ని	O
+సంవత్సరాలు?	O
+}
+
+{\intent	p: నా బిడ్డ 26 అంటే 24 years ఇగ	ANSWER}
+{\slot
+నా	O
+బిడ్డ	B-familal
+26	B-age
+అంటే	O
+24	B-time_period
+years	I-time_period
+ఇగ	O
+}
+
+{\intent	d: బరువు చూస్కొ	ACTION_DIR}
+{\slot
+బరువు	B-bm
+చూస్కొ	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మూత్రంలో మంట వచ్చినప్పుడు కాళ్లు లేవస్తలేదు.	STATEMENT}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+వచ్చినప్పుడు	O
+కాళ్లు	B-body_part
+లేవస్తలేదు.	B-symptom
+}
+
+{\intent	d: తెలుపైతుందా?	INFO_REQUEST}
+{\slot
+తెలుపైతుందా?	B-symptom
+}
+
+{\intent	p: తెలుపు గిట్ల ఏం లేదు	ANSWER}
+{\slot
+తెలుపు	B-symptom
+గిట్ల	O
+ఏం	O
+లేదు	B-negative
+}
+

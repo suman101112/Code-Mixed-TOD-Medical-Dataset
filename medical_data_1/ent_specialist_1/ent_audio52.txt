@@ -1,0 +1,154 @@
+{\intent	d: పేరు చెప్పు	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Divya	ANSWER}
+{\slot
+Divya	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 18	ANSWER}
+{\slot
+18	B-age
+}
+
+{\intent	d: Divya, female, 18	ACK}
+{\slot
+Divya,	B-name
+female,	B-gender
+18	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చెవు బాగా నొస్తుంది.	ANSWER}
+{\slot
+చెవు	B-body_part
+బాగా	B-intensity
+నొస్తుంది.	B-symptom
+}
+
+{\intent	d: చెవు బాగా?	HOLD}
+{\slot
+చెవు	B-body_part
+బాగా?	B-intensity
+}
+
+{\intent	p: నొస్తుంది.	ANSWER}
+{\slot
+నొస్తుంది.	B-symptom
+}
+
+{\intent	p1: నొప్పి పెడుతుంది sir.	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+పెడుతుంది	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: వినబడుతుందా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా?	B-bodily_process
+}
+
+{\intent	p: um	ANSWER}
+{\slot
+um	O
+}
+
+{\intent	d: ముక్కు?	INFO_REQUEST}
+{\slot
+ముక్కు?	B-body_part
+}
+
+{\intent	p: uhum	ANSWER}
+{\slot
+uhum	O
+}
+
+{\intent	d: నోరు తెరువు	ACTION_DIR}
+{\slot
+నోరు	B-body_part
+తెరువు	O
+}
+
+{\intent	d: చెవులో కురుపైంది.	DIAGNOSIS}
+{\slot
+చెవులో	B-body_part
+కురుపైంది.	B-symptom
+}
+
+{\intent	p1: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: మందులు రాసి ఇస్తా వాడు.	ACTION_DIR}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా	O
+వాడు.	O
+}
+
+{\intent	d: ok?	INFO_REQUEST}
+{\slot
+ok?	O
+}
+
+{\intent	p1: clean గిట్ల అవసరమా ?	INFO_REQUEST}
+{\slot
+clean	B-treatment
+గిట్ల	O
+అవసరమా	O
+?	O
+}
+
+{\intent	d: ఏ cleanగా ఉంది. మైలు ఏం లేదు.	STATEMENT}
+{\slot
+ఏ	O
+cleanగా	B-normal
+ఉంది.	O
+మైలు	O
+ఏం	O
+లేదు.	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: cleanగా ఉంది.	STATEMENT}
+{\slot
+cleanగా	B-normal
+ఉంది.	O
+}
+
+{\intent	d: పుల్లలు గిట్ల పెట్టకు	ACTION_DIR}
+{\slot
+పుల్లలు	O
+గిట్ల	O
+పెట్టకు	O
+}
+

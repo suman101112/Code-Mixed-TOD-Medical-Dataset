@@ -1,0 +1,111 @@
+{\intent	p: doctor గారు కండ్ల కలకలు ఎందుకు వస్తాయి?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+కండ్ల	B-medical_condition
+కలకలు	I-medical_condition
+ఎందుకు	O
+వస్తాయి?	O
+}
+
+{\intent	p: ఇవి ఒకరి నుంచి మరొకరికి సంక్రమిస్తాయా?	INFO_REQUEST}
+{\slot
+ఇవి	O
+ఒకరి	O
+నుంచి	O
+మరొకరికి	O
+సంక్రమిస్తాయా?	O
+}
+
+{\intent	p: కండ్ల కలకలు వచ్చిన వారు ఎటువంటి జగ్రత్తలు తీసుకోవాలి?	INFO_REQUEST}
+{\slot
+కండ్ల	B-medical_condition
+కలకలు	I-medical_condition
+వచ్చిన	O
+వారు	O
+ఎటువంటి	O
+జగ్రత్తలు	O
+తీసుకోవాలి?	O
+}
+
+{\intent	d: కండ్ల కలకలు అనేవి కన్ను ఎర్ర పడిపోయి ఒక్కొకసారి discharge అంటే కళ్ళు బాగా బూసులు కట్టేసి అతుక్కుపోతుంటే పొద్దున్న లెగంగానే	MEDICAL_EXPLANATION}
+{\slot
+కండ్ల	B-medical_condition
+కలకలు	I-medical_condition
+అనేవి	O
+కన్ను	B-body_part
+ఎర్ర	B-color
+పడిపోయి	O
+ఒక్కొకసారి	O
+discharge	B-bodily_process
+అంటే	O
+కళ్ళు	B-body_part
+బాగా	B-intensity
+బూసులు	B-symptom
+కట్టేసి	O
+అతుక్కుపోతుంటే	B-symptom
+పొద్దున్న	B-time_period
+లెగంగానే	B-bodily_process
+}
+
+{\intent	d: దానితో పాటు నీళ్లు కారుతూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+దానితో	O
+పాటు	O
+నీళ్లు	B-food_substance
+కారుతూ	B-symptom
+ఉంటాయి.	O
+}
+
+{\intent	d: ఇవి బయటకు కనిపిస్తే మనకు అది వచ్చినప్పుడు లోపల చాలా నొప్పిగా మంటగా కూడా అనిపిస్తూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఇవి	O
+బయటకు	B-location
+కనిపిస్తే	B-bodily_process
+మనకు	O
+అది	O
+వచ్చినప్పుడు	O
+లోపల	O
+చాలా	B-intensity
+నొప్పిగా	B-symptom
+మంటగా	B-symptom
+కూడా	O
+అనిపిస్తూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: ఇది mainగా మనకు viral అవ్వొచ్చు లేదా bacterial infection వల్ల అవ్వొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+mainగా	O
+మనకు	O
+viral	B-symptom
+అవ్వొచ్చు	O
+లేదా	O
+bacterial	B-medical_condition
+infection	I-medical_condition
+వల్ల	O
+అవ్వొచ్చు.	O
+}
+
+{\intent	d: mainగా మనకు viral feversలో గానీ generalగా దగ్గు ఉన్నప్పుడు కూడా మనకి viral infection వల్ల కండ్ల కలకలు వస్తూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+mainగా	O
+మనకు	O
+viral	B-medical_condition
+feversలో	I-medical_condition
+గానీ	O
+generalగా	O
+దగ్గు	B-symptom
+ఉన్నప్పుడు	O
+కూడా	O
+మనకి	O
+viral	B-medical_condition
+infection	I-medical_condition
+వల్ల	O
+కండ్ల	B-medical_condition
+కలకలు	I-medical_condition
+వస్తూ	O
+ఉంటాయి.	O
+}
+

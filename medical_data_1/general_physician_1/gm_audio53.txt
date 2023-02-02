@@ -1,0 +1,221 @@
+{\intent	p: mummyకి thyroid ఉంది అన్నారు	STATEMENT}
+{\slot
+mummyకి	B-familal
+thyroid	B-medical_condition
+ఉంది	O
+అన్నారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 3 months అయితుంది చెప్పి	STATEMENT}
+{\slot
+3	B-time_period
+months	I-time_period
+అయితుంది	O
+చెప్పి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: kurnool లో చూయించుకుంది mummy	STATEMENT}
+{\slot
+kurnool	B-place
+లో	O
+చూయించుకుంది	O
+mummy	B-familal
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: kurnool లో చూయించుకున్న తరువాత అక్కడ 4 points ఎక్కువ ఉంది madam	STATEMENT}
+{\slot
+kurnool	B-place
+లో	O
+చూయించుకున్న	O
+తరువాత	O
+అక్కడ	O
+4	B-mtest_value
+points	I-mtest_value
+ఎక్కువ	B-intensity
+ఉంది	O
+madam	O
+}
+
+{\intent	d: 4 5 times	ACK}
+{\slot
+4	B-frequency
+5	B-frequency
+times	I-frequency
+}
+
+{\intent	p: Hello	SNU}
+{\slot
+Hello	O
+}
+
+{\intent	d: ya చెప్పండి.	ACTION_DIR}
+{\slot
+ya	O
+చెప్పండి.	O
+}
+
+{\intent	p: 4 points ఎక్కువ ఉందని చెప్పారు madam	REPEAT_REPHRASE}
+{\slot
+4	B-frequency
+points	I-frequency
+ఎక్కువ	B-intensity
+ఉందని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది tabletsతో తక్వయిపొతదా madam?	INFO_REQUEST}
+{\slot
+అది	O
+tabletsతో	B-medicine
+తక్వయిపొతదా	O
+madam?	O
+}
+
+{\intent	d: అంటే ఇప్పుడు thyroid TSH ఎంత ఉంది అండి?	INFO_REQUEST}
+{\slot
+అంటే	O
+ఇప్పుడు	O
+thyroid	B-body_part
+TSH	B-mtest
+ఎంత	O
+ఉంది	O
+అండి?	O
+}
+
+{\intent	d: అమ్మకు ఉంది hypothyroidism ఆ ? ? hyperthyroidism ఆ ?	INFO_REQUEST}
+{\slot
+అమ్మకు	B-familal
+ఉంది	O
+hypothyroidism	B-medical_condition
+ఆ	O
+?	O
+?	O
+hyperthyroidism	B-medical_condition
+ఆ	O
+?	O
+}
+
+{\intent	d: ఎంత వాడుతున్నారు? ఏంటి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వాడుతున్నారు?	O
+ఏంటి?	O
+}
+
+{\intent	p: తెలియదు madam ఆ విషయాలు అవి.	ANSWER}
+{\slot
+తెలియదు	O
+madam	O
+ఆ	O
+విషయాలు	O
+అవి.	O
+}
+
+{\intent	p: hyperthyroidism madam	ANSWER}
+{\slot
+hyperthyroidism	B-medical_condition
+madam	O
+}
+
+{\intent	d: hyperthyroidism ఆ?	INFO_REQUEST}
+{\slot
+hyperthyroidism	B-medical_condition
+ఆ?	O
+}
+
+{\intent	p: yes madam	ANSWER}
+{\slot
+yes	O
+madam	O
+}
+
+{\intent	d: ఏం వాడుతున్నారు మరి? tablets ఏం వాడుతున్నారు?	INFO_REQUEST}
+{\slot
+ఏం	O
+వాడుతున్నారు	O
+మరి?	O
+tablets	B-medicine
+ఏం	O
+వాడుతున్నారు?	O
+}
+
+{\intent	p: tablets అయితే మేము ఎం చూడాలేదు madam	ANSWER}
+{\slot
+tablets	B-medicine
+అయితే	O
+మేము	O
+ఎం	O
+చూడాలేదు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: fine fine	ACK}
+{\slot
+fine	O
+fine	O
+}
+
+{\intent	p: కానీ 4 points ఎక్కువ ఉంది madam	STATEMENT}
+{\slot
+కానీ	O
+4	B-mtest_value
+points	I-mtest_value
+ఎక్కువ	B-intensity
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok, ఇప్పుడు hyperthyroidism 4 points ఎక్కువ ఉంది అంటున్నారు.	ACK}
+{\slot
+ok,	O
+ఇప్పుడు	O
+hyperthyroidism	B-medical_condition
+4	B-mtest_value
+points	I-mtest_value
+ఎక్కువ	B-intensity
+ఉంది	O
+అంటున్నారు.	O
+}
+
+{\intent	d: so ఇప్పుడు అమ్మా ఏదైతే tablets continue చేస్తుందో అలాంటి tablets ఏ వాడమని చెప్పండి.	ACTION_DIR}
+{\slot
+so	O
+ఇప్పుడు	O
+అమ్మా	O
+ఏదైతే	O
+tablets	B-medicine
+continue	O
+చేస్తుందో	O
+అలాంటి	O
+tablets	B-medicine
+ఏ	O
+వాడమని	O
+చెప్పండి.	O
+}
+

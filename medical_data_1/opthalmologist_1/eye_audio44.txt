@@ -1,0 +1,114 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 6 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-person
+వయస్సు	O
+6	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: type 1 diabetes ఉంది.	STATEMENT}
+{\slot
+type	B-medical_condition
+1	I-medical_condition
+diabetes	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య వాడి 2 కళ్ళకు minus power వచ్చింది.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+వాడి	O
+2	B-frequency
+కళ్ళకు	B-body_part
+minus	B-symptom
+power	I-symptom
+వచ్చింది.	O
+}
+
+{\intent	p: diabetes వల్లనే ఇలా వచ్చింది అంటారా?	INFO_REQUEST}
+{\slot
+diabetes	B-medical_condition
+వల్లనే	O
+ఇలా	O
+వచ్చింది	O
+అంటారా?	O
+}
+
+{\intent	d: type 1 diabetes అంటే మనం చిన్న పిలల్లో 30 సంవత్సరాల కింద వయస్సు ఉన్న వారిలో వచ్చిన diabetesను మనం type 1 diabetes దాన్ని insulin dependent diabetes కూడా అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+type	B-medical_condition
+1	I-medical_condition
+diabetes	I-medical_condition
+అంటే	O
+మనం	O
+చిన్న	O
+పిలల్లో	B-person
+30	B-age
+సంవత్సరాల	I-age
+కింద	O
+వయస్సు	O
+ఉన్న	O
+వారిలో	O
+వచ్చిన	O
+diabetesను	B-medical_condition
+మనం	O
+type	B-medical_condition
+1	I-medical_condition
+diabetes	I-medical_condition
+దాన్ని	O
+insulin	B-medical_condition
+dependent	I-medical_condition
+diabetes	I-medical_condition
+కూడా	O
+అంటాము.	O
+}
+
+{\intent	d: so వీరిలో ముఖ్యంగా ఎప్పుడు కన్ను పరిక్ష అనేది లేకపోతే కన్ను లోపల కన్ను యొక్క నరము అది ఎలానైనా affect అయిందా? కన్నుకి ఏమైనా problem ఉందా అనేది చికిత్స చేయాల్సినది within 5 years after diagnosis of type 1 diabetes.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+వీరిలో	O
+ముఖ్యంగా	O
+ఎప్పుడు	O
+కన్ను	B-body_part
+పరిక్ష	B-mtest
+అనేది	O
+లేకపోతే	O
+కన్ను	B-body_part
+లోపల	B-location
+కన్ను	B-body_part
+యొక్క	O
+నరము	B-body_part
+అది	O
+ఎలానైనా	O
+affect	B-symptom
+అయిందా?	O
+కన్నుకి	B-body_part
+ఏమైనా	O
+problem	B-symptom
+ఉందా	O
+అనేది	O
+చికిత్స	B-treatment
+చేయాల్సినది	O
+within	O
+5	B-time_period
+years	I-time_period
+after	I-time_period
+diagnosis	B-mtest
+of	O
+type	B-medical_condition
+1	I-medical_condition
+diabetes.	I-medical_condition
+}
+
+{\intent	d: అది చాలా చాలా ముఖ్యం.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+చాలా	B-intensity
+చాలా	B-intensity
+ముఖ్యం.	O
+}
+

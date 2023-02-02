@@ -1,0 +1,162 @@
+{\intent	d: Nadeem, age 28	STATEMENT}
+{\slot
+Nadeem,	B-name
+age	O
+28	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: sir ये कान में कच्चा पड़ रहा sir. लाल लाल हो रहा.	ANSWER}
+{\slot
+sir	O
+ये	O
+कान	B-body_part
+में	O
+कच्चा	B-symptom
+पड़	O
+रहा	O
+sir.	O
+लाल	B-color
+लाल	I-color
+हो	O
+रहा.	O
+}
+
+{\intent	p: और ये यहाँ पे भी दर्द दे रहा	STATEMENT}
+{\slot
+और	O
+ये	O
+यहाँ	O
+पे	O
+भी	O
+दर्द	B-symptom
+दे	O
+रहा	O
+}
+
+{\intent	d: सर्दी है?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+है?	O
+}
+
+{\intent	p: हां सर्दी है.	ANSWER}
+{\slot
+हां	B-positive
+सर्दी	B-medical_condition
+है.	O
+}
+
+{\intent	d: आ बोलो	ACTION_DIR}
+{\slot
+आ	O
+बोलो	O
+}
+
+{\intent	d: गले मैं दर्द है?	INFO_REQUEST}
+{\slot
+गले	B-body_part
+मैं	B-location
+दर्द	B-symptom
+है?	O
+}
+
+{\intent	p: हां sir गले मैं दर्द है.	ANSWER}
+{\slot
+हां	B-positive
+sir	O
+गले	B-body_part
+मैं	B-location
+दर्द	B-symptom
+है.	O
+}
+
+{\intent	d: सर्दी की वजह से वैसा कान हो गया	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+की	O
+वजह	O
+से	O
+वैसा	O
+कान	B-body_part
+हो	O
+गया	O
+}
+
+{\intent	d: कान के अंदर पानी नहीं जाने देना	ACTION_DIR}
+{\slot
+कान	B-body_part
+के	O
+अंदर	B-location
+पानी	B-food_substance
+नहीं	B-negative
+जाने	O
+देना	O
+}
+
+{\intent	d: थोड़ा गरम पानी में नमक डाल के गराला	STATEMENT}
+{\slot
+थोड़ा	O
+गरम	O
+पानी	B-food_substance
+में	O
+नमक	B-food_substance
+डाल	O
+के	O
+गराला	B-bodily_process
+}
+
+{\intent	p: पानी भी नहीं sir.	INFO_REQUEST}
+{\slot
+पानी	B-food_substance
+भी	O
+नहीं	B-negative
+sir.	O
+}
+
+{\intent	d: पानी या कुछ भी नहीं डालना .	ANSWER}
+{\slot
+पानी	B-food_substance
+या	O
+कुछ	O
+भी	O
+नहीं	B-negative
+डालना	O
+.	O
+}
+
+{\intent	p: throat infection भी है	STATEMENT}
+{\slot
+throat	B-medical_condition
+infection	I-medical_condition
+भी	O
+है	O
+}
+
+{\intent	d: लिखरहा हूँ.	COMMIT}
+{\slot
+लिखरहा	O
+हूँ.	O
+}
+
+{\intent	d: ये कान का दर्द गोलियों से जाता	MEDICAL_EXPLANATION}
+{\slot
+ये	O
+कान	B-body_part
+का	O
+दर्द	B-symptom
+गोलियों	B-medicine
+से	O
+जाता	O
+}
+

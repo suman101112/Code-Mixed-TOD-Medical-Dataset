@@ -1,0 +1,42 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: ఎడమ కన్ను దురద పెడుతుంది.	ANSWER}
+{\slot
+ఎడమ	B-location
+కన్ను	B-body_part
+దురద	B-symptom
+పెడుతుంది.	I-symptom
+}
+
+{\intent	d: ఎన్ని రోజులు అవుతున్నాయి.	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అవుతున్నాయి.	O
+}
+
+{\intent	p: 3 months అయితుంది. తట్టుకున్నట్లు కనిపిస్తుంది.	ANSWER}
+{\slot
+3	B-time_period
+months	I-time_period
+అయితుంది.	O
+తట్టుకున్నట్లు	B-symptom
+కనిపిస్తుంది.	B-bodily_process
+}
+

@@ -1,0 +1,116 @@
+{\intent	p: ఇది gents కి సంబంధించింది కూడా చెప్పొచ్చా madam మీ దెగ్గరదా	STATEMENT}
+{\slot
+ఇది	O
+gents	B-gender
+కి	O
+సంబంధించింది	O
+కూడా	O
+చెప్పొచ్చా	O
+madam	O
+మీ	O
+దెగ్గరదా	O
+}
+
+{\intent	d: చెప్పండి sir	ACTION_DIR}
+{\slot
+చెప్పండి	B-positive
+sir	O
+}
+
+{\intent	p: అయితే madam 10 years అయితుంది madam పెళ్ళై	STATEMENT}
+{\slot
+అయితే	O
+madam	O
+10	B-time_period
+years	I-time_period
+అయితుంది	O
+madam	O
+పెళ్ళై	B-marital_status
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	p: మా mrsకు ఏం problem లేదండీ నాకే problem	STATEMENT}
+{\slot
+మా	O
+mrsకు	B-familal
+ఏం	O
+problem	O
+లేదండీ	B-negative
+నాకే	O
+problem	O
+}
+
+{\intent	d: hmm ఏం problem అని చెప్పారు sir?	INFO_REQUEST}
+{\slot
+hmm	O
+ఏం	O
+problem	O
+అని	O
+చెప్పారు	O
+sir?	O
+}
+
+{\intent	p: counting అనేది only 0 counting ఉందంట	ANSWER}
+{\slot
+counting	B-mtest
+అనేది	O
+only	O
+0	B-mtest_value
+counting	I-mtest_value
+ఉందంట	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎక్కడ పోయిన కూడా ఎక్కడ తీసుకున్న కూడా set అవుతలేదు	STATEMENT}
+{\slot
+ఎక్కడ	O
+పోయిన	O
+కూడా	O
+ఎక్కడ	O
+తీసుకున్న	O
+కూడా	O
+set	O
+అవుతలేదు	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: అది homeocareలో ఏమైనా treatment ఉందా?	INFO_REQUEST}
+{\slot
+అది	O
+homeocareలో	B-hospital_name
+ఏమైనా	O
+treatment	B-treatment
+ఉందా?	O
+}
+
+{\intent	d: ఆ రాండి sir reports తీసుకోని రండి చూద్దాం	ACTION_DIR}
+{\slot
+ఆ	O
+రాండి	O
+sir	O
+reports	B-mtest
+తీసుకోని	O
+రండి	O
+చూద్దాం	O
+}
+
+{\intent	d: try చేస్తాము	COMMIT}
+{\slot
+try	O
+చేస్తాము	O
+}
+

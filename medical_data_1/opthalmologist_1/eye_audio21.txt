@@ -1,0 +1,87 @@
+{\intent	p: doctor గారు కుడి కన్ను 2.25 power ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+కుడి	B-location
+కన్ను	B-body_part
+2.25	B-mtest_value
+power	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: ఎడమ కన్ను normalగానే ఉంది.	STATEMENT}
+{\slot
+ఎడమ	B-location
+కన్ను	B-body_part
+normalగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	p: doctor నాకు కంటి అద్దాలు ఇచ్చారు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+నాకు	O
+కంటి	B-body_part
+అద్దాలు	O
+ఇచ్చారు.	O
+}
+
+{\intent	p: comfortగా లేదని వాడడం లేదు.	STATEMENT}
+{\slot
+comfortగా	B-normal
+లేదని	B-negative
+వాడడం	O
+లేదు.	O
+}
+
+{\intent	d: ఆ generalగా మీకు ఒక కంట్లోనే ఎక్కువ power ఉందండి. ఇంకోటి normalగా ఉంది.	STATEMENT}
+{\slot
+ఆ	O
+generalగా	O
+మీకు	O
+ఒక	O
+కంట్లోనే	B-body_part
+ఎక్కువ	B-intensity
+power	B-symptom
+ఉందండి.	O
+ఇంకోటి	O
+normalగా	B-normal
+ఉంది.	O
+}
+
+{\intent	d: అలాంటప్పుడు మనం అద్దాలు పెట్టుకుంటే కూడా మీకు బాగా headache లాగా వస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+అలాంటప్పుడు	O
+మనం	O
+అద్దాలు	O
+పెట్టుకుంటే	O
+కూడా	O
+మీకు	O
+బాగా	B-intensity
+headache	B-symptom
+లాగా	O
+వస్తుంది.	O
+}
+
+{\intent	d: ఎందుకంటే మీకు రెండు కళ్ళలో more than -2 difference ఉంటే కనక మనకి కంటి పైన strain పడే అవకాశం ఉంటుందన్న మాట.	DIAGNOSIS}
+{\slot
+ఎందుకంటే	O
+మీకు	O
+రెండు	B-frequency
+కళ్ళలో	B-body_part
+more	B-symptom
+than	I-symptom
+-2	B-mtest_value
+difference	B-symptom
+ఉంటే	O
+కనక	O
+మనకి	O
+కంటి	B-body_part
+పైన	B-location
+strain	B-medical_condition
+పడే	O
+అవకాశం	O
+ఉంటుందన్న	O
+మాట.	O
+}
+

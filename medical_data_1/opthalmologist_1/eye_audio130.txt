@@ -1,0 +1,87 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: 2 నెలల కింద మొదటి కన్నుకి operation అయింది. ఇప్పుడు ఆ కంటి దగ్గర వాపు వచ్చింది. ఇంకా దురద ఉంది.	ANSWER}
+{\slot
+2	B-time_period
+నెలల	I-time_period
+కింద	O
+మొదటి	B-body_part
+కన్నుకి	B-treatment
+operation	O
+అయింది.	O
+ఇప్పుడు	O
+ఆ	B-body_part
+కంటి	B-location
+దగ్గర	B-symptom
+వాపు	O
+వచ్చింది.	O
+ఇంకా	B-symptom
+దురద	O
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years అయితుంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+అయితుంది?	O
+}
+
+{\intent	p: 2 years	ANSWER}
+{\slot
+2	B-time_period
+years	I-time_period
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years?	B-time_period
+}
+
+{\intent	p: 5 నుంచి 6 years అయితుంది.	ANSWER}
+{\slot
+5	B-time_period
+నుంచి	O
+6	B-time_period
+years	I-time_period
+అయితుంది.	O
+}
+

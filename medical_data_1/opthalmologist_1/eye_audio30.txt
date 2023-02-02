@@ -1,0 +1,85 @@
+{\intent	p: ఎక్కువగా face creams, cosmetics వాడడం వలన కంటికి ఏమైనా ఇబ్బంది వస్తుందా?	INFO_REQUEST}
+{\slot
+ఎక్కువగా	O
+face	O
+creams,	O
+cosmetics	O
+వాడడం	O
+వలన	O
+కంటికి	B-body_part
+ఏమైనా	O
+ఇబ్బంది	O
+వస్తుందా?	O
+}
+
+{\intent	d: usualగా face creams, cosmetics మీరు వాడినప్పుడు generalగా కాటుక పెట్టుకుంటూ ఉంటారు kajals.	STATEMENT}
+{\slot
+usualగా	O
+face	B-body_part
+creams,	O
+cosmetics	O
+మీరు	O
+వాడినప్పుడు	O
+generalగా	O
+కాటుక	O
+పెట్టుకుంటూ	O
+ఉంటారు	O
+kajals.	O
+}
+
+{\intent	d: ఇప్పుడు మనకు marketలో రాక రకాల kajals కాటుకలు available ఉన్నాయి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మనకు	O
+marketలో	O
+రాక	O
+రకాల	O
+kajals	O
+కాటుకలు	O
+available	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: so వీటిలో అన్నిటిలో chemicals ఉంటాయి అండి.	STATEMENT}
+{\slot
+so	O
+వీటిలో	O
+అన్నిటిలో	O
+chemicals	O
+ఉంటాయి	O
+అండి.	O
+}
+
+{\intent	d: so మీరు కంటికి పెటుకునేటప్పుడు  మీరు కొంచం జగ్రత్త తీసుకోవాలి	ACTION_DIR}
+{\slot
+so	O
+మీరు	O
+కంటికి	B-body_part
+పెటుకునేటప్పుడు	O
+మీరు	O
+కొంచం	O
+జగ్రత్త	O
+తీసుకోవాలి	O
+}
+
+{\intent	d: ఎందుకంటే ఇలాంటి chemicals వల్ల కొంతమందిలో ఎంత మంచి cosmetics అయినా ఒక్కోసారి ఆ chemicals వలన allergic reactions వస్తూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+ఇలాంటి	O
+chemicals	O
+వల్ల	O
+కొంతమందిలో	O
+ఎంత	O
+మంచి	O
+cosmetics	O
+అయినా	O
+ఒక్కోసారి	O
+ఆ	O
+chemicals	O
+వలన	O
+allergic	B-medical_condition
+reactions	I-medical_condition
+వస్తూ	O
+ఉంటాయి.	O
+}
+

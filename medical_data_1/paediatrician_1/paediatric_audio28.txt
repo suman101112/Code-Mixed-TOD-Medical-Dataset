@@ -1,0 +1,161 @@
+{\intent	d: పడుకోబెట్టండి	ACTION_DIR}
+{\slot
+పడుకోబెట్టండి	O
+}
+
+{\intent	d: ఏం పేరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు?	O
+}
+
+{\intent	p: Zaheer khaan	ANSWER}
+{\slot
+Zaheer	B-name
+khaan	I-name
+}
+
+{\intent	d: ఒకసారి ఎత్తుకో అమ్మా	ACTION_DIR}
+{\slot
+ఒకసారి	O
+ఎత్తుకో	O
+అమ్మా	O
+}
+
+{\intent	d: నువ్వు ఎత్తుకో first, ఏడుపు बंद పెట్టు	ACTION_DIR}
+{\slot
+నువ్వు	O
+ఎత్తుకో	O
+first,	O
+ఏడుపు	B-bodily_process
+बंद	O
+పెట్టు	O
+}
+
+{\intent	d: ఇప్పుడు ఏంటి problem?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p: జ్వరం, suddenగా వచ్చేసింది	ANSWER}
+{\slot
+జ్వరం,	B-symptom
+suddenగా	O
+వచ్చేసింది	O
+}
+
+{\intent	d: జ్వరం suddenగా ఏం లేదు, 1 hour చాలు viral infection	MEDICAL_EXPLANATION}
+{\slot
+జ్వరం	B-symptom
+suddenగా	O
+ఏం	O
+లేదు,	O
+1	B-time_period
+hour	I-time_period
+చాలు	O
+viral	B-medical_condition
+infection	I-medical_condition
+}
+
+{\intent	d: ఈ 101.1 ఉంది.	STATEMENT}
+{\slot
+ఈ	O
+101.1	B-mtest_value
+ఉంది.	O
+}
+
+{\intent	d: ఈనె schoolకైతే పోడు కదా?	INFO_REQUEST}
+{\slot
+ఈనె	O
+schoolకైతే	B-place
+పోడు	O
+కదా?	O
+}
+
+{\intent	p: ఆహా పోడు sir	ANSWER}
+{\slot
+ఆహా	O
+పోడు	O
+sir	O
+}
+
+{\intent	d: bottle పాలా?	INFO_REQUEST}
+{\slot
+bottle	O
+పాలా?	B-food_substance
+}
+
+{\intent	p1: ఆహా లేదు sir.	ANSWER}
+{\slot
+ఆహా	O
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: ఇంట్లో అన్నం, తల్లిపాలు, అంతే కదా	INFO_REQUEST}
+{\slot
+ఇంట్లో	O
+అన్నం,	B-food_substance
+తల్లిపాలు,	B-food_substance
+అంతే	O
+కదా	O
+}
+
+{\intent	p1: ఆ sir.	ANSWER}
+{\slot
+ఆ	O
+sir.	O
+}
+
+{\intent	d: ఇవాళ morning నుంచి ఏం మందులు వేసారమ్మా?	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+morning	B-time_period
+నుంచి	O
+ఏం	O
+మందులు	B-medicine
+వేసారమ్మా?	O
+}
+
+{\intent	p1: ఏం వేయలేదు sir.	ANSWER}
+{\slot
+ఏం	O
+వేయలేదు	B-negative
+sir.	O
+}
+
+{\intent	d: బాగా ఎక్కువ ఉంది కాబట్టి గుడ్డ పెట్టి తుడవాలి	MEDICAL_EXPLANATION}
+{\slot
+బాగా	B-intensity
+ఎక్కువ	B-intensity
+ఉంది	O
+కాబట్టి	O
+గుడ్డ	O
+పెట్టి	O
+తుడవాలి	O
+}
+
+{\intent	p1: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: దగ్గు ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+ఉందా?	O
+}
+
+{\intent	p1: ఆహ<neg> ఏం లేదు. ఒక జ్వరం ఏ	ANSWER}
+{\slot
+ఆహ<neg>	B-negative
+ఏం	O
+లేదు.	B-negative
+ఒక	O
+జ్వరం	B-symptom
+ఏ	O
+}
+

@@ -1,0 +1,416 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p1: Nusrat	ANSWER}
+{\slot
+Nusrat	B-name
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: आवाज़ नहीं आ रही.	STATEMENT}
+{\slot
+आवाज़	O
+नहीं	O
+आ	O
+रही.	O
+}
+
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p1: Nusrat.	ANSWER}
+{\slot
+Nusrat.	B-name
+}
+
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: 35	ANSWER}
+{\slot
+35	B-age
+}
+
+{\intent	p1: 35	ANSWER}
+{\slot
+35	B-age
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: आवाज़ नहीं आ रही.	ANSWER}
+{\slot
+आवाज़	B-bodily_process
+नहीं	B-negative
+आ	O
+रही.	O
+}
+
+{\intent	p1: आवाज़ नहीं आ रही.	ANSWER}
+{\slot
+आवाज़	B-bodily_process
+नहीं	B-negative
+आ	O
+रही.	O
+}
+
+{\intent	d: कब से?	INFO_REQUEST}
+{\slot
+कब	B-time_period
+से?	O
+}
+
+{\intent	p: एक 5 days है.	ANSWER}
+{\slot
+एक	O
+5	B-time_period
+days	I-time_period
+है.	O
+}
+
+{\intent	d: ఆ बोलो	ACTION_DIR}
+{\slot
+ఆ	O
+बोलो	O
+}
+
+{\intent	d: सीधा बैठो	ACTION_DIR}
+{\slot
+सीधा	O
+बैठो	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: ఈ बोलो	ACTION_DIR}
+{\slot
+ఈ	O
+बोलो	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: ఈ	ACTION_DIR}
+{\slot
+ఈ	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: आवाज़ करना ఈ बोल के	ACTION_DIR}
+{\slot
+आवाज़	B-bodily_process
+करना	O
+ఈ	O
+बोल	O
+के	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: मुँह से सांस लेलो।	ACTION_DIR}
+{\slot
+मुँह	B-body_part
+से	O
+सांस	B-bodily_process
+लेलो।	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: सांस लेलो मुँह से	ACTION_DIR}
+{\slot
+सांस	B-bodily_process
+लेलो	O
+मुँह	B-body_part
+से	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	p1: सांस लेलो मुँह से	ACTION_DIR}
+{\slot
+सांस	B-bodily_process
+लेलो	O
+मुँह	B-body_part
+से	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	d: सांस लेना	ACTION_DIR}
+{\slot
+सांस	B-bodily_process
+लेना	O
+}
+
+{\intent	p: 	UNINTERPRET}
+{\slot
+}
+
+{\intent	p1: बैठ गया गला .	STATEMENT}
+{\slot
+बैठ	B-symptom
+गया	I-symptom
+गला	B-body_part
+.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: अगर दवाइयों से कम नहीं हुआ तो operation करना पड़ता	STATEMENT}
+{\slot
+अगर	O
+दवाइयों	B-medicine
+से	O
+कम	O
+नहीं	O
+हुआ	O
+तो	O
+operation	B-treatment
+करना	O
+पड़ता	O
+}
+
+{\intent	p1: operation करना पड़ता sir.	INFO_REQUEST}
+{\slot
+operation	B-treatment
+करना	O
+पड़ता	O
+sir.	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: तुम्हारे को किधर देखा में?	INFO_REQUEST}
+{\slot
+तुम्हारे	O
+को	O
+किधर	O
+देखा	O
+में?	O
+}
+
+{\intent	p: ఆ यहीं चु है हम.	ANSWER}
+{\slot
+ఆ	O
+यहीं	O
+चु	O
+है	O
+हम.	O
+}
+
+{\intent	p1: ఆ यहीं चु हमारे बच्चे बुज़ुर्गा, हमारे बहन है , अम्मी है	STATEMENT}
+{\slot
+ఆ	O
+यहीं	O
+चु	O
+हमारे	O
+बच्चे	O
+बुज़ुर्गा,	O
+हमारे	O
+बहन	O
+है	O
+,	O
+अम्मी	O
+है	O
+}
+
+{\intent	p: परसो हीच थोड़ा थोड़ा हो रहा वो .	STATEMENT}
+{\slot
+परसो	B-time_period
+हीच	O
+थोड़ा	B-intensity
+थोड़ा	I-intensity
+हो	O
+रहा	O
+वो	O
+.	O
+}
+
+{\intent	d: थोड़ा दिन देखेंगे	STATEMENT}
+{\slot
+थोड़ा	B-intensity
+दिन	B-time_period
+देखेंगे	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: भाप लेलो मुँह से 5 दिन	ACTION_DIR}
+{\slot
+भाप	O
+लेलो	O
+मुँह	B-body_part
+से	O
+5	B-time_period
+दिन	I-time_period
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: उबालनेके पानी में ये दवा लिख देता हूं, डाल के .	ACTION_DIR}
+{\slot
+उबालनेके	O
+पानी	B-food_substance
+में	O
+ये	O
+दवा	B-medicine
+लिख	O
+देता	O
+हूं,	O
+डाल	O
+के	O
+.	O
+}
+
+{\intent	p1: अचानक कैसा हो गया यह	INFO_REQUEST}
+{\slot
+अचानक	O
+कैसा	O
+हो	O
+गया	O
+यह	O
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p1: अचानक कैसा हो गया यह	INFO_REQUEST}
+{\slot
+अचानक	O
+कैसा	O
+हो	O
+गया	O
+यह	O
+}
+
+{\intent	d: अचानक	ACK}
+{\slot
+अचानक	O
+}
+
+{\intent	p1: umm,	ACK}
+{\slot
+umm,	O
+}
+
+{\intent	d: ఆ सर्दी के वजह से होता .	DIAGNOSIS}
+{\slot
+ఆ	O
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+होता	O
+.	O
+}
+
+{\intent	d: थोड़ा दिन देखेंगे	STATEMENT}
+{\slot
+थोड़ा	O
+दिन	B-time_period
+देखेंगे	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: दवाइयों से कम नहीं हुआ तो operation करना पड़ता.	STATEMENT}
+{\slot
+दवाइयों	B-medicine
+से	O
+कम	O
+नहीं	O
+हुआ	O
+तो	O
+operation	B-treatment
+करना	O
+पड़ता.	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: समझे?	INFO_REQUEST}
+{\slot
+समझे?	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+

@@ -1,0 +1,84 @@
+{\intent	p: doctor గారు నాకు eye allergy ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నాకు	O
+eye	B-medical_condition
+allergy	I-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: కళ్ళను పదే పదే రుద్దుకుంటాను.	STATEMENT}
+{\slot
+కళ్ళను	B-body_part
+పదే	B-frequency
+పదే	I-frequency
+రుద్దుకుంటాను.	B-symptom
+}
+
+{\intent	p: ఇలా చేయడం వలన కంటికి ఏదైనా ఇబ్బంది ఉంటుందా?	INFO_REQUEST}
+{\slot
+ఇలా	O
+చేయడం	O
+వలన	O
+కంటికి	B-body_part
+ఏదైనా	O
+ఇబ్బంది	O
+ఉంటుందా?	O
+}
+
+{\intent	p: అసలు ఈ eye allergyకి కారణాలు ఏంటి?	INFO_REQUEST}
+{\slot
+అసలు	O
+ఈ	O
+eye	B-medical_condition
+allergyకి	I-medical_condition
+కారణాలు	O
+ఏంటి?	O
+}
+
+{\intent	d: ఇది eye allergy అనేది commonగా చిన్నప్పటి నుంచి start అవుతుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+eye	B-medical_condition
+allergy	I-medical_condition
+అనేది	O
+commonగా	O
+చిన్నప్పటి	O
+నుంచి	O
+start	O
+అవుతుంది	O
+అండి.	O
+}
+
+{\intent	d: చాలా మందికి first 10 yearsలో start అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+చాలా	O
+మందికి	O
+first	B-time_period
+10	I-time_period
+yearsలో	I-time_period
+start	O
+అవుతుంది.	O
+}
+
+{\intent	d: ఇంకొంత మందికి first 5 yearsలో start అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఇంకొంత	O
+మందికి	O
+first	O
+5	B-time_period
+yearsలో	I-time_period
+start	O
+అవుతుంది.	O
+}
+
+{\intent	d: దీని generalగా allergic conjunctivitis అంటాం.	STATEMENT}
+{\slot
+దీని	O
+generalగా	O
+allergic	B-medical_condition
+conjunctivitis	I-medical_condition
+అంటాం.	O
+}
+

@@ -1,0 +1,165 @@
+{\intent	p: doctor గారు నా వయస్సు 54 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+54	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత 6 సంవత్సరాల నుంచి నాకు diabetes ఉంది.	STATEMENT}
+{\slot
+గత	O
+6	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+నాకు	O
+diabetes	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య వస్తూవులను సరిగ్గా గుర్తుపట్టలేకపోతున్నాను.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+వస్తూవులను	O
+సరిగ్గా	O
+గుర్తుపట్టలేకపోతున్నాను.	B-symptom
+}
+
+{\intent	p: paper కూడా చదువలేక పోతున్నాడు.	STATEMENT}
+{\slot
+paper	O
+కూడా	O
+చదువలేక	B-symptom
+పోతున్నాడు.	I-symptom
+}
+
+{\intent	p: ఇది ఎలాంటి సమస్య అయి ఉండొచ్చు?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎలాంటి	O
+సమస్య	O
+అయి	O
+ఉండొచ్చు?	O
+}
+
+{\intent	p: diabetes ఉంటే కంటిపై ప్రభావం పడుతుందా?	INFO_REQUEST}
+{\slot
+diabetes	B-medical_condition
+ఉంటే	O
+కంటిపై	B-body_part
+ప్రభావం	O
+పడుతుందా?	O
+}
+
+{\intent	d: Indiaలో ఇప్పుడు major health problem అనేది మధుమేహం.	MEDICAL_EXPLANATION}
+{\slot
+Indiaలో	B-place
+ఇప్పుడు	O
+major	B-intensity
+health	B-medical_condition
+problem	I-medical_condition
+అనేది	O
+మధుమేహం.	B-medical_condition
+}
+
+{\intent	d: ఇప్పుడు అందరూ చెప్పుకునేది ఏంటి అంటే India is going to become a diabetic epidemic లాగా వచ్చేస్తుంది.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+అందరూ	O
+చెప్పుకునేది	O
+ఏంటి	O
+అంటే	O
+India	B-place
+is	O
+going	O
+to	O
+become	O
+a	O
+diabetic	B-medical_condition
+epidemic	I-medical_condition
+లాగా	O
+వచ్చేస్తుంది.	O
+}
+
+{\intent	d: it is become, particularly hyderabad is becoming a diabetic capital of India.	STATEMENT}
+{\slot
+it	O
+is	O
+become,	O
+particularly	O
+hyderabad	B-place
+is	O
+becoming	O
+a	O
+diabetic	B-medical_condition
+capital	O
+of	O
+India.	B-place
+}
+
+{\intent	d: So ఇక్కడ మనం ఏంటి అంటే ఈ diabetes మధుమేహం ద్వారా sugar వ్యాధి ఉన్న వాళ్ళందరికీ ముఖ్యంగా రెండు భాగాలు. కంటి కన్ను ఒక్కటి రెండోది kidney.	MEDICAL_EXPLANATION}
+{\slot
+So	O
+ఇక్కడ	O
+మనం	O
+ఏంటి	O
+అంటే	O
+ఈ	O
+diabetes	B-medical_condition
+మధుమేహం	B-medical_condition
+ద్వారా	O
+sugar	B-medical_condition
+వ్యాధి	I-medical_condition
+ఉన్న	O
+వాళ్ళందరికీ	O
+ముఖ్యంగా	O
+రెండు	O
+భాగాలు.	O
+కంటి	B-body_part
+కన్ను	B-body_part
+ఒక్కటి	O
+రెండోది	O
+kidney.	B-body_part
+}
+
+{\intent	d: ఈ రెండు భాగాలు మనకు శరిరంలో చాలా commonగా effect అయ్యేవి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+రెండు	O
+భాగాలు	O
+మనకు	O
+శరిరంలో	B-body_part
+చాలా	B-intensity
+commonగా	O
+effect	O
+అయ్యేవి.	O
+}
+
+{\intent	d: కంట్లో effect అయ్యేది ఏంటి అంటే diabetic retinopathy అంటే retina అనేది లోపటి పొర ఏదైతే ఉందో sugar వ్యాధి వల్ల దెబ్బతినే అవకాశాలు ఎక్కువగా ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+కంట్లో	B-body_part
+effect	O
+అయ్యేది	O
+ఏంటి	O
+అంటే	O
+diabetic	B-treatment
+retinopathy	I-treatment
+అంటే	O
+retina	B-body_part
+అనేది	O
+లోపటి	B-location
+పొర	B-body_part
+ఏదైతే	O
+ఉందో	O
+sugar	B-medical_condition
+వ్యాధి	I-medical_condition
+వల్ల	O
+దెబ్బతినే	B-symptom
+అవకాశాలు	O
+ఎక్కువగా	B-intensity
+ఉంటాయి.	O
+}
+

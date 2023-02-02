@@ -1,0 +1,154 @@
+{\intent	p: ఇదండి, మాది hair loss అండి.	STATEMENT}
+{\slot
+ఇదండి,	O
+మాది	O
+hair	B-symptom
+loss	I-symptom
+అండి.	O
+}
+
+{\intent	d: hair loss, ok fine.	ACK}
+{\slot
+hair	B-symptom
+loss,	I-symptom
+ok	O
+fine.	O
+}
+
+{\intent	d: ఎంత sir వయస్సు మీది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+sir	O
+వయస్సు	O
+మీది?	O
+}
+
+{\intent	d: 34 madam	ANSWER}
+{\slot
+34	B-age
+madam	O
+}
+
+{\intent	d: 34	ACK}
+{\slot
+34	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇది ఉందా మీ నాన్నగారికి మీ తాతగారికి ఎవరికైనా జుట్టు తొందరగా పోవడం అనేది ఉందా? బట్టతల ఉందా?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఉందా	O
+మీ	B-familial
+నాన్నగారికి	I-familial
+మీ	B-familial
+తాతగారికి	I-familial
+ఎవరికైనా	I-familial
+జుట్టు	B-symptom
+తొందరగా	I-symptom
+పోవడం	I-symptom
+అనేది	I-symptom
+ఉందా?	I-symptom
+బట్టతల	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: లేదు madam, ఏదో పూర్వం ఉండేటిదట అండి,	ANSWER}
+{\slot
+లేదు	B-negative
+madam,	O
+ఏదో	O
+పూర్వం	O
+ఉండేటిదట	O
+అండి,	O
+}
+
+{\intent	d: ummhmm	ACK}
+{\slot
+ummhmm	O
+}
+
+{\intent	p: మా నాన్నగారికి గానీ మా తాతగారికి గానీ ఎవరికి లేదండీ .	STATEMENT}
+{\slot
+మా	B-familial
+నాన్నగారికి	I-familial
+గానీ	O
+మా	B-familial
+తాతగారికి	I-familial
+గానీ	O
+ఎవరికి	B-negative
+లేదండీ	I-negative
+.	O
+}
+
+{\intent	d: ఎవరికి లేదు, genetically బట్టతల అనేది లేదు	ACK}
+{\slot
+ఎవరికి	B-negative
+లేదు,	I-negative
+genetically	B-symptom
+బట్టతల	I-symptom
+అనేది	I-symptom
+లేదు	B-negative
+}
+
+{\intent	p: ఆ లేదండీ .	ACK}
+{\slot
+ఆ	O
+లేదండీ	B-negative
+.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: దీన్ని androgenal teloframe అంటాము, generalగా అంటే, వంశపారంపర్యంగా వచ్చే hair loss.	MEDICAL_EXPLANATION}
+{\slot
+దీన్ని	O
+androgenal	B-symptom
+teloframe	I-symptom
+అంటాము,	O
+generalగా	O
+అంటే,	O
+వంశపారంపర్యంగా	B-symptom
+వచ్చే	I-symptom
+hair	I-symptom
+loss.	I-symptom
+}
+
+{\intent	d: so sir మీకు 34 yearsకే మీకు జుట్టు రాలిపోతుందంటే, main reason మీకు lifestyle problems ఉండొచ్చు, hormonal problems కావొచ్చు, stress కావొచ్చు, nutritional deficiency కావొచ్చు.	DIAGNOSIS}
+{\slot
+so	O
+sir	O
+మీకు	O
+34	B-age
+yearsకే	I-age
+మీకు	O
+జుట్టు	B-symptom
+రాలిపోతుందంటే,	I-symptom
+main	O
+reason	O
+మీకు	O
+lifestyle	B-symptom
+problems	I-symptom
+ఉండొచ్చు,	O
+hormonal	B-symptom
+problems	I-symptom
+కావొచ్చు,	O
+stress	B-symptom
+కావొచ్చు,	O
+nutritional	B-symptom
+deficiency	I-symptom
+కావొచ్చు.	O
+}
+

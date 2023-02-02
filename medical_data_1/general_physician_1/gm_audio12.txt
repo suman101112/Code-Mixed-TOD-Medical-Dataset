@@ -1,0 +1,120 @@
+{\intent	d: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: ఆ madam నమస్తే madam	GREETING}
+{\slot
+ఆ	O
+madam	O
+నమస్తే	O
+madam	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నాకు diabetes ఉంది madam 25 years	STATEMENT}
+{\slot
+నాకు	O
+diabetes	B-medical_condition
+ఉంది	O
+madam	O
+25	B-time_period
+years	I-time_period
+}
+
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: ఆ చెప్పండి sir వింటున్నాను	ACTION_DIR}
+{\slot
+ఆ	O
+చెప్పండి	O
+sir	O
+వింటున్నాను	O
+}
+
+{\intent	p: గత 25 yearsగా నాకు diabetes ఉంది madam	STATEMENT}
+{\slot
+గత	B-time_period
+25	B-time_period
+yearsగా	I-time_period
+నాకు	O
+diabetes	B-medical_condition
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: insulin వాడుతున్నాను	STATEMENT}
+{\slot
+insulin	B-medicine
+వాడుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే tablets కూడా వాడుతున్నాను	STATEMENT}
+{\slot
+అలాగే	O
+tablets	B-medicine
+కూడా	O
+వాడుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వాటితోపాటు ఈ homeo medicines తీసుకుంటే ఏమైనా conflict వస్తుందా madam?	INFO_REQUEST}
+{\slot
+వాటితోపాటు	O
+ఈ	O
+homeo	B-medicine
+medicines	I-medicine
+తీసుకుంటే	O
+ఏమైనా	O
+conflict	O
+వస్తుందా	O
+madam?	O
+}
+
+{\intent	d: లేదండీ	ANSWER}
+{\slot
+లేదండీ	B-negative
+}
+
+{\intent	d: ఏ problemకి తీసుకుందాం అనుకుంటున్నారు మీరు?	INFO_REQUEST}
+{\slot
+ఏ	O
+problemకి	O
+తీసుకుందాం	O
+అనుకుంటున్నారు	O
+మీరు?	O
+}
+
+{\intent	p: diabetesకే madam	ANSWER}
+{\slot
+diabetesకే	B-medical_condition
+madam	O
+}
+

@@ -1,0 +1,191 @@
+{\intent	p: sir	SU}
+{\slot
+sir	O
+}
+
+{\intent	d: చెప్పండి sir	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: sir మాకు ఎక్కువ పొట్టొచ్చి sideకు బొడ్డు పక్క నుంచి నొప్పి వస్తుంది sir	STATEMENT}
+{\slot
+sir	O
+మాకు	O
+ఎక్కువ	B-intensity
+పొట్టొచ్చి	B-body_part
+sideకు	B-location
+బొడ్డు	B-body_part
+పక్క	B-location
+నుంచి	O
+నొప్పి	B-symptom
+వస్తుంది	I-symptom
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: అదే ఎక్కువ అన్నం తిన్న, కడుపులో గొంతులో ఉన్నట్లు ఉంటుంది	STATEMENT}
+{\slot
+అదే	O
+ఎక్కువ	B-intensity
+అన్నం	B-food_substance
+తిన్న,	B-bodily_process
+కడుపులో	B-body_part
+గొంతులో	B-body_part
+ఉన్నట్లు	O
+ఉంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: ఇంకా Mastaanగారు	INFO_REQUEST}
+{\slot
+ఇంకా	O
+Mastaanగారు	B-name
+}
+
+{\intent	p: అదే నాకు కడుపు 24 గంటలు నొప్పి వచ్చింది sir అప్పటినుంచి కొంచం నోప్పిగా ఉంటది	ANSWER}
+{\slot
+అదే	O
+నాకు	O
+కడుపు	B-body_part
+24	B-time_period
+గంటలు	I-time_period
+నొప్పి	B-symptom
+వచ్చింది	O
+sir	O
+అప్పటినుంచి	B-time_period
+కొంచం	O
+నోప్పిగా	B-symptom
+ఉంటది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎప్పటినుంచి sir ఈ నొప్పి ఉంది Mastaanగారు మీకు?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+sir	O
+ఈ	O
+నొప్పి	B-symptom
+ఉంది	O
+Mastaanగారు	B-name
+మీకు?	O
+}
+
+{\intent	p: మాకు సంవత్సరం నుంచి ఉంది	ANSWER}
+{\slot
+మాకు	O
+సంవత్సరం	B-time_period
+నుంచి	O
+ఉంది	O
+}
+
+{\intent	d: సంవత్సరం నుంచి	ACK}
+{\slot
+సంవత్సరం	B-time_period
+నుంచి	O
+}
+
+{\intent	d: ఎలా వచ్చింది ఏమన్నా idea ఉందా మీకు?	INFO_REQUEST}
+{\slot
+ఎలా	O
+వచ్చింది	O
+ఏమన్నా	O
+idea	O
+ఉందా	O
+మీకు?	O
+}
+
+{\intent	p: అదే నాకు కడుపు 24 గంటలు నొప్పి వచ్చింది	ANSWER}
+{\slot
+అదే	O
+నాకు	O
+కడుపు	B-body_part
+24	B-time_period
+గంటలు	B-time_period
+నొప్పి	B-symptom
+వచ్చింది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంతా ముందు సన్నగా ఉన్న తర్వాత ఆడ నుంచి పొట్ట ఎక్కువగా వచ్చి	STATEMENT}
+{\slot
+అంతా	O
+ముందు	O
+సన్నగా	O
+ఉన్న	O
+తర్వాత	B-time_period
+ఆడ	O
+నుంచి	O
+పొట్ట	B-body_part
+ఎక్కువగా	B-intensity
+వచ్చి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అరుగుదల కావట్లే సరిగ్గా	STATEMENT}
+{\slot
+అరుగుదల	B-bodily_process
+కావట్లే	B-negative
+సరిగ్గా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అవును sir	ACK}
+{\slot
+అవును	O
+sir	O
+}
+
+{\intent	d: ok Mastaan గారు మీకు ఉన్న simple సమస్య అండి, faty liver అన్నమాట మనకు చెప్పాలంటే.	DIAGNOSIS}
+{\slot
+ok	O
+Mastaan	B-name
+గారు	O
+మీకు	O
+ఉన్న	O
+simple	O
+సమస్య	O
+అండి,	O
+faty	B-medical_condition
+liver	I-medical_condition
+అన్నమాట	O
+మనకు	O
+చెప్పాలంటే.	O
+}
+

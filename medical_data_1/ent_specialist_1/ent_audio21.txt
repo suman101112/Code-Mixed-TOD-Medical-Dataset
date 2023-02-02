@@ -1,0 +1,159 @@
+{\intent	d: పేరు, పేరు చెప్పు	INFO_REQUEST}
+{\slot
+పేరు,	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Sri Priya	ANSWER}
+{\slot
+Sri	B-name
+Priya	I-name
+}
+
+{\intent	d: ఆ	INFO_REQUEST}
+{\slot
+ఆ	O
+}
+
+{\intent	p: Sri Priya	REPEAT_REPHRASE}
+{\slot
+Sri	B-name
+Priya	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 11	ANSWER}
+{\slot
+11	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏం అయితుంది?	INFO_REQUEST}
+{\slot
+ఏం	O
+అయితుంది?	O
+}
+
+{\intent	p1: ఊరికే జలుబు చేస్తున్నట్లు అయి nose తోనే voice వస్తుంది.	ANSWER}
+{\slot
+ఊరికే	O
+జలుబు	B-medical_condition
+చేస్తున్నట్లు	O
+అయి	O
+nose	B-body_part
+తోనే	O
+voice	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	d: నువ్వు చెప్పమ్మా, నువ్వు చెప్పు ఏమైతుంది.	ACTION_DIR}
+{\slot
+నువ్వు	O
+చెప్పమ్మా,	O
+నువ్వు	O
+చెప్పు	O
+ఏమైతుంది.	O
+}
+
+{\intent	d: జలుబు చేస్తది.	ACK}
+{\slot
+జలుబు	B-medical_condition
+చేస్తది.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	p: మట్లాడడం కూడా normalగా ఇంకా జలుబు లేనప్పుడు కూడా	STATEMENT}
+{\slot
+మట్లాడడం	B-bodily_process
+కూడా	O
+normalగా	B-normal
+ఇంకా	O
+జలుబు	B-medical_condition
+లేనప్పుడు	B-negative
+కూడా	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మట్లాడితే noseతో మట్లాడినట్లె వినిపిస్తా ఉంటది	STATEMENT}
+{\slot
+మట్లాడితే	B-bodily_process
+noseతో	B-body_part
+మట్లాడినట్లె	B-bodily_process
+వినిపిస్తా	O
+ఉంటది	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: తుమ్ములు బాగా వస్తాయా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+బాగా	O
+వస్తాయా?	O
+}
+
+{\intent	p1: ఆ ఈ మధ్య 2 days అయితుంది. ఇదివరకు లేదు.	STATEMENT}
+{\slot
+ఆ	O
+ఈ	O
+మధ్య	O
+2	B-time_period
+days	I-time_period
+అయితుంది.	O
+ఇదివరకు	O
+లేదు.	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: గొంతు నొప్పి గిట్ల ఏమైనా అంటదా ఈమె?	INFO_REQUEST}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+గిట్ల	O
+ఏమైనా	O
+అంటదా	O
+ఈమె?	O
+}
+
+{\intent	d1: గొంతు నొప్పి గిట్ల వస్తాదా అని.	REPEAT_REPHRASE}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+గిట్ల	O
+వస్తాదా	O
+అని.	O
+}
+
+{\intent	p1: ఏం ఉండదు.	ANSWER}
+{\slot
+ఏం	O
+ఉండదు.	B-negative
+}
+

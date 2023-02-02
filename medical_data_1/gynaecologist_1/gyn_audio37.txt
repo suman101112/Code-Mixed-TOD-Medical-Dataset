@@ -1,0 +1,467 @@
+{\intent	d: ya tell me maa what's your problem?	INFO_REQUEST}
+{\slot
+ya	O
+tell	O
+me	O
+maa	O
+what's	O
+your	O
+problem?	O
+}
+
+{\intent	d: your name	INFO_REQUEST}
+{\slot
+your	O
+name	O
+}
+
+{\intent	p: Ritu	ANSWER}
+{\slot
+Ritu	B-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: ఆహా i never mind, 23, 24, it does not make a difference.	STATEMENT}
+{\slot
+ఆహా	O
+i	O
+never	O
+mind,	O
+23,	B-age
+24,	B-age
+it	O
+does	O
+not	O
+make	O
+a	O
+difference.	O
+}
+
+{\intent	d: tell me maa, what's your problem	INFO_REQUEST}
+{\slot
+tell	O
+me	O
+maa,	O
+what's	O
+your	O
+problem	O
+}
+
+{\intent	p: actual में मुझे नीचे pus, i donot know if that's pus or not, ऐसे लग रहा है कि नीचे pus जमा हो रहा है.	ANSWER}
+{\slot
+actual	O
+में	O
+मुझे	O
+नीचे	B-location
+pus,	B-symptom
+i	O
+donot	O
+know	O
+if	O
+that's	O
+pus	B-symptom
+or	O
+not,	O
+ऐसे	O
+लग	O
+रहा	O
+है	O
+कि	O
+नीचे	B-location
+pus	B-symptom
+जमा	I-symptom
+हो	O
+रहा	O
+है.	O
+}
+
+{\intent	d: थोड़ा swelling है आप को वहां पर?	INFO_REQUEST}
+{\slot
+थोड़ा	B-intensity
+swelling	B-symptom
+है	O
+आप	O
+को	O
+वहां	O
+पर?	O
+}
+
+{\intent	p: नहीं swelling नहीं है	ANSWER}
+{\slot
+नहीं	B-negative
+swelling	B-symptom
+नहीं	B-negative
+है	O
+}
+
+{\intent	d: pain है?	INFO_REQUEST}
+{\slot
+pain	B-symptom
+है?	O
+}
+
+{\intent	p: pain इतना दिन से नहीं था मतलब है. यह हो के मुझे 1 week हो जायेगा. but आज थोड़ा यहाँ	ANSWER}
+{\slot
+pain	B-symptom
+इतना	O
+दिन	B-time_period
+से	O
+नहीं	B-negative
+था	O
+मतलब	O
+है.	O
+यह	O
+हो	O
+के	O
+मुझे	O
+1	B-time_period
+week	I-time_period
+हो	O
+जायेगा.	O
+but	O
+आज	B-time_period
+थोड़ा	B-intensity
+यहाँ	O
+}
+
+{\intent	d: white discharge जैसे हो रहा है.	INFO_REQUEST}
+{\slot
+white	B-bodily_process
+discharge	I-bodily_process
+जैसे	O
+हो	O
+रहा	O
+है.	O
+}
+
+{\intent	p: बहुत होता है	ANSWER}
+{\slot
+बहुत	B-intensity
+होता	O
+है	O
+}
+
+{\intent	d: white discharge के सात सात वो अलग है ये pus अलग है?	INFO_REQUEST}
+{\slot
+white	B-bodily_process
+discharge	I-bodily_process
+के	O
+सात	O
+सात	O
+वो	O
+अलग	O
+है	O
+ये	O
+pus	B-symptom
+अलग	O
+है?	O
+}
+
+{\intent	p: हां सही	ANSWER}
+{\slot
+हां	O
+सही	B-positive
+}
+
+{\intent	d: इतने दिनों से itching है वहां पर आपको.	INFO_REQUEST}
+{\slot
+इतने	B-time_period
+दिनों	I-time_period
+से	O
+itching	B-symptom
+है	O
+वहां	O
+पर	O
+आपको.	O
+}
+
+{\intent	p: itching रहता है	ANSWER}
+{\slot
+itching	B-symptom
+रहता	O
+है	O
+}
+
+{\intent	d: रहता है आपको.	ACK}
+{\slot
+रहता	O
+है	O
+आपको.	O
+}
+
+{\intent	d: ok, कब से?	INFO_REQUEST}
+{\slot
+ok,	O
+कब	B-time_period
+से?	O
+}
+
+{\intent	p: ये 1 week से हो रहा है मुझे	ANSWER}
+{\slot
+ये	O
+1	B-time_period
+week	I-time_period
+से	O
+हो	O
+रहा	O
+है	O
+मुझे	O
+}
+
+{\intent	d: 1 week से you are feeling some discharge.	ACK}
+{\slot
+1	B-time_period
+week	I-time_period
+से	O
+you	O
+are	O
+feeling	O
+some	O
+discharge.	O
+}
+
+{\intent	d: abnormal discharge	CORRECT}
+{\slot
+abnormal	B-symptom
+discharge	B-bodily_process
+}
+
+{\intent	p: discharge is all time	STATEMENT}
+{\slot
+discharge	B-bodily_process
+is	O
+all	B-time_period
+time	I-time_period
+}
+
+{\intent	p: मुझे ये discharge नया नहीं है , white discharge मुझे बहुत साल से है .	STATEMENT}
+{\slot
+मुझे	O
+ये	O
+discharge	B-bodily_process
+नया	O
+नहीं	O
+है	O
+,	O
+white	B-bodily_process
+discharge	I-bodily_process
+मुझे	O
+बहुत	B-intensity
+साल	B-time_period
+से	O
+है	O
+.	O
+}
+
+{\intent	d: नहीं नहीं other discharge pus what you are talking about	INFO_REQUEST}
+{\slot
+नहीं	B-negative
+नहीं	B-negative
+other	O
+discharge	B-bodily_process
+pus	B-symptom
+what	O
+you	O
+are	O
+talking	O
+about	O
+}
+
+{\intent	p: नहीं.	ANSWER}
+{\slot
+नहीं.	B-negative
+}
+
+{\intent	p: pus जमा हो रहा है, निकल नहीं रहा है .	STATEMENT}
+{\slot
+pus	B-symptom
+जमा	B-symptom
+हो	O
+रहा	O
+है,	O
+निकल	B-bodily_process
+नहीं	B-negative
+रहा	O
+है	O
+.	O
+}
+
+{\intent	d: देखेंगे	ACTION_DIR}
+{\slot
+देखेंगे	O
+}
+
+{\intent	d: you are not married right?	INFO_REQUEST}
+{\slot
+you	O
+are	O
+not	B-negative
+married	B-marital_status
+right?	O
+}
+
+{\intent	p: no.	ANSWER}
+{\slot
+no.	B-negative
+}
+
+{\intent	d: sugar तो नहीं है ना आपको.	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+तो	O
+नहीं	B-negative
+है	O
+ना	O
+आपको.	O
+}
+
+{\intent	p: no	ANSWER}
+{\slot
+no	B-negative
+}
+
+{\intent	d: are you staying in hostel or?	INFO_REQUEST}
+{\slot
+are	O
+you	O
+staying	O
+in	O
+hostel	B-place
+or?	O
+}
+
+{\intent	p: home	ANSWER}
+{\slot
+home	B-place
+}
+
+{\intent	d: at home	ACK}
+{\slot
+at	O
+home	B-place
+}
+
+{\intent	d: you are working?	INFO_REQUEST}
+{\slot
+you	O
+are	O
+working?	B-profession
+}
+
+{\intent	p: yeah, iam working	ANSWER}
+{\slot
+yeah,	B-positive
+iam	O
+working	B-profession
+}
+
+{\intent	d: where do you work?	INFO_REQUEST}
+{\slot
+where	O
+do	O
+you	O
+work?	B-profession
+}
+
+{\intent	p: from home.	ANSWER}
+{\slot
+from	O
+home.	B-place
+}
+
+{\intent	d: from home.	ACK}
+{\slot
+from	O
+home.	B-place
+}
+
+{\intent	d: no the thing is people who use public toilets and all that right so they have more chances of infection there	MEDICAL_EXPLANATION}
+{\slot
+no	O
+the	O
+thing	O
+is	O
+people	O
+who	O
+use	O
+public	O
+toilets	O
+and	O
+all	O
+that	O
+right	O
+so	O
+they	O
+have	O
+more	O
+chances	O
+of	O
+infection	B-medical_condition
+there	B-place
+}
+
+{\intent	d: that's the reason I wanted to know whether you are working or work from home	STATEMENT}
+{\slot
+that's	O
+the	O
+reason	O
+I	O
+wanted	O
+to	O
+know	O
+whether	O
+you	O
+are	O
+working	B-profession
+or	O
+work	B-profession
+from	O
+home	B-place
+}
+
+{\intent	d: mostly at home	INFO_REQUEST}
+{\slot
+mostly	O
+at	O
+home	B-place
+}
+
+{\intent	p: आ	ANSWER}
+{\slot
+आ	O
+}
+
+{\intent	p: but use तो करते है	STATEMENT}
+{\slot
+but	O
+use	O
+तो	O
+करते	O
+है	O
+}
+
+{\intent	p1: rare	STATEMENT}
+{\slot
+rare	O
+}
+
+{\intent	d: बहुत rare	ACK}
+{\slot
+बहुत	O
+rare	O
+}
+
+{\intent	d: देखेंगे.	ACTION_DIR}
+{\slot
+देखेंगे.	O
+}
+

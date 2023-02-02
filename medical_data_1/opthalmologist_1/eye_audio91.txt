@@ -1,0 +1,153 @@
+{\intent	p: doctor గారు నా పేరు Buvaneshwari	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Buvaneshwari	B-name
+}
+
+{\intent	p: వయస్సు 19 సంవత్సరాలు.	STATEMENT}
+{\slot
+వయస్సు	O
+19	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా కుడి కన్నుకు -1.5 అలాగే ఎడమ కన్నుకు -2 sight ఉంది.	STATEMENT}
+{\slot
+నా	O
+కుడి	B-location
+కన్నుకు	B-body_part
+-1.5	B-mtest_value
+అలాగే	O
+ఎడమ	B-location
+కన్నుకు	B-body_part
+-2	B-mtest_value
+sight	B-bodily_process
+ఉంది.	O
+}
+
+{\intent	p: ప్రస్తుతం spects వాడుతున్నాను.	STATEMENT}
+{\slot
+ప్రస్తుతం	O
+spects	O
+వాడుతున్నాను.	O
+}
+
+{\intent	p: ఈ spects వాడకుండా కంటి చూపు మరుగు పరచుకోవచ్చా?	INFO_REQUEST}
+{\slot
+ఈ	O
+spects	O
+వాడకుండా	O
+కంటి	B-body_part
+చూపు	B-bodily_process
+మరుగు	B-normal
+పరచుకోవచ్చా?	I-normal
+}
+
+{\intent	d: Buvaneshwari గారు మీకు -1.5 కుడి కన్నులో అన్నారు, -2 ఎడమ కంటిలో అన్నారండి.	ACK}
+{\slot
+Buvaneshwari	B-name
+గారు	O
+మీకు	O
+-1.5	B-mtest_value
+కుడి	B-location
+కన్నులో	B-body_part
+అన్నారు,	O
+-2	B-mtest_value
+ఎడమ	B-location
+కంటిలో	B-body_part
+అన్నారండి.	O
+}
+
+{\intent	d: కానీ మీ వయస్సు 19 years ఏ.	ACK}
+{\slot
+కానీ	O
+మీ	O
+వయస్సు	O
+19	B-age
+years	B-age
+ఏ.	O
+}
+
+{\intent	d: so ఇంకా మీరు eligible కాదు అండి మీరు lasik కానీ ఏదైనా చేసుకొని అద్దాలు permanentగా తీసేసుకోవడానికి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇంకా	O
+మీరు	O
+eligible	O
+కాదు	O
+అండి	O
+మీరు	O
+lasik	B-treatment
+కానీ	O
+ఏదైనా	O
+చేసుకొని	O
+అద్దాలు	O
+permanentగా	O
+తీసేసుకోవడానికి.	O
+}
+
+{\intent	d: so మీరు ఒక్క 2 3 సంవత్సరాలు wait చేసి మీ power stableగా ఉంది అంటే గనక ఒక 6 నెలల వరకు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీరు	O
+ఒక్క	O
+2	B-time_period
+3	B-time_period
+సంవత్సరాలు	I-time_period
+wait	O
+చేసి	O
+మీ	B-symptom
+power	B-normal
+stableగా	O
+ఉంది	O
+అంటే	O
+గనక	O
+ఒక	B-time_period
+6	B-time_period
+నెలల	O
+}
+
+{\intent	d: అంటే మీకు ఒక 21 సంవత్సరంకాని 22 సంవత్సరాలు దాటినాక ఆ age group దాటినాక ఒక 6 months వరకు మీకు stableగా ఉంది power అంటే అప్పుడు మీరు ఒక కంటి doctor దెగ్గరికి వెళ్ళి checkup చేయించుకోని మీరు చెప్పొచ్చు ఇలా నాకు అద్దాలు వద్దనుకుంటున్నాను అని.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+మీకు	O
+ఒక	O
+21	B-time_period
+సంవత్సరంకాని	I-time_period
+22	B-time_period
+సంవత్సరాలు	I-time_period
+దాటినాక	O
+ఆ	O
+age	O
+group	O
+దాటినాక	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+వరకు	O
+మీకు	O
+stableగా	B-normal
+ఉంది	O
+power	B-symptom
+అంటే	O
+అప్పుడు	O
+మీరు	O
+ఒక	O
+కంటి	B-medical_professional
+doctor	I-health_professional
+దెగ్గరికి	O
+వెళ్ళి	O
+checkup	O
+చేయించుకోని	O
+మీరు	O
+చెప్పొచ్చు	O
+ఇలా	O
+నాకు	O
+అద్దాలు	O
+వద్దనుకుంటున్నాను	O
+అని.	O
+}
+

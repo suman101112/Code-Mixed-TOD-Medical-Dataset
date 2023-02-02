@@ -1,0 +1,204 @@
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	B-location
+}
+
+{\intent	d: చెప్పండమ్మా.	CONV_OPEN}
+{\slot
+చెప్పండమ్మా.	O
+}
+
+{\intent	p: sir మాకు 2 years అయింది sir diabetic వచ్చి.	STATEMENT}
+{\slot
+sir	O
+మాకు	O
+2	B-time_period
+years	I-time_period
+అయింది	O
+sir	O
+diabetic	B-medical_condition
+వచ్చి.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	p: కానీ మేము ఇప్పుడు present localలో treatment తీసుకుంటున్నాము.	STATEMENT}
+{\slot
+కానీ	O
+మేము	O
+ఇప్పుడు	O
+present	B-time_period
+localలో	B-place
+treatment	B-treatment
+తీసుకుంటున్నాము.	O
+}
+
+{\intent	d: ok నండీ.	ACK}
+{\slot
+ok	O
+నండీ.	O
+}
+
+{\intent	p: మేము glycomet వాడుతున్నాము sir.	STATEMENT}
+{\slot
+మేము	O
+glycomet	B-medicine
+వాడుతున్నాము	O
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు urineలో sugar ఉంది అని చెప్పారు.	STATEMENT}
+{\slot
+నాకు	O
+urineలో	B-body_substance
+sugar	B-medical_condition
+ఉంది	O
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: కానీ నేను guntur hyderabad వెళ్ళాలి అనుకుంటున్నాను.	STATEMENT}
+{\slot
+కానీ	O
+నేను	O
+guntur	B-place
+hyderabad	B-place
+వెళ్ళాలి	O
+అనుకుంటున్నాను.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 500 ml వాడుతున్నా. తగ్గట్లేదు, అని చెప్పేసి 1000ml అంటే 1ml	STATEMENT}
+{\slot
+500	B-medicine_dose
+ml	I-medicine_dose
+వాడుతున్నా.	O
+తగ్గట్లేదు,	B-symptom
+అని	O
+చెప్పేసి	O
+1000ml	B-medicine_dose
+అంటే	O
+1ml	B-medicine_dose
+}
+
+{\intent	d: 1000mg ఇచ్చారా అండి? 500mg వాడుతున్నారు control కాకుంటే.	ACK}
+{\slot
+1000mg	B-medicine_dose
+ఇచ్చారా	O
+అండి?	O
+500mg	B-medicine_dose
+వాడుతున్నారు	O
+control	B-normal
+కాకుంటే.	B-negative
+}
+
+{\intent	p: కానీ అది వాడిన కూడా control కావాట్లేదు.	STATEMENT}
+{\slot
+కానీ	O
+అది	O
+వాడిన	O
+కూడా	O
+control	B-normal
+కావాట్లేదు.	B-negative
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: అదే నండీ ఎందుకంటే మీరు	HOLD}
+{\slot
+అదే	O
+నండీ	O
+ఎందుకంటే	O
+మీరు	O
+}
+
+{\intent	p: కొంచం మీ సలహాలు ఏంటో చెప్పండి sir.	INFO_REQUEST}
+{\slot
+కొంచం	O
+మీ	O
+సలహాలు	O
+ఏంటో	O
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	d: మీరు medicines వాడుతున్నా మీ sugar levels కొంచం control అవ్వట్లేదు అండి. 500mg నుంచి 1000mg medicine start చేసారు glycomet	ACK}
+{\slot
+మీరు	O
+medicines	B-medicine
+వాడుతున్నా	O
+మీ	O
+sugar	B-medical_condition
+levels	B-mtest_value
+కొంచం	O
+control	B-normal
+అవ్వట్లేదు	I-negative
+అండి.	O
+500mg	B-medicine_dose
+నుంచి	O
+1000mg	B-medicine_dose
+medicine	B-medicine
+start	O
+చేసారు	O
+glycomet	B-medicine
+}
+
+{\intent	d: వాటివల్ల మీకు medicines పెంచుకోవడమే తప్ప sugar levels control అవ్వట్లేదు. ఎందుకంటే మీ internalగా resistance power అనేది తగ్గుతుంది. మీ immate power అనేది తగ్గుతుంది. దాని మూలంగా మళ్ళి మీ sugar levels కూడా పెరిగిపొతాయి అండి. complications కూడా పెరిగిపొతాయి	MEDICAL_EXPLANATION}
+{\slot
+వాటివల్ల	O
+మీకు	O
+medicines	B-medicine
+పెంచుకోవడమే	O
+తప్ప	O
+sugar	B-medical_condition
+levels	B-mtest_value
+control	B-normal
+అవ్వట్లేదు.	B-negative
+ఎందుకంటే	O
+మీ	O
+internalగా	B-location
+resistance	B-bodily_process
+power	I-bodily_process
+అనేది	O
+తగ్గుతుంది.	B-symptom
+మీ	O
+immate	B-bodily_process
+power	I-bodily_process
+అనేది	O
+తగ్గుతుంది.	B-symptom
+దాని	O
+మూలంగా	O
+మళ్ళి	O
+మీ	O
+sugar	B-medical_condition
+levels	B-mtest_value
+కూడా	O
+పెరిగిపొతాయి	O
+అండి.	O
+complications	B-symptom
+కూడా	O
+పెరిగిపొతాయి	O
+}
+

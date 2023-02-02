@@ -1,0 +1,108 @@
+{\intent	p: sir మా అబ్బాయి age 18 years	STATEMENT}
+{\slot
+sir	O
+మా	O
+అబ్బాయి	O
+age	O
+18	B-age
+years	I-age
+}
+
+{\intent	p: ulcerative Colitis వచ్చింది	STATEMENT}
+{\slot
+ulcerative	B-symptom
+Colitis	I-symptom
+వచ్చింది	O
+}
+
+{\intent	p: దాని గురించి వివరంగా చెప్తారా.	INFO_REQUEST}
+{\slot
+దాని	O
+గురించి	O
+వివరంగా	O
+చెప్తారా.	O
+}
+
+{\intent	p: ఏమైనా తగ్గుతదా లేదా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+తగ్గుతదా	O
+లేదా?	O
+}
+
+{\intent	p: 2 years నుంచి బాధపడుతున్నాడు sir.	STATEMENT}
+{\slot
+2	B-time_period
+years	I-time_period
+నుంచి	O
+బాధపడుతున్నాడు	B-symptom
+sir.	O
+}
+
+{\intent	d: right అండి తప్పకుండా అండి దాని గురించి చెప్తానండీ.	COMMIT}
+{\slot
+right	O
+అండి	O
+తప్పకుండా	O
+అండి	O
+దాని	O
+గురించి	O
+చెప్తానండీ.	O
+}
+
+{\intent	d: so ulcerative Colitis, అంతే colon అంటే పెద్దపేగు చివరి భగాన్ని colon అని మనం చెప్పుకోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ulcerative	B-symptom
+Colitis,	I-symptom
+అంతే	O
+colon	B-body_part
+అంటే	O
+పెద్దపేగు	B-body_part
+చివరి	B-location
+భగాన్ని	I-location
+colon	B-body_part
+అని	O
+మనం	O
+చెప్పుకోవచ్చు.	O
+}
+
+{\intent	d: ఈ పెద్ద పేగు వాపుకు గురి అయితే దాన్ని Colitis అంటారు	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+పెద్ద	O
+పేగు	B-body_part
+వాపుకు	B-symptom
+గురి	O
+అయితే	O
+దాన్ని	O
+Colitis	B-symptom
+అంటారు	O
+}
+
+{\intent	d: పెద్ద పేగు వాపుతో పాటు ఒక చిన్నపాటి ulcer ఏర్పడింది	MEDICAL_EXPLANATION}
+{\slot
+పెద్ద	B-body_part
+పేగు	I-body_part
+వాపుతో	B-symptom
+పాటు	O
+ఒక	O
+చిన్నపాటి	O
+ulcer	B-medical_condition
+ఏర్పడింది	O
+}
+
+{\intent	d: so పుండు తో కూడినటువంటి పెద్ద పేగు వాపును ulcerative Colitis అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+పుండు	B-medical_condition
+తో	O
+కూడినటువంటి	O
+పెద్ద	B-body_part
+పేగు	I-body_part
+వాపును	B-symptom
+ulcerative	B-symptom
+Colitis	I-symptom
+అంటారు.	O
+}
+

@@ -1,0 +1,123 @@
+{\intent	d: పేరు చెప్పండి?	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి?	O
+}
+
+{\intent	p: Abdul Mutallif	ANSWER}
+{\slot
+Abdul	B-name
+Mutallif	I-name
+}
+
+{\intent	d: Abdul	INFO_REQUEST}
+{\slot
+Abdul	B-name
+}
+
+{\intent	p: Mutallif	ANSWER}
+{\slot
+Mutallif	I-name
+}
+
+{\intent	d: age	INFO_REQUEST}
+{\slot
+age	O
+}
+
+{\intent	p: 33	ANSWER}
+{\slot
+33	B-age
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: गले मैं दर्द है साहब.	ANSWER}
+{\slot
+गले	B-body_part
+मैं	O
+दर्द	B-symptom
+है	O
+साहब.	O
+}
+
+{\intent	d: कभ से	INFO_REQUEST}
+{\slot
+कभ	B-time_period
+से	O
+}
+
+{\intent	p: एक 2 हफ्ते से	ANSWER}
+{\slot
+एक	O
+2	B-time_period
+हफ्ते	I-time_period
+से	O
+}
+
+{\intent	d: सर्दी खांसी है	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+खांसी	B-symptom
+है	O
+}
+
+{\intent	p: नहीं नहीं.	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं.	B-negative
+}
+
+{\intent	d: पान गुटखा खा ते?	INFO_REQUEST}
+{\slot
+पान	B-habit
+गुटखा	B-habit
+खा	O
+ते?	O
+}
+
+{\intent	p: नहीं नहीं.	ANSWER}
+{\slot
+नहीं	B-negative
+नहीं.	B-negative
+}
+
+{\intent	d: ये tonsils का infection है	DIAGNOSIS}
+{\slot
+ये	O
+tonsils	B-body_part
+का	O
+infection	B-medical_condition
+है	O
+}
+
+{\intent	p: जी जी	ACK}
+{\slot
+जी	O
+जी	O
+}
+
+{\intent	d: थोड़ा गरम पानी में नमक डाल के गराला करके थूकते रहना.	ACTION_DIR}
+{\slot
+थोड़ा	O
+गरम	B-food_substance
+पानी	I-food_substance
+में	O
+नमक	B-food_substance
+डाल	O
+के	O
+गराला	B-bodily_process
+करके	O
+थूकते	B-bodily_process
+रहना.	O
+}
+
+{\intent	p: जी	ACK}
+{\slot
+जी	O
+}
+

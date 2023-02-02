@@ -1,0 +1,249 @@
+{\intent	d: नाम बोलो	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+}
+
+{\intent	p: Naseema	ANSWER}
+{\slot
+Naseema	B-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Naseema	ANSWER}
+{\slot
+Naseema	B-name
+}
+
+{\intent	d: Naseema	ACK}
+{\slot
+Naseema	B-name
+}
+
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: उम्र 45	ANSWER}
+{\slot
+उम्र	O
+45	B-age
+}
+
+{\intent	d: 45	ACK}
+{\slot
+45	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: सर्दी है, खांसी आ रही, आंख का दर्द, बुखार.	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+है,	O
+खांसी	B-symptom
+आ	O
+रही,	O
+आंख	B-body_part
+का	O
+दर्द,	B-symptom
+बुखार.	B-symptom
+}
+
+{\intent	d: कितने दिन से?	INFO_REQUEST}
+{\slot
+कितने	O
+दिन	B-time_period
+से?	O
+}
+
+{\intent	p: कलसे.	ANSWER}
+{\slot
+कलसे.	B-time_period
+}
+
+{\intent	p: यह पूरा दर्द है साहब. यह पूरा दर्द है साहब	STATEMENT}
+{\slot
+यह	O
+पूरा	O
+दर्द	B-symptom
+है	O
+साहब.	O
+यह	O
+पूरा	O
+दर्द	B-symptom
+है	O
+साहब	O
+}
+
+{\intent	p: आप की गोली रहती ना वो डाल दी सर्दी की.	STATEMENT}
+{\slot
+आप	O
+की	O
+गोली	B-medicine
+रहती	O
+ना	O
+वो	O
+डाल	O
+दी	O
+सर्दी	B-medical_condition
+की.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: Asthma भी है .	STATEMENT}
+{\slot
+Asthma	B-medical_condition
+भी	O
+है	O
+.	O
+}
+
+{\intent	d: Asthma का spray कुछ तो use कर रहे?	INFO_REQUEST}
+{\slot
+Asthma	B-medical_condition
+का	O
+spray	B-medicine
+कुछ	O
+तो	O
+use	O
+कर	O
+रहे?	O
+}
+
+{\intent	p: है. है	ANSWER}
+{\slot
+है.	O
+है	O
+}
+
+{\intent	p1: ఆ है	ANSWER}
+{\slot
+ఆ	O
+है	O
+}
+
+{\intent	p: यह है Asthama का .	STATEMENT}
+{\slot
+यह	O
+है	O
+Asthama	B-medical_condition
+का	O
+.	O
+}
+
+{\intent	d: बस	ACK}
+{\slot
+बस	O
+}
+
+{\intent	d: ok. ok.	ACK}
+{\slot
+ok.	O
+ok.	O
+}
+
+{\intent	p: ये आपकी सर्दी के कल ही ले गयी थी डाल दी फिर रातमें एक ही च दमा बुखार आया, आंग का दर्द है , ये पूरा दर्द है आंग	STATEMENT}
+{\slot
+ये	O
+आपकी	O
+सर्दी	B-medical_condition
+के	O
+कल	B-time_period
+ही	O
+ले	O
+गयी	O
+थी	O
+डाल	O
+दी	O
+फिर	O
+रातमें	B-time_period
+एक	O
+ही	O
+च	O
+दमा	B-medical_condition
+बुखार	B-symptom
+आया,	O
+आंग	B-body_part
+का	O
+दर्द	B-symptom
+है	O
+,	O
+ये	O
+पूरा	O
+दर्द	B-symptom
+है	O
+आंग	B-body_part
+}
+
+{\intent	p1: ये left handपे खींच रहा बोल के	STATEMENT}
+{\slot
+ये	O
+left	B-location
+handपे	B-body_part
+खींच	B-symptom
+रहा	O
+बोल	O
+के	O
+}
+
+{\intent	p: ये दर्द है साहब ये .	STATEMENT}
+{\slot
+ये	O
+दर्द	B-symptom
+है	O
+साहब	O
+ये	O
+.	O
+}
+
+{\intent	d: सांस लेना.	ACTION_DIR}
+{\slot
+सांस	B-bodily_process
+लेना.	O
+}
+
+{\intent	p: पूरा दर्द है साहब ये पीछे, सामने..	STATEMENT}
+{\slot
+पूरा	O
+दर्द	B-symptom
+है	O
+साहब	O
+ये	O
+पीछे,	B-location
+सामने..	B-location
+}
+
+{\intent	d: में गोलियां लिख के देता हूं,.	COMMIT}
+{\slot
+में	O
+गोलियां	B-medicine
+लिख	O
+के	O
+देता	O
+हूं,.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

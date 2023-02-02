@@ -1,0 +1,104 @@
+{\intent	p: నా వయస్సు 27 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+27	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా పేరు Sarita	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Sarita	B-name
+}
+
+{\intent	p: software employeeని	STATEMENT}
+{\slot
+software	B-profession
+employeeని	I-profession
+}
+
+{\intent	p: నా కళ్ళ చుట్టూ dark circles వస్తున్నాయి.	STATEMENT}
+{\slot
+నా	O
+కళ్ళ	B-body_part
+చుట్టూ	B-location
+dark	B-medical_condition
+circles	I-medical_condition
+వస్తున్నాయి.	O
+}
+
+{\intent	p: కొబ్బరి నీళ్లు రాసుకుంటే తగ్గుతుంది అని విన్నాను. ఇది ఏంతవరకు నిజం?	INFO_REQUEST}
+{\slot
+కొబ్బరి	B-food_substance
+నీళ్లు	I-food_substance
+రాసుకుంటే	O
+తగ్గుతుంది	B-normal
+అని	O
+విన్నాను.	O
+ఇది	O
+ఏంతవరకు	O
+నిజం?	O
+}
+
+{\intent	d: dark circles అనేవి stress మూలంగా నలుపు రావొచ్చు అలాగే anemia మూలంగా నలుపు రావొచ్చు లేకపోతే నేను చెప్పాను చూడాండి లోతు tissue తక్కువ ఉండడం మూలంగా కూడా నలుపు రావొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+dark	B-medical_condition
+circles	I-medical_condition
+అనేవి	O
+stress	B-symptom
+మూలంగా	O
+నలుపు	B-color
+రావొచ్చు	O
+అలాగే	O
+anemia	B-medical_condition
+మూలంగా	O
+నలుపు	B-color
+రావొచ్చు	O
+లేకపోతే	O
+నేను	O
+చెప్పాను	O
+చూడాండి	O
+లోతు	O
+tissue	B-body_part
+తక్కువ	B-intensity
+ఉండడం	O
+మూలంగా	O
+కూడా	O
+నలుపు	B-color
+రావొచ్చు.	O
+}
+
+{\intent	d: so ఇన్ని విధాల కారణాలు ఉన్నాయి ఈ నలుపు రావడానికి.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇన్ని	O
+విధాల	O
+కారణాలు	O
+ఉన్నాయి	O
+ఈ	O
+నలుపు	B-color
+రావడానికి.	O
+}
+
+{\intent	d: So దీనికి ఆ కారణం ఏంటో తెలుసుకొని ఆ కారణాన్ని rectify చేస్తేనే అప్పుడు అది మీకు solve అవుతుంది problem.	STATEMENT}
+{\slot
+So	O
+దీనికి	O
+ఆ	O
+కారణం	O
+ఏంటో	O
+తెలుసుకొని	O
+ఆ	O
+కారణాన్ని	O
+rectify	B-treatment
+చేస్తేనే	O
+అప్పుడు	B-time_period
+అది	O
+మీకు	O
+solve	O
+అవుతుంది	O
+problem.	O
+}
+

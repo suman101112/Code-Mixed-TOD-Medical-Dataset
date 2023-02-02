@@ -1,0 +1,120 @@
+{\intent	p: నమస్తే madam	GREETING}
+{\slot
+నమస్తే	O
+madam	O
+}
+
+{\intent	p: ఆ madam నాకు fistula problem ఉండేవి ఇంత ముందు	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+నాకు	O
+fistula	B-medical_condition
+problem	I-medical_condition
+ఉండేవి	O
+ఇంత	O
+ముందు	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: అది ఒక 6 months నుంచి ఉంది madam	STATEMENT}
+{\slot
+అది	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+నుంచి	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: ఆ, బాగా bleeding వచ్చి, బాగా కారటంతో నేను recentగా అంటే ఒక 4 days back surgery చేయించాను	STATEMENT}
+{\slot
+ఆ,	O
+బాగా	O
+bleeding	B-medical_condition
+వచ్చి,	O
+బాగా	B-intensity
+కారటంతో	B-symptom
+నేను	O
+recentగా	B-time_period
+అంటే	O
+ఒక	O
+4	B-time_period
+days	I-time_period
+back	I-time_period
+surgery	B-treatment
+చేయించాను	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది ఈ surgery అంటే thread తో చేస్తారు	STATEMENT}
+{\slot
+అది	O
+ఈ	O
+surgery	B-treatment
+అంటే	O
+thread	B-medical_apparatus
+తో	O
+చేస్తారు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అది చెప్పించిన తరువాత బాగా పుండుగా పడింది. అంటే ఇంకా తగ్గలేదు.	STATEMENT}
+{\slot
+అది	O
+చెప్పించిన	O
+తరువాత	B-time_period
+బాగా	B-intensity
+పుండుగా	B-medical_condition
+పడింది.	O
+అంటే	O
+ఇంకా	O
+తగ్గలేదు,	O
+}
+
+{\intent	p: దాని గురించి తెలుసుకోవడానికి	INFO_REQUEST}
+{\slot
+దాని	O
+గురించి	O
+తెలుసుకోవడానికి	O
+}
+
+{\intent	d: ok sir ok	ACK}
+{\slot
+ok	O
+sir	O
+ok	O
+}
+
+{\intent	d: ఎక్కువ మంసాహరం తీసుకోకండి sir ప్రస్తుతానికి మీరు తీసుకోవలసిన జగ్రత్తలు.	ACTION_DIR}
+{\slot
+ఎక్కువ	B-intensity
+మంసాహరం	B-food_substance
+తీసుకోకండి	O
+sir	O
+ప్రస్తుతానికి	O
+మీరు	O
+తీసుకోవలసిన	O
+జగ్రత్తలు.	O
+}
+

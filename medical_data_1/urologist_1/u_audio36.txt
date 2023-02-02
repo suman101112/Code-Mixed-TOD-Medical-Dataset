@@ -1,0 +1,160 @@
+{\intent	d: Hello నమస్కారం	GREETING}
+{\slot
+Hello	O
+నమస్కారం	O
+}
+
+{\intent	d: చెప్పండమ్మా	ACTION_DIR}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: ఆ sir నమస్తే sir	GREETING}
+{\slot
+ఆ	O
+sir	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	p: నాకు 4 days అయింది sir, stone తీసేశారు	STATEMENT}
+{\slot
+నాకు	O
+4	B-quantity
+days	B-time_period
+అయింది	O
+sir,	O
+stone	B-body_substance
+తీసేశారు	O
+}
+
+{\intent	d: ఆ సరే	ACK}
+{\slot
+ఆ	O
+సరే	O
+}
+
+{\intent	p: endoscopy ద్వారా తీసారు	STATEMENT}
+{\slot
+endoscopy	B-treatment
+ద్వారా	O
+తీసారు	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: అది ఇప్పుడు పంపించేసారు sir, ఒక 2 days bedrest తీసుకోండి అదే తలనొప్పి ఉంటుంది ఎక్కువగా అని అన్నారు	ACTION_DIR}
+{\slot
+అది	O
+ఇప్పుడు	O
+పంపించేసారు	O
+sir,	O
+ఒక	O
+2	B-time_period
+days	I-time_period
+bedrest	B-bodily_process
+తీసుకోండి	O
+అదే	O
+తలనొప్పి	B-symptom
+ఉంటుంది	O
+ఎక్కువగా	B-intensity
+అని	O
+అన్నారు	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: నాకు పడుకొని ఉంటే ఏం problem లేదు sir, లేస్తే తలనొప్పి వస్తా ఉంది	STATEMENT}
+{\slot
+నాకు	O
+పడుకొని	B-bodily_process
+ఉంటే	O
+ఏం	O
+problem	O
+లేదు	O
+sir,	O
+లేస్తే	B-bodily_process
+తలనొప్పి	B-symptom
+వస్తా	O
+ఉంది	O
+}
+
+{\intent	p: అది sir ఏంది అంటే ఒక్కోసారి 6 monthsగా ఉంటుంది అమ్మా జగ్రత్తగా ఉండండి అన్నారు	ACTION_DIR}
+{\slot
+అది	O
+sir	O
+ఏంది	O
+అంటే	O
+ఒక్కోసారి	O
+6	B-time_period
+monthsగా	I-time_period
+ఉంటుంది	O
+అమ్మా	O
+జగ్రత్తగా	O
+ఉండండి	O
+అన్నారు	O
+}
+
+{\intent	d: చూడామ్మా, ఇది మీకు stone problem వలన కాదు ఉండేది	STATEMENT}
+{\slot
+చూడామ్మా,	O
+ఇది	O
+మీకు	O
+stone	B-body_substance
+problem	O
+వలన	O
+కాదు	O
+ఉండేది	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: stone తీసేయ్యడానికి spinal Anesthesia అని ఇస్తారు, అందుకే pain వస్తా ఉండది	MEDICAL_EXPLANATION}
+{\slot
+stone	B-body_substance
+తీసేయ్యడానికి	O
+spinal	B-medicine
+Anesthesia	I-medicine
+అని	O
+ఇస్తారు,	O
+అందుకే	O
+pain	B-symptom
+వస్తా	O
+ఉండది	O
+}
+
+{\intent	d: కొంచం నీళ్లు బాగా తాగండి.	ACTION_DIR}
+{\slot
+కొంచం	O
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగండి.	B-bodily_process
+}
+
+{\intent	d: ఏం తొందర ఏం అవ్వలేదు	STATEMENT}
+{\slot
+ఏం	O
+తొందర	O
+ఏం	O
+అవ్వలేదు	O
+}
+
+{\intent	d: actually post spinal headache అంటాము దీన్ని	DIAGNOSIS}
+{\slot
+actually	O
+post	B-symptom
+spinal	I-symptom
+headache	I-symptom
+అంటాము	O
+దీన్ని	O
+}
+

@@ -1,0 +1,137 @@
+{\intent	p: doctor గారు మా బాబు వయస్సు 7 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబు	B-familal
+వయస్సు	O
+7	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: చిన్నప్పటి నుంచి కంటి రెప్పలు బరువుగా ఉన్నాయి.	STATEMENT}
+{\slot
+చిన్నప్పటి	O
+నుంచి	O
+కంటి	B-body_part
+రెప్పలు	I-body_part
+బరువుగా	B-symptom
+ఉన్నాయి.	O
+}
+
+{\intent	p: మేము అది ఏదో shape అనుకోని ఊరుకున్నాము. అదేదో సమస్యగా మారింది.	STATEMENT}
+{\slot
+మేము	O
+అది	O
+ఏదో	O
+shape	O
+అనుకోని	O
+ఊరుకున్నాము.	O
+అదేదో	O
+సమస్యగా	O
+మారింది.	O
+}
+
+{\intent	p: వాడిని ఇప్పుడు చూస్తున్నాం, కంటి రెప్పలు మూసుకుపోయినట్లుగా అనిపిస్తుంది.	STATEMENT}
+{\slot
+వాడిని	O
+ఇప్పుడు	O
+చూస్తున్నాం,	O
+కంటి	B-body_part
+రెప్పలు	I-body_part
+మూసుకుపోయినట్లుగా	B-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: మీరు చెప్పినటువంటి 7 years, 7 సంవత్సరాల బాబు అంటున్నారు కదా, అంటే కంటిరెప్పలు బరువుగా అంటే కనురెప్పలు కిందికి ఉన్నట్లు ఉన్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+మీరు	O
+చెప్పినటువంటి	O
+7	B-age
+years,	I-age
+7	B-age
+సంవత్సరాల	I-age
+బాబు	B-person
+అంటున్నారు	O
+కదా,	O
+అంటే	O
+కంటిరెప్పలు	B-body_part
+బరువుగా	B-symptom
+అంటే	O
+కనురెప్పలు	B-body_part
+కిందికి	B-location
+ఉన్నట్లు	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: normalగా అయితే కనురెప్పలు పైకి ఉండాలో అలా లేకుండా కొంచం కనురెప్పలు వాలినట్లు ఉండి కను చిన్నగా ఉన్నట్లు కంటి రెప్పలు కిందికి వాలినట్లుగా ఉన్న దాని కొంతమంది ఇలా బరువుగా వాలినట్లు ఉన్నాయి అని అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+normalగా	O
+అయితే	O
+కనురెప్పలు	B-body_part
+పైకి	B-location
+ఉండాలో	O
+అలా	O
+లేకుండా	O
+కొంచం	O
+కనురెప్పలు	B-body_part
+వాలినట్లు	B-symptom
+ఉండి	O
+కను	B-body_part
+చిన్నగా	B-symptom
+ఉన్నట్లు	O
+కంటి	B-body_part
+రెప్పలు	I-body_part
+కిందికి	B-location
+వాలినట్లుగా	B-symptom
+ఉన్న	O
+దాని	O
+కొంతమంది	O
+ఇలా	O
+బరువుగా	B-symptom
+వాలినట్లు	I-symptom
+ఉన్నాయి	O
+అని	O
+అంటారు.	O
+}
+
+{\intent	d: ఇది basically కను రెప్పను లేపే muscle ఏదైతే ఉంటుందో ఆ కండరం ఏదైతే ఉంటుందో Levator muscle, ఆ levator muscle weakness వలన కను రెప్పలు సరిగ్గా లేవకుండా కను రెప్పలు ఇలా వాలిపోయి కనులు చిన్నగా ఉండి కొంచం బరువుగా ఉన్నట్లు అనిపించి అనిపిస్తుంది పిల్లల్లో.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+basically	O
+కను	B-body_part
+రెప్పను	I-body_part
+లేపే	O
+muscle	B-body_part
+ఏదైతే	O
+ఉంటుందో	O
+ఆ	O
+కండరం	B-body_part
+ఏదైతే	O
+ఉంటుందో	O
+Levator	B-body_part
+muscle,	I-body_part
+ఆ	O
+levator	B-body_part
+muscle	I-body_part
+weakness	B-medical_condition
+వలన	O
+కను	B-body_part
+రెప్పలు	I-body_part
+సరిగ్గా	O
+లేవకుండా	B-symptom
+కను	B-body_part
+రెప్పలు	I-body_part
+ఇలా	O
+వాలిపోయి	B-symptom
+కనులు	B-body_part
+చిన్నగా	B-symptom
+ఉండి	O
+కొంచం	O
+బరువుగా	B-symptom
+ఉన్నట్లు	O
+అనిపించి	O
+అనిపిస్తుంది	O
+పిల్లల్లో.	B-person
+}
+

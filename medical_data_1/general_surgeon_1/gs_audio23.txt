@@ -1,0 +1,150 @@
+{\intent	p: Hello doctor	GREETING}
+{\slot
+Hello	O
+doctor	B-medical_professional
+}
+
+{\intent	d: Hello అండి Uday గారు	GREETING}
+{\slot
+Hello	O
+అండి	O
+Uday	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: నాది age ఇంకా నాది 23 ఇంకా	ABANDONED}
+{\slot
+నాది	O
+age	O
+ఇంకా	O
+నాది	O
+23	B-age
+ఇంకా	O
+}
+
+{\intent	d: ఏమండి?	SNU}
+{\slot
+ఏమండి?	O
+}
+
+{\intent	p: నా age ఇంకా 23	REPEAT_REPHRASE}
+{\slot
+నా	O
+age	O
+ఇంకా	O
+23	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు ulcer కొంచం ఎక్కువగా వస్తూ ఉంటది sir. నోట్లోగాని, ఇక్కడ కానీ, కింద కానీ	STATEMENT}
+{\slot
+నాకు	O
+ulcer	B-medical_condition
+కొంచం	O
+ఎక్కువగా	B-intensity
+వస్తూ	O
+ఉంటది	O
+sir.	O
+నోట్లోగాని,	B-body_part
+ఇక్కడ	B-location
+కానీ,	O
+కింద	B-location
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: gastric సమస్య కూడా ఎక్కువగా ఉంటుంది spicy food ఎక్కువగా తిన్నప్పుడు	STATEMENT}
+{\slot
+gastric	B-medical_condition
+సమస్య	O
+కూడా	O
+ఎక్కువగా	B-intensity
+ఉంటుంది	O
+spicy	B-food_substance
+food	B-food_substance
+ఎక్కువగా	B-intensity
+తిన్నప్పుడు	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: curd items, especially diary foods దాంట్లో కూడాను curd items ఎక్కువగా తిన్నప్పుడు పెరుగు పదర్థాలు ఎక్కువగా వస్తూ ఉంటుంది sir ulcer గానీ, gastric గానీ నాకు ఎక్కువగా	STATEMENT}
+{\slot
+curd	B-food_substance
+items,	I-food_substance
+especially	O
+diary	B-food_substance
+foods	I-food_substance
+దాంట్లో	O
+కూడాను	O
+curd	B-food_substance
+items	I-food_substance
+ఎక్కువగా	B-intensity
+తిన్నప్పుడు	B-bodily_process
+పెరుగు	B-food_substance
+పదర్థాలు	I-food_substance
+ఎక్కువగా	B-intensity
+వస్తూ	O
+ఉంటుంది	O
+sir	O
+ulcer	B-medical_condition
+గానీ,	O
+gastric	B-medical_condition
+గానీ	O
+నాకు	O
+ఎక్కువగా	B-intensity
+}
+
+{\intent	d: అలాగే అండి.	ACK}
+{\slot
+అలాగే	O
+అండి.	O
+}
+
+{\intent	d: దీనికి breath test అని ఉంటుంది.	STATEMENT}
+{\slot
+దీనికి	O
+breath	B-mtest
+test	I-mtest
+అని	O
+ఉంటుంది.	O
+}
+
+{\intent	d: శ్వాస ద్వారా ఒక పరిక్ష చేస్తారు	MEDICAL_EXPLANATION}
+{\slot
+శ్వాస	B-bodily_process
+ద్వారా	O
+ఒక	O
+పరిక్ష	B-mtest
+చేస్తారు	O
+}
+
+{\intent	d: అందులో ఈ పేగుల్లో ఏమైనా infection ఉందా అనేటటువంటిది తెలుసుకునేటటువంటి పరిక్ష	MEDICAL_EXPLANATION}
+{\slot
+అందులో	O
+ఈ	O
+పేగుల్లో	B-body_part
+ఏమైనా	O
+infection	B-medical_condition
+ఉందా	O
+అనేటటువంటిది	O
+తెలుసుకునేటటువంటి	O
+పరిక్ష	B-mtest
+}
+

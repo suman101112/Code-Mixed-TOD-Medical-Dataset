@@ -1,0 +1,91 @@
+{\intent	p: sir నమస్తే అండి rao గారు	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+అండి	O
+rao	B-name
+గారు	I-name
+}
+
+{\intent	d: ఆ నమస్కారం Srinivaas గారు	GREETING}
+{\slot
+ఆ	O
+నమస్కారం	O
+Srinivaas	B-name
+గారు	I-name
+}
+
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: sir ఏం లేదు sir, నాకు చాలా రోజుల నుంచి తామర అనే సమస్యతో కొద్దిగా చర్మము	STATEMENT}
+{\slot
+sir	O
+ఏం	B-negative
+లేదు	I-negative
+sir,	O
+నాకు	O
+చాలా	B-time_period
+రోజుల	I-time_period
+నుంచి	I-time_period
+తామర	B-symptom
+అనే	I-symptom
+సమస్యతో	I-symptom
+కొద్దిగా	B-body_part
+చర్మము	I-body_part
+}
+
+{\intent	d: so దానికి ఏంటి అంటే రోజు 2 సార్లు స్నానం చేయాలి	ACTION_DIR}
+{\slot
+so	O
+దానికి	O
+ఏంటి	O
+అంటే	O
+రోజు	B-treatment
+2	I-treatment
+సార్లు	I-treatment
+స్నానం	I-treatment
+చేయాలి	I-treatment
+}
+
+{\intent	d: doctor రాసే ointmentలు regularగా వాడాలి	ACTION_DIR}
+{\slot
+doctor	B-medical_professional
+రాసే	O
+ointmentలు	B-medicine
+regularగా	B-treatment
+వాడాలి	I-treatment
+}
+
+{\intent	d: ointment తో పాటు ponds powder అయినా సరే రోజు 3 4 సార్లు ఆ యొక్క మచ్చల పైన, తామర పైన చల్లుకోవాలి	ACTION_DIR}
+{\slot
+ointment	B-medicine
+తో	O
+పాటు	O
+ponds	B-medicine
+powder	I-medicine
+అయినా	O
+సరే	O
+రోజు	B-time_period
+3	B-frequency
+4	I-frequency
+సార్లు	I-frequency
+ఆ	O
+యొక్క	O
+మచ్చల	B-symptom
+పైన,	B-location
+తామర	B-symptom
+పైన	B-location
+చల్లుకోవాలి	B-treatment
+}
+
+{\intent	d: skin dryగా ఉండెట్టు చూసుకోవాలి	ACTION_DIR}
+{\slot
+skin	B-body_part
+dryగా	B-normal
+ఉండెట్టు	I-normal
+చూసుకోవాలి	O
+}
+

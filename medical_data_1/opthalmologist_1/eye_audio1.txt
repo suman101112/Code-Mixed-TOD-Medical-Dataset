@@ -1,0 +1,50 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 21, m	ANSWER}
+{\slot
+21,	B-age
+m	B-gender
+}
+
+{\intent	d: ఇప్పుడు ఏంటి problem?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఏంటి	O
+problem?	O
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: కళ్ళ దగ్గర బాగా itching ఉంటది.	ANSWER}
+{\slot
+కళ్ళ	B-body_part
+దగ్గర	B-location
+బాగా	B-intensity
+itching	B-symptom
+ఉంటది.	O
+}
+
+{\intent	d: daily ఉంటదా అప్పుడప్పుడా?	INFO_REQUEST}
+{\slot
+daily	B-time_period
+ఉంటదా	O
+అప్పుడప్పుడా?	O
+}
+
+{\intent	p: అప్పుడప్పుడు. ఇంకా headache కూడా ఉంది.	ANSWER}
+{\slot
+అప్పుడప్పుడు.	B-time_period
+ఇంకా	O
+headache	B-symptom
+కూడా	O
+ఉంది.	O
+}
+

@@ -1,0 +1,138 @@
+{\intent	d: ఇవాళ ఎన్నో రోజూ అమ్మా	INFO_REQUEST}
+{\slot
+ఇవాళ	O
+ఎన్నో	O
+రోజూ	O
+అమ్మా	O
+}
+
+{\intent	p: 4 sir	ANSWER}
+{\slot
+4	B-age
+sir	O
+}
+
+{\intent	d: వాళ్ళ అమ్మా పేరు Pavani ఆ?	INFO_REQUEST}
+{\slot
+వాళ్ళ	O
+అమ్మా	O
+పేరు	O
+Pavani	B-name
+ఆ?	O
+}
+
+{\intent	p: ఆ Pavani sir	ANSWER}
+{\slot
+ఆ	O
+Pavani	B-name
+sir	O
+}
+
+{\intent	d: ఇది ఎన్నో కాన్పు	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎన్నో	O
+కాన్పు	O
+}
+
+{\intent	p: first	ANSWER}
+{\slot
+first	B-quantity
+}
+
+{\intent	d: తల్లిపాలు పట్టిస్తున్నావా?	INFO_REQUEST}
+{\slot
+తల్లిపాలు	B-food_substance
+పట్టిస్తున్నావా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు పాప 2 kg 300 ఉన్నది.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+పాప	O
+2	B-bm
+kg	I-bm
+300	I-bm
+ఉన్నది.	O
+}
+
+{\intent	d: 3 kgs వచ్చేదాక స్నానం పోయొద్దు	MEDICAL_EXPLANATION}
+{\slot
+3	B-bm
+kgs	I-bm
+వచ్చేదాక	O
+స్నానం	O
+పోయొద్దు	O
+}
+
+{\intent	p: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: వెచ్చగా ఉంచుకోవాలి	MEDICAL_EXPLANATION}
+{\slot
+వెచ్చగా	O
+ఉంచుకోవాలి	O
+}
+
+{\intent	d: తల్లి ఒడిలో బిడ్డ ఉండాలి, తల్లిపాలు తాగిపించాలి	MEDICAL_EXPLANATION}
+{\slot
+తల్లి	B-person
+ఒడిలో	O
+బిడ్డ	B-person
+ఉండాలి,	O
+తల్లిపాలు	B-food_substance
+తాగిపించాలి	B-bodily_process
+}
+
+{\intent	d: పొద్దున లేచి ఎండకు చూపించడం అట్లాంటివి అసలు చేయొద్దు	MEDICAL_EXPLANATION}
+{\slot
+పొద్దున	B-time_period
+లేచి	O
+ఎండకు	O
+చూపించడం	O
+అట్లాంటివి	O
+అసలు	O
+చేయొద్దు	O
+}
+
+{\intent	p: సరే sir	ACK}
+{\slot
+సరే	O
+sir	O
+}
+
+{\intent	d: ఇగొ ఇట్ల నిద్ర పోనీయొద్దు 2 గంటలకొకసారి నిద్ర లేపుతూ ఉండాలి	MEDICAL_EXPLANATION}
+{\slot
+ఇగొ	O
+ఇట్ల	O
+నిద్ర	B-bodily_process
+పోనీయొద్దు	O
+2	O
+గంటలకొకసారి	O
+నిద్ర	B-bodily_process
+లేపుతూ	O
+ఉండాలి	O
+}
+
+{\intent	d: బొడ్డు ఊడినా కూడా powder వేయొద్దు.	MEDICAL_EXPLANATION}
+{\slot
+బొడ్డు	B-body_part
+ఊడినా	O
+కూడా	O
+powder	O
+వేయొద్దు.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

@@ -1,0 +1,305 @@
+{\intent	d: ఆ नाम बोलो आप का	INFO_REQUEST}
+{\slot
+ఆ	O
+नाम	O
+बोलो	O
+आप	O
+का	O
+}
+
+{\intent	p: Tahaar Rizwaan	ANSWER}
+{\slot
+Tahaar	B-name
+Rizwaan	I-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Rizwaan	ANSWER}
+{\slot
+Rizwaan	B-name
+}
+
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: 47	ANSWER}
+{\slot
+47	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: पुराना चिट्टी क्या हुआ?	INFO_REQUEST}
+{\slot
+पुराना	O
+चिट्टी	O
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: पुराना चिट्टी वो दूसरी जेब में रह गई.	ANSWER}
+{\slot
+पुराना	O
+चिट्टी	O
+वो	O
+दूसरी	O
+जेब	O
+में	O
+रह	O
+गई.	O
+}
+
+{\intent	p: वो अब यह कान में मेरे को कुछ छेद जैसे दिख रहा sir. ऐसा महसूस हो रहा sir.	STATEMENT}
+{\slot
+वो	O
+अब	B-time_period
+यह	O
+कान	B-body_part
+में	B-location
+मेरे	O
+को	O
+कुछ	O
+छेद	B-symptom
+जैसे	O
+दिख	O
+रहा	O
+sir.	O
+ऐसा	O
+महसूस	O
+हो	O
+रहा	O
+sir.	O
+}
+
+{\intent	d: चश्में निकालो	ACTION_DIR}
+{\slot
+चश्में	O
+निकालो	O
+}
+
+{\intent	d: नज़दीक आना .	ACTION_DIR}
+{\slot
+नज़दीक	O
+आना	O
+.	O
+}
+
+{\intent	d: अभी कितना दिन से हो रहा ऐसा?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+कितना	O
+दिन	B-time_period
+से	O
+हो	O
+रहा	O
+ऐसा?	O
+}
+
+{\intent	p: 4 5 दिन से सीटी बजे. रहा . कान मैं उंगली डाले तो सीटी बजे. रहा .	ANSWER}
+{\slot
+4	B-time_period
+5	B-time_period
+दिन	I-time_period
+से	O
+सीटी	O
+बजे.	O
+रहा	O
+.	O
+कान	B-body_part
+मैं	B-location
+उंगली	B-body_part
+डाले	O
+तो	O
+सीटी	B-symptom
+बजे.	I-symptom
+रहा	O
+.	O
+}
+
+{\intent	d: वो कान	ACTION_DIR}
+{\slot
+वो	O
+कान	B-body_part
+}
+
+{\intent	d: सर्दी खांसी है?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+खांसी	B-symptom
+है?	O
+}
+
+{\intent	p: थोड़ी light खांसी था ना वो January मैं आया था ना वो सर्दी खांसी से पूरा महीना ऐसा ही	ANSWER}
+{\slot
+थोड़ी	B-intensity
+light	B-intensity
+खांसी	B-symptom
+था	O
+ना	O
+वो	O
+January	B-time_period
+मैं	O
+आया	O
+था	O
+ना	O
+वो	O
+सर्दी	B-medical_condition
+खांसी	B-symptom
+से	O
+पूरा	B-time_period
+महीना	I-time_period
+ऐसा	O
+ही	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ये कान	ACTION_DIR}
+{\slot
+ये	O
+कान	B-body_part
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: उंगली डाले तो, ऐसा करे तो सीटी बजे. रही जैसा आ रहा.	STATEMENT}
+{\slot
+उंगली	B-body_part
+डाले	O
+तो,	O
+ऐसा	O
+करे	O
+तो	O
+सीटी	B-symptom
+बजे.	I-symptom
+रही	O
+जैसा	O
+आ	O
+रहा.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: कभी हवाह निकल रहा उसी से	STATEMENT}
+{\slot
+कभी	B-time_period
+हवाह	B-symptom
+निकल	I-symptom
+रहा	O
+उसी	O
+से	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఆ <sound> जैसा आवाज़ आ रही.	INFO_REQUEST}
+{\slot
+ఆ	O
+<sound>	O
+जैसा	O
+आवाज़	O
+आ	O
+रही.	O
+}
+
+{\intent	p: हवा आ रहे जैसे लग रहा.	ANSWER}
+{\slot
+हवा	O
+आ	O
+रहे	O
+जैसे	O
+लग	O
+रहा.	O
+}
+
+{\intent	d: क्या नहीं कान के अंदर सर्दी की वजह से थोड़ा पानी जम जाता	MEDICAL_EXPLANATION}
+{\slot
+क्या	O
+नहीं	O
+कान	B-body_part
+के	O
+अंदर	B-location
+सर्दी	B-medical_condition
+की	O
+वजह	O
+से	O
+थोड़ा	O
+पानी	B-food_substance
+जम	B-symptom
+जाता	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: क्यों बोले तो नाक में से कान को एक tube रहता	MEDICAL_EXPLANATION}
+{\slot
+क्यों	O
+बोले	O
+तो	O
+नाक	B-body_part
+में	B-location
+से	O
+कान	B-body_part
+को	O
+एक	B-quantity
+tube	B-body_part
+रहता	O
+}
+
+{\intent	p: हां जी	ACK}
+{\slot
+हां	O
+जी	O
+}
+
+{\intent	d: वो tube बंद हो के ऐसा होता ..	MEDICAL_EXPLANATION}
+{\slot
+वो	O
+tube	B-body_part
+बंद	B-symptom
+हो	O
+के	O
+ऐसा	O
+होता	O
+..	O
+}
+
+{\intent	p: जी	ACK}
+{\slot
+जी	O
+}
+
+{\intent	d: कान में कुछ भी नहीं डालना	ACTION_DIR}
+{\slot
+कान	B-body_part
+में	B-location
+कुछ	O
+भी	O
+नहीं	O
+डालना	O
+}
+

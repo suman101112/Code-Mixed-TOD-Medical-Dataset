@@ -1,0 +1,102 @@
+{\intent	p: ఏం pain ఉంటలేదు doctor, night కాగానే గురు గురు అంటది, ఇట్ల దెగ్గరకైనట్లు గొంతులో ఉంచొస్తలేదు.	STATEMENT}
+{\slot
+ఏం	O
+pain	B-symptom
+ఉంటలేదు	B-negative
+doctor,	B-medical_professional
+night	B-time_period
+కాగానే	O
+గురు	B-symptom
+గురు	I-symptom
+అంటది,	O
+ఇట్ల	O
+దెగ్గరకైనట్లు	O
+గొంతులో	B-body_part
+ఉంచొస్తలేదు.	B-negative
+}
+
+{\intent	d: ఈ మందులు వాడితే ఎలా ఉంది?	INFO_REQUEST}
+{\slot
+ఈ	O
+మందులు	B-medicine
+వాడితే	O
+ఎలా	O
+ఉంది?	O
+}
+
+{\intent	p: మందులు వాడితే పొద్దున అంతా ఏం ఉంటలేదు doctor. రాత్రి కాగానే ఇలా	ANSWER}
+{\slot
+మందులు	B-medicine
+వాడితే	O
+పొద్దున	B-time_period
+అంతా	O
+ఏం	O
+ఉంటలేదు	B-negative
+doctor.	B-medical_professional
+రాత్రి	B-time_period
+కాగానే	O
+ఇలా	O
+}
+
+{\intent	d: ఏమైతుంది చెప్పు	INFO_REQUEST}
+{\slot
+ఏమైతుంది	O
+చెప్పు	O
+}
+
+{\intent	p: pain అయితుంది doctor.	STATEMENT}
+{\slot
+pain	B-symptom
+అయితుంది	O
+doctor.	B-medical_professional
+}
+
+{\intent	d: ఈ గోళీలు అయిపోయినా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఈ	O
+గోళీలు	B-medicine
+అయిపోయినా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: అయిపోయినాయి doctor.	ANSWER}
+{\slot
+అయిపోయినాయి	O
+doctor.	B-medical_professional
+}
+
+{\intent	d: కడుపులో మంట గిట్ల ఉందా?	INFO_REQUEST}
+{\slot
+కడుపులో	B-body_part
+మంట	B-symptom
+గిట్ల	O
+ఉందా?	O
+}
+
+{\intent	p: ఆ కొద్దిగా మంట ఉంటానండి	ANSWER}
+{\slot
+ఆ	O
+కొద్దిగా	O
+మంట	B-symptom
+ఉంటానండి	O
+}
+
+{\intent	p: ఉమ్ము మింగొస్తలేదు.	STATEMENT}
+{\slot
+ఉమ్ము	B-body_substance
+మింగొస్తలేదు.	B-symptom
+}
+
+{\intent	d: అన్నం తింటానంటే జారుతుందా తట్టుకుంటుందా?	INFO_REQUEST}
+{\slot
+అన్నం	B-food_substance
+తింటానంటే	B-bodily_process
+జారుతుందా	B-normal
+తట్టుకుంటుందా?	B-symptom
+}
+
+{\intent	p: జరుగుతోంది.	ANSWER}
+{\slot
+జరుగుతోంది.	B-normal
+}
+

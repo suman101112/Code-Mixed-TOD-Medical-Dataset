@@ -1,0 +1,291 @@
+{\intent	p1: sir, ये परसो बताएं	STATEMENT}
+{\slot
+sir,	O
+ये	O
+परसो	B-time_period
+बताएं	O
+}
+
+{\intent	d: आ	ACK}
+{\slot
+आ	O
+}
+
+{\intent	p1: ये दवाई लिये तो इनको shivering आ रहा, सर्दी में भी फरक नहीं	STATEMENT}
+{\slot
+ये	O
+दवाई	B-medicine
+लिये	O
+तो	O
+इनको	O
+shivering	B-symptom
+आ	O
+रहा,	O
+सर्दी	B-medical_condition
+में	O
+भी	O
+फरक	O
+नहीं	O
+}
+
+{\intent	p: अब तो headache में से पूरा headache हो रही बहुत ज्यादा.	STATEMENT}
+{\slot
+अब	B-time_period
+तो	O
+headache	B-symptom
+में	O
+से	O
+पूरा	O
+headache	B-symptom
+हो	O
+रही	O
+बहुत	B-intensity
+ज्यादा.	B-intensity
+}
+
+{\intent	d: क्या shivering हो रहा यह?	INFO_REQUEST}
+{\slot
+क्या	O
+shivering	B-symptom
+हो	O
+रहा	O
+यह?	O
+}
+
+{\intent	p: tablets	HOLD}
+{\slot
+tablets	B-medicine
+}
+
+{\intent	d: बहुत कम powerके है ना यह.	STATEMENT}
+{\slot
+बहुत	B-intensity
+कम	B-intensity
+powerके	B-medicine_dose
+है	O
+ना	O
+यह.	O
+}
+
+{\intent	d: 200mg का है ये .	STATEMENT}
+{\slot
+200mg	B-medicine_dose
+का	O
+है	O
+ये	O
+.	O
+}
+
+{\intent	d: खाने के बाद डाल लिए या खाली डाल दिये?	INFO_REQUEST}
+{\slot
+खाने	B-food_substance
+के	O
+बाद	B-time_period
+डाल	O
+लिए	O
+या	O
+खाली	O
+डाल	O
+दिये?	O
+}
+
+{\intent	p: खाने के बाद डाल दिये	ANSWER}
+{\slot
+खाने	B-food_substance
+के	O
+बाद	B-time_period
+डाल	O
+दिये	O
+}
+
+{\intent	d: अब उसका सर्दी है? खांसी है?	INFO_REQUEST}
+{\slot
+अब	B-time_period
+उसका	O
+सर्दी	B-medical_condition
+है?	O
+खांसी	B-symptom
+है?	O
+}
+
+{\intent	p: दोनों है.	ANSWER}
+{\slot
+दोनों	B-frequency
+है.	B-positive
+}
+
+{\intent	d: दोनों भी है.	ACK}
+{\slot
+दोनों	B-frequency
+भी	O
+है.	B-positive
+}
+
+{\intent	d: headache है.	ACK}
+{\slot
+headache	B-symptom
+है.	O
+}
+
+{\intent	p: वो ऐसे करे तो दुःख रहा	STATEMENT}
+{\slot
+वो	O
+ऐसे	O
+करे	O
+तो	O
+दुःख	B-symptom
+रहा	O
+}
+
+{\intent	d: headache ज्यादा है? कम है?	INFO_REQUEST}
+{\slot
+headache	B-symptom
+ज्यादा	B-intensity
+है?	O
+कम	B-intensity
+है?	O
+}
+
+{\intent	p: headache सिर्फ सर्दी के वजह से ऐसे करे तो headache हो रहा	ANSWER}
+{\slot
+headache	B-symptom
+सिर्फ	O
+सर्दी	B-medical_condition
+के	O
+वजह	O
+से	O
+ऐसे	O
+करे	O
+तो	O
+headache	B-symptom
+हो	O
+रहा	O
+}
+
+{\intent	d: पानी के जैसा नेट  के जैसा आ रहा कुछ तो भी?	INFO_REQUEST}
+{\slot
+पानी	B-food_substance
+के	O
+जैसा	O
+नेट	B-symptom
+के	O
+जैसा	O
+आ	O
+रहा	O
+कुछ	O
+तो	O
+भी?	O
+}
+
+{\intent	p: गाढ़ा आ रहा बहुत	ANSWER}
+{\slot
+गाढ़ा	B-symptom
+आ	O
+रहा	O
+बहुत	B-intensity
+}
+
+{\intent	d: बहुत गाढ़ा आ रहा?	INFO_REQUEST}
+{\slot
+बहुत	B-intensity
+गाढ़ा	B-symptom
+आ	O
+रहा?	O
+}
+
+{\intent	p: already sinusका problem है मेरेको	STATEMENT}
+{\slot
+already	O
+sinusका	B-symptom
+problem	O
+है	O
+मेरेको	O
+}
+
+{\intent	d: अभी ये sinusitis ही है	DIAGNOSIS}
+{\slot
+अभी	B-time_period
+ये	O
+sinusitis	B-symptom
+ही	O
+है	O
+}
+
+{\intent	p1: पहले था sir.	STATEMENT}
+{\slot
+पहले	O
+था	O
+sir.	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ज़रा कम powerके लिखा उनको भी तुम ऐसा	STATEMENT}
+{\slot
+ज़रा	O
+कम	B-intensity
+powerके	B-medicine_dose
+लिखा	O
+उनको	O
+भी	O
+तुम	O
+ऐसा	O
+}
+
+{\intent	d: थोड़ा powerका लिखके देता हूं,	COMMIT}
+{\slot
+थोड़ा	B-intensity
+powerका	B-medicine_dose
+लिखके	O
+देता	O
+हूं,	O
+}
+
+{\intent	p1: खांसी भी कम होता sir इससे?	INFO_REQUEST}
+{\slot
+खांसी	B-symptom
+भी	O
+कम	B-normal
+होता	O
+sir	O
+इससे?	O
+}
+
+{\intent	d: आ	ANSWER}
+{\slot
+आ	B-positive
+}
+
+{\intent	p: 15 days के ऊपर हो गये doctor	STATEMENT}
+{\slot
+15	B-time_period
+days	I-time_period
+के	O
+ऊपर	O
+हो	O
+गये	O
+doctor	B-medical_professional
+}
+
+{\intent	d: एक 2 दिन देखो थोड़ा power के लिखा नहीं कम हुए तो CT scanning निकालेंगे	ACTION_DIR}
+{\slot
+एक	O
+2	B-time_period
+दिन	I-time_period
+देखो	O
+थोड़ा	O
+power	B-medicine_dose
+के	O
+लिखा	O
+नहीं	O
+कम	O
+हुए	O
+तो	O
+CT	B-mtest
+scanning	I-mtest
+निकालेंगे	O
+}
+

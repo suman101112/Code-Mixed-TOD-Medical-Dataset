@@ -1,0 +1,227 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఒక సంవత్సరం వాళ్ళు పిల్లలు వద్దనుకొని వాళ్ళు ఒక సంవత్సరం మామూలుగా వద్దనుకున్నారు	STATEMENT}
+{\slot
+ఒక	B-time_period
+సంవత్సరం	I-time_period
+వాళ్ళు	O
+పిల్లలు	B-familal
+వద్దనుకొని	B-negative
+వాళ్ళు	O
+ఒక	B-time_period
+సంవత్సరం	I-time_period
+మామూలుగా	O
+వద్దనుకున్నారు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి పిల్లలు కావాలని ఒక 6 months నుంచి, ఒక 6 నెలల నుంచి ప్రయత్నం చేస్తుంటే కొద్దిగా dateలు ప్రతీ నెల ఒక 3 రోజులు 4 రోజులు ప్రతీనెల అట్ల అయి ఇప్పుడు పోయిన నెల ఒక 10 రోజులు తేడాగా date వచ్చేసింది అండి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+పిల్లలు	B-familal
+కావాలని	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+నుంచి,	O
+ఒక	O
+6	B-time_period
+నెలల	I-time_period
+నుంచి	O
+ప్రయత్నం	O
+చేస్తుంటే	O
+కొద్దిగా	O
+dateలు	B-bodily_process
+ప్రతీ	B-time_period
+నెల	I-time_period
+ఒక	O
+3	B-time_period
+రోజులు	I-time_period
+4	B-time_period
+రోజులు	I-time_period
+ప్రతీనెల	B-time_period
+అట్ల	O
+అయి	O
+ఇప్పుడు	O
+పోయిన	B-time_period
+నెల	I-time_period
+ఒక	O
+10	B-time_period
+రోజులు	I-time_period
+తేడాగా	I-time_period
+date	B-bodily_process
+వచ్చేసింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: వచ్చేస్తే మేము hospital తీసుకోనివెల్లము ఒక వేళ pregnant ఎమో అనుకోని ఒక 10 రోజులు అయిపోయినాక వచ్చింది date ఎందుకు ఇలా అవుతుంది అని చెప్పేసి వెళ్ళినం, అక్కడ doctorగారు testలు అవన్నీ చేసేసి	STATEMENT}
+{\slot
+వచ్చేస్తే	O
+మేము	O
+hospital	B-place
+తీసుకోనివెల్లము	O
+ఒక	O
+వేళ	O
+pregnant	B-bodily_process
+ఎమో	O
+అనుకోని	O
+ఒక	O
+10	B-time_period
+రోజులు	I-time_period
+అయిపోయినాక	O
+వచ్చింది	O
+date	B-bodily_process
+ఎందుకు	O
+ఇలా	O
+అవుతుంది	O
+అని	O
+చెప్పేసి	O
+వెళ్ళినం,	O
+అక్కడ	O
+doctorగారు	B-medical_professional
+testలు	B-mtest
+అవన్నీ	O
+చేసేసి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: కొద్దిగా పిండం అంటే గుడ్డు కొంచం పెరుగుదల లేదమ్మ అని scanning తీస్తున్నారండీ	STATEMENT}
+{\slot
+కొద్దిగా	B-intensity
+పిండం	B-body_part
+అంటే	B-intensity
+గుడ్డు	B-body_part
+కొంచం	O
+పెరుగుదల	B-bodily_process
+లేదమ్మ	B-negative
+అని	O
+scanning	B-mtest
+తీస్తున్నారండీ	O
+}
+
+{\intent	p: ఇప్పటికి 2 scanningలు అయినాయి	STATEMENT}
+{\slot
+ఇప్పటికి	O
+2	B-frequency
+scanningలు	B-mtest
+అయినాయి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: 3వ scanning కి వెళ్ళాలి	STATEMENT}
+{\slot
+3వ	B-frequency
+scanning	B-mtest
+కి	O
+వెళ్ళాలి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: 2 scanning తీసినప్పుడు కూడా ఏం గుడ్డు పెరగట్లేదు అమ్మా అని అన్నారు.	STATEMENT}
+{\slot
+2	B-frequency
+scanning	B-mtest
+తీసినప్పుడు	O
+కూడా	O
+ఏం	O
+గుడ్డు	B-body_part
+పెరగట్లేదు	B-symptom
+అమ్మా	O
+అని	O
+అన్నారు.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకా ఈ సరి ఈ ఒక్కసారి scanning రాసి ఇస్తాం తర్వాత injections చేయాల్సి వస్తాది అమ్మా అన్నారు అండి.	STATEMENT}
+{\slot
+ఇంకా	O
+ఈ	O
+సరి	O
+ఈ	O
+ఒక్కసారి	O
+scanning	B-mtest
+రాసి	O
+ఇస్తాం	O
+తర్వాత	B-time_period
+injections	B-medicine
+చేయాల్సి	O
+వస్తాది	O
+అమ్మా	O
+అన్నారు	O
+అండి.	O
+}
+
+{\intent	p: మరి ఎట్ల అండి.	STATEMENT}
+{\slot
+మరి	O
+ఎట్ల	O
+అండి.	O
+}
+
+{\intent	d: మీ అమ్మాయి వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+అమ్మాయి	O
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 20 అండి.	ANSWER}
+{\slot
+20	B-age
+అండి.	O
+}
+
+{\intent	d: ok, పరవాలేదు	ACK}
+{\slot
+ok,	O
+పరవాలేదు	O
+}
+
+{\intent	d: actually తనకు ఉన్న సమస్య PCOD సమస్య ఎందుకంటే అండం విడుదల అవ్వట్లేదు ఎదగట్లేదు అని reasons	DIAGNOSIS}
+{\slot
+actually	O
+తనకు	O
+ఉన్న	O
+సమస్య	O
+PCOD	B-medical_condition
+సమస్య	O
+ఎందుకంటే	O
+అండం	B-body_part
+విడుదల	B-bodily_process
+అవ్వట్లేదు	B-negative
+ఎదగట్లేదు	B-symptom
+అని	O
+reasons	O
+}
+

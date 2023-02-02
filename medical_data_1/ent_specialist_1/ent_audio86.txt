@@ -1,0 +1,251 @@
+{\intent	d: పేరు చెప్పు	ACTION_DIR}
+{\slot
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: raj, raj kumar	STATEMENT}
+{\slot
+raj,	B-name
+raj	B-name
+kumar	I-name
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: raj, raj kumar	REPEAT_REPHRASE}
+{\slot
+raj,	B-name
+raj	B-name
+kumar	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 28	ANSWER}
+{\slot
+28	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: ఇవి మొత్తం block అవుతున్నాయి sir.	ANSWER}
+{\slot
+ఇవి	O
+మొత్తం	O
+block	B-symptom
+అవుతున్నాయి	O
+sir.	O
+}
+
+{\intent	p1: గాడ్పొస్తలేదు అసలు	ANSWER}
+{\slot
+గాడ్పొస్తలేదు	B-symptom
+అసలు	O
+}
+
+{\intent	d: సక్కగా కుర్చో	ACTION_DIR}
+{\slot
+సక్కగా	O
+కుర్చో	O
+}
+
+{\intent	d: ఇటు పెట్టు, కాలు ఇటు పెట్టు బాబు.	ACTION_DIR}
+{\slot
+ఇటు	O
+పెట్టు,	O
+కాలు	B-body_part
+ఇటు	B-location
+పెట్టు	O
+బాబు.	O
+}
+
+{\intent	d: ఆ గట్ల	STATEMENT}
+{\slot
+ఆ	O
+గట్ల	O
+}
+
+{\intent	p: అద్దాలు తీ	ACTION_DIR}
+{\slot
+అద్దాలు	O
+తీ	O
+}
+
+{\intent	d: అద్దాలు తీ	ACTION_DIR}
+{\slot
+అద్దాలు	O
+తీ	O
+}
+
+{\intent	d: ముక్కులో నుంచి నీరు లాగా వచ్చిందా? చీమిడి లాగా వచ్చిందా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+నుంచి	O
+నీరు	B-food_substance
+లాగా	O
+వచ్చిందా?	O
+చీమిడి	B-symptom
+లాగా	O
+వచ్చిందా?	O
+}
+
+{\intent	p: first నీరు లాగా వచ్చింది కొంచెం medicines వాడినా ఇట్ల ఉన్నది. block, first ఇటు block అయిద్ది medicines వాడాక ఇటు block అయిద్ది.	ANSWER}
+{\slot
+first	O
+నీరు	B-food_substance
+లాగా	O
+వచ్చింది	O
+కొంచెం	O
+medicines	B-medicine
+వాడినా	O
+ఇట్ల	O
+ఉన్నది.	O
+block,	B-symptom
+first	O
+ఇటు	B-location
+block	B-symptom
+అయిద్ది	O
+medicines	B-medicine
+వాడాక	O
+ఇటు	B-location
+block	B-symptom
+అయిద్ది.	O
+}
+
+{\intent	p: అసలు గాలి breathing రవట్లే.	STATEMENT}
+{\slot
+అసలు	O
+గాలి	O
+breathing	B-bodily_process
+రవట్లే.	O
+}
+
+{\intent	d: ఆ అను.	ACTION_DIR}
+{\slot
+ఆ	O
+అను.	O
+}
+
+{\intent	d: ముక్కులో మాంసం పెరిగింది	STATEMENT}
+{\slot
+ముక్కులో	B-body_part
+మాంసం	B-symptom
+పెరిగింది	I-symptom
+}
+
+{\intent	d: operation చేయ్యాలే	STATEMENT}
+{\slot
+operation	B-treatment
+చేయ్యాలే	O
+}
+
+{\intent	p1: operation చెస్తే ఇది రాదు కదా sir	INFO_REQUEST}
+{\slot
+operation	B-treatment
+చెస్తే	O
+ఇది	O
+రాదు	O
+కదా	O
+sir	O
+}
+
+{\intent	d: అట్ల ఉండదు ఇది	MEDICAL_EXPLANATION}
+{\slot
+అట్ల	O
+ఉండదు	O
+ఇది	O
+}
+
+{\intent	p1: ummhmm	ACK}
+{\slot
+ummhmm	O
+}
+
+{\intent	d: మళ్ళ జాగ్రత్తగా ఉండాలి	ACTION_DIR}
+{\slot
+మళ్ళ	O
+జాగ్రత్తగా	O
+ఉండాలి	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p1: carల పోయినప్పుడే ఇట్ల అయితాంది బాగా	STATEMENT}
+{\slot
+carల	O
+పోయినప్పుడే	O
+ఇట్ల	O
+అయితాంది	O
+బాగా	O
+}
+
+{\intent	d: ఆ, carల కాదమ్మా, allergy అని అంటే దుమ్ము ధూళి వల్ల వస్తాది	MEDICAL_EXPLANATION}
+{\slot
+ఆ,	O
+carల	O
+కాదమ్మా,	O
+allergy	B-medical_condition
+అని	O
+అంటే	O
+దుమ్ము	O
+ధూళి	O
+వల్ల	O
+వస్తాది	O
+}
+
+{\intent	p1: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: allergyతోనే అట్ల ముక్కుల మాంసం పెరిగి వస్తాది.	MEDICAL_EXPLANATION}
+{\slot
+allergyతోనే	B-medical_condition
+అట్ల	O
+ముక్కుల	B-body_part
+మాంసం	B-symptom
+పెరిగి	I-symptom
+వస్తాది.	O
+}
+
+{\intent	p1: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ఒక్కసారి అయిన తరువాత జగ్రత్తగా ఉండాలి, లేకపోతే మళ్ళి వస్తాది	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కసారి	O
+అయిన	O
+తరువాత	O
+జగ్రత్తగా	O
+ఉండాలి,	O
+లేకపోతే	O
+మళ్ళి	O
+వస్తాది	O
+}
+

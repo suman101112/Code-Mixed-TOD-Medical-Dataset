@@ -1,0 +1,128 @@
+{\intent	p: దదుర్లు అయితాన్నయి sir	STATEMENT}
+{\slot
+దదుర్లు	B-symptom
+అయితాన్నయి	O
+sir	O
+}
+
+{\intent	d: పత్తి ఉందా మీ ఇంట్లో ఏమన్నా?	INFO_REQUEST}
+{\slot
+పత్తి	O
+ఉందా	O
+మీ	O
+ఇంట్లో	O
+ఏమన్నా?	O
+}
+
+{\intent	p: ఆ ఉంది.	ANSWER}
+{\slot
+ఆ	O
+ఉంది.	O
+}
+
+{\intent	d: పత్తి ఉంటే contact dermatitis, insects ఉంటాయి అందులో	MEDICAL_EXPLANATION}
+{\slot
+పత్తి	O
+ఉంటే	O
+contact	B-medical_condition
+dermatitis,	I-medical_condition
+insects	B-organism
+ఉంటాయి	O
+అందులో	O
+}
+
+{\intent	d: పత్తి దూరం ఉండి cover చేసేయండి దాన్ని	ACTION_DIR}
+{\slot
+పత్తి	O
+దూరం	O
+ఉండి	O
+cover	O
+చేసేయండి	O
+దాన్ని	O
+}
+
+{\intent	d: దాని చుట్టూ ఏమైనా మందు కొట్టండి	ACTION_DIR}
+{\slot
+దాని	O
+చుట్టూ	O
+ఏమైనా	O
+మందు	B-medicine
+కొట్టండి	O
+}
+
+{\intent	d: 3 నెలలనుంచి బాగా వస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+3	B-time_period
+నెలలనుంచి	I-time_period
+బాగా	B-intensity
+వస్తాయి	O
+}
+
+{\intent	p: అందరికీ వచ్చినాయి sir	STATEMENT}
+{\slot
+అందరికీ	O
+వచ్చినాయి	O
+sir	O
+}
+
+{\intent	d: అదే చెప్పేది	STATEMENT}
+{\slot
+అదే	O
+చెప్పేది	O
+}
+
+{\intent	p: తెల్లమచ్చ కూడా ఉంది ఇక్కడ	STATEMENT}
+{\slot
+తెల్లమచ్చ	B-symptom
+కూడా	O
+ఉంది	O
+ఇక్కడ	O
+}
+
+{\intent	d: ఇదే మచ్చ 14 ఏళ్ళవరకు మచ్చలు ఉంటూ పోతూ ఉంటుంది.	STATEMENT}
+{\slot
+ఇదే	O
+మచ్చ	B-symptom
+14	B-age
+ఏళ్ళవరకు	I-age
+మచ్చలు	B-symptom
+ఉంటూ	O
+పోతూ	O
+ఉంటుంది.	O
+}
+
+{\intent	p: సరిగ్గా తినదు, motionకి freeగా పోదు	STATEMENT}
+{\slot
+సరిగ్గా	O
+తినదు,	B-symptom
+motionకి	B-symptom
+freeగా	B-symptom
+పోదు	I-symptom
+}
+
+{\intent	d: खाना మంచిగా ఉంటే पाखाना మంచిగా ఉంటది	QUOTATION}
+{\slot
+खाना	B-food_substance
+మంచిగా	O
+ఉంటే	O
+पाखाना	B-bodily_process
+మంచిగా	O
+ఉంటది	O
+}
+
+{\intent	d: తీసుకో	ACTION_DIR}
+{\slot
+తీసుకో	O
+}
+
+{\intent	d: 2 వారాలు lotion పెట్టండి, బుగ్గలకు ointment పెట్టండి.	ACTION_DIR}
+{\slot
+2	B-time_period
+వారాలు	I-time_period
+lotion	B-medicine
+పెట్టండి,	O
+బుగ్గలకు	B-body_part
+ointment	B-medicine
+పెట్టండి.	O
+}
+

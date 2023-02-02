@@ -1,0 +1,156 @@
+{\intent	p: Hello sir, నమస్తే sir	GREETING}
+{\slot
+Hello	O
+sir,	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్కారం చెప్పండి	ACTION_DIR}
+{\slot
+నమస్కారం	O
+చెప్పండి	O
+}
+
+{\intent	p: sir ఒక 6 months నుంచి sir, కొంచం నాకు నడుములో నొప్పి ఉంటే doctor దెగ్గరికి పోయిన sir	STATEMENT}
+{\slot
+sir	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+నుంచి	O
+sir,	O
+కొంచం	O
+నాకు	O
+నడుములో	B-body_part
+నొప్పి	B-symptom
+ఉంటే	O
+doctor	B-medical_professional
+దెగ్గరికి	O
+పోయిన	O
+sir	O
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: కానీ kidneysలో, ఒక 4.5mm, 5mm రాళ్ళు ఉన్నాయి చెప్పినారు, stones	STATEMENT}
+{\slot
+కానీ	O
+kidneysలో,	B-body_part
+ఒక	O
+4.5mm,	B-mtest_value
+5mm	B-mtest_value
+రాళ్ళు	B-body_substance
+ఉన్నాయి	O
+చెప్పినారు,	O
+stones	B-body_substance
+}
+
+{\intent	d: ఆహా	ACK}
+{\slot
+ఆహా	O
+}
+
+{\intent	p: అది కొంచము, వేరే వాళ్ళు మాకు homeo వాడితే తగ్గుతది అని చెప్పినారు	STATEMENT}
+{\slot
+అది	O
+కొంచము,	O
+వేరే	O
+వాళ్ళు	O
+మాకు	O
+homeo	B-medicine
+వాడితే	O
+తగ్గుతది	O
+అని	O
+చెప్పినారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ మందు వాడినం sir	STATEMENT}
+{\slot
+అక్కడ	O
+మందు	B-medicine
+వాడినం	O
+sir	O
+}
+
+{\intent	d: see normalగా ఏమైపోతుంది అంటేగిన, homeopathyలో అంతా they will give the treatment, small stones pass అయిపోతాయి	MEDICAL_EXPLANATION}
+{\slot
+see	O
+normalగా	O
+ఏమైపోతుంది	O
+అంటేగిన,	O
+homeopathyలో	B-medicine
+అంతా	O
+they	O
+will	O
+give	O
+the	O
+treatment,	B-treatment
+small	O
+stones	B-body_substance
+pass	B-normal
+అయిపోతాయి	I-normal
+}
+
+{\intent	d: urineలో pass అవుతాయి కాబట్టి, then they will say that ya మేము treatment ఇస్తిమి కరిగిపోయాయి అంటారు	MEDICAL_EXPLANATION}
+{\slot
+urineలో	B-body_part
+pass	B-bodily_process
+అవుతాయి	O
+కాబట్టి,	O
+then	O
+they	O
+will	O
+say	O
+that	O
+ya	O
+మేము	O
+treatment	B-treatment
+ఇస్తిమి	O
+కరిగిపోయాయి	O
+అంటారు	O
+}
+
+{\intent	d: stones never కరిగేయలేదు, it will pass out urine, in the small stones	MEDICAL_EXPLANATION}
+{\slot
+stones	B-body_substance
+never	O
+కరిగేయలేదు,	O
+it	O
+will	O
+pass	B-bodily_process
+out	O
+urine,	B-body_substance
+in	O
+the	O
+small	O
+stones	B-body_substance
+}
+
+{\intent	d: అదే stones పెద్దగా అయి ఉన్నాయి అంటే, 5mm, ఇంకా పెద్దగా అయినప్పుడు stone never passes through urine	MEDICAL_EXPLANATION}
+{\slot
+అదే	O
+stones	B-body_substance
+పెద్దగా	O
+అయి	O
+ఉన్నాయి	O
+అంటే,	O
+5mm,	B-mtest_value
+ఇంకా	O
+పెద్దగా	O
+అయినప్పుడు	O
+stone	B-body_substance
+never	O
+passes	O
+through	O
+urine	B-body_substance
+}
+

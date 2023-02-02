@@ -1,0 +1,109 @@
+{\intent	p: doctor గారు మా బాబుకి 5 నెలలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+బాబుకి	B-person
+5	B-time_period
+నెలలు.	I-time_period
+}
+
+{\intent	p: కంటి చూపు నిలకడగా ఉంది.	STATEMENT}
+{\slot
+కంటి	B-body_part
+చూపు	B-bodily_process
+నిలకడగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: మట్లాడిన గట్టిగా స్పందన చేసిన స్పందన కలగలేదు.	STATEMENT}
+{\slot
+మట్లాడిన	O
+గట్టిగా	O
+స్పందన	O
+చేసిన	O
+స్పందన	B-symptom
+కలగలేదు.	I-symptom
+}
+
+{\intent	d: usualగా ఏంటంటే చిన్న పిల్లలు 5 6 నెలలప్పుడు కళ్ళు నిలకడ కానీ సబబు వచ్చిన దిక్కుకు తిరిగి చూడాడం జరుగుతా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+ఏంటంటే	O
+చిన్న	O
+పిల్లలు	O
+5	B-age
+6	B-age
+నెలలప్పుడు	I-age
+కళ్ళు	B-body_part
+నిలకడ	O
+కానీ	O
+సబబు	O
+వచ్చిన	O
+దిక్కుకు	O
+తిరిగి	O
+చూడాడం	O
+జరుగుతా	O
+ఉంటది.	O
+}
+
+{\intent	d: అంతకన్నా ముందు మనం expect చేయడము మనకు సబబు కాదు.	MEDICAL_EXPLANATION}
+{\slot
+అంతకన్నా	O
+ముందు	O
+మనం	O
+expect	O
+చేయడము	O
+మనకు	O
+సబబు	O
+కాదు.	O
+}
+
+{\intent	d: so తల్లి తండ్రులకు ముఖ్యంగా చెప్పేది ఏంటి అంటే అలా చేయనప్పుడు ఎక్కువ anxiousగా feel కాకుండా observe చేస్తా ఉండాలి పిల్లలని	MEDICAL_EXPLANATION}
+{\slot
+so	O
+తల్లి	B-familal
+తండ్రులకు	B-familal
+ముఖ్యంగా	O
+చెప్పేది	O
+ఏంటి	O
+అంటే	O
+అలా	O
+చేయనప్పుడు	O
+ఎక్కువ	O
+anxiousగా	B-symptom
+feel	O
+కాకుండా	O
+observe	O
+చేస్తా	O
+ఉండాలి	O
+పిల్లలని	O
+}
+
+{\intent	d: 5, 6, 7 నెలలలో usualగా మనం శబ్దం చేసిన దిక్కుకు అప్పుడు కూడా తలతిప్పి చూడాకుండా ఉన్నప్పుడు మనము కొంచం carefulగా ఉండి దెగ్గరలో ఉన్న ENT doctorని సంప్రదించాలి.	ACTION_DIR}
+{\slot
+5,	B-age
+6,	I-age
+7	I-age
+నెలలలో	I-age
+usualగా	O
+మనం	O
+శబ్దం	O
+చేసిన	O
+దిక్కుకు	O
+అప్పుడు	O
+కూడా	O
+తలతిప్పి	B-bodily_process
+చూడాకుండా	O
+ఉన్నప్పుడు	O
+మనము	O
+కొంచం	O
+carefulగా	O
+ఉండి	O
+దెగ్గరలో	O
+ఉన్న	O
+ENT	B-medical_professional
+doctorని	I-health_professional
+సంప్రదించాలి.	O
+}
+

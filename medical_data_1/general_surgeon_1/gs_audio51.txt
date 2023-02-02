@@ -1,0 +1,151 @@
+{\intent	p: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam ఒక 2 months నుంచి కడుపులో మంట ఉంటుంది madam	STATEMENT}
+{\slot
+madam	O
+ఒక	O
+2	B-time_period
+months	I-time_period
+నుంచి	O
+కడుపులో	B-body_part
+మంట	B-symptom
+ఉంటుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 1 month back ఈ Yashoda hospitalలో చూయించానండి secunderabadలో	STATEMENT}
+{\slot
+1	B-time_period
+month	I-time_period
+back	O
+ఈ	O
+Yashoda	B-hospital_name
+hospitalలో	I-hospital_name
+చూయించానండి	O
+secunderabadలో	B-place
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: madam report నా దెగ్గారనే ఉంది madam ఇప్పుడు	STATEMENT}
+{\slot
+madam	O
+report	O
+నా	O
+దెగ్గారనే	O
+ఉంది	O
+madam	O
+ఇప్పుడు	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అయితే ulcer in early stageలో ఉందని చెప్పారండీ	STATEMENT}
+{\slot
+అయితే	O
+ulcer	B-medical_condition
+in	O
+early	O
+stageలో	O
+ఉందని	O
+చెప్పారండీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: starting stageలో ఉందన్నారా?	INFO_REQUEST}
+{\slot
+starting	O
+stageలో	O
+ఉందన్నారా?	O
+}
+
+{\intent	p: starting stageలో ఉంది అని చెప్పారు	ANSWER}
+{\slot
+starting	O
+stageలో	O
+ఉంది	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే నేను treatment అయితే వాడాను madam. ఇచ్చిన course.	STATEMENT}
+{\slot
+అయితే	O
+నేను	O
+treatment	B-treatment
+అయితే	O
+వాడాను	O
+madam.	O
+ఇచ్చిన	O
+course.	O
+}
+
+{\intent	p: కానీ పెద్దగా దాని effect ఏం ఉన్నట్లు అనిపించట్లేదు	STATEMENT}
+{\slot
+కానీ	O
+పెద్దగా	O
+దాని	O
+effect	O
+ఏం	O
+ఉన్నట్లు	O
+అనిపించట్లేదు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు homeopathyలో ఏమైనా medicines ఉన్నాయా అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+homeopathyలో	B-medicine
+ఏమైనా	O
+medicines	B-medicine
+ఉన్నాయా	O
+అండి?	O
+}
+
+{\intent	d: 100 percent ఉన్నాయి sir.	ANSWER}
+{\slot
+100	O
+percent	O
+ఉన్నాయి	O
+sir.	O
+}
+

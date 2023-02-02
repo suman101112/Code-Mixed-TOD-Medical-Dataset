@@ -1,0 +1,120 @@
+{\intent	p: eye sight లేకున్నా తరచు కళ్ళు అలసిపోవడం, తలనొప్పికి కారణాలు ఏంటి?	INFO_REQUEST}
+{\slot
+eye	B-body_part
+sight	B-bodily_process
+లేకున్నా	O
+తరచు	O
+కళ్ళు	B-body_part
+అలసిపోవడం,	B-symptom
+తలనొప్పికి	B-symptom
+కారణాలు	O
+ఏంటి?	O
+}
+
+{\intent	d: eye sight వల్ల కళ్ళు అలసిపోవడము అనేది కాదు.	MEDICAL_EXPLANATION}
+{\slot
+eye	B-body_part
+sight	B-bodily_process
+వల్ల	O
+కళ్ళు	B-body_part
+అలసిపోవడము	B-symptom
+అనేది	O
+కాదు.	O
+}
+
+{\intent	d: sight ఉన్న లేకపోయినా కళ్ళలో ఉండే కండరాలు ఆ strainకి లోను అవుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+sight	B-bodily_process
+ఉన్న	O
+లేకపోయినా	O
+కళ్ళలో	B-body_part
+ఉండే	O
+కండరాలు	B-body_part
+ఆ	O
+strainకి	B-symptom
+లోను	O
+అవుతాయి.	O
+}
+
+{\intent	d: మనం అదే పనిగా దెగ్గర, especially దెగ్గర చూపుకి సంబంధించినది.	MEDICAL_EXPLANATION}
+{\slot
+మనం	O
+అదే	O
+పనిగా	O
+దెగ్గర,	O
+especially	O
+దెగ్గర	B-location
+చూపుకి	B-bodily_process
+సంబంధించినది.	O
+}
+
+{\intent	d: మనం చూస్తున్నప్పుడు దూరము చూస్తాము, దెగ్గర చూస్తాము.	MEDICAL_EXPLANATION}
+{\slot
+మనం	O
+చూస్తున్నప్పుడు	B-bodily_process
+దూరము	B-location
+చూస్తాము,	B-bodily_process
+దెగ్గర	B-location
+చూస్తాము.	B-bodily_process
+}
+
+{\intent	d: కానీ దెగ్గరగా చూసినప్పుడే కంటిలో ఉన్న కండరాలకి పని పడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+దెగ్గరగా	B-location
+చూసినప్పుడే	B-bodily_process
+కంటిలో	B-body_part
+ఉన్న	O
+కండరాలకి	B-body_part
+పని	O
+పడుతుంది.	O
+}
+
+{\intent	d: అవి focus చేయడానికి ప్రయత్నం చేస్తాయి.	MEDICAL_EXPLANATION}
+{\slot
+అవి	O
+focus	O
+చేయడానికి	O
+ప్రయత్నం	O
+చేస్తాయి.	O
+}
+
+{\intent	d: ఆ timeలో అది computer, laptop ఆ, phone ఆ, book reading ఆ, ఏదైనా కూడా దెగ్గర చూపులోనే కండరాలకు పని ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	O
+timeలో	O
+అది	O
+computer,	O
+laptop	O
+ఆ,	O
+phone	O
+ఆ,	O
+book	O
+reading	O
+ఆ,	O
+ఏదైనా	O
+కూడా	O
+దెగ్గర	B-location
+చూపులోనే	B-bodily_process
+కండరాలకు	B-body_part
+పని	O
+ఉంటుంది.	O
+}
+
+{\intent	d: so కొన్ని గంటల తరువాత అలసిపోవడం సహజం. అలాగే కొంత dryness కూడా దీనికి contribute చేస్తుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+కొన్ని	O
+గంటల	B-time_period
+తరువాత	I-time_period
+అలసిపోవడం	B-symptom
+సహజం.	O
+అలాగే	O
+కొంత	O
+dryness	B-medical_condition
+కూడా	O
+దీనికి	O
+contribute	O
+చేస్తుంది.	O
+}
+

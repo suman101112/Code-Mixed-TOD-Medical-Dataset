@@ -1,0 +1,200 @@
+{\intent	p: నమస్తే ma'am	GREETING}
+{\slot
+నమస్తే	O
+ma'am	O
+}
+
+{\intent	d: నమస్తే	GREETING}
+{\slot
+నమస్తే	O
+}
+
+{\intent	p: మా పాపకు 22 years madam	ANSWER}
+{\slot
+మా	O
+పాపకు	B-person
+22	B-age
+years	I-age
+madam	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: 1 year అయితుంది marriage అయి	STATEMENT}
+{\slot
+1	B-time_period
+year	I-time_period
+అయితుంది	O
+marriage	B-marital_status
+అయి	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అయితే చిన్నప్పటి నుంచి ఆమెకు regularగా periods ఉండవు madam	STATEMENT}
+{\slot
+అయితే	O
+చిన్నప్పటి	B-time_period
+నుంచి	O
+ఆమెకు	O
+regularగా	B-normal
+periods	B-bodily_process
+ఉండవు	B-negative
+madam	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: medicines వాడిస్తున్నా marriage అయినంక problems వస్తుంది అని	STATEMENT}
+{\slot
+medicines	B-medicine
+వాడిస్తున్నా	O
+marriage	B-marital_status
+అయినంక	O
+problems	O
+వస్తుంది	O
+అని	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఇప్పుడు madamతో చూయించితే 6 months నుంచి madam injections అవి ఇవి పెడుతున్నారు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+madamతో	O
+చూయించితే	O
+6	B-time_period
+months	I-time_period
+నుంచి	O
+madam	O
+injections	B-medicine
+అవి	O
+ఇవి	O
+పెడుతున్నారు	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: మళ్ళి ఇప్పుడు వచ్చేసి eggs release కావాట్లేవు, hormone imbalance ఉంది	STATEMENT}
+{\slot
+మళ్ళి	O
+ఇప్పుడు	O
+వచ్చేసి	O
+eggs	B-body_part
+release	B-bodily_process
+కావాట్లేవు,	O
+hormone	B-body_substance
+imbalance	B-medical_condition
+ఉంది	O
+}
+
+{\intent	d: uhum	STATEMENT}
+{\slot
+uhum	O
+}
+
+{\intent	p: lining endometrium చాలా తక్వ ఉంది. lining problem ఉంది అంటున్నారు	STATEMENT}
+{\slot
+lining	B-body_part
+endometrium	I-body_part
+చాలా	B-intensity
+తక్వ	B-symptom
+ఉంది.	O
+lining	B-body_part
+problem	B-symptom
+ఉంది	O
+అంటున్నారు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఇప్పుడు IVF చేయించుకోండి అంటున్నారు	STATEMENT}
+{\slot
+ఇప్పుడు	O
+IVF	B-treatment
+చేయించుకోండి	O
+అంటున్నారు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఇప్పుడు 22 years ఏ పాప, నేను ఇప్పుడు చేయించుకోనూ తర్వాత చేయించుకుంట అంటుంది	STATEMENT}
+{\slot
+ఇప్పుడు	O
+22	B-time_period
+years	I-time_period
+ఏ	O
+పాప,	B-person
+నేను	O
+ఇప్పుడు	B-time_period
+చేయించుకోనూ	B-negative
+తర్వాత	B-time_period
+చేయించుకుంట	O
+అంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఏమన్నా problemఆ madam endometrium లేనప్పుడు ఒక 2 years వేస్తే hormone imbalance ఉన్నప్పుడు అని	INFO_REQUEST}
+{\slot
+అయితే	O
+ఏమన్నా	O
+problemఆ	O
+madam	O
+endometrium	B-body_part
+లేనప్పుడు	B-negative
+ఒక	O
+2	B-time_period
+years	I-time_period
+వేస్తే	O
+hormone	B-body_substance
+imbalance	B-medical_condition
+ఉన్నప్పుడు	O
+అని	O
+}
+
+{\intent	p: please madam	STATEMENT}
+{\slot
+please	O
+madam	O
+}
+
+{\intent	d: ఎక్కువ time వృధా చేయకుండా better you try for the best techniques	ANSWER}
+{\slot
+ఎక్కువ	B-intensity
+time	O
+వృధా	O
+చేయకుండా	O
+better	O
+you	O
+try	O
+for	O
+the	O
+best	O
+techniques	O
+}
+

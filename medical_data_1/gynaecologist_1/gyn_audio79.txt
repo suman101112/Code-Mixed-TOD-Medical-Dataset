@@ -1,0 +1,190 @@
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam, Hello	SU}
+{\slot
+madam,	O
+Hello	O
+}
+
+{\intent	d: చెప్పండి Laxmi గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Laxmi	B-name
+గారు	O
+}
+
+{\intent	p: madam నాకు marriage అయి 10 months అవుతుంది madam	STATEMENT}
+{\slot
+madam	O
+నాకు	O
+marriage	B-marital_status
+అయి	O
+10	B-time_period
+months	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ నాకు periods irregularగా అవుతున్నాయి	STATEMENT}
+{\slot
+ఆ	O
+నాకు	O
+periods	B-bodily_process
+irregularగా	B-symptom
+అవుతున్నాయి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pregnant రాలేదు అని చెప్పేసి నాకు hospitalలో చూపించారు madam నాకు	STATEMENT}
+{\slot
+pregnant	B-bodily_process
+రాలేదు	B-negative
+అని	O
+చెప్పేసి	O
+నాకు	O
+hospitalలో	B-place
+చూపించారు	O
+madam	O
+నాకు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: Ovaries size తక్వ ఉంది అని చెప్తున్నారు madam	STATEMENT}
+{\slot
+Ovaries	B-body_part
+size	B-mtest
+తక్వ	B-symptom
+ఉంది	O
+అని	O
+చెప్తున్నారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలాగే ఇప్పుడు ఇద్దరి దెగ్గర చూపించుకున్నాం gynecologist దెగ్గర చూపించుకున్నాను madam	STATEMENT}
+{\slot
+అలాగే	O
+ఇప్పుడు	O
+ఇద్దరి	O
+దెగ్గర	O
+చూపించుకున్నాం	O
+gynecologist	B-medical_professional
+దెగ్గర	O
+చూపించుకున్నాను	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: so 3 months use చేసాను tablets	STATEMENT}
+{\slot
+so	O
+3	B-time_period
+months	I-time_period
+use	O
+చేసాను	O
+tablets	B-medicine
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయినా కూడా pregnancy నిలబడడం లేదు madam	STATEMENT}
+{\slot
+అయినా	O
+కూడా	O
+pregnancy	B-bodily_process
+నిలబడడం	B-normal
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇంకా date time ముందు కంటే ఇంకా ముందే వస్తుంది madam period	STATEMENT}
+{\slot
+ఇంకా	O
+date	B-bodily_process
+time	B-time_period
+ముందు	B-symptom
+కంటే	O
+ఇంకా	B-intensity
+ముందే	B-symptom
+వస్తుంది	O
+madam	O
+period	B-bodily_process
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అమ్మా	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అమ్మా	O
+}
+
+{\intent	p: 25 madam	ANSWER}
+{\slot
+25	B-age
+madam	O
+}
+
+{\intent	d: actualగా మీకు hormone imbalance PCOD అంటే ovary size కాదండి అండం size తక్వ ఉండడం	STATEMENT}
+{\slot
+actualగా	O
+మీకు	O
+hormone	B-body_substance
+imbalance	B-medical_condition
+PCOD	B-medical_condition
+అంటే	O
+ovary	B-body_part
+size	B-mtest
+కాదండి	O
+అండం	B-body_part
+size	B-mtest
+తక్వ	B-symptom
+ఉండడం	O
+}
+
+{\intent	d: follicle అనేది ఎదగక పోవడం వలన.	STATEMENT}
+{\slot
+follicle	B-body_part
+అనేది	O
+ఎదగక	B-bodily_process
+పోవడం	B-negative
+వలన.	O
+}
+

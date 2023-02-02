@@ -1,0 +1,221 @@
+{\intent	d: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి sir	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: ఆ madam కాళ్ళు వాపులు వస్తా ఉన్నాయి.	STATEMENT}
+{\slot
+ఆ	O
+madam	O
+కాళ్ళు	B-body_part
+వాపులు	B-symptom
+వస్తా	O
+ఉన్నాయి.	O
+}
+
+{\intent	p: ఏమైనా kidney సమస్య ఏమన్నా ఉంది అంటారా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+kidney	B-body_part
+సమస్య	O
+ఏమన్నా	O
+ఉంది	O
+అంటారా?	O
+}
+
+{\intent	d: రెండు కాళ్ళు వాపులు వస్తున్నాయా sir?	INFO_REQUEST}
+{\slot
+రెండు	B-frequency
+కాళ్ళు	B-body_part
+వాపులు	B-symptom
+వస్తున్నాయా	O
+sir?	O
+}
+
+{\intent	p: అంటే ఒక కాళ్ళలో rodలు ఉన్నాయి, మామూలుగా accidents అయి rods ఉన్నాయి	STATEMENT}
+{\slot
+అంటే	O
+ఒక	B-frequency
+కాళ్ళలో	B-body_part
+rodలు	O
+ఉన్నాయి,	O
+మామూలుగా	O
+accidents	B-trauma
+అయి	O
+rods	O
+ఉన్నాయి	B-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మోకాలి కింద ఒక rod ఉంది.	STATEMENT}
+{\slot
+మోకాలి	B-body_part
+కింద	B-location
+ఒక	O
+rod	O
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అంటే పక్క కాలు కూడా వాపు వస్తా ఉంది, మళ్ళ night అంతా rest తీసుకుంటే తగ్గిపోతా ఉంది	STATEMENT}
+{\slot
+అంటే	O
+పక్క	B-location
+కాలు	B-body_part
+కూడా	O
+వాపు	B-symptom
+వస్తా	O
+ఉంది,	O
+మళ్ళ	O
+night	B-time_period
+అంతా	O
+rest	B-bodily_process
+తీసుకుంటే	I-bodily_process
+తగ్గిపోతా	B-normal
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది మామూలుగా బండి మీద కిందకి కాలు ఇదిచ్చి పోయొచ్చి ఇలా ఏంబడే వాపు వస్తుంది దానివల్ల	STATEMENT}
+{\slot
+అది	O
+మామూలుగా	O
+బండి	O
+మీద	O
+కిందకి	O
+కాలు	B-body_part
+ఇదిచ్చి	O
+పోయొచ్చి	O
+ఇలా	O
+ఏంబడే	O
+వాపు	B-symptom
+వస్తుంది	O
+దానివల్ల	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: అది kidney సమస్య అయితే ఎట్లా ఉంటది? ఏముంది అని తెలియ చేయండి కొద్దిగా	INFO_REQUEST}
+{\slot
+అది	O
+kidney	B-body_part
+సమస్య	O
+అయితే	O
+ఎట్లా	O
+ఉంటది?	O
+ఏముంది	O
+అని	O
+తెలియ	O
+చేయండి	O
+కొద్దిగా	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 44	ANSWER}
+{\slot
+44	B-age
+}
+
+{\intent	d: ఏం చేస్తుంటారు మీరు?	INFO_REQUEST}
+{\slot
+ఏం	O
+చేస్తుంటారు	O
+మీరు?	O
+}
+
+{\intent	p: ఇదే ఏదో వ్యాపారం చేస్తూ ఉంటాను	ANSWER}
+{\slot
+ఇదే	O
+ఏదో	O
+వ్యాపారం	B-profession
+చేస్తూ	O
+ఉంటాను	O
+}
+
+{\intent	d: అంటే continuous నిలబడే పని ఉంటుందా sir? తిరిగే పని ఉంటుందా?	INFO_REQUEST}
+{\slot
+అంటే	O
+continuous	O
+నిలబడే	O
+పని	O
+ఉంటుందా	O
+sir?	O
+తిరిగే	O
+పని	O
+ఉంటుందా?	O
+}
+
+{\intent	p: నిలబడిన కూడా చేతకాదు ఎప్పుడు బండిమీదనే ఉంట, అట్ల తయారైన ఇప్పుడు	ANSWER}
+{\slot
+నిలబడిన	O
+కూడా	O
+చేతకాదు	O
+ఎప్పుడు	O
+బండిమీదనే	O
+ఉంట,	O
+అట్ల	O
+తయారైన	O
+ఇప్పుడు	O
+}
+
+{\intent	d: ok, hanging down continuousగా ఉంటుంది.	ACK}
+{\slot
+ok,	O
+hanging	O
+down	O
+continuousగా	O
+ఉంటుంది.	O
+}
+
+{\intent	d: so pedal edema అంటాము	DIAGNOSIS}
+{\slot
+so	O
+pedal	B-symptom
+edema	I-symptom
+అంటాము	O
+}
+
+{\intent	d: కళ్ళలో వాపుకు mutiple reasons ఉంటాయి అండి.	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళలో	B-body_part
+వాపుకు	B-symptom
+mutiple	O
+reasons	O
+ఉంటాయి	O
+అండి.	O
+}
+

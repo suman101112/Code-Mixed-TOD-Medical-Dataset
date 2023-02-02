@@ -1,0 +1,166 @@
+{\intent	d: చెప్పమ్మా	CONV_OPEN}
+{\slot
+చెప్పమ్మా	O
+}
+
+{\intent	d: ఏం పేరు ఈనెది?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+ఈనెది?	O
+}
+
+{\intent	p1: sir aadarsh	ANSWER}
+{\slot
+sir	O
+aadarsh	B-name
+}
+
+{\intent	d: ఎంత age ఎంత?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age	O
+ఎంత?	O
+}
+
+{\intent	p1: 3 years	ANSWER}
+{\slot
+3	B-age
+years	I-age
+}
+
+{\intent	d: 1 month తక్వ 3 years	ANSWER}
+{\slot
+1	B-time_period
+month	I-time_period
+తక్వ	O
+3	B-age
+years	I-age
+}
+
+{\intent	d: చెప్పండి ఏంటి problem?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏంటి	O
+problem?	O
+}
+
+{\intent	p2: నిన్న vomiting చేసుకుంది	ANSWER}
+{\slot
+నిన్న	O
+vomiting	B-symptom
+చేసుకుంది	O
+}
+
+{\intent	p1: మధ్యానం నుంచి vomiting చేసుకుంటుంది	STATEMENT}
+{\slot
+మధ్యానం	B-time_period
+నుంచి	O
+vomiting	B-symptom
+చేసుకుంటుంది	O
+}
+
+{\intent	d: ఏమైనా మందు పోసారా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+మందు	B-medicine
+పోసారా?	O
+}
+
+{\intent	p2: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: దగ్గుతో నా? ఉత్తగానే ఆ?	INFO_REQUEST}
+{\slot
+దగ్గుతో	B-symptom
+నా?	O
+ఉత్తగానే	O
+ఆ?	O
+}
+
+{\intent	p1: ఉత్తగానే	ANSWER}
+{\slot
+ఉత్తగానే	O
+}
+
+{\intent	d: ఏం లేకుండా వాంతులైతున్నాయా?	INFO_REQUEST}
+{\slot
+ఏం	O
+లేకుండా	O
+వాంతులైతున్నాయా?	B-symptom
+}
+
+{\intent	p1: ఏం లేకుండానే	ANSWER}
+{\slot
+ఏం	O
+లేకుండానే	O
+}
+
+{\intent	d: పొద్దున్న నుంచి ఏమైనా పెట్టారా?	INFO_REQUEST}
+{\slot
+పొద్దున్న	B-time_period
+నుంచి	O
+ఏమైనా	O
+పెట్టారా?	O
+}
+
+{\intent	p1: ఏం పెట్టలేదు, లేచినప్పటి నుంచి ఏ	ANSWER}
+{\slot
+ఏం	O
+పెట్టలేదు,	B-negative
+లేచినప్పటి	O
+నుంచి	O
+ఏ	O
+}
+
+{\intent	p1: జ్వరం తోనే vomitings	ANSWER}
+{\slot
+జ్వరం	B-symptom
+తోనే	O
+vomitings	B-symptom
+}
+
+{\intent	d: బయట చిరు తిండ్లు biscuits, ఏమైనా తిన్నాడా?	INFO_REQUEST}
+{\slot
+బయట	B-place
+చిరు	B-food_substance
+తిండ్లు	I-food_substance
+biscuits,	B-food_substance
+ఏమైనా	O
+తిన్నాడా?	B-bodily_process
+}
+
+{\intent	p2: నిన్న biscuit తింట అని biscuit తిన్నాడు	ANSWER}
+{\slot
+నిన్న	O
+biscuit	B-food_substance
+తింట	B-bodily_process
+అని	O
+biscuit	B-food_substance
+తిన్నాడు	B-bodily_process
+}
+
+{\intent	p2: కడుపులో నొప్పి లేస్తాంది.	ANSWER}
+{\slot
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+లేస్తాంది.	O
+}
+
+{\intent	d: vomiting అయ్యే ముందు ఎవరికైనా కడుపులో నొప్పి, కడుపులో తిప్పినట్లు అయితేనే vomiting అయితది.	MEDICAL_EXPLANATION}
+{\slot
+vomiting	B-symptom
+అయ్యే	O
+ముందు	B-time_period
+ఎవరికైనా	O
+కడుపులో	B-body_part
+నొప్పి,	B-symptom
+కడుపులో	B-body_part
+తిప్పినట్లు	B-symptom
+అయితేనే	O
+vomiting	B-symptom
+అయితది.	O
+}
+

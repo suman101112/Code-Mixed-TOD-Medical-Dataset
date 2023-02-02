@@ -1,0 +1,194 @@
+{\intent	p: Hello madam	GREETING}
+{\slot
+Hello	O
+madam	O
+}
+
+{\intent	d: ఆ Hello అండి	GREETING}
+{\slot
+ఆ	O
+Hello	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: recentగా marriage అయింది నాకు madam	STATEMENT}
+{\slot
+recentగా	O
+marriage	B-marital_status
+అయింది	O
+నాకు	O
+madam	O
+}
+
+{\intent	d: ఏంటండీ?	SNU}
+{\slot
+ఏంటండీ?	O
+}
+
+{\intent	p: recentగా marriage అయింది	REPEAT_REPHRASE}
+{\slot
+recentగా	O
+marriage	B-marital_status
+అయింది	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	p: అయితే stomach pain అప్పుడప్పుడు వస్తుంది madam	STATEMENT}
+{\slot
+అయితే	O
+stomach	B-body_part
+pain	B-symptom
+అప్పుడప్పుడు	B-time_period
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎక్కడైనా చూపించుకున్నారా అండి Santosh గారు?	INFO_REQUEST}
+{\slot
+ఎక్కడైనా	O
+చూపించుకున్నారా	O
+అండి	O
+Santosh	B-name
+గారు?	O
+}
+
+{\intent	p: ఆ చూపించుకున్నాం	ANSWER}
+{\slot
+ఆ	O
+చూపించుకున్నాం	O
+}
+
+{\intent	d: ఏం అన్నారు?	INFO_REQUEST}
+{\slot
+ఏం	O
+అన్నారు?	O
+}
+
+{\intent	p: అంటే normal pain అని చెప్పారు.	ANSWER}
+{\slot
+అంటే	O
+normal	O
+pain	B-symptom
+అని	O
+చెప్పారు.	O
+}
+
+{\intent	d: normal gastritis అని	ACK}
+{\slot
+normal	B-symptom
+gastritis	I-symptom
+అని	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: motion freeనే అవుతుందా?	INFO_REQUEST}
+{\slot
+motion	B-bodily_process
+freeనే	B-normal
+అవుతుందా?	O
+}
+
+{\intent	p: ఆ ok ma'am	ANSWER}
+{\slot
+ఆ	O
+ok	B-positive
+ma'am	O
+}
+
+{\intent	d: ఎం problem లేదు.	ACK}
+{\slot
+ఎం	O
+problem	O
+లేదు.	O
+}
+
+{\intent	p: అవును ma'am	ACK}
+{\slot
+అవును	O
+ma'am	O
+}
+
+{\intent	d: ok Santoshగారు మీరు చెప్తున్నా ప్రకారం ఏంటంటే ఒక్కటి recent marriage అంటున్నారు, ఒక్కటి foodలో changes అవుతూ ఉంటాయి	ACK}
+{\slot
+ok	O
+Santoshగారు	B-name
+మీరు	O
+చెప్తున్నా	O
+ప్రకారం	O
+ఏంటంటే	O
+ఒక్కటి	O
+recent	O
+marriage	B-marital_status
+అంటున్నారు,	O
+ఒక్కటి	O
+foodలో	B-food_substance
+changes	O
+అవుతూ	O
+ఉంటాయి	O
+}
+
+{\intent	d: లేదంటే అక్కడ ఇక్కడ తినడం start చేస్తూ ఉంటారు	STATEMENT}
+{\slot
+లేదంటే	O
+అక్కడ	B-location
+ఇక్కడ	B-location
+తినడం	B-bodily_process
+start	O
+చేస్తూ	O
+ఉంటారు	O
+}
+
+{\intent	d: water timeకి తీసుకోకపోవడం వలన కూడా star అయితూ ఉంటది	MEDICAL_EXPLANATION}
+{\slot
+water	B-food_substance
+timeకి	B-time_period
+తీసుకోకపోవడం	B-symptom
+వలన	O
+కూడా	O
+star	O
+అయితూ	O
+ఉంటది	O
+}
+
+{\intent	d: కాకపోతే ఇది only normal stomach pain ఆ ? gastritis ఆ? ఇంకేమన్నా problem convert అయితుందా? ఒకసారి doctor పరివేక్షణలో treatment తీసుకోండి.	ACTION_DIR}
+{\slot
+కాకపోతే	O
+ఇది	O
+only	O
+normal	B-normal
+stomach	B-body_part
+pain	B-symptom
+ఆ	O
+?	O
+gastritis	B-symptom
+ఆ?	O
+ఇంకేమన్నా	O
+problem	O
+convert	O
+అయితుందా?	O
+ఒకసారి	O
+doctor	B-medical_professional
+పరివేక్షణలో	O
+treatment	B-treatment
+తీసుకోండి.	O
+}
+

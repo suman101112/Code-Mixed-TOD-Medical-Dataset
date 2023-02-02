@@ -1,0 +1,191 @@
+{\intent	p: sir నమస్తే sir	GREETING}
+{\slot
+sir	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్కారమండీ	ACK}
+{\slot
+నమస్కారమండీ	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir అంటే నాకు 5, 6 సంవత్సరాల నుంచి gas trouble, గుండెల్లో నొప్పి కింద వచ్చేస్తుంది sir	STATEMENT}
+{\slot
+sir	O
+అంటే	O
+నాకు	O
+5,	B-time_period
+6	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+gas	B-medical_condition
+trouble,	I-medical_condition
+గుండెల్లో	B-body_part
+నొప్పి	B-symptom
+కింద	O
+వచ్చేస్తుంది	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది చాలా మందులు వాడాను కానీ,	ABANDONED}
+{\slot
+అది	O
+చాలా	B-intensity
+మందులు	B-medicine
+వాడాను	O
+కానీ,	O
+}
+
+{\intent	p: endoscopy చేయించాను	STATEMENT}
+{\slot
+endoscopy	B-treatment
+చేయించాను	O
+}
+
+{\intent	d: చెప్పండి	ACK}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: endoscopy చేయించాను sir, అన్నీ బానే ఉన్నాయి అన్నీ normal వచ్చాయి అంటున్నారు sir	STATEMENT}
+{\slot
+endoscopy	B-treatment
+చేయించాను	O
+sir,	O
+అన్నీ	O
+బానే	O
+ఉన్నాయి	O
+అన్నీ	O
+normal	B-normal
+వచ్చాయి	O
+అంటున్నారు	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: కానీ ఇబ్బంది అవుతుంది	STATEMENT}
+{\slot
+కానీ	O
+ఇబ్బంది	B-symptom
+అవుతుంది	O
+}
+
+{\intent	p: కానీ గుండెలో అంటే గుండె కింద పక్క పైభాగంలో గుండెల కింద నొప్పి బాగా వస్తుంది అండి.	STATEMENT}
+{\slot
+కానీ	O
+గుండెలో	B-body_part
+అంటే	O
+గుండె	B-body_part
+కింద	B-location
+పక్క	I-location
+పైభాగంలో	I-location
+గుండెల	B-body_part
+కింద	B-location
+నొప్పి	B-symptom
+బాగా	B-intensity
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	p: వేడిగా వచ్చేస్తుంది sir నిద్రలో అట్ల మెలకువగా వచ్చేసి	STATEMENT}
+{\slot
+వేడిగా	B-symptom
+వచ్చేస్తుంది	O
+sir	O
+నిద్రలో	B-bodily_process
+అట్ల	O
+మెలకువగా	B-bodily_process
+వచ్చేసి	B-symptom
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: వేడిగా అయిపోయినా నిద్రలో ఉండగానే టప్పుమని మెలకువ వచ్చేస్తుంది sir	REPEAT_REPHRASE}
+{\slot
+వేడిగా	B-symptom
+అయిపోయినా	O
+నిద్రలో	B-bodily_process
+ఉండగానే	B-time_period
+టప్పుమని	O
+మెలకువ	B-bodily_process
+వచ్చేస్తుంది	O
+sir	O
+}
+
+{\intent	d: అల్లాగే అండి. అలాగే	ACK}
+{\slot
+అల్లాగే	O
+అండి.	O
+అలాగే	O
+}
+
+{\intent	d: దాని గురించి చెప్తాను.	CONV_CLOSE}
+{\slot
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: gastric లక్షణాల్లో కేవలం నొప్పి మాత్రం ఛాతి మధ్య భాగంలో ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+gastric	B-medical_condition
+లక్షణాల్లో	O
+కేవలం	O
+నొప్పి	B-symptom
+మాత్రం	O
+ఛాతి	B-body_part
+మధ్య	B-location
+భాగంలో	I-location
+ఉంటుంది.	O
+}
+
+{\intent	d: తేణుపు అధికంగా ఉంటాయి	MEDICAL_EXPLANATION}
+{\slot
+తేణుపు	B-bodily_process
+అధికంగా	O
+ఉంటాయి	O
+}
+
+{\intent	d: కొంచం నొప్పి ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+కొంచం	O
+నొప్పి	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	d: నొప్పి gastric లక్షణము, తేణుపు	MEDICAL_EXPLANATION}
+{\slot
+నొప్పి	B-symptom
+gastric	B-medical_condition
+లక్షణము,	O
+తేణుపు	B-symptom
+}
+
+{\intent	d: ఈ 3 లక్షణాలు gastric లక్షణాలలో ఉన్నాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+3	B-frequency
+లక్షణాలు	O
+gastric	B-medical_condition
+లక్షణాలలో	O
+ఉన్నాయి.	O
+}
+

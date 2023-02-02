@@ -1,0 +1,191 @@
+{\intent	p: doctor గారు నా పేరు Susmita.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Susmita.	B-name
+}
+
+{\intent	p: నా వయస్సు 27 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+27	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నాకు ఎక్కువగా బొర్లా పడుకునే అలవాటు ఉంది.	STATEMENT}
+{\slot
+నాకు	O
+ఎక్కువగా	B-intensity
+బొర్లా	B-location
+పడుకునే	B-bodily_process
+అలవాటు	B-habit
+ఉంది.	O
+}
+
+{\intent	p: ఈ మధ్య నాకు కళ్ళు వాయడం గుచ్చుకోవడం అనేటివి జరుగుతూ ఉంది.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+నాకు	O
+కళ్ళు	B-body_part
+వాయడం	B-symptom
+గుచ్చుకోవడం	B-symptom
+అనేటివి	O
+జరుగుతూ	O
+ఉంది.	O
+}
+
+{\intent	p: doctor ని సంప్రదిస్తే hyperthyroid ఉంది అన్నారు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+ని	O
+సంప్రదిస్తే	O
+hyperthyroid	B-medical_condition
+ఉంది	O
+అన్నారు.	O
+}
+
+{\intent	p: దీనివల్లనే కళ్ళు ఉబ్బడం, ముందుకు పొడుచుకొని రావడం లాంటివి జరుగుతున్నాయి అన్నారు.	STATEMENT}
+{\slot
+దీనివల్లనే	O
+కళ్ళు	B-body_part
+ఉబ్బడం,	B-symptom
+ముందుకు	B-location
+పొడుచుకొని	B-symptom
+రావడం	O
+లాంటివి	O
+జరుగుతున్నాయి	O
+అన్నారు.	O
+}
+
+{\intent	p: thyroid కి కళ్ళు ముందుకు పొడుచుకొని రావడానికి ఏమైనా సంబంధం ఉందా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+కి	O
+కళ్ళు	B-body_part
+ముందుకు	B-location
+పొడుచుకొని	B-symptom
+రావడానికి	O
+ఏమైనా	O
+సంబంధం	O
+ఉందా?	O
+}
+
+{\intent	d: thyroid అనేది మన hormone. ఇక్కడ ఉంటుంది అది. ఆ release thyroxine అనే hormone release చేస్తా ఉంటాయి అవి	MEDICAL_EXPLANATION}
+{\slot
+thyroid	B-medical_condition
+అనేది	O
+మన	O
+hormone.	B-body_substance
+ఇక్కడ	B-location
+ఉంటుంది	O
+అది.	O
+ఆ	O
+release	O
+thyroxine	B-body_substance
+అనే	O
+hormone	B-body_substance
+release	O
+చేస్తా	O
+ఉంటాయి	O
+అవి	O
+}
+
+{\intent	d: అది మన metabolism మీద effect చూపెడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+మన	O
+metabolism	B-bodily_process
+మీద	O
+effect	B-symptom
+చూపెడుతుంది.	O
+}
+
+{\intent	d: అది ఎక్కువ అయినా మంచిది కాదు. తక్కువ అయినా మంచిది కాదు.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+ఎక్కువ	B-intensity
+అయినా	O
+మంచిది	B-normal
+కాదు.	B-negative
+తక్కువ	B-intensity
+అయినా	O
+మంచిది	B-normal
+కాదు.	B-negative
+}
+
+{\intent	d: so కంటి మీద దీని ప్రభావం ఎక్కువైనప్పుడు చూపెడుతుంది. తక్కువకంటే కుడా.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+కంటి	B-body_part
+మీద	B-location
+దీని	O
+ప్రభావం	B-symptom
+ఎక్కువైనప్పుడు	B-intensity
+చూపెడుతుంది.	O
+తక్కువకంటే	B-intensity
+కుడా.	O
+}
+
+{\intent	d: ఎక్కువైనప్పుడు కంటిలో మనకు eye movements చేసే muscles ఉంటాయి అంటే పైకి, కిందికి, ఈ పక్కకి ఆ పక్కకి తిప్పడానికి అలా 6 కండరాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువైనప్పుడు	O
+కంటిలో	B-body_part
+మనకు	O
+eye	B-bodily_process
+movements	I-bodily_process
+చేసే	O
+muscles	B-body_part
+ఉంటాయి	O
+అంటే	O
+పైకి,	B-location
+కిందికి,	B-location
+ఈ	B-location
+పక్కకి	I-location
+ఆ	B-location
+పక్కకి	I-location
+తిప్పడానికి	B-bodily_process
+అలా	O
+6	B-frequency
+కండరాలు	B-body_part
+ఉంటాయి.	O
+}
+
+{\intent	d: so ఈ కండరాల మీద ఆ ప్రభావం చూపుతుంది hormone ఎక్కువైనప్పుడు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఈ	O
+కండరాల	B-body_part
+మీద	B-location
+ఆ	O
+ప్రభావం	B-symptom
+చూపుతుంది	O
+hormone	B-body_substance
+ఎక్కువైనప్పుడు.	B-intensity
+}
+
+{\intent	d: so ఇది ఆ రకంగా కళ్ళు పొడుచుకొని వచ్చినట్లు కనపడుతుంది. అలాగే ఆ muscle movement restrict చేయడం వల్ల movement కూడా తగ్గిపోతుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ఇది	O
+ఆ	O
+రకంగా	O
+కళ్ళు	B-body_part
+పొడుచుకొని	B-symptom
+వచ్చినట్లు	O
+కనపడుతుంది.	B-bodily_process
+అలాగే	O
+ఆ	O
+muscle	B-bodily_process
+movement	B-bodily_process
+restrict	B-symptom
+చేయడం	O
+వల్ల	O
+movement	B-bodily_process
+కూడా	O
+తగ్గిపోతుంది.	B-symptom
+}
+

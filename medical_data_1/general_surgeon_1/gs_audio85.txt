@@ -1,0 +1,138 @@
+{\intent	d: నమస్తే Venkatగారు చెప్పండి	CONV_OPEN}
+{\slot
+నమస్తే	O
+Venkatగారు	B-name
+చెప్పండి	O
+}
+
+{\intent	p: ఆ నమస్తే sir	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+sir	O
+}
+
+{\intent	p: ఇది actualగా kidney stones కాకుండా, gallbladderలో stones అని	STATEMENT}
+{\slot
+ఇది	O
+actualగా	O
+kidney	B-body_substance
+stones	I-body_substance
+కాకుండా,	O
+gallbladderలో	B-body_part
+stones	B-body_substance
+అని	O
+}
+
+{\intent	p: వేరే scanning కి వెళ్తే gall bladderలో ఉన్నాయి అని ఒక 3.5mm ఉండింది, multiple calcium	STATEMENT}
+{\slot
+వేరే	O
+scanning	B-mtest
+కి	O
+వెళ్తే	O
+gall	B-body_part
+bladderలో	I-body_part
+ఉన్నాయి	O
+అని	O
+ఒక	O
+3.5mm	B-mtest_value
+ఉండింది,	O
+multiple	B-mtest_value
+calcium	B-mtest_value
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: అంటే దీనిగురించి చెప్పించారండీ scanning	STATEMENT}
+{\slot
+అంటే	O
+దీనిగురించి	O
+చెప్పించారండీ	O
+scanning	B-mtest
+}
+
+{\intent	p: scanning actualగా బాగా weakness ఉంటే, వేరే gynecology దెగ్గరికి వెళ్తే ఆమె ఈ ultrasonic చూస్తే ఇవి బయట పడ్డాయి.	STATEMENT}
+{\slot
+scanning	B-mtest
+actualగా	O
+బాగా	O
+weakness	B-symptom
+ఉంటే,	O
+వేరే	O
+gynecology	B-profession
+దెగ్గరికి	O
+వెళ్తే	O
+ఆమె	O
+ఈ	O
+ultrasonic	B-mtest
+చూస్తే	O
+ఇవి	O
+బయట	O
+పడ్డాయి.	O
+}
+
+{\intent	d: అవునా	ACK}
+{\slot
+అవునా	O
+}
+
+{\intent	d: ఏమైనా sugar జబ్బు ఏమైనా ఉందా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+sugar	B-medical_condition
+జబ్బు	I-medical_condition
+ఏమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: sugar ఏం లేదు sir	ANSWER}
+{\slot
+sugar	B-medical_condition
+ఏం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	p: ఇప్పుడే అంటే, borderకొచ్చింది అని తెలిసింది	STATEMENT}
+{\slot
+ఇప్పుడే	B-time_period
+అంటే,	O
+borderకొచ్చింది	B-mtest_value
+అని	O
+తెలిసింది	O
+}
+
+{\intent	p: అంటే 48 years old	STATEMENT}
+{\slot
+అంటే	O
+48	B-time_period
+years	I-time_period
+old	I-time_period
+}
+
+{\intent	d: weight ఎక్కువగా ఉంటారా ఏమన్నా?	INFO_REQUEST}
+{\slot
+weight	B-bm
+ఎక్కువగా	B-intensity
+ఉంటారా	O
+ఏమన్నా?	O
+}
+
+{\intent	p: weight medium sir, 65, 67 ఉంటది	ANSWER}
+{\slot
+weight	B-bm
+medium	O
+sir,	O
+65,	B-bm
+67	B-bm
+ఉంటది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

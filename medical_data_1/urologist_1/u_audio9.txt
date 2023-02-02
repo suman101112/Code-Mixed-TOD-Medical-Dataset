@@ -1,0 +1,153 @@
+{\intent	p: అది మా మర్దిగారికి అండి, kidneyలో stones ఉన్నాయండి	STATEMENT}
+{\slot
+అది	O
+మా	O
+మర్దిగారికి	B-familal
+అండి,	O
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉన్నాయండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది ఒకసారి 7 pointలు ఉన్నాయని	STATEMENT}
+{\slot
+అది	O
+ఒకసారి	O
+7	B-mtest_value
+pointలు	I-mtest
+ఉన్నాయని	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: పోతే operation చేసేస్తామని చేసేసారండీ.	STATEMENT}
+{\slot
+పోతే	O
+operation	B-treatment
+చేసేస్తామని	O
+చేసేసారండీ.	O
+}
+
+{\intent	d: hmm, ok	ACK}
+{\slot
+hmm,	O
+ok	O
+}
+
+{\intent	p: అది చేసిన తరువాత ఒక 5 సంవత్సరాల వరకు ఎమి problem లేదండీ , బానే ఉన్నారండి	STATEMENT}
+{\slot
+అది	O
+చేసిన	O
+తరువాత	O
+ఒక	O
+5	B-time_period
+సంవత్సరాల	B-time_period
+వరకు	O
+ఎమి	O
+problem	O
+లేదండీ	O
+,	O
+బానే	B-normal
+ఉన్నారండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి అవి పెరిగిపోయినాయట అండి	STATEMENT}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+అవి	O
+పెరిగిపోయినాయట	B-symptom
+అండి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మొన్న scanning తెస్తే అన్నీ తెలిసినాయట అండి, 12 points దాక వచ్చేసిందండీ	STATEMENT}
+{\slot
+మొన్న	O
+scanning	B-mtest
+తెస్తే	O
+అన్నీ	O
+తెలిసినాయట	O
+అండి,	O
+12	B-mtest_value
+points	B-mtest_value
+దాక	O
+వచ్చేసిందండీ	O
+}
+
+{\intent	d: ooh	ACK}
+{\slot
+ooh	O
+}
+
+{\intent	p: 2nd ఓ సారి	STATEMENT}
+{\slot
+2nd	O
+ఓ	O
+సారి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది ఇప్పుడు దాని గురించి అడిగినం	ACTION_DIR}
+{\slot
+అది	O
+ఇప్పుడు	O
+దాని	O
+గురించి	O
+అడిగినం	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: kidney stone 6 mm ఉండేది ఇప్పుడు 13 mm కి పెరిగినదాని చెప్తున్నారమ్మా	ACK}
+{\slot
+kidney	B-body_substance
+stone	I-body_substance
+6	B-mtest_value
+mm	I-mtest_value
+ఉండేది	O
+ఇప్పుడు	O
+13	B-mtest_value
+mm	I-mtest_value
+కి	O
+పెరిగినదాని	O
+చెప్తున్నారమ్మా	O
+}
+
+{\intent	d: ఆ stone size పెరుగుతున్న కొద్ది problem ఎక్కువగా వస్తూ ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+ఆ	B-positive
+stone	B-body_substance
+size	O
+పెరుగుతున్న	O
+కొద్ది	O
+problem	O
+ఎక్కువగా	O
+వస్తూ	O
+ఉంటది.	O
+}
+

@@ -1,0 +1,215 @@
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: sir నేను, ఇప్పుడే sir, recentగా sir రాత్రే నాకు problem	STATEMENT}
+{\slot
+sir	O
+నేను,	O
+ఇప్పుడే	B-location
+sir,	O
+recentగా	B-time_period
+sir	O
+రాత్రే	B-time_period
+నాకు	O
+problem	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే 6 7 years నుంచి అసలు నాకు injection అంటే ఏంటో కూడా నాకు తెలవది	STATEMENT}
+{\slot
+అయితే	O
+6	B-quantity
+7	B-quantity
+years	B-time_period
+నుంచి	O
+అసలు	O
+నాకు	O
+injection	B-medicine
+అంటే	O
+ఏంటో	O
+కూడా	O
+నాకు	O
+తెలవది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే రాత్రి ఇట్లనే, right side బాగా pain వచ్చింది sir బాగా	STATEMENT}
+{\slot
+అయితే	O
+రాత్రి	B-time_period
+ఇట్లనే,	O
+right	B-location
+side	I-location
+బాగా	B-intensity
+pain	B-symptom
+వచ్చింది	O
+sir	O
+బాగా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: సరి అని చెప్పేసి, Medchalలో Leela hospitalకి వెళితే, Leela hospitalల madam ultrasound చేసేస్తే	STATEMENT}
+{\slot
+సరి	O
+అని	O
+చెప్పేసి,	O
+Medchalలో	B-hospital_name
+Leela	I-hospital_name
+hospitalకి	O
+వెళితే,	O
+Leela	I-hospital_name
+hospitalల	O
+madam	O
+ultrasound	B-mtest
+చేసేస్తే	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: 4 5 6, 3 ఉన్నాయి అని చెప్పి చెప్పింది sir.	STATEMENT}
+{\slot
+4	B-mtest_value
+5	B-mtest_value
+6,	B-mtest_value
+3	B-frequency
+ఉన్నాయి	O
+అని	O
+చెప్పి	O
+చెప్పింది	O
+sir.	O
+}
+
+{\intent	d: 3 stones	ACK}
+{\slot
+3	B-frequency
+stones	B-body_substance
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే మామూలుగా దీనిగురించి చిన్న tablet ఇచ్చింది sir prestone అని చెప్పేసి	STATEMENT}
+{\slot
+అయితే	O
+మామూలుగా	O
+దీనిగురించి	O
+చిన్న	O
+tablet	B-medicine
+ఇచ్చింది	O
+sir	O
+prestone	B-medicine
+అని	O
+చెప్పేసి	O
+}
+
+{\intent	d: ఆ, అది మీకు temporaryగా pain relief వస్తుంది	STATEMENT}
+{\slot
+ఆ,	O
+అది	O
+మీకు	O
+temporaryగా	O
+pain	B-symptom
+relief	O
+వస్తుంది	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఆ, ఎట్ల ఉంది మీకు ఇప్పుడు pain తగ్గిందా?	INFO_REQUEST}
+{\slot
+ఆ,	O
+ఎట్ల	O
+ఉంది	O
+మీకు	O
+ఇప్పుడు	O
+pain	B-symptom
+తగ్గిందా?	O
+}
+
+{\intent	p: pain అంటే ఒక injection ఇచ్చినారు sir, ఒక injection ఇచ్చినప్పుడు కొంచం తగ్గిపోయింది	ANSWER}
+{\slot
+pain	B-symptom
+అంటే	O
+ఒక	O
+injection	B-medicine
+ఇచ్చినారు	O
+sir,	O
+ఒక	O
+injection	B-medicine
+ఇచ్చినప్పుడు	O
+కొంచం	O
+తగ్గిపోయింది	B-normal
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తగ్గిపోయి scanning అన్నీ తీస్తే పర్లేదు	STATEMENT}
+{\slot
+తగ్గిపోయి	B-normal
+scanning	B-mtest
+అన్నీ	O
+తీస్తే	O
+పర్లేదు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: homeopathyలో ఏదైనా పూర్తిగా మనకు వెళ్ళిపోయేటట్టు, hospital ఏమైనా చెప్తారా అని phone చేసిన sir	INFO_REQUEST}
+{\slot
+homeopathyలో	B-medicine
+ఏదైనా	O
+పూర్తిగా	O
+మనకు	O
+వెళ్ళిపోయేటట్టు,	O
+hospital	O
+ఏమైనా	O
+చెప్తారా	O
+అని	O
+phone	O
+చేసిన	O
+sir	O
+}
+
+{\intent	d: ya ya మొత్తం completeగా పోతుంది.	ANSWER}
+{\slot
+ya	O
+ya	O
+మొత్తం	O
+completeగా	O
+పోతుంది.	O
+}
+

@@ -1,0 +1,202 @@
+{\intent	d: नाम बोलो आप का	INFO_REQUEST}
+{\slot
+नाम	O
+बोलो	O
+आप	O
+का	O
+}
+
+{\intent	p: Zulfequar ali साहब , mohmd Zulfequar khaan ali.	ANSWER}
+{\slot
+Zulfequar	B-name
+ali	I-name
+साहब	O
+,	O
+mohmd	B-name
+Zulfequar	I-name
+khaan	I-name
+ali.	I-name
+}
+
+{\intent	d: mohmd	HOLD}
+{\slot
+mohmd	B-name
+}
+
+{\intent	p: Zulfequar ali	ANSWER}
+{\slot
+Zulfequar	I-name
+ali	I-name
+}
+
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: उम्र 53 साहब	ANSWER}
+{\slot
+उम्र	O
+53	B-age
+साहब	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: क्या हुआ?	INFO_REQUEST}
+{\slot
+क्या	O
+हुआ?	O
+}
+
+{\intent	p: सर्दी बहुत सता रहे.	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+बहुत	B-intensity
+सता	O
+रहे.	O
+}
+
+{\intent	p: 4 दिन से हो रहे.	STATEMENT}
+{\slot
+4	B-time_period
+दिन	I-time_period
+से	O
+हो	O
+रहे.	O
+}
+
+{\intent	p: यह डाल दिया.	STATEMENT}
+{\slot
+यह	O
+डाल	O
+दिया.	O
+}
+
+{\intent	d: spray डाल दिया.	ACK}
+{\slot
+spray	B-medicine
+डाल	O
+दिया.	O
+}
+
+{\intent	d: नाक का spray डाल दिया, सर्दी	ACK}
+{\slot
+नाक	B-body_part
+का	O
+spray	B-medicine
+डाल	O
+दिया,	O
+सर्दी	B-medical_condition
+}
+
+{\intent	p: फिर भी नहीं जा रही.	STATEMENT}
+{\slot
+फिर	O
+भी	O
+नहीं	O
+जा	O
+रही.	O
+}
+
+{\intent	d: नाक मैं से नेट जैसे आ रही?	INFO_REQUEST}
+{\slot
+नाक	B-body_part
+मैं	O
+से	O
+नेट	B-symptom
+जैसे	O
+आ	O
+रही?	O
+}
+
+{\intent	p: वो डालने के बाद बहुत आ रहे sir, रात को बहुत दर्द हो रहा sir.	STATEMENT}
+{\slot
+वो	O
+डालने	O
+के	O
+बाद	B-time_period
+बहुत	B-intensity
+आ	O
+रहे	O
+sir,	O
+रात	B-time_period
+को	O
+बहुत	B-intensity
+दर्द	B-symptom
+हो	O
+रहा	O
+sir.	O
+}
+
+{\intent	d: सर दर्द	INFO_REQUEST}
+{\slot
+सर	B-body_part
+दर्द	B-symptom
+}
+
+{\intent	p: नहीं, सर दर्द तो नहीं है sir.	ANSWER}
+{\slot
+नहीं,	B-negative
+सर	B-body_part
+दर्द	B-symptom
+तो	O
+नहीं	B-negative
+है	O
+sir.	O
+}
+
+{\intent	d: बुखार?	INFO_REQUEST}
+{\slot
+बुखार?	B-symptom
+}
+
+{\intent	p: नहीं, बुखार भी नहीं है sir	ANSWER}
+{\slot
+नहीं,	B-negative
+बुखार	B-symptom
+भी	O
+नहीं	B-negative
+है	O
+sir	O
+}
+
+{\intent	d: इधर दर्द है ?	INFO_REQUEST}
+{\slot
+इधर	B-location
+दर्द	B-symptom
+है	O
+?	O
+}
+
+{\intent	p: हां दर्द है	ANSWER}
+{\slot
+हां	B-positive
+दर्द	B-symptom
+है	O
+}
+
+{\intent	d: मुँह खोलो मुँह खोलो	ACTION_DIR}
+{\slot
+मुँह	B-body_part
+खोलो	O
+मुँह	B-body_part
+खोलो	O
+}
+
+{\intent	d: इसको sinusitis बोलते	DIAGNOSIS}
+{\slot
+इसको	O
+sinusitis	B-symptom
+बोलते	O
+}
+
+{\intent	p: जी sir	ACK}
+{\slot
+जी	O
+sir	O
+}
+

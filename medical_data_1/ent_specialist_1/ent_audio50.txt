@@ -1,0 +1,259 @@
+{\intent	d: పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p: pallavi	ANSWER}
+{\slot
+pallavi	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 28	ANSWER}
+{\slot
+28	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏం అయితుంది?	INFO_REQUEST}
+{\slot
+ఏం	O
+అయితుంది?	O
+}
+
+{\intent	p: గొంతు నొస్తాంది.	STATEMENT}
+{\slot
+గొంతు	B-body_part
+నొస్తాంది.	B-symptom
+}
+
+{\intent	d: ఎన్ని రోజులు అయింది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+అయింది?	O
+}
+
+{\intent	p: 2, 3 రోజులు అయింది.	ANSWER}
+{\slot
+2,	B-time_period
+3	B-time_period
+రోజులు	I-time_period
+అయింది.	O
+}
+
+{\intent	d: ముక్కులో గాడ్పు ఆడుతుందా?	INFO_REQUEST}
+{\slot
+ముక్కులో	B-body_part
+గాడ్పు	B-bodily_process
+ఆడుతుందా?	O
+}
+
+{\intent	p: hmm.	ANSWER}
+{\slot
+hmm.	B-positive
+}
+
+{\intent	d: కడుపులో మంట ఉందా?	INFO_REQUEST}
+{\slot
+కడుపులో	B-body_part
+మంట	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ కొద్దిగా ఉంది.	ANSWER}
+{\slot
+ఆ	O
+కొద్దిగా	B-intensity
+ఉంది.	B-positive
+}
+
+{\intent	d: thyroid గిట్ల ఉందా అమ్మా?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+గిట్ల	O
+ఉందా	O
+అమ్మా?	O
+}
+
+{\intent	p: pche, లేదు.	ANSWER}
+{\slot
+pche,	B-negative
+లేదు.	B-negative
+}
+
+{\intent	p1: ఇంతకుముందు Tonsillitis ఉంటే మీరే చేశారు.	STATEMENT}
+{\slot
+ఇంతకుముందు	O
+Tonsillitis	B-symptom
+ఉంటే	O
+మీరే	O
+చేశారు.	O
+}
+
+{\intent	p: మీరే చేశారు sir.	STATEMENT}
+{\slot
+మీరే	O
+చేశారు	O
+sir.	O
+}
+
+{\intent	d: ఎన్ని రోజుల క్రితం	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+క్రితం	O
+}
+
+{\intent	p: ఓ చాన	ANSWER}
+{\slot
+ఓ	O
+చాన	B-intensity
+}
+
+{\intent	p1: ఆ pallavi hospital లో	STATEMENT}
+{\slot
+ఆ	O
+pallavi	B-name
+hospital	I-name
+లో	O
+}
+
+{\intent	p: ఓ చాన ఏళ్ళు అయితాంది	ANSWER}
+{\slot
+ఓ	O
+చాన	B-intensity
+ఏళ్ళు	B-time_period
+అయితాంది	O
+}
+
+{\intent	d: దగ్గు सर्दी ఉందా?	INFO_REQUEST}
+{\slot
+దగ్గు	B-symptom
+सर्दी	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఏం లేదు sir కానీ ఇవి కొంచం నొస్తాన్నాయి.	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+sir	O
+కానీ	O
+ఇవి	O
+కొంచం	B-intensity
+నొస్తాన్నాయి.	B-symptom
+}
+
+{\intent	d: ok రాస్తా.	COMMIT}
+{\slot
+ok	O
+రాస్తా.	O
+}
+
+{\intent	p1: ఇట్ల లోపట గిట్ల ఎర్రగా అయినాయి కదా sir	STATEMENT}
+{\slot
+ఇట్ల	O
+లోపట	B-location
+గిట్ల	O
+ఎర్రగా	B-color
+అయినాయి	O
+కదా	O
+sir	O
+}
+
+{\intent	d: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఉప్పు తక్కువ తీసుకో	ACTION_DIR}
+{\slot
+ఉప్పు	B-food_substance
+తక్కువ	B-intensity
+తీసుకో	B-bodily_process
+}
+
+{\intent	d: పుక్కిలించి ఉమ్ము.	ACTION_DIR}
+{\slot
+పుక్కిలించి	O
+ఉమ్ము.	O
+}
+
+{\intent	p: ok sir.	ACK}
+{\slot
+ok	O
+sir.	O
+}
+
+{\intent	p: ok నా, తేమడ, నంజు, ఇట్ల అంటే వస్తాంది. thick గా	STATEMENT}
+{\slot
+ok	O
+నా,	O
+తేమడ,	B-symptom
+నంజు,	B-symptom
+ఇట్ల	O
+అంటే	O
+వస్తాంది.	O
+thick	O
+గా	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: పులుపు తింటే ఇట్లనే అయితాంది sir.	STATEMENT}
+{\slot
+పులుపు	B-food_substance
+తింటే	B-bodily_process
+ఇట్లనే	O
+అయితాంది	O
+sir.	O
+}
+
+{\intent	d: వద్దు తక్వ ఒద్దొద్దు	STATEMENT}
+{\slot
+వద్దు	O
+తక్వ	O
+ఒద్దొద్దు	O
+}
+
+{\intent	p: surgery అయినా కూడా నొస్తాంది.	STATEMENT}
+{\slot
+surgery	B-treatment
+అయినా	O
+కూడా	O
+నొస్తాంది.	B-symptom
+}
+
+{\intent	d: ఏందమ్మా surgery మంచిగానే అయింది.	STATEMENT}
+{\slot
+ఏందమ్మా	O
+surgery	B-treatment
+మంచిగానే	B-normal
+అయింది.	O
+}
+
+{\intent	d: ఒక్కసారి తీస్తే అది మళ్ళ రానే రాదు అది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కసారి	O
+తీస్తే	O
+అది	O
+మళ్ళ	O
+రానే	O
+రాదు	O
+అది.	O
+}
+

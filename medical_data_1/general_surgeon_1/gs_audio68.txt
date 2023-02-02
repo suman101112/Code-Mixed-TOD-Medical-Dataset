@@ -1,0 +1,232 @@
+{\intent	p: నమస్తే sir.	GREETING}
+{\slot
+నమస్తే	O
+sir.	O
+}
+
+{\intent	d: నమస్కారమండీ.	GREETING}
+{\slot
+నమస్కారమండీ.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: sir అదే మొలల problem ద్వారా అప్పుడప్పుడు రక్తం పడుతుంది sir..	STATEMENT}
+{\slot
+sir	O
+అదే	O
+మొలల	B-medical_condition
+problem	O
+ద్వారా	O
+అప్పుడప్పుడు	B-time_period
+రక్తం	B-body_substance
+పడుతుంది	O
+sir..	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఎంత కాలంగా అండి.	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలంగా	O
+అండి.	O
+}
+
+{\intent	p: ఇది చాలా కాలం నుంచి పడుతుంది.	ANSWER}
+{\slot
+ఇది	O
+చాలా	B-intensity
+కాలం	B-time_period
+నుంచి	O
+పడుతుంది.	O
+}
+
+{\intent	p: ఒక 5 6 ఏళ్ళ నుంచి ఉంది.	REPEAT_REPHRASE}
+{\slot
+ఒక	O
+5	B-time_period
+6	B-time_period
+ఏళ్ళ	I-time_period
+నుంచి	O
+ఉంది.	O
+}
+
+{\intent	p: అప్పుడు regularగా ఉండదు. ఇప్పుడు pressure ఎక్కువయప్పుడు, fruits తిన్నప్పుడు, సరిగ్గా digest కానప్పుడు. అప్పుడు. అప్పుడప్పుడు వస్తా ఉంటది sir.	STATEMENT}
+{\slot
+అప్పుడు	O
+regularగా	B-normal
+ఉండదు.	O
+ఇప్పుడు	O
+pressure	B-symptom
+ఎక్కువయప్పుడు,	I-symptom
+fruits	B-food_substance
+తిన్నప్పుడు,	O
+సరిగ్గా	O
+digest	B-bodily_process
+కానప్పుడు.	B-symptom
+అప్పుడు.	B-time_period
+అప్పుడప్పుడు	B-time_period
+వస్తా	O
+ఉంటది	O
+sir.	O
+}
+
+{\intent	p: దెగ్గరగా 5 6 ఏళ్ళ నుంచి ఉంది sir.	STATEMENT}
+{\slot
+దెగ్గరగా	O
+5	B-time_period
+6	B-time_period
+ఏళ్ళ	I-time_period
+నుంచి	O
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: ok. ఇప్పుడు ఏమైనా మందులు వాడుతున్నారా sir దానికోసం అంటూ?	INFO_REQUEST}
+{\slot
+ok.	O
+ఇప్పుడు	B-time_period
+ఏమైనా	O
+మందులు	B-medicine
+వాడుతున్నారా	O
+sir	O
+దానికోసం	O
+అంటూ?	O
+}
+
+{\intent	p: ఇప్పుడు మందులు ఏం వాడలేదు sir. ఈ రోజూ వారం నుంచి కుర్చోవలంటే కొంచం pain అనిపిస్తుంది.	ANSWER}
+{\slot
+ఇప్పుడు	O
+మందులు	B-medicine
+ఏం	O
+వాడలేదు	B-negative
+sir.	O
+ఈ	O
+రోజూ	B-time_period
+వారం	I-time_period
+నుంచి	O
+కుర్చోవలంటే	O
+కొంచం	O
+pain	B-symptom
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: right అండి.	ACK}
+{\slot
+right	O
+అండి.	O
+}
+
+{\intent	d: బరువు ఎంత ఉంటారు sir?	INFO_REQUEST}
+{\slot
+బరువు	B-bm
+ఎంత	O
+ఉంటారు	O
+sir?	O
+}
+
+{\intent	p: ఏంటి sir?	SNU}
+{\slot
+ఏంటి	O
+sir?	O
+}
+
+{\intent	d: మీరు బరువు ఎంత ఉంటారు?	INFO_REQUEST}
+{\slot
+మీరు	O
+బరువు	B-bm
+ఎంత	O
+ఉంటారు	O
+}
+
+{\intent	p: నేను 80 ఉంటాను sir.	ANSWER}
+{\slot
+నేను	O
+80	B-bm
+ఉంటాను	O
+sir.	O
+}
+
+{\intent	d: right. ఇంకేమన్నా అడగదలచుకున్నారా?	INFO_REQUEST}
+{\slot
+right.	O
+ఇంకేమన్నా	O
+అడగదలచుకున్నారా?	O
+}
+
+{\intent	p: అదే sir. అది. దాని stage ఏంటి? ఏ stage లో ఉన్నాను నేను? లేకపోతే treatment ఏం చేసుకోవాలి నేను?	INFO_REQUEST}
+{\slot
+అదే	O
+sir.	O
+అది.	O
+దాని	O
+stage	O
+ఏంటి?	O
+ఏ	O
+stage	O
+లో	O
+ఉన్నాను	O
+నేను?	O
+లేకపోతే	O
+treatment	B-treatment
+ఏం	O
+చేసుకోవాలి	O
+నేను?	O
+}
+
+{\intent	d: తప్పకుండా అండి. మంచి ప్రశ్న అడిగారు. దాని గురించి చెప్తాను అండి.	COMMIT}
+{\slot
+తప్పకుండా	O
+అండి.	O
+మంచి	O
+ప్రశ్న	O
+అడిగారు.	O
+దాని	O
+గురించి	O
+చెప్తాను	O
+అండి.	O
+}
+
+{\intent	d: so ప్రధానంగా అప్పుడప్పుడు మాత్రమే bleeding అవుతుంది motion pass చేసినప్పుడు. కొద్దిగా bleeding అయి ఆగిపోతుంది అనేటటువంటి లక్షణాన్ని fissure అంటారు.	STATEMENT}
+{\slot
+so	O
+ప్రధానంగా	O
+అప్పుడప్పుడు	B-time_period
+మాత్రమే	O
+bleeding	B-medical_condition
+అవుతుంది	O
+motion	B-bodily_process
+pass	O
+చేసినప్పుడు.	O
+కొద్దిగా	O
+bleeding	B-medical_condition
+అయి	O
+ఆగిపోతుంది	O
+అనేటటువంటి	O
+లక్షణాన్ని	O
+fissure	B-medical_condition
+అంటారు.	O
+}
+
+{\intent	d: పూర్తి స్తాయి లో చెప్పాలంటే దీని fissure in Ano అనేటటువంటి లక్షణంగా చెప్పుకోవచ్చు.	STATEMENT}
+{\slot
+పూర్తి	O
+స్తాయి	O
+లో	O
+చెప్పాలంటే	O
+దీని	O
+fissure	B-medical_condition
+in	I-medical_condition
+Ano	I-medical_condition
+అనేటటువంటి	O
+లక్షణంగా	O
+చెప్పుకోవచ్చు.	O
+}
+

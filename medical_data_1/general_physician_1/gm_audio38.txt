@@ -1,0 +1,181 @@
+{\intent	d: మీ పాప వయస్సు ఎంత అండి?	INFO_REQUEST}
+{\slot
+మీ	O
+పాప	B-familal
+వయస్సు	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 23 వెళ్ళింది	ANSWER}
+{\slot
+23	B-age
+వెళ్ళింది	O
+}
+
+{\intent	d: 23 ఏళ్ళు	ACK}
+{\slot
+23	B-age
+ఏళ్ళు	O
+}
+
+{\intent	d: ఏమవుతుందో చెప్పండి ఒకసారి	INFO_REQUEST}
+{\slot
+ఏమవుతుందో	O
+చెప్పండి	O
+ఒకసారి	O
+}
+
+{\intent	p: marriage అయ్యి ఏడాది అయిందండి.	STATEMENT}
+{\slot
+marriage	B-marital_status
+అయ్యి	O
+ఏడాది	B-time_period
+అయిందండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పాప లక్షణాలు ఒక్కసారి చెప్పండి.	INFO_REQUEST}
+{\slot
+పాప	B-familal
+లక్షణాలు	O
+ఒక్కసారి	O
+చెప్పండి.	O
+}
+
+{\intent	p: Hello	SNU}
+{\slot
+Hello	O
+}
+
+{\intent	p: వాంతవుతుందండి.	STATEMENT}
+{\slot
+వాంతవుతుందండి.	B-symptom
+}
+
+{\intent	d: వాంతవుతుందంటారు	ACK}
+{\slot
+వాంతవుతుందంటారు	B-symptom
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: doctorని కలిసారా ఎవరినైనా మరి	INFO_REQUEST}
+{\slot
+doctorని	B-medical_professional
+కలిసారా	O
+ఎవరినైనా	O
+మరి	O
+}
+
+{\intent	p: ఏవండీ??	SNU}
+{\slot
+ఏవండీ??	O
+}
+
+{\intent	d: doctorని కలిసారా ఇప్పటివరకు?	REPEAT_REPHRASE}
+{\slot
+doctorని	B-medical_professional
+కలిసారా	O
+ఇప్పటివరకు?	O
+}
+
+{\intent	p: కలవలేదండి	ANSWER}
+{\slot
+కలవలేదండి	B-negative
+}
+
+{\intent	p: ఇగొ 2 రోజుల నుంచి చెప్పిందండి నాకు, వెళ్ళలేదండీ, ఇంకనూ	STATEMENT}
+{\slot
+ఇగొ	O
+2	B-time_period
+రోజుల	I-time_period
+నుంచి	O
+చెప్పిందండి	O
+నాకు,	O
+వెళ్ళలేదండీ,	O
+ఇంకనూ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: దానితో పాటు ఇంకేమైనా లక్షణాలు ఏమైనా ఉన్నాయా? vomitingతో పాటు ఇతర లక్షణాలు ఏమైనా?	INFO_REQUEST}
+{\slot
+దానితో	O
+పాటు	O
+ఇంకేమైనా	O
+లక్షణాలు	O
+ఏమైనా	O
+ఉన్నాయా?	O
+vomitingతో	B-symptom
+పాటు	O
+ఇతర	O
+లక్షణాలు	O
+ఏమైనా?	O
+}
+
+{\intent	p: ఇంకేమి లేవు, కళ్ళు తిరుగుతున్నాయి అంటుందండీ	ANSWER}
+{\slot
+ఇంకేమి	O
+లేవు,	O
+కళ్ళు	B-body_part
+తిరుగుతున్నాయి	B-symptom
+అంటుందండీ	O
+}
+
+{\intent	d: కళ్ళు తిరుగుతున్నాయి అంటుంది	ACK}
+{\slot
+కళ్ళు	B-body_part
+తిరుగుతున్నాయి	B-symptom
+అంటుంది	O
+}
+
+{\intent	d: 23 సంవత్సరాలు	ACK}
+{\slot
+23	B-age
+సంవత్సరాలు	I-age
+}
+
+{\intent	d: అంతేనా?	INFO_REQUEST}
+{\slot
+అంతేనా?	O
+}
+
+{\intent	p: 23, అంతేనండి.	ANSWER}
+{\slot
+23,	B-age
+అంతేనండి.	O
+}
+
+{\intent	d: so, కళ్ళు తిరగడం, వాంతి అవ్వడము రెండు కారణాలు ప్రధానమైనవమ్మా	ACK}
+{\slot
+so,	O
+కళ్ళు	B-body_part
+తిరగడం,	B-symptom
+వాంతి	B-symptom
+అవ్వడము	I-symptom
+రెండు	O
+కారణాలు	O
+ప్రధానమైనవమ్మా	O
+}
+
+{\intent	d: low bp ఉన్నప్పుడు కళ్ళు విపరీతంగా తిరుగుతాయి	DIAGNOSIS}
+{\slot
+low	B-symptom
+bp	B-medical_condition
+ఉన్నప్పుడు	O
+కళ్ళు	B-body_part
+విపరీతంగా	B-intensity
+తిరుగుతాయి	B-symptom
+}
+

@@ -1,0 +1,52 @@
+{\intent	p: doctor గారు నా వయస్సు 32 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+32	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: కళ్ళు మసకగా కనిపిస్తుంటే doctorగారిని సంప్రదించాను కళ్ళు పరిక్షించి రెండు కళ్ళలో dots రుపంలో virus వచ్చింది అని చెప్పారు	STATEMENT}
+{\slot
+కళ్ళు	B-body_part
+మసకగా	B-symptom
+కనిపిస్తుంటే	B-bodily_process
+doctorగారిని	B-medical_professional
+సంప్రదించాను	O
+కళ్ళు	B-body_part
+పరిక్షించి	B-mtest
+రెండు	O
+కళ్ళలో	B-body_part
+dots	B-symptom
+రుపంలో	O
+virus	B-organism
+వచ్చింది	O
+అని	O
+చెప్పారు	O
+}
+
+{\intent	d: కంట్లో virus అనేది మనకు రాక రకాలుగా వస్తుంది అండి.	MEDICAL_EXPLANATION}
+{\slot
+కంట్లో	B-body_part
+virus	B-organism
+అనేది	O
+మనకు	O
+రాక	O
+రకాలుగా	O
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: generalగా virus అంటే మనకు commonగా viral conjunctivitis	MEDICAL_EXPLANATION}
+{\slot
+generalగా	O
+virus	B-organism
+అంటే	O
+మనకు	O
+commonగా	O
+viral	B-symptom
+conjunctivitis	I-symptom
+}
+

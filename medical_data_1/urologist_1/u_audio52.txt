@@ -1,0 +1,122 @@
+{\intent	d: కుర్చోండీ	ACTION_DIR}
+{\slot
+కుర్చోండీ	O
+}
+
+{\intent	d: పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Pedda Sammayya	ANSWER}
+{\slot
+Pedda	B-name
+Sammayya	I-name
+}
+
+{\intent	d: చెప్పండి బాబు ఏం ఇబ్బంది ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: ఇబ్బంది ఏంటి చెప్పండి?	REPEAT_REPHRASE}
+{\slot
+ఇబ్బంది	B-symptom
+ఏంటి	O
+చెప్పండి?	O
+}
+
+{\intent	p: kidneyలు నొస్తాన్నయ్, కన్నులు గుంజుతాన్నాయి	ANSWER}
+{\slot
+kidneyలు	B-body_part
+నొస్తాన్నయ్,	B-symptom
+కన్నులు	B-body_part
+గుంజుతాన్నాయి	B-symptom
+}
+
+{\intent	p: మోకాళ్ళు గుంజుతాన్నాయి	STATEMENT}
+{\slot
+మోకాళ్ళు	B-body_part
+గుంజుతాన్నాయి	B-symptom
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+?	O
+}
+
+{\intent	p: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఇబ్బంది?	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇబ్బంది?	B-symptom
+}
+
+{\intent	p: ఏంది sir	SNU}
+{\slot
+ఏంది	O
+sir	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఉంది ఇలా?	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఉంది	O
+ఇలా?	O
+}
+
+{\intent	p: నెల అయితాంది.	ANSWER}
+{\slot
+నెల	B-time_period
+అయితాంది.	O
+}
+
+{\intent	d: సరే	ACK}
+{\slot
+సరే	O
+}
+
+{\intent	p: తుమ్ములు వస్తున్నాయి.	STATEMENT}
+{\slot
+తుమ్ములు	B-symptom
+వస్తున్నాయి.	O
+}
+
+{\intent	p: bp ఉన్నది	STATEMENT}
+{\slot
+bp	B-medical_condition
+ఉన్నది	O
+}
+
+{\intent	d: సరే, 92లో ఈ రక్త పరిక్ష చేయించుకోని రండి.	ACTION_DIR}
+{\slot
+సరే,	O
+92లో	O
+ఈ	O
+రక్త	B-body_substance
+పరిక్ష	B-mtest
+చేయించుకోని	O
+రండి.	O
+}
+

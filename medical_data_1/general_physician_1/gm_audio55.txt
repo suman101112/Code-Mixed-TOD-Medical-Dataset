@@ -1,0 +1,242 @@
+{\intent	p: అమ్మా నమస్తే అమ్మా	GREETING}
+{\slot
+అమ్మా	O
+నమస్తే	O
+అమ్మా	O
+}
+
+{\intent	d: నమస్కారం sir.	GREETING}
+{\slot
+నమస్కారం	O
+sir.	O
+}
+
+{\intent	p: అంటే thyroid ఉండండి.	STATEMENT}
+{\slot
+అంటే	O
+thyroid	B-medical_condition
+ఉండండి.	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి అండి?	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	O
+నుంచి	O
+అండి.	O
+}
+
+{\intent	p: నాకు తెలిసి ఒక 7 సంవత్సరాలు అయితుందమ్మా	ANSWER}
+{\slot
+నాకు	O
+తెలిసి	O
+ఒక	O
+7	B-time_period
+సంవత్సరాలు	I-time_period
+అయితుందమ్మా	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	d: ఏం వాడుతున్నారండీ?	INFO_REQUEST}
+{\slot
+ఏం	O
+వాడుతున్నారండీ?	O
+}
+
+{\intent	p: ఇది 125 power గల tablet పరిగడుపున వేసుకుంటున్నా అమ్మా, english మందు వాడుతున్నా madam	ANSWER}
+{\slot
+ఇది	O
+125	B-medicine_dose
+power	O
+గల	O
+tablet	B-medicine
+పరిగడుపున	B-time_period
+వేసుకుంటున్నా	O
+అమ్మా,	O
+english	B-medicine
+మందు	B-medicine
+వాడుతున్నా	O
+madam	O
+}
+
+{\intent	d: ఆ, ok sir	ACK}
+{\slot
+ఆ,	O
+ok	O
+sir	O
+}
+
+{\intent	d: అయితే దానివల్ల ఏం ఇబ్బందులు అయితున్నాయి sir మీకు, bodyలో ఏమైనా problems ఉన్నాయా?	INFO_REQUEST}
+{\slot
+అయితే	O
+దానివల్ల	O
+ఏం	O
+ఇబ్బందులు	O
+అయితున్నాయి	O
+sir	O
+మీకు,	O
+bodyలో	O
+ఏమైనా	O
+problems	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: బాగా కాళ్ళ వాపు, night పూట నిద్ర పట్టట్లేదు madam	STATEMENT}
+{\slot
+బాగా	B-intensity
+కాళ్ళ	B-body_part
+వాపు,	B-symptom
+night	B-time_period
+పూట	I-time_period
+నిద్ర	B-bodily_process
+పట్టట్లేదు	B-symptom
+madam	O
+}
+
+{\intent	p: నిద్రలోనే automaticగా లేచి కుర్చోవడం	STATEMENT}
+{\slot
+నిద్రలోనే	B-bodily_process
+automaticగా	O
+లేచి	B-bodily_process
+కుర్చోవడం	B-bodily_process
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అట్ల ఉంటది madam	STATEMENT}
+{\slot
+అట్ల	O
+ఉంటది	O
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఇదొక్కటేనా sir, ఇంకేమన్నా BP sugar గిట్ల ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇదొక్కటేనా	O
+sir,	O
+ఇంకేమన్నా	O
+BP	B-medical_condition
+sugar	B-medical_condition
+గిట్ల	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: బాగా కళ్ళ వాపు,	STATEMENT}
+{\slot
+బాగా	B-intensity
+కళ్ళ	B-body_part
+వాపు,	B-symptom
+}
+
+{\intent	p: sugar ఉంది madam	ANSWER}
+{\slot
+sugar	B-medical_condition
+ఉంది	B-positive
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: age ఎంత అండి మీది?	INFO_REQUEST}
+{\slot
+age	O
+ఎంత	O
+అండి	O
+మీది?	O
+}
+
+{\intent	p: age 47 madam	ANSWER}
+{\slot
+age	O
+47	B-age
+madam	O
+}
+
+{\intent	d: ok sir	ACK}
+{\slot
+ok	O
+sir	O
+}
+
+{\intent	d: ఇంకేమైనా ఇబ్బందులు ఉన్నాయా sir? ఇంతేనా?	INFO_REQUEST}
+{\slot
+ఇంకేమైనా	O
+ఇబ్బందులు	O
+ఉన్నాయా	O
+sir?	O
+ఇంతేనా?	O
+}
+
+{\intent	p: అంతే madam	ANSWER}
+{\slot
+అంతే	O
+madam	O
+}
+
+{\intent	p: కాలు మంటలు, బాగా ఇబ్బంది ఉంది madam	STATEMENT}
+{\slot
+కాలు	B-body_part
+మంటలు,	B-symptom
+బాగా	B-intensity
+ఇబ్బంది	B-symptom
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: నిద్ర పట్టదు, చిరాకు చిరాకుగా ఉంటది, బాగా కోపం	STATEMENT}
+{\slot
+నిద్ర	B-bodily_process
+పట్టదు,	B-symptom
+చిరాకు	B-symptom
+చిరాకుగా	I-symptom
+ఉంటది,	O
+బాగా	B-intensity
+కోపం	B-symptom
+}
+
+{\intent	d: ok sir, ok నేను చెప్తాను, వినండీ.	COMMIT}
+{\slot
+ok	O
+sir,	O
+ok	O
+నేను	O
+చెప్తాను,	O
+వినండీ.	O
+}
+
+{\intent	d: మీకు ఇప్పుడు చెప్పినా దాని బట్టి మీకు hypothyroid ఉంది sir.	DIAGNOSIS}
+{\slot
+మీకు	O
+ఇప్పుడు	O
+చెప్పినా	O
+దాని	O
+బట్టి	O
+మీకు	O
+hypothyroid	B-medical_condition
+ఉంది	O
+sir.	O
+}
+

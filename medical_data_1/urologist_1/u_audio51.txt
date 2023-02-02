@@ -1,0 +1,130 @@
+{\intent	d: చెప్పండమ్మా పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: Padma	ANSWER}
+{\slot
+Padma	B-name
+}
+
+{\intent	d: చెప్పండి problem ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p: బాగా నొప్పి లేస్తుంది sir	ANSWER}
+{\slot
+బాగా	B-intensity
+నొప్పి	B-symptom
+లేస్తుంది	O
+sir	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+}
+
+{\intent	p: 4, 5 రోజులు అయితాంది	ANSWER}
+{\slot
+4,	B-time_period
+5	B-time_period
+రోజులు	I-time_period
+అయితాంది	O
+}
+
+{\intent	p: బాగా నొప్పిలేస్తుంది.	STATEMENT}
+{\slot
+బాగా	B-intensity
+నొప్పిలేస్తుంది.	B-symptom
+}
+
+{\intent	d: జ్వరం వస్తుందా అమ్మ?	INFO_REQUEST}
+{\slot
+జ్వరం	B-symptom
+వస్తుందా	O
+అమ్మ?	B-person
+}
+
+{\intent	p: ఆ కొంచం మామూలుగా జ్వరం వస్తుంది.	ANSWER}
+{\slot
+ఆ	O
+కొంచం	O
+మామూలుగా	O
+జ్వరం	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p: ఈ sideలో అంతా	HOLD}
+{\slot
+ఈ	O
+sideలో	B-location
+అంతా	O
+}
+
+{\intent	p1: బాగా నొప్పిలేస్తుంది sir	STATEMENT}
+{\slot
+బాగా	B-intensity
+నొప్పిలేస్తుంది	B-symptom
+sir	O
+}
+
+{\intent	p: మూత్రంలో మంట కూడా sir.	STATEMENT}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+కూడా	O
+sir.	O
+}
+
+{\intent	d: అవునా అమ్మా?	INFO_REQUEST}
+{\slot
+అవునా	O
+అమ్మా?	B-person
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: మూత్రంలో మంట, అరికాళ్ళలో మంట వీపు నొస్తాంది sir, మండుతుంది.	STATEMENT}
+{\slot
+మూత్రంలో	B-body_substance
+మంట,	B-symptom
+అరికాళ్ళలో	B-body_part
+మంట	B-symptom
+వీపు	B-body_part
+నొస్తాంది	B-symptom
+sir,	O
+మండుతుంది.	B-symptom
+}
+
+{\intent	p: ఈ భగం అంతా నొస్తాంది sir, వీపు	STATEMENT}
+{\slot
+ఈ	O
+భగం	B-body_part
+అంతా	O
+నొస్తాంది	B-symptom
+sir,	O
+వీపు	B-body_part
+}
+
+{\intent	d: పరిక్ష చేయించుకోండమ్మా, 92లో, report వస్తది, తీసుకోని రండి	ACTION_DIR}
+{\slot
+పరిక్ష	B-mtest
+చేయించుకోండమ్మా,	O
+92లో,	O
+report	O
+వస్తది,	O
+తీసుకోని	O
+రండి	O
+}
+

@@ -1,0 +1,54 @@
+{\intent	p: doctor గారు ఒక కంటికి glaucoma వస్తే మరో కంటికి వచ్చే అవకాశాలు ఉన్నాయా?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+ఒక	O
+కంటికి	B-body_part
+glaucoma	B-medical_condition
+వస్తే	O
+మరో	O
+కంటికి	B-body_part
+వచ్చే	O
+అవకాశాలు	O
+ఉన్నాయా?	O
+}
+
+{\intent	d: glaucoma అనేది bilateral disease.	MEDICAL_EXPLANATION}
+{\slot
+glaucoma	B-medical_condition
+అనేది	O
+bilateral	B-medical_condition
+disease.	I-medical_condition
+}
+
+{\intent	d: bilateral disease అంటే రెండు ప్రక్కలకి వచ్చే జబ్బు.	MEDICAL_EXPLANATION}
+{\slot
+bilateral	B-medical_condition
+disease	I-medical_condition
+అంటే	O
+రెండు	O
+ప్రక్కలకి	O
+వచ్చే	O
+జబ్బు.	O
+}
+
+{\intent	d: కానీ by nature రెండు కళ్ళకి ఒకేసారి రాదు అది ఒక రకంగా blessing in disguise అని అనుకోవచ్చు మనం.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+by	O
+nature	O
+రెండు	O
+కళ్ళకి	B-body_part
+ఒకేసారి	O
+రాదు	O
+అది	O
+ఒక	O
+రకంగా	O
+blessing	O
+in	O
+disguise	O
+అని	O
+అనుకోవచ్చు	O
+మనం.	O
+}
+

@@ -1,0 +1,215 @@
+{\intent	p: Hello	STATEMENT}
+{\slot
+Hello	O
+}
+
+{\intent	d: Venkatesh గారు	STATEMENT}
+{\slot
+Venkatesh	B-name
+గారు	O
+}
+
+{\intent	p: Hello madam, marriage అయి 2 years అయింది	STATEMENT}
+{\slot
+Hello	O
+madam,	O
+marriage	B-marital_status
+అయి	O
+2	B-time_period
+years	I-time_period
+అయింది	O
+}
+
+{\intent	p: periods బాగా irregular అయితున్నాయి madam	STATEMENT}
+{\slot
+periods	B-bodily_process
+బాగా	B-intensity
+irregular	B-symptom
+అయితున్నాయి	O
+madam	O
+}
+
+{\intent	d: clearగా చెప్పండి, marriage అయి 2 years అవుతుంది.	HOLD}
+{\slot
+clearగా	O
+చెప్పండి,	O
+marriage	B-marital_status
+అయి	O
+2	B-time_period
+years	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	p: periods అదే irregular వస్తుంది 3 months 4 months అలాగ	STATEMENT}
+{\slot
+periods	B-bodily_process
+అదే	O
+irregular	B-symptom
+వస్తుంది	O
+3	B-time_period
+months	I-time_period
+4	B-time_period
+months	I-time_period
+అలాగ	O
+}
+
+{\intent	d: 3 to 4 monthsకి ఒకసారి వస్తున్నాయి	ACK}
+{\slot
+3	B-time_period
+to	O
+4	B-time_period
+monthsకి	I-time_period
+ఒకసారి	B-frequency
+వస్తున్నాయి	O
+}
+
+{\intent	p: thyroid test చెప్పించాం, PCOD చెప్పించాం అన్నీ normal అనే ఉన్నాయి.	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+test	B-mtest
+చెప్పించాం,	O
+PCOD	B-medical_condition
+చెప్పించాం	O
+అన్నీ	O
+normal	B-normal
+అనే	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: అన్నీ normalగా ఉన్నాయి.	ACK}
+{\slot
+అన్నీ	O
+normalగా	B-normal
+ఉన్నాయి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: తన age ఎంత అండి మీ mrs ది?	INFO_REQUEST}
+{\slot
+తన	O
+age	O
+ఎంత	O
+అండి	O
+మీ	O
+mrs	B-familal
+ది?	O
+}
+
+{\intent	p: 21	ANSWER}
+{\slot
+21	B-age
+}
+
+{\intent	d: 21	ACK}
+{\slot
+21	B-age
+}
+
+{\intent	d: ఈ 2 years నుంచే periods irregular ఉన్నాయా? ముందు నుంచే problem ఉందా అండి?	INFO_REQUEST}
+{\slot
+ఈ	O
+2	B-time_period
+years	I-time_period
+నుంచే	O
+periods	B-bodily_process
+irregular	B-symptom
+ఉన్నాయా?	O
+ముందు	O
+నుంచే	O
+problem	O
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: తెలియదు కానీ, 1 year నుంచే ఉంది madam	ANSWER}
+{\slot
+తెలియదు	O
+కానీ,	O
+1	B-time_period
+year	I-time_period
+నుంచే	O
+ఉంది	O
+madam	O
+}
+
+{\intent	d: 1 year నుంచి.	ACK}
+{\slot
+1	B-time_period
+year	I-time_period
+నుంచి.	O
+}
+
+{\intent	d: ok fine అండి.	ACK}
+{\slot
+ok	O
+fine	O
+అండి.	O
+}
+
+{\intent	d: ముందు తనకు ఏంటి అంటే other hormonal essay అనేది కూడా తీయించాల్సి ఉంటుంది.	STATEMENT}
+{\slot
+ముందు	O
+తనకు	O
+ఏంటి	O
+అంటే	O
+other	O
+hormonal	B-mtest
+essay	B-mtest
+అనేది	O
+కూడా	O
+తీయించాల్సి	O
+ఉంటుంది.	O
+}
+
+{\intent	d: PCOD లేదంటున్నారు, thyroid normal అంటున్నారు మీరు చెప్పినా levels ని బట్టి	STATEMENT}
+{\slot
+PCOD	B-medical_condition
+లేదంటున్నారు,	B-negative
+thyroid	B-medical_condition
+normal	B-normal
+అంటున్నారు	O
+మీరు	O
+చెప్పినా	O
+levels	O
+ని	O
+బట్టి	O
+}
+
+{\intent	d: so prolactin levels ఏమైనా ఎక్కువగా ఉన్నాయా? Fsh LH hormones ఎలా ఉన్నాయి and tubes ఎలా ఉన్నాయి అనేది కూడా cross verify చేయించుకోవాలి.	STATEMENT}
+{\slot
+so	O
+prolactin	B-body_substance
+levels	B-mtest
+ఏమైనా	O
+ఎక్కువగా	B-intensity
+ఉన్నాయా?	O
+Fsh	B-body_substance
+LH	B-body_substance
+hormones	I-body_substance
+ఎలా	O
+ఉన్నాయి	O
+and	O
+tubes	B-body_part
+ఎలా	O
+ఉన్నాయి	O
+అనేది	O
+కూడా	O
+cross	O
+verify	O
+చేయించుకోవాలి.	O
+}
+

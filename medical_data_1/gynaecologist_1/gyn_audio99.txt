@@ -1,0 +1,365 @@
+{\intent	d: అమ్మా చెప్పండి	ACTION_DIR}
+{\slot
+అమ్మా	O
+చెప్పండి	O
+}
+
+{\intent	p: madam last februaryల నాకు hysteroscopy చేసారు.	STATEMENT}
+{\slot
+madam	O
+last	O
+februaryల	B-time_period
+నాకు	O
+hysteroscopy	B-mtest
+చేసారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడే madam Fernandez లో చూయించుకున్నాను.	STATEMENT}
+{\slot
+అక్కడే	O
+madam	O
+Fernandez	B-hospital_name
+లో	O
+చూయించుకున్నాను.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే madam endometrium బాగా లేదని చెప్పి HRT వాడినాము	STATEMENT}
+{\slot
+అయితే	O
+madam	O
+endometrium	B-body_part
+బాగా	B-intensity
+లేదని	B-negative
+చెప్పి	O
+HRT	B-treatment
+వాడినాము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 2 months వాడిన తరువాత pregnancy వచ్చింది madam	STATEMENT}
+{\slot
+2	B-time_period
+months	I-time_period
+వాడిన	O
+తరువాత	O
+pregnancy	B-bodily_process
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత మళ్ళి abortion అయింది madam	STATEMENT}
+{\slot
+తరువాత	B-time_period
+మళ్ళి	O
+abortion	B-symptom
+అయింది	O
+madam	O
+}
+
+{\intent	d: ఎన్నో నెలలో అయిందమ్మా abortion?	INFO_REQUEST}
+{\slot
+ఎన్నో	O
+నెలలో	B-time_period
+అయిందమ్మా	O
+abortion?	B-symptom
+}
+
+{\intent	p: 2nd monthలోనే madam, heartbeat రాలేదని abortion చేసారు	ANSWER}
+{\slot
+2nd	B-frequency
+monthలోనే	B-time_period
+madam,	O
+heartbeat	B-bodily_process
+రాలేదని	B-negative
+abortion	B-symptom
+చేసారు	O
+}
+
+{\intent	p: కానీ అది Nalgonda లో చేయించుకున్నాను	STATEMENT}
+{\slot
+కానీ	O
+అది	O
+Nalgonda	B-place
+లో	O
+చేయించుకున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: abortion అయినా తరువాత మళ్ళి ఒక నెల gap పెట్టి మళ్ళి HRT వాడాను, 2 months వాడాను	STATEMENT}
+{\slot
+abortion	B-symptom
+అయినా	O
+తరువాత	B-time_period
+మళ్ళి	O
+ఒక	O
+నెల	B-time_period
+gap	O
+పెట్టి	O
+మళ్ళి	O
+HRT	B-treatment
+వాడాను,	O
+2	B-time_period
+months	I-time_period
+వాడాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి pregnancy కోసం చూస్తే అందడం లేదు	STATEMENT}
+{\slot
+మళ్ళి	O
+pregnancy	B-bodily_process
+కోసం	O
+చూస్తే	O
+అందడం	O
+లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మళ్ళి ఏమన్నా పొర తక్వొచ్చిందేమో అనిపిస్తుంది madam	STATEMENT}
+{\slot
+మళ్ళి	O
+ఏమన్నా	O
+పొర	B-body_part
+తక్వొచ్చిందేమో	B-symptom
+అనిపిస్తుంది	O
+madam	O
+}
+
+{\intent	p: చూయించూకోలే మళ్ళి వచ్చేసి	STATEMENT}
+{\slot
+చూయించూకోలే	O
+మళ్ళి	O
+వచ్చేసి	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: అయితే pregnancy అందకపోతే మళ్ళి నా సొంతగానే HRT use చేసాను	STATEMENT}
+{\slot
+అయితే	O
+pregnancy	B-bodily_process
+అందకపోతే	B-negative
+మళ్ళి	O
+నా	O
+సొంతగానే	O
+HRT	B-treatment
+use	O
+చేసాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: gap పెట్టినా madam 3 months అవుతుంది.	STATEMENT}
+{\slot
+gap	O
+పెట్టినా	O
+madam	O
+3	B-time_period
+months	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	p: period వచ్చినప్పుడు bleeding సరిగ్గా కాదు	STATEMENT}
+{\slot
+period	B-bodily_process
+వచ్చినప్పుడు	O
+bleeding	B-medical_condition
+సరిగ్గా	B-normal
+కాదు	B-negative
+}
+
+{\intent	d: మీకు 1st వచ్చిన pregnancy ఏ treatment చేస్తే వచ్చిందండి? naturalగానే వచ్చిందా? IUI ఆ? IVF ఆ?	INFO_REQUEST}
+{\slot
+మీకు	O
+1st	B-mtest_value
+వచ్చిన	O
+pregnancy	B-bodily_process
+ఏ	O
+treatment	B-treatment
+చేస్తే	O
+వచ్చిందండి?	O
+naturalగానే	B-normal
+వచ్చిందా?	O
+IUI	B-treatment
+ఆ?	O
+IVF	B-treatment
+ఆ?	O
+}
+
+{\intent	p: ఆ naturalగానే వచ్చింది madam.	ANSWER}
+{\slot
+ఆ	O
+naturalగానే	B-normal
+వచ్చింది	O
+madam.	O
+}
+
+{\intent	d: natural	ACK}
+{\slot
+natural	B-normal
+}
+
+{\intent	p: last 4 years back నాకు 3 abortions అయినాయి madam	STATEMENT}
+{\slot
+last	O
+4	B-time_period
+years	I-time_period
+back	I-time_period
+నాకు	O
+3	B-frequency
+abortions	B-symptom
+అయినాయి	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 4 years తర్వాత మళ్ళి మొన్న hysteroscopy తర్వాత అయింది madam	ANSWER}
+{\slot
+4	B-time_period
+years	B-time_period
+తర్వాత	B-time_period
+మళ్ళి	O
+మొన్న	B-time_period
+hysteroscopy	B-mtest
+తర్వాత	B-time_period
+అయింది	O
+madam	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: so మీరు చెప్తున్నా దాని బట్టి లోపల పొర లోపల సమస్య ఉండడం వల్ల pregnancy అనేది రాకపోవడం reason అయి ఉండొచ్చు.	DIAGNOSIS}
+{\slot
+so	O
+మీరు	O
+చెప్తున్నా	O
+దాని	O
+బట్టి	O
+లోపల	B-location
+పొర	B-body_part
+లోపల	B-location
+సమస్య	O
+ఉండడం	O
+వల్ల	O
+pregnancy	B-bodily_process
+అనేది	O
+రాకపోవడం	B-negative
+reason	O
+అయి	O
+ఉండొచ్చు.	O
+}
+
+{\intent	p: అవును madam	ANSWER}
+{\slot
+అవును	B-positive
+madam	O
+}
+
+{\intent	d: so మీరు ఇంతవరకు తీసుకున్నది HRT అనేది కొంతవరకు medicines use చేయడం వల్ల లోపల పొర ఎప్పుడు మంచిగా develop అవుతుందో ఆ cycleలో మీకు pregnancy అనేది రావడం జరుగుతుంది	MEDICAL_EXPLANATION}
+{\slot
+so	O
+మీరు	O
+ఇంతవరకు	O
+తీసుకున్నది	O
+HRT	B-treatment
+అనేది	O
+కొంతవరకు	O
+medicines	B-medicine
+use	O
+చేయడం	O
+వల్ల	O
+లోపల	B-location
+పొర	B-body_part
+ఎప్పుడు	O
+మంచిగా	B-normal
+develop	B-bodily_process
+అవుతుందో	O
+ఆ	O
+cycleలో	B-bodily_process
+మీకు	O
+pregnancy	B-bodily_process
+అనేది	O
+రావడం	O
+జరుగుతుంది	O
+}
+
+{\intent	d: అయితే మీ case లోపల pregnancy వచ్చిన miscarriage అవుతుంది అంటున్నారు కదా.	STATEMENT}
+{\slot
+అయితే	O
+మీ	O
+case	O
+లోపల	O
+pregnancy	B-bodily_process
+వచ్చిన	O
+miscarriage	B-symptom
+అవుతుంది	O
+అంటున్నారు	O
+కదా.	O
+}
+
+{\intent	d: దానికి first 3 నెలల లోపల miscarriage అయితే దానికి genetic పరమైన సమస్యలు ఏమైనా ఉన్నాయా అనే angleలో investingations చేసుకోవాలి.	STATEMENT}
+{\slot
+దానికి	O
+first	O
+3	B-time_period
+నెలల	I-time_period
+లోపల	O
+miscarriage	B-symptom
+అయితే	O
+దానికి	O
+genetic	O
+పరమైన	O
+సమస్యలు	O
+ఏమైనా	O
+ఉన్నాయా	O
+అనే	O
+angleలో	O
+investingations	O
+చేసుకోవాలి.	O
+}
+

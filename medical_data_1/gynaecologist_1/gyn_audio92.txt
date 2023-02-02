@@ -1,0 +1,240 @@
+{\intent	p: ఆ Hello ఆ good afternoon అండి.	GREETING}
+{\slot
+ఆ	O
+Hello	O
+ఆ	O
+good	O
+afternoon	O
+అండి.	O
+}
+
+{\intent	d: good afternoon అండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి.	O
+}
+
+{\intent	p: అయితే madam అసలు conceive అయినా తరువాత heartbeat ఎప్పుడు తెలుస్తది madam	STATEMENT}
+{\slot
+అయితే	O
+madam	O
+అసలు	O
+conceive	B-bodily_process
+అయినా	O
+తరువాత	B-time_period
+heartbeat	B-bodily_process
+ఎప్పుడు	O
+తెలుస్తది	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే నేను conceive అయి 8th week నాకు ఇప్పుడు	STATEMENT}
+{\slot
+అయితే	O
+నేను	O
+conceive	B-bodily_process
+అయి	O
+8th	B-frequency
+week	I-time_period
+నాకు	O
+ఇప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మొన్న 7 weekలో వెళ్ళినప్పుడు generalగా చిన్న scan చేసారు పెద్ద scan కాకుండా	STATEMENT}
+{\slot
+మొన్న	B-time_period
+7	B-frequency
+weekలో	B-bodily_process
+వెళ్ళినప్పుడు	O
+generalగా	O
+చిన్న	O
+scan	B-mtest
+చేసారు	O
+పెద్ద	O
+scan	B-mtest
+కాకుండా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మామూలుగా చేసి doctor అన్నారు కదా pregnancy అయితే start అయింది అమ్మా	STATEMENT}
+{\slot
+మామూలుగా	O
+చేసి	O
+doctor	B-medical_professional
+అన్నారు	O
+కదా	O
+pregnancy	B-bodily_process
+అయితే	O
+start	O
+అయింది	O
+అమ్మా	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: heartbeat next week చూద్దాం అన్నది	STATEMENT}
+{\slot
+heartbeat	B-bodily_process
+next	B-time_period
+week	I-time_period
+చూద్దాం	O
+అన్నది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అది కొంచం tensionగా ఉన్నది.	STATEMENT}
+{\slot
+అది	O
+కొంచం	O
+tensionగా	B-symptom
+ఉన్నది.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అసలు heartbeat correctగా ఎప్పుడు తెలుస్తది ma'am	STATEMENT}
+{\slot
+అసలు	O
+heartbeat	B-bodily_process
+correctగా	B-normal
+ఎప్పుడు	O
+తెలుస్తది	O
+ma'am	O
+}
+
+{\intent	p: చెప్పారా..	STATEMENT}
+{\slot
+చెప్పారా..	O
+}
+
+{\intent	p: ఏమైనా problem ఉంటదా?	INFO_REQUEST}
+{\slot
+ఏమైనా	O
+problem	O
+ఉంటదా?	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: normalగా మీ cycles ఎలా ఉంటాయి మా?	INFO_REQUEST}
+{\slot
+normalగా	B-normal
+మీ	O
+cycles	B-bodily_process
+ఎలా	O
+ఉంటాయి	O
+మా?	O
+}
+
+{\intent	d: every month	REPEAT_REPHRASE}
+{\slot
+every	B-time_period
+month	I-time_period
+}
+
+{\intent	p: regular	ANSWER}
+{\slot
+regular	B-normal
+}
+
+{\intent	d: correct cycles ఏ?	INFO_REQUEST}
+{\slot
+correct	B-normal
+cycles	B-bodily_process
+ఏ?	O
+}
+
+{\intent	p: ఆ, 30 days కి compulsory వస్తాది. నాకు irregular ఎప్పుడు లేదు అసల్	ANSWER}
+{\slot
+ఆ,	O
+30	B-time_period
+days	I-time_period
+కి	O
+compulsory	O
+వస్తాది.	O
+నాకు	O
+irregular	B-symptom
+ఎప్పుడు	O
+లేదు	B-negative
+అసల్	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీరు conceive అయ్యేకన్నా ముందు 2 3 cycles కూడా regularగా వచ్చాయా?	INFO_REQUEST}
+{\slot
+మీరు	O
+conceive	B-bodily_process
+అయ్యేకన్నా	O
+ముందు	O
+2	B-frequency
+3	B-frequency
+cycles	B-bodily_process
+కూడా	O
+regularగా	B-normal
+వచ్చాయా?	O
+}
+
+{\intent	p: ఆ compulsory regularగా వస్తాది.	ANSWER}
+{\slot
+ఆ	O
+compulsory	O
+regularగా	B-normal
+వస్తాది.	B-positive
+}
+
+{\intent	p: 20 కి ఉంటే 20 కి compulsory వస్తాది	STATEMENT}
+{\slot
+20	B-time_period
+కి	O
+ఉంటే	B-bodily_process
+20	B-time_period
+కి	O
+compulsory	O
+వస్తాది	O
+}
+
+{\intent	p: అసలు irregular ఎప్పుడు లేదు	STATEMENT}
+{\slot
+అసలు	O
+irregular	B-symptom
+ఎప్పుడు	O
+లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+

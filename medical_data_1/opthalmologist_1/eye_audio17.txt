@@ -1,0 +1,46 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 25, female	ANSWER}
+{\slot
+25,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: మెడ నొప్పొస్తుంది. కళ్ళు గుంజుతూ ఉన్నాయి ఇంకా తల నొప్పి కూడా ఉంది.	ANSWER}
+{\slot
+మెడ	B-body_part
+నొప్పొస్తుంది.	B-symptom
+కళ్ళు	B-body_part
+గుంజుతూ	B-symptom
+ఉన్నాయి	O
+ఇంకా	O
+తల	B-body_part
+నొప్పి	B-symptom
+కూడా	O
+ఉంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 1 month అయింది.	ANSWER}
+{\slot
+1	B-time_period
+month	I-time_period
+అయింది.	O
+}
+

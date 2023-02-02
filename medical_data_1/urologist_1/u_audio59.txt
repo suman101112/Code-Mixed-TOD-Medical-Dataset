@@ -1,0 +1,114 @@
+{\intent	d: పేరు ఏంటి అమ్మా?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంటి	O
+అమ్మా?	O
+}
+
+{\intent	p: Zakina sir	ANSWER}
+{\slot
+Zakina	B-name
+sir	O
+}
+
+{\intent	p: మొత్తం ఎముకలు బాగా గుంజుతుంది. kidney నొప్పి ఉంది sir.	STATEMENT}
+{\slot
+మొత్తం	O
+ఎముకలు	B-body_part
+బాగా	B-intensity
+గుంజుతుంది.	B-symptom
+kidney	B-body_part
+నొప్పి	B-symptom
+ఉంది	O
+sir.	O
+}
+
+{\intent	d: చిన్న రవుతు ఉందమ్మా, అందుకే అట్ల అవుతుంది.	DIAGNOSIS}
+{\slot
+చిన్న	O
+రవుతు	B-body_substance
+ఉందమ్మా,	O
+అందుకే	O
+అట్ల	O
+అవుతుంది.	O
+}
+
+{\intent	d: ఎప్పుడైంది ఈ scan ఎప్పుడైంది? ఈ రోజూ ఏ అయిందా?	INFO_REQUEST}
+{\slot
+ఎప్పుడైంది	O
+ఈ	O
+scan	B-mtest
+ఎప్పుడైంది?	O
+ఈ	O
+రోజూ	O
+ఏ	O
+అయిందా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: రవుతు వల్ల అట్ల అయితుంది.	MEDICAL_EXPLANATION}
+{\slot
+రవుతు	B-body_substance
+వల్ల	O
+అట్ల	O
+అయితుంది.	O
+}
+
+{\intent	d: చూద్దాం,	ACTION_DIR}
+{\slot
+చూద్దాం,	O
+}
+
+{\intent	d: నీళ్లు బాగా తాగాలి	ACTION_DIR}
+{\slot
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగాలి	B-bodily_process
+}
+
+{\intent	d: మందులు రాసి ఇస్తా కొన్ని	COMMIT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా	O
+కొన్ని	O
+}
+
+{\intent	p: అది sideకి బాగా నొప్పిలేస్తుంది sir.	STATEMENT}
+{\slot
+అది	O
+sideకి	B-location
+బాగా	B-intensity
+నొప్పిలేస్తుంది	B-symptom
+sir.	O
+}
+
+{\intent	d: మూత్రంలోనే పడిపోయే chances చాలా ఉంటాయి ఇట్ల చిన్న రవుతులకు	MEDICAL_EXPLANATION}
+{\slot
+మూత్రంలోనే	B-body_substance
+పడిపోయే	O
+chances	O
+చాలా	O
+ఉంటాయి	O
+ఇట్ల	O
+చిన్న	O
+రవుతులకు	B-body_substance
+}
+
+{\intent	d: operation చేసే పని ఉండదు.	MEDICAL_EXPLANATION}
+{\slot
+operation	B-treatment
+చేసే	O
+పని	O
+ఉండదు.	O
+}
+
+{\intent	p: umm.	ACK}
+{\slot
+umm.	O
+}
+

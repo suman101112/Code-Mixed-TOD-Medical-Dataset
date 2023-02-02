@@ -1,0 +1,178 @@
+{\intent	p: doctor గారు నా పేరు Rupesh.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+పేరు	O
+Rupesh.	B-name
+}
+
+{\intent	p: నా వయస్సు 35 సంవత్సరాలు	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+35	B-age
+సంవత్సరాలు	I-age
+}
+
+{\intent	p: నేను రోజులో 10 గంటలపాటు laptopమీద పనిచెస్తుంటాను	STATEMENT}
+{\slot
+నేను	O
+రోజులో	B-time_period
+10	B-time_period
+గంటలపాటు	I-time_period
+laptopమీద	O
+పనిచెస్తుంటాను	O
+}
+
+{\intent	p: ఇలా నేను గత 2 సంవత్సరాలుగా చేస్తున్నాను.	STATEMENT}
+{\slot
+ఇలా	O
+నేను	O
+గత	O
+2	B-time_period
+సంవత్సరాలుగా	I-time_period
+చేస్తున్నాను.	O
+}
+
+{\intent	p: ఎందుకో ఉదయం లేచినా వెంటనే కళ్ళు బరువుగా ఉండి నొప్పి ఉంటుంది.	STATEMENT}
+{\slot
+ఎందుకో	O
+ఉదయం	B-time_period
+లేచినా	B-bodily_process
+వెంటనే	O
+కళ్ళు	B-body_part
+బరువుగా	B-symptom
+ఉండి	O
+నొప్పి	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: తల అంతా బరువుగా ఉంటుంది. కళ్ళ కింద వాపు కూడా వస్తుంది.	STATEMENT}
+{\slot
+తల	B-body_part
+అంతా	B-location
+బరువుగా	B-symptom
+ఉంటుంది.	O
+కళ్ళ	B-body_part
+కింద	B-location
+వాపు	B-symptom
+కూడా	O
+వస్తుంది.	O
+}
+
+{\intent	p: ఈ సమస్య నాకు లేచినప్పటినుంచి 2 గంటల పాటు ఉంటుంది.	STATEMENT}
+{\slot
+ఈ	O
+సమస్య	O
+నాకు	O
+లేచినప్పటినుంచి	B-time_period
+2	I-time_period
+గంటల	I-time_period
+పాటు	O
+ఉంటుంది.	O
+}
+
+{\intent	p: దీనికి పరిష్కారం ఏంటి?	INFO_REQUEST}
+{\slot
+దీనికి	O
+పరిష్కారం	B-treatment
+ఏంటి?	O
+}
+
+{\intent	p: కారణాలు ఏంటో తెలియచేయండి.	STATEMENT}
+{\slot
+కారణాలు	O
+ఏంటో	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: ప్రొదున్న లేవగానే కళ్ళ కింద వాపు ఉండి 2 గంటల తర్వాత తగ్గిపోతుంది అంటే మీ bodyలో నీరు నిలిచిపోతా ఉంది.	STATEMENT}
+{\slot
+ప్రొదున్న	B-time_period
+లేవగానే	I-time_period
+కళ్ళ	B-body_part
+కింద	B-location
+వాపు	B-symptom
+ఉండి	O
+2	B-time_period
+గంటల	I-time_period
+తర్వాత	I-time_period
+తగ్గిపోతుంది	B-normal
+అంటే	O
+మీ	O
+bodyలో	B-body_part
+నీరు	B-food_substance
+నిలిచిపోతా	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: అంటే నీరు నిలిచి పోయేటప్పుడు ఇటువంటి వాపులు వస్తాయి.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+నీరు	B-food_substance
+నిలిచి	B-symptom
+పోయేటప్పుడు	I-symptom
+ఇటువంటి	O
+వాపులు	B-symptom
+వస్తాయి.	O
+}
+
+{\intent	d: శరిరంలో నీరు నిలవడానికి ఏదైనా కారణం కావొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+శరిరంలో	B-body_part
+నీరు	B-food_substance
+నిలవడానికి	B-symptom
+ఏదైనా	O
+కారణం	O
+కావొచ్చు.	O
+}
+
+{\intent	d: అతి చిన్న  iron deficiency anemia దెగ్గర నుంచి అతి పెద్ద కారణాలైనా గుండెకు సంబంధించిన సమస్యలు కావొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+అతి	O
+చిన్న	O
+iron	B-medical_condition
+deficiency	I-medical_condition
+anemia	B-medical_condition
+దెగ్గర	O
+నుంచి	O
+అతి	O
+పెద్ద	O
+కారణాలైనా	O
+గుండెకు	B-body_part
+సంబంధించిన	O
+సమస్యలు	O
+కావొచ్చు.	O
+}
+
+{\intent	d: kidney, liver, protein deficiency, ఇటువంటి అన్నీ కారణాల్లోను శరిరంలో నీరు నిలిచిపోయే అవకాశం ఎక్కువగా ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+kidney,	B-body_part
+liver,	B-body_part
+protein	B-medical_condition
+deficiency,	I-medical_condition
+ఇటువంటి	O
+అన్నీ	O
+కారణాల్లోను	O
+శరిరంలో	B-body_part
+నీరు	B-food_substance
+నిలిచిపోయే	B-symptom
+అవకాశం	O
+ఎక్కువగా	B-intensity
+ఉంటుంది.	O
+}
+
+{\intent	d: కళ్ళ చుట్టూ నీరు నిలిచిపోయే ఎక్కువగా మనం kidney సమస్యలలో చూస్తుంటాం.	MEDICAL_EXPLANATION}
+{\slot
+కళ్ళ	B-body_part
+చుట్టూ	B-location
+నీరు	B-food_substance
+నిలిచిపోయే	B-symptom
+ఎక్కువగా	B-intensity
+మనం	O
+kidney	B-body_part
+సమస్యలలో	O
+చూస్తుంటాం.	O
+}
+

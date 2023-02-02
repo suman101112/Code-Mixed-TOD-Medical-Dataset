@@ -1,0 +1,99 @@
+{\intent	d: 4	ANSWER}
+{\slot
+4	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p1: 4, m	INFO_REQUEST}
+{\slot
+4,	B-age
+m	B-gender
+}
+
+{\intent	p1: dull అయిపోయిండు	STATEMENT}
+{\slot
+dull	B-symptom
+అయిపోయిండు	O
+}
+
+{\intent	d: dull అయిపోయినాడా? ఆడుకోవడం లేదా?	INFO_REQUEST}
+{\slot
+dull	B-symptom
+అయిపోయినాడా?	O
+ఆడుకోవడం	B-bodily_process
+లేదా?	O
+}
+
+{\intent	d: dull అంటే చాలా మంది పిల్లలు ఎట్ల ఉంటారు అంటే, శనివారం ఆదివారం full active ఉంటారు	MEDICAL_EXPLANATION}
+{\slot
+dull	B-symptom
+అంటే	O
+చాలా	O
+మంది	O
+పిల్లలు	O
+ఎట్ల	O
+ఉంటారు	O
+అంటే,	O
+శనివారం	B-time_period
+ఆదివారం	B-time_period
+full	B-intensity
+active	B-normal
+ఉంటారు	O
+}
+
+{\intent	p1: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: Monday morning syndrome అని ఉంటుంది మన లెక్కలో	STATEMENT}
+{\slot
+Monday	B-symptom
+morning	I-symptom
+syndrome	I-symptom
+అని	O
+ఉంటుంది	O
+మన	O
+లెక్కలో	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఇప్పుడు ఎట్లా ఉన్నాడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎట్లా	O
+ఉన్నాడు?	O
+}
+
+{\intent	p: జ్వరం అది, syrup పోసినప్పుడు తక్వ అయితుంది sir.	ANSWER}
+{\slot
+జ్వరం	B-symptom
+అది,	O
+syrup	B-medicine
+పోసినప్పుడు	O
+తక్వ	O
+అయితుంది	O
+sir.	O
+}
+
+{\intent	d: 99, జ్వరం ఏం లేదు.	STATEMENT}
+{\slot
+99,	B-mtest_value
+జ్వరం	B-symptom
+ఏం	O
+లేదు.	O
+}
+
+{\intent	d: కుర్చో.	ACTION_DIR}
+{\slot
+కుర్చో.	O
+}
+

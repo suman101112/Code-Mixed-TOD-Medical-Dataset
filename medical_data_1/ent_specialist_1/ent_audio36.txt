@@ -1,0 +1,150 @@
+{\intent	d: ఆ పేరు చెప్పు పాపది	INFO_REQUEST}
+{\slot
+ఆ	O
+పేరు	O
+చెప్పు	O
+పాపది	B-person
+}
+
+{\intent	p: Rishikta	ANSWER}
+{\slot
+Rishikta	B-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: Rishikta	ANSWER}
+{\slot
+Rishikta	B-name
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 2.5	ANSWER}
+{\slot
+2.5	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: cold అయింది. తక్కువ అయింది. కానీ గురక పెడుతోంది. పడుకున్నాక శ్వాస continuousగా తీసుకోవట్లేదు	ANSWER}
+{\slot
+cold	B-medical_condition
+అయింది.	O
+తక్కువ	B-normal
+అయింది.	O
+కానీ	O
+గురక	B-symptom
+పెడుతోంది.	O
+పడుకున్నాక	B-bodily_process
+శ్వాస	B-bodily_process
+continuousగా	O
+తీసుకోవట్లేదు	B-symptom
+}
+
+{\intent	d: గురక, గురక పెడుతుంది.	ACK}
+{\slot
+గురక,	B-symptom
+గురక	B-symptom
+పెడుతుంది.	O
+}
+
+{\intent	p: గురక పెడుతుంది. గట్టిగా.	ACK}
+{\slot
+గురక	B-symptom
+పెడుతుంది.	O
+గట్టిగా.	B-symptom
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	p: breathing గట్టిగా తీసుకుంటుంది. గట్టిగా	STATEMENT}
+{\slot
+breathing	B-bodily_process
+గట్టిగా	B-symptom
+తీసుకుంటుంది.	B-bodily_process
+గట్టిగా	B-symptom
+}
+
+{\intent	p: జలుబు చేసినప్పుడు 3 days తల స్నానం పోసినప్పుడు చెవులు బాగా నొప్పిలేస్తుందమ్మా అన్నది.	STATEMENT}
+{\slot
+జలుబు	B-medical_condition
+చేసినప్పుడు	O
+3	B-time_period
+days	I-time_period
+తల	B-body_part
+స్నానం	O
+పోసినప్పుడు	O
+చెవులు	B-body_part
+బాగా	B-intensity
+నొప్పిలేస్తుందమ్మా	B-symptom
+అన్నది.	O
+}
+
+{\intent	p: అంటే ఏదో sound వచ్చిందో ఎమో తెలవదు మరి.	STATEMENT}
+{\slot
+అంటే	O
+ఏదో	O
+sound	B-bodily_process
+వచ్చిందో	O
+ఎమో	O
+తెలవదు	O
+మరి.	O
+}
+
+{\intent	p: అంటే గురక.	STATEMENT}
+{\slot
+అంటే	O
+గురక.	B-symptom
+}
+
+{\intent	d: ముక్కులో ఏందంటే adenoids అని ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ముక్కులో	B-body_part
+ఏందంటే	O
+adenoids	B-body_part
+అని	O
+ఉంటాయి.	O
+}
+
+{\intent	p1: పెద్దొళ్ళలో అలా	STATEMENT}
+{\slot
+పెద్దొళ్ళలో	O
+అలా	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: దానివల్ల వస్తాది.	STATEMENT}
+{\slot
+దానివల్ల	O
+వస్తాది.	O
+}
+

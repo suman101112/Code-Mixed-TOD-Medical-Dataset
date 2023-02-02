@@ -1,0 +1,131 @@
+{\intent	p: నా age 24 years.	STATEMENT}
+{\slot
+నా	O
+age	O
+24	B-age
+years.	I-age
+}
+
+{\intent	p: నేను software employee ని .	STATEMENT}
+{\slot
+నేను	O
+software	B-profession
+employee	I-profession
+ని	O
+.	O
+}
+
+{\intent	p: lens వాడుతూ ఉంటాను.	STATEMENT}
+{\slot
+lens	O
+వాడుతూ	O
+ఉంటాను.	O
+}
+
+{\intent	p: lens పెట్టుకోని ఎండలో వెళ్ళొచ్చా?	INFO_REQUEST}
+{\slot
+lens	O
+పెట్టుకోని	O
+ఎండలో	O
+వెళ్ళొచ్చా?	O
+}
+
+{\intent	d: మీ age 24 years అండి. మీరు contact lens, మీ power బట్టి మీరు contact lens వాడుతున్నారు.	ACK}
+{\slot
+మీ	O
+age	O
+24	B-age
+years	I-age
+అండి.	O
+మీరు	O
+contact	O
+lens,	O
+మీ	O
+power	B-symptom
+బట్టి	O
+మీరు	O
+contact	O
+lens	O
+వాడుతున్నారు.	O
+}
+
+{\intent	d: వాడడంలో తప్పు లేదు కానీ ఎలాంటి contact lens వాడుతున్నారు?	INFO_REQUEST}
+{\slot
+వాడడంలో	O
+తప్పు	O
+లేదు	O
+కానీ	O
+ఎలాంటి	O
+contact	O
+lens	O
+వాడుతున్నారు?	O
+}
+
+{\intent	d: disposable? daily disposable ఆ? monthly disposable ఆ అనేది ఒక్కటి important.	MEDICAL_EXPLANATION}
+{\slot
+disposable?	O
+daily	B-time_period
+disposable	O
+ఆ?	O
+monthly	B-time_period
+disposable	O
+ఆ	O
+అనేది	O
+ఒక్కటి	O
+important.	O
+}
+
+{\intent	d: plus lensలో పడుకోకూడదు.	MEDICAL_EXPLANATION}
+{\slot
+plus	O
+lensలో	O
+పడుకోకూడదు.	O
+}
+
+{\intent	d: lens మామూలుగా daily పెట్టుకోని బయటికి కూడా వెళ్ళొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+lens	O
+మామూలుగా	O
+daily	B-time_period
+పెట్టుకోని	O
+బయటికి	O
+కూడా	O
+వెళ్ళొచ్చు.	O
+}
+
+{\intent	d: మీకు lens వలన allergies లేకపోతే ఎలాంటి ఇబ్బంది లేదండీ బయటకు వెళ్ళినా.	MEDICAL_EXPLANATION}
+{\slot
+మీకు	O
+lens	O
+వలన	O
+allergies	B-medical_condition
+లేకపోతే	O
+ఎలాంటి	O
+ఇబ్బంది	O
+లేదండీ	O
+బయటకు	O
+వెళ్ళినా.	O
+}
+
+{\intent	d: కొంత మందికి lens పెట్టుకుంటే వాళ్ళకు కొంచం allergies ఉంటాయి. అలాంటి వాళ్ళల్లో ఇంకా allergies aggrevate అయ్యి ఇంకా ఎక్కువయ్యే chances ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+కొంత	O
+మందికి	O
+lens	O
+పెట్టుకుంటే	O
+వాళ్ళకు	O
+కొంచం	O
+allergies	B-medical_condition
+ఉంటాయి.	O
+అలాంటి	O
+వాళ్ళల్లో	O
+ఇంకా	O
+allergies	B-medical_condition
+aggrevate	B-intensity
+అయ్యి	O
+ఇంకా	B-intensity
+ఎక్కువయ్యే	I-intensity
+chances	O
+ఉంటాయి.	O
+}
+

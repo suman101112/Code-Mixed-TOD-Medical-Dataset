@@ -1,0 +1,166 @@
+{\intent	p: doctor గారు మా అమ్మగారి వయస్సు 50 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+మా	O
+అమ్మగారి	O
+వయస్సు	O
+50	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత 10 సంవత్సరాల నుంచి diabetes తో బాధపడుతున్నారు.	STATEMENT}
+{\slot
+గత	O
+10	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+diabetes	B-medical_condition
+తో	O
+బాధపడుతున్నారు.	B-symptom
+}
+
+{\intent	p: ఈ మధ్య కళ్ళు కొంచం మసకగా అనిపిస్తుంది అంటున్నారు.	STATEMENT}
+{\slot
+ఈ	B-time_period
+మధ్య	I-time_period
+కళ్ళు	B-body_part
+కొంచం	O
+మసకగా	B-symptom
+అనిపిస్తుంది	O
+అంటున్నారు.	O
+}
+
+{\intent	p: అలాగే కళ్ళ ముందు ఏదో blink అవుతున్నట్లు ఉందంటున్నారు.	STATEMENT}
+{\slot
+అలాగే	O
+కళ్ళ	B-body_part
+ముందు	B-location
+ఏదో	O
+blink	B-symptom
+అవుతున్నట్లు	O
+ఉందంటున్నారు.	O
+}
+
+{\intent	p: ఇది ఎలాంటి సమస్య? diabetesకి కళ్ళు మసకబారటానికి ఏమైనా సంబంధం ఉందా?	INFO_REQUEST}
+{\slot
+ఇది	O
+ఎలాంటి	O
+సమస్య?	O
+diabetesకి	B-medical_condition
+కళ్ళు	B-body_part
+మసకబారటానికి	B-symptom
+ఏమైనా	O
+సంబంధం	O
+ఉందా?	O
+}
+
+{\intent	d: diabetes ఉంటే కన్ను affect అవ్వడం అనేది చాలా commonగా అవుతూ ఉంటుంది అండి diabetes ఉన్నప్పుడు.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+ఉంటే	O
+కన్ను	B-body_part
+affect	B-symptom
+అవ్వడం	O
+అనేది	O
+చాలా	B-intensity
+commonగా	O
+అవుతూ	O
+ఉంటుంది	O
+అండి	O
+diabetes	B-medical_condition
+ఉన్నప్పుడు.	O
+}
+
+{\intent	d: అది మీ motherకి 10 సంవత్సరాల నుంచి ఉంది కబట్టి నరం checkup చేయాలి.	STATEMENT}
+{\slot
+అది	O
+మీ	O
+motherకి	B-familal
+10	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఉంది	O
+కబట్టి	O
+నరం	B-body_part
+checkup	B-mtest
+చేయాలి.	O
+}
+
+{\intent	d: diabetes వల్ల కంట్లో రాక రకాలుగా వస్తూ ఉంటాయి problems.	MEDICAL_EXPLANATION}
+{\slot
+diabetes	B-medical_condition
+వల్ల	O
+కంట్లో	B-body_part
+రాక	O
+రకాలుగా	O
+వస్తూ	O
+ఉంటాయి	O
+problems.	O
+}
+
+{\intent	d: ఒక్కటి ఏంటి అంటే పొరలు వస్తూ ఉంటాయి. పొరలు అని అంటాము లేదా శుక్లాలు అని అంటాము అలా వస్తూ ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కటి	O
+ఏంటి	O
+అంటే	O
+పొరలు	B-medical_condition
+వస్తూ	O
+ఉంటాయి.	O
+పొరలు	B-medical_condition
+అని	O
+అంటాము	O
+లేదా	O
+శుక్లాలు	B-medical_condition
+అని	O
+అంటాము	O
+అలా	O
+వస్తూ	O
+ఉంటుంది.	O
+}
+
+{\intent	d: లేకపోతే నీటి కాసుల జబ్బు అంటాము.	MEDICAL_EXPLANATION}
+{\slot
+లేకపోతే	O
+నీటి	B-medical_condition
+కాసుల	I-medical_condition
+జబ్బు	I-medical_condition
+అంటాము.	O
+}
+
+{\intent	d: open angle glaucoma, కంట్లో pressure పెరిగి కంటి నరం మీద ఒత్తిడి పడి కూడా మెల్ల మెల్లగా చూపు తగ్గిపోతుంది.	MEDICAL_EXPLANATION}
+{\slot
+open	B-medical_condition
+angle	I-medical_condition
+glaucoma,	I-medical_condition
+కంట్లో	B-body_part
+pressure	B-medical_condition
+పెరిగి	O
+కంటి	B-body_part
+నరం	I-body_part
+మీద	B-location
+ఒత్తిడి	B-medical_condition
+పడి	O
+కూడా	O
+మెల్ల	O
+మెల్లగా	O
+చూపు	B-bodily_process
+తగ్గిపోతుంది.	B-symptom
+}
+
+{\intent	d: లేదా కంటి నరం కూడా దెబ్బ తింటూ ఉంటుంది. అది diabetic retinopathy అని అంటాం.	MEDICAL_EXPLANATION}
+{\slot
+లేదా	O
+కంటి	B-body_part
+నరం	I-body_part
+కూడా	O
+దెబ్బ	B-symptom
+తింటూ	I-symptom
+ఉంటుంది.	O
+అది	O
+diabetic	B-medical_condition
+retinopathy	B-medical_condition
+అని	O
+అంటాం.	O
+}
+

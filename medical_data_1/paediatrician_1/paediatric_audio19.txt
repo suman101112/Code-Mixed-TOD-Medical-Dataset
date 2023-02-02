@@ -1,0 +1,143 @@
+{\intent	d: కుర్చోబెట్టు అమ్మా	ACTION_DIR}
+{\slot
+కుర్చోబెట్టు	O
+అమ్మా	O
+}
+
+{\intent	d: ఏం పేరు	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+}
+
+{\intent	p: p varshith	ANSWER}
+{\slot
+p	B-name
+varshith	I-name
+}
+
+{\intent	d: ఎన్ని 7 ఏళ్ళా?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+7	B-age
+ఏళ్ళా?	O
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇటు తల అటు కాలు ఉంచు	ACTION_DIR}
+{\slot
+ఇటు	O
+తల	B-body_part
+అటు	O
+కాలు	B-body_part
+ఉంచు	O
+}
+
+{\intent	d: జ్వరం అయితే 99	STATEMENT}
+{\slot
+జ్వరం	B-symptom
+అయితే	O
+99	B-mtest_value
+}
+
+{\intent	d: జలుబు , దగ్గు, జ్వరము, ఇంకా ఏం ఏం ఉన్నాయి ఇవన్నీ కాకుండా?	INFO_REQUEST}
+{\slot
+జలుబు	B-medical_condition
+,	O
+దగ్గు,	B-symptom
+జ్వరము,	B-symptom
+ఇంకా	O
+ఏం	O
+ఏం	O
+ఉన్నాయి	O
+ఇవన్నీ	O
+కాకుండా?	O
+}
+
+{\intent	p: చెవు నొప్పి అని night నుంచి చెప్తున్నాడు	ANSWER}
+{\slot
+చెవు	B-body_part
+నొప్పి	B-symptom
+అని	O
+night	B-time_period
+నుంచి	O
+చెప్తున్నాడు	O
+}
+
+{\intent	d: కుడి చెవా? ఎడమ చెవా?	INFO_REQUEST}
+{\slot
+కుడి	B-location
+చెవా?	B-body_part
+ఎడమ	B-location
+చెవా?	B-body_part
+}
+
+{\intent	d: కుర్చో కుర్చో	ACTION_DIR}
+{\slot
+కుర్చో	O
+కుర్చో	O
+}
+
+{\intent	d: స్నానం చేసేటప్పుడు చెవులో cotton పెట్టుకోవాలి	MEDICAL_EXPLANATION}
+{\slot
+స్నానం	O
+చేసేటప్పుడు	O
+చెవులో	B-body_part
+cotton	O
+పెట్టుకోవాలి	O
+}
+
+{\intent	d: గట్టిగా చీదొద్దు	MEDICAL_EXPLANATION}
+{\slot
+గట్టిగా	B-intensity
+చీదొద్దు	B-bodily_process
+}
+
+{\intent	d: ఇట్ల అని block చేయాలి, ఇట్ల అనాలి	MEDICAL_EXPLANATION}
+{\slot
+ఇట్ల	O
+అని	O
+block	B-symptom
+చేయాలి,	O
+ఇట్ల	O
+అనాలి	O
+}
+
+{\intent	p: మొత్తం ఇట్ల లోపలికి పీలుస్తున్నాడు	STATEMENT}
+{\slot
+మొత్తం	O
+ఇట్ల	O
+లోపలికి	B-location
+పీలుస్తున్నాడు	B-bodily_process
+}
+
+{\intent	d: చీమిడి వెనక పీలుస్తున్నావా?	INFO_REQUEST}
+{\slot
+చీమిడి	B-body_substance
+వెనక	B-location
+పీలుస్తున్నావా?	B-bodily_process
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: చీమిడి వెనక పీలిస్తే, తలకాయి నొప్పిలేస్తాది.	MEDICAL_EXPLANATION}
+{\slot
+చీమిడి	B-body_substance
+వెనక	B-location
+పీలిస్తే,	B-bodily_process
+తలకాయి	B-body_part
+నొప్పిలేస్తాది.	B-symptom
+}
+

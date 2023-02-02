@@ -1,0 +1,65 @@
+{\intent	p: doctor గారు ఎలాంటి అలవాట్లకు దూరంగా ఉంటే మన కంటి ఆరోగ్యాన్ని కాపడుతాయి?	INFO_REQUEST}
+{\slot
+doctor	B-medical_professional
+గారు	O
+ఎలాంటి	O
+అలవాట్లకు	B-habit
+దూరంగా	O
+ఉంటే	O
+మన	O
+కంటి	B-body_part
+ఆరోగ్యాన్ని	B-medical_condition
+కాపడుతాయి?	O
+}
+
+{\intent	d: కంటి అయినా ఏదైనా మన శరిరంలో ఏ భాగమైన కూడా ఒక క్రమ పద్ధతి ఒక discipline అనేది ముఖ్యం.	MEDICAL_EXPLANATION}
+{\slot
+కంటి	B-body_part
+అయినా	O
+ఏదైనా	O
+మన	O
+శరిరంలో	B-body_part
+ఏ	O
+భాగమైన	B-body_part
+కూడా	O
+ఒక	O
+క్రమ	O
+పద్ధతి	O
+ఒక	O
+discipline	O
+అనేది	O
+ముఖ్యం.	O
+}
+
+{\intent	d: అది అలవాట్లు అంటే generalగా smoking, alcohol తీసుకోవడము అతిగా తినడము, అతిగా spices తినడము. అతిగా junk food ఇప్పుడు అందరూ worry అయ్యేది parents కానీ junk food తినడము ఇవన్నీ అలవాట్లలో చెడు అలవాట్లు	ANSWER}
+{\slot
+అది	O
+అలవాట్లు	O
+అంటే	O
+generalగా	O
+smoking,	B-habit
+alcohol	B-habit
+తీసుకోవడము	O
+అతిగా	B-intensity
+తినడము,	B-bodily_process
+అతిగా	B-intensity
+spices	B-food_substance
+తినడము.	B-bodily_process
+అతిగా	B-intensity
+junk	B-food_substance
+food	I-food_substance
+ఇప్పుడు	B-time_period
+అందరూ	O
+worry	O
+అయ్యేది	O
+parents	B-familal
+కానీ	O
+junk	B-food_substance
+food	I-food_substance
+తినడము	B-bodily_process
+ఇవన్నీ	O
+అలవాట్లలో	O
+చెడు	O
+అలవాట్లు	O
+}
+

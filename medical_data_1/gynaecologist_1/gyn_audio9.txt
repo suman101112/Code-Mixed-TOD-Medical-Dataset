@@ -1,0 +1,290 @@
+{\intent	d: क्या नाम है आप का?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+आप	O
+का?	O
+}
+
+{\intent	p1: Fazihali	STATEMENT}
+{\slot
+Fazihali	B-name
+}
+
+{\intent	d: उम्र कितना?	INFO_REQUEST}
+{\slot
+उम्र	O
+कितना?	O
+}
+
+{\intent	p: उम्र ..	STATEMENT}
+{\slot
+उम्र	O
+..	O
+}
+
+{\intent	p1: 25, 24 रहता	STATEMENT}
+{\slot
+25,	B-age
+24	B-age
+रहता	O
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: 25	STATEMENT}
+{\slot
+25	B-age
+}
+
+{\intent	d: अभी urine pregnancy test positive, pregnancy confirm हुआ बोल के आये	STATEMENT}
+{\slot
+अभी	B-time_period
+urine	B-mtest
+pregnancy	I-mtest
+test	I-mtest
+positive,	B-mtest_value
+pregnancy	B-bodily_process
+confirm	B-positive
+हुआ	O
+बोल	O
+के	O
+आये	O
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: आखिरी महीने का तारीख?	INFO_REQUEST}
+{\slot
+आखिरी	B-time_period
+महीने	I-time_period
+का	O
+तारीख.	B-time_period
+}
+
+{\intent	p: 12	STATEMENT}
+{\slot
+12	B-time_period
+}
+
+{\intent	d: 11, 12, January 12 को हुए थे .	STATEMENT}
+{\slot
+11,	B-time_period
+12,	B-time_period
+January	I-time_period
+12	B-time_period
+को	O
+हुए	O
+थे	O
+.	O
+}
+
+{\intent	d: इससे पहले महीना वारी बराबर था आपको? irregular?	INFO_REQUEST}
+{\slot
+इससे	O
+पहले	O
+महीना	B-bodily_process
+वारी	I-bodily_process
+बराबर	B-normal
+था	O
+आपको?	O
+irregular?	B-symptom
+}
+
+{\intent	p: बराबर था.	STATEMENT}
+{\slot
+बराबर	B-normal
+था.	O
+}
+
+{\intent	d: बराबर था.	STATEMENT}
+{\slot
+बराबर	B-normal
+था.	O
+}
+
+{\intent	d: अभी उल्टी हो रहा?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+उल्टी	B-symptom
+हो	O
+रहा?	O
+}
+
+{\intent	p: हां तब तब हो रहा. हुए जैसा हो रहा	STATEMENT}
+{\slot
+हां	O
+तब	B-time_period
+तब	B-time_period
+हो	B-positive
+रहा.	O
+हुए	O
+जैसा	O
+हो	O
+रहा	O
+}
+
+{\intent	d: हुए जैसा हो रहा लेकिन उल्टी नहीं हो रहा	STATEMENT}
+{\slot
+हुए	O
+जैसा	O
+हो	O
+रहा	O
+लेकिन	O
+उल्टी	B-symptom
+नहीं	B-negative
+हो	O
+रहा	O
+}
+
+{\intent	d: अभी शादी हो कर कितने महीने?	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+शादी	B-marital_status
+हो	O
+कर	O
+कितने	O
+महीने?	B-time_period
+}
+
+{\intent	p: 1 साल.	STATEMENT}
+{\slot
+1	B-time_period
+साल.	I-time_period
+}
+
+{\intent	d: 1 साल हो गया	STATEMENT}
+{\slot
+1	B-time_period
+साल	I-time_period
+हो	O
+गया	O
+}
+
+{\intent	d: अभी pregnancy है. confirmation के लिए आए . 1 साल हुआ शादी हो के	ACK}
+{\slot
+अभी	B-time_period
+pregnancy	B-bodily_process
+है.	O
+confirmation	B-mtest
+के	O
+लिए	O
+आए	O
+.	O
+1	B-time_period
+साल	I-time_period
+हुआ	O
+शादी	O
+हो	O
+के	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: महीना, महीना बराबर रहते	ACK}
+{\slot
+महीना,	B-bodily_process
+महीना	I-bodily_process
+बराबर	B-normal
+रहते	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: आपको sugar, bp, thyroid?	INFO_REQUEST}
+{\slot
+आपको	O
+sugar,	B-medical_condition
+bp,	B-medical_condition
+thyroid?	B-medical_condition
+}
+
+{\intent	p: कुछ नहीं है	STATEMENT}
+{\slot
+कुछ	O
+नहीं	O
+है	O
+}
+
+{\intent	d: रिश्तेदारों में हुआ शादी या बाहर वाले ?	INFO_REQUEST}
+{\slot
+रिश्तेदारों	B-familal
+में	O
+हुआ	O
+शादी	O
+या	O
+बाहर	O
+वाले	O
+?	O
+}
+
+{\intent	p1: बाहर वाले	STATEMENT}
+{\slot
+बाहर	O
+वाले	O
+}
+
+{\intent	d: बाहर वाले ही.	STATEMENT}
+{\slot
+बाहर	O
+वाले	O
+ही.	O
+}
+
+{\intent	d: कुछ भी तकलीफ नहीं है आप को अभी?	INFO_REQUEST}
+{\slot
+कुछ	O
+भी	O
+तकलीफ	O
+नहीं	O
+है	O
+आप	O
+को	O
+अभी?	O
+}
+
+{\intent	p: नहीं	STATEMENT}
+{\slot
+नहीं	B-negative
+}
+
+{\intent	d: pregnancy है की नहीं दीखने के लिए आये	STATEMENT}
+{\slot
+pregnancy	B-bodily_process
+है	O
+की	O
+नहीं	O
+दीखने	O
+के	O
+लिए	O
+आये	O
+}
+
+{\intent	p: हां.	STATEMENT}
+{\slot
+हां.	B-positive
+}
+
+{\intent	d: लेटो लेटो	ACTION_DIR}
+{\slot
+लेटो	O
+लेटो	O
+}
+

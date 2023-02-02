@@ -1,0 +1,121 @@
+{\intent	d: 3	ANSWER}
+{\slot
+3	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: చెప్పమ్మా problem ఏంటి ?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+problem	O
+ఏంటి	O
+?	O
+}
+
+{\intent	p: మొత్తం దురద పెట్టి ఇలా గోకుతుంది sir.	ANSWER}
+{\slot
+మొత్తం	B-location
+దురద	B-symptom
+పెట్టి	O
+ఇలా	O
+గోకుతుంది	B-symptom
+sir.	O
+}
+
+{\intent	d: ఏ ఊరు మీది? పత్తి ఉందా మీ ఇంట్లో ఏమన్నా?	INFO_REQUEST}
+{\slot
+ఏ	O
+ఊరు	B-place
+మీది?	O
+పత్తి	O
+ఉందా	O
+మీ	O
+ఇంట్లో	O
+ఏమన్నా?	O
+}
+
+{\intent	p: లేదు sir ఏం లేదు	ANSWER}
+{\slot
+లేదు	O
+sir	O
+ఏం	O
+లేదు	O
+}
+
+{\intent	d: పత్తి అయితే లేదు	ACK}
+{\slot
+పత్తి	O
+అయితే	O
+లేదు	O
+}
+
+{\intent	d: commonగా పత్తి ఉన్న వల్ల ఇంట్లలో store చేసుకుంటే అందరికీ problems వస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+commonగా	O
+పత్తి	O
+ఉన్న	O
+వల్ల	O
+ఇంట్లలో	O
+store	O
+చేసుకుంటే	O
+అందరికీ	O
+problems	O
+వస్తాయి	O
+}
+
+{\intent	d: పిల్లలు ఎంత మంది ఉన్నారు?	INFO_REQUEST}
+{\slot
+పిల్లలు	B-person
+ఎంత	O
+మంది	O
+ఉన్నారు?	O
+}
+
+{\intent	p: వీళ్ళు ఇద్దరు ఉన్నారు	ANSWER}
+{\slot
+వీళ్ళు	O
+ఇద్దరు	B-quantity
+ఉన్నారు	O
+}
+
+{\intent	d: ఇద్దరికీ ఉందా?	INFO_REQUEST}
+{\slot
+ఇద్దరికీ	B-quantity
+ఉందా?	O
+}
+
+{\intent	p: ఆ వీళ్ళ సుత	ANSWER}
+{\slot
+ఆ	B-positive
+వీళ్ళ	O
+సుత	O
+}
+
+{\intent	d: ఉంది కదా ఆయనకు కూడా	STATEMENT}
+{\slot
+ఉంది	O
+కదా	O
+ఆయనకు	B-person
+కూడా	O
+}
+
+{\intent	p: ఇగో ఇట్ల అయితాంది	STATEMENT}
+{\slot
+ఇగో	O
+ఇట్ల	O
+అయితాంది	O
+}
+
+{\intent	d: scabies అది, తెలుగులో గజ్జి అంటారు.	DIAGNOSIS}
+{\slot
+scabies	B-medical_condition
+అది,	O
+తెలుగులో	O
+గజ్జి	B-medical_condition
+అంటారు.	O
+}
+

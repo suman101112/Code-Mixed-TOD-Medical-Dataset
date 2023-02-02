@@ -1,0 +1,333 @@
+{\intent	p: madam నమస్కారం madam	GREETING}
+{\slot
+madam	O
+నమస్కారం	O
+madam	O
+}
+
+{\intent	d: నమస్కారమండీ చెప్పండి sir	ACTION_DIR}
+{\slot
+నమస్కారమండీ	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	p: మాకు marriage అయి 9 years అవుతుంది madam	ANSWER}
+{\slot
+మాకు	O
+marriage	B-marital_status
+అయి	O
+9	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: ok hmm	ACK}
+{\slot
+ok	O
+hmm	O
+}
+
+{\intent	p: అయితే మా mrs కి వచ్చేసి PCOD problem అంటున్నారు madam	STATEMENT}
+{\slot
+అయితే	O
+మా	O
+mrs	B-familal
+కి	O
+వచ్చేసి	O
+PCOD	B-medical_condition
+problem	I-medical_condition
+అంటున్నారు	O
+madam	O
+}
+
+{\intent	d: PCOD ok	ACK}
+{\slot
+PCOD	B-medical_condition
+ok	O
+}
+
+{\intent	p: PCOD problem అంటున్నారు.	REPEAT_REPHRASE}
+{\slot
+PCOD	B-medical_condition
+problem	I-medical_condition
+అంటున్నారు.	O
+}
+
+{\intent	p: అయితే ఇంత ముందు కూడా holes అనేది block వచ్చింది అని చెప్పి అన్నారు	STATEMENT}
+{\slot
+అయితే	O
+ఇంత	O
+ముందు	O
+కూడా	O
+holes	B-body_part
+అనేది	O
+block	B-symptom
+వచ్చింది	O
+అని	O
+చెప్పి	O
+అన్నారు	O
+}
+
+{\intent	d: ok hmm	ACK}
+{\slot
+ok	O
+hmm	O
+}
+
+{\intent	p: దాన్ని కూడా clear చేయించా madam	STATEMENT}
+{\slot
+దాన్ని	O
+కూడా	O
+clear	B-normal
+చేయించా	O
+madam	O
+}
+
+{\intent	d: ok hmm	ACK}
+{\slot
+ok	O
+hmm	O
+}
+
+{\intent	p: నా doubt ఏంటి అంటే holes clear చెప్పించిన తరువాత మళ్ళి మూసుకుపోయే సందర్భం ఏమైనా ఉంటుండా?	INFO_REQUEST}
+{\slot
+నా	O
+doubt	O
+ఏంటి	O
+అంటే	O
+holes	B-body_part
+clear	B-normal
+చెప్పించిన	O
+తరువాత	B-time_period
+మళ్ళి	O
+మూసుకుపోయే	B-symptom
+సందర్భం	O
+ఏమైనా	O
+ఉంటుండా?	O
+}
+
+{\intent	d: ఉంటుందండి	ANSWER}
+{\slot
+ఉంటుందండి	B-positive
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: మళ్ళి close అయ్యే risk factors ఉంటాయి	STATEMENT}
+{\slot
+మళ్ళి	O
+close	B-symptom
+అయ్యే	O
+risk	O
+factors	O
+ఉంటాయి	O
+}
+
+{\intent	d: ఇప్పుడు మీ mrs age ఎంత అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+మీ	O
+mrs	O
+age	O
+ఎంత	O
+అండి?	O
+}
+
+{\intent	p: 30 years madam	ANSWER}
+{\slot
+30	B-age
+years	I-age
+madam	O
+}
+
+{\intent	d: 30 years	ACK}
+{\slot
+30	B-age
+years	I-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: yes madam	ACK}
+{\slot
+yes	O
+madam	O
+}
+
+{\intent	d: and ఇప్పుడు periods regularగా వస్తున్నాయా తనకి?	INFO_REQUEST}
+{\slot
+and	O
+ఇప్పుడు	O
+periods	B-bodily_process
+regularగా	B-normal
+వస్తున్నాయా	O
+తనకి?	O
+}
+
+{\intent	p: రాదు madam	ANSWER}
+{\slot
+రాదు	B-negative
+madam	O
+}
+
+{\intent	d: వస్తున్నాయా?	INFO_REQUEST}
+{\slot
+వస్తున్నాయా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: రావట్లేదు ok	ACK}
+{\slot
+రావట్లేదు	B-negative
+ok	O
+}
+
+{\intent	p: 3 months అలా ఉంటది madam	STATEMENT}
+{\slot
+3	B-time_period
+months	I-time_period
+అలా	O
+ఉంటది	O
+madam	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: weight ఏమైనా ఎక్కువగా ఉంటారా అండి?	INFO_REQUEST}
+{\slot
+weight	B-bm
+ఏమైనా	O
+ఎక్కువగా	B-intensity
+ఉంటారా	O
+అండి?	O
+}
+
+{\intent	p: date వచ్చేసి regularగా ఉండదు madam	STATEMENT}
+{\slot
+date	B-bodily_process
+వచ్చేసి	O
+regularగా	B-normal
+ఉండదు	B-negative
+madam	O
+}
+
+{\intent	d: ok, బరువు ఎక్కువగా ఉంటారా తను?	REPEAT_REPHRASE}
+{\slot
+ok,	O
+బరువు	B-bm
+ఎక్కువగా	B-intensity
+ఉంటారా	O
+తను?	O
+}
+
+{\intent	p: లేదు madam, normal weight ఏ	ANSWER}
+{\slot
+లేదు	B-negative
+madam,	O
+normal	B-normal
+weight	B-bm
+ఏ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకా other hormonal disturbances ఏమైనా ఉన్నాయా?	INFO_REQUEST}
+{\slot
+ఇంకా	O
+other	O
+hormonal	B-body_substance
+disturbances	B-symptom
+ఏమైనా	O
+ఉన్నాయా?	O
+}
+
+{\intent	p: లేదు madam, ఇదే రెండు problems ఉన్నాయి అని తెలుసు madam మాకు report ప్రకారంగా.	ANSWER}
+{\slot
+లేదు	B-negative
+madam,	O
+ఇదే	O
+రెండు	B-frequency
+problems	O
+ఉన్నాయి	O
+అని	O
+తెలుసు	O
+madam	O
+మాకు	O
+report	B-mtest
+ప్రకారంగా.	O
+}
+
+{\intent	d: surgery ఎప్పుడు చేయించారు అండి ఈ tubes కి సంబంధించి?	INFO_REQUEST}
+{\slot
+surgery	B-treatment
+ఎప్పుడు	O
+చేయించారు	O
+అండి	O
+ఈ	O
+tubes	B-body_part
+కి	O
+సంబంధించి?	O
+}
+
+{\intent	p: ఇప్పుడు 3 months back madam	ANSWER}
+{\slot
+ఇప్పుడు	O
+3	B-time_period
+months	I-time_period
+back	I-time_period
+madam	O
+}
+
+{\intent	d: 3 months back	ACK}
+{\slot
+3	B-time_period
+months	I-time_period
+back	I-time_period
+}
+
+{\intent	d: ok fine అండి.	ACK}
+{\slot
+ok	O
+fine	O
+అండి.	O
+}
+
+{\intent	d: ok మీ mrs issueలో ఎంటంటే PCOD with tubal blockage issue అండి మీరు చెప్పినా దాని బట్టి.	DIAGNOSIS}
+{\slot
+ok	O
+మీ	O
+mrs	B-familal
+issueలో	O
+ఎంటంటే	O
+PCOD	B-medical_condition
+with	I-medical_condition
+tubal	I-medical_condition
+blockage	I-medical_condition
+issue	O
+అండి	O
+మీరు	O
+చెప్పినా	O
+దాని	O
+బట్టి.	O
+}
+

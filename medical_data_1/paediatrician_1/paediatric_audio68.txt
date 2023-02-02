@@ -1,0 +1,164 @@
+{\intent	p: అదే sir అంటే మాకు తెలిసినవాళ్ళ ఒక అబ్బయి ఉన్నాడు	STATEMENT}
+{\slot
+అదే	O
+sir	O
+అంటే	O
+మాకు	O
+తెలిసినవాళ్ళ	O
+ఒక	O
+అబ్బయి	B-person
+ఉన్నాడు	O
+}
+
+{\intent	p: ఆ అబ్బయికి ఇప్పుడు 12 years	ANSWER}
+{\slot
+ఆ	O
+అబ్బయికి	B-person
+ఇప్పుడు	O
+12	B-age
+years	I-age
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: అయితేనేమో ఆ అబ్బయి రాయట్లేదు అండి.	STATEMENT}
+{\slot
+అయితేనేమో	O
+ఆ	O
+అబ్బయి	B-person
+రాయట్లేదు	B-symptom
+అండి.	O
+}
+
+{\intent	d: ok. age ఎంత వయస్సు ఎంతమ్మా ఆ బాబు ది?	INFO_REQUEST}
+{\slot
+ok.	O
+age	O
+ఎంత	O
+వయస్సు	O
+ఎంతమ్మా	O
+ఆ	O
+బాబు	B-person
+ది?	O
+}
+
+{\intent	p: 10 సంవత్సరాలు అండి.	ANSWER}
+{\slot
+10	B-age
+సంవత్సరాలు	I-age
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితేనేమో మాటలు కూడా రావట్లేదు అండి.	STATEMENT}
+{\slot
+అయితేనేమో	O
+మాటలు	B-bodily_process
+కూడా	O
+రావట్లేదు	B-symptom
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నలుగురిలో కలవలేక పోతున్నాడు	STATEMENT}
+{\slot
+నలుగురిలో	O
+కలవలేక	B-symptom
+పోతున్నాడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: మాట కూడా clearగా లేదు	STATEMENT}
+{\slot
+మాట	B-bodily_process
+కూడా	O
+clearగా	B-symptom
+లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: చదవడం కూడా చదువుతున్నాడు కానీ రాయడం అసలు రాయడం లేదు అండి.	STATEMENT}
+{\slot
+చదవడం	O
+కూడా	O
+చదువుతున్నాడు	O
+కానీ	O
+రాయడం	O
+అసలు	O
+రాయడం	B-symptom
+లేదు	I-symptom
+అండి.	O
+}
+
+{\intent	d: అదే అదే	ACK}
+{\slot
+అదే	O
+అదే	O
+}
+
+{\intent	p: అది, మళ్ళి తెలివితేటలుగా ఉంటాడండి. అన్ని తెలివితేటలు ఉన్నాయి.	STATEMENT}
+{\slot
+అది,	O
+మళ్ళి	B-body_part
+తెలివితేటలుగా	O
+ఉంటాడండి.	O
+అన్ని	O
+తెలివితేటలు	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: అదే అదే నమ్మా	ACK}
+{\slot
+అదే	O
+అదే	O
+నమ్మా	O
+}
+
+{\intent	p: కానీ నలుగురిలో కలవడం లేదు, రాయడం లేదు	STATEMENT}
+{\slot
+కానీ	O
+నలుగురిలో	O
+కలవడం	B-symptom
+లేదు,	I-symptom
+రాయడం	B-symptom
+లేదు	I-symptom
+}
+
+{\intent	d: అదే అదే, మీరు చెప్పే conditions ని బట్టి ADHD conditions ఉండవచ్చు, Attention deficiency hyperactivity disorder ఉన్నాయి.	DIAGNOSIS}
+{\slot
+అదే	O
+అదే,	O
+మీరు	O
+చెప్పే	O
+conditions	O
+ని	O
+బట్టి	O
+ADHD	B-medical_condition
+conditions	I-medical_condition
+ఉండవచ్చు,	O
+Attention	B-medical_condition
+deficiency	I-medical_condition
+hyperactivity	I-medical_condition
+disorder	I-medical_condition
+ఉన్నాయి.	O
+}
+

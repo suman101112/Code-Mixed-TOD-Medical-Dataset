@@ -1,0 +1,120 @@
+{\intent	p: ఏం లేదు sir మా బాబు ఇప్పుడు 7 years sir	STATEMENT}
+{\slot
+ఏం	O
+లేదు	O
+sir	O
+మా	O
+బాబు	B-familal
+ఇప్పుడు	O
+7	B-age
+years	I-age
+sir	O
+}
+
+{\intent	d: అవునండీ.	ACK}
+{\slot
+అవునండీ.	O
+}
+
+{\intent	p: 4 years నుంచి ఉన్నది	STATEMENT}
+{\slot
+4	B-age
+years	I-age
+నుంచి	O
+ఉన్నది	O
+}
+
+{\intent	p: homeopathy ఇప్పించ్చినాం sir	STATEMENT}
+{\slot
+homeopathy	B-medicine
+ఇప్పించ్చినాం	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక 6 months వాడిన తరువాత మానేసినం sir, అది తగ్గిపోయినట్లు అయింది, మళ్ళి repeatedగా blood అనేది వస్తుంది sir	STATEMENT}
+{\slot
+ఒక	O
+6	B-time_period
+months	I-time_period
+వాడిన	O
+తరువాత	O
+మానేసినం	O
+sir,	O
+అది	O
+తగ్గిపోయినట్లు	O
+అయింది,	O
+మళ్ళి	O
+repeatedగా	B-symptom
+blood	B-body_substance
+అనేది	O
+వస్తుంది	O
+sir	O
+}
+
+{\intent	p: ఏదైనా problem ఉంటదా?	INFO_REQUEST}
+{\slot
+ఏదైనా	O
+problem	O
+ఉంటదా?	O
+}
+
+{\intent	d: blood పోవడానికి కారణం check చేసుకోవాలమ్మా	ANSWER}
+{\slot
+blood	B-body_substance
+పోవడానికి	O
+కారణం	O
+check	O
+చేసుకోవాలమ్మా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: మీరు homeopathy మందులు వాడారు, తగ్గింది.	STATEMENT}
+{\slot
+మీరు	O
+homeopathy	B-medicine
+మందులు	B-medicine
+వాడారు,	O
+తగ్గింది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: తగ్గింది కానీ మీకు పూర్తి cure కాలేదు	ACK}
+{\slot
+తగ్గింది	B-normal
+కానీ	O
+మీకు	O
+పూర్తి	O
+cure	B-treatment
+కాలేదు	B-negative
+}
+
+{\intent	d: మీరు endoscopy పరిక్ష చేసి ఆయన పైన పేగు నుంచి వస్తుందా, లేకపోతే piles వల్ల వస్తుందా?	ACTION_DIR}
+{\slot
+మీరు	O
+endoscopy	B-mtest
+పరిక్ష	I-mtest
+చేసి	O
+ఆయన	O
+పైన	B-body_part
+పేగు	I-body_part
+నుంచి	O
+వస్తుందా,	O
+లేకపోతే	O
+piles	B-symptom
+వల్ల	O
+వస్తుందా?	O
+}
+

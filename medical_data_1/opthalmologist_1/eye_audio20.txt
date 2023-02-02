@@ -1,0 +1,54 @@
+{\intent	p: నాకు కొన్ని మానసిక సమస్యల వలన medicine వాడుతున్నాను.	STATEMENT}
+{\slot
+నాకు	O
+కొన్ని	O
+మానసిక	B-medical_condition
+సమస్యల	I-medical_condition
+వలన	O
+medicine	B-medicine
+వాడుతున్నాను.	O
+}
+
+{\intent	p: అప్పటినుంచి చూపు కొంచం మసకగా కనిపిస్తుంది.	STATEMENT}
+{\slot
+అప్పటినుంచి	B-time_period
+చూపు	B-bodily_process
+కొంచం	O
+మసకగా	B-symptom
+కనిపిస్తుంది.	B-bodily_process
+}
+
+{\intent	p: నేను వాడే మందుల వలనే అలా అవుతుంది అంటారా?	INFO_REQUEST}
+{\slot
+నేను	O
+వాడే	O
+మందుల	B-medicine
+వలనే	O
+అలా	O
+అవుతుంది	O
+అంటారా?	O
+}
+
+{\intent	d: anti depressionకి సంబంధించిన medicine వల్ల cateract రావడం అంటూ ఉండదు కానీ కొన్ని రకాల మందులకు మాత్రం cateract ఎక్కువగా వచ్చే అవకాశాలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+anti	B-medical_condition
+depressionకి	I-medical_condition
+సంబంధించిన	O
+medicine	B-medicine
+వల్ల	O
+cateract	B-medical_condition
+రావడం	O
+అంటూ	O
+ఉండదు	B-negative
+కానీ	O
+కొన్ని	O
+రకాల	O
+మందులకు	B-medicine
+మాత్రం	O
+cateract	B-medical_condition
+ఎక్కువగా	B-intensity
+వచ్చే	O
+అవకాశాలు	O
+ఉంటాయి.	O
+}
+

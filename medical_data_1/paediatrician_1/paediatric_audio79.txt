@@ -1,0 +1,109 @@
+{\intent	p: ఆ నమస్తే అమ్మా	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+అమ్మా	O
+}
+
+{\intent	d: చెప్పండి Sheshagiri rao గారు	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Sheshagiri	B-name
+rao	I-name
+గారు	O
+}
+
+{\intent	p: ఆ మా మనవడు చేతిలో cell లేనిది భొజనం చెయ్యట్లేదు అండి	STATEMENT}
+{\slot
+ఆ	O
+మా	O
+మనవడు	O
+చేతిలో	O
+cell	O
+లేనిది	O
+భొజనం	O
+చెయ్యట్లేదు	O
+అండి	O
+}
+
+{\intent	d: ok, age ఎంత బాబుది?	INFO_REQUEST}
+{\slot
+ok,	O
+age	O
+ఎంత	O
+బాబుది?	O
+}
+
+{\intent	p: age వచ్చేసి 4th	ANSWER}
+{\slot
+age	O
+వచ్చేసి	O
+4th	B-age
+}
+
+{\intent	d: 4 years ఆ?	INFO_REQUEST}
+{\slot
+4	B-age
+years	I-age
+ఆ?	O
+}
+
+{\intent	p: 4 years అండి	ANSWER}
+{\slot
+4	B-age
+years	I-age
+అండి	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఈ cell phone addiction అనేది చాలా మంది పిల్లలకు ఉంది.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+cell	B-medical_condition
+phone	B-medical_condition
+addiction	I-medical_condition
+అనేది	O
+చాలా	O
+మంది	O
+పిల్లలకు	B-person
+ఉంది.	O
+}
+
+{\intent	d: అంటే mentally ఎవరైతే బాగా restlessగా ఉంటారో, speed mindతో ఉంటారో, change of the mind, mind అనేది speedగా ఉంటది	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+mentally	B-symptom
+ఎవరైతే	O
+బాగా	B-intensity
+restlessగా	B-symptom
+ఉంటారో,	O
+speed	B-intensity
+mindతో	B-body_part
+ఉంటారో,	O
+change	O
+of	O
+the	O
+mind,	B-body_part
+mind	B-body_part
+అనేది	O
+speedగా	B-intensity
+ఉంటది	O
+}
+
+{\intent	d: వాలు ఇటువంటి addiction కి ఎక్కువ attract అయ్యేటటువంటి అవకాశం ఉంటుంది.	MEDICAL_EXPLANATION}
+{\slot
+వాలు	O
+ఇటువంటి	O
+addiction	B-medical_condition
+కి	O
+ఎక్కువ	B-intensity
+attract	O
+అయ్యేటటువంటి	O
+అవకాశం	O
+ఉంటుంది.	O
+}
+

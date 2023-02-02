@@ -1,0 +1,94 @@
+{\intent	d: చెప్పండి పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: kidneyదే problem	ANSWER}
+{\slot
+kidneyదే	B-body_part
+problem	B-symptom
+}
+
+{\intent	d: ఇప్పుడు ఇబ్బంది ఏం ఉంది చెప్పండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది	O
+చెప్పండి?	O
+}
+
+{\intent	d: చెప్పమ్మా మీకు ఇప్పుడు ఏమి ఇబ్బంది అవుతుంది?	REPEAT_REPHRASE}
+{\slot
+చెప్పమ్మా	O
+మీకు	O
+ఇప్పుడు	B-time_period
+ఏమి	O
+ఇబ్బంది	B-symptom
+అవుతుంది?	O
+}
+
+{\intent	d: only papers ఏ చూపిస్తారా మీరు ఏం చెప్పారా?	REPEAT_REPHRASE}
+{\slot
+only	O
+papers	O
+ఏ	O
+చూపిస్తారా	O
+మీరు	O
+ఏం	O
+చెప్పారా?	O
+}
+
+{\intent	p: ఒంటేలుకు పోతుంటే మంట అయితుంది.	ANSWER}
+{\slot
+ఒంటేలుకు	B-bodily_process
+పోతుంటే	O
+మంట	B-symptom
+అయితుంది.	O
+}
+
+{\intent	d: అదే మరి అది చెప్పండి first	STATEMENT}
+{\slot
+అదే	O
+మరి	O
+అది	O
+చెప్పండి	O
+first	O
+}
+
+{\intent	p: నొప్పి లేస్తుంది.	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+లేస్తుంది.	O
+}
+
+{\intent	d: ఎటు side?	INFO_REQUEST}
+{\slot
+ఎటు	O
+side?	B-location
+}
+
+{\intent	p: ఇటు side	ANSWER}
+{\slot
+ఇటు	B-location
+side	I-location
+}
+
+{\intent	p: బొక్కల doctor దెగ్గర చూపిస్తే కొంచం బొక్క అరిగిందమ్మా అన్నారు, రాళ్ళు కూడా ఉన్నాయి అన్నారు.	STATEMENT}
+{\slot
+బొక్కల	B-medical_professional
+doctor	I-health_professional
+దెగ్గర	O
+చూపిస్తే	O
+కొంచం	O
+బొక్క	B-body_part
+అరిగిందమ్మా	B-symptom
+అన్నారు,	O
+రాళ్ళు	B-body_substance
+కూడా	O
+ఉన్నాయి	O
+అన్నారు.	O
+}
+

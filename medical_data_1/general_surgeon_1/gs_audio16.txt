@@ -1,0 +1,179 @@
+{\intent	p: madam నమస్తే అండి.	GREETING}
+{\slot
+madam	O
+నమస్తే	O
+అండి.	O
+}
+
+{\intent	p: Rajamundry నుంచి అండి.	STATEMENT}
+{\slot
+Rajamundry	B-place
+నుంచి	O
+అండి.	O
+}
+
+{\intent	d: hmm. చెప్పండి sir.	ACTION_DIR}
+{\slot
+hmm.	O
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	p: మూత్రం దెగ్గర మూత్ర విసర్జన జరిగేటప్పుడు blood పడుతుంది అండి.	STATEMENT}
+{\slot
+మూత్రం	B-body_substance
+దెగ్గర	B-location
+మూత్ర	B-body_substance
+విసర్జన	B-bodily_process
+జరిగేటప్పుడు	B-time_period
+blood	B-body_substance
+పడుతుంది	B-symptom
+అండి.	O
+}
+
+{\intent	d: మూత్రం విసర్జన నా? మల విసర్జన నా sir?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+విసర్జన	B-bodily_process
+నా?	O
+మల	B-body_substance
+విసర్జన	B-bodily_process
+నా	O
+sir?	O
+}
+
+{\intent	p: మల విసర్జన అండి. sorry.	CORRECT}
+{\slot
+మల	B-body_substance
+విసర్జన	B-bodily_process
+అండి.	O
+sorry.	O
+}
+
+{\intent	p: మల విసర్జన జరిగేటప్పుడు blood పడుతుంది అండి.	REPEAT_REPHRASE}
+{\slot
+మల	B-body_substance
+విసర్జన	B-bodily_process
+జరిగేటప్పుడు	O
+blood	B-body_substance
+పడుతుంది	B-symptom
+అండి.	O
+}
+
+{\intent	d: uhum.	ACK}
+{\slot
+uhum.	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి అండి.	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+అండి.	O
+}
+
+{\intent	p: అంటే 1 year నుంచి పడుతుంది అండి.	ANSWER}
+{\slot
+అంటే	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+పడుతుంది	B-symptom
+అండి.	O
+}
+
+{\intent	d: మరేమన్నా testలు చేయించారా sir?	INFO_REQUEST}
+{\slot
+మరేమన్నా	O
+testలు	B-mtest
+చేయించారా	O
+sir?	O
+}
+
+{\intent	p: లేదు లేదు madam.	ANSWER}
+{\slot
+లేదు	B-negative
+లేదు	B-negative
+madam.	O
+}
+
+{\intent	p: ఎలాగంటె అండి అది. ఒకసారి అంటే one week పడుతుంది అండి. మళ్ళి 2 months పడుతలేదు అండి. ఇప్పుడు 1 week మళ్ళ daily పడుతుంది అండి. మళ్ళ పడట్లేదు అండి ఆ రకంగా ఉంది అది.	STATEMENT}
+{\slot
+ఎలాగంటె	O
+అండి	O
+అది.	O
+ఒకసారి	O
+అంటే	O
+one	B-time_period
+week	I-time_period
+పడుతుంది	B-symptom
+అండి.	O
+మళ్ళి	O
+2	B-time_period
+months	B-time_period
+పడుతలేదు	B-symptom
+అండి.	O
+ఇప్పుడు	O
+1	B-time_period
+week	I-time_period
+మళ్ళ	O
+daily	B-time_period
+పడుతుంది	B-symptom
+అండి.	O
+మళ్ళ	O
+పడట్లేదు	O
+అండి	O
+ఆ	O
+రకంగా	O
+ఉంది	O
+అది.	O
+}
+
+{\intent	d: ఆ blood ఒకటేనా sir ఇంకేమన్నా pain? మంట? నొప్పి? దురద? వాపు?	INFO_REQUEST}
+{\slot
+ఆ	O
+blood	B-body_substance
+ఒకటేనా	O
+sir	O
+ఇంకేమన్నా	O
+pain?	B-symptom
+మంట?	B-symptom
+నొప్పి?	B-symptom
+దురద?	B-symptom
+వాపు?	B-symptom
+}
+
+{\intent	p: pain. వాపు వస్తుంది. నొప్పి ఉంది .	ANSWER}
+{\slot
+pain.	B-symptom
+వాపు	B-symptom
+వస్తుంది.	B-positive
+నొప్పి	B-symptom
+ఉంది	B-positive
+.	O
+}
+
+{\intent	d: అసల్ neglect చేయొద్దు ఈ problem ని . ఎందుకంటే ఇట్ల continuousగా blood పడడం మంచిది కాదు అండి రక్తం కూడా తగ్గిపోతుంది bodyలో.	MEDICAL_EXPLANATION}
+{\slot
+అసల్	O
+neglect	O
+చేయొద్దు	O
+ఈ	O
+problem	O
+ని	O
+.	O
+ఎందుకంటే	O
+ఇట్ల	O
+continuousగా	O
+blood	B-body_substance
+పడడం	B-symptom
+మంచిది	O
+కాదు	O
+అండి	O
+రక్తం	B-body_substance
+కూడా	O
+తగ్గిపోతుంది	B-symptom
+bodyలో.	B-body_part
+}
+

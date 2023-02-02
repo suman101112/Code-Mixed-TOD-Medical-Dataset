@@ -1,0 +1,144 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: Yugender sir	ANSWER}
+{\slot
+Yugender	B-name
+sir	O
+}
+
+{\intent	d: ఆ	SNU}
+{\slot
+ఆ	O
+}
+
+{\intent	p: Yugender	ANSWER}
+{\slot
+Yugender	B-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p: 38	ANSWER}
+{\slot
+38	B-age
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: 58	REPEAT_REPHRASE}
+{\slot
+58	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చెవులో చీము కారుతుంది	ANSWER}
+{\slot
+చెవులో	B-body_part
+చీము	B-symptom
+కారుతుంది	I-symptom
+}
+
+{\intent	d: చెవిలో చీము వస్తుంది.	ACK}
+{\slot
+చెవిలో	B-body_part
+చీము	B-symptom
+వస్తుంది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కర్ణభేరి కొంచం రంధ్రం పడ్డది అన్నారు.	STATEMENT}
+{\slot
+కర్ణభేరి	B-body_part
+కొంచం	O
+రంధ్రం	B-symptom
+పడ్డది	O
+అన్నారు.	O
+}
+
+{\intent	d: వినబడుతుందా?	INFO_REQUEST}
+{\slot
+వినబడుతుందా?	B-bodily_process
+}
+
+{\intent	p: కొంచం వినబడుతుంది sir.	ANSWER}
+{\slot
+కొంచం	B-intensity
+వినబడుతుంది	B-bodily_process
+sir.	O
+}
+
+{\intent	p: అమావాస్య పూట అప్పుడు అప్పుడప్పుడు వస్తాంటది, నీళ్లు పొగానే ఇట్ల skin ఉబ్బెత్తుగా, అయితాంటది.	STATEMENT}
+{\slot
+అమావాస్య	B-time_period
+పూట	I-time_period
+అప్పుడు	B-time_period
+అప్పుడప్పుడు	B-time_period
+వస్తాంటది,	O
+నీళ్లు	B-food_substance
+పొగానే	O
+ఇట్ల	O
+skin	B-body_part
+ఉబ్బెత్తుగా,	B-symptom
+అయితాంటది.	O
+}
+
+{\intent	d: ఆ చెవు	ACTION_DIR}
+{\slot
+ఆ	O
+చెవు	B-body_part
+}
+
+{\intent	d: सर्दी గిట్ల ఉందా?	INFO_REQUEST}
+{\slot
+सर्दी	B-medical_condition
+గిట్ల	O
+ఉందా?	O
+}
+
+{\intent	p: सर्दी ఏం లేదు sir	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+ఏం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: ఇది చెవు కర్ణభేరికి రంధ్రం పడ్డది.	DIAGNOSIS}
+{\slot
+ఇది	O
+చెవు	B-body_part
+కర్ణభేరికి	I-body_part
+రంధ్రం	B-symptom
+పడ్డది.	O
+}
+

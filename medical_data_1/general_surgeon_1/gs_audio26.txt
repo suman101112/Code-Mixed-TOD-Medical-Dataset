@@ -1,0 +1,270 @@
+{\intent	p: Hello అండి నా పేరు Srinivaasulu అండి.	GREETING}
+{\slot
+Hello	O
+అండి	O
+నా	O
+పేరు	O
+Srinivaasulu	B-name
+అండి.	O
+}
+
+{\intent	d: Hello	GREETING}
+{\slot
+Hello	O
+}
+
+{\intent	p: Hello sir నమస్కారం అండి	GREETING}
+{\slot
+Hello	O
+sir	O
+నమస్కారం	O
+అండి	O
+}
+
+{\intent	d: Srinivasuluగారు నమస్తే sir	GREETING}
+{\slot
+Srinivasuluగారు	B-name
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఏం లే మొన్న ఈ మధ్య జరా హల్కాలు ఎక్కువగా వాడినము అండి మేము	STATEMENT}
+{\slot
+ఏం	O
+లే	O
+మొన్న	B-time_period
+ఈ	O
+మధ్య	O
+జరా	O
+హల్కాలు	B-medicine
+ఎక్కువగా	B-intensity
+వాడినము	O
+అండి	O
+మేము	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: జరా दावत లో	ABANDONED}
+{\slot
+జరా	O
+दावत	O
+లో	O
+}
+
+{\intent	p: అయితే కడుపులో నొప్పి start అయింది అండి.	STATEMENT}
+{\slot
+అయితే	O
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+start	O
+అయింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: evening కాగానే, సాయంత్రం 5 కాగానే కడుపులో నొప్పి start అయింది.	STATEMENT}
+{\slot
+evening	B-time_period
+కాగానే,	O
+సాయంత్రం	B-time_period
+5	B-time_period
+కాగానే	O
+కడుపులో	B-body_part
+నొప్పి	B-symptom
+start	O
+అయింది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే hospitalలో చూయించుకున్నామండీ.	STATEMENT}
+{\slot
+అయితే	O
+hospitalలో	O
+చూయించుకున్నామండీ.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే hospitalలో చూయించుకున్న తరువాత one side మొత్తం జరా మళ్ళి మందులు వాడిన తరువాత మళ్ళి నొప్పి మళ్ళ start అయింది అండి.	STATEMENT}
+{\slot
+అయితే	O
+hospitalలో	O
+చూయించుకున్న	O
+తరువాత	B-time_period
+one	O
+side	B-location
+మొత్తం	O
+జరా	O
+మళ్ళి	O
+మందులు	B-medicine
+వాడిన	O
+తరువాత	B-time_period
+మళ్ళి	O
+నొప్పి	B-symptom
+మళ్ళ	O
+start	O
+అయింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది దాని problem ఏంటిది అండి?	INFO_REQUEST}
+{\slot
+అది	O
+దాని	O
+problem	O
+ఏంటిది	O
+అండి	O
+}
+
+{\intent	d: సరే సరే	ACK}
+{\slot
+సరే	O
+సరే	O
+}
+
+{\intent	d: left sideలో ఉందా అండి? right sideలో ఉందా sir మీకు ఇప్పుడు?	INFO_REQUEST}
+{\slot
+left	B-location
+sideలో	I-location
+ఉందా	O
+అండి?	O
+right	B-location
+sideలో	I-location
+ఉందా	O
+sir	O
+మీకు	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: right sideలో అండి.	ANSWER}
+{\slot
+right	B-location
+sideలో	I-location
+అండి.	O
+}
+
+{\intent	d: right sideలో	ACK}
+{\slot
+right	B-location
+sideలో	I-location
+}
+
+{\intent	d: ఎప్పటినుంచి alcohol habit ఉంది sir మీకు?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+alcohol	B-habit
+habit	I-habit
+ఉంది	O
+sir	O
+మీకు?	O
+}
+
+{\intent	p: మాకు ఇంచు మించు అంటే ఎక్కువ లేదండీ అంటే दावत లో పోయినప్పుడు తాగుతామండీ.	ANSWER}
+{\slot
+మాకు	O
+ఇంచు	O
+మించు	O
+అంటే	O
+ఎక్కువ	B-intensity
+లేదండీ	O
+అంటే	O
+दावत	O
+లో	O
+పోయినప్పుడు	O
+తాగుతామండీ.	B-bodily_process
+}
+
+{\intent	d: so generally right sideలో complain అంటున్నారు కబట్టి acidity or chornic gastritis అని చెప్పుకోవచ్చు first point.	DIAGNOSIS}
+{\slot
+so	O
+generally	O
+right	B-location
+sideలో	I-location
+complain	O
+అంటున్నారు	O
+కబట్టి	O
+acidity	B-symptom
+or	O
+chornic	B-medical_condition
+gastritis	I-medical_condition
+అని	O
+చెప్పుకోవచ్చు	O
+first	O
+point.	O
+}
+
+{\intent	d: కానీ alcohol regularగా తీసుకునే వాళ్ళకు liver సంబంధించిన సమస్యలు కూడా వస్తుంటాయి.	STATEMENT}
+{\slot
+కానీ	O
+alcohol	B-habit
+regularగా	B-time_period
+తీసుకునే	O
+వాళ్ళకు	O
+liver	B-body_part
+సంబంధించిన	O
+సమస్యలు	O
+కూడా	O
+వస్తుంటాయి.	O
+}
+
+{\intent	d: దీనితో పాటు gall bladderలో ఏదన్నా stones రావడం, Cholelithiasis అంటే gallstones, acute Cholecystitis అంటే gallbladderలో inflamation, ఇది కూడా కావొచ్చు sir.	STATEMENT}
+{\slot
+దీనితో	O
+పాటు	O
+gall	B-body_part
+bladderలో	I-body_part
+ఏదన్నా	O
+stones	B-body_substance
+రావడం,	B-symptom
+Cholelithiasis	B-medical_condition
+అంటే	O
+gallstones,	B-symptom
+acute	B-medical_condition
+Cholecystitis	B-symptom
+అంటే	O
+gallbladderలో	B-body_part
+inflamation,	B-symptom
+ఇది	O
+కూడా	O
+కావొచ్చు	O
+sir.	O
+}
+
+{\intent	d: ఒక్కసారి మీ liver function test, abdomen scan చేసుకుంటే బాగుంటుంది.	ACTION_DIR}
+{\slot
+ఒక్కసారి	B-time_period
+మీ	O
+liver	B-body_part
+function	B-mtest
+test,	I-mtest
+abdomen	B-body_part
+scan	B-mtest
+చేసుకుంటే	O
+బాగుంటుంది.	O
+}
+

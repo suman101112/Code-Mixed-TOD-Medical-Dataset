@@ -1,0 +1,170 @@
+{\intent	p: madam	STATEMENT}
+{\slot
+madam	O
+}
+
+{\intent	d: ఆ చెప్పండి Murali గారు	ACTION_DIR}
+{\slot
+ఆ	O
+చెప్పండి	O
+Murali	B-name
+గారు	O
+}
+
+{\intent	p: madam మా mrsకి 10 years నుంచి thyroid ఉంది madam	STATEMENT}
+{\slot
+madam	O
+మా	O
+mrsకి	B-familal
+10	B-time_period
+years	I-time_period
+నుంచి	O
+thyroid	B-medical_condition
+ఉంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ menses అయినప్పుడు bleeding overగా వస్తుంది madam	STATEMENT}
+{\slot
+ఈ	O
+menses	B-bodily_process
+అయినప్పుడు	O
+bleeding	B-medical_condition
+overగా	B-intensity
+వస్తుంది	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది madam	STATEMENT}
+{\slot
+అది	O
+madam	O
+}
+
+{\intent	d: so thyroid 10 years నుంచి ఉంది, medication వాడుతున్నా కూడా usualగా ఇలాంటి hormonal issues అన్నీ age relatedగా రావొచ్చండి.	ANSWER}
+{\slot
+so	O
+thyroid	B-medical_condition
+10	B-time_period
+years	I-time_period
+నుంచి	O
+ఉంది,	O
+medication	B-medicine
+వాడుతున్నా	O
+కూడా	O
+usualగా	O
+ఇలాంటి	O
+hormonal	B-body_substance
+issues	B-symptom
+అన్నీ	O
+age	O
+relatedగా	O
+రావొచ్చండి.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: so దీన్ని menorrhagia అంటాము	DIAGNOSIS}
+{\slot
+so	O
+దీన్ని	O
+menorrhagia	B-medical_condition
+అంటాము	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: so ఇలా bleeding అనేది ఎక్కువగా అయ్యేది గర్భసంచికి సంబంధించిన సమస్యలు	STATEMENT}
+{\slot
+so	O
+ఇలా	O
+bleeding	B-medical_condition
+అనేది	O
+ఎక్కువగా	B-intensity
+అయ్యేది	O
+గర్భసంచికి	B-body_part
+సంబంధించిన	O
+సమస్యలు	O
+}
+
+{\intent	d: so ఒకసారి తప్పకుండా abdomen and pelvic scan అనేది చేయించండి.	ACTION_DIR}
+{\slot
+so	O
+ఒకసారి	O
+తప్పకుండా	O
+abdomen	B-body_part
+and	O
+pelvic	B-body_part
+scan	B-mtest
+అనేది	O
+చేయించండి.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: age factor కూడా కొంతవరకు depend అయి ఉంటుంది.	STATEMENT}
+{\slot
+age	O
+factor	O
+కూడా	O
+కొంతవరకు	O
+depend	O
+అయి	O
+ఉంటుంది.	O
+}
+
+{\intent	p: age 45 madam	STATEMENT}
+{\slot
+age	O
+45	B-age
+madam	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: ఇది menopausal stage అండి. menopausal stageలో ఇలాంటి bleeding disturbances అనేవి period disturbances అనేవి ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+menopausal	B-bodily_process
+stage	O
+అండి.	O
+menopausal	B-bodily_process
+stageలో	O
+ఇలాంటి	O
+bleeding	B-medical_condition
+disturbances	I-medical_condition
+అనేవి	O
+period	B-bodily_process
+disturbances	B-medical_condition
+అనేవి	O
+ఉంటాయి.	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+

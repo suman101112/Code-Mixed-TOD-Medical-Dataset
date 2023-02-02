@@ -1,0 +1,130 @@
+{\intent	p: నాకు diabetes వచ్చేసి 6 months అయితుందండి	STATEMENT}
+{\slot
+నాకు	O
+diabetes	B-medical_condition
+వచ్చేసి	O
+6	B-time_period
+months	I-time_period
+అయితుందండి	O
+}
+
+{\intent	p: 6 months 1 year అవుతుంది approximately	STATEMENT}
+{\slot
+6	B-time_period
+months	I-time_period
+1	B-time_period
+year	I-time_period
+అవుతుంది	O
+approximately	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే నాకు recentగా marriage అయింది.	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+recentగా	O
+marriage	B-marital_status
+అయింది.	O
+}
+
+{\intent	p: అంటే marriage అయిన తరువాత first diabetic వచ్చింది అండి.	STATEMENT}
+{\slot
+అంటే	O
+marriage	B-marital_status
+అయిన	O
+తరువాత	O
+first	O
+diabetic	B-medical_condition
+వచ్చింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: pregnancy, పిల్లల విషయంలో ఏమన్నా problem	INFO_REQUEST}
+{\slot
+pregnancy,	B-medical_condition
+పిల్లల	O
+విషయంలో	O
+ఏమన్నా	O
+problem	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఎంత అండీ sugar levels controlలోనే ఉంటున్నాయా?	INFO_REQUEST}
+{\slot
+ఎంత	O
+అండీ	O
+sugar	B-mtest
+levels	I-mtest
+controlలోనే	B-normal
+ఉంటున్నాయా?	O
+}
+
+{\intent	p: అంటే 300, 200 వస్తుంది అండి.	ANSWER}
+{\slot
+అంటే	O
+300,	B-mtest_value
+200	B-mtest_value
+వస్తుంది	O
+అండి.	O
+}
+
+{\intent	d: తిన్న తర్వాతనా?	INFO_REQUEST}
+{\slot
+తిన్న	B-bodily_process
+తర్వాతనా?	B-time_period
+}
+
+{\intent	p: ఆ తిన్న తరువాత నండీ.	ANSWER}
+{\slot
+ఆ	O
+తిన్న	B-bodily_process
+తరువాత	B-time_period
+నండీ.	O
+}
+
+{\intent	d: ok fine.	ACK}
+{\slot
+ok	O
+fine.	O
+}
+
+{\intent	d: అంటే ఎక్కువగానే ఉంది sugar మీరు medicines already 1 year నుంచి వాడుతున్నా అని చెప్తున్నారు	ACK}
+{\slot
+అంటే	O
+ఎక్కువగానే	B-intensity
+ఉంది	O
+sugar	B-medical_condition
+మీరు	O
+medicines	B-medicine
+already	O
+1	B-time_period
+year	I-time_period
+నుంచి	O
+వాడుతున్నా	O
+అని	O
+చెప్తున్నారు	O
+}
+
+{\intent	d: ఒకసారి homeopaty try చేసి చూడాండీ.	ACTION_DIR}
+{\slot
+ఒకసారి	O
+homeopaty	B-medicine
+try	O
+చేసి	O
+చూడాండీ.	O
+}
+

@@ -1,0 +1,92 @@
+{\intent	p: నమస్తే sir	GREETING}
+{\slot
+నమస్తే	O
+sir	O
+}
+
+{\intent	d: నమస్కారం అండి	GREETING}
+{\slot
+నమస్కారం	O
+అండి	O
+}
+
+{\intent	p: sir మా husbandకి kidneyలో stones ఉన్నాయి, ఈ  మధ్యనే బయట పడ్డాయి అవి	STATEMENT}
+{\slot
+sir	O
+మా	O
+husbandకి	B-familal
+kidneyలో	B-body_part
+stones	B-body_substance
+ఉన్నాయి,	O
+ఈ	O
+మధ్యనే	B-time_period
+బయట	O
+పడ్డాయి	O
+అవి	O
+}
+
+{\intent	d: ok అండి.	ACK}
+{\slot
+ok	O
+అండి.	O
+}
+
+{\intent	p: kidneyలో ఉండి పడిపోయింది,	STATEMENT}
+{\slot
+kidneyలో	B-body_part
+ఉండి	O
+పడిపోయింది,	B-bm
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: gall bladderలో 2 stones ఉన్నాయట	STATEMENT}
+{\slot
+gall	B-body_part
+bladderలో	I-body_part
+2	B-frequency
+stones	B-body_substance
+ఉన్నాయట	O
+}
+
+{\intent	d: हां हां	ACK}
+{\slot
+हां	O
+हां	O
+}
+
+{\intent	p: దానికి ఎలా treatment?	INFO_REQUEST}
+{\slot
+దానికి	O
+ఎలా	O
+treatment?	B-treatment
+}
+
+{\intent	d: అంటే మామూలుగా kidney stones అన్నట్లుగా వేరే సమస్య అమ్మా,	STATEMENT}
+{\slot
+అంటే	O
+మామూలుగా	O
+kidney	B-body_substance
+stones	I-body_substance
+అన్నట్లుగా	O
+వేరే	O
+సమస్య	O
+అమ్మా,	O
+}
+
+{\intent	d: gallbladder అంటే పిత్తాశయము, పిత్తాశయంలో stones రావడం అంటే Cholestron ఉండడం	STATEMENT}
+{\slot
+gallbladder	B-body_part
+అంటే	O
+పిత్తాశయము,	B-body_part
+పిత్తాశయంలో	B-body_part
+stones	B-body_substance
+రావడం	O
+అంటే	O
+Cholestron	B-body_substance
+ఉండడం	O
+}
+

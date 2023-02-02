@@ -1,0 +1,155 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: kidneyల problemఏ నండీ.	STATEMENT}
+{\slot
+kidneyల	B-body_part
+problemఏ	O
+నండీ.	O
+}
+
+{\intent	d: ఆ నమస్తే అమ్మా	GREETING}
+{\slot
+ఆ	O
+నమస్తే	O
+అమ్మా	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: 5 సంవత్సరాల నుంచి నాకు అన్నం digestion అవ్వట్లేదు	STATEMENT}
+{\slot
+5	B-time_period
+సంవత్సరాల	I-time_period
+నుంచి	O
+నాకు	O
+అన్నం	O
+digestion	B-bodily_process
+అవ్వట్లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత motion సరిగ్గా రావట్లేదు అని అందరూ doctors దెగ్గర చూపిస్తూ ఉంటే ఎవరు correctగా చెప్పలేదు	STATEMENT}
+{\slot
+తరువాత	O
+motion	B-symptom
+సరిగ్గా	O
+రావట్లేదు	B-negative
+అని	O
+అందరూ	O
+doctors	B-medical_professional
+దెగ్గర	O
+చూపిస్తూ	O
+ఉంటే	O
+ఎవరు	O
+correctగా	O
+చెప్పలేదు	O
+}
+
+{\intent	d: చెప్పండమ్మా	ACTION_DIR}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: lastలో ఒక doctor నులుపురుగులు ఉన్నాయి,	STATEMENT}
+{\slot
+lastలో	O
+ఒక	O
+doctor	B-medical_professional
+నులుపురుగులు	B-organism
+ఉన్నాయి,	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అవి ఉన్నాయి అన్నారు	STATEMENT}
+{\slot
+అవి	O
+ఉన్నాయి	O
+అన్నారు	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: తరువాత ఈ 5 సంవత్సరాల నుంచి ఓ బిళ్ళలు తెగ మింగానండీ, problem ఏం ఉండదు గా	STATEMENT}
+{\slot
+తరువాత	O
+ఈ	O
+5	B-quantity
+సంవత్సరాల	I-time_period
+నుంచి	O
+ఓ	O
+బిళ్ళలు	B-medicine
+తెగ	B-intensity
+మింగానండీ,	B-bodily_process
+problem	O
+ఏం	O
+ఉండదు	O
+గా	O
+}
+
+{\intent	p: ఈ మధ్య రాళ్ళు ఉన్నాయని చెప్తున్నారు	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+రాళ్ళు	B-body_substance
+ఉన్నాయని	O
+చెప్తున్నారు	O
+}
+
+{\intent	d: అదే	ACK}
+{\slot
+అదే	O
+}
+
+{\intent	d: ఏది కూడా అమ్మా మితిమీరి tablets ఏది కూడా మంచిది కాదమ్మా	STATEMENT}
+{\slot
+ఏది	O
+కూడా	O
+అమ్మా	O
+మితిమీరి	O
+tablets	B-medicine
+ఏది	O
+కూడా	O
+మంచిది	O
+కాదమ్మా	O
+}
+
+{\intent	d: so మీ వయస్సు వారికి అయితే definiteగా ఒక annual health checkup అనేది compulsoryగా చేయించుకోవాలి.	STATEMENT}
+{\slot
+so	O
+మీ	O
+వయస్సు	B-time_period
+వారికి	O
+అయితే	O
+definiteగా	O
+ఒక	O
+annual	B-mtest
+health	I-mtest
+checkup	I-mtest
+అనేది	O
+compulsoryగా	O
+చేయించుకోవాలి.	O
+}
+

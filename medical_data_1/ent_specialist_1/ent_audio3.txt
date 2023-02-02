@@ -1,0 +1,247 @@
+{\intent	p: ram mohan reddy sir.	STATEMENT}
+{\slot
+ram	B-name
+mohan	I-name
+reddy	I-name
+sir.	O
+}
+
+{\intent	d: పేరు చెప్పు.	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పు.	O
+}
+
+{\intent	p: ram mohan reddy	ANSWER}
+{\slot
+ram	B-name
+mohan	I-name
+reddy	I-name
+}
+
+{\intent	d: ram mohan reddy	ACK}
+{\slot
+ram	B-name
+mohan	I-name
+reddy	I-name
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 25	ANSWER}
+{\slot
+25	B-age
+}
+
+{\intent	d: male	ANSWER}
+{\slot
+male	B-gender
+}
+
+{\intent	d: ఏం అయితుంది.	INFO_REQUEST}
+{\slot
+ఏం	O
+అయితుంది.	O
+}
+
+{\intent	p: ఈ చెవును.	ANSWER}
+{\slot
+ఈ	B-location
+చెవును.	B-body_part
+}
+
+{\intent	d: దెగ్గర రా.	ACTION_DIR}
+{\slot
+దెగ్గర	O
+రా.	O
+}
+
+{\intent	d: చీము వస్తుందా?	INFO_REQUEST}
+{\slot
+చీము	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: చీము అసలు ఎమి రావడంలేదు sir కాకపోతే daily ఓ earbud పెట్టనిది నిద్ర పడదు sir.	ANSWER}
+{\slot
+చీము	B-symptom
+అసలు	O
+ఎమి	O
+రావడంలేదు	B-negative
+sir	O
+కాకపోతే	O
+daily	B-time_period
+ఓ	O
+earbud	O
+పెట్టనిది	O
+నిద్ర	B-bodily_process
+పడదు	B-negative
+sir.	O
+}
+
+{\intent	d: దురద పెడుతుంది బాగా.	STATEMENT}
+{\slot
+దురద	B-symptom
+పెడుతుంది	I-symptom
+బాగా.	B-intensity
+}
+
+{\intent	p: బాగా దురద పెడుతుంది sir.	STATEMENT}
+{\slot
+బాగా	B-intensity
+దురద	B-symptom
+పెడుతుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	d: మంచిగా వినపడుతుందా?	INFO_REQUEST}
+{\slot
+మంచిగా	B-normal
+వినపడుతుందా?	B-bodily_process
+}
+
+{\intent	p: వినబడుతుంది sir	ANSWER}
+{\slot
+వినబడుతుంది	B-bodily_process
+sir	O
+}
+
+{\intent	d: నొప్పి?	INFO_REQUEST}
+{\slot
+నొప్పి?	B-symptom
+}
+
+{\intent	p: నొప్పి అంటే కొంచం కొద్దిగా నొప్పి వస్తుంది sir.	ANSWER}
+{\slot
+నొప్పి	B-symptom
+అంటే	O
+కొంచం	B-intensity
+కొద్దిగా	B-intensity
+నొప్పి	B-symptom
+వస్తుంది	I-symptom
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: వినపడుతుందా?	INFO_REQUEST}
+{\slot
+వినపడుతుందా?	B-bodily_process
+}
+
+{\intent	p: sound వినపడుతుంది sir.	ANSWER}
+{\slot
+sound	O
+వినపడుతుంది	B-bodily_process
+sir.	O
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: వినపడుతుంది.	ANSWER}
+{\slot
+వినపడుతుంది.	B-bodily_process
+}
+
+{\intent	d: ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు?	B-time_period
+}
+
+{\intent	p: umm.	ANSWER}
+{\slot
+umm.	B-positive
+}
+
+{\intent	d: దీనిని fungus infection అంటారు.	DIAGNOSIS}
+{\slot
+దీనిని	O
+fungus	B-medical_condition
+infection	I-medical_condition
+అంటారు.	O
+}
+
+{\intent	p: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఆ ఇగ కుడి చెవు బాగానే ఉంది.	STATEMENT}
+{\slot
+ఆ	O
+ఇగ	O
+కుడి	B-location
+చెవు	B-body_part
+బాగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎడమ చెవులో నీళ్లు పోనీయొద్దు, తడి, తగలొద్దు.	ACTION_DIR}
+{\slot
+ఎడమ	B-location
+చెవులో	B-body_part
+నీళ్లు	B-food_substance
+పోనీయొద్దు,	B-negative
+తడి,	O
+తగలొద్దు.	O
+}
+
+{\intent	p: ok	COMMIT}
+{\slot
+ok	O
+}
+
+{\intent	p: earbud పెట్టుకోని నిద్ర పోవొద్దా sir?	INFO_REQUEST}
+{\slot
+earbud	O
+పెట్టుకోని	O
+నిద్ర	B-bodily_process
+పోవొద్దా	B-negative
+sir?	O
+}
+
+{\intent	d: ఇప్పుడు వేస్కో.	ANSWER}
+{\slot
+ఇప్పుడు	B-time_period
+వేస్కో.	O
+}
+

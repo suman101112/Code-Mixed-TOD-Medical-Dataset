@@ -1,0 +1,312 @@
+{\intent	d: చెప్పమ్మా ఏంటి ని problem?	INFO_REQUEST}
+{\slot
+చెప్పమ్మా	O
+ఏంటి	O
+ని	O
+problem?	O
+}
+
+{\intent	p: ఇక్కడ గట్టిగా ఉంది నాకు painలాగా వస్తుంది ma'am.	STATEMENT}
+{\slot
+ఇక్కడ	B-location
+గట్టిగా	B-symptom
+ఉంది	O
+నాకు	O
+painలాగా	B-symptom
+వస్తుంది	O
+ma'am.	O
+}
+
+{\intent	d: breast pain.	STATEMENT}
+{\slot
+breast	B-body_part
+pain.	B-symptom
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: రోజూ వస్తుందా? అప్పుడప్పుడు ఆ?	INFO_REQUEST}
+{\slot
+రోజూ	B-time_period
+వస్తుందా?	O
+అప్పుడప్పుడు	B-time_period
+ఆ?	O
+}
+
+{\intent	p: అంటే ఇలా touch చేస్తే గట్టిగా ఉంది.	ANSWER}
+{\slot
+అంటే	O
+ఇలా	O
+touch	B-bodily_process
+చేస్తే	O
+గట్టిగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: అంటే అది periods ముందు generalగా అలా ఉంటుంది అమ్మ.	STATEMENT}
+{\slot
+అంటే	O
+అది	O
+periods	B-bodily_process
+ముందు	B-time_period
+generalగా	B-normal
+అలా	O
+ఉంటుంది	O
+అమ్మ.	O
+}
+
+{\intent	p: normalగా ఎప్పుడు ఉంటుంది	STATEMENT}
+{\slot
+normalగా	B-normal
+ఎప్పుడు	B-time_period
+ఉంటుంది	O
+}
+
+{\intent	d: ఎప్పుడు ఉంటుంది.	ACK}
+{\slot
+ఎప్పుడు	B-time_period
+ఉంటుంది.	O
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: గడ్డలాగా ఏమన్నా అనిపిస్తుందా?	INFO_REQUEST}
+{\slot
+గడ్డలాగా	B-symptom
+ఏమన్నా	O
+అనిపిస్తుందా?	O
+}
+
+{\intent	p: ఆ, అలా అనిపిస్తుంది.	STATEMENT}
+{\slot
+ఆ,	B-positive
+అలా	O
+అనిపిస్తుంది.	O
+}
+
+{\intent	d: periods regular ఆ అమ్మా నీకు?	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regular	B-normal
+ఆ	O
+అమ్మా	O
+నీకు?	O
+}
+
+{\intent	p: ఆ regular.	STATEMENT}
+{\slot
+ఆ	O
+regular.	B-normal
+}
+
+{\intent	d: అంటే regular cycles.	STATEMENT}
+{\slot
+అంటే	O
+regular	B-normal
+cycles.	B-bodily_process
+}
+
+{\intent	d: ఇప్పుడు periods వచ్చి ఎన్ని రోజులు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+periods	B-bodily_process
+వచ్చి	O
+ఎన్ని	O
+రోజులు?	B-time_period
+}
+
+{\intent	d: ఈ month ఎప్పుడు వచ్చింది period?	INFO_REQUEST}
+{\slot
+ఈ	O
+month	B-time_period
+ఎప్పుడు	O
+వచ్చింది	O
+period?	B-bodily_process
+}
+
+{\intent	p: 14th వచ్చింది	ANSWER}
+{\slot
+14th	B-time_period
+వచ్చింది	O
+}
+
+{\intent	d: మొన్న 14th కి వచ్చింది అంటే ఇవాల్టికి 11 days	STATEMENT}
+{\slot
+మొన్న	B-time_period
+14th	I-time_period
+కి	O
+వచ్చింది	O
+అంటే	O
+ఇవాల్టికి	B-time_period
+11	I-time_period
+days	I-time_period
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: pain in left breast నీకు.	STATEMENT}
+{\slot
+pain	B-symptom
+in	B-location
+left	B-location
+breast	I-body_part
+నీకు.	O
+}
+
+{\intent	p: అంటే left అని కాదు ma'am, రెండు వైపుల.	CORRECT}
+{\slot
+అంటే	O
+left	B-location
+అని	O
+కాదు	B-negative
+ma'am,	O
+రెండు	B-frequency
+వైపుల.	B-location
+}
+
+{\intent	p: లేదు both the breasts.	ACK}
+{\slot
+లేదు	B-negative
+both	B-frequency
+the	O
+breasts.	B-body_part
+}
+
+{\intent	d: both the breasts pain అంటేగనక అది hormonal problem అమ్మా.	DIAGNOSIS}
+{\slot
+both	B-frequency
+the	O
+breasts	B-body_part
+pain	B-symptom
+అంటేగనక	O
+అది	O
+hormonal	B-medical_condition
+problem	I-medical_condition
+అమ్మా.	O
+}
+
+{\intent	d: ని age ఎంత?	INFO_REQUEST}
+{\slot
+ని	O
+age	B-time_period
+ఎంత?	O
+}
+
+{\intent	p: 22	STATEMENT}
+{\slot
+22	B-age
+}
+
+{\intent	d: ఏం పేరు	STATEMENT}
+{\slot
+ఏం	O
+పేరు	O
+}
+
+{\intent	p: Ravali	STATEMENT}
+{\slot
+Ravali	B-name
+}
+
+{\intent	d: ఇప్పుడు pain in the breasts continuous గా ఉంటుంది.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+pain	B-symptom
+in	B-location
+the	O
+breasts	B-body_part
+continuous	B-time_period
+గా	O
+ఉంటుంది.	O
+}
+
+{\intent	p: continuous అంటే ఏదైనా touch	STATEMENT}
+{\slot
+continuous	B-time_period
+అంటే	O
+ఏదైనా	O
+touch	B-bodily_process
+}
+
+{\intent	d: touch అయితేనే ఉంటుంది.	STATEMENT}
+{\slot
+touch	B-bodily_process
+అయితేనే	O
+ఉంటుంది.	O
+}
+
+{\intent	d: అన్నీ 15 days ఉండదు, అట్ల ఏమైనా cyclicalగా ఉంటుందా pain?	INFO_REQUEST}
+{\slot
+అన్నీ	O
+15	B-time_period
+days	I-time_period
+ఉండదు,	O
+అట్ల	O
+ఏమైనా	O
+cyclicalగా	B-time_period
+ఉంటుందా	O
+pain?	B-symptom
+}
+
+{\intent	p: లేదు, అలా ఏం లేదు	ANSWER}
+{\slot
+లేదు,	B-negative
+అలా	O
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: అలా ఏం లేదు.	ACK}
+{\slot
+అలా	O
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: periods regular, periods problems ఏం లేదు.	INFO_REQUEST}
+{\slot
+periods	B-bodily_process
+regular,	B-normal
+periods	B-bodily_process
+problems	B-symptom
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	p: లేదు. కానీ bleeding అవ్వట్లే	ANSWER}
+{\slot
+లేదు.	B-negative
+కానీ	O
+bleeding	B-medical_condition
+అవ్వట్లే	B-symptom
+}
+
+{\intent	p: అంటే just 1 day	STATEMENT}
+{\slot
+అంటే	O
+just	O
+1	B-time_period
+day	I-time_period
+}
+
+{\intent	d: నాలుక చూపీయి అమ్మా	ACTION_DIR}
+{\slot
+నాలుక	B-body_part
+చూపీయి	O
+అమ్మా	O
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+

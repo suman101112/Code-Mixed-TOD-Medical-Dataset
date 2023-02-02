@@ -1,0 +1,92 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 56, m	ANSWER}
+{\slot
+56,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	CONV_OPEN}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: కళ్ళు సరిగ్గా కనిపిస్త లేవు. గుంజుతున్నట్లు ఉంది.	ANSWER}
+{\slot
+కళ్ళు	B-body_part
+సరిగ్గా	O
+కనిపిస్త	B-bodily_process
+లేవు.	B-negative
+గుంజుతున్నట్లు	B-symptom
+ఉంది.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 1 month అయింది.	ANSWER}
+{\slot
+1	B-time_period
+month	I-time_period
+అయింది.	O
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఆ ఉంది.	ANSWER}
+{\slot
+ఆ	O
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 5 years	ANSWER}
+{\slot
+5	B-time_period
+years	I-time_period
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 8 years నుంచి.	ANSWER}
+{\slot
+8	B-time_period
+years	I-time_period
+నుంచి.	O
+}
+

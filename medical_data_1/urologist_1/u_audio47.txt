@@ -1,0 +1,69 @@
+{\intent	d: Babji Raam	STATEMENT}
+{\slot
+Babji	B-name
+Raam	I-name
+}
+
+{\intent	p: ఆ sir	ACK}
+{\slot
+ఆ	O
+sir	O
+}
+
+{\intent	d: ఇంతకు ముందు అయితే మీకు రెండు వైపుల kidneyలో రాళ్ళు ఉన్నట్లుగా వచ్చింది కదా	STATEMENT}
+{\slot
+ఇంతకు	O
+ముందు	O
+అయితే	O
+మీకు	O
+రెండు	B-frequency
+వైపుల	B-location
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+ఉన్నట్లుగా	O
+వచ్చింది	O
+కదా	O
+}
+
+{\intent	d: ఇప్పుడు ఒక రాయి పడిపోయినట్లుగా చెప్పనా నేను?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఒక	O
+రాయి	B-body_substance
+పడిపోయినట్లుగా	O
+చెప్పనా	O
+నేను?	O
+}
+
+{\intent	p: <inaudible>	UNINTERPRET}
+{\slot
+<inaudible>	O
+}
+
+{\intent	d: ఆ అది పడిపోయినట్లుగా వచ్చింది	STATEMENT}
+{\slot
+ఆ	O
+అది	O
+పడిపోయినట్లుగా	O
+వచ్చింది	O
+}
+
+{\intent	d: ఇప్పుడు అది కుడివైపునా మాత్రం చిన్న చిన్న రాళ్ళు ఉన్నట్లుగా ఉన్నాయి, అవి కూడా ఈ మందులు వాడుతుంటే తగ్గిపోతాయి.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+అది	O
+కుడివైపునా	B-location
+మాత్రం	O
+చిన్న	O
+చిన్న	O
+రాళ్ళు	B-body_substance
+ఉన్నట్లుగా	O
+ఉన్నాయి,	O
+అవి	O
+కూడా	O
+ఈ	O
+మందులు	B-medicine
+వాడుతుంటే	O
+తగ్గిపోతాయి.	O
+}
+

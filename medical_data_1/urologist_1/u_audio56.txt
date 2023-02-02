@@ -1,0 +1,180 @@
+{\intent	d: కుర్చోండి బాబు	ACTION_DIR}
+{\slot
+కుర్చోండి	O
+బాబు	B-person
+}
+
+{\intent	d: చెప్పండి బాబు పేరు ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+బాబు	B-person
+పేరు	O
+ఏంటి?	O
+}
+
+{\intent	p: P Hari	ANSWER}
+{\slot
+P	B-name
+Hari	I-name
+}
+
+{\intent	d: ఏమైతుంది problem?	INFO_REQUEST}
+{\slot
+ఏమైతుంది	O
+problem?	O
+}
+
+{\intent	p1: umm?	SNU}
+{\slot
+umm?	O
+}
+
+{\intent	d: problem ఏంటి చెప్పండి?	REPEAT_REPHRASE}
+{\slot
+problem	O
+ఏంటి	O
+చెప్పండి?	O
+}
+
+{\intent	p1: penis swelling sir.	ANSWER}
+{\slot
+penis	B-body_part
+swelling	B-symptom
+sir.	O
+}
+
+{\intent	d: ఎన్ని రోజుల నుంచి ఇలా వాసింది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజుల	B-time_period
+నుంచి	O
+ఇలా	O
+వాసింది?	O
+}
+
+{\intent	p1: 3 4 నెలలు అవుతుంది sir.	ANSWER}
+{\slot
+3	B-time_period
+4	B-time_period
+నెలలు	I-time_period
+అవుతుంది	O
+sir.	O
+}
+
+{\intent	d: ఎంత వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p1: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: 15	ANSWER}
+{\slot
+15	B-age
+}
+
+{\intent	d: వెనక్కి వెళ్తుందా బాబు ఇలా?	INFO_REQUEST}
+{\slot
+వెనక్కి	B-location
+వెళ్తుందా	B-bodily_process
+బాబు	B-person
+ఇలా?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: వెనక్కి వెళ్తుందా?	INFO_REQUEST}
+{\slot
+వెనక్కి	B-location
+వెళ్తుందా?	B-bodily_process
+}
+
+{\intent	p: ఆ వెళ్తుంది.	ANSWER}
+{\slot
+ఆ	O
+వెళ్తుంది.	B-positive
+}
+
+{\intent	d: అయితే గానీ ముందుకు వస్తుంది	INFO_REQUEST}
+{\slot
+అయితే	O
+గానీ	O
+ముందుకు	B-location
+వస్తుంది	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: చిన్న operation చేయించుకోవాలి, మరి చేయించుకుంటారా?	INFO_REQUEST}
+{\slot
+చిన్న	O
+operation	B-treatment
+చేయించుకోవాలి,	O
+మరి	O
+చేయించుకుంటారా?	O
+}
+
+{\intent	p1: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: ఇప్పటిదాకా కొద్దిగా నొప్పి పెడుతోంది అంటున్నాడు sir.	STATEMENT}
+{\slot
+ఇప్పటిదాకా	O
+కొద్దిగా	B-intensity
+నొప్పి	B-symptom
+పెడుతోంది	O
+అంటున్నాడు	O
+sir.	O
+}
+
+{\intent	d: అప్పటివరకు మందులు రాసి ఇస్తాం.	COMMIT}
+{\slot
+అప్పటివరకు	B-time_period
+మందులు	B-medicine
+రాసి	O
+ఇస్తాం.	O
+}
+
+{\intent	d: Saturday రోజు operation theater ఉంటది ఆ రోజు రండి	ACTION_DIR}
+{\slot
+Saturday	B-time_period
+రోజు	B-time_period
+operation	B-place
+theater	I-place
+ఉంటది	O
+ఆ	B-time_period
+రోజు	I-time_period
+రండి	O
+}
+
+{\intent	d: duty day రోజు రండి	ACTION_DIR}
+{\slot
+duty	B-time_period
+day	I-time_period
+రోజు	I-time_period
+రండి	O
+}
+
+{\intent	p1: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

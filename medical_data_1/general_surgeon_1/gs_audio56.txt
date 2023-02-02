@@ -1,0 +1,197 @@
+{\intent	p: Hello doctorగారు నమస్తే	GREETING}
+{\slot
+Hello	O
+doctorగారు	B-medical_professional
+నమస్తే	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	p: నా పేరు krishna అండి	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+krishna	B-name
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: నా age 33	STATEMENT}
+{\slot
+నా	O
+age	O
+33	B-age
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so ఒక 6 months back కొంచం blood అనేది చూసాను washroomలో	STATEMENT}
+{\slot
+so	O
+ఒక	O
+6	B-time_period
+months	I-time_period
+back	I-time_period
+కొంచం	O
+blood	B-body_substance
+అనేది	O
+చూసాను	O
+washroomలో	B-place
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so దాని తరువాత మళ్ళి food habits change చేసుకున్నా తరువాత మళ్ళి stool softగానే అయింది.	STATEMENT}
+{\slot
+so	O
+దాని	O
+తరువాత	O
+మళ్ళి	O
+food	B-food_substance
+habits	B-habit
+change	O
+చేసుకున్నా	O
+తరువాత	O
+మళ్ళి	O
+stool	B-body_substance
+softగానే	B-normal
+అయింది.	B-positive
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: ఎప్పుడు doctorని అయితే visit చేయలేదు	STATEMENT}
+{\slot
+ఎప్పుడు	O
+doctorని	B-medical_professional
+అయితే	O
+visit	O
+చేయలేదు	O
+}
+
+{\intent	p: అంటే భయంతో చేయలేదన్నమాట	STATEMENT}
+{\slot
+అంటే	O
+భయంతో	B-symptom
+చేయలేదన్నమాట	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so ఏంటి ఇప్పుడు visit చేయాలా mandatoryగా, లేకపోతే	INFO_REQUEST}
+{\slot
+so	O
+ఏంటి	O
+ఇప్పుడు	O
+visit	O
+చేయాలా	O
+mandatoryగా,	O
+లేకపోతే	O
+}
+
+{\intent	d: present ఏమైనా ఇబ్బంది ఉందా ఇప్పుడు?	INFO_REQUEST}
+{\slot
+present	B-time_period
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఉందా	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: present పర్లేదండీ, I am feeling well	ANSWER}
+{\slot
+present	B-time_period
+పర్లేదండీ,	O
+I	O
+am	O
+feeling	O
+well	B-normal
+}
+
+{\intent	d: నొప్పి కానీ లేకపోతే వాపు కిన అనిపియటం కానీ	INFO_REQUEST}
+{\slot
+నొప్పి	B-symptom
+కానీ	O
+లేకపోతే	O
+వాపు	B-symptom
+కిన	O
+అనిపియటం	O
+కానీ	O
+}
+
+{\intent	p: కొంచం వాపుగా అయితే అనిపిస్తుంది, మంట అది ఏం లేదు ఒక 3 months	ANSWER}
+{\slot
+కొంచం	O
+వాపుగా	B-symptom
+అయితే	O
+అనిపిస్తుంది,	B-positive
+మంట	B-symptom
+అది	O
+ఏం	O
+లేదు	B-negative
+ఒక	O
+3	B-time_period
+months	I-time_period
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	p: అంటే food habits మొత్తం change చేసాను	STATEMENT}
+{\slot
+అంటే	O
+food	B-food_substance
+habits	B-habit
+మొత్తం	O
+change	O
+చేసాను	O
+}
+
+{\intent	d: right right	ACK}
+{\slot
+right	O
+right	O
+}
+
+{\intent	d: so ఒక్కటే అండి వాపు పెరగడం లేదు, ఎటువంటి ఇబ్బంది create చేయడంలేదు అంటే కంగారు పడాల్సిన అవసరం ఏం లేదు.	STATEMENT}
+{\slot
+so	O
+ఒక్కటే	O
+అండి	O
+వాపు	B-symptom
+పెరగడం	O
+లేదు,	B-negative
+ఎటువంటి	O
+ఇబ్బంది	B-symptom
+create	O
+చేయడంలేదు	B-negative
+అంటే	O
+కంగారు	O
+పడాల్సిన	O
+అవసరం	O
+ఏం	O
+లేదు.	O
+}
+

@@ -1,0 +1,137 @@
+{\intent	d: ఎట్ల ఉంది.	INFO_REQUEST}
+{\slot
+ఎట్ల	O
+ఉంది.	O
+}
+
+{\intent	p: నొప్పి తగ్గింది sir	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+తగ్గింది	B-normal
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: ఇట్ల ఆ first day నొప్పి ఉంది sir, medicine వాడాను మంచిగా	STATEMENT}
+{\slot
+ఇట్ల	O
+ఆ	O
+first	B-time_period
+day	I-time_period
+నొప్పి	B-symptom
+ఉంది	O
+sir,	O
+medicine	B-medicine
+వాడాను	O
+మంచిగా	O
+}
+
+{\intent	d: దెగ్గర రా	ACTION_DIR}
+{\slot
+దెగ్గర	O
+రా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: చిన్నగా ఉంది రంధ్రం	STATEMENT}
+{\slot
+చిన్నగా	B-intensity
+ఉంది	O
+రంధ్రం	B-symptom
+}
+
+{\intent	p: sir.	ACK}
+{\slot
+sir.	O
+}
+
+{\intent	d: నొప్పి, ఇప్పుడు చీము గిట్ల ఏం లేదు కదా	INFO_REQUEST}
+{\slot
+నొప్పి,	B-symptom
+ఇప్పుడు	B-time_period
+చీము	B-symptom
+గిట్ల	O
+ఏం	O
+లేదు	O
+కదా	O
+}
+
+{\intent	p: చీము ఒక అప్పుడప్పుడు వస్తుంది sir	ANSWER}
+{\slot
+చీము	B-symptom
+ఒక	O
+అప్పుడప్పుడు	B-time_period
+వస్తుంది	B-positive
+sir	O
+}
+
+{\intent	d: చెవులో మందు వేసుకోండి.	ACTION_DIR}
+{\slot
+చెవులో	B-body_part
+మందు	B-medicine
+వేసుకోండి.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఒక్కటే tablet రాసి ఇస్తా.	COMMIT}
+{\slot
+ఒక్కటే	O
+tablet	B-medicine
+రాసి	O
+ఇస్తా.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: చీము ఎన్ని రోజులకొకసారి వస్తుంది?	INFO_REQUEST}
+{\slot
+చీము	B-symptom
+ఎన్ని	O
+రోజులకొకసారి	B-time_period
+వస్తుంది?	O
+}
+
+{\intent	p: లేదు sir మొన్న 17th ఏ. అసలు అంతకు ముందు లేదు sir.	ANSWER}
+{\slot
+లేదు	O
+sir	O
+మొన్న	B-time_period
+17th	I-time_period
+ఏ.	O
+అసలు	O
+అంతకు	B-time_period
+ముందు	I-time_period
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

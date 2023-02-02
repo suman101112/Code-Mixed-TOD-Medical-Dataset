@@ -1,0 +1,181 @@
+{\intent	d: చెప్పండి sir.	ACTION_DIR}
+{\slot
+చెప్పండి	O
+sir.	O
+}
+
+{\intent	p: అదే అండి. gas trouble కోసం.	STATEMENT}
+{\slot
+అదే	O
+అండి.	O
+gas	B-medical_condition
+trouble	I-medical_condition
+కోసం.	O
+}
+
+{\intent	d: ok. ok.	ACK}
+{\slot
+ok.	O
+ok.	O
+}
+
+{\intent	d: ఏం problem అవుతుంది sir మీకు. ఇబ్బందులు ఏమవుతున్నాయి?	INFO_REQUEST}
+{\slot
+ఏం	O
+problem	O
+అవుతుంది	O
+sir	O
+మీకు.	O
+ఇబ్బందులు	O
+ఏమవుతున్నాయి?	O
+}
+
+{\intent	p: ఇబ్బందులంటే ఎక్కువ ఇది gas పదే పదే bombలు వచ్చినట్లు.	ANSWER}
+{\slot
+ఇబ్బందులంటే	O
+ఎక్కువ	B-intensity
+ఇది	O
+gas	B-medical_condition
+పదే	B-frequency
+పదే	I-frequency
+bombలు	B-symptom
+వచ్చినట్లు.	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: ఆ తర్వాత ఎమో తుమ్మినప్పుడు గుండెలో నోప్పి వచ్చినట్లు.	STATEMENT}
+{\slot
+ఆ	O
+తర్వాత	B-time_period
+ఎమో	O
+తుమ్మినప్పుడు	B-bodily_process
+గుండెలో	B-body_part
+నోప్పి	B-symptom
+వచ్చినట్లు.	O
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: ఎంత కాలం నుంచి ఉంది sir.	INFO_REQUEST}
+{\slot
+ఎంత	O
+కాలం	B-time_period
+నుంచి	O
+ఉంది	O
+sir.	O
+}
+
+{\intent	p: అవుతుంది అండి. ఒక్కటి 1 year పైనే. 1 year 2 year అవుతుంది. అలాగే వస్తున్నాయి.	ANSWER}
+{\slot
+అవుతుంది	O
+అండి.	O
+ఒక్కటి	O
+1	B-time_period
+year	I-time_period
+పైనే.	I-time_period
+1	B-time_period
+year	I-time_period
+2	B-time_period
+year	I-time_period
+అవుతుంది.	O
+అలాగే	O
+వస్తున్నాయి.	O
+}
+
+{\intent	p: కాకపోతే ఎక్కడ చూపించుకోవాలి ఏంటి doubts ఉండి అలాగే వదిలేస్తున్నం అన్నమాట.	STATEMENT}
+{\slot
+కాకపోతే	O
+ఎక్కడ	O
+చూపించుకోవాలి	O
+ఏంటి	O
+doubts	O
+ఉండి	O
+	O
+అలాగే	O
+వదిలేస్తున్నం	O
+}
+
+{\intent	d: చాలా మందికి ఇట్ల ఉంటుంది sir. first stages లో ఉంటే దానికి treatment లేకుండా కూడా normal అవుతుంది అండి gas trouble. కానీ ఏందంటే. ఆ gas trouble ఉన్నవాళ్ళు అసల్ time కి తినకపోవడం, నిద్ర సరిగ్గా లేకపోవడం stress tensions, physical strain ఎక్కువ ఉండడం, ఇతర జబ్బులు ఉండడం. అవి control లో లేకపోవడం. meals అనేవి time కి తీసుకోకపోవడం. ఇలా చేసేవాళ్ళకు మెల్ల మెల్లగా gas trouble ఎక్కువ అయిపోయి పేగులో పూతలాగా form అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+చాలా	O
+మందికి	O
+ఇట్ల	O
+ఉంటుంది	O
+sir.	O
+first	O
+stages	O
+లో	O
+ఉంటే	O
+దానికి	O
+treatment	B-treatment
+లేకుండా	O
+కూడా	O
+normal	B-normal
+అవుతుంది	O
+అండి	O
+gas	B-medical_condition
+trouble.	I-medical_condition
+కానీ	O
+ఏందంటే.	O
+ఆ	O
+gas	B-medical_condition
+trouble	I-medical_condition
+ఉన్నవాళ్ళు	O
+అసల్	O
+time	B-time_period
+కి	O
+తినకపోవడం,	B-symptom
+నిద్ర	B-bodily_process
+సరిగ్గా	B-symptom
+లేకపోవడం	I-symptom
+stress	B-medical_condition
+tensions,	B-medical_condition
+physical	B-medical_condition
+strain	I-medical_condition
+ఎక్కువ	B-intensity
+ఉండడం,	O
+ఇతర	O
+జబ్బులు	O
+ఉండడం.	O
+అవి	O
+control	O
+లో	O
+లేకపోవడం.	O
+meals	B-food_substance
+అనేవి	O
+time	B-time_period
+కి	O
+తీసుకోకపోవడం.	B-symptom
+ఇలా	O
+చేసేవాళ్ళకు	O
+మెల్ల	O
+మెల్లగా	O
+gas	B-medical_condition
+trouble	I-medical_condition
+ఎక్కువ	B-intensity
+అయిపోయి	O
+పేగులో	B-body_part
+పూతలాగా	B-medical_condition
+form	B-symptom
+అవుతుంది.	I-symptom
+}
+
+{\intent	d: ఇది మనం neglect చేస్తే పుండ్ల లాగా form అవ్వొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+ఇది	O
+మనం	O
+neglect	O
+చేస్తే	O
+పుండ్ల	B-medical_condition
+లాగా	O
+form	B-symptom
+అవ్వొచ్చు.	I-symptom
+}
+

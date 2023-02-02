@@ -1,0 +1,128 @@
+{\intent	d: నీ పేరు చెప్పు	INFO_REQUEST}
+{\slot
+నీ	O
+పేరు	O
+చెప్పు	O
+}
+
+{\intent	p: Ajay	ANSWER}
+{\slot
+Ajay	B-name
+}
+
+{\intent	d: Ajay	ACK}
+{\slot
+Ajay	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 15, male	ANSWER}
+{\slot
+15,	B-age
+male	B-gender
+}
+
+{\intent	d: ఏమైంది ఇప్పుడు?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: గొంతు నొప్పి లేస్తుంది. శ్వాస తీసుకోరావడం లేదు.	ANSWER}
+{\slot
+గొంతు	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది.	O
+శ్వాస	B-bodily_process
+తీసుకోరావడం	I-bodily_process
+లేదు.	B-negative
+}
+
+{\intent	d: గొంతు నొప్పి, శ్వాస వస్తలేదు	ACK}
+{\slot
+గొంతు	B-body_part
+నొప్పి,	B-symptom
+శ్వాస	B-bodily_process
+వస్తలేదు	B-negative
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: తుమ్ములు వస్తున్నాయా ఏమైనా?	INFO_REQUEST}
+{\slot
+తుమ్ములు	B-symptom
+వస్తున్నాయా	O
+ఏమైనా?	O
+}
+
+{\intent	p: pche.	ANSWER}
+{\slot
+pche.	B-negative
+}
+
+{\intent	d: తల నొప్పి?	INFO_REQUEST}
+{\slot
+తల	B-body_part
+నొప్పి?	B-symptom
+}
+
+{\intent	p: 	ABANDONED}
+{\slot
+}
+
+{\intent	d: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	d: పైకి చూడు	ACTION_DIR}
+{\slot
+పైకి	O
+చూడు	O
+}
+
+{\intent	d: మందులు రాసి ఇస్తా	COMMIT}
+{\slot
+మందులు	B-medicine
+రాసి	O
+ఇస్తా	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఆ?	INFO_REQUEST}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: ఊరికే వస్తుందా ఇట్ల?	INFO_REQUEST}
+{\slot
+ఊరికే	O
+వస్తుందా	O
+ఇట్ల?	O
+}
+
+{\intent	p: last time 15 days కింద వచ్చింది sir.	ANSWER}
+{\slot
+last	B-time_period
+time	I-time_period
+15	B-time_period
+days	I-time_period
+కింద	O
+వచ్చింది	O
+sir.	O
+}
+

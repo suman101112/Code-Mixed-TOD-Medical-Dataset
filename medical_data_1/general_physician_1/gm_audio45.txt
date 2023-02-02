@@ -1,0 +1,168 @@
+{\intent	p: ya good afternoon madam	GREETING}
+{\slot
+ya	O
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: ఆ చెప్పండి.	CONV_OPEN}
+{\slot
+ఆ	O
+చెప్పండి.	O
+}
+
+{\intent	p: madam నేను 4 days back మొత్తం lipid profile చేయించాను	STATEMENT}
+{\slot
+madam	O
+నేను	O
+4	B-time_period
+days	I-time_period
+back	I-time_period
+మొత్తం	O
+lipid	B-mtest
+profile	I-mtest
+చేయించాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అందులో TSH 20.11 అని చెప్పారు madam	STATEMENT}
+{\slot
+అందులో	O
+TSH	B-body_substance
+20.11	B-mtest_value
+అని	O
+చెప్పారు	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నేను ఎప్పుడు ఎలాంటి checkup చేయించలేదు, first time చేయించినాను	STATEMENT}
+{\slot
+నేను	O
+ఎప్పుడు	O
+ఎలాంటి	O
+checkup	O
+చేయించలేదు,	O
+first	O
+time	O
+చేయించినాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అలా చెప్పినారు	STATEMENT}
+{\slot
+అలా	O
+చెప్పినారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: thyroid ఉందండీ మీకు, దాని hypothyroid అంటాము	DIAGNOSIS}
+{\slot
+thyroid	B-medical_condition
+ఉందండీ	O
+మీకు,	O
+దాని	O
+hypothyroid	B-medical_condition
+అంటాము	O
+}
+
+{\intent	p: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇప్పుడు ఇబ్బందులేం ఉంటున్నాయి మీకు?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఇబ్బందులేం	B-symptom
+ఉంటున్నాయి	O
+మీకు?	O
+}
+
+{\intent	p: ఎలాంటి ఇబ్బంది ఏం లేదు అండి, swelling ఏం లేదు, plus pains ఏం లేవు madam, normalగానే ఉంది.	ANSWER}
+{\slot
+ఎలాంటి	O
+ఇబ్బంది	B-symptom
+ఏం	O
+లేదు	B-negative
+అండి,	O
+swelling	B-symptom
+ఏం	O
+లేదు,	B-negative
+plus	O
+pains	B-symptom
+ఏం	O
+లేవు	B-negative
+madam,	O
+normalగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: so familyలో ఎవరికైనా ఉందా?	INFO_REQUEST}
+{\slot
+so	O
+familyలో	B-familal
+ఎవరికైనా	O
+ఉందా?	O
+}
+
+{\intent	p: లేదు madam, మా familyలో ఎవరికి లేదు	ANSWER}
+{\slot
+లేదు	O
+madam,	O
+మా	O
+familyలో	B-familal
+ఎవరికి	O
+లేదు	B-negative
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: so usualగా అండి మనకు 5.5 normal అన్నా కూడా, ఒక 7, 8 దాటింది అంటే తప్పనిసరిగా hypothyroid ఉన్నట్లే confirm చేసుకోవచ్చు.	STATEMENT}
+{\slot
+so	O
+usualగా	O
+అండి	O
+మనకు	O
+5.5	B-mtest_value
+normal	O
+అన్నా	O
+కూడా,	O
+ఒక	O
+7,	B-mtest_value
+8	B-mtest_value
+దాటింది	O
+అంటే	O
+తప్పనిసరిగా	O
+hypothyroid	B-medical_condition
+ఉన్నట్లే	O
+confirm	O
+చేసుకోవచ్చు.	O
+}
+

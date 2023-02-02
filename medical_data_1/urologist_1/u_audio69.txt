@@ -1,0 +1,225 @@
+{\intent	p: ఆ sir ఇట్ల రాసినారు sir.	STATEMENT}
+{\slot
+ఆ	O
+sir	O
+ఇట్ల	O
+రాసినారు	O
+sir.	O
+}
+
+{\intent	d: మూత్రంలో ఏమన్నా మంట వస్తుందా?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+ఏమన్నా	O
+మంట	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	p: మూత్రం ఏం లేదు sir	ANSWER}
+{\slot
+మూత్రం	B-body_substance
+ఏం	O
+లేదు	B-negative
+sir	O
+}
+
+{\intent	d: మంట ఏం లేదు	ACK}
+{\slot
+మంట	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	p: ఏం లేదు	ACK}
+{\slot
+ఏం	O
+లేదు	O
+}
+
+{\intent	d: కాకపోతే ఇక్కడి నుంచి ఇక్కడకు గుంజుతున్నట్లు అయితుంది.	STATEMENT}
+{\slot
+కాకపోతే	O
+ఇక్కడి	B-location
+నుంచి	I-location
+ఇక్కడకు	B-location
+గుంజుతున్నట్లు	B-symptom
+అయితుంది.	O
+}
+
+{\intent	p: ఆహ <neg>, ఇట్ల ఉంటది కదా sir, గుంజుతుంది.	CORRECT}
+{\slot
+ఆహ	O
+<neg>,	O
+ఇట్ల	O
+ఉంటది	O
+కదా	O
+sir,	O
+గుంజుతుంది.	B-symptom
+}
+
+{\intent	d: ఆహ<neg> తొంటే ఎముకల్లో నొప్పనిపిస్తుందా?	INFO_REQUEST}
+{\slot
+ఆహ<neg>	O
+తొంటే	B-body_part
+ఎముకల్లో	I-body_part
+నొప్పనిపిస్తుందా?	B-symptom
+}
+
+{\intent	p: ఇక్కడ?	SNU}
+{\slot
+ఇక్కడ?	B-location
+}
+
+{\intent	d: ఇక్కడ నుంచి ఇక్కడికి ఏమైనా వస్తుందా నొప్పి?	REPEAT_REPHRASE}
+{\slot
+ఇక్కడ	B-location
+నుంచి	I-location
+ఇక్కడికి	I-location
+ఏమైనా	O
+వస్తుందా	O
+నొప్పి?	B-symptom
+}
+
+{\intent	p: ఇటు నుంచెల్లి ఇట్ల	STATEMENT}
+{\slot
+ఇటు	O
+నుంచెల్లి	O
+ఇట్ల	O
+}
+
+{\intent	p: kidneyలో నొప్పి ఉంది ఒక test రాయరా sir	ACTION_DIR}
+{\slot
+kidneyలో	B-body_part
+నొప్పి	B-symptom
+ఉంది	O
+ఒక	O
+test	B-mtest
+రాయరా	O
+sir	O
+}
+
+{\intent	p: ఇట్ల వంగినా నొస్తుంది	STATEMENT}
+{\slot
+ఇట్ల	O
+వంగినా	O
+నొస్తుంది	B-symptom
+}
+
+{\intent	d: మూత్రంలో మంట వస్తుందా?	INFO_REQUEST}
+{\slot
+మూత్రంలో	B-body_substance
+మంట	B-symptom
+వస్తుందా?	O
+}
+
+{\intent	d: ఏం రావట్లేదా	INFO_REQUEST}
+{\slot
+ఏం	O
+రావట్లేదా	O
+}
+
+{\intent	p: ఏం లేదు .	ANSWER}
+{\slot
+ఏం	O
+లేదు	B-negative
+.	O
+}
+
+{\intent	p: ఇదిగో 3 వారలు ఇవి వాడిన.	STATEMENT}
+{\slot
+ఇదిగో	O
+3	B-time_period
+వారలు	I-time_period
+ఇవి	O
+వాడిన.	O
+}
+
+{\intent	d: ఎప్పటినుంచి అట్ల నొప్పి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి	O
+అట్ల	O
+నొప్పి?	O
+}
+
+{\intent	p: 3 వారాలు అయితుంది.	ANSWER}
+{\slot
+3	B-time_period
+వారాలు	I-time_period
+అయితుంది.	O
+}
+
+{\intent	p: 3 కాదు 4 వారలు అయితుంది.	CORRECT}
+{\slot
+3	B-time_period
+కాదు	O
+4	B-time_period
+వారలు	I-time_period
+అయితుంది.	O
+}
+
+{\intent	p: ఇదిగో 4 వారల నుంచి ఇది ఇది వాడిన sir నేను.	STATEMENT}
+{\slot
+ఇదిగో	O
+4	B-time_period
+వారల	I-time_period
+నుంచి	O
+ఇది	O
+ఇది	O
+వాడిన	O
+sir	O
+నేను.	O
+}
+
+{\intent	d: ఒకసారి scanning రాసి ఇస్తా, scanning తీయించుకొని రా	ACTION_DIR}
+{\slot
+ఒకసారి	O
+scanning	B-mtest
+రాసి	O
+ఇస్తా,	O
+scanning	B-mtest
+తీయించుకొని	O
+రా	O
+}
+
+{\intent	d: scanningలో ఏమైనా ఇబ్బంది ఉంది అంటే గోళీలు రాస్తా	COMMIT}
+{\slot
+scanningలో	B-mtest
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఉంది	O
+అంటే	O
+గోళీలు	B-medicine
+రాస్తా	O
+}
+
+{\intent	d: లేకపోతే ఇక్కడ కాదు, బొక్కల doctor దెగ్గర చూయించుకోవాలి.	ACTION_DIR}
+{\slot
+లేకపోతే	O
+ఇక్కడ	O
+కాదు,	O
+బొక్కల	B-body_part
+doctor	B-medical_professional
+దెగ్గర	O
+చూయించుకోవాలి.	O
+}
+
+{\intent	p: ఇవి చూడాండీ sir.	ACTION_DIR}
+{\slot
+ఇవి	O
+చూడాండీ	O
+sir.	O
+}
+
+{\intent	p: దీనికైతే problem లేదు.	STATEMENT}
+{\slot
+దీనికైతే	O
+problem	O
+లేదు.	O
+}
+
+{\intent	d: ఇదయితే లేదు.	STATEMENT}
+{\slot
+ఇదయితే	O
+లేదు.	O
+}
+

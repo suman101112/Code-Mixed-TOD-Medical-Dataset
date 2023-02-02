@@ -1,0 +1,159 @@
+{\intent	p: మా బాబుకు కంటి చుట్టూ చిన్న చిన్న బొడిపెలు లాగా వస్తే చర్మ సమస్య ఎమో అని doctor ని సంప్రదిస్తే కణాలు విచ్చల విడిగా విడిపోతున్నాయి అన్నారు.	STATEMENT}
+{\slot
+మా	O
+బాబుకు	B-person
+కంటి	B-body_part
+చుట్టూ	B-location
+చిన్న	I-medical_condition
+చిన్న	I-medical_condition
+బొడిపెలు	B-medical_condition
+లాగా	O
+వస్తే	O
+చర్మ	B-body_part
+సమస్య	B-symptom
+ఎమో	O
+అని	O
+doctor	B-medical_professional
+ని	O
+సంప్రదిస్తే	O
+కణాలు	B-body_part
+విచ్చల	B-symptom
+విడిగా	I-symptom
+విడిపోతున్నాయి	I-symptom
+అన్నారు.	O
+}
+
+{\intent	p: ఒకసారి cancer doctorని కలవమన్నారు.	STATEMENT}
+{\slot
+ఒకసారి	O
+cancer	B-medical_professional
+doctorని	I-health_professional
+కలవమన్నారు.	O
+}
+
+{\intent	p: ఇప్పుడు బాబుకి treatment చేయిస్తున్నాము.	STATEMENT}
+{\slot
+ఇప్పుడు	O
+బాబుకి	B-familal
+treatment	B-treatment
+చేయిస్తున్నాము.	O
+}
+
+{\intent	p: బాబుకి ఎందుకు ఈ సమస్య వచ్చి ఉంటుంది? ఇది మెగితా పిల్లలకి spread అవుతుందా?	INFO_REQUEST}
+{\slot
+బాబుకి	B-person
+ఎందుకు	O
+ఈ	O
+సమస్య	O
+వచ్చి	O
+ఉంటుంది?	O
+ఇది	O
+మెగితా	O
+పిల్లలకి	B-person
+spread	O
+అవుతుందా?	O
+}
+
+{\intent	d: మీరు చెప్పినట్లు కంటి చుట్టూ అంటే ఒక పక్క లేదా రెండు పక్కల? అని మీరు మాకు స్పష్టంగా తెలియచేయలేదు.	STATEMENT}
+{\slot
+మీరు	O
+చెప్పినట్లు	O
+కంటి	B-body_part
+చుట్టూ	B-location
+అంటే	O
+ఒక	B-frequency
+పక్క	B-location
+లేదా	O
+రెండు	B-frequency
+పక్కల?	B-location
+అని	O
+మీరు	O
+మాకు	O
+స్పష్టంగా	O
+తెలియచేయలేదు.	O
+}
+
+{\intent	d: అలాగే విచ్చలవిడిగా కణాలు పెరుగుతున్నాయి అని అంటున్నారు అంటే అది చిన్న చిన్న బొడిపెలా గడ్డలాగా వస్తున్నాయా? లేకపోతే ఒక్కటే దెగ్గర పెరుగుతూ వస్తుందా అని మీరు స్పష్టంగా చెప్పలేదు మాకు	STATEMENT}
+{\slot
+అలాగే	O
+విచ్చలవిడిగా	B-symptom
+కణాలు	B-body_part
+పెరుగుతున్నాయి	B-symptom
+అని	O
+అంటున్నారు	O
+అంటే	O
+అది	O
+చిన్న	B-medical_condition
+చిన్న	I-medical_condition
+బొడిపెలా	I-medical_condition
+గడ్డలాగా	B-symptom
+వస్తున్నాయా?	O
+లేకపోతే	O
+ఒక్కటే	O
+దెగ్గర	O
+పెరుగుతూ	O
+వస్తుందా	O
+అని	O
+మీరు	O
+స్పష్టంగా	O
+చెప్పలేదు	O
+మాకు	O
+}
+
+{\intent	d: అలాగే treatment మొదలు పెట్టాము అన్నారు. అంటే మీరు ఏ basis మీద treatment మొదలు పెట్టారు?	INFO_REQUEST}
+{\slot
+అలాగే	O
+treatment	B-treatment
+మొదలు	O
+పెట్టాము	O
+అన్నారు.	O
+అంటే	O
+మీరు	O
+ఏ	O
+basis	O
+మీద	O
+treatment	B-treatment
+మొదలు	O
+పెట్టారు?	O
+}
+
+{\intent	d: ఆ బొడిపె నుంచి ఒక చిన్న ముక్కను పరిక్ష చేసి పంపించారా అనేది మీరు మాకు అది చెప్పలేదు.	STATEMENT}
+{\slot
+ఆ	O
+బొడిపె	B-medical_condition
+నుంచి	O
+ఒక	O
+చిన్న	O
+ముక్కను	O
+పరిక్ష	B-mtest
+చేసి	O
+పంపించారా	O
+అనేది	O
+మీరు	O
+మాకు	O
+అది	O
+చెప్పలేదు.	O
+}
+
+{\intent	d: so incase ఆ బొడిపె నుంచి biopsy చేసి report అన్నా మీకు ఉంటే మాకు ఒక్కసారి అది తెలిస్తే easyగా ఉంటుంది చెప్పడం.	STATEMENT}
+{\slot
+so	O
+incase	O
+ఆ	O
+బొడిపె	O
+నుంచి	O
+biopsy	B-mtest
+చేసి	O
+report	O
+అన్నా	O
+మీకు	O
+ఉంటే	O
+మాకు	O
+ఒక్కసారి	O
+అది	O
+తెలిస్తే	O
+easyగా	O
+ఉంటుంది	O
+చెప్పడం.	O
+}
+

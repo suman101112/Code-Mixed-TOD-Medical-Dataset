@@ -1,0 +1,121 @@
+{\intent	d: చెప్పండమ్మా problem ఏంటి?	INFO_REQUEST}
+{\slot
+చెప్పండమ్మా	O
+problem	O
+ఏంటి?	O
+}
+
+{\intent	p: <inaudible>	UNINTERPRET}
+{\slot
+<inaudible>	O
+}
+
+{\intent	d: చెప్పండి ఇబ్బంది ఏం ఉంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఇబ్బంది	B-symptom
+ఏం	O
+ఉంది?	O
+}
+
+{\intent	p: kidney నొప్పి వస్తాంది బాబు, 2 నెలలు అయిపోయాయి	ANSWER}
+{\slot
+kidney	B-body_part
+నొప్పి	B-symptom
+వస్తాంది	O
+బాబు,	B-person
+2	B-time_period
+నెలలు	I-time_period
+అయిపోయాయి	I-time_period
+}
+
+{\intent	d: ఎటు side నొప్పి ఉంది మీకు?	INFO_REQUEST}
+{\slot
+ఎటు	O
+side	B-location
+నొప్పి	B-symptom
+ఉంది	O
+మీకు?	O
+}
+
+{\intent	p: ఎడమ పక్క నుంచి ఇక్కడికి వస్తది. మందులు వాడుతున్నా.	ANSWER}
+{\slot
+ఎడమ	B-location
+పక్క	I-location
+నుంచి	O
+ఇక్కడికి	B-location
+వస్తది.	O
+మందులు	B-medicine
+వాడుతున్నా.	O
+}
+
+{\intent	d: ఎన్ని రోజులు నొప్పి ఉంది?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+నొప్పి	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: ఎన్ని రోజులు నొప్పి ఉంది?	REPEAT_REPHRASE}
+{\slot
+ఎన్ని	O
+రోజులు	B-time_period
+నొప్పి	B-symptom
+ఉంది?	O
+}
+
+{\intent	p: రెండు నెలలు అవుతుంది, 2 నెలల బట్టి వస్తంది.	ANSWER}
+{\slot
+రెండు	B-time_period
+నెలలు	I-time_period
+అవుతుంది,	O
+2	B-time_period
+నెలల	I-time_period
+బట్టి	O
+వస్తంది.	O
+}
+
+{\intent	p: left side	STATEMENT}
+{\slot
+left	B-location
+side	I-location
+}
+
+{\intent	p: రెండు నెలల బట్టి మందులు వాడుతాన్న sir, ఎక్కువైంది అని చెప్పినారు	STATEMENT}
+{\slot
+రెండు	B-quantity
+నెలల	B-time_period
+బట్టి	O
+మందులు	B-medicine
+వాడుతాన్న	O
+sir,	O
+ఎక్కువైంది	B-intensity
+అని	O
+చెప్పినారు	O
+}
+
+{\intent	p: నొప్పి బాగా వస్తంది	STATEMENT}
+{\slot
+నొప్పి	B-symptom
+బాగా	B-intensity
+వస్తంది	O
+}
+
+{\intent	d: 92లో ఏ scan చేస్తారమ్మా, ఈ scan తీసుకోని రండి.	ACTION_DIR}
+{\slot
+92లో	O
+ఏ	O
+scan	B-mtest
+చేస్తారమ్మా,	O
+ఈ	O
+scan	B-mtest
+తీసుకోని	O
+రండి.	O
+}
+

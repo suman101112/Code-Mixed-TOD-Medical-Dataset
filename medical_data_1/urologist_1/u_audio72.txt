@@ -1,0 +1,140 @@
+{\intent	d: ఏం Suramma	INFO_REQUEST}
+{\slot
+ఏం	O
+Suramma	B-name
+}
+
+{\intent	p: sir ఇది 15 సంవత్సరాలు kidney operation అయి	ANSWER}
+{\slot
+sir	O
+ఇది	O
+15	B-time_period
+సంవత్సరాలు	I-time_period
+kidney	B-body_part
+operation	B-treatment
+అయి	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: ఏం operation అయింది?	INFO_REQUEST}
+{\slot
+ఏం	O
+operation	B-treatment
+అయింది?	O
+}
+
+{\intent	p: kidney రాయి	ANSWER}
+{\slot
+kidney	B-body_part
+రాయి	B-body_substance
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: అయితే ఇప్పుడు ఇదే నొప్పి వస్తుంది, కడుపు నొప్పి	STATEMENT}
+{\slot
+అయితే	O
+ఇప్పుడు	B-time_period
+ఇదే	O
+నొప్పి	B-symptom
+వస్తుంది,	O
+కడుపు	B-body_part
+నొప్పి	B-symptom
+}
+
+{\intent	d: ఇప్పుడు ఏం ఇబ్బంది ఉంది.	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఏం	O
+ఇబ్బంది	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: kidney బాగా నొప్పిలేస్తాంది sir, పక్కకు ఉబ్బింది నొస్తుంది.	ANSWER}
+{\slot
+kidney	B-body_part
+బాగా	B-intensity
+నొప్పిలేస్తాంది	B-symptom
+sir,	O
+పక్కకు	B-location
+ఉబ్బింది	B-symptom
+నొస్తుంది.	B-symptom
+}
+
+{\intent	d: ఎప్పటినుంచి?	INFO_REQUEST}
+{\slot
+ఎప్పటినుంచి?	O
+}
+
+{\intent	p: ఆ 15 రోజులు అయితుంది.	ANSWER}
+{\slot
+ఆ	O
+15	B-time_period
+రోజులు	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: 15 రోజులా?	INFO_REQUEST}
+{\slot
+15	B-time_period
+రోజులా?	I-time_period
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: మూత్రం మంట అయితుందా?	INFO_REQUEST}
+{\slot
+మూత్రం	B-body_substance
+మంట	B-symptom
+అయితుందా?	O
+}
+
+{\intent	p: ఆ మంట అయితుంది.	ANSWER}
+{\slot
+ఆ	O
+మంట	B-symptom
+అయితుంది.	O
+}
+
+{\intent	d: ఒకసారి scanning రాస్తా Suramma	COMMIT}
+{\slot
+ఒకసారి	O
+scanning	B-mtest
+రాస్తా	O
+Suramma	B-name
+}
+
+{\intent	p: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: scanning రాస్తే చూద్దాం ఏమైనా ఇబ్బంది ఉందా? ఏంటి అనేది చూద్దాం	STATEMENT}
+{\slot
+scanning	B-mtest
+రాస్తే	O
+చూద్దాం	O
+ఏమైనా	O
+ఇబ్బంది	B-symptom
+ఉందా?	O
+ఏంటి	O
+అనేది	O
+చూద్దాం	O
+}
+
+{\intent	p: hmm, సరే.	ACK}
+{\slot
+hmm,	O
+సరే.	O
+}
+

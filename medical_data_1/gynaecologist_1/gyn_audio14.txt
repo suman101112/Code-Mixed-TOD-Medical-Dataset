@@ -1,0 +1,260 @@
+{\intent	d: क्या नाम है ?	INFO_REQUEST}
+{\slot
+क्या	O
+नाम	O
+है	O
+?	O
+}
+
+{\intent	p: Afsad Begum	ANSWER}
+{\slot
+Afsad	B-name
+Begum	I-name
+}
+
+{\intent	d: उम्र?	INFO_REQUEST}
+{\slot
+उम्र?	O
+}
+
+{\intent	p: 60, female	ANSWER}
+{\slot
+60,	B-age
+female	I-age
+}
+
+{\intent	d: 60 years	STATEMENT}
+{\slot
+60	B-age
+years	I-age
+}
+
+{\intent	d: बोलो क्या problem?	INFO_REQUEST}
+{\slot
+बोलो	O
+क्या	O
+problem?	O
+}
+
+{\intent	p: अभी यहाँ पे दर्द होता	ANSWER}
+{\slot
+अभी	B-time_period
+यहाँ	B-location
+पे	I-location
+दर्द	B-symptom
+होता	O
+}
+
+{\intent	d: पेट में दर्द होता?	INFO_REQUEST}
+{\slot
+पेट	B-body_part
+में	B-location
+दर्द	B-symptom
+होता.	O
+}
+
+{\intent	p: आ ये side दर्द पेट फूल के आता	ANSWER}
+{\slot
+आ	O
+ये	O
+side	B-location
+दर्द	B-symptom
+पेट	B-body_part
+फूल	B-symptom
+के	O
+आता	O
+}
+
+{\intent	d: रोज़ रहता या कभी कभी.	INFO_REQUEST}
+{\slot
+रोज़	B-time_period
+रहता	O
+या	O
+कभी	B-time_period
+कभी.	I-time_period
+}
+
+{\intent	p: रोज़ रहता. एक 2 महीनें से चालू है	ANSWER}
+{\slot
+रोज़	B-time_period
+रहता.	O
+एक	O
+2	B-time_period
+महीनें	I-time_period
+से	O
+चालू	O
+है	O
+}
+
+{\intent	d: खाना खाने के बाद रहता खाना खाने से पहले.	INFO_REQUEST}
+{\slot
+खाना	B-food_substance
+खाने	B-bodily_process
+के	O
+बाद	B-time_period
+रहता	O
+खाना	B-food_substance
+खाने	B-bodily_process
+से	O
+पहले.	B-time_period
+}
+
+{\intent	p: हमेशा ही रहता	ANSWER}
+{\slot
+हमेशा	B-time_period
+ही	O
+रहता	O
+}
+
+{\intent	d: हमेशा रहता	ACK}
+{\slot
+हमेशा	B-time_period
+रहता	O
+}
+
+{\intent	d: पेशाब साफ है?	INFO_REQUEST}
+{\slot
+पेशाब	B-body_substance
+साफ	B-normal
+है?	O
+}
+
+{\intent	d: पाखाना साफ है?	INFO_REQUEST}
+{\slot
+पाखाना	B-body_substance
+साफ	B-normal
+है?	O
+}
+
+{\intent	p: साफ है.	ANSWER}
+{\slot
+साफ	B-normal
+है.	O
+}
+
+{\intent	d: सब साफ़ है .	ACK}
+{\slot
+सब	O
+साफ़	B-normal
+है	O
+.	O
+}
+
+{\intent	d: सफेदी कुछ होता ?	INFO_REQUEST}
+{\slot
+सफेदी	B-symptom
+कुछ	O
+होता	O
+?	O
+}
+
+{\intent	p: कुछ नहीं	ANSWER}
+{\slot
+कुछ	O
+नहीं	B-negative
+}
+
+{\intent	d: महीने वारी बंद हो कर कितने साल ?	INFO_REQUEST}
+{\slot
+महीने	B-bodily_process
+वारी	I-bodily_process
+बंद	B-symptom
+हो	O
+कर	O
+कितने	O
+साल	B-time_period
+?	O
+}
+
+{\intent	p: 10 साल.	ANSWER}
+{\slot
+10	B-time_period
+साल.	I-time_period
+}
+
+{\intent	d: हिलने में या चलने में कुछ तकलीफ हो रहा क्या?	INFO_REQUEST}
+{\slot
+हिलने	B-bodily_process
+में	O
+या	O
+चलने	B-bodily_process
+में	O
+कुछ	O
+तकलीफ	B-symptom
+हो	O
+रहा	O
+क्या?	O
+}
+
+{\intent	p: बैठे तो तकलीफ सोए तो तकलीफ	ANSWER}
+{\slot
+बैठे	B-bodily_process
+तो	O
+तकलीफ	B-symptom
+सोए	B-bodily_process
+तो	O
+तकलीफ	B-symptom
+}
+
+{\intent	d: बहुत तकलीफ है	HOLD}
+{\slot
+बहुत	B-intensity
+तकलीफ	B-symptom
+है	O
+}
+
+{\intent	d: पेट के ऊपर के हिस्से में?	INFO_REQUEST}
+{\slot
+पेट	B-body_part
+के	O
+ऊपर	B-location
+के	O
+हिस्से	B-location
+में?	O
+}
+
+{\intent	d: थोड़ा खट्टे चीज खाये तो ज्यादा रहता?	INFO_REQUEST}
+{\slot
+थोड़ा	B-intensity
+खट्टे	B-food_substance
+चीज	I-food_substance
+खाये	B-bodily_process
+तो	O
+ज्यादा	B-intensity
+रहता?	O
+}
+
+{\intent	p: हमेशा वैसे ही	ANSWER}
+{\slot
+हमेशा	B-time_period
+वैसे	O
+ही	O
+}
+
+{\intent	d: पाखाना साफ ही रहता? रोज़ जाते?	INFO_REQUEST}
+{\slot
+पाखाना	B-body_substance
+साफ	B-normal
+ही	O
+रहता?	O
+रोज़	B-time_period
+जाते?	O
+}
+
+{\intent	p: हां रोज़	ANSWER}
+{\slot
+हां	B-positive
+रोज़	B-time_period
+}
+
+{\intent	d: कितने बच्चे?	INFO_REQUEST}
+{\slot
+कितने	O
+बच्चे?	B-familal
+}
+
+{\intent	p: 1.	ANSWER}
+{\slot
+1.	B-frequency
+}
+

@@ -1,0 +1,34 @@
+{\intent	d: 9	ANSWER}
+{\slot
+9	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: దగ్గు పొద్దున ఒక గంట సేపు, రాత్రి ఒక గంట సేపు అదేనా మీరు చెప్పేది	STATEMENT}
+{\slot
+దగ్గు	B-symptom
+పొద్దున	B-time_period
+ఒక	B-time_period
+గంట	I-time_period
+సేపు,	O
+రాత్రి	B-time_period
+ఒక	B-time_period
+గంట	I-time_period
+సేపు	O
+అదేనా	O
+మీరు	O
+చెప్పేది	O
+}
+
+{\intent	p: అవును sir non stop	ANSWER}
+{\slot
+అవును	B-positive
+sir	O
+non	O
+stop	O
+}
+

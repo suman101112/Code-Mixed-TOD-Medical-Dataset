@@ -1,0 +1,52 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 75, female	ANSWER}
+{\slot
+75,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది చెప్పమ్మా?	INFO_REQUEST}
+{\slot
+ఏమైంది	O
+చెప్పమ్మా?	O
+}
+
+{\intent	p: కళ్ళు ఎర్రగా అయితున్నయి, కంట్లోనుంచి నీళ్లు వస్తున్నాయి. బుసులు వస్తున్నాయి.	ANSWER}
+{\slot
+కళ్ళు	B-body_part
+ఎర్రగా	B-color
+అయితున్నయి,	B-symptom
+కంట్లోనుంచి	B-body_part
+నీళ్లు	B-food_substance
+వస్తున్నాయి.	O
+బుసులు	B-symptom
+వస్తున్నాయి.	O
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+

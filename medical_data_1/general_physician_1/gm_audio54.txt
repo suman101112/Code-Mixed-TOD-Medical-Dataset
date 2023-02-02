@@ -1,0 +1,115 @@
+{\intent	p: madam good afternoon madam	GREETING}
+{\slot
+madam	O
+good	O
+afternoon	O
+madam	O
+}
+
+{\intent	d: good afternoon అండి.	GREETING}
+{\slot
+good	O
+afternoon	O
+అండి.	O
+}
+
+{\intent	p: నా పేరు ram అండి.	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+ram	B-name
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	ACK}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: నాకు వచ్చేసి T4 వచ్చేసి 9.8 ఉంది	STATEMENT}
+{\slot
+నాకు	O
+వచ్చేసి	O
+T4	B-mtest
+వచ్చేసి	O
+9.8	B-mtest_value
+ఉంది	O
+}
+
+{\intent	p: TSH వచ్చేసి 5.95 ఉంది	STATEMENT}
+{\slot
+TSH	B-body_substance
+వచ్చేసి	O
+5.95	B-mtest_value
+ఉంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: నాది hyperthyroid ఆ? లేక ఏంటి madam?	INFO_REQUEST}
+{\slot
+నాది	O
+hyperthyroid	B-medical_condition
+ఆ?	O
+లేక	O
+ఏంటి	O
+madam?	O
+}
+
+{\intent	p: weight మాత్రం బాగా loss అవుతున్నాను	STATEMENT}
+{\slot
+weight	B-bm
+మాత్రం	O
+బాగా	B-intensity
+loss	B-symptom
+అవుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: present అయితే ఏ tablets వాడడం లేదు.	STATEMENT}
+{\slot
+present	B-time_period
+అయితే	O
+ఏ	O
+tablets	B-medicine
+వాడడం	O
+లేదు.	O
+}
+
+{\intent	d: T3, T4 ఎంత ఉన్నాయి అండి?	INFO_REQUEST}
+{\slot
+T3,	B-mtest
+T4	B-mtest
+ఎంత	O
+ఉన్నాయి	O
+అండి?	O
+}
+
+{\intent	p: T4 వచ్చేసి 9.8, TSH వచ్చేసి 5.95	ANSWER}
+{\slot
+T4	B-mtest
+వచ్చేసి	O
+9.8,	B-mtest_value
+TSH	B-mtest
+వచ్చేసి	O
+5.95	B-mtest_value
+}
+
+{\intent	d: 5.95 అంటున్నారు కాబట్టి its an hypothyroidism అండి.	DIAGNOSIS}
+{\slot
+5.95	B-mtest_value
+అంటున్నారు	O
+కాబట్టి	O
+its	O
+an	O
+hypothyroidism	B-medical_condition
+అండి.	O
+}
+

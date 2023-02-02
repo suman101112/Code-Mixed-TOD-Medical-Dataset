@@ -1,0 +1,154 @@
+{\intent	d: ఇదయితే మంచిగానే ఉంది బాబు,	STATEMENT}
+{\slot
+ఇదయితే	O
+మంచిగానే	O
+ఉంది	O
+బాబు,	O
+}
+
+{\intent	d: Tarun, దీనితో అయితే ఇబ్బంది ఏం లేదు	STATEMENT}
+{\slot
+Tarun,	B-name
+దీనితో	O
+అయితే	O
+ఇబ్బంది	B-symptom
+ఏం	O
+లేదు	B-negative
+}
+
+{\intent	d: ఒక్కొక్కసారి ఏమవుతది అంటే చిన్న చిన్న రాళ్ళు ఉంటే మనకు తెలియదు అన్నమాట	MEDICAL_EXPLANATION}
+{\slot
+ఒక్కొక్కసారి	O
+ఏమవుతది	O
+అంటే	O
+చిన్న	O
+చిన్న	O
+రాళ్ళు	B-body_substance
+ఉంటే	O
+మనకు	O
+తెలియదు	O
+అన్నమాట	O
+}
+
+{\intent	d: scanningలో ఒక్కొక్కసారి చిన్న చిన్న రాళ్ళు ఒక్కొక్కసారి ఏర్పడవు	MEDICAL_EXPLANATION}
+{\slot
+scanningలో	B-mtest
+ఒక్కొక్కసారి	O
+చిన్న	O
+చిన్న	O
+రాళ్ళు	B-body_substance
+ఒక్కొక్కసారి	O
+ఏర్పడవు	O
+}
+
+{\intent	d: మరి పెద్ద చెప్పుకునే అంతా ఇబ్బంది ఏం లేదు కానీ, ఇగ మొత్తానికి tablet ఒక 2 వారాల పాటు వాడితే మంచిది.	ACTION_DIR}
+{\slot
+మరి	O
+పెద్ద	O
+చెప్పుకునే	O
+అంతా	O
+ఇబ్బంది	O
+ఏం	O
+లేదు	O
+కానీ,	O
+ఇగ	O
+మొత్తానికి	O
+tablet	B-medicine
+ఒక	O
+2	B-time_period
+వారాల	I-time_period
+పాటు	O
+వాడితే	O
+మంచిది.	O
+}
+
+{\intent	d: సరే నా?	INFO_REQUEST}
+{\slot
+సరే	O
+నా?	O
+}
+
+{\intent	d: నీళ్లు బాగా తాగాలి సరేనా?	INFO_REQUEST}
+{\slot
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగాలి	B-bodily_process
+సరేనా?	O
+}
+
+{\intent	p: urine వస్తలేదు	STATEMENT}
+{\slot
+urine	B-body_substance
+వస్తలేదు	B-symptom
+}
+
+{\intent	d: urine అసలు రావట్లేదా?	INFO_REQUEST}
+{\slot
+urine	B-body_substance
+అసలు	O
+రావట్లేదా?	O
+}
+
+{\intent	d: చూక్క కూడా వస్తలేదా?	INFO_REQUEST}
+{\slot
+చూక్క	O
+కూడా	O
+వస్తలేదా?	O
+}
+
+{\intent	p: వస్తుంది	ANSWER}
+{\slot
+వస్తుంది	O
+}
+
+{\intent	d: ఆ అదే అదే, నీళ్లు బాగా తాగు,	ACTION_DIR}
+{\slot
+ఆ	O
+అదే	O
+అదే,	O
+నీళ్లు	B-food_substance
+బాగా	B-intensity
+తాగు,	B-bodily_process
+}
+
+{\intent	d: ఏమైనా చిన్న చిన్న రాళ్ళు ఉంటే అవి బయటికి వచ్చేస్తాయి	MEDICAL_EXPLANATION}
+{\slot
+ఏమైనా	O
+చిన్న	O
+చిన్న	O
+రాళ్ళు	B-body_substance
+ఉంటే	O
+అవి	O
+బయటికి	O
+వచ్చేస్తాయి	O
+}
+
+{\intent	d: tablets వాడితే, నీళ్లు తాగితే చిన్న రాళ్ళు ఉంటే కరిగిపోతాయి, బయటికి వచ్చేస్తాయి అవి.	MEDICAL_EXPLANATION}
+{\slot
+tablets	B-medicine
+వాడితే,	O
+నీళ్లు	B-food_substance
+తాగితే	B-bodily_process
+చిన్న	O
+రాళ్ళు	B-body_substance
+ఉంటే	O
+కరిగిపోతాయి,	B-normal
+బయటికి	O
+వచ్చేస్తాయి	O
+అవి.	O
+}
+
+{\intent	d: తొటకూర, పాలకూర, టమాటా అలాంటివి తినకు	ACTION_DIR}
+{\slot
+తొటకూర,	B-food_substance
+పాలకూర,	B-food_substance
+టమాటా	B-food_substance
+అలాంటివి	O
+తినకు	B-bodily_process
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+

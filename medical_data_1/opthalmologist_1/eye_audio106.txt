@@ -1,0 +1,91 @@
+{\intent	p: మా బాబు కళ్ళు ఎప్పుడు ఎర్రగా ఉంటాయి.	STATEMENT}
+{\slot
+మా	O
+బాబు	B-person
+కళ్ళు	B-body_part
+ఎప్పుడు	O
+ఎర్రగా	B-color
+ఉంటాయి.	O
+}
+
+{\intent	p: సంవత్సర కాలం నుంచి eye drops వాడుతున్నాము.	STATEMENT}
+{\slot
+సంవత్సర	B-time_period
+కాలం	I-time_period
+నుంచి	O
+eye	B-medicine
+drops	I-medicine
+వాడుతున్నాము.	O
+}
+
+{\intent	p: drops వేసుకున్నప్పుడు మాత్రమే ఈ redness తగ్గుతుంది.	STATEMENT}
+{\slot
+drops	B-medicine
+వేసుకున్నప్పుడు	O
+మాత్రమే	O
+ఈ	O
+redness	B-color
+తగ్గుతుంది.	B-symptom
+}
+
+{\intent	p: దీనికి permanent solution ఉందా?	STATEMENT}
+{\slot
+దీనికి	O
+permanent	B-treatment
+solution	I-treatment
+ఉందా?	O
+}
+
+{\intent	d: కళ్ళు ఎర్రబడుతున్నాయి కొంచం దురదలు కూడా ఉన్నాయి.	ACK}
+{\slot
+కళ్ళు	B-body_part
+ఎర్రబడుతున్నాయి	B-color
+కొంచం	O
+దురదలు	B-symptom
+కూడా	O
+ఉన్నాయి.	O
+}
+
+{\intent	d: మరి దానికి ఒక సంవత్సరం నుంచి drops వాడుతున్నారు.	ACK}
+{\slot
+మరి	O
+దానికి	O
+ఒక	B-time_period
+సంవత్సరం	I-time_period
+నుంచి	O
+drops	B-medicine
+వాడుతున్నారు.	O
+}
+
+{\intent	d: ఈ సంవత్సరం నుంచి చూక్కలు వాడినంత మట్టుకు బాగుంటుంది. చూక్కలు ఆపేస్తే మట్టుకు మళ్ళి కళ్ళు ఎర్రబడుతుంది.	ACK}
+{\slot
+ఈ	B-time_period
+సంవత్సరం	I-time_period
+నుంచి	O
+చూక్కలు	B-medicine
+వాడినంత	O
+మట్టుకు	O
+బాగుంటుంది.	B-normal
+చూక్కలు	B-medicine
+ఆపేస్తే	O
+మట్టుకు	O
+మళ్ళి	O
+కళ్ళు	B-body_part
+ఎర్రబడుతుంది.	B-symptom
+}
+
+{\intent	d: ఇది allergy.	DIAGNOSIS}
+{\slot
+ఇది	O
+allergy.	B-medical_condition
+}
+
+{\intent	d: allergy వల్ల ఈ రకంగా జరుగుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+allergy	B-medical_condition
+వల్ల	O
+ఈ	O
+రకంగా	O
+జరుగుతుంది.	O
+}
+

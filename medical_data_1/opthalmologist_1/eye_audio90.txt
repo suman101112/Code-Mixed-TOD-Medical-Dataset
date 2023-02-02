@@ -1,0 +1,182 @@
+{\intent	p: doctor గారు నా వయస్సు 48 సంవత్సరాలు.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నా	O
+వయస్సు	O
+48	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: గత 8 సంవత్సరాలుగా diabetes ఉంది.	STATEMENT}
+{\slot
+గత	O
+8	B-time_period
+సంవత్సరాలుగా	I-time_period
+diabetes	B-medical_condition
+ఉంది.	O
+}
+
+{\intent	p: సాధారనంగా diabetes కళ్ళమీద ప్రభావాన్ని చూపిస్తుంది అంటారు.	STATEMENT}
+{\slot
+సాధారనంగా	O
+diabetes	B-medical_condition
+కళ్ళమీద	B-body_part
+ప్రభావాన్ని	O
+చూపిస్తుంది	O
+అంటారు.	O
+}
+
+{\intent	p: ప్రస్తుతానికి నా కంటి చూపు బాగానే ఉంది.	STATEMENT}
+{\slot
+ప్రస్తుతానికి	O
+నా	O
+కంటి	B-body_part
+చూపు	B-bodily_process
+బాగానే	B-normal
+ఉంది.	O
+}
+
+{\intent	p: నేను ఎలాంటి జగ్రత్తలు తీసుకోవాలి?	INFO_REQUEST}
+{\slot
+నేను	O
+ఎలాంటి	O
+జగ్రత్తలు	O
+తీసుకోవాలి?	O
+}
+
+{\intent	d: mainగా diabetes controlలో ఉండాలి.	MEDICAL_EXPLANATION}
+{\slot
+mainగా	O
+diabetes	B-medical_condition
+controlలో	B-normal
+ఉండాలి.	O
+}
+
+{\intent	d: controlలో ఉండకపోతే కనులు affect అయినట్లే bodyలో ఉన్న అన్నీ parts effect అయిపోతాయి	MEDICAL_EXPLANATION}
+{\slot
+controlలో	B-normal
+ఉండకపోతే	B-negative
+కనులు	B-body_part
+affect	B-symptom
+అయినట్లే	O
+bodyలో	B-body_part
+ఉన్న	O
+అన్నీ	O
+parts	B-body_part
+effect	B-symptom
+అయిపోతాయి	O
+}
+
+{\intent	d: mainగా ఏంటి అంటే ఈ eye checkup చేసినప్పుడు అందులో retina examination అనేది చేస్తాము అన్న మాట.	MEDICAL_EXPLANATION}
+{\slot
+mainగా	O
+ఏంటి	O
+అంటే	O
+ఈ	O
+eye	B-mtest
+checkup	I-mtest
+చేసినప్పుడు	O
+అందులో	O
+retina	B-mtest
+examination	I-mtest
+అనేది	O
+చేస్తాము	O
+అన్న	O
+మాట.	O
+}
+
+{\intent	d: దాని fundus eye examination అని అంటారు.	MEDICAL_EXPLANATION}
+{\slot
+దాని	O
+fundus	B-mtest
+eye	I-mtest
+examination	I-mtest
+అని	O
+అంటారు.	O
+}
+
+{\intent	d: usualగా physician ఎప్పుడైతే ఎవరైతే diabetes specialist ఉన్నాడో, వాళ్ళు ఎవరైతే ఆ patientకి treatment ఇస్తున్నావో diabetesకు వాళ్ళు usualగా doctor eye specialistకు పంపిస్తూ ఉంటారు.	MEDICAL_EXPLANATION}
+{\slot
+usualగా	O
+physician	B-medical_professional
+ఎప్పుడైతే	O
+ఎవరైతే	O
+diabetes	B-medical_professional
+specialist	I-health_professional
+ఉన్నాడో,	O
+వాళ్ళు	O
+ఎవరైతే	O
+ఆ	O
+patientకి	B-person
+treatment	B-treatment
+ఇస్తున్నావో	O
+diabetesకు	B-medical_condition
+వాళ్ళు	O
+usualగా	O
+doctor	B-medical_professional
+eye	B-medical_professional
+specialistకు	I-health_professional
+పంపిస్తూ	O
+ఉంటారు.	O
+}
+
+{\intent	d: ఎందుకంటే eye specialist ఆ retinaలో ఉన్న vesselsను directగా చూడాగలుగుతాడు.	MEDICAL_EXPLANATION}
+{\slot
+ఎందుకంటే	O
+eye	B-medical_professional
+specialist	I-health_professional
+ఆ	O
+retinaలో	B-body_part
+ఉన్న	O
+vesselsను	B-body_part
+directగా	O
+చూడాగలుగుతాడు.	O
+}
+
+{\intent	d: కాబట్టి retina effect అయిందంటే body లోపల ఉన్న parts kidneys కానివ్వండి ఇంకా వేరే parts కానీ effect అయ్యే అవకాశం ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+కాబట్టి	O
+retina	B-body_part
+effect	O
+అయిందంటే	O
+body	B-body_part
+లోపల	O
+ఉన్న	O
+parts	B-body_part
+kidneys	B-body_part
+కానివ్వండి	O
+ఇంకా	O
+వేరే	O
+parts	B-body_part
+కానీ	O
+effect	O
+అయ్యే	O
+అవకాశం	O
+ఉంటది.	O
+}
+
+{\intent	d: కాబట్టి mainగా మనం తీసుకోవలసిన జగ్రత్త ఏంటి అంటే every year మనకు diabetes ఉన్నది అని తెలిసిన తరువాత every year eye checkup చేయించుకోవాలి.	MEDICAL_EXPLANATION}
+{\slot
+కాబట్టి	O
+mainగా	O
+మనం	O
+తీసుకోవలసిన	O
+జగ్రత్త	O
+ఏంటి	O
+అంటే	O
+every	B-time_period
+year	I-time_period
+మనకు	O
+diabetes	B-medical_condition
+ఉన్నది	O
+అని	O
+తెలిసిన	O
+తరువాత	O
+every	I-time_period
+year	B-time_period
+eye	B-mtest
+checkup	I-mtest
+చేయించుకోవాలి.	O
+}
+

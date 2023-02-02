@@ -1,0 +1,320 @@
+{\intent	d: ఏం పేరు మా?	INFO_REQUEST}
+{\slot
+ఏం	O
+పేరు	O
+మా?	O
+}
+
+{\intent	p: Sravani madam	ANSWER}
+{\slot
+Sravani	B-name
+madam	O
+}
+
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	p: 23	ANSWER}
+{\slot
+23	B-age
+}
+
+{\intent	d: ఏంటి నీ problem?	INFO_REQUEST}
+{\slot
+ఏంటి	O
+నీ	O
+problem?	O
+}
+
+{\intent	p: కడుపు నొప్పి లేస్తుంది madam అప్పుడప్పుడు 2 months నుంచి date రాలేదు.	ANSWER}
+{\slot
+కడుపు	B-body_part
+నొప్పి	B-symptom
+లేస్తుంది	O
+madam	O
+అప్పుడప్పుడు	O
+2	B-time_period
+months	I-time_period
+నుంచి	O
+date	B-time_period
+రాలేదు.	B-negative
+}
+
+{\intent	p: delivery అయి 6 months అయితుంది.	STATEMENT}
+{\slot
+delivery	B-bodily_process
+అయి	O
+6	B-time_period
+months	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: ఎక్కడ ఉంటుందమ్మా pain? పైన కడుపులోనా కింద కడుపులోనా?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+ఉంటుందమ్మా	O
+pain?	B-symptom
+పైన	B-location
+కడుపులోనా	B-body_part
+కింద	B-location
+కడుపులోనా?	B-body_part
+}
+
+{\intent	p: కింద	ANSWER}
+{\slot
+కింద	B-location
+}
+
+{\intent	d: కింద కడుపులోనే	ACK}
+{\slot
+కింద	B-location
+కడుపులోనే	B-body_part
+}
+
+{\intent	d: రోజూ ఉంటుందా నొప్పి అప్పుడప్పుడు ఆ?	INFO_REQUEST}
+{\slot
+రోజూ	B-time_period
+ఉంటుందా	O
+నొప్పి	B-symptom
+అప్పుడప్పుడు	B-time_period
+ఆ?	O
+}
+
+{\intent	p: అప్పుడప్పుడే	ANSWER}
+{\slot
+అప్పుడప్పుడే	B-time_period
+}
+
+{\intent	d: బాబు వయస్సు?	INFO_REQUEST}
+{\slot
+బాబు	B-person
+వయస్సు?	O
+}
+
+{\intent	p: 6 నెలలు	ANSWER}
+{\slot
+6	B-time_period
+నెలలు	I-time_period
+}
+
+{\intent	d: కాకుండా అయిపోయిందా?	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+అయిపోయిందా?	B-treatment
+}
+
+{\intent	p: ఇదే first బాబు	ANSWER}
+{\slot
+ఇదే	O
+first	B-frequency
+బాబు	B-person
+}
+
+{\intent	d: first బాబు	ACK}
+{\slot
+first	B-frequency
+బాబు	B-person
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: కాకుండా చేయించుకోలే	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+చేయించుకోలే	B-negative
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	d: అంటే first 3 months, period, bleeding లాగా అయ్యి తరువాత మళ్ళ నెలే రాలేదా?	INFO_REQUEST}
+{\slot
+అంటే	O
+first	B-frequency
+3	B-time_period
+months,	I-time_period
+period,	B-bodily_process
+bleeding	B-medical_condition
+లాగా	O
+అయ్యి	O
+తరువాత	B-time_period
+మళ్ళ	O
+నెలే	B-bodily_process
+రాలేదా?	B-negative
+}
+
+{\intent	p: delivery తర్వాత మళ్ళ 2 నెలలు వచ్చింది	ANSWER}
+{\slot
+delivery	B-bodily_process
+తర్వాత	B-time_period
+మళ్ళ	O
+2	B-time_period
+నెలలు	I-time_period
+వచ్చింది	O
+}
+
+{\intent	d: మరి pregnant ఆ?	INFO_REQUEST}
+{\slot
+మరి	O
+pregnant	B-bodily_process
+ఆ?	O
+}
+
+{\intent	p: test చేసుకున్నా madam, రాలేదు.	ANSWER}
+{\slot
+test	B-mtest
+చేసుకున్నా	O
+madam,	O
+రాలేదు.	B-negative
+}
+
+{\intent	d: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+
+{\intent	d: ఇంతకు ముందు ఇప్పుడు correct cycles ఆ?	INFO_REQUEST}
+{\slot
+ఇంతకు	O
+ముందు	O
+ఇప్పుడు	O
+correct	B-normal
+cycles	B-bodily_process
+ఆ?	O
+}
+
+{\intent	p: umm correct	ANSWER}
+{\slot
+umm	O
+correct	B-normal
+}
+
+{\intent	d: పాపకు పలిస్తున్నావా?	INFO_REQUEST}
+{\slot
+పాపకు	B-person
+పలిస్తున్నావా?	O
+}
+
+{\intent	p: ఆ ఇస్తున్నా madam	ANSWER}
+{\slot
+ఆ	O
+ఇస్తున్నా	B-positive
+madam	O
+}
+
+{\intent	d: కాకుండా జగ్రత్త తీసుకోవాలి కదా మళ్ళ మళ్ళ pregnancies రాకుండా?	INFO_REQUEST}
+{\slot
+కాకుండా	O
+జగ్రత్త	O
+తీసుకోవాలి	O
+కదా	O
+మళ్ళ	O
+మళ్ళ	O
+pregnancies	B-bodily_process
+రాకుండా?	B-negative
+}
+
+{\intent	d: ఎప్పుడన్నా ఇదే problem period రాలేదంటే మళ్ళ main భయం pregnancy ఆ అనిపిస్తది	ANSWER}
+{\slot
+ఎప్పుడన్నా	O
+ఇదే	O
+problem	O
+period	B-bodily_process
+రాలేదంటే	B-negative
+మళ్ళ	O
+main	O
+భయం	B-symptom
+pregnancy	B-bodily_process
+ఆ	O
+అనిపిస్తది	O
+}
+
+{\intent	d: ఇంత తొందరగా రాకూడదు కదా pregnancy	MEDICAL_EXPLANATION}
+{\slot
+ఇంత	O
+తొందరగా	B-time_period
+రాకూడదు	O
+కదా	O
+pregnancy	B-bodily_process
+}
+
+{\intent	p: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: జగ్రత్తలు తీసుకున్నారా?	INFO_REQUEST}
+{\slot
+జగ్రత్తలు	O
+తీసుకున్నారా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	O
+madam	O
+}
+
+{\intent	d: భార్య భర్తలు కలిసే ఉంటున్నారా?	INFO_REQUEST}
+{\slot
+భార్య	O
+భర్తలు	O
+కలిసే	O
+ఉంటున్నారా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: urine test చేసుకుంటే మాత్రం లేదని వచ్చింది	STATEMENT}
+{\slot
+urine	B-mtest
+test	I-mtest
+చేసుకుంటే	O
+మాత్రం	O
+లేదని	O
+వచ్చింది	O
+}
+
+{\intent	d: correct ఏ నా?	INFO_REQUEST}
+{\slot
+correct	O
+ఏ	O
+నా?	O
+}
+
+{\intent	p: ఆ లేదనే వచ్చింది.	ANSWER}
+{\slot
+ఆ	O
+లేదనే	O
+వచ్చింది.	O
+}
+
+{\intent	d: సరే పడుకో చూద్దాం	ACTION_DIR}
+{\slot
+సరే	O
+పడుకో	O
+చూద్దాం	O
+}
+
+{\intent	p: 3 days back కూడా చేసుకున్నా. ఏం రాలేదు madam	STATEMENT}
+{\slot
+3	B-time_period
+days	B-time_period
+back	B-time_period
+కూడా	O
+చేసుకున్నా.	O
+ఏం	O
+రాలేదు	B-negative
+madam	O
+}
+

@@ -1,0 +1,98 @@
+{\intent	p: doctor గారు నాకు కళ్ళ కింది చర్మం ఒదులుగా ముడతలుగా ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+నాకు	O
+కళ్ళ	B-body_part
+కింది	B-location
+చర్మం	B-body_part
+ఒదులుగా	B-symptom
+ముడతలుగా	B-symptom
+ఉంది.	O
+}
+
+{\intent	p: దీనికి surgeries ఏమైనా ఉన్నాయా? లేదా ఇతర చికిత్సలేమైనా ఉన్నాయా తెలియచేయండి.	INFO_REQUEST}
+{\slot
+దీనికి	O
+surgeries	B-treatment
+ఏమైనా	O
+ఉన్నాయా?	O
+లేదా	O
+ఇతర	O
+చికిత్సలేమైనా	B-treatment
+ఉన్నాయా	O
+తెలియచేయండి.	O
+}
+
+{\intent	d: under eye bags, చాలా commonగా ఉంటుంది ఈ under eye bags.	STATEMENT}
+{\slot
+under	B-medical_condition
+eye	I-medical_condition
+bags,	I-medical_condition
+చాలా	B-intensity
+commonగా	O
+ఉంటుంది	O
+ఈ	O
+under	B-medical_condition
+eye	I-medical_condition
+bags.	I-medical_condition
+}
+
+{\intent	d: ఈ under eye bags కి కారణాలు అనేకాలు.	MEDICAL_EXPLANATION}
+{\slot
+ఈ	O
+under	B-medical_condition
+eye	I-medical_condition
+bags	I-medical_condition
+కి	O
+కారణాలు	O
+అనేకాలు.	O
+}
+
+{\intent	d: ఏంటంటే కొంతమందికి కళ్ళు అస్తమానం నలుపుకోవడం మూలంగా కూడా ఈ bags form అవుతాయి.	MEDICAL_EXPLANATION}
+{\slot
+ఏంటంటే	O
+కొంతమందికి	O
+కళ్ళు	B-body_part
+అస్తమానం	O
+నలుపుకోవడం	B-symptom
+మూలంగా	O
+కూడా	O
+ఈ	O
+bags	B-medical_condition
+form	B-symptom
+అవుతాయి.	O
+}
+
+{\intent	d: ఇంకొకటి important thing ఏంటీంటే లోపల కొన్ని జబ్బులు ఉంటాయి, kidney కి సంబంధించిన జబ్బులు, heartకి సంబంధించిన జబ్బులు ఈ జబ్బుల మూలంగా కూడా కళ్ళకింద bags అంటే నీటితో నీరు చేరుతుంది అన్నమాట కళ్ళ కింద.	MEDICAL_EXPLANATION}
+{\slot
+ఇంకొకటి	O
+important	O
+thing	O
+ఏంటీంటే	O
+లోపల	O
+కొన్ని	O
+జబ్బులు	B-medical_condition
+ఉంటాయి,	O
+kidney	B-body_part
+కి	O
+సంబంధించిన	O
+జబ్బులు,	B-medical_condition
+heartకి	B-body_part
+సంబంధించిన	O
+జబ్బులు	B-medical_condition
+ఈ	O
+జబ్బుల	B-medical_condition
+మూలంగా	O
+కూడా	O
+కళ్ళకింద	B-body_part
+bags	B-medical_condition
+అంటే	O
+నీటితో	B-food_substance
+నీరు	I-food_substance
+చేరుతుంది	B-symptom
+అన్నమాట	O
+కళ్ళ	B-body_part
+కింద.	B-location
+}
+

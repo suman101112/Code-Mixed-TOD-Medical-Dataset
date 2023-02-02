@@ -1,0 +1,127 @@
+{\intent	p: thyroid వచ్చింది అండి.	STATEMENT}
+{\slot
+thyroid	B-medical_condition
+వచ్చింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే అంటే నేను tabletలు use చేస్తా ఉన్న 100mg	STATEMENT}
+{\slot
+అయితే	O
+అంటే	O
+నేను	O
+tabletలు	B-medicine
+use	O
+చేస్తా	O
+ఉన్న	O
+100mg	B-medicine_dose
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే ఏమైతాందంటే నాకు period సరిగ్గా వస్తాలేదండి.	STATEMENT}
+{\slot
+అయితే	O
+ఏమైతాందంటే	O
+నాకు	O
+period	B-bodily_process
+సరిగ్గా	O
+వస్తాలేదండి.	B-symptom
+}
+
+{\intent	d: ok అమ్మా, fine	ACK}
+{\slot
+ok	O
+అమ్మా,	O
+fine	O
+}
+
+{\intent	d: అంటే, levels correctగా ఉంటున్నాయా? 100 వాడుతున్నా కూడా?	INFO_REQUEST}
+{\slot
+అంటే,	O
+levels	O
+correctగా	O
+ఉంటున్నాయా?	O
+100	B-medicine_dose
+వాడుతున్నా	O
+కూడా?	O
+}
+
+{\intent	p: ఆ levels correct ఏ నండీ madam	ANSWER}
+{\slot
+ఆ	O
+levels	O
+correct	B-normal
+ఏ	O
+నండీ	O
+madam	O
+}
+
+{\intent	p: month వచ్చినప్పుడు బాగా కావడం లేదు madam	STATEMENT}
+{\slot
+month	B-time_period
+వచ్చినప్పుడు	O
+బాగా	B-intensity
+కావడం	B-symptom
+లేదు	I-symptom
+madam	O
+}
+
+{\intent	d: అంటే ఒకటమ్మా, irregular periodsకి thyroid ఒక reason గా చెప్తూ ఉంటాం	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+ఒకటమ్మా,	O
+irregular	B-symptom
+periodsకి	I-symptom
+thyroid	B-medical_condition
+ఒక	O
+reason	O
+గా	O
+చెప్తూ	O
+ఉంటాం	B-time_period
+}
+
+{\intent	d: కానీ thyroid తో పాటుగా చాలా reasons ఉంటూ ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+కానీ	O
+thyroid	B-medical_condition
+తో	O
+పాటుగా	O
+చాలా	O
+reasons	O
+ఉంటూ	O
+ఉంటాయి.	O
+}
+
+{\intent	d: so మీకు irregular periods రావటం అనేది దేనివల్ల అనేది ఒకసారి abdomen scan కూడా చేయించండి.	ACTION_DIR}
+{\slot
+so	O
+మీకు	O
+irregular	B-symptom
+periods	B-bodily_process
+రావటం	O
+అనేది	O
+దేనివల్ల	O
+అనేది	O
+ఒకసారి	O
+abdomen	B-body_part
+scan	B-mtest
+కూడా	O
+చేయించండి.	O
+}
+
+{\intent	d: thyroidని controlలో పెట్టుకోండి.	ACTION_DIR}
+{\slot
+thyroidని	B-medical_condition
+controlలో	B-normal
+పెట్టుకోండి.	O
+}
+

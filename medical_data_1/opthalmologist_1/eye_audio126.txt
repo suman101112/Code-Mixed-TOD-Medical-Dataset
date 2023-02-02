@@ -1,0 +1,187 @@
+{\intent	p: doctor గారు చిన్నప్పటి నుంచి నాకు మెల్ల ఉంది.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు	O
+చిన్నప్పటి	B-time_period
+నుంచి	O
+నాకు	O
+మెల్ల	B-medical_condition
+ఉంది.	I-medical_condition
+}
+
+{\intent	p: దానితో పాటు కనుగుడ్డు అటు ఇటు కదులుతుంది .	STATEMENT}
+{\slot
+దానితో	O
+పాటు	O
+కనుగుడ్డు	B-body_part
+అటు	B-location
+ఇటు	I-location
+కదులుతుంది	B-symptom
+.	O
+}
+
+{\intent	p: మెడ కూడా ఊగూతున్నట్లు ఉంటుంది.	STATEMENT}
+{\slot
+మెడ	B-body_part
+కూడా	O
+ఊగూతున్నట్లు	B-symptom
+ఉంటుంది.	O
+}
+
+{\intent	p: surgery ద్వారా ఇది నయమవుతుందా?	INFO_REQUEST}
+{\slot
+surgery	B-treatment
+ద్వారా	O
+ఇది	O
+నయమవుతుందా?	O
+}
+
+{\intent	p: తెలియచేయండి.	ACTION_DIR}
+{\slot
+తెలియచేయండి.	O
+}
+
+{\intent	d: మెల్ల కన్ను పుట్టుకతోనే వచ్చినవి లేదా ఒక్కొక్క సారి high fevers వచ్చినప్పుడు కూడా మెల్లకన్ను రావడం జరుగుతా ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+మెల్ల	B-medical_condition
+కన్ను	I-medical_condition
+పుట్టుకతోనే	B-time_period
+వచ్చినవి	O
+లేదా	O
+ఒక్కొక్క	O
+సారి	O
+high	B-medical_condition
+fevers	I-medical_condition
+వచ్చినప్పుడు	O
+కూడా	O
+మెల్లకన్ను	B-medical_condition
+రావడం	O
+జరుగుతా	O
+ఉంటది.	O
+}
+
+{\intent	d: అలాగే కన్ను ఒక స్తిరంగా ఉండదు అటు ఇటు ఇట్ల movements ఉంటాయి అన్నారు కదా దాని nystagmus అంటాము.	STATEMENT}
+{\slot
+అలాగే	O
+కన్ను	B-body_part
+ఒక	O
+స్తిరంగా	B-bodily_process
+ఉండదు	I-negative
+అటు	B-location
+ఇటు	I-location
+ఇట్ల	O
+movements	O
+ఉంటాయి	O
+అన్నారు	O
+కదా	O
+దాని	O
+nystagmus	B-symptom
+అంటాము.	O
+}
+
+{\intent	d: అది కంటి నరాలు గనక tissue గనక పూర్తిగా form కాకపోతే congenital defect అన్నమాట.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+కంటి	B-body_part
+నరాలు	I-body_part
+గనక	O
+tissue	B-body_part
+గనక	O
+పూర్తిగా	O
+form	O
+కాకపోతే	O
+congenital	B-medical_condition
+defect	I-medical_condition
+అన్నమాట.	O
+}
+
+{\intent	d: so అట్లాంటప్పుడు కన్ను మనందరం ఒక దృష్టి నిలపడానికి మనం అందరం నిలపగలుగుతాం so మీ case లో కన్ను మీరు focus చేయడం జరగదు కన్ను vibrate అయితూ ఉంటది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అట్లాంటప్పుడు	O
+కన్ను	B-body_part
+మనందరం	O
+ఒక	O
+దృష్టి	B-bodily_process
+నిలపడానికి	I-bodily_process
+మనం	O
+అందరం	O
+నిలపగలుగుతాం	O
+so	O
+మీ	O
+case	O
+లో	O
+కన్ను	B-body_part
+మీరు	O
+focus	B-symptom
+చేయడం	O
+జరగదు	I-negative
+కన్ను	B-body_part
+vibrate	B-symptom
+అయితూ	O
+ఉంటది.	O
+}
+
+{\intent	d: వీటికి surgery ఉంది.	STATEMENT}
+{\slot
+వీటికి	O
+surgery	B-treatment
+ఉంది.	O
+}
+
+{\intent	d: అలాగే squint ఉండడం మూలానే మీరు posture అంటే neck, head turn కానీ, face turn కానీ చేసి చూస్తుండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+అలాగే	O
+squint	B-medical_condition
+ఉండడం	O
+మూలానే	O
+మీరు	O
+posture	O
+అంటే	O
+neck,	B-body_part
+head	I-body_part
+turn	B-symptom
+కానీ,	O
+face	B-body_part
+turn	B-symptom
+కానీ	O
+చేసి	O
+చూస్తుండొచ్చు.	O
+}
+
+{\intent	d: అది చిన్నప్పుడే brainకి processing అవుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+చిన్నప్పుడే	B-time_period
+brainకి	B-body_part
+processing	O
+అవుతుంది.	O
+}
+
+{\intent	d: so అలా చూడాడం వలన double vision ఉంటది కాబట్టి ఆ postureని adapt చేస్తూ ఉంటారు.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+అలా	O
+చూడాడం	O
+వలన	O
+double	B-medical_condition
+vision	I-medical_condition
+ఉంటది	O
+కాబట్టి	O
+ఆ	O
+postureని	O
+adapt	O
+చేస్తూ	O
+ఉంటారు.	O
+}
+
+{\intent	d: so వీటికి మనం surgicalగా set చేయొచ్చు.	STATEMENT}
+{\slot
+so	O
+వీటికి	O
+మనం	O
+surgicalగా	B-treatment
+set	O
+చేయొచ్చు.	O
+}
+

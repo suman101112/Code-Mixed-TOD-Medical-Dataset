@@ -1,0 +1,140 @@
+{\intent	p1: 7 months	STATEMENT}
+{\slot
+7	B-age
+months	I-age
+}
+
+{\intent	d: माँ का दूध bottle का ?	INFO_REQUEST}
+{\slot
+माँ	B-person
+का	O
+दूध	B-food_substance
+bottle	O
+का	O
+?	O
+}
+
+{\intent	p1: मेरा ही	ANSWER}
+{\slot
+मेरा	O
+ही	O
+}
+
+{\intent	d: 7 months complete है , 9 kgs	STATEMENT}
+{\slot
+7	B-age
+months	I-age
+complete	O
+है	O
+,	O
+9	B-bm
+kgs	I-bm
+}
+
+{\intent	d: अभी तकलीफ क्या है	INFO_REQUEST}
+{\slot
+अभी	B-time_period
+तकलीफ	O
+क्या	O
+है	O
+}
+
+{\intent	p1: सर्दी है और खांसी है	ANSWER}
+{\slot
+सर्दी	B-medical_condition
+है	O
+और	O
+खांसी	B-symptom
+है	O
+}
+
+{\intent	p2: रात में सोने में बहुत सता रहे	STATEMENT}
+{\slot
+रात	B-time_period
+में	O
+सोने	B-bodily_process
+में	O
+बहुत	B-intensity
+सता	B-symptom
+रहे	O
+}
+
+{\intent	p1: चावल का खिला रहे	STATEMENT}
+{\slot
+चावल	B-food_substance
+का	O
+खिला	B-bodily_process
+रहे	O
+}
+
+{\intent	p2: पेट में दर्द बोल रहा sir.	STATEMENT}
+{\slot
+पेट	B-body_part
+में	O
+दर्द	B-symptom
+बोल	O
+रहा	O
+sir.	O
+}
+
+{\intent	d: बच्चोंको umm बोलके खीलता पेशाब के पहले, वो normalही चु	MEDICAL_EXPLANATION}
+{\slot
+बच्चोंको	B-person
+umm	O
+बोलके	O
+खीलता	O
+पेशाब	B-body_substance
+के	O
+पहले,	O
+वो	O
+normalही	B-normal
+चु	O
+}
+
+{\intent	p1: सर्दी एक है , खांस रहा नींद में	STATEMENT}
+{\slot
+सर्दी	B-medical_condition
+एक	O
+है	O
+,	O
+खांस	B-symptom
+रहा	O
+नींद	B-bodily_process
+में	O
+}
+
+{\intent	d: इनको पूरा टीका दिलाया	INFO_REQUEST}
+{\slot
+इनको	O
+पूरा	O
+टीका	B-medicine
+दिलाया	O
+}
+
+{\intent	p1: हां , 10 months का है	ANSWER}
+{\slot
+हां	O
+,	O
+10	B-age
+months	I-age
+का	O
+है	O
+}
+
+{\intent	p2: बुखार भी चढ़ रहा sir	STATEMENT}
+{\slot
+बुखार	B-symptom
+भी	O
+चढ़	O
+रहा	O
+sir	O
+}
+
+{\intent	d: उसके लिए भी लिखा	COMMIT}
+{\slot
+उसके	O
+लिए	O
+भी	O
+लिखा	O
+}
+

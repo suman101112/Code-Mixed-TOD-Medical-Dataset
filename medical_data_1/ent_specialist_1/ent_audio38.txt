@@ -1,0 +1,91 @@
+{\intent	p: అయితే మా అబ్బయిని చూపించిన మొన్నటినే	STATEMENT}
+{\slot
+అయితే	O
+మా	O
+అబ్బయిని	B-familal
+చూపించిన	O
+మొన్నటినే	B-time_period
+}
+
+{\intent	d: mm	ACK}
+{\slot
+mm	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: mm	ACK}
+{\slot
+mm	O
+}
+
+{\intent	p: అయితే ఈ పెదాలు పగులుతున్నాయి sir.	STATEMENT}
+{\slot
+అయితే	O
+ఈ	O
+పెదాలు	B-body_part
+పగులుతున్నాయి	B-symptom
+sir.	O
+}
+
+{\intent	p: మొన్న ఆ medicine రాసారు కదా, తగ్గిందండీ మొత్తం తగ్గింది	STATEMENT}
+{\slot
+మొన్న	B-time_period
+ఆ	O
+medicine	B-medicine
+రాసారు	O
+కదా,	O
+తగ్గిందండీ	B-normal
+మొత్తం	O
+తగ్గింది	B-normal
+}
+
+{\intent	d: పేరు ఏంది నీది?	INFO_REQUEST}
+{\slot
+పేరు	O
+ఏంది	O
+నీది?	O
+}
+
+{\intent	p: Arjun	STATEMENT}
+{\slot
+Arjun	B-name
+}
+
+{\intent	d: ఎంత వయస్సు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయస్సు?	O
+}
+
+{\intent	p: 5.5 sir 5.5	ANSWER}
+{\slot
+5.5	B-age
+sir	O
+5.5	B-age
+}
+
+{\intent	p: దెగ్గరికి వెళ్ళు బాబు.	ACTION_DIR}
+{\slot
+దెగ్గరికి	O
+వెళ్ళు	O
+బాబు.	O
+}
+
+{\intent	d: పెదాలు పగులుతున్నాయి.	ACK}
+{\slot
+పెదాలు	B-body_part
+పగులుతున్నాయి.	B-symptom
+}
+
+{\intent	p: ఆ పెదాలు పగులుతున్నాయి sir.	ACK}
+{\slot
+ఆ	O
+పెదాలు	B-body_part
+పగులుతున్నాయి	B-symptom
+sir.	O
+}
+

@@ -1,0 +1,168 @@
+{\intent	d: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండమ్మా Alekhya	ACTION_DIR}
+{\slot
+చెప్పండమ్మా	O
+Alekhya	B-name
+}
+
+{\intent	p: నా పేరు Alekhya అండి	STATEMENT}
+{\slot
+నా	O
+పేరు	O
+Alekhya	B-name
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: ఆ మా husbandది కి 2 months నుంచి కొంచం gas trouble	STATEMENT}
+{\slot
+ఆ	O
+మా	O
+husbandది	B-familal
+కి	O
+2	B-time_period
+months	B-time_period
+నుంచి	O
+కొంచం	O
+gas	B-medical_condition
+trouble	I-medical_condition
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇబ్బంది ఏంటి?	ACTION_DIR}
+{\slot
+ఇబ్బంది	B-symptom
+ఏంటి?	O
+}
+
+{\intent	p: Hello?	SNU}
+{\slot
+Hello?	O
+}
+
+{\intent	d: ఇబ్బంది ఏంటి, gas trouble అంటే ఇబ్బంది ఏముంది?	REPEAT_REPHRASE}
+{\slot
+ఇబ్బంది	B-symptom
+ఏంటి,	O
+gas	B-medical_condition
+trouble	I-medical_condition
+అంటే	O
+ఇబ్బంది	B-symptom
+ఏముంది?	O
+}
+
+{\intent	p: ఆ scan చేయించుకున్నారు, scan చేయించుకుంటే కొంచం swelling ఉంది	STATEMENT}
+{\slot
+ఆ	O
+scan	B-mtest
+చేయించుకున్నారు,	O
+scan	B-mtest
+చేయించుకుంటే	O
+కొంచం	O
+swelling	B-symptom
+ఉంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: diet follow అవ్వాలి అని చెప్పారండీ.	STATEMENT}
+{\slot
+diet	B-food_substance
+follow	O
+అవ్వాలి	O
+అని	O
+చెప్పారండీ.	O
+}
+
+{\intent	d: faty liver ఉందని చెప్పినారు	STATEMENT}
+{\slot
+faty	B-medical_condition
+liver	B-medical_condition
+ఉందని	O
+చెప్పినారు	O
+}
+
+{\intent	d: అవునా?	INFO_REQUEST}
+{\slot
+అవునా?	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	p: కొంచం ఇబ్బందిగా ఉంది, తేణుపు రావడం అలా ఉంది	STATEMENT}
+{\slot
+కొంచం	O
+ఇబ్బందిగా	B-symptom
+ఉంది,	O
+తేణుపు	B-symptom
+రావడం	O
+అలా	O
+ఉంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: కడుపు ఉబ్బరం,, తేణుపు రావడం ok	ACK}
+{\slot
+కడుపు	B-body_part
+ఉబ్బరం,,	B-symptom
+తేణుపు	B-symptom
+రావడం	O
+ok	O
+}
+
+{\intent	d: proper digestion అవ్వకుండా gasses form అయ్యే chances ఉంటాయి. so మీ husband విషయంలో జరిగేది అదే.	MEDICAL_EXPLANATION}
+{\slot
+proper	O
+digestion	B-bodily_process
+అవ్వకుండా	B-symptom
+gasses	B-medical_condition
+form	B-symptom
+అయ్యే	O
+chances	O
+ఉంటాయి.	O
+so	O
+మీ	O
+husband	B-familal
+విషయంలో	O
+జరిగేది	O
+అదే.	O
+}
+
+{\intent	d: so మనది initial stages of gas trouble.	DIAGNOSIS}
+{\slot
+so	O
+మనది	O
+initial	O
+stages	O
+of	O
+gas	B-medical_condition
+trouble.	I-medical_condition
+}
+

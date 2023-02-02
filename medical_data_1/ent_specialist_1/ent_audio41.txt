@@ -1,0 +1,265 @@
+{\intent	d: పేరు చెప్పమ్మా పాపది	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పమ్మా	O
+పాపది	B-person
+}
+
+{\intent	p: Vishwateja sir, 1st year.	ANSWER}
+{\slot
+Vishwateja	B-name
+sir,	O
+1st	B-time_period
+year.	I-time_period
+}
+
+{\intent	d: Vishwa	HOLD}
+{\slot
+Vishwa	B-name
+}
+
+{\intent	p: tej	STATEMENT}
+{\slot
+tej	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p1: 4	ANSWER}
+{\slot
+4	B-age
+}
+
+{\intent	p1: 4 sir, మొన్ననే 1 week అయితుంది 3 complete అయి.	STATEMENT}
+{\slot
+4	B-age
+sir,	O
+మొన్ననే	B-time_period
+1	B-time_period
+week	I-time_period
+అయితుంది	O
+3	B-age
+complete	O
+అయి.	O
+}
+
+{\intent	d: ఎత్తుకొని కుర్చోండి.	ACTION_DIR}
+{\slot
+ఎత్తుకొని	O
+కుర్చోండి.	O
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: జలుబు దగ్గు ఊరికే వస్తోంది sir.	ANSWER}
+{\slot
+జలుబు	B-medical_condition
+దగ్గు	B-symptom
+ఊరికే	O
+వస్తోంది	O
+sir.	O
+}
+
+{\intent	p2: ఉరికనే వస్తాంది sir	STATEMENT}
+{\slot
+ఉరికనే	O
+వస్తాంది	O
+sir	O
+}
+
+{\intent	p1: అయితే Yogiకి చూపెడితే ఇట్లనే ఉంటది అమ్మా viral fever అంటే	STATEMENT}
+{\slot
+అయితే	O
+Yogiకి	B-medical_professional
+చూపెడితే	O
+ఇట్లనే	O
+ఉంటది	O
+అమ్మా	O
+viral	B-symptom
+fever	I-symptom
+అంటే	O
+}
+
+{\intent	d: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	p2: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	p1: ఆ అను నాన్న	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+నాన్న	O
+}
+
+{\intent	p2: గురక బాగా sir. నిద్ర సక్కగా పొడు.	STATEMENT}
+{\slot
+గురక	B-symptom
+బాగా	B-intensity
+sir.	O
+నిద్ర	B-bodily_process
+సక్కగా	O
+పొడు.	B-negative
+}
+
+{\intent	p1: ఆ పోతాడు sir.	STATEMENT}
+{\slot
+ఆ	O
+పోతాడు	B-positive
+sir.	O
+}
+
+{\intent	p2: ఆ అను	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+}
+
+{\intent	p2: ఆ	ACTION_DIR}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: ఇగ పడుకుంటే ఒక్కోసారి మంచిగుంటూ ఒక్కోసారి	STATEMENT}
+{\slot
+ఇగ	O
+పడుకుంటే	B-bodily_process
+ఒక్కోసారి	O
+మంచిగుంటూ	B-normal
+ఒక్కోసారి	O
+}
+
+{\intent	p2: చెవులో మొన్న నిద్రపోలే చెవి పోటు అయితుంది sir.	STATEMENT}
+{\slot
+చెవులో	B-body_part
+మొన్న	B-time_period
+నిద్రపోలే	B-symptom
+చెవి	B-body_part
+పోటు	B-symptom
+అయితుంది	O
+sir.	O
+}
+
+{\intent	p1: ఎప్పుడు రాలే ఒక్కటే సరి వచ్చింది.	STATEMENT}
+{\slot
+ఎప్పుడు	O
+రాలే	O
+ఒక్కటే	O
+సరి	O
+వచ్చింది.	O
+}
+
+{\intent	d: చెవిలో పోటు ఎప్పుడు వచ్చింది?	INFO_REQUEST}
+{\slot
+చెవిలో	B-body_part
+పోటు	B-symptom
+ఎప్పుడు	O
+వచ్చింది?	O
+}
+
+{\intent	p2: మొన్న 4 days అయితుంది.	ANSWER}
+{\slot
+మొన్న	B-time_period
+4	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	p1: 4 days అయితుంది.	ANSWER}
+{\slot
+4	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: 4 days అయితుంది.	ACK}
+{\slot
+4	B-time_period
+days	I-time_period
+అయితుంది.	O
+}
+
+{\intent	d: doctorसबకి ఎప్పుడు చూపించినారు?	INFO_REQUEST}
+{\slot
+doctorसबకి	B-medical_professional
+ఎప్పుడు	O
+చూపించినారు?	O
+}
+
+{\intent	p1: ఇదే గా అప్పుడప్పుడు ఇట్లనే పోతా ఉంటాం sir జలుబు దగ్గుకి అని.	ANSWER}
+{\slot
+ఇదే	O
+గా	O
+అప్పుడప్పుడు	B-time_period
+ఇట్లనే	O
+పోతా	O
+ఉంటాం	O
+sir	O
+జలుబు	B-medical_condition
+దగ్గుకి	B-symptom
+అని.	O
+}
+
+{\intent	p2: గురక అని చూపెట్టం sir.	STATEMENT}
+{\slot
+గురక	B-symptom
+అని	O
+చూపెట్టం	O
+sir.	O
+}
+
+{\intent	d: ఏంటిది అంటే నంజు గుడ్డలు ఉంటాయి	MEDICAL_EXPLANATION}
+{\slot
+ఏంటిది	O
+అంటే	O
+నంజు	B-body_part
+గుడ్డలు	I-body_part
+ఉంటాయి	O
+}
+
+{\intent	p1: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: ముక్కు వెనకాల adenoids అని ఉంటాయి అమ్మా	MEDICAL_EXPLANATION}
+{\slot
+ముక్కు	B-body_part
+వెనకాల	B-location
+adenoids	B-body_part
+అని	O
+ఉంటాయి	O
+అమ్మా	O
+}
+
+{\intent	p2: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	d: దానివల్లనే	STATEMENT}
+{\slot
+దానివల్లనే	O
+}
+
+{\intent	p2: మధ్య రాత్రి జ్వరం వస్తోంది.	STATEMENT}
+{\slot
+మధ్య	B-time_period
+రాత్రి	I-time_period
+జ్వరం	B-symptom
+వస్తోంది.	O
+}
+

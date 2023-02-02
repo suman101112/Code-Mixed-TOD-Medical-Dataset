@@ -1,0 +1,96 @@
+{\intent	p: 6 years అవుతుంది madam	STATEMENT}
+{\slot
+6	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: నాకు 6 years అవుతుంది madam పిల్లలు లేక	STATEMENT}
+{\slot
+నాకు	O
+6	B-time_period
+years	I-time_period
+అవుతుంది	O
+madam	O
+పిల్లలు	B-familal
+లేక	B-negative
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: సంతానం లేక	STATEMENT}
+{\slot
+సంతానం	B-familal
+లేక	B-negative
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: so మొన్న ఇక్కడ ఒక hospitalలో చూయించాము	STATEMENT}
+{\slot
+so	O
+మొన్న	B-time_period
+ఇక్కడ	O
+ఒక	O
+hospitalలో	B-place
+చూయించాము	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఏదో మాకు తెలిసినంత వరకు gentsలో problem ఉన్నది అన్నట్లుగా చెప్పారు	STATEMENT}
+{\slot
+ఏదో	O
+మాకు	O
+తెలిసినంత	O
+వరకు	O
+gentsలో	B-gender
+problem	B-symptom
+ఉన్నది	O
+అన్నట్లుగా	O
+చెప్పారు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so ఏమన్నా చేయగలుగుతారా?	INFO_REQUEST}
+{\slot
+so	O
+ఏమన్నా	O
+చేయగలుగుతారా?	O
+}
+
+{\intent	d: sperm problems ఉందని చెప్పారు కదా	INFO_REQUEST}
+{\slot
+sperm	B-body_substance
+problems	B-symptom
+ఉందని	O
+చెప్పారు	O
+కదా	O
+}
+
+{\intent	p: male problem ఉందని	ANSWER}
+{\slot
+male	B-gender
+problem	B-symptom
+ఉందని	O
+}
+

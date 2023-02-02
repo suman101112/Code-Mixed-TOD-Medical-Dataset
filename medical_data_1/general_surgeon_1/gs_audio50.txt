@@ -1,0 +1,118 @@
+{\intent	p: Hello madam	GREETING}
+{\slot
+Hello	O
+madam	O
+}
+
+{\intent	d: చెప్పండి sir వింటున్నాము	CONV_OPEN}
+{\slot
+చెప్పండి	O
+sir	O
+వింటున్నాము	O
+}
+
+{\intent	p: మాకు పెద్ద పేగు మీద కొద్దిగా ఇబ్బందిగా ఉంది madam	STATEMENT}
+{\slot
+మాకు	O
+పెద్ద	B-body_part
+పేగు	I-body_part
+మీద	O
+కొద్దిగా	O
+ఇబ్బందిగా	B-symptom
+ఉంది	I-symptom
+madam	O
+}
+
+{\intent	p: చిన్న చిన్న గాయాలైనాయి అంటున్నాడు doctor	STATEMENT}
+{\slot
+చిన్న	O
+చిన్న	O
+గాయాలైనాయి	B-trauma
+అంటున్నాడు	O
+doctor	B-medical_professional
+}
+
+{\intent	d: ఎక్కడ అండి?	INFO_REQUEST}
+{\slot
+ఎక్కడ	O
+అండి?	O
+}
+
+{\intent	p: ఇది జీర్ణాశయం కింద పెద్ద పేగు వచ్చింది కదా madam	HOLD}
+{\slot
+ఇది	O
+జీర్ణాశయం	B-body_part
+కింద	B-location
+పెద్ద	B-body_part
+పేగు	I-body_part
+వచ్చింది	O
+కదా	O
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అక్కడ పెద్ద పేగులో కొంచం గాయాలు అయినాయి అంట madam కొద్దిగా	STATEMENT}
+{\slot
+అక్కడ	B-location
+పెద్ద	B-body_part
+పేగులో	I-body_part
+కొంచం	O
+గాయాలు	B-trauma
+అయినాయి	O
+అంట	O
+madam	O
+కొద్దిగా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అది నొప్పిగా ఉంటుంది ఇప్పుడు	STATEMENT}
+{\slot
+అది	O
+నొప్పిగా	B-symptom
+ఉంటుంది	O
+ఇప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఆ దానికి కొద్దిగా treatment ఏమైనా చెప్తారేమో అని	INFO_REQUEST}
+{\slot
+ఆ	O
+దానికి	O
+కొద్దిగా	O
+treatment	B-treatment
+ఏమైనా	O
+చెప్తారేమో	O
+అని	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పెద్ద పేగు ఇంకా colon కి సంబంధించి వివిధ రకాలైనటువంటి సమస్యలు ఉంటాయి.	MEDICAL_EXPLANATION}
+{\slot
+పెద్ద	B-body_part
+పేగు	I-body_part
+ఇంకా	O
+colon	B-body_part
+కి	O
+సంబంధించి	O
+వివిధ	O
+రకాలైనటువంటి	O
+సమస్యలు	O
+ఉంటాయి.	O
+}
+

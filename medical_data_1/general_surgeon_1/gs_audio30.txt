@@ -1,0 +1,220 @@
+{\intent	p: నమస్తే అండి doctor గారు	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+doctor	B-medical_professional
+గారు	O
+}
+
+{\intent	d: నమస్తే అండి Baburao గారు	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+Baburao	B-name
+గారు	O
+}
+
+{\intent	d: చెప్పండి	CONV_OPEN}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: sir నేను bypass చేయించుకున్నాను sir	STATEMENT}
+{\slot
+sir	O
+నేను	O
+bypass	B-treatment
+చేయించుకున్నాను	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: bypass చేయించుకున్న తరువాత 6 నెలల వరకు ఏం problem లేదు	STATEMENT}
+{\slot
+bypass	B-treatment
+చేయించుకున్న	O
+తరువాత	O
+6	B-time_period
+నెలల	B-time_period
+వరకు	O
+ఏం	O
+problem	O
+లేదు	O
+}
+
+{\intent	p: తరువాత అంత ముందు కొంచం ఉండేది.	STATEMENT}
+{\slot
+తరువాత	O
+అంత	O
+ముందు	O
+కొంచం	O
+ఉండేది.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: sir తర్వాత మొన్న start అయినా తర్వాత నిద్ర పట్టిన తర్వాత gas వచ్చి నిద్ర పట్టేది కాదు sir.	STATEMENT}
+{\slot
+sir	O
+తర్వాత	B-time_period
+మొన్న	B-time_period
+start	O
+అయినా	O
+తర్వాత	B-time_period
+నిద్ర	B-bodily_process
+పట్టిన	O
+తర్వాత	B-time_period
+gas	B-medical_condition
+వచ్చి	O
+నిద్ర	B-bodily_process
+పట్టేది	B-symptom
+కాదు	I-symptom
+sir.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: గుండె ధడ ధడ కొట్టుకునేది.	STATEMENT}
+{\slot
+గుండె	B-body_part
+ధడ	B-symptom
+ధడ	I-symptom
+కొట్టుకునేది.	I-symptom
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఆ ధడ ధడ కొట్టుకోవడంలో నిద్ర పట్టేది కాదు, gas	STATEMENT}
+{\slot
+ఆ	O
+ధడ	B-symptom
+ధడ	I-symptom
+కొట్టుకోవడంలో	I-symptom
+నిద్ర	B-bodily_process
+పట్టేది	B-symptom
+కాదు,	I-symptom
+gas	B-medical_condition
+}
+
+{\intent	p: doctor గారికి చూపిచాం sir.	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారికి	O
+చూపిచాం	O
+sir.	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: చూపిస్తే ఆయన injection అది చేసారు	STATEMENT}
+{\slot
+చూపిస్తే	O
+ఆయన	O
+injection	B-medicine
+అది	O
+చేసారు	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: నరానికి అది ని	STATEMENT}
+{\slot
+నరానికి	B-body_part
+అది	O
+ని	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: ఆ తరువాత వెళ్ళలేదు sir ఒక్కటిగా ఉంది అని	STATEMENT}
+{\slot
+ఆ	O
+తరువాత	O
+వెళ్ళలేదు	O
+sir	O
+ఒక్కటిగా	O
+ఉంది	O
+అని	O
+}
+
+{\intent	d: right	ACK}
+{\slot
+right	O
+}
+
+{\intent	d: ఇప్పుడు కూడా పరిస్థితి అలాగే ఉందా అండి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+కూడా	O
+పరిస్థితి	O
+అలాగే	O
+ఉందా	O
+అండి?	O
+}
+
+{\intent	p: ఇప్పుడు కొచ్చాం తగ్గింది sir తర్వాత	ANSWER}
+{\slot
+ఇప్పుడు	O
+కొచ్చాం	O
+తగ్గింది	B-normal
+sir	O
+తర్వాత	B-time_period
+}
+
+{\intent	p: కానీ తేణుపు మాత్రం వస్తున్నాయి sir	STATEMENT}
+{\slot
+కానీ	O
+తేణుపు	B-symptom
+మాత్రం	O
+వస్తున్నాయి	O
+sir	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: right అండి, right	ACK}
+{\slot
+right	O
+అండి,	O
+right	O
+}
+
+{\intent	d: ఈ heart surgery అయినా తర్వాత gastric complaint సహజంగా ఉంటుంది అండి.	DIAGNOSIS}
+{\slot
+ఈ	O
+heart	B-body_part
+surgery	B-treatment
+అయినా	O
+తర్వాత	B-time_period
+gastric	B-medical_condition
+complaint	I-medical_condition
+సహజంగా	O
+ఉంటుంది	O
+అండి.	O
+}
+

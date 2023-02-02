@@ -1,0 +1,262 @@
+{\intent	p: madam, iam Nandini madam	STATEMENT}
+{\slot
+madam,	O
+iam	O
+Nandini	B-name
+madam	O
+}
+
+{\intent	d: చెప్పండమ్మా	ACTION_DIR}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: ఇక్కడ, నా పేరు Nandini ను	STATEMENT}
+{\slot
+ఇక్కడ,	O
+నా	O
+పేరు	O
+Nandini	B-name
+ను	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: madam, 4 years బాబు ఉన్నాడు నాకు	ANSWER}
+{\slot
+madam,	O
+4	B-time_period
+years	I-time_period
+బాబు	B-person
+ఉన్నాడు	O
+నాకు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మొన్న abortions అయిపోయిందన్న మాట 4 years back	ANSWER}
+{\slot
+ఇప్పుడు	O
+మొన్న	B-time_period
+abortions	B-symptom
+అయిపోయిందన్న	O
+మాట	O
+4	B-time_period
+years	I-time_period
+back	I-time_period
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి కావాలి అనుకుంటుంటే నిలవడం లేదు madam అది ఎం problem అనేది చెప్తారా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+కావాలి	O
+అనుకుంటుంటే	O
+నిలవడం	B-normal
+లేదు	B-negative
+madam	O
+అది	O
+ఎం	O
+problem	O
+అనేది	O
+చెప్తారా?	O
+}
+
+{\intent	d: అంటే marriage అయి ఎన్ని years అయిందమ్మా? marital life?	INFO_REQUEST}
+{\slot
+అంటే	O
+marriage	B-marital_status
+అయి	O
+ఎన్ని	O
+years	O
+అయిందమ్మా?	O
+marital	B-marital_status
+life?	O
+}
+
+{\intent	p: 6 years అవుతుంది.	ANSWER}
+{\slot
+6	B-time_period
+years	I-time_period
+అవుతుంది.	O
+}
+
+{\intent	d: అంటే marriage అయినా 2 yearలోనే మీకు ఒక first pregnancy వచ్చింది	STATEMENT}
+{\slot
+అంటే	O
+marriage	B-marital_status
+అయినా	O
+2	B-time_period
+yearలోనే	I-time_period
+మీకు	O
+ఒక	O
+first	B-frequency
+pregnancy	B-bodily_process
+వచ్చింది	O
+}
+
+{\intent	p: ఆ first pregnancy వచ్చింది	ACK}
+{\slot
+ఆ	B-positive
+first	B-frequency
+pregnancy	B-bodily_process
+వచ్చింది	O
+}
+
+{\intent	d: then	INFO_REQUEST}
+{\slot
+then	O
+}
+
+{\intent	p: ఇప్పుడు మళ్ళి మొన్న banglore వెళ్ళినప్పుడు abortion అయిందన్నమాట	ANSWER}
+{\slot
+ఇప్పుడు	O
+మళ్ళి	O
+మొన్న	B-time_period
+banglore	B-place
+వెళ్ళినప్పుడు	O
+abortion	B-symptom
+అయిందన్నమాట	O
+}
+
+{\intent	d: ఎన్ని abortions అయినాయి అమ్మా first సంతానం తరువాత	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+abortions	B-symptom
+అయినాయి	O
+అమ్మా	O
+first	B-frequency
+సంతానం	B-familal
+తరువాత	B-time_period
+}
+
+{\intent	p: ఆ 2 అయినాయి	ANSWER}
+{\slot
+ఆ	O
+2	B-frequency
+అయినాయి	O
+}
+
+{\intent	d: 2 అయినాయి	ACK}
+{\slot
+2	B-frequency
+అయినాయి	O
+}
+
+{\intent	p: 2 abortions అయినాయి	REPEAT_REPHRASE}
+{\slot
+2	B-frequency
+abortions	B-symptom
+అయినాయి	O
+}
+
+{\intent	d: ok fine	ACK}
+{\slot
+ok	O
+fine	O
+}
+
+{\intent	d: నెలసరి correctగానే ఉందా?	INFO_REQUEST}
+{\slot
+నెలసరి	B-bodily_process
+correctగానే	B-normal
+ఉందా?	O
+}
+
+{\intent	p: ఆ correctగానే ఉంది	ANSWER}
+{\slot
+ఆ	O
+correctగానే	B-normal
+ఉంది	B-positive
+}
+
+{\intent	d: thyroid కానీ అలా ఏమైనా ఉందా, PCOD సమస్య కానీ ?	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+కానీ	O
+అలా	O
+ఏమైనా	O
+ఉందా,	O
+PCOD	B-medical_condition
+సమస్య	O
+కానీ	O
+?	O
+}
+
+{\intent	p: అలాంటిది ఏం లేదు madam	ANSWER}
+{\slot
+అలాంటిది	O
+ఏం	O
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: మీ మధ్య మేనరికం కానీ ఉందా?	INFO_REQUEST}
+{\slot
+మీ	O
+మధ్య	O
+మేనరికం	B-familal
+కానీ	O
+ఉందా?	O
+}
+
+{\intent	p: ఆహ<neg> లేదు	ANSWER}
+{\slot
+ఆహ<neg>	O
+లేదు	B-negative
+}
+
+{\intent	d: ఎక్కువగా repeated abortions అవుతున్నాయి అంటే మీ మధ్య 2 రెండు సమస్యలు ఉంటాయి అంటే మేనరికం లేదు అంటున్నారు కాబట్టి ఎలాగో PCOD సమస్య అని చెప్పొచ్చు	MEDICAL_EXPLANATION}
+{\slot
+ఎక్కువగా	O
+repeated	B-frequency
+abortions	B-symptom
+అవుతున్నాయి	O
+అంటే	O
+మీ	O
+మధ్య	O
+2	B-frequency
+రెండు	O
+సమస్యలు	O
+ఉంటాయి	O
+అంటే	O
+మేనరికం	B-familal
+లేదు	B-negative
+అంటున్నారు	O
+కాబట్టి	O
+ఎలాగో	O
+PCOD	B-medical_condition
+సమస్య	O
+అని	O
+చెప్పొచ్చు	O
+}
+
+{\intent	d: కానీ PCOD లేదంటున్నారు కబట్టి torch test అని ఒక్కటి ఉంటుందమ్మా	STATEMENT}
+{\slot
+కానీ	O
+PCOD	B-medical_condition
+లేదంటున్నారు	B-negative
+కబట్టి	O
+torch	B-mtest
+test	I-mtest
+అని	O
+ఒక్కటి	O
+ఉంటుందమ్మా	O
+}
+

@@ -1,0 +1,155 @@
+{\intent	d: పేరు చెప్పండి	INFO_REQUEST}
+{\slot
+పేరు	O
+చెప్పండి	O
+}
+
+{\intent	p: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	d: Lakshmi Naarayana	STATEMENT}
+{\slot
+Lakshmi	B-name
+Naarayana	B-name
+}
+
+{\intent	d: male, 65	STATEMENT}
+{\slot
+male,	B-gender
+65	B-age
+}
+
+{\intent	d: ఎట్లా ఉంది చెవు?	INFO_REQUEST}
+{\slot
+ఎట్లా	O
+ఉంది	O
+చెవు?	O
+}
+
+{\intent	p: నొప్పి తక్కువ అయింది sir.	ANSWER}
+{\slot
+నొప్పి	B-symptom
+తక్కువ	B-intensity
+అయింది	O
+sir.	O
+}
+
+{\intent	d: నొప్పి తక్కువ అయింది.	ACK}
+{\slot
+నొప్పి	B-symptom
+తక్కువ	B-intensity
+అయింది.	O
+}
+
+{\intent	d: ఇంకేం problem?	INFO_REQUEST}
+{\slot
+ఇంకేం	O
+problem?	O
+}
+
+{\intent	p: जरा కారుతున్నట్లు ఉన్నది sir.	ANSWER}
+{\slot
+जरा	O
+కారుతున్నట్లు	B-symptom
+ఉన్నది	O
+sir.	O
+}
+
+{\intent	p: నొప్పి, లోపట earbuds పెడితే जरा నొప్పిలేస్తాంది sir.	STATEMENT}
+{\slot
+నొప్పి,	B-symptom
+లోపట	B-location
+earbuds	O
+పెడితే	O
+जरा	B-intensity
+నొప్పిలేస్తాంది	B-symptom
+sir.	O
+}
+
+{\intent	d: same మందులు ఇంకో 3 days కి వేస్కో.	ACTION_DIR}
+{\slot
+same	O
+మందులు	B-medicine
+ఇంకో	O
+3	B-time_period
+days	I-time_period
+కి	O
+వేస్కో.	O
+}
+
+{\intent	p: దీంట్లో ఇట్ల motionకి పోయే మందులు గిట్ల ఏమైనా మందులు ఉన్నాయా sir?	INFO_REQUEST}
+{\slot
+దీంట్లో	O
+ఇట్ల	O
+motionకి	B-symptom
+పోయే	O
+మందులు	B-medicine
+గిట్ల	O
+ఏమైనా	O
+మందులు	B-medicine
+ఉన్నాయా	O
+sir?	O
+}
+
+{\intent	p: రోజుకి 3 4 సార్ల పోవల్సి వస్తోంది.	STATEMENT}
+{\slot
+రోజుకి	B-time_period
+3	B-frequency
+4	I-frequency
+సార్ల	I-frequency
+పోవల్సి	O
+వస్తోంది.	O
+}
+
+{\intent	p: పడిగడుపున వేసుకోమన్నారు.	STATEMENT}
+{\slot
+పడిగడుపున	B-time_period
+వేసుకోమన్నారు.	O
+}
+
+{\intent	d: motionవి ఏం లేదు.	STATEMENT}
+{\slot
+motionవి	B-symptom
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	p: motion అయితే బాగా అయితాంది sir.	STATEMENT}
+{\slot
+motion	B-symptom
+అయితే	O
+బాగా	B-intensity
+అయితాంది	O
+sir.	O
+}
+
+{\intent	p: 4 times పోవల్సి వస్తాంది.	STATEMENT}
+{\slot
+4	B-frequency
+times	I-frequency
+పోవల్సి	O
+వస్తాంది.	O
+}
+
+{\intent	d: ఇదే ఇంత powerful వద్దు.	STATEMENT}
+{\slot
+ఇదే	O
+ఇంత	O
+powerful	O
+వద్దు.	O
+}
+
+{\intent	d: కొంచం తగ్గి ఇస్తా.	COMMIT}
+{\slot
+కొంచం	O
+తగ్గి	O
+ఇస్తా.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+

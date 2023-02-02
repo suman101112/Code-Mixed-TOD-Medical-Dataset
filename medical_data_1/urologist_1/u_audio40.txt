@@ -1,0 +1,113 @@
+{\intent	p: madamగారు మా mrs గారికి kidneyలో రాళ్ళు వచ్చి బాగా నొప్పొస్తుంది madamగారు	STATEMENT}
+{\slot
+madamగారు	O
+మా	O
+mrs	B-familal
+గారికి	O
+kidneyలో	B-body_part
+రాళ్ళు	B-body_substance
+వచ్చి	O
+బాగా	B-intensity
+నొప్పొస్తుంది	B-symptom
+madamగారు	O
+}
+
+{\intent	d: ok అండి	ACK}
+{\slot
+ok	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: side వెనక భాగంలో బాగా నొప్పొస్తుంది madam	STATEMENT}
+{\slot
+side	B-location
+వెనక	I-location
+భాగంలో	I-location
+బాగా	B-intensity
+నొప్పొస్తుంది	B-symptom
+madam	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఈ stones పరిమానం ఎంత ఉన్నాయి? ఎటు వైపు ఉన్నాయి అనేటటువంటిది ఏమైనా అవగాహన ఉందా?	INFO_REQUEST}
+{\slot
+ఈ	O
+stones	B-body_substance
+పరిమానం	O
+ఎంత	O
+ఉన్నాయి?	O
+ఎటు	O
+వైపు	O
+ఉన్నాయి	O
+అనేటటువంటిది	O
+ఏమైనా	O
+అవగాహన	O
+ఉందా?	O
+}
+
+{\intent	p: kidneyలో 4 ఉన్నాయి అని చెప్పి అనుమానం,	ANSWER}
+{\slot
+kidneyలో	B-body_part
+4	B-frequency
+ఉన్నాయి	O
+అని	O
+చెప్పి	O
+అనుమానం,	O
+}
+
+{\intent	p: దానికి ఏం చేయమంటారు	INFO_REQUEST}
+{\slot
+దానికి	O
+ఏం	O
+చేయమంటారు	O
+}
+
+{\intent	d: ok మీకు doubtfullగా ఉంది అంతే	ACK}
+{\slot
+ok	O
+మీకు	O
+doubtfullగా	O
+ఉంది	O
+అంతే	O
+}
+
+{\intent	d: అయితే generalగా మనకి kidney relatedగా stones చూసుకున్నట్లు అయితే, ఇవి మూత్ర పిండాలలో ఉండొచ్చు,	MEDICAL_EXPLANATION}
+{\slot
+అయితే	O
+generalగా	O
+మనకి	O
+kidney	B-body_part
+relatedగా	O
+stones	B-body_substance
+చూసుకున్నట్లు	O
+అయితే,	O
+ఇవి	O
+మూత్ర	B-body_part
+పిండాలలో	I-body_part
+ఉండొచ్చు,	O
+}
+
+{\intent	d: మూత్రపిండం నుంచి జారి uretusలో అంటే మూత్ర నాళాలలో ఉండొచ్చు లేక మూత్రాశయంలో ఉండొచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+మూత్రపిండం	B-body_part
+నుంచి	O
+జారి	O
+uretusలో	B-body_part
+అంటే	O
+మూత్ర	B-body_part
+నాళాలలో	I-body_part
+ఉండొచ్చు	O
+లేక	O
+మూత్రాశయంలో	B-body_part
+ఉండొచ్చు.	O
+}
+

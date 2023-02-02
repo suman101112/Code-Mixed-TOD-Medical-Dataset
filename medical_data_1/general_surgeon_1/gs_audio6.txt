@@ -1,0 +1,375 @@
+{\intent	p: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	d: చెప్పండి Shabhana గారు.	ACTION_DIR}
+{\slot
+చెప్పండి	O
+Shabhana	B-name
+గారు.	O
+}
+
+{\intent	p: నమస్తే sir.	GREETING}
+{\slot
+నమస్తే	O
+sir.	O
+}
+
+{\intent	d: నమస్తే అండి	GREETING}
+{\slot
+నమస్తే	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: అయితే నాకు 28 years ఉన్నాయి sir.	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+28	B-age
+years	I-age
+ఉన్నాయి	O
+sir.	O
+}
+
+{\intent	d: right అండి	ACK}
+{\slot
+right	O
+అండి	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: అయితే మాకు పిల్లలు లేరని medicines వాడుతున్నాను sir 6 years నుంచి.	STATEMENT}
+{\slot
+అయితే	O
+మాకు	O
+పిల్లలు	B-symptom
+లేరని	I-symptom
+medicines	B-medicine
+వాడుతున్నాను	O
+sir	O
+6	B-time_period
+years	I-time_period
+నుంచి.	O
+}
+
+{\intent	d: ఎమ్మా? కాస్త?	SNU}
+{\slot
+ఎమ్మా?	O
+కాస్త?	O
+}
+
+{\intent	d1: పిల్లలు లేరని medicines వాడుతున్నారు 6 years నుంచి.	REPEAT_REPHRASE}
+{\slot
+పిల్లలు	B-symptom
+లేరని	I-symptom
+medicines	B-medicine
+వాడుతున్నారు	O
+6	B-time_period
+years	I-time_period
+నుంచి.	O
+}
+
+{\intent	p: medicines వాడుతున్నాం sir 6 years నుంచి.	REPEAT_REPHRASE}
+{\slot
+medicines	B-medicine
+వాడుతున్నాం	O
+sir	O
+6	B-time_period
+years	I-time_period
+నుంచి.	O
+}
+
+{\intent	p: అయితే నాకు gas problem వచ్చింది sir	STATEMENT}
+{\slot
+అయితే	O
+నాకు	O
+gas	B-medical_condition
+problem	I-medical_condition
+వచ్చింది	O
+sir	O
+}
+
+{\intent	p: doctors ఎమో ఎక్కువగా gastric medicine వాడితే hormones problem వస్తుంది అని అంటున్నారు.	STATEMENT}
+{\slot
+doctors	B-medical_professional
+ఎమో	O
+ఎక్కువగా	O
+gastric	B-medical_condition
+medicine	B-medicine
+వాడితే	O
+hormones	B-body_substance
+problem	B-medical_condition
+వస్తుంది	O
+అని	O
+అంటున్నారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: నాకు ఏ medicine వేసుకున్న గానీ కడుపునొప్పి ఎక్కువగా రావడం ఆ నొప్పి వచ్చినప్పుడు కాలు చేతులు చెమటలు నీరసమైపోవడం తట్టుకోలేకపోతున్నానండీ.	STATEMENT}
+{\slot
+నాకు	O
+ఏ	O
+medicine	B-medicine
+వేసుకున్న	O
+గానీ	O
+కడుపునొప్పి	B-symptom
+ఎక్కువగా	B-intensity
+రావడం	O
+ఆ	O
+నొప్పి	B-symptom
+వచ్చినప్పుడు	B-time_period
+కాలు	B-body_part
+చేతులు	B-body_part
+చెమటలు	B-symptom
+నీరసమైపోవడం	B-symptom
+తట్టుకోలేకపోతున్నానండీ.	B-symptom
+}
+
+{\intent	d: ఒక ప్రశ్న అమ్మా	INFO_REQUEST}
+{\slot
+ఒక	O
+ప్రశ్న	O
+అమ్మా	O
+}
+
+{\intent	p: ఏం తిన్న పడడం లేదు. medicines ఏం వేసుకున్న వాడిన పడడంలేదు అండి.	STATEMENT}
+{\slot
+ఏం	O
+తిన్న	B-bodily_process
+పడడం	B-symptom
+లేదు.	I-symptom
+medicines	B-medicine
+ఏం	O
+వేసుకున్న	O
+వాడిన	O
+పడడంలేదు	B-symptom
+అండి.	O
+}
+
+{\intent	d: right అమ్మా.	ACK}
+{\slot
+right	O
+అమ్మా.	O
+}
+
+{\intent	d: ఒక ప్రశ్న అమ్మా.	INFO_REQUEST}
+{\slot
+ఒక	O
+ప్రశ్న	O
+అమ్మా.	O
+}
+
+{\intent	p: sir	ACK}
+{\slot
+sir	O
+}
+
+{\intent	d: so ఇప్పుడు నీకు పరిక్షలు చేయించారు కదా infertility అంటే సంతాన విషయంలో?	INFO_REQUEST}
+{\slot
+so	O
+ఇప్పుడు	O
+నీకు	O
+పరిక్షలు	B-mtest
+చేయించారు	O
+కదా	O
+infertility	B-medical_condition
+అంటే	O
+సంతాన	O
+విషయంలో?	O
+}
+
+{\intent	p: అంటే Ovaries release కాలేదు అని చెప్పారు sir.	ANSWER}
+{\slot
+అంటే	O
+Ovaries	B-body_part
+release	B-symptom
+కాలేదు	I-symptom
+అని	O
+చెప్పారు	O
+sir.	O
+}
+
+{\intent	d: Ovaries నుంచి release అవ్వట్లేదు.	ACK}
+{\slot
+Ovaries	B-body_part
+నుంచి	B-location
+release	B-symptom
+అవ్వట్లేదు.	B-symptom
+}
+
+{\intent	d: మీ husband పరంగా clearగానే ఉండమ్మా?	INFO_REQUEST}
+{\slot
+మీ	O
+husband	B-familal
+పరంగా	O
+clearగానే	B-normal
+ఉండమ్మా?	O
+}
+
+{\intent	p: sir?	ANSWER}
+{\slot
+sir?	O
+}
+
+{\intent	d: మీ husband పరంగా report normalగా?	REPEAT_REPHRASE}
+{\slot
+మీ	O
+husband	B-familal
+పరంగా	O
+report	O
+normalగా?	B-normal
+}
+
+{\intent	p: ఆ మా husband పరంగా normalగానే ఉంది sir.	ANSWER}
+{\slot
+ఆ	O
+మా	O
+husband	B-familal
+పరంగా	O
+normalగానే	B-normal
+ఉంది	O
+sir.	O
+}
+
+{\intent	p: నాకు ఇలా జరుగుతుంది అని. మళ్ళి నాకు abortion కూడా జరిగింది sir recentగా 2 months back.	STATEMENT}
+{\slot
+నాకు	O
+ఇలా	O
+జరుగుతుంది	O
+అని.	O
+మళ్ళి	O
+నాకు	O
+abortion	B-symptom
+కూడా	O
+జరిగింది	O
+sir	O
+recentగా	B-time_period
+2	I-time_period
+months	I-time_period
+back.	I-time_period
+}
+
+{\intent	d: ok.	ACK}
+{\slot
+ok.	O
+}
+
+{\intent	d: right అమ్మా దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+right	O
+అమ్మా	O
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	p: pregnancy వచ్చినప్పుడు కూడా ఏమన్నా తింటే కడుపు ఉబ్బరంగా, అయిపోవడం.	STATEMENT}
+{\slot
+pregnancy	B-medical_condition
+వచ్చినప్పుడు	O
+కూడా	O
+ఏమన్నా	O
+తింటే	B-bodily_process
+కడుపు	B-body_part
+ఉబ్బరంగా,	B-symptom
+అయిపోవడం.	O
+}
+
+{\intent	d: అవుతుంది.	ACK}
+{\slot
+అవుతుంది.	O
+}
+
+{\intent	p: ఊపిరి ఆడకపోవడం. బాగా గుండె కొట్టుకున్నట్లు. నీరసం అయిపోతుంది sir. ఎమి తినలేకపోతున్నాను .	STATEMENT}
+{\slot
+ఊపిరి	B-bodily_process
+ఆడకపోవడం.	B-symptom
+బాగా	B-intensity
+గుండె	B-body_part
+కొట్టుకున్నట్లు.	B-symptom
+నీరసం	B-symptom
+అయిపోతుంది	I-symptom
+sir.	O
+ఎమి	O
+తినలేకపోతున్నాను	B-symptom
+.	O
+}
+
+{\intent	d: right అమ్మా.	ACK}
+{\slot
+right	O
+అమ్మా.	O
+}
+
+{\intent	d: దాని గురించి చెప్తాను.	COMMIT}
+{\slot
+దాని	O
+గురించి	O
+చెప్తాను.	O
+}
+
+{\intent	d: so ముందుగా అంటే గర్భసంచిలో PCOD లక్షణం ఉన్నప్పుడు ఏ విధంగా ఉంది అమ్మా . అంటే Ovariesలో చిన్నపాటి కణుతులు ఏర్పడినప్పుడు అండం విడుదల సక్రమంగా అవ్వదు. తద్వారా నీకు ఏ సంతానలేమి infertility సమస్య ఏర్పడుతుంది.	MEDICAL_EXPLANATION}
+{\slot
+so	O
+ముందుగా	O
+అంటే	O
+గర్భసంచిలో	B-body_part
+PCOD	B-medical_condition
+లక్షణం	O
+ఉన్నప్పుడు	B-time_period
+ఏ	O
+విధంగా	O
+ఉంది	O
+అమ్మా	O
+.	O
+అంటే	O
+Ovariesలో	B-body_part
+చిన్నపాటి	B-symptom
+కణుతులు	I-symptom
+ఏర్పడినప్పుడు	I-symptom
+అండం	B-body_part
+విడుదల	B-bodily_process
+సక్రమంగా	B-symptom
+అవ్వదు.	I-symptom
+తద్వారా	O
+నీకు	O
+ఏ	O
+సంతానలేమి	B-medical_condition
+infertility	B-medical_condition
+సమస్య	O
+ఏర్పడుతుంది.	O
+}
+
+{\intent	d: so దీనికి unneccesaryగా gastric medicines అయితే అసలు వాడకూడదు నువ్వు. diet manage చేస్కో. water సరిగ్గా తీస్కో.	ACTION_DIR}
+{\slot
+so	O
+దీనికి	O
+unneccesaryగా	O
+gastric	B-medical_condition
+medicines	B-medicine
+అయితే	O
+అసలు	O
+వాడకూడదు	O
+నువ్వు.	O
+diet	B-food_substance
+manage	O
+చేస్కో.	O
+water	B-food_substance
+సరిగ్గా	O
+తీస్కో.	O
+}
+

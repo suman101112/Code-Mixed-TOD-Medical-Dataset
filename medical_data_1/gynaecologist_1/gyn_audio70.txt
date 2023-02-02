@@ -1,0 +1,212 @@
+{\intent	p: ya good evening madam	GREETING}
+{\slot
+ya	O
+good	O
+evening	O
+madam	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మాకు పెళ్ళై 5 years అయింది	STATEMENT}
+{\slot
+మాకు	O
+పెళ్ళై	B-marital_status
+5	B-time_period
+years	I-time_period
+అయింది	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: so 5 years నుంచి medication తీసుకుంటున్నాను, laproscopy కూడా అయింది recentగా	STATEMENT}
+{\slot
+so	O
+5	B-time_period
+years	I-time_period
+నుంచి	O
+medication	B-medicine
+తీసుకుంటున్నాను,	O
+laproscopy	B-treatment
+కూడా	O
+అయింది	O
+recentగా	B-time_period
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: 6 months అయింది చేసి	STATEMENT}
+{\slot
+6	B-time_period
+months	I-time_period
+అయింది	O
+చేసి	O
+}
+
+{\intent	d: uhum	ACK}
+{\slot
+uhum	O
+}
+
+{\intent	p: కాని ఇంకా RFSH అనే injections తీసుకుంటున్నాము	STATEMENT}
+{\slot
+కాని	O
+ఇంకా	O
+RFSH	B-medicine
+అనే	O
+injections	B-medicine
+తీసుకుంటున్నాము	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: so, lateగా 11th day start అవుతుంది egg growth కూడా	STATEMENT}
+{\slot
+so,	O
+lateగా	O
+11th	B-time_period
+day	I-time_period
+start	O
+అవుతుంది	O
+egg	B-body_part
+growth	B-bodily_process
+కూడా	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: so injections తీసుకోవచ్చా ఎక్కువ? లేదా అనేది?	INFO_REQUEST}
+{\slot
+so	O
+injections	B-medicine
+తీసుకోవచ్చా	O
+ఎక్కువ?	B-intensity
+లేదా	O
+అనేది?	O
+}
+
+{\intent	d: ఇప్పుడు మీకు pregnancy వచ్చిందా మీకు	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+మీకు	O
+pregnancy	B-bodily_process
+వచ్చిందా	O
+మీకు	O
+}
+
+{\intent	p: ఆహా లేదండీ	ANSWER}
+{\slot
+ఆహా	O
+లేదండీ	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: IVF చేసారా already?	INFO_REQUEST}
+{\slot
+IVF	B-treatment
+చేసారా	O
+already?	O
+}
+
+{\intent	p: ఆహా లేదండీ . IUI try చెద్దాము అనుకుంటున్నాము కానీ	ANSWER}
+{\slot
+ఆహా	O
+లేదండీ	B-negative
+.	O
+IUI	B-treatment
+try	O
+చెద్దాము	O
+అనుకుంటున్నాము	O
+కానీ	O
+}
+
+{\intent	d: కానీ	STATEMENT}
+{\slot
+కానీ	O
+}
+
+{\intent	p: IUI try చేయాలి అనుకుంటున్నాము ఇంకా అవ్వలేదండి	REPEAT_REPHRASE}
+{\slot
+IUI	B-treatment
+try	O
+చేయాలి	O
+అనుకుంటున్నాము	O
+ఇంకా	O
+అవ్వలేదండి	B-negative
+}
+
+{\intent	d: ok, incase naturally try చేసి pregnancy రాకపోతే next step IUI ఉంటుంది	MEDICAL_EXPLANATION}
+{\slot
+ok,	O
+incase	O
+naturally	O
+try	O
+చేసి	O
+pregnancy	B-bodily_process
+రాకపోతే	B-negative
+next	B-frequency
+step	O
+IUI	B-treatment
+ఉంటుంది	O
+}
+
+{\intent	d: IUI cycles correctగా చేసుకుంటే nearly about 15 to 20 percent success rates ఉంటాయి అన్నమాట	MEDICAL_EXPLANATION}
+{\slot
+IUI	B-treatment
+cycles	B-bodily_process
+correctగా	B-normal
+చేసుకుంటే	O
+nearly	O
+about	O
+15	O
+to	O
+20	O
+percent	O
+success	O
+rates	O
+ఉంటాయి	O
+అన్నమాట	O
+}
+
+{\intent	d: but 1st cycleలోనే pregnancy వస్తుంది అని అనుకోవద్దు	STATEMENT}
+{\slot
+but	O
+1st	O
+cycleలోనే	B-bodily_process
+pregnancy	B-bodily_process
+వస్తుంది	O
+అని	O
+అనుకోవద్దు	O
+}
+
+{\intent	d: 2 to 3 cycles of IUI చేసి చూసుకుంటే	STATEMENT}
+{\slot
+2	B-frequency
+to	O
+3	B-frequency
+cycles	B-bodily_process
+of	O
+IUI	B-treatment
+చేసి	O
+చూసుకుంటే	O
+}
+

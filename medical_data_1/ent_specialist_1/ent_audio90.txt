@@ -1,0 +1,149 @@
+{\intent	p1: ఈన పొద్దున	HOLD}
+{\slot
+ఈన	O
+పొద్దున	B-time_period
+}
+
+{\intent	d: ఎమ్మా ముందు పేరు చెప్పమ్మా	INFO_REQUEST}
+{\slot
+ఎమ్మా	O
+ముందు	O
+పేరు	O
+చెప్పమ్మా	O
+}
+
+{\intent	p1: Abhinav	ANSWER}
+{\slot
+Abhinav	B-name
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p1: Abhinav Vardan	REPEAT_REPHRASE}
+{\slot
+Abhinav	B-name
+Vardan	I-name
+}
+
+{\intent	d: ఎంత age?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age?	O
+}
+
+{\intent	p1: age 9	ANSWER}
+{\slot
+age	O
+9	B-age
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p1: allergy. బాగా తుమ్ముతాడు. కళ్ళెంబడ నీళ్లు . ఈ కళ్ళన్ని reddish అయిపోతాయి. చిన్న చిన్న కురుపు అయింది అంటున్నాడు అప్పుడప్పుడు nose లోపల. morning రోజు..	ANSWER}
+{\slot
+allergy.	B-medical_condition
+బాగా	B-intensity
+తుమ్ముతాడు.	B-symptom
+కళ్ళెంబడ	B-body_part
+నీళ్లు	B-food_substance
+.	O
+ఈ	O
+కళ్ళన్ని	B-body_part
+reddish	B-symptom
+అయిపోతాయి.	O
+చిన్న	O
+చిన్న	O
+కురుపు	B-symptom
+అయింది	O
+అంటున్నాడు	O
+అప్పుడప్పుడు	B-time_period
+nose	B-body_part
+లోపల.	O
+morning	B-time_period
+రోజు..	I-time_period
+}
+
+{\intent	d: ఆ అను బాబు	ACTION_DIR}
+{\slot
+ఆ	O
+అను	O
+బాబు	B-person
+}
+
+{\intent	p: ఆ	COMMIT}
+{\slot
+ఆ	O
+}
+
+{\intent	p1: విపరీతమైన తుమ్ములు. allergy అయితే ఇగ ఆగుతలేదు అస్సల.	STATEMENT}
+{\slot
+విపరీతమైన	B-intensity
+తుమ్ములు.	B-symptom
+allergy	B-medical_condition
+అయితే	O
+ఇగ	O
+ఆగుతలేదు	O
+అస్సల.	O
+}
+
+{\intent	d: మందులు రాస్తా అమ్మా	COMMIT}
+{\slot
+మందులు	B-medicine
+రాస్తా	O
+అమ్మా	O
+}
+
+{\intent	p1: తగ్గుతదా sir?	INFO_REQUEST}
+{\slot
+తగ్గుతదా	O
+sir?	O
+}
+
+{\intent	p1: మళ్ళి repeat అయితుంది, montex, మీరు అప్పుడు చూపించాను, వేస్తానే ఉన్న కానీ	STATEMENT}
+{\slot
+మళ్ళి	O
+repeat	O
+అయితుంది,	O
+montex,	B-medicine
+మీరు	O
+అప్పుడు	B-time_period
+చూపించాను,	O
+వేస్తానే	O
+ఉన్న	O
+కానీ	O
+}
+
+{\intent	d: ఒక age వచ్చిన తరువాత పోతది అమ్మా	MEDICAL_EXPLANATION}
+{\slot
+ఒక	O
+age	O
+వచ్చిన	O
+తరువాత	B-time_period
+పోతది	O
+అమ్మా	O
+}
+
+{\intent	p1: అవునా	ACK}
+{\slot
+అవునా	O
+}
+
+{\intent	p1: thank you అండి.	APPRECIATE}
+{\slot
+thank	O
+you	O
+అండి.	O
+}
+
+{\intent	d: ok అమ్మా	ACK}
+{\slot
+ok	O
+అమ్మా	O
+}
+

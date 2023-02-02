@@ -1,0 +1,432 @@
+{\intent	d: age?	INFO_REQUEST}
+{\slot
+age?	O
+}
+
+{\intent	d: 24	ANSWER}
+{\slot
+24	B-age
+}
+
+{\intent	d: ఏంటి ని problem	INFO_REQUEST}
+{\slot
+ఏంటి	O
+ని	O
+problem	O
+}
+
+{\intent	p: positive అని వచ్చింది.	ANSWER}
+{\slot
+positive	B-mtest_value
+అని	O
+వచ్చింది.	O
+}
+
+{\intent	d: ఆ pregnancy test positive అని వచ్చింది	ACK}
+{\slot
+ఆ	O
+pregnancy	B-bodily_process
+test	B-mtest
+positive	B-mtest_value
+అని	O
+వచ్చింది	O
+}
+
+{\intent	d: first pregnancy?	INFO_REQUEST}
+{\slot
+first	B-frequency
+pregnancy?	B-bodily_process
+}
+
+{\intent	p1: 2nd madam	ANSWER}
+{\slot
+2nd	B-frequency
+madam	O
+}
+
+{\intent	p1: last time మీ దగ్గరనే వచ్చాము.	STATEMENT}
+{\slot
+last	B-frequency
+time	B-time_period
+మీ	O
+దగ్గరనే	O
+వచ్చాము.	O
+}
+
+{\intent	d: అంటే మీకు ఇప్పుడు ఇది వద్దు ఆ?	INFO_REQUEST}
+{\slot
+అంటే	O
+మీకు	O
+ఇప్పుడు	O
+ఇది	O
+వద్దు	O
+ఆ?	O
+}
+
+{\intent	p1: కావాలి.	ANSWER}
+{\slot
+కావాలి.	O
+}
+
+{\intent	d: అంటే abortions నేను చేయను. అందుకే నాకు doubt.	STATEMENT}
+{\slot
+అంటే	O
+abortions	B-symptom
+నేను	O
+చేయను.	B-negative
+అందుకే	O
+నాకు	O
+doubt.	O
+}
+
+{\intent	p1: అంటే మీరే delivery చేసింది మా పాపది.	STATEMENT}
+{\slot
+అంటే	O
+మీరే	O
+delivery	B-bodily_process
+చేసింది	O
+మా	O
+పాపది.	B-familal
+}
+
+{\intent	d: బాబు ఆ? పాప?	INFO_REQUEST}
+{\slot
+బాబు	B-person
+ఆ?	O
+పాప	B-person
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఎంత age పాపది?	INFO_REQUEST}
+{\slot
+ఎంత	O
+age	O
+పాపది?	B-person
+}
+
+{\intent	p: 4th year	ANSWER}
+{\slot
+4th	B-age
+year	I-age
+}
+
+{\intent	d: 3 years అయింది.	ACK}
+{\slot
+3	B-age
+years	I-age
+అయింది.	O
+}
+
+{\intent	d: last period date అమ్మా?	INFO_REQUEST}
+{\slot
+last	B-frequency
+period	B-bodily_process
+date	B-time_period
+అమ్మా?	O
+}
+
+{\intent	p: 21st	ANSWER}
+{\slot
+21st	B-time_period
+}
+
+{\intent	d: 21st of?	INFO_REQUEST}
+{\slot
+21st	B-time_period
+of?	O
+}
+
+{\intent	p: January.	ANSWER}
+{\slot
+January.	B-time_period
+}
+
+{\intent	d: అంటే 1 month మీద 3 daysఏ.	INFO_REQUEST}
+{\slot
+అంటే	O
+1	B-time_period
+month	I-time_period
+మీద	I-time_period
+3	I-time_period
+daysఏ.	I-time_period
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d: regular cycles ఆ?	INFO_REQUEST}
+{\slot
+regular	B-normal
+cycles	B-bodily_process
+ఆ?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: timeకే ఉంటావా?	INFO_REQUEST}
+{\slot
+timeకే	B-time_period
+ఉంటావా?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: ఆ?	SNU}
+{\slot
+ఆ?	O
+}
+
+{\intent	p: అవును	REPEAT_REPHRASE}
+{\slot
+అవును	B-positive
+}
+
+{\intent	d: వాంతులు అవుతున్నాయా?	INFO_REQUEST}
+{\slot
+వాంతులు	B-symptom
+అవుతున్నాయా?	O
+}
+
+{\intent	p: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: first pregnancy అంతా smooth గానే? అప్పుడు ఏం problem లేదా?	INFO_REQUEST}
+{\slot
+first	B-frequency
+pregnancy	B-bodily_process
+అంతా	O
+smooth	B-normal
+గానే?	O
+అప్పుడు	B-time_period
+ఏం	O
+problem	O
+లేదా?	O
+}
+
+{\intent	p: hmm	ANSWER}
+{\slot
+hmm	B-positive
+}
+
+{\intent	d: bp sugar అలాంటివి, ఏం లేవా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+sugar	B-medical_condition
+అలాంటివి,	O
+ఏం	O
+లేవా?	O
+}
+
+{\intent	p: ఏం లేదు.	ANSWER}
+{\slot
+ఏం	O
+లేదు.	B-negative
+}
+
+{\intent	d: thyroid	INFO_REQUEST}
+{\slot
+thyroid	B-medical_condition
+}
+
+{\intent	p: thyroid ఉంది.	ANSWER}
+{\slot
+thyroid	B-medical_condition
+ఉంది.	B-positive
+}
+
+{\intent	p1: ఏ lightగా	STATEMENT}
+{\slot
+ఏ	O
+lightగా	B-intensity
+}
+
+{\intent	d: ఇప్పుడు ఎంత 12.5 వేసుకునేదానివా?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎంత	O
+12.5	B-medicine_dose
+వేసుకునేదానివా?	O
+}
+
+{\intent	p: umm	ANSWER}
+{\slot
+umm	B-positive
+}
+
+{\intent	p1: అవును madam	STATEMENT}
+{\slot
+అవును	B-positive
+madam	O
+}
+
+{\intent	p: అవును	STATEMENT}
+{\slot
+అవును	B-positive
+}
+
+{\intent	d: పాప weight ఎంత వచ్చింది?	INFO_REQUEST}
+{\slot
+పాప	B-person
+weight	B-bm
+ఎంత	O
+వచ్చింది?	O
+}
+
+{\intent	p: 2.5	ANSWER}
+{\slot
+2.5	B-bm
+}
+
+{\intent	p1: 2.75 వచ్చింది madam	ANSWER}
+{\slot
+2.75	B-bm
+వచ్చింది	O
+madam	O
+}
+
+{\intent	d: మేనరికం కాదు కదా. బయటి సంబంధం ఏ.	INFO_REQUEST}
+{\slot
+మేనరికం	B-familal
+కాదు	B-negative
+కదా.	O
+బయటి	O
+సంబంధం	O
+ఏ.	O
+}
+
+{\intent	p1: అవును madam	ANSWER}
+{\slot
+అవును	B-positive
+madam	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇంతకు ముందు దగ్గు, దమ్ము, Asthma, fits ఏం లేవు కదా. medical problem ఏం లేవు కదా.	INFO_REQUEST}
+{\slot
+ఇంతకు	O
+ముందు	O
+దగ్గు,	B-symptom
+దమ్ము,	B-medical_condition
+Asthma,	B-medical_condition
+fits	B-medical_condition
+ఏం	O
+లేవు	O
+కదా.	O
+medical	O
+problem	O
+ఏం	O
+లేవు	O
+కదా.	O
+}
+
+{\intent	p: ఏం లేవు.	ANSWER}
+{\slot
+ఏం	O
+లేవు.	B-negative
+}
+
+{\intent	p1: pche	ANSWER}
+{\slot
+pche	B-negative
+}
+
+{\intent	d: పాపకి 3 years. ఇప్పుడు pregnancy.	ACK}
+{\slot
+పాపకి	B-person
+3	B-age
+years.	I-age
+ఇప్పుడు	O
+pregnancy.	B-bodily_process
+}
+
+{\intent	d: planned pregnancy ఏ నా? folic acid tablets ఏమైనా వేసుకుంటున్నావా?	INFO_REQUEST}
+{\slot
+planned	B-time_period
+pregnancy	B-bodily_process
+ఏ	O
+నా?	O
+folic	B-medicine
+acid	I-medicine
+tablets	I-medicine
+ఏమైనా	O
+వేసుకుంటున్నావా?	O
+}
+
+{\intent	p: లేదు madam	ANSWER}
+{\slot
+లేదు	B-negative
+madam	O
+}
+
+{\intent	d: blood group తెలుసా?	INFO_REQUEST}
+{\slot
+blood	B-body_substance
+group	B-mtest
+తెలుసా?	O
+}
+
+{\intent	p: 0 positive.	ANSWER}
+{\slot
+0	B-mtest_value
+positive.	B-mtest_value
+}
+
+{\intent	d: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+
+{\intent	p: కాకపోతే మొన్న కొద్దిగా bleeding లాగా కనపడింది	STATEMENT}
+{\slot
+కాకపోతే	O
+మొన్న	B-time_period
+కొద్దిగా	B-intensity
+bleeding	B-medical_condition
+లాగా	O
+కనపడింది	O
+}
+
+{\intent	d: ఎప్పుడు?	INFO_REQUEST}
+{\slot
+ఎప్పుడు?	O
+}
+
+{\intent	p: మొన్న	ANSWER}
+{\slot
+మొన్న	B-time_period
+}
+
+{\intent	d: మొన్న అంటే?	INFO_REQUEST}
+{\slot
+మొన్న	B-time_period
+అంటే?	O
+}
+
+{\intent	p: 22nd	ANSWER}
+{\slot
+22nd	B-time_period
+}
+
+{\intent	d: పడుకో.	ACTION_DIR}
+{\slot
+పడుకో.	O
+}
+

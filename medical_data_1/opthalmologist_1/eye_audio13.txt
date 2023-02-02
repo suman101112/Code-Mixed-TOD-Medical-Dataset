@@ -1,0 +1,75 @@
+{\intent	d: వయస్సు ఎంత?	INFO_REQUEST}
+{\slot
+వయస్సు	O
+ఎంత?	O
+}
+
+{\intent	p: 49, m	STATEMENT}
+{\slot
+49,	B-age
+m	B-gender
+}
+
+{\intent	d: చెప్పండి ఏమైంది?	INFO_REQUEST}
+{\slot
+చెప్పండి	O
+ఏమైంది?	O
+}
+
+{\intent	p: దగ్గరది కనిపిస్త లేదు. 1 week కింద వచ్చిన, అద్దాలు ఇచ్చారు, దూరంది బానే కనిపిస్తుంది కానీ దగ్గరదే సరిగ్గా కనిపిస్త లేదు.	ANSWER}
+{\slot
+దగ్గరది	B-location
+కనిపిస్త	B-bodily_process
+లేదు.	I-negative
+1	B-time_period
+week	I-time_period
+కింద	O
+వచ్చిన,	O
+అద్దాలు	O
+ఇచ్చారు,	O
+దూరంది	B-location
+బానే	B-normal
+కనిపిస్తుంది	B-bodily_process
+కానీ	O
+దగ్గరదే	B-location
+సరిగ్గా	O
+కనిపిస్త	B-symptom
+లేదు.	I-symptom
+}
+
+{\intent	d: bp ఉందా?	INFO_REQUEST}
+{\slot
+bp	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: ఉంది.	ANSWER}
+{\slot
+ఉంది.	B-positive
+}
+
+{\intent	d: ఎన్ని years నుంచి?	INFO_REQUEST}
+{\slot
+ఎన్ని	O
+years	B-time_period
+నుంచి?	O
+}
+
+{\intent	p: 15 years అయింది	ANSWER}
+{\slot
+15	B-time_period
+years	I-time_period
+అయింది	O
+}
+
+{\intent	d: sugar ఉందా?	INFO_REQUEST}
+{\slot
+sugar	B-medical_condition
+ఉందా?	O
+}
+
+{\intent	p: లేదు.	ANSWER}
+{\slot
+లేదు.	B-negative
+}
+

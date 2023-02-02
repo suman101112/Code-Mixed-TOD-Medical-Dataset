@@ -1,0 +1,257 @@
+{\intent	p: sir నా పేరు Chandrakumar అండి	STATEMENT}
+{\slot
+sir	O
+నా	O
+పేరు	O
+Chandrakumar	B-name
+అండి	O
+}
+
+{\intent	d: Chandrakumar గారు చెప్పండి sir	ACTION_DIR}
+{\slot
+Chandrakumar	B-name
+గారు	O
+చెప్పండి	O
+sir	O
+}
+
+{\intent	d: ఏం సమస్య మీది.	INFO_REQUEST}
+{\slot
+ఏం	O
+సమస్య	O
+మీది.	O
+}
+
+{\intent	p: నేను ఎక్కువగా నాకు gas trouble వస్తాది sir ఈ side, leftside pain వస్తాది.	ANSWER}
+{\slot
+నేను	O
+ఎక్కువగా	B-intensity
+నాకు	O
+gas	B-medical_condition
+trouble	I-medical_condition
+వస్తాది	O
+sir	O
+ఈ	O
+side,	B-location
+leftside	B-location
+pain	B-symptom
+వస్తాది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకా kumarగారు ఇంకేముంది	INFO_REQUEST}
+{\slot
+ఇంకా	O
+kumarగారు	B-name
+ఇంకేముంది	O
+}
+
+{\intent	p: ఇదివరకు ayurvedic వాడుతున్నాను	ANSWER}
+{\slot
+ఇదివరకు	O
+ayurvedic	B-medicine
+వాడుతున్నాను	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: స్థానికంగా hosptial ఉండే అది government hospital ది.	STATEMENT}
+{\slot
+స్థానికంగా	O
+hosptial	O
+ఉండే	O
+అది	O
+government	B-hospital_name
+hospital	O
+ది.	O
+}
+
+{\intent	p: వాడుతుంటే కొద్దిగా ఉపశమనం ఉంటుంది కానీ	STATEMENT}
+{\slot
+వాడుతుంటే	O
+కొద్దిగా	O
+ఉపశమనం	B-normal
+ఉంటుంది	O
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఎక్కువ మసాలా పొడులు తగ్గిస్తున్నా కానీ	HOLD}
+{\slot
+ఎక్కువ	B-intensity
+మసాలా	B-food_substance
+పొడులు	I-food_substance
+తగ్గిస్తున్నా	O
+కానీ	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఈ మధ్య కొద్దిగా left side pain వస్తుంది sir.	STATEMENT}
+{\slot
+ఈ	O
+మధ్య	O
+కొద్దిగా	O
+left	B-location
+side	I-location
+pain	B-symptom
+వస్తుంది	O
+sir.	O
+}
+
+{\intent	d: left side వస్తుందా pain అంతా?	INFO_REQUEST}
+{\slot
+left	B-location
+side	I-location
+వస్తుందా	O
+pain	B-symptom
+అంతా?	O
+}
+
+{\intent	p: ఆ left side pain వస్తుంది కింద	ANSWER}
+{\slot
+ఆ	O
+left	B-location
+side	I-location
+pain	B-symptom
+వస్తుంది	O
+కింద	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: తరువాత ఈ మంట పై చేయి గుండె నొప్పి అన్నట్లుగా ఉంటుంది	STATEMENT}
+{\slot
+తరువాత	O
+ఈ	O
+మంట	B-symptom
+పై	B-location
+చేయి	B-body_part
+గుండె	B-body_part
+నొప్పి	B-symptom
+అన్నట్లుగా	O
+ఉంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక్కోసారి గొంతులో మంటగా ఉంటుంది	STATEMENT}
+{\slot
+ఒక్కోసారి	O
+గొంతులో	B-body_part
+మంటగా	B-symptom
+ఉంటుంది	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: ఇంకా?	INFO_REQUEST}
+{\slot
+ఇంకా?	O
+}
+
+{\intent	d: ఇంకా kumarగారు ఇంకేమైనా ఉందా?	REPEAT_REPHRASE}
+{\slot
+ఇంకా	O
+kumarగారు	B-name
+ఇంకేమైనా	O
+ఉందా?	O
+}
+
+{\intent	p: అయితే english మందులు మనేసాను, ayurvedic వాడుతున్నాను, కొద్దిగా ఉపశమనం ఉండి కానీ తగ్గట్లేదు, sir.	STATEMENT}
+{\slot
+అయితే	O
+english	B-medicine
+మందులు	B-medicine
+మనేసాను,	O
+ayurvedic	B-medicine
+వాడుతున్నాను,	O
+కొద్దిగా	O
+ఉపశమనం	B-normal
+ఉండి	I-normal
+కానీ	O
+తగ్గట్లేదు,	B-symptom
+sir.	O
+}
+
+{\intent	d: ok ok	ACK}
+{\slot
+ok	O
+ok	O
+}
+
+{\intent	d: అలా manage అవుతుంది అంతే problem	ACK}
+{\slot
+అలా	O
+manage	O
+అవుతుంది	O
+అంతే	O
+problem	O
+}
+
+{\intent	p: అంతే sir	ACK}
+{\slot
+అంతే	O
+sir	O
+}
+
+{\intent	d: ok kumar గారు	ACK}
+{\slot
+ok	O
+kumar	B-name
+గారు	O
+}
+
+{\intent	d: కొద్దిగా ఏంటంటే leftలో మనకి ఇక్కడ pain, మంట, discomfort ఉన్నప్పుడు అదే discomfort మనకు ఇంకా పక్కకి వెళుతుందనుకోండీ	MEDICAL_EXPLANATION}
+{\slot
+కొద్దిగా	O
+ఏంటంటే	O
+leftలో	B-location
+మనకి	O
+ఇక్కడ	O
+pain,	B-symptom
+మంట,	B-symptom
+discomfort	B-medical_condition
+ఉన్నప్పుడు	O
+అదే	O
+discomfort	B-medical_condition
+మనకు	O
+ఇంకా	O
+పక్కకి	B-location
+వెళుతుందనుకోండీ	O
+}
+
+{\intent	d: scan చేయిపిస్తే మనకు ఏంటి అంటే splenomegaly ఉంటుంది.	DIAGNOSIS}
+{\slot
+scan	B-mtest
+చేయిపిస్తే	O
+మనకు	O
+ఏంటి	O
+అంటే	O
+splenomegaly	B-medical_condition
+ఉంటుంది.	O
+}
+

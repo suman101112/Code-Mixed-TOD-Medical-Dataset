@@ -1,0 +1,151 @@
+{\intent	d: Hello	SU}
+{\slot
+Hello	O
+}
+
+{\intent	p: हां , PCOD problem అండి.	STATEMENT}
+{\slot
+हां	O
+,	O
+PCOD	B-medical_condition
+problem	O
+అండి.	O
+}
+
+{\intent	d: చెప్పండి.	ACTION_DIR}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: marriage 20 yearsలో అయింది అండి.	ANSWER}
+{\slot
+marriage	B-marital_status
+20	B-time_period
+yearsలో	I-time_period
+అయింది	O
+అండి.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: మీ వయస్సు ఎంత అండి ఇప్పుడు?	INFO_REQUEST}
+{\slot
+మీ	O
+వయస్సు	O
+ఎంత	O
+అండి	O
+ఇప్పుడు?	O
+}
+
+{\intent	p: ఇప్పుడు 23 అండి 3 years అవుతుంది ఇప్పుడు	ANSWER}
+{\slot
+ఇప్పుడు	O
+23	B-age
+అండి	O
+3	B-time_period
+years	I-time_period
+అవుతుంది	O
+ఇప్పుడు	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: చెప్పండి	ACTION_DIR}
+{\slot
+చెప్పండి	O
+}
+
+{\intent	p: అదేనండీ PCOD problem అని చెప్తున్నారండీ.	STATEMENT}
+{\slot
+అదేనండీ	O
+PCOD	B-medical_condition
+problem	I-medical_condition
+అని	O
+చెప్తున్నారండీ.	O
+}
+
+{\intent	p: అదే madam PCOD problem అని చెప్తున్నారు madam.	STATEMENT}
+{\slot
+అదే	O
+madam	O
+PCOD	B-medical_condition
+problem	I-medical_condition
+అని	O
+చెప్తున్నారు	O
+madam.	O
+}
+
+{\intent	d: మరి treatment ఎమి తీసుకోలేడా అండి 3 years వరకు	INFO_REQUEST}
+{\slot
+మరి	O
+treatment	B-treatment
+ఎమి	O
+తీసుకోలేడా	O
+అండి	O
+3	B-time_period
+years	I-time_period
+వరకు	O
+}
+
+{\intent	p: ఆ తిరిగాం madam 2 3 sides తిరిగాం madam	STATEMENT}
+{\slot
+ఆ	O
+తిరిగాం	O
+madam	O
+2	B-frequency
+3	B-frequency
+sides	B-place
+తిరిగాం	O
+madam	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: చూపించాము	STATEMENT}
+{\slot
+చూపించాము	O
+}
+
+{\intent	d: umm	ACK}
+{\slot
+umm	O
+}
+
+{\intent	p: అదే period కూడా regularగా రావట్లేదు	STATEMENT}
+{\slot
+అదే	O
+period	B-bodily_process
+కూడా	O
+regularగా	B-normal
+రావట్లేదు	B-negative
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: ఒక 10 days అట్ల late అవుతుంది	STATEMENT}
+{\slot
+ఒక	O
+10	B-time_period
+days	I-time_period
+అట్ల	O
+late	B-symptom
+అవుతుంది	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+

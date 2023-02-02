@@ -1,0 +1,193 @@
+{\intent	p: doctor గారు, నా పేరు Suresh kumar	STATEMENT}
+{\slot
+doctor	B-medical_professional
+గారు,	O
+నా	O
+పేరు	O
+Suresh	B-name
+kumar	I-name
+}
+
+{\intent	p: నా వయస్సు 24 సంవత్సరాలు.	STATEMENT}
+{\slot
+నా	O
+వయస్సు	O
+24	B-age
+సంవత్సరాలు.	I-age
+}
+
+{\intent	p: నా చిన్న తనంలో కుడి కంట్లో ఒక stick కుచ్చుకుంది bleeding అయింది. operation కూడా జరిగింది.	STATEMENT}
+{\slot
+నా	O
+చిన్న	O
+తనంలో	O
+కుడి	B-location
+కంట్లో	B-body_part
+ఒక	O
+stick	O
+కుచ్చుకుంది	O
+bleeding	B-medical_condition
+అయింది.	O
+operation	B-treatment
+కూడా	O
+జరిగింది.	O
+}
+
+{\intent	p: అప్పటినుంచి కుడి కంటికి vision సరిగ్గా లేదు.	STATEMENT}
+{\slot
+అప్పటినుంచి	O
+కుడి	B-location
+కంటికి	B-body_part
+vision	B-bodily_process
+సరిగ్గా	B-symptom
+లేదు.	I-symptom
+}
+
+{\intent	p: కళ్ళజోడు వాడితే తప్ప సరిగ్గా కనిపించట్లేదు.	STATEMENT}
+{\slot
+కళ్ళజోడు	O
+వాడితే	O
+తప్ప	O
+సరిగ్గా	B-symptom
+కనిపించట్లేదు.	I-symptom
+}
+
+{\intent	p: దీనికి laser చికిత్స ఉందా అని doctorని consult చేసాను కానీ doctorగారు ఎలాంటి chance లేదన్నారు మరి మీ సలహా ఏంటి?	INFO_REQUEST}
+{\slot
+దీనికి	O
+laser	B-treatment
+చికిత్స	I-treatment
+ఉందా	O
+అని	O
+doctorని	B-medical_professional
+consult	O
+చేసాను	O
+కానీ	O
+doctorగారు	B-medical_professional
+ఎలాంటి	O
+chance	O
+లేదన్నారు	B-negative
+మరి	O
+మీ	O
+సలహా	O
+ఏంటి?	O
+}
+
+{\intent	d: Suresh, ఒక వయస్సులో మీ కంటికి injury అయింది.	ACK}
+{\slot
+Suresh,	B-name
+ఒక	O
+వయస్సులో	O
+మీ	O
+కంటికి	B-body_part
+injury	B-trauma
+అయింది.	O
+}
+
+{\intent	d: injury అయినా తరువాత operation అయింది.	ACK}
+{\slot
+injury	B-trauma
+అయినా	O
+తరువాత	B-time_period
+operation	B-treatment
+అయింది.	O
+}
+
+{\intent	d: operation అయినా తరువాత మీరు completeగా ఎంత చూపు అనేది చెప్పలేదు.	STATEMENT}
+{\slot
+operation	B-treatment
+అయినా	O
+తరువాత	B-time_period
+మీరు	O
+completeగా	O
+ఎంత	O
+చూపు	B-bodily_process
+అనేది	O
+చెప్పలేదు.	O
+}
+
+{\intent	d: so normalగా మీకు చూపు completeగా 100 percent 6/6 vision ఉందా?	INFO_REQUEST}
+{\slot
+so	O
+normalగా	O
+మీకు	O
+చూపు	B-bodily_process
+completeగా	B-normal
+100	B-mtest_value
+percent	I-mtest_value
+6/6	B-mtest_value
+vision	B-bodily_process
+ఉందా?	O
+}
+
+{\intent	d: లేకపోతే మీకు ఎంత percentage of చూపు ఉందనేది clearగా లేదు details.	STATEMENT}
+{\slot
+లేకపోతే	O
+మీకు	O
+ఎంత	O
+percentage	B-mtest_value
+of	O
+చూపు	B-bodily_process
+ఉందనేది	O
+clearగా	B-normal
+లేదు	B-negative
+details.	O
+}
+
+{\intent	d: but ఆ అద్దాలు పెట్టుకుంటుంటేనే కనిపిస్తాయి అని చెప్పి మీరు చెప్పడం జరిగింది.	ACK}
+{\slot
+but	O
+ఆ	O
+అద్దాలు	O
+పెట్టుకుంటుంటేనే	O
+కనిపిస్తాయి	B-symptom
+అని	O
+చెప్పి	O
+మీరు	O
+చెప్పడం	O
+జరిగింది.	O
+}
+
+{\intent	d: దాని మీరు lasik చేయించుకోవడానికి doctorని కలిసినప్పుడు ఆయన అవకాశం లేదు అని చెప్పడం కారణాన్ని ఈ విషయాన్ని బట్టి చూస్తే మీకు cornea మీద probably injury అయినా situationలో	STATEMENT}
+{\slot
+దాని	O
+మీరు	O
+lasik	B-treatment
+చేయించుకోవడానికి	O
+doctorని	B-medical_professional
+కలిసినప్పుడు	O
+ఆయన	O
+అవకాశం	O
+లేదు	O
+అని	O
+చెప్పడం	O
+కారణాన్ని	O
+ఈ	O
+విషయాన్ని	O
+బట్టి	O
+చూస్తే	O
+మీకు	O
+cornea	B-body_part
+మీద	B-location
+probably	O
+injury	B-trauma
+అయినా	O
+situationలో	O
+}
+
+{\intent	d: cornea మీద scar అయినా situationలో మీకు lasik surgery చేయడం అంతా ఆ కుదరకపోవచ్చు.	MEDICAL_EXPLANATION}
+{\slot
+cornea	B-body_part
+మీద	B-location
+scar	B-symptom
+అయినా	O
+situationలో	O
+మీకు	O
+lasik	B-treatment
+surgery	I-treatment
+చేయడం	O
+అంతా	O
+ఆ	O
+కుదరకపోవచ్చు.	B-negative
+}
+

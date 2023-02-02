@@ -1,0 +1,137 @@
+{\intent	p1: బక్కగైతాంది.	STATEMENT}
+{\slot
+బక్కగైతాంది.	B-symptom
+}
+
+{\intent	d: january లో 18th అప్పుడు చూపించారు, అప్పుడు మీ అబ్బయి బరువు ఎంత అప్పుడు?	INFO_REQUEST}
+{\slot
+january	B-time_period
+లో	O
+18th	B-time_period
+అప్పుడు	B-time_period
+చూపించారు,	O
+అప్పుడు	B-time_period
+మీ	O
+అబ్బయి	B-person
+బరువు	B-bm
+ఎంత	O
+అప్పుడు?	O
+}
+
+{\intent	p1: 6.5 sir	ANSWER}
+{\slot
+6.5	B-bm
+sir	O
+}
+
+{\intent	d: ఇప్పుడు ఎంత?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	O
+ఎంత?	O
+}
+
+{\intent	p1: 7.2 అమ్మా	ANSWER}
+{\slot
+7.2	B-bm
+అమ్మా	B-person
+}
+
+{\intent	d: ఇప్పుడు మీ అబ్బయి సన్నబడడం లావు పడడం కాదు, బరువు పెరుగుతున్నాడో, లేదో చూసుకోండి.	MEDICAL_EXPLANATION}
+{\slot
+ఇప్పుడు	O
+మీ	O
+అబ్బయి	B-person
+సన్నబడడం	O
+లావు	O
+పడడం	O
+కాదు,	O
+బరువు	B-bm
+పెరుగుతున్నాడో,	B-bodily_process
+లేదో	O
+చూసుకోండి.	O
+}
+
+{\intent	p1: ఎమి తినడం లేదు sir.	STATEMENT}
+{\slot
+ఎమి	O
+తినడం	B-bodily_process
+లేదు	B-negative
+sir.	O
+}
+
+{\intent	d: చిన్నప్పుడు up to 9 months గుండ్రంగా ఉంటారు, fat ఎక్కువ ఉంటుంది, 9 months తరువాత సన్నగా పొడుగ్గా అయితుంటారు, weight ఏం తగ్గరు.	MEDICAL_EXPLANATION}
+{\slot
+చిన్నప్పుడు	B-person
+up	O
+to	O
+9	B-time_period
+months	I-time_period
+గుండ్రంగా	O
+ఉంటారు,	O
+fat	B-body_substance
+ఎక్కువ	B-intensity
+ఉంటుంది,	O
+9	B-time_period
+months	I-time_period
+తరువాత	O
+సన్నగా	O
+పొడుగ్గా	O
+అయితుంటారు,	O
+weight	B-bm
+ఏం	O
+తగ్గరు.	O
+}
+
+{\intent	d: ఈ వయస్సులో పాప, పిల్లలు పాలు తాగాలి, రాత్రి పూట అన్నము, ఇడ్లి, కొద్ది కొద్దిగా పెట్టలి	ACTION_DIR}
+{\slot
+ఈ	O
+వయస్సులో	O
+పాప,	B-person
+పిల్లలు	B-person
+పాలు	B-food_substance
+తాగాలి,	B-bodily_process
+రాత్రి	B-time_period
+పూట	I-time_period
+అన్నము,	B-food_substance
+ఇడ్లి,	B-food_substance
+కొద్ది	O
+కొద్దిగా	O
+పెట్టలి	O
+}
+
+{\intent	p: అవేం తినట్లేదు sir	STATEMENT}
+{\slot
+అవేం	O
+తినట్లేదు	B-symptom
+sir	O
+}
+
+{\intent	p2: పెడతాంటే ఊంచుతాంది	STATEMENT}
+{\slot
+పెడతాంటే	O
+ఊంచుతాంది	B-bodily_process
+}
+
+{\intent	p1: మొన్నటిదాకా motions, తగ్గింది.	STATEMENT}
+{\slot
+మొన్నటిదాకా	B-time_period
+motions,	B-symptom
+తగ్గింది.	O
+}
+
+{\intent	d: టీకాలన్నీ up to date ఉన్నాయా	INFO_REQUEST}
+{\slot
+టీకాలన్నీ	B-medicine
+up	O
+to	O
+date	B-time_period
+ఉన్నాయా	O
+}
+
+{\intent	p1: ఆ ఉన్నాయి sir	ANSWER}
+{\slot
+ఆ	O
+ఉన్నాయి	O
+sir	O
+}
+

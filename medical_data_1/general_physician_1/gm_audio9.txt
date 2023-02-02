@@ -1,0 +1,187 @@
+{\intent	d: నమస్కారమండీ Mukharjeeగారు	GREETING}
+{\slot
+నమస్కారమండీ	O
+Mukharjeeగారు	B-name
+}
+
+{\intent	d: చెప్పండి.	CONV_OPEN}
+{\slot
+చెప్పండి.	O
+}
+
+{\intent	p: మా wifeకి last month pregnancy అండి	STATEMENT}
+{\slot
+మా	O
+wifeకి	O
+last	B-time_period
+month	I-time_period
+pregnancy	B-medical_condition
+అండి	O
+}
+
+{\intent	d: ok hmm	ACK}
+{\slot
+ok	O
+hmm	O
+}
+
+{\intent	p: అయితే మములు testలో భాగంగా sugar test, sugar ఉందని తేలింది	STATEMENT}
+{\slot
+అయితే	O
+మములు	O
+testలో	B-mtest
+భాగంగా	O
+sugar	B-medical_condition
+test,	B-mtest
+sugar	B-medical_condition
+ఉందని	B-positive
+తేలింది	O
+}
+
+{\intent	d: ya hmm	ACK}
+{\slot
+ya	O
+hmm	O
+}
+
+{\intent	p: అయితే pregnancyలో sugar రావడం ఏమైనా problem అవుతుందా?	INFO_REQUEST}
+{\slot
+అయితే	O
+pregnancyలో	B-medical_condition
+sugar	B-medical_condition
+రావడం	O
+ఏమైనా	O
+problem	O
+అవుతుందా?	O
+}
+
+{\intent	d: hmm	ACK}
+{\slot
+hmm	O
+}
+
+{\intent	p: మామూలుగా sugar controlలో ఉంది. every month చేయిస్తున్నాం 104, 105	STATEMENT}
+{\slot
+మామూలుగా	O
+sugar	B-medical_condition
+controlలో	B-normal
+ఉంది.	O
+every	B-time_period
+month	B-time_period
+చేయిస్తున్నాం	O
+104,	B-mtest_value
+105	B-mtest_value
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: 140 లోపు వస్తుంది.	STATEMENT}
+{\slot
+140	B-mtest_value
+లోపు	O
+వస్తుంది.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: అయితే వాళ్ళు ఆ medicines ఇస్తున్నారు.	STATEMENT}
+{\slot
+అయితే	O
+వాళ్ళు	O
+ఆ	O
+medicines	B-medicine
+ఇస్తున్నారు.	O
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	p: పుట్టబోయే babyకి ఏమైన problem అయితుందా sugar వల్ల?	INFO_REQUEST}
+{\slot
+పుట్టబోయే	B-person
+babyకి	I-person
+ఏమైన	O
+problem	O
+అయితుందా	O
+sugar	B-medical_condition
+వల్ల	O
+}
+
+{\intent	p: pregnancyలో ఏమైనా జగ్రత్తలు తీసుకోవాలా sugar వల్ల అని తెలుసుకుందామని	STATEMENT}
+{\slot
+pregnancyలో	B-medical_condition
+ఏమైనా	O
+జగ్రత్తలు	O
+తీసుకోవాలా	O
+sugar	B-medical_condition
+వల్ల	O
+అని	O
+తెలుసుకుందామని	O
+}
+
+{\intent	d: ya fine sir, definiteగా.	ACK}
+{\slot
+ya	O
+fine	O
+sir,	O
+definiteగా.	O
+}
+
+{\intent	d: తన age ఎంత sir ఇప్పుడు మీ wifeది	INFO_REQUEST}
+{\slot
+తన	O
+age	O
+ఎంత	O
+sir	O
+ఇప్పుడు	O
+మీ	O
+wifeది	O
+}
+
+{\intent	p: 29 అండి	ANSWER}
+{\slot
+29	B-age
+అండి	O
+}
+
+{\intent	d: 29 years	ACK}
+{\slot
+29	B-age
+years	I-age
+}
+
+{\intent	d: ya nothing to worry	STATEMENT}
+{\slot
+ya	O
+nothing	O
+to	O
+worry	O
+}
+
+{\intent	d: ఇప్పుడు present అయితే controlలో ఉంది .	DIAGNOSIS}
+{\slot
+ఇప్పుడు	O
+present	B-time_period
+అయితే	O
+controlలో	B-normal
+ఉంది	O
+.	O
+}
+
+{\intent	d: and key monitoring అనేది important	ACTION_DIR}
+{\slot
+and	O
+key	O
+monitoring	O
+అనేది	O
+important	O
+}
+

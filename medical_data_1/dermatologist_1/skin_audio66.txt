@@ -1,0 +1,47 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 30, female	ANSWER}
+{\slot
+30,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: నల్లటి మచ్చలు వస్తున్నాయి sir. బాగా నల్లగవుతున్నా sir.	ANSWER}
+{\slot
+నల్లటి	B-symptom
+మచ్చలు	I-symptom
+వస్తున్నాయి	I-symptom
+sir.	O
+బాగా	B-symptom
+నల్లగవుతున్నా	I-symptom
+sir.	O
+}
+
+{\intent	d: ఎండలో పోతావా బాగా?	INFO_REQUEST}
+{\slot
+ఎండలో	O
+పోతావా	O
+బాగా?	O
+}
+
+{\intent	p: అవును sir.	ANSWER}
+{\slot
+అవును	B-positive
+sir.	O
+}
+
+{\intent	d: ఎండలో పోకు.	ACTION_DIR}
+{\slot
+ఎండలో	O
+పోకు.	B-negative
+}
+

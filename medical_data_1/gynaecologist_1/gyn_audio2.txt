@@ -1,0 +1,200 @@
+{\intent	d: 41	ANSWER}
+{\slot
+41	B-age
+}
+
+{\intent	d: female	ANSWER}
+{\slot
+female	B-gender
+}
+
+{\intent	d: నెల నెల bleeding ఎక్కువైతుంది వచ్చినవ్.	STATEMENT}
+{\slot
+నెల	B-time_period
+నెల	I-time_period
+bleeding	B-medical_condition
+ఎక్కువైతుంది	B-intensity
+వచ్చినవ్.	O
+}
+
+{\intent	p: ఆ	ACK}
+{\slot
+ఆ	O
+}
+
+{\intent	d: ఇప్పుడు ఈసారి bleeding ఎలా ఉంది?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+ఈసారి	O
+bleeding	B-medical_condition
+ఎలా	O
+ఉంది?	O
+}
+
+{\intent	p: ఆ first 3 days బానే ఉండే, నిన్న కూడా బాగానే అయింది. ఇవాల్టికి కొద్దికొద్దిగా.	STATEMENT}
+{\slot
+ఆ	O
+first	B-time_period
+3	I-time_period
+days	I-time_period
+బానే	B-normal
+ఉండే,	O
+నిన్న	B-time_period
+కూడా	O
+బాగానే	B-normal
+అయింది.	O
+ఇవాల్టికి	O
+కొద్దికొద్దిగా.	B-intensity
+}
+
+{\intent	d: ఇవాల్టికి ఎన్నో రోజు?	INFO_REQUEST}
+{\slot
+ఇవాల్టికి	O
+ఎన్నో	O
+రోజు?	O
+}
+
+{\intent	p: 5th day.	ANSWER}
+{\slot
+5th	B-time_period
+day.	I-time_period
+}
+
+{\intent	d: అంటే 3 days బాగా అయింది	STATEMENT}
+{\slot
+అంటే	O
+3	B-time_period
+days	I-time_period
+బాగా	B-normal
+అయింది	O
+}
+
+{\intent	p: ఆ.	ACK}
+{\slot
+ఆ.	O
+}
+
+{\intent	d: normal ఏ కదా.	STATEMENT}
+{\slot
+normal	B-normal
+ఏ	O
+కదా.	O
+}
+
+{\intent	d: bleeding ఎక్కువ అవుతున్నప్పుడు నొప్పి ఉందా?	INFO_REQUEST}
+{\slot
+bleeding	B-medical_condition
+ఎక్కువ	B-intensity
+అవుతున్నప్పుడు	O
+నొప్పి	B-symptom
+ఉందా?	O
+}
+
+{\intent	p: ఆ, first 2 days బాగా pain ఉంది.	ANSWER}
+{\slot
+ఆ,	O
+first	B-time_period
+2	I-time_period
+days	I-time_period
+బాగా	B-intensity
+pain	B-symptom
+ఉంది.	B-positive
+}
+
+{\intent	d: first 2 days నొప్పి, bleeding ఎక్కువ ఉంది.	ACK}
+{\slot
+first	B-time_period
+2	I-time_period
+days	I-time_period
+నొప్పి,	B-symptom
+bleeding	B-medical_condition
+ఎక్కువ	B-intensity
+ఉంది..	O
+}
+
+{\intent	p: ఆ.	ACK}
+{\slot
+ఆ.	O
+}
+
+{\intent	d: time కె ఉన్నావా?	INFO_REQUEST}
+{\slot
+time	B-time_period
+కె	O
+ఉన్నావా?	O
+}
+
+{\intent	p: ఆ.	ANSWER}
+{\slot
+ఆ.	B-positive
+}
+
+{\intent	d: late ఉన్నవా?	INFO_REQUEST}
+{\slot
+late	B-symptom
+ఉన్నవా?	O
+}
+
+{\intent	p: ఆ నేను tablets వేసుకున్నంక	HOLD}
+{\slot
+ఆ	O
+నేను	O
+tablets	B-medicine
+వేసుకున్నంక	O
+}
+
+{\intent	d: timeకి ఉన్నవ్	STATEMENT}
+{\slot
+timeకి	B-time_period
+ఉన్నవ్	O
+}
+
+{\intent	p: అవును	ANSWER}
+{\slot
+అవును	B-positive
+}
+
+{\intent	d: ok	ACK}
+{\slot
+ok	O
+}
+
+{\intent	d: పడుకోమ్మా చూద్దాం	ACTION_DIR}
+{\slot
+పడుకోమ్మా	O
+చూద్దాం	O
+}
+
+{\intent	d: అది 10 సంవత్సరాలు అయిపోయిందిగ	MEDICAL_EXPLANATION}
+{\slot
+అది	O
+10	B-time_period
+సంవత్సరాలు	I-time_period
+అయిపోయిందిగ	O
+}
+
+{\intent	d: కాకుండా నువ్వు చేయించుకున్నావ్ కదా అమ్మా	INFO_REQUEST}
+{\slot
+కాకుండా	B-bodily_process
+నువ్వు	O
+చేయించుకున్నావ్	B-treatment
+కదా	O
+అమ్మా	O
+}
+
+{\intent	p: ఆ	ANSWER}
+{\slot
+ఆ	B-positive
+}
+
+{\intent	d1: Leela Chandirka?	STATEMENT}
+{\slot
+Leela	B-name
+Chandirka?	I-name
+}
+
+{\intent	d1: పడుకో	ACTION_DIR}
+{\slot
+పడుకో	O
+}
+

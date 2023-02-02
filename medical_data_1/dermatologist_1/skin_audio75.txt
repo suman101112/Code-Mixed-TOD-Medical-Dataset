@@ -1,0 +1,58 @@
+{\intent	d: ఎంత వయసు?	INFO_REQUEST}
+{\slot
+ఎంత	O
+వయసు?	O
+}
+
+{\intent	p: 20, female	ANSWER}
+{\slot
+20,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: చేతుల మీద మచ్చలు వస్తున్నాయి.	ANSWER}
+{\slot
+చేతుల	B-body_part
+మీద	I-body_part
+మచ్చలు	B-symptom
+వస్తున్నాయి.	I-symptom
+}
+
+{\intent	d: ఇప్పుడు problem ఏంటి?	INFO_REQUEST}
+{\slot
+ఇప్పుడు	B-time_period
+problem	B-symptom
+ఏంటి?	O
+}
+
+{\intent	p: పెరిగినట్లు అనిపిస్తుంది.	ANSWER}
+{\slot
+పెరిగినట్లు	B-symptom
+అనిపిస్తుంది.	I-symptom
+}
+
+{\intent	d: మచ్చ దగ్గర అవస్థ ఉందా? నొప్పి ఉందా? తిమ్మిరి ఉందా?	INFO_REQUEST}
+{\slot
+మచ్చ	B-body_part
+దగ్గర	I-body_part
+అవస్థ	B-symptom
+ఉందా?	I-symptom
+నొప్పి	B-symptom
+ఉందా?	I-symptom
+తిమ్మిరి	B-symptom
+ఉందా?	I-symptom
+}
+
+{\intent	p: గట్టిగా నొక్కినప్పుడు కొద్దిగా నొస్తుంది.	ANSWER}
+{\slot
+గట్టిగా	B-bodily_process
+నొక్కినప్పుడు	B-bodily_process
+కొద్దిగా	B-symptom
+నొస్తుంది.	I-symptom
+}
+

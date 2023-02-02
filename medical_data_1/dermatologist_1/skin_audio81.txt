@@ -1,0 +1,28 @@
+{\intent	d: వయసు ఎంత?	INFO_REQUEST}
+{\slot
+వయసు	O
+ఎంత?	O
+}
+
+{\intent	p: 23, female	ANSWER}
+{\slot
+23,	B-age
+female	B-gender
+}
+
+{\intent	d: ఏమైంది?	INFO_REQUEST}
+{\slot
+ఏమైంది?	O
+}
+
+{\intent	p: hair fall బాగా అయితుంది. dandruff కూడా ఉంది.	ANSWER}
+{\slot
+hair	B-symptom
+fall	I-symptom
+బాగా	I-symptom
+అయితుంది.	B-symptom
+dandruff	B-symptom
+కూడా	I-symptom
+ఉంది.	I-symptom
+}
+

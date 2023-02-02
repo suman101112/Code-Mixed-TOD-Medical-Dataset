@@ -1,0 +1,96 @@
+{\intent	d: చెప్పండమ్మా	STATEMENT}
+{\slot
+చెప్పండమ్మా	O
+}
+
+{\intent	p: ఆ madam actualగా అంతా ok అన్నారు scanningలో unexplain అని రాసారు	ACK}
+{\slot
+ఆ	O
+madam	O
+actualగా	O
+అంతా	O
+ok	O
+అన్నారు	O
+scanningలో	B-mtest
+unexplain	B-mtest_value
+అని	O
+రాసారు	O
+}
+
+{\intent	d: scanningలో ఏమని రాసారు?	INFO_REQUEST}
+{\slot
+scanningలో	B-mtest
+ఏమని	O
+రాసారు?	O
+}
+
+{\intent	d1: unexplained అని	STATEMENT}
+{\slot
+unexplained	B-mtest_value
+అని	O
+}
+
+{\intent	d: unexplained అని రాసారు ok మా	ACK}
+{\slot
+unexplained	B-mtest_value
+అని	O
+రాసారు	O
+ok	O
+మా	O
+}
+
+{\intent	p: so next మేము IUI కి వెళ్ళాలనుకుంటున్నాం madam, IUI అంటే ఎలా ఉంటుంది madam	STATEMENT}
+{\slot
+so	O
+next	O
+మేము	O
+IUI	B-treatment
+కి	O
+వెళ్ళాలనుకుంటున్నాం	O
+madam,	O
+IUI	B-treatment
+అంటే	O
+ఎలా	O
+ఉంటుంది	O
+madam	O
+}
+
+{\intent	d: so IUI అంటే normalగా ఇప్పుడు unexplained infertilityలో IUI definiteగా ఉపయోగ పడుతది	STATEMENT}
+{\slot
+so	O
+IUI	B-treatment
+అంటే	O
+normalగా	O
+ఇప్పుడు	O
+unexplained	B-mtest_value
+infertilityలో	I-mtest_value
+IUI	B-treatment
+definiteగా	O
+ఉపయోగ	O
+పడుతది	O
+}
+
+{\intent	d: అంటే I won't say it is 100 percent success but ఒక 20 to 30 percent అంటే extra edge over tablets.	MEDICAL_EXPLANATION}
+{\slot
+అంటే	O
+I	O
+won't	O
+say	O
+it	O
+is	O
+100	O
+percent	O
+success	O
+but	O
+ఒక	O
+20	B-age
+to	O
+30	B-age
+percent	O
+అంటే	O
+extra	O
+edge	O
+over	O
+tablets.	B-medicine
+}
+
