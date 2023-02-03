@@ -1,0 +1,2650 @@
+#0
+d: vayasu entha?
+p: 28, f
+d: emayindi?
+p: chevi potu undi doctor. muttukunte noppi undi. erraga ayindi.
+d: jalubu unda?
+p: avunu.
+
+#1
+d: entha vayasu?
+p: 12, m
+d: emayindi?
+p: chevi noppi undi sir. muttukuntunte noppi lesthundi. sariga vinipisthaledu.
+d: jalubu unda?
+p: undi.
+
+#2
+d: umar kitna?
+p: 48, f
+d: emayindi?
+p: chevi noppilesthundi. sariga vinpisthaledu. 
+d: jwaram unda?
+p: undi.
+d: jalubu daggu unnaya?
+p: unnayi.
+
+#3
+d: entha age?
+p: 29, f
+d: emayindi?
+p: chevipotu baaga undi. tala noppi undi. vantosthundi.
+d: jalubu daggu unnaya?
+p: unnayi.
+d: jwaram unda?
+p: undi.
+
+#4
+d: entha age?
+p: 69, f
+d: emayindi?
+p: chevi sariga vinabadathaledu. jalubu, daggu, jwaram inka chevi noppi unnadi.
+
+#5
+d: kitna umar?
+p: 34, f
+d: emayindi?
+p: vantulayithunnay, jwaram undi. inka chevi baaga noppilesthundi.
+
+#6
+d: entha vayasu?
+p: 21, m
+d: emayindi?
+p: chevi noppi undi.
+
+#7
+d: umar kitna?
+p: 53, f
+d: emayindi?
+p: jwaram osthudi. ninna ratri jwaram baaga ekuvayindi.
+d: jalubu daggu unnaya?
+p: unnayi.
+
+#8
+d: age?
+p: 42, f
+d: emayindi?
+p: jalubu daggu baaga undi sir.
+d: enni rojula nunchi?
+p: 1 week ayithundi. mukku baaga karuthundi.
+d: mukkulonunchi neellu osthunnaya? cheemidi osthunda?
+p: neelosthunnayi.
+
+#9
+d: age?
+p: 60, f
+d: emayindi?
+p: chevi sariga vinipithaledu. dibbadam patindi.
+d: jalubu daggu unda?
+p: undi.
+
+#10
+d: entha age?
+p: 19, m
+d: emayindi?
+p: chevipotu undi 3 days ayithandi. chevi nunchi cheemu kaaruthundi. dibbadam pattinatlu ayindi.
+
+#11
+d: vayasu entha?
+p: 21, m
+d: emayindi?
+p: chevi nunchi cheemu osthandi. baaga noppi undi. erraga ayi vachindi chevu.
+
+#12
+d: entha vayasu?
+p: 34, f
+d: emayindi?
+p: chevi sariga vinipisthaledu. vaasindi. chevi laaguthandi baaga.
+
+#13
+d: kitna umar?
+p: 40, f
+d: kya hua?
+p: kaan dukh raha sir. kaan se pus aa raha.
+d: kitne din se?
+p: 2 days hue.
+d: sardi hai?
+p: ha. 
+
+#14
+d: vayasu entha?
+p: 72, f
+d: emayindi?
+p: chevipotu, chevi vinabadathaledu. chevi dibbadam pattindi.
+
+#15
+d: entha age?
+p: 63, f
+d: emayindi?
+p: chevi nunchi cheemu karuthandi. noppilesthandi. baaga laaguthandi.
+
+#16
+d: kitna umar?
+p: 24, f
+d: emayindi?
+p: chevi noppilesthundi baaga.
+d: epatinunchi?
+p: ninnati nunchi.
+d: sardi ayinda?
+p: avunu.
+
+#17
+d: vayasu entha?
+p: 45, f
+d: emayindi?
+p: chevi noppilesthandi. ninna ratre jwaram ochindi.
+
+#18
+d: entha vayasu?
+p: 59, m
+d: emayindi?
+p: chevi deggara debba tagilindi. noppi unadi. sariga vinabadathaledu.
+
+#19
+d: kitna umar?
+p: 61, f
+d: emayindi?
+p: gonthu noppi unnadi sir. inka ninnati nunchi chevi potu baaga.
+d: sardayinda?
+p: ledu.
+
+#20
+d: vayasu entha?
+p: 24, f
+d: emayindi?
+p: swimming chesinapudu chevulo neellu poyi chevu baaga noppilesthundi.
+d: epudu alane ayithunda?
+p: avunu. 
+
+#21
+d: vayasu entha?
+p: 15, f
+d: emayindi?
+p: chala days nunchi swimming chesthunnanu. appatinunchi baaga chevu noppi start ayindi. chevu dibbadam undi.
+
+#22
+d: vayasu entha?
+p: 9 months, m
+d: emayindi?
+p: chevi gunjuthunnadu. baaga edusthunnadu.
+
+#23
+d: vayasu entha?
+p: 30 months, m
+d: emayindi?
+p: jalubu daggu undi. inka chevi pattukoni baaga edusthunnadu.
+d: eppatinunchi chevi noppi?
+p: ee roju morning nunchi.
+d: jwaram unda?
+p: unde. taggindi.
+
+#24
+d: vayasu entha?
+p: 7, m
+d: emayindi?
+p: chevilo tellaga ochindi. baaga edusthunnadu. 
+
+#25
+d: entha age?
+p: 4, f
+d: emayindi?
+p: chevi lakkuntu edusthundi. erraga ayindi chevi. asalu edupu aputhaledu.
+
+#26
+d: age?
+p: 34, f
+d: emayindi?
+p: chevi nunchi cheemu karuthundi. chevipotu. 
+d: sardi ayinda?
+p: avunu.
+
+#27
+d: entha age?
+p: 22, m
+d: emayindi?
+p: sardi ayindi. gonthu noppilesthandi. chevi potu undi.
+
+#28
+d: age?
+p: 49, f
+d: emayindi?
+p: chevi noppi lesthandi baaga. kallu tiruthunnatlu ayithandi.
+
+#29
+d: entha vayasu?
+p: 46, m
+d: emayindi?
+p: chevipotu inka vantulu ayithunnayi. kallu tiriginatlu motham ala ayithandi.
+
+#30
+d: umar kitna?
+p: 29, m
+d: emayindi?
+p: chevulo edo shabdham ochinatlu vinipisthandi.
+
+#31
+d: vayasu entha?
+p: 46, f
+d: emayindi?
+p: sardi ayindi. tummulu baaga osthannayi.
+d: mukkulonunchi neeru karuthanda gattiga osthunda?
+p: nellosthunnayi.
+
+#32
+d: age?
+p: 57, m
+d: emayindi?
+p: sardi ayindi. mukku karuthane unnadi. 
+p1: green color lo osthandi sir cheemidi.
+d: jwaram daggu unda?
+p: undi.
+
+#33
+d: umar kitna?
+p: 43, m
+d: emayindi?
+p: sardi ayindi. assalu gali pilchukovadaniki osthaledu.
+
+#34
+d: age?
+p: 54, m
+d: emayindi?
+p: sardi ayindi. mukku block ayithundi. okati teristhe inkoti block ayithundi. assalu nidra ledu.
+
+#35
+d: age?
+p: 68, f
+d: emayindi?
+p: sardi ayindi. baaga mukku karuthandi. mukku block ayithundi.
+
+#36
+d: age?
+p: 34, m
+d: emayindi?
+p: morning ayithe oka 2 hrs lechinapudu mukku continuous ga karuthundi. block ayithundi. 
+
+#37
+d: age?
+p: 76, f
+d: emayindi?
+p: mukku baaga karuthundi. talanoppi undi.
+
+#38
+d: entha vayasu?
+p: 47, m
+d: emayindi?
+p: sardi ayindi. daggu baaga otsthuundi.
+
+#39
+d: entha age?
+p: 18, m
+d: emayindi?
+p: jwaram osthandi. tagguthaledu. sardi ayindi. mukku baaga karuthundi.
+
+#40
+d: kitna umar?
+p: 36, f
+d: emayindi?
+p: mukku baaga karuthandi. mokam motham noppi lesthandi. tala noppi baaaga undi.
+
+#41
+d: age?
+p: 33, f
+d: emayindi?
+p: sardi ayindi. mukku nunchi neelu karuthunnayi. jwaram osthundi. 
+
+#42
+d: entha vayasu?
+p: 57, f
+d: emayindi?
+p: mukku nunchi neelu karuthunnayi. gali peelchukoravatle. talanoppi osthandi.
+
+#43
+d: entha vayasu?
+p: 74, m
+d: emayindi?
+p: mukku karuthundi. cheemidi gattiga osthandi. 
+
+#44
+d: entha age?
+p: 31, m
+d: emayindi?
+p: mukku block ayithundi. baaga karuthundi. sariga gali pilchukoravadam ledu. mokam noppilesthandi. tummulosthunnayi. asthama undi.
+
+#45
+d: entha age?
+p: 72, m
+d: emayindi?
+p: mukku block ayithundi. baaga tummulosthunnayi. asthama undi.
+
+#46
+d: kitna umar?
+p: 34, m
+d: emayindi?
+p: mukku block ayithundi. baaga karuthundi. sariga gali pilchukoravadam ledu.
+d: mukku nunchi neelu osthunnaya? cheemidi osthunda?
+p: cheemidi osthundi.
+
+#47
+d: vayasu entha?
+p: 37, f
+d: emayindi?
+p: mukku block ayithundi. baaga karuthundi. sariga gali pilchukoravadam ledu. tummulosthunnayi. asthama undi.
+
+#48
+d: entha age?
+p: 27, f
+d: emayindi?
+p: sardi ayindi. jwaram osthundi.
+
+#49
+d: vayasu entha?
+p: 46, m
+d: emayindi?
+p: sardi ayindi. mukku baaga karuthundi. 
+
+#50
+d: umar kitna?
+p: 33, m
+d: emayindi?
+p: sardi daggu jwaram undi.
+
+#51
+d: age?
+p: 21, m
+d: emayindi?
+p: jwaram osthundi. mukku baaga karuthundi.
+
+#52
+d: age?
+p: 21, f
+d: emayindi?
+p: ratri daggu baaga osthundi. mukku karuthundi. baaga tummulosthunnayi.
+
+#53
+d: age?
+p: 15, m
+d: emayindi?
+p: morning lechinpudpu tummulu start ayithunnayi inka mukkkulonunchi neelosthunayi.
+
+#54
+d: vayasu entha?
+p: 63, f
+d: emayindi?
+p: sardi ayindi. kalla kinda noppilesthundi. motham gattiga anipisthundi.
+
+#55
+d: entha age?
+p: 23, m
+d: emayindi?
+p: nose block ayithundi. water osthundi baaga inka tummulu osthunnayi.
+
+#56
+d: age?
+p: 16, f
+d: emayindi?
+p: throat pain undi. inka mukku karuthundi.
+
+#57
+d: vayasu entha?
+p: 60, m
+d: emayindi?
+p: mukkulonunchi raktam osthundi.
+
+#58
+d: kitna umar?
+p: 50, m
+d: kya hua?
+p: naak pura band ho raha. face pura dukh raha. head ache bohot aara.
+
+#59
+d: umar kitna?
+p: 22, f
+d: kya hua?
+p: naak me sein blood nikal raha cheenke toh.
+
+#60
+d: kitna umar?
+p: 15, m
+d: kya hua?
+p: naak pura bandh ho raha. aur pani jaise continuous aa raha. bohot headache ho raha.
+
+#61
+d: umar kitna?
+p: 31, m
+d: kya hua?
+p: eyes dukh rahe aur naak bohot block ho raha.
+
+#62
+d: kitna umar?
+p: 47, f
+d: kya hua?
+p: kaan pura bandh ho rahe. aur naak block ho raha.
+
+#63
+d: umar kitna?
+p: 52, m
+d: kya hua?
+p: sunayi nahin de raha. gala pura badal gaya. naak mein se pani nikalraha continuous. dukh raha poora face.
+
+#64
+d: entha vayasu?
+p: 24, m
+d: emayindi?
+p: mukkulo nunchi inka kallalonunchi neellu karuthunnayi. noppilesthundi kalla deggara.
+
+#65
+d: umar kitna?
+p: 38, f
+d: kya hua?
+p: head ache bohot hai. naak mein se paani aa raha aur naak bandh hai.
+
+#66
+d: kitna umar?
+p: 46, m
+d: kya hua?
+p: kaan dukh raha. annkha mein se paani aa raha. aur naak poora block hora.
+d: naak mein se neet aa rahi ya paani aa raha.
+p: paaani aa raha.
+
+#67
+d: vayasu entha?
+p: 27, m
+d: emayindi?
+p: gonthu noppilesthundi. mingadaniki osthaledu.
+
+#68
+d: kitna umar?
+p: 42, m
+d: emayindi?
+p: gala dukh raha. 
+d: sardi hai?
+p: ha. aur khansi bhi hai.
+
+#69
+d: kitna umar?
+p: 74, f
+d: kya hua?
+p: gala bohot dikh raha. sardi bohot hai.
+
+#70
+d: entha age?
+p: 70, m
+d: emayindi?
+p: gonthu motham kuchinatlu ayindi. 
+d: daggu jalubu unda?
+p: avunu.
+
+#71
+d: entha age?
+p: 42, m
+d: emayindi?
+p: gonthu noppi, manta. mingadaaniki kastamayithundi. jalubu undi inka daggu undi.
+
+#72
+d: entha vayasu?
+p: 33, m
+d: emayindi?
+p: gonthlo manta. mingadaaniki kastamayithundi.
+d: jalubu unda?
+p: undi.
+
+#73
+d: age?
+p: 40, m
+d: emayindi?
+p: gonthu baaga noppi. tinadaniki kastamayithundi. tattukunnatlu anipisthundi.
+
+#74
+d: entha vayasu?
+p: 49, f
+d: emayindi?
+p: jalubu daggu inka gonthunoppi baaga undi.
+
+#75
+d: kitna umar?
+p: 12, f
+d: emayindi?
+p: gonthulo manta, noppi inka maata maarindi. jalubu undi.
+
+#76
+d: vayasu entha?
+p: 36, f
+d: emayindi?
+p: gonthu noppi baaga undi inka maata marindi. jalubu undi.
+
+#77
+d: age?
+p: 67, f
+d: emayindi?
+p: gonthu noppi undi. edi mingadaniki ravatledu.
+
+#78
+d: age?
+p: 14, f
+d: emayindi?
+p: jwaram undi, gonthu noppi undi. mingadaniki osthaledu.
+
+#79
+d: vayasu entha?
+p: 63, m
+d: emayindi?
+p: jalubu ekkuvayindi inka noppi baaga undi.
+
+#80
+d: kitna umar?
+p: 50, m
+d: emayindi?
+p: tala noppi baga undi, jalubu inka gonthulo manta.
+
+#81
+d: vayasu entha?
+p: 75, m
+d: emayindi?
+p: jwaram undi, sardi ayindi, mukku baaga karuthundi, gonthu noppilesthundi.
+
+#82
+d: umar kitna?
+p: 32, m
+d: emayindi?
+p: sardi ayindi, mukku baaga karuthundi, gonthu noppilesthundi.
+
+#83
+d: entha age?
+p: 60, f
+d: emayindi?
+p: mukku baaga karuthundi, gonthu noppilesthundi. edi tinalanipinchadam ledu.
+
+
+#84
+d: vayasu entha?
+p: 61, m
+d: emayindi?
+p: jwaram undi, sardi ayindi, gonthu noppilesthundi. edi tinalanipinchadam ledu. edi tinna vantulayithunnayi.
+
+
+#85
+d: vayasu entha?
+p: 61, m
+d: emayindi?
+p: sardi ayindi, gonthu noppilesthundi, edi tinna vantulayithunnayi.
+
+#86
+d: umar kitna?
+p: 29, m
+d: emayindi?
+p: jwaram undi, sardi ayindi, mukku baaga karuthundi, ratri motham dagguthuna. edi tinna vantulayithunnayi.
+
+#87
+d: entha vayasu?
+p: 42, f
+d: emayindi?
+p: gonthu noppilesthundi. edi tinalanipinchadam ledu. baaga daggu undi. edi tinna vantulayithunnayi.
+
+#88
+d: umar kitna?
+p: 78, f
+d: emayindi?
+p: sardi ayindi, mukku baaga karuthundi, gonthu noppilesthundi. edi tinalanipinchadam ledu. edi tinna vantulayithunnayi.
+
+#89
+d: entha vayasu?
+p: 26, f
+d: emayindi?
+p: mukku baaga karuthundi, gonthu lo manta. baaga daggu undi.
+
+
+#90
+d: kitna umar?
+p: 49, f
+d: emayindi?
+p: jwaram undi, mukku baaga karuthundi, daggu undi inka gonthu lo manta.
+
+#91
+d: vayasu entha?
+p: 25, f
+d: emayindi?
+p: gonthu noppilesthundi. edi tinna vantulayithunnayi.
+
+#92
+d: vayasu entha?
+p: 35, m
+d: emayindi?
+p: sardi ayindi, gonthu noppilesthundi. edi tinalanipinchadam ledu. baaga daggu undi. edi tinna vantulayithunnayi.
+
+#93
+d: kitna umar?
+p: 17, f
+d: emayindi?
+p: jwaram undi, sardi ayindi, mukku baaga karuthundi, gonthu noppilesthundi. edi tinalanipinchadam ledu. baaga daggu undi. edi tinna vantulayithunnayi.
+
+#94
+d: entha vayasu?
+p: 52, f
+d: emayindi?
+p: itching undi gonthulo. gonthu noppi baaga undi. 
+
+#95
+d: entha age?
+p: 68, f
+d: emayindi?
+p: daggu undi baaga. maata maarindi. sariga matladosthaledu. 
+
+#96
+d: entha age?
+p: 18, f
+d: emayindi?
+p: mingadam kastamayithundi. tinnappudu edo tattukunnatlu anipisthundi.
+
+#97
+d: entha age?
+p: 51, f
+d: emayindi?
+p: gonthu noppi undi. maata marindi. sariga matladosthaledu. 
+
+#98
+d: entha vayasu?
+p: 29, m
+d: emayindi?
+p: gonthulo noppilesthundi. emayina tinna tattukkunnatlu anipisthundi. 
+
+#99
+d: entha age?
+p: 35, f
+d: emayindi?
+p: maata marindi. emayina matladina tattukunnatlu anipisthundi. sariga matladosthaledu.
+
+#100
+d: age?
+p: 19, m
+d: emayindi?
+p: gonthu noppi undi. maata marindi. sardi ayindi. chevipotu undi.
+
+#101
+d: kitna umar?
+p: 12, f
+d: kya hua?
+p: gale me dukh raha. sardi hai. aawaaz badal gaya
+
+#102
+d: umar kitna?
+p: 68, m
+d: emayindi?
+p: kaan darad kar raha. gala dukh raha. sardi hai.
+
+#103
+d: vayasu entha?
+p: 72, f
+d: emayindi?
+p: gonthu noppi undi. emayina tinnapudu tattukunnatlu undi. baaga noppilesthundi.
+
+#104
+d: kitna umar?
+p: 14, f
+d: kya hua?
+p: gala darad kar raha. kuch khaye toh nigalnese darad ho raha. 
+
+#105
+d: vayasu entha?
+p: 31, f
+d: emayindi?
+p: chevipotu undi. sardi ayindi inka gonthu noppi undi.
+
+#106
+d: umar kitna?
+p: 53, f
+d: kya hua?
+p: gale me kuch khaane se atak raha. nigalna mushkil ho raha.
+
+#107
+d: entha age?
+p: 48, f
+d: emayindi?
+p: mukku kaaruthundi. daggu undi. jwaram osthundi. talanoppi undi inka neerasam ga undi.
+
+#108
+d: entha vayasu?
+p: 47, f
+d: emayindi?
+p: mukku kaaruthundi. gonthu noppi undi. baaga tummulosthunnayi. daggu undi. talanosthundi.
+
+#109
+d: entha age?
+p: 24, f
+d: emayindi?
+p: mukku kaaruthundi. tummulosthunnayi baaga, gonthulo noppi inka ninnatinunchi jwaram undi.
+
+#110
+d: entha age?
+p: 59, m
+d: emayindi?
+p: mukku kaaruthundi. tummulosthunnayi. talanosthundi, jwaram undi.
+
+#111
+d: kitna umar?
+p: 22, f
+d: kya hua?
+p: sardi hui. chinkaa aa rahe. sardarad bohot darad kar raha sir.
+
+#112
+d: age?
+p: 52, f
+d: emayindi?
+p: gonthu noppi undi. mukku kaaruthundi. swaasa aduthaledu.
+
+#113
+d: umar kitna?
+p: 28, m
+d: kya hua?
+p: gala dukh raha, sardi hai, cheenka bohot haa rahe. naak bandh ho gaya.
+
+#114
+d: umar kitna?
+p: 56, m
+d: kya hua?
+p: sardi khansi bukhaar hai aur gale me darad ho raha.
+
+#115
+d: entha vayasu?
+p: 23, f
+d: emayindi?
+p: nose block ayithundi. gonthulo manta. daggu baaga undi.
+
+#116
+d: vayasu entha?
+p: 47, f
+d: emayindi?
+p: gonthulo manta, maata marindi.
+d: jalubuayindia?
+p: avunu.
+
+#117
+d: kitna umar?
+p: 21, m
+d: kya hua?
+p: gala dukh raha. khansi hai. gale mein kuch atka jaisa lag raha.
+
+#118
+d: umar kitna?
+p: 53, m
+d: kya hua?
+p: kaan darad kar raha aur gale mein chubh raha.
+
+#119
+d: entha age?
+p: 20, f
+d: emayindi?
+p: nose block ayindi. baaga tummulosthunnayi.
+
+#120
+d: umar kitna?
+p: 78, m
+d: emayindi?
+p: chevu deggara debba tagilindi.
+
+#121
+d: vayasu entha?
+p: 68, f
+d: emayindi?
+p: swaasa aduthaledu. sardi ayindi. 
+
+#122
+d: vayasu entha?
+p: 20, f
+d: emayindi?
+p: swaasa aduthaledu. baaga sardi ayindi. block ayindi nose. baaga tummulosthunnayi.
+
+#123
+d: age?
+p: 44, m
+d: emayindi?
+p: cheemidi gonthulo jaaruthundi.
+
+#124
+d: vayasu entha?
+p: 61, m
+d: emayindi?
+p: baaga sardi ayindi. gonthulo jaaruthundi minguthunte.
+
+#125
+d: kitna umar?
+p: 23, f
+d: kya hua?
+p: mukkulonunchi raktam osthundi.
+
+#126
+d: vayasu entha?
+p: 45, m
+d: emayindi?
+p: mukkulo kurupu ayindi. raktam osthundi.
+
+#127
+d: age?
+p: 54, f
+d: emayindi?
+p: sardi ayindi baaga. mokham deggara baaga gattia undi.
+
+#128
+d: vayasu entha?
+p: 54, m
+d: emayindi?
+p: swaasa aduthaledu. sardi baaga ayindi. chevipotu osthundi.
+
+#129
+d: kitna umar?
+p: 24, m
+d: emayindi?
+p: smell osthaledu. swaasa aduthaledu. baaga sardi undi.
+
+#130
+d: age?
+p: 61, f
+d: emayindi?
+p: sardi ayindi. kallalonunchi neelu osthunayi.
+
+#131
+d: kitna umar?
+p: 65, m
+d: kya hua
+p: sardi hua. sar dard kar raha. kaan me darad hai.
+
+#132
+d: kitna umar?
+p: 57, m
+d: kya hua?
+p: gale me darad hai. kaan lal ho gaya. sardi zyaada hai.
+
+#133
+d: entha age?
+p: 58, f
+d: emayindi?
+p: chevu sariga vinipisthaledu. gonthu noppi undi. sardi ayindi.
+
+#134
+d: umar kitna?
+p: 37, f
+d: emayindi?
+p: chevulu sariga vinapadathalevu.
+
+#135
+d: vayasu entha?
+p: 76, m
+d: emayindi?
+p: chevu erraga ayindi. sariga vinipisthaledu.
+
+#136
+d: age?
+p: 54, f
+d: emayindi?
+p: gonthu deggara ubbinatlu undi. noppilesthandi emayina tintunte.
+
+#137
+d: kitna umar?
+p: 24, f
+d: kya hua?
+p: swimming karne ke baad kaan me darad hai.
+
+#138
+d: entha vayasu?
+p: 75, f
+d: emayindi?
+p: aayaasam osthundi. ratri puta daggu baaga osthundi.
+
+#139
+d: age?
+p: 24, m
+d: emayindi?
+p: baaga ayasam osthundi. gaali aduthaledu. night time lo cough chaaala undi. nidra ledu.
+
+#140
+d: entha vayasu?
+p: 63, m
+d: emayindi?
+p: aayasam osthundi. gaali aduthaledu. baaga daggosthundi.
+
+#141
+d: vayasu entha?
+p: 66, m
+d: emayindi?
+p: kantlo nunchi neelosthunnayi. mukku karuthundi. aayasam ochi baaga daggu osthundi.
+
+#142
+d: kitna umar?
+p: 68, m
+d: kya hua?
+p: saans leena mushkil ho raha. khansi bohot aa rahi.
+
+#143
+d: entha age?
+p: 57, f
+d: emayindi?
+p: aasthama undi. ratri daggu baaga osthundi. medicines vesukunna taggadam ledu.
+
+#144
+d: entha vayasu?
+p: 66, m
+d: emayindi?
+p: ayasam osthundi. emi pani chesina baaga mosa osthundi.
+
+#145
+d: kitna umar?
+p: 78, m
+d: kya hua?
+p: saans phool raha. khaansi aur sardi hai.
+
+#146
+d: vayasu entha?
+p: 55, m
+d: emayindi?
+p: jwaram osthundi. baga jalubu daggu undi. mosa osthundi
+
+#147
+d: entha age?
+p: 68, m
+d: emayindi?
+p: jwaramosthandi. aasyasam osthandi. upiri aduthaledu. jalubu daggu undi.
+
+#148
+d: entha age?
+p: 78, m
+d: emayindi?
+p: gonthulo noppi. bagaa daggu, sardi inka aayaasam baaga osthandi.
+
+#149
+d: umar kitna?
+p: 44, f
+d: kya hua?
+p: gale me darad hai. sardi khansi bhi hai. saans lena mushkil ho raha.
+
+#150
+d: entha vayasu?
+p: 54, m
+d: emayindi?
+p: mukkulonunchi neelu baaaga osthunnayi. 
+
+#151
+d: entha vayasu?
+p: 31, f
+d: emayindi?
+p: cheuvu sariga vinapadathalevu. 
+
+#152
+d: vayasu entha?
+p: 15, f
+d: emayindi?
+p: chevulu sariga vinapadathalevu. edo guyi ani shabdam osthundi.
+
+#153
+d: umar kitna?
+p: 16, m
+d: emayindi?
+p: gonthu deggara gadda undani doctor scan chesi cheppadu. mee deggara vellamannaru.
+
+#154
+d: age?
+p: 25, m
+d: emayindi?
+p: ear lo pundu laaga ayindi. noppi undi. erraga ayindi.
+
+#155
+d: age?
+p: 47, m
+d: emayindi?
+p: mukkulonunchi cheemidi gattiga osthundi.
+d: enni rojula nunchi?
+p: 1 week ayindi.
+d: jwaram unda?
+p: avunu.
+d: daggu unda?
+p: avunu.
+
+#156
+d: entha age?
+p: 44, m
+d: emayindi?
+p: mukkulo nunchi raktam kaaruthundi. mukkuku debba tagilindi.
+
+#157
+d: kitna umar?
+p: 72, m
+d: kya hua?
+p: naak mein se khoon nikal raha. neet me sein khoon bhi aa raha.
+
+#158
+d: entha age?
+p: 47, m
+d: emayindi?
+p: chemidi tho patu raktam osthundi. jalubu daggu taggadam ledu.
+
+#159
+d: kitna umar?
+p: 39, m
+d: kya hua?
+p: neet mein se khoon nikal raha. sardhi khaansi kam nahin ho raha. 
+
+#160
+d: umar kitna?
+p: 43, m
+d: kya hua?
+p: bukhaar hai. sardi kam nahin ho raha. neet green color me aa raha. gaada aa raha.
+
+#161
+d: vayasu entha?
+p: 61, f
+d: emayindi?
+p: gonthu maarindi. baaga sardi ayindi. maata osthaledu. mukku baaga musukupothundi.
+
+#162
+d: age?
+p: 19, m
+d: emayindi?
+p: gonthu maarindi. sardi inka daggu undi. maata osthaledu. nose blockage undi.
+
+#163
+d: kitna umar?
+p: 69, f
+d: kya hua?
+p: bohot cheenka aa rahi. gala kharab hai. baat karna mushkil ho raha.
+
+#164
+d: vayasu entha?
+p: 59, m
+d: emayindi?
+p: mingadam kasthamayithundi. gonthu marindi. gonthulo edo tattukunnatlu undi.
+
+#165
+d: age?
+p: 72, m
+d: emayindi?
+p: gonthu maarindi. maata osthaledu.
+
+#166
+d: age?
+p: 34, f
+d: emayindi?
+p: smell telusthaledu. mukku pani cheyatledu.
+
+#167
+d: entha vayasu?
+p: 58, m
+d: emayindi?
+p: sariga vinipisthaledu. 
+
+#168
+d: kitna umar?
+p: 25, f
+d: kya hua?
+p: kaan laal ho gaya. dukh raha hai.
+
+#169
+d: age?
+p: 78, m
+d: emayindi?
+p: kallu tiruguthunnayi. meda noppi undi. doctor mee deggara po mannadu.
+
+#170
+d: kitna umar?
+p: 50, f
+d: kya hua?
+p1: behosh ho gayi. gardan me darad hai bolke bol rahi.
+
+#171
+d: entha vayasu?
+p: 13, f
+d: emayindi?
+p: behosh ho gayi. sar darad aur gardan me darad hai bol rahi.
+
+#172
+d: entha age?
+p: 24, f
+d: emayindi?
+p: chevi potu undi. jalubu daggu kuda undi.
+
+#173
+d: umar kitna?
+p: 13, m
+d: kya hua?
+p: kaan pe maar lagi. khoon nikal raha. kuch sunayi nahin de raha.
+
+#174
+d: kitna umar?
+p: 18, m
+d: kya hua?
+p: kaan me darad hai. laal ho raha. pus jaisa aa raha.
+
+#175
+d: vayasu entha?
+p: 44, f
+d: emayindi?
+p: swaasa sariga aduthaledu. 
+
+#176
+d: age?
+p: 38, f
+d: emayindi?
+p: sardi ayindi baaga. gaali pelchukovadam kasthamayithundi.
+
+#177
+d: age?
+p: 40, f
+d: emayindi?
+p: sardi ayindi. tummulosthunnayi. swaasa aduthaledu. asthama undi.
+
+#178
+d: kitna umar?
+p: 18, f
+d: kya hua?
+p: sardi hai. cheenka bohot aa rahe. breathing difficult ho raha. asthama hai mujhe.
+
+#179
+d: entha vayasu?
+p: 13, f
+d: emayindi?
+p: gonthu kurchunnadi. matladothaledu.
+
+#180
+d: age?
+p: 46, m
+d: emayindi?
+p: maata ravadam ledu. gonthu noppilesthandi matladuthunte.
+
+#181
+d: kitna umar?
+p: 68, f
+d: kya hua?
+p: gala dukh raha. sardi aur khaansi hai. bukhaar hai.
+
+#182
+d: kitna umar?
+p: 68, m
+d: emayindi?
+p: emayina tinnapudu gonthulo tattukunnatlu undi.
+
+#183
+d: entha age?
+p: 12, f
+d: emayindi?
+p: chinna accident ayindi. cheviki debba tagilindi.
+
+#184
+d: kitna umar?
+p: 56, f
+d: kya hua?
+p: kaam karte waqt kaan pe maar lagi. 
+
+#185
+d: vayasu entha?
+p: 59, m
+d: emayindi?
+p: gonthu deggara debba tagilindi. annam tintunapudu kasthamayithundi. matladosthaledu.
+
+#186
+d: age?
+p: 62, m
+d: emayindi?
+p: sariga vinipisthaledu.
+
+#187
+d: kitna umar?
+p: 72, m
+d: kya hua?
+p: kaan me darad hai. buhaar aa gaya.
+
+#188
+d: umar kitna?
+p: 46, m
+d: kya hua?
+p: naak mein maans hai jaisa lag raha. hamesha naak bandh ho raha.
+
+#189
+d: age?
+p: 78, f
+d: emayindi?
+p: chevulu vinipisthalevu sariga.
+
+#190
+d: kitna umar?
+p: 56, m
+d: kya hua?
+p: naak pe maar lagi. khoon nikal raha.
+
+#191
+d: age?
+p: 46, f
+d: emayindi?
+p: nose baaga block ayindi. tummulosthunnayi. gonthu maarindi.
+
+#192
+d: umar kitna?
+p: 76, m
+d: kya hua?
+p: sardi khaansi bohot hai. gala kharab ho gaya.
+
+#193
+d: kitna umar?
+p: 62, f
+d: kya hua?
+p: gala dukh raha. baat karna mushkil ho gaya. aawaaz nahin aaa rahi.
+
+#194
+d: entha vayasu?
+p: 24, m
+d: emayindi?
+p: gonthu manta peduthundi. emayina minginapudu mantalesthundi.
+
+#195
+d: age?
+p: 67, m
+d: emayindi?
+p: baaga daggu undi. ratri puta daggu baaga osthundi.
+
+#196
+d: kitna umar?
+p: 26, f
+d: emayindi?
+p: rati vipareetamayina daggu undi. dr.
+
+#197
+d: vayasu entha?
+p: 63, f
+d: emayindi?
+p: gonthu noppi undi. kani daggu baaga undi. aayaasam osthundi. raturlu nidra ledu.
+
+#198
+d: entha age?
+p: 24, m
+d: emayindi?
+p: jwaram jalubu daggu undi. weakness osthundi.
+
+#199
+d: kitna umar?
+p: 43, m
+d: kya hua?
+p: buhaar zyaada hai. weakness aa raha.  
+
+#200
+d: age?
+p: 16, f
+d: emayindi?
+p: vipareetamayina tummulu osthunnayi morning lechinapudu. oka 1 hr varaku tummulu agadam ledu.
+
+#201
+d: vayasu AGE_Q
+p: 25, f	AGE_A,GENDER_A
+d: emayindi	SYMPTOM_Q
+p: swaasa aaduthaledu, mukku block ayithundi.	SYMPTOM_A_POS
+d: enni rojulayithundi.	SYMPTOM_Q_TIME
+p: 15 to 20 days	SYMPTOM_A_TIME
+d: aaha	SU(SIGNAL_UNDERSTOOD)
+d: daggu vasthunda? SYMPTOM_Q
+p: daggu ledu	SYMPTOM_A_NEG
+d: talanoppi unda?	SYMPTOM_Q
+p: undi.	SYMPTOM_A,SYMPTOM_A_EXTRA
+d: mukku nunchi neeru laga osthuda leda cheemidi laaga osthuda?	SYMPTOM_Q
+p: rendu. neeru laga and cheemidi laaga.	SYMPTOM_Q
+
+#202
+d: vayasu?
+p: 27, f
+d: emayindi?
+p: cheemidi tummulu motham naralu gunjukosthunayi. nidra padathaledu. eppudu raledu. ippude first time. epudu raledu. tala bhayamkaramayina noppi lesthundi.
+d: enni rojulu ayithundi?
+p: 15 rojulu undi. 
+d: idi oddu ammma.
+
+#203
+d: entha vayasu
+p: 14, m
+d: emayindi?
+p: mukkulo swasa osthaledu.
+d: tummulu osthunnaya?
+d: enniroju ayithundi.
+p: 1 week
+d: tala noppi.
+p: pche
+d: mukku nunchi cheemidi osthunda?
+p: avunu.
+d: jwaram unda?
+p: pche
+d: daggu
+p: daggu undi
+p1: daggu osthundi.
+
+#204
+d: age
+p: 24, m
+d: emayithundi.
+p: chevulo noppi. durada pedthundi.
+d: cheemu osthunda?
+P: cheemu asalu emi ravadamledu sir.
+d: ok
+
+#205
+d: entha vayasu
+p: 42, f
+d: emayindi
+p: sir gonthu baaga noppi peduthundi, daggosthundi.
+d: maata maarindi?
+p: aa maata maarindi
+d: daggu dammu unda?
+p: dagge sir. daggu nanju osthundi.
+
+#206
+D: entha vayasu?
+p: 35, f
+d: emayindi?
+p1: baaga manta osthundi gonthulo.
+p: baaga manta. bharinchaleni manta osthundi. kadupulo noppi osthundi. baaga daggu valla.
+d: jalubu unda?
+p: ledu.
+d: jwaram?
+p: pche.
+
+#207
+d: age
+p: 26, f
+d: gonthu noppuda?
+p: aa
+d: jwaram osthunda?
+p: light ga undi. daggu undi
+d: sardi?
+p: undi
+d: daggu osthunda?
+p: night baaga osthundi. 
+
+#208
+d: umar bolo
+p: 30, m
+d: kya hua
+p: sardi horahi sir hamesha. daily morning sirdi compulsory 1 hr rehta.sar darad bhi hai.
+d: cheenka aate jyada
+P: full
+d: khasi
+p: nahi
+d: naak se paani aataa neet aataa
+P: neet aata. 
+d: kitne mahinon se aara
+p: 1 year ho raha
+d: daily normally neck pain aata night. 
+P: 6 to 10 tak rehta night. fir morning normal.
+
+#209
+d: entha vayasu
+p: 46, f
+d: gonthu, noru baaga aaripothundi sir
+
+#210
+d: entha vayasu
+p: 52, f
+d: emayindi?
+p: gonthulo noppilesthundi. lopala edo tattinatlu ayithundi. 
+d: mukku deggara gonthulo noppi.
+d: mukkulo gaadpu aaduthunda? aagi poyinda?
+p: manchinga undi sir
+d: cheemidi laaga osthunda?
+p: pche
+d: jalubu sardi daggu unda?
+p: emi ledu
+d: tala noppi ochinapudu vaantulu gitla ayithunaya? vanti ochinatlu anipisthunda?
+p: avunu.
+
+#210
+d: entha vayasu
+p: 52, f
+d: emayindi?
+p: gonthulo noppilesthundi. lopala edo tattinatlu ayithundi. 
+d: mukku deggara gonthulo noppi.
+d: mukkulo gaadpu aaduthunda? aagi poyinda?
+p: manchinga undi sir
+d: cheemidi laaga osthunda?
+p: pche
+d: jalubu sardi daggu unda?
+p: emi ledu
+d: tala noppi unda?
+p: undi. inka vantulu ayithunnayi.
+
+#211
+d: umar bolo
+p: 16, m
+d: kya hua
+P: sardi hogayi, khaansi aarahi?
+p: khaansi
+d: naakonse neet aari?
+p: bohot aari. aur aakohn me darad bhi deera
+d: bukhar hai?
+p: thoda. kaan me darad hai.
+d: abhi kitne din see neet aaraha
+p: 1 week se
+
+#212
+d: entha age
+p: 70, m
+d: 70
+d: problem enti?
+p: gonthu antha manduthundi. lopala daggulesi temada osthandi. 10 rojulu ayithandi. tagguthaledu.
+d: jwaram unda?
+p: jawaram ledu
+d: maata maarinda?
+p: koncham marindi
+d: ratri puta dammu daggu baaga osthuda?
+P: aa. nidra potalenu asalayithe. daggi daggi daggi 10 rojula nundi avastha ayithandi. 
+d: bp sugar unda?
+p: bp sugar undi sir
+
+#213
+d: umar kitna? 
+p: 47, m
+d: kya hua?
+p: kaan me mere ku cheed jaise lag raha sir
+d: abhi kitna din se ho raha aisa?
+p: 4 5 din se. kaan me ungli daale toh seeti jaisa baj raha.
+d: sardi khaasi hai?
+p: thodi light khaasi hai. 
+d: sound <beep> jaisa awaj aari.
+p: hawa aarahi jaise lagri. 
+
+#214
+d: age
+p: 47, m
+d: emayindi?
+p: pain undi sir. mokhamantha nopi.
+d: mukku nopposthuda?
+p: antha noppi undi. swaasa aadadu. 
+d: tummulu osthaya baaga
+p: appudu ochevi sir. kannulu anni guchuku pothunatlu anipisthayi sir. ghatuvi tinte ukkiri bikkiri ayithundi sir.
+
+#214
+d: age
+p: 35, m
+p: sardi bohot ho raha sir. dham aa rahi.
+d: cheenka bohot aarahe?
+P: ha sir
+d: naak mein se neet jaisa aa raha paani jaisa aaraha?
+p: pani jaisa sir
+d: sar dardh bukhar aisa kuch nahin hai?
+p: nahin sir. sardi hai.
+d: khansi hai?
+p: khansi hai. belgum aa raha.
+
+#215
+d: vayasu
+p: 45,f
+d: emayindi?
+p: chevu noppi lesthandani ochina kada sir. 
+d: chevu vinabadthanda manchiga?
+p: vinabadathandi. appudu vinabadale kani ippudu vinabadathandi. chevu antha nosthandi.
+d: chevu antha nosthandi.
+p: aa idantha nosthandi.
+d: cheemu gitla emi karuthaledu.
+p: aa karuthaledu. manam padukunte kallu girra girra tiruguthandi. antha noppi unnadayya naaku. 
+d: em kadu.
+p: talakayi tiruguthandi.
+d: kadu em kaledu.
+
+#216
+d: umar
+p: 53, m
+d: kya hua?
+p: sardi bohot sata rahi sir. 4 din se ho rahi. spray dal diya.
+d: naak mein se neet jaise aa rahi?
+P: bohot aa rahi sir. bohot darad ho raha.
+d: sar darad?
+p: nahin.
+d: bukhaar?
+p: nahin.
+
+#217
+d: umar
+p: 45, f
+d: kya hua?
+p: sardhi hai, khansi aari, aankh ka darad, bukhar.
+d: kitne din se?
+p: kal se. pura daradh ho raha sir. sardi ki goli dall di.
+d: asthama ka spary kuch toh use kar rahe.
+p: hai sir.
+
+#218
+d: age entha?
+p: 70, m
+d: emayindi?
+p: 3 months nunchi notlo pundu undi sir. nopilesthundi tinetapudu.
+
+#219
+d: age entha?
+p: 65, m
+d: emayindi?
+p: chevu noppi takkuva ayindi sir.
+d: inkem problem?
+p: jara karuthannatlu unnadi sir, motions ayithannayi, daily 4 times pothanna.
+
+#220
+d: vayasu?
+p: 18, f
+d: emayindi?
+p: cough osthundi.
+d: tumulosthunnaya?
+p: hmm
+d: jwaram
+p: ledu.
+d: daguthunte najulaaaga paduthunda?
+p: uhum.
+d: chevu noppi emayina unda?
+p: pche.
+
+#221
+d: vayasu?
+p: 25, f
+d: emayindi?
+p: jalubu frequent ga osthundi.
+d: tummulosthunnaya? baaga?
+p: tummulu tagginayi kani. tala bhaaramga anipisthundi.
+p: motham swaasa adanatlu ayindi.
+
+#222
+d: entha age?
+p: 11, f
+d: emayithundi?
+p1: urke jalubu ayi gonthu marutundi. matladam kuda mukkutho matladinaltu undi.
+d: tummulu baagosthaya?
+p1: jalubochinapudu 2 days untadi.
+d: gonthu noppi untada?
+p1: em undadu.
+
+#223
+d: age?
+p: 35, m
+d: emayindi?
+p: nose block ayithundi.
+d: tummulosthunnaya?
+p: monnatidaaga jalubu undi ipudu tagindi. 
+p1: last week fever kuda ochindi. 
+p: koncham gunjinatlu avuthundi. chinnaga throat noppi unde adi taggipoyindi.
+
+#224
+d: age?
+p: 20, m
+d: dagga? eppatinunchi
+p: 1 week nunchi.
+d: dammu osthunda?
+p: light ga osthundi.
+
+#225
+d: entha vayasu?
+p: 70, m
+d: emayindi?
+p: chevudu. 
+d: enni rojulanunchi?
+p: telvadu. gurthuledu. chaala rojulu ayithannayi.
+
+#226
+d: umar?
+p: 12, f
+d: kaisa hai?
+p: sardhi hai. cheenka aa rahe. 
+
+#227
+d: entha vayasu?
+p: 53, m
+d: emayindi?
+p: gonthulo tattukunatlu ayithandi sir. annam mingadam kastam ga undi.
+d: enni rojula nunchi?
+p: chaala rojula nunchi sir.
+d: vantulu gitla emayina unnaya?
+p: vantulu em levu sir.
+d: kadupu manta?
+p: akali ledu. neelu tagina tattukunnatlu ayithandi. annam tinna tattukunatlu ayithandi.
+
+#228
+d: age?
+p: 24, f
+d: emayindi?
+p: chevulo noppi sir. naa voice nake vinipisthundi.
+d: enni rojulayithundi?
+p: apudapudu osthundi.
+d: jalubu dagggu unda?
+p: umm undi. gonthu urike tattukunnatlu ayithundi.
+
+#229
+d: entha vayasu?
+p: 48, f
+d: emayindi?
+p: ee chevu 2 3 dayskokasari noppi osthandi. malla pothandi.
+
+#230
+d: entha age?
+p: 50, m
+d: emayindi?
+p: chevulo cheemu karuthunadi sir. noppilesthandi ee chevu.
+
+#231
+d: entha age?
+p: 48, m
+d: emayindi?
+p: podi daggu sir.
+d: enni rojulayithadi?
+p: 4 days.
+d: jwaram unda?
+p: ledu.
+p: night nidra ledu sir. motham durada pedthandi gonthulopala. daggu baaga osthandi.
+
+#232
+d: age?
+p: 45, m
+d: emayindi?
+p: throat lo infection ayithandi sir.
+d: sardi daggu unda?
+p: sardi unde.
+d: mata maarinda emanna?
+p: maata marindi sir.
+
+#233
+d: entha age?
+p: 51, f
+d: emayindi?
+p: mukku manduthundi. mukku chevu. talanoppi baaga podichinatluga undi. ninnati nunchi jwaram ochindi.
+d: talanoppi unda?
+p: aa
+d: mukku nunchi neerulaaga osthunda? cheemidi laaga unda?
+p: cheemide mukkulo nunchi osthaledu sir. gonthu nunchi daggulaga vachi osthandi.
+
+#234
+d: entha age?
+p: 51, f
+d: emayindi?
+p: sardi, daggu, mukkulonunchi cheemidi gonthulo jaari daggu laaga osthandi.
+d: talanoppi unda?
+p: aa
+
+#235
+d: kitna umar?
+p: 12, m
+d: kya hua?
+p: kaan se peep aa rahi. darad de raha.
+d: sardhi khaansi hai?
+p: sardhi hai khaansi hai. sunayi nahin de raha.
+
+#236
+d: kinta umar?
+p: 40, m
+d: kya hua?
+p: sardhi hai. 15 days se hai. bandh nahi ho raha.
+
+#237
+d: age kitna?
+p: 28, m
+d: kya hua?
+p: kaan me kacha pad raha sir. laal laal ho raha.
+d: sardi hai?
+p: han sardi hai.
+d: gale me darad hai?
+p: han sir gale me darad hai. throat infection bhi hai.
+
+#238
+d: umar?
+p: 5, f
+d: kya hua?
+p1: kaan me darad ho raha. 
+p1: bukhaar bhi hai. paracetamol bhi daldi thi.
+
+#239
+d: age?
+p: 41, f
+d: emayindi?
+p: daggu baaga undi sir.
+d: dammosthunda emayina?
+p: dammu ledu kani. chevi potu undi.
+d: enni rojulayithundi?
+p: 1 week ayithundi sir.
+
+#240
+d: entha age?
+p: 28, m
+d: emayindi?
+p: mukku block ayithunnayi sir.
+d: mukkulo nunchi neeru laaga vachinda? cheemidi laaga vachinda?
+p: firt neeru laaga vachi malli chemidi start ayindi. okkosari okka mukku block ayithundi. gali asal ravatle.
+
+#241
+d: age?
+p: 6, f
+d: kya hua?
+p1: kaan mein se peep jaa raha. bukhaar aayi sardi hui toh aise jaa raha.
+
+
+#242
+d: age?
+p: 13, m
+d: kya hua?
+p1: thoda buhaar aagayi thoda sardhi ho gayi boltho idhar kaan ke niche darad ho raha bolke bol raha.
+
+#243
+d: entha vayasu?
+p: 82, f
+d: emayindi?
+p1: ee chevulo cheemu karuthandani chepthandi sir.
+p: cheemu karutha undi. suruk suruk antandi.
+p1: sugar undi. bp undi.
+d: nopi unda?
+p: aa suruku surukga podusthandi. idantha nosthandi. talakaya nunchi idantha nosthandi.
+
+#244
+d: entha vayasu?
+p: 60, f
+d: emayindi?
+p: gonthu pundayinatu undi.
+d: enni rojulayithandi?
+p: 5 6 rojulayithandi.
+d: sardi daggu unda?
+p: undi sir.
+
+#245
+d: age entha?
+p: 50, m 
+d: emayindi ipudu?
+p: mukku kaaruthandi. jwaram undi. baaga avastha ayithundi sir. 
+d: mukkununchi neru laaga karuthunda cheemidi laaga karuthunda?
+p: ledu sir. tellari mukku motham block ayithundi. intha temada osthundi.
+
+#246
+d: age entha?
+p1: 9, m
+d: emayindi?
+p1: asthama undi. baaga tummuthadu. ee kallani reddish ayipothayi.
+ 
+#47
+d: age entha?
+p: 21, f
+d: emayindi amma?
+p: jalubu ochindi. 
+d: tummulu osthaya baaga.
+p: avunu.
+d: jwaram osthunda?
+p: avunu.
+d: mukku nunchi neeru laaga osthunda? cheemidi laaga osthunda?
+p: neeru laaga.
+d: ante regular ga osthada itlane?
+p: winterlo ekva osthadi.
+p1: 10 days nunchi alane untundi.
+
+#48
+d: age?
+p: 22, m
+d: kya hua?
+p: gale me darad ho raha sir.
+d: sardi khaansi hai? 
+p: nahin nahin.
+
+#49
+d: entha age?
+p1: 6, f
+d: emayindi?
+p1: 1 week nunchi jwaram osthandi pothandi. ipudu chevunosthundani chepthundi.
+
+#250
+d: entha vayasu?
+p: 19, m
+d: emayindi?
+p: chevi baaga nosthandi. cheemelthandi. gadda kattindi.
+d: sardi daggu unda?
+p: pche.
+d: enni rojula nunchi itla?
+p: 2 days ayithundi. 
+
+#251
+d: entha vayasu?
+p: 57, f
+d: emayindi chepu?
+p: jalubu baaga undi. 1 week ki 10 days ki ala urike jalubu osthandi.
+
+#252
+d: entha vayasu?
+p1: 12, f
+d: emayindi?
+p1: ear lo pain osthundi ani chepthundi sir 2 days nunchi.
+d: jalubu unda?
+p1: em ledu sir.
+
+#253
+d: umar kitna?
+p: 45, m
+d: kya hua?
+p: idhar naak pe mar laga?
+
+#254
+d: entha vayasu?
+p: 15, f
+d: emayindi?
+p: gonthu noppilesthandi. upiraduthaledu.
+d: tummulosthunnaya emayina?
+p: pche.
+d: tala noppi?
+p: pche.
+d: jwaram jalubu daggu gitla emayina unnaya?
+p: ledu.
+d: urke osthunda ila?
+p: last time 15 days kinda ochindi sir.
+
+#255
+d: entha age?
+p: 23, f
+d: emayindi?
+p: chevulo chinna pundulaaga ayindi. last time clean chesthunnapudu chinna blood laga ochindi. chevu  vinipiyatle ipudu.
+
+#256
+d: kitna umar?
+p1: 4, m
+d: kya hua?
+p1: naak ke kal raat mein maar laga tha.
+d: naak mein se khoon nikla.
+d: naak mein se saas aarahi.
+p: ha.
+d: kaise gira?
+p1: thoda sardhi bhi hai.
+d: khansi hai. bhukhar aa raha?
+p1: ha.
+
+#257
+d: vayasu?
+p: 37, f
+d: emayindi?
+p: idi chevuku gadiyalu paduthunnayi sir. jalubu kuda taggatledu sir.
+d: noppunda?
+p: ivalane noppi undi.
+p1: assale jalubu taggatle. ee syrup vadina tablets vadina taggatle.
+p: idi em vinipisthaledu sir.
+
+#258
+d: vayasu?
+p: 68, m
+d: cheppandi?
+p: noppi undi sir. daggochindi.
+d: jwaram unda?
+p: jwaram unde kani taggipoyyindi.
+d: jalubu unda?
+p: undi.
+
+#259
+d: entha vayasu?
+p: 23, m
+d: chepandi. ipudu emayithandi?
+p: gonthu konde naluka perigi manta puduthandi.
+d: chemidi osthunda?
+p: mukkulonunchi cheemidi gonthulo jaari daggulaga osthandi.
+p: sardhi baaga ayithandi. 
+
+#260
+d: age?
+p: 16, f
+d: emayindi?
+p: daggu baaga osthandi. vantulu ayithunnayi.
+
+#260
+d: vayasu?
+p: 40, m
+d: cheppandi.
+p: baaga tummulu osthunnayi. mukku karuthandi.
+
+#261
+d: vayasu?
+p: 25, f
+d: emayindi?
+p: chevulo nunchi cheemu inka raktam osthandi sir.
+d: chemu gitla em ledu kada.
+p: chemu apudu apudu osthundi sir.
+d: cheemu enni rojulakosasari osthundi?
+p: ledu sir. monna 17th ke inthakumundu ledu sir.
+
+#262
+d: umar?
+p: 35, f
+d: kya hua?
+p: aawaaz nahin aa rahi..
+d: kabhse?
+p: 5 days hai.
+p1: gala baith gaya sir?
+
+#263
+d: entha vayasu?
+p: 39, m
+d: emayindi?
+p: varam nunchi jalubu, daggu, jwaram. mandulu vadina tagguthaledu. ee roju nunchi emi tinna vantulayithunnayi.
+
+#264
+d: vayasu?
+p: 10, f
+d: emayindi?
+p: muttukonte chevi nosthundi. vinipisthaledu.
+
+#265
+d: entha age?
+p: 34, m
+d: emayindi?
+p: daggu baaga osthundi. nanju padthandi.
+d: jwaram unda?
+p: undi.
+d: sardi?
+p: sardi kuda taggipoyindi.
+d: nanju ila yellow osthunda? watery lekka osthunda?
+p: yellow osthandi.
+
+#266
+d: vayasu entha?
+p: 20, f
+d: emayindi?
+p: urke jalubayithundi.
+d: tummulu baaga osthaya?
+p: cold ayinapudu osthayi. normal ga ravatledu.
+
+#267
+d: age?
+p: 34, m
+d: emayindi?
+p: ante cold unde sir. 1 week nunchi sound takva osthundi.
+d: takva vinabadthunda?
+d: enni rojulu ayithundi?
+p1: 1 week aythundi. asal memu pilichina vinabadatle.
+
+#268
+d: entha vayasu?
+p1: 2.5, f
+d: emayindi?
+p1: cold ayindi. padukunnapudu gurukabeduthundi. chevulu nopilesthunayi antundi.
+
+#269
+d: entha age?
+p: 27, f
+d: emayindi?
+p: apudapudu gonthu noppilesthundi. pachigayithundi.
+d: cold and cough unda?
+p: em ledu.
+d: kadupulo manta unda?
+p: kadupulo manta kuda em ledu.
+
+#270
+d: entha vayasu?
+p: 4, m
+d: emayindi?
+p: pedaalu paluguthannayi. baaga daggu osthundi, jalubu undi.
+
+#271
+d: entha age?
+p: 18, f
+d: emayindi?
+p: nose block ayithundi.
+p1: headache osthundi antundi.
+d: tummulu baaga osthaya?
+p: osthayi. 
+p1: idi asthama undi.
+
+#272
+d: entha age?
+p1: 5, m
+d: emayindi?
+p1: chevu ubbindi sir. blood laga ochindi.
+
+#273
+d: entha age?
+p1: 4, m
+d: emayindi?
+p1: jalubu daggu urke osthandi sir. chevi potu ochindi sir.
+d: chevi potu epudu ochindi?
+p1: 4 days ayithundi.
+p2: ratri jwaram osthandi.
+
+#274
+d: entha age?
+p: 21, f
+d: emayindi?
+p: night time lo baaga jwaram, daggu osthandi.
+p1: fever malli evening kuda osthundi.
+p: daggu valana vomiting ochinatlu ayithundi.
+
+#275
+d: umar bolo.
+p: 6, m
+d: kya hua?
+p: kaan me darad ho raha. peep aa raha sir.
+d: sardi hua kuch toh bhi?
+p: ha sir. sardi hai.
+
+#276
+d: entha age?
+p: 35, m
+d: emayindi?
+p: gonthu bonguru poyindi sir.
+p: gutka minginapudu tattukunatlu ayithandi sir.
+
+#277
+d: entha age?
+p: 25, m
+d: emayindi?
+p: adi guruka ekva osthundi, sardi jalubu daggu undi.
+d: tummulu ila osthaya?
+p: frequent normalga osthayi.
+d: gonthu noppi osthada?
+p: ledu.
+d: itla enni rojula nunchi osthandi guruka?
+p: ante 1 month 2 months
+
+#278
+d: age entha?
+p: 10, f
+d: emayindi?
+p: chevulo chinna gaddalaga ayindi. 
+p1: monna earbud pedithe blood ochindi.
+
+#279
+d: entha age?
+p: 65, m
+d: emayindi? 
+p: mukkulonunchi raktam ochindi sir. 
+d: sardu unda?
+p: mundu unde kani ipudu taggipoyindi.
+d: cheemidi apudu osthunda raktam?
+p: avunu sir.
+
+#280
+d: entha age?
+p: 12, m.
+d: emayindi?
+p: nose baaga block ayithunnayi sir. journey chesthunapudu baaga dust valana tummutunnadu. 
+
+#281
+d: umar kitna?
+p1: 10, m
+d: kya hua?
+p1: kaan se darad bol raha. sardi bhi bohot ho rahi. kaan me gur gur bol raha.
+
+#282
+d: entha age?
+p: 28, f
+d: emayithundi?
+p: gonthu nosthandi.
+d: ennirojulayithandi?
+p: 2 rojulayithandi.
+d: mukkulo gadupadthanda?
+p: kodiga.
+
+#283
+d: entha age?
+p: 33, m
+d: emayindi?
+p: chevulo durada osthundi.
+d: vinabaduthunda?
+p: manchigane vinabaduthundi kani durada osthundi.
+
+#284
+d: age?
+p: 18, f
+d: emayindi?
+p: chevu baaga nosthundi.
+d: vinabaduthunda?
+p: um
+
+
+#285
+d: entha age?
+p: 48, m
+d: emayindi?
+p: podi daggu sir. jwaram osthandi. ratrulu daggu baaga untandi. daggi daggi gonthu marindi.
+d: jwaramosthunda?
+p: fever 2 days undi sir.
+
+#286
+d: entha vayasu?
+p: 13, m
+d: emayindi?
+p: chevi baaga nosthandi. cheemu elthandi. gaddagattindi, chevu durada pedthandi sir.
+
+#287
+d: entha vayasu
+p: 48, f
+d: emayindi?
+p: norulo kurupulu, podi daggu
+d: jalubu unda?
+p: undi.
+d: jwaram unda?
+p: undi.
+
+#288
+d: entha vayasu
+p: 48, f
+d: emayindi?
+p: norulo kurupulu ayithannayi. emi tinosthaledu. noppilesthandi.
+
+#289
+d: entha vayasu?
+p: 12, f
+d: emayindi?
+p: ear pain ostundi ani chepthundi sir.
+d: jalubu unda?
+p: em ledu sir.
+
+#290
+d: age bolo
+p: 35, m
+d: kya hua?
+p: naak pe maar lag gata, blood aa raha.
+
+#291
+d: entha vayasu?
+p: 14, m
+d: emayindi?
+p: mukkulo noppayithandi. swaasa teesukovadam ravatledu.
+d: tummulosthunnaya?
+p: ledu
+d: tala noppi?
+p: ledu.
+d: kadupulo manta?
+p: ledu.
+
+#292
+d: entha age?
+p: 23, f
+d: emayindi?
+p: chevulo noppi osthundi. sardi daggu unnadi. daggu chaana unnadi.
+
+#293:
+d: umar kitna?
+p: 50, f
+d: kya hua?
+p: aawaaz kharab ho gayi sir. baat karne se gale mein darad ho raha. bat karne hahin aa rahi.
+
+#294
+d: entha vayasu?
+p: 85, m
+d: emayindi
+p: vinapadthaledu chevula. gonthu noppi undi. jwaram unnadi, inka sardi tagguthaledu.
+
+#295
+d: kitna umar?
+p: 10, m
+d: kya hua?
+p: kaan pe maara ek jan tab se darad ho raha bolke bolra.
+
+#296:
+d: age?
+p: 5, m
+d: kya hua?
+p: kaan darad hai. abhi kaan pe bohot peep jaa raha.
+
+#297:
+d: entha age?
+p: 41, f
+d: emayindi?
+p: daggu baaga osthundi sir. ratri baaga osthandi. nanju padthandi.
+
+#298:
+d: entha age?
+p: 43, f
+d: emayindi?
+p: mukkulo manta osthundi. mukku kaaruthundi. talanoppi undi.
+d: sardi unda?
+p: undi.
+
+#299
+d: entha age?
+p: 50, f
+d: emayindi?
+p: chevulo cheemu osthundi. nellu poyinapudu cheemu ravadam modalayindi.
+d: sardi unda?
+p: sardi unnadi.
+
+#300
+d: entha age?
+p: 44, f
+d: emayindi?
+p: gonthu problem sir. naaku daggu osthadi. bayataku pothe chalu mukku karuthadi. dust padatledu.
+p1: jalubu daggu 1 month taggadu.
+
+#301
+d: entha age?
+p: 62, f
+d: emayindi
+p: notlo nunchi neellu baaga uruthunnayi. daggu baaga osthandi.
+d: tummulu?
+p: em levu.
+d: kadupulo manta gitla emayina unda?
+p: em ledu sir.
+
+#302
+d: age?
+p1: 6.5, m
+d: kya hua?
+p1: rath me bukhar thi. last time gala sujh gaya.
+d: bukhaar kabh se?
+p: kal rath se.
+
+#303
+d: entha vayasu?
+p: 53, f
+d: emayindi?
+p: chevulu podichinatlu ayithandi. chevi noppilesthandi.
+d: durada pedthunda emanna?
+p: durada ledu. podichinatle ayithandi.
+
+#304:
+d: vayasu entha?
+p: 50, m
+d: emayindi?
+p: baaga daggina. chevulu noppilesi gadiyalu pattinatlu ayithandi.
+d: nopposthunda?
+p: noppi em anipiyatle
+d: takva vinabaduthunda?
+p: avunu.
+d: sardi unda?
+p: undi.
+
+#305
+d: entha age?
+p: 27, m
+d: emayindi?
+p: chevulo kurupu ayindi. chevi noppilesthandi. chevilo guchukunnatlu ayithandi. koncham vinapadthaledu sir. 
+
+#306 
+d: entha age?
+p: 22, m
+d: emayindi?
+p: sir gonthu red ayindi sir. dagguthunte noise bayatiki osthundi. daggu undi sir.
+d: enni rojulu ayithandi?
+p: 5 days.
+
+#307
+d: entha age?
+p: 34, m
+d: emayindi?
+p: breathing problem undi sir. gadda kattinatlu undi sir gonthu deggara.
+d: enni rojulayithandi?
+p: 5 days ayithundi sir.
+
+#308
+d: entha age?
+p: 34, m
+d: emayindi?
+p: breathing problem undi sir. upiri aduthaledu baaga mosa daggu. 
+
+#309
+d: vayasu entha?
+p: 79, f
+d: emayindi?
+p: naaluka vachindi. gonthulo manta undi. chathilo manta undi.
+
+#310
+d: age chepu.
+p: 17, f
+d: emayindamma?
+p: gonthu nosthundi. jalubu undi.
+d: sardi daggu emayina unda?
+p: daggulesthundi. thyroid undi. 
+
+#311
+d: entha age?
+p: 25, m
+d: emayindi?
+p: night kanganne gur gur osthundi. pain osthundi neckla.
+d: kadupulo manta unda?
+p: koddiga ummu mingosthaledu.
+d: annnam tintante jaruthunda tattukuntunda?
+p: jaruthandi.
+
+#312
+d: entha age?
+p: 17, f
+d: emayindi?
+p: throatlo pain. tonsils ani cheparu doctor ki chupisthe.
+d: sardi daggu unda?
+p: inthaku mundu unde kani tablets vesukunappudu taggindi.
+p1: gonthu noppi ochi fever start ayindi. chevulo kuda koncham noppi undi ani chepindi.
+
+#313
+d: umar bolo.
+p: 12 years.
+d: kya hua?
+p: kaan ka dard hua.
+d: sardi hai?
+p1: haa hai. bukhaar bhi hai.
+
+#314
+d: entha age?
+p: 42, f
+d: emayindi chepu.
+p: ratri puta daggu baaga osthandi sir. nidra ledu.
+d: jwaram?
+p: jwaram undi sir.
+p1: daggu jalubu baaga unte ikkada ochinam sir.	
+
+#315
+d: entha age?
+p: 52, m
+d: emayindi?
+p: daggu, jalubu assalu tagguthaledu sir. jwaram undi.
+
+#316
+d: entha age?
+p: 28, m
+d: emayindi?
+p: motham block ayithundi sir. gadpu osthaledu sir.
+
+#317
+d: umar kitna?
+p: 28, f
+d: kya hua?
+p: dava diye toh sardi mein se shivering aa raha.
+d: sardi hi khansi hai?
+p: do no bhi hai. 
+p1: head ache hai.
+d: naak mein se naet jaisa araha paani aaraha?
+p: gaadha aa raha. bohot zyada.
+
+#318
+d: umar kitna?
+p: 28, m
+d: kya hua?
+p: kaan me kacha pad raha sir. laal laal ho raha. aur yahan bhi darad de raha.
+d: sardi hai?
+p: ha 
+
+#319
+d: kitna umar?
+p: 12, m
+d: kya hua?
+p: kaan mein sunayi nahin de raha. dukh raha. sardi hai.
+d: kabh se darad?
+p: 1 week se.
+
+#320
+d: entha age?
+p: 19, m
+d: emayindi?
+p: allergy ayinatlundi. kallalo nunchi neelu osthunayi. baaga tummulu osthunnayi. morning roju baaga tummulu.
+
+#321
+d: entha age?
+p: 21, m
+d: emayindi?
+p: jalubu baaga undi. tummulu osthunnayi baaga. jwaram undi koncham.
+d: mukku nunchi neeru laga osthunda? cheemidi laaga osthunda?
+p: cheemidi laaga osthundi.
+d: ekuva osthunda?
+p: avnu.
+
+#322
+d: age?
+p: 33, m
+d: kya hua?
+p: gale me darad hai sir. Do din se.
+d: sardi khansi hai?
+p: nahi nahi.
+
+#323
+d: entha age?
+p: 6, f
+d: emayindi?
+p: 1 week nunchi chevi potu lesthandani annadi. ivalti nunchi chemelthandi.
+d: cheemu elledi ide 1st time aa?
+p: ide 1st time.
+
+#324
+d: entha age?
+p: 36, m
+d: emayindi?
+p: throat infection undi. sardi undi.
+d: maata marinda emanna?
+p: mata marindi sir.
+
+#325
+d: umar kitna?
+p: 67, f
+d: emayindi?
+p: chevi potu undi. gadiyalu paduthunnatlu undi.
+d: sardi ayinda?
+p: avunu. jwaram kuda undi.
+
+#326
+d: kitna umar?
+p: 70, m
+d: kya hua?
+p: kaan me darad hai. peep nikal raha.
+
+#327
+d: kitna umar?
+p: 72, m
+d: kya hua?
+p: kaan me bohot darad ho raha. itching hai. peep bhi nikal raha.
+
+#328
+d: kitna umar?
+p: 19, m
+d: kya hua?
+p: kaan se khoon nikal raha. kaan laal hoo ke sooj gaya.
+
+#329
+d: kitna umar?
+p: 44, m
+d: kya hua?
+p: kan mein sunayi nahin de rahi. kaan dukh raha. sardi hai
+
+#330
+d: umar kitna?
+p: 20, f
+d: kya hua?
+p: kaan me itching hai. sunayi nahin de rahi. bohot darad hai.
+
+#331
+d: vayasu entha?
+p: 29, f
+d: emayindi?
+p: mukku nunchi baaga neelu karuthunnayi. bayata food tinapudu ala ayithundi.
+
+#332
+d: umar kitna?
+p: 34, m
+d: emayindi?
+p: mukku nunchi neelu karuthunnayi. gonthu kharaabayindi. baaga daggu osthundi. 
+
+#333
+d: entha age?
+p: 70, f
+d: emayindi?
+p: kallalonunchi inka mukkulonchi neeelu karuthunnayi.
+
+#334
+d: entha age?
+p: 64, f
+d: emayindi?
+p: jwaram baaga osthundi. chetulu kaalu noppilesthuayi. jalubu asalu tagguthaledu.
+
+#335
+d: entha age?
+p: 12, m
+d: emayindi?
+p: chevi potu inka jwaram unnadi. sardi taggutaledu.
+
+#336
+d: entha vayasu?
+p: 14, m
+d: emayindi?
+p: daggu baaga ekkuvayindi. ratrulu baaga daggosthandi. emayina tinna tarvatha kuda daggu osthandi. vanti vochinatlu ayithandi.
+
+#337
+d: age?
+p: 68, f
+d: emayindi?
+p: sardi daggu baaga undi. gonthu kharabayindi. daggu baaaga undi. tinnapudu vanti ochinatlu ayithandi.
+
+#338
+d: kitna umar?
+p: 54, m
+d: emayindi?
+p: daggu baaga undi. ratrulu nidra paduthaledu.
+
+#339
+d: umar kitna?
+p: 75, f
+d: emayindi?
+p: varam rojulu ayithandi. jalubu assalu tagguthaledu. alasipothanna baaga
+
+#340
+d: vayasu entha?
+p: 58, m
+d: emayindi?
+p: mukku baaga karuthandi. 12 days ayithandi. assalu vashapaduthaledu.
+
+#341
+d: vayasu entha?
+p: 70, m
+d: emayindi?
+p: gonthulo manta gonthu noppi. maata marindi. 
+
+#342
+d: umar kitna?
+p: 51, f
+d: emayindi?
+p: gonthulo manta. baaga sardi ayindi. tala noppilesthandi. kadupulo manta undi.
+
+#343
+d: age?
+p: 46, f
+d: emayindi?
+p: gonthulo manta. emayina tinnapudu tattukunnatlu ayinthandi. vanti ochinatlu undi. em tinalanipisthaledu
+
+#344
+d: age?
+p: 53, f
+d: emayindi?
+p: ratrulu nidra paduthaledu. padukunte daggu baaga ekva ayithandi. nanju padthandi.
+
+#345
+d: kitna umar?
+p: 60, m
+d: kya hua?
+p: sardi hai. par khaansi bohot jyaada hai. raat mein soona mushkil ho gaya. sone ke baad sardi zyaada hai.
+
+#346
+d: kitna umar?
+p: 37, f
+d: kya hua?
+p: bukhaar hai. sardi hai 15 days se. ulti ho raha.
+
+#347
+d: umar kitna?
+p: 51, f
+d: kya hua?
+p: 15 days se khannsi hai. bukhaar hai. body pains hai. khaansi kam nahin ho raha.
+
+#348
+d: age?
+p: 43, m
+d: emayindi?
+p: mukkulo baaga block ayithundi. mukkulo gadda katinatlu undi. chevi noppi kuda undi.
+d: jalubu unda?
+p: undi.
+
+#349
+d: vayasu entha?
+p: 42, m
+d: emayindi?
+p: gonthulo noppi. daagu baaga ochi gonthulo noppilesthandi. temada osthandi.
+d: enni rojula nunchi?
+p: 10 days ayithandi.
+
+#350
+d: kitna umar?
+p: 40, m
+d: kya hua?
+p: roj subah me cheenka bohot aa rahe. naak mein se pehle pani aaraha phir neet aa raha. phir shaam ko saara kam ho jaaraha. 
+
+#351
+d: entha vayasu?
+p: 78, f
+d: emayindi?
+p: chevulu vinipisthalevu sir. edo guyi ani shabdham osthundi. evaru matladina vinosthaledu
+
+#352
+d: age?
+p: 71, m
+d: emayindi?
+p: chevi potu undi. tala tiriginatlu ayithundi. 
+d: enni rojula nunchi?
+p: 20 days ayindi.
+
+#353
+d: entha age?
+p: 73, m
+d: emayindi?
+p: chevi potu undi. medalu noppilesthunnayi. tala tirignatlu anipisthundi.
+d: enni rojula nunchi?
+p: 5 days ayindi.
+
+#354
+d: entha vayasu?
+p: 70, m
+d: emayindi?
+p: sardi undi baaga. jwarm osthandi. mukku karuthandi.
+d: enni rojula nunchi?
+p: 20 days ayindi.
+
+#355
+d: entha age?
+p: 60, m
+d: emayindi?
+p: sardi undi. guruka osthandi. talanoppi undi.
+d: enni rojula nunchi?
+p: 20 days ayindi.
+
+#356
+d: age?
+p: 54, f
+d: emayindi?
+p: sardi undi. swaasa aduthaledu. guruka osthandi. 
+d: enni rojula nunchi?
+p: 12 days ayindi.
+
+#357
+d: umar kitna?
+p: 26, f
+d: emayindi?
+p: asthama undi sir. mosa osthandi. mandulu vadina taguthaledu
+d: enni rojula nunchi?
+p: 5 days ayindi.
+
+#358
+d: entha age?
+p: 35, m
+d: emayindi?
+p: mukku karuthandi. chevi noppi ekkuvayindi. chevu erraga ayindi.
+d: enni rojula nunchi?
+p: 6 days ayindi.
+
+#359
+d: vayasu entha?
+p: 22, f
+d: emayindi?
+p: ratrulu daggu baaga osthandi. dagguthante swaasa aduthaledu.
+d: enni rojula nunchi?
+p: 7 days ayindi.
+
+#360
+d: kitna umar?
+p: 50, m
+d: emayindi?
+p: daggu baaga osthundi. sardi undi. dagguthante vanti osthandi.
+d: enni rojula nunchi?
+p: 20 days ayindi.
+
+#361
+d: kitna umar?
+p: 40, m
+d: emayindi?
+p: dagguthante janju green ga ochindi.
+d: enni rojula nunchi?
+p: 20 days ayindi.
+
+#362
+d: entha vayasu?
+p: 73, f
+d: emayindi?
+p: sardi undi. jwaram baaga ekvayindi. vanti noppulu unnayi.
+d: enni rojula nunchi?
+p: 20 days ayindi.
+

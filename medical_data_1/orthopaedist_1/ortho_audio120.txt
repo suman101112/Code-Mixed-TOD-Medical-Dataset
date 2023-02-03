@@ -1,0 +1,20 @@
+p: sir namastE sir
+d: namastE anDi
+p: sir naaku 8 samvastaraala nunchi mOkaLLa noppuLu unDEvi sir osteoarthritis
+d: ok
+p: adi gap ochindi rendu kaLLaLLo kUDA
+d: ok
+d: vayasu enta anDi? 
+p: 60 sir
+d: ok 
+d: anTE 2 jointlu 2 mokaLLaLLonU okkaTE laaga start ayinda? lEkapothe okati okkosaari gap laaga start ayindaa?
+p: first right leg ochindi, tarvat 2 3 years tarvaata left leg start ayindi sir
+d: ok
+d: naDichinappudu sound raavadam aTla emayina?
+p: aa sound ostadi sir, tak tak sound ostadi sir
+d: ok
+d: baruvu entha unTaaru anDi
+p: baruvu 80 unTanu sir
+d: meeru Em chEstunTaaru anDi? vruthi?
+p: nEnu teacher sir, retired ayyanu monnanE
+d: ok ok

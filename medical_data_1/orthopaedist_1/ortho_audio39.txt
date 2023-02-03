@@ -1,0 +1,23 @@
+p: namasthe madam
+d: namathE anDI cheppanDi.
+p: aa naa age 41 anDi ippuDu
+d: ok
+p: naaku 3 years nunchi mOkaLLu problem unnayi anDI, right side EE
+d: ok
+p: aa so. aa hllb 27 20,000 test chEsyinchukunnanu
+d: ok
+p: doctor deggariki veLitE diagnose chEsaaru
+d: ok
+p: ayitE adi positive occhindi.
+d: ok
+p: hmm
+p: appati nunchi nEnu medicine vaaDutunE unnanu. 
+d: ok
+p: naaku Em relief lEdu
+d: ok
+p: plus knee kuda chaala problem undanDi
+d: umm
+d: age entha untundi anDi meedi?
+p: naadi ippudu 41 anDi.
+p: naaku 3 years ayindi anDi idi start ayi.
+d: umm,  fine fine 

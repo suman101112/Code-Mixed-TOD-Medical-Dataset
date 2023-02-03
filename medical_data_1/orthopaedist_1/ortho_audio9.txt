@@ -1,0 +1,19 @@
+p: hello
+d: cheppanDamma rajitha
+p: madam naaku mOkaaLLa noppulu ekkuvaaga unnayi madam
+d: ok
+d: eppatinunchi undi ee samasya meeku?
+p: naaku 1 year nunchi unnayi maDam ave
+p: naaku cesarean 3 sarlu chEsaaru madam
+d: ok
+p: appatinunchi baane unDindi, ee madhyane mOkaaLLa noppulu, 2 mOkaaLLu kUdaa 
+d: umm
+p: eDam kaalu ochi ekuva laavu ayipoyindi.
+d: vaapu ostundi
+p: aa vaapu ostundi madam
+d: umm 
+p: motions povaDaaniki baaga noppi undi madam
+d: x-ray emayina cheyinchaara anDi?
+p: aaha em chEyalEdu madam
+d: entha me vayasu entha?
+p: 40

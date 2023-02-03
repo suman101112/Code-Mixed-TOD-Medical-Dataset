@@ -1,0 +1,17 @@
+p: sir
+d: maTlaaDu
+p: aa sir, Em lEdu sir, maa attammaku gas trouble undi sir, laxmi tana pEru
+d: ok
+p: sir Ameku em tabletlu vesukunna paDatalEvu motions ayitunnayi
+d: ok
+d: ekkuva saarlu ayitunnaya amma rojaa?
+p: aa chaala 4 5 times avutunnayi sir daily
+d: iTla jaragabaTTi entha kaalam avutundi
+p: oka 2 months ayitundi sir, 2 months nunDI
+d: right amma
+d: doctor ku chupinchaara?
+p: aa chuyinchaamu sir, yashodalo chuyinchaamu
+d: matralu vaaDutunTE controllO undA?
+p: lEdu sir aameku asalu kaarame paDatalEdu edi tinna paDatalEdu
+d: right amma
+ 

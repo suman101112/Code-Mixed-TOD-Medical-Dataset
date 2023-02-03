@@ -1,0 +1,11 @@
+p: nEnu monna meTla meeda nunchi paDipOyananDi
+d: ok
+p: mOkaLLa side baaga noppilEsindi 
+d: ok
+p: adi enni mandulu vaaDinaa taggatlEdu
+d: ok
+p: x-ray tEsinaa doctorlu Edi lEdu ani antunnaru
+d: ok
+p: mari aTla kaalu chaapa lEka pOtunna, muDavalEkapOtunna
+p: ade CT scan teepinchaala, MRI teepinchaala?
+d: MRI teepinchanDI amma

@@ -1,0 +1,29 @@
+p: hello namasthe sir
+d: namasthe andi
+d: cheppandi 
+p: naa pEru venkaiah sir
+p: naaku vayasu ochesi 59 samvastaraalu
+d: ok
+p: nEnu oka 10 samvastaraala nunchi gastric problemtho ibbandi padutunnanu sir
+d: ok
+p: tinna venTanE gontulOki raavadamu
+d: umm
+p: tarvaaata okkosaari ochesi kaDupulO mantagaa
+d: ok
+p: taruvaata eDama bhaagamlO ekkuvagaa untundi sir kadupu noppi ochinappuDu
+d: ok eDama bhaagamlO ok
+p: avunu sir koddiga eDama bhaagamlO untundi
+d: umm
+p: ee madhyanE endoscopy cheyinchaam sir, 5 months ayindi cheyipinchi
+d: ok
+p: cheyipisthe, vaLLu emi ulcer atlaantidi emi lEdu kaani koncham chinna chinna gaDDalu unnayi 
+d: umm
+p: avi kuda cancer gaDDalu emI kaadu ani chEsaaru
+d; Umm
+d: right anDi ippudu ee gaDDalu E bhaagamlO unnayi ani chepparu doctorgaaru
+p: ade sir mana right side hernia ani chepparu sir 
+d: hernia annara?
+p: avunu sir
+d: hernia
+p: aa
+d: right anDi.

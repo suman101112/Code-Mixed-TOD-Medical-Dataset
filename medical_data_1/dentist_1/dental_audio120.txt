@@ -1,0 +1,11 @@
+p: hello madam gaaru 
+d: sir cheppandi
+p: madam naku 4 months mundu accident ayindi madam
+d: ok
+p: accident ayitE front paLLu 2 irigipOyaayi
+d: ummhmm ok
+p: daaniki malli fixed type dantaalu bridgedi zirconium peTTinru madam
+d: zirconium ok
+p: adi eppudayina maLLi OdipOyE avasaram unTaaya madam?
+d: ummhmm<neg>
+

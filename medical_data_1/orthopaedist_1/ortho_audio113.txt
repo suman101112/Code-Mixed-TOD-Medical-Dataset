@@ -1,0 +1,13 @@
+p: hello madam
+p: naDumu noppi anDi baaga ekva madam
+d: ok eppatinunchi undi anDi?
+p: oka samvastaram sanduna undi madam
+d: oka samvastaram sanduna, ok
+d: ok mEdicines vaaDaaraa emayina?
+p: mEdicines vaaaDitE hospital pOtE operation annaru madam
+d: ok
+d: x-ray emayina tEyinchaaara? x-ray, MRI?
+p: MRI tEyinchaam, naraanni ottutundanta madam
+d: ok ok
+p: gunjutaanDi anta
+d: ok

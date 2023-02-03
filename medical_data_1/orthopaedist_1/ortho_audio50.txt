@@ -1,0 +1,15 @@
+p: hello namasthe anDi
+d: namathE anDI cheppanDi.
+p: madam naa misses ki maDam mOkaaLLaLLo arikaaLLaLLO noppulu unnayi madam vipareetamgaa 
+p: edayina tablets vaaditE control ayitunnayi kaani viparEtamgaa ostunnayi anDi
+d: entha kaalamgaa unnayi anDi?
+p: madam?
+d: mOkaaLLaLLo arikaaLLaLLO noppulu entha kaalam nunchi unnayi?
+p: daadaapu 6 nelalu ayitunnayi madam
+d: 6 months
+d: age entha anDi tanadi ippudu
+p: vayasu 38 madam
+d: arikaaLLaLLO vaapu emayina unDa anDi?
+p: vaapu Em lEdu madam. sugar test cheyinchaamu, sugar kUDA Em lEdu madam
+d: ok
+d: x-ray tEyinchanDi.

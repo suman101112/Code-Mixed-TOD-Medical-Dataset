@@ -1,0 +1,10 @@
+p: hello madam
+d: sir cheppandi
+p: naaku mundu paLLaLLO inka paala paLLu pOlEdanDi
+d: ok
+p: kindi pannu davaDa panulO paala pannu alagE unDipOyindi
+d: kaDulutundaaa sir adi ippudu
+p: kaDulutundi
+d: entha age sir ippuDu meeku?
+p: 27
+d: 27

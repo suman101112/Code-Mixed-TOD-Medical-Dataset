@@ -1,0 +1,15 @@
+p: aa good evening madam
+d: good evening amma cheppanDi
+p: aa naa age occhEsi 26 anDi
+d: ok
+p: pannu payina gaara ochEsi fix chEsukunnanu
+d: ok
+p: ayitE ippudu infection baaga ekuva ayi chigurulO nunchi chEEmu ostundi anDi
+d: umm ok
+p: ayithE mundara pannu okati OdipOtundi
+d: ummhmm
+p: ayitE daaniki pakka pannu gaTTigaa unTEnE fix chEyoccha ani aDugutunnanu
+d: ummhmm
+p: daaniki eTla process?
+d: ok
+

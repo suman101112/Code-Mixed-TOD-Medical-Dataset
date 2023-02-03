@@ -1,0 +1,19 @@
+p: hello 
+p: ippuDu naa age ochEsi 35 madam
+d: ok
+p: ayithe ipudu madam naaku mOkaaLLa noppi start ayindi maDam
+d: umm
+d: ennaLLavutundi anDi mOkaaLLa noppulu start ayi?
+d: anTE ee kELLaLLO kuDi eDama ekkada nunchi start ayindi meeku?
+p: anTE 2 mOkaLLaLO start ayindi madam
+d: ok ok
+d: anTE ennalavutundi ee pain start ayyi?
+p: anTe ee madhyanE baaga noppi undi madam
+d: ee madhya kaalamlO
+p: 15 days madam
+d: 15 days
+d: ok
+d: E timelO noppi ekkuvaga kanipistundi anTE like kurchunnapudu, nilchunappuDu, vaapu emayina ostunda emuka chuTTu?
+p: maamulugaanE undi kaani, noppi ekkuvagaa untundi
+d: noppi ekkuvagaa untundi
+d: ok

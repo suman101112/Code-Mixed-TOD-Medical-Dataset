@@ -1,0 +1,16 @@
+p: hello namasthe anDi
+d: namathE anDI cheppanDi.
+p: mOkaalu rendu nelala nunchi baaga noppi ostundi, meTlu ekkinaa diginaa inTlO 2 3 meTlu ekkinaa
+d: umm
+p: x-ray teyipistE em naram koncham, em kaadu ani aa doctor gaaru cheppaaru
+p: ayina Emi takkuva kaalEdu
+d: ok
+p: jwaram ostundi
+p: naaku 47 yellu untaai
+d: ok
+d: x-ray teeyinchukunnara amma
+p: teyistE
+d: em ochindi?
+p: danTlO emani lEdu
+p: naram koncham beNikindi ani occhindi.
+d: ok ok.

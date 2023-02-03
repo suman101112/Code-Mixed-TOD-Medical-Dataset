@@ -1,0 +1,15 @@
+p: sir namasthe sir
+d: namasthE anDI cheppanDi.
+p: sir naa bharya ki naDumu noppi kaalu, payinanE laagaDam kaalu tiragabaDi pOvadam 
+d: ok
+d: eppati nunchi undi anDi ee problem itla
+p: oka samvastaram nunchi undi sir
+d: ok
+d: antE ipudu aame vayasu entha
+p: 50 lopala untayi sir
+d: garbha sanchi operationlu iTla emayina jarigaaya?
+p: avanni Em lEvu sir
+d: ok
+d: nelasari aagipOyi enni samvastaraalu ayindi?
+p: undi, continue undi
+d: ipudu female lO vayasu peramayina kElla arugudala age start avutundi kaabatti 50 yearslO

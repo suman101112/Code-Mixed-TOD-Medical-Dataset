@@ -1,0 +1,14 @@
+p: back pain nunchi right kaalu kUDA laagutundi anDi
+d: ok
+d: naDumu noppi nunchi kaalu kUDA laagutundi
+d: ok
+d: entha kaalamgaa undi pain idi?
+p: naaku 6 months
+d: 6 months
+d: Em pani chEstunTaaru anDi meeeru?
+p: kurchoni computer operatorgaa pani ChEstU untaanu
+d: ekkuvagaa sitting unTundaa anDi? kurchoni pani chEyaDam unTundi
+p: avnanDi
+d: weight ekkuvaga unnaraa mEru?
+p: lEdu madam maamulugaa weight ee
+d: ok 

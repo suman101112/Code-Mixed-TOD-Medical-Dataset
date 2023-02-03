@@ -1,0 +1,18 @@
+p: adi sir nEnu ikkada Ankylosing Spondylitis problem undi sir 
+d: ok
+p: already adi treatment medicine taggakunTE madam gaaru injection chEyipinchaaru
+d: ok
+p: adi ipudu already 2 courses treatment ayindi
+d: ok
+p: problem Emiti ante okkasaari baguntadi anDi malla adi edo unnatlu undi malla suddenga start ayitundi
+d: aa paTTinaTlugaa anipistunda?
+p: aa paTTinaTlugaa nE, suddenga ippudu lEvagaanE EdO gattiga lAgEsinaTlugaa,
+d: ok
+d: continuousga pain unTundaa anDi, tagginda?
+p: pain anTE continuousga unDadu, just oka 2 minutes untadi malli normal ayitadi.
+d: ok ok
+d: movement freegaanE untunda anDi leka paTTesinatlugaa, cramping gaa?
+p: aa lEdu freegaanE untundi.
+d: ok ok
+d: anthaku mundu stifness unDindaa anDi?
+p: aa unDedi anDi

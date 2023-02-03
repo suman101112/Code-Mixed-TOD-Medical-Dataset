@@ -1,0 +1,17 @@
+p: madam naaku kaaLLU chEtulu baagaa noppulu anDi baagaa pains ostaayi, lightgaa vastunnayi anDi
+d: ok
+p: evening fever ostunnaTlu undi
+d: ok
+d: enni rojulu avutundi idi
+p: 15 days avutundi anDI
+d: fever entha undi anDi?
+p: temperature em lEdanDi, body nunchi heat ostunnatlu undi anDI.
+d: anthe, temperature below 100 ee unTundi kaani, vaapulu occhi body pains ostunnayi 
+p: kaaLLU, chEtulu, vELLatO sahaa mottam vaapulu pains anDi. 
+d: ok
+d: mee vayasu enta anDi?
+p: oo 44 years unTaayi anDi.
+d: cold emayina occhindaa anDi? viral infection?
+p: cold cough Em lEdu.
+d: any history of thyroid
+p: aa no thyroid Em lEdu anDi. diabetic Em kaadu.

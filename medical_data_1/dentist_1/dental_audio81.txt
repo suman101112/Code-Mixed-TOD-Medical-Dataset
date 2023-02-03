@@ -1,0 +1,9 @@
+p: hello madam
+d: sir cheppanDi
+p: madam ila kinda paDi ma piLLoniki oka pannu virigipOyindi madam
+d: ummhmm ok
+p: adi ETla madam emayina cap vEyinchukOvalna?
+d: entha age anDi mee paapaDi
+p: ma paapadi 12 yellu madam
+d: 12 yellu 
+

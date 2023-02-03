@@ -1,0 +1,6 @@
+p: nEnu oka pannu pucchipOyindi adi root canal chEyinchukunnanu, malli ippuDU inkO pannu pucchipOtundi
+d: acchaa
+d: oka pannu pucchipOtE root canal chEyinchaaru meeru already
+p: aa chEyinchaanu
+p: ippudu pakka pannu pucchipOtundi
+d: yes ok

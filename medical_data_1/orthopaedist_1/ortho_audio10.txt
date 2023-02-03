@@ -1,0 +1,16 @@
+p: hello namasthe anDi
+d: namathE anDI cheppanDi.
+p: madam naaku age 25 years madam
+d: ok
+p: Ankylosing spondylitis ani annaaru anDi.
+d: ok
+p: daani kosam nEnu medicines vaaDutaa unnanu madam, sudden ga aapEsaaanu madam medicines vaaDadam
+d: ok
+p: aa taruvatha pain ayithe lEdu maDam
+p: malli pain start ayindi 
+p: malli orthopaedic doctor deggariki veLLesi medicines avi vaaDutaa unnanu madam ayithe pain taggalEdu madam
+d: ok fine
+d: ayithe HLEB27 check cheyinchukunnara?
+p: positive ani ochindi.
+d: positive ani ochindi.
+d: ayitE didi oka auto immune disorder konthavaraku prolonged gaa medicines vaaDaalsina avasaram unTundi.

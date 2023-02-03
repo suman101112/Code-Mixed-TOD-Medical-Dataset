@@ -1,0 +1,12 @@
+p: hello namasthe anDI 
+d: namasthE anDI cheppanDi.
+p: adi maa vaaDu bike vEsukoni slip ayyi paDDaDu anDi
+d: ok
+p: kuDi kaalu mOkaaLu deggara naram koTTuku pOyinaTlu ayyindi anDi
+d: ok
+p: daaniki vaaasidi anDi.
+p: ee doctor deggarki vellina surgeon deggarki vellinaa noppi Edi lEdu, vaapu Edi lEdu antunnarakkada
+p: vaasi asal naDavalEkapOtunnaDandi
+d: ok MRI scan emayina tEpinchalanDi
+p: scan Emi tEpinchalEdu
+d: scan tEpinchanDI amma. 

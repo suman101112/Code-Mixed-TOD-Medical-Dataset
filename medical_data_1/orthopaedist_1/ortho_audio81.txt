@@ -1,0 +1,19 @@
+p: sir namastE sir
+d: namstE anDi raaju gaaru chEppanDi
+p: a sir naaku occhEsi x-ray tEyinchaanu sir 
+d: ok
+p: neck
+p: naaku koncham ibbandigaa undi sir meDa nunchi koddigaa veepu pai bhaagam varaku baaga ibbandi paDutundi
+d: right anDi
+p: x-ray tEyinchaanu sir
+d: ok
+p: tEyisthe osteophytes ani decide ayindi sir, c5 
+d: c6
+p: and c6 osteophytes ani decide ayindi sir
+d: ok
+p: small osteophytes ani decide ayindi sir
+d: right anDi 
+p: taruvaata alopathylo 6 months iccharu sir tablets
+d: ok
+p: taggalEdu sir
+d: ok

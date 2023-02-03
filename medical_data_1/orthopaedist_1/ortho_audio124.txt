@@ -1,0 +1,11 @@
+p: madam naaku rightleg lO noppi vipareetamgaa undi madam
+p: naa age ochEsi 30 years madam
+d: ok
+d: noppi ekkaDa anDi?
+p: right leg lO nopi vipareetamgaa undi
+p: hello?
+d: cheppandi
+p: adi left leg ochEsi ubbutundi madam vaapu undi right leglO noppi undi maadam ekva undi
+d: ok
+p: naDavaDaaniki kUDA chaatakaaDu kurchunna lEvaDaaniki kUDA kastamgaa undi
+d: ok

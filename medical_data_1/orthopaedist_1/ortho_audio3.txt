@@ -1,0 +1,22 @@
+p: good afternoon maDam
+d: good afternoon anDi baala krishna gaaru
+p: avunu madam
+p: madam naaku kaLLa noppulu unnayi madam
+p: 40 years madam naa age
+d: umm
+p: mOkaaLLa nunchi kindi varaku baaga pains osthaa untadi madam
+d: ok
+d: entha kaalam nunchi unnayi anDi problems meeku?
+p: last time doctor deggara hospital chuinchaananDi
+d: umm
+p: ayithe chuyisthe adi em lEdu normal pains ee, idi tablet vaaDitE taggipotaDi annaru
+d: ok
+p: kaani avi etuvanti results chupinchalEdu anDi adi
+d: ok
+p: naaku chaala problem avutundi maDam ee madhya ekva avutundi.
+d: ok ibbandi ela untundi anDi. 
+d: antE mOkalla nunchi kindi varaku pain undi antunnaru kada, ee activitieslo ibbandi untundi?
+p: naDavaDaniki ibbandi Em lEdu madam
+d: ok
+p: nilabaDadam baaga untadi madam, kaani normalga kurchunTunnapudu baaga pain ostha unT adi anDi
+d: yes andi

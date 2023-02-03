@@ -1,0 +1,10 @@
+p: hello namaskaaram madam
+d: hello namasthe cheppandi
+p: madam naa age 20,
+p: inthamundu kUDA maTladina okasaari
+d: ummhmm
+p: ayitE ee dental alignementsdi treatment anTunnaru kada daaniki entha karchu avutundi anDi?
+d: ok
+p: treatment ee vidhamgaa unTundi
+d: ya
+

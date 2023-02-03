@@ -1,0 +1,9 @@
+p: hello madam naa problem tummulu ekkuva ostunnayi madam 
+d: acha eppati nunchi ostunnayi anDi tummulu?
+p: puddunnE chaliki poyina kaani, bayataku, chEtulu kaaLLu timmirlu ekkaDam ala untunDi anDi
+d: ok
+d: inka?
+p: tummulu ekkva raavaDam sir, lOpala naaluka payina erraga kaaavaDamu,
+d: headache unda?
+p: headache lEdu sir.
+d: ok, idi oka classical case of allergic rhinitis anDi.

@@ -1,0 +1,8 @@
+p: aDe naDumu noppi ostundi anDi
+d: ok
+d: entha kaalamgaa undi ee problem
+p: oka 3 samvastaraala nunchi undi anDI
+d: ok
+d: medicines emayinaa vaaDutunnara?
+p: Em vaaDalEdu anDi maamulugaa vastundi
+d: alagE nanDi ramesh gaaru.

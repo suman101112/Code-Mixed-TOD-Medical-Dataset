@@ -1,0 +1,23 @@
+p: hello namastE sir
+d: namastE anDI joshua gaaru cheppanDi.
+p: nenu appude idi 14th time
+d: ok
+p: anTE endoscopy kaanivvanDI 14th time cheyinchaamu kaani assala imporvement anEdi kanipinchaTlEdu 
+p: virochanaalu vomitings
+d: kaaranaalu emannaru ammaa doctorgaaaru
+p: anTe stomachlO pEgu anEdi voDichindi antunnaru konni saarlu maamulu scan cheyipisthunTE adi kanipinchaTlEdu
+p: anTE abdomenlO kanipisthundi kaani konni sarlu adi kUDaa kanipinchaTla
+d: CT scan kaani MRI scan kaani cheyinchaava? 
+p: MRI scan kaani cheyipinchalEdu sir adi
+d: right amma, ippudu Em?
+p: asalu food em tinna, virochanaalu vomitings baaga ekva undi
+p: dani taruvaata infection anEdi baaga ekva undi, stomach pain asal em taggaTla
+d: baruvu entha untaavu?
+d: vayasu entha?
+p: naaadi 26 sir vayasu
+d: ok
+p: baruvu vochi 57
+d: 57
+p: umm
+d: ok
+d: so edi tinna vomitings ayitundi virochanaalu ayitunnayi gata 2 nelalu gaa.

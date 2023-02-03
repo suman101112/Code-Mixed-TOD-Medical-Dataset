@@ -1,0 +1,12 @@
+p: hello namaskaaram doctor gaaru
+d: namatE anDI cheppanDi.
+p: madam maa bharyagaarki 50 yeella age untudi madam
+p: ayithe mOkaLLa noppulu osthunnayi maDam 
+d: ok
+p: ippuDU ippuDe start ayyaaayi maDam
+d: ok
+d: blood test emayina chEyinchaaraa anDi? x-ray Emayinaa tEyinchaara?
+p: ippuDu ippuDe modalavutundi anDi oka 2 3 months nunDi.
+d: ok
+d: weight entha unTadi anDi?
+p: 75 ala unTadi madam

@@ -1,0 +1,16 @@
+p: hello
+d: amma chEppanDi
+p: naa ee meDa naraalu baaga noppi ostundi anDi, meda naraaalu
+d: ok
+p: cervical spondilities annaranDi
+d: ok
+p: ayitE aa meDa paTTi vaaDinathasEpu baane unTUndi anDi daani taruvaata baaga ibbandi anipistundi, ala meDa vanchinappuDu, noppi ekva anipistundi
+d: right amma vayasu?
+p: koddi koddi rojulu baanE unTundi malli taruvaata ibbandi ayitundi
+d: alaagEnamma vayasu enta untaaru?
+p: 30 anDI
+d: inkEmayina aDagadalchukunnara?
+p: daani valla naaku meDa nunchi chEyi bhujam baaga laagutundi anDi, chEyi antaa noppostundi
+d: chEyi oka pakka, right side antaa
+p: aa
+d: right amma chEptaanu.

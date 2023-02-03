@@ -1,0 +1,19 @@
+p: hello namasthe anDi
+d: namathE anDI cheppanDi.
+p: naaku mOkaLLa noppi undi madam
+p: adi operation kUdaa cheyinchukunnanu madam
+d: ok
+p: ayitE kaalu noppi kUDaa taggutalEdu
+p: kaalu epudu vaapE untundi
+d: ok anDi
+p: iTla asal kaalu fold chEsukoni kurchOlEnu nEnu.
+d: operation eppuDu ayindamma mEku?
+p: ippudu 7 years ayindi madam
+d: rendiTiki ayindaa meeku?
+p: okka kaalukE ayindi madam
+d: anTe ippuDu operation ayina kaaluku kuDaa ibbandi ekkuvagaanE undi
+p: aa kaalukE madam
+d: ok fine.
+d: baruvu entha unTaaru?
+p: nEnu 80 untaanu madam
+d: ok

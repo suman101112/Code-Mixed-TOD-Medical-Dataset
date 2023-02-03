@@ -1,0 +1,20 @@
+p: namasthe madam
+d: cheppanDI
+p: naaku rheumatoid arthritis anni MOkALLu, chEtulu, joint pains, medicine vaaDaamu kaani malli ostunnayi
+p: last year medicine vaaDaamu
+d: ok
+d: VELi jointlalO kuDA kanipistundaa amma. only MOkALLalO 
+p: MOkALLu ila bhujaalnaDI, manikaTTu, kinda paadaalaku kUDA pain ostundi anDI madam
+d: emuka chuTTU vaapu emayina kanipistundaa amma?
+p: aa vaapu ochinapudu medicine vaaDaanu madam
+d: hmm
+p: vaapuku tagginayi kaani ippudu malli joints, ee mOkaLLa noppi ostundi madam
+d: ok
+d: vayasu entha amma ippudu.
+p: oka 45 untundi madam
+d: ok 45.
+d: nelasari aagipoyindaaa amma? ostunda?
+p: aa aagipoyindi madam
+d: ee samasya meeku diagonse ayyi 1 year ee avutunda?
+p: aa avunu madam
+d: ok fine amma

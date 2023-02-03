@@ -1,0 +1,15 @@
+p: aa namaskaaram sir
+d: cheppandi enti samasya meedi
+p: sir naa age ippudu 23 sir
+d: ok
+p: naaku chinnapaTi nunchi asthama undi
+d: ok
+p: appuDu allopathy baaga use chestU unDe vanni.
+d: ok
+p: madhyalo sinusities ochina venTanE nenu operation cheyinchukunnanu anTE 10th classlO
+d: ok
+p: ippudu malla sinusities undi malla asthama alagE undi sir.
+d: ok
+p: ippudu nEnu homeopathylo treatment cheyinchukunTE confirmga heal avutundaa sir?
+d: ok
+

@@ -1,0 +1,8 @@
+p: Edama kaalu naDustunTE jivvu mani laagutundi maDam
+d: ok, left leg
+p: aa jivvu mani laagutundi, 10 15 nimshaalaki jivvu mani laagEdi
+p: kurchOvaalanipistundi madam
+d: ok
+d: Emayina treatment tEsukuntunnara anDi testlu Emayina chEyinchaara?
+p: Em lEdu anDi, Em treatment lEdu
+

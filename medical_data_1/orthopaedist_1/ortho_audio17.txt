@@ -1,0 +1,18 @@
+p: na age 56 anDi
+d: ok sir
+p: nEnu okappuDu baaga shuttle aaDE vaaDini
+d: ok sir ok
+p: naaku renDu kaaLLU kUDA shuttle aaDi padipOyaananna maaTa
+d: ok umm
+p: ayithe emayindi anTe, 1 week back, nEnu regularga walk ki veLthaa
+d: hmm
+p: oka 6 months back nEnu walk chEstunnapudu severegaa pain ochEdi annamaaTa
+d: umm
+p: ayithe nEnu physician deggariki veLitE ayana Em annaru anTE neeku D vitamin baaga low gaa undi, D vitamin injection teesukunnanu, nEnu regulargaa vaaDutunnanu anDi. 
+d: yes sir
+p: ayinaa kUDA nEnu walking chEstunTE malla pain ostaa unTandi madam.
+d: pain ostundi.
+d: mOkaaLLa deggaraa anDi?
+d: ekkaDa ostundi?
+p: aa mokaaLLa deggara, exact mOkaaLLa deggara
+d: ok fine anDI.

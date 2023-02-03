@@ -1,0 +1,8 @@
+p: namastE madam 
+d: namastE amma cheppanDi
+p: na adi age ochEsi 30 years madam
+d: umhmm ok
+p: hello 
+d: vintunnannamma chepanDi
+p: age 30 years madam, clip vEyinchukOvali anukuntunna madam, vEyinchukOvaccha?
+d: 100 percent vEyinchukOvacchu

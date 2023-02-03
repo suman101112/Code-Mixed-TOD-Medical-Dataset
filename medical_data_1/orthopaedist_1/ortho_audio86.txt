@@ -1,0 +1,11 @@
+p: sir naadi backpain ekkuvagaa unTundi
+d: ok
+p: mOkaLLu kaaDaa unTundi sir
+d: vayasu enta amma?
+p: 
+d: sadvik nee age entha?
+p: aa 23 years sir
+d: 22 years
+d: naDumu noppi undi, moKALLu kUDA noppi unda?
+p: avunu sir
+

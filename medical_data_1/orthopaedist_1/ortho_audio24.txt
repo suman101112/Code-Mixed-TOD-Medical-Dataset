@@ -1,0 +1,12 @@
+p: hello namasthe madam
+d: cheppanDi.
+p: naaku kaali deggara boTana vElU deggara noppi unTe doctor deggariki vellina madam
+d: ok
+p: adi gout ani annaaru madam
+d: ok
+p: nopi vipareetamgaa unnadi madam, pain killer vaaDinaanu.
+d: ok
+p: chaala rOjula nunchi noppi taggaDamlEdu madam
+d: ok anDi
+p: dEniki em treatment tEsukOvaali madam?
+d: fine anDi

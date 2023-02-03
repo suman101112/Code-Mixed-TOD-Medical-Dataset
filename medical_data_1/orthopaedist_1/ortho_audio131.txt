@@ -1,0 +1,19 @@
+p: mEda antha baaga noppi puDutundi
+d: ok
+p: chEyi laagutundi
+d: ok
+p: kaalu kUDA laagutundi sir
+d: ok
+p: chest lO pain ostundi sir, okasaari paTTi iDustundi sir
+d: ok
+p: nEnu emanna gunDeku sambandhinchidi emayina ani bhayapaDutunnanusir
+d: ok
+d: gas problem emayina unda bhargav gaaru?
+p: aa vundandi koncham
+d: inkemayina unda?
+p: inkem lEdu sir
+d: ok
+d: suddengaa ochinda ee chEyi anta laagadam, kaallu laagadam kaani
+p: anTE eppatinuncho unTundi
+d: ok
+d: tension Em paDakandi, danni heart burn anTaaru.

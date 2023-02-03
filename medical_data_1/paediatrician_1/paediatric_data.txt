@@ -1,0 +1,3509 @@
+#0
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: motions pothunte edusthundi.
+d: motham enni sarlu motions poyindi?
+p1: 3 times sir.
+d: jalubu daggu unda?
+p1: undi.
+
+#1
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: ninna night nunchi jwaram baaga undi sir.
+d: jalubu daggu unda?
+p1: dagguthandi sir.
+d: ratriputa nidrabovataniki emayina ibbandi unda?
+p1: night baaga avastha padthandi.
+d: tine diet lo marpu teesukoni raavali. bayata
+cakelu biscuts chips em tinoddu.
+p; ok sir
+
+#2
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: baaga durada osthandi.
+d: intlo inkevarikayina unda?
+p1: undi sir.
+d: ratri ekkuva gokuthunnada?
+p1: avunu sir.
+
+#3
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: 
+
+#4
+d: vayasu entha? 
+p1: 8 months, m
+d: cheppandi enti problem? 
+p1: jalubu daggu inka jwaram undi.
+d: ippudu ela undi?
+p1: daggu ayasam baaga undi.
+d: daggu ayasam unnapudu bhujana vesukoni atu itu tiragali
+d: babu baane adukuntunnada?
+p1: adukuntunnadu. kani ratri edusthunnadu.
+d: tallipaaleena?
+p1: avunu sir.
+
+#5
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu daggu inka chevi noppi undi sir.
+d: kudi chevi aa leda edam cheva?
+p1: edam chevu.
+d: snanam chesetappudu chevulo cotton pettukovali
+p1: babu weight takva unnadu.
+
+#6
+d: vayasu entha? 
+p1: 4 months, f
+d: cheppandi enti problem? 
+p1: baaga durada peduthundi sir. daddurlu osthunnayi sir.
+d: intlo evarikayina unda?
+p1: evariki ledu. eemetho puttina paapaku kuda undi. 
+d: tallipaalena?
+p1: avunu.
+
+#7
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: jalubu daggu undi.
+d: jalubu daggu enni rojula nunchi undi?
+p1: 2 days. aayaasam osthundi.
+d: bayata dust lo velladam avoid cheyandi. regular tine diet tinandi.
+
+#8
+d: vayasu entha? 
+p1: 6 months, f
+d: cheppandi enti problem? 
+p1: general checkup kosam ochinam sir
+d: tallipaalena?
+p1: tallipaale sir.
+
+#9
+d: vayasu entha? 
+p1: 4 days, f
+d: cheppandi enti problem? 
+p1: general checkup kosam ochinam sir
+d: tallipaaleena?
+p1: tallipaalu osthalevu sir.
+d: first 24 gantalu doddiki povadam mutram povadam chudandi. 3.5 kgs oche varaku snanam poyoddu. vechaga unchali paapanu.
+
+
+#10
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: papaku fits laaga undi.
+d: modati saari naa? rendo saara?
+p1: ante?
+d: fits enni sarlu ochinayi.
+p1: fits ante papa kinda kottukodu. uttaga suddenga chustharu.
+d: 3 secondlakante ekva undadu. roju enni sarlaku osthundi.
+p1: chaala sarle osthundi.
+d: enni sarlu.
+p1: 10 15 sarlu osthundi. food emanna change cheyala?
+d: ledu anni tinochu 
+d: pillalanu okkallane odilipettodu.
+
+#11
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: jalubu undi. baaga vomiting ayithundi. 
+d: ante aakali kavadam leda?
+p1: emi tinatledu. vomiting ochinatlundani chepthunnadu.
+d: enni rojula nunchi aaakali lekapovadam?
+p1: 3 days nunchi. ballaniki rasivandi. food em tinali?
+d: manam tinedi edayina tinochu.
+
+#12
+d: vayasu entha? 
+p1: 4 days, f
+d: cheppandi enti problem? 
+p1: palu ravadam ledu talliki.
+d: talli bidda attachment sariga undi. talli palu ivvalanukunte palu osthayi. negative attitude ki povaddu. positive attitude undali.
+p1: ratri jwaram ochindi papaku.
+d: puttina papaku kali deggara chudali vedi.
+
+#13
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: dull ayipoyindu
+d: dull ayipoyinda? aadukovadam leda?
+
+#14
+d: umar kitna? 
+p1: 8 months, f
+d: kya hua 
+p1: kal subhese sardi, khasi, bhukhar hai.
+d: maa kaa doodh peeta hai?
+p1: ha.
+
+#15
+d: umar kitna? 
+p1: 2, m
+d: kya hua?
+p1: khasi aa rahi sir. sardi khansi hai.
+d: rat mein aa rahe. din me aa rahe?
+p; 24 hrs. aur muh mein chele bhi ho gaye
+
+#16
+d: umar tina? 
+p1: 3.7, m
+d: kya problem hai?
+p1: sardhi khaansi hai. bukhar hai.
+d: kitne dinon se hai?
+p1: kal night se hai.
+d: vaccination up to date hai?
+p1: ha sir.
+
+#17
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: raktam takuva undi sir.
+d: heaemoglobin takva undi. fever emayina unda?
+p1: ledu sir. 
+d: virochannaalu vantulu emayina unnaya?
+p1: ledu sir. kani doddike nallaga velthundi.
+d: iron tablets vala nallaga povachu. papa activity chusko. aahaaram koddi koddiga pettu.
+p1: tinatledu sir.
+d: koddi koddiga chaala sarlu pettu.
+
+#18
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: tintaledu assalu.
+d: main complaint enti?
+p; aame adukuntadi sir. fever unnna adukuntadi.
+d: tallipaalena?
+p1: tallipale sir.
+d: tallipalu kakunda inkem pedthav?
+p1: inkem tinadam ledu sir. 
+
+#19
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: night fever baaga undi
+d: tallipaalena?
+p1: tallipale sir.
+d: tallipalu kakunda inkem pedthav?
+p1: inkem tinadam ledu sir.  
+
+
+#20
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: baaga daggu undi. 
+
+#21
+d: enni months? 
+p1: 15, m
+d: kya problem? 
+p1: sardi khaasi bohot hai. naak mein se paani jaa raha.
+d: bottle ka doodh ya maa ka doodh.
+p1: maa ka doodh. naak mein se paani bohot jaa raha.
+d: thoda sardi hai? jyada hai?
+p1: thoda hai.
+
+
+#22
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: poddunna nunchi vomitings.
+d: dagguthona? uttagane aa?
+p1: uttagane.
+d: podduna nunchi emayina tinnada?
+p1: ledu. levadam tone vomitigs. kadupu nosthundi antunnadu. adukovadam ledu.
+d: adukovatledu. dull ayithunnadu.
+
+#23
+d: vayasu entha? 
+p1: 8 months, m
+d: talli palu ee na? 
+p1: avunu sir
+d: talli palu kakunda annam peduthunnara?
+p1: umm.
+d: cheppandi enti problem?
+p1: jwaram, jalugu daggu undi sir.
+d: ratri nidra poyinada?
+p1: madhya madhyalo lesthunnadu sir.
+d: teekalanni paddaya amma?
+p1: paddayi sir
+
+#24
+d: vayasu entha? 
+p1: 4 months, m
+d: cheppandi enti problem? 
+p1: guruku guruku baaga undi. sardi baaga undi sir.
+d: talli pale kada?
+p1: avunu sir.
+
+#25
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: jwaram osthundi. sardi ayindi. emi tintaledu. bakkaga ayithundi. weight takva undi.
+d: enno roju jwaram raabatti?
+p1: ninna night.
+
+#26
+d: umar kitnya? 
+p1: 3, m
+d: kya hua? 
+p1: fever, cough bohot ho rahi sabh. cold. 2 days se non stop cough kar raha sabh.
+
+#27
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jwaramu.
+d: jwaram okkate naa inka emayina problem unda?
+p1: guruka ga undi. daggosthundi. mosa tesuvadam ibbandayithundi. baaga jwaram ochi inkevvarini ethukonivvadam ledu.
+d: enni rojulu ayindi
+p1: 3 rojulu ayindi.
+
+#28
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: tinna taruvata baaga vomiting chestukunnadu. 
+d: inkemayina unda?
+p1: cough undi. gurru gurru antadu sir dagochinapudalla.
+
+#29
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi? 
+p1: daggu. fever osthundandi.
+p1: daggosthadi. tindi tinadu sir.
+
+#30
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram osthundi sir. jalubu daggu urike repeat ayithundi sir.
+d: teekalu anni paddaya?
+p1: paddayi sir.
+
+#31
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram undi sir. sudden ga osthundi sir.
+d: bottle paala? talli paala?
+p1: bottle paalu sir.
+d: palu kakunda inka em food isthunnaru?
+p1: em tintaledu sir jwaram ochinapudu
+
+#32
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: babu chempa meeda oka tellati macha undi sir.
+
+#33
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jwaram valana fits osthunnayi sir. jalubu kuda undi.
+d: jwarm thoni fits osthunnaya..
+
+
+#34
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1:  jwaram osthundi sir. challaga undani vanukutunnadu
+
+#35
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: vomitings ayithunnayi sir. vomiting sensation baaga undi sir.
+d: enni sarlu ayinayi?
+p1: morning nunchi 2 times ayyayi.
+d: aahaaram teesukunna tarvataha ayinda?
+p1: podduna ayindi tinna tarvatha kaledu.
+
+
+#36
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram undi sir. raktam takva undi. emi tintaledu. baaga vomitings ayithunnayi.
+d: heamoglobin 8.2 undi. fever mandulu vaduthunnara?
+p1: vaduthunam sir.
+
+#37
+d: vayasu entha? 
+p1: 3, m
+d: kya problem hai? 
+p1: cold cough hai. cold ke liye medicines dale.
+d: kitne dinon se hai?
+p1: 15 days se hai.
+
+#38
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: daggu podduna oka ganta sepu ratri oka ganta sepu undi sir. chaana dagguthunnadu.
+p1: non stop daggu undi.
+d: enni rojulayindandi daggu vachi?
+p1: varam ayindi.
+
+#39
+d: vayasu entha? 
+p1: 6, m
+d: emayindi? 
+p1: daggu jwaram undi sir. 
+d: eppati nunchi andi jwaram jalubu daguu ivanni.
+p1: 3 rojula nunchi sir.
+d: daggu baaga unda? mamuluga unda?
+p1: normal ga undi.
+
+#40
+d: umar kitna? 
+p1: 4, m
+d: problem kya hai? 
+p1: bukhaar ayi khansi aayi.
+d: kitne din se?
+p1: kal shyam se.
+
+#41
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: 4 days nunchi jalubu daggu jwaram.
+d: talli palu taguthada? annam tintada?
+p1: anname
+d: teekaalanni padinaya?
+p1: padinayi sir.
+
+#42
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: baaga volantha geekuntundi. gokudu pedthundi.
+d: intlo evarikayina unda?
+p1: naaku unnadi gokudu.
+d: ratri baaga unda? podduna baaga unda?
+p1: ratri baaga undi gokudu.
+
+#43
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: jwaram, daggu undi sir.
+d: enni rojula nunchi?
+p1: varam ayindi sir.
+d: intlo evarikayina unda?
+p1: papa tamuduki undi sir.
+d: intlo patti unda?
+p1: undi sir. 
+d: patti vallane ochindi.
+
+#44
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: fever, cold cough undi sir.
+d: enni rojula nunchi?
+p1: 2 days ayithundi sir.
+
+#45
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: cold, cough undi sir. night baaga dagguthunadu. 
+d: enni days nunchi?
+p1: 1 week deggara ayindi sir. inka skin meeda tellati macha undi sir.
+
+#46
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi emayindi? 
+p1: meda deggara vaapu ochindi sir. 
+d: intlo evarikayina school pillalu unnara?
+p1: pedda papa undi sir.
+p1: emi tintaledu sir
+d: gonthulo mingadam kastamga untadi kabati. vere telikaga mingevi emayina pettandi.
+
+#47
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: kadupu noppilesthundata sir. vomitings ayithunnayi.
+d: enni sarlu ayinayi vantulu
+p1: emayina tinangane kadupu noppi lesthandi antunnadu sir.
+d: bayatavi emayina tinnada?
+p1: avunu sir.
+d: biscuits, chips, papadalu bayatavevi tinoddu.
+
+#48
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: vantulayithunnayi sir. jwaram undi. nanju osthundi daggutunte.
+d: enni sarlu vantulayinayi?
+p1: podduna nunchi 2 sarlu ayinayi.
+d: jwaram jalubu daggu enni rojula nunchi undi?
+p1: 3 days ayindi.
+
+#49
+d: vayasu entha? 
+p1: 26 days, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu daggu undi sir babuku.
+d: tallipaaleena?
+p1: tallipaalee sir.
+d: 4 kgs ayyevaraku snanam poyoddu. gripe water poyoddu.
+
+#50
+d: vayasu entha? 
+p1: 9 months, f
+d: cheppandi enti problem? 
+p1: akalayithaledu. bakkaga ayithandi. emi tinatledu.
+d: teekalanni up to date unnaya?
+p1: unnayandi.
+
+#51
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jalubu daggu jwaram undi dr.
+d: enni rojulayindi?
+p1: jalubu ochi 3 days ayindi. jwaram ninna night ochindi.
+
+#52
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: sir babuku baaga chevi noppi undi.
+
+#53
+d: umar kitna? 
+p1: 9, f
+d: bolo kya problem hai? 
+p1: kaan me darad ho raha sir. 
+d: kaunsa kaan me darad ho raha?
+p1: 2 kaan me.
+
+#54
+d: vayasu entha? 
+p1: 10 months, f
+d: cheppandi enti problem? 
+p1: sardi andi. sardi baaga undi.
+d: talli palu unda?
+p1: talliki paalu levu andi. bottle palu doctor
+d: talli palu inka annam undali. bottle palu cerelac pettakudadu.
+
+#55
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jalubu daggu jwaram undi. night ki osthundi jwaram.
+d: enni rojulayindi jwaram vachi?
+p1: 3 rojulu ayindi. haemoglobin takva undi dr.
+d: haemogram test rasina.
+
+#56
+d: umar kitna? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: vaccination kosam ochamu dr.
+
+#57
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: daddulosthunnayi sir vollanta. baaga durada undi.
+d: patti unda mee intlo?
+p1: patti undi sir. tella machalu undi sir.
+p1: sariga tinadu doddiki sariga podu.
+
+#58
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: mutram lo mata undi ani cheptundi sir.
+
+#59
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: vomiting osthunadi sir. vantulu ochinatlu ayithundi.
+
+#60
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: vokarso vant ho raha. goli dale toh eisa ho raha.
+d: ennisarlu vantulu ayinayi?
+p1: 2 sarlu ayinayi sir. 
+
+#61
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: vomitings motions ayithunnayi.
+d: last vomiting kitne baje hua.
+p1: rat ko 2 baje.
+d: kuch khane se ho raha.
+p1: water peete bhi ho raha. doodh peene ke badh nastha karne ke badh bhi ho raha.
+p1: raat me char kare. subah se 3 times kare.
+p1: raat me fever chadhi toh paracetamol dali.
+d: doodh bottle ka doodh peeraha ya maa kaa doodh?
+p1: mera aur bhains ka doodh pee raha.
+
+#62
+d: vayasu entha? 
+p1: 5 days, m
+d: cheppandi enti problem? 
+p1: baaga edusthandu. motions sir. toilet kuda posthaledu.
+
+#63
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: motions aur vomitings ho rahe
+d: kitne baar hua
+p1: kal se ho rahe
+d: bukhaar hai?
+p1: kal tak bohot jyada tha.
+d: ulti jyada hai ya motions jyada hai.
+p1: dono bhi jyada hai. peet me darad hai.
+
+#64
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jwaram, daggu, jalubu undi, cheti meeda notlo machalu unnayi.
+d: epati nunchi?
+p1: 1 day ayindi sir.
+d: inkevarikayina unda intlo?
+p1: ledu sir.
+
+#65
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: morning nunchi fever osthundi.
+d: fever ee na inkemayina unnaya?
+p1: 3 days varaku motions unde. ninnatiki taggipoyinayi.
+d: ee roju problem emiti andi?
+p1: morning nunchi urine poyale.
+
+#66
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: motions ayithunnayi sir.
+d: eppatinunchi amma?
+p1: 2 days nunchi ayithunnayi sir. doddiki velthunapudu kadupu noppilesthundi sir.
+p1: bathroom ki vellinapudu gur gur antudi sir.
+d: loose motions ayithunnaya?
+p1: avunu sir water water pothundi. jwaram undi sir. baruvu perugutaledu sir.
+p1: podunna nunchi emi tinna embadane vanti chesukuntundi.
+
+#67
+d: umar kitna? 
+p1: 2, m
+d: kya problem? 
+p1: 3 din se bukhaar aa rahi. jwaram unnadi.
+d: daggu unnada?
+p1: undi doctor kani jwaram ee chaana.
+
+#68
+d: vayasu entha? 
+p1: 9 months, f
+d: cheppandi enti problem? 
+p1: buggala meeda machalu oshunnayi sir.
+d: annam peduthunnava?
+p1: aaa.
+
+#69
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: white whitega machalu. bhujala meeda machalu inka kalla meeda kuda ayinayi. malla black ga ayithunnayi avi.
+
+#70
+d: vayasu entha? 
+p1: 7 months, m
+d: taqleef kya hai?
+p1: sardi hi khaansi hai.
+p2: rat me bohot khaansi hai. sata raha. 
+d: maa kaa doodh? bottle ka?
+p1: meera hi sir
+p1: chaval khilaana sir?
+d: haan khilaavo.
+
+#71
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: urukuthunte aayaasam osthunnadi. metlekuthunte aayaasam osthundi
+p1: sardi unnadi sir.
+d: shabdhalu vipisthunnaya amma?
+p1: ledu sir. aakali baaga ayithaledu antandi sir. annam tintaledu.
+
+#72
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: khansi hai. raat se bukhaar hui. aaj subah se bukhaar jyada hua.
+p1: khaa nahi raha kuch bhi. ulti ho raha. nanju aa raha. 
+p2: ulti aa rahi 
+
+#73
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: medala noppi osthundi sir. 
+d: meda noppi aa?
+p1: aa. 2 rojula nunchi daggu baaga lesthandi. jwaram unnadi.
+p1: kadupu noppilesthandi antandu.
+
+#74
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: fever undi. 2 days fever undi. ee rojununchi baaga neerasam gaa ayithundi.
+d: ee roju nunchi chaatakavatleda?
+p1: ledu ninnati nunche. emi tinatledu. annam tinatledu. emi tinatledu. 
+
+#75
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: papaku fits osthunayi.
+d: enni sarlu osthunnayi.
+p1: puttinapatinunche unnayi. rojuki 10 - 15 times osthunnayi.
+
+#76
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: fits osthunnayi jwaram ochinapudu. 
+
+#77
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: fits osthunnayi. okkadegare ala chustha undi. 
+d: enni sarlu osthayi?
+p2: rojuki chaala sarle osthayi.
+
+#78
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: chetulu kallu kottukuntundi. fits laga
+d: eppatinunchi?
+p1: puttinapatinunchi.
+d: rojuki ennisarlu?
+p1: 10 sarla kante ekkuvane
+
+#79
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: vollantha bigusukupoyinatlu nilchuntundi. asalu kadaladam ledu. oka 2 3 nimishaalu alane chesthadi.
+d: fits osthunnaya?
+p1: hmm
+d: ennisarlu?
+p1: 5 sarlu kante ekvane rojuki.
+d: eppatinunchi undi?
+p1: puttinapatinunche.
+
+
+#80
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: kalu tirigi padipothundi. chusthe bhayamayithundi. 
+d: ee rojena? roju alane chesthunda?
+p1: mundu dr fits undi ani cheparu. e madhya ekva ayindi.
+
+#81
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: fits unnayi. upiri tesukovadam aaputhunnadu. 
+d: fits puttinapatinunchi unnaya?
+p1: avunu
+
+#82
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: fits unnayi. gaali pelchukuntaledu.
+d: fits puttinapatinunchi unnaya?
+p1: avunu
+
+#83
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: padellu ochinnayi. ayina pakka taduputhandi. mutram apukuntaledu. fits unnayi.
+d: eppatinunchi unnayi fits?
+p1: puttinapatinunchi.
+
+#84
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: urke kinda padthandi fits ochinapudu ala ayithadi. bhayamayithandi.
+d: fits eppatinunchi unnayamma?
+p1: puttinappatinunchi.
+
+#85
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: apudapudu matladadam band chesthunnadu. asal chepindi intaledu. suddenga mugapoyinatlu ayithunnadu.
+p2: doctorki chupisthe fits unnayi annadu.
+d: eppatinunchi fits unnayi?
+p1: puttinapatinunche
+
+#86
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: papaku fits unnayi. reppalu okkasariga kottukuntunnayi. 
+d: rojuki enni sarlu ala ayithadi?
+p1: 15 20 sarla kante ekkuve
+
+#87
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: kaaallu chetulu kottukuntunnayi. fits unnayi.
+
+#88
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: vollantha gattiga bigusuku poyinatlu chesthandu.
+
+#89
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: kallu tirigi padipothandi.
+
+#90
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: gadpu aapesthunnadu. pedalu nalupu rangulo ayitannayi.
+
+#91
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: talaku debba tagilindi papaku. appatinunchi vankaraga chusthundi.
+
+#92
+d: vayasu entha? 
+p1: 5 months, m
+d: cheppandi enti problem? 
+p1: 3 nelalu ayipoyianayi inka baabu tala ethuthaledu.
+
+#93
+d: vayasu entha? 
+p1: 8 months, f
+d: cheppandi enti problem? 
+p1: 8 nelalu ayipoyinayi kani inka papa sariga kurchuntaledu. inka padukone untandi.
+
+#94
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: papaku inka nadaka raledu.
+
+#95
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: babuku inka nadaka raledu. kurchone adukuntuntadu.
+
+#96
+d: vayasu entha? 
+p1: 2.5, f
+d: cheppandi enti problem? 
+p1: chetilo spoon patukovadamee ravadam ledu. edi sariga pattukolekapothandi.
+
+#97
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: inka sariga nadusthaledu. kodisepu nadichi kurchone adukuntandu.
+
+#98
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: kallu chetulu gattiga bigusukupoyinatlu nadusthandi
+
+#99
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: sariga nadaka ravatledu.
+
+#100
+d: vayasu entha? 
+p1: 1.5, f
+d: cheppandi enti problem? 
+p1: sariga kurchovadam ravatledu papaku. inka nadavatle.
+
+#101
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: edayina pattukoni nilchuntaledu. kurchone untandi.
+
+#102
+d: vayasu entha? 
+p1: 5 months, m
+d: cheppandi enti problem? 
+p1: memu em matladina vinpinchukuntaledu.
+
+#103
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: oka samvastaram ayithandi inka matale osthalevu.
+
+#104
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: babuku inka matalu osthalevu dr.
+
+#105
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: 2 samvastaralu ayithandi inka sariga matale osthalevu.
+
+#106
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: matho sariga matladalekapothandi.
+
+#107
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: memu entha matladina em reply isthaledu. 
+
+#108
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: andaritho kalisi untaledu. okkamene adukuntandi.
+
+#109
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: andaritho navvuthu untaledu.
+
+#110
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: andaritho matladuthaledu. okkamene undi adukuntandi. evarayina deggariki ochina edusthandi.
+
+#111
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: epudu kuda dull ga untandi. okkamene adukuntaa untandi. nenu kakunda inkevarayina deggara osthe edusthandi.
+
+#112
+d: vayasu entha? 
+p1: 4 months, f
+d: cheppandi enti problem? 
+p1: nalugu nelalu ayithunnayi. inka mamalni chusi navvuthaledu.
+
+#113
+d: vayasu entha? 
+p1: 6 months, m
+d: cheppandi enti problem? 
+p1: inka addam badaledu.
+
+#114
+d: vayasu entha? 
+p1: 7 months, m
+d: cheppandi enti problem? 
+p1: memu pilichina palukuthaledu. okkadegarane kurchoni adukuntandu.
+
+#115
+d: vayasu entha? 
+p1: 9 months, m
+d: cheppandi enti problem? 
+p1: inka kurchuntaledu. ambaduta ledu
+
+#116
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: inka matladuthaledu. nadusthaledu
+
+#117
+d: vayasu entha? 
+p1: 1.5, m
+d: cheppandi enti problem? 
+p1: inka memu em chepina vintaledu. nadusthaledu. matho em matladuthaledu.
+
+#118
+d: vayasu entha? 
+p1: 2.5, m
+d: cheppandi enti problem? 
+p1: inka sariga nadavadam urakadam raledu
+
+#119
+d: vayasu entha? 
+p1: 2.5, m
+d: cheppandi enti problem? 
+p1: matho em matladatledu. pilichina palukutaledu
+
+#120
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: edi pattukoleka pothunnadu. cup ichi neeelu tagamanna cup ni pattukolekaopthunnadu. 
+
+#121
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: inka urukuthaledu. nadaka kuda melagaa ochind. mellada nadusthunadu. oka 10 adugulu vesi kurchuntunadu.
+
+#122
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: emu chinnachinna panulu cheyamanna chesthaledu. memu chepindi vinipinchukuntaledu.
+
+#123
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: bayata vallu intikochi matladuthe edusthandi. evari deggara pothaledu. okkade adukuntunadu.
+
+#124
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: cycle tokkadam ravatledu. nadaka kuda kastamga nadusthunnadu.
+
+#125
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: valla friends laaga egaramante eguruthaledu. andaritho kalisi adukuntaledu
+
+#126
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: counting inka sorting osthalevu. edayina patukomanna sariga pattukuntaledu.
+
+#127
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: memu em matladina javabu isthaledu. vinipinchukuntaledu.
+
+#128
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: chevulu vinipinchadamledu babuki
+
+#129
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: memu pilichina palukuthaledu.
+
+#130
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: memu matladina matho matladalekapothandu
+
+#131
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: ee vasthuvu pattukolekapothandu.
+
+#132
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: memu matladina matho tirigi matladuthaledu.
+
+#133
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: memu entha arachina vinipinchukuntaledu. okkade adukuntunnadu.
+
+#134
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: epudu dull ga untunnadu. matho adukuntaledu.
+
+#135
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: inka matalu ravatledu
+
+#136
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: pedavulu cheeli unnayi babuki. operation cheyinchali
+
+#137
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: payina pedalu cheli unnayi.
+
+#138
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: matladinde malli malli matladuthunnadu
+
+#139
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: urke baaga siggupaduthunnadu. sariga andaritho matladadamledu.
+
+#140
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: sutiga chusi matladalekapothunnadu.
+
+#141
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: okkasarigane baaga kopam techkuntunnadu.
+
+#142
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: babuki ratulu sariga kanipinchadam ledu.
+
+#143
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: papaku ratrulu sariga kanipinchadam ledu 
+
+#144
+d: vayasu entha? 
+p1: 11, f
+d: problem enti cheppandi?
+p1: papaku heart lo hole undi. apudapudu urikinapudu lechinapudu aayasam osthundi baaga.
+ 
+
+#145
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: babuku chevudu undi. emi vinipinchukuntaledu
+
+#146
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: papa em chepina vinipinchukuntaledu. okka deggara kuduruga kurchovadam ledu. sariga matladadam ledu.
+
+#147
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: babu istham ochinatlu behave chesthunnadu. okkadeggara sariga undadam ledu. memu chepina maata vinatledu
+
+#148
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: school lo babu okka deggara kurcholekapothunnadu.
+
+#149
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: teliyani vallatho kuda matladuthunnadu. chepina vinipinchukuntaledu. baaga allari chesthunnadu. satayisthunadu. 
+
+#150
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: papa baaga sataisthundi memu entha cheina vinatledu.
+
+Signs of a more serious cause of a childhood cough can include:
+
+#151
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: baaga jwaram undi papaku. 
+d: entha undi jwaram?
+p1: 102 payine undi.
+d: eppatinunchi?
+d: 2 days nunchi.
+
+#152
+d: vayasu entha? 
+p1: 3, ms
+d: cheppandi enti problem? 
+p1: baaga daggu osthundi. ratrulu inka ekva undi. sariga nidra ledu.
+d: eppatinunchi?
+p1: 2 weeks ayindi.
+
+#153
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: baaga jwaram undi. 100 kante ekkuvane undi. daggu kuda undi. 
+d: eppatinunchi?
+p1: jwaram ninna night ochindi. kaani daggu oka 4 5 days ayithundi.
+
+#154
+d: vayasu entha? 
+p1: 11 months, m
+d: cheppandi enti problem? 
+p1: babuku jalubu daggu undi. ratri gur gur antunnadu.
+d: eppatinunchi?
+p1: ninna night nunche.
+d: jwaram unda?
+p1: ledu
+
+#155
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: papaku upiri pilchukovadam kastamga undi.
+d: jalubu daggu emayina unnaya?
+p1: avunu rendu unnayi.
+d: eppatinunchi?
+p1: 3 rojuluayindi.
+d: jwaram unda?
+p1: ledu
+
+#156
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: jwaram, jalubu, daggu undi.
+d: eppatinunchi?
+p1: jalubu start ayi 5 days ayindi. mandulu vadinam koddiga taggindi. kaani malla jwaram ochi jalubu ekva ayindi.
+d: bayatavi emayina tinnada? cakes, cool drinks ala emi tinakudadu.
+p1: entha chepina vinadu dr. bayati tinalante chaala istham.
+
+#157
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: baaga jwarm undi. ratrulu baaga dagguthunnnadu.
+d: eppatinunchi jwaram undi?
+p1: start ayi oka 2 days ayithandi. aasal nidra ne ledu ratri motham dagge.
+
+#158
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: ratlulu baaga dagguthunnadu. poddunna antha daggu ledu kani ratrule baaga dagguthunnadu.
+d: baabu bayata tindi alavatu cheyakandi. biscuits, chocolates, cool drinks ila ivvoddu pillalaku.
+
+#159
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: baaga jwaramochinidi appatinunchi weakga ayipoyindi.
+d: eppatinunchi jwaram?
+p1: 3 days ayindi. paracetamol vesthunnanu. tagguthundi kani papa weak ayindi baaga. emi tintaledu.
+
+#160
+d: vayasu entha? 
+p1: 7 months, f
+d: cheppandi enti problem? 
+p1: jwaram jalubu start ayindi papaku. ratrulu baaga edusthandi. sariga palu taguthaledu.
+
+#161
+d: vayasu entha? 
+p1: 4 months, m
+d: cheppandi enti problem? 
+p1: jalubu start ayindi baaguku. padukunapudu gur gur antandu. 
+
+#162
+d: vayasu entha? 
+p1: 11 months, m
+d: cheppandi enti problem? 
+p1: jwaramosthandi. 
+d: entha undi jwaram?
+p1: 101 undi.
+d: eppatinunchi?
+p1: 2 days ayindi. paracetamol vadina. ayina taggutaledu.
+
+#163
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: baaga weak ayipoyindi papa. 4 days nunchi jwaramosthandi. tagguthaledu. emi tintaledu.
+d: entha undi jwaram?
+p1: 102 untandi. mandulu vadina tagguthaledu
+
+
+#164
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: papa charmam palipoyinatlu untandi. weak ayithundi. asalu tindi ledu. okka idli kuda tintaledu.
+
+#165
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthandani chepthandi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: anni unnayi.
+
+#166
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: gonthu noppilesthandani chepthunnadu.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jwaram ledu kani baaga jalubu undi.
+
+#167
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthandani chepthandi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jwaram undi inka jalubu undi.
+
+#168
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthandani chepthandi. jwaram kuda undi
+d: jalubu daggu alantivi emayina unnaya?
+p1: jalubu undi.
+
+#169
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: daggi daggi gonthu noppilesthandani chepthandi.
+d: jalubu jwaram alantivi emayina unnaya?
+p1: mudu jalubu unde. mandulu vadinapudu poyindi.
+
+#170
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: jalubu inka gonthu noppi undi.
+d: daggu jwaram emayina unnaya?
+p1: jwaram unde sir ninna taggindi. kani gonthe baaga noppi undani edusthandi. 
+
+#171
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: gonthu noppi baaga unnadi. emi tintaledu.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu undi.
+
+#172
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: gonthu noppi baaga unnadi. emi tintaledu
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu inka jwaram undi.
+
+#173
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: gonthu noppi baaga unnadi. emi tintaledu. mingadam kasthamayitundani chepthunnadu
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu undi.
+
+#174
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: gonthu noppi baaga unnadi. emi tintaledu. mingadam kasthamayitundanta. kuchukuntunnatlu undata
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu daggu unnayi.
+
+#175
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: gonthu noppi baaga unnadi. mingutunte kuchukunnatlu undani chepthundi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: anni unnayi.
+
+#176
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: baagaa sollu karuthundi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu unde.
+
+#177
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: baagaa sollu karuthundi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu inka jwaram undi.
+
+#178
+d: vayasu entha? 
+p1: 14 months, f
+d: cheppandi enti problem? 
+p1: baagaa sollu karuthundi.
+d: jalubu daggu jwaram alantivi emayina unnaya?
+p1: jalubu unde.
+
+#179
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: gonthu deggara swelling undi. ratri baaga daggu undi.
+d: jalubu jwaram alantivi emayina unnaya?
+p1: avunu unnayi. 
+
+#180
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: jalubu undi baaga.
+d: enni rojulanunchi?
+p1: 3 days nunchi.
+
+#181
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jalubu undi baaga. ratri gur gur antunnadu. ninna night daggu kuda start ayindi.
+d: enni rojulanunchi?
+p1: 5 days nunchi. mandulu ichina taggatledu.
+d: jwaram unda?
+p1: mundu unde. ipudu taggindi.
+
+#182
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: jalubu undi baaga.
+d: enni rojulanunchi?
+p1: 3 days nunchi.
+d: jwaram unda?
+p1: pche
+
+#183
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: jwaram inka jalubu undi baaga. 
+d: enni rojulanunchi?
+p1: 3 days ayindi jalubu ochi. kani jwaram ninna nigh nunchi start ayindi.
+
+#184
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: jalubu inka daggu undi.
+d: jwaram unda?
+p1: ledu.
+d: enni days ayindi?
+p1: 2 days ayindi. kani ninna night daggu baaga unde. sariga nidra ledu.
+
+#185
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: chevi potu undi
+d: jwaram jalubu daggu alantivi emayina unnaya?
+p1: jalubu undi.
+
+#186
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: chevi baaga nopilesthandi.
+d: jwaram jalubu daggu alantivi emayina unnaya?
+p1: jwaram inka jalubu chaala undi.
+
+#187
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: chevi gunjukuntu edusthunnadu. chevi potu undi. 
+d: jwaram jalubu daggu alantivi emayina unnaya?
+p1: jwaram inka jalubu undi.
+
+#188
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram inka chevi potu undi. baaga edusthunnadu.
+d: jalubu daggu alantivi emayina unnaya?
+p1: unnayi anni.
+
+#189
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: chevi noppi undi inka jwaram jalubu unnayi.
+d: daggu unda?
+p1: ledu.
+
+#190
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: chevi potu undi ratri sariga nidra ledu. motham edchude.
+d: jalubu daggu alantivi emayina unnaya?
+p1: unnayi anni.
+
+#191
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: chevi potu undi. chevu erraga ayindi. baaga noppi undani edusthunnadu.
+d: jalubu daggu alantivi emayina unnaya?
+p1: unnayi anni.
+
+#192
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu undi. inka baaga chevi noppilesthandani edusthunnadu.
+d: daggu unda?
+p1: ledu.
+
+#193
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: chevu erraga ayindi. noppi undi. cheemu karuthandi. sariga vinipisthaledu.
+d: jalubu daggu alantivi emayina unnaya?
+p1: jwaram undi.
+
+#194
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: chevu erraga undi. sariga vinipisthaledu. noppi undantunnadu.
+d: jalubu daggu alantivi emayina unnaya?
+p1: intakumundu jalubu daggu unde oka varam kinda.
+
+#195
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: baabu gattiga dagguthunnadu.
+d: jwaram jalubu emayina unnaya?
+p1: unnayi.
+
+#196
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: baabu gattiga dagguthunnadu.
+d: jwaram jalubu emayina unnaya?
+p1: unnayi.
+
+#197
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: baabu gattiga dagguthunnadu. mukku baaga karuthundi.
+d: jwaram unda?
+p1: mundu unde. mandulu vadinapudu taggindi.
+
+#198
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: baabu gattiga dagguthunnadu. ratrulu baaga daggu undi.
+d: jwaram jalubu emayina unnaya?
+p1: unnayi
+
+#199
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: papaku swaasa teesukovadam kastamga undi.
+
+#200
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu unnayi. babuku swasa teesukovadam kastamga undi.
+
+#201
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: baaga jwaram osthundi. ratrulu baaga tagguthunnadu. mukku karuthundi baaga.
+
+#202
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: daggi daggi baabu lips blue color ayithunnayi. swasa tesukovadam kastamga undi.
+
+#203
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: paapa baaga gatiiga daggutundi. tinadam leda mingadam kastam ga undi ani chepthundi. mingosthaledu. emi tintaledu. 
+
+#204
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: gaali pelchukovadam kastamga undani chepthunnadu.
+
+#205
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: mosa osthundi babuku.
+
+#206
+d: vayasu entha? 
+p1: 9 months, f
+d: cheppandi enti problem? 
+p1: motions ayithunnayi.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 4-5 times ayindi.
+d: lose ga nella laaga pothunnada?
+p1: avunu. neella laagane 
+d: tallipaaleena?
+p1: kadu. bottle palu.
+
+#207
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: jwarm undi. motions ayithunnayi.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 2 3 times ayindi.
+d: lose ga nella laaga unnaya motions?
+p1: avunu. neella laagane 
+
+
+#208
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: jwarm jalubu undi. motions ayithunnayi. emi tintaledu asalu.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 5 times payine ayindi.
+d: lose ga nella laaga unnaya motions?
+p1: avunu. neella laagane  
+
+#209
+d: vayasu entha? 
+p1: 7 months, f
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. kadupu noppilesthundi. palu taguthaledu.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 6 times ayindi.
+d: lose ga nella laaga unnaya motions?
+p1: avunu. neella laagane.
+d: tallipaaleena?
+p1: avunu.
+
+#210
+d: vayasu entha? 
+p1: 11 months, f
+d: cheppandi enti problem? 
+p1: motions inka vomitings ayithunnayi.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 5 times ayindi.
+d: lose ga nella laaga unnaya motions?
+p1: avunu. neella laagane. asal emi tintaledu.
+d: tallipaaleenaa?
+p1: avunu
+
+#211
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: motions, vomitings ayithunnayi. dul ga ayipoyindi. emi tinatledu.
+d: ennisarlu pothunnadu rojuki?
+p1: morning nunchi 4-5 times ayindi.
+d: lose ga nella laaga unnaya motions?
+p1: avunu. neella laagane. asal emi tintaledu.
+
+#212
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. kadupu noppi undi. asal mutram posukoledu.
+d: epudu last chesukundi urine?
+p: 10 hrs ayithandi. manta undi ani chepthundi.
+
+#213
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. kadupu noppi undi. mutram pasupu pachaga ochindi.
+d: epudu last chesukundi urine?
+p: 10 hrs ayithandi.
+
+#214
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: motions ayitunnayi. paapa paalipoyinatlu ayindi. baaga weak ayindi.
+
+#215
+d: vayasu entha? 
+p1: 8 months, m
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. emi tintaledu. palu kuda taguthaledu
+
+#216
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: 10 days ayindi loose motions tagguthalevu.
+
+#217
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: motions and vomitings unnayi. neelu tagina bayatiki osthundi.
+
+#218
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. mutram posukoledu 6 hrs kante ekuvane ayindi.
+
+#219
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: motions vomitings ayithunnayi. kadupu noppi undi.
+
+#220
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: motions ki vellinapudu rakatam padindi.
+
+#221
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: vantulayithunnayi. pachaga nanju vanti chesukuntunnadu. emi tinatledu. kadupu noppi undi.
+
+#222
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: vantulayithunnayi. pachaga nanju vanti undi. kadupunoppi undi.
+
+#223
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: fever undi 102 undi.
+d: enni rojulu ayindi?
+p1: ninna night ochindi.
+d: jalubu daggu unnaya?
+p1: levu
+
+#224
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: fever undi 100 payine. mandulu vadina tagguthaledu.
+d: enni rojulu ayindi?
+p1: 3 days ayindi.
+d: jalubu daggu unnaya?
+p1: jalubu undi.
+
+
+#225
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: 100 datindi fever. vanukutunnadu.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+d: jalubu daggu unnaya?
+p1: unayi.
+
+#226
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: fever undi fits laga osthunnayi.
+p1: 102 datindi fever.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+
+#227
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: 100 datindi fever. fits osthunnayi. 
+p2: kallu tirigi padipothunnadu suddenga.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+d: jalubu daggu unnaya?
+p1: unayi.
+
+#228
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: fever undi. gaali pelchukuntaledu.
+d: entha undi jwaram?
+p1: 101 undi.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+
+#229
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: fever undi. ratri fits laga ochayi.
+d: entha undi jwaram?
+p1: night 103 datindi.
+d: enni rojulu ayindi?
+p1: 4 days ayindi. mandulu vadina taggutaledu
+
+#230
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: papa baaga dul ga undi.
+d: jwaram emayina unda?
+p1: 1 week nunchi osthu pothu undi.
+
+#231
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: vomitings ayithunnayi inka jwaram undi.
+d: entha undi jwaram?
+p1: 100 undi.
+d: enni rojulu ayindi?
+p1: 3 days ayindi.
+
+#232
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: tala noppi undi antunnadu. inka jwaram kuda undi.
+d: entha undi jwaram?
+p1: 101.5 undi.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+
+#233
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: jwaram undi. vomitings ayithunnayi. kadupu noppi undi.
+d: entha undi jwaram?
+p1: 102 undi.
+d: enni rojulu ayindi?
+p1: 2 days ayindi.
+d: vomitings enni sarlu ayinayi?
+p1: morning nunchi 4 times ayyayi. nanju osthundi.
+
+
+#234
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: jwaram undi. emi tinadam ledu.
+
+#235
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: jwaram undi. 3 days ayindi. 100 undi. emi tintaledu. vomitings ayithunnayi. mutram poyaledu 6 hrs kante ekuvane ayindi.
+
+#236
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: papa body antha durada peduthundi. breakfast chesinapudu start ayindi.
+
+#237
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: body antha durada peduthundani chepthunnadu. rashes ochayi. lunch chesinapudu start ayindi.
+
+#238
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: papa body antha durada peduthundi. dinner chesinapudu start ayindi.
+
+#239
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: papa body antha durada peduthundi.erraga rashes ochayi. bayata tinnapudu start ayindi.
+
+#240
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: body antha durada peduthundi. red rashes ochayi. annam tinnaupdu start ayindi.
+
+#241
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: tinagaane motions ayithunayi. kadupu noppi undani chepthunadu.
+
+#242
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: tinagane vipareetamayina daggu start ayindi.
+
+#243
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: gaali pelchukovadam kastamga undanta. annam tinna tarvatha ila ayindi.
+
+#244
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: vollantha gokudu undi antunnadu. lunch chesina tarvatha start ayindi.
+
+#245
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: naaluka meeda rashes ochayi. annam tinna tarvatha ila ayindi.
+
+#246
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: gonthu ubbindi. tinna tarvathane suddenga ila ayindi.
+
+#247
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: pedalu ubbinayi and gonthu kuda erraga ayindi. night tinangane ila ayindi.
+
+#248
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: body antha rashes ochayi. annam tinna tarvatha ochindi.
+
+#249
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: baaga mukku kaaruthundi. neelu laga osthunnayi. suddenga start ayindi. bayata cool drink taagadu.
+
+#250
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: baaga mukku kaaruthundi. neelu laga osthunnayi. allergy ayindi. bayata biscuits tinnadi.
+
+#251
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: baaga mukku kaaruthundi. neelu laga osthunnayi. allergy laga undi. friend birthday party ki velladu.
+
+#252
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: kallu durada peduthunnayi ani antunnadu. 
+
+#253
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: kallu rub chesukuntundi. neelu osthunnayi. red ga ayyayi
+
+#254
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu daggu undi. body antha errati kurupulu ochayi.
+d: enni days ayindi?
+p1: ninnane ochayi. jwaram jalubu vachi 4 days ayindi.
+
+fever, cough, feeling tired, a sore throat, runny nose, discomfort looking at light and sore, watery eyes. A rash appears after the third or fourth day. The spots are red and slightly raised.
+
+#255
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: body antha errati daddurlu laga ochayi. gokuthunnadu. 
+d: jwaram jalubu daggu unda?
+p1: unnayi.
+
+#256
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: jwaram jalubu daggu undi kaani ninna night nunchi red rashes start ayyayi. 
+
+#257
+d: vayasu entha? 
+p1: 12, f
+d: cheppandi enti problem? 
+p1: jwaram jalubu undi. gonthu noppilesthundi. body antha red rashes ochayi.
+
+#258
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthundi. jalubu jwaram undi. ninna morning red rashes laga start ayyayi. itching undi baaga.
+
+#259
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: errati dadurlu ochayi. vollantha unnayi. gonthu baagaledu. jwaram undi.
+
+#260
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: errati dadurlu ochayi. vollantha unnayi. gonthu baagaledu. jwaram undi. jalubu kuda undi.
+
+#261
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: errati dadurlu ochayi. gonthu bonguru poyindi. noppilesthundi. jwaram undi.
+
+#262
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: errati dadurlu ochayi. kallalonunchi neelu osthunnayi. gonthu bonguru poyindi. noppilesthundi. jwaram undi.
+
+#263
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu laaga ayyayi.
+
+#264
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu laaga ayyayi. jwaram undi
+
+#265
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu laaga ayyayi. jwaram jalubu undi.
+
+#266
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu laaga ayyayi. jwaram undi. vollantha noppulu unnayi.
+
+#267
+d: vayasu entha? 
+p1: 13, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu laaga ayyayi. talanoppi undi. jwaram undi.
+
+#268
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. kallu ochayi.
+
+#269
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. conjunctivitis undi.
+
+#270
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. baaga durada undi.
+
+#271
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. baaga durada undi. jalubu undi.
+
+#272
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. kallu ochayi. kallu red ga ayyayi. gonthu noppi inka jalubu daggu unnayi.
+
+#273
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. kallu red ga ayyayi. kallalonunchi neellu karuthunnayi. gonthu noppi inka jalubu undi.
+
+#274
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. kallu ochayi. kallu red ga ayyayi. gonthu noppi inka kodiga jalubu daggu unnayi.
+
+#275
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: vollantha errati machalu unnayi. kallu red ga ayyayi. gonthu noppi, jwaram, jalubu, daggu unnayi.
+
+#276
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. 
+d: jwaram jalubu unnaya?
+p1: unnayi.
+
+#277
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: ratrulu baaga dagguthundi. assalu nidra ledu. 
+d: jwaram jalubu unda?
+p1: undi.
+
+#278
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: 3 4 days nunchi daggu ekkuvayithundi. mandulu vadina tagguthaledu. jwaram inka jalubu undi.
+
+#279
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. daggi vomiting chesukuntunnadu
+d: eni days ayindi daggu start ayi?
+p1: 7 days
+
+#280
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. ratri baaga daggi vomiting chesukuntunnadu. jwaram, jalubu unnayi.
+d: eni days ayindi daggu start ayi?
+p1: 8 days
+
+#281
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. jwaram kuda undi. daggi vomiting chesukutunnadu.
+d: eni days ayindi daggu start ayi?
+p1: 9 days
+
+#282
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. jwaram kuda undi. daggi vomiting chesukutunnadu. emi tinadamledu
+d: eni days ayindi daggu start ayi?
+p1: 10 days
+
+#283
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. daggi vomiting chesukutunnadu. mukku karuthundi baaga. kadupu noppilesthundani chethunnadu. emi tinatledu
+d: eni days ayindi daggu start ayi?
+p1: 7 days
+
+#284
+d: vayasu entha? 
+p1: 12, f
+d: cheppandi enti problem? 
+p1: daggu baaga undi. daggi vomiting chesukutundi. kadupu noppi undi.
+d: eni days ayindi daggu start ayi?
+p1: 10 days
+
+#285
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: daggu baaga undi. jwaram kuda undi. daggi vomiting chesukutundi. kadupulo tipputunnatlu ayithundi ani chepthundi.
+d: eni days ayindi daggu start ayi?
+p1: 9 days
+
+#286
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthundi. jwaram undi.
+
+#287
+d: vayasu entha? 
+p1: 12, f
+d: cheppandi enti problem? 
+p1: gonthu baaga noppilesthundi. gonthu nunchi vaasana vasthundi. jwaram undi.
+
+#288
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: gonthu noppilesthundi. mukku kaaruthundi. baaga jwaram undi.
+
+#289
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: baaga gonthu noppilesthundi. mukku kaaruthundi continuousga. inka jwaram tagguthaledu.
+
+
+#290
+d: vayasu entha? 
+p1: 7 months, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthundi baaga. nidra ledu. baaga edusthundi
+
+#291
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu nunchi cheemu karuthundi. chevu sariga vinipinchadam ledu.
+
+#292
+d: vayasu entha? 
+p1: 6 months, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthunnadu baaga. nidra ledu. baaga edusthunnadu. 
+
+#293
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. baaga edusthunnadu. chevulo buuzulaaga ochindi. 
+
+#294
+d: vayasu entha? 
+p1: 4 months, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthunnadu baaga. nidra ledu. baaga edusthunnadu. chevulo buuzu ochindi. 
+
+#295
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. nidra ledu. chevu nunchi cheemu karuthundi. talanoppi undi. chevu sariga vinipinchadam ledu.
+
+#296
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthunnadu baaga. nidra ledu. baaga edusthunnadu.
+
+#297
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu nunchi cheemu karuthundi. chevu sariga vinipinchadam ledu.
+
+#298
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. baaga edusthunnadu. chevulo buuzu ochindi. chevu sariga vinipinchadam ledu.
+
+#299
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthunnadu baaga. nidra ledu. baaga edusthunnadu. chevu nunchi cheemu karuthundi.
+
+#300
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. nidra ledu. baaga edusthunnadu. chevulo buuzu ochindi. talanoppi undi. chevu sariga vinipinchadam ledu.
+
+#301
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. baaga edusthandi. chevu nunchi cheemu karuthundi. chevu sariga vinipinchadam ledu.
+
+#302
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjutundi baaga. nidra ledu. chevu nunchi cheemu karuthundi. talanoppi undi. chevu sariga vinipinchadam ledu.
+
+#303
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: chevu noppi undi. chevu gunjuthunnadu baaga. nidra ledu. chevulo buuzu ochindi. chevu sariga vinipinchadam ledu.
+
+#304
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: chevi noppi baaga undi. inka jwaram jalubu daggu undi.
+
+#305
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: chevi noppi baaga undi. jwaram undi.
+
+#306
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: chevi noppi baaga undi. jwaram jalubu undi.
+
+#307
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: chevi noppi baaga undi. mukku karuthundi.
+
+#308
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: chevi noppi undi. jalugu bundi. mukku karuthundi. jwaram undi
+
+Often, these two unpleasant illnesses go hand in hand. A stomach bug, or gastrointestinal infection, usually causes diarrhea (runny, loose bowels) along with vomiting. Symptoms may include stomach cramps and nausea. Some infections cause vomiting first, followed by diarrhea, while others may cause only one of the two symptoms. symptoms persist longer than two to three days, or there is blood in the stool or vomit.
+
+#309
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothunnadu. vomiting undi. kadupu noppi undi. vanti ochela undi. 3 days nunchi ayithundi. raktam osthundi motions lo. raktam osthundi vomit chesinapudu.
+
+#310
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothunnadu. vomiting undi. 
+#311
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: motions waterlaga pothunnadu. kadupu noppi undi.
+
+#312
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: motions waterlaga osthunnayi. vomiting undi. kadupu noppi undi.
+
+#313
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothunnadu. raktam osthundi motions lo.
+#314
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: vomitings ayithunnayi. kadupu noppi undi. vanti ochela anipisthundi. 3 days nunchi ayithundi. 
+
+#315
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: vomitings ayithunnayi. kadupu noppi undi. vanti ochela undi. 5 days nunchi ayithundi. raktam osthundi vomit chesinapudu.
+
+#316
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: motions baaga ayithunnayi. motions waterlaga pothunnadu. vomiting undi. kadupu noppi undi. vanti ochela undi. 3 days nunchi ayithundi.
+
+#317
+d: vayasu entha? 
+p1: 13, m
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothunnadu. vomiting undi. kadupu noppi undi. vanti ochela undi. 4 days nunchi ayithundi. raktam osthundi motions lo. raktam osthundi vomit chesinapudu.
+
+#318
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: motions waterlaga pothunnadu. vomiting undi. kadupu noppi undi. 3 days nunchi ayithundi. raktam osthundi motions lo. 
+#319
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. vomiting undi. kadupu noppi undi. vanti ochela undi. 3 days nunchi ayithundi. raktam ochindi vomit chesinapudu.
+
+#320
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothundi. vomiting undi. kadupu noppi undi. vanti ochela undi. 3 days nunchi ayithundi. raktam osthundi motions lo. raktam osthundi vomit chesinapudu. edi tinatledu.
+
+#321
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. vomiting undi. kadupu noppi undi. edi tinatledu.
+
+#322
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: kadupulo purugulu paddayi. motions waterlaga pothunnadu. vanti ochela undi. kadupu noppi undi. 3 days nunchi ayithundi. raktam osthundi motions lo. emi tinadam ledu.
+
+#323
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. 
+
+#324
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. annam tinadam ledu
+#325
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. gonthu noppi undi. annam tinadam, palu tagadam agipoyindi. irritate chesthunnadu.
+
+#326
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: notlo inka chetula meeda errati kurupulu ayinayi. jwaram undi. emi tinadam ledu. bakkaga ayipoyindi.
+
+#327
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. irritate chestundi.
+
+#328
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. emi tinadam ledu.
+
+#329
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: notlo inka chetula meeda errati kurupulu ayinayi. gonthu noppi undi. annam tinadam, palu tagadam agipoyindi. irritate chesthunnadu. bakkaga ayithunnadu
+
+#330
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. kadupu noppi undi. emi tinadam ledu.
+
+#331
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. gonthu noppi undi.
+#332
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. gonthu noppi undi. annam tinadam ledu. jwaram osthundi.
+
+#333
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. palu taguthaledu.
+#334
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. chetula meeda kuda unnayi. jwaram undi. jalubu undi. gonthu noppi undi. emi tinatledu.
+
+#335
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: notlo errati kurupulu ayinayi. jwaram undi. gonthu noppi undi. 
+
+#336
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: chetula meeda errati kurupu unnayi. jwaram undi. gonthu noppi undi.
+
+#337
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. 
+
+#338
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. kallu ubbinayi. kallalonunchi buzulu osthundi.
+
+#339
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. kallalonunchi buzulu osthunayi.
+
+#340
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. kallalonunchi buzulu neellu osthunayi. light padithe noppilesthundi.
+
+#341
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. kallu ubbinayi. kallalonunchi buzulu osthunayi.
+
+#342
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. kallalonunchi buzulu osthunayi. light padithe noppilesthundi. kallallonunchi neellu osthunnayi. conjuctivitie laga anipisthundi.
+
+#343
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. kallalonunchi buzulu neellu osthunayi. light padithe noppilesthundi. 
+
+#344
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. 
+
+#345
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. kallu ubbinayi.
+
+#346
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. kallalonunchi buzulu osthunayi.
+
+#347
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. kallallonunchi buzulu,neellu osthunnayi. light padithe edusthundi.
+
+#348
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi.
+
+#349
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. kallalonunchi buzulu osthunayi.
+
+#350
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: kallu erraga ayindi. rub chesukuntundi baaga. kallu ubbinayi. light padithe noppilesthundi. kallallonunchi neellu osthunnayi.
+
+#351
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. 
+#352
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. 
+
+#353
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. emi tintaledu. 
+
+#354
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. emi tintaledu. notlo kuda kurupulu unnayi. 
+
+#355
+d: vayasu entha? 
+p1: 12, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. emi tintaledu. notlo kuda kurupulu unnayi. kallalo kuda unnayi. 
+
+#356
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. 
+#357
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. palu taguthaledu.
+
+#358
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. emi tintaledu. notlo kuda kurupulu unnayi.
+
+#359
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. emi tintaledu. paguluthunnayi. pagili spread ayithunnayi.
+
+#360
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. emi tintaledu. notlo kuda kurupulu unnayi. paguluthunnayi. pagili inka spread ayithunnayi.
+
+#361
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. emi tintaledu. notlo kuda kurupulu unnayi. kallalo kuda unnayi. nidra pothaledu. paguluthunnayi. pagili inka spread ayithunnayi.
+
+#362
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: vollathan errati kurupu daddurlu laaga ochinayi. baaga duraada undi. jwaram undi. jalubu daggu undi. emi tintaledu. notlo kuda kurupulu unnayi. kallalo kuda unnayi. nidra pothaledu. paguluthunnayi. pagili inka spread ayithunnayi.
+
+
+#363
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: body meeda red rashes ochayi. baaga jalubu undi. mukku karuthundi. jwaram undi. jwaram jalubu start ayina 3 days tarvatha rashes ochayi. 
+d: gokuthunnada?
+p1: ledu
+
+#364
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: body meeda errati daddurlu ochayi. baaga jalubu undi. mukku karuthundi. gonthu noppilesthundi. daggu undi. kallalonunchi neelu karuthunnayi. jwaram undi. jwaram jalubu start ayina 3 days tarvatha ochayi. 
+d: durada unda?
+p1: ledu
+
+#365
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. mukku karuthundi. gonthu noppilesthundi. daggu undi. jwaram undi.
+d: durada unda?
+p1: ledu
+
+#366
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. baaga jalubu undi. jwaram undi.
+d: durada unda?
+p1: ledu
+
+#367
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. baaga jalubu undi. gonthu noppilesthundi. daggu undi. jwaram undi. jwaram jalubu start ayina 4 days tarvatha ochayi. 
+d: durada unda?
+p1: ledu
+
+#368
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. baaga jalubu undi. baaga jwaram undi. palu sariga tagadam ledu 
+d: durada unda?
+p1: ledu
+
+#369
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. baaga jalubu undi. mukku karuthundi. gonthu noppilesthundi. daggu undi. kallalonunchi neelu karuthunnayi. jwaram undi. jwaram jalubu start ayina 3 days tarvatha ochayi. 
+d: durada unda?
+p1: ledu
+
+#370
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: body meeda rashes ochayi. baaga jalubu undi. gonthu noppilesthundi. kallalonunchi neelu karuthunnayi. jwaram undi. jwaram jalubu start ayina 5 days tarvatha ochayi. 
+d: durada unda?
+p1: ledu
+
+#371
+d: vayasu entha? 
+p1: 12, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. baaga edusthundi. jwaram undi baaga. jalubu kuda undi. mingadaniki osthaledu. emi tintaledu. gonthu noppilesthundi ani chepthundi.
+
+#372
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. jwaram undi baaga. jalubu kuda undi. mingadaniki osthaledu. emi tintaledu. 
+
+#373
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. baaga edusthundhunnadu. emi tintaledu. gonthu noppilesthundi ani chepthunnadu.
+
+#374
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. jwaram undi baaga.
+#375
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. jwaram jalubu undi.
+
+#376
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. mingadaniki osthaledu. emi tintaledu. gonthu noppilesthundi ani chepthundi.
+
+#377
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. jwaram undi baaga. mingadaniki osthaledu. gonthu noppilesthundi ani chepthundi.
+
+#378
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. jwaram undi baaga. jalubu kuda undi. mingadaniki osthaledu. emi tintaledu. 
+
+#379
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. emi tintaledu. palu kuda tagathaledu.
+
+#380
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: gonthu deggara gaddalu ochayi. baaga edusthundi. emi tintaledu.  palu kuda tagathaledu. edusthunnadu.
+
+It begins with a fever and nasal discharge.
+    A bright red rash, like the mark left by a slap, appears on the cheeks.
+    Over the next 2 to 4 days, a lacy rash spreads to the trunk and limbs.
+
+#381
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: fever undi. running nose undi. rashes osthunnayi left cheek deggara.
+
+#382
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: fever undi. running nose undi. edam chempa deggara errati maraka ochindi
+
+#383
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: fever undi. edam chempa deggara rash undi.
+
+#384
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: fever undi. mukku karuthundi. edam chempa deggara errati maraka ochindi
+
+#385
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: jwarm undi. mukku karuthundi undi. edam chempa deggara errati maraka ochindi
+
+It starts like a mild cold.
+    A rash appears in a day or 2, first on the face, then on the body. The spots are flat and are pale pink on light skin.
+    Glands in the back of the neck may be swollen.
+    Your child won't usually feel unwell.
+
+
+#386
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: koddiga jalubu undi.  face meeda body meeda red rashes ochayi. gonthu ubbindi. kani babu active gaanee unnadu.
+
+#387
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: koddiga jalubu undi. 2 days tarvatha face meeda red rashes ochayi. vollantha unnayi ipudu. gonthu ubbindi. kani papa active gaanee undi.
+
+
+#388
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: koddiga jalubu undi. body antha rashes unnayi. gonthu ubbindi. kani babu active gaanee unnadu.
+
+
+#389
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: koddiga jalubu undi. 3 days nunchi vollantha errati daddurlu laga unnayi ipudu. gonthu ubbindi. kani babu active gaanee unnadu.
+
+#390
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: koddiga jalubu undi. vollantha rashes unnayi ipudu. gonthu ubbindi. kani babu active gaanee unnadu.
+
+#391
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. nidra ledu.
+
+#392
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. daggutunte asal swasa aduthaledu. 
+
+#393
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. dagguthu vomiting chesukuntundi.  
+
+#394
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. ratrulu daggu baaga undi. nidra ledu. 
+
+#395
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. ratrulu daggu baaga undi. nidra ledu. daggutunte asal swasa aduthaledu.
+
+#396
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. ratrulu daggu baaga undi. nidra ledu. dagguthu vomiting chesukuntunnadu.  
+
+#397
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: vipareetamayina daggu undi. assalu agadamledu. ratrulu daggu baaga undi. nidra ledu. daggutunte asal swasa aduthaledu. jalubu jwaram undi. dagguthu vomiting chesukuntundi.  
+
+#398
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: babuku chevulu sariga vinipisthalevu.
+
+#399
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: kallu sariga kanipisthalevu. vankara chupu undi.
+
+#400
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: juttu takva undi.
+
+#401
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: body meeda hair chaala undi.
+
+#402
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: naluka chaala peddaga undi.
+
+#403
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: naluka chinnaga undi.
+
+#404
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: pallu sariga ravadam ledu.
+
+#405
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: pallu anni raledu. 
+
+#406
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: sariga nulchuntaledu.
+
+#407
+d: vayasu entha? 
+p1: 13, f
+d: cheppandi enti problem? 
+p1: sariga matladuthaledu
+
+#408
+d: vayasu entha? 
+p1: 12, f
+d: cheppandi enti problem? 
+p1: height peragadam ledu
+
+#409
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: puttumachalu chaaala unnayi.
+
+#410
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: baaga chemata osthundi. 
+
+#411
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: motions chaala sarlu poyindi. more than 10 times baaga weak ga ayipoyadu. motham pale ga ayindi skin. kadupunoppi undi. emi tinatledu. edi tinna bayatakuosthundi.
+
+#412
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothunnadu. baaga weak ga ayipoyadu. motham pale ga unnadu. jwaram undi. kadupunoppi undi. emi tinatledu. edi tinna vanti chesukuntunnadu.
+
+#413
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothundi. more than 15 times ayindi. jwaram undi inka vomitings ayithunnayi.
+
+#414
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothunnadu. baaga weak ga ayipoyadu. motham pale ga unnadu.
+
+#415
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothunnadu. motham pale ga unnadu.
+
+#416
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothunnadu. baaga weak ga ayipoyadu. motham pale ga unnadu. jwaram undi. kadupunoppi undi. 
+
+#417
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: motions chaala sarlu pothunnadu. baaga weak ga ayipoyadu. motham pale ga unnadu. jwaram undi. kadupunoppi undi. edi tinna bayatakuosthundi.
+
+#418
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: jwaram undi. daggu undi baaga. swasa teesukovadam kastamgaundi.
+
+#419
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: jwaram undi. vanukuthunnadu. daggu undi baaga. chathilo noppi undi.
+
+#420
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram undi. daggu undi baaga.
+
+#421
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: jwaram undi. vanukuthunnadu. 
+
+#422
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: jwaram undi. vanukuthunnadu. daggu undi baaga.
+
+#423
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: jwaram undi. chalitho vanukuthundi. daggu undi baaga. swasa teesukovadam kastamgaundi.
+
+#424
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: jwaram undi. daggu undi baaga. swasa teesukovadam kastamgaundi. chathilo noppi undi.
+
+#425
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: jwaram undi. vanukuthunnadu. daggu undi baaga. swasa teesukovadam kastamgaundi. chathilo noppi undi.
+
+#426
+d: vayasu entha? 
+p1: 3 months, m
+d: cheppandi enti problem? 
+p1: fever undi. 101 undi. 3 days nunchi undi.
+
+#427
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: fever undi. 3 days nunchi emi tintaledu.
+
+#428
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: fever undi. baaga dulga ayipoyindi. 
+
+#429
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: fever undi. baaga dulga ayipoyindi. emi tintaledu. vomitings ayithunnayi.
+
+#430
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: fever undi. baaga dulga ayipoyindi. emi tintaledu. vomitings ayithunnayi. rashes unnayi motham
+
+#431
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: fever undi. baaga daggu undi. rashes unnayi body meeda.
+
+#432
+d: vayasu entha? 
+p1: 3, m
+d: cheppandi enti problem? 
+p1: fever undi baaga. 103 datindi. fits osthunnayi.
+
+#433
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: swaasa tesukuntaledu. jwaram undi. 
+
+#434
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: jwaram undi. emi tinadam ledu. fits osthunnayi. kallu tiruguthunnayi. 
+
+#435
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: papa baaga edusthundi. swaasa tesukuntaledu. fits osthunnayi.
+
+#436
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: jwaram undi. emi tinadam ledu. mutram posukuntaledu
+
+#437
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1:  papa baaga edusthundi. swaasa tesukuntaledu. 
+
+#438
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1:  papa baaga edusthundi. jwaram undi. emi tinadam ledu. 
+
+#439
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: mutram osthaledu. mutram lo manta undi ani chepthundi.
+
+#440
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: swaasa tesukuntaledu. jwaram undi.
+
+
+#441
+d: vayasu entha? 
+p1: 9, m
+d: cheppandi enti problem? 
+p1: kallu tiruguthunnayi.
+
+
+#442
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: sariga nadusthaledu
+
+#443
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: sariga chusthaledu
+
+#444
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: sariga matladuthaledu
+
+#445
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: ratri kallu kanipisthalevu ani chepthundi
+
+#446
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: sariga emi pattukuntaledu
+
+#447
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: urikane bhayapaduthundi.
+
+#448
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: baaga edusthundi.
+
+#449
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: evaritho kuda matladuthaledu
+
+#450
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: okkamene unatadi epudu
+
+#451
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: evaritho matladadau.
+
+#452
+d: vayasu entha? 
+p1: 7 months, m
+d: cheppandi enti problem? 
+p1: addam tiragadam ledu
+
+#453
+d: vayasu entha? 
+p1: 1, f
+d: cheppandi enti problem? 
+p1: dagguthunnapudu mosa osthundi.
+
+#454
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: baaga daggu undi. dagguthunapudu mosa undi
+
+#455
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: sariga mata vinadamledu
+
+#456
+d: vayasu entha? 
+p1: 7 motnhs, m
+d: cheppandi enti problem? 
+p1: matalu ravatledu
+
+#457
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: kallu erraga ayinayi. jwaram undi.
+
+#458
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: jwaram roju rojuku peruguthundi
+
+#459
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: vankaraga chusthundi.
+
+#460
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: height peruguthaledu.
+
+#461
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: matalu sariga ravadam ledu.
+
+#462
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: tellati machalu osthunnayi
+
+#463
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: nalla machalu ekkuvaga unnayi.
+
+#464
+d: vayasu entha? 
+p1: 6, m
+d: cheppandi enti problem? 
+p1: chathilo noppi undi ani antunnnadu.
+
+#465
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: urukutunte dammu osthundi ani antundi
+
+#466
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: motions chala sepu chesukundi.
+
+#467
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: jwaram jalubu daggu undi. mosa osthundi.
+
+#468
+d: vayasu entha? 
+p1: 12, m
+d: cheppandi enti problem? 
+p1: metlu ekkuthunte mosa osthundi.
+
+#469
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: urukutunte mosa osthundi.
+
+#470
+d: vayasu entha? 
+p1: 11, m
+d: cheppandi enti problem? 
+p1: adukuntunte mosa osthundi. baaga daggu osthundi.
+
+#471
+d: vayasu entha? 
+p1: 1, m
+d: cheppandi enti problem? 
+p1: palu ravatledu.
+
+#472
+d: vayasu entha? 
+p1: 4 months, m
+d: cheppandi enti problem? 
+p1: palu taguthaledu.
+
+#473
+d: vayasu entha? 
+p1: 4 months, m
+d: cheppandi enti problem? 
+p1: palu ekkuvasepu cheekuthaledu
+
+#474
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: stools lo raktam ochindi.
+
+#475
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: vomiting lo raktam padindi.
+
+#476
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: kallu red ga ayinayi.
+
+#477
+d: vayasu entha? 
+p1: 6, f
+d: cheppandi enti problem? 
+p1: chetimeeda red mark ochindi.
+
+#478
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: kalla meeda machalu osthunnayi.
+
+#479
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: chempa meeda macha undi.
+
+#480
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: endalo baaga tirigi kallu tirigi padipoyindi.
+
+#481
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: sariga tintaledu. eeroju school lo kallu tirigi padipoyindi.
+
+#482
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: emi tintaledu. bakkaga ayithundi.
+
+#483
+d: vayasu entha? 
+p1: 2, f
+d: cheppandi enti problem? 
+p1: emi matladadam ledu.
+
+#484
+d: vayasu entha? 
+p1: 10, f
+d: cheppandi enti problem? 
+p1: talaku debbatagilindi. appatinunchi matalu sariga ravadam ledu.
+
+#485
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: mutram lo manta undi.
+
+#486
+d: vayasu entha? 
+p1: 4, m
+d: cheppandi enti problem? 
+p1: fits osthunnayi.
+
+#487
+d: vayasu entha? 
+p1: 4, f
+d: cheppandi enti problem? 
+p1: rojuku 20 times ala fits osthunnayi.
+
+#488
+d: vayasu entha? 
+p1: 2, m
+d: cheppandi enti problem? 
+p1: jwaram ochinapudu fits osthunnayi.
+
+#489
+d: vayasu entha? 
+p1: 5, f
+d: cheppandi enti problem? 
+p1: mutram lo manta undi. asal urine ravadam ledu
+
+#490
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: urine baaga yellow color lo undi.
+
+#491
+d: vayasu entha? 
+p1: 11, f
+d: cheppandi enti problem? 
+p1: baaga jwaram undi. 104 undi. 
+
+#492
+d: vayasu entha? 
+p1: 8, f
+d: cheppandi enti problem? 
+p1: mutram lo manta undi. 
+
+#493
+d: vayasu entha? 
+p1: 8, m
+d: cheppandi enti problem? 
+p1: gonthu kharab ayindi. jwaram ochindi.
+
+#494
+d: vayasu entha? 
+p1: 9, f
+d: cheppandi enti problem? 
+p1: jalubu daggu jwaram undi.
+
+#495
+d: vayasu entha? 
+p1: 10, m
+d: cheppandi enti problem? 
+p1: daggu baaga undi. mukku karuthundi.
+
+#496
+d: vayasu entha? 
+p1: 3, f
+d: cheppandi enti problem? 
+p1: mukku karuthundi. jwaram undi. gaali pelchukovadam kastamga undi.
+
+#497
+d: vayasu entha? 
+p1: 5, m
+d: cheppandi enti problem? 
+p1: mokahm meeda machalu unnayi.
+
+#498
+d: vayasu entha? 
+p1: 7, f
+d: cheppandi enti problem? 
+p1: papa neerasamga undi. jwaram osthundi.
+
+#499
+d: vayasu entha? 
+p1: 7, m
+d: cheppandi enti problem? 
+p1: motions ayithunnayi. babu neerasam ga undi.
+

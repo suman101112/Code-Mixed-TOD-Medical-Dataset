@@ -1,0 +1,15 @@
+p: aa madam naaku oka 3 days 4 days nunchi full back pain madam 
+d: ok
+d: age entha sir ippuDu mEdi
+p: naadi 34 madam
+d: 34
+d: only 3 4 days nunchE back pain unda anDI?
+p: aa undi, kurchOlEkapOtunnanu, nilchOlEkapOtunnanu
+d: any urinary complaints anDi vaaTitOpaaTu?
+p: ide first time anDI naaku raavaDam
+d: ok fine anDi
+d: ee 3 days nunchi kaani 5 days back kaani ekkuvaga strain avvaDam, driving chEyadam, kaaLu beNakaDam ila jariginda? 
+p: aa lEdu madam.
+p: anTE nEnu packinglO chEstaanu, daani valla koncham weight ekuva avvadam valla idi ayindi madam.
+d: ok anDi. fine.
+d: generalga accute pain anDi, physicalgaa weightlifting valla kaavochu.

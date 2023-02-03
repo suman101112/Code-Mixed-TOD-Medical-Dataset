@@ -1,0 +1,17 @@
+p: hello madam my age is 37 madam
+d: 37 ya
+p: avunu madam, naaku ee madhyalO mOkaaLLa noppulu ostunnayi madam
+d: fine
+d: single jointlO unda? vaapu emayina ostunda? movement lo emayina difficulty?
+p: vaapu Em lEdu madam
+d: umm
+p: maamulugaanE undi madam
+d: maamulugaanE undi
+p: aa
+d: movementlO naDichEtappuDu, meTlu ekkEtappudu, digEtappuDu E timelO pain ekkkuva ostundi sir meeku?
+p: generalga ostundi madam
+d: rendu mokaaLLaLO noppi undaa anDI
+p: avunu madam
+d: sound emayina ostunda?
+p: sound em lEdu madam
+d: ok fine anDi.

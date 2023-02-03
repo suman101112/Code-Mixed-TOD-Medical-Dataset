@@ -1,0 +1,23 @@
+p: iTla naDumu nostundi anDi baaga
+d: naDumu noppi undaa vipareetamgaaa? 
+p: aa avnu
+p: kaaLLa noppulu unnayi, baaga kaaLLa noppi undi
+d: umm
+d: vayasu entha amma
+p: vayasu 27 sir
+d: 27kE naDumu, kaaLLu, anni jointlallo noppulu unnaya?
+p: aa avnu sir
+p: vaaTitO paaTu fever ochindi
+d: right amma
+d: entha kaalamgaa unnayi ee noppulu
+p: oka 5 months ayitaandi
+d: manDulu Emayinaa vaaDutunnava?
+p: Em vaaDalEdanDi, fever ochindi ani tablets tecchukunnanu
+d: aa
+p: tablets valla taggindi malli edavidhigaa nostundi anDI
+d: ee fever raavaDam mundu noppulu lEvaa amma?
+p: aaha<neg> unnayi anDI noppulu unnayi, 
+d: noppulu unnayi
+p: ippuDu fever ochindi
+d: ippuDu fever ochindi
+d: alaagE

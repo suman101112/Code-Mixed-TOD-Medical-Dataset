@@ -1,0 +1,9 @@
+p: hello 
+p: naaku mOkaLLa noppi anDI
+d: ennalla nunchi noppi anDI
+p: 10 samvastaraala nunchi mOkaLLa noppi
+d: medicines emayina vaaDutunnaaraa amma?
+p: poyina samvastaram vaaDinaa nanDi, vadina konnallaku taggindi malla modalayindanDi.
+d: ok
+p: 2 nelalu 3 nelalu ayitandi
+d: ok

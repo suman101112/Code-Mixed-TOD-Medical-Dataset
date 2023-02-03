@@ -1,0 +1,4 @@
+p: hello
+d: hello
+p: naa problem dantaala problem undi madam anduke call chEsaamu
+d: sare ok

@@ -1,0 +1,16 @@
+p: hello namasthe anDi
+d: namathE anDI cheppanDi.
+p: maaku eDama bhujam nosthadi madam, em problem untadi antaara?
+d: mee vayasu entha untadi anDi
+p: 30 untadi anDi
+d: enni rojula nunchi anDi ee bhujam noppi 
+p: oka 3 yellu ayitundi amma idi
+d: ok
+p: doctor deggara kUDaa chupeTTaanu
+d: ok
+d: x-ray kaani emayina tEyinchukunnara? MRI kaani, CT kaani
+p: aa teeyipinchukunnanu. 
+d: umm
+p: aa naraala noppi valla
+d: bp sugar emayina unda?
+p: em lEdu amma.

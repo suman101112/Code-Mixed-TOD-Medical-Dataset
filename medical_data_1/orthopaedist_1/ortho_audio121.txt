@@ -1,0 +1,21 @@
+p: sir naaku gata 5 samvastaraala nunchi naaku rheumetoid arthritis ostundi sir
+d: ok
+p: ayitE naaku doctorni chupEttukunna
+d: ok
+p: 1 year nunchi medicine vaaDutunnanu sir
+d: ok
+p: medicine vaaDutunna kUDA repeat avutundi sir
+d: ok
+p: monnanE care hosptial vellanu sir
+d: ok
+p: ayitE naaku HLB positive undi ani cheppinaaru sir
+d: hmm hmm
+p: ayite ipudu naaku parishkaaram Enti naaku ippudu idi life long unTadi anTaara sir?
+d: anTe generalgaa EE joints involve ayyayi amma? finger joints toe joints wrist joints aTla
+p: paaDallanu mOkaaLLu meDa motham pains sir
+d: vapulu ostunnaya?
+p: vaapulu ostunnayi sir
+d: ee fingerlO emayina deformities gaani kanipistunnaya?
+p: raavaTlEdu sir
+d: ok ok movements freega untunnaya amma? restricted aa?
+p: movements freegaa unnayi sir, kaani koncham stiffness ostundi.
